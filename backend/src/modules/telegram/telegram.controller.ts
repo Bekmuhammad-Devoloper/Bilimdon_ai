@@ -1,0 +1,74 @@
+import {
+  Controller,
+  Post,
+  Get,
+  Body,
+  UseGuards,
+  Request,
+  Param,
+} from '@nestjs/common';
+import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
+import { TelegramService } from './telegram.service';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { RolesGuard } from '../auth/guards/roles.guard';
+import { Roles } from '../auth/guards/roles.decorator';
+import { Role } from '@prisma/client';
+import { TelegramWebAppAuthDto, SendTelegramMessageDto, SetWebhookDto } from './dto';
+
+@ApiTags('Telegram')
+@Controller('telegram')
+export class TelegramController {
+  constructor(private readonly telegramService: TelegramService) {}
+
+  @Post('webapp/auth')
+  @ApiOperation({ summary: 'Authenticate via Telegram Mini App' })
+  authenticateWebApp(@Body() dto: TelegramWebAppAuthDto) {
+    return this.telegramService.authenticateWebApp(dto.initData);
+  }
+
+  @Get('user/:telegramId')
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
+  @ApiOperation({ summary: 'Get user by Telegram ID' })
+  getUserByTelegramId(@Param('telegramId') telegramId: string) {
+    return this.telegramService.getUserByTelegramId(telegramId);
+  }
+
+  @Post('webhook')
+  @ApiOperation({ summary: 'Telegram webhook endpoint' })
+  handleWebhook(@Body() update: any) {
+    return this.telegramService.handleWebhookUpdate(update);
+  }
+
+  @Post('admin/set-webhook')
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.ADMIN)
+  @ApiOperation({ summary: 'Set Telegram webhook URL (Admin only)' })
+  setWebhook(@Body() dto: SetWebhookDto) {
+    return this.telegramService.setWebhook(dto.webhookUrl);
+  }
+
+  @Post('admin/send-message')
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.ADMIN, Role.MODERATOR)
+  @ApiOperation({ summary: 'Send message via Telegram Bot' })
+  sendMessage(@Body() dto: SendTelegramMessageDto) {
+    return this.telegramService.sendMessage(dto.chatId, dto.text, {
+      parse_mode: dto.parseMode,
+    });
+  }
+
+  @Get('miniapp-link')
+  @ApiOperation({ summary: 'Get Mini App link' })
+  getMiniAppLink() {
+    return { link: this.telegramService.generateMiniAppLink() };
+  }
+
+  @Get('miniapp-link/:startParam')
+  @ApiOperation({ summary: 'Get Mini App link with start parameter' })
+  getMiniAppLinkWithParam(@Param('startParam') startParam: string) {
+    return { link: this.telegramService.generateMiniAppLink(startParam) };
+  }
+}
