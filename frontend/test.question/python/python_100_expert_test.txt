@@ -1,0 +1,702 @@
+PYTHON - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. Python GIL (Global Interpreter Lock) nima?
+   A) Memory management tool
+   B) Thread synchronization mechanism
+   C) Garbage collector
+   D) Compiler optimization
+   Javob: B
+
+2. __slots__ nima uchun ishlatiladi?
+   A) Method yaratish
+   B) Memory optimization
+   C) Inheritance
+   D) Polymorphism
+   Javob: B
+
+3. Metaclass nima?
+   A) Abstract class
+   B) Class yaratuvchi class
+   C) Interface
+   D) Mixin
+   Javob: B
+
+4. descriptor protocol qaysi methodlardan iborat?
+   A) __get__, __set__, __delete__
+   B) __init__, __new__, __del__
+   C) __enter__, __exit__
+   D) __iter__, __next__
+   Javob: A
+
+5. __new__ vs __init__ farqi?
+   A) __new__ instance yaratadi, __init__ initialize qiladi
+   B) Bir xil
+   C) __init__ birinchi chaqiriladi
+   D) __new__ faqat singleton uchun
+   Javob: A
+
+6. asyncio event loop nima?
+   A) For loop turi
+   B) Asynchronous task scheduler
+   C) While loop
+   D) Iterator
+   Javob: B
+
+7. Python memory management qanday ishlaydi?
+   A) Manual
+   B) Reference counting + garbage collection
+   C) Faqat garbage collection
+   D) Stack based
+   Javob: B
+
+8. __mro__ nima?
+   A) Module Resolution Order
+   B) Method Resolution Order
+   C) Memory Reference Object
+   D) Multiple Return Object
+   Javob: B
+
+9. Weak reference nima uchun kerak?
+   A) Strong reference yaratish
+   B) Circular reference oldini olish
+   C) Memory ko'paytirish
+   D) Speed optimization
+   Javob: B
+
+10. functools.lru_cache nima qiladi?
+    A) List cache
+    B) Memoization - function result cache
+    C) File cache
+    D) Network cache
+    Javob: B
+
+11. contextlib.contextmanager decorator nima?
+    A) Class decorator
+    B) Generator-based context manager yaratish
+    C) Function wrapper
+    D) Method decorator
+    Javob: B
+
+12. __call__ method nima imkon beradi?
+    A) Object chaqirish (callable qilish)
+    B) String conversion
+    C) Comparison
+    D) Iteration
+    Javob: A
+
+13. dataclasses moduli qachon qo'shildi?
+    A) Python 2.7
+    B) Python 3.5
+    C) Python 3.7
+    D) Python 3.9
+    Javob: C
+
+14. typing.Protocol nima?
+    A) Network protocol
+    B) Structural subtyping (duck typing with types)
+    C) File protocol
+    D) Security protocol
+    Javob: B
+
+15. __getattr__ vs __getattribute__ farqi?
+    A) Bir xil
+    B) __getattribute__ har doim, __getattr__ faqat topilmaganda
+    C) __getattr__ har doim chaqiriladi
+    D) Farq yo'q
+    Javob: B
+
+16. Python C extension yozish uchun nima kerak?
+    A) Java
+    B) Python.h header va C compiler
+    C) JavaScript
+    D) Assembly
+    Javob: B
+
+17. multiprocessing vs threading farqi?
+    A) Bir xil
+    B) multiprocessing GIL ni bypass qiladi
+    C) threading tezroq
+    D) multiprocessing faqat Windows
+    Javob: B
+
+18. __del__ method qachon chaqiriladi?
+    A) Object yaratilganda
+    B) Object garbage collect qilinganda
+    C) Method chaqirilganda
+    D) Import qilinganda
+    Javob: B
+
+19. sys.intern() nima qiladi?
+    A) String interning - memory optimization
+    B) Integer creation
+    C) List sorting
+    D) Dict merging
+    Javob: A
+
+20. PEP 8 nima?
+    A) Python Enhancement Proposal - Style Guide
+    B) Python Error Protocol
+    C) Python Execution Process
+    D) Python Extension Package
+    Javob: A
+
+21. __annotations__ nima?
+    A) Comments
+    B) Type hints dictionary
+    C) Docstrings
+    D) Decorators
+    Javob: B
+
+22. walrus operator (:=) nima?
+    A) Comparison
+    B) Assignment expression
+    C) Division
+    D) Multiplication
+    Javob: B
+
+23. match-case statement qaysi versiyada qo'shildi?
+    A) Python 3.8
+    B) Python 3.9
+    C) Python 3.10
+    D) Python 3.11
+    Javob: C
+
+24. __prepare__ method metaclass da nima qiladi?
+    A) Instance yaratish
+    B) Class namespace dict yaratish
+    C) Method chaqirish
+    D) Import qilish
+    Javob: B
+
+25. sys.getsizeof() nima qaytaradi?
+    A) File size
+    B) Object memory size in bytes
+    C) List length
+    D) String length
+    Javob: B
+
+26. __class_getitem__ nima uchun?
+    A) Item olish
+    B) Generic type support (List[int])
+    C) Class yaratish
+    D) Method chaqirish
+    Javob: B
+
+27. copyreg moduli nima uchun?
+    A) Copyright
+    B) Pickle customization
+    C) Copy protection
+    D) Registry access
+    Javob: B
+
+28. __reduce__ method nima?
+    A) List reduce
+    B) Pickle serialization customization
+    C) Math reduce
+    D) String reduce
+    Javob: B
+
+29. abc.ABCMeta nima?
+    A) Alphabet
+    B) Abstract Base Class metaclass
+    C) Array class
+    D) Binary class
+    Javob: B
+
+30. __init_subclass__ qachon chaqiriladi?
+    A) Instance yaratilganda
+    B) Subclass yaratilganda
+    C) Method chaqirilganda
+    D) Import qilinganda
+    Javob: B
+
+31. contextvars moduli nima uchun?
+    A) Context manager
+    B) Async-safe thread-local data
+    C) Variable creation
+    D) Function context
+    Javob: B
+
+32. __set_name__ descriptor method nima?
+    A) Variable name set
+    B) Descriptor attribute name olish
+    C) Class name set
+    D) Module name set
+    Javob: B
+
+33. importlib.resources nima uchun?
+    A) Import modules
+    B) Package resource access
+    C) Memory resources
+    D) Network resources
+    Javob: B
+
+34. __fspath__ protocol nima?
+    A) File system path representation
+    B) Function path
+    C) Module path
+    D) Class path
+    Javob: A
+
+35. typing.overload nima?
+    A) Function overloading runtime
+    B) Type checker uchun function signature hints
+    C) Method override
+    D) Operator overload
+    Javob: B
+
+36. __subclasshook__ nima qiladi?
+    A) Subclass yaratish
+    B) isinstance/issubclass customization
+    C) Hook yaratish
+    D) Event handling
+    Javob: B
+
+37. sys.settrace() nima uchun?
+    A) Error tracing
+    B) Debugger/profiler implementation
+    C) Log tracing
+    D) Network tracing
+    Javob: B
+
+38. __code__ attribute nima?
+    A) Source code string
+    B) Function bytecode object
+    C) Machine code
+    D) Assembly code
+    Javob: B
+
+39. dis moduli nima ko'rsatadi?
+    A) Distribution
+    B) Python bytecode disassembly
+    C) Disk info
+    D) Distance calculation
+    Javob: B
+
+40. __wrapped__ attribute nima?
+    A) Wrapper function
+    B) functools.wraps original function reference
+    C) String wrap
+    D) List wrap
+    Javob: B
+
+41. gc.get_referrers() nima qaytaradi?
+    A) Object references
+    B) Objects that reference given object
+    C) Reference count
+    D) Memory address
+    Javob: B
+
+42. ast moduli nima uchun?
+    A) Astronomy
+    B) Abstract Syntax Tree manipulation
+    C) Asset management
+    D) Async tools
+    Javob: B
+
+43. __format__ method nima?
+    A) File format
+    B) f-string/format() customization
+    C) Print format
+    D) Date format
+    Javob: B
+
+44. sys.exc_info() nima qaytaradi?
+    A) System info
+    B) Current exception info tuple
+    C) Execution info
+    D) Exit info
+    Javob: B
+
+45. __traceback__ attribute nima?
+    A) Trace log
+    B) Exception traceback object
+    C) Back trace
+    D) Debug trace
+    Javob: B
+
+46. types.MappingProxyType nima?
+    A) Mutable dict
+    B) Read-only dict view
+    C) Proxy pattern
+    D) Type mapping
+    Javob: B
+
+47. __class__ attribute runtime da o'zgartirish mumkinmi?
+    A) Yo'q
+    B) Ha, instance class ni o'zgartirish
+    C) Faqat metaclass bilan
+    D) Faqat C da
+    Javob: B
+
+48. sys.flags nima ko'rsatadi?
+    A) Country flags
+    B) Python interpreter command line flags
+    C) Boolean flags
+    D) Feature flags
+    Javob: B
+
+49. __sizeof__ vs sys.getsizeof farqi?
+    A) Bir xil
+    B) sys.getsizeof gc overhead qo'shadi
+    C) __sizeof__ kattaroq
+    D) Farq yo'q
+    Javob: B
+
+50. ctypes moduli nima?
+    A) C types definition
+    B) C library calls from Python
+    C) Custom types
+    D) Type conversion
+    Javob: B
+
+51. __doc__ attribute qayerda saqlanadi?
+    A) File da
+    B) Object attribute sifatida
+    C) Memory cache
+    D) Database
+    Javob: B
+
+52. sys.implementation nima?
+    A) Implementation pattern
+    B) Python implementation info (CPython, PyPy, etc)
+    C) Import implementation
+    D) Interface implementation
+    Javob: B
+
+53. __builtins__ vs builtins farqi?
+    A) Bir xil
+    B) __builtins__ module yoki dict, builtins doim module
+    C) builtins deprecated
+    D) __builtins__ deprecated
+    Javob: B
+
+54. cProfile vs profile farqi?
+    A) Bir xil
+    B) cProfile C da yozilgan, tezroq
+    C) profile tezroq
+    D) Farq yo'q
+    Javob: B
+
+55. __hash__ None bo'lsa nima bo'ladi?
+    A) Error
+    B) Object unhashable bo'ladi
+    C) Hash 0 bo'ladi
+    D) Auto hash
+    Javob: B
+
+56. sys.getrecursionlimit() default qiymati taxminan?
+    A) 100
+    B) 1000
+    C) 10000
+    D) Unlimited
+    Javob: B
+
+57. __weakref__ slot nima?
+    A) Weak password
+    B) Weak reference support attribute
+    C) Weak typing
+    D) Weak binding
+    Javob: B
+
+58. importlib.abc.Loader nima?
+    A) File loader
+    B) Module loader abstract class
+    C) Class loader
+    D) Data loader
+    Javob: B
+
+59. sys.path_hooks nima?
+    A) File hooks
+    B) Import path finders
+    C) Function hooks
+    D) Event hooks
+    Javob: B
+
+60. __qualname__ vs __name__ farqi?
+    A) Bir xil
+    B) __qualname__ nested class/function full path
+    C) __name__ longer
+    D) Farq yo'q
+    Javob: B
+
+61. numbers.Number ABC hierarchy qanday?
+    A) Number > Integer > Float
+    B) Number > Complex > Real > Rational > Integral
+    C) Number > Decimal > Float
+    D) Number > Int > Float > Complex
+    Javob: B
+
+62. __matmul__ operator (@) nima?
+    A) Email
+    B) Matrix multiplication
+    C) Decoration
+    D) Attribution
+    Javob: B
+
+63. sys.intern qaysi typelar uchun ishlaydi?
+    A) Barcha typelar
+    B) Faqat strings
+    C) Faqat integers
+    D) Strings va integers
+    Javob: B
+
+64. __await__ method nima?
+    A) Wait function
+    B) Awaitable protocol implementation
+    C) Sleep function
+    D) Delay function
+    Javob: B
+
+65. asyncio.Future vs concurrent.futures.Future farqi?
+    A) Bir xil
+    B) asyncio.Future thread-safe emas
+    C) concurrent.futures async uchun
+    D) Farq yo'q
+    Javob: B
+
+66. __aiter__ va __anext__ nima?
+    A) Regular iteration
+    B) Async iteration protocol
+    C) Array iteration
+    D) Auto iteration
+    Javob: B
+
+67. sys.getrefcount() natijasi nima uchun expected dan 1 ko'p?
+    A) Bug
+    B) Function argument ham reference
+    C) GIL
+    D) Memory leak
+    Javob: B
+
+68. __class_getitem__ vs __getitem__ farqi?
+    A) Bir xil
+    B) __class_getitem__ class level (List[int]), __getitem__ instance
+    C) __getitem__ class level
+    D) Farq yo'q
+    Javob: B
+
+69. typing.Final nima?
+    A) Finally block
+    B) Constant declaration hint
+    C) Final class
+    D) End marker
+    Javob: B
+
+70. __debug__ variable qachon False?
+    A) Development da
+    B) python -O flag bilan
+    C) Production da auto
+    D) Hech qachon
+    Javob: B
+
+71. assert statement -O flag bilan nima bo'ladi?
+    A) Normal ishlaydi
+    B) O'chiriladi (skip qilinadi)
+    C) Error beradi
+    D) Warning beradi
+    Javob: B
+
+72. sys.gettotalrefcount() qaysi build da mavjud?
+    A) Barcha builds
+    B) Debug build only
+    C) Release build only
+    D) Windows only
+    Javob: B
+
+73. __reversed__ method nima?
+    A) String reverse
+    B) reversed() function customization
+    C) List reverse
+    D) Order reverse
+    Javob: B
+
+74. collections.abc.MutableMapping minimal methodlari?
+    A) __getitem__, __setitem__
+    B) __getitem__, __setitem__, __delitem__, __iter__, __len__
+    C) get, set, delete
+    D) keys, values, items
+    Javob: B
+
+75. __contains__ method nima operator uchun?
+    A) + operator
+    B) in operator
+    C) == operator
+    D) < operator
+    Javob: B
+
+76. sys.maxsize nima?
+    A) Maximum file size
+    B) Maximum integer for Py_ssize_t
+    C) Maximum memory
+    D) Maximum recursion
+    Javob: B
+
+77. __length_hint__ nima?
+    A) Exact length
+    B) Estimated length for memory allocation
+    C) Max length
+    D) Min length
+    Javob: B
+
+78. operator.itemgetter vs lambda farqi performance da?
+    A) Lambda tezroq
+    B) itemgetter tezroq (C implementation)
+    C) Bir xil
+    D) Depends on data
+    Javob: B
+
+79. functools.singledispatch nima?
+    A) Single pattern
+    B) Single dispatch generic function
+    C) Single thread
+    D) Single instance
+    Javob: B
+
+80. __instancecheck__ va __subclasscheck__ qayerda?
+    A) Regular class
+    B) Metaclass da isinstance/issubclass customization
+    C) Abstract class
+    D) Mixin
+    Javob: B
+
+81. sys.float_info epsilon nima?
+    A) Small number
+    B) Smallest x where 1.0 + x != 1.0
+    C) Zero
+    D) Infinity
+    Javob: B
+
+82. __round__ method nima?
+    A) Circle
+    B) round() function customization
+    C) Floor
+    D) Ceil
+    Javob: B
+
+83. decimal.localcontext() nima uchun?
+    A) Location context
+    B) Temporary decimal context
+    C) Local variables
+    D) Thread local
+    Javob: B
+
+84. fractions.Fraction vs decimal.Decimal farqi?
+    A) Bir xil
+    B) Fraction exact rational, Decimal fixed-point
+    C) Decimal exact
+    D) Fraction floating
+    Javob: B
+
+85. __truediv__ vs __floordiv__ farqi?
+    A) Bir xil
+    B) / vs //
+    C) * vs /
+    D) + vs -
+    Javob: B
+
+86. sys.byteorder nima?
+    A) Byte size
+    B) 'little' or 'big' endian
+    C) Byte count
+    D) Byte type
+    Javob: B
+
+87. struct moduli nima uchun?
+    A) Data structures
+    B) C struct packing/unpacking
+    C) Class structure
+    D) File structure
+    Javob: B
+
+88. __buffer__ protocol nima?
+    A) Print buffer
+    B) Memory buffer sharing
+    C) File buffer
+    D) Network buffer
+    Javob: B
+
+89. memoryview nima?
+    A) Memory display
+    B) Zero-copy buffer access
+    C) Memory allocation
+    D) Memory free
+    Javob: B
+
+90. array.array vs list farqi?
+    A) Bir xil
+    B) array homogeneous, memory efficient
+    C) list tezroq
+    D) array flexible
+    Javob: B
+
+91. __index__ method nima uchun?
+    A) List index
+    B) Integer conversion for slicing/indexing
+    C) Dict index
+    D) String index
+    Javob: B
+
+92. slice object attributes?
+    A) begin, end
+    B) start, stop, step
+    C) first, last
+    D) from, to
+    Javob: B
+
+93. sys.setswitchinterval() nima?
+    A) Context switch
+    B) Thread switch interval
+    C) Process switch
+    D) Task switch
+    Javob: B
+
+94. __iter__ qaytarishi kerak?
+    A) List
+    B) Iterator object
+    C) Tuple
+    D) Dict
+    Javob: B
+
+95. itertools.tee() nima qiladi?
+    A) T-junction
+    B) Iterator duplication
+    C) Tree iteration
+    D) Type iteration
+    Javob: B
+
+96. heapq moduli qanday heap?
+    A) Max heap
+    B) Min heap
+    C) Binary tree
+    D) B-tree
+    Javob: B
+
+97. bisect moduli nima uchun?
+    A) Bisection method
+    B) Sorted list binary search
+    C) List split
+    D) String split
+    Javob: B
+
+98. __missing__ method dict da qachon?
+    A) Key topilganda
+    B) Key topilmaganda (subclass)
+    C) Value None
+    D) Empty dict
+    Javob: B
+
+99. collections.ChainMap nima?
+    A) Chain pattern
+    B) Multiple dict single view
+    C) Linked list
+    D) Map chain
+    Javob: B
+
+100. __ror__, __radd__ etc. qachon chaqiriladi?
+     A) Har doim
+     B) Left operand NotImplemented qaytarganda
+     C) Birinchi chaqiriladi
+     D) Hech qachon
+     Javob: B

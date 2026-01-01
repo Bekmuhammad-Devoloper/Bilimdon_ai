@@ -1,0 +1,702 @@
+C++ - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+==============================================
+
+1. C++20 concepts nima?
+   A) Concept pattern
+   B) Template constraints and requirements
+   C) Pattern concept
+   D) Constraint type
+   Javob: B
+
+2. requires expression nima?
+   A) Expression require
+   B) Concept requirement specification
+   C) Require expression
+   D) Expression concept
+   Javob: B
+
+3. SFINAE nima?
+   A) Error type
+   B) Substitution Failure Is Not An Error
+   C) Failure substitution
+   D) Error substitution
+   Javob: B
+
+4. std::enable_if usage?
+   A) Enable check
+   B) SFINAE-based template selection
+   C) If enable
+   D) Check enable
+   Javob: B
+
+5. constexpr vs consteval?
+   A) Same
+   B) consteval=compile-time only, constexpr=either
+   C) constexpr=compile-time only
+   D) No difference
+   Javob: B
+
+6. constinit nima?
+   A) Const init
+   B) Static initialization at compile-time
+   C) Init const
+   D) Initialize constant
+   Javob: B
+
+7. std::span nima?
+   A) Span array
+   B) Non-owning view over contiguous sequence
+   C) Array span
+   D) View array
+   Javob: B
+
+8. std::ranges namespace?
+   A) Range namespace
+   B) C++20 ranges library components
+   C) Namespace range
+   D) Range component
+   Javob: B
+
+9. Range adaptors nima?
+   A) Adaptor range
+   B) Views that transform ranges lazily
+   C) Range adaptor
+   D) Transform range
+   Javob: B
+
+10. views::filter | views::transform?
+    A) Filter transform
+    B) Pipe operator for range composition
+    C) Transform filter
+    D) Composition range
+    Javob: B
+
+11. Coroutines components?
+    A) One component
+    B) co_await, co_yield, co_return
+    C) Two components
+    D) Three components
+    Javob: B
+
+12. promise_type nima?
+    A) Promise type
+    B) Coroutine customization point
+    C) Type promise
+    D) Coroutine promise
+    Javob: B
+
+13. std::coroutine_handle?
+    A) Handle coroutine
+    B) Low-level coroutine control
+    C) Coroutine handle
+    D) Control coroutine
+    Javob: B
+
+14. std::suspend_always vs std::suspend_never?
+    A) Same
+    B) Awaitables controlling suspension
+    C) Never suspend
+    D) Always suspend
+    Javob: B
+
+15. std::generator (C++23)?
+    A) Generator class
+    B) Synchronous coroutine-based range
+    C) Class generator
+    D) Range generator
+    Javob: B
+
+16. Modules vs headers?
+    A) Same
+    B) Modules=faster compile, better encapsulation
+    C) Headers better
+    D) No difference
+    Javob: B
+
+17. export module nima?
+    A) Module export
+    B) Module interface declaration
+    C) Export declaration
+    D) Interface module
+    Javob: B
+
+18. import declaration?
+    A) Declaration import
+    B) Module consumption syntax
+    C) Import module
+    D) Syntax import
+    Javob: B
+
+19. Module partitions?
+    A) Partition module
+    B) Splitting module into parts
+    C) Module split
+    D) Split partition
+    Javob: B
+
+20. Three-way comparison (<=>) operator?
+    A) Three way
+    B) Spaceship operator returning ordering
+    C) Spaceship operator
+    D) Comparison three
+    Javob: B
+
+21. std::strong_ordering vs std::weak_ordering?
+    A) Same
+    B) strong=substitutable equals, weak=not
+    C) Weak=substitutable
+    D) No difference
+    Javob: B
+
+22. = default for <=> ?
+    A) Default spaceship
+    B) Compiler-generated comparison
+    C) Spaceship default
+    D) Generated comparison
+    Javob: B
+
+23. std::format nima?
+    A) Format string
+    B) Type-safe formatting library
+    C) String format
+    D) Library format
+    Javob: B
+
+24. std::print (C++23)?
+    A) Print function
+    B) Direct formatted output
+    C) Function print
+    D) Output print
+    Javob: B
+
+25. std::expected (C++23)?
+    A) Expected value
+    B) Value or error return type
+    C) Value expected
+    D) Error value
+    Javob: B
+
+26. std::optional monadic ops (C++23)?
+    A) Optional monad
+    B) and_then, transform, or_else
+    C) Monad optional
+    D) Transform optional
+    Javob: B
+
+27. std::move_only_function?
+    A) Move function
+    B) Non-copyable callable wrapper
+    C) Function move
+    D) Callable move
+    Javob: B
+
+28. std::mdspan (C++23)?
+    A) MD span
+    B) Multi-dimensional span view
+    C) Span MD
+    D) View multi
+    Javob: B
+
+29. std::flat_map (C++23)?
+    A) Flat map
+    B) Sorted contiguous container adaptor
+    C) Map flat
+    D) Sorted map
+    Javob: B
+
+30. std::stacktrace (C++23)?
+    A) Stack trace
+    B) Runtime stack trace capture
+    C) Trace stack
+    D) Capture stack
+    Javob: B
+
+31. Memory order semantics?
+    A) Order memory
+    B) relaxed, acquire, release, seq_cst
+    C) Memory order
+    D) Semantics memory
+    Javob: B
+
+32. std::memory_order_relaxed?
+    A) Relaxed order
+    B) No synchronization, only atomicity
+    C) Order relaxed
+    D) Atomicity relaxed
+    Javob: B
+
+33. acquire-release semantics?
+    A) Acquire release
+    B) Synchronizes-with relationship
+    C) Release acquire
+    D) Relationship synchronize
+    Javob: B
+
+34. std::atomic_ref?
+    A) Atomic reference
+    B) Atomic operations on non-atomic object
+    C) Reference atomic
+    D) Object atomic
+    Javob: B
+
+35. std::latch vs std::barrier?
+    A) Same
+    B) latch=single-use, barrier=reusable
+    C) Barrier=single-use
+    D) No difference
+    Javob: B
+
+36. std::counting_semaphore?
+    A) Counting semaphore
+    B) Resource access limiting
+    C) Semaphore counting
+    D) Limiting resource
+    Javob: B
+
+37. std::jthread nima?
+    A) Join thread
+    B) Auto-joining, stoppable thread
+    C) Thread join
+    D) Stoppable thread
+    Javob: B
+
+38. std::stop_token nima?
+    A) Stop token
+    B) Cooperative thread cancellation
+    C) Token stop
+    D) Cancellation token
+    Javob: B
+
+39. Lock-free programming challenges?
+    A) Easy
+    B) ABA problem, memory ordering, progress guarantees
+    C) No challenges
+    D) Simple
+    Javob: B
+
+40. ABA problem nima?
+    A) ABA pattern
+    B) Value changed and changed back
+    C) Pattern ABA
+    D) Changed value
+    Javob: B
+
+41. Hazard pointers nima?
+    A) Hazard pointer
+    B) Safe memory reclamation for lock-free
+    C) Pointer hazard
+    D) Memory hazard
+    Javob: B
+
+42. RCU (Read-Copy-Update)?
+    A) RCU pattern
+    B) Read-side critical sections without locks
+    C) Update copy
+    D) Copy update
+    Javob: B
+
+43. std::shared_ptr atomic operations?
+    A) Shared atomic
+    B) std::atomic<std::shared_ptr<T>>
+    C) Atomic shared
+    D) Pointer atomic
+    Javob: B
+
+44. False sharing nima?
+    A) False share
+    B) Cache line contention between threads
+    C) Share false
+    D) Contention cache
+    Javob: B
+
+45. alignas for cache lines?
+    A) Align as
+    B) Prevent false sharing
+    C) As align
+    D) Cache align
+    Javob: B
+
+46. std::hardware_destructive_interference_size?
+    A) Hardware size
+    B) Cache line size constant
+    C) Size hardware
+    D) Interference size
+    Javob: B
+
+47. Type erasure pattern?
+    A) Type erase
+    B) Runtime polymorphism without inheritance
+    C) Erase type
+    D) Polymorphism pattern
+    Javob: B
+
+48. std::any internals?
+    A) Any type
+    B) Type erasure with small buffer optimization
+    C) Type any
+    D) Buffer any
+    Javob: B
+
+49. Small Buffer Optimization (SBO)?
+    A) Small buffer
+    B) Stack storage for small objects
+    C) Buffer small
+    D) Storage small
+    Javob: B
+
+50. std::function SBO?
+    A) Function buffer
+    B) Small callable stored inline
+    C) Buffer function
+    D) Inline callable
+    Javob: B
+
+51. Pimpl idiom nima?
+    A) Pimpl pattern
+    B) Pointer to implementation (compilation firewall)
+    C) Implementation pointer
+    D) Pattern pimpl
+    Javob: B
+
+52. unique_ptr for pimpl?
+    A) Pimpl unique
+    B) Destructor must be defined where impl is complete
+    C) Unique pimpl
+    D) Complete destructor
+    Javob: B
+
+53. CRTP pattern nima?
+    A) CRTP
+    B) Curiously Recurring Template Pattern
+    C) Pattern CRTP
+    D) Template recurring
+    Javob: B
+
+54. Static polymorphism via CRTP?
+    A) Static poly
+    B) Compile-time dispatch without virtual
+    C) Poly static
+    D) Virtual static
+    Javob: B
+
+55. Mixin classes nima?
+    A) Mixin class
+    B) CRTP-based functionality injection
+    C) Class mixin
+    D) Injection functionality
+    Javob: B
+
+56. Expression templates?
+    A) Template expression
+    B) Lazy evaluation for operator overloading
+    C) Expression template
+    D) Lazy template
+    Javob: B
+
+57. Eigen library technique?
+    A) Eigen technique
+    B) Expression templates for matrix ops
+    C) Technique Eigen
+    D) Matrix template
+    Javob: B
+
+58. Policy-based design?
+    A) Policy design
+    B) Template parameters as behavior policies
+    C) Design policy
+    D) Behavior template
+    Javob: B
+
+59. std::allocator_traits?
+    A) Allocator traits
+    B) Allocator requirements interface
+    C) Traits allocator
+    D) Interface allocator
+    Javob: B
+
+60. Polymorphic allocators (pmr)?
+    A) PMR allocator
+    B) Runtime allocator selection
+    C) Allocator PMR
+    D) Selection allocator
+    Javob: B
+
+61. std::pmr::memory_resource?
+    A) Memory resource
+    B) Abstract allocator interface
+    C) Resource memory
+    D) Interface memory
+    Javob: B
+
+62. monotonic_buffer_resource?
+    A) Monotonic buffer
+    B) Fast bump-pointer allocator
+    C) Buffer monotonic
+    D) Allocator bump
+    Javob: B
+
+63. synchronized_pool_resource?
+    A) Synchronized pool
+    B) Thread-safe pool allocator
+    C) Pool synchronized
+    D) Allocator pool
+    Javob: B
+
+64. std::launder nima?
+    A) Launder pointer
+    B) Obtain pointer to object in storage
+    C) Pointer launder
+    D) Storage pointer
+    Javob: B
+
+65. Strict aliasing rule?
+    A) Aliasing strict
+    B) Object access only through compatible type
+    C) Strict aliasing
+    D) Compatible type
+    Javob: B
+
+66. std::bit_cast (C++20)?
+    A) Bit cast
+    B) Reinterpret bits as different type
+    C) Cast bit
+    D) Type reinterpret
+    Javob: B
+
+67. std::start_lifetime_as (C++23)?
+    A) Start lifetime
+    B) Begin implicit object lifetime
+    C) Lifetime start
+    D) Object lifetime
+    Javob: B
+
+68. Implicit-lifetime types?
+    A) Implicit type
+    B) Types with trivial constructors/destructors
+    C) Type implicit
+    D) Trivial types
+    Javob: B
+
+69. std::construct_at vs placement new?
+    A) Same
+    B) construct_at is constexpr-friendly
+    C) Placement better
+    D) No difference
+    Javob: B
+
+70. std::destroy_at nima?
+    A) Destroy at
+    B) Explicit destructor call
+    C) At destroy
+    D) Destructor explicit
+    Javob: B
+
+71. Deducing this (C++23)?
+    A) Deduce this
+    B) Explicit object parameter
+    C) This deduce
+    D) Parameter object
+    Javob: B
+
+72. CRTP replacement with deducing this?
+    A) CRTP replace
+    B) Simpler mixin without templates
+    C) Replace CRTP
+    D) Template mixin
+    Javob: B
+
+73. Multidimensional subscript (C++23)?
+    A) Multidimensional subscript
+    B) operator[](i, j, k)
+    C) Subscript multi
+    D) Operator subscript
+    Javob: B
+
+74. static operator[] (C++23)?
+    A) Static subscript
+    B) Subscript without object
+    C) Subscript static
+    D) Object subscript
+    Javob: B
+
+75. [[assume(expr)]] attribute (C++23)?
+    A) Assume attribute
+    B) Optimization hint to compiler
+    C) Attribute assume
+    D) Hint optimization
+    Javob: B
+
+76. [[no_unique_address]] nima?
+    A) No unique address
+    B) Empty base optimization for members
+    C) Address unique
+    D) Optimization base
+    Javob: B
+
+77. [[likely]] and [[unlikely]]?
+    A) Likely unlikely
+    B) Branch prediction hints
+    C) Unlikely likely
+    D) Prediction branch
+    Javob: B
+
+78. [[nodiscard]] with message?
+    A) Nodiscard message
+    B) Warn on discarded return with reason
+    C) Message nodiscard
+    D) Return warn
+    Javob: B
+
+79. constexpr virtual functions (C++20)?
+    A) Constexpr virtual
+    B) Virtual calls in constexpr context
+    C) Virtual constexpr
+    D) Context constexpr
+    Javob: B
+
+80. constexpr dynamic_cast (C++20)?
+    A) Constexpr cast
+    B) Dynamic cast in constexpr context
+    C) Cast constexpr
+    D) Dynamic constexpr
+    Javob: B
+
+81. constexpr new/delete (C++20)?
+    A) Constexpr new
+    B) Transient allocations in constexpr
+    C) New constexpr
+    D) Allocations constexpr
+    Javob: B
+
+82. std::is_constant_evaluated()?
+    A) Is constant
+    B) Check if in constexpr context
+    C) Constant evaluated
+    D) Evaluated constant
+    Javob: B
+
+83. if consteval (C++23)?
+    A) If consteval
+    B) Branch based on evaluation context
+    C) Consteval if
+    D) Branch context
+    Javob: B
+
+84. Reflection (future)?
+    A) Reflection
+    B) Compile-time type introspection
+    C) Type introspection
+    D) Introspection compile
+    Javob: B
+
+85. std::source_location?
+    A) Source location
+    B) Compile-time caller info
+    C) Location source
+    D) Caller info
+    Javob: B
+
+86. Contracts (future)?
+    A) Contract
+    B) Preconditions, postconditions, assertions
+    C) Precondition
+    D) Postcondition
+    Javob: B
+
+87. Pattern matching (future)?
+    A) Pattern match
+    B) inspect expression for structured matching
+    C) Match pattern
+    D) Structured match
+    Javob: B
+
+88. std::execution (C++26)?
+    A) Execution
+    B) Sender/receiver async model
+    C) Async model
+    D) Sender receiver
+    Javob: B
+
+89. Sender/receiver concepts?
+    A) Sender receiver
+    B) Composable async operations
+    C) Receiver sender
+    D) Async composable
+    Javob: B
+
+90. std::sync_wait?
+    A) Sync wait
+    B) Block on sender completion
+    C) Wait sync
+    D) Block sender
+    Javob: B
+
+91. Executors nima?
+    A) Executor
+    B) Where work is executed
+    C) Work execution
+    D) Execution work
+    Javob: B
+
+92. std::inplace_vector (C++26)?
+    A) Inplace vector
+    B) Fixed-capacity inline storage vector
+    C) Vector inplace
+    D) Storage inline
+    Javob: B
+
+93. std::hive nima?
+    A) Hive container
+    B) Bucket-based stable container
+    C) Container hive
+    D) Stable bucket
+    Javob: B
+
+94. SIMD std::simd (C++26)?
+    A) SIMD
+    B) Portable SIMD types and operations
+    C) Portable SIMD
+    D) Operations SIMD
+    Javob: B
+
+95. std::simd_abi?
+    A) SIMD ABI
+    B) SIMD implementation selection
+    C) ABI SIMD
+    D) Implementation SIMD
+    Javob: B
+
+96. std::linalg (C++26)?
+    A) Linear algebra
+    B) BLAS-like linear algebra library
+    C) Algebra linear
+    D) Library BLAS
+    Javob: B
+
+97. std::text_encoding (C++26)?
+    A) Text encoding
+    B) Character encoding utilities
+    C) Encoding text
+    D) Character utilities
+    Javob: B
+
+98. std::debugging (C++26)?
+    A) Debugging
+    B) Debug helper utilities
+    C) Helper debug
+    D) Utilities debug
+    Javob: B
+
+99. std::is_debugger_present?
+    A) Debugger present
+    B) Check if debugger attached
+    C) Present debugger
+    D) Attached debugger
+    Javob: B
+
+100. std::breakpoint?
+     A) Breakpoint
+     B) Programmatic debugger break
+     C) Debugger break
+     D) Break debugger
+     Javob: B

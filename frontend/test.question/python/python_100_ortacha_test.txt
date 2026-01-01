@@ -1,0 +1,708 @@
+
+PYTHON - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+===================================================
+
+1. *args va **kwargs farqi?
+   A) Bir xil
+   B) *args - positional tuple, **kwargs - keyword dict
+   C) **kwargs positional
+   D) *args keyword
+   Javob: B
+
+2. Decorator nima?
+   A) Class
+   B) Function ni wrap/modify qilish (@syntax)
+   C) Module
+   D) Variable
+   Javob: B
+
+3. @property decorator nima?
+   A) Static method
+   B) Method ni attribute kabi access (getter)
+   C) Class method
+   D) Abstract method
+   Javob: B
+
+4. @staticmethod nima?
+   A) Instance method
+   B) self/cls siz method (utility functions)
+   C) Class method
+   D) Property
+   Javob: B
+
+5. @classmethod nima?
+   A) Static method
+   B) cls parameter - class ga access
+   C) Instance method
+   D) Property
+   Javob: B
+
+6. Generator nima?
+   A) Normal function
+   B) yield bilan lazy iteration
+   C) List
+   D) Class
+   Javob: B
+
+7. yield keyword nima?
+   A) return
+   B) Generator value return (state saqlanadi)
+   C) break
+   D) continue
+   Javob: B
+
+8. Generator expression syntax?
+   A) [x for x in ...]
+   B) (x for x in ...)
+   C) {x for x in ...}
+   D) <x for x in ...>
+   Javob: B
+
+9. Iterator nima?
+   A) List
+   B) __iter__() va __next__() bilan object
+   C) Tuple
+   D) Set
+   Javob: B
+
+10. iter() function nima?
+    A) Next element
+    B) Object dan iterator olish
+    C) Stop iteration
+    D) Create list
+    Javob: B
+
+11. next() function nima?
+    A) Previous
+    B) Iterator dan keyingi element
+    C) First element
+    D) Last element
+    Javob: B
+
+12. StopIteration exception nima?
+    A) Syntax error
+    B) Iterator tugaganda raise
+    C) Runtime error
+    D) Import error
+    Javob: B
+
+13. Context Manager nima?
+    A) Function
+    B) __enter__ va __exit__ bilan object (with statement)
+    C) Class only
+    D) Module
+    Javob: B
+
+14. __enter__() va __exit__() methods nima?
+    A) Constructor/destructor
+    B) Context manager setup/cleanup
+    C) Iterator methods
+    D) Comparison methods
+    Javob: B
+
+15. contextlib module nima uchun?
+    A) Context variables
+    B) Context manager utilities (@contextmanager)
+    C) Threading
+    D) Logging
+    Javob: B
+
+16. Magic methods (dunder) nima?
+    A) Normal methods
+    B) __method__ - special behavior define
+    C) Private methods
+    D) Static methods
+    Javob: B
+
+17. __str__() vs __repr__() farqi?
+    A) Bir xil
+    B) __str__ - user, __repr__ - developer (unambiguous)
+    C) __repr__ user
+    D) No difference
+    Javob: B
+
+18. __len__() method nima?
+    A) Type
+    B) len() function behavior define
+    C) Count
+    D) Size
+    Javob: B
+
+19. __getitem__() method nima?
+    A) Set item
+    B) [] indexing behavior
+    C) Delete item
+    D) Has item
+    Javob: B
+
+20. __setitem__() method nima?
+    A) Get item
+    B) [] assignment behavior
+    C) Delete item
+    D) Length
+    Javob: B
+
+21. __call__() method nima?
+    A) Constructor
+    B) Object ni function kabi call qilish
+    C) Destructor
+    D) String method
+    Javob: B
+
+22. __eq__() method nima?
+    A) Not equal
+    B) == operator behavior
+    C) Greater than
+    D) Less than
+    Javob: B
+
+23. __lt__() method nima?
+    A) Greater than
+    B) < operator behavior
+    C) Equal
+    D) Not equal
+    Javob: B
+
+24. Metaclass nima?
+    A) Normal class
+    B) Class ni yaratadigan class (class of classes)
+    C) Instance
+    D) Function
+    Javob: B
+
+25. type() as metaclass nima?
+    A) Type check
+    B) Dynamic class creation
+    C) Convert type
+    D) Instance check
+    Javob: B
+
+26. Multiple inheritance nima?
+    A) Single parent
+    B) Bir nechta parent classlar
+    C) No inheritance
+    D) One parent only
+    Javob: B
+
+27. MRO (Method Resolution Order) nima?
+    A) Random order
+    B) Multiple inheritance da method search order
+    C) Single inheritance
+    D) No order
+    Javob: B
+
+28. super() multiple inheritance da qanday?
+    A) First parent only
+    B) MRO bo'yicha next class
+    C) Last parent
+    D) Random parent
+    Javob: B
+
+29. Abstract Base Class (ABC) nima?
+    A) Normal class
+    B) abc module - interface define (abstract methods)
+    C) Concrete class
+    D) Metaclass
+    Javob: B
+
+30. @abstractmethod decorator nima?
+    A) Concrete method
+    B) Subclass implement qilishi kerak
+    C) Optional method
+    D) Static method
+    Javob: B
+
+31. isinstance() function nima?
+    A) Type equality
+    B) Object type/class check
+    C) Identity check
+    D) Value check
+    Javob: B
+
+32. issubclass() function nima?
+    A) Instance check
+    B) Inheritance check
+    C) Type check
+    D) Value check
+    Javob: B
+
+33. Encapsulation nima (Python da)?
+    A) Public only
+    B) _ (protected), __ (private) convention
+    C) True private
+    D) No encapsulation
+    Javob: B
+
+34. Name mangling nima?
+    A) No change
+    B) __ prefix - _ClassName__attribute
+    C) Public name
+    D) Protected name
+    Javob: B
+
+35. Property setter nima?
+    A) Getter
+    B) @property_name.setter - value set
+    C) Deleter
+    D) Constructor
+    Javob: B
+
+36. Property deleter nima?
+    A) Getter
+    B) @property_name.deleter - del behavior
+    C) Setter
+    D) Constructor
+    Javob: B
+
+37. Slots (__slots__) nima?
+    A) Dynamic attributes
+    B) Fixed attributes list (memory optimization)
+    C) Methods list
+    D) Inheritance
+    Javob: B
+
+38. Dataclass nima?
+    A) Normal class
+    B) @dataclass - auto __init__, __repr__, ...
+    C) Abstract class
+    D) Metaclass
+    Javob: B
+
+39. namedtuple nima?
+    A) Normal tuple
+    B) Named fields bilan tuple (immutable)
+    C) List
+    D) Dict
+    Javob: B
+
+40. collections.defaultdict nima?
+    A) Normal dict
+    B) Missing key uchun default value
+    C) Ordered dict
+    D) Counter
+    Javob: B
+
+41. collections.Counter nima?
+    A) Timer
+    B) Element frequency count
+    C) Iterator
+    D) Queue
+    Javob: B
+
+42. collections.OrderedDict nima (Python <3.7)?
+    A) Random order
+    B) Insertion order saqlaydigan dict
+    C) Sorted dict
+    D) Counter
+    Javob: B
+
+43. collections.deque nima?
+    A) Stack only
+    B) Double-ended queue (O(1) both ends)
+    C) Priority queue
+    D) Set
+    Javob: B
+
+44. heapq module nima uchun?
+    A) Stack
+    B) Heap/priority queue operations
+    C) Sorting
+    D) Searching
+    Javob: B
+
+45. bisect module nima?
+    A) Random insert
+    B) Binary search va sorted list insert
+    C) Linear search
+    D) Merge
+    Javob: B
+
+46. itertools module nima?
+    A) String tools
+    B) Iterator creation tools (combinations, permutations, ...)
+    C) File tools
+    D) Math tools
+    Javob: B
+
+47. itertools.chain() nima?
+    A) Split
+    B) Multiple iterables ni birlashtirish
+    C) Filter
+    D) Map
+    Javob: B
+
+48. itertools.combinations() nima?
+    A) Permutations
+    B) r-length combinations (order doesn't matter)
+    C) Chain
+    D) Zip
+    Javob: B
+
+49. itertools.permutations() nima?
+    A) Combinations
+    B) r-length permutations (order matters)
+    C) Chain
+    D) Cycle
+    Javob: B
+
+50. functools.reduce() nima?
+    A) Filter
+    B) Accumulate value (fold)
+    C) Map
+    D) Sort
+    Javob: B
+
+51. functools.partial() nima?
+    A) Full function
+    B) Partial function application (fix some args)
+    C) Lambda
+    D) Decorator
+    Javob: B
+
+52. functools.lru_cache() nima?
+    A) No cache
+    B) Memoization decorator (LRU caching)
+    C) Clear cache
+    D) Disable cache
+    Javob: B
+
+53. Closure nima?
+    A) Class
+    B) Nested function outer variables ga access
+    C) Module
+    D) Package
+    Javob: B
+
+54. nonlocal keyword nima?
+    A) Global
+    B) Enclosing scope variable modify
+    C) Local
+    D) Class variable
+    Javob: B
+
+55. global keyword nima?
+    A) Local scope
+    B) Global variable modify function ichida
+    C) Nonlocal
+    D) Class variable
+    Javob: B
+
+56. Scope resolution order (LEGB)?
+    A) Random
+    B) Local -> Enclosing -> Global -> Built-in
+    C) Global first
+    D) Built-in first
+    Javob: B
+
+57. Regular expressions (re module) nima?
+    A) Normal strings
+    B) Pattern matching va text processing
+    C) Random strings
+    D) Encryption
+    Javob: B
+
+58. re.match() vs re.search() farqi?
+    A) Bir xil
+    B) match - start dan, search - anywhere
+    C) match anywhere
+    D) No difference
+    Javob: B
+
+59. re.findall() nima?
+    A) First match
+    B) Barcha matches list
+    C) Replace
+    D) Split
+    Javob: B
+
+60. re.sub() nima?
+    A) Find
+    B) Pattern ni replace qilish
+    C) Match
+    D) Search
+    Javob: B
+
+61. re.compile() nima uchun?
+    A) Slow
+    B) Pattern precompile (performance)
+    C) No benefit
+    D) Error check
+    Javob: B
+
+62. Raw string (r"...") nima uchun?
+    A) Format string
+    B) Escape sequences ignore (regex uchun)
+    C) Unicode string
+    D) Byte string
+    Javob: B
+
+63. f-string nima (Python 3.6+)?
+    A) Format method
+    B) f"..." - inline expression evaluation
+    C) Raw string
+    D) Byte string
+    Javob: B
+
+64. f-string expression syntax?
+    A) f"text %s" % var
+    B) f"text {expression}"
+    C) f"text" + var
+    D) f"text", var
+    Javob: B
+
+65. str.format() method nima?
+    A) Replace
+    B) Placeholder {} bilan formatting
+    C) Split
+    D) Join
+    Javob: B
+
+66. % formatting (old style) nima?
+    A) Modern style
+    B) "text %s" % value
+    C) f-string
+    D) format()
+    Javob: B
+
+67. join() method nima?
+    A) Split
+    B) Iterable ni string ga birlashtirish
+    C) Replace
+    D) Strip
+    Javob: B
+
+68. startswith() method nima?
+    A) End check
+    B) String boshlanishi check
+    C) Contains
+    D) Equal
+    Javob: B
+
+69. endswith() method nima?
+    A) Start check
+    B) String oxiri check
+    C) Contains
+    D) Equal
+    Javob: B
+
+70. List copy qanday (shallow)?
+    A) list2 = list1
+    B) list2 = list1.copy() yoki list1[:]
+    C) No copy
+    D) Reference only
+    Javob: B
+
+71. Deep copy vs shallow copy?
+    A) Bir xil
+    B) Deep - nested objects ham copy, Shallow - reference
+    C) Shallow deep
+    D) No difference
+    Javob: B
+
+72. copy.deepcopy() nima?
+    A) Shallow copy
+    B) Recursive full copy (nested objects)
+    C) Reference
+    D) No copy
+    Javob: B
+
+73. Mutable vs Immutable types?
+    A) Bir xil
+    B) Mutable - modify, Immutable - create new
+    C) Random
+    D) No difference
+    Javob: B
+
+74. Immutable types (Python)?
+    A) List, dict, set
+    B) int, float, str, tuple, frozenset
+    C) All types
+    D) No types
+    Javob: B
+
+75. Mutable types (Python)?
+    A) Tuple, str
+    B) list, dict, set
+    C) int, float
+    D) No types
+    Javob: B
+
+76. frozenset nima?
+    A) Mutable set
+    B) Immutable set
+    C) List
+    D) Dict
+    Javob: B
+
+77. bytes vs bytearray?
+    A) Bir xil
+    B) bytes immutable, bytearray mutable
+    C) bytes mutable
+    D) No difference
+    Javob: B
+
+78. encode() method nima?
+    A) Decode
+    B) String ni bytes ga
+    C) Integer convert
+    D) Float convert
+    Javob: B
+
+79. decode() method nima?
+    A) Encode
+    B) Bytes ni string ga
+    C) Hash
+    D) Compress
+    Javob: B
+
+80. JSON module nima uchun?
+    A) XML parsing
+    B) JSON data serialize/deserialize
+    C) CSV parsing
+    D) HTML parsing
+    Javob: B
+
+81. json.dumps() nima?
+    A) JSON load
+    B) Python object -> JSON string
+    C) Parse JSON
+    D) Read file
+    Javob: B
+
+82. json.loads() nima?
+    A) Dump JSON
+    B) JSON string -> Python object
+    C) Write file
+    D) Encode
+    Javob: B
+
+83. json.dump() vs json.dumps() farqi?
+    A) Bir xil
+    B) dump - file ga, dumps - string
+    C) dumps - file ga
+    D) No difference
+    Javob: B
+
+84. pickle module nima?
+    A) JSON alternative
+    B) Python object serialization (binary)
+    C) Text serialization
+    D) XML parsing
+    Javob: B
+
+85. pickle.dump() nima?
+    A) Load object
+    B) Object ni file ga serialize
+    C) Parse
+    D) Decode
+    Javob: B
+
+86. pickle.load() nima?
+    A) Dump
+    B) File dan object deserialize
+    C) Save
+    D) Encode
+    Javob: B
+
+87. datetime module nima uchun?
+    A) String operations
+    B) Date va time operations
+    C) Math operations
+    D) File operations
+    Javob: B
+
+88. datetime.now() nima?
+    A) Yesterday
+    B) Hozirgi sana va vaqt
+    C) Tomorrow
+    D) Start time
+    Javob: B
+
+89. timedelta nima?
+    A) Absolute time
+    B) Time duration/difference
+    C) Current time
+    D) Timezone
+    Javob: B
+
+90. strftime() method nima?
+    A) Parse string
+    B) Datetime -> formatted string
+    C) String to date
+    D) Calculate
+    Javob: B
+
+91. strptime() method nima?
+    A) Format datetime
+    B) String -> datetime parse
+    C) Calculate
+    D) Current time
+    Javob: B
+
+92. os module nima uchun?
+    A) Object operations
+    B) Operating system interface
+    C) Output stream
+    D) Optimization
+    Javob: B
+
+93. os.path.join() nima?
+    A) String join
+    B) Path components join (OS-safe)
+    C) List join
+    D) Dict join
+    Javob: B
+
+94. os.path.exists() nima?
+    A) Create path
+    B) Path mavjudligini check
+    C) Delete path
+    D) Rename path
+    Javob: B
+
+95. os.listdir() nima?
+    A) Create directory
+    B) Directory contents list
+    C) Delete directory
+    D) Rename directory
+    Javob: B
+
+96. os.mkdir() vs os.makedirs() farqi?
+    A) Bir xil
+    B) mkdir - single, makedirs - recursive
+    C) makedirs single
+    D) No difference
+    Javob: B
+
+97. sys module nima uchun?
+    A) System calls
+    B) Python interpreter access
+    C) File system
+    D) Network
+    Javob: B
+
+98. sys.argv nima?
+    A) Environment variables
+    B) Command line arguments list
+    C) System variables
+    D) Path list
+    Javob: B
+
+99. sys.path nima?
+    A) Current path
+    B) Module search paths list
+    C) File path
+    D) System path
+    Javob: B
+
+100. sys.exit() nima?
+     A) Continue
+     B) Program exit
+     C) Pause
+     D) Restart
+     Javob: B
+
+===================================================
+                    YAKUNLANDI
+===================================================
+

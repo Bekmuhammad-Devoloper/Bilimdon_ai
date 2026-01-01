@@ -1,0 +1,148 @@
+===============================================
+REACT - EASY SAVOLLARI
+===============================================
+
+SAVOL 1: React nima?
+A) Database
+B) JavaScript UI library
+C) Server
+D) CSS framework
+JAVOB: B
+
+SAVOL 2: Component nima?
+A) HTML tag
+B) Reusable UI element
+C) CSS
+D) Database
+JAVOB: B
+
+SAVOL 3: Props nima?
+A) Component data o'zgaruvchisi
+B) Component ga data o'tkazish
+C) HTML attribute
+D) CSS property
+JAVOB: B
+
+SAVOL 4: State nima?
+A) Props
+B) Component-ni o'zgarishi mumkin data
+C) HTML
+D) CSS
+JAVOB: B
+
+SAVOL 5: JSX nima?
+A) JavaScript
+B) JavaScript + XML syntax
+C) HTML
+D) CSS
+JAVOB: B
+
+SAVOL 6: useState hook nima?
+A) State o'zgaruvchi yaratish
+B) State o'qish
+C) Data fetch
+D) Effect
+JAVOB: A
+
+SAVOL 7: useEffect hook nima?
+A) State yaratish
+B) Side effects bajarish (API call, DOM)
+C) Props
+D) Component render
+JAVOB: B
+
+SAVOL 8: Functional component nima?
+A) Class component
+B) Function qaytaruvchi component
+C) Hook
+D) Props
+JAVOB: B
+
+SAVOL 9: Class component nima?
+A) Function component
+B) React.Component extend qiladigan class
+C) Hook
+D) Props
+JAVOB: B
+
+SAVOL 10: Props drilling nima?
+A) Props passing
+B) Props ketma-ket level-lar orqali o'tkazish
+C) Context
+D) State
+JAVOB: B
+
+SAVOL 11: Virtual DOM nima?
+A) Real DOM
+B) React DOM-ni sadalashtirish
+C) JavaScript
+D) HTML
+JAVOB: B
+
+SAVOL 12: Keys nima uchun?
+A) List element identity
+B) React list element identify qilish
+C) Sorting
+D) Filtering
+JAVOB: B
+
+SAVOL 13: Fragment nima?
+A) Component
+B) <>...</> (extra DOM node yo'q)
+C) Wrapper
+D) Container
+JAVOB: B
+
+SAVOL 14: Lifting state up nima?
+A) State ko'tarish
+B) Shared state parent-ga o'tkazish
+C) Global state
+D) Local state
+JAVOB: B
+
+SAVOL 15: Controlled component nima?
+A) Component control
+B) Props orqali form input control
+C) Uncontrolled
+D) Input field
+JAVOB: B
+
+SAVOL 16: Uncontrolled component nima?
+A) Component control yo'q
+B) Ref orqali DOM direct access
+C) Props
+D) State
+JAVOB: B
+
+SAVOL 17: Context API nima?
+A) Props bo'ylab data o'tkazish
+B) Global state management
+C) Hook
+D) Component
+JAVOB: B
+
+SAVOL 18: useContext hook nima?
+A) Context ishlashi
+B) Context dan qiymat olish
+C) Context yaratish
+D) Global state
+JAVOB: B
+
+SAVOL 19: Component lifecycle nima?
+A) Component hayoti yo'q
+B) Mount, Update, Unmount bosqichlari
+C) Hook
+D) Props
+JAVOB: B
+
+SAVOL 20: useRef hook nima?
+A) Reference olish
+B) DOM element direct access
+C) State
+D) Props
+JAVOB: B
+
+===============================================
+EASY SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: OSONGINA
+===============================================

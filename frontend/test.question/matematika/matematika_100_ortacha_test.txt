@@ -1,0 +1,706 @@
+MATEMATIKA - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+======================================================
+
+1. (2x + 3)(x - 4) ifodani soddalashtiring:
+   A) 2x² - 8x + 3x - 12
+   B) 2x² - 5x - 12
+   C) 2x² + 5x - 12
+   D) 2x² - 5x + 12
+   Javob: B
+
+2. x² - 9 ni ko'paytuvchilarga ajrating:
+   A) (x - 3)²
+   B) (x - 3)(x + 3)
+   C) (x + 3)²
+   D) x(x - 9)
+   Javob: B
+
+3. x² + 6x + 9 ni ko'paytuvchilarga ajrating:
+   A) (x - 3)²
+   B) (x + 3)²
+   C) (x + 3)(x - 3)
+   D) (x + 9)(x + 1)
+   Javob: B
+
+4. x² - 5x + 6 = 0 tenglamaning ildizlari:
+   A) x₁ = 1, x₂ = 6
+   B) x₁ = 2, x₂ = 3
+   C) x₁ = -2, x₂ = -3
+   D) x₁ = 1, x₂ = 5
+   Javob: B
+
+5. x² + 4x - 5 = 0 tenglamaning ildizlari:
+   A) x₁ = 5, x₂ = -1
+   B) x₁ = 1, x₂ = -5
+   C) x₁ = -1, x₂ = -5
+   D) x₁ = 5, x₂ = 1
+   Javob: B
+
+6. Kvadrat tenglamada diskriminant formulasi:
+   A) b² + 4ac
+   B) b² - 4ac
+   C) 4ac - b²
+   D) b² - 2ac
+   Javob: B
+
+7. D < 0 bo'lganda kvadrat tenglamaning haqiqiy yechimlari soni:
+   A) 1
+   B) 0
+   C) 2
+   D) Cheksiz
+   Javob: B
+
+8. Viyet teoremasi bo'yicha x₁ + x₂ = ? (ax² + bx + c = 0)
+   A) -c/a
+   B) -b/a
+   C) b/a
+   D) c/a
+   Javob: B
+
+9. Viyet teoremasi bo'yicha x₁ · x₂ = ?
+   A) -b/a
+   B) c/a
+   C) -c/a
+   D) b/a
+   Javob: B
+
+10. 2x² - 8x + 6 = 0 tenglamani yeching:
+    A) x₁ = 2, x₂ = 3
+    B) x₁ = 1, x₂ = 3
+    C) x₁ = 2, x₂ = 1
+    D) x₁ = -1, x₂ = -3
+    Javob: B
+
+11. x² - 4x + 4 = 0 tenglamaning ildizi:
+    A) x = 4
+    B) x = 2 (karrali ildiz)
+    C) x = -2
+    D) x = 0
+    Javob: B
+
+12. |x - 3| = 5 tenglamaning yechimlari:
+    A) x = 8
+    B) x = 8 yoki x = -2
+    C) x = -2
+    D) x = 2 yoki x = -8
+    Javob: B
+
+13. |2x + 1| = 7 tenglamani yeching:
+    A) x = 3
+    B) x = 3 yoki x = -4
+    C) x = -4
+    D) x = 4 yoki x = -3
+    Javob: B
+
+14. √(x + 5) = 3 tenglamani yeching:
+    A) x = 14
+    B) x = 4
+    C) x = -2
+    D) x = 9
+    Javob: B
+
+15. √(2x - 1) = 5 tenglamani yeching:
+    A) x = 12
+    B) x = 13
+    C) x = 3
+    D) x = 26
+    Javob: B
+
+16. 3^x = 81 tenglamani yeching:
+    A) x = 3
+    B) x = 4
+    C) x = 27
+    D) x = 2
+    Javob: B
+
+17. 2^(x+1) = 16 tenglamani yeching:
+    A) x = 4
+    B) x = 3
+    C) x = 2
+    D) x = 5
+    Javob: B
+
+18. log₂8 = ?
+    A) 2
+    B) 3
+    C) 4
+    D) 8
+    Javob: B
+
+19. log₃27 = ?
+    A) 9
+    B) 3
+    C) 2
+    D) 27
+    Javob: B
+
+20. log₁₀100 = ?
+    A) 10
+    B) 2
+    C) 100
+    D) 1
+    Javob: B
+
+21. ln e = ?
+    A) 0
+    B) 1
+    C) e
+    D) 2.718
+    Javob: B
+
+22. log_a(xy) = ?
+    A) log_a(x) · log_a(y)
+    B) log_a(x) + log_a(y)
+    C) log_a(x) - log_a(y)
+    D) log_a(x) / log_a(y)
+    Javob: B
+
+23. log_a(x/y) = ?
+    A) log_a(x) + log_a(y)
+    B) log_a(x) - log_a(y)
+    C) log_a(x) · log_a(y)
+    D) log_a(x) / log_a(y)
+    Javob: B
+
+24. log_a(x^n) = ?
+    A) n + log_a(x)
+    B) n · log_a(x)
+    C) log_a(x)^n
+    D) log_a(n) · x
+    Javob: B
+
+25. sin 30° = ?
+    A) 1
+    B) 1/2
+    C) √3/2
+    D) √2/2
+    Javob: B
+
+26. cos 60° = ?
+    A) √3/2
+    B) 1/2
+    C) 1
+    D) 0
+    Javob: B
+
+27. tan 45° = ?
+    A) 0
+    B) 1
+    C) √3
+    D) 1/√3
+    Javob: B
+
+28. sin 90° = ?
+    A) 0
+    B) 1
+    C) -1
+    D) 1/2
+    Javob: B
+
+29. cos 0° = ?
+    A) 0
+    B) 1
+    C) -1
+    D) 1/2
+    Javob: B
+
+30. sin²α + cos²α = ?
+    A) 0
+    B) 1
+    C) 2
+    D) sin α
+    Javob: B
+
+31. sin(-α) = ?
+    A) sin α
+    B) -sin α
+    C) cos α
+    D) -cos α
+    Javob: B
+
+32. cos(-α) = ?
+    A) -cos α
+    B) cos α
+    C) sin α
+    D) -sin α
+    Javob: B
+
+33. tan α = ?
+    A) cos α / sin α
+    B) sin α / cos α
+    C) sin α · cos α
+    D) sin α + cos α
+    Javob: B
+
+34. cot α = ?
+    A) sin α / cos α
+    B) cos α / sin α
+    C) 1 / sin α
+    D) 1 / cos α
+    Javob: B
+
+35. sin(α + β) = ?
+    A) sin α + sin β
+    B) sin α cos β + cos α sin β
+    C) sin α cos β - cos α sin β
+    D) sin α sin β + cos α cos β
+    Javob: B
+
+36. cos(α + β) = ?
+    A) cos α cos β + sin α sin β
+    B) cos α cos β - sin α sin β
+    C) cos α + cos β
+    D) cos α cos β
+    Javob: B
+
+37. sin 2α = ?
+    A) 2 sin α
+    B) 2 sin α cos α
+    C) sin²α + cos²α
+    D) 2 cos²α
+    Javob: B
+
+38. cos 2α = ? (bir variant)
+    A) 2 cos α
+    B) cos²α - sin²α
+    C) sin²α + cos²α
+    D) 2 sin α cos α
+    Javob: B
+
+39. 180° necha radian?
+    A) 2π
+    B) π
+    C) π/2
+    D) π/4
+    Javob: B
+
+40. 90° necha radian?
+    A) π
+    B) π/2
+    C) π/4
+    D) 2π
+    Javob: B
+
+41. π/6 radian necha gradus?
+    A) 45°
+    B) 30°
+    C) 60°
+    D) 90°
+    Javob: B
+
+42. Sinuslar teoremasi: a/sin A = ?
+    A) b/sin B = c/sin C = R
+    B) b/sin B = c/sin C = 2R
+    C) b/sin A = c/sin B
+    D) b·sin B = c·sin C
+    Javob: B
+
+43. Kosinuslar teoremasi: a² = ?
+    A) b² + c² - bc cos A
+    B) b² + c² - 2bc cos A
+    C) b² + c² + 2bc cos A
+    D) b² - c² - 2bc cos A
+    Javob: B
+
+44. Uchburchak yuzi formulasi (ikki tomon va ular orasidagi burchak):
+    A) a·b·sin C
+    B) (1/2)·a·b·sin C
+    C) a·b·cos C
+    D) (1/2)·a·b·cos C
+    Javob: B
+
+45. Arifmetik progressiyaning n-hadini topish formulasi:
+    A) a₁ + nd
+    B) a₁ + (n-1)d
+    C) a₁ · d^(n-1)
+    D) a₁ · (n-1)d
+    Javob: B
+
+46. Arifmetik progressiya yig'indisi formulasi:
+    A) n(a₁ + aₙ)
+    B) n(a₁ + aₙ)/2
+    C) (a₁ + aₙ)/n
+    D) n·a₁·aₙ
+    Javob: B
+
+47. Geometrik progressiyaning n-hadini topish formulasi:
+    A) b₁ + (n-1)q
+    B) b₁ · q^(n-1)
+    C) b₁ · q^n
+    D) b₁ · (n-1)q
+    Javob: B
+
+48. Cheksiz kamayuvchi geometrik progressiya yig'indisi (|q| < 1):
+    A) b₁/(1 + q)
+    B) b₁/(1 - q)
+    C) b₁·q/(1 - q)
+    D) b₁/(q - 1)
+    Javob: B
+
+49. 3, 7, 11, 15, ... progressiyaning 10-hadi:
+    A) 35
+    B) 39
+    C) 43
+    D) 31
+    Javob: B
+
+50. 2, 6, 18, 54, ... progressiyaning 5-hadi:
+    A) 108
+    B) 162
+    C) 324
+    D) 486
+    Javob: B
+
+51. C(n,k) kombinatsiyalar formulasi:
+    A) n!/(n-k)!
+    B) n!/[k!(n-k)!]
+    C) n!/k!
+    D) k!/(n-k)!
+    Javob: B
+
+52. A(n,k) o'rinlashtirish formulasi:
+    A) n!/[k!(n-k)!]
+    B) n!/(n-k)!
+    C) n!/k!
+    D) (n-k)!/n!
+    Javob: B
+
+53. C(5,2) = ?
+    A) 20
+    B) 10
+    C) 5
+    D) 25
+    Javob: B
+
+54. A(4,2) = ?
+    A) 6
+    B) 12
+    C) 24
+    D) 8
+    Javob: B
+
+55. (a + b)³ = ?
+    A) a³ + b³
+    B) a³ + 3a²b + 3ab² + b³
+    C) a³ + 3ab + b³
+    D) a³ - 3a²b + 3ab² - b³
+    Javob: B
+
+56. a³ + b³ = ?
+    A) (a + b)³
+    B) (a + b)(a² - ab + b²)
+    C) (a - b)(a² + ab + b²)
+    D) (a + b)(a² + ab + b²)
+    Javob: B
+
+57. a³ - b³ = ?
+    A) (a + b)(a² - ab + b²)
+    B) (a - b)(a² + ab + b²)
+    C) (a - b)³
+    D) (a - b)(a² - ab + b²)
+    Javob: B
+
+58. y = x² parabolaning uchi qayerda?
+    A) (1, 0)
+    B) (0, 0)
+    C) (0, 1)
+    D) (-1, 0)
+    Javob: B
+
+59. y = (x - 2)² + 3 parabolaning uchi:
+    A) (2, -3)
+    B) (2, 3)
+    C) (-2, 3)
+    D) (3, 2)
+    Javob: B
+
+60. y = ax² + bx + c parabolaning uchi koordinatasi (x):
+    A) -b/a
+    B) -b/(2a)
+    C) b/(2a)
+    D) -2b/a
+    Javob: B
+
+61. y = 2x² - 4x + 1 funksiyaning minimumi:
+    A) x = 2
+    B) x = 1
+    C) x = -1
+    D) x = 0
+    Javob: B
+
+62. x² - 4x + 3 < 0 tengsizlikni yeching:
+    A) x < 1 yoki x > 3
+    B) 1 < x < 3
+    C) x < 3
+    D) x > 1
+    Javob: B
+
+63. x² + 2x - 8 > 0 tengsizlikni yeching:
+    A) -4 < x < 2
+    B) x < -4 yoki x > 2
+    C) x > 2
+    D) x < -4
+    Javob: B
+
+64. |x - 2| < 3 tengsizlikni yeching:
+    A) x < 5
+    B) -1 < x < 5
+    C) x > -1
+    D) -1 < x < 3
+    Javob: B
+
+65. |x + 1| > 2 tengsizlikni yeching:
+    A) -3 < x < 1
+    B) x < -3 yoki x > 1
+    C) x > 1
+    D) x < -3
+    Javob: B
+
+66. Tenglamalar sistemasi: x + y = 5, x - y = 1. x = ?
+    A) 2
+    B) 3
+    C) 4
+    D) 1
+    Javob: B
+
+67. Tenglamalar sistemasi: 2x + 3y = 12, x - y = 1. y = ?
+    A) 3
+    B) 2
+    C) 4
+    D) 1
+    Javob: B
+
+68. Vektor a = (3, 4) uzunligi |a| = ?
+    A) 7
+    B) 5
+    C) 12
+    D) 25
+    Javob: B
+
+69. a = (2, 3) va b = (4, 1) vektorlar yig'indisi a + b = ?
+    A) (6, 2)
+    B) (6, 4)
+    C) (8, 3)
+    D) (2, 4)
+    Javob: B
+
+70. a = (3, 2) va b = (1, 4) vektorlar skalyar ko'paytmasi a·b = ?
+    A) 14
+    B) 11
+    C) 10
+    D) 8
+    Javob: B
+
+71. Ikki vektor perpendicular bo'lsa, ularning skalyar ko'paytmasi:
+    A) 1
+    B) 0
+    C) -1
+    D) ∞
+    Javob: B
+
+72. 3a vektor (a = (2, -1)) koordinatalari:
+    A) (5, 2)
+    B) (6, -3)
+    C) (6, 3)
+    D) (2, -3)
+    Javob: B
+
+73. To'g'ri chiziq tenglamasi: y - y₁ = k(x - x₁) nima deyiladi?
+    A) Umumiy ko'rinish
+    B) Nuqta orqali o'tuvchi to'g'ri chiziq
+    C) Kesma ko'rinishi
+    D) Parametrik ko'rinish
+    Javob: B
+
+74. ax + by + c = 0 to'g'ri chiziqning burchak koeffitsienti:
+    A) -a/c
+    B) -a/b
+    C) -b/a
+    D) -c/b
+    Javob: B
+
+75. Parallel to'g'ri chiziqlar uchun k₁ va k₂ orasidagi munosabat:
+    A) k₁ · k₂ = -1
+    B) k₁ = k₂
+    C) k₁ + k₂ = 0
+    D) k₁ · k₂ = 1
+    Javob: B
+
+76. Perpendicular to'g'ri chiziqlar uchun k₁ va k₂:
+    A) k₁ = k₂
+    B) k₁ · k₂ = -1
+    C) k₁ + k₂ = 0
+    D) k₁ · k₂ = 1
+    Javob: B
+
+77. Aylana tenglamasi (markaz (a,b), radius r):
+    A) (x - a)² + (y - b)² = r
+    B) (x - a)² + (y - b)² = r²
+    C) (x + a)² + (y + b)² = r²
+    D) x² + y² = r²
+    Javob: B
+
+78. x² + y² = 25 aylana radiusi:
+    A) 25
+    B) 5
+    C) 625
+    D) 12.5
+    Javob: B
+
+79. (x - 2)² + (y + 3)² = 16 aylana markazi:
+    A) (-2, 3)
+    B) (2, -3)
+    C) (2, 3)
+    D) (-2, -3)
+    Javob: B
+
+80. Ellips tenglamasining standart ko'rinishi:
+    A) x²/a + y²/b = 1
+    B) x²/a² + y²/b² = 1
+    C) x²/a² - y²/b² = 1
+    D) (x-a)² + (y-b)² = r²
+    Javob: B
+
+81. Giperbola tenglamasining standart ko'rinishi:
+    A) x²/a² + y²/b² = 1
+    B) x²/a² - y²/b² = 1
+    C) y = a/x
+    D) y = ax²
+    Javob: B
+
+82. y = sin x funksiyaning davri:
+    A) π
+    B) 2π
+    C) π/2
+    D) 4π
+    Javob: B
+
+83. y = cos x funksiyaning davri:
+    A) π
+    B) 2π
+    C) π/2
+    D) 4π
+    Javob: B
+
+84. y = tan x funksiyaning davri:
+    A) 2π
+    B) π
+    C) π/2
+    D) π/4
+    Javob: B
+
+85. y = sin 2x funksiyaning davri:
+    A) 2π
+    B) π
+    C) π/2
+    D) 4π
+    Javob: B
+
+86. y = 3sin x funksiyaning amplitudasi:
+    A) 1
+    B) 3
+    C) 6
+    D) 1/3
+    Javob: B
+
+87. arcsin(1/2) = ?
+    A) 60°
+    B) 30°
+    C) 45°
+    D) 90°
+    Javob: B
+
+88. arccos(0) = ?
+    A) 0°
+    B) 90°
+    C) 180°
+    D) 45°
+    Javob: B
+
+89. arctan(1) = ?
+    A) 30°
+    B) 45°
+    C) 60°
+    D) 90°
+    Javob: B
+
+90. 2sin x - 1 = 0 tenglamani yeching [0°, 360°]:
+    A) 30°, 120°
+    B) 30°, 150°
+    C) 60°, 120°
+    D) 45°, 135°
+    Javob: B
+
+91. cos x = √3/2 tenglamani yeching [0°, 360°]:
+    A) 30°, 150°
+    B) 30°, 330°
+    C) 60°, 300°
+    D) 60°, 120°
+    Javob: B
+
+92. Kompleks son z = 3 + 4i moduli |z| = ?
+    A) 7
+    B) 5
+    C) 12
+    D) 25
+    Javob: B
+
+93. (2 + 3i) + (4 - i) = ?
+    A) 6 + 4i
+    B) 6 + 2i
+    C) 2 + 2i
+    D) 6 - 2i
+    Javob: B
+
+94. (1 + i)(1 - i) = ?
+    A) 0
+    B) 2
+    C) 2i
+    D) 1
+    Javob: B
+
+95. i² = ?
+    A) 1
+    B) -1
+    C) i
+    D) -i
+    Javob: B
+
+96. i⁴ = ?
+    A) -1
+    B) 1
+    C) i
+    D) -i
+    Javob: B
+
+97. Matritsalar ko'paytmasida A(m×n) · B(n×k) natija o'lchami:
+    A) n × n
+    B) m × k
+    C) m × n
+    D) n × k
+    Javob: B
+
+98. 2×2 matritsa determinanti |a b; c d| = ?
+    A) ac - bd
+    B) ad - bc
+    C) ab - cd
+    D) ad + bc
+    Javob: B
+
+99. Birlik matritsa I(2×2):
+    A) [0 0; 0 0]
+    B) [1 0; 0 1]
+    C) [1 1; 1 1]
+    D) [0 1; 1 0]
+    Javob: B
+
+100. A·A⁻¹ = ? (A⁻¹ teskari matritsa)
+     A) 0
+     B) I (birlik matritsa)
+     C) A
+     D) A²
+     Javob: B
+
+======================================================
+                      YAKUNLANDI
+======================================================

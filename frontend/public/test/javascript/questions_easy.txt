@@ -1,0 +1,148 @@
+===============================================
+JAVASCRIPT - EASY SAVOLLARI
+===============================================
+
+SAVOL 1: JavaScript koda comment qanday yoziladi?
+A) # comment
+B) -- comment
+C) // comment
+D) <!-- comment -->
+JAVOB: C
+
+SAVOL 2: var, let, const o'rtasida farq nima?
+A) Farqi yo'q
+B) var global, let-const block scope
+C) var function scope, let-const block scope
+D) Barcha to'g'ri
+JAVOB: D
+
+SAVOL 3: Array nima?
+A) String
+B) Raqamlar to'plami [1,2,3]
+C) Object
+D) Funksiya
+JAVOB: B
+
+SAVOL 4: Object nima?
+A) Array
+B) Key-value {} orqali yoziladi
+C) String
+D) Raqam
+JAVOB: B
+
+SAVOL 5: Function qanday e'lon qilinadi?
+A) function myFunc(){}
+B) def myFunc()
+C) func myFunc
+D) method myFunc
+JAVOB: A
+
+SAVOL 6: Arrow function nima?
+A) Ordinary function
+B) () => {} sintaksisi
+C) Loop
+D) Object
+JAVOB: B
+
+SAVOL 7: .push() method nima?
+A) Birinchi element qo'shish
+B) Element oxirga qo'shish
+C) Element o'chirish
+D) Array sortirlash
+JAVOB: B
+
+SAVOL 8: .pop() method nima?
+A) Birinchi element o'chirish
+B) Oxirgi element o'chirish
+C) Birinchi element olish
+D) Oxirgi element olish
+JAVOB: B
+
+SAVOL 9: .shift() method nima?
+A) Birinchi element o'chirish
+B) Oxirgi element o'chirish
+C) Array shift qilish
+D) Array o'chirish
+JAVOB: A
+
+SAVOL 10: .unshift() method nima?
+A) Oxirga element qo'shish
+B) Birinchiga element qo'shish
+C) Element o'chirish
+D) Array sortirlash
+JAVOB: B
+
+SAVOL 11: .slice() method nima?
+A) Array bo'lish
+B) Array qismini olish
+C) Array o'zgartiradigan
+D) Array tekshirish
+JAVOB: B
+
+SAVOL 12: .join() method nima?
+A) Array bo'lish
+B) Array elementlarni stringga birlashtiradigan
+C) Array sortirlash
+D) Array tekshirish
+JAVOB: B
+
+SAVOL 13: .split() method nima?
+A) String birlashtirish
+B) String bo'lish (array qilish)
+C) String o'zgartirish
+D) String tekshirish
+JAVOB: B
+
+SAVOL 14: .includes() method nima?
+A) Element mavjudmi tekshirish
+B) Element sonini hisoblash
+C) Element topish
+D) Element o'chirish
+JAVOB: A
+
+SAVOL 15: .indexOf() method nima?
+A) Element mavjudmi tekshirish
+B) Element indexi qaytaradi
+C) Element topish
+D) Element o'chirish
+JAVOB: B
+
+SAVOL 16: typeof operator nima?
+A) Variable o'chirish
+B) Data type tekshirish
+C) Variable qaytarish
+D) Variable yaratish
+JAVOB: B
+
+SAVOL 17: instanceof operator nima?
+A) Object create
+B) Object type tekshirish
+C) Object copy
+D) Object delete
+JAVOB: B
+
+SAVOL 18: Ternary operator nima?
+A) if-else short
+B) Loop
+C) Function
+D) Object
+JAVOB: A
+
+SAVOL 19: JSON.stringify() nima?
+A) JSON parse qiladi
+B) Object-ni JSON stringga o'zgartiradi
+C) Stringni JSON qiladi
+D) JSON tekshiradi
+JAVOB: B
+
+SAVOL 20: JSON.parse() nima?
+A) JSON stringify qiladi
+B) String-ni JSON object qiladi
+C) JSON create qiladi
+D) JSON delete qiladi
+JAVOB: B
+
+===============================================
+EASY SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: OSONGINA
+===============================================

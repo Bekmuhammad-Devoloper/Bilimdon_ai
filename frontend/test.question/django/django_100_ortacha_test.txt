@@ -1,0 +1,706 @@
+DJANGO FRAMEWORK - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+=============================================================
+
+1. QuerySet lazy evaluation nima degani?
+   A) Xato qiladi
+   B) So'rov faqat kerak bo'lganda bajariladi
+   C) Darhol bajariladi
+   D) Hech qachon bajarilmaydi
+   Javob: B
+
+2. select_related() nima uchun ishlatiladi?
+   A) Filtrlash
+   B) ForeignKey va OneToOne uchun JOIN qilish (N+1 muammosini hal qilish)
+   C) Saralash
+   D) Limitlash
+   Javob: B
+
+3. prefetch_related() select_related() dan farqi?
+   A) Farqi yo'q
+   B) ManyToMany va reverse ForeignKey uchun alohida so'rovlar
+   C) Tezroq ishlaydi
+   D) Sekinroq ishlaydi
+   Javob: B
+
+4. QuerySet da annotate() nima qiladi?
+   A) Filtrlaydi
+   B) Har bir obyektga hisoblangan qiymat qo'shadi
+   C) Guruhlab beradi
+   D) Saralaydi
+   Javob: B
+
+5. aggregate() va annotate() farqi?
+   A) Farqi yo'q
+   B) aggregate() butun QuerySet uchun, annotate() har bir obyekt uchun
+   C) annotate() butun QuerySet uchun
+   D) aggregate() har bir obyekt uchun
+   Javob: B
+
+6. Q object nima uchun ishlatiladi?
+   A) QuerySet yaratish
+   B) Murakkab OR, AND, NOT so'rovlar uchun
+   C) Model yaratish
+   D) View yaratish
+   Javob: B
+
+7. F object nima uchun?
+   A) Filtrlash
+   B) Database darajasida field qiymatlariga murojaat
+   C) Form yaratish
+   D) File yuklash
+   Javob: B
+
+8. QuerySet.values() nima qaytaradi?
+   A) Model obyektlari
+   B) Dictionary ro'yxati
+   C) Tuple ro'yxati
+   D) List
+   Javob: B
+
+9. QuerySet.values_list() flat=True bilan nima qaytaradi?
+   A) Dictionary
+   B) Bitta maydon qiymatlari ro'yxati
+   C) Tuple ro'yxati
+   D) Model obyektlari
+   Javob: B
+
+10. distinct() metodi nima qiladi?
+    A) Saralaydi
+    B) Dublikatlarni olib tashlaydi
+    C) Filtrlaydi
+    D) Limitlaydi
+    Javob: B
+
+11. exclude() va filter() farqi?
+    A) Farqi yo'q
+    B) exclude() shartga mos KELMAYDIGANlarni qaytaradi
+    C) filter() shartga mos kelmaydigan
+    D) exclude() tezroq
+    Javob: B
+
+12. order_by('-created_at') nima qiladi?
+    A) O'sish tartibida
+    B) Kamayish tartibida saralaydi
+    C) Tasodifiy
+    D) Alifbo tartibida
+    Javob: B
+
+13. first() va last() metodlari?
+    A) QuerySet qaytaradi
+    B) Birinchi va oxirgi obyektni qaytaradi
+    C) Xato qaytaradi
+    D) Boolean qaytaradi
+    Javob: B
+
+14. exists() metodi nima qaytaradi?
+    A) QuerySet
+    B) Boolean (mavjud yoki yo'q)
+    C) Count
+    D) Obyekt
+    Javob: B
+
+15. count() va len() farqi QuerySet da?
+    A) Farqi yo'q
+    B) count() SQL COUNT ishlatadi, len() barcha obyektlarni yuklaydi
+    C) len() tezroq
+    D) count() sekinroq
+    Javob: B
+
+16. update() metodi nima qiladi?
+    A) Bitta obyektni yangilaydi
+    B) QuerySet dagi barcha obyektlarni bir so'rovda yangilaydi
+    C) Yangi obyekt yaratadi
+    D) O'chiradi
+    Javob: B
+
+17. bulk_create() nima uchun?
+    A) Bitta obyekt yaratish
+    B) Ko'p obyektlarni bir so'rovda yaratish
+    C) Yangilash
+    D) O'chirish
+    Javob: B
+
+18. bulk_update() (Django 2.2+) nima qiladi?
+    A) Bitta obyektni yangilaydi
+    B) Ko'p obyektlarni bir so'rovda yangilaydi
+    C) Yaratadi
+    D) O'chiradi
+    Javob: B
+
+19. get_or_create() nima qaytaradi?
+    A) Faqat obyekt
+    B) (obyekt, created_boolean) tuple
+    C) Boolean
+    D) QuerySet
+    Javob: B
+
+20. update_or_create() nima qiladi?
+    A) Faqat yangilaydi
+    B) Mavjud bo'lsa yangilaydi, yo'q bo'lsa yaratadi
+    C) Faqat yaratadi
+    D) O'chiradi
+    Javob: B
+
+21. Django da transaction.atomic() nima uchun?
+    A) Tezlashtirish
+    B) Bir necha operatsiyani atomik qilish (hammasi yoki hech biri)
+    C) Sekinlashtirish
+    D) Keshlash
+    Javob: B
+
+22. on_delete=models.CASCADE nima qiladi?
+    A) Hech narsa
+    B) Bog'langan obyekt o'chirilganda bu ham o'chiriladi
+    C) Xato qaytaradi
+    D) NULL qo'yadi
+    Javob: B
+
+23. on_delete=models.PROTECT nima qiladi?
+    A) O'chirishga ruxsat
+    B) Bog'langan obyektlar bor bo'lsa o'chirishni taqiqlaydi
+    C) NULL qo'yadi
+    D) Default qo'yadi
+    Javob: B
+
+24. on_delete=models.SET_NULL nima qiladi?
+    A) O'chiradi
+    B) Bog'lanishni NULL ga o'rnatadi
+    C) Xato qaytaradi
+    D) Default qo'yadi
+    Javob: B
+
+25. related_name ForeignKey da nima uchun?
+    A) Maydon nomi
+    B) Teskari bog'lanish nomi (reverse relation)
+    C) Database nomi
+    D) Table nomi
+    Javob: B
+
+26. Django signal nima?
+    A) HTTP signal
+    B) Event-driven communication mexanizmi
+    C) Error handling
+    D) Logging
+    Javob: B
+
+27. pre_save signal qachon chaqiriladi?
+    A) Saqlangandan keyin
+    B) Saqlashdan oldin
+    C) O'chirilganda
+    D) Yaratilganda faqat
+    Javob: B
+
+28. post_save signal qachon chaqiriladi?
+    A) Saqlashdan oldin
+    B) Saqlangandan keyin
+    C) O'chirilganda
+    D) Yangilanganda faqat
+    Javob: B
+
+29. post_delete signal qachon ishga tushadi?
+    A) O'chirishdan oldin
+    B) O'chirilgandan keyin
+    C) Saqlanganda
+    D) Yangilanganda
+    Javob: B
+
+30. @receiver decorator nima uchun?
+    A) View yaratish
+    B) Signal handler ro'yxatga olish
+    C) URL yaratish
+    D) Model yaratish
+    Javob: B
+
+31. Django Middleware nima?
+    A) Model
+    B) Request/response o'rtasidagi qayta ishlovchi qatlam
+    C) View
+    D) Template
+    Javob: B
+
+32. Middleware da process_request nima qiladi?
+    A) Javobni qayta ishlaydi
+    B) So'rovni view ga yetguncha qayta ishlaydi
+    C) Xatoni qayta ishlaydi
+    D) Template qayta ishlaydi
+    Javob: B
+
+33. Middleware da process_response nima qiladi?
+    A) So'rovni qayta ishlaydi
+    B) Javobni foydalanuvchiga yuborishdan oldin qayta ishlaydi
+    C) View chaqiradi
+    D) Template render qiladi
+    Javob: B
+
+34. Custom middleware yaratish uchun qanday metod kerak?
+    A) __init__ faqat
+    B) __init__ va __call__
+    C) process faqat
+    D) handle faqat
+    Javob: B
+
+35. SessionMiddleware nima qiladi?
+    A) Auth boshqaradi
+    B) Session boshqaruvini ta'minlaydi
+    C) CSRF tekshiradi
+    D) Statik fayl beradi
+    Javob: B
+
+36. CsrfViewMiddleware nima uchun?
+    A) Session uchun
+    B) CSRF hujumlardan himoya
+    C) Auth uchun
+    D) Logging uchun
+    Javob: B
+
+37. Class-Based View (CBV) nima?
+    A) Funksiya
+    B) Sinf asosidagi view
+    C) Template
+    D) Model
+    Javob: B
+
+38. ListView nima uchun ishlatiladi?
+    A) Bitta obyekt ko'rsatish
+    B) Obyektlar ro'yxatini ko'rsatish
+    C) Forma ko'rsatish
+    D) O'chirish
+    Javob: B
+
+39. DetailView nima uchun?
+    A) Ro'yxat ko'rsatish
+    B) Bitta obyekt tafsilotlarini ko'rsatish
+    C) Yaratish formasi
+    D) O'chirish
+    Javob: B
+
+40. CreateView nima uchun?
+    A) Ro'yxat ko'rsatish
+    B) Yangi obyekt yaratish formasi
+    C) Tahrirlash
+    D) O'chirish
+    Javob: B
+
+41. UpdateView nima uchun?
+    A) Yaratish
+    B) Mavjud obyektni tahrirlash
+    C) O'chirish
+    D) Ro'yxat ko'rsatish
+    Javob: B
+
+42. DeleteView nima uchun?
+    A) Yaratish
+    B) Obyektni o'chirish
+    C) Tahrirlash
+    D) Ro'yxat
+    Javob: B
+
+43. CBV da model attribute nima?
+    A) View nomi
+    B) Ishlatiladigan model sinfi
+    C) Template nomi
+    D) URL nomi
+    Javob: B
+
+44. CBV da template_name nima?
+    A) Model nomi
+    B) Ishlatiladigan template fayl nomi
+    C) URL nomi
+    D) View nomi
+    Javob: B
+
+45. CBV da context_object_name nima?
+    A) Model nomi
+    B) Template dagi obyekt nomi
+    C) URL nomi
+    D) View nomi
+    Javob: B
+
+46. get_queryset() metodi CBV da nima qiladi?
+    A) Template qaytaradi
+    B) Ko'rsatiladigan obyektlar to'plamini qaytaradi
+    C) URL qaytaradi
+    D) Context qaytaradi
+    Javob: B
+
+47. get_context_data() metodi nima qiladi?
+    A) QuerySet qaytaradi
+    B) Template ga uzatiladigan context ni shakllantiradi
+    C) URL qaytaradi
+    D) Form qaytaradi
+    Javob: B
+
+48. success_url CBV da nima?
+    A) Xato URL
+    B) Muvaffaqiyatli operatsiyadan keyin redirect URL
+    C) Template URL
+    D) Static URL
+    Javob: B
+
+49. get_success_url() metodi nima uchun?
+    A) Static URL
+    B) Dinamik success URL yaratish
+    C) Template URL
+    D) Error URL
+    Javob: B
+
+50. LoginRequiredMixin nima qiladi?
+    A) Logout qiladi
+    B) Faqat login qilgan foydalanuvchilarga ruxsat beradi
+    C) Admin tekshiradi
+    D) Staff tekshiradi
+    Javob: B
+
+51. PermissionRequiredMixin nima uchun?
+    A) Login tekshiradi
+    B) Maxsus permission tekshiradi
+    C) Admin tekshiradi
+    D) Superuser tekshiradi
+    Javob: B
+
+52. UserPassesTestMixin nima qiladi?
+    A) Login tekshiradi
+    B) Custom test funksiyasi orqali ruxsat beradi
+    C) Permission tekshiradi
+    D) Admin tekshiradi
+    Javob: B
+
+53. Django da custom user model yaratish uchun qaysi sinfdan meros olish kerak?
+    A) User
+    B) AbstractUser yoki AbstractBaseUser
+    C) Model
+    D) Form
+    Javob: B
+
+54. AUTH_USER_MODEL sozlamasi nima uchun?
+    A) Admin sozlash
+    B) Custom user model ni belgilash
+    C) Auth URL
+    D) Login URL
+    Javob: B
+
+55. Django REST Framework (DRF) nima uchun?
+    A) Template yaratish
+    B) RESTful API yaratish
+    C) Admin panel
+    D) Form yaratish
+    Javob: B
+
+56. DRF da Serializer nima qiladi?
+    A) Model yaratadi
+    B) Ma'lumotlarni serialize/deserialize qiladi
+    C) View yaratadi
+    D) URL yaratadi
+    Javob: B
+
+57. ModelSerializer nima?
+    A) Oddiy serializer
+    B) Modelga asoslangan avtomatik serializer
+    C) View
+    D) Form
+    Javob: B
+
+58. DRF da APIView nima?
+    A) Template view
+    B) API endpointlar uchun class-based view
+    C) Form view
+    D) Model view
+    Javob: B
+
+59. @api_view decorator nima uchun?
+    A) Template view
+    B) Function-based API view yaratish
+    C) Model yaratish
+    D) URL yaratish
+    Javob: B
+
+60. DRF da ViewSet nima?
+    A) Bitta action
+    B) CRUD operatsiyalarni birlashtirgan view
+    C) Template
+    D) Serializer
+    Javob: B
+
+61. DRF da Router nima qiladi?
+    A) View yaratadi
+    B) ViewSet uchun avtomatik URL yaratadi
+    C) Serializer yaratadi
+    D) Model yaratadi
+    Javob: B
+
+62. DRF da permission_classes nima?
+    A) Serializer klasslari
+    B) Ruxsat tekshirish klasslari
+    C) View klasslari
+    D) Model klasslari
+    Javob: B
+
+63. IsAuthenticated permission nima tekshiradi?
+    A) Admin
+    B) Foydalanuvchi login qilganligini
+    C) Staff
+    D) Superuser
+    Javob: B
+
+64. IsAdminUser permission nima tekshiradi?
+    A) Login
+    B) Foydalanuvchi admin/staff ekanligini
+    C) Superuser faqat
+    D) Permission
+    Javob: B
+
+65. DRF da authentication_classes nima?
+    A) Permission
+    B) Autentifikatsiya usullari
+    C) Serializer
+    D) View
+    Javob: B
+
+66. TokenAuthentication nima?
+    A) Session auth
+    B) Token asosida autentifikatsiya
+    C) Basic auth
+    D) OAuth
+    Javob: B
+
+67. Django da cache framework qaysi modulda?
+    A) django.db
+    B) django.core.cache
+    C) django.cache
+    D) django.utils.cache
+    Javob: B
+
+68. cache.set() nima qiladi?
+    A) O'chiradi
+    B) Qiymatni cache ga saqlaydi
+    C) O'qiydi
+    D) Tekshiradi
+    Javob: B
+
+69. cache.get() nima qiladi?
+    A) Saqlaydi
+    B) Cache dan qiymat oladi
+    C) O'chiradi
+    D) Yangilaydi
+    Javob: B
+
+70. @cache_page decorator nima qiladi?
+    A) Model keshlaydi
+    B) View natijasini keshlaydi
+    C) Form keshlaydi
+    D) URL keshlaydi
+    Javob: B
+
+71. Django da Celery nima uchun ishlatiladi?
+    A) Database
+    B) Asinxron task va background job uchun
+    C) Template
+    D) Form
+    Javob: B
+
+72. @shared_task decorator nima uchun?
+    A) View yaratish
+    B) Celery task yaratish
+    C) Model yaratish
+    D) URL yaratish
+    Javob: B
+
+73. Django da custom management command qayerda yaratiladi?
+    A) views.py
+    B) management/commands/ papkasida
+    C) models.py
+    D) urls.py
+    Javob: B
+
+74. BaseCommand dan meros olib nima yaratamiz?
+    A) View
+    B) Custom manage.py buyrug'i
+    C) Model
+    D) Form
+    Javob: B
+
+75. handle() metodi custom command da nima qiladi?
+    A) URL handle qiladi
+    B) Buyruq bajarilganda ishlaydigan asosiy logika
+    C) View handle qiladi
+    D) Form handle qiladi
+    Javob: B
+
+76. Django da fixture nima?
+    A) View
+    B) Oldindan tayyor ma'lumotlar (test/initial data uchun)
+    C) URL
+    D) Form
+    Javob: B
+
+77. loaddata buyrug'i nima qiladi?
+    A) Ma'lumot o'chiradi
+    B) Fixture dan ma'lumot yuklaydi
+    C) Ma'lumot eksport qiladi
+    D) Migratsiya qiladi
+    Javob: B
+
+78. dumpdata buyrug'i nima qiladi?
+    A) Ma'lumot yuklaydi
+    B) Ma'lumotlarni JSON/XML formatda eksport qiladi
+    C) Ma'lumot o'chiradi
+    D) Migratsiya yaratadi
+    Javob: B
+
+79. Django da ContentType nima?
+    A) Template turi
+    B) Generic foreign key uchun model turini saqlash
+    C) Media turi
+    D) File turi
+    Javob: B
+
+80. GenericForeignKey nima uchun?
+    A) Oddiy FK
+    B) Har qanday modelga bog'lanish
+    C) ManyToMany
+    D) OneToOne
+    Javob: B
+
+81. Django da select_for_update() nima qiladi?
+    A) Yangilaydi
+    B) Row-level lock qo'yadi (concurrent access uchun)
+    C) O'chiradi
+    D) Yaratadi
+    Javob: B
+
+82. only() metodi QuerySet da nima qiladi?
+    A) Barcha maydonlar
+    B) Faqat belgilangan maydonlarni yuklaydi
+    C) Maydonlarni o'chiradi
+    D) Maydon qo'shadi
+    Javob: B
+
+83. defer() metodi nima qiladi?
+    A) Barcha maydonlar yuklaydi
+    B) Belgilangan maydonlarni keyinga qoldiradi
+    C) Maydon yaratadi
+    D) Maydon o'chiradi
+    Javob: B
+
+84. raw() metodi nima uchun?
+    A) Oddiy QuerySet
+    B) Xom SQL so'rov bajarish
+    C) Model yaratish
+    D) Migratsiya
+    Javob: B
+
+85. extra() metodi (deprecated) o'rniga nima ishlatiladi?
+    A) raw()
+    B) annotate() va F/Q objects
+    C) filter()
+    D) exclude()
+    Javob: B
+
+86. Django da index yaratish uchun Meta classda nima yoziladi?
+    A) unique
+    B) indexes = [models.Index(fields=[...])]
+    C) primary_key
+    D) ordering
+    Javob: B
+
+87. unique_together (legacy) o'rniga nima ishlatiladi?
+    A) index_together
+    B) UniqueConstraint
+    C) unique=True
+    D) primary_key
+    Javob: B
+
+88. CheckConstraint nima uchun?
+    A) Unique tekshirish
+    B) Database darajasida shart tekshirish
+    C) Foreign key
+    D) Index yaratish
+    Javob: B
+
+89. Django da custom validator qanday yaratiladi?
+    A) Class method
+    B) ValidationError otuvchi funksiya
+    C) Property
+    D) Decorator
+    Javob: B
+
+90. clean() metodi modelda nima uchun?
+    A) Ma'lumot o'chirish
+    B) Model darajasida validatsiya
+    C) Saqlash
+    D) O'qish
+    Javob: B
+
+91. full_clean() nima qiladi?
+    A) Faqat clean()
+    B) Barcha validatsiyalarni bajaradi (field + model)
+    C) Faqat field validatsiya
+    D) Saqlaydi
+    Javob: B
+
+92. save() metodida force_insert=True nima qiladi?
+    A) Yangilaydi
+    B) Faqat INSERT qilishga majburlaydi
+    C) O'chiradi
+    D) Hech narsa
+    Javob: B
+
+93. Django da Manager nima?
+    A) View
+    B) Model.objects ning sinfi, QuerySet metodlari
+    C) Form
+    D) Template
+    Javob: B
+
+94. Custom Manager qanday yaratiladi?
+    A) Model dan meros
+    B) models.Manager dan meros
+    C) View dan meros
+    D) Form dan meros
+    Javob: B
+
+95. get_queryset() custom Manager da nima uchun?
+    A) View qaytaradi
+    B) Default QuerySet ni override qilish
+    C) Form qaytaradi
+    D) URL qaytaradi
+    Javob: B
+
+96. Django da Proxy model nima?
+    A) Yangi table yaratadi
+    B) Mavjud model ustida yangi Python behavior (table o'zgarmaydi)
+    C) Abstract model
+    D) Concrete model
+    Javob: B
+
+97. Abstract model nima?
+    A) Database table yaratadi
+    B) Faqat meros uchun ishlatiladigan model (table yo'q)
+    C) Proxy model
+    D) Concrete model
+    Javob: B
+
+98. Multi-table inheritance nima?
+    A) Abstract meros
+    B) Har bir model uchun alohida table va avtomatik OneToOne
+    C) Proxy meros
+    D) Single table
+    Javob: B
+
+99. Django da reverse() funksiyasi nima qiladi?
+    A) String teskari
+    B) URL name dan URL yaratadi
+    C) QuerySet teskari
+    D) List teskari
+    Javob: B
+
+100. resolve() funksiyasi nima qiladi?
+     A) URL yaratadi
+     B) URL dan view funksiyasini topadi
+     C) Reverse qiladi
+     D) Redirect qiladi
+     Javob: B
+
+=============================================================
+                        YAKUNLANDI
+=============================================================

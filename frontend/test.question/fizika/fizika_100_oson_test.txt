@@ -1,0 +1,706 @@
+FIZIKA FANI - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+=====================================================
+
+1. Fizika nimani o'rganadi?
+   A) Tirik organizmlarni
+   B) Tabiat hodisalari va qonuniyatlarini
+   C) Kimyoviy reaksiyalarni
+   D) Yer qatlamlarini
+   Javob: B
+
+2. Xalqaro birliklar sistemasi (SI) da uzunlik birligi qaysi?
+   A) Fut
+   B) Metr
+   C) Yard
+   D) Dyuym
+   Javob: B
+
+3. SI da massa birligi qaysi?
+   A) Funt
+   B) Kilogramm
+   C) Gramma
+   D) Tonna
+   Javob: B
+
+4. SI da vaqt birligi qaysi?
+   A) Minut
+   B) Sekund
+   C) Soat
+   D) Kun
+   Javob: B
+
+5. Tezlik formulasi qaysi?
+   A) v = s × t
+   B) v = s / t
+   C) v = t / s
+   D) v = s + t
+   Javob: B
+
+6. Tezlikning SI dagi birligi qaysi?
+   A) km/soat
+   B) m/s
+   C) sm/s
+   D) m/min
+   Javob: B
+
+7. Tezlanish nima?
+   A) Yo'l
+   B) Tezlikning vaqt bo'yicha o'zgarishi
+   C) Massa
+   D) Kuch
+   Javob: B
+
+8. Erkin tushish tezlanishi (g) qancha?
+   A) 5 m/s²
+   B) 9,8 m/s² (≈10 m/s²)
+   C) 15 m/s²
+   D) 20 m/s²
+   Javob: B
+
+9. Kuch birligi qaysi?
+   A) Joul
+   B) Nyuton
+   C) Vatt
+   D) Paskal
+   Javob: B
+
+10. Nyutonning birinchi qonuni nima haqida?
+    A) Kuch haqida
+    B) Inersiya haqida
+    C) Energiya haqida
+    D) Massa haqida
+    Javob: B
+
+11. Nyutonning ikkinchi qonuni formulasi?
+    A) F = m + a
+    B) F = m × a
+    C) F = m / a
+    D) F = a / m
+    Javob: B
+
+12. Nyutonning uchinchi qonuni nimani bildiradi?
+    A) Inersiya
+    B) Ta'sir va aks ta'sir tengligini
+    C) Energiya saqlanishini
+    D) Impuls saqlanishini
+    Javob: B
+
+13. Og'irlik kuchi formulasi?
+    A) F = m + g
+    B) F = m × g
+    C) F = m / g
+    D) F = g / m
+    Javob: B
+
+14. Massa va og'irlik farqi nimada?
+    A) Farqi yo'q
+    B) Massa - modda miqdori, og'irlik - Yerning tortish kuchi
+    C) Og'irlik kattaroq
+    D) Massa kattaroq
+    Javob: B
+
+15. Ishqalanish kuchi qanday yo'nalgan?
+    A) Harakat yo'nalishida
+    B) Harakat yo'nalishiga qarama-qarshi
+    C) Yuqoriga
+    D) Pastga
+    Javob: B
+
+16. Zichlik formulasi qaysi?
+    A) ρ = m + V
+    B) ρ = m / V
+    C) ρ = V / m
+    D) ρ = m × V
+    Javob: B
+
+17. Zichlik birligi qaysi?
+    A) kg/m
+    B) kg/m³
+    C) m³/kg
+    D) kg×m
+    Javob: B
+
+18. Suvning zichligi qancha?
+    A) 500 kg/m³
+    B) 1000 kg/m³
+    C) 1500 kg/m³
+    D) 2000 kg/m³
+    Javob: B
+
+19. Bosim formulasi qaysi?
+    A) P = F + S
+    B) P = F / S
+    C) P = S / F
+    D) P = F × S
+    Javob: B
+
+20. Bosim birligi qaysi?
+    A) Nyuton
+    B) Paskal
+    C) Joul
+    D) Vatt
+    Javob: B
+
+21. Atmosfera bosimi qancha (normal sharoitda)?
+    A) 50000 Pa
+    B) 101325 Pa (≈100000 Pa)
+    C) 200000 Pa
+    D) 500000 Pa
+    Javob: B
+
+22. Arximed kuchi nima?
+    A) Og'irlik kuchi
+    B) Suyuqlik yoki gazda jismga ta'sir qiluvchi itarish kuchi
+    C) Ishqalanish kuchi
+    D) Elastiklik kuchi
+    Javob: B
+
+23. Jism qachon suzadi?
+    A) Og'irlik kuchi Arximed kuchidan katta
+    B) Arximed kuchi og'irlik kuchiga teng yoki katta
+    C) Jism og'ir bo'lganda
+    D) Jism kichik bo'lganda
+    Javob: B
+
+24. Ish formulasi qaysi?
+    A) A = F + s
+    B) A = F × s
+    C) A = F / s
+    D) A = s / F
+    Javob: B
+
+25. Ish birligi qaysi?
+    A) Nyuton
+    B) Joul
+    C) Vatt
+    D) Paskal
+    Javob: B
+
+26. Quvvat formulasi qaysi?
+    A) P = A + t
+    B) P = A / t
+    C) P = t / A
+    D) P = A × t
+    Javob: B
+
+27. Quvvat birligi qaysi?
+    A) Joul
+    B) Vatt
+    C) Nyuton
+    D) Paskal
+    Javob: B
+
+28. Kinetik energiya formulasi?
+    A) Ek = mv
+    B) Ek = mv² / 2
+    C) Ek = mv²
+    D) Ek = m / v²
+    Javob: B
+
+29. Potensial energiya (balandlikda) formulasi?
+    A) Ep = mg
+    B) Ep = mgh
+    C) Ep = gh
+    D) Ep = m/gh
+    Javob: B
+
+30. Energiya saqlanish qonuni nimani bildiradi?
+    A) Energiya yo'qoladi
+    B) Energiya yo'qolmaydi, faqat bir turdan boshqasiga aylanadi
+    C) Energiya ko'payadi
+    D) Energiya o'zgarmaydi
+    Javob: B
+
+31. Impuls formulasi qaysi?
+    A) p = m + v
+    B) p = m × v
+    C) p = m / v
+    D) p = v / m
+    Javob: B
+
+32. Temperatura nima?
+    A) Issiqlik miqdori
+    B) Jism molekulalarining o'rtacha kinetik energiyasi o'lchovi
+    C) Bosim
+    D) Hajm
+    Javob: B
+
+33. Selsiy shkalasida suvning qaynash temperaturasi?
+    A) 50°C
+    B) 100°C
+    C) 150°C
+    D) 200°C
+    Javob: B
+
+34. Selsiy shkalasida suvning muzlash temperaturasi?
+    A) -10°C
+    B) 0°C
+    C) 10°C
+    D) -20°C
+    Javob: B
+
+35. Mutlaq nol temperatura qancha?
+    A) 0°C
+    B) -273°C (0 K)
+    C) -100°C
+    D) -373°C
+    Javob: B
+
+36. Kelvin va Selsiy orasidagi bog'lanish?
+    A) K = C - 273
+    B) K = C + 273
+    C) K = C × 273
+    D) K = C / 273
+    Javob: B
+
+37. Issiqlik miqdori birligi qaysi?
+    A) Kelvin
+    B) Joul
+    C) Vatt
+    D) Gradus
+    Javob: B
+
+38. Issiqlik miqdori formulasi (isitish)?
+    A) Q = cm + t
+    B) Q = cmΔt
+    C) Q = c / mΔt
+    D) Q = m / cΔt
+    Javob: B
+
+39. Solishtirma issiqlik sig'imi nima?
+    A) Jism massasi
+    B) 1 kg moddani 1°C ga isitish uchun kerak bo'lgan issiqlik
+    C) Temperatura
+    D) Bosim
+    Javob: B
+
+40. Suvning solishtirma issiqlik sig'imi qancha?
+    A) 2000 J/(kg·°C)
+    B) 4200 J/(kg·°C)
+    C) 6000 J/(kg·°C)
+    D) 8000 J/(kg·°C)
+    Javob: B
+
+41. Issiqlik o'tkazuvchanlik nima?
+    A) Modda harakati bilan issiqlik uzatish
+    B) Jism ichida issiqlikning molekulalardan uzatilishi
+    C) Nurlanish bilan issiqlik uzatish
+    D) Konveksiya
+    Javob: B
+
+42. Konveksiya nima?
+    A) Issiqlik o'tkazuvchanlik
+    B) Suyuqlik/gaz oqimlari bilan issiqlik uzatish
+    C) Nurlanish
+    D) Bug'lanish
+    Javob: B
+
+43. Elektr zaryadining birligi qaysi?
+    A) Amper
+    B) Kulon
+    C) Volt
+    D) Om
+    Javob: B
+
+44. Elektronning zaryadi qancha?
+    A) +1,6×10⁻¹⁹ C
+    B) -1,6×10⁻¹⁹ C
+    C) 0
+    D) 1 C
+    Javob: B
+
+45. Bir xil zaryadlar qanday ta'sirlashadi?
+    A) Tortishadi
+    B) Itarishadi
+    C) Ta'sir qilmaydi
+    D) Neytrallanadi
+    Javob: B
+
+46. Qarama-qarshi zaryadlar qanday ta'sirlashadi?
+    A) Itarishadi
+    B) Tortishadi
+    C) Ta'sir qilmaydi
+    D) Yo'qoladi
+    Javob: B
+
+47. Elektr toki nima?
+    A) Zaryadlarning harakatsizligi
+    B) Zaryadlarning yo'nalishli harakati
+    C) Kuchlanish
+    D) Qarshilik
+    Javob: B
+
+48. Tok kuchi birligi qaysi?
+    A) Volt
+    B) Amper
+    C) Om
+    D) Vatt
+    Javob: B
+
+49. Kuchlanish birligi qaysi?
+    A) Amper
+    B) Volt
+    C) Om
+    D) Kulon
+    Javob: B
+
+50. Elektr qarshilik birligi qaysi?
+    A) Volt
+    B) Om
+    C) Amper
+    D) Vatt
+    Javob: B
+
+51. Om qonuni formulasi?
+    A) I = U + R
+    B) I = U / R
+    C) I = R / U
+    D) I = U × R
+    Javob: B
+
+52. Ketma-ket ulanganda umumiy qarshilik qanday topiladi?
+    A) R = R₁ × R₂
+    B) R = R₁ + R₂ + ...
+    C) 1/R = 1/R₁ + 1/R₂
+    D) R = R₁ - R₂
+    Javob: B
+
+53. Parallel ulanganda umumiy qarshilik qanday topiladi?
+    A) R = R₁ + R₂
+    B) 1/R = 1/R₁ + 1/R₂ + ...
+    C) R = R₁ × R₂
+    D) R = R₁ - R₂
+    Javob: B
+
+54. Elektr quvvati formulasi?
+    A) P = U + I
+    B) P = U × I
+    C) P = U / I
+    D) P = I / U
+    Javob: B
+
+55. Yorug'lik tezligi vakuumda qancha?
+    A) 100000 km/s
+    B) 300000 km/s (3×10⁸ m/s)
+    C) 500000 km/s
+    D) 1000000 km/s
+    Javob: B
+
+56. Yorug'likning qaytish qonuni nima?
+    A) Tushish burchagi > qaytish burchagi
+    B) Tushish burchagi = qaytish burchagi
+    C) Tushish burchagi < qaytish burchagi
+    D) Bog'liq emas
+    Javob: B
+
+57. Yorug'lik sinishi nima?
+    A) Yorug'lik qaytishi
+    B) Yorug'likning bir muhitdan boshqasiga o'tganda yo'nalishini o'zgartirishi
+    C) Yorug'lik yutilishi
+    D) Yorug'lik tarqalishi
+    Javob: B
+
+58. Linza nima?
+    A) Ko'zgu
+    B) Yorug'likni sindiruvchi shaffof jism
+    C) Prizma
+    D) Ekran
+    Javob: B
+
+59. Yig'uvchi linza qanday tasvir hosil qiladi?
+    A) Faqat virtual
+    B) Real yoki virtual (jism joylashuviga qarab)
+    C) Faqat real
+    D) Tasvir hosil qilmaydi
+    Javob: B
+
+60. Sochuvchi linza qanday tasvir hosil qiladi?
+    A) Faqat real
+    B) Faqat virtual, to'g'ri, kichraytirilgan
+    C) Real va virtual
+    D) Tasvir hosil qilmaydi
+    Javob: B
+
+61. Tovush nima?
+    A) Elektromagnit to'lqin
+    B) Mexanik to'lqin
+    C) Yorug'lik
+    D) Issiqlik
+    Javob: B
+
+62. Tovush vakuumda tarqaladimi?
+    A) Ha
+    B) Yo'q (muhit kerak)
+    C) Ba'zan
+    D) Faqat yuqori chastotada
+    Javob: B
+
+63. Tovush havoda qanday tezlikda tarqaladi (20°C)?
+    A) 100 m/s
+    B) 340 m/s
+    C) 500 m/s
+    D) 1000 m/s
+    Javob: B
+
+64. Ultratovush nima?
+    A) Past chastotali tovush
+    B) 20000 Hz dan yuqori chastotali tovush
+    C) 20 Hz dan past chastotali tovush
+    D) Oddiy tovush
+    Javob: B
+
+65. Infratovush nima?
+    A) Yuqori chastotali tovush
+    B) 20 Hz dan past chastotali tovush
+    C) Oddiy tovush
+    D) Ultratovush
+    Javob: B
+
+66. To'lqin uzunligi nima?
+    A) Amplituda
+    B) Qo'shni ikki bir xil fazadagi nuqtalar orasidagi masofa
+    C) Chastota
+    D) Davr
+    Javob: B
+
+67. To'lqin chastotasi birligi qaysi?
+    A) Sekund
+    B) Gers (Hz)
+    C) Metr
+    D) m/s
+    Javob: B
+
+68. To'lqin davri nima?
+    A) To'lqin uzunligi
+    B) Bitta to'la tebranish uchun ketgan vaqt
+    C) Chastota
+    D) Amplituda
+    Javob: B
+
+69. Chastota va davr orasidagi bog'lanish?
+    A) f = T
+    B) f = 1 / T
+    C) f = T²
+    D) f = T + 1
+    Javob: B
+
+70. To'lqin tezligi formulasi?
+    A) v = λ + f
+    B) v = λ × f
+    C) v = λ / f
+    D) v = f / λ
+    Javob: B
+
+71. Atom nima?
+    A) Molekula
+    B) Moddaning eng kichik kimyoviy zarrachasi
+    C) Yadro
+    D) Elektron
+    Javob: B
+
+72. Atom yadrosida nimalar bor?
+    A) Elektronlar
+    B) Protonlar va neytronlar
+    C) Faqat protonlar
+    D) Faqat neytronlar
+    Javob: B
+
+73. Protonning zaryadi qanday?
+    A) Manfiy
+    B) Musbat
+    C) Neytral
+    D) O'zgaruvchan
+    Javob: B
+
+74. Neytronning zaryadi qanday?
+    A) Musbat
+    B) Neytral (zaryadlanmagan)
+    C) Manfiy
+    D) O'zgaruvchan
+    Javob: B
+
+75. Elektronlar atomda qayerda joylashgan?
+    A) Yadroda
+    B) Yadro atrofidagi orbitallarda
+    C) Yadro ichida
+    D) Tashqarida
+    Javob: B
+
+76. Radioaktivlik nima?
+    A) Elektr toki
+    B) Yadro ning o'z-o'zidan parchalanishi
+    C) Kimyoviy reaksiya
+    D) Issiqlik
+    Javob: B
+
+77. Alfa zarracha nima?
+    A) Elektron
+    B) Geliy yadrosi (2 proton + 2 neytron)
+    C) Foton
+    D) Neytron
+    Javob: B
+
+78. Beta zarracha nima?
+    A) Proton
+    B) Elektron yoki pozitron
+    C) Neytron
+    D) Alfa zarracha
+    Javob: B
+
+79. Gamma nurlanish nima?
+    A) Zarrachalar oqimi
+    B) Yuqori energiyali elektromagnit nurlanish
+    C) Alfa nurlanish
+    D) Beta nurlanish
+    Javob: B
+
+80. Yadro reaktsiyalari nima?
+    A) Kimyoviy reaktsiyalar
+    B) Atom yadrolari o'zgarishi
+    C) Elektr reaktsiyalari
+    D) Issiqlik reaktsiyalari
+    Javob: B
+
+81. Magnit maydoni nima hosil qiladi?
+    A) Harakatsiz zaryadlar
+    B) Harakatlanayotgan zaryadlar va magnit
+    C) Faqat magnit
+    D) Faqat elektr toki
+    Javob: B
+
+82. Elektromagnit nima?
+    A) Doimiy magnit
+    B) Tok o'tganda magnit xossasiga ega bo'ladigan qurilma
+    C) Generator
+    D) Transformator
+    Javob: B
+
+83. Elektromagnit induksiya nima?
+    A) Magnit maydon yaratish
+    B) O'zgaruvchan magnit maydonida EYK hosil bo'lishi
+    C) Elektr toki yaratish
+    D) Magnit yo'qolishi
+    Javob: B
+
+84. Generator nima qiladi?
+    A) Mexanik energiyani elektr energiyasiga aylantiradi
+    B) Elektr energiyasini mexanik energiyaga aylantiradi
+    C) Issiqlik hosil qiladi
+    D) Yorug'lik hosil qiladi
+    Javob: A
+
+85. Elektr dvigatel nima qiladi?
+    A) Mexanik energiyani elektr energiyasiga aylantiradi
+    B) Elektr energiyasini mexanik energiyaga aylantiradi
+    C) Issiqlik hosil qiladi
+    D) Yorug'lik hosil qiladi
+    Javob: B
+
+86. Transformator nima uchun ishlatiladi?
+    A) Tok kuchini o'zgartirish
+    B) O'zgaruvchan tok kuchlanishini o'zgartirish
+    C) Chastotani o'zgartirish
+    D) Qarshilikni o'zgartirish
+    Javob: B
+
+87. O'zgaruvchan tok nima?
+    A) Yo'nalishi o'zgarmaydigan tok
+    B) Yo'nalishi va qiymati davriy o'zgaradigan tok
+    C) Doimiy tok
+    D) To'g'ri tok
+    Javob: B
+
+88. O'zgaruvchan tok chastotasi (O'zbekistonda)?
+    A) 25 Hz
+    B) 50 Hz
+    C) 60 Hz
+    D) 100 Hz
+    Javob: B
+
+89. Kondensator nima?
+    A) Qarshilik
+    B) Elektr zaryadni to'plovchi qurilma
+    C) Induktivlik
+    D) Transformator
+    Javob: B
+
+90. Kondensator sig'imi birligi qaysi?
+    A) Om
+    B) Farad
+    C) Genri
+    D) Volt
+    Javob: B
+
+91. Fotoeffekt nima?
+    A) Foto olish
+    B) Yorug'lik ta'sirida elektronlarning moddadan chiqishi
+    C) Yorug'lik sinishi
+    D) Yorug'lik qaytishi
+    Javob: B
+
+92. Foton nima?
+    A) Elektron
+    B) Yorug'lik kvanti (zarrachasi)
+    C) Proton
+    D) Neytron
+    Javob: B
+
+93. Lazer nuri qanday xususiyatga ega?
+    A) Tarqoq
+    B) Kogerent (bir xil fazali) va monoxromatik
+    C) Oddiy yorug'lik
+    D) Infraqizil
+    Javob: B
+
+94. Rentgen nurlari nima?
+    A) Yorug'lik
+    B) Qisqa to'lqinli elektromagnit nurlanish
+    C) Tovush
+    D) Ultratovush
+    Javob: B
+
+95. Spektr nima?
+    A) Ko'zgu
+    B) Yorug'likning tarkibiy qismlarga ajralishi
+    C) Linza
+    D) Prizma
+    Javob: B
+
+96. Kamalak qanday hosil bo'ladi?
+    A) Yorug'lik qaytishi
+    B) Yorug'likning suv tomchilarida sinishi va dispersiyasi
+    C) Yorug'lik yutilishi
+    D) Yorug'lik tarqalishi
+    Javob: B
+
+97. Termodinamikaning birinchi qonuni nima?
+    A) Energiya yo'qoladi
+    B) Energiya saqlanish qonuni (Q = ΔU + A)
+    C) Entropiya qonuni
+    D) Ideal gaz qonuni
+    Javob: B
+
+98. Ideal gaz qonuni formulasi?
+    A) PV = nRT
+    B) PV/T = const (yoki PV = nRT)
+    C) P = VT
+    D) V = PT
+    Javob: B
+
+99. Brownian harakat nima?
+    A) To'lqin harakati
+    B) Mayda zarrachalarning suyuqlik/gazda tartibsiz harakati
+    C) Elektron harakati
+    D) Planeta harakati
+    Javob: B
+
+100. Diffuziya nima?
+     A) Zarrachalar to'planishi
+     B) Moddalarning o'zaro aralashishi (konsentratsiya farqi tufayli)
+     C) Zarrachalar ajralishi
+     D) Modda qotishi
+     Javob: B
+
+=====================================================
+                    YAKUNLANDI
+=====================================================

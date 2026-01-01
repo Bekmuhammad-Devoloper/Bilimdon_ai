@@ -1,0 +1,708 @@
+
+POSTGRESQL - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+==========================================================
+
+1. Write-Ahead Logging (WAL) nima?
+   A) Error log
+   B) Transaction log - durability guarantee (crash recovery)
+   C) Query log
+   D) Access log
+   Javob: B
+
+2. WAL segments nima?
+   A) Table parts
+   B) 16MB files (pg_wal directory)
+   C) Index parts
+   D) Backup files
+   Javob: B
+
+3. Checkpoint nima?
+   A) Savepoint
+   B) Dirty buffers disk ga flush (recovery point)
+   C) Backup point
+   D) Transaction point
+   Javob: B
+
+4. checkpoint_timeout parameter?
+   A) Transaction timeout
+   B) Checkpoint interval (default 5min)
+   C) Query timeout
+   D) Connection timeout
+   Javob: B
+
+5. max_wal_size parameter nima?
+   A) Single WAL size
+   B) Maximum WAL size before checkpoint trigger
+   C) Min WAL size
+   D) Archive size
+   Javob: B
+
+6. wal_level settings?
+   A) Single level
+   B) minimal, replica, logical (replication uchun)
+   C) No levels
+   D) 2ta level
+   Javob: B
+
+7. Streaming Replication nima?
+   A) Backup
+   B) WAL real-time standby ga stream
+   C) Logical replication
+   D) File copy
+   Javob: B
+
+8. Hot Standby nima?
+   A) Cold standby
+   B) Read-only queries on streaming replica
+   C) Write standby
+   D) No queries
+   Javob: B
+
+9. Synchronous Replication nima?
+   A) Async replication
+   B) COMMIT standby confirmation kutadi (data loss yo'q)
+   C) Fire and forget
+   D) No wait
+   Javob: B
+
+10. Asynchronous Replication nima?
+    A) Sync replication
+    B) COMMIT standby kutmaydi (fast, potential data loss)
+    C) Always sync
+    D) No replication
+    Javob: B
+
+11. Logical Replication nima?
+    A) Physical replication
+    B) Table-level, row-based replication (selective)
+    C) Block-level
+    D) File-level
+    Javob: B
+
+12. Publication (logical replication)?
+    A) Subscriber
+    B) Source - tables to replicate
+    C) Standby
+    D) Archive
+    Javob: B
+
+13. Subscription (logical replication)?
+    A) Publisher
+    B) Target - receives replicated data
+    C) Master
+    D) Primary
+    Javob: B
+
+14. replication slots nima?
+    A) Connection slots
+    B) WAL retention uchun (subscriber lag prevention)
+    C) Memory slots
+    D) CPU slots
+    Javob: B
+
+15. pg_replication_slots view nima?
+    A) Table view
+    B) Active replication slots info
+    C) Index view
+    D) Function view
+    Javob: B
+
+16. pg_stat_replication view nima?
+    A) Table stats
+    B) Replication connections va progress
+    C) Index stats
+    D) Query stats
+    Javob: B
+
+17. recovery.conf (PostgreSQL <12) nima?
+    A) Main config
+    B) Standby/recovery settings (deprecated, now postgresql.conf)
+    C) Backup config
+    D) Log config
+    Javob: B
+
+18. promote command (replication) nima?
+    A) Demote
+    B) Standby ni primary ga o'tkazish
+    C) Stop replication
+    D) Restart
+    Javob: B
+
+19. Cascading Replication nima?
+    A) No cascade
+    B) Standby boshqa standby ga replicate (chain)
+    C) Single level
+    D) Primary only
+    Javob: B
+
+20. pg_basebackup nima?
+    A) Logical backup
+    B) Physical backup (replication setup uchun)
+    C) Schema backup
+    D) Data only
+    Javob: B
+
+21. pg_restore nima?
+    A) pg_dump export
+    B) pg_dump custom format ni restore
+    C) WAL restore
+    D) Config restore
+    Javob: B
+
+22. PITR (Point-In-Time Recovery) nima?
+    A) Latest only
+    B) Specific time/transaction ga restore (WAL archives)
+    C) Full restore
+    D) Schema restore
+    Javob: B
+
+23. archive_mode parameter nima?
+    A) Disabled
+    B) WAL segments archive qilish (PITR uchun)
+    C) Delete WAL
+    D) No archive
+    Javob: B
+
+24. archive_command parameter nima?
+    A) Backup command
+    B) WAL files copy/archive command
+    C) Restore command
+    D) Delete command
+    Javob: B
+
+25. restore_command parameter nima?
+    A) Backup
+    B) PITR da archived WAL retrieve command
+    C) Archive
+    D) Delete
+    Javob: B
+
+26. recovery_target_time parameter?
+    A) Backup time
+    B) PITR specific timestamp target
+    C) Current time
+    D) Start time
+    Javob: B
+
+27. Connection pooling nima uchun?
+    A) Slow connections
+    B) Connection reuse (overhead reduction)
+    C) No connections
+    D) Single connection
+    Javob: B
+
+28. PgBouncer nima?
+    A) Database
+    B) Lightweight connection pooler
+    C) Monitoring tool
+    D) Backup tool
+    Javob: B
+
+29. PgBouncer pool modes?
+    A) Single mode
+    B) session, transaction, statement
+    C) No modes
+    D) 2ta mode
+    Javob: B
+
+30. session pool mode (PgBouncer)?
+    A) Transaction level
+    B) Connection client ga transaction end gacha
+    C) Statement level
+    D) No pooling
+    Javob: B
+
+31. transaction pool mode (PgBouncer)?
+    A) Session level
+    B) Connection transaction uchun (aggressive pooling)
+    C) Statement level
+    D) No pooling
+    Javob: B
+
+32. Prepared Statements nima?
+    A) Dynamic SQL
+    B) Pre-compiled SQL (parameters bilan, SQL injection safe)
+    C) Static SQL
+    D) Ad-hoc queries
+    Javob: B
+
+33. PREPARE statement nima?
+    A) Execute
+    B) Prepared statement yaratish
+    C) Deallocate
+    D) Drop
+    Javob: B
+
+34. EXECUTE statement nima?
+    A) Prepare
+    B) Prepared statement run (parameters bilan)
+    C) Deallocate
+    D) Create
+    Javob: B
+
+35. plan_cache_mode parameter nima?
+    A) No cache
+    B) Generic vs custom plan choice (prepared statements)
+    C) Always cache
+    D) Never cache
+    Javob: B
+
+36. JIT compilation (Just-In-Time) nima?
+    A) No compilation
+    B) Query expressions LLVM compile (performance)
+    C) Static compile
+    D) Interpret only
+    Javob: B
+
+37. jit parameter nima?
+    A) Always enabled
+    B) JIT compilation on/off
+    C) No JIT
+    D) Manual compile
+    Javob: B
+
+38. Parallel Query Execution nima?
+    A) Serial execution
+    B) Multiple workers query parallel execute
+    C) Single worker
+    D) No parallelism
+    Javob: B
+
+39. max_parallel_workers_per_gather?
+    A) Total workers
+    B) Single query uchun max parallel workers
+    C) Global workers
+    D) No limit
+    Javob: B
+
+40. max_parallel_workers parameter?
+    A) Per query
+    B) System-wide max parallel workers
+    C) No workers
+    D) Unlimited
+    Javob: B
+
+41. Parallel Sequential Scan nima?
+    A) Index scan
+    B) Table scan multiple workers bilan
+    C) Serial scan
+    D) Bitmap scan
+    Javob: B
+
+42. Parallel Hash Join nima?
+    A) Nested loop
+    B) Hash join parallel build va probe
+    C) Merge join
+    D) Serial join
+    Javob: B
+
+43. work_mem parameter nima?
+    A) Shared memory
+    B) Per-operation memory (sort, hash, ...)
+    C) Total memory
+    D) Cache memory
+    Javob: B
+
+44. shared_buffers parameter nima?
+    A) Work memory
+    B) Shared memory cache (database pages)
+    C) Temp memory
+    D) Connection memory
+    Javob: B
+
+45. effective_cache_size parameter?
+    A) Actual cache
+    B) OS + PostgreSQL cache estimate (planner hint)
+    C) Shared buffers
+    D) Work mem
+    Javob: B
+
+46. maintenance_work_mem parameter?
+    A) Query work
+    B) VACUUM, CREATE INDEX operations uchun
+    C) Shared memory
+    D) Connection memory
+    Javob: B
+
+47. autovacuum nima?
+    A) Manual vacuum
+    B) Automatic VACUUM background process
+    C) No vacuum
+    D) Scheduled vacuum
+    Javob: B
+
+48. autovacuum_naptime parameter?
+    A) Sleep forever
+    B) Autovacuum runs interval
+    C) No sleep
+    D) Manual trigger
+    Javob: B
+
+49. autovacuum_vacuum_threshold?
+    A) No threshold
+    B) Minimum dead tuples for vacuum trigger
+    C) Maximum tuples
+    D) All tuples
+    Javob: B
+
+50. bloat nima (tables/indexes)?
+    A) Compression
+    B) Dead tuples, wasted space
+    C) Optimization
+    D) Compaction
+    Javob: B
+
+51. pg_repack extension nima?
+    A) Backup
+    B) Online table/index bloat removal
+    C) Replication
+    D) Monitoring
+    Javob: B
+
+52. pg_stat_statements extension nima?
+    A) DDL statements
+    B) Query execution statistics tracking
+    C) DML only
+    D) Backup statements
+    Javob: B
+
+53. pg_trgm extension nima?
+    A) Triggers
+    B) Trigram matching (fuzzy text search)
+    C) Tables
+    D) Transactions
+    Javob: B
+
+54. Full Text Search (FTS) nima?
+    A) LIKE search
+    B) tsvector, tsquery - natural language search
+    C) Regex search
+    D) Exact match
+    Javob: B
+
+55. tsvector data type nima?
+    A) Text
+    B) Parsed, normalized document (FTS)
+    C) Vector
+    D) Array
+    Javob: B
+
+56. tsquery data type nima?
+    A) Query text
+    B) Search query (FTS operators bilan)
+    C) Vector
+    D) Boolean
+    Javob: B
+
+57. to_tsvector() function nima?
+    A) To text
+    B) Text ni tsvector ga convert
+    C) To array
+    D) To JSON
+    Javob: B
+
+58. to_tsquery() function nima?
+    A) To text
+    B) Query string ni tsquery ga convert
+    C) To vector
+    D) To array
+    Javob: B
+
+59. @@ operator (FTS) nima?
+    A) Concat
+    B) tsvector va tsquery match check
+    C) Compare
+    D) Append
+    Javob: B
+
+60. GIN index (FTS) nima uchun?
+    A) B-tree
+    B) tsvector indexing (fast text search)
+    C) Hash
+    D) BRIN
+    Javob: B
+
+61. ts_rank() function nima?
+    A) Sort
+    B) FTS match relevance score
+    C) Count
+    D) Filter
+    Javob: B
+
+62. Lexeme nima (FTS)?
+    A) Raw word
+    B) Normalized word (stemmed, lowercase)
+    C) Sentence
+    D) Phrase
+    Javob: B
+
+63. Text Search Dictionaries nima?
+    A) JSON
+    B) Word normalization rules (synonyms, stop words)
+    C) Lookup tables
+    D) Cache
+    Javob: B
+
+64. Text Search Configurations nima?
+    A) Server config
+    B) Parser + dictionaries set (language-specific)
+    C) User config
+    D) Database config
+    Javob: B
+
+65. Gin Pending List nima?
+    A) B-tree list
+    B) GIN index fast insert buffer (lazy cleanup)
+    C) Hash list
+    D) Delete list
+    Javob: B
+
+66. Foreign Data Wrappers (FDW) nima?
+    A) Foreign keys
+    B) External data source access (other DB, files)
+    C) Local tables
+    D) Views
+    Javob: B
+
+67. postgres_fdw nima?
+    A) MySQL wrapper
+    B) PostgreSQL to PostgreSQL FDW
+    C) Oracle wrapper
+    D) File wrapper
+    Javob: B
+
+68. CREATE SERVER (FDW) nima?
+    A) Create local server
+    B) External server connection define
+    C) Drop server
+    D) Alter server
+    Javob: B
+
+69. CREATE FOREIGN TABLE nima?
+    A) Local table
+    B) External table mapping (FDW orqali)
+    C) Temp table
+    D) Materialized view
+    Javob: B
+
+70. IMPORT FOREIGN SCHEMA nima?
+    A) Export schema
+    B) Bulk foreign tables create from remote schema
+    C) Drop schema
+    D) Copy schema
+    Javob: B
+
+71. Push-down nima (FDW)?
+    A) Local execution
+    B) WHERE/JOIN remote server da execute (optimization)
+    C) No optimization
+    D) Cache
+    Javob: B
+
+72. Partitioning strategies nima?
+    A) Single strategy
+    B) Range, List, Hash partitioning
+    C) No strategies
+    D) 2ta strategy
+    Javob: B
+
+73. Hash Partitioning nima?
+    A) Range based
+    B) Hash function bo'yicha (even distribution)
+    C) List based
+    D) Random
+    Javob: B
+
+74. Partition Pruning nima?
+    A) Include all
+    B) Irrelevant partitions skip (query optimization)
+    C) No pruning
+    D) Scan all
+    Javob: B
+
+75. enable_partition_pruning parameter?
+    A) Always disabled
+    B) Partition pruning on/off
+    C) No effect
+    D) Manual pruning
+    Javob: B
+
+76. Constraint Exclusion nima?
+    A) Include all
+    B) CHECK constraints orqali partition skip (old method)
+    C) No exclusion
+    D) Full scan
+    Javob: B
+
+77. Partitionwise Join nima?
+    A) Single join
+    B) Partitioned tables join partition-by-partition
+    C) No join
+    D) Cross join
+    Javob: B
+
+78. Partitionwise Aggregate nima?
+    A) Single aggregate
+    B) Aggregation partition-by-partition (parallel)
+    C) No aggregate
+    D) Global aggregate only
+    Javob: B
+
+79. DEFAULT partition nima?
+    A) First partition
+    B) Catch-all partition (no match rows)
+    C) Last partition
+    D) No default
+    Javob: B
+
+80. DETACH PARTITION nima?
+    A) Delete partition
+    B) Partition ni partitioned table dan ajratish (standalone)
+    C) Drop partition
+    D) Truncate partition
+    Javob: B
+
+81. ATTACH PARTITION nima?
+    A) Detach
+    B) Existing table ni partition qilib qo'shish
+    C) Drop
+    D) Create
+    Javob: B
+
+82. Security Row-Level (RLS) nima?
+    A) Column security
+    B) Row visibility policies (user-based)
+    C) Table security
+    D) Database security
+    Javob: B
+
+83. ENABLE ROW LEVEL SECURITY nima?
+    A) Disable RLS
+    B) Table uchun RLS activate
+    C) Drop RLS
+    D) No security
+    Javob: B
+
+84. CREATE POLICY nima?
+    A) Create constraint
+    B) RLS policy define (WHO sees WHAT)
+    C) Create trigger
+    D) Create view
+    Javob: B
+
+85. USING vs WITH CHECK (policies)?
+    A) Bir xil
+    B) USING - SELECT/UPDATE/DELETE, WITH CHECK - INSERT/UPDATE new rows
+    C) Random
+    D) No difference
+    Javob: B
+
+86. BYPASSRLS attribute nima?
+    A) No bypass
+    B) Role RLS policies ni ignore qiladi
+    C) Enable RLS
+    D) Force RLS
+    Javob: B
+
+87. Roles vs Users (PostgreSQL)?
+    A) Users special
+    B) No difference - roles can LOGIN
+    C) Users can't login
+    D) Roles can't login
+    Javob: B
+
+88. GRANT nima qiladi?
+    A) Revoke
+    B) Permissions berish
+    C) Create role
+    D) Drop role
+    Javob: B
+
+89. REVOKE nima qiladi?
+    A) Grant
+    B) Permissions olib tashlash
+    C) Create role
+    D) Alter role
+    Javob: B
+
+90. INHERIT attribute (roles) nima?
+    A) No inheritance
+    B) Role parent role permissions inherit qiladi
+    C) Block inheritance
+    D) Manual inherit
+    Javob: B
+
+91. SET ROLE nima?
+    A) Create role
+    B) Session role o'zgartirish (switch identity)
+    C) Drop role
+    D) Grant role
+    Javob: B
+
+92. search_path parameter nima?
+    A) File path
+    B) Schema search order (name resolution)
+    C) Index path
+    D) Data path
+    Javob: B
+
+93. pg_catalog schema nima?
+    A) User schema
+    B) System catalog tables (metadata)
+    C) Public schema
+    D) Temp schema
+    Javob: B
+
+94. information_schema nima?
+    A) System catalog
+    B) ANSI-standard metadata views
+    C) Public schema
+    D) User schema
+    Javob: B
+
+95. GENERATED ALWAYS AS IDENTITY nima?
+    A) Manual ID
+    B) Modern identity column (SQL standard)
+    C) SERIAL
+    D) Sequence
+    Javob: B
+
+96. GENERATED ALWAYS AS (expression) STORED?
+    A) Virtual column
+    B) Computed column physically stored
+    C) Normal column
+    D) Temporary column
+    Javob: B
+
+97. COPY command nima?
+    A) SELECT
+    B) Bulk data import/export (CSV, binary)
+    C) INSERT
+    D) UPDATE
+    Javob: B
+
+98. \copy (psql) vs COPY farqi?
+    A) Bir xil
+    B) \copy - client-side, COPY - server-side
+    C) \copy server
+    D) COPY client
+    Javob: B
+
+99. UNLOGGED tables nima?
+    A) Logged tables
+    B) WAL skip - fast, not crash-safe (temp data)
+    C) Permanent
+    D) Replicated
+    Javob: B
+
+100. TEMPORARY tables nima?
+     A) Permanent
+     B) Session-scoped tables (auto-drop)
+     C) Shared tables
+     D) Logged tables
+     Javob: B
+
+==========================================================
+                       YAKUNLANDI
+==========================================================
+

@@ -1,0 +1,148 @@
+===============================================
+REACT - HARD SAVOLLARI
+===============================================
+
+SAVOL 1: Fiber architecture nima?
+A) Component structure
+B) React rendering engine (incremental rendering)
+C) Update mechanism
+D) Reconciliation
+JAVOB: B
+
+SAVOL 2: Lane priority system nima?
+A) Priority queue
+B) React update priority (urgent vs non-urgent)
+C) Scheduling
+D) Time slicing
+JAVOB: B
+
+SAVOL 3: Scheduler package nima?
+A) Package manager
+B) React scheduler (timing, priorities)
+C) Task scheduling
+D) Work scheduling
+JAVOB: B
+
+SAVOL 4: Hooks Rules nima?
+A) Hook guidelines
+B) Top-level call, conditional yo'q, custom hook prefix
+C) Restrictions
+D) Requirements
+JAVOB: B
+
+SAVOL 5: useCallback dependency array nima?
+A) Dependencies list
+B) Function memoization dependency
+C) Optimization
+D) Re-create condition
+JAVOB: B
+
+SAVOL 6: useMemo pitfalls nima?
+A) Common mistakes
+B) Over-optimization, dependency array issues
+C) Performance
+D) Debugging
+JAVOB: B
+
+SAVOL 7: State update batching React-18 nima?
+A) Multiple updates
+B) Multiple setState auto-batch (even async)
+C) Performance improvement
+D) Optimization
+JAVOB: B
+
+SAVOL 8: Transition API (useTransition) nima?
+A) Transition
+B) Non-blocking state update (mark as non-urgent)
+C) Concurrent
+D) Rendering
+JAVOB: B
+
+SAVOL 9: useDeferredValue hook nima?
+A) Value deferring
+B) Expensive computations delay (lower priority)
+C) Performance
+D) Optimization
+JAVOB: B
+
+SAVOL 10: useFormStatus hook nima uchun?
+A) Form status
+B) Form submission status (Server Actions)
+C) Action state
+D) Async form
+JAVOB: B
+
+SAVOL 11: useFormState hook nima?
+A) Form state
+B) Server action result (form + action)
+C) Form handling
+D) Server integration
+JAVOB: B
+
+SAVOL 12: React Server Components (RSC) nima?
+A) Server side
+B) Server-rendered components (no JS, direct DB)
+C) Full-stack
+D) Architecture
+JAVOB: B
+
+SAVOL 13: Action functions nima?
+A) Regular functions
+B) Server-first data mutations (security)
+C) Server actions
+D) async functions
+JAVOB: B
+
+SAVOL 14: Revalidation nima?
+A) Cache validation
+B) On-demand ISR (revalidatePath, revalidateTag)
+C) Cache invalidation
+D) Update mechanism
+JAVOB: B
+
+SAVOL 15: Streaming SSR nima?
+A) Regular SSR
+B) HTML chunks streaming (faster initial load)
+C) Performance
+D) Optimization
+JAVOB: B
+
+SAVOL 16: Hydration mismatch nima?
+A) Water mixing
+B) Server HTML != Client render
+C) SSR issue
+D) Error
+JAVOB: B
+
+SAVOL 17: Dynamic import (React.lazy) nima?
+A) Regular import
+B) Code-splitting (lazy component load)
+C) Performance
+D) Bundle size
+JAVOB: B
+
+SAVOL 18: Profiler API nima?
+A) Code profiling
+B) React performance measurement (<Profiler>)
+C) Performance
+D) Debug tool
+JAVOB: B
+
+SAVOL 19: DevTools nima uchun?
+A) Development
+B) React debugging + performance profiling
+C) Tool
+D) Extension
+JAVOB: B
+
+SAVOL 20: Strict mode nima?
+A) Strict checking
+B) Development-only checks (side effects, deprecated)
+C) Error detection
+D) Development helper
+JAVOB: B
+
+===============================================
+HARD SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: MURAKKAB
+===============================================

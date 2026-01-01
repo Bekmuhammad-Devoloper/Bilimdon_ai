@@ -4,14 +4,68 @@ import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuthStore } from '@/store/auth';
 import { useAppStore } from '@/store/app';
-import { authApi, categoriesApi, notificationsApi } from '@/lib/api';
+import { authApi, categoriesApi, notificationsApi, statsApi } from '@/lib/api';
 import { isTelegramWebApp, getTelegramInitData, telegramReady, telegramExpand } from '@/lib/telegram';
 import { io, Socket } from 'socket.io-client';
 import toast from 'react-hot-toast';
 
+// Stats interface
+interface PublicStats {
+  users: number;
+  questions: number;
+  categories: number;
+  tests: number;
+}
+
+// Public Stats hook
+export function useStats() {
+  const [stats, setStats] = useState<PublicStats | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+        
+        const res = await fetch(`${apiUrl}/stats/public`, {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+        });
+        
+        const text = await res.text();
+        console.log('Raw response:', text);
+        
+        try {
+          const data = JSON.parse(text);
+          console.log('Parsed stats:', data);
+          
+          if (data && typeof data.users === 'number') {
+            setStats(data);
+          }
+        } catch (parseError) {
+          console.error('JSON parse error:', parseError);
+        }
+      } catch (err: any) {
+        console.error('Stats fetch error:', err);
+        setError(err.message || 'Statistikani yuklashda xatolik');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchStats();
+  }, []);
+
+  return { stats, loading, error };
+}
+
 // Auth hook
 export function useAuth() {
-  const { user, token, isAuthenticated, isLoading, login, logout, setLoading } = useAuthStore();
+  const { user, token, isAuthenticated, isLoading, login, logout, setLoading, updateUser } = useAuthStore();
   const router = useRouter();
 
   useEffect(() => {
@@ -30,11 +84,17 @@ export function useAuth() {
             console.error('Telegram auth error:', error);
           }
         }
-      } else if (token && !user) {
-        // Verify existing token
+      } else if (token) {
+        // Har doim yangi user ma'lumotlarini backenddan olish (avatar yangilanishi uchun)
         try {
           const { data } = await authApi.getProfile();
-          login(data, token);
+          // Agar backend avatar null qaytarsa, store'dagi mavjud avatar'ni saqlab qolish
+          const currentUser = useAuthStore.getState().user;
+          const userWithAvatar = {
+            ...data,
+            avatar: data.avatar || currentUser?.avatar || null,
+          };
+          login(userWithAvatar, token);
         } catch (error) {
           logout();
         }
@@ -57,6 +117,7 @@ export function useAuth() {
     isAuthenticated,
     isLoading,
     logout: handleLogout,
+    updateUser,
   };
 }
 
@@ -110,7 +171,7 @@ export function useNotifications() {
           notificationsApi.getUnreadCount(),
         ]);
         setNotifications(notifRes.data.notifications || notifRes.data);
-        setUnreadCount(countRes.data.count || 0);
+        setUnreadCount(countRes.data.unreadCount || countRes.data.count || 0);
       } catch (error) {
         console.error('Error fetching notifications:', error);
       }

@@ -1,0 +1,702 @@
+GIT - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+==============================================
+
+1. Git object types?
+   A) One type
+   B) blob, tree, commit, tag
+   C) Two types
+   D) Three types
+   Javob: B
+
+2. Git object storage format?
+   A) Plain text
+   B) SHA-1 hash + zlib compressed content
+   C) Binary only
+   D) JSON format
+   Javob: B
+
+3. Git packfiles nima?
+   A) Pack file
+   B) Delta-compressed object archives
+   C) File pack
+   D) Archive pack
+   Javob: B
+
+4. git gc nima qiladi?
+   A) Delete files
+   B) Garbage collection, packfile optimization
+   C) Create files
+   D) Copy files
+   Javob: B
+
+5. Loose objects vs packed objects?
+   A) Same
+   B) Loose=individual files, Packed=in packfile
+   C) Packed=individual
+   D) No difference
+   Javob: B
+
+6. git cat-file -p <hash>?
+   A) Cat file
+   B) Pretty-print Git object content
+   C) File cat
+   D) Print file
+   Javob: B
+
+7. git ls-tree nima?
+   A) List tree
+   B) Show tree object contents
+   C) Tree list
+   D) Object list
+   Javob: B
+
+8. git rev-parse HEAD?
+   A) Parse head
+   B) Resolve reference to SHA-1
+   C) Head parse
+   D) SHA resolve
+   Javob: B
+
+9. Reflog nima?
+   A) Ref log
+   B) Reference update history
+   C) Log ref
+   D) History update
+   Javob: B
+
+10. git reflog expire?
+    A) Expire reflog
+    B) Remove old reflog entries
+    C) Reflog remove
+    D) Old entries
+    Javob: B
+
+11. git fsck nima?
+    A) File check
+    B) Verify Git database integrity
+    C) Check file
+    D) Database verify
+    Javob: B
+
+12. Dangling objects nima?
+    A) Dangling object
+    B) Unreachable objects (orphan commits/blobs)
+    C) Object dangling
+    D) Reachable objects
+    Javob: B
+
+13. git prune nima?
+    A) Prune git
+    B) Remove unreachable objects
+    C) Git remove
+    D) Object remove
+    Javob: B
+
+14. Three-way merge algoritm?
+    A) Two way
+    B) Base, ours, theirs comparison
+    C) One way
+    D) Four way
+    Javob: B
+
+15. Recursive merge strategy?
+    A) Simple merge
+    B) Handle multiple common ancestors
+    C) Single ancestor
+    D) No merge
+    Javob: B
+
+16. ort merge strategy (Git 2.33+)?
+    A) Old strategy
+    B) Ostensibly Recursive's Twin, faster recursive
+    C) Slow strategy
+    D) Simple strategy
+    Javob: B
+
+17. Octopus merge nima?
+    A) Two branch merge
+    B) Multiple branch merge simultaneously
+    C) Single merge
+    D) No merge
+    Javob: B
+
+18. git merge-base --all?
+    A) Merge base
+    B) Find all common ancestors
+    C) Base merge
+    D) One ancestor
+    Javob: B
+
+19. git rerere nima?
+    A) Re re re
+    B) Reuse recorded resolution (conflict memory)
+    C) Resolution reuse
+    D) Conflict memory
+    Javob: B
+
+20. git rerere forget?
+    A) Forget rerere
+    B) Remove recorded resolution
+    C) Rerere remove
+    D) Resolution remove
+    Javob: B
+
+21. Interactive rebase commands?
+    A) One command
+    B) pick, reword, edit, squash, fixup, drop
+    C) Two commands
+    D) Three commands
+    Javob: B
+
+22. git rebase --onto?
+    A) Onto rebase
+    B) Transplant commits to different base
+    C) Rebase transplant
+    D) Commit transplant
+    Javob: B
+
+23. git rebase --exec?
+    A) Exec rebase
+    B) Run command after each commit
+    C) Rebase run
+    D) Command run
+    Javob: B
+
+24. git rebase --autosquash?
+    A) Auto squash
+    B) Auto-order fixup/squash commits
+    C) Squash auto
+    D) Order commits
+    Javob: B
+
+25. Commit --fixup nima?
+    A) Fix commit
+    B) Create fixup commit for autosquash
+    C) Commit fix
+    D) Auto fix
+    Javob: B
+
+26. git filter-branch vs git filter-repo?
+    A) Same
+    B) filter-repo is faster and safer
+    C) filter-branch better
+    D) No difference
+    Javob: B
+
+27. git filter-repo --path?
+    A) Path filter
+    B) Keep only specific paths in history
+    C) Filter path
+    D) Specific path
+    Javob: B
+
+28. BFG Repo-Cleaner nima?
+    A) BFG cleaner
+    B) Fast large file/password removal from history
+    C) Cleaner BFG
+    D) Slow cleaner
+    Javob: B
+
+29. git replace nima?
+    A) Replace git
+    B) Replace objects with other objects
+    C) Git replace
+    D) Object replace
+    Javob: B
+
+30. Grafts file nima?
+    A) Graft file
+    B) Override parent commits (deprecated)
+    C) File graft
+    D) Parent override
+    Javob: B
+
+31. git submodule update --init --recursive?
+    A) Update submodule
+    B) Initialize and update nested submodules
+    C) Submodule init
+    D) Recursive init
+    Javob: B
+
+32. git submodule foreach?
+    A) Each submodule
+    B) Run command in each submodule
+    C) Submodule each
+    D) Command each
+    Javob: B
+
+33. git subtree vs submodule?
+    A) Same
+    B) Subtree=embedded, submodule=reference
+    C) Submodule=embedded
+    D) No difference
+    Javob: B
+
+34. git subtree split?
+    A) Split subtree
+    B) Extract subdirectory history to branch
+    C) Subtree extract
+    D) History extract
+    Javob: B
+
+35. git worktree add?
+    A) Add worktree
+    B) Create linked working tree
+    C) Worktree create
+    D) Tree create
+    Javob: B
+
+36. Worktree use cases?
+    A) No use
+    B) Parallel feature work, hotfixes
+    C) One use
+    D) Two uses
+    Javob: B
+
+37. git sparse-checkout?
+    A) Sparse checkout
+    B) Partial working directory checkout
+    C) Checkout sparse
+    D) Full checkout
+    Javob: B
+
+38. Cone mode sparse-checkout?
+    A) Cone mode
+    B) Directory-based patterns (faster)
+    C) Mode cone
+    D) File-based
+    Javob: B
+
+39. git bundle nima?
+    A) Bundle git
+    B) Archive refs and objects for transport
+    C) Git bundle
+    D) Transport archive
+    Javob: B
+
+40. git bundle verify?
+    A) Verify bundle
+    B) Check bundle completeness
+    C) Bundle check
+    D) Complete bundle
+    Javob: B
+
+41. Partial clone (--filter=blob:none)?
+    A) Full clone
+    B) Clone without blobs (fetch on demand)
+    C) Clone all
+    D) No filter
+    Javob: B
+
+42. Shallow clone (--depth)?
+    A) Deep clone
+    B) Limited history depth
+    C) Full history
+    D) No limit
+    Javob: B
+
+43. git fetch --unshallow?
+    A) Shallow fetch
+    B) Convert shallow to full clone
+    C) Fetch shallow
+    D) Full fetch
+    Javob: B
+
+44. git maintenance nima?
+    A) Maintenance git
+    B) Background repository optimization
+    C) Git maintenance
+    D) Optimization manual
+    Javob: B
+
+45. git maintenance run --task=prefetch?
+    A) Run maintenance
+    B) Fetch remote refs in background
+    C) Maintenance fetch
+    D) Background fetch
+    Javob: B
+
+46. Commit graph file?
+    A) Graph file
+    B) Accelerated commit walking
+    C) File graph
+    D) Slow walking
+    Javob: B
+
+47. Multi-pack index?
+    A) Single index
+    B) Index spanning multiple packfiles
+    C) Index pack
+    D) Pack index
+    Javob: B
+
+48. git log --ancestry-path?
+    A) Ancestry path
+    B) Commits on path between two commits
+    C) Path ancestry
+    D) All commits
+    Javob: B
+
+49. git log --first-parent?
+    A) All parents
+    B) Follow only first parent (main line)
+    C) Last parent
+    D) No parent
+    Javob: B
+
+50. git log -S vs -G?
+    A) Same
+    B) -S=pickaxe (add/remove), -G=grep (diff content)
+    C) -G=pickaxe
+    D) No difference
+    Javob: B
+
+51. git blame -C -C -C?
+    A) Single blame
+    B) Detect moves/copies across files and commits
+    C) No detection
+    D) File only
+    Javob: B
+
+52. git bisect run?
+    A) Run bisect
+    B) Automated binary search with script
+    C) Bisect manual
+    D) Manual search
+    Javob: B
+
+53. git bisect skip?
+    A) Skip bisect
+    B) Mark commit as untestable
+    C) Bisect mark
+    D) Test commit
+    Javob: B
+
+54. git notes nima?
+    A) Notes git
+    B) Metadata attached to commits without changing them
+    C) Git notes
+    D) Commit change
+    Javob: B
+
+55. git notes copy?
+    A) Copy notes
+    B) Copy notes between commits
+    C) Notes copy
+    D) Between notes
+    Javob: B
+
+56. Signed commits (GPG)?
+    A) Unsigned
+    B) git commit -S with GPG key
+    C) No signing
+    D) Automatic sign
+    Javob: B
+
+57. git verify-commit?
+    A) Verify commit
+    B) Check GPG signature validity
+    C) Commit verify
+    D) Signature check
+    Javob: B
+
+58. SSH signing (Git 2.34+)?
+    A) GPG only
+    B) Use SSH keys for signing
+    C) No SSH
+    D) Password sign
+    Javob: B
+
+59. git credential helper?
+    A) Credential git
+    B) Secure credential storage/caching
+    C) Git credential
+    D) Password store
+    Javob: B
+
+60. credential.helper=cache vs store?
+    A) Same
+    B) Cache=memory timeout, Store=plaintext file
+    C) Store=memory
+    D) No difference
+    Javob: B
+
+61. git config --global vs --local vs --system?
+    A) Same
+    B) System=all users, global=user, local=repo
+    C) All same
+    D) No difference
+    Javob: B
+
+62. Conditional includes?
+    A) No includes
+    B) [includeIf "gitdir:..."] for context config
+    C) Always include
+    D) Manual include
+    Javob: B
+
+63. git attributes nima?
+    A) Attributes git
+    B) Path-specific settings (filters, diff, merge)
+    C) Git attributes
+    D) Global settings
+    Javob: B
+
+64. gitattributes filter=lfs?
+    A) Filter attribute
+    B) Git LFS tracking configuration
+    C) Attribute filter
+    D) No LFS
+    Javob: B
+
+65. Clean/smudge filters?
+    A) Clean filter
+    B) Transform content on checkout/commit
+    C) Filter clean
+    D) No transform
+    Javob: B
+
+66. Git hooks directory?
+    A) hooks/
+    B) .git/hooks/ (or core.hooksPath)
+    C) /hooks
+    D) .hooks/
+    Javob: B
+
+67. pre-commit hook nima?
+    A) Post commit
+    B) Run before commit is created
+    C) Commit pre
+    D) After commit
+    Javob: B
+
+68. pre-push hook?
+    A) Post push
+    B) Run before push to remote
+    C) Push pre
+    D) After push
+    Javob: B
+
+69. prepare-commit-msg hook?
+    A) Prepare commit
+    B) Modify default commit message
+    C) Commit prepare
+    D) Default message
+    Javob: B
+
+70. commit-msg hook?
+    A) Message commit
+    B) Validate commit message format
+    C) Commit message
+    D) Format message
+    Javob: B
+
+71. Server-side hooks?
+    A) Client hooks
+    B) pre-receive, update, post-receive
+    C) No server hooks
+    D) One hook
+    Javob: B
+
+72. pre-receive hook use?
+    A) Post receive
+    B) Enforce policies on all pushed commits
+    C) No policy
+    D) Local policy
+    Javob: B
+
+73. update hook vs pre-receive?
+    A) Same
+    B) Update runs per-ref, pre-receive once
+    C) Pre-receive per-ref
+    D) No difference
+    Javob: B
+
+74. Git protocol versions?
+    A) One version
+    B) v0, v1, v2 (v2 is faster)
+    C) Two versions
+    D) No version
+    Javob: B
+
+75. Protocol v2 benefits?
+    A) No benefit
+    B) Ref filtering, faster negotiation
+    C) Slower
+    D) Same speed
+    Javob: B
+
+76. git upload-pack / receive-pack?
+    A) Upload receive
+    B) Server-side git fetch/push handlers
+    C) Client handlers
+    D) No handlers
+    Javob: B
+
+77. git daemon nima?
+    A) Daemon git
+    B) Anonymous Git protocol server
+    C) Git daemon
+    D) HTTP server
+    Javob: B
+
+78. git archive nima?
+    A) Archive git
+    B) Export tree as tar/zip without .git
+    C) Git archive
+    D) With .git
+    Javob: B
+
+79. git archive --remote?
+    A) Local archive
+    B) Archive from remote repository
+    C) Archive remote
+    D) No remote
+    Javob: B
+
+80. git format-patch?
+    A) Format patch
+    B) Create patch files from commits
+    C) Patch format
+    D) Diff files
+    Javob: B
+
+81. git am nima?
+    A) Am git
+    B) Apply patch files as commits
+    C) Git am
+    D) Patch apply
+    Javob: B
+
+82. git send-email?
+    A) Send email
+    B) Send patches via email
+    C) Email send
+    D) Patch email
+    Javob: B
+
+83. git request-pull?
+    A) Request pull
+    B) Generate pull request message
+    C) Pull request
+    D) Message pull
+    Javob: B
+
+84. git describe nima?
+    A) Describe git
+    B) Human-readable name from history
+    C) Git describe
+    D) Name history
+    Javob: B
+
+85. git describe --tags --always?
+    A) Describe tags
+    B) Include lightweight tags, fallback to hash
+    C) Tags describe
+    D) No fallback
+    Javob: B
+
+86. git shortlog nima?
+    A) Short log
+    B) Summarize commit log by author
+    C) Log short
+    D) Author log
+    Javob: B
+
+87. git shortlog -sn?
+    A) Shortlog sn
+    B) Show commit counts sorted by author
+    C) Sn shortlog
+    D) Unsorted counts
+    Javob: B
+
+88. git range-diff?
+    A) Range diff
+    B) Compare two commit ranges (rebase review)
+    C) Diff range
+    D) Single diff
+    Javob: B
+
+89. git stash push -p?
+    A) Push stash
+    B) Interactively select hunks to stash
+    C) Stash push
+    D) All hunks
+    Javob: B
+
+90. git stash branch?
+    A) Stash branch
+    B) Create branch from stash
+    C) Branch stash
+    D) No branch
+    Javob: B
+
+91. git clean -fd?
+    A) Clean files
+    B) Remove untracked files and directories
+    C) Files clean
+    D) Keep untracked
+    Javob: B
+
+92. git clean -n (dry-run)?
+    A) No clean
+    B) Show what would be removed
+    C) Clean no
+    D) Remove now
+    Javob: B
+
+93. git checkout --conflict=diff3?
+    A) Conflict checkout
+    B) Show base in conflict markers
+    C) Checkout conflict
+    D) No base
+    Javob: B
+
+94. merge.conflictStyle=zdiff3?
+    A) Style zdiff3
+    B) Improved conflict markers with context
+    C) Zdiff3 style
+    D) No context
+    Javob: B
+
+95. git restore vs git checkout?
+    A) Same
+    B) Restore=working tree, checkout=branches too
+    C) Checkout=working tree only
+    D) No difference
+    Javob: B
+
+96. git switch vs git checkout?
+    A) Same
+    B) Switch=branches only, checkout=files too
+    C) Checkout=branches only
+    D) No difference
+    Javob: B
+
+97. git update-index --assume-unchanged?
+    A) Assume unchanged
+    B) Ignore local changes to tracked file
+    C) Unchanged assume
+    D) Track changes
+    Javob: B
+
+98. git update-index --skip-worktree?
+    A) Skip worktree
+    B) Keep local file, ignore index
+    C) Worktree skip
+    D) Update index
+    Javob: B
+
+99. git ls-files -s?
+    A) List files
+    B) Show staged files with mode and hash
+    C) Files list
+    D) No mode
+    Javob: B
+
+100. git hash-object -w?
+     A) Hash object
+     B) Write object to Git database
+     C) Object hash
+     D) Read object
+     Javob: B

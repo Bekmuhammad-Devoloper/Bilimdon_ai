@@ -1,0 +1,702 @@
+NODE.JS - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+=================================================
+
+1. Node.js event loop phases?
+   A) One phase
+   B) timers, pending callbacks, idle/prepare, poll, check, close callbacks
+   C) Two phases
+   D) Three phases
+   Javob: B
+
+2. process.nextTick vs setImmediate farqi?
+   A) Same
+   B) nextTick=current phase oxiri, setImmediate=check phase
+   C) setImmediate birinchi
+   D) No difference
+   Javob: B
+
+3. microtasks queue qachon process bo'ladi?
+   A) Random
+   B) Har phase orasida
+   C) Oxirida
+   D) Boshida
+   Javob: B
+
+4. libuv nima?
+   A) Library
+   B) Node.js async I/O library (C)
+   C) UV light
+   D) Lib UV
+   Javob: B
+
+5. Thread pool size default?
+   A) 1
+   B) 4
+   C) 8
+   D) 16
+   Javob: B
+
+6. UV_THREADPOOL_SIZE nima?
+   A) UV size
+   B) Thread pool size environment variable
+   C) Pool size
+   D) Thread size
+   Javob: B
+
+7. Worker threads vs Child process farqi?
+   A) Same
+   B) Workers=shared memory, Child=separate process
+   C) Child=shared memory
+   D) No difference
+   Javob: B
+
+8. SharedArrayBuffer workers bilan?
+   A) Not supported
+   B) Zero-copy memory sharing
+   C) Copy memory
+   D) No sharing
+   Javob: B
+
+9. Atomics object Node.js da?
+   A) Chemistry
+   B) Thread-safe SharedArrayBuffer operations
+   C) Atomic variable
+   D) Atom type
+   Javob: B
+
+10. Cluster module nima?
+    A) Cluster server
+    B) Multi-process load balancing
+    C) Cluster storage
+    D) Group module
+    Javob: B
+
+11. cluster.fork() nima qiladi?
+    A) Fork repo
+    B) Worker process yaratadi
+    C) Fork file
+    D) Clone process
+    Javob: B
+
+12. cluster.isMaster vs cluster.isPrimary?
+    A) Same
+    B) isPrimary yangi (isMaster deprecated)
+    C) isMaster yangi
+    D) Different meaning
+    Javob: B
+
+13. PM2 nima?
+    A) Afternoon
+    B) Production process manager
+    C) Package manager
+    D) Project manager
+    Javob: B
+
+14. Zero-downtime restart qanday?
+    A) Stop then start
+    B) Cluster + graceful reload
+    C) Quick restart
+    D) No downtime
+    Javob: B
+
+15. Streams types?
+    A) One type
+    B) Readable, Writable, Duplex, Transform
+    C) Two types
+    D) Three types
+    Javob: B
+
+16. Backpressure streams da nima?
+    A) Pressure
+    B) Consumer tezligi producer dan sekin
+    C) Back pressure
+    D) Reverse flow
+    Javob: B
+
+17. pipe() method qanday ishlaydi?
+    A) Manual connect
+    B) Auto read->write + backpressure handling
+    C) Direct copy
+    D) Sync transfer
+    Javob: B
+
+18. pipeline() vs pipe() farqi?
+    A) Same
+    B) pipeline=error handling, cleanup
+    C) pipe better
+    D) No difference
+    Javob: B
+
+19. Transform stream use case?
+    A) Transform data
+    B) Data modification during streaming
+    C) Change type
+    D) Convert format
+    Javob: B
+
+20. Readable stream modes?
+    A) One mode
+    B) Flowing va Paused
+    C) Two modes
+    D) Read mode
+    Javob: B
+
+21. highWaterMark nima?
+    A) Water level
+    B) Buffer size threshold
+    C) High mark
+    D) Max water
+    Javob: B
+
+22. objectMode streams?
+    A) Object type
+    B) Non-buffer/string chunks
+    C) Mode object
+    D) Object stream
+    Javob: B
+
+23. Buffer.allocUnsafe vs Buffer.alloc?
+    A) Same
+    B) allocUnsafe=no zero-fill, faster
+    C) alloc faster
+    D) No difference
+    Javob: B
+
+24. Buffer pooling nima?
+    A) Pool buffer
+    B) Small buffers shared slab allocation
+    C) Buffer pool
+    D) Memory pool
+    Javob: B
+
+25. Buffer.poolSize default?
+    A) 4KB
+    B) 8KB
+    C) 16KB
+    D) 32KB
+    Javob: B
+
+26. V8 heap memory limit default?
+    A) 512MB
+    B) ~1.4GB (32-bit), ~4GB (64-bit)
+    C) 2GB
+    D) 8GB
+    Javob: B
+
+27. --max-old-space-size flag?
+    A) Max space
+    B) Heap memory limit increase
+    C) Old space
+    D) Memory max
+    Javob: B
+
+28. Garbage collection types V8?
+    A) One type
+    B) Scavenge (minor), Mark-sweep (major)
+    C) Two types
+    D) Manual GC
+    Javob: B
+
+29. --expose-gc flag nima?
+    A) Expose memory
+    B) global.gc() enable
+    C) GC expose
+    D) Show GC
+    Javob: B
+
+30. Memory leak detection tools?
+    A) console.log
+    B) heapdump, clinic, 0x
+    C) Memory tool
+    D) Debug tool
+    Javob: B
+
+31. process.memoryUsage() fields?
+    A) One field
+    B) rss, heapTotal, heapUsed, external, arrayBuffers
+    C) Memory fields
+    D) Usage fields
+    Javob: B
+
+32. rss (Resident Set Size) nima?
+    A) RSS feed
+    B) Total physical memory usage
+    C) Set size
+    D) Memory size
+    Javob: B
+
+33. external memory nima?
+    A) External disk
+    B) V8-managed C++ objects (Buffers)
+    C) External storage
+    D) Outside memory
+    Javob: B
+
+34. async_hooks module nima?
+    A) Async hook
+    B) Async resource lifecycle tracking
+    C) Hook module
+    D) Async module
+    Javob: B
+
+35. AsyncLocalStorage nima?
+    A) Local storage
+    B) Request-scoped context (like thread-local)
+    C) Async storage
+    D) Local async
+    Javob: B
+
+36. AsyncResource nima?
+    A) Async resource
+    B) Custom async operation tracking
+    C) Resource async
+    D) Async object
+    Javob: B
+
+37. Inspector protocol nima?
+    A) Inspector tool
+    B) Chrome DevTools debugging protocol
+    C) Protocol inspector
+    D) Debug protocol
+    Javob: B
+
+38. --inspect flag default port?
+    A) 3000
+    B) 9229
+    C) 8080
+    D) 5000
+    Javob: B
+
+39. --inspect-brk nima?
+    A) Inspect break
+    B) Break on first line
+    C) Break inspect
+    D) Debug break
+    Javob: B
+
+40. ndb nima?
+    A) Database
+    B) Chrome DevTools-based Node.js debugger
+    C) Node debug
+    D) Debug node
+    Javob: B
+
+41. trace events nima?
+    A) Trace log
+    B) V8/Node.js performance tracing
+    C) Event trace
+    D) Trace event
+    Javob: B
+
+42. --trace-event-categories flag?
+    A) Trace category
+    B) Specific tracing categories enable
+    C) Event categories
+    D) Category trace
+    Javob: B
+
+43. perf_hooks module nima?
+    A) Performance hook
+    B) High-resolution timing/monitoring
+    C) Hook performance
+    D) Perf module
+    Javob: B
+
+44. performance.now() vs Date.now()?
+    A) Same
+    B) performance.now() high-resolution, monotonic
+    C) Date.now() better
+    D) No difference
+    Javob: B
+
+45. PerformanceObserver nima?
+    A) Observer
+    B) Performance entry monitoring
+    C) Performance watch
+    D) Watch performance
+    Javob: B
+
+46. HTTP/2 module benefits?
+    A) Faster HTTP
+    B) Multiplexing, header compression, server push
+    C) HTTP version 2
+    D) New HTTP
+    Javob: B
+
+47. http2.createSecureServer nima?
+    A) HTTP server
+    B) HTTP/2 + TLS server
+    C) Secure server
+    D) HTTPS server
+    Javob: B
+
+48. HTTP/2 server push?
+    A) Push notification
+    B) Proactive resource send before request
+    C) Server push
+    D) Push server
+    Javob: B
+
+49. QUIC protocol Node.js da?
+    A) Quick protocol
+    B) UDP-based HTTP/3 transport (experimental)
+    C) Fast protocol
+    D) Quick transport
+    Javob: B
+
+50. dgram module nima?
+    A) Diagram
+    B) UDP sockets
+    C) Data gram
+    D) Message module
+    Javob: B
+
+51. net module vs http module?
+    A) Same
+    B) net=raw TCP, http=HTTP protocol
+    C) http=TCP
+    D) No difference
+    Javob: B
+
+52. TLS/SSL handshake stages?
+    A) One stage
+    B) Client Hello, Server Hello, Certificate, Key Exchange, Finish
+    C) Two stages
+    D) Three stages
+    Javob: B
+
+53. SNI (Server Name Indication) nima?
+    A) Server name
+    B) Multiple SSL certs on one IP
+    C) Name indication
+    D) Server indication
+    Javob: B
+
+54. ALPN (Application-Layer Protocol Negotiation)?
+    A) Protocol negotiation
+    B) HTTP/2 protocol selection during TLS
+    C) Application protocol
+    D) Layer protocol
+    Javob: B
+
+55. crypto.randomBytes vs crypto.randomUUID?
+    A) Same
+    B) randomBytes=custom length, randomUUID=v4 UUID
+    C) randomUUID=bytes
+    D) No difference
+    Javob: B
+
+56. crypto.scrypt vs crypto.pbkdf2?
+    A) Same
+    B) scrypt=memory-hard (better), pbkdf2=CPU-hard
+    C) pbkdf2 better
+    D) No difference
+    Javob: B
+
+57. SubtleCrypto Node.js da?
+    A) Subtle library
+    B) Web Crypto API implementation
+    C) Crypto subtle
+    D) Subtle crypto
+    Javob: B
+
+58. webcrypto global nima?
+    A) Web crypto
+    B) globalThis.crypto.subtle access
+    C) Crypto web
+    D) Global crypto
+    Javob: B
+
+59. ES Modules vs CommonJS?
+    A) Same
+    B) ESM=static, async; CJS=dynamic, sync
+    C) CJS=static
+    D) No difference
+    Javob: B
+
+60. package.json "type": "module" nima?
+    A) Module type
+    B) .js files ESM sifatida treat
+    C) Type module
+    D) Module package
+    Javob: B
+
+61. .mjs vs .cjs extensions?
+    A) Same
+    B) .mjs=ESM, .cjs=CommonJS
+    C) Both ESM
+    D) Both CJS
+    Javob: B
+
+62. import.meta.url nima?
+    A) Import URL
+    B) Current module file URL
+    C) Meta URL
+    D) Module URL
+    Javob: B
+
+63. __dirname ESM da?
+    A) Available
+    B) fileURLToPath(import.meta.url) kerak
+    C) Same as CJS
+    D) Not needed
+    Javob: B
+
+64. Top-level await ESM da?
+    A) Not supported
+    B) Module root da await ishlatish
+    C) Only in functions
+    D) CJS only
+    Javob: B
+
+65. Dynamic import() nima qaytaradi?
+    A) Module
+    B) Promise<Module>
+    C) Object
+    D) Sync module
+    Javob: B
+
+66. require.resolve nima qiladi?
+    A) Resolve path
+    B) Module full path qaytaradi
+    C) Require resolve
+    D) Module resolve
+    Javob: B
+
+67. module.createRequire ESM da?
+    A) Create module
+    B) require() function yaratish ESM da
+    C) Require create
+    D) Module require
+    Javob: B
+
+68. Conditional exports package.json?
+    A) Export condition
+    B) Environment-specific entry points
+    C) Conditional export
+    D) Entry condition
+    Javob: B
+
+69. "exports" vs "main" package.json?
+    A) Same
+    B) exports=modern, granular; main=legacy
+    C) main=modern
+    D) No difference
+    Javob: B
+
+70. "imports" field package.json?
+    A) Import field
+    B) Private package imports mapping
+    C) Imports field
+    D) Import map
+    Javob: B
+
+71. node:test built-in module?
+    A) Test library
+    B) Native test runner (Node.js 18+)
+    C) Node test
+    D) Test node
+    Javob: B
+
+72. node --test flag?
+    A) Test flag
+    B) Built-in test runner execute
+    C) Run test
+    D) Test run
+    Javob: B
+
+73. describe, it, test built-in?
+    A) External library
+    B) node:test module exports
+    C) Jest only
+    D) Mocha only
+    Javob: B
+
+74. assert strict mode?
+    A) Assert mode
+    B) assert.strict - strict equality
+    C) Strict assert
+    D) Mode strict
+    Javob: B
+
+75. mock.fn() built-in?
+    A) Jest mock
+    B) node:test mock function
+    C) Mock function
+    D) Function mock
+    Javob: B
+
+76. test coverage built-in?
+    A) External tool
+    B) node --experimental-test-coverage
+    C) Coverage test
+    D) Test coverage
+    Javob: B
+
+77. --watch mode Node.js?
+    A) Watch files
+    B) Auto-restart on file changes (Node.js 18+)
+    C) File watch
+    D) Mode watch
+    Javob: B
+
+78. fs/promises vs fs with callbacks?
+    A) Same
+    B) fs/promises=async/await, fs=callbacks
+    C) fs=promises
+    D) No difference
+    Javob: B
+
+79. fs.watch vs chokidar?
+    A) Same
+    B) chokidar=cross-platform, reliable
+    C) fs.watch better
+    D) No difference
+    Javob: B
+
+80. EPERM, ENOENT, EACCES errors?
+    A) Random errors
+    B) File system error codes
+    C) Network errors
+    D) Memory errors
+    Javob: B
+
+81. graceful-fs nima?
+    A) Grace FS
+    B) fs wrapper with retry logic
+    C) Graceful file
+    D) FS graceful
+    Javob: B
+
+82. Node.js REPL customization?
+    A) No customization
+    B) repl.start() options, context, commands
+    C) REPL custom
+    D) Custom REPL
+    Javob: B
+
+83. NODE_REPL_HISTORY nima?
+    A) REPL history
+    B) REPL history file path
+    C) History node
+    D) Node history
+    Javob: B
+
+84. node --experimental-vm-modules?
+    A) VM modules
+    B) ESM support in vm module
+    C) Experimental VM
+    D) Module VM
+    Javob: B
+
+85. vm.SourceTextModule nima?
+    A) Source text
+    B) ESM module in vm context
+    C) Text module
+    D) Module source
+    Javob: B
+
+86. N-API vs nan?
+    A) Same
+    B) N-API=ABI stable, nan=V8 version dependent
+    C) nan better
+    D) No difference
+    Javob: B
+
+87. node-addon-api nima?
+    A) Addon API
+    B) C++ wrapper for N-API
+    C) API addon
+    D) Node addon
+    Javob: B
+
+88. prebuild vs node-gyp?
+    A) Same
+    B) prebuild=prebuilt binaries, node-gyp=compile
+    C) node-gyp=prebuilt
+    D) No difference
+    Javob: B
+
+89. node:child_process spawn options?
+    A) One option
+    B) stdio, env, cwd, shell, detached, etc.
+    C) Spawn options
+    D) Process options
+    Javob: B
+
+90. stdio: 'inherit' nima?
+    A) Inherit stdio
+    B) Parent process stdio share
+    C) Stdio inherit
+    D) Share stdio
+    Javob: B
+
+91. detached: true spawn da?
+    A) Detach process
+    B) Independent child process
+    C) Detached spawn
+    D) Spawn detach
+    Javob: B
+
+92. IPC (Inter-Process Communication)?
+    A) IP communication
+    B) Message passing between processes
+    C) Process communication
+    D) Inter process
+    Javob: B
+
+93. child.send() va process.on('message')?
+    A) Send message
+    B) IPC message exchange
+    C) Message send
+    D) Process send
+    Javob: B
+
+94. execSync vs spawnSync?
+    A) Same
+    B) execSync=shell, buffer; spawnSync=no shell, streams
+    C) spawnSync=shell
+    D) No difference
+    Javob: B
+
+95. signal: AbortSignal nima?
+    A) Signal abort
+    B) Operation cancellation
+    C) Abort signal
+    D) Cancel signal
+    Javob: B
+
+96. AbortController Node.js da?
+    A) Controller
+    B) Async operation cancellation
+    C) Abort control
+    D) Control abort
+    Javob: B
+
+97. --enable-source-maps flag?
+    A) Source maps
+    B) Error stack trace source map support
+    C) Enable maps
+    D) Map source
+    Javob: B
+
+98. --no-warnings flag?
+    A) No warning
+    B) Deprecation warnings suppress
+    C) Warning no
+    D) Suppress warnings
+    Javob: B
+
+99. process.report nima?
+    A) Process report
+    B) Diagnostic report generation
+    C) Report process
+    D) Generate report
+    Javob: B
+
+100. NODE_OPTIONS environment variable?
+     A) Node options
+     B) Default CLI flags set
+     C) Options node
+     D) Environment options
+     Javob: B

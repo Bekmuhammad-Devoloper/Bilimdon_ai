@@ -1,0 +1,723 @@
+C++ DASTURLASH TILIDAN 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+=================================================================
+
+1. Quyidagi kodning natijasi nima?
+   int* p = new int[5];
+   delete p;
+   A) To'g'ri ishlaydi
+   B) Undefined behavior (noaniq xatti-harakat)
+   C) Kompilyatsiya xatosi
+   D) Segmentation fault
+   Javob: B
+
+2. Reference va pointer o'rtasidagi asosiy farq nima?
+   A) Reference qayta tayinlanishi mumkin
+   B) Reference NULL bo'lishi mumkin emas
+   C) Pointer tezroq ishlaydi
+   D) Farqi yo'q
+   Javob: B
+
+3. Quyidagi kod nima chiqaradi?
+   int a = 5;
+   int& ref = a;
+   ref = 10;
+   cout << a;
+   A) 5
+   B) 10
+   C) 0
+   D) Xato
+   Javob: B
+
+4. Copy constructor qachon chaqiriladi?
+   A) Obyekt yaratilganda
+   B) Obyekt boshqa obyektdan nusxa olinganda
+   C) Obyekt o'chirilganda
+   D) Har doim
+   Javob: B
+
+5. Shallow copy va deep copy farqi nimada?
+   A) Tezlikda
+   B) Shallow copy faqat manzilni ko'chiradi, deep copy haqiqiy ma'lumotni
+   C) Hajmda
+   D) Farqi yo'q
+   Javob: B
+
+6. Operator overloading da qaysi operatorni overload qilib bo'lmaydi?
+   A) +
+   B) ::
+   C) ==
+   D) []
+   Javob: B
+
+7. Quyidagi kodda xato qayerda?
+   class A { virtual void foo(); };
+   class B : A { void foo(); };
+   A) virtual kalit so'zida
+   B) B sinfida public merosxo'rlik ko'rsatilmagan
+   C) foo() funksiyasida
+   D) Xato yo'q
+   Javob: B
+
+8. Multiple inheritance da diamond problem nima?
+   A) Kompilyatsiya xatosi
+   B) Bir xil ota sinfdan ikki marta meros olish muammosi
+   C) Xotira muammosi
+   D) Tezlik muammosi
+   Javob: B
+
+9. Virtual inheritance nima uchun ishlatiladi?
+   A) Tezlikni oshirish
+   B) Diamond problemni hal qilish
+   C) Xotirani tejash
+   D) Kodni qisqartirish
+   Javob: B
+
+10. Pure virtual function bo'lgan sinf qanday nomlanadi?
+    A) Virtual sinf
+    B) Abstrakt sinf
+    C) Interface sinf
+    D) Static sinf
+    Javob: B
+
+11. Quyidagi kod nima chiqaradi?
+    cout << (5 > 3 ? 10 : 20);
+    A) true
+    B) 10
+    C) 20
+    D) 5
+    Javob: B
+
+12. static member function qanday xususiyatga ega?
+    A) this pointer ishlatishi mumkin
+    B) this pointer ishlatishi mumkin emas
+    C) Virtual bo'lishi mumkin
+    D) Faqat private bo'lishi mumkin
+    Javob: B
+
+13. const member function nima qiladi?
+    A) Obyektni yaratadi
+    B) Obyekt holatini o'zgartirmaydi
+    C) Obyektni o'chiradi
+    D) Statik bo'ladi
+    Javob: B
+
+14. Quyidagi kod to'g'rimi?
+    const int x = 5;
+    int* p = &x;
+    A) To'g'ri
+    B) Xato - const int* kerak
+    C) Xato - reference kerak
+    D) Xato - new kerak
+    Javob: B
+
+15. mutable kalit so'zi nima qiladi?
+    A) O'zgaruvchini const qiladi
+    B) const funksiya ichida o'zgartirishga ruxsat beradi
+    C) O'zgaruvchini static qiladi
+    D) O'zgaruvchini private qiladi
+    Javob: B
+
+16. explicit kalit so'zi nima uchun ishlatiladi?
+    A) Funksiyani virtual qilish
+    B) Implicit (yashirin) konversiyani taqiqlash
+    C) Funksiyani inline qilish
+    D) O'zgaruvchini const qilish
+    Javob: B
+
+17. inline funksiya qanday ishlaydi?
+    A) Alohida chaqiriladi
+    B) Chaqirilgan joyga kod kiritiladi
+    C) Virtual bo'ladi
+    D) Static bo'ladi
+    Javob: B
+
+18. Quyidagi kodning natijasi?
+    int arr[] = {1, 2, 3, 4, 5};
+    cout << *(arr + 2);
+    A) 1
+    B) 3
+    C) 2
+    D) 4
+    Javob: B
+
+19. Pointer arifmetikasida p++ nima qiladi (int* p bo'lsa)?
+    A) 1 bayt oldinga
+    B) sizeof(int) bayt oldinga
+    C) 2 bayt oldinga
+    D) O'zgarmaydi
+    Javob: B
+
+20. Function pointer qanday e'lon qilinadi?
+    A) int *func();
+    B) int (*func)();
+    C) int func*();
+    D) *int func();
+    Javob: B
+
+21. Callback funksiya nima?
+    A) Rekursiv funksiya
+    B) Boshqa funksiyaga argument sifatida uzatiladigan funksiya
+    C) Virtual funksiya
+    D) Static funksiya
+    Javob: B
+
+22. std::vector da reserve() va resize() farqi nima?
+    A) Farqi yo'q
+    B) reserve() faqat xotira ajratadi, resize() elementlar yaratadi
+    C) reserve() elementlar yaratadi
+    D) resize() faqat xotira ajratadi
+    Javob: B
+
+23. std::vector da capacity() nima qaytaradi?
+    A) Elementlar sonini
+    B) Ajratilgan xotira hajmini (element sonida)
+    C) Baytlarda hajmni
+    D) Maksimal hajmni
+    Javob: B
+
+24. std::map qanday ma'lumot strukturasi?
+    A) Massiv
+    B) Tartiblangan kalit-qiymat juftliklari
+    C) Bog'langan ro'yxat
+    D) Stack
+    Javob: B
+
+25. std::unordered_map std::map dan qanday farq qiladi?
+    A) Sekinroq
+    B) Hash table asosida, tartiblanmagan
+    C) Ko'proq xotira ishlatadi
+    D) Farqi yo'q
+    Javob: B
+
+26. Iterator nima?
+    A) Funksiya
+    B) Konteyner elementlariga kirish uchun obyekt
+    C) Ma'lumot turi
+    D) Operator
+    Javob: B
+
+27. std::vector<int>::iterator qanday tur?
+    A) int
+    B) Random access iterator
+    C) Forward iterator
+    D) Pointer
+    Javob: B
+
+28. begin() va end() iteratorlari orasidagi farq?
+    A) Farqi yo'q
+    B) begin() birinchi elementga, end() oxirgidan keyingiga
+    C) end() oxirgi elementga
+    D) begin() oxirgi elementga
+    Javob: B
+
+29. std::sort() algoritmi qaysi kutubxonada?
+    A) <vector>
+    B) <algorithm>
+    C) <sort>
+    D) <utility>
+    Javob: B
+
+30. std::find() nima qaytaradi agar element topilmasa?
+    A) -1
+    B) end() iteratorini
+    C) NULL
+    D) Xato
+    Javob: B
+
+31. Lambda funksiyada [&] nima anglatadi?
+    A) Hech narsa capture qilmaydi
+    B) Barcha tashqi o'zgaruvchilarni reference orqali capture qiladi
+    C) Barcha o'zgaruvchilarni qiymat bo'yicha capture qiladi
+    D) Faqat bitta o'zgaruvchini capture qiladi
+    Javob: B
+
+32. Lambda funksiyada [=] nima anglatadi?
+    A) Reference capture
+    B) Value (qiymat) bo'yicha capture
+    C) Hech narsa capture qilmaydi
+    D) Xato sintaksis
+    Javob: B
+
+33. std::function nima uchun ishlatiladi?
+    A) Oddiy funksiya yaratish
+    B) Har qanday callable obyektni saqlash
+    C) Lambda yaratish
+    D) Template yaratish
+    Javob: B
+
+34. try blokida exception otilmasa catch bloki bajariladi mi?
+    A) Ha
+    B) Yo'q
+    C) Ba'zan
+    D) Kompilyatsiya xatosi
+    Javob: B
+
+35. catch(...) nima ushlaydi?
+    A) Faqat int
+    B) Barcha exception turlarini
+    C) Faqat std::exception
+    D) Hech narsa
+    Javob: B
+
+36. std::exception sinfining what() metodi nima qaytaradi?
+    A) int
+    B) const char* (xato xabari)
+    C) bool
+    D) void
+    Javob: B
+
+37. noexcept kalit so'zi nima bildiradi?
+    A) Exception otadi
+    B) Exception otmasligini kafolatlaydi
+    C) Exception ushlaydi
+    D) Xato
+    Javob: B
+
+38. RAII nima?
+    A) Algoritm
+    B) Resource Acquisition Is Initialization - resurslarni boshqarish usuli
+    C) Ma'lumot turi
+    D) Kutubxona
+    Javob: B
+
+39. Smart pointer nima?
+    A) Oddiy pointer
+    B) Avtomatik xotira boshqaruvchi pointer
+    C) Tezroq pointer
+    D) Static pointer
+    Javob: B
+
+40. std::unique_ptr qanday xususiyatga ega?
+    A) Ko'p egalik
+    B) Faqat bitta egasi bo'lishi mumkin
+    C) Weak reference
+    D) Shared reference
+    Javob: B
+
+41. std::shared_ptr qanday ishlaydi?
+    A) Faqat bitta ega
+    B) Reference counting orqali ko'p egalik
+    C) Weak reference
+    D) Raw pointer kabi
+    Javob: B
+
+42. std::weak_ptr nima uchun ishlatiladi?
+    A) Kuchli reference
+    B) Circular reference muammosini hal qilish
+    C) Tezroq ishlash
+    D) Xotira tejash
+    Javob: B
+
+43. std::make_unique nima uchun ishlatiladi?
+    A) shared_ptr yaratish
+    B) unique_ptr xavfsiz yaratish
+    C) weak_ptr yaratish
+    D) raw pointer yaratish
+    Javob: B
+
+44. Quyidagi kod xavfsizmi?
+    int* p = new int(5);
+    int* q = p;
+    delete p;
+    delete q;
+    A) Ha
+    B) Yo'q - double delete
+    C) Ba'zan
+    D) Kompilyatsiya xatosi
+    Javob: B
+
+45. Memory leak nima?
+    A) Xotira yetishmasligi
+    B) Ajratilgan xotira bo'shatilmaganda
+    C) Xotira toshishi
+    D) Segmentation fault
+    Javob: B
+
+46. Dangling pointer nima?
+    A) NULL pointer
+    B) Bo'shatilgan xotiraga ishora qiluvchi pointer
+    C) Void pointer
+    D) Function pointer
+    Javob: B
+
+47. std::string da c_str() nima qaytaradi?
+    A) std::string
+    B) const char* (C-style string)
+    C) char
+    D) int
+    Javob: B
+
+48. std::string da substr(2, 3) nima qaytaradi "Hello" uchun?
+    A) "He"
+    B) "llo"
+    C) "ell"
+    D) "lo"
+    Javob: B
+
+49. std::string da find() topilmasa nima qaytaradi?
+    A) -1
+    B) std::string::npos
+    C) 0
+    D) NULL
+    Javob: B
+
+50. std::stringstream nima uchun ishlatiladi?
+    A) Fayl o'qish
+    B) String va boshqa turlar o'rtasida konversiya
+    C) Tarmoq operatsiyalari
+    D) Xato ushlash
+    Javob: B
+
+51. Bitwise AND operatori qaysi?
+    A) &&
+    B) &
+    C) |
+    D) ||
+    Javob: B
+
+52. Bitwise OR operatori qaysi?
+    A) ||
+    B) |
+    C) &
+    D) ^
+    Javob: B
+
+53. XOR operatori qaysi?
+    A) |
+    B) ^
+    C) &
+    D) ~
+    Javob: B
+
+54. Left shift operatori (<<) 1 << 3 natijasi?
+    A) 3
+    B) 8
+    C) 6
+    D) 4
+    Javob: B
+
+55. Enum class (scoped enum) oddiy enum dan farqi?
+    A) Farqi yo'q
+    B) Kuchliroq tip xavfsizligi
+    C) Tezroq
+    D) Kamroq xotira
+    Javob: B
+
+56. typedef va using farqi C++11 da?
+    A) typedef yangi
+    B) using template alias qo'llab-quvvatlaydi
+    C) Farqi yo'q
+    D) typedef tezroq
+    Javob: B
+
+57. decltype nima qiladi?
+    A) O'zgaruvchi yaratadi
+    B) Ifodaning turini aniqlaydi
+    C) Funksiya chaqiradi
+    D) Xotira ajratadi
+    Javob: B
+
+58. auto va decltype farqi?
+    A) Farqi yo'q
+    B) auto qiymatdan, decltype ifodadan tur oladi
+    C) decltype tezroq
+    D) auto aniqroq
+    Javob: B
+
+59. constexpr funksiya qachon hisoblanadi?
+    A) Runtime da
+    B) Compile time da (iloji bo'lsa)
+    C) Link time da
+    D) Load time da
+    Javob: B
+
+60. static_assert nima qiladi?
+    A) Runtime tekshiruv
+    B) Compile time tekshiruv
+    C) Exception otadi
+    D) Warning chiqaradi
+    Javob: B
+
+61. std::array va C-style array farqi?
+    A) Farqi yo'q
+    B) std::array hajmini biladi va STL bilan ishlaydi
+    C) C-style tezroq
+    D) std::array dinamik
+    Javob: B
+
+62. std::tuple nima?
+    A) Dinamik massiv
+    B) Turli turdagi elementlar to'plami
+    C) Map
+    D) Set
+    Javob: B
+
+63. std::pair nima?
+    A) Bitta element
+    B) Ikki elementli struktura
+    C) Uch elementli
+    D) Massiv
+    Javob: B
+
+64. std::get<0>(tuple) nima qaytaradi?
+    A) Oxirgi elementni
+    B) Birinchi elementni
+    C) Tuple hajmini
+    D) Xato
+    Javob: B
+
+65. Structured binding (C++17) nima?
+    A) Funksiya bog'lash
+    B) Tuple/struct elementlarini alohida o'zgaruvchilarga ajratish
+    C) Xotira bog'lash
+    D) Thread bog'lash
+    Javob: B
+
+66. std::optional nima uchun ishlatiladi?
+    A) Majburiy qiymat
+    B) Qiymat bo'lishi yoki bo'lmasligi mumkin
+    C) Ko'p qiymat
+    D) Konstant qiymat
+    Javob: B
+
+67. std::variant nima?
+    A) Faqat bitta tur
+    B) Type-safe union
+    C) Massiv
+    D) Map
+    Javob: B
+
+68. std::any nima saqlashi mumkin?
+    A) Faqat int
+    B) Har qanday turni
+    C) Faqat string
+    D) Faqat pointer
+    Javob: B
+
+69. Move semantics nima uchun kerak?
+    A) Xavfsizlik uchun
+    B) Keraksiz nusxalashni oldini olish, performance uchun
+    C) Xotira tejash uchun
+    D) Kod qisqartirish uchun
+    Javob: B
+
+70. std::move nima qiladi?
+    A) Obyektni ko'chiradi
+    B) Lvalue ni rvalue ga aylantiradi
+    C) Xotira ajratadi
+    D) Xotira bo'shatadi
+    Javob: B
+
+71. Lvalue va rvalue farqi?
+    A) Farqi yo'q
+    B) Lvalue manzili bor, rvalue vaqtinchalik
+    C) Rvalue doimiy
+    D) Lvalue vaqtinchalik
+    Javob: B
+
+72. && (rvalue reference) nima uchun ishlatiladi?
+    A) Mantiqiy AND
+    B) Move semantics va perfect forwarding uchun
+    C) Bitwise AND
+    D) Xato sintaksis
+    Javob: B
+
+73. Perfect forwarding nima?
+    A) Xato yo'q forwarding
+    B) Argumentni aynan qanday kelgan bo'lsa shunday uzatish
+    C) Tez forwarding
+    D) Xavfsiz forwarding
+    Javob: B
+
+74. std::forward nima qiladi?
+    A) Oldinga yo'naltiradi
+    B) Perfect forwarding ni amalga oshiradi
+    C) Iterator yaratadi
+    D) Xotira ajratadi
+    Javob: B
+
+75. Rule of Three nima?
+    A) Uchta o'zgaruvchi qoidasi
+    B) Destructor, copy constructor, copy assignment birga kerak
+    C) Uchta funksiya qoidasi
+    D) Uchta sinf qoidasi
+    Javob: B
+
+76. Rule of Five nima qo'shadi Rule of Three ga?
+    A) Ikki funksiya
+    B) Move constructor va move assignment
+    C) Ikki o'zgaruvchi
+    D) Ikki operator
+    Javob: B
+
+77. = default nima qiladi?
+    A) Qiymat beradi
+    B) Kompilyator tomonidan generatsiya qilingan versiyani ishlatadi
+    C) Funksiyani o'chiradi
+    D) Xato chiqaradi
+    Javob: B
+
+78. = delete nima qiladi?
+    A) Xotira o'chiradi
+    B) Funksiyani ishlatishni taqiqlaydi
+    C) O'zgaruvchini o'chiradi
+    D) Faylni o'chiradi
+    Javob: B
+
+79. Virtual destructor qachon kerak?
+    A) Har doim
+    B) Polimorfik sinflar uchun
+    C) Hech qachon
+    D) Static sinflar uchun
+    Javob: B
+
+80. Slicing problem nima?
+    A) Xotira muammosi
+    B) Derived obyektni base ga nusxalashda ma'lumot yo'qolishi
+    C) Tezlik muammosi
+    D) Kompilyatsiya xatosi
+    Javob: B
+
+81. dynamic_cast nima qiladi?
+    A) Static cast
+    B) Runtime da xavfsiz downcasting
+    C) Const o'chirish
+    D) Reinterpret cast
+    Javob: B
+
+82. static_cast va dynamic_cast farqi?
+    A) Farqi yo'q
+    B) dynamic_cast runtime tekshiruv qiladi
+    C) static_cast tezroq emas
+    D) dynamic_cast compile time
+    Javob: B
+
+83. reinterpret_cast qachon ishlatiladi?
+    A) Xavfsiz cast uchun
+    B) Bit darajasida qayta talqin uchun
+    C) Polimorfizm uchun
+    D) Const o'chirish uchun
+    Javob: B
+
+84. const_cast nima qiladi?
+    A) Const qo'shadi
+    B) const/volatile ni olib tashlaydi yoki qo'shadi
+    C) Turni o'zgartiradi
+    D) Pointer o'zgartiradi
+    Javob: B
+
+85. CRTP (Curiously Recurring Template Pattern) nima?
+    A) Oddiy template
+    B) Sinf o'zini template argument sifatida uzatadi
+    C) Rekursiv funksiya
+    D) Virtual funksiya
+    Javob: B
+
+86. std::initializer_list nima?
+    A) Oddiy massiv
+    B) Braced initialization uchun maxsus tur
+    C) Vector
+    D) Array
+    Javob: B
+
+87. Uniform initialization (braced init) afzalligi?
+    A) Tezroq
+    B) Narrowing conversion ni oldini oladi
+    C) Kamroq kod
+    D) Ko'proq xotira
+    Javob: B
+
+88. std::set qanday tartiblangan?
+    A) Kiritish tartibida
+    B) Qiymat bo'yicha (default: o'sish)
+    C) Teskari tartibda
+    D) Random tartibda
+    Javob: B
+
+89. std::multiset std::set dan farqi?
+    A) Tezroq
+    B) Dublikat elementlarga ruxsat beradi
+    C) Tartiblanmagan
+    D) Farqi yo'q
+    Javob: B
+
+90. std::stack qaysi konteyner ustida ishlaydi (default)?
+    A) vector
+    B) deque
+    C) list
+    D) array
+    Javob: B
+
+91. std::queue qaysi konteyner ustida ishlaydi (default)?
+    A) vector
+    B) deque
+    C) list
+    D) array
+    Javob: B
+
+92. std::priority_queue qanday ishlaydi?
+    A) FIFO
+    B) Eng katta element birinchi (default: max-heap)
+    C) LIFO
+    D) Random
+    Javob: B
+
+93. std::list va std::vector farqi?
+    A) Farqi yo'q
+    B) list - doubly linked list, o'rtaga qo'shish tez
+    C) vector sekinroq
+    D) list random access qo'llab-quvvatlaydi
+    Javob: B
+
+94. std::deque nima?
+    A) Stack
+    B) Double-ended queue - ikki tomondan qo'shish/o'chirish
+    C) Priority queue
+    D) Circular queue
+    Javob: B
+
+95. std::bitset nima uchun ishlatiladi?
+    A) Byte saqlash
+    B) Bitlar to'plamini samarali saqlash
+    C) Integer saqlash
+    D) String saqlash
+    Javob: B
+
+96. std::chrono nima uchun ishlatiladi?
+    A) String operatsiyalari
+    B) Vaqt va davomiylik bilan ishlash
+    C) Fayl operatsiyalari
+    D) Tarmoq operatsiyalari
+    Javob: B
+
+97. std::thread qaysi kutubxonada?
+    A) <iostream>
+    B) <thread>
+    C) <process>
+    D) <async>
+    Javob: B
+
+98. std::mutex nima uchun ishlatiladi?
+    A) Xotira ajratish
+    B) Thread xavfsizligini ta'minlash (mutual exclusion)
+    C) Fayl qulflash
+    D) Tarmoq qulflash
+    Javob: B
+
+99. std::lock_guard nima qiladi?
+    A) Faylni qulflaydi
+    B) RAII asosida mutex ni avtomatik qulflash/ochish
+    C) Thread yaratadi
+    D) Xotira qulflaydi
+    Javob: B
+
+100. std::async nima qaytaradi?
+     A) Thread
+     B) std::future
+     C) Result
+     D) void
+     Javob: B
+
+=================================================================
+                         YAKUNLANDI
+=================================================================

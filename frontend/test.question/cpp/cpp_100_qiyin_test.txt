@@ -1,0 +1,706 @@
+C++ DASTURLASH TILIDAN 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+==============================================================
+
+1. SFINAE qisqartmasi nimani bildiradi?
+   A) Standard Function Is Not An Error
+   B) Substitution Failure Is Not An Error
+   C) Static Function In Named Area Expression
+   D) System Failure In Nested Assignment
+   Javob: B
+
+2. std::enable_if nima uchun ishlatiladi?
+   A) Funksiyani yoqish
+   B) SFINAE orqali template overload tanlash
+   C) Xotirani yoqish
+   D) Thread yoqish
+   Javob: B
+
+3. std::is_integral<T>::value nima qaytaradi int uchun?
+   A) int
+   B) true
+   C) 1
+   D) "int"
+   Javob: B
+
+4. Type traits qaysi kutubxonada joylashgan?
+   A) <typeinfo>
+   B) <type_traits>
+   C) <traits>
+   D) <types>
+   Javob: B
+
+5. std::decay<T> nima qiladi?
+   A) Turni o'zgartirmaydi
+   B) Array->pointer, function->function pointer, reference/cv olib tashlaydi
+   C) Turni kengaytiradi
+   D) Turni qisqartiradi
+   Javob: B
+
+6. std::remove_reference<int&>::type nima?
+   A) int&
+   B) int
+   C) int&&
+   D) const int
+   Javob: B
+
+7. std::add_const<int>::type nima?
+   A) int
+   B) const int
+   C) int const&
+   D) const int&
+   Javob: B
+
+8. Variadic template nima?
+   A) Bitta parametrli template
+   B) Ixtiyoriy sonli parametrli template
+   C) Ikki parametrli template
+   D) Parametrsiz template
+   Javob: B
+
+9. template<typename... Args> da Args nima deyiladi?
+   A) Template argument
+   B) Parameter pack
+   C) Variadic list
+   D) Type list
+   Javob: B
+
+10. sizeof...(Args) nima qaytaradi?
+    A) Baytlar soni
+    B) Parameter pack dagi turlar soni
+    C) Xotira hajmi
+    D) Massiv uzunligi
+    Javob: B
+
+11. Fold expression (C++17) nima?
+    A) Oddiy loop
+    B) Parameter pack ustida operatorni qo'llash
+    C) Funksiya chaqirish
+    D) Template yaratish
+    Javob: B
+
+12. (args + ...) fold expression turi qaysi?
+    A) Left fold
+    B) Right fold (unary)
+    C) Binary fold
+    D) Ternary fold
+    Javob: B
+
+13. (... + args) fold expression turi qaysi?
+    A) Right fold
+    B) Left fold (unary)
+    C) Binary fold
+    D) No fold
+    Javob: B
+
+14. std::invoke nima qiladi?
+    A) Faqat funksiya chaqiradi
+    B) Har qanday callable ni uniform tarzda chaqiradi
+    C) Thread yaratadi
+    D) Exception otadi
+    Javob: B
+
+15. std::apply nima qiladi?
+    A) Funksiya yaratadi
+    B) Tuple elementlarini funksiyaga argument sifatida uzatadi
+    C) Tuple yaratadi
+    D) Array yaratadi
+    Javob: B
+
+16. if constexpr (C++17) oddiy if dan farqi?
+    A) Farqi yo'q
+    B) Compile time da branch tanlanadi, boshqasi compile qilinmaydi
+    C) Tezroq ishlaydi
+    D) Runtime da ishlaydi
+    Javob: B
+
+17. std::conditional<true, int, double>::type nima?
+    A) double
+    B) int
+    C) bool
+    D) void
+    Javob: B
+
+18. Tag dispatching nima?
+    A) Error handling
+    B) Function overload tanlash uchun empty struct ishlatish
+    C) Memory allocation
+    D) Thread scheduling
+    Javob: B
+
+19. std::integral_constant nima?
+    A) Oddiy konstanta
+    B) Compile-time konstanta wrapper turi
+    C) Runtime konstanta
+    D) String konstanta
+    Javob: B
+
+20. std::void_t (C++17) nima uchun ishlatiladi?
+    A) Void qaytarish
+    B) SFINAE detection idiom uchun
+    C) Null pointer
+    D) Empty class
+    Javob: B
+
+21. Expression SFINAE nima?
+    A) Statement SFINAE
+    B) Decltype va trailing return type orqali SFINAE
+    C) Template SFINAE
+    D) Class SFINAE
+    Javob: B
+
+22. std::declval<T>() nima qiladi?
+    A) Qiymat yaratadi
+    B) Constructor chaqirmasdan tur qiymatiga murojaat (unevaluated context)
+    C) Pointer yaratadi
+    D) Reference yaratadi
+    Javob: B
+
+23. Dependent name qachon typename kerak?
+    A) Hech qachon
+    B) Template parametriga bog'liq nested type uchun
+    C) Har doim
+    D) Faqat funksiya uchun
+    Javob: B
+
+24. Two-phase lookup nima?
+    A) Ikki marta kompilatsiya
+    B) Template da non-dependent va dependent nomlarni alohida qidirish
+    C) Ikki marta linking
+    D) Ikki marta optimization
+    Javob: B
+
+25. ADL (Argument Dependent Lookup) nima?
+    A) Argument tekshirish
+    B) Argument turiga qarab namespace da funksiya qidirish
+    C) Argument konversiya
+    D) Argument validation
+    Javob: B
+
+26. Hidden friend function nima?
+    A) Private funksiya
+    B) Faqat ADL orqali topiladigan friend funksiya
+    C) Virtual funksiya
+    D) Static funksiya
+    Javob: B
+
+27. Memory model C++11 da nima uchun kiritilgan?
+    A) Xotira tejash
+    B) Multithreading da memory ordering ni standartlashtirish
+    C) Xotira ajratish
+    D) Garbage collection
+    Javob: B
+
+28. std::memory_order_seq_cst nima?
+    A) Relaxed ordering
+    B) Sequential consistency - eng kuchli ordering
+    C) Acquire ordering
+    D) Release ordering
+    Javob: B
+
+29. std::memory_order_relaxed qachon ishlatiladi?
+    A) Har doim
+    B) Faqat atomik operatsiya kerak, ordering muhim emas
+    C) Hech qachon
+    D) Faqat write uchun
+    Javob: B
+
+30. Acquire-release semantics nima?
+    A) Lock/unlock
+    B) Store-release dan oldingi yozuvlar load-acquire dan keyin ko'rinadi
+    C) Memory allocation
+    D) Thread creation
+    Javob: B
+
+31. std::atomic<T> nima ta'minlaydi?
+    A) Tezlik
+    B) Data race free operatsiyalar
+    C) Xotira tejash
+    D) Lock
+    Javob: B
+
+32. compare_exchange_weak va compare_exchange_strong farqi?
+    A) Farqi yo'q
+    B) weak spuriously fail qilishi mumkin (loop da ishlatiladi)
+    C) strong tezroq
+    D) weak kuchli
+    Javob: B
+
+33. std::atomic_flag nima?
+    A) Oddiy flag
+    B) Eng oddiy atomic tur, faqat test_and_set va clear
+    C) Thread flag
+    D) Signal flag
+    Javob: B
+
+34. Spinlock nima?
+    A) File lock
+    B) Busy-waiting qiladigan lock
+    C) Mutex
+    D) Semaphore
+    Javob: B
+
+35. False sharing nima?
+    A) Memory leak
+    B) Turli core lar bir cache line dagi turli o'zgaruvchilarni o'zgartirishi
+    C) Data race
+    D) Deadlock
+    Javob: B
+
+36. alignas specifier nima qiladi?
+    A) Xotirani bo'shatadi
+    B) O'zgaruvchi/tur alignment ini belgilaydi
+    C) Xotirani ajratadi
+    D) Cache tozalaydi
+    Javob: B
+
+37. alignof operator nima qaytaradi?
+    A) Hajmni baytlarda
+    B) Turning alignment talabini
+    C) Pointer manzilini
+    D) Array uzunligini
+    Javob: B
+
+38. std::hardware_destructive_interference_size nima uchun?
+    A) Hardware info
+    B) False sharing dan qochish uchun minimal masofa
+    C) Cache size
+    D) Memory size
+    Javob: B
+
+39. std::condition_variable nima uchun ishlatiladi?
+    A) Shart tekshirish
+    B) Threadlar orasida signal/wait mexanizmi
+    C) Xato tekshirish
+    D) Memory tekshirish
+    Javob: B
+
+40. Spurious wakeup nima?
+    A) To'g'ri uyg'onish
+    B) Conditionda signal bo'lmasa ham uyg'onish
+    C) Xato uyg'onish
+    D) Forced wakeup
+    Javob: B
+
+41. std::unique_lock va std::lock_guard farqi?
+    A) Farqi yo'q
+    B) unique_lock deferred locking, manual unlock qo'llab-quvvatlaydi
+    C) lock_guard tezroq
+    D) unique_lock xavfsizroq
+    Javob: B
+
+42. std::scoped_lock (C++17) nima afzalligi bor?
+    A) Tezroq
+    B) Deadlock-free multiple mutex locking
+    C) Kamroq xotira
+    D) Soddaroq sintaksis faqat
+    Javob: B
+
+43. std::call_once nima uchun?
+    A) Funksiyani har doim chaqirish
+    B) Funksiyani faqat bir marta chaqirishni kafolatlash (thread-safe)
+    C) Bir necha marta chaqirish
+    D) Async chaqirish
+    Javob: B
+
+44. std::promise va std::future munosabati?
+    A) Bir xil
+    B) promise qiymat o'rnatadi, future qiymat oladi
+    C) future qiymat o'rnatadi
+    D) promise qiymat oladi
+    Javob: B
+
+45. std::packaged_task nima?
+    A) Oddiy funksiya
+    B) Callable ni wrap qilib future bilan bog'laydi
+    C) Thread yaratadi
+    D) Memory ajratadi
+    Javob: B
+
+46. std::shared_future nima uchun?
+    A) Shared memory
+    B) Bir future natijasini bir nechta thread kutishi mumkin
+    C) Shared pointer
+    D) Shared mutex
+    Javob: B
+
+47. std::jthread (C++20) std::thread dan farqi?
+    A) Farqi yo'q
+    B) Avtomatik join va cooperative cancellation
+    C) Tezroq
+    D) Xavfsizroq join
+    Javob: B
+
+48. std::stop_token (C++20) nima uchun?
+    A) Thread to'xtatish
+    B) Cooperative thread cancellation
+    C) Memory to'xtatish
+    D) Exception to'xtatish
+    Javob: B
+
+49. std::latch va std::barrier (C++20) farqi?
+    A) Farqi yo'q
+    B) latch bir martalik, barrier qayta ishlatiladi
+    C) barrier bir martalik
+    D) latch tezroq
+    Javob: B
+
+50. std::counting_semaphore (C++20) nima?
+    A) Mutex
+    B) N ta resursga kirishni boshqaruvchi semaphore
+    C) Lock
+    D) Barrier
+    Javob: B
+
+51. Coroutine (C++20) nima?
+    A) Oddiy funksiya
+    B) Suspend/resume qiladigan funksiya
+    C) Thread
+    D) Callback
+    Javob: B
+
+52. co_await nima qiladi?
+    A) Natija qaytaradi
+    B) Coroutine ni suspend qiladi awaitable tugaguncha
+    C) Coroutine yaratadi
+    D) Thread yaratadi
+    Javob: B
+
+53. co_yield nima qiladi?
+    A) Xato otadi
+    B) Qiymat qaytarib coroutine ni suspend qiladi
+    C) Coroutine tugatadi
+    D) Loop yaratadi
+    Javob: B
+
+54. co_return nima qiladi?
+    A) Oddiy return
+    B) Coroutine ni yakunlaydi va qiymat qaytaradi
+    C) Exception otadi
+    D) Thread tugatadi
+    Javob: B
+
+55. std::generator (C++23) nima?
+    A) Random number
+    B) Lazy range uchun coroutine turi
+    C) Iterator
+    D) Container
+    Javob: B
+
+56. Concepts (C++20) nima uchun?
+    A) OOP uchun
+    B) Template parametrlariga constraint qo'yish
+    C) Memory uchun
+    D) Threading uchun
+    Javob: B
+
+57. requires clause nima qiladi?
+    A) Import qiladi
+    B) Template constraint belgilaydi
+    C) Exception talab qiladi
+    D) Memory talab qiladi
+    Javob: B
+
+58. std::same_as concept nima tekshiradi?
+    A) Qiymatlar tengligini
+    B) Turlar bir xilligini
+    C) Pointerlar tengligini
+    D) Reference tengligini
+    Javob: B
+
+59. std::convertible_to concept nima tekshiradi?
+    A) Tenglikni
+    B) Bir turdan boshqasiga implicit konversiya
+    C) Explicit konversiya
+    D) Cast
+    Javob: B
+
+60. requires expression nima?
+    A) Oddiy expression
+    B) Compile-time da turni/expressionga requirements tekshirish
+    C) Runtime check
+    D) Exception
+    Javob: B
+
+61. Modules (C++20) header fayllardan farqi?
+    A) Farqi yo'q
+    B) Tezroq kompilatsiya, yaxshiroq izolyatsiya
+    C) Sekinroq
+    D) Ko'proq kod
+    Javob: B
+
+62. export keyword (modules) nima qiladi?
+    A) Fayl yaratadi
+    B) Module dan tashqariga ko'rinadigan qiladi
+    C) Import qiladi
+    D) Delete qiladi
+    Javob: B
+
+63. import keyword nima qiladi?
+    A) Export qiladi
+    B) Module ni joriy translation unit ga kiritadi
+    C) Fayl ochadi
+    D) Thread yaratadi
+    Javob: B
+
+64. std::span (C++20) nima?
+    A) String view
+    B) Contiguous sequence ga non-owning view
+    C) Smart pointer
+    D) Container
+    Javob: B
+
+65. std::ranges (C++20) qanday afzalliklarga ega?
+    A) Tezroq
+    B) Lazy evaluation, composability, safety
+    C) Kamroq xotira
+    D) Soddaroq
+    Javob: B
+
+66. Views vs Actions ranges da?
+    A) Bir xil
+    B) Views lazy va non-owning, actions eager va mutating
+    C) Views eager
+    D) Actions lazy
+    Javob: B
+
+67. std::views::filter nima qaytaradi?
+    A) Container
+    B) Lazy view
+    C) Iterator
+    D) Bool
+    Javob: B
+
+68. Pipe operator (|) ranges da nima qiladi?
+    A) Bitwise OR
+    B) Range adaptorlarni compose qiladi
+    C) Division
+    D) Modulo
+    Javob: B
+
+69. std::ranges::to (C++23) nima qiladi?
+    A) Konversiya qilmaydi
+    B) Range ni container ga materializatsiya qiladi
+    C) Iterator qaytaradi
+    D) View qaytaradi
+    Javob: B
+
+70. Three-way comparison (<=>) nima qaytaradi?
+    A) bool
+    B) Ordering category (strong_ordering, weak_ordering, partial_ordering)
+    C) int
+    D) void
+    Javob: B
+
+71. std::strong_ordering va std::weak_ordering farqi?
+    A) Farqi yo'q
+    B) strong_ordering substitutability kafolatlaydi
+    C) weak_ordering kuchliroq
+    D) strong_ordering zaifroq
+    Javob: B
+
+72. = default spaceship operator nima generatsiya qiladi?
+    A) Faqat ==
+    B) Barcha 6 ta comparison operatorni
+    C) Faqat <=>
+    D) Hech narsa
+    Javob: B
+
+73. std::format (C++20) printf dan farqi?
+    A) Sekinroq
+    B) Type-safe, extensible, Python-like syntax
+    C) Tezroq faqat
+    D) Farqi yo'q
+    Javob: B
+
+74. std::source_location (C++20) nima uchun?
+    A) File I/O
+    B) Compile-time file/line/function info (logging uchun)
+    C) Memory location
+    D) Thread location
+    Javob: B
+
+75. [[nodiscard]] attribute nima qiladi?
+    A) Hech narsa
+    B) Qaytish qiymatini ignore qilganda warning beradi
+    C) Funksiyani o'chiradi
+    D) Funksiyani tezlashtiradi
+    Javob: B
+
+76. [[likely]] va [[unlikely]] (C++20) nima uchun?
+    A) Random uchun
+    B) Branch prediction hint berish
+    C) Error handling
+    D) Memory hint
+    Javob: B
+
+77. [[no_unique_address]] (C++20) nima qiladi?
+    A) Address olishni taqiqlaydi
+    B) Empty base optimization ni data members ga qo'llaydi
+    C) Unique address beradi
+    D) Memory ajratmaydi
+    Javob: B
+
+78. Designated initializers (C++20) nima?
+    A) Default initialization
+    B) Struct memberlarini nom bilan initialize qilish
+    C) Zero initialization
+    D) Value initialization
+    Javob: B
+
+79. Aggregate initialization qachon ishlaydi?
+    A) Har doim
+    B) User-declared constructors, private members bo'lmaganda
+    C) Hech qachon
+    D) Virtual funksiya bo'lganda
+    Javob: B
+
+80. std::launder nima uchun?
+    A) Memory tozalash
+    B) Placement new dan keyin obyektga to'g'ri kirish (pointer optimization barrier)
+    C) Garbage collection
+    D) Memory leak fix
+    Javob: B
+
+81. std::bit_cast (C++20) reinterpret_cast dan farqi?
+    A) Farqi yo'q
+    B) Well-defined, constexpr, value representation ni ko'chiradi
+    C) Tezroq
+    D) Sekinroq
+    Javob: B
+
+82. std::popcount nima hisoblaydi?
+    A) Population
+    B) Set bitlar sonini (1 lar soni)
+    C) Total bitlar
+    D) Zero bitlar
+    Javob: B
+
+83. std::rotl va std::rotr nima qiladi?
+    A) Sort
+    B) Bitwise rotation (left/right)
+    C) Reverse
+    D) Shift
+    Javob: B
+
+84. consteval (C++20) constexpr dan farqi?
+    A) Farqi yo'q
+    B) consteval FAQAT compile-time, constexpr ikkalasi ham
+    C) constexpr faqat compile-time
+    D) consteval runtime ham
+    Javob: B
+
+85. constinit (C++20) nima ta'minlaydi?
+    A) Const qiladi
+    B) Static/thread-local variable compile-time initialized bo'lishini
+    C) Runtime init
+    D) Lazy init
+    Javob: B
+
+86. Static initialization order fiasco nima?
+    A) Link error
+    B) Turli translation units dagi static o'zgaruvchilar init tartibi noaniq
+    C) Compile error
+    D) Runtime crash always
+    Javob: B
+
+87. Meyer's Singleton nima?
+    A) Global singleton
+    B) Local static orqali thread-safe lazy singleton
+    C) Eager singleton
+    D) Double-checked singleton
+    Javob: B
+
+88. std::expected (C++23) std::optional dan farqi?
+    A) Farqi yo'q
+    B) Xato holatini ham saqlaydi (value or error)
+    C) Tezroq
+    D) Kamroq xotira
+    Javob: B
+
+89. Monadic operations std::optional da (C++23): and_then, or_else, transform?
+    A) Math operations
+    B) Functional chaining uchun
+    C) String operations
+    D) Memory operations
+    Javob: B
+
+90. std::mdspan (C++23) nima?
+    A) String span
+    B) Multidimensional non-owning view
+    C) Memory span
+    D) Thread span
+    Javob: B
+
+91. std::flat_map (C++23) std::map dan farqi?
+    A) Farqi yo'q
+    B) Contiguous storage, cache-friendly, sorted vector based
+    C) Hash based
+    D) Tree based
+    Javob: B
+
+92. std::stacktrace (C++23) nima uchun?
+    A) Stack allocation
+    B) Runtime call stack info olish
+    C) Stack memory
+    D) Stack container
+    Javob: B
+
+93. Deducing this (C++23) nima imkonini beradi?
+    A) Constructor deduction
+    B) Explicit object parameter, CRTP ni soddalashtirishga
+    C) Template deduction
+    D) Auto deduction
+    Javob: B
+
+94. std::print (C++23) std::cout dan farqi?
+    A) Farqi yo'q
+    B) std::format based, tezroq, convenient
+    C) Sekinroq
+    D) Legacy
+    Javob: B
+
+95. Pack indexing (C++26) nima?
+    A) Array indexing
+    B) Parameter pack dan element olish: Args...[I]
+    C) Map indexing
+    D) String indexing
+    Javob: B
+
+96. std::execution policies (C++17) nima uchun?
+    A) Exception policy
+    B) STL algorithmlar uchun parallel execution
+    C) Memory policy
+    D) Thread policy
+    Javob: B
+
+97. std::execution::par vs std::execution::par_unseq farqi?
+    A) Farqi yo'q
+    B) par_unseq vectorization ham qo'llab-quvvatlaydi
+    C) par tezroq
+    D) par_unseq sequential
+    Javob: B
+
+98. ODR (One Definition Rule) buzilishi nima olib keladi?
+    A) Compile error
+    B) Undefined behavior (diagnosesiz)
+    C) Link error always
+    D) Runtime error
+    Javob: B
+
+99. inline variable (C++17) nima uchun kerak?
+    A) Tezlik uchun
+    B) Header-only library da ODR buzmasdan global variable
+    C) Xotira tejash
+    D) Code size
+    Javob: B
+
+100. std::unreachable (C++23) nima qiladi?
+     A) Exception otadi
+     B) Compiler ga bu code reachable emasligini bildiradi (UB call qilganda)
+     C) Program tugatadi
+     D) Warning beradi
+     Javob: B
+
+==============================================================
+                         YAKUNLANDI
+==============================================================

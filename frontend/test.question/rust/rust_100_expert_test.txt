@@ -1,0 +1,702 @@
+RUST - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+===============================================
+
+1. Ownership system purpose?
+   A) Memory allocation
+   B) Memory safety without garbage collector
+   C) Performance
+   D) Type safety
+   Javob: B
+
+2. Borrow checker?
+   A) Runtime check
+   B) Compile-time reference validation
+   C) Manual check
+   D) No check
+   Javob: B
+
+3. Lifetime annotation 'a?
+   A) No purpose
+   B) Connect reference lifetimes
+   C) Variable name
+   D) Type annotation
+   Javob: B
+
+4. 'static lifetime?
+   A) Short lived
+   B) Lives for entire program duration
+   C) Function scope
+   D) Block scope
+   Javob: B
+
+5. NLL (Non-Lexical Lifetimes)?
+   A) Lexical
+   B) Lifetimes end at last use, not scope
+   C) No lifetimes
+   D) Manual end
+   Javob: B
+
+6. Interior mutability pattern?
+   A) Exterior only
+   B) Mutate through immutable reference
+   C) No mutation
+   D) Direct mutation
+   Javob: B
+
+7. Cell<T> vs RefCell<T>?
+   A) Same
+   B) Cell=Copy types, RefCell=runtime borrow check
+   C) RefCell=Copy
+   D) No difference
+   Javob: B
+
+8. UnsafeCell purpose?
+   A) Safe cell
+   B) Foundation for interior mutability
+   C) No purpose
+   D) External use
+   Javob: B
+
+9. Rc<T> vs Arc<T>?
+   A) Same
+   B) Rc=single thread, Arc=thread-safe
+   C) Arc=single
+   D) No difference
+   Javob: B
+
+10. Weak<T> reference?
+    A) Strong ref
+    B) Non-owning reference, no prevent drop
+    C) Owning
+    D) No drop
+    Javob: B
+
+11. Pin<P> purpose?
+    A) No pin
+    B) Prevent value from moving in memory
+    C) Allow move
+    D) Type constraint
+    Javob: B
+
+12. !Unpin marker trait?
+    A) Unpin
+    B) Type cannot be unpinned
+    C) Can unpin
+    D) No marker
+    Javob: B
+
+13. PhantomData<T> use?
+    A) Real data
+    B) Unused type parameter for variance
+    C) No use
+    D) Runtime data
+    Javob: B
+
+14. Variance in generics?
+    A) No variance
+    B) Covariance, contravariance, invariance
+    C) One type
+    D) Fixed
+    Javob: B
+
+15. Drop trait?
+    A) No drop
+    B) Custom destructor implementation
+    C) Default only
+    D) Manual free
+    Javob: B
+
+16. ManuallyDrop<T>?
+    A) Auto drop
+    B) Inhibit automatic drop
+    C) Force drop
+    D) No control
+    Javob: B
+
+17. MaybeUninit<T>?
+    A) Always init
+    B) Uninitialized memory handling
+    C) No uninit
+    D) Auto init
+    Javob: B
+
+18. mem::forget() effect?
+    A) Drop
+    B) Prevent destructor from running
+    C) Free memory
+    D) No effect
+    Javob: B
+
+19. mem::transmute() danger?
+    A) Safe
+    B) Reinterpret bits as different type
+    C) No danger
+    D) Type safe
+    Javob: B
+
+20. Zero-cost abstractions?
+    A) Runtime cost
+    B) No runtime overhead for abstractions
+    C) Some cost
+    D) High cost
+    Javob: B
+
+21. Monomorphization?
+    A) Dynamic dispatch
+    B) Generate specialized code for each type
+    C) One code
+    D) No generation
+    Javob: B
+
+22. dyn Trait vs impl Trait?
+    A) Same
+    B) dyn=dynamic dispatch, impl=static dispatch
+    C) impl=dynamic
+    D) No difference
+    Javob: B
+
+23. Object safety rules?
+    A) No rules
+    B) No Self in return, no generics
+    C) All safe
+    D) Any method
+    Javob: B
+
+24. Fat pointer for dyn Trait?
+    A) Thin pointer
+    B) Data pointer + vtable pointer
+    C) One pointer
+    D) No vtable
+    Javob: B
+
+25. Associated types vs generics?
+    A) Same
+    B) Associated=single type, generics=multiple impl
+    C) Generics=single
+    D) No difference
+    Javob: B
+
+26. GATs (Generic Associated Types)?
+    A) No GAT
+    B) Associated types with lifetime parameters
+    C) Regular associated
+    D) No lifetime
+    Javob: B
+
+27. HRTB (Higher-Ranked Trait Bounds)?
+    A) Lower ranked
+    B) for<'a> syntax for any lifetime
+    C) Single lifetime
+    D) No bound
+    Javob: B
+
+28. Orphan rule?
+    A) No rule
+    B) Implement foreign trait for local type only
+    C) Any impl
+    D) Local trait only
+    Javob: B
+
+29. Blanket implementation?
+    A) Specific impl
+    B) impl<T> Trait for T where T: OtherTrait
+    C) No blanket
+    D) Manual impl
+    Javob: B
+
+30. Specialization (nightly)?
+    A) Stable
+    B) Override blanket impl with specific
+    C) No override
+    D) No special
+    Javob: B
+
+31. const generics?
+    A) No const
+    B) Generic over constant values
+    C) Runtime only
+    D) Type only
+    Javob: B
+
+32. const fn?
+    A) Runtime function
+    B) Compile-time evaluable function
+    C) No const
+    D) Macro
+    Javob: B
+
+33. const evaluation limits?
+    A) No limits
+    B) No heap allocation, limited loops
+    C) Full runtime
+    D) Unlimited
+    Javob: B
+
+34. Procedural macros types?
+    A) One type
+    B) derive, attribute, function-like
+    C) Two types
+    D) Declarative
+    Javob: B
+
+35. TokenStream in proc macros?
+    A) AST
+    B) Sequence of tokens as input/output
+    C) String
+    D) No stream
+    Javob: B
+
+36. syn crate purpose?
+    A) Tokenize
+    B) Parse TokenStream into AST
+    C) No parse
+    D) Generate
+    Javob: B
+
+37. quote crate purpose?
+    A) Parse
+    B) Generate TokenStream from quasi-quotes
+    C) No generate
+    D) Analyze
+    Javob: B
+
+38. #[derive(Debug)]?
+    A) Manual impl
+    B) Auto-generate Debug trait impl
+    C) No derive
+    D) Runtime derive
+    Javob: B
+
+39. Custom derive macros?
+    A) Built-in only
+    B) #[proc_macro_derive(Name)]
+    C) No custom
+    D) Declarative
+    Javob: B
+
+40. Attribute macros?
+    A) Function only
+    B) Transform annotated items
+    C) No transform
+    D) Derive only
+    Javob: B
+
+41. async/await desugaring?
+    A) Threads
+    B) State machine transformation
+    C) No transform
+    D) Direct async
+    Javob: B
+
+42. Future trait poll method?
+    A) No poll
+    B) Check if ready, return Poll<Output>
+    C) Block
+    D) Wait
+    Javob: B
+
+43. Pin<&mut Self> in poll?
+    A) No pin
+    B) Ensure self-referential safety
+    C) Move allowed
+    D) No safety
+    Javob: B
+
+44. Waker purpose?
+    A) No wake
+    B) Notify executor to re-poll future
+    C) Sleep
+    D) Block
+    Javob: B
+
+45. Context in poll?
+    A) No context
+    B) Contains Waker for re-polling
+    C) Config
+    D) State
+    Javob: B
+
+46. Send trait for futures?
+    A) Not needed
+    B) Future can be sent across threads
+    C) Single thread
+    D) No Send
+    Javob: B
+
+47. !Send future?
+    A) Sendable
+    B) Contains non-Send type, single thread only
+    C) Multi-thread
+    D) No constraint
+    Javob: B
+
+48. async move closure?
+    A) Borrow
+    B) Move captured variables into future
+    C) Reference
+    D) Copy
+    Javob: B
+
+49. Stream trait (futures)?
+    A) Iterator
+    B) Async iterator of values
+    C) Sync stream
+    D) No stream
+    Javob: B
+
+50. tokio::spawn requirements?
+    A) No requirements
+    B) Future must be Send + 'static
+    C) Any future
+    D) No Send
+    Javob: B
+
+51. tokio::task::spawn_local?
+    A) Multi-thread
+    B) Run !Send future on current thread
+    C) No local
+    D) Send required
+    Javob: B
+
+52. tokio::select! macro?
+    A) Sequential
+    B) Race multiple futures, handle first complete
+    C) All complete
+    D) No race
+    Javob: B
+
+53. tokio::join! macro?
+    A) Sequential
+    B) Run futures concurrently, await all
+    C) Race
+    D) No join
+    Javob: B
+
+54. #[tokio::main] macro?
+    A) No macro
+    B) Set up runtime and block on async main
+    C) Manual setup
+    D) No runtime
+    Javob: B
+
+55. tokio multi-threaded runtime?
+    A) Single thread
+    B) Work-stealing scheduler across threads
+    C) No stealing
+    D) Manual threads
+    Javob: B
+
+56. #[tokio::test] macro?
+    A) Sync test
+    B) Async test with runtime
+    C) No runtime
+    D) Manual test
+    Javob: B
+
+57. unsafe blocks?
+    A) Safe code
+    B) Allow unsafe operations with promise of safety
+    C) No promise
+    D) Auto safe
+    Javob: B
+
+58. Raw pointers *const T, *mut T?
+    A) References
+    B) No borrow checker, manual safety
+    C) Checked
+    D) Auto safe
+    Javob: B
+
+59. extern "C" FFI?
+    A) Rust ABI
+    B) C-compatible function interface
+    C) No FFI
+    D) C++ ABI
+    Javob: B
+
+60. #[repr(C)]?
+    A) Rust layout
+    B) C-compatible struct layout
+    C) No layout
+    D) Auto layout
+    Javob: B
+
+61. std::ffi::CString?
+    A) Rust string
+    B) Null-terminated C string
+    C) No null
+    D) UTF-16
+    Javob: B
+
+62. Box<dyn Error> pattern?
+    A) Concrete error
+    B) Type-erased error handling
+    C) No erase
+    D) Panic
+    Javob: B
+
+63. anyhow crate?
+    A) std error
+    B) Ergonomic error handling with context
+    C) No context
+    D) Type-safe
+    Javob: B
+
+64. thiserror crate?
+    A) anyhow
+    B) Derive Error trait for custom errors
+    C) No derive
+    D) Dynamic error
+    Javob: B
+
+65. ? operator with Result?
+    A) Unwrap
+    B) Early return on error
+    C) Continue
+    D) Panic
+    Javob: B
+
+66. From trait for error conversion?
+    A) No conversion
+    B) Enable ? with different error types
+    C) Manual convert
+    D) Same type
+    Javob: B
+
+67. Never type ! (nightly)?
+    A) Unit
+    B) Type that never returns
+    C) Void
+    D) Returns
+    Javob: B
+
+68. Infallible type?
+    A) Fallible
+    B) Empty enum, cannot be constructed
+    C) Error type
+    D) Unit
+    Javob: B
+
+69. std::panic::catch_unwind?
+    A) No catch
+    B) Catch panic for FFI boundary
+    C) Throw
+    D) Abort
+    Javob: B
+
+70. panic = "abort" config?
+    A) Unwind
+    B) Immediately terminate on panic
+    C) Catch
+    D) Continue
+    Javob: B
+
+71. #[no_std] attribute?
+    A) With std
+    B) Don't link standard library
+    C) Link std
+    D) No attribute
+    Javob: B
+
+72. core vs std crate?
+    A) Same
+    B) core=no heap/OS, std=full runtime
+    C) std=no heap
+    D) No difference
+    Javob: B
+
+73. alloc crate?
+    A) No alloc
+    B) Heap allocation without std
+    C) Full std
+    D) Stack only
+    Javob: B
+
+74. Global allocator trait?
+    A) Default only
+    B) Custom memory allocator implementation
+    C) No custom
+    D) System only
+    Javob: B
+
+75. #[global_allocator] attribute?
+    A) Local alloc
+    B) Set program-wide allocator
+    C) Per-module
+    D) No set
+    Javob: B
+
+76. Cargo workspace?
+    A) Single crate
+    B) Multiple crates sharing dependencies
+    C) No share
+    D) External only
+    Javob: B
+
+77. [workspace] in Cargo.toml?
+    A) Package
+    B) Define workspace members
+    C) Dependency
+    D) No members
+    Javob: B
+
+78. Cargo features?
+    A) No features
+    B) Conditional compilation flags
+    C) Runtime flags
+    D) Build flags
+    Javob: B
+
+79. #[cfg(feature = "name")]?
+    A) No cfg
+    B) Compile code only with feature enabled
+    C) Runtime check
+    D) Always compile
+    Javob: B
+
+80. default-features = false?
+    A) All features
+    B) Disable dependency's default features
+    C) Enable all
+    D) No effect
+    Javob: B
+
+81. Build scripts (build.rs)?
+    A) No script
+    B) Pre-compilation code generation
+    C) Post-build
+    D) Runtime
+    Javob: B
+
+82. cargo:rustc-link-lib?
+    A) No link
+    B) Tell rustc to link native library
+    C) Rust lib
+    D) No native
+    Javob: B
+
+83. cc crate purpose?
+    A) Rust compile
+    B) Compile C/C++ code in build script
+    C) No C
+    D) Link only
+    Javob: B
+
+84. bindgen crate?
+    A) Manual FFI
+    B) Auto-generate Rust bindings from C headers
+    C) C generate
+    D) No bindings
+    Javob: B
+
+85. cbindgen crate?
+    A) Rust bindings
+    B) Generate C headers from Rust code
+    C) No headers
+    D) Manual
+    Javob: B
+
+86. wasm-bindgen?
+    A) No wasm
+    B) Rust-JavaScript interop for WebAssembly
+    C) C interop
+    D) No JS
+    Javob: B
+
+87. #[wasm_bindgen] attribute?
+    A) No attribute
+    B) Expose Rust to JavaScript
+    C) Hide
+    D) Import
+    Javob: B
+
+88. web-sys crate?
+    A) No web
+    B) WebAPI bindings for Rust WASM
+    C) Node.js
+    D) Custom bindings
+    Javob: B
+
+89. Miri tool?
+    A) Compiler
+    B) Undefined behavior detection interpreter
+    C) No detection
+    D) Optimizer
+    Javob: B
+
+90. MIRIFLAGS for testing?
+    A) No flags
+    B) Configure Miri behavior
+    C) Build flags
+    D) Runtime
+    Javob: B
+
+91. clippy lints?
+    A) Errors
+    B) Code quality suggestions
+    C) No suggestions
+    D) Compile only
+    Javob: B
+
+92. #[allow(clippy::lint_name)]?
+    A) Require
+    B) Suppress specific lint
+    C) Enable
+    D) No suppress
+    Javob: B
+
+93. rustfmt configuration?
+    A) No config
+    B) rustfmt.toml for formatting rules
+    C) Fixed rules
+    D) Manual format
+    Javob: B
+
+94. #[rustfmt::skip]?
+    A) Format
+    B) Exclude code from formatting
+    C) Include
+    D) No skip
+    Javob: B
+
+95. cargo doc --document-private-items?
+    A) Public only
+    B) Include private items in documentation
+    C) No private
+    D) Hide all
+    Javob: B
+
+96. #[doc(hidden)]?
+    A) Show
+    B) Hide item from documentation
+    C) Required
+    D) No hide
+    Javob: B
+
+97. Intra-doc links?
+    A) External only
+    B) [`Type`] syntax for internal links
+    C) No links
+    D) URL only
+    Javob: B
+
+98. cargo criterion?
+    A) cargo bench
+    B) Statistical benchmarking tool
+    C) No bench
+    D) Simple bench
+    Javob: B
+
+99. #[bench] attribute (nightly)?
+    A) Stable
+    B) Mark function as benchmark
+    C) Test
+    D) No bench
+    Javob: B
+
+100. cargo-fuzz?
+     A) No fuzz
+     B) Fuzzing testing framework
+     C) Unit test
+     D) Integration
+     Javob: B

@@ -1,0 +1,148 @@
+===============================================
+PYTHON - EASY SAVOLLARI
+===============================================
+
+SAVOL 1: Python da "print" function nima uchun ishlatiladi?
+A) Ma'lumotlarni konsolga chiqarish
+B) Faylni ochish
+C) Raqamlarni qo'shish
+D) O'zgaruvchi e'lon qilish
+JAVOB: A
+
+SAVOL 2: Python da comment qanday yoziladi?
+A) // comment
+B) /* comment */
+C) # comment
+D) -- comment
+JAVOB: C
+
+SAVOL 3: O'zgaruvchi nima?
+A) Funksiya
+B) Ma'lumot saqlaydigan konteyner
+C) Loop
+D) Class
+JAVOB: B
+
+SAVOL 4: Python da string qanday yoziladi?
+A) [1,2,3]
+B) "hello"
+C) {key: value}
+D) 123
+JAVOB: B
+
+SAVOL 5: List elementiga qanday murojat qilinadi?
+A) my_list{0}
+B) my_list.first()
+C) my_list[0]
+D) my_list->0
+JAVOB: C
+
+SAVOL 6: len([1, 2, 3]) nima qaytaradi?
+A) 1
+B) 2
+C) 3
+D) Error
+JAVOB: C
+
+SAVOL 7: Dictionary nima?
+A) Raqamlar to'plami
+B) Key-value juftliklarini saqlaydigan struktura
+C) String bo'lagi
+D) Funksiya
+JAVOB: B
+
+SAVOL 8: if sharti qanday ishlaydi?
+A) Har doim ishlaradi
+B) Shart to'g'ri bo'lsa ishlaradi
+C) Shart yolg'on bo'lsa ishlaradi
+D) Hech qachon ishlamaydi
+JAVOB: B
+
+SAVOL 9: for loop nima uchun ishlatiladi?
+A) Shartsiz takrarlash
+B) Qiymatlar to'plami bo'ylab takrarlash
+C) Faylni ochish
+D) Raqam qo'shish
+JAVOB: B
+
+SAVOL 10: range(5) nima qaytaradi?
+A) 1,2,3,4,5
+B) 0,1,2,3,4
+C) 1,2,3,4
+D) 5
+JAVOB: B
+
+SAVOL 11: while loop nima uchun?
+A) Fixed iterations
+B) Shart to'g'ri bo'lguncha takrarlash
+C) List bo'ylab takrarlash
+D) Faylni ochish
+JAVOB: B
+
+SAVOL 12: Funksiya qanday e'lon qilinadi?
+A) func myFunc()
+B) def myFunc():
+C) function myFunc()
+D) method myFunc()
+JAVOB: B
+
+SAVOL 13: Return statement nima uchun?
+A) Funksiya chiqazish
+B) Qiymat qaytarish
+C) Loop tugashi
+D) Shart
+JAVOB: B
+
+SAVOL 14: List append() method nima uchun?
+A) Birinchi element qo'shish
+B) Element oxirga qo'shish
+C) Element o'chirish
+D) List sortirlash
+JAVOB: B
+
+SAVOL 15: List remove() method nima uchun?
+A) Oxirgi element o'chirish
+B) Birinchi element o'chirish
+C) Berilgan qiymatni o'chirish
+D) Barcha elementlarni o'chirish
+JAVOB: C
+
+SAVOL 16: Dictionary key access qanday?
+A) dict.key
+B) dict[key]
+C) dict.get(key)
+D) Barcha to'g'ri
+JAVOB: D
+
+SAVOL 17: String slicing qanday?
+A) string[0]
+B) string[0:3]
+C) string[0::2]
+D) Barcha to'g'ri
+JAVOB: D
+
+SAVOL 18: .upper() method nima uchun?
+A) String kichik harf
+B) String bosh harf
+C) String bosh harf bilan
+D) String kattalash
+JAVOB: D
+
+SAVOL 19: .split() method nima uchun?
+A) String birlashtirish
+B) String bo'lish (array qilish)
+C) String o'zgartirish
+D) String tekshirish
+JAVOB: B
+
+SAVOL 20: .join() method nima uchun?
+A) Array bo'lish
+B) Array birlashtiradigan stringga
+C) Array sortirlash
+D) Array tekshirish
+JAVOB: B
+
+===============================================
+EASY SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: OSONGINA
+===============================================

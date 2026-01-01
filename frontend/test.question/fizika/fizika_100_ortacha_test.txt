@@ -1,0 +1,706 @@
+FIZIKA FANI - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+=========================================================
+
+1. Jism 20 m/s tezlik bilan harakatlanib, 4 s da to'xtadi. Tezlanishi qancha?
+   A) 5 m/s²
+   B) -5 m/s²
+   C) 10 m/s²
+   D) -10 m/s²
+   Javob: B
+
+2. Erkin tushayotgan jism 3 sekund ichida qancha masofaga tushadi? (g=10 m/s²)
+   A) 30 m
+   B) 45 m
+   C) 60 m
+   D) 90 m
+   Javob: B
+
+3. Gorizontal otilgan jism uchun qaysi harakat tekis?
+   A) Vertikal
+   B) Gorizontal (tekis, tezlanishsiz)
+   C) Ikkalasi ham
+   D) Hech biri
+   Javob: B
+
+4. Burchak ostida otilgan jism maksimal balandlikka qaysi burchakda ko'tariladi?
+   A) 30°
+   B) 45°
+   C) 60°
+   D) 90° (vertikal)
+   Javob: D
+
+5. Burchak ostida otilgan jism maksimal masofaga qaysi burchakda uchadi?
+   A) 30°
+   B) 45°
+   C) 60°
+   D) 90°
+   Javob: B
+
+6. 5 kg massali jismga 20 N kuch ta'sir qilsa, tezlanish qancha?
+   A) 2 m/s²
+   B) 4 m/s²
+   C) 10 m/s²
+   D) 100 m/s²
+   Javob: B
+
+7. Ishqalanish koeffitsienti 0,2, normal kuch 100 N bo'lsa, ishqalanish kuchi qancha?
+   A) 10 N
+   B) 20 N
+   C) 50 N
+   D) 200 N
+   Javob: B
+
+8. 2 kg massali jism 10 m balandlikda. Potensial energiyasi qancha? (g=10 m/s²)
+   A) 100 J
+   B) 200 J
+   C) 20 J
+   D) 50 J
+   Javob: B
+
+9. 4 kg massali jism 6 m/s tezlikda harakatlansa, kinetik energiyasi qancha?
+   A) 24 J
+   B) 72 J
+   C) 12 J
+   D) 144 J
+   Javob: B
+
+10. Jism balandlikdan tushganda qaysi energiya qaysi energiyaga aylanadi?
+    A) Kinetik → Potensial
+    B) Potensial → Kinetik
+    C) Issiqlik → Kinetik
+    D) Kinetik → Issiqlik
+    Javob: B
+
+11. Richag muvozanat shartida F₁l₁ = F₂l₂ formulasida l nima?
+    A) Kuch
+    B) Kuch yelkasi (tayanch nuqtasidan masofasi)
+    C) Massa
+    D) Tezlik
+    Javob: B
+
+12. FIK (foydali ish koeffitsienti) 80% bo'lsa, 1000 J ish bajarilganda foydali ish qancha?
+    A) 200 J
+    B) 800 J
+    C) 1000 J
+    D) 1250 J
+    Javob: B
+
+13. Butun sirt bo'ylab bir xil taqsimlangan kuchning ta'siri nima deyiladi?
+    A) Kuch
+    B) Bosim
+    C) Zichlik
+    D) Energiya
+    Javob: B
+
+14. Suyuqlik ichida chuqurlikka tushganda bosim qanday o'zgaradi?
+    A) Kamayadi
+    B) Ortadi (P = ρgh)
+    C) O'zgarmaydi
+    D) Nolga teng
+    Javob: B
+
+15. 1000 kg/m³ zichlikdagi suyuqlikda 5 m chuqurlikda bosim qancha? (g=10 m/s²)
+    A) 25000 Pa
+    B) 50000 Pa
+    C) 100000 Pa
+    D) 5000 Pa
+    Javob: B
+
+16. Gidravlik press qanday ishlaydi?
+    A) Kuchni kamaytiradi
+    B) Kuchni oshiradi (yuzalar nisbatida)
+    C) Bosimni kamaytiradi
+    D) Bosimni oshiradi
+    Javob: B
+
+17. Jism suvda suzib turgan holda og'irligi 50 N, Arximed kuchi qancha?
+    A) 25 N
+    B) 50 N
+    C) 100 N
+    D) 0 N
+    Javob: B
+
+18. Sirtqi taranglik kuchi qanday yo'nalgan?
+    A) Sirt bo'ylab
+    B) Sirtga perpendikulyar
+    C) Pastga
+    D) Yuqoriga
+    Javob: A
+
+19. Kapillyar hodisa nimaga bog'liq?
+    A) Faqat zichlikka
+    B) Sirtqi taranglik va ho'llash xususiyatiga
+    C) Faqat bosimga
+    D) Faqat temperaturaga
+    Javob: B
+
+20. Molyar massa nima?
+    A) Bitta molekula massasi
+    B) 1 mol moddaning massasi
+    C) Atom massasi
+    D) Yadro massasi
+    Javob: B
+
+21. Avogadro soni qancha?
+    A) 3.14×10²³
+    B) 6.02×10²³
+    C) 9.8×10²³
+    D) 1.6×10²³
+    Javob: B
+
+22. Ideal gaz uchun PV/T = const qonuni qaysi jarayonlarda o'rinli?
+    A) Faqat izotermik
+    B) Ixtiyoriy jarayon uchun (massa o'zgarmasa)
+    C) Faqat izobarik
+    D) Faqat izoxorik
+    Javob: B
+
+23. Izotermik jarayonda qaysi kattalik o'zgarmaydi?
+    A) Bosim
+    B) Temperatura
+    C) Hajm
+    D) Zichlik
+    Javob: B
+
+24. Izobarik jarayonda qaysi kattalik o'zgarmaydi?
+    A) Temperatura
+    B) Bosim
+    C) Hajm
+    D) Ichki energiya
+    Javob: B
+
+25. Izoxorik jarayonda qaysi kattalik o'zgarmaydi?
+    A) Bosim
+    B) Hajm
+    C) Temperatura
+    D) Ichki energiya
+    Javob: B
+
+26. Adiabatik jarayonda nima sodir bo'lmaydi?
+    A) Ish bajarilishi
+    B) Issiqlik almashishi (Q=0)
+    C) Temperatura o'zgarishi
+    D) Bosim o'zgarishi
+    Javob: B
+
+27. Gay-Lyussak qonuni qaysi jarayonga tegishli?
+    A) Izotermik
+    B) Izobarik (V/T = const)
+    C) Izoxorik
+    D) Adiabatik
+    Javob: B
+
+28. Sharl qonuni qaysi jarayonga tegishli?
+    A) Izotermik
+    B) Izoxorik (P/T = const)
+    C) Izobarik
+    D) Adiabatik
+    Javob: B
+
+29. Boyl-Mariott qonuni qaysi jarayonga tegishli?
+    A) Izobarik
+    B) Izotermik (PV = const)
+    C) Izoxorik
+    D) Adiabatik
+    Javob: B
+
+30. 2 kg suv 20°C dan 70°C gacha isitildi. Qancha issiqlik sarflandi? (c=4200 J/kg·°C)
+    A) 210000 J
+    B) 420000 J
+    C) 840000 J
+    D) 168000 J
+    Javob: B
+
+31. Suyuqlashish solishtirma issiqligi nima?
+    A) Qattiq jismni isitish
+    B) 1 kg qattiq moddani eritish uchun kerak issiqlik
+    C) Suyuqlikni isitish
+    D) Bug'latish issiqligi
+    Javob: B
+
+32. Bug'lanish solishtirma issiqligi qanday belgilanadi?
+    A) c
+    B) L (yoki r)
+    C) λ
+    D) q
+    Javob: B
+
+33. Issiqlik dvigateli qanday ishlaydi?
+    A) Issiqlikni mexanik ishga aylantiradi
+    B) Mexanik ishni issiqlikka aylantiradi
+    C) Elektr energiyasini issiqlikka
+    D) Issiqlikni elektr energiyasiga
+    Javob: A
+
+34. Karno sikli FIKi nimaga bog'liq?
+    A) Ish hajmiga
+    B) Isitgich va sovitgich temperaturalariga
+    C) Gaz turiga
+    D) Bosimga
+    Javob: B
+
+35. Termodinamikaning ikkinchi qonuni nimani bildiradi?
+    A) Energiya saqlanishi
+    B) Issiqlik o'z-o'zidan sovuqdan issiqqa o'tmaydi
+    C) Energiya yo'qolishi
+    D) Massa saqlanishi
+    Javob: B
+
+36. Entropiya nima?
+    A) Energiya
+    B) Tartibsizlik o'lchovi
+    C) Bosim
+    D) Temperatura
+    Javob: B
+
+37. Kulon qonuni formulasi?
+    A) F = kq₁q₂r²
+    B) F = kq₁q₂/r²
+    C) F = q₁q₂/kr²
+    D) F = kq₁q₂r
+    Javob: B
+
+38. Elektr maydon kuchlanganligi formulasi?
+    A) E = F + q
+    B) E = F / q
+    C) E = Fq
+    D) E = q / F
+    Javob: B
+
+39. Elektr maydon kuchlanganligi birligi?
+    A) V
+    B) V/m (yoki N/C)
+    C) A
+    D) Ω
+    Javob: B
+
+40. Kuchlanish (potensiallar farqi) formulasi?
+    A) U = A + q
+    B) U = A / q
+    C) U = Aq
+    D) U = q / A
+    Javob: B
+
+41. Kondensator sig'imi formulasi?
+    A) C = U/q
+    B) C = q/U
+    C) C = qU
+    D) C = q + U
+    Javob: B
+
+42. Parallel ulangan kondensatorlarning umumiy sig'imi?
+    A) 1/C = 1/C₁ + 1/C₂
+    B) C = C₁ + C₂ + ...
+    C) C = C₁ × C₂
+    D) C = C₁ - C₂
+    Javob: B
+
+43. Ketma-ket ulangan kondensatorlarning umumiy sig'imi?
+    A) C = C₁ + C₂
+    B) 1/C = 1/C₁ + 1/C₂ + ...
+    C) C = C₁ × C₂
+    D) C = C₁ - C₂
+    Javob: B
+
+44. Kondensatorda to'plangan energiya formulasi?
+    A) W = CU
+    B) W = CU²/2 (yoki W = q²/2C)
+    C) W = CU²
+    D) W = C/U
+    Javob: B
+
+45. Tok kuchi formulasi (zaryadga nisbatan)?
+    A) I = q + t
+    B) I = q / t
+    C) I = qt
+    D) I = t / q
+    Javob: B
+
+46. Qarshilik nimaga bog'liq?
+    A) Faqat uzunlikka
+    B) Uzunlik, kesim yuzasi va solishtirma qarshilikka (R = ρl/S)
+    C) Faqat kesim yuzasiga
+    D) Faqat materialga
+    Javob: B
+
+47. O'tkazgichda ajralgan issiqlik (Joul-Lens qonuni)?
+    A) Q = IRt
+    B) Q = I²Rt
+    C) Q = IR²t
+    D) Q = I²R/t
+    Javob: B
+
+48. EYK (elektr yurituvchi kuch) nima?
+    A) Kuchlanish
+    B) Tok manbaida zaryadlarni ajratish uchun sarflangan energiya
+    C) Qarshilik
+    D) Tok kuchi
+    Javob: B
+
+49. To'liq zanjir uchun Om qonuni?
+    A) I = E/R
+    B) I = E/(R + r) (r - ichki qarshilik)
+    C) I = ER
+    D) I = E + R
+    Javob: B
+
+50. Qisqa tutashuv nima?
+    A) Zanjir uzilishi
+    B) Tashqi qarshilik nolga teng bo'lganda
+    C) Tok oqmasligi
+    D) Kuchlanish ortishi
+    Javob: B
+
+51. Magnit induksiyasi birligi qaysi?
+    A) A
+    B) Tesla (T)
+    C) Weber
+    D) Genri
+    Javob: B
+
+52. Tokli o'tkazgichga magnit maydonida ta'sir qiluvchi kuch (Amper kuchi)?
+    A) F = BI
+    B) F = BIl sin α
+    C) F = Bl
+    D) F = Il
+    Javob: B
+
+53. Lorens kuchi qanday zaryadlarga ta'sir qiladi?
+    A) Harakatsiz zaryadlarga
+    B) Harakatlanayotgan zaryadlarga
+    C) Neytral zarrachalarga
+    D) Barcha zarrachalarga
+    Javob: B
+
+54. Lorens kuchi formulasi?
+    A) F = qB
+    B) F = qvB sin α
+    C) F = qvB
+    D) F = vB
+    Javob: B
+
+55. Magnit oqimi birligi qaysi?
+    A) Tesla
+    B) Weber (Wb)
+    C) Genri
+    D) Volt
+    Javob: B
+
+56. Magnit oqimi formulasi?
+    A) Φ = B + S
+    B) Φ = BS cos α
+    C) Φ = B / S
+    D) Φ = S / B
+    Javob: B
+
+57. Faradey elektromagnit induksiya qonuni?
+    A) E = Φ/t
+    B) E = -dΦ/dt (EYK = magnit oqimining o'zgarish tezligi)
+    C) E = Φt
+    D) E = Φ + t
+    Javob: B
+
+58. Lensning qoidasi nima?
+    A) EYK yo'nalishi
+    B) Induksion tok o'zgarishga qarshilik ko'rsatadi
+    C) Tok kuchi
+    D) Kuchlanish
+    Javob: B
+
+59. O'z-o'ziga induksiya nima?
+    A) Tashqi maydon ta'siri
+    B) O'tkazgichdagi tok o'zgarganda o'zida EYK hosil bo'lishi
+    C) Qarshilik
+    D) Sig'im
+    Javob: B
+
+60. Induktivlik birligi?
+    A) Farad
+    B) Genri (H)
+    C) Tesla
+    D) Weber
+    Javob: B
+
+61. Induktivlikda to'plangan energiya?
+    A) W = LI
+    B) W = LI²/2
+    C) W = LI²
+    D) W = L/I²
+    Javob: B
+
+62. Transformator koeffitsienti k = N₂/N₁ > 1 bo'lsa, bu qanday transformator?
+    A) Pasaytiruvchi
+    B) Ko'taruvchi
+    C) Izolyatsiyalovchi
+    D) O'zgartirmaydigan
+    Javob: B
+
+63. Elektromagnit to'lqin nimalardan tashkil topgan?
+    A) Faqat elektr maydon
+    B) O'zaro perpendikulyar elektr va magnit maydonlar
+    C) Faqat magnit maydon
+    D) Mexanik tebranishlar
+    Javob: B
+
+64. Elektromagnit to'lqinlar spektri (past chastotadan yuqoriga)?
+    A) Yorug'lik, radio, rentgen
+    B) Radio, infraqizil, yorug'lik, ultrabinafsha, rentgen, gamma
+    C) Gamma, rentgen, yorug'lik
+    D) Ultrabinafsha, yorug'lik, infraqizil
+    Javob: B
+
+65. Yorug'lik interferensiyasi nima?
+    A) Yorug'lik sinishi
+    B) Kogerent to'lqinlar ustma-ust tushganda kuchayishi yoki susayishi
+    C) Yorug'lik qaytishi
+    D) Yorug'lik yutilishi
+    Javob: B
+
+66. Yorug'lik difraksiyasi nima?
+    A) Yorug'lik sinishi
+    B) Yorug'likning to'siq chetida egilishi
+    C) Yorug'lik qaytishi
+    D) Yorug'lik interferensiyasi
+    Javob: B
+
+67. Yorug'lik polyarizatsiyasi nima?
+    A) Yorug'lik sinishi
+    B) Yorug'lik tebranishlarining ma'lum tekislikda bo'lishi
+    C) Yorug'lik qaytishi
+    D) Yorug'lik difraksiyasi
+    Javob: B
+
+68. Sinish ko'rsatkichi formulasi?
+    A) n = v/c
+    B) n = c/v (c - vakuumda tezlik, v - muhitda tezlik)
+    C) n = cv
+    D) n = c + v
+    Javob: B
+
+69. To'la ichki qaytish qachon sodir bo'ladi?
+    A) Har doim
+    B) Yorug'lik zich muhitdan siyrak muhitga o'tganda, kritik burchakdan katta burchakda
+    C) Yorug'lik siyrakdan zichga o'tganda
+    D) Hech qachon
+    Javob: B
+
+70. Linzaning optik kuchi formulasi?
+    A) D = F
+    B) D = 1/F (F - fokus masofasi)
+    C) D = F²
+    D) D = 1/F²
+    Javob: B
+
+71. Optik kuch birligi?
+    A) Metr
+    B) Dioptriya
+    C) Fokus
+    D) Linza
+    Javob: B
+
+72. Yig'uvchi linza fokus masofasi qanday?
+    A) Manfiy
+    B) Musbat
+    C) Nolga teng
+    D) Cheksiz
+    Javob: B
+
+73. Sochuvchi linza fokus masofasi qanday?
+    A) Musbat
+    B) Manfiy (shartli)
+    C) Nolga teng
+    D) Cheksiz
+    Javob: B
+
+74. Yupqa linza formulasi?
+    A) 1/F = 1/d + 1/f
+    B) 1/F = 1/d + 1/f (d - jismgacha, f - tasvirgacha masofa)
+    C) F = d + f
+    D) F = df
+    Javob: B
+
+75. Ko'z linzasi qaysi xususiyatga ega?
+    A) O'zgarmaydi
+    B) Akomodatsiya (fokus masofasini o'zgartirish)
+    C) Faqat yig'uvchi
+    D) Faqat sochuvchi
+    Javob: B
+
+76. Miopiya (yaqindan ko'rish) qanday tuzatiladi?
+    A) Yig'uvchi linza
+    B) Sochuvchi linza
+    C) Prizma
+    D) Ko'zgu
+    Javob: B
+
+77. Gipermetropiya (uzoqdan ko'rish) qanday tuzatiladi?
+    A) Sochuvchi linza
+    B) Yig'uvchi linza
+    C) Prizma
+    D) Ko'zgu
+    Javob: B
+
+78. Matematika mayatnikining davri formulasi?
+    A) T = 2π√(g/l)
+    B) T = 2π√(l/g)
+    C) T = 2πlg
+    D) T = 2π/lg
+    Javob: B
+
+79. Prujinali mayatnik davri formulasi?
+    A) T = 2π√(m/k)
+    B) T = 2π√(k/m)
+    C) T = 2πmk
+    D) T = 2π/mk
+    Javob: A
+
+80. Rezonans nima?
+    A) Tebranish so'nishi
+    B) Tashqi kuch chastotasi tabiiy chastotaga teng bo'lganda amplituda keskin ortishi
+    C) Tebranish boshlanishi
+    D) Chastota kamayishi
+    Javob: B
+
+81. Dopler effekti nima?
+    A) Tovush kuchayishi
+    B) Manba yoki kuzatuvchi harakatida chastotaning o'zgarishi
+    C) Tovush qaytishi
+    D) Tovush yutilishi
+    Javob: B
+
+82. To'lqin frontining ma'nosi?
+    A) To'lqin oxiri
+    B) Bir xil fazadagi nuqtalar yuzasi
+    C) To'lqin boshi
+    D) Amplituda
+    Javob: B
+
+83. Gyuygens prinsipi nima?
+    A) Interferensiya prinsipi
+    B) To'lqin frontidagi har bir nuqta yangi to'lqin manbai
+    C) Difraksiya prinsipi
+    D) Qaytish prinsipi
+    Javob: B
+
+84. Atom modeli bo'yicha Bor postulatlarida stasionar orbita nima?
+    A) Ixtiyoriy orbita
+    B) Elektron energiya nurlatmay aylanuvchi orbita
+    C) Elliptik orbita
+    D) To'g'ri chiziqli orbita
+    Javob: B
+
+85. Bor ikkinchi postulati (chastota qoidasi)?
+    A) E = hf
+    B) hf = E₁ - E₂ (nurlanish chastotasi energiyalar farqiga bog'liq)
+    C) E = mc²
+    D) p = mv
+    Javob: B
+
+86. Fotoeffekt uchun Einstein tenglamasi?
+    A) hf = A + Ek(max)
+    B) hf = A + mv²/2 (A - chiqish ishi, Ek - kinetik energiya)
+    C) hf = A - Ek
+    D) hf = Ek
+    Javob: A
+
+87. Qizil chegara chastotasi nima?
+    A) Eng yuqori chastota
+    B) Fotoeffekt boshlanadigan minimal chastota
+    C) Eng past chastota
+    D) O'rtacha chastota
+    Javob: B
+
+88. De-Broyl to'lqin uzunligi formulasi?
+    A) λ = hp
+    B) λ = h/p (h - Plank doimiysi, p - impuls)
+    C) λ = p/h
+    D) λ = h + p
+    Javob: B
+
+89. Noaniqlik prinsipi (Geyzenberg) nima?
+    A) Aniq o'lchash mumkin
+    B) Koordinata va impulsni bir vaqtda aniq o'lchab bo'lmaydi
+    C) Energiya aniqlanmaydi
+    D) Vaqt aniqlanmaydi
+    Javob: B
+
+90. Massa soni (A) nima?
+    A) Protonlar soni
+    B) Protonlar va neytronlar soni yig'indisi
+    C) Neytronlar soni
+    D) Elektronlar soni
+    Javob: B
+
+91. Zaryad soni (Z) nima?
+    A) Neytronlar soni
+    B) Protonlar soni (yadro zaryadi)
+    C) Elektronlar soni
+    D) Massa soni
+    Javob: B
+
+92. Izotoplar nima?
+    A) Bir xil elementlar
+    B) Protonlar soni bir xil, neytronlar soni farq qiluvchi yadro
+    C) Neytronlar soni bir xil
+    D) Massa bir xil
+    Javob: B
+
+93. Yarim yemirilish davri nima?
+    A) To'liq yemirilish vaqti
+    B) Radioaktiv yadro sonining yarmiga kamayish vaqti
+    C) Ikki baravar ko'payish vaqti
+    D) Aktivlik davri
+    Javob: B
+
+94. Alfa yemirilishda yadro qanday o'zgaradi?
+    A) Z 1 ga kamayadi
+    B) Z 2 ga, A 4 ga kamayadi
+    C) Z 2 ga ortadi
+    D) O'zgarmaydi
+    Javob: B
+
+95. Beta minus yemirilishda yadro qanday o'zgaradi?
+    A) Z 2 ga kamayadi
+    B) Z 1 ga ortadi, A o'zgarmaydi
+    C) Z 1 ga kamayadi
+    D) A 1 ga ortadi
+    Javob: B
+
+96. Yadro bog'lanish energiyasi nima?
+    A) Yadro massasi
+    B) Yadroni nuklonlarga ajratish uchun kerak bo'lgan energiya
+    C) Kinetik energiya
+    D) Potensial energiya
+    Javob: B
+
+97. Massa defekti nima?
+    A) Massa ortishi
+    B) Yadro massasining nuklonlar massalari yig'indisidan farqi
+    C) Massa o'zgarmasligi
+    D) Massa ikki baravarligi
+    Javob: B
+
+98. E = mc² formulasi nimani bildiradi?
+    A) Kinetik energiya
+    B) Massa-energiya ekvivalentligi
+    C) Potensial energiya
+    D) Issiqlik energiyasi
+    Javob: B
+
+99. Termoyadro reaktsiyasi nima?
+    A) Og'ir yadrolar bo'linishi
+    B) Yengil yadrolarning qo'shilishi
+    C) Radioaktiv yemirilish
+    D) Kimyoviy reaktsiya
+    Javob: B
+
+100. Bo'linish reaktsiyasi (Uran-235) natijasida nima hosil bo'ladi?
+     A) Og'irroq yadro
+     B) Ikki o'rtacha og'irlikdagi yadro, neytronlar va energiya
+     C) Alfa zarrachalar
+     D) Faqat energiya
+     Javob: B
+
+=========================================================
+                       YAKUNLANDI
+=========================================================

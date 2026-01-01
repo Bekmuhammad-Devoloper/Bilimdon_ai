@@ -1,0 +1,702 @@
+DJANGO - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+=================================================
+
+1. Django ORM query optimization?
+   A) No optimization
+   B) select_related, prefetch_related, only, defer
+   C) One method
+   D) Two methods
+   Javob: B
+
+2. select_related vs prefetch_related?
+   A) Same
+   B) select_related=JOIN, prefetch_related=separate queries
+   C) prefetch_related=JOIN
+   D) No difference
+   Javob: B
+
+3. N+1 query problem?
+   A) N+1 problem
+   B) One query + N related queries
+   C) Problem N+1
+   D) Query problem
+   Javob: B
+
+4. Prefetch objects nima?
+   A) Prefetch object
+   B) Custom prefetch with filtering/ordering
+   C) Object prefetch
+   D) Custom object
+   Javob: B
+
+5. QuerySet.explain() nima?
+   A) Explain query
+   B) Show database query execution plan
+   C) Query explain
+   D) Execution show
+   Javob: B
+
+6. Database indexing in Django?
+   A) No index
+   B) db_index=True, Index, unique_together
+   C) Index only
+   D) One method
+   Javob: B
+
+7. Composite indexes?
+   A) Composite
+   B) class Meta: indexes = [Index(fields=['a', 'b'])]
+   C) Index composite
+   D) Single index
+   Javob: B
+
+8. F() expressions nima?
+   A) F expression
+   B) Database-level field references
+   C) Expression F
+   D) Field reference
+   Javob: B
+
+9. F() for atomic updates?
+   A) Atomic update
+   B) Model.objects.update(field=F('field') + 1)
+   C) Update atomic
+   D) Field atomic
+   Javob: B
+
+10. Q objects nima?
+    A) Q object
+    B) Complex lookups with AND/OR
+    C) Object Q
+    D) Lookup complex
+    Javob: B
+
+11. Subquery expressions?
+    A) Subquery
+    B) OuterRef, Subquery for nested queries
+    C) Nested query
+    D) Query nested
+    Javob: B
+
+12. Exists subquery?
+    A) Exists query
+    B) Exists(Subquery) for existence check
+    C) Query exists
+    D) Check existence
+    Javob: B
+
+13. Window functions in Django?
+    A) Window function
+    B) Window, Rank, RowNumber, Lead, Lag
+    C) Function window
+    D) Rank window
+    Javob: B
+
+14. Common Table Expressions (CTE)?
+    A) CTE
+    B) With().cte() for recursive queries
+    C) Expression table
+    D) Recursive query
+    Javob: B
+
+15. Raw SQL queries?
+    A) Raw SQL
+    B) Manager.raw(), connection.cursor()
+    C) SQL raw
+    D) Query raw
+    Javob: B
+
+16. Database routing nima?
+    A) Database route
+    B) Multiple database read/write routing
+    C) Route database
+    D) Multiple database
+    Javob: B
+
+17. Router class methods?
+    A) One method
+    B) db_for_read, db_for_write, allow_relation, allow_migrate
+    C) Two methods
+    D) Three methods
+    Javob: B
+
+18. Database transactions?
+    A) Transaction
+    B) transaction.atomic(), on_commit, savepoint
+    C) Atomic transaction
+    D) One method
+    Javob: B
+
+19. select_for_update nima?
+    A) Select update
+    B) Row-level locking for concurrent updates
+    C) Update select
+    D) Lock row
+    Javob: B
+
+20. Optimistic vs Pessimistic locking?
+    A) Same
+    B) Optimistic=version check, Pessimistic=SELECT FOR UPDATE
+    C) Pessimistic=version
+    D) No difference
+    Javob: B
+
+21. Custom model managers?
+    A) Custom manager
+    B) objects = CustomManager() with custom querysets
+    C) Manager custom
+    D) QuerySet custom
+    Javob: B
+
+22. QuerySet.as_manager()?
+    A) As manager
+    B) Convert queryset methods to manager
+    C) Manager as
+    D) Convert manager
+    Javob: B
+
+23. Model Meta options?
+    A) Meta option
+    B) ordering, indexes, constraints, permissions
+    C) Option meta
+    D) One option
+    Javob: B
+
+24. CheckConstraint nima?
+    A) Check constraint
+    B) Database-level data validation
+    C) Constraint check
+    D) Validation database
+    Javob: B
+
+25. UniqueConstraint vs unique_together?
+    A) Same
+    B) UniqueConstraint supports conditions, expressions
+    C) unique_together better
+    D) No difference
+    Javob: B
+
+26. Model inheritance types?
+    A) One type
+    B) Abstract, Multi-table, Proxy
+    C) Two types
+    D) Three types
+    Javob: B
+
+27. Abstract base class benefit?
+    A) Abstract class
+    B) Shared fields, no database table
+    C) Class abstract
+    D) Database table
+    Javob: B
+
+28. Multi-table inheritance issue?
+    A) No issue
+    B) JOIN on every query
+    C) Fast query
+    D) No JOIN
+    Javob: B
+
+29. Proxy model use case?
+    A) Proxy use
+    B) Different behavior, same table
+    C) Use proxy
+    D) Different table
+    Javob: B
+
+30. Custom user model?
+    A) Custom user
+    B) AbstractUser or AbstractBaseUser
+    C) User custom
+    D) BaseUser only
+    Javob: B
+
+31. AUTH_USER_MODEL setting?
+    A) User model
+    B) settings.AUTH_USER_MODEL = 'app.CustomUser'
+    C) Model user
+    D) Setting user
+    Javob: B
+
+32. get_user_model() nima?
+    A) Get user
+    B) Returns current user model
+    C) User get
+    D) Model get
+    Javob: B
+
+33. Custom authentication backends?
+    A) Custom auth
+    B) AUTHENTICATION_BACKENDS setting
+    C) Auth custom
+    D) Backend auth
+    Javob: B
+
+34. Django signals?
+    A) Signal
+    B) pre_save, post_save, pre_delete, post_delete
+    C) Save signal
+    D) One signal
+    Javob: B
+
+35. Signal receivers best practices?
+    A) Any practice
+    B) Use dispatch_uid, weak=False for methods
+    C) No best practice
+    D) Always weak=True
+    Javob: B
+
+36. Signal vs model methods?
+    A) Same
+    B) Signal=decoupled, methods=explicit
+    C) Methods better
+    D) No difference
+    Javob: B
+
+37. Django middleware?
+    A) Middleware
+    B) Request/response processing pipeline
+    C) Pipeline
+    D) Request process
+    Javob: B
+
+38. Middleware methods?
+    A) One method
+    B) process_request, process_view, process_response, process_exception
+    C) Two methods
+    D) Three methods
+    Javob: B
+
+39. ASGI middleware?
+    A) ASGI middle
+    B) Async middleware for ASGI applications
+    C) Middle ASGI
+    D) Async application
+    Javob: B
+
+40. Custom template tags?
+    A) Custom tag
+    B) @register.simple_tag, @register.inclusion_tag
+    C) Tag custom
+    D) One decorator
+    Javob: B
+
+41. Assignment tags?
+    A) Assignment tag
+    B) Tags that set context variables
+    C) Tag assignment
+    D) Variable set
+    Javob: B
+
+42. Template filters?
+    A) Template filter
+    B) @register.filter with value transformation
+    C) Filter template
+    D) Value filter
+    Javob: B
+
+43. Template context processors?
+    A) Context processor
+    B) Add global context variables
+    C) Processor context
+    D) Global variable
+    Javob: B
+
+44. Django REST Framework serializers?
+    A) DRF serializer
+    B) ModelSerializer, Serializer, validation
+    C) Serializer DRF
+    D) Model only
+    Javob: B
+
+45. Nested serializers?
+    A) Nested serial
+    B) SerializerMethodField, depth, explicit nested
+    C) Serial nested
+    D) Depth only
+    Javob: B
+
+46. DRF viewsets?
+    A) DRF viewset
+    B) ModelViewSet, GenericViewSet, mixins
+    C) Viewset DRF
+    D) One viewset
+    Javob: B
+
+47. DRF permissions?
+    A) DRF permission
+    B) IsAuthenticated, DjangoModelPermissions, custom
+    C) Permission DRF
+    D) One permission
+    Javob: B
+
+48. DRF throttling?
+    A) DRF throttle
+    B) AnonRateThrottle, UserRateThrottle, ScopedRateThrottle
+    C) Throttle DRF
+    D) One throttle
+    Javob: B
+
+49. DRF pagination?
+    A) DRF pagination
+    B) PageNumberPagination, LimitOffsetPagination, CursorPagination
+    C) Pagination DRF
+    D) One pagination
+    Javob: B
+
+50. CursorPagination benefits?
+    A) Cursor benefit
+    B) Consistent pagination, no count query
+    C) Benefit cursor
+    D) Count query
+    Javob: B
+
+51. DRF filtering?
+    A) DRF filter
+    B) django-filter, SearchFilter, OrderingFilter
+    C) Filter DRF
+    D) One filter
+    Javob: B
+
+52. DRF caching?
+    A) DRF cache
+    B) @cache_page, @vary_on_cookie, ETags
+    C) Cache DRF
+    D) One cache
+    Javob: B
+
+53. Celery integration?
+    A) Celery
+    B) @shared_task, CELERY_BROKER_URL, beat scheduler
+    C) Task celery
+    D) Broker only
+    Javob: B
+
+54. Celery task states?
+    A) One state
+    B) PENDING, STARTED, SUCCESS, FAILURE, RETRY
+    C) Two states
+    D) Three states
+    Javob: B
+
+55. Celery canvas?
+    A) Canvas
+    B) chain, group, chord, map, starmap
+    C) Celery chain
+    D) Chain only
+    Javob: B
+
+56. Django Channels?
+    A) Channels
+    B) WebSocket support, async consumers
+    C) WebSocket only
+    D) Async only
+    Javob: B
+
+57. Channel layers?
+    A) Channel layer
+    B) Redis/InMemory for cross-process messaging
+    C) Layer channel
+    D) Redis only
+    Javob: B
+
+58. Consumer types?
+    A) One type
+    B) WebSocketConsumer, AsyncWebSocketConsumer, JsonWebSocketConsumer
+    C) Two types
+    D) Three types
+    Javob: B
+
+59. Groups in Channels?
+    A) Channel group
+    B) async_to_sync(channel_layer.group_send)
+    C) Group channel
+    D) Sync group
+    Javob: B
+
+60. Django caching backends?
+    A) One backend
+    B) Memcached, Redis, Database, File, Local Memory
+    C) Two backends
+    D) Three backends
+    Javob: B
+
+61. Cache decorators?
+    A) Cache decorator
+    B) @cache_page, @cache_control, @vary_on_headers
+    C) Decorator cache
+    D) One decorator
+    Javob: B
+
+62. Template fragment caching?
+    A) Fragment cache
+    B) {% cache timeout key %} template tag
+    C) Cache fragment
+    D) Timeout cache
+    Javob: B
+
+63. Low-level cache API?
+    A) Low level cache
+    B) cache.get(), cache.set(), cache.get_or_set()
+    C) Cache low level
+    D) Get set only
+    Javob: B
+
+64. Cache versioning?
+    A) Cache version
+    B) VERSION setting for cache invalidation
+    C) Version cache
+    D) Invalidation setting
+    Javob: B
+
+65. Database connection pooling?
+    A) Connection pool
+    B) django-db-connection-pool, pgbouncer
+    C) Pool connection
+    D) One method
+    Javob: B
+
+66. Django DEBUG=False settings?
+    A) Debug false
+    B) ALLOWED_HOSTS, static files, error handling
+    C) False debug
+    D) One setting
+    Javob: B
+
+67. Security middleware?
+    A) Security middle
+    B) SecurityMiddleware, CSRF, XSS protection
+    C) Middle security
+    D) CSRF only
+    Javob: B
+
+68. Content Security Policy?
+    A) CSP
+    B) django-csp package for CSP headers
+    C) Policy security
+    D) Header CSP
+    Javob: B
+
+69. HTTPS settings?
+    A) HTTPS setting
+    B) SECURE_SSL_REDIRECT, SECURE_HSTS_SECONDS
+    C) Setting HTTPS
+    D) One setting
+    Javob: B
+
+70. Django logging?
+    A) Django log
+    B) LOGGING dict, handlers, formatters, filters
+    C) Log Django
+    D) Handler only
+    Javob: B
+
+71. Custom form fields?
+    A) Custom field
+    B) to_python, validate, clean, widget
+    C) Field custom
+    D) Clean only
+    Javob: B
+
+72. Form wizard?
+    A) Form wizard
+    B) django-formtools SessionWizardView
+    C) Wizard form
+    D) Session form
+    Javob: B
+
+73. Django admin customization?
+    A) Admin custom
+    B) ModelAdmin, list_display, actions, inlines
+    C) Custom admin
+    D) One option
+    Javob: B
+
+74. Admin inlines?
+    A) Admin inline
+    B) TabularInline, StackedInline for related models
+    C) Inline admin
+    D) Tabular only
+    Javob: B
+
+75. Admin actions?
+    A) Admin action
+    B) @admin.action decorator for bulk operations
+    C) Action admin
+    D) Bulk only
+    Javob: B
+
+76. Custom admin site?
+    A) Custom site
+    B) AdminSite subclass, custom templates
+    C) Site custom
+    D) Template only
+    Javob: B
+
+77. Django testing?
+    A) Django test
+    B) TestCase, TransactionTestCase, LiveServerTestCase
+    C) Test Django
+    D) One test
+    Javob: B
+
+78. Factory Boy for testing?
+    A) Factory Boy
+    B) Model factories, Faker integration
+    C) Boy Factory
+    D) Faker only
+    Javob: B
+
+79. pytest-django?
+    A) Pytest Django
+    B) @pytest.mark.django_db, fixtures
+    C) Django pytest
+    D) Fixture only
+    Javob: B
+
+80. Coverage testing?
+    A) Coverage test
+    B) coverage run manage.py test, coverage report
+    C) Test coverage
+    D) Report only
+    Javob: B
+
+81. Django migrations?
+    A) Migration
+    B) makemigrations, migrate, squashmigrations
+    C) Migrate Django
+    D) One command
+    Javob: B
+
+82. Data migrations?
+    A) Data migration
+    B) RunPython for data transformations
+    C) Migration data
+    D) Transform data
+    Javob: B
+
+83. Migration operations?
+    A) Migration op
+    B) CreateModel, AlterField, RunSQL, RunPython
+    C) Op migration
+    D) One operation
+    Javob: B
+
+84. Squashing migrations?
+    A) Squash migration
+    B) squashmigrations to reduce migration files
+    C) Migration squash
+    D) Reduce migration
+    Javob: B
+
+85. Fake migrations?
+    A) Fake migration
+    B) migrate --fake for state-only update
+    C) Migration fake
+    D) State update
+    Javob: B
+
+86. Django deployment?
+    A) Django deploy
+    B) Gunicorn/uWSGI, Nginx, collectstatic
+    C) Deploy Django
+    D) Nginx only
+    Javob: B
+
+87. Static files in production?
+    A) Static file
+    B) collectstatic, whitenoise, CDN
+    C) File static
+    D) CDN only
+    Javob: B
+
+88. Media files handling?
+    A) Media file
+    B) MEDIA_ROOT, MEDIA_URL, cloud storage
+    C) File media
+    D) Cloud only
+    Javob: B
+
+89. django-storages?
+    A) Django storage
+    B) S3, Azure, GCS backends
+    C) Storage Django
+    D) S3 only
+    Javob: B
+
+90. Health check endpoints?
+    A) Health check
+    B) django-health-check package
+    C) Check health
+    D) Endpoint health
+    Javob: B
+
+91. Django async views?
+    A) Async view
+    B) async def view, async ORM (Django 4.1+)
+    C) View async
+    D) ORM only
+    Javob: B
+
+92. sync_to_async, async_to_sync?
+    A) Sync async
+    B) asgiref adapters for mixing sync/async
+    C) Async sync
+    D) ASGI only
+    Javob: B
+
+93. Django Ninja?
+    A) Django Ninja
+    B) Fast API-style framework for Django
+    C) Ninja Django
+    D) API style
+    Javob: B
+
+94. GraphQL with Django?
+    A) GraphQL Django
+    B) graphene-django, strawberry-graphql
+    C) Django GraphQL
+    D) Graphene only
+    Javob: B
+
+95. Feature flags?
+    A) Feature flag
+    B) django-waffle, django-feature-flags
+    C) Flag feature
+    D) Waffle only
+    Javob: B
+
+96. A/B testing?
+    A) AB test
+    B) django-experiments, waffle variations
+    C) Test AB
+    D) Experiment only
+    Javob: B
+
+97. Performance monitoring?
+    A) Performance monitor
+    B) django-debug-toolbar, Sentry, New Relic
+    C) Monitor performance
+    D) Sentry only
+    Javob: B
+
+98. django-silk?
+    A) Django silk
+    B) Request profiling, SQL analysis
+    C) Silk Django
+    D) SQL only
+    Javob: B
+
+99. Database sharding?
+    A) Database shard
+    B) Router-based, django-sharding library
+    C) Shard database
+    D) Router only
+    Javob: B
+
+100. Read replicas?
+     A) Read replica
+     B) Router db_for_read to replica
+     C) Replica read
+     D) Database read
+     Javob: B

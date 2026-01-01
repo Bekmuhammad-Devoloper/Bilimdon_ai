@@ -43,6 +43,8 @@ export class TestsService {
       question: q.question,
       options: q.options,
       difficulty: q.difficulty,
+      levelIndex: q.levelIndex,
+      xpReward: q.xpReward,
       category: q.category,
     }));
 

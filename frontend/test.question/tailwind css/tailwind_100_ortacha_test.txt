@@ -1,0 +1,702 @@
+TAILWIND CSS - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+========================================================
+
+1. Tailwind CSS JIT mode nima?
+   A) Slow compilation
+   B) Just-In-Time - foydalanilgan classlarni compile qiladi
+   C) Full compilation
+   D) No compilation
+   Javob: B
+
+2. content configuration nima uchun?
+   A) Styling
+   B) Tailwind qaysi fayllarni skanerlashini belgilash
+   C) Colors
+   D) Fonts
+   Javob: B
+
+3. @tailwind base nima?
+   A) Components
+   B) Preflight va base styles
+   C) Utilities
+   D) Variants
+   Javob: B
+
+4. @tailwind components nima?
+   A) Base styles
+   B) Component classlar
+   C) Utilities
+   D) Variants
+   Javob: B
+
+5. @tailwind utilities nima?
+   A) Base styles
+   B) Utility classlar
+   C) Components
+   D) Variants
+   Javob: B
+
+6. @apply directive nima?
+   A) Import
+   B) Utility classlarni CSS'ga qo'shish
+   C) Export
+   D) Delete
+   Javob: B
+
+7. @layer directive nima uchun?
+   A) Z-index
+   B) Custom styles qaysi layer'ga qo'shilishini belgilash
+   C) Position
+   D) Animation
+   Javob: B
+
+8. theme() function nima?
+   A) Create theme
+   B) Theme qiymatlariga CSS'da murojaat
+   C) Delete theme
+   D) Export theme
+   Javob: B
+
+9. screen() function nima?
+   A) Display
+   B) Media query yaratish
+   C) Size
+   D) Resolution
+   Javob: B
+
+10. extend configuration nima?
+    A) Replace
+    B) Mavjud theme'ga qo'shimcha qo'shish
+    C) Delete
+    D) Reset
+    Javob: B
+
+11. Colors customization?
+    A) colors: {}
+    B) theme.extend.colors: {}
+    C) palette: {}
+    D) color-config: {}
+    Javob: B
+
+12. Custom spacing?
+    A) spacing: {}
+    B) theme.extend.spacing: {}
+    C) gaps: {}
+    D) margins: {}
+    Javob: B
+
+13. Custom fonts?
+    A) fonts: {}
+    B) theme.extend.fontFamily: {}
+    C) typeface: {}
+    D) font-config: {}
+    Javob: B
+
+14. Custom breakpoints?
+    A) breakpoints: {}
+    B) theme.extend.screens: {}
+    C) responsive: {}
+    D) media: {}
+    Javob: B
+
+15. Arbitrary values sintaksisi?
+    A) [value]
+    B) class-[custom-value]
+    C) (value)
+    D) {value}
+    Javob: B
+
+16. Arbitrary property sintaksisi?
+    A) [property:value]
+    B) [property:value]
+    C) property[value]
+    D) (property:value)
+    Javob: B
+
+17. Important modifier?
+    A) important:
+    B) !
+    C) !!
+    D) *
+    Javob: B
+
+18. Negative values?
+    A) neg-4
+    B) -mt-4, -translate-x-4
+    C) minus-4
+    D) n-4
+    Javob: B
+
+19. Group hover?
+    A) parent-hover:
+    B) group-hover:
+    C) container-hover:
+    D) wrapper-hover:
+    Javob: B
+
+20. Group syntax?
+    A) class="parent"
+    B) class="group"
+    C) class="container"
+    D) class="wrapper"
+    Javob: B
+
+21. Peer modifier?
+    A) sibling-checked:
+    B) peer-checked:
+    C) adjacent-checked:
+    D) next-checked:
+    Javob: B
+
+22. Peer syntax?
+    A) class="sibling"
+    B) class="peer"
+    C) class="adjacent"
+    D) class="next"
+    Javob: B
+
+23. First child modifier?
+    A) first-child:
+    B) first:
+    C) :first
+    D) child-first:
+    Javob: B
+
+24. Last child modifier?
+    A) last-child:
+    B) last:
+    C) :last
+    D) child-last:
+    Javob: B
+
+25. Odd children modifier?
+    A) odd-child:
+    B) odd:
+    C) :odd
+    D) nth-odd:
+    Javob: B
+
+26. Even children modifier?
+    A) even-child:
+    B) even:
+    C) :even
+    D) nth-even:
+    Javob: B
+
+27. Before pseudo-element?
+    A) ::before:
+    B) before:
+    C) pseudo-before:
+    D) :before:
+    Javob: B
+
+28. After pseudo-element?
+    A) ::after:
+    B) after:
+    C) pseudo-after:
+    D) :after:
+    Javob: B
+
+29. Placeholder styling?
+    A) input-placeholder:
+    B) placeholder:
+    C) ::placeholder:
+    D) place:
+    Javob: B
+
+30. File input styling?
+    A) input-file:
+    B) file:
+    C) upload:
+    D) ::file:
+    Javob: B
+
+31. Selection styling?
+    A) selected:
+    B) selection:
+    C) ::selection:
+    D) highlight:
+    Javob: B
+
+32. Marker styling (list)?
+    A) bullet:
+    B) marker:
+    C) list-marker:
+    D) ::marker:
+    Javob: B
+
+33. Backdrop modifier?
+    A) ::backdrop
+    B) backdrop:
+    C) modal-backdrop:
+    D) bg-backdrop:
+    Javob: B
+
+34. Print media modifier?
+    A) media-print:
+    B) print:
+    C) @print:
+    D) printer:
+    Javob: B
+
+35. Portrait orientation?
+    A) vertical:
+    B) portrait:
+    C) orientation-portrait:
+    D) @portrait:
+    Javob: B
+
+36. Landscape orientation?
+    A) horizontal:
+    B) landscape:
+    C) orientation-landscape:
+    D) @landscape:
+    Javob: B
+
+37. Motion reduced preference?
+    A) no-motion:
+    B) motion-reduce:
+    C) reduced-motion:
+    D) @motion-reduce:
+    Javob: B
+
+38. Motion safe preference?
+    A) with-motion:
+    B) motion-safe:
+    C) safe-motion:
+    D) @motion-safe:
+    Javob: B
+
+39. Contrast more preference?
+    A) high-contrast:
+    B) contrast-more:
+    C) more-contrast:
+    D) @contrast-more:
+    Javob: B
+
+40. Dark mode strategy?
+    A) theme: 'dark'
+    B) darkMode: 'class' yoki 'media'
+    C) dark: true
+    D) mode: 'dark'
+    Javob: B
+
+41. Safelist configuration?
+    A) whitelist:
+    B) safelist:
+    C) keep:
+    D) preserve:
+    Javob: B
+
+42. Blocklist configuration?
+    A) blacklist:
+    B) blocklist:
+    C) remove:
+    D) exclude:
+    Javob: B
+
+43. Prefix configuration?
+    A) classPrefix:
+    B) prefix:
+    C) pre:
+    D) namespace:
+    Javob: B
+
+44. Important selector?
+    A) important: true
+    B) important: '#app'
+    C) selector: '#app'
+    D) root: '#app'
+    Javob: B
+
+45. Separator configuration?
+    A) delimiter:
+    B) separator:
+    C) divider:
+    D) split:
+    Javob: B
+
+46. Core plugins disable?
+    A) disable:
+    B) corePlugins: false
+    C) plugins: false
+    D) core: false
+    Javob: B
+
+47. Plugin yaratish?
+    A) createPlugin
+    B) plugin(function({ addUtilities }))
+    C) newPlugin
+    D) makePlugin
+    Javob: B
+
+48. addUtilities function?
+    A) Add components
+    B) Custom utility classlar qo'shish
+    C) Add base
+    D) Add variants
+    Javob: B
+
+49. addComponents function?
+    A) Add utilities
+    B) Component classlar qo'shish
+    C) Add base
+    D) Add variants
+    Javob: B
+
+50. addBase function?
+    A) Add utilities
+    B) Base styles qo'shish
+    C) Add components
+    D) Add variants
+    Javob: B
+
+51. matchUtilities function?
+    A) Static utilities
+    B) Dynamic utilities with values
+    C) Match components
+    D) Match base
+    Javob: B
+
+52. addVariant function?
+    A) Add utility
+    B) Custom variant yaratish
+    C) Add component
+    D) Add base
+    Javob: B
+
+53. theme() in plugin?
+    A) Get colors
+    B) Theme configuration access
+    C) Set theme
+    D) Reset theme
+    Javob: B
+
+54. e() function plugin'da?
+    A) Export
+    B) Escape class name
+    C) Error
+    D) Execute
+    Javob: B
+
+55. Container center?
+    A) container: true
+    B) container: { center: true }
+    C) center: true
+    D) mx-auto
+    Javob: B
+
+56. Container padding?
+    A) container: { padding: '2rem' }
+    B) container: { padding: '2rem' }
+    C) padding: '2rem'
+    D) p-container
+    Javob: B
+
+57. Prose class (Typography plugin)?
+    A) text-content
+    B) prose
+    C) article
+    D) content
+    Javob: B
+
+58. @tailwindcss/typography plugin?
+    A) Font utilities
+    B) Rich text styling
+    C) Spacing
+    D) Colors
+    Javob: B
+
+59. @tailwindcss/forms plugin?
+    A) Validation
+    B) Form element reset
+    C) Submit
+    D) Input mask
+    Javob: B
+
+60. @tailwindcss/aspect-ratio plugin?
+    A) Size
+    B) Aspect ratio utilities
+    C) Grid
+    D) Flex
+    Javob: B
+
+61. @tailwindcss/container-queries?
+    A) Media queries
+    B) Container query support
+    C) Viewport
+    D) Screen
+    Javob: B
+
+62. @container directive?
+    A) Class
+    B) Container query parent
+    C) Wrapper
+    D) Box
+    Javob: B
+
+63. @sm, @md container sizes?
+    A) Screen sizes
+    B) Container query breakpoints
+    C) Grid sizes
+    D) Flex sizes
+    Javob: B
+
+64. has-[] modifier?
+    A) Contains
+    B) :has() pseudo-class
+    C) Includes
+    D) With
+    Javob: B
+
+65. supports-[] modifier?
+    A) Browser
+    B) @supports query
+    C) Feature
+    D) Compatible
+    Javob: B
+
+66. aria-[] modifier?
+    A) Role
+    B) ARIA attribute selector
+    C) Accessible
+    D) Label
+    Javob: B
+
+67. data-[] modifier?
+    A) State
+    B) Data attribute selector
+    C) Info
+    D) Value
+    Javob: B
+
+68. ltr: va rtl: modifiers?
+    A) Language
+    B) Direction-based styling
+    C) Locale
+    D) Region
+    Javob: B
+
+69. Open modifier (details)?
+    A) active:
+    B) open:
+    C) expanded:
+    D) shown:
+    Javob: B
+
+70. Checked modifier?
+    A) selected:
+    B) checked:
+    C) active:
+    D) on:
+    Javob: B
+
+71. Disabled modifier?
+    A) inactive:
+    B) disabled:
+    C) off:
+    D) no:
+    Javob: B
+
+72. Required modifier?
+    A) mandatory:
+    B) required:
+    C) must:
+    D) needed:
+    Javob: B
+
+73. Valid modifier?
+    A) correct:
+    B) valid:
+    C) ok:
+    D) pass:
+    Javob: B
+
+74. Invalid modifier?
+    A) wrong:
+    B) invalid:
+    C) error:
+    D) fail:
+    Javob: B
+
+75. Autofill modifier?
+    A) filled:
+    B) autofill:
+    C) auto:
+    D) prefilled:
+    Javob: B
+
+76. Read only modifier?
+    A) readonly:
+    B) read-only:
+    C) locked:
+    D) static:
+    Javob: B
+
+77. Default modifier (form)?
+    A) initial:
+    B) default:
+    C) start:
+    D) base:
+    Javob: B
+
+78. Indeterminate modifier?
+    A) partial:
+    B) indeterminate:
+    C) mixed:
+    D) unknown:
+    Javob: B
+
+79. Stacking variants?
+    A) Bir variant
+    B) hover:focus:bg-blue-500
+    C) Parallel only
+    D) No stacking
+    Javob: B
+
+80. Variant order?
+    A) Any order
+    B) Responsive, state, pseudo-elements
+    C) Alphabetical
+    D) Random
+    Javob: B
+
+81. Named groups?
+    A) group only
+    B) group/name
+    C) group-name
+    D) group.name
+    Javob: B
+
+82. Named peers?
+    A) peer only
+    B) peer/name
+    C) peer-name
+    D) peer.name
+    Javob: B
+
+83. SVG stroke width?
+    A) stroke-w-2
+    B) stroke-2
+    C) sw-2
+    D) line-2
+    Javob: B
+
+84. SVG fill?
+    A) svg-fill
+    B) fill-current
+    C) f-current
+    D) color-fill
+    Javob: B
+
+85. Gradient from?
+    A) gradient-from
+    B) from-blue-500
+    C) start-blue
+    D) begin-blue
+    Javob: B
+
+86. Gradient via?
+    A) gradient-via
+    B) via-purple-500
+    C) middle-purple
+    D) through-purple
+    Javob: B
+
+87. Gradient to?
+    A) gradient-to
+    B) to-pink-500
+    C) end-pink
+    D) finish-pink
+    Javob: B
+
+88. Gradient direction?
+    A) direction-right
+    B) bg-gradient-to-r
+    C) grad-right
+    D) gradient-right
+    Javob: B
+
+89. Text gradient?
+    A) text-gradient
+    B) bg-clip-text text-transparent
+    C) gradient-text
+    D) color-gradient
+    Javob: B
+
+90. Accent color?
+    A) highlight
+    B) accent-blue-500
+    C) tint
+    D) primary
+    Javob: B
+
+91. Caret color?
+    A) cursor-color
+    B) caret-blue-500
+    C) input-color
+    D) text-cursor
+    Javob: B
+
+92. Scroll behavior?
+    A) scrolling
+    B) scroll-smooth
+    C) smooth-scroll
+    D) behavior-scroll
+    Javob: B
+
+93. Scroll margin?
+    A) scroll-m
+    B) scroll-m-4
+    C) sm-4
+    D) margin-scroll
+    Javob: B
+
+94. Scroll padding?
+    A) scroll-p
+    B) scroll-p-4
+    C) sp-4
+    D) padding-scroll
+    Javob: B
+
+95. Snap type?
+    A) scroll-snap
+    B) snap-x, snap-y, snap-both
+    C) snap-type
+    D) type-snap
+    Javob: B
+
+96. Snap align?
+    A) align-snap
+    B) snap-start, snap-center, snap-end
+    C) snap-align
+    D) position-snap
+    Javob: B
+
+97. Touch action?
+    A) touch
+    B) touch-pan-x, touch-pan-y
+    C) action-touch
+    D) pan
+    Javob: B
+
+98. Will change?
+    A) change-will
+    B) will-change-transform
+    C) wc-transform
+    D) optimize
+    Javob: B
+
+99. Content property?
+    A) text-content
+    B) content-['text']
+    C) inner-text
+    D) value
+    Javob: B
+
+100. Isolation?
+     A) separate
+     B) isolate
+     C) isolated
+     D) alone
+     Javob: B

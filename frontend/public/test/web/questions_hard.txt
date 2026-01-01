@@ -1,0 +1,148 @@
+===============================================
+WEB FUNDAMENTALS - HARD SAVOLLARI
+===============================================
+
+SAVOL 1: Resource hints nima?
+A) Hints
+B) prefetch, preload, preconnect (performance)
+C) Performance
+D) Hints
+JAVOB: B
+
+SAVOL 2: Prefetch nima?
+A) Fetch prefetch
+B) Future navigation resources load
+C) Performance
+D) Resource loading
+JAVOB: B
+
+SAVOL 3: Preload nima?
+A) Load early
+B) Current page needed resources early load
+C) Performance
+D) Resource loading
+JAVOB: B
+
+SAVOL 4: Preconnect nima?
+A) Connect early
+B) DNS, TLS setup early
+C) Performance
+D) Connection
+JAVOB: B
+
+SAVOL 5: DNS prefetch nima?
+A) DNS lookup
+B) Domain DNS lookup early
+C) Performance
+D) Network
+JAVOB: B
+
+SAVOL 6: Rendering blocking resources nima?
+A) Resources
+B) CSS, synchronous JS (blocking render)
+C) Performance
+D) Resource type
+JAVOB: B
+
+SAVOL 7: Async script nima?
+A) Async script
+B) Script parallel download (not blocking)
+C) Script loading
+D) Non-blocking
+JAVOB: B
+
+SAVOL 8: Defer script nima?
+A) Delayed script
+B) Script load parallel, execute sequential
+C) Script loading
+D) Execution order
+JAVOB: B
+
+SAVOL 9: HTTP/2 nima?
+A) HTTP protocol
+B) Multiplexing, server push, binary
+C) Protocol
+D) Version
+JAVOB: B
+
+SAVOL 10: HTTP/3 nima?
+A) HTTP version
+B) QUIC-based (faster, multiplexing)
+C) Protocol
+D) Version
+JAVOB: B
+
+SAVOL 11: Brotli compression nima?
+A) Compression
+B) Modern compression (gzip better)
+C) Algorithm
+D) Compression type
+JAVOB: B
+
+SAVOL 12: WebP format nima?
+A) Image format
+B) Modern format (JPEG, PNG smaller)
+C) Format
+D) Image type
+JAVOB: B
+
+SAVOL 13: Responsive images nima?
+A) Responsive
+B) Device-specific image (srcset, sizes)
+C) Adaptivity
+D) Image optimization
+JAVOB: B
+
+SAVOL 14: Picture element nima?
+A) Picture tag
+B) Art direction (multiple sources)
+C) Image element
+D) HTML element
+JAVOB: B
+
+SAVOL 15: AVIF format nima?
+A) Format
+B) Newest image format (WebP better)
+C) Image format
+D) Format type
+JAVOB: B
+
+SAVOL 16: Web vitals nima?
+A) Metrics
+B) LCP, FID, CLS performance metrics
+C) Performance
+D) Metrics
+JAVOB: B
+
+SAVOL 17: Largest Contentful Paint (LCP) nima?
+A) Paint
+B) Largest visible element render time
+C) Performance metric
+D) Metric
+JAVOB: B
+
+SAVOL 18: First Input Delay (FID) nima?
+A) Delay
+B) First user input response time
+C) Performance metric
+D) Metric
+JAVOB: B
+
+SAVOL 19: Cumulative Layout Shift (CLS) nima?
+A) Shift
+B) Unexpected layout change
+C) Performance metric
+D) Metric
+JAVOB: B
+
+SAVOL 20: Time to First Byte (TTFB) nima?
+A) Timing
+B) Request completion time
+C) Performance metric
+D) Metric
+JAVOB: B
+
+===============================================
+HARD SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: MURAKKAB
+===============================================

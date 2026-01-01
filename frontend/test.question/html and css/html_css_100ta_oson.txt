@@ -1,0 +1,702 @@
+HTML & CSS - OSON TESTLAR
+===============================
+
+1. HTML nima uchun ishlatiladi?
+a) Dizayn yaratish
+b) Web sahifa strukturasini yaratish
+c) Dasturlash
+d) Ma'lumotlar bazasi
+Javob: b
+
+2. HTML ning to'liq nomi nima?
+a) Hyperlinks and Text Markup Language
+b) HyperText Markup Language
+c) Home Tool Markup Language
+d) Hyperlinks Text Making Language
+Javob: b
+
+3. HTML hujjati qaysi tag bilan boshlanadi?
+a) <html>
+b) <head>
+c) <!DOCTYPE html>
+d) <body>
+Javob: c
+
+4. Sarlavha qanday tag bilan yoziladi?
+a) <header>
+b) <h1>
+c) <title>
+d) <heading>
+Javob: b
+
+5. Eng katta sarlavha qaysi?
+a) <h6>
+b) <h1>
+c) <h3>
+d) <header>
+Javob: b
+
+6. Paragraf yaratish uchun qaysi tag ishlatiladi?
+a) <p>
+b) <para>
+c) <paragraph>
+d) <pg>
+Javob: a
+
+7. Havola yaratish uchun qaysi tag kerak?
+a) <link>
+b) <a>
+c) <href>
+d) <url>
+Javob: b
+
+8. Rasm qo'yish uchun qaysi tag ishlatiladi?
+a) <image>
+b) <img>
+c) <pic>
+d) <picture>
+Javob: b
+
+9. HTML da izoh qanday yoziladi?
+a) // izoh
+b) <!-- izoh -->
+c) # izoh
+d) /* izoh */
+Javob: b
+
+10. Matnni qalin qilish uchun qaysi tag ishlatiladi?
+a) <b>
+b) <bold>
+c) <strong>
+d) a va c to'g'ri
+Javob: d
+
+11. Matnni kursiv qilish uchun qaysi tag kerak?
+a) <i>
+b) <italic>
+c) <em>
+d) a va c to'g'ri
+Javob: d
+
+12. Yangi qator yaratish uchun qaysi tag ishlatiladi?
+a) <break>
+b) <br>
+c) <lb>
+d) <newline>
+Javob: b
+
+13. Gorizontal chiziq qanday chiziladi?
+a) <line>
+b) <hr>
+c) <horizontal>
+d) <hl>
+Javob: b
+
+14. Ro'yxat yaratish uchun qaysi taglar ishlatiladi?
+a) <ul> va <ol>
+b) <list>
+c) <menu>
+d) <items>
+Javob: a
+
+15. Tartiblangan ro'yxat qaysi tag bilan boshlanadi?
+a) <ul>
+b) <ol>
+c) <list>
+d) <dl>
+Javob: b
+
+16. Ro'yxat elementi qaysi tag bilan yoziladi?
+a) <item>
+b) <list>
+c) <li>
+d) <element>
+Javob: c
+
+17. Jadval yaratish uchun qaysi tag kerak?
+a) <table>
+b) <tab>
+c) <tbl>
+d) <grid>
+Javob: a
+
+18. Jadval qatori qaysi tag bilan yaratiladi?
+a) <row>
+b) <tr>
+c) <td>
+d) <line>
+Javob: b
+
+19. Jadval katakchasi qaysi tag bilan yaratiladi?
+a) <cell>
+b) <tc>
+c) <td>
+d) <data>
+Javob: c
+
+20. Jadval sarlavhasi uchun qaysi tag ishlatiladi?
+a) <td>
+b) <th>
+c) <thead>
+d) <header>
+Javob: b
+
+21. Forma yaratish uchun qaysi tag kerak?
+a) <form>
+b) <input>
+c) <field>
+d) <formdata>
+Javob: a
+
+22. Matn kiritish maydoni qanday yaratiladi?
+a) <input type="text">
+b) <text>
+c) <textfield>
+d) <field>
+Javob: a
+
+23. Parol maydoni qanday yaratiladi?
+a) <input type="pass">
+b) <input type="password">
+c) <password>
+d) <pass>
+Javob: b
+
+24. Tugma yaratish uchun qaysi tag ishlatiladi?
+a) <btn>
+b) <button>
+c) <input type="button">
+d) b va c to'g'ri
+Javob: d
+
+25. Checkbox qanday yaratiladi?
+a) <input type="check">
+b) <input type="checkbox">
+c) <checkbox>
+d) <check>
+Javob: b
+
+26. Radio button qanday yaratiladi?
+a) <input type="radio">
+b) <radio>
+c) <input type="button">
+d) <radiobutton>
+Javob: a
+
+27. Dropdown menyu qaysi tag bilan yaratiladi?
+a) <dropdown>
+b) <select>
+c) <menu>
+d) <list>
+Javob: b
+
+28. Select ichidagi elementlar qaysi tag bilan yoziladi?
+a) <item>
+b) <opt>
+c) <option>
+d) <choice>
+Javob: c
+
+29. Matn maydoni (textarea) qanday yaratiladi?
+a) <textarea>
+b) <text>
+c) <input type="textarea">
+d) <textfield>
+Javob: a
+
+30. CSS nima uchun ishlatiladi?
+a) Sahifa strukturasi
+b) Sahifa dizayni
+c) Dasturlash
+d) Ma'lumotlar bazasi
+Javob: b
+
+31. CSS ning to'liq nomi nima?
+a) Cascading Style Sheets
+b) Computer Style Sheets
+c) Creative Style Sheets
+d) Colorful Style Sheets
+Javob: a
+
+32. CSS qanday usullarda qo'shiladi?
+a) Inline, Internal, External
+b) Faqat External
+c) Faqat Inline
+d) Faqat Internal
+Javob: a
+
+33. Inline CSS qanday yoziladi?
+a) <style> tag ichida
+b) style="" atributi orqali
+c) Alohida fayl
+d) <css> tag ichida
+Javob: b
+
+34. Internal CSS qayerda yoziladi?
+a) <body> ichida
+b) <head> ichida <style> tag orqali
+c) Alohida fayl
+d) HTML atributi
+Javob: b
+
+35. External CSS qanday ulanadi?
+a) <link rel="stylesheet" href="style.css">
+b) <style src="style.css">
+c) <css href="style.css">
+d) @import "style.css"
+Javob: a
+
+36. CSS da rang qanday beriladi?
+a) color: red;
+b) background-color: blue;
+c) Ikkalasi ham to'g'ri
+d) Hech biri
+Javob: c
+
+37. Matn rangini o'zgartirish uchun qaysi xususiyat ishlatiladi?
+a) text-color
+b) color
+c) font-color
+d) text
+Javob: b
+
+38. Fon rangini o'zgartirish uchun qaysi xususiyat kerak?
+a) bg-color
+b) background
+c) background-color
+d) b va c to'g'ri
+Javob: d
+
+39. Shrift o'lchamini o'zgartirish uchun nima ishlatiladi?
+a) font-size
+b) text-size
+c) size
+d) font
+Javob: a
+
+40. Shrift turini o'zgartirish uchun qaysi xususiyat kerak?
+a) font-style
+b) font-family
+c) font-type
+d) text-font
+Javob: b
+
+41. Matnni qalin qilish uchun qaysi xususiyat ishlatiladi?
+a) font-weight: bold
+b) text-weight: bold
+c) bold: true
+d) font-bold
+Javob: a
+
+42. Matnni markazlashtirish uchun qaysi xususiyat kerak?
+a) align: center
+b) text-align: center
+c) center: true
+d) align-text: center
+Javob: b
+
+43. Element kengligi qanday belgilanadi?
+a) width
+b) size
+c) w
+d) length
+Javob: a
+
+44. Element balandligi qanday belgilanadi?
+a) h
+b) height
+c) size
+d) length
+Javob: b
+
+45. Chegara qo'yish uchun qaysi xususiyat ishlatiladi?
+a) border
+b) line
+c) edge
+d) frame
+Javob: a
+
+46. Ichki bo'shliq (padding) nima?
+a) Element tashqarisidagi bo'shliq
+b) Element ichkarisidagi bo'shliq
+c) Element o'lchami
+d) Element rangi
+Javob: b
+
+47. Tashqi bo'shliq (margin) nima?
+a) Element ichkarisidagi bo'shliq
+b) Element tashqarisidagi bo'shliq
+c) Element o'lchami
+d) Element rangi
+Javob: b
+
+48. Display xususiyati nima uchun?
+a) Elementni ko'rsatish/yashirish
+b) Element turini belgilash
+c) Element joylashuvi
+d) Barchasi to'g'ri
+Javob: d
+
+49. display: none; nima qiladi?
+a) Elementni yashiradi
+b) Elementni o'chiradi
+c) Elementni ko'rsatadi
+d) Hech narsa
+Javob: a
+
+50. display: block; nima degani?
+a) Element yangi qatordan boshlanadi
+b) Element inline bo'ladi
+c) Element yashirinadi
+d) Element markazlashadi
+Javob: a
+
+51. Class selector qanday yoziladi?
+a) #classname
+b) .classname
+c) classname
+d) *classname
+Javob: b
+
+52. ID selector qanday yoziladi?
+a) .idname
+b) #idname
+c) idname
+d) @idname
+Javob: b
+
+53. Barcha elementlarni tanlash uchun qaysi selector ishlatiladi?
+a) all
+b) *
+c) .all
+d) #all
+Javob: b
+
+54. Element selectorida qanday yoziladi?
+a) .element
+b) #element
+c) element
+d) *element
+Javob: c
+
+55. Birlashtirilgan selector qanday yoziladi?
+a) p, div
+b) p.class
+c) p#id
+d) Barchasi to'g'ri
+Javob: d
+
+56. Pseudo-class qanday yoziladi?
+a) :hover
+b) .hover
+c) #hover
+d) hover
+Javob: a
+
+57. Hover effekti nima?
+a) Bosilganda
+b) Sichqoncha ustiga kelganda
+c) Focus bo'lganda
+d) Active bo'lganda
+Javob: b
+
+58. Position: relative; nima qiladi?
+a) Elementni absolyut joylashtiradi
+b) Elementni nisbiy joylashtiradi
+c) Elementni mahkamlaydi
+d) Hech narsa
+Javob: b
+
+59. Position: absolute; nima qiladi?
+a) Normal oqimdan chiqaradi
+b) Parent ga nisbatan joylashtiradi
+c) Ikkalasi ham to'g'ri
+d) Hech narsa
+Javob: c
+
+60. Position: fixed; nima qiladi?
+a) Elementni scroll qilganda harakatlanadi
+b) Elementni joyida mahkamlaydi
+c) Elementni yashiradi
+d) Elementni markazlashtiradi
+Javob: b
+
+61. Z-index nima uchun?
+a) Elementning kengligi
+b) Elementning qavati (layer)
+c) Elementning balandligi
+d) Elementning rangi
+Javob: b
+
+62. Float xususiyati nima qiladi?
+a) Elementni suzishga qo'yadi
+b) Elementni o'ngga/chapga joylashtiradi
+c) Matnni o'rab olishga yordam beradi
+d) Barchasi to'g'ri
+Javob: d
+
+63. Clear xususiyati nima uchun?
+a) Float ta'sirini to'xtatish
+b) Elementni tozalash
+c) Rangni o'chirish
+d) Matnni o'chirish
+Javob: a
+
+64. Overflow nima uchun?
+a) Toshib ketgan kontentni boshqarish
+b) Elementni yashirish
+c) Elementni ko'rsatish
+d) Elementni o'chirish
+Javob: a
+
+65. Overflow: hidden; nima qiladi?
+a) Toshib ketgan qismni yashiradi
+b) Hamma narsani yashiradi
+c) Scroll qo'shadi
+d) Hech narsa
+Javob: a
+
+66. Box-sizing xususiyati nima uchun?
+a) Element o'lchamini hisoblash usuli
+b) Element shakli
+c) Element rangi
+d) Element joyi
+Javob: a
+
+67. Box-sizing: border-box; nima qiladi?
+a) Padding va border width ga qo'shiladi
+b) Padding va border width ga kiritiladi
+c) Hech narsa
+d) Border o'chiriladi
+Javob: b
+
+68. Flexbox nima?
+a) Elementlarni moslashuvchan joylashtirish
+b) Element turi
+c) CSS framework
+d) JavaScript kutubxonasi
+Javob: a
+
+69. Flex container yaratish uchun nima yoziladi?
+a) display: flex;
+b) flex: true;
+c) flexbox: on;
+d) container: flex;
+Javob: a
+
+70. Flex elementlarni gorizontal joylashtirish uchun qaysi xususiyat?
+a) justify-content
+b) align-items
+c) flex-direction
+d) flex-wrap
+Javob: a
+
+71. Flex elementlarni vertikal joylashtirish uchun qaysi xususiyat?
+a) justify-content
+b) align-items
+c) vertical-align
+d) flex-align
+Javob: b
+
+72. Flex yo'nalishini o'zgartirish uchun nima ishlatiladi?
+a) flex-way
+b) flex-direction
+c) direction
+d) flex-flow
+Javob: b
+
+73. CSS Grid nima?
+a) Jadval yaratish
+b) Ikki o'lchovli layout tizimi
+c) JavaScript kutubxonasi
+d) HTML elementi
+Javob: b
+
+74. Grid container yaratish uchun nima yoziladi?
+a) display: grid;
+b) grid: true;
+c) layout: grid;
+d) container: grid;
+Javob: a
+
+75. Opacity xususiyati nima qiladi?
+a) Elementni shaffoflashtiradi
+b) Elementni yashiradi
+c) Elementni ko'rsatadi
+d) Elementni o'chiradi
+Javob: a
+
+76. Opacity qiymatlari qanday?
+a) 0 dan 1 gacha
+b) 0 dan 100 gacha
+c) 1 dan 10 gacha
+d) true/false
+Javob: a
+
+77. Transition nima uchun?
+a) Silliq o'tish effekti
+b) Element harakati
+c) Animatsiya
+d) Barchasi to'g'ri
+Javob: d
+
+78. Transform xususiyati nima qiladi?
+a) Elementni aylantiradi
+b) Elementni kattalashtiradi
+c) Elementni siljitadi
+d) Barchasi to'g'ri
+Javob: d
+
+79. Media query nima uchun?
+a) Responsive dizayn
+b) Turli ekranlar uchun stil
+c) Mobil moslashtirish
+d) Barchasi to'g'ri
+Javob: d
+
+80. Media query qanday yoziladi?
+a) @media screen and (max-width: 768px)
+b) @screen (max-width: 768px)
+c) media (max-width: 768px)
+d) @query (max-width: 768px)
+Javob: a
+
+81. Responsive dizayn nima?
+a) Barcha ekranlarga moslashuvchan dizayn
+b) Tez dizayn
+c) Chiroyli dizayn
+d) Oddiy dizayn
+Javob: a
+
+82. Viewport nima?
+a) Brauzer ko'rinadigan qismi
+b) HTML elementi
+c) CSS xususiyati
+d) JavaScript funktsiyasi
+Javob: a
+
+83. Viewport meta tag qanday yoziladi?
+a) <meta name="viewport" content="width=device-width">
+b) <viewport width="device-width">
+c) <meta viewport="device-width">
+d) <view width="device-width">
+Javob: a
+
+84. Font-awesome nima?
+a) Icon kutubxonasi
+b) Shrift turi
+c) CSS framework
+d) JavaScript kutubxonasi
+Javob: a
+
+85. Google Fonts qanday ulanadi?
+a) <link> tag orqali
+b) @import orqali
+c) Ikkalasi ham to'g'ri
+d) Hech biri
+Javob: c
+
+86. Text-decoration xususiyati nima uchun?
+a) Matn bezagi
+b) Chiziq qo'shish/o'chirish
+c) Underline, line-through
+d) Barchasi to'g'ri
+Javob: d
+
+87. Text-transform nima qiladi?
+a) Matnni katta/kichik harfga o'zgartiradi
+b) Matnni aylantiradi
+c) Matnni siljitadi
+d) Matnni o'chiradi
+Javob: a
+
+88. Letter-spacing nima uchun?
+a) Harflar orasidagi masofa
+b) So'zlar orasidagi masofa
+c) Qatorlar orasidagi masofa
+d) Paragraflar orasidagi masofa
+Javob: a
+
+89. Line-height nima uchun?
+a) Qator balandligi
+b) Element balandligi
+c) Matn balandligi
+d) Sahifa balandligi
+Javob: a
+
+90. Cursor xususiyati nima qiladi?
+a) Sichqoncha kursorini o'zgartiradi
+b) Matn kursorini o'zgartiradi
+c) Element joylashuvini o'zgartiradi
+d) Hech narsa
+Javob: a
+
+91. Visibility: hidden; va display: none; farqi nima?
+a) Visibility joy egallaydi, display yo'q
+b) Farq yo'q
+c) Display joy egallaydi, visibility yo'q
+d) Ikkalasi ham joy egallaydi
+Javob: a
+
+92. Box-shadow nima qiladi?
+a) Elementga soya qo'shadi
+b) Elementni yashiradi
+c) Elementni ko'rsatadi
+d) Elementni o'chiradi
+Javob: a
+
+93. Text-shadow nima qiladi?
+a) Matnga soya qo'shadi
+b) Matnni yashiradi
+c) Matnni o'chiradi
+d) Matnni ko'rsatadi
+Javob: a
+
+94. Border-radius nima uchun?
+a) Burchaklarni yumaloqlashtirish
+b) Border qalinligi
+c) Border rangi
+d) Border turi
+Javob: a
+
+95. Linear-gradient nima yaratadi?
+a) Chiziqli gradient
+b) Aylana gradient
+c) Rang
+d) Rasm
+Javob: a
+
+96. Background-image qanday qo'shiladi?
+a) background-image: url('rasm.jpg');
+b) background: 'rasm.jpg';
+c) image: url('rasm.jpg');
+d) bg-image: 'rasm.jpg';
+Javob: a
+
+97. Background-size: cover; nima qiladi?
+a) Rasmni to'liq qoplaydi
+b) Rasmni kichiklashtiradi
+c) Rasmni o'chiradi
+d) Rasmni yashiradi
+Javob: a
+
+98. Background-repeat nima uchun?
+a) Fon rasmni takrorlash
+b) Fon rangini takrorlash
+c) Elementni takrorlash
+d) Matnni takrorlash
+Javob: a
+
+99. !important nima qiladi?
+a) Stilga yuqori prioritet beradi
+b) Stilni o'chiradi
+c) Stilni yashiradi
+d) Hech narsa
+Javob: a
+
+100. CSS da rem va em farqi nima?
+a) rem - root ga nisbatan, em - parent ga nisbatan
+b) Farq yo'q
+c) em - root ga nisbatan, rem - parent ga nisbatan
+d) Ikkalasi ham pixel
+Javob: a

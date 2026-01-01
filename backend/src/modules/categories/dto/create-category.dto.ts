@@ -1,4 +1,4 @@
-import { IsString, IsOptional, IsBoolean, IsInt, Min, Matches } from 'class-validator';
+import { IsString, IsOptional, IsBoolean, IsInt, Min, Matches, IsArray } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 export class CreateCategoryDto {
@@ -46,6 +46,15 @@ export class CreateCategoryDto {
   @IsOptional()
   @IsBoolean()
   isActive?: boolean;
+
+  @ApiPropertyOptional({ 
+    example: ['Oson', "O'rta", 'Qiyin'], 
+    description: 'Kategoriya uchun daraja nomlari (masalan: ["2022", "2023", "2024"] yoki ["Oson", "O\'rta", "Qiyin"])' 
+  })
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  difficultyLevels?: string[];
 }
 
 export class UpdateCategoryDto {
@@ -95,4 +104,13 @@ export class UpdateCategoryDto {
   @IsOptional()
   @IsBoolean()
   isActive?: boolean;
+
+  @ApiPropertyOptional({ 
+    example: ['Oson', "O'rta", 'Qiyin'], 
+    description: 'Kategoriya uchun daraja nomlari' 
+  })
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  difficultyLevels?: string[];
 }

@@ -1,0 +1,2002 @@
+1. Rust da zero-cost futures nima?1. Procedural macro nima?QIYIN DARAJA (201-300)
+
+   A) Free futures
+
+   B) State machine ga compile, allocation yo'q   A) DeclarativeVARIANT 1
+
+   C) Cheap futures
+
+   D) Basic futures   B) Code generating macro201. Variance nima (covariance, contravariance)?
+
+   Javob: B
+
+   C) Built-inA) Variable types
+
+2. Pin<Box<dyn Future>> qachon kerak?
+
+   A) Har doim   D) FunctionB) Lifetime subtyping xatti-harakati
+
+   B) Self-referential async types uchun
+
+   C) Hech qachon   Javob: BC) Data variance
+
+   D) Performance uchun
+
+   Javob: BD) Code variance
+
+
+
+3. async fn desugaring nima ga aylanadi?2. derive macro nima?Javob: B
+
+   A) Thread
+
+   B) impl Future type   A) Function-like202. Covariant nima demak?
+
+   C) Callback
+
+   D) Promise   B) Auto-implement traitsA) No variation
+
+   Javob: B
+
+   C) AttributeB) &'a T - 'a kichik bo'lsa T ham kichik
+
+4. Generator (unstable) nima?
+
+   A) Code generator   D) Built-inC) Opposite variation
+
+   B) Stackless coroutine primitive
+
+   C) Number generator   Javob: BD) Random variation
+
+   D) ID generator
+
+   Javob: BJavob: B
+
+
+
+5. async-trait crate nima hal qiladi?3. proc_macro crate?203. Contravariant nima?
+
+   A) Async traits
+
+   B) Object safe async trait methods   A) stdA) Same as covariant
+
+   C) Trait async
+
+   D) Async implementation   B) Procedural macro APIB) fn(&'a T) - 'a kichik bo'lsa argument katta
+
+   Javob: B
+
+   C) coreC) No relationship
+
+6. Pin projection nima?
+
+   A) Pin project   D) allocD) Always invariant
+
+   B) Field access through Pin
+
+   C) Projection pin   Javob: BJavob: B
+
+   D) Field projection
+
+   Javob: B204. Invariant nima?
+
+
+
+7. pin-project crate?4. TokenStream nima?A) Always variant
+
+   A) Project pin
+
+   B) Safe pin projection derive   A) StringB) &mut T - subtyping yo'q
+
+   C) Pin macro
+
+   D) Project macro   B) Macro input/outputC) Covariant
+
+   Javob: B
+
+   C) ASTD) Contravariant
+
+8. Structural vs non-structural pinning?
+
+   A) Bir xil   D) IRJavob: B
+
+   B) Field ni pin qilish yoki qilmaslik
+
+   C) Structure pinning   Javob: B205. Subtyping Rust da qanday ishlaydi?
+
+   D) Pin structure
+
+   Javob: BA) Class inheritance
+
+
+
+9. Drop impl bilan Pin interaction?5. quote! macro nima?B) Asosan lifetime subtyping
+
+   A) No interaction
+
+   B) Pin invariant ni buzmaslik kerak   A) parseC) Interface inheritance
+
+   C) Auto drop
+
+    D) No drop   B) Code template generationD) No subtyping
+
+   Javob: B
+
+   C) synJavob: B
+
+10. !Unpin types uchun safety?
+
+    A) Unsafe   D) proc_macro206. 'static: 'a nima degani?
+
+    B) Pin orqali safe interface
+
+    C) Always safe   Javob: BA) 'a longer
+
+    D) Never safe
+
+    Javob: BB) 'static har qanday 'a dan uzoqroq
+
+
+
+11. Type alias impl trait (TAIT)?6. syn crate nima?C) 'a longer than 'static
+
+    A) Type alias
+
+    B) Opaque type alias with impl Trait   A) quoteD) Equal lifetimes
+
+    C) Trait alias
+
+    D) Impl alias   B) Rust parsing libraryJavob: B
+
+    Javob: B
+
+   C) proc_macro207. GAT (Generic Associated Types) nima?
+
+12. Return position impl Trait limitations?
+
+    A) No limits   D) deriveA) Type alias
+
+    B) Conditional return, recursion issues
+
+    C) Type limits   Javob: BB) Associated types with generics
+
+    D) Size limits
+
+    Javob: BC) Simple associated
+
+
+
+13. Existential types nima?7. parse_macro_input! nima?D) No generics
+
+    A) Type exists
+
+    B) Caller ko'rmaydi, implementor tanlaydi   A) quoteJavob: B
+
+    C) Existence type
+
+    D) Optional type   B) Parse TokenStream208. RPITIT nima? (Rust 1.75+)
+
+    Javob: B
+
+   C) synA) Trait name
+
+14. Universal types nima?
+
+    A) Universal usage   D) deriveB) Return Position Impl Trait In Traits
+
+    B) Caller tanlaydi (generics)
+
+    C) All types   Javob: BC) Type alias
+
+    D) Any type
+
+    Javob: BD) Macro name
+
+
+
+15. Higher-kinded types Rust da?8. #[proc_macro_derive(Name)]?Javob: B
+
+    A) Mavjud
+
+    B) Yo'q, workarounds bilan simulate   A) Attribute209. AFIT nima? (Rust 1.75+)
+
+    C) Limited
+
+    D) Full support   B) Derive macro definitionA) Async keyword
+
+    Javob: B
+
+   C) Function-likeB) Async Functions In Traits
+
+16. GAT HKT ni qanday simulate qiladi?
+
+    A) Direct HKT   D) Built-inC) Test framework
+
+    B) Lifetime/type parametric associated types
+
+    C) No simulation   Javob: BD) Future type
+
+    D) Macro simulation
+
+    Javob: BJavob: B
+
+
+
+17. Monad pattern Rust da?9. #[proc_macro_attribute]?210. Specialization nima (unstable)?
+
+    A) Built-in
+
+    B) HKT yo'qligi sababli limited   A) DeriveA) General implementation
+
+    C) Full support
+
+    D) No support   B) Attribute macro definitionB) Generic impl dan specific impl prioritization
+
+    Javob: B
+
+   C) Function-likeC) No priority
+
+18. Functor pattern Rust da?
+
+    A) Built-in   D) Built-inD) Random selection
+
+    B) map() methods bilan ad-hoc
+
+    C) Full support   Javob: BJavob: B
+
+    D) No support
+
+    Javob: B211. Auto trait nima?
+
+
+
+19. Specialization (unstable)?10. #[proc_macro]?A) Manual trait
+
+    A) Generic specialization
+
+    B) More specific impl override    A) DeriveB) Avtomatik implement (Send, Sync, Unpin)
+
+    C) Type specialization
+
+    D) Function specialization    B) Function-like macro definitionC) Derive trait
+
+    Javob: B
+
+    C) AttributeD) Custom trait
+
+20. min_specialization nima?
+
+    A) Minimum special    D) Built-inJavob: B
+
+    B) Limited safe specialization
+
+    C) Min spec    Javob: B212. Negative trait bound nima (unstable)?
+
+    D) Special min
+
+    Javob: BA) Positive bound
+
+
+
+21. Negative trait bounds?11. macro_rules! nima?B) !Trait - trait implement qilmagan
+
+    A) Negative types
+
+    B) !Trait syntax (unstable)    A) ProceduralC) All traits
+
+    C) Minus traits
+
+    D) No bounds    B) Declarative macroD) No bounds
+
+    Javob: B
+
+    C) Built-inJavob: B
+
+22. auto trait nima?
+
+    A) Automatic trait    D) Function213. Trait alias nima (unstable)?
+
+    B) Compiler auto-implement (Send, Sync)
+
+    C) Auto type    Javob: BA) Type alias
+
+    D) Automatic type
+
+    Javob: BB) trait NewName = Trait1 + Trait2
+
+
+
+23. Marker trait nima?12. $x:expr nima?C) Trait copy
+
+    A) Mark type
+
+    B) Method yo'q, type property    A) TypeD) Trait delete
+
+    C) Marker type
+
+    D) Tag trait    B) Expression fragmentJavob: B
+
+    Javob: B
+
+    C) Statement214. Never type (!) nima?
+
+24. Sealed trait pattern?
+
+    A) Closed trait    D) ItemA) Sometimes returns
+
+    B) Private module marker prevent external impl
+
+    C) Sealed type    Javob: BB) Hech qachon return qilmaydigan type
+
+    D) Locked trait
+
+    Javob: BC) Always returns
+
+
+
+25. Extension trait pattern?13. $($x:expr),* nima?D) Maybe returns
+
+    A) Extend type
+
+    B) Foreign type ga method qo'shish    A) SingleJavob: B
+
+    C) Trait extension
+
+    D) Type extension    B) Repetition pattern215. Diverging function nima?
+
+    Javob: B
+
+    C) OptionalA) Converging function
+
+26. Blanket implementation?
+
+    A) Cover impl    D) FixedB) ! qaytaradigan (panic, loop, exit)
+
+    B) Generic impl for trait bounds
+
+    C) All impl    Javob: BC) Normal function
+
+    D) Default impl
+
+    Javob: BD) Returning function
+
+
+
+27. impl<T: Clone> MyTrait for T limitations?14. $crate nima?Javob: B
+
+    A) No limits
+
+    B) Orphan rules, existing impls conflict    A) Local216. Type inference qanday ishlaydi?
+
+    C) Type limits
+
+    D) Performance limits    B) Macro defining crateA) No inference
+
+    Javob: B
+
+    C) stdB) Bidirectional type checking
+
+28. Deref polymorphism?
+
+    A) Polymorphism type    D) coreC) Only forward
+
+    B) Smart pointer automatic deref
+
+    C) Deref type    Javob: BD) Only backward
+
+    D) Reference polymorphism
+
+    Javob: BJavob: B
+
+
+
+29. Method resolution order?15. Higher-Ranked Trait Bounds (HRTB)?217. Turbofish nima uchun zarur?
+
+    A) Random
+
+    B) Inherent, trait in scope, deref chain    A) Regular boundsA) Never needed
+
+    C) Alphabetical
+
+    D) Declaration order    B) for<'a> boundsB) Ambiguous generic resolution
+
+    Javob: B
+
+    C) Static boundsC) Always needed
+
+30. Type inference limitations?
+
+    A) No limits    D) Dynamic boundsD) Decoration only
+
+    B) Closure parameter types, turbofish needed
+
+    C) Full inference    Javob: BJavob: B
+
+    D) Limited inference
+
+    Javob: B218. Monomorphization nima?
+
+
+
+31. MIRI qanday undefined behavior topadi?16. for<'a> Fn(&'a T)?A) Polymorphism
+
+    A) Static analysis
+
+    B) Interpretation with extra checks    A) Single lifetimeB) Generic code uchun concrete implementations yaratish
+
+    C) Runtime check
+
+    D) Compile check    B) All lifetimes boundC) Runtime dispatch
+
+    Javob: B
+
+    C) StaticD) Dynamic typing
+
+32. Stacked borrows model?
+
+    A) Borrow stack    D) DynamicJavob: B
+
+    B) Aliasing model for raw pointers
+
+    C) Stack model    Javob: B219. Zero-cost abstractions nima degani?
+
+    D) Memory model
+
+    Javob: BA) Expensive abstractions
+
+
+
+33. Tree borrows (experimental)?17. dyn Trait nima?B) Abstraction runtime overhead qo'shmaydi
+
+    A) Tree model
+
+    B) Less restrictive aliasing model    A) Static dispatchC) Always cost
+
+    C) Borrow tree
+
+    D) Reference tree    B) Dynamic dispatch (trait object)D) Half cost
+
+    Javob: B
+
+    C) GenericJavob: B
+
+34. UnsafeCell aliasing rules?
+
+    A) No aliasing    D) Concrete220. Inline assembly nima uchun?
+
+    B) Interior mutability allows shared mutation
+
+    C) Full aliasing    Javob: BA) High-level code
+
+    D) Strict aliasing
+
+    Javob: BB) asm! macro - CPU instructions yozish
+
+
+
+35. noalias attribute optimization?18. impl Trait nima?C) Rust code only
+
+    A) No alias
+
+    B) &mut ni restrict pointer sifatida    A) dynD) No assembly
+
+    C) Alias remove
+
+    D) Optimization alias    B) Static opaque typeJavob: B
+
+    Javob: B
+
+    C) Box221. FFI (Foreign Function Interface) nima?
+
+36. Unsafe Rust guarantees?
+
+    A) No guarantees    D) GenericA) Rust-only
+
+    B) Memory safety manual, other guarantees same
+
+    C) Full guarantees    Javob: BB) Boshqa tillarga (C/C++) interfeys
+
+    D) Limited guarantees
+
+    Javob: BC) No foreign
+
+
+
+37. Unsafe block nima qila oladi?19. Box<dyn Trait> vs impl Trait?D) Internal only
+
+    A) Anything
+
+    B) 5 ta unsafe operation (deref raw, unsafe fn, static mut, unsafe trait, FFI)    A) SameJavob: B
+
+    C) Memory access
+
+    D) System calls    B) Dynamic vs static dispatch222. Extern "C" nima bildiradi?
+
+    Javob: B
+
+    C) No differenceA) External crate
+
+38. extern "C" fn qanday ishlaydi?
+
+    A) C code    D) Only syntaxB) C calling convention
+
+    B) C calling convention
+
+    C) External C    Javob: BC) Rust convention
+
+    D) C import
+
+    Javob: BD) No convention
+
+
+
+39. #[no_mangle] nima qiladi?20. Vtable nima?Javob: B
+
+    A) No name
+
+    B) Symbol name mangling off    A) Data223. #[repr(C)] nima qiladi?
+
+    C) Name preserve
+
+    D) Symbol keep    B) Virtual method tableA) Rust layout
+
+    Javob: B
+
+    C) StackB) C-compatible memory layout
+
+40. cdylib vs rlib?
+
+    A) Bir xil    D) HeapC) Random layout
+
+    B) C dynamic lib vs Rust lib
+
+    C) Dynamic vs static    Javob: BD) Optimized layout
+
+    D) C vs Rust
+
+    Javob: BJavob: B
+
+
+
+41. staticlib nima?21. Object safety nima?224. Cbindgen nima?
+
+    A) Static file
+
+    B) C-compatible static library    A) Memory safetyA) C compiler
+
+    C) Static code
+
+    D) Lib static    B) Trait object compatibleB) Rust dan C header generator
+
+    Javob: B
+
+    C) Thread safetyC) Rust compiler
+
+42. bindgen nima qiladi?
+
+    A) Bind generate    D) Type safetyD) Linker
+
+    B) C headers dan Rust bindings
+
+    C) Code bind    Javob: BJavob: B
+
+    D) Generate bind
+
+    Javob: B225. Bindgen nima?
+
+
+
+43. cbindgen nima qiladi?22. Sized trait nima?A) C to Rust manual
+
+    A) C bind
+
+    B) Rust dan C headers generate    A) UnsizedB) C header dan Rust binding generator
+
+    C) Bind C
+
+    D) C generate    B) Compile-time known sizeC) Rust to C
+
+    Javob: B
+
+    C) DynamicD) No binding
+
+44. CStr vs CString?
+
+    A) Bir xil    D) RuntimeJavob: B
+
+    B) Borrowed vs owned C string
+
+    C) C vs Rust    Javob: BVARIANT 2
+
+    D) String vs str
+
+    Javob: B226. CStr vs CString farqi?
+
+
+
+45. OsStr vs OsString?23. ?Sized bound nima?A) Bir xil
+
+    A) Bir xil
+
+    B) Platform-native string borrowed/owned    A) SizedB) CStr borrowed, CString owned
+
+    C) OS vs normal
+
+    D) System vs user    B) May be unsizedC) CString borrowed
+
+    Javob: B
+
+    C) Always unsizedD) Farq yo'q
+
+46. Allocator trait (unstable)?
+
+    A) Memory allocate    D) StaticJavob: B
+
+    B) Custom memory allocator interface
+
+    C) Alloc type    Javob: B227. Null-terminated string nima?
+
+    D) Allocator type
+
+    Javob: BA) Rust string
+
+
+
+47. Global allocator?24. [T] (unsized slice)?B) C-style string (\0 oxirida)
+
+    A) Heap allocator
+
+    B) #[global_allocator] attribute    A) SizedC) No terminator
+
+    C) Memory global
+
+    D) Global memory    B) Dynamically sized typeD) Length-prefixed
+
+    Javob: B
+
+    C) ArrayJavob: B
+
+48. jemalloc vs system allocator?
+
+    A) Bir xil    D) Vector228. Padding nima (struct layout)?
+
+    B) Different allocation strategies
+
+    C) Fast vs slow    Javob: BA) No padding
+
+    D) Safe vs unsafe
+
+    Javob: BB) Alignment uchun qo'shiladigan bytes
+
+
+
+49. Arena allocation pattern?25. str (unsized string)?C) Extra data
+
+    A) Arena memory
+
+    B) Bulk allocation, bulk deallocation    A) StringD) User data
+
+    C) Memory arena
+
+    D) Pool allocation    B) Dynamically sized typeJavob: B
+
+    Javob: B
+
+    C) &str229. #[repr(packed)] nima qiladi?
+
+50. bumpalo crate?
+
+    A) Bump allocator    D) charA) Add padding
+
+    B) Fast bump arena allocator
+
+    C) Memory bump    Javob: BB) Remove padding (alignment 1)
+
+    D) Allocator bump
+
+    Javob: BC) Random packing
+
+
+
+51. Compile time evaluation (const)?26. Variance nima?D) No effect
+
+    A) Runtime eval
+
+    B) const fn compile time execution    A) InvarianceJavob: B
+
+    C) Static eval
+
+    D) Build eval    B) Subtyping relationship230. Alignment nima?
+
+    Javob: B
+
+    C) CovarianceA) Text alignment
+
+52. const generics nima?
+
+    A) Const generic    D) ContravarianceB) Memory address bo'linish talabi
+
+    B) Type parameter sifatida const value
+
+    C) Generic const    Javob: BC) No requirement
+
+    D) Value generic
+
+    Javob: BD) Random address
+
+
+
+53. const fn limitations?27. Covariance nima?Javob: B
+
+    A) No limits
+
+    B) Heap allocation, trait objects yo'q    A) Contravariance231. Size_of vs align_of farqi?
+
+    C) Full limits
+
+    D) Some limits    B) Same subtyping directionA) Bir xil
+
+    Javob: B
+
+    C) InvarianceB) size_of - bytes, align_of - alignment requirement
+
+54. const trait method (unstable)?
+
+    A) Const trait    D) NoneC) Farq yo'q
+
+    B) Trait method const context da
+
+    C) Method const    Javob: BD) Align_of kattaroq
+
+    D) Trait const
+
+    Javob: BJavob: B
+
+
+
+55. build.rs nima uchun?28. Contravariance nima?232. MaybeUninit nima uchun?
+
+    A) Build file
+
+    B) Build script - code generation, linking    A) CovarianceA) Always initialized
+
+    C) Script build
+
+    D) Compile script    B) Opposite subtypingB) Uninitialized memory bilan ishlash
+
+    Javob: B
+
+    C) InvarianceC) Auto initialize
+
+56. cargo::rerun-if-changed directive?
+
+    A) Rerun build    D) NoneD) No memory
+
+    B) Build script rerun trigger
+
+    C) Change rerun    Javob: BJavob: B
+
+    D) If changed
+
+    Javob: B233. ManuallyDrop nima qiladi?
+
+
+
+57. OUT_DIR environment variable?29. Invariance nima?A) Auto drop
+
+    A) Output directory
+
+    B) Build script output directory    A) CovarianceB) Drop ni prevent qiladi
+
+    C) Dir out
+
+    D) Build out    B) No subtypingC) Immediate drop
+
+    Javob: B
+
+    C) ContravarianceD) Fast drop
+
+58. CARGO_MANIFEST_DIR?
+
+    A) Manifest dir    D) BothJavob: B
+
+    B) Package Cargo.toml directory
+
+    C) Cargo dir    Javob: B234. Mem::forget nima qiladi?
+
+    D) Build dir
+
+    Javob: BA) Remember
+
+
+
+59. Target triple nima?30. &'a T variance?B) Value ni drop qilmasdan ownership oladi
+
+    A) Triple target
+
+    B) arch-vendor-os(-env) specification    A) ContravariantC) Copy value
+
+    C) Build target
+
+    D) Platform target    B) Covariant in bothD) Delete value
+
+    Javob: B
+
+    C) InvariantJavob: B
+
+60. Cross-compilation setup?
+
+    A) Cross compile    D) None235. Mem::take nima qiladi?
+
+    B) Target, linker configuration
+
+    C) Multi compile    Javob: BA) Give back
+
+    D) Platform compile
+
+    Javob: BB) Default bilan replace va old value oladi
+
+
+
+61. cargo xbuild (deprecated) o'rniga?31. &'a mut T variance?C) Copy only
+
+    A) cargo build
+
+    B) cargo build -Zbuild-std    A) CovariantD) Delete only
+
+    C) cargo cross
+
+    D) xargo    B) Covariant 'a, invariant TJavob: B
+
+    Javob: B
+
+    C) Contravariant236. Mem::swap nima qiladi?
+
+62. core vs std library?
+
+    A) Bir xil    D) Both covariantA) No swap
+
+    B) core - no OS, std - with OS
+
+    C) Core faster    Javob: BB) Ikki qiymatni almashtiradi
+
+    D) Std faster
+
+    Javob: BC) Copy one
+
+
+
+63. alloc library nima?32. fn(T) variance?D) Delete both
+
+    A) Allocator lib
+
+    B) core + heap allocation    A) CovariantJavob: B
+
+    C) Memory lib
+
+    D) Alloc memory    B) Contravariant in T237. Mem::replace vs mem::swap farqi?
+
+    Javob: B
+
+    C) InvariantA) Bir xil
+
+64. #![no_std] attribute?
+
+    A) No standard    D) NoneB) Replace - yangi qiymat, swap - exchange
+
+    B) std library ishlatmaslik
+
+    C) No std code    Javob: BC) Farq yo'q
+
+    D) Standard off
+
+    Javob: BD) Swap yaxshiroq
+
+
+
+65. #![no_main] attribute?33. Cell<T> nima?Javob: B
+
+    A) No main
+
+    B) main function yo'q, custom entry    A) RefCell238. Transmute nima qiladi?
+
+    C) Main off
+
+    D) Entry custom    B) Interior mutability (Copy)A) Safe conversion
+
+    Javob: B
+
+    C) MutexB) Bitwise type reinterpretation (unsafe)
+
+66. panic = "abort" setting?
+
+    A) Panic abort    D) RwLockC) Checked conversion
+
+    B) Unwind o'rniga abort
+
+    C) Abort panic    Javob: BD) No conversion
+
+    D) No panic
+
+    Javob: BJavob: B
+
+
+
+67. Panic hooks nima?34. UnsafeCell<T> nima?239. Union nima?
+
+    A) Hook panic
+
+    B) Custom panic handler    A) CellA) Struct
+
+    C) Panic catch
+
+    D) Error hook    B) Interior mutability primitiveB) Variant fields bir xil memory share qiladi
+
+    Javob: B
+
+    C) RefCellC) Separate memory
+
+68. catch_unwind nima qiladi?
+
+    A) Catch error    D) MutexD) No sharing
+
+    B) Panic ni catch qilish
+
+    C) Unwind catch    Javob: BJavob: B
+
+    D) Error unwind
+
+    Javob: B240. Union vs enum farqi?
+
+
+
+69. resume_unwind nima?35. RefCell borrow rules?A) Bir xil
+
+    A) Resume error
+
+    B) Caught panic ni rethrow    A) Compile-timeB) Union - manual tag, enum - automatic tag
+
+    C) Unwind resume
+
+    D) Continue unwind    B) Runtime checkingC) Enum manual
+
+    Javob: B
+
+    C) No checkingD) Farq yo'q
+
+70. Stack unwinding cost?
+
+    A) Free    D) StaticJavob: B
+
+    B) Binary size va runtime overhead
+
+    C) Memory cost    Javob: B241. Volatile read/write nima uchun?
+
+    D) CPU cost
+
+    Javob: BA) Normal read
+
+
+
+71. Landing pad nima?36. Ref<T> va RefMut<T>?B) Compiler optimization prevent (MMIO)
+
+    A) Landing zone
+
+    B) Exception handling code location    A) &T &mut TC) Fast read
+
+    C) Pad landing
+
+    D) Code landing    B) RefCell guard typesD) Cached read
+
+    Javob: B
+
+    C) BoxJavob: B
+
+72. DWARF unwinding?
+
+    A) Dwarf data    D) Rc242. Fence nima (atomic)?
+
+    B) Debug info based stack unwinding
+
+    C) Unwind dwarf    Javob: BA) Barrier yo'q
+
+    D) Stack dwarf
+
+    Javob: BB) Memory ordering barrier
+
+
+
+73. SEH (Windows)?37. OnceCell<T> nima?C) No ordering
+
+    A) Windows error
+
+    B) Structured Exception Handling    A) CellD) Random order
+
+    C) Error handling
+
+    D) Windows SEH    B) Single initialization cellJavob: B
+
+    Javob: B
+
+    C) RefCell243. UnsafeCell nima?
+
+74. Profile-guided optimization (PGO)?
+
+    A) Profile optimize    D) MutexA) Safe cell
+
+    B) Runtime data bilan optimization
+
+    C) Guided profile    Javob: BB) Interior mutability primitive (base)
+
+    D) Optimization profile
+
+    Javob: BC) No mutability
+
+
+
+75. Link-time optimization (LTO)?38. Lazy<T> nima?D) External mutability
+
+    A) Link optimize
+
+    B) Cross-crate optimization at link    A) EagerJavob: B
+
+    C) Time optimize
+
+    D) Optimization link    B) Deferred initialization244. PhantomPinned nima uchun?
+
+    Javob: B
+
+    C) OnceA) Always movable
+
+76. Thin LTO vs Fat LTO?
+
+    A) Bir xil    D) CellB) Type ni !Unpin qilish
+
+    B) Incremental vs full cross-module
+
+    C) Fast vs slow    Javob: BC) Pin unnecessary
+
+    D) Small vs large
+
+    Javob: BD) Auto pin
+
+
+
+77. codegen-units setting?39. std::sync::Once nima?Javob: B
+
+    A) Code units
+
+    B) Parallel codegen granularity    A) OnceCell245. Self-referential struct muammosi nima?
+
+    C) Unit codegen
+
+    D) Generate units    B) One-time initializationA) No problem
+
+    Javob: B
+
+    C) LazyB) Pointer o'ziga yoki field ga invalid bo'ladi
+
+78. incremental compilation?
+
+    A) Incremental build    D) CellC) Always valid
+
+    B) Changed code only recompile
+
+    C) Compile incremental    Javob: BD) Auto-fix
+
+    D) Partial compile
+
+    Javob: BJavob: B
+
+
+
+79. query system rustc da?40. call_once() method?246. Pin projection nima?
+
+    A) Query data
+
+    B) Demand-driven compilation    A) call_manyA) Random projection
+
+    C) System query
+
+    D) Compile query    B) Execute exactly onceB) Pinned field dan pinned reference olish
+
+    Javob: B
+
+    C) call_alwaysC) No projection
+
+80. Polonius borrow checker?
+
+    A) New borrow    D) call_neverD) Auto projection
+
+    B) New experimental borrow checker
+
+    C) Borrow polonius    Javob: BJavob: B
+
+    D) Checker polonius
+
+    Javob: B247. Structural pinning nima?
+
+
+
+81. NLL (Non-lexical lifetimes)?41. Weak<T> nima?A) No structure
+
+    A) Lexical lifetimes
+
+    B) Control flow based lifetimes    A) RcB) Field pin status parent pin ga bog'liq
+
+    C) Non lifetime
+
+    D) Flow lifetimes    B) Non-owning referenceC) Independent
+
+    Javob: B
+
+    C) ArcD) Always unpinned
+
+82. Two-phase borrows?
+
+    A) Two phase    D) BoxJavob: B
+
+    B) Split mutable borrow activation
+
+    C) Phase borrow    Javob: B248. Wake-by-ref vs wake-by-value?
+
+    D) Borrow phase
+
+    Javob: BA) Bir xil
+
+
+
+83. Implied bounds?42. upgrade() weak method?B) Reference efficiency vs ownership
+
+    A) Implied type
+
+    B) Struct bounds imply fn bounds    A) downgradeC) Farq yo'q
+
+    C) Bound imply
+
+    D) Type bounds    B) Weak to Option<Rc>D) Value yaxshiroq
+
+    Javob: B
+
+    C) cloneJavob: B
+
+84. Well-formedness requirements?
+
+    A) Form requirements    D) drop249. LocalKey nima (thread_local)?
+
+    B) Type must satisfy all bounds
+
+    C) Well formed    Javob: BA) Global key
+
+    D) Requirements form
+
+    Javob: BB) Thread-local storage accessor
+
+
+
+85. Chalk trait solver?43. downgrade() Rc method?C) Shared key
+
+    A) Trait chalk
+
+    B) Prolog-like trait resolution    A) upgradeD) No storage
+
+    C) Solver chalk
+
+    D) Chalk solver    B) Rc to WeakJavob: B
+
+    Javob: B
+
+    C) clone250. Thread_local! macro nima?
+
+86. Obligation nima rustc da?
+
+    A) Obligation type    D) dropA) Global variable
+
+    B) Proof requirement for trait bound
+
+    C) Trait obligation    Javob: BB) Thread-specific static variable
+
+    D) Bound obligation
+
+    Javob: BC) Shared variable
+
+
+
+87. Coherence checking algorithm?44. Reference cycle prevention?D) No variable
+
+    A) Coherence check
+
+    B) Overlap detection for trait impls    A) Rc onlyJavob: B
+
+    C) Check coherence
+
+    D) Algorithm coherence    B) Weak referencesVARIANT 3
+
+    Javob: B
+
+    C) Arc only251. Const generic nima?
+
+88. Negative reasoning?
+
+    A) Negative logic    D) BoxA) Runtime generic
+
+    B) Impl yo'qligini prove qilish
+
+    C) Reason negative    Javob: BB) Compile-time constant generic parameter
+
+    D) Logic negative
+
+    Javob: BC) Dynamic generic
+
+
+
+89. Auto trait rules?45. core crate nima?D) No generic
+
+    A) Auto rules
+
+    B) All fields satisfy -> type satisfies    A) stdJavob: B
+
+    C) Trait auto
+
+    D) Rules auto    B) No-std foundation252. Const generic expression nima (partial)?
+
+    Javob: B
+
+    C) allocA) No expression
+
+90. Opaque type reveal?
+
+    A) Opaque reveal    D) proc_macroB) Generic parameter sifatida expression
+
+    B) Defining scope da concrete type
+
+    C) Reveal opaque    Javob: BC) Always simple
+
+    D) Type reveal
+
+    Javob: BD) Runtime only
+
+
+
+91. Type normalization?46. alloc crate nima?Javob: B
+
+    A) Normal type
+
+    B) Associated type ni concrete ga    A) core253. Type-level programming nima?
+
+    C) Normalize type
+
+    D) Type normal    B) Heap allocation without stdA) Value programming
+
+    Javob: B
+
+    C) stdB) Compile-time computation type system orqali
+
+92. MIR (Mid-level IR)?
+
+    A) Middle IR    D) proc_macroC) Runtime computation
+
+    B) Borrow check va optimization uchun
+
+    C) IR middle    Javob: BD) No computation
+
+    D) Mid IR
+
+    Javob: BJavob: B
+
+
+
+93. HIR (High-level IR)?47. #![no_std] nima?254. Sealed trait pattern nima uchun?
+
+    A) High IR
+
+    B) Desugared AST    A) stdA) Open extension
+
+    C) IR high
+
+    D) High level    B) Without standard libraryB) Trait ni crate tashqarisida implement qilishni prevent
+
+    Javob: B
+
+    C) no_coreC) Public trait
+
+94. THIR (Typed HIR)?
+
+    A) Typed IR    D) no_allocD) No sealing
+
+    B) Type annotated HIR
+
+    C) HIR typed    Javob: BJavob: B
+
+    D) Type HIR
+
+    Javob: B255. Typestate pattern nima?
+
+
+
+95. Drop elaboration?48. #![no_main] nima?A) No state
+
+    A) Drop elaborate
+
+    B) Explicit drop calls in MIR    A) mainB) State ni type system orqali enforce qilish
+
+    C) Elaborate drop
+
+    D) MIR drop    B) Custom entry pointC) Runtime state
+
+    Javob: B
+
+    C) no_stdD) Dynamic state
+
+96. Storage live/dead?
+
+    A) Storage state    D) no_allocJavob: B
+
+    B) Variable memory validity markers
+
+    C) Live storage    Javob: B256. Builder pattern Rust da qanday?
+
+    D) Dead storage
+
+    Javob: BA) Direct construction
+
+
+
+97. Place expression?49. panic_handler attribute?B) Method chaining with consuming builders
+
+    A) Place expr
+
+    B) Memory location expression    A) error_handlerC) No chaining
+
+    C) Expression place
+
+    D) Memory expression    B) Custom panic handlingD) Simple constructor
+
+    Javob: B
+
+    C) abortJavob: B
+
+98. Rvalue vs Lvalue?
+
+    A) Bir xil    D) unwind257. RAII nima degani?
+
+    B) Value vs location
+
+    C) Right vs left    Javob: BA) Random Access
+
+    D) Read vs write
+
+    Javob: BB) Resource Acquisition Is Initialization
+
+
+
+99. Custom DST (Dynamically Sized Type)?50. panic = "abort" config?C) Rust API
+
+    A) Custom DST
+
+    B) Pointer metadata trait (unstable)    A) unwindD) Runtime Analysis
+
+    C) DST custom
+
+    D) Dynamic custom    B) No unwindingJavob: B
+
+    Javob: B
+
+    C) catch258. Guard pattern nima?
+
+100. Thin pointers vs Fat pointers?
+
+     A) Bir xil    D) ignoreA) No guard
+
+     B) No metadata vs with metadata (len/vtable)
+
+     C) Small vs large    Javob: BB) Scope oxirida cleanup (Drop)
+
+     D) Fast vs slow
+
+     Javob: BC) Manual cleanup
+
+
+51. std::panic::catch_unwind()?D) No cleanup
+
+    A) panic!Javob: B
+
+    B) Catch panics259. Extension trait pattern nima?
+
+    C) resume_unwindA) Existing trait
+
+    D) abortB) External type ga metod qo'shish
+
+    Javob: BC) No extension
+
+D) Internal only
+
+52. std::panic::resume_unwind()?Javob: B
+
+    A) catch260. Deref coercion nima?
+
+    B) Re-panicA) No coercion
+
+    C) abortB) &T automatically &U ga (Deref trait)
+
+    D) ignoreC) Manual conversion
+
+    Javob: BD) Runtime conversion
+
+Javob: B
+
+53. AssertUnwindSafe nima?261. Target type inference nima?
+
+    A) UnwindSafeA) Source inference
+
+    B) Marker for catch_unwindB) Expected type dan actual type chiqarish
+
+    C) RefUnwindSafeC) No inference
+
+    D) PanicD) Random type
+
+    Javob: BJavob: B
+
+262. Try trait nima (unstable)?
+
+54. Inline assembly nima?A) Error handling
+
+    A) ExternalB) ? operator uchun abstract trait
+
+    B) asm! macroC) Try block
+
+    C) FFID) No try
+
+    D) IntrinsicJavob: B
+
+    Javob: B263. Generator nima (unstable)?
+
+A) Power generator
+
+55. global_asm! nima?B) Yield qila oladigan function
+
+    A) asm!C) Normal function
+
+    B) Module-level assemblyD) No yield
+
+    C) inlineJavob: B
+
+    D) FFI264. Async/await desugaring nima?
+
+    Javob: BA) Add sugar
+
+B) State machine ga compile qilish
+
+56. naked function nima?C) Direct execution
+
+    A) NormalD) No transformation
+
+    B) No prologue/epilogueJavob: B
+
+    C) Inline265. ZST (Zero-Sized Type) nima?
+
+    D) ExternA) Large type
+
+    Javob: BB) size_of == 0 bo'lgan type
+
+C) Normal size
+
+57. repr(transparent) nima?D) Dynamic size
+
+    A) repr(C)Javob: B
+
+    B) Same layout as inner type266. ZST optimization nima?
+
+    C) repr(packed)A) No optimization
+
+    D) repr(align)B) Memory allocation skip
+
+    Javob: BC) Slow execution
+
+D) More memory
+
+58. repr(align(N)) nima?Javob: B
+
+    A) packed267. Niche optimization nima?
+
+    B) Minimum alignmentA) No optimization
+
+    C) CB) Invalid bit pattern uchun tag (Option<&T>)
+
+    D) transparentC) Random optimization
+
+    Javob: BD) Slow code
+
+Javob: B
+
+59. align_of_val() nima?268. Enum discriminant nima?
+
+    A) size_of_valA) No tag
+
+    B) Value alignmentB) Variant ni identify qiluvchi tag
+
+    C) offset_ofC) Data field
+
+    D) type_ofD) Method
+
+    Javob: BJavob: B
+
+269. #[non_exhaustive] nima qiladi?
+
+60. size_of_val() nima?A) Exhaustive
+
+    A) align_of_valB) Future variant/field qo'shish uchun semver-safe
+
+    B) Value size (DST aware)C) No effect
+
+    C) offset_ofD) Remove fields
+
+    D) type_ofJavob: B
+
+    Javob: B270. Orphan rule nima (qaytar)?
+
+A) No rule
+
+61. std::any::Any trait?B) Local trait yoki local type kerak (impl)
+
+    A) TypeIdC) Any impl ok
+
+    B) Runtime type reflectionD) No restriction
+
+    C) CloneJavob: B
+
+    D) Debug271. Coherence nima?
+
+    Javob: BA) No coherence
+
+B) Trait impl uniqueness guarantee
+
+62. TypeId nima?C) Multiple impl ok
+
+    A) AnyD) Random impl
+
+    B) Type identifierJavob: B
+
+    C) Clone272. Fundamental type nima?
+
+    D) DebugA) Complex type
+
+    Javob: BB) Orphan rule istisno (&T, Box<T>)
+
+C) No exception
+
+63. downcast_ref::<T>() nima?D) Normal type
+
+    A) upcastJavob: B
+
+    B) Any to concrete type273. Blanket implementation nima?
+
+    C) cloneA) Specific impl
+
+    D) debugB) Generic type uchun trait impl
+
+    Javob: BC) No generics
+
+D) Manual impl
+
+64. type_name::<T>() nima?Javob: B
+
+    A) TypeId274. Marker trait nima?
+
+    B) Type name stringA) Data trait
+
+    C) AnyB) Method yo'q, faqat type property (Send, Sync)
+
+    D) DebugC) Many methods
+
+    Javob: BD) No meaning
+
+Javob: B
+
+65. std::hint::unreachable_unchecked()?275. Trait object safety nima?
+
+    A) unreachable!A) Always safe
+
+    B) UB if reachedB) dyn Trait qilish mumkinligi talablari
+
+    C) panic!C) Never safe
+
+    D) abortD) No requirement
+
+    Javob: BJavob: B
+
+VARIANT 4
+
+66. std::hint::spin_loop()?276. Object-safe trait qoidalari?
+
+    A) sleepA) No rules
+
+    B) CPU spin hintB) Self: Sized emas, no generic methods, no Self return
+
+    C) yieldC) Any trait ok
+
+    D) parkD) Self required
+
+    Javob: BJavob: B
+
+277. Vtable nima?
+
+67. std::hint::black_box()?A) Value table
+
+    A) white_boxB) Virtual method pointer table
+
+    B) Prevent optimizationC) Variable table
+
+    C) inlineD) Version table
+
+    D) coldJavob: B
+
+    Javob: B278. Fat pointer nima?
+
+A) Single pointer
+
+68. #[cold] attribute?B) Pointer + metadata (trait object, slice)
+
+    A) hotC) Thin pointer
+
+    B) Unlikely to be calledD) No metadata
+
+    C) inlineJavob: B
+
+    D) always279. Thin pointer nima?
+
+    Javob: BA) Fat pointer
+
+B) Faqat address
+
+69. #[track_caller] nima?C) Pointer + size
+
+    A) callerD) Pointer + vtable
+
+    B) Preserve caller locationJavob: B
+
+    C) callee280. Unsized coercion nima?
+
+    D) traceA) No coercion
+
+    Javob: BB) [T; N] -> [T], T -> dyn Trait
+
+C) Fixed size
+
+70. Location::caller() nima?D) No conversion
+
+    A) calleeJavob: B
+
+    B) Caller source location281. DST (Dynamically Sized Type) nima?
+
+    C) fileA) Static size
+
+    D) lineB) Compile-time noma'lum size (str, [T], dyn Trait)
+
+    Javob: BC) Fixed size
+
+D) Small size
+
+71. Negative impl nima?Javob: B
+
+    A) Positive282. Slice fat pointer qismlar?
+
+    B) !Trait implementationA) Faqat pointer
+
+    C) DefaultB) Pointer + length
+
+    D) AutoC) Pointer + capacity
+
+    Javob: BD) Faqat length
+
+Javob: B
+
+72. auto trait nima?283. Trait object fat pointer qismlar?
+
+    A) ManualA) Faqat pointer
+
+    B) Compiler-implemented traitB) Pointer + vtable
+
+    C) DeriveC) Pointer + length
+
+    D) ImplD) Faqat vtable
+
+    Javob: BJavob: B
+
+284. Existential type nima?
+
+73. marker trait nima?A) Universal type
+
+    A) Method traitB) impl Trait - concrete hidden type
+
+    B) No methods, only markerC) Known type
+
+    C) DefaultD) No hiding
+
+    D) AutoJavob: B
+
+    Javob: B285. Universal type nima?
+
+A) Specific type
+
+74. Specialization nima?B) for<'a> - caller tanlaydi
+
+    A) GeneralizationC) Fixed type
+
+    B) More specific implD) Local type
+
+    C) DefaultJavob: B
+
+    D) Override286. Type erasure nima?
+
+    Javob: BA) Type saved
+
+B) Generic type info runtime da yo'q
+
+75. default impl nima?C) Full type info
+
+    A) SpecificD) Partial info
+
+    B) Specializable implementationJavob: B
+
+    C) Override287. Nominal typing nima?
+
+    D) FinalA) Structural typing
+
+    Javob: BB) Type name orqali farqlash
+
+C) Shape orqali
+
+76. GAT (Generic Associated Types)?D) No names
+
+    A) Regular associatedJavob: B
+
+    B) Generic in associated type288. Structural typing nima?
+
+    C) LifetimeA) Name-based
+
+    D) TraitB) Type structure orqali farqlash
+
+    Javob: BC) No structure
+
+D) Random typing
+
+77. type Iter<'a> associated?Javob: B
+
+    A) Non-generic289. Rust typing system qaysi?
+
+    B) Lifetime-generic associatedA) Structural
+
+    C) ConcreteB) Nominal (name-based)
+
+    D) StaticC) Duck typing
+
+    Javob: BD) Dynamic typing
+
+Javob: B
+
+78. const generics nima?290. Refinement types nima (research)?
+
+    A) Type genericsA) No refinement
+
+    B) Compile-time value paramsB) Type + logical predicates
+
+    C) LifetimeC) Simple types
+
+    D) RuntimeD) Basic types
+
+    Javob: BJavob: B
+
+291. Affine type system nima?
+
+79. [T; N] const generic?A) Linear always
+
+    A) DynamicB) At most once use (Rust ownership)
+
+    B) Compile-time sizeC) Multiple use
+
+    C) RuntimeD) No restriction
+
+    D) VariableJavob: B
+
+    Javob: B292. Linear type system nima?
+
+A) Exactly once use
+
+80. const fn nima?B) Exactly once use (stricter than affine)
+
+    A) fnC) Multiple use ok
+
+    B) Compile-time evaluableD) No use required
+
+    C) async fnJavob: B
+
+    D) unsafe fn293. Borrow checker qachon ishlaydi?
+
+    Javob: BA) Runtime
+
+B) Compile-time
+
+81. const block nima?C) Never
+
+    A) staticD) Dynamic time
+
+    B) Compile-time evaluationJavob: B
+
+    C) runtime294. NLL (Non-Lexical Lifetimes) nima?
+
+    D) dynamicA) Lexical scope
+
+    Javob: BB) Last use ga qadar (refined borrow)
+
+C) Function scope
+
+82. static item nima?D) File scope
+
+    A) constJavob: B
+
+    B) Single instance, 'static lifetime295. Polonius nima?
+
+    C) letA) Country
+
+    D) mutB) Yangi borrow checker (experimental)
+
+    Javob: BC) Old borrow checker
+
+D) No borrow check
+
+83. static mut nima?Javob: B
+
+    A) Safe static296. Miri nima?
+
+    B) Mutable static (unsafe)A) Name
+
+    C) constB) Compile-time interpreter (const eval, UB detection)
+
+    D) letC) Runtime interpreter
+
+    Javob: BD) Debugger
+
+Javob: B
+
+84. extern static nima?297. Stacked Borrows nima?
+
+    A) InternalA) Unstacked
+
+    B) External linkage staticB) Aliasing model (miri validation)
+
+    C) constC) No model
+
+    D) letD) Simple model
+
+    Javob: BJavob: B
+
+298. Tree Borrows nima?
+
+85. thread_local! macro?A) Stacked model
+
+    A) GlobalB) Alternative aliasing model (yangi)
+
+    B) Thread-local storageC) No borrows
+
+    C) StaticD) Linear borrows
+
+    D) ConstJavob: B
+
+    Javob: B299. Unsafe code guidelines nima?
+
+A) No guidelines
+
+86. LocalKey<T> nima?B) Unsafe Rust formalizatsiyasi (WG)
+
+    A) GlobalKeyC) Only safe code
+
+    B) Thread-local key typeD) Random rules
+
+    C) StaticKeyJavob: B
+
+    D) ConstKey300. Rustonomicon nima?
+
+    Javob: BA) Pokemon
+
+B) Unsafe Rust guide (the dark arts)
+
+87. Atomic memory ordering?C) Safe Rust only
+
+    A) No orderingD) Beginner guide
+
+    B) Sequentially consistent etc.Javob: B
+    C) Random
+    D) Undefined
+    Javob: B
+
+88. SeqCst ordering nima?
+    A) Relaxed
+    B) Strongest ordering
+    C) Acquire
+    D) Release
+    Javob: B
+
+89. Acquire ordering nima?
+    A) Release
+    B) Read synchronization
+    C) SeqCst
+    D) Relaxed
+    Javob: B
+
+90. Release ordering nima?
+    A) Acquire
+    B) Write synchronization
+    C) SeqCst
+    D) Relaxed
+    Javob: B
+
+91. AcqRel ordering nima?
+    A) Relaxed
+    B) Both acquire and release
+    C) SeqCst
+    D) None
+    Javob: B
+
+92. Relaxed ordering nima?
+    A) SeqCst
+    B) No synchronization
+    C) Acquire
+    D) Release
+    Javob: B
+
+93. compare_exchange atomic?
+    A) swap
+    B) CAS operation
+    C) load
+    D) store
+    Javob: B
+
+94. fetch_add atomic?
+    A) fetch_sub
+    B) Add and return old
+    C) load
+    D) store
+    Javob: B
+
+95. std::intrinsics nima?
+    A) std::ops
+    B) Compiler intrinsics
+    C) std::mem
+    D) std::ptr
+    Javob: B
+
+96. likely/unlikely intrinsics?
+    A) always
+    B) Branch prediction hints
+    C) never
+    D) maybe
+    Javob: B
+
+97. transmute::<T, U>() nima?
+    A) cast
+    B) Reinterpret bits
+    C) convert
+    D) coerce
+    Javob: B
+
+98. transmute_copy::<T, U>() nima?
+    A) transmute
+    B) Copy and reinterpret
+    C) clone
+    D) move
+    Javob: B
+
+99. core::arch module?
+    A) std::arch
+    B) CPU intrinsics
+    C) asm
+    D) ffi
+    Javob: B
+
+100. SIMD intrinsics Rustda?
+     A) No SIMD
+     B) std::arch SIMD types
+     C) External
+     D) FFI only
+     Javob: B

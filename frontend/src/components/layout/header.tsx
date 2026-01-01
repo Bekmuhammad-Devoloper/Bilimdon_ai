@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, Bell, X, Moon, Sun, LogOut, User, Settings } from 'lucide-react';
+import { Bell, Moon, Sun, LogOut, User, Settings } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth, useNotifications, useTheme } from '@/hooks';
 import { Avatar, Badge, Button } from '@/components/ui';
@@ -15,17 +15,9 @@ export function Header() {
   const { unreadCount } = useNotifications();
   const { theme, setTheme } = useTheme();
   const pathname = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
 
   const isTelegram = isTelegramWebApp();
-
-  const navLinks = [
-    { href: '/', label: 'Bosh sahifa' },
-    { href: '/categories', label: 'Kategoriyalar' },
-    { href: '/leaderboard', label: 'Reyting' },
-    { href: '/ai', label: 'AI Yordamchi' },
-  ];
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-gray-200 dark:border-gray-800">
@@ -46,24 +38,6 @@ export function Header() {
               Bilimdon
             </span>
           </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'px-4 py-2 rounded-xl text-sm font-medium transition-colors',
-                  pathname === link.href
-                    ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
 
           {/* Right side */}
           <div className="flex items-center gap-2">
@@ -98,7 +72,7 @@ export function Header() {
                     onClick={() => setProfileOpen(!profileOpen)}
                     className="flex items-center gap-2 p-1.5 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                   >
-                    <Avatar src={user?.avatar} name={user?.fullName || 'User'} size="sm" />
+                    <Avatar key={user?.avatar || 'no-avatar'} src={user?.avatar} name={user?.fullName || 'User'} size="sm" />
                     <div className="hidden sm:block text-left">
                       <p className="text-sm font-medium text-gray-900 dark:text-white">
                         {user?.username}
@@ -137,15 +111,26 @@ export function Header() {
                           <span>🏆</span>
                           Yutuqlar
                         </Link>
-                        {user?.role === 'ADMIN' && (
-                          <Link
-                            href="/admin"
-                            className="flex items-center gap-2 px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-                            onClick={() => setProfileOpen(false)}
-                          >
-                            <Settings className="w-4 h-4" />
-                            Admin Panel
-                          </Link>
+                        {(user?.role === 'ADMIN' || user?.role === 'MODERATOR') && (
+                          pathname.startsWith('/admin') ? (
+                            <Link
+                              href="/"
+                              className="flex items-center gap-2 px-4 py-2 text-green-600 dark:text-green-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                              onClick={() => setProfileOpen(false)}
+                            >
+                              <User className="w-4 h-4" />
+                              User Panel
+                            </Link>
+                          ) : (
+                            <Link
+                              href="/admin"
+                              className="flex items-center gap-2 px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                              onClick={() => setProfileOpen(false)}
+                            >
+                              <Settings className="w-4 h-4" />
+                              Admin Panel
+                            </Link>
+                          )
                         )}
                         <button
                           onClick={() => {
@@ -172,40 +157,9 @@ export function Header() {
                 </Link>
               </div>
             )}
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden p-2 rounded-xl text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            >
-              {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
           </div>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-          <nav className="container mx-auto px-4 py-4 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'block px-4 py-3 rounded-xl text-base font-medium transition-colors',
-                  pathname === link.href
-                    ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
-                )}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      )}
     </header>
   );
 }

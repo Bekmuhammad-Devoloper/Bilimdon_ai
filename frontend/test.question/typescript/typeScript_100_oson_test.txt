@@ -1,0 +1,699 @@
+1. TypeScript nima?
+   A) JavaScript framework
+   B) JavaScript superset with types
+   C) Separate language
+   D) Library
+   Javob: B
+
+2. TypeScript kim tomonidan yaratilgan?
+   A) Google
+   B) Microsoft
+   C) Facebook
+   D) Mozilla
+   Javob: B
+
+3. TypeScript file extension?
+   A) .js
+   B) .ts
+   C) .tsx
+   D) .type
+   Javob: B
+
+4. tsc nima?
+   A) Runtime
+   B) TypeScript compiler
+   C) Package manager
+   D) Bundler
+   Javob: B
+
+5. tsconfig.json nima?
+   A) Package config
+   B) TypeScript configuration
+   C) Build config
+   D) Test config
+   Javob: B
+
+6. let x: number = 5 nima?
+   A) Dynamic type
+   B) Type annotation
+   C) Type assertion
+   D) Type inference
+   Javob: B
+
+7. Type inference nima?
+   A) Manual typing
+   B) Automatic type detection
+   C) Type assertion
+   D) Type casting
+   Javob: B
+
+8. string type nima?
+   A) Number
+   B) Text type
+   C) Boolean
+   D) Object
+   Javob: B
+
+9. number type nima?
+   A) String
+   B) Numeric type
+   C) Boolean
+   D) Object
+   Javob: B
+
+10. boolean type nima?
+    A) Number
+    B) true/false type
+    C) String
+    D) Object
+    Javob: B
+
+11. any type nima?
+    A) Specific
+    B) Any type allowed
+    C) Unknown
+    D) Never
+    Javob: B
+
+12. unknown type nima?
+    A) any
+    B) Type-safe any
+    C) never
+    D) void
+    Javob: B
+
+13. void type nima?
+    A) null
+    B) No return value
+    C) undefined
+    D) never
+    Javob: B
+
+14. null type nima?
+    A) undefined
+    B) Intentional empty
+    C) void
+    D) never
+    Javob: B
+
+15. undefined type nima?
+    A) null
+    B) Not assigned value
+    C) void
+    D) never
+    Javob: B
+
+16. never type nima?
+    A) void
+    B) Never returns
+    C) null
+    D) undefined
+    Javob: B
+
+17. Array<number> nima?
+    A) Object
+    B) Number array type
+    C) Tuple
+    D) Set
+    Javob: B
+
+18. number[] nima?
+    A) Tuple
+    B) Number array type
+    C) Object
+    D) Set
+    Javob: B
+
+19. Tuple nima?
+    A) Array
+    B) Fixed-length typed array
+    C) Object
+    D) Set
+    Javob: B
+
+20. [string, number] nima?
+    A) Array
+    B) Tuple type
+    C) Object
+    D) Union
+    Javob: B
+
+21. Union type nima?
+    A) Intersection
+    B) A yoki B type
+    C) Single type
+    D) Any
+    Javob: B
+
+22. string | number nima?
+    A) Intersection
+    B) Union type
+    C) Single type
+    D) Tuple
+    Javob: B
+
+23. Intersection type nima?
+    A) Union
+    B) A va B combined
+    C) Single type
+    D) Any
+    Javob: B
+
+24. A & B nima?
+    A) Union
+    B) Intersection type
+    C) Conditional
+    D) Mapped
+    Javob: B
+
+25. interface nima?
+    A) Class
+    B) Object shape definition
+    C) Type alias
+    D) Enum
+    Javob: B
+
+26. type alias nima?
+    A) Interface
+    B) Custom type name
+    C) Class
+    D) Enum
+    Javob: B
+
+27. interface vs type?
+    A) Same
+    B) Interface extend, type combine
+    C) No difference
+    D) Type better
+    Javob: B
+
+28. extends keyword interface'da?
+    A) Implements
+    B) Inheritance
+    C) Union
+    D) Intersection
+    Javob: B
+
+29. Optional property nima?
+    A) Required
+    B) name?: string
+    C) name!: string
+    D) name: string?
+    Javob: B
+
+30. Readonly property nima?
+    A) Mutable
+    B) readonly name: string
+    C) const name
+    D) final name
+    Javob: B
+
+31. enum nima?
+    A) Interface
+    B) Named constants set
+    C) Type
+    D) Class
+    Javob: B
+
+32. const enum nima?
+    A) Regular enum
+    B) Compile-time inline enum
+    C) String enum
+    D) Number enum
+    Javob: B
+
+33. Function type nima?
+    A) Class
+    B) (a: number) => number
+    C) Interface
+    D) Object
+    Javob: B
+
+34. Generic type nima?
+    A) Specific
+    B) Type parameter
+    C) Any
+    D) Unknown
+    Javob: B
+
+35. <T> nima?
+    A) Less than
+    B) Generic type parameter
+    C) Greater than
+    D) Comparison
+    Javob: B
+
+36. Array<T> nima?
+    A) Specific array
+    B) Generic array type
+    C) Tuple
+    D) Object
+    Javob: B
+
+37. Type assertion nima?
+    A) Type inference
+    B) value as Type
+    C) Type annotation
+    D) Type guard
+    Javob: B
+
+38. as keyword nima?
+    A) Type annotation
+    B) Type assertion
+    C) Type guard
+    D) Type alias
+    Javob: B
+
+39. <Type>value nima?
+    A) Generic
+    B) Type assertion (angle bracket)
+    C) Comparison
+    D) Casting
+    Javob: B
+
+40. Type guard nima?
+    A) Assertion
+    B) Runtime type check
+    C) Annotation
+    D) Alias
+    Javob: B
+
+41. typeof operator type guard?
+    A) instanceof
+    B) typeof x === "string"
+    C) in
+    D) is
+    Javob: B
+
+42. instanceof operator?
+    A) typeof
+    B) x instanceof Class
+    C) in
+    D) is
+    Javob: B
+
+43. in operator type guard?
+    A) typeof
+    B) "property" in object
+    C) instanceof
+    D) is
+    Javob: B
+
+44. is keyword nima?
+    A) typeof
+    B) Custom type guard
+    C) instanceof
+    D) in
+    Javob: B
+
+45. class nima TypeScript'da?
+    A) Interface
+    B) Object blueprint with types
+    C) Type
+    D) Enum
+    Javob: B
+
+46. public modifier nima?
+    A) private
+    B) Accessible everywhere
+    C) protected
+    D) readonly
+    Javob: B
+
+47. private modifier nima?
+    A) public
+    B) Class only access
+    C) protected
+    D) readonly
+    Javob: B
+
+48. protected modifier nima?
+    A) private
+    B) Class and subclass access
+    C) public
+    D) readonly
+    Javob: B
+
+49. abstract class nima?
+    A) Concrete
+    B) Cannot instantiate directly
+    C) Interface
+    D) Type
+    Javob: B
+
+50. implements keyword nima?
+    A) extends
+    B) Interface implementation
+    C) Inheritance
+    D) Override
+    Javob: B
+
+51. Decorators nima?
+    A) Functions
+    B) Meta-programming annotations
+    C) Classes
+    D) Types
+    Javob: B
+
+52. @decorator syntax?
+    A) #decorator
+    B) @functionName
+    C) $decorator
+    D) !decorator
+    Javob: B
+
+53. Module nima TypeScript'da?
+    A) Package
+    B) File with export/import
+    C) Namespace
+    D) Library
+    Javob: B
+
+54. export keyword nima?
+    A) import
+    B) Make available outside
+    C) require
+    D) module
+    Javob: B
+
+55. import keyword nima?
+    A) export
+    B) Bring from other module
+    C) require
+    D) module
+    Javob: B
+
+56. namespace nima?
+    A) Module
+    B) Internal module (legacy)
+    C) Package
+    D) Library
+    Javob: B
+
+57. declare keyword nima?
+    A) Define
+    B) Ambient declaration
+    C) Export
+    D) Import
+    Javob: B
+
+58. .d.ts file nima?
+    A) Source file
+    B) Type declaration file
+    C) Config file
+    D) Test file
+    Javob: B
+
+59. @types packages?
+    A) Source
+    B) DefinitelyTyped declarations
+    C) Config
+    D) Build
+    Javob: B
+
+60. Partial<T> nima?
+    A) Required
+    B) All properties optional
+    C) Readonly
+    D) Pick
+    Javob: B
+
+61. Required<T> nima?
+    A) Partial
+    B) All properties required
+    C) Readonly
+    D) Pick
+    Javob: B
+
+62. Readonly<T> nima?
+    A) Mutable
+    B) All properties readonly
+    C) Partial
+    D) Pick
+    Javob: B
+
+63. Pick<T, K> nima?
+    A) Omit
+    B) Select specific keys
+    C) Exclude
+    D) Extract
+    Javob: B
+
+64. Omit<T, K> nima?
+    A) Pick
+    B) Exclude specific keys
+    C) Exclude
+    D) Extract
+    Javob: B
+
+65. Record<K, V> nima?
+    A) Array
+    B) Object with K keys, V values
+    C) Map
+    D) Set
+    Javob: B
+
+66. Exclude<T, U> nima?
+    A) Extract
+    B) Remove U from T union
+    C) Omit
+    D) Pick
+    Javob: B
+
+67. Extract<T, U> nima?
+    A) Exclude
+    B) Keep only U from T union
+    C) Omit
+    D) Pick
+    Javob: B
+
+68. NonNullable<T> nima?
+    A) Nullable
+    B) Remove null/undefined
+    C) Required
+    D) Readonly
+    Javob: B
+
+69. ReturnType<T> nima?
+    A) Parameters
+    B) Function return type
+    C) ThisType
+    D) InstanceType
+    Javob: B
+
+70. Parameters<T> nima?
+    A) ReturnType
+    B) Function parameters tuple
+    C) ThisType
+    D) InstanceType
+    Javob: B
+
+71. InstanceType<T> nima?
+    A) ReturnType
+    B) Constructor instance type
+    C) Parameters
+    D) ThisType
+    Javob: B
+
+72. strict mode nima?
+    A) Loose
+    B) Stricter type checking
+    C) Any allowed
+    D) No checks
+    Javob: B
+
+73. strictNullChecks nima?
+    A) Loose null
+    B) Explicit null handling
+    C) No null
+    D) Always null
+    Javob: B
+
+74. noImplicitAny nima?
+    A) Allow any
+    B) Error on implicit any
+    C) Ignore any
+    D) Remove any
+    Javob: B
+
+75. Literal type nima?
+    A) General type
+    B) Exact value type
+    C) Union
+    D) Intersection
+    Javob: B
+
+76. "hello" as const?
+    A) String type
+    B) Literal type "hello"
+    C) Any
+    D) Unknown
+    Javob: B
+
+77. as const nima?
+    A) Mutable
+    B) Readonly literal type
+    C) Any
+    D) Unknown
+    Javob: B
+
+78. Template literal type?
+    A) String
+    B) String pattern type
+    C) Number
+    D) Boolean
+    Javob: B
+
+79. keyof operator nima?
+    A) typeof
+    B) Object keys union
+    C) valueof
+    D) instanceof
+    Javob: B
+
+80. keyof T nima?
+    A) Values
+    B) T keys union type
+    C) Single key
+    D) All keys
+    Javob: B
+
+81. typeof operator type-level?
+    A) keyof
+    B) Get variable's type
+    C) instanceof
+    D) in
+    Javob: B
+
+82. Indexed access type?
+    A) Array
+    B) T[K] property type
+    C) Object
+    D) Tuple
+    Javob: B
+
+83. T["name"] nima?
+    A) Value
+    B) Property type
+    C) Key
+    D) Index
+    Javob: B
+
+84. Mapped type nima?
+    A) Object
+    B) Transform all properties
+    C) Array
+    D) Tuple
+    Javob: B
+
+85. { [K in keyof T]: V }?
+    A) Index
+    B) Mapped type
+    C) Object
+    D) Array
+    Javob: B
+
+86. Conditional type nima?
+    A) Union
+    B) T extends U ? X : Y
+    C) Intersection
+    D) Mapped
+    Javob: B
+
+87. infer keyword nima?
+    A) typeof
+    B) Extract type in conditional
+    C) keyof
+    D) instanceof
+    Javob: B
+
+88. T extends Array<infer U>?
+    A) keyof
+    B) Extract array element type
+    C) typeof
+    D) instanceof
+    Javob: B
+
+89. Distributive conditional?
+    A) Non-distributive
+    B) Union distribution
+    C) Intersection
+    D) Mapped
+    Javob: B
+
+90. [T] extends [U] ? X : Y?
+    A) Distributive
+    B) Non-distributive conditional
+    C) Mapped
+    D) Union
+    Javob: B
+
+91. Function overloads nima?
+    A) Single signature
+    B) Multiple signatures
+    C) Generic
+    D) Union
+    Javob: B
+
+92. this type nima?
+    A) Regular type
+    B) Current class type
+    C) Any
+    D) Unknown
+    Javob: B
+
+93. asserts keyword nima?
+    A) Returns
+    B) Assertion function
+    C) Throws
+    D) Guards
+    Javob: B
+
+94. satisfies operator nima?
+    A) as
+    B) Type check without widening
+    C) extends
+    D) implements
+    Javob: B
+
+95. const type parameter?
+    A) let
+    B) Literal type inference
+    C) var
+    D) readonly
+    Javob: B
+
+96. noUncheckedIndexedAccess?
+    A) Unsafe
+    B) Index returns T | undefined
+    C) Always T
+    D) Error
+    Javob: B
+
+97. exactOptionalPropertyTypes?
+    A) Loose
+    B) Optional != undefined
+    C) Same
+    D) Any
+    Javob: B
+
+98. Awaited<T> nima?
+    A) Promise
+    B) Unwrap Promise type
+    C) Async
+    D) Then
+    Javob: B
+
+99. NoInfer<T> nima?
+    A) Infer
+    B) Prevent type inference
+    C) Force infer
+    D) Auto infer
+    Javob: B
+
+100. esModuleInterop nima?
+     A) CommonJS
+     B) ES/CommonJS compatibility
+     C) ESM only
+     D) CJS only
+     Javob: B

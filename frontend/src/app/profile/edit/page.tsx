@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useAuth } from '@/hooks';
+import { useAuthStore } from '@/store/auth';
 import { usersApi, uploadApi, authApi } from '@/lib/api';
 import { Button, Card, Input, Avatar } from '@/components/ui';
 import toast from 'react-hot-toast';
@@ -31,7 +32,9 @@ type PasswordForm = z.infer<typeof passwordSchema>;
 export default function ProfileEditPage() {
   const router = useRouter();
   const { user, isAuthenticated, isLoading: authLoading, updateUser } = useAuth();
+  const { setUser } = useAuthStore();
   const [uploading, setUploading] = useState(false);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
 
   const profileForm = useForm<ProfileForm>({
     resolver: zodResolver(profileSchema),
@@ -62,6 +65,8 @@ export default function ProfileEditPage() {
         fullName: user.fullName,
         bio: user.bio || '',
       });
+      // User avatar o'zgarganda preview'ni tozalash
+      setPreviewUrl(null);
     }
   }, [user, profileForm]);
 
@@ -74,12 +79,58 @@ export default function ProfileEditPage() {
       return;
     }
 
+    // Darhol preview ko'rsatish
+    const localPreviewUrl = URL.createObjectURL(file);
+    setPreviewUrl(localPreviewUrl);
+
     try {
       setUploading(true);
-      const { data } = await uploadApi.uploadAvatar(file);
-      updateUser({ avatar: data.url });
+      const response = await uploadApi.uploadAvatar(file);
+      console.log('[Frontend] Upload response:', response.data);
+      
+      // Upload response'dan URL va user olish
+      const uploadData = response.data;
+      let avatarUrl: string | null = null;
+      
+      if (typeof uploadData === 'string') {
+        avatarUrl = uploadData;
+      } else if (uploadData && typeof uploadData === 'object') {
+        avatarUrl = uploadData.url || null;
+        // Agar backend to'liq user qaytarsa
+        if (uploadData.user) {
+          setUser(uploadData.user);
+          console.log('[Frontend] User from upload response:', uploadData.user.avatar);
+          toast.success('Avatar yangilandi');
+          setTimeout(() => {
+            URL.revokeObjectURL(localPreviewUrl);
+            setPreviewUrl(null);
+          }, 300);
+          return;
+        }
+      }
+      
+      // Agar upload response'da user bo'lmasa, profile API'dan olish
+      if (avatarUrl) {
+        // Avval URL ni to'g'ridan-to'g'ri store'ga saqlash
+        const currentUser = useAuthStore.getState().user;
+        if (currentUser) {
+          setUser({ ...currentUser, avatar: avatarUrl });
+          console.log('[Frontend] Avatar from upload URL:', avatarUrl);
+        }
+      }
+      
+      // Preview'ni tozalash
+      setTimeout(() => {
+        URL.revokeObjectURL(localPreviewUrl);
+        setPreviewUrl(null);
+      }, 300);
+      
       toast.success('Avatar yangilandi');
     } catch (error: any) {
+      console.error('[Frontend] Avatar xatolik:', error);
+      // Xatolik bo'lsa preview'ni tozalash
+      URL.revokeObjectURL(localPreviewUrl);
+      setPreviewUrl(null);
       toast.error(error.response?.data?.message || 'Avatar yuklashda xatolik');
     } finally {
       setUploading(false);
@@ -137,7 +188,24 @@ export default function ProfileEditPage() {
         <h2 className="font-bold text-gray-900 dark:text-white mb-4">Avatar</h2>
         <div className="flex items-center gap-6">
           <div className="relative">
-            <Avatar src={user.avatar} name={user.fullName} size="xl" />
+            {/* Preview URL mavjud bo'lsa uni ko'rsatish, aks holda user avatari */}
+            {previewUrl ? (
+              <div className="h-20 w-20 rounded-full overflow-hidden bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center relative">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={previewUrl}
+                  alt="Avatar preview"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                {uploading && (
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Avatar key={user.avatar || 'no-avatar'} src={user.avatar} name={user.fullName} size="xl" />
+            )}
             <label className="absolute bottom-0 right-0 w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center cursor-pointer hover:bg-indigo-700 transition-colors">
               <Camera className="w-5 h-5 text-white" />
               <input

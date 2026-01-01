@@ -1,0 +1,719 @@
+# JAVASCRIPT DASTURLASH TESTI - OSON DARAJA (BEGINNER)
+## 100 SAVOL
+
+---
+
+**1.** JavaScript qaysi yilda yaratilgan?
+- A) 1990
+- B) 1995
+- C) 2000
+- D) 2005
+**Javob: B**
+
+**2.** JavaScript kimning tomonidan yaratilgan?
+- A) Bill Gates
+- B) Brendan Eich
+- C) James Gosling
+- D) Guido van Rossum
+**Javob: B**
+
+**3.** JavaScript faylining kengaytmasi qanday?
+- A) .java
+- B) .js
+- C) .jsx
+- D) .script
+**Javob: B**
+
+**4.** JavaScript-da o'zgaruvchi yaratish uchun qaysi kalit so'zlar ishlatiladi?
+- A) var, let, const
+- B) int, string, boolean
+- C) dim, def, val
+- D) variable, value, data
+**Javob: A**
+
+**5.** JavaScript-da console.log() nima qiladi?
+- A) Faylga yozadi
+- B) Konsolga chiqaradi
+- C) Ma'lumotni o'qiydi
+- D) Dasturni to'xtatadi
+**Javob: B**
+
+**6.** JavaScript-da izoh yozish uchun qaysi belgilar ishlatiladi?
+- A) # va /* */
+- B) // va /* */
+- C) -- va /* */
+- D) <!-- va -->
+**Javob: B**
+
+**7.** JavaScript-da qaysi biri to'g'ri string yaratish usuli?
+- A) "text", 'text', `text`
+- B) Faqat "text"
+- C) Faqat 'text'
+- D) Faqat `text`
+**Javob: A**
+
+**8.** JavaScript-da typeof operatori nima qiladi?
+- A) O'zgaruvchi yaratadi
+- B) Ma'lumot turini aniqlaydi
+- C) Qiymat beradi
+- D) O'zgaruvchini o'chiradi
+**Javob: B**
+
+**9.** JavaScript-da undefined nima?
+- A) Xatolik
+- B) E'lon qilingan lekin qiymat berilmagan
+- C) Null
+- D) 0
+**Javob: B**
+
+**10.** JavaScript-da null nima?
+- A) 0
+- B) Bo'sh qiymat
+- C) Undefined
+- D) False
+**Javob: B**
+
+**11.** JavaScript-da == va === orasidagi farq nima?
+- A) Farq yo'q
+- B) === tip ham tekshiradi
+- C) == qat'iy
+- D) === kuchsiz
+**Javob: B**
+
+**12.** JavaScript-da alert() funksiyasi nima qiladi?
+- A) Xabar oynasini ko'rsatadi
+- B) Konsolga chiqaradi
+- C) Xatolik chiqaradi
+- D) Sahifani yangilaydi
+**Javob: A**
+
+**13.** JavaScript-da prompt() nima qiladi?
+- A) Ma'lumot chiqaradi
+- B) Foydalanuvchidan ma'lumot so'raydi
+- C) Xatolik ko'rsatadi
+- D) Sahifani yopadi
+**Javob: B**
+
+**14.** JavaScript-da confirm() nima qaytaradi?
+- A) String
+- B) Number
+- C) Boolean (true/false)
+- D) Object
+**Javob: C**
+
+**15.** JavaScript-da if operatori nima uchun ishlatiladi?
+- A) Tsikl yaratish
+- B) Shartli bajarish
+- C) Funksiya yaratish
+- D) O'zgaruvchi yaratish
+**Javob: B**
+
+**16.** JavaScript-da else nima qiladi?
+- A) Tsiklni davom ettiradi
+- B) Shart yolg'on bo'lganda ishlaydi
+- C) Funksiyani chaqiradi
+- D) Dasturni to'xtatadi
+**Javob: B**
+
+**17.** JavaScript-da switch operatori nima uchun?
+- A) Tsikl yaratish
+- B) Ko'p variantli tanlash
+- C) O'zgaruvchi yaratish
+- D) Array yaratish
+**Javob: B**
+
+**18.** JavaScript-da for tsikli nima uchun ishlatiladi?
+- A) Shartli bajarish
+- B) Takrorlash
+- C) Funksiya yaratish
+- D) Obyekt yaratish
+**Javob: B**
+
+**19.** JavaScript-da while tsikli qanday ishlaydi?
+- A) Belgilangan marta takrorlanadi
+- B) Shart to'g'ri ekan takrorlanadi
+- C) Faqat bir marta ishlaydi
+- D) Hech qachon ishlamaydi
+**Javob: B**
+
+**20.** JavaScript-da break operatori nima qiladi?
+- A) Dasturni boshlaydi
+- B) Tsikldan chiqadi
+- C) Funksiya yaratadi
+- D) Sahifani yangilaydi
+**Javob: B**
+
+**21.** JavaScript-da continue operatori nima qiladi?
+- A) Tsikldan chiqadi
+- B) Keyingi iteratsiyaga o'tadi
+- C) Dasturni to'xtatadi
+- D) Funksiya chaqiradi
+**Javob: B**
+
+**22.** JavaScript-da function yaratish uchun qaysi kalit so'z ishlatiladi?
+- A) func
+- B) function
+- C) def
+- D) method
+**Javob: B**
+
+**23.** JavaScript-da return operatori nima qiladi?
+- A) Dasturni to'xtatadi
+- B) Qiymat qaytaradi
+- C) Tsiklni boshlaydi
+- D) O'zgaruvchi yaratadi
+**Javob: B**
+
+**24.** JavaScript-da array yaratish uchun qaysi belgilar ishlatiladi?
+- A) ()
+- B) []
+- C) {}
+- D) <>
+**Javob: B**
+
+**25.** JavaScript-da array elementiga qanday murojaat qilinadi?
+- A) array.0
+- B) array(0)
+- C) array[0]
+- D) array{0}
+**Javob: C**
+
+**26.** JavaScript-da array uzunligini qanday topamiz?
+- A) array.size
+- B) array.length
+- C) array.count
+- D) array.len
+**Javob: B**
+
+**27.** JavaScript-da push() metodi nima qiladi?
+- A) Boshidan qo'shadi
+- B) Oxiriga element qo'shadi
+- C) O'chiradi
+- D) Topadi
+**Javob: B**
+
+**28.** JavaScript-da pop() metodi nima qiladi?
+- A) Boshidan o'chiradi
+- B) Oxiridan element o'chiradi
+- C) Qo'shadi
+- D) Topadi
+**Javob: B**
+
+**29.** JavaScript-da shift() metodi nima qiladi?
+- A) Oxiridan o'chiradi
+- B) Boshidan element o'chiradi
+- C) Qo'shadi
+- D) Saqlaydi
+**Javob: B**
+
+**30.** JavaScript-da unshift() metodi nima qiladi?
+- A) Oxiriga qo'shadi
+- B) Boshiga element qo'shadi
+- C) O'chiradi
+- D) Topadi
+**Javob: B**
+
+**31.** JavaScript-da object yaratish uchun qaysi belgilar ishlatiladi?
+- A) []
+- B) ()
+- C) {}
+- D) <>
+**Javob: C**
+
+**32.** JavaScript-da object propertyga qanday murojaat qilinadi?
+- A) obj.property yoki obj["property"]
+- B) Faqat obj.property
+- C) Faqat obj["property"]
+- D) obj->property
+**Javob: A**
+
+**33.** JavaScript-da this kalit so'zi nimani anglatadi?
+- A) Boshqa obyekt
+- B) Joriy obyekt/kontekst
+- C) Ota obyekt
+- D) Global obyekt
+**Javob: B**
+
+**34.** JavaScript-da true va false qaysi turga kiradi?
+- A) String
+- B) Number
+- C) Boolean
+- D) Object
+**Javob: C**
+
+**35.** JavaScript-da NaN nima?
+- A) Raqam
+- B) Not a Number
+- C) Null
+- D) Undefined
+**Javob: B**
+
+**36.** JavaScript-da Infinity nima?
+- A) Juda katta son
+- B) Cheksizlik
+- C) Xatolik
+- D) Undefined
+**Javob: B**
+
+**37.** JavaScript-da parseInt() nima qiladi?
+- A) Float qaytaradi
+- B) Stringni integerga aylantiradi
+- C) Boolean qaytaradi
+- D) Object yaratadi
+**Javob: B**
+
+**38.** JavaScript-da parseFloat() nima qiladi?
+- A) Integer qaytaradi
+- B) Stringni float raqamga aylantiradi
+- C) Boolean qaytaradi
+- D) String qaytaradi
+**Javob: B**
+
+**39.** JavaScript-da isNaN() nima tekshiradi?
+- A) Null ekanligini
+- B) Raqam emasligini
+- C) String ekanligini
+- D) Boolean ekanligini
+**Javob: B**
+
+**40.** JavaScript-da String.length nima?
+- A) Metod
+- B) Property (xususiyat)
+- C) Funksiya
+- D) Obyekt
+**Javob: B**
+
+**41.** JavaScript-da String.toUpperCase() nima qiladi?
+- A) Kichik harfga o'giradi
+- B) Katta harfga o'giradi
+- C) Raqamga aylantiradi
+- D) Bo'sh joy qo'shadi
+**Javob: B**
+
+**42.** JavaScript-da String.toLowerCase() nima qiladi?
+- A) Katta harfga o'giradi
+- B) Kichik harfga o'giradi
+- C) Raqamga aylantiradi
+- D) Bo'sh joy o'chiradi
+**Javob: B**
+
+**43.** JavaScript-da String.indexOf() nima qaytaradi?
+- A) String qiymatini
+- B) Birinchi uchraydigan indeksini
+- C) Boolean qiymat
+- D) Array
+**Javob: B**
+
+**44.** JavaScript-da String.slice() nima qiladi?
+- A) Stringni o'chiradi
+- B) String qismini kesib oladi
+- C) Stringni qo'shadi
+- D) Stringni topadi
+**Javob: B**
+
+**45.** JavaScript-da String.split() nima qiladi?
+- A) Stringni birlashtiradi
+- B) Stringni arrayga bo'ladi
+- C) Stringni o'chiradi
+- D) Stringni topadi
+**Javob: B**
+
+**46.** JavaScript-da Array.join() nima qiladi?
+- A) Arrayni bo'ladi
+- B) Array elementlarini stringga birlashtiradi
+- C) Element qo'shadi
+- D) Element o'chiradi
+**Javob: B**
+
+**47.** JavaScript-da Math.round() nima qiladi?
+- A) Pastga yaxlitlaydi
+- B) Yaqin butun songa yaxlitlaydi
+- C) Yuqoriga yaxlitlaydi
+- D) Kasr qismini o'chiradi
+**Javob: B**
+
+**48.** JavaScript-da Math.floor() nima qiladi?
+- A) Yuqoriga yaxlitlaydi
+- B) Pastga yaxlitlaydi
+- C) Yaqin songa yaxlitlaydi
+- D) Ikki baravarga ko'paytiradi
+**Javob: B**
+
+**49.** JavaScript-da Math.ceil() nima qiladi?
+- A) Pastga yaxlitlaydi
+- B) Yuqoriga yaxlitlaydi
+- C) Yaqin songa yaxlitlaydi
+- D) O'rtacha qiymat topadi
+**Javob: B**
+
+**50.** JavaScript-da Math.random() nima qaytaradi?
+- A) 1 dan 10 gacha raqam
+- B) 0 dan 1 gacha tasodifiy raqam
+- C) Har qanday butun son
+- D) Boolean qiymat
+**Javob: B**
+
+**51.** JavaScript-da Math.max() nima qiladi?
+- A) Yig'indini topadi
+- B) Eng katta qiymatni qaytaradi
+- C) Eng kichik qiymatni qaytaradi
+- D) O'rtacha qiymatni topadi
+**Javob: B**
+
+**52.** JavaScript-da Math.min() nima qiladi?
+- A) Yig'indini topadi
+- B) Eng katta qiymatni qaytaradi
+- C) Eng kichik qiymatni qaytaradi
+- D) O'rtacha qiymatni topadi
+**Javob: C**
+
+**53.** JavaScript-da Date obyekti nima uchun ishlatiladi?
+- A) String ishlash
+- B) Sana va vaqt bilan ishlash
+- C) Raqamlar bilan ishlash
+- D) Array yaratish
+**Javob: B**
+
+**54.** JavaScript-da new Date() nima qiladi?
+- A) String yaratadi
+- B) Yangi sana obyekti yaratadi
+- C) Array yaratadi
+- D) Number yaratadi
+**Javob: B**
+
+**55.** JavaScript-da Date.now() nima qaytaradi?
+- A) Joriy sanani
+- B) Millisekund da vaqt (timestamp)
+- C) String sana
+- D) Boolean
+**Javob: B**
+
+**56.** JavaScript-da setTimeout() nima qiladi?
+- A) Vaqtni o'lchaydi
+- B) Kechiktirib funksiya bajaradi
+- C) Darhol bajaradi
+- D) Tsikl yaratadi
+**Javob: B**
+
+**57.** JavaScript-da setInterval() nima qiladi?
+- A) Bir marta bajaradi
+- B) Ma'lum intervalda takrorlab bajaradi
+- C) Darhol bajaradi
+- D) Hech qachon bajarmaydi
+**Javob: B**
+
+**58.** JavaScript-da clearTimeout() nima qiladi?
+- A) setTimeout'ni boshlaydi
+- B) setTimeout'ni bekor qiladi
+- C) Vaqtni o'lchaydi
+- D) Tsikl yaratadi
+**Javob: B**
+
+**59.** JavaScript-da clearInterval() nima qiladi?
+- A) setInterval'ni boshlaydi
+- B) setInterval'ni to'xtatadi
+- C) Vaqtni o'lchaydi
+- D) Tsikl yaratadi
+**Javob: B**
+
+**60.** JavaScript-da && operatori nima?
+- A) YOKI
+- B) VA (AND)
+- C) EMAS (NOT)
+- D) TENGLIK
+**Javob: B**
+
+**61.** JavaScript-da || operatori nima?
+- A) VA
+- B) YOKI (OR)
+- C) EMAS
+- D) TENGLIK
+**Javob: B**
+
+**62.** JavaScript-da ! operatori nima?
+- A) VA
+- B) YOKI
+- C) EMAS (NOT)
+- D) TENGLIK
+**Javob: C**
+
+**63.** JavaScript-da ternary operator qanday ko'rinishda?
+- A) if ? then : else
+- B) condition ? true : false
+- C) condition : true ? false
+- D) if condition then else
+**Javob: B**
+
+**64.** JavaScript-da ++ operatori nima qiladi?
+- A) Ikki marta qo'shadi
+- B) 1 ga oshiradi (increment)
+- C) 2 ga ko'paytiradi
+- D) Tenglashtiradi
+**Javob: B**
+
+**65.** JavaScript-da -- operatori nima qiladi?
+- A) Ikki marta ayiradi
+- B) 1 ga kamaytiradi (decrement)
+- C) 2 ga bo'ladi
+- D) Tenglashtiradi
+**Javob: B**
+
+**66.** JavaScript-da % operatori nima qiladi?
+- A) Foizni hisoblaydi
+- B) Qoldiqni topadi (modulo)
+- C) Ko'paytiradi
+- D) Bo'ladi
+**Javob: B**
+
+**67.** JavaScript-da ** operatori nima qiladi?
+- A) Ko'paytiradi
+- B) Darajaga ko'taradi
+- C) Bo'ladi
+- D) Qo'shadi
+**Javob: B**
+
+**68.** JavaScript-da += operatori nima qiladi?
+- A) Faqat qo'shadi
+- B) Qo'shib tayinlaydi
+- C) Ayirib tayinlaydi
+- D) Ko'paytirib tayinlaydi
+**Javob: B**
+
+**69.** JavaScript-da !== operatori nima?
+- A) Teng
+- B) Qat'iy teng emas
+- C) Teng emas
+- D) Katta
+**Javob: B**
+
+**70.** JavaScript-da > operatori nima?
+- A) Kichik
+- B) Katta
+- C) Teng
+- D) Katta yoki teng
+**Javob: B**
+
+**71.** JavaScript-da < operatori nima?
+- A) Katta
+- B) Kichik
+- C) Teng
+- D) Kichik yoki teng
+**Javob: B**
+
+**72.** JavaScript-da >= operatori nima?
+- A) Faqat katta
+- B) Katta yoki teng
+- C) Faqat teng
+- D) Kichik yoki teng
+**Javob: B**
+
+**73.** JavaScript-da <= operatori nima?
+- A) Faqat kichik
+- B) Kichik yoki teng
+- C) Faqat teng
+- D) Katta yoki teng
+**Javob: B**
+
+**74.** JavaScript-da var, let, const orasidagi asosiy farq nima?
+- A) Farq yo'q
+- B) Scope va qayta tayinlash imkoniyati
+- C) Faqat nom farqi
+- D) Tezlik farqi
+**Javob: B**
+
+**75.** JavaScript-da const bilan e'lon qilingan o'zgaruvchini o'zgartirish mumkinmi?
+- A) Ha, har doim
+- B) Yo'q, qayta tayinlab bo'lmaydi (lekin obyekt propertylarini o'zgartirish mumkin)
+- C) Faqat bir marta
+- D) Faqat funksiya ichida
+**Javob: B**
+
+**76.** JavaScript-da hoisting nima?
+- A) Kod tozalash
+- B) O'zgaruvchi/funksiya e'lonlarini yuqoriga ko'tarish
+- C) Kod yozish
+- D) Kod bajarish
+**Javob: B**
+
+**77.** JavaScript-da global scope nima?
+- A) Lokal hudud
+- B) Butun dasturda mavjud bo'lish
+- C) Funksiya ichida
+- D) Block ichida
+**Javob: B**
+
+**78.** JavaScript-da local scope nima?
+- A) Global hudud
+- B) Faqat ma'lum hudud ichida mavjud
+- C) Hamma joyda
+- D) Faqat classda
+**Javob: B**
+
+**79.** JavaScript-da block scope (let, const) nima?
+- A) Funksiya scope
+- B) {} ichida mavjud scope
+- C) Global scope
+- D) Class scope
+**Javob: B**
+
+**80.** JavaScript-da try-catch nima uchun ishlatiladi?
+- A) Tsikl yaratish
+- B) Xatoliklarni ushlash
+- C) Funksiya yaratish
+- D) Obyekt yaratish
+**Javob: B**
+
+**81.** JavaScript-da throw operatori nima qiladi?
+- A) Xatolikni ushlaydi
+- B) Xatolik yaratadi/tashlaydi
+- C) Xatolikni yashiradi
+- D) Dasturni to'xtatadi
+**Javob: B**
+
+**82.** JavaScript-da finally block nima qiladi?
+- A) Faqat xatolik bo'lganda ishlaydi
+- B) Har doim ishlaydi
+- C) Hech qachon ishlamaydi
+- D) Faqat birinchi marta ishlaydi
+**Javob: B**
+
+**83.** JavaScript-da strict mode nima uchun ishlatiladi?
+- A) Sekin rejim
+- B) Qat'iy rejim (xatoliklarni ko'proq tekshirish)
+- C) Test rejimi
+- D) Debug rejimi
+**Javob: B**
+
+**84.** JavaScript-da "use strict" qanday yoziladi?
+- A) Funksiya nomi sifatida
+- B) String literal sifatida
+- C) Comment sifatida
+- D) Variable sifatida
+**Javob: B**
+
+**85.** JavaScript-da arrow function qanday yoziladi?
+- A) function() {}
+- B) () => {}
+- C) def() {}
+- D) func() {}
+**Javob: B**
+
+**86.** JavaScript-da template literal qanday yaratiladi?
+- A) "text"
+- B) 'text'
+- C) `text ${variable}`
+- D) (text)
+**Javob: C**
+
+**87.** JavaScript-da default parameter nima?
+- A) Majburiy parametr
+- B) Standart qiymat (agar berilmasa)
+- C) Birinchi parametr
+- D) Oxirgi parametr
+**Javob: B**
+
+**88.** JavaScript-da rest parameter (...args) nima?
+- A) Bitta parametr
+- B) O'zgaruvchan sonli parametrlar
+- C) Ikki parametr
+- D) Parametrsiz
+**Javob: B**
+
+**89.** JavaScript-da spread operator (...) nima qiladi?
+- A) Qo'shadi
+- B) Array/obyektni yoyadi
+- C) O'chiradi
+- D) Topadi
+**Javob: B**
+
+**90.** JavaScript-da destructuring nima?
+- A) Obyektni buzish
+- B) Qiymatlarni ajratib olish
+- C) Obyektni o'chirish
+- D) Obyektni yaratish
+**Javob: B**
+
+**91.** JavaScript-da Array.isArray() nima qiladi?
+- A) Array yaratadi
+- B) Array ekanligini tekshiradi
+- C) Array o'chiradi
+- D) Array uzunligini topadi
+**Javob: B**
+
+**92.** JavaScript-da document.getElementById() nima qiladi?
+- A) Class topadi
+- B) ID bo'yicha element topadi
+- C) Tag topadi
+- D) Hamma elementlarni topadi
+**Javob: B**
+
+**93.** JavaScript-da document.querySelector() nima qiladi?
+- A) Hamma elementlarni topadi
+- B) CSS selector bo'yicha birinchi elementni topadi
+- C) ID topadi
+- D) Class topadi
+**Javob: B**
+
+**94.** JavaScript-da addEventListener() nima qiladi?
+- A) Element yaratadi
+- B) Event listener qo'shadi
+- C) Element o'chiradi
+- D) Element topadi
+**Javob: B**
+
+**95.** JavaScript-da innerHTML nima?
+- A) Tashqi HTML
+- B) Element ichidagi HTML
+- C) Element tashqaridagi HTML
+- D) HTML fayl
+**Javob: B**
+
+**96.** JavaScript-da textContent nima?
+- A) HTML content
+- B) Faqat matn content
+- C) CSS content
+- D) JavaScript content
+**Javob: B**
+
+**97.** JavaScript-da classList.add() nima qiladi?
+- A) Class o'chiradi
+- B) Class qo'shadi
+- C) Class topadi
+- D) Class o'zgartiradi
+**Javob: B**
+
+**98.** JavaScript-da classList.remove() nima qiladi?
+- A) Class qo'shadi
+- B) Class o'chiradi
+- C) Class topadi
+- D) Class yaratadi
+**Javob: B**
+
+**99.** JavaScript-da createElement() nima qiladi?
+- A) Element topadi
+- B) Yangi HTML element yaratadi
+- C) Element o'chiradi
+- D) Element o'zgartiradi
+**Javob: B**
+
+**100.** JavaScript-da appendChild() nima qiladi?
+- A) Element o'chiradi
+- B) Child element qo'shadi
+- C) Parent element topadi
+- D) Element yaratadi
+**Javob: B**
+
+---
+
+## JAVOBLAR KALITI:
+
+1-B, 2-B, 3-B, 4-A, 5-B, 6-B, 7-A, 8-B, 9-B, 10-B
+11-B, 12-A, 13-B, 14-C, 15-B, 16-B, 17-B, 18-B, 19-B, 20-B
+21-B, 22-B, 23-B, 24-B, 25-C, 26-B, 27-B, 28-B, 29-B, 30-B
+31-C, 32-A, 33-B, 34-C, 35-B, 36-B, 37-B, 38-B, 39-B, 40-B
+41-B, 42-B, 43-B, 44-B, 45-B, 46-B, 47-B, 48-B, 49-B, 50-B
+51-B, 52-C, 53-B, 54-B, 55-B, 56-B, 57-B, 58-B, 59-B, 60-B
+61-B, 62-C, 63-B, 64-B, 65-B, 66-B, 67-B, 68-B, 69-B, 70-B
+71-B, 72-B, 73-B, 74-B, 75-B, 76-B, 77-B, 78-B, 79-B, 80-B
+81-B, 82-B, 83-B, 84-B, 85-B, 86-C, 87-B, 88-B, 89-B, 90-B
+91-B, 92-B, 93-B, 94-B, 95-B, 96-B, 97-B, 98-B, 99-B, 100-B

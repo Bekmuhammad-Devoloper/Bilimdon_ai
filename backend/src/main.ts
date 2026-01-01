@@ -3,14 +3,23 @@ import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ConfigService } from '@nestjs/config';
 import helmet from 'helmet';
+import * as bodyParser from 'body-parser';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const configService = app.get(ConfigService);
 
-  // Security
-  app.use(helmet());
+  // Body parser limits for large file uploads
+  app.use(bodyParser.json({ limit: '50mb' }));
+  app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+
+  // Security - rasmlar uchun crossOriginResourcePolicy'ni o'chiramiz
+  app.use(
+    helmet({
+      crossOriginResourcePolicy: { policy: 'cross-origin' },
+    }),
+  );
 
   // CORS
   const telegramWebAppUrl = configService.get('TELEGRAM_WEBAPP_URL') || 'https://web.telegram.org';
@@ -23,8 +32,10 @@ async function bootstrap() {
     credentials: true,
   });
 
-  // Global prefix
-  app.setGlobalPrefix('api');
+  // Global prefix - uploads yo'lini exclude qilamiz
+  app.setGlobalPrefix('api', {
+    exclude: ['/uploads/(.*)'],
+  });
 
   // Validation
   app.useGlobalPipes(

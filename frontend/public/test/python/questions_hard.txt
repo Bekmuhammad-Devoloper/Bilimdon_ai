@@ -1,0 +1,148 @@
+===============================================
+PYTHON - HARD SAVOLLARI
+===============================================
+
+SAVOL 1: Decorator nima?
+A) Function o'rnatish
+B) Function yoki class-ni modify qiladigan function
+C) Class
+D) Module
+JAVOB: B
+
+SAVOL 2: *args nima uchun?
+A) Bitta argument
+B) Turli xil argumentlar olish
+C) Keyword arguments
+D) Named arguments
+JAVOB: B
+
+SAVOL 3: **kwargs nima uchun?
+A) Arguments birlashtiradigan
+B) Named (key=value) argumentlar olish
+C) Positional arguments
+D) Variable arguments
+JAVOB: B
+
+SAVOL 4: Generator nima?
+A) Raqam yaratish
+B) Lazy iteration with yield
+C) Function
+D) Class
+JAVOB: B
+
+SAVOL 5: yield keyword nima?
+A) Loop tugashi
+B) Generator-da qiymat qaytarish (memory efficient)
+C) Return
+D) Break
+JAVOB: B
+
+SAVOL 6: Context manager nima?
+A) Manager yaratish
+B) with statement bilan resource management
+C) Class
+D) Function
+JAVOB: B
+
+SAVOL 7: with statement nima uchun?
+A) File ochish
+B) Resource setup/cleanup (automatic)
+C) Loop
+D) Condition
+JAVOB: B
+
+SAVOL 8: Metaclass nima?
+A) Class
+B) Class yaratish uchun class
+C) Object
+D) Function
+JAVOB: B
+
+SAVOL 9: Slicing protocol nima?
+A) Slice function
+B) __getitem__, __setitem__, __delitem__ override
+C) List slice
+D) String slice
+JAVOB: B
+
+SAVOL 10: Monkey patching nima?
+A) Code paching
+B) Runtime-da class/module modify qilish
+C) Bug fixing
+D) Code optimization
+JAVOB: B
+
+SAVOL 11: Abstract base class nima?
+A) Regular class
+B) Interface kabi class (implementation kerak emas)
+C) Subclass
+D) Parent class
+JAVOB: B
+
+SAVOL 12: MRO (Method Resolution Order) nima?
+A) Method order
+B) Inheritance-da method search order
+C) Python order
+D) Class order
+JAVOB: B
+
+SAVOL 13: Property decorator nima?
+A) Regular method
+B) Getter/setter like attribute
+C) Class decorator
+D) Function decorator
+JAVOB: B
+
+SAVOL 14: staticmethod nima uchun?
+A) Static variable
+B) Class reference yo'q method
+C) Instance method
+D) Class method
+JAVOB: B
+
+SAVOL 15: classmethod nima uchun?
+A) Regular method
+B) First arg - class reference
+C) Instance method
+D) Static method
+JAVOB: B
+
+SAVOL 16: __name__ == "__main__" nima?
+A) File name
+B) Script directly ishlatilsa True
+C) Module name
+D) Function name
+JAVOB: B
+
+SAVOL 17: Closure nima?
+A) Function end
+B) Inner function outer scope variables saqlashi
+C) Variable scope
+D) Function scope
+JAVOB: B
+
+SAVOL 18: Nonlocal keyword nima uchun?
+A) Variable declare
+B) Enclosing scope variable modify
+C) Global variable
+D) Local variable
+JAVOB: B
+
+SAVOL 19: Pickle module nima uchun?
+A) Object serialize (binary)
+B) File reading
+C) Data parsing
+D) Network
+JAVOB: A
+
+SAVOL 20: GIL (Global Interpreter Lock) nima?
+A) Lock function
+B) Python threading limitation (one thread runs)
+C) Thread safe
+D) Mutex
+JAVOB: B
+
+===============================================
+HARD SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: MURAKKAB
+===============================================

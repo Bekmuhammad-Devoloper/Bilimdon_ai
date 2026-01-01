@@ -1,0 +1,702 @@
+NEXT.JS - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+=================================================
+
+1. App Router vs Pages Router architecture?
+   A) Same
+   B) App=React Server Components, Pages=getServerSideProps
+   C) Pages=RSC
+   D) No difference
+   Javob: B
+
+2. Server Components default in App Router?
+   A) Client default
+   B) All components are Server Components by default
+   C) Manual selection
+   D) No default
+   Javob: B
+
+3. 'use client' directive purpose?
+   A) Use client
+   B) Mark component as Client Component
+   C) Server mark
+   D) No purpose
+   Javob: B
+
+4. Server Component limitations?
+   A) No limitations
+   B) No hooks, no browser APIs, no event handlers
+   C) All allowed
+   D) Only hooks
+   Javob: B
+
+5. Streaming with Suspense?
+   A) No streaming
+   B) Progressive HTML rendering with loading states
+   C) Streaming suspense
+   D) Full page load
+   Javob: B
+
+6. loading.tsx file convention?
+   A) Loading file
+   B) Automatic Suspense boundary for route
+   C) File loading
+   D) Manual Suspense
+   Javob: B
+
+7. error.tsx file convention?
+   A) Error file
+   B) Error boundary for route segment
+   C) File error
+   D) No boundary
+   Javob: B
+
+8. not-found.tsx file convention?
+   A) Not found
+   B) Custom 404 page for segment
+   C) Found not
+   D) Default 404
+   Javob: B
+
+9. Route groups (folders)?
+   A) Route group
+   B) (folderName) for organization without URL
+   C) Group route
+   D) URL included
+   Javob: B
+
+10. Parallel routes (@folder)?
+    A) Parallel route
+    B) Simultaneous rendering of multiple pages
+    C) Route parallel
+    D) Sequential only
+    Javob: B
+
+11. Intercepting routes (..)?
+    A) Intercept route
+    B) Show route in modal while keeping URL
+    C) Route intercept
+    D) Full navigation
+    Javob: B
+
+12. Route handlers (route.ts)?
+    A) Route handler
+    B) API endpoints in App Router
+    C) Handler route
+    D) Pages API only
+    Javob: B
+
+13. generateStaticParams() function?
+    A) Generate static
+    B) Define params for static generation
+    C) Static generate
+    D) Dynamic only
+    Javob: B
+
+14. Dynamic segments [param]?
+    A) Dynamic segment
+    B) URL parameter extraction
+    C) Segment dynamic
+    D) Static only
+    Javob: B
+
+15. Catch-all segments [...param]?
+    A) Catch all
+    B) Match multiple URL segments
+    C) All catch
+    D) Single segment
+    Javob: B
+
+16. Optional catch-all [[...param]]?
+    A) Optional catch
+    B) Match zero or more segments
+    C) Catch optional
+    D) Required segments
+    Javob: B
+
+17. Server Actions nima?
+    A) Server action
+    B) Functions that run on server, called from client
+    C) Action server
+    D) Client functions
+    Javob: B
+
+18. 'use server' directive?
+    A) Use server
+    B) Mark function as Server Action
+    C) Server use
+    D) Client action
+    Javob: B
+
+19. Server Actions form handling?
+    A) No form
+    B) action={serverAction} on form element
+    C) Form action
+    D) Client submit
+    Javob: B
+
+20. useFormStatus() hook?
+    A) Form status
+    B) Pending state during Server Action
+    C) Status form
+    D) No state
+    Javob: B
+
+21. useFormState() hook?
+    A) Form state
+    B) Return value from Server Action
+    C) State form
+    D) No return
+    Javob: B
+
+22. revalidatePath() function?
+    A) Revalidate path
+    B) Invalidate cache for specific path
+    C) Path revalidate
+    D) No invalidation
+    Javob: B
+
+23. revalidateTag() function?
+    A) Revalidate tag
+    B) Invalidate cache by tag
+    C) Tag revalidate
+    D) Path only
+    Javob: B
+
+24. fetch cache options?
+    A) No cache
+    B) force-cache, no-store, revalidate
+    C) Cache force
+    D) Default only
+    Javob: B
+
+25. Time-based revalidation?
+    A) No time
+    B) next: { revalidate: seconds }
+    C) Time revalidate
+    D) Manual only
+    Javob: B
+
+26. On-demand revalidation?
+    A) No on-demand
+    B) revalidatePath/Tag after mutation
+    C) Demand on
+    D) Scheduled only
+    Javob: B
+
+27. Data cache vs Full Route Cache?
+    A) Same
+    B) Data=fetch results, Full Route=rendered output
+    C) Data=rendered
+    D) No difference
+    Javob: B
+
+28. Router Cache (client)?
+    A) Router cache
+    B) Client-side cache of RSC payload
+    C) Cache router
+    D) No client cache
+    Javob: B
+
+29. unstable_cache() function?
+    A) Unstable cache
+    B) Cache function results with tags
+    C) Cache unstable
+    D) Fetch only
+    Javob: B
+
+30. Middleware matcher config?
+    A) Matcher config
+    B) matcher array for path matching
+    C) Config matcher
+    D) All paths
+    Javob: B
+
+31. NextResponse.next() in middleware?
+    A) Next response
+    B) Continue to next handler
+    C) Response next
+    D) Block request
+    Javob: B
+
+32. NextResponse.rewrite() vs redirect()?
+    A) Same
+    B) Rewrite=internal, Redirect=browser redirect
+    C) Redirect=internal
+    D) No difference
+    Javob: B
+
+33. Edge Runtime?
+    A) Edge runtime
+    B) Lightweight runtime at edge locations
+    C) Runtime edge
+    D) Node.js only
+    Javob: B
+
+34. runtime = 'edge' configuration?
+    A) Edge config
+    B) Force edge runtime for route
+    C) Config edge
+    D) Auto selection
+    Javob: B
+
+35. Edge limitations?
+    A) No limitations
+    B) No Node.js APIs, limited features
+    C) All allowed
+    D) Full Node.js
+    Javob: B
+
+36. Partial Prerendering (PPR)?
+    A) Partial prerender
+    B) Static shell + dynamic streaming
+    C) Prerender partial
+    D) Full static
+    Javob: B
+
+37. experimental.ppr config?
+    A) PPR config
+    B) Enable Partial Prerendering
+    C) Config PPR
+    D) Default enabled
+    Javob: B
+
+38. Image optimization component?
+    A) Image component
+    B) next/image with automatic optimization
+    C) Component image
+    D) Manual optimization
+    Javob: B
+
+39. Image priority prop?
+    A) Priority prop
+    B) Preload LCP image
+    C) Prop priority
+    D) Lazy only
+    Javob: B
+
+40. Image sizes prop?
+    A) Sizes prop
+    B) Responsive image sizes for srcset
+    C) Prop sizes
+    D) Fixed size
+    Javob: B
+
+41. Image placeholder blur?
+    A) Placeholder blur
+    B) blurDataURL for LQIP
+    C) Blur placeholder
+    D) No placeholder
+    Javob: B
+
+42. next/font optimization?
+    A) Font optimization
+    B) Zero layout shift, self-hosted
+    C) Optimization font
+    D) CDN only
+    Javob: B
+
+43. Font subsets?
+    A) Font subset
+    B) Load only needed character sets
+    C) Subset font
+    D) Full font
+    Javob: B
+
+44. Font display option?
+    A) Display font
+    B) swap, block, fallback, optional
+    C) Font display
+    D) No option
+    Javob: B
+
+45. next/script strategies?
+    A) Script strategy
+    B) beforeInteractive, afterInteractive, lazyOnload, worker
+    C) Strategy script
+    D) No strategy
+    Javob: B
+
+46. Worker strategy for scripts?
+    A) Worker strategy
+    B) Off-main-thread with Partytown
+    C) Strategy worker
+    D) Main thread
+    Javob: B
+
+47. Metadata API in App Router?
+    A) Metadata API
+    B) Export metadata object or generateMetadata()
+    C) API metadata
+    D) Head component
+    Javob: B
+
+48. generateMetadata() async?
+    A) Generate metadata
+    B) Dynamic metadata based on params/data
+    C) Metadata generate
+    D) Static only
+    Javob: B
+
+49. OpenGraph metadata?
+    A) OpenGraph
+    B) openGraph object in metadata
+    C) Metadata opengraph
+    D) Manual tags
+    Javob: B
+
+50. Sitemap generation?
+    A) Sitemap
+    B) sitemap.ts with MetadataRoute.Sitemap
+    C) Generation sitemap
+    D) Manual XML
+    Javob: B
+
+51. robots.ts generation?
+    A) Robots
+    B) Export default MetadataRoute.Robots
+    C) Generation robots
+    D) Manual text
+    Javob: B
+
+52. Internationalization routing?
+    A) I18n routing
+    B) [locale] segment + middleware
+    C) Routing i18n
+    D) No i18n
+    Javob: B
+
+53. next-intl integration?
+    A) Next intl
+    B) Full i18n solution with App Router
+    C) Intl next
+    D) Built-in only
+    Javob: B
+
+54. Authentication with NextAuth.js v5?
+    A) NextAuth
+    B) Auth.js with server-side sessions
+    C) Auth NextAuth
+    D) Custom auth
+    Javob: B
+
+55. auth() function in server components?
+    A) Auth function
+    B) Get session in Server Components
+    C) Function auth
+    D) Client only
+    Javob: B
+
+56. Middleware authentication?
+    A) Middleware auth
+    B) Protect routes at edge level
+    C) Auth middleware
+    D) API routes only
+    Javob: B
+
+57. Environment variables exposure?
+    A) All exposed
+    B) NEXT_PUBLIC_ prefix for client
+    C) None exposed
+    D) All client
+    Javob: B
+
+58. Server-only environment variables?
+    A) Server only
+    B) Variables without NEXT_PUBLIC_ prefix
+    C) Only server
+    D) All server
+    Javob: B
+
+59. instrumentation.ts file?
+    A) Instrumentation
+    B) Register telemetry/monitoring on startup
+    C) File instrumentation
+    D) No monitoring
+    Javob: B
+
+60. OpenTelemetry integration?
+    A) OpenTelemetry
+    B) @vercel/otel with instrumentation
+    C) Integration opentelemetry
+    D) No tracing
+    Javob: B
+
+61. Turbopack dev server?
+    A) Turbopack
+    B) next dev --turbo for faster dev
+    C) Dev turbopack
+    D) Webpack only
+    Javob: B
+
+62. Turbopack vs Webpack?
+    A) Same
+    B) Turbopack=Rust-based, faster HMR
+    C) Webpack faster
+    D) No difference
+    Javob: B
+
+63. Static export?
+    A) Static export
+    B) output: 'export' in next.config
+    C) Export static
+    D) Server only
+    Javob: B
+
+64. Static export limitations?
+    A) No limitations
+    B) No dynamic routes, no ISR, no middleware
+    C) All features
+    D) Full dynamic
+    Javob: B
+
+65. Standalone output?
+    A) Standalone
+    B) output: 'standalone' for minimal deployment
+    C) Output standalone
+    D) Full node_modules
+    Javob: B
+
+66. Custom server limitations?
+    A) No limitations
+    B) No automatic static optimization, no edge
+    C) All features
+    D) Full optimization
+    Javob: B
+
+67. Rewrites in next.config?
+    A) Rewrites
+    B) Proxy requests to different destination
+    C) Config rewrites
+    D) No proxy
+    Javob: B
+
+68. Headers configuration?
+    A) Headers config
+    B) Add custom HTTP headers to responses
+    C) Config headers
+    D) No headers
+    Javob: B
+
+69. Redirects configuration?
+    A) Redirects
+    B) Server-side redirects with status codes
+    C) Config redirects
+    D) Client only
+    Javob: B
+
+70. basePath configuration?
+    A) Base path
+    B) Deploy under sub-path
+    C) Path base
+    D) Root only
+    Javob: B
+
+71. assetPrefix configuration?
+    A) Asset prefix
+    B) CDN prefix for static assets
+    C) Prefix asset
+    D) Local assets
+    Javob: B
+
+72. trailingSlash configuration?
+    A) Trailing slash
+    B) Force trailing slash in URLs
+    C) Slash trailing
+    D) No trailing
+    Javob: B
+
+73. webpack configuration customization?
+    A) Webpack config
+    B) webpack() function in next.config
+    C) Config webpack
+    D) No customization
+    Javob: B
+
+74. Module aliases?
+    A) Module alias
+    B) paths in jsconfig/tsconfig
+    C) Alias module
+    D) Relative only
+    Javob: B
+
+75. Barrel file optimization?
+    A) Barrel file
+    B) optimizePackageImports in next.config
+    C) File barrel
+    D) No optimization
+    Javob: B
+
+76. Bundle analyzer?
+    A) Bundle analyzer
+    B) @next/bundle-analyzer for size analysis
+    C) Analyzer bundle
+    D) No analysis
+    Javob: B
+
+77. API rate limiting?
+    A) Rate limiting
+    B) Implement in middleware or route handler
+    C) Limiting rate
+    D) Built-in
+    Javob: B
+
+78. Database connection pooling?
+    A) Connection pool
+    B) Global prisma instance for serverless
+    C) Pool connection
+    D) Per-request
+    Javob: B
+
+79. Serverless function timeout?
+    A) No timeout
+    B) Platform-specific limits (Vercel: 10s-300s)
+    C) Timeout serverless
+    D) Unlimited
+    Javob: B
+
+80. ISR (Incremental Static Regeneration)?
+    A) ISR
+    B) Revalidate static pages after deployment
+    C) Static ISR
+    D) Build time only
+    Javob: B
+
+81. On-demand ISR?
+    A) On-demand ISR
+    B) res.revalidate() in API route
+    C) ISR on-demand
+    D) Scheduled only
+    Javob: B
+
+82. Draft Mode?
+    A) Draft mode
+    B) Preview unpublished content
+    C) Mode draft
+    D) Published only
+    Javob: B
+
+83. draftMode().enable()?
+    A) Enable draft
+    B) Enable draft mode via route handler
+    C) Draft enable
+    D) Always enabled
+    Javob: B
+
+84. Content Layer (MDX)?
+    A) Content layer
+    B) next-mdx-remote or contentlayer
+    C) Layer content
+    D) No MDX
+    Javob: B
+
+85. MDX remote components?
+    A) MDX remote
+    B) Pass custom components to MDX content
+    C) Remote MDX
+    D) Static only
+    Javob: B
+
+86. CSS Modules?
+    A) CSS modules
+    B) .module.css with scoped styles
+    C) Modules CSS
+    D) Global only
+    Javob: B
+
+87. CSS-in-JS with App Router?
+    A) CSS-in-JS
+    B) styled-components registry for streaming
+    C) In-JS CSS
+    D) No CSS-in-JS
+    Javob: B
+
+88. Tailwind CSS integration?
+    A) Tailwind
+    B) Built-in support with create-next-app
+    C) Integration tailwind
+    D) Manual setup
+    Javob: B
+
+89. Geolocation in middleware?
+    A) Geolocation
+    B) request.geo object (Vercel)
+    C) Middleware geo
+    D) No geo
+    Javob: B
+
+90. A/B testing setup?
+    A) A/B testing
+    B) Middleware + cookies for variant selection
+    C) Testing A/B
+    D) Built-in
+    Javob: B
+
+91. Feature flags?
+    A) Feature flags
+    B) Environment variables + middleware
+    C) Flags feature
+    D) No flags
+    Javob: B
+
+92. Edge Config?
+    A) Edge config
+    B) @vercel/edge-config for dynamic config
+    C) Config edge
+    D) Static config
+    Javob: B
+
+93. Vercel KV?
+    A) Vercel KV
+    B) Redis-compatible key-value store
+    C) KV vercel
+    D) No KV
+    Javob: B
+
+94. Vercel Postgres?
+    A) Vercel Postgres
+    B) Serverless PostgreSQL with @vercel/postgres
+    C) Postgres vercel
+    D) No database
+    Javob: B
+
+95. Vercel Blob?
+    A) Vercel Blob
+    B) File storage with @vercel/blob
+    C) Blob vercel
+    D) No storage
+    Javob: B
+
+96. Preview deployments?
+    A) Preview deploy
+    B) Automatic deployment per PR
+    C) Deploy preview
+    D) Production only
+    Javob: B
+
+97. Speed Insights?
+    A) Speed insights
+    B) @vercel/speed-insights for Core Web Vitals
+    C) Insights speed
+    D) No metrics
+    Javob: B
+
+98. Analytics integration?
+    A) Analytics
+    B) @vercel/analytics for page views
+    C) Integration analytics
+    D) No analytics
+    Javob: B
+
+99. Cron jobs?
+    A) Cron jobs
+    B) vercel.json crons configuration
+    C) Jobs cron
+    D) No cron
+    Javob: B
+
+100. Monorepo support?
+     A) No monorepo
+     B) Turborepo with shared packages
+     C) Monorepo support
+     D) Single repo
+     Javob: B

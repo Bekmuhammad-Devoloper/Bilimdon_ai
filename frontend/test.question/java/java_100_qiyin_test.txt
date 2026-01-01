@@ -1,0 +1,702 @@
+JAVA - 100 TA QO'YIN DARAJADAGI TEST SAVOLLARI
+==============================================
+
+1. JVM memory areas qaysilar?
+   A) Stack only
+   B) Heap, Stack, Method Area, PC Register, Native Stack
+   C) Heap only
+   D) Stack va Heap only
+   Javob: B
+
+2. Heap memory nima saqlanadi?
+   A) Local variables
+   B) Objects va instance variables
+   C) Method calls
+   D) Static variables
+   Javob: B
+
+3. Stack memory nima saqlanadi?
+   A) Objects
+   B) Method calls va local variables
+   C) Instance variables
+   D) Static variables
+   Javob: B
+
+4. Method Area nima saqlanadi?
+   A) Objects
+   B) Class metadata, static variables
+   C) Local variables
+   D) Method calls
+   Javob: B
+
+5. Garbage Collection qachon ishlaydi?
+   A) Doim
+   B) JVM qaror qilganda
+   C) Manual call
+   D) Hech qachon
+   Javob: B
+
+6. GC Roots nima?
+   A) Random objects
+   B) Reference'lar boshlanish nuqtasi
+   C) Dead objects
+   D) Null references
+   Javob: B
+
+7. Young Generation nima?
+   A) Old objects
+   B) Yangi yaratilgan objects
+   C) Permanent objects
+   D) Static objects
+   Javob: B
+
+8. Old Generation nima?
+   A) Young objects
+   B) Uzoq yashagan objects
+   C) New objects
+   D) Temporary objects
+   Javob: B
+
+9. Minor GC vs Major GC?
+   A) Bir xil
+   B) Minor Young Gen, Major Old Gen
+   C) Minor Old Gen
+   D) Major Young Gen
+   Javob: B
+
+10. PermGen vs Metaspace?
+    A) Bir xil
+    B) Metaspace Java 8+ PermGen o'rniga
+    C) PermGen Java 8+
+    D) Ikkalasi mavjud
+    Javob: B
+
+11. finalize() method qachon chaqiriladi?
+    A) Object yaratilganda
+    B) GC object'ni tozalashdan oldin
+    C) Method call'da
+    D) Doim
+    Javob: B
+
+12. System.gc() nima qiladi?
+    A) Majburiy GC
+    B) GC'ni suggestion qiladi
+    C) Memory allocate
+    D) Object create
+    Javob: B
+
+13. Memory leak Java'da qanday bo'ladi?
+    A) Bo'lmaydi
+    B) Unreachable references saqlanib qolganda
+    C) GC ishlamaganda
+    D) Stack overflow
+    Javob: B
+
+14. OutOfMemoryError qachon?
+    A) Stack to'lganda
+    B) Heap to'lganda
+    C) Method area to'lganda
+    D) Barchasi
+    Javob: D
+
+15. StackOverflowError qachon?
+    A) Heap to'lganda
+    B) Recursive call ko'p bo'lganda
+    C) Memory leak
+    D) Object ko'p bo'lganda
+    Javob: B
+
+16. WeakReference nima?
+    A) Strong reference
+    B) GC tozalay oladigan reference
+    C) Soft reference
+    D) Phantom reference
+    Javob: B
+
+17. SoftReference nima?
+    A) Weak reference
+    B) Memory kam bo'lganda GC tozalaydi
+    C) Strong reference
+    D) Phantom reference
+    Javob: B
+
+18. PhantomReference nima uchun?
+    A) Strong reference
+    B) Object finalize bo'lganini bilish
+    C) Weak reference
+    D) Soft reference
+    Javob: B
+
+19. ClassLoader hierarchy?
+    A) Bitta
+    B) Bootstrap, Extension, Application
+    C) Ikkita
+    D) To'rtta
+    Javob: B
+
+20. Parent delegation model nima?
+    A) Child first
+    B) Parent classloader first
+    C) Random
+    D) Parallel
+    Javob: B
+
+21. Class.forName() vs ClassLoader.loadClass()?
+    A) Bir xil
+    B) forName() initialize qiladi
+    C) loadClass() initialize qiladi
+    D) Ikkalasi initialize
+    Javob: B
+
+22. Static initialization block qachon?
+    A) Object yaratilganda
+    B) Class load bo'lganda bir marta
+    C) Method callda
+    D) Har doim
+    Javob: B
+
+23. Instance initialization block qachon?
+    A) Class load
+    B) Har bir object yaratilganda
+    C) Static block
+    D) Main method
+    Javob: B
+
+24. Initialization order?
+    A) Instance block first
+    B) Static block, static fields, instance block, constructor
+    C) Constructor first
+    D) Fields first
+    Javob: B
+
+25. Double-checked locking pattern nima?
+    A) Single check
+    B) Thread-safe lazy initialization
+    C) No check
+    D) Triple check
+    Javob: B
+
+26. volatile double-checked lockingda nima uchun?
+    A) Speed
+    B) Reordering oldini olish
+    C) Memory save
+    D) Thread create
+    Javob: B
+
+27. Singleton pattern thread-safe qilish?
+    A) Static field
+    B) synchronized, enum, holder class
+    C) Public constructor
+    D) Multiple instances
+    Javob: B
+
+28. Bill Pugh Singleton nima?
+    A) Synchronized
+    B) Inner static holder class
+    C) Enum
+    D) Double-checked
+    Javob: B
+
+29. Enum singleton afzalligi?
+    A) Multiple instances
+    B) Serialization safe, reflection safe
+    C) Slow
+    D) Complex
+    Javob: B
+
+30. Immutable class qanday yaratiladi?
+    A) Public fields
+    B) Final class, final fields, no setters
+    C) Mutable fields
+    D) Static fields
+    Javob: B
+
+31. Defensive copying nima?
+    A) Reference copy
+    B) Mutable field copy qilish
+    C) Shallow copy
+    D) No copy
+    Javob: B
+
+32. String immutable bo'lish sababi?
+    A) Speed
+    B) Security, caching, thread safety
+    C) Memory
+    D) Simple
+    Javob: B
+
+33. hashCode() contract nima?
+    A) Random
+    B) Consistent, equals true = same hashCode
+    C) Always different
+    D) Always same
+    Javob: B
+
+34. hashCode() collision nima?
+    A) No collision
+    B) Turli objectlar bir xil hashCode
+    C) Same object turli hashCode
+    D) Error
+    Javob: B
+
+35. HashMap internal structure?
+    A) Array only
+    B) Array of buckets (linked list/tree)
+    C) Tree only
+    D) List only
+    Javob: B
+
+36. HashMap resize qachon?
+    A) Always
+    B) Load factor o'tilganda (default 0.75)
+    C) Never
+    D) Manual
+    Javob: B
+
+37. HashMap vs LinkedHashMap?
+    A) Bir xil
+    B) LinkedHashMap insertion order saqlaydi
+    C) HashMap ordered
+    D) LinkedHashMap unordered
+    Javob: B
+
+38. TreeMap internal structure?
+    A) Hash table
+    B) Red-Black Tree
+    C) Array
+    D) Linked List
+    Javob: B
+
+39. ConcurrentHashMap vs Collections.synchronizedMap?
+    A) Bir xil
+    B) ConcurrentHashMap segment-level locking
+    C) synchronizedMap segment locking
+    D) ConcurrentHashMap full locking
+    Javob: B
+
+40. CopyOnWriteArrayList nima?
+    A) Normal ArrayList
+    B) Write'da copy yaratadi
+    C) Read'da copy
+    D) No copy
+    Javob: B
+
+41. BlockingQueue nima?
+    A) Normal queue
+    B) Producer-consumer queue
+    C) Stack
+    D) Deque
+    Javob: B
+
+42. ArrayBlockingQueue vs LinkedBlockingQueue?
+    A) Bir xil
+    B) Array bounded, Linked unbounded
+    C) Array unbounded
+    D) Linked bounded
+    Javob: B
+
+43. PriorityQueue internal?
+    A) Array
+    B) Min-heap
+    C) Max-heap
+    D) Tree
+    Javob: B
+
+44. Deque interface nima?
+    A) Queue
+    B) Double-ended queue
+    C) Stack
+    D) List
+    Javob: B
+
+45. ReentrantLock vs synchronized?
+    A) Bir xil
+    B) ReentrantLock ko'proq control
+    C) synchronized ko'proq control
+    D) ReentrantLock slow
+    Javob: B
+
+46. ReentrantReadWriteLock nima?
+    A) Single lock
+    B) Separate read/write locks
+    C) No lock
+    D) Spin lock
+    Javob: B
+
+47. Condition interface nima?
+    A) If statement
+    B) wait/notify alternative
+    C) Loop
+    D) Switch
+    Javob: B
+
+48. CountDownLatch nima?
+    A) Count up
+    B) Threads kutish uchun counter
+    C) Semaphore
+    D) Barrier
+    Javob: B
+
+49. CyclicBarrier nima?
+    A) One-time barrier
+    B) Reusable thread barrier
+    C) Latch
+    D) Semaphore
+    Javob: B
+
+50. Semaphore nima?
+    A) Binary lock
+    B) Counting permits
+    C) Barrier
+    D) Latch
+    Javob: B
+
+51. ThreadLocal nima?
+    A) Global variable
+    B) Thread-specific variable
+    C) Shared variable
+    D) Static variable
+    Javob: B
+
+52. ThreadLocal memory leak?
+    A) Yo'q
+    B) Thread pool bilan clear qilmaslik
+    C) Always leak
+    D) GC hal qiladi
+    Javob: B
+
+53. Fork/Join framework nima?
+    A) Sequential
+    B) Parallel divide-conquer
+    C) Single thread
+    D) Network
+    Javob: B
+
+54. RecursiveTask vs RecursiveAction?
+    A) Bir xil
+    B) Task returns value, Action void
+    C) Action returns value
+    D) Task void
+    Javob: B
+
+55. CompletableFuture.thenApply() nima?
+    A) Run async
+    B) Transform result
+    C) Combine
+    D) Handle error
+    Javob: B
+
+56. CompletableFuture.thenCompose() nima?
+    A) Apply
+    B) Flatten nested CompletableFuture
+    C) Combine
+    D) Handle
+    Javob: B
+
+57. CompletableFuture.exceptionally() nima?
+    A) Normal flow
+    B) Error handling
+    C) Complete
+    D) Cancel
+    Javob: B
+
+58. Java Memory Model (JMM) nima?
+    A) Heap model
+    B) Thread memory visibility rules
+    C) Stack model
+    D) GC model
+    Javob: B
+
+59. happens-before relationship nima?
+    A) Random order
+    B) Operation ordering guarantee
+    C) No order
+    D) Parallel execution
+    Javob: B
+
+60. volatile guarantees?
+    A) Atomicity
+    B) Visibility va ordering
+    C) Synchronization
+    D) Thread safety
+    Javob: B
+
+61. AtomicInteger nima?
+    A) Normal int
+    B) Thread-safe integer operations
+    C) BigInteger
+    D) Long
+    Javob: B
+
+62. CAS (Compare-And-Swap) nima?
+    A) Copy
+    B) Lock-free atomic operation
+    C) Lock based
+    D) Synchronized
+    Javob: B
+
+63. ABA problem nima?
+    A) No problem
+    B) CAS'da qiymat A->B->A o'zgarishi
+    C) Memory issue
+    D) Thread deadlock
+    Javob: B
+
+64. AtomicStampedReference nima hal qiladi?
+    A) Memory leak
+    B) ABA problem
+    C) Deadlock
+    D) Race condition
+    Javob: B
+
+65. Java Reflection performance?
+    A) Fast
+    B) Slow (JIT optimization bypass)
+    C) Same as normal
+    D) Faster
+    Javob: B
+
+66. setAccessible(true) nima qiladi?
+    A) Public qiladi
+    B) Access check o'chiradi
+    C) Private qiladi
+    D) Static qiladi
+    Javob: B
+
+67. Reflection security concern?
+    A) No concern
+    B) Private access, injection
+    C) Speed only
+    D) Memory only
+    Javob: B
+
+68. Dynamic Proxy nima?
+    A) Static proxy
+    B) Runtime interface implementation
+    C) Abstract class
+    D) Concrete class
+    Javob: B
+
+69. InvocationHandler interface nima?
+    A) Direct call
+    B) Proxy method handling
+    C) Exception handling
+    D) Event handling
+    Javob: B
+
+70. CGLIB vs JDK Proxy?
+    A) Bir xil
+    B) CGLIB class-based, JDK interface-based
+    C) JDK class-based
+    D) CGLIB interface-based
+    Javob: B
+
+71. Annotation processing nima?
+    A) Runtime
+    B) Compile-time code generation
+    C) Documentation
+    D) Validation only
+    Javob: B
+
+72. APT (Annotation Processing Tool) o'rniga?
+    A) APT
+    B) Pluggable Annotation Processing API
+    C) Reflection
+    D) Manual
+    Javob: B
+
+73. ServiceLoader nima?
+    A) Class loader
+    B) SPI implementation discovery
+    C) Module loader
+    D) Resource loader
+    Javob: B
+
+74. SPI (Service Provider Interface) nima?
+    A) API
+    B) Extensibility mechanism
+    C) Library
+    D) Framework
+    Javob: B
+
+75. Java Module System (JPMS) nima?
+    A) ClassPath
+    B) Strong encapsulation, reliable configuration
+    C) Package
+    D) JAR
+    Javob: B
+
+76. module-info.java nima?
+    A) Package info
+    B) Module descriptor
+    C) Class info
+    D) Method info
+    Javob: B
+
+77. exports vs opens directive?
+    A) Bir xil
+    B) exports compile-time, opens reflection
+    C) opens compile-time
+    D) exports reflection
+    Javob: B
+
+78. requires transitive nima?
+    A) Normal requires
+    B) Dependency transitivity
+    C) Optional
+    D) Static
+    Javob: B
+
+79. Sealed classes (Java 17+) nima?
+    A) Final class
+    B) Restricted inheritance
+    C) Abstract class
+    D) Open class
+    Javob: B
+
+80. permits keyword nima?
+    A) Allow all
+    B) Allowed subclasses list
+    C) Deny all
+    D) Final
+    Javob: B
+
+81. Record class (Java 16+) nima?
+    A) Mutable class
+    B) Immutable data carrier
+    C) Abstract class
+    D) Interface
+    Javob: B
+
+82. Record canonical constructor nima?
+    A) Default constructor
+    B) All fields constructor
+    C) No-arg constructor
+    D) Copy constructor
+    Javob: B
+
+83. Pattern matching instanceof (Java 16+)?
+    A) Normal instanceof
+    B) instanceof + type casting
+    C) No instanceof
+    D) Only casting
+    Javob: B
+
+84. switch expression (Java 14+) yield nima?
+    A) return
+    B) switch expression value
+    C) break
+    D) continue
+    Javob: B
+
+85. Text blocks (Java 15+) nima?
+    A) Single line
+    B) Multi-line string literal
+    C) Byte array
+    D) Char array
+    Javob: B
+
+86. var keyword limitation?
+    A) No limitation
+    B) Local variables only, initialized
+    C) All variables
+    D) Fields only
+    Javob: B
+
+87. JIT compilation nima?
+    A) AOT
+    B) Runtime bytecode to native
+    C) Compile time
+    D) Interpretation only
+    Javob: B
+
+88. Tiered compilation nima?
+    A) Single tier
+    B) Multiple compilation levels (C1, C2)
+    C) No compilation
+    D) AOT only
+    Javob: B
+
+89. HotSpot optimizations?
+    A) No optimization
+    B) Inlining, escape analysis, loop unrolling
+    C) Manual optimization
+    D) Compile time only
+    Javob: B
+
+90. Escape Analysis nima?
+    A) Memory leak detection
+    B) Object allocation optimization
+    C) GC optimization
+    D) Thread analysis
+    Javob: B
+
+91. String deduplication (G1 GC)?
+    A) String creation
+    B) Duplicate strings heap'dan olib tashlash
+    C) String pool
+    D) Intern
+    Javob: B
+
+92. ZGC nima?
+    A) Old GC
+    B) Low-latency GC
+    C) High-throughput GC
+    D) Serial GC
+    Javob: B
+
+93. Shenandoah GC xususiyati?
+    A) Stop-the-world
+    B) Concurrent compaction
+    C) Serial
+    D) Parallel only
+    Javob: B
+
+94. G1 GC region size?
+    A) Fixed
+    B) 1MB - 32MB (heap size'ga qarab)
+    C) No regions
+    D) 64KB
+    Javob: B
+
+95. Native memory tracking nima?
+    A) Heap tracking
+    B) JVM native memory usage
+    C) Stack tracking
+    D) GC tracking
+    Javob: B
+
+96. JFR (Java Flight Recorder) nima?
+    A) Audio recorder
+    B) Low-overhead profiling
+    C) Video recorder
+    D) Log recorder
+    Javob: B
+
+97. JMX (Java Management Extensions) nima?
+    A) Exception
+    B) Application monitoring/management
+    C) Extension
+    D) Module
+    Javob: B
+
+98. MBean nima?
+    A) Java Bean
+    B) Managed Bean for JMX
+    C) Enterprise Bean
+    D) Session Bean
+    Javob: B
+
+99. JNDI nima?
+    A) JNI
+    B) Naming and Directory Interface
+    C) Database
+    D) Network
+    Javob: B
+
+100. Project Loom (Virtual Threads) nima?
+     A) Platform threads
+     B) Lightweight user-mode threads
+     C) Native threads
+     D) Kernel threads
+     Javob: B

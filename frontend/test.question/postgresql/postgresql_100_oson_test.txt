@@ -1,0 +1,707 @@
+POSTGRESQL - 100 TA BOSHLANG'ICH DARAJADAGI TEST SAVOLLARI
+==========================================================
+
+1. PostgreSQL nima?
+   A) NoSQL database
+   B) Relational database management system (RDBMS)
+   C) In-memory database
+   D) Graph database
+   Javob: B
+
+2. PostgreSQL qaysi tilga asoslangan?
+   A) Java
+   B) C
+   C) Python
+   D) JavaScript
+   Javob: B
+
+3. PostgreSQL qaysi litsenziya ostida?
+   A) MIT
+   B) Apache
+   C) PostgreSQL License (BSD-style)
+   D) GPL
+   Javob: C
+
+4. PostgreSQL default port raqami?
+   A) 3306
+   B) 5432
+   C) 27017
+   D) 6379
+   Javob: B
+
+5. Database yaratish buyrug'i?
+   A) NEW DATABASE
+   B) CREATE DATABASE
+   C) MAKE DATABASE
+   D) ADD DATABASE
+   Javob: B
+
+6. Table yaratish buyrug'i?
+   A) CREATE TABLE
+   B) NEW TABLE
+   C) MAKE TABLE
+   D) ADD TABLE
+   Javob: A
+
+7. Ma'lumot qo'shish buyrug'i?
+   A) ADD
+   B) INSERT INTO
+   C) CREATE
+   D) PUT
+   Javob: B
+
+8. Ma'lumot o'qish buyrug'i?
+   A) GET
+   B) FETCH
+   C) SELECT
+   D) READ
+   Javob: C
+
+9. Ma'lumot yangilash buyrug'i?
+   A) MODIFY
+   B) CHANGE
+   C) UPDATE
+   D) ALTER
+   Javob: C
+
+10. Ma'lumot o'chirish buyrug'i?
+    A) REMOVE
+    B) DROP
+    C) DELETE
+    D) CLEAR
+    Javob: C
+
+11. PRIMARY KEY nima?
+    A) Foreign key
+    B) Unique identifier (har bir row uchun)
+    C) Index
+    D) Constraint
+    Javob: B
+
+12. FOREIGN KEY nima?
+    A) Primary key
+    B) Boshqa table ga reference
+    C) Unique key
+    D) Index
+    Javob: B
+
+13. NULL qiymat nima?
+    A) 0
+    B) Empty string
+    C) Qiymat yo'qligi
+    D) False
+    Javob: C
+
+14. NOT NULL constraint nima?
+    A) Allow null
+    B) NULL bo'lishi mumkin emas
+    C) Default null
+    D) Optional field
+    Javob: B
+
+15. UNIQUE constraint nima?
+    A) Primary key
+    B) Foreign key
+    C) Qiymat takrorlanmasligi
+    D) Not null
+    Javob: C
+
+16. DEFAULT constraint nima?
+    A) Primary key
+    B) Standart qiymat berish
+    C) Not null
+    D) Unique
+    Javob: B
+
+17. CHECK constraint nima?
+    A) Primary key
+    B) Shart bo'yicha qiymat tekshirish
+    C) Foreign key
+    D) Unique
+    Javob: B
+
+18. INTEGER data type nima uchun?
+    A) Text
+    B) Butun sonlar
+    C) O'nlik sonlar
+    D) Sana
+    Javob: B
+
+19. VARCHAR(n) data type nima?
+    A) Integer
+    B) Variable length string (max n)
+    C) Fixed length string
+    D) Boolean
+    Javob: B
+
+20. TEXT data type nima?
+    A) Integer
+    B) Unlimited length string
+    C) Fixed string
+    D) Boolean
+    Javob: B
+
+21. BOOLEAN data type qiymatlari?
+    A) 0/1
+    B) TRUE/FALSE
+    C) YES/NO
+    D) ON/OFF
+    Javob: B
+
+22. DATE data type formati?
+    A) MM/DD/YYYY
+    B) YYYY-MM-DD
+    C) DD-MM-YYYY
+    D) YYYY/MM/DD
+    Javob: B
+
+23. TIMESTAMP data type nima?
+    A) Faqat sana
+    B) Sana va vaqt
+    C) Faqat vaqt
+    D) Time zone
+    Javob: B
+
+24. SERIAL data type nima?
+    A) Text type
+    B) Auto-incrementing integer
+    C) Float type
+    D) Boolean type
+    Javob: B
+
+25. WHERE clause nima uchun?
+    A) Sorting
+    B) Filtering/filtrlash
+    C) Joining
+    D) Grouping
+    Javob: B
+
+26. ORDER BY nima qiladi?
+    A) Filter
+    B) Natijalarni tartiblash (sort)
+    C) Group
+    D) Join
+    Javob: B
+
+27. ASC va DESC nima?
+    A) Data types
+    B) Ascending/Descending sort
+    C) Constraints
+    D) Functions
+    Javob: B
+
+28. LIMIT clause nima?
+    A) Filter rows
+    B) Natijalar sonini cheklash
+    C) Sort rows
+    D) Join tables
+    Javob: B
+
+29. OFFSET clause nima?
+    A) Filter
+    B) Skip rows (pagination uchun)
+    C) Sort
+    D) Limit
+    Javob: B
+
+30. COUNT() function nima?
+    A) Sum
+    B) Rows sonini hisoblash
+    C) Average
+    D) Maximum
+    Javob: B
+
+31. SUM() function nima?
+    A) Count
+    B) Yig'indini hisoblash
+    C) Average
+    D) Maximum
+    Javob: B
+
+32. AVG() function nima?
+    A) Sum
+    B) O'rtacha qiymat
+    C) Count
+    D) Minimum
+    Javob: B
+
+33. MAX() function nima?
+    A) Minimum
+    B) Maksimum qiymat
+    C) Average
+    D) Sum
+    Javob: B
+
+34. MIN() function nima?
+    A) Maximum
+    B) Minimum qiymat
+    C) Average
+    D) Count
+    Javob: B
+
+35. GROUP BY nima uchun?
+    A) Sort
+    B) Ma'lumotlarni guruhlash (aggregate functions bilan)
+    C) Filter
+    D) Join
+    Javob: B
+
+36. HAVING clause nima?
+    A) WHERE alternative
+    B) GROUP BY dan keyin filter (aggregate functions bilan)
+    C) ORDER BY
+    D) LIMIT
+    Javob: B
+
+37. AND operator nima?
+    A) OR logic
+    B) Barcha shartlar to'g'ri bo'lishi kerak
+    C) NOT logic
+    D) XOR logic
+    Javob: B
+
+38. OR operator nima?
+    A) AND logic
+    B) Kamida bitta shart to'g'ri bo'lishi kerak
+    C) NOT logic
+    D) All conditions
+    Javob: B
+
+39. NOT operator nima?
+    A) AND logic
+    B) Shartni inkor qilish
+    C) OR logic
+    D) Include
+    Javob: B
+
+40. LIKE operator nima uchun?
+    A) Exact match
+    B) Pattern matching (wildcard bilan)
+    C) Greater than
+    D) Equal
+    Javob: B
+
+41. % wildcard nima degani (LIKE da)?
+    A) Single character
+    B) Zero yoki ko'p characters
+    C) Exact match
+    D) No match
+    Javob: B
+
+42. _ wildcard nima degani (LIKE da)?
+    A) Multiple characters
+    B) Bitta character
+    C) No character
+    D) Any characters
+    Javob: B
+
+43. IN operator nima?
+    A) Range
+    B) Multiple values check (list ichida)
+    C) Pattern match
+    D) Greater than
+    Javob: B
+
+44. BETWEEN operator nima?
+    A) IN alternative
+    B) Range ichida (inclusive)
+    C) Pattern match
+    D) Greater than
+    Javob: B
+
+45. IS NULL nima tekshiradi?
+    A) Zero value
+    B) NULL qiymat mavjudligi
+    C) Empty string
+    D) False value
+    Javob: B
+
+46. IS NOT NULL nima tekshiradi?
+    A) NULL value
+    B) NULL emas (qiymat mavjud)
+    C) Zero value
+    D) Empty
+    Javob: B
+
+47. INNER JOIN nima?
+    A) All rows
+    B) Ikkala table da match bo'lgan rows
+    C) Left table rows
+    D) Right table rows
+    Javob: B
+
+48. LEFT JOIN nima?
+    A) Right table rows
+    B) Left table barcha + right table match rows
+    C) Inner join
+    D) Full join
+    Javob: B
+
+49. RIGHT JOIN nima?
+    A) Left table rows
+    B) Right table barcha + left table match rows
+    C) Inner join
+    D) Full join
+    Javob: B
+
+50. FULL OUTER JOIN nima?
+    A) Inner join
+    B) Ikkala table barcha rows (match + no match)
+    C) Left join
+    D) Right join
+    Javob: B
+
+51. CROSS JOIN nima?
+    A) Inner join
+    B) Cartesian product (har bir row combination)
+    C) Left join
+    D) Right join
+    Javob: B
+
+52. ALIAS (AS keyword) nima uchun?
+    A) Create table
+    B) Column/table ga vaqtinchalik nom berish
+    C) Delete table
+    D) Update data
+    Javob: B
+
+53. DISTINCT keyword nima?
+    A) All rows
+    B) Unique/noyob qiymatlar
+    C) Duplicate rows
+    D) NULL values
+    Javob: B
+
+54. CONCAT() function nima?
+    A) Split strings
+    B) Stringlarni birlashtirish
+    C) Substring
+    D) Length
+    Javob: B
+
+55. LENGTH() function nima?
+    A) Concat
+    B) String uzunligini qaytaradi
+    C) Substring
+    D) Upper case
+    Javob: B
+
+56. UPPER() function nima?
+    A) Lower case
+    B) String ni upper case ga o'zgartiradi
+    C) Length
+    D) Trim
+    Javob: B
+
+57. LOWER() function nima?
+    A) Upper case
+    B) String ni lower case ga o'zgartiradi
+    C) Length
+    D) Concat
+    Javob: B
+
+58. TRIM() function nima?
+    A) Concat
+    B) String boshidagi va oxiridagi bo'sh joylarni olib tashlash
+    C) Length
+    D) Upper
+    Javob: B
+
+59. SUBSTRING() function nima?
+    A) Concat
+    B) String dan qism olish
+    C) Length
+    D) Trim
+    Javob: B
+
+60. NOW() function nima?
+    A) Yesterday
+    B) Hozirgi sana va vaqt
+    C) Tomorrow
+    D) Last week
+    Javob: B
+
+61. CURRENT_DATE nima?
+    A) Timestamp
+    B) Faqat bugungi sana
+    C) Current time
+    D) Yesterday
+    Javob: B
+
+62. CURRENT_TIME nima?
+    A) Date
+    B) Faqat hozirgi vaqt
+    C) Timestamp
+    D) Yesterday
+    Javob: B
+
+63. AGE() function nima?
+    A) Sum
+    B) Ikki sana orasidagi interval
+    C) Count
+    D) Average
+    Javob: B
+
+64. EXTRACT() function nima?
+    A) Insert data
+    B) Date/time dan qism ajratib olish (year, month, ...)
+    C) Delete data
+    D) Update data
+    Javob: B
+
+65. ROUND() function nima?
+    A) Floor
+    B) Sonni yaxlitlash
+    C) Ceiling
+    D) Truncate
+    Javob: B
+
+66. CEIL() function nima?
+    A) Floor
+    B) Tepaga yaxlitlash
+    C) Round
+    D) Truncate
+    Javob: B
+
+67. FLOOR() function nima?
+    A) Ceil
+    B) Pastga yaxlitlash
+    C) Round
+    D) Truncate
+    Javob: B
+
+68. ABS() function nima?
+    A) Round
+    B) Absolute value (modul)
+    C) Square
+    D) Power
+    Javob: B
+
+69. POWER() function nima?
+    A) Multiply
+    B) Sonni darajaga ko'tarish
+    C) Divide
+    D) Add
+    Javob: B
+
+70. SQRT() function nima?
+    A) Power
+    B) Kvadrat ildiz
+    C) Absolute
+    D) Round
+    Javob: B
+
+71. COALESCE() function nima?
+    A) Sum
+    B) Birinchi NULL bo'lmagan qiymatni qaytarish
+    C) Count
+    D) Average
+    Javob: B
+
+72. NULLIF() function nima?
+    A) NOT NULL
+    B) Ikkita qiymat teng bo'lsa NULL qaytaradi
+    C) IS NULL
+    D) COALESCE
+    Javob: B
+
+73. CASE statement nima?
+    A) Loop
+    B) Conditional logic (if-else kabi)
+    C) Function
+    D) Join
+    Javob: B
+
+74. CAST() function nima?
+    A) Create
+    B) Data type conversion
+    C) Delete
+    D) Update
+    Javob: B
+
+75. :: operator (PostgreSQL) nima?
+    A) Join
+    B) Type casting (CAST alternative)
+    C) Compare
+    D) Assign
+    Javob: B
+
+76. CREATE INDEX nima uchun?
+    A) Create table
+    B) Query performance yaxshilash
+    C) Create database
+    D) Create user
+    Javob: B
+
+77. DROP INDEX nima qiladi?
+    A) Create index
+    B) Index ni o'chirish
+    C) Update index
+    D) Show index
+    Javob: B
+
+78. VIEW nima?
+    A) Table
+    B) Virtual table (stored query)
+    C) Index
+    D) Schema
+    Javob: B
+
+79. CREATE VIEW nima?
+    A) Create table
+    B) Virtual table yaratish
+    C) Create index
+    D) Create schema
+    Javob: B
+
+80. DROP TABLE nima qiladi?
+    A) Delete rows
+    B) Table ni butunlay o'chirish
+    C) Update table
+    D) Truncate table
+    Javob: B
+
+81. TRUNCATE TABLE nima qiladi?
+    A) Drop table
+    B) Table barcha ma'lumotlarini o'chirish (structure qoladi)
+    C) Delete specific rows
+    D) Update table
+    Javob: B
+
+82. ALTER TABLE nima uchun?
+    A) Create table
+    B) Table structure o'zgartirish
+    C) Drop table
+    D) Truncate table
+    Javob: B
+
+83. ADD COLUMN (ALTER TABLE) nima?
+    A) Delete column
+    B) Yangi column qo'shish
+    C) Update column
+    D) Rename column
+    Javob: B
+
+84. DROP COLUMN (ALTER TABLE) nima?
+    A) Add column
+    B) Column ni o'chirish
+    C) Rename column
+    D) Update column
+    Javob: B
+
+85. RENAME COLUMN (ALTER TABLE) nima?
+    A) Drop column
+    B) Column nomini o'zgartirish
+    C) Add column
+    D) Update column
+    Javob: B
+
+86. BEGIN nima qiladi (transaction)?
+    A) End transaction
+    B) Transaction ni boshlash
+    C) Rollback
+    D) Save
+    Javob: B
+
+87. COMMIT nima qiladi?
+    A) Rollback
+    B) Transaction o'zgarishlarini saqlash
+    C) Begin
+    D) Cancel
+    Javob: B
+
+88. ROLLBACK nima qiladi?
+    A) Commit
+    B) Transaction o'zgarishlarini bekor qilish
+    C) Save
+    D) Begin
+    Javob: B
+
+89. SAVEPOINT nima?
+    A) Commit
+    B) Transaction ichida nuqta belgilash
+    C) Rollback
+    D) Begin
+    Javob: B
+
+90. \c command (psql) nima?
+    A) Create database
+    B) Database ga connect
+    C) Close connection
+    D) Create table
+    Javob: B
+
+91. \l command (psql) nima?
+    A) List tables
+    B) Database lar ro'yxati
+    C) List users
+    D) List schemas
+    Javob: B
+
+92. \dt command (psql) nima?
+    A) List databases
+    B) Table lar ro'yxati
+    C) Describe table
+    D) Drop table
+    Javob: B
+
+93. \d tablename (psql) nima?
+    A) Delete table
+    B) Table structure ko'rsatish
+    C) Drop table
+    D) Create table
+    Javob: B
+
+94. \q command (psql) nima?
+    A) Query
+    B) psql dan chiqish
+    C) Create
+    D) Delete
+    Javob: B
+
+95. SELECT * nima degani?
+    A) Select nothing
+    B) Barcha columnlarni tanlash
+    C) Select one
+    D) Select primary key
+    Javob: B
+
+96. Schema nima?
+    A) Table
+    B) Database ichidagi namespace/container
+    C) Index
+    D) View
+    Javob: B
+
+97. PUBLIC schema nima?
+    A) Private schema
+    B) Default schema
+    C) User schema
+    D) System schema
+    Javob: B
+
+98. CASCADE option (DROP) nima?
+    A) No dependencies
+    B) Bog'liq objectlarni ham o'chirish
+    C) Keep dependencies
+    D) Update dependencies
+    Javob: B
+
+99. RESTRICT option (DROP) nima?
+    A) Force delete
+    B) Bog'liq objectlar bo'lsa o'chirmaslik
+    C) Cascade delete
+    D) Auto delete
+    Javob: B
+
+100. pg_dump nima?
+     A) Import data
+     B) Database backup
+     C) Delete database
+     D) Create database
+     Javob: B
+
+==========================================================
+                       YAKUNLANDI
+==========================================================
+

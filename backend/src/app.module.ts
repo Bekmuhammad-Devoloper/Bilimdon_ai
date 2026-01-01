@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 import { PrismaModule } from './prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
@@ -14,6 +16,7 @@ import { NotificationsModule } from './modules/notifications/notifications.modul
 import { AdminModule } from './modules/admin/admin.module';
 import { UploadModule } from './modules/upload/upload.module';
 import { TelegramModule } from './modules/telegram/telegram.module';
+import { StatsModule } from './modules/stats/stats.module';
 
 @Module({
   imports: [
@@ -31,6 +34,12 @@ import { TelegramModule } from './modules/telegram/telegram.module';
       },
     ]),
 
+    // Static files (uploads)
+    ServeStaticModule.forRoot({
+      rootPath: join(process.cwd(), 'uploads'),
+      serveRoot: '/uploads',
+    }),
+
     // Database
     PrismaModule,
 
@@ -47,6 +56,7 @@ import { TelegramModule } from './modules/telegram/telegram.module';
     AdminModule,
     UploadModule,
     TelegramModule,
+    StatsModule,
   ],
 })
 export class AppModule {}

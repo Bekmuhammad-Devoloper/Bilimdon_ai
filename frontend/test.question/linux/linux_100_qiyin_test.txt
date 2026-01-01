@@ -1,0 +1,706 @@
+LINUX OPERATSION TIZIMI - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+==================================================================
+
+1. Linux kernel space va user space farqi nima?
+   A) Farqi yo'q
+   B) Kernel space - kernel kodi, user space - userland dasturlar, alohida memory
+   C) User space kernel ichida
+   D) Kernel space user ichida
+   Javob: B
+
+2. System call (syscall) nima?
+   A) Oddiy funksiya
+   B) User space dan kernel xizmatlariga murojaat interfeysi
+   C) Library call
+   D) Network call
+   Javob: B
+
+3. /proc/sys/kernel/ papkasida nima bor?
+   A) User config
+   B) Kernel runtime parametrlari (sysctl)
+   C) Network config
+   D) Disk config
+   Javob: B
+
+4. sysctl -w net.ipv4.ip_forward=1 nima qiladi?
+   A) IP o'chiradi
+   B) IP forwarding ni yoqadi (router funksiyasi)
+   C) IP ko'rsatadi
+   D) IP yaratadi
+   Javob: B
+
+5. /etc/sysctl.conf fayli nima uchun?
+   A) Network config
+   B) Doimiy kernel parametrlari (boot da yuklanadi)
+   C) User config
+   D) Disk config
+   Javob: B
+
+6. dmesg buyrug'i nima ko'rsatadi?
+   A) User messages
+   B) Kernel ring buffer (boot va hardware xabarlari)
+   C) Network messages
+   D) Disk messages
+   Javob: B
+
+7. lsmod nima ko'rsatadi?
+   A) Fayllar
+   B) Yuklangan kernel modullarini
+   C) Users
+   D) Processes
+   Javob: B
+
+8. modprobe module_name nima qiladi?
+   A) Module o'chiradi
+   B) Kernel modulni yuklaydi (dependency bilan)
+   C) Module ko'rsatadi
+   D) Module yaratadi
+   Javob: B
+
+9. rmmod module_name nima?
+   A) Module yuklaydi
+   B) Kernel modulni olib tashlaydi
+   C) Module ko'rsatadi
+   D) Module yaratadi
+   Javob: B
+
+10. /etc/modprobe.d/ papkasi nima uchun?
+    A) User modules
+    B) Kernel module konfiguratsiyasi (blacklist, options)
+    C) Network modules
+    D) Disk modules
+    Javob: B
+
+11. initramfs/initrd nima?
+    A) Kernel
+    B) Boot jarayonida temporary root filesystem
+    C) User space
+    D) Network config
+    Javob: B
+
+12. dracut yoki mkinitramfs nima qiladi?
+    A) Kernel yaratadi
+    B) initramfs image yaratadi/yangilaydi
+    C) Module yaratadi
+    D) Config yaratadi
+    Javob: B
+
+13. GRUB bootloader da /etc/default/grub nima?
+    A) Kernel config
+    B) GRUB default konfiguratsiyasi
+    C) Network config
+    D) User config
+    Javob: B
+
+14. grub2-mkconfig -o /boot/grub2/grub.cfg nima?
+    A) GRUB o'chiradi
+    B) GRUB config ni qayta yaratadi
+    C) GRUB o'rnatadi
+    D) GRUB ko'rsatadi
+    Javob: B
+
+15. Linux boot jarayoni tartibi qanday?
+    A) Kernel, BIOS, GRUB
+    B) BIOS/UEFI → GRUB → Kernel → init/systemd
+    C) GRUB, BIOS, Kernel
+    D) init, Kernel, GRUB
+    Javob: B
+
+16. systemd da target nima?
+    A) Bitta service
+    B) Service guruhini belgilovchi unit (runlevel o'rnida)
+    C) Config file
+    D) Log file
+    Javob: B
+
+17. multi-user.target nima?
+    A) GUI mode
+    B) Non-graphical multi-user mode (runlevel 3)
+    C) Single user
+    D) Rescue mode
+    Javob: B
+
+18. graphical.target nima?
+    A) Text mode
+    B) GUI bilan multi-user mode (runlevel 5)
+    C) Single user
+    D) Rescue mode
+    Javob: B
+
+19. systemctl get-default nima ko'rsatadi?
+    A) Running services
+    B) Default boot target
+    C) All targets
+    D) Failed services
+    Javob: B
+
+20. systemctl set-default multi-user.target nima?
+    A) Hozir o'zgartiradi
+    B) Default boot target ni text mode ga o'zgartiradi
+    C) Service start
+    D) Service stop
+    Javob: B
+
+21. systemctl isolate rescue.target nima qiladi?
+    A) Reboot
+    B) Hozir rescue mode ga o'tadi (single user)
+    C) Shutdown
+    D) Start services
+    Javob: B
+
+22. /etc/systemd/system/*.wants/ papkalari nima?
+    A) Disabled services
+    B) Target ga enabled service symlinks
+    C) Failed services
+    D) Running services
+    Javob: B
+
+23. systemd-analyze blame nima ko'rsatadi?
+    A) Failed services
+    B) Boot vaqtida har bir service qancha vaqt olganini
+    C) Running services
+    D) Enabled services
+    Javob: B
+
+24. systemd-analyze critical-chain nima?
+    A) Blame
+    B) Boot critical path (bottleneck)
+    C) All services
+    D) Failed services
+    Javob: B
+
+25. cgroups (control groups) nima?
+    A) User groups
+    B) Process guruhlariga resurs chegaralash (CPU, memory, I/O)
+    C) File groups
+    D) Network groups
+    Javob: B
+
+26. /sys/fs/cgroup/ papkasida nima?
+    A) User files
+    B) cgroup virtual filesystem (cgroup v2)
+    C) Network files
+    D) Disk files
+    Javob: B
+
+27. systemd-cgls nima ko'rsatadi?
+    A) User list
+    B) cgroup hierarchy tree
+    C) File list
+    D) Process list
+    Javob: B
+
+28. systemd-cgtop nima?
+    A) Process top
+    B) cgroup bo'yicha resurs ishlatilishini real-time
+    C) File top
+    D) Network top
+    Javob: B
+
+29. MemoryLimit=500M systemd unit da nima?
+    A) Disk limit
+    B) Service uchun maksimal memory 500MB
+    C) Network limit
+    D) CPU limit
+    Javob: B
+
+30. CPUQuota=50% systemd da nima?
+    A) Memory limit
+    B) Service uchun CPU ni 50% gacha cheklash
+    C) Disk limit
+    D) Network limit
+    Javob: B
+
+31. namespaces nima uchun (Linux)?
+    A) File naming
+    B) Process izolyatsiyasi (PID, network, mount, user, ...)
+    C) User naming
+    D) Disk naming
+    Javob: B
+
+32. unshare --pid --fork bash nima qiladi?
+    A) PID ko'rsatadi
+    B) Yangi PID namespace da bash ishga tushiradi
+    C) PID o'chiradi
+    D) Fork o'chiradi
+    Javob: B
+
+33. nsenter nima uchun?
+    A) Namespace yaratadi
+    B) Mavjud namespace ga kirish
+    C) Namespace o'chiradi
+    D) Namespace ko'rsatadi
+    Javob: B
+
+34. Docker/containers qanday Linux texnologiyalaridan foydalanadi?
+    A) Faqat chroot
+    B) namespaces + cgroups + UnionFS
+    C) Faqat VM
+    D) Faqat namespaces
+    Javob: B
+
+35. chroot nima qiladi?
+    A) User o'zgartiradi
+    B) Root directory ni o'zgartiradi (izolyatsiya)
+    C) Permission o'zgartiradi
+    D) Owner o'zgartiradi
+    Javob: B
+
+36. pivot_root chroot dan farqi?
+    A) Bir xil
+    B) pivot_root yangi root ni mount namespace da almashtiradi
+    C) chroot yangi
+    D) pivot_root eski
+    Javob: B
+
+37. SELinux nima?
+    A) Linux versiyasi
+    B) Mandatory Access Control (MAC) security module
+    C) Network tool
+    D) Disk tool
+    Javob: B
+
+38. getenforce nima ko'rsatadi?
+    A) User enforce
+    B) SELinux holati (Enforcing, Permissive, Disabled)
+    C) Network enforce
+    D) Disk enforce
+    Javob: B
+
+39. setenforce 0 nima qiladi?
+    A) SELinux o'chiradi
+    B) SELinux ni Permissive mode ga o'tkazadi (vaqtincha)
+    C) SELinux yoqadi
+    D) Enforcing mode
+    Javob: B
+
+40. SELinux context nima?
+    A) User context
+    B) user:role:type:level security label
+    C) File context
+    D) Network context
+    Javob: B
+
+41. ls -Z nima ko'rsatadi?
+    A) Size
+    B) SELinux security context
+    C) Zone
+    D) Zip info
+    Javob: B
+
+42. restorecon -Rv /var/www nima?
+    A) Fayllarni restore
+    B) SELinux context ni default ga qaytaradi
+    C) Backup restore
+    D) Config restore
+    Javob: B
+
+43. setsebool httpd_can_network_connect on nima?
+    A) Network o'chiradi
+    B) Apache ga network ulanishga ruxsat (SELinux boolean)
+    C) Apache o'chiradi
+    D) Boolean o'chiradi
+    Javob: B
+
+44. audit2allow nima qiladi?
+    A) Audit o'chiradi
+    B) SELinux deny loglardan policy yaratadi
+    C) Allow o'chiradi
+    D) Audit ko'rsatadi
+    Javob: B
+
+45. AppArmor nima (Ubuntu default)?
+    A) SELinux alias
+    B) Path-based MAC security module
+    C) Network security
+    D) Disk security
+    Javob: B
+
+46. aa-status nima ko'rsatadi?
+    A) User status
+    B) AppArmor profiles holati
+    C) Network status
+    D) Disk status
+    Javob: B
+
+47. /etc/apparmor.d/ papkasida nima?
+    A) User profiles
+    B) AppArmor security profiles
+    C) Network profiles
+    D) Disk profiles
+    Javob: B
+
+48. capabilities nima (Linux)?
+    A) User rights
+    B) Root huquqlarini mayda qismlarga bo'lish
+    C) File rights
+    D) Network rights
+    Javob: B
+
+49. getcap /bin/ping nima ko'rsatadi?
+    A) Permission
+    B) Fayl capabilities (CAP_NET_RAW)
+    C) Owner
+    D) Size
+    Javob: B
+
+50. setcap cap_net_raw+ep /bin/myping nima?
+    A) Permission o'rnatadi
+    B) Faylga network raw capability beradi
+    C) Owner o'rnatadi
+    D) Size o'rnatadi
+    Javob: B
+
+51. /etc/security/limits.conf nima uchun?
+    A) Network limits
+    B) User/group resource limits (nofile, nproc, ...)
+    C) Disk limits
+    D) Memory limits
+    Javob: B
+
+52. ulimit -n nima ko'rsatadi?
+    A) Process limit
+    B) Ochiq fayllar soni limiti
+    C) Memory limit
+    D) CPU limit
+    Javob: B
+
+53. ulimit -u nima?
+    A) User limit
+    B) Maksimal process soni limiti
+    C) File limit
+    D) Memory limit
+    Javob: B
+
+54. pam_limits.so nima?
+    A) Network module
+    B) PAM module - limits.conf ni qo'llash
+    C) Disk module
+    D) Memory module
+    Javob: B
+
+55. PAM (Pluggable Authentication Modules) nima?
+    A) Password manager
+    B) Authentication framework (modulli)
+    C) Network auth
+    D) Disk auth
+    Javob: B
+
+56. /etc/pam.d/ papkasida nima?
+    A) User configs
+    B) Service uchun PAM konfiguratsiyalari
+    C) Network configs
+    D) Disk configs
+    Javob: B
+
+57. pam_tally2 nima uchun ishlatilgan?
+    A) User count
+    B) Failed login attempts tracking (account lockout)
+    C) File count
+    D) Process count
+    Javob: B
+
+58. faillock (pam_faillock) nima?
+    A) File lock
+    B) pam_tally2 o'rniga - failed login tracking
+    C) Disk lock
+    D) Network lock
+    Javob: B
+
+59. /etc/login.defs nima?
+    A) Network config
+    B) Login va user default sozlamalari
+    C) Disk config
+    D) Memory config
+    Javob: B
+
+60. PASS_MAX_DAYS login.defs da nima?
+    A) Max users
+    B) Parol amal qilish muddati (kunlarda)
+    C) Max files
+    D) Max processes
+    Javob: B
+
+61. chage -l username nima ko'rsatadi?
+    A) User info
+    B) Parol aging ma'lumotlari
+    C) File info
+    D) Process info
+    Javob: B
+
+62. chage -M 90 username nima?
+    A) Min days
+    B) Parolni 90 kunda o'zgartirish majburiy
+    C) Max users
+    D) Max files
+    Javob: B
+
+63. /etc/sudoers fayli nima uchun?
+    A) User list
+    B) sudo huquqlari konfiguratsiyasi
+    C) Group list
+    D) File list
+    Javob: B
+
+64. visudo buyrug'i nima?
+    A) Vi editor
+    B) sudoers faylini xavfsiz tahrirlash
+    C) Sudo status
+    D) Sudo log
+    Javob: B
+
+65. user ALL=(ALL) NOPASSWD: ALL sudoers da nima?
+    A) Limited sudo
+    B) Parolsiz to'liq sudo huquqi
+    C) No sudo
+    D) Root only
+    Javob: B
+
+66. /etc/sudoers.d/ papkasi nima?
+    A) Sudo logs
+    B) Qo'shimcha sudoers konfiguratsiyalari
+    C) Sudo temp
+    D) Sudo cache
+    Javob: B
+
+67. auditd nima?
+    A) User daemon
+    B) Linux audit framework daemon
+    C) Network daemon
+    D) Disk daemon
+    Javob: B
+
+68. auditctl -w /etc/passwd -p wa nima?
+    A) Passwd o'chiradi
+    B) /etc/passwd ga write/attribute o'zgarishni audit qiladi
+    C) Passwd yaratadi
+    D) Passwd ko'rsatadi
+    Javob: B
+
+69. ausearch -k my_key nima?
+    A) User search
+    B) audit loglardan key bo'yicha qidiradi
+    C) File search
+    D) Process search
+    Javob: B
+
+70. aureport nima?
+    A) User report
+    B) audit loglardan report yaratadi
+    C) File report
+    D) Disk report
+    Javob: B
+
+71. /var/log/audit/audit.log nima?
+    A) User log
+    B) auditd log fayli
+    C) Network log
+    D) Disk log
+    Javob: B
+
+72. rsyslog va journald farqi?
+    A) Bir xil
+    B) rsyslog - traditional syslog, journald - systemd binary log
+    C) rsyslog yangi
+    D) journald eski
+    Javob: B
+
+73. /etc/rsyslog.conf nima?
+    A) User config
+    B) rsyslog konfiguratsiyasi (facility, priority, destination)
+    C) Network config
+    D) Disk config
+    Javob: B
+
+74. logger "test message" nima qiladi?
+    A) File yaratadi
+    B) syslog ga xabar yuboradi
+    C) User yaratadi
+    D) Process yaratadi
+    Javob: B
+
+75. logrotate nima uchun?
+    A) Log o'chiradi
+    B) Log fayllarni rotate qilish (compress, delete old)
+    C) Log yaratadi
+    D) Log ko'rsatadi
+    Javob: B
+
+76. /etc/logrotate.d/ papkasi nima?
+    A) Log files
+    B) Service-specific logrotate configs
+    C) Log temp
+    D) Log cache
+    Javob: B
+
+77. RAID 0 nima?
+    A) Mirroring
+    B) Striping (tezlik, redundancy yo'q)
+    C) Parity
+    D) Mirroring + Parity
+    Javob: B
+
+78. RAID 1 nima?
+    A) Striping
+    B) Mirroring (redundancy, 50% capacity)
+    C) Parity
+    D) Striping + Parity
+    Javob: B
+
+79. RAID 5 nima?
+    A) Mirroring
+    B) Striping with distributed parity (min 3 disk)
+    C) Double parity
+    D) No parity
+    Javob: B
+
+80. RAID 10 (1+0) nima?
+    A) RAID 1
+    B) Mirrored stripes (min 4 disk, performance + redundancy)
+    C) RAID 0
+    D) RAID 5
+    Javob: B
+
+81. mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sd[ab]1 nima?
+    A) RAID o'chiradi
+    B) RAID 1 array yaratadi
+    C) RAID ko'rsatadi
+    D) Disk format
+    Javob: B
+
+82. mdadm --detail /dev/md0 nima?
+    A) RAID yaratadi
+    B) RAID array ma'lumotlarini ko'rsatadi
+    C) RAID o'chiradi
+    D) RAID repair
+    Javob: B
+
+83. /proc/mdstat nima ko'rsatadi?
+    A) Memory stats
+    B) RAID array holati
+    C) Disk stats
+    D) Network stats
+    Javob: B
+
+84. dm-crypt/LUKS nima?
+    A) File system
+    B) Linux disk encryption
+    C) Network encryption
+    D) User encryption
+    Javob: B
+
+85. cryptsetup luksFormat /dev/sdb1 nima qiladi?
+    A) Decrypt
+    B) LUKS encrypted partition yaratadi
+    C) Format ext4
+    D) Mount
+    Javob: B
+
+86. cryptsetup luksOpen /dev/sdb1 mydata nima?
+    A) Format
+    B) Encrypted partition ni ochadi (/dev/mapper/mydata)
+    C) Close
+    D) Delete
+    Javob: B
+
+87. /etc/crypttab fayli nima uchun?
+    A) User config
+    B) Boot da decrypt qilinadigan disk konfiguratsiyasi
+    C) Network config
+    D) fstab alias
+    Javob: B
+
+88. sar (sysstat) nima uchun?
+    A) User stats
+    B) System activity reporter (historical performance data)
+    C) Network stats
+    D) Disk stats
+    Javob: B
+
+89. sar -u 1 5 nima?
+    A) User stats
+    B) CPU statistikasi har 1 sekundda 5 marta
+    C) Disk stats
+    D) Memory stats
+    Javob: B
+
+90. sar -r nima ko'rsatadi?
+    A) CPU stats
+    B) Memory statistikasi
+    C) Disk stats
+    D) Network stats
+    Javob: B
+
+91. perf nima uchun?
+    A) Performance test
+    B) Linux kernel performance profiling tool
+    C) Network test
+    D) Disk test
+    Javob: B
+
+92. perf top nima?
+    A) Process top
+    B) Real-time CPU profiling (hottest functions)
+    C) Memory top
+    D) Disk top
+    Javob: B
+
+93. perf record -g command nima?
+    A) Sound record
+    B) Command bajarilishida call graph profiling
+    C) Video record
+    D) Log record
+    Javob: B
+
+94. strace command nima qiladi?
+    A) String trace
+    B) System call larni trace qiladi
+    C) Network trace
+    D) Disk trace
+    Javob: B
+
+95. ltrace command nima?
+    A) Log trace
+    B) Library call larni trace qiladi
+    C) System trace
+    D) Network trace
+    Javob: B
+
+96. /sys filesystem nima?
+    A) System files
+    B) sysfs - kernel objects va device info
+    C) User files
+    D) Network files
+    Javob: B
+
+97. udevadm monitor nima qiladi?
+    A) User monitor
+    B) Device events ni real-time ko'rsatadi
+    C) Network monitor
+    D) Disk monitor
+    Javob: B
+
+98. /etc/udev/rules.d/ nima uchun?
+    A) User rules
+    B) Custom udev rules (device permissions, naming)
+    C) Network rules
+    D) Disk rules
+    Javob: B
+
+99. tuned-adm profile throughput-performance nima?
+    A) User profile
+    B) System performance tuning profile ni qo'llaydi
+    C) Network profile
+    D) Disk profile
+    Javob: B
+
+100. OOM killer nima?
+     A) Process killer
+     B) Out of Memory da kernel tomonidan process o'ldirish
+     C) User killer
+     D) Network killer
+     Javob: B
+
+==================================================================
+                          YAKUNLANDI
+==================================================================

@@ -1,0 +1,148 @@
+===============================================
+PYTHON - MEDIUM SAVOLLARI
+===============================================
+
+SAVOL 1: Lambda funksiyasi nima?
+A) Asosiy funksiya
+B) Anonimous kichik funksiya
+C) Class
+D) Module
+JAVOB: B
+
+SAVOL 2: List comprehension nima?
+A) Loop shakli
+B) List yaratishning qisqa sintaksisi
+C) Funksiyoni
+D) Shart
+JAVOB: B
+
+SAVOL 3: try-except nima uchun?
+A) Loop
+B) Xato tangloviy
+C) Funksiya
+D) Class
+JAVOB: B
+
+SAVOL 4: finally block nima?
+A) try yoki except-da xato bo'lsa ishlamaydi
+B) Har doim ishlaradi
+C) try dan keyin
+D) except dan keyin
+JAVOB: B
+
+SAVOL 5: Class nima?
+A) Funksiya
+B) Objekt yaratish uchun shablon
+C) Variable
+D) Loop
+JAVOB: B
+
+SAVOL 6: __init__ metodi nima uchun?
+A) Print
+B) Konstruktor - object yaratilganda ishlar
+C) Loop
+D) Module
+JAVOB: B
+
+SAVOL 7: self keyword nima?
+A) Class
+B) Current object reference
+C) Function
+D) Variable
+JAVOB: B
+
+SAVOL 8: Inheritance nima?
+A) Object copy
+B) Child class parent properties-ni olishi
+C) Method override
+D) Attribute
+JAVOB: B
+
+SAVOL 9: isinstance() function nima?
+A) Object yaratish
+B) Object type tekshirish
+C) Object copy
+D) Object delete
+JAVOB: B
+
+SAVOL 10: Tuple nima?
+A) List
+B) Immutable (o'zgartirilmagan) to'plam
+C) Dictionary
+D) String
+JAVOB: B
+
+SAVOL 11: Set nima?
+A) List
+B) Unique qiymatlarni saqlash
+C) Dictionary
+D) Tuple
+JAVOB: B
+
+SAVOL 12: None nima?
+A) 0
+B) False
+C) Qiymat yo'q (null)
+D) Empty string
+JAVOB: C
+
+SAVOL 13: enumerate() function nima?
+A) Element sanashi
+B) Index va element juftligini qaytaradi
+C) Elementlarni hisoblaydi
+D) Elementlarni sanaydi
+JAVOB: B
+
+SAVOL 14: zip() function nima?
+A) Faylni zip qiladi
+B) Bir nechta sequence-larni birlashtiradi
+C) String zip qiladi
+D) List zip qiladi
+JAVOB: B
+
+SAVOL 15: map() function nima?
+A) List o'zgartiradigan
+B) Har elementga funksiya qo'llaydi
+C) List sortirlaydi
+D) List tekshiradi
+JAVOB: B
+
+SAVOL 16: filter() function nima?
+A) List sortirlaydi
+B) Shart bo'ycha elementlarni tanlaydi
+C) List o'zgartiradigan
+D) List hisoblaydi
+JAVOB: B
+
+SAVOL 17: any() function nima?
+A) List bo'sh yoki yo'q
+B) Kamida bitta True qiymat mavjudmi
+C) Barcha qiymatlar True
+D) Qiymat yo'q
+JAVOB: B
+
+SAVOL 18: all() function nima?
+A) Barcha qiymatlar True
+B) Kamita bitta True
+C) Bitta True
+D) Barcha False
+JAVOB: A
+
+SAVOL 19: sorted() function nima?
+A) List sortirlaydi (o'zini o'zgartirmaydi)
+B) List sortirlaydi (o'zini o'zgartiradi)
+C) List tekshiradi
+D) List qayta aralashtiradi
+JAVOB: A
+
+SAVOL 20: .sort() method nima?
+A) List sortirlaydi (o'zini o'zgartirmaydi)
+B) List sortirlaydi (o'zini o'zgartiradi)
+C) List tekshiradi
+D) List qayta aralashtiradi
+JAVOB: B
+
+===============================================
+MEDIUM SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: O'RTA
+===============================================

@@ -1,0 +1,2106 @@
+1. React Fiber architecture nima?1. React Fiber architecture nima?# REACT - QIYIN DARAJA TEST SAVOLLARI
+
+   A) Stack-based reconciler
+
+   B) Incremental rendering uchun yangi reconciliation engine   A) Stack reconciler## 100 TA MURAKKAB SAVOL
+
+   C) Redux alternative
+
+   D) Testing framework   B) Incremental reconciliation
+
+   Javob: B
+
+   C) Class based===================================================
+
+2. useDeferredValue hook qanday ishlaydi?
+
+   A) Value ni cache qiladi   D) Function based
+
+   B) Value ni past prioritet bilan yangilaydi
+
+   C) Value ni encrypt qiladi   Javob: B## ADVANCED (QIYIN DARAJA)
+
+   D) Value ni delete qiladi
+
+   Javob: B
+
+
+
+3. React Server Components nimani ta'minlaydi?2. Fiber node nima?### VARIANT 1
+
+   A) Client-side rendering only
+
+   B) Server-da render bo'lib, JS bundle kamayadi   A) DOM node
+
+   C) Database management
+
+   D) Authentication   B) Work unit1. React Fiber nima?
+
+   Javob: B
+
+   C) Component   A) State management
+
+4. useTransition hook maqsadi?
+
+   A) Animation yaratish   D) State   B) React ning yangi reconciliation algorithm
+
+   B) Non-blocking UI updates uchun
+
+   C) Routing   Javob: B   C) Routing library
+
+   D) State management
+
+   Javob: B   D) Testing framework
+
+
+
+5. Concurrent Mode ning asosiy afzalligi?3. Fiber tree structure?   **Javob: B**
+
+   A) Kod qisqaradi
+
+   B) Interruptible rendering   A) Single tree
+
+   C) Bundle size kamayadi
+
+   D) TypeScript support   B) Current va workInProgress2. Reconciliation nima?
+
+   Javob: B
+
+   C) DOM tree   A) State update
+
+6. React.lazy() qanday ishlaydi?
+
+   A) Lazy state update   D) State tree   B) Virtual DOM ni Real DOM bilan sync qilish jarayoni
+
+   B) Dynamic import bilan code splitting
+
+   C) Lazy validation   Javob: B   C) Component lifecycle
+
+   D) Lazy routing
+
+   Javob: B   D) Props passing
+
+
+
+7. Suspense boundary nima qiladi?4. Double buffering Fiber'da?   **Javob: B**
+
+   A) Error handling
+
+   B) Loading state ko'rsatadi async content uchun   A) Memory waste
+
+   C) State management
+
+   D) Routing   B) Smooth updates3. React.lazy() qanday ishlaydi?
+
+   Javob: B
+
+   C) Performance issue   A) State lazy load
+
+8. useId hook qachon ishlatiladi?
+
+   A) Database ID uchun   D) Bug   B) Dynamic import bilan code splitting
+
+   B) Server va client da stable unique ID yaratish
+
+   C) User ID uchun   Javob: B   C) Props lazy load
+
+   D) Session ID uchun
+
+   Javob: B   D) Component eager load
+
+
+
+9. startTransition vs useTransition farqi?5. Work loop nima?   **Javob: B**
+
+   A) Farqi yo'q
+
+   B) useTransition isPending state qaytaradi   A) Event loop
+
+   C) startTransition tezroq
+
+   D) useTransition sekinroq   B) Fiber traversal loop4. Suspense component nima uchun?
+
+   Javob: B
+
+   C) Render loop   A) Error boundary
+
+10. React 18 ning automatic batching?
+
+    A) Manual batch qilish   D) Effect loop   B) Lazy loaded component loading state
+
+    B) Barcha state update lar avtomatik batch bo'ladi
+
+    C) Batching yo'q   Javob: B   C) Async state
+
+    D) Async batching
+
+    Javob: B   D) Context provider
+
+
+
+11. useInsertionEffect hook nima uchun?6. Time slicing nima?   **Javob: B**
+
+    A) DOM manipulation
+
+    B) CSS-in-JS libraries uchun style injection   A) Sync rendering
+
+    C) Data fetching
+
+    D) Event handling   B) Rendering chunks5. Suspense fallback prop nima?
+
+    Javob: B
+
+   C) Blocking   A) Error UI
+
+12. flushSync funksiyasi nima qiladi?
+
+    A) Cache tozalaydi   D) Sequential   B) Loading paytida ko'rsatiladigan UI
+
+    B) Update ni synchronous force qiladi
+
+    C) Memory flush   Javob: B   C) Default value
+
+    D) Event flush
+
+    Javob: B   D) Error message
+
+
+
+13. useSyncExternalStore nima uchun?7. Priority levels Fiber'da?   **Javob: B**
+
+    A) Internal state
+
+    B) External store larni subscribe qilish   A) One
+
+    C) Async data
+
+    D) Form handling   B) Multiple (ImmediatePriority, etc.)6. Code splitting nima va nima uchun?
+
+    Javob: B
+
+   C) None   A) Code delete
+
+14. React reconciliation algorithm murakkabligi?
+
+    A) O(n^3)   D) Two   B) Bundle ni kichik chunks ga bo'lish (performance)
+
+    B) O(n) - heuristic bilan
+
+    C) O(1)   Javob: B   C) Code minify
+
+    D) O(log n)
+
+    Javob: B   D) Code compile
+
+
+
+15. Keys nima uchun stable bo'lishi kerak?8. Lane model nima?   **Javob: B**
+
+    A) Performance uchun
+
+    B) Reconciliation to'g'ri ishlashi uchun   A) Priority
+
+    C) Styling uchun
+
+    D) Debugging uchun   B) Bit-based priority system7. React.memo() shallow comparison qiladimi?
+
+    Javob: B
+
+   C) Queue   A) Deep comparison
+
+16. React Portal nima uchun ishlatiladi?
+
+    A) Routing   D) Stack   B) Ha, shallow comparison
+
+    B) DOM hierarchy tashqarisiga render qilish
+
+    C) State management   Javob: B   C) No comparison
+
+    D) Animation
+
+    Javob: B   D) Reference equality faqat
+
+
+
+17. Error Boundary class component bo'lishi shart?9. Scheduler package nima?   **Javob: B**
+
+    A) Ha, hozircha class component bo'lishi kerak
+
+    B) Yo'q, function component ham bo'ladi   A) Component
+
+    C) Ikkalasi ham
+
+    D) Hech qaysi   B) Task scheduling8. React.memo() ikkinchi argument nima?
+
+    Javob: A
+
+   C) State   A) State
+
+18. getDerivedStateFromError vs componentDidCatch?
+
+    A) Bir xil   D) Effect   B) Custom comparison function
+
+    B) getDerivedStateFromError render phase, componentDidCatch commit phase
+
+    C) Farqi yo'q   Javob: B   C) Props default
+
+    D) componentDidCatch deprecated
+
+    Javob: B   D) Ref
+
+
+
+19. StrictMode nima qiladi development da?10. requestIdleCallback polyfill?   **Javob: B**
+
+    A) Production build yaratadi
+
+    B) Double invocation va deprecated API warning    A) Native
+
+    C) Minification
+
+    D) Bundle optimization    B) Scheduler provides9. useCallback dependency array bo'sh bo'lsa?
+
+    Javob: B
+
+    C) Browser   A) Har render da yangi
+
+20. useDebugValue nima uchun?
+
+    A) Console.log alternative    D) React   B) Bir marta yaratiladi, hech qachon yangilanmaydi
+
+    B) React DevTools da custom hook label ko'rsatish
+
+    C) Error logging    Javob: B   C) Error
+
+    D) Performance monitoring
+
+    Javob: B   D) Avtomatik update
+
+
+
+21. React.memo shallow comparison qiladi?11. MessageChannel usage?   **Javob: B**
+
+    A) Yo'q, deep comparison
+
+    B) Ha, props ni shallow compare qiladi    A) WebSocket
+
+    C) Comparison qilmaydi
+
+    D) Reference comparison    B) Task scheduling10. useMemo vs useCallback farqi?
+
+    Javob: B
+
+    C) State    A) Bir xil
+
+22. useCallback dependency array bo'sh bo'lsa?
+
+    A) Har doim yangi function    D) Event    B) useMemo - value memoize, useCallback - function memoize
+
+    B) Bir marta yaratilgan function qaytadi
+
+    C) Error beradi    Javob: B    C) useCallback state uchun
+
+    D) Warning beradi
+
+    Javob: B    D) Farq yo'q
+
+
+
+23. useMemo expensive computation uchun?12. Reconciliation algorithm?    **Javob: B**
+
+    A) Yo'q, faqat styling
+
+    B) Ha, qimmat hisoblashlarni memoize qilish    A) Full diff
+
+    C) Faqat API calls
+
+    D) Faqat rendering    B) Heuristic O(n)11. useRef va useState farqi?
+
+    Javob: B
+
+    C) O(n^3)    A) Bir xil
+
+24. forwardRef nima uchun kerak?
+
+    A) Props forwarding    D) O(1)    B) useRef re-render trigger qilmaydi
+
+    B) Ref ni child component ga uzatish
+
+    C) State forwarding    Javob: B    C) useState ref yaratadi
+
+    D) Context forwarding
+
+    Javob: B    D) Farq yo'q
+
+
+
+25. useImperativeHandle qanday ishlaydi?13. Heuristic assumptions?    **Javob: B**
+
+    A) DOM manipulation
+
+    B) Parent ga expose qilinadigan ref methods ni customize qilish    A) Same structure
+
+    C) Event handling
+
+    D) State management    B) Type change = remount12. useRef qachon yangilanadi?
+
+    Javob: B
+
+    C) Always same    A) Har render da
+
+26. React.cloneElement nima qiladi?
+
+    A) Deep clone    D) Always different    B) .current o'zgartirilsa, re-render bo'lmaydi
+
+    B) Element ni clone qilib yangi props qo'shadi
+
+    C) Array clone    Javob: B    C) State o'zgarsa
+
+    D) Object clone
+
+    Javob: B    D) Props o'zgarsa
+
+
+
+27. React.Children.map nima uchun?14. key prop reconciliation role?    **Javob: B**
+
+    A) Array.map alternative
+
+    B) Children prop ni safely iterate qilish    A) Style
+
+    C) Object mapping
+
+    D) State mapping    B) Identity preservation13. forwardRef nima uchun?
+
+    Javob: B
+
+    C) Event    A) State forward
+
+28. React.isValidElement nima tekshiradi?
+
+    A) DOM validity    D) Ref    B) Parent dan child componentga ref o'tkazish
+
+    B) Argument React element ekanligini
+
+    C) Props validity    Javob: B    C) Props forward
+
+    D) State validity
+
+    Javob: B    D) Context forward
+
+
+
+29. Controlled vs Uncontrolled components?15. Effect list nima?    **Javob: B**
+
+    A) Bir xil
+
+    B) Controlled - React state boshqaradi, Uncontrolled - DOM boshqaradi    A) State list
+
+    C) Farqi yo'q
+
+    D) Uncontrolled yaxshiroq    B) Side effects queue14. useImperativeHandle hook nima qiladi?
+
+    Javob: B
+
+    C) Component list    A) State handle
+
+30. Lifting state up pattern?
+
+    A) State ni local saqlash    D) DOM list    B) Ref orqali child method expose qilish
+
+    B) Shared state ni common ancestor ga ko'tarish
+
+    C) State ni child ga uzatish    Javob: B    C) Event handle
+
+    D) State ni delete qilish
+
+    Javob: B    D) Props handle
+
+
+
+31. Composition vs Inheritance React da?16. Commit phase nima?    **Javob: B**
+
+    A) Inheritance yaxshiroq
+
+    B) Composition tavsiya etiladi    A) Render
+
+    C) Ikkalasi teng
+
+    D) Ikkalasi ham yomon    B) DOM mutations15. Custom hook rules (Rules of Hooks) nima?
+
+    Javob: B
+
+    C) Reconciliation    A) Har joyda call qilish mumkin
+
+32. Higher-Order Component (HOC) pattern?
+
+    A) Class component pattern    D) Scheduling    B) Top level da va boshqa hook ichida call qilish
+
+    B) Component oladi, enhanced component qaytaradi
+
+    C) State pattern    Javob: B    C) Conditional ichida call qilish
+
+    D) Routing pattern
+
+    Javob: B    D) Loop ichida call qilish
+
+
+
+33. Render props pattern?17. Commit phase sub-phases?    **Javob: B**
+
+    A) Static rendering
+
+    B) Function prop orqali render logic sharing    A) One
+
+    C) CSS rendering
+
+    D) Server rendering    B) Before mutation, mutation, layout16. useLayoutEffect vs useEffect farqi?
+
+    Javob: B
+
+    C) Two    A) Bir xil
+
+34. Custom hooks naming convention?
+
+    A) get dan boshlanadi    D) None    B) useLayoutEffect DOM mutation dan keyin, paint dan oldin
+
+    B) use dan boshlanadi
+
+    C) hook dan boshlanadi    Javob: B    C) useEffect tezroq
+
+    D) custom dan boshlanadi
+
+    Javob: B    D) Farq yo'q
+
+
+
+35. useEffect cleanup function qachon ishlaydi?18. Passive effects?    **Javob: B**
+
+    A) Component mount da
+
+    B) Component unmount va har update oldidan    A) Sync
+
+    C) Faqat error da
+
+    D) Faqat warning da    B) useEffect (async)17. useLayoutEffect qachon ishlatiladi?
+
+    Javob: B
+
+    C) useLayoutEffect    A) Har doim
+
+36. useLayoutEffect vs useEffect?
+
+    A) Bir xil    D) Lifecycle    B) DOM o'lchash, layout o'qish kerak bo'lsa
+
+    B) useLayoutEffect synchronous, DOM update dan keyin, paint dan oldin
+
+    C) useLayoutEffect sekinroq    Javob: B    C) API call
+
+    D) useEffect tezroq
+
+    Javob: B    D) State update
+
+
+
+37. React hydration nima?19. Synchronous effects?    **Javob: B**
+
+    A) Data fetching
+
+    B) Server-rendered HTML ga event listeners qo'shish    A) useEffect
+
+    C) State update
+
+    D) CSS loading    B) useLayoutEffect18. useReducer vs useState qachon?
+
+    Javob: B
+
+    C) Async    A) Doim useState
+
+38. Hydration mismatch nima?
+
+    A) CSS error    D) Deferred    B) Complex state logic - useReducer
+
+    B) Server va client render farqi
+
+    C) State error    Javob: B    C) Doim useReducer
+
+    D) Props error
+
+    Javob: B    D) Farq yo'q
+
+
+
+39. React.createContext default value qachon ishlatiladi?20. Render phase interruptible?    **Javob: B**
+
+    A) Har doim
+
+    B) Provider bo'lmaganda    A) No
+
+    C) Hech qachon
+
+    D) Error da    B) Yes, concurrent mode19. useReducer dispatch stable mi?
+
+    Javob: B
+
+    C) Always    A) Yo'q, har render yangi
+
+40. Context performance optimization?
+
+    A) Ko'p context ishlatish    D) Never    B) Ha, har doim bir xil reference
+
+    B) Context ni kichik qismlarga bo'lish, memo ishlatish
+
+    C) Context ishlatmaslik    Javob: B    C) Ba'zida
+
+    D) Global state
+
+    Javob: B    D) Dependency ga bog'liq
+
+
+
+41. Virtual DOM diffing algorithm?21. Pure render requirement?    **Javob: B**
+
+    A) Full DOM scan
+
+    B) Tree reconciliation with O(n) heuristics    A) Optional
+
+    C) Random comparison
+
+    D) No comparison    B) No side effects20. Context re-render optimization qanday?
+
+    Javob: B
+
+    C) Any code    A) Optimization yo'q
+
+42. React event pooling (React 16)?
+
+    A) Event copying    D) Mutation OK    B) useMemo, context split, React.memo
+
+    B) SyntheticEvent reuse for performance
+
+    C) Event deletion    Javob: B    C) Optimization kerak emas
+
+    D) Event blocking
+
+    Javob: B    D) Automatic
+
+
+
+43. React 17 da event pooling o'zgarishi?22. setState batching internal?    **Javob: B**
+
+    A) Yanada kuchaydi
+
+    B) Event pooling olib tashlandi    A) No batch
+
+    C) O'zgarmadi
+
+    D) Deprecated    B) executionContext check21. Context value object bo'lsa muammo nimada?
+
+    Javob: B
+
+    C) Always sync    A) Muammo yo'q
+
+44. React batch update qachon bo'lmaydi?
+
+    A) Hech qachon    D) Random    B) Har render yangi object - barcha consumer re-render
+
+    B) setTimeout, Promise callback larda (React 17 gacha)
+
+    C) Har doim    Javob: B    C) Performance yaxshi
+
+    D) Event handler da
+
+    Javob: B    D) Automatic memoize
+
+
+
+45. useReducer vs useState qachon ishlatiladi?23. Legacy mode vs Concurrent?    **Javob: B**
+
+    A) Bir xil
+
+    B) Complex state logic uchun useReducer    A) Same
+
+    C) useReducer deprecated
+
+    D) useState har doim yaxshiroq    B) Sync vs interruptible22. Multiple context qanday consume qilish?
+
+    Javob: B
+
+    C) No difference    A) Bitta useContext
+
+46. Reducer function pure bo'lishi kerakmi?
+
+    A) Yo'q    D) Either    B) Multiple useContext chaqirish
+
+    B) Ha, side effects bo'lmasligi kerak
+
+    C) Ba'zan    Javob: B    C) useContext array
+
+    D) Optional
+
+    Javob: B    D) Impossible
+
+
+
+47. React.Fragment qisqartmasi?24. createRoot vs render?    **Javob: B**
+
+    A) <Fragment>
+
+    B) <> va </>    A) Same
+
+    C) <Frag>
+
+    D) <F>    B) Concurrent vs Legacy23. Context default value qachon ishlatiladi?
+
+    Javob: B
+
+    C) No difference    A) Har doim
+
+48. Fragment ga key berish mumkinmi?
+
+    A) Yo'q    D) Either    B) Provider mavjud bo'lmasa
+
+    B) Ha, <React.Fragment key={...}>
+
+    C) Ba'zan    Javob: B    C) Provider bor bo'lsa
+
+    D) Deprecated
+
+    Javob: B    D) Hech qachon
+
+
+
+49. dangerouslySetInnerHTML nima uchun dangerous?25. Strict mode double invoke reason?    **Javob: B**
+
+    A) Performance
+
+    B) XSS hujumlarga ochiq    A) Bug
+
+    C) Memory leak
+
+    D) Bundle size    B) Detect side effects24. React Portal nima?
+
+    Javob: B
+
+    C) Performance    A) Router
+
+50. XSS prevention React da?
+
+    A) Manual sanitization    D) Error    B) Child ni parent DOM dan tashqari render qilish
+
+    B) JSX avtomatik escape qiladi
+
+    C) Himoya yo'q    Javob: B    C) State management
+
+    D) Plugin kerak
+
+    Javob: B    D) HTTP client
+
+
+
+51. React DevTools Profiler nima ko'rsatadi?26. useSyncExternalStore tearing?    **Javob: B**
+
+    A) Bundle size
+
+    B) Render time va commit info    A) Feature
+
+    C) Network requests
+
+    D) Memory usage    B) Prevents UI tearing25. ReactDOM.createPortal() qachon ishlatiladi?
+
+    Javob: B
+
+    C) Bug    A) Har doim
+
+52. React.memo second argument?
+
+    A) State    D) Error    B) Modal, tooltip, dropdown (DOM hierarchy tashqarida)
+
+    B) Custom comparison function
+
+    C) Props    Javob: B    C) Oddiy component
+
+    D) Context
+
+    Javob: B    D) Hech qachon
+
+
+
+53. Why did you render library?27. Tearing nima?    **Javob: B**
+
+    A) Error tracking
+
+    B) Unnecessary re-renders ni aniqlash    A) Performance
+
+    C) Performance boost
+
+    D) Bundle analysis    B) Inconsistent UI state26. Event bubbling Portal da qanday ishlaydi?
+
+    Javob: B
+
+    C) Feature    A) Ishlamaydi
+
+54. Code splitting benefits?
+
+    A) Kod ko'payadi    D) Optimization    B) React tree bo'yicha bubble qiladi (DOM emas)
+
+    B) Initial bundle size kamayadi
+
+    C) Performance pasayadi    Javob: B    C) DOM tree bo'yicha
+
+    D) Complexity kamayadi
+
+    Javob: B    D) Bubble qilmaydi
+
+
+
+55. React.lazy network error handling?28. getSnapshot consistency?    **Javob: B**
+
+    A) Avtomatik retry
+
+    B) Error Boundary ishlatish    A) Optional
+
+    C) Ignore qilinadi
+
+    D) App crash    B) Must return same value27. Error Boundary functional componentda mavjudmi?
+
+    Javob: B
+
+    C) Any value    A) Ha
+
+56. Prefetching lazy components?
+
+    A) Avtomatik    D) Random    B) Yo'q, faqat class component
+
+    B) Manual import() call
+
+    C) Impossible    Javob: B    C) Hook bilan
+
+    D) Built-in
+
+    Javob: B    D) Har doim
+
+
+
+57. Streaming SSR nima?29. getServerSnapshot nima?    **Javob: B**
+
+    A) Video streaming
+
+    B) HTML chunks ni progressively yuborish    A) Client
+
+    C) Data streaming
+
+    D) Event streaming    B) SSR snapshot28. getDerivedStateFromError static method mi?
+
+    Javob: B
+
+    C) Optional    A) Yo'q
+
+58. renderToPipeableStream vs renderToString?
+
+    A) Bir xil    D) Required    B) Ha, static
+
+    B) Streaming vs blocking
+
+    C) Client vs Server    Javob: B    C) Instance method
+
+    D) Sync vs Async
+
+    Javob: B    D) Async method
+
+
+
+59. Selective hydration nima?30. External store subscription cleanup?    **Javob: B**
+
+    A) Full hydration
+
+    B) Suspense boundaries bo'yicha prioritized hydration    A) Automatic
+
+    C) No hydration
+
+    D) Lazy hydration    B) Return unsubscribe29. componentDidCatch qayerda ishlaydi?
+
+    Javob: B
+
+    C) Manual    A) Har componentda
+
+60. React 18 createRoot vs render?
+
+    A) Bir xil    D) None    B) Error Boundary da
+
+    B) createRoot concurrent features enable qiladi
+
+    C) render yaxshiroq    Javob: B    C) Functional component
+
+    D) createRoot deprecated
+
+    Javob: B    D) Custom hook
+
+
+
+61. hydrateRoot nima uchun?31. useInsertionEffect nima?    **Javob: B**
+
+    A) Client rendering
+
+    B) Server-rendered content ni hydrate qilish    A) useEffect
+
+    C) State management
+
+    D) Routing    B) CSS-in-JS insertion30. Error Boundary o'z xatolarini catch qiladimi?
+
+    Javob: B
+
+    C) useLayoutEffect    A) Ha
+
+62. React concurrent rendering interruption?
+
+    A) Impossible    D) useMemo    B) Yo'q, faqat children error
+
+    B) User input high priority renders ni interrupt qilishi mumkin
+
+    C) Manual only    Javob: B    C) Ba'zida
+
+    D) Never happens
+
+    Javob: B    D) Har doim
+
+
+
+63. Time slicing React da?32. useInsertionEffect timing?    **Javob: B**
+
+    A) Date/time operations
+
+    B) Rendering ni kichik chunks ga bo'lish    A) After paint
+
+    C) Code splitting
+
+    D) Bundle splitting    B) Before DOM mutations31. StrictMode production da ishlash?
+
+    Javob: B
+
+    C) After layout    A) Ha, har doim
+
+64. Priority levels React da?
+
+    A) 1 ta level    D) Async    B) Yo'q, faqat development
+
+    B) Multiple - Immediate, User-blocking, Normal, Low, Idle
+
+    C) 2 ta level    Javob: B    C) Ba'zida
+
+    D) Priority yo'q
+
+    Javob: B    D) Manual enable
+
+
+
+65. Lane model React Fiber da?33. CSS-in-JS performance issue?    **Javob: B**
+
+    A) Routing model
+
+    B) Priority va batch system    A) None
+
+    C) State model
+
+    D) Component model    B) Runtime style injection32. StrictMode double rendering qiladimi?
+
+    Javob: B
+
+    C) Memory    A) Yo'q
+
+66. Double rendering StrictMode da nima uchun?
+
+    A) Bug    D) Network    B) Ha, development da (side effect aniqlash)
+
+    B) Side effect larni aniqlash
+
+    C) Performance test    Javob: B    C) Production da
+
+    D) Feature
+
+    Javob: B    D) Hech qachon
+
+
+
+67. React DevTools highlight updates?34. Server Component serialization?    **Javob: B**
+
+    A) Error ko'rsatish
+
+    B) Re-render bo'lgan componentlarni ko'rsatish    A) JSON
+
+    C) State ko'rsatish
+
+    D) Props ko'rsatish    B) React Flight protocol33. React.PureComponent shallow comparison qaysi props/state?
+
+    Javob: B
+
+    C) HTML    A) Deep
+
+68. useMutableSource (deprecated) o'rniga nima?
+
+    A) useState    D) XML    B) Shallow (1 level)
+
+    B) useSyncExternalStore
+
+    C) useReducer    Javob: B    C) Reference only
+
+    D) useRef
+
+    Javob: B    D) No comparison
+
+
+
+69. External store subscription pattern?35. Flight format nima?    **Javob: B**
+
+    A) useEffect bilan manual
+
+    B) useSyncExternalStore bilan    A) JSON
+
+    C) useState bilan
+
+    D) useReducer bilan    B) Streaming component format34. shouldComponentUpdate false qaytarsa?
+
+    Javob: B
+
+    C) HTML    A) Re-render bo'ladi
+
+70. Tearing concurrent rendering da?
+
+    A) DOM tearing    D) Binary    B) Re-render skip qilinadi
+
+    B) Inconsistent UI state ko'rinishi
+
+    C) Memory tearing    Javob: B    C) Error
+
+    D) Event tearing
+
+    Javob: B    D) Forced render
+
+
+
+71. useSyncExternalStore tearing ni qanday hal qiladi?36. RSC payload nima?    **Javob: B**
+
+    A) Ignore qiladi
+
+    B) Synchronous read ni force qiladi    A) HTML
+
+    C) Async read
+
+    D) Cache ishlatadi    B) Serialized component tree35. getDerivedStateFromProps static method nima qaytaradi?
+
+    Javob: B
+
+    C) JSON    A) Component
+
+72. Server Component va Client Component farqi?
+
+    A) Bir xil    D) JavaScript    B) State update uchun object yoki null
+
+    B) Server - server da run, Client - browser da run
+
+    C) Naming farqi    Javob: B    C) Props
+
+    D) Performance farqi
+
+    Javob: B    D) Boolean
+
+
+
+73. 'use client' directive nima qiladi?37. Client reference nima?    **Javob: B**
+
+    A) Nothing
+
+    B) Component ni client component sifatida belgilaydi    A) Server ref
+
+    C) Server component
+
+    D) Error directive    B) Client component marker36. getDerivedStateFromProps qachon call qilinadi?
+
+    Javob: B
+
+    C) DOM ref    A) Faqat mount
+
+74. Server Actions nima?
+
+    A) API routes    D) State ref    B) Har render dan oldin
+
+    B) Server da run bo'ladigan async functions
+
+    C) Client actions    Javob: B    C) Faqat update
+
+    D) Database actions
+
+    Javob: B    D) Unmount
+
+
+
+75. 'use server' directive?38. Server reference nima?    **Javob: B**
+
+    A) Client directive
+
+    B) Server Action ni belgilaydi    A) Client ref
+
+    C) Nothing
+
+    D) Deprecated    B) Server action marker37. getSnapshotBeforeUpdate nima qaytaradi?
+
+    Javob: B
+
+    C) DOM ref    A) State
+
+76. Server Component async bo'lishi mumkinmi?
+
+    A) Yo'q    D) State ref    B) Snapshot value (componentDidUpdate ga o'tadi)
+
+    B) Ha, top-level await ishlatish mumkin
+
+    C) Ba'zan    Javob: B    C) Props
+
+    D) Deprecated
+
+    Javob: B    D) Component
+
+
+
+77. Client Component Server Component ni import qila oladimi?39. Async components?    **Javob: B**
+
+    A) Ha
+
+    B) Yo'q, faqat Server Component Client ni import qiladi    A) Client only
+
+    C) Ikkalasi ham
+
+    D) Hech qaysi    B) Server components async38. getSnapshotBeforeUpdate qachon call qilinadi?
+
+    Javob: B
+
+    C) Both    A) Mount
+
+78. React cache() function?
+
+    A) Browser cache    D) Neither    B) Render dan keyin, DOM update dan oldin
+
+    B) Request-level memoization
+
+    C) Local storage    Javob: B    C) Unmount
+
+    D) Session storage
+
+    Javob: B    D) Constructor
+
+
+
+79. fetch automatic caching React da?40. await in component?    **Javob: B**
+
+    A) Yo'q
+
+    B) Ha, React fetch ni extend qiladi    A) Client
+
+    C) Manual only
+
+    D) Deprecated    B) Server component only39. Legacy lifecycle methods deprecated nima?
+
+    Javob: B
+
+    C) Both    A) Hammasi deprecated
+
+80. revalidatePath nima qiladi?
+
+    A) Path validation    D) Error    B) componentWillMount, componentWillReceiveProps, componentWillUpdate
+
+    B) Cached data ni invalidate qiladi
+
+    C) Routing    Javob: B    C) componentDidMount
+
+    D) Error handling
+
+    Javob: B    D) Hech biri
+
+
+
+81. revalidateTag nima uchun?41. Streaming benefits?    **Javob: B**
+
+    A) HTML tags
+
+    B) Tag bo'yicha cache invalidation    A) Bundle size
+
+    C) JSX tags
+
+    D) Meta tags    B) TTFB, progressive40. UNSAFE_ prefix nima uchun?
+
+    Javob: B
+
+    C) Memory    A) Security issue
+
+82. generateStaticParams nima?
+
+    A) Query params    D) CPU    B) Async rendering da unsafe bo'lgan legacy methods
+
+    B) Static path generation build time da
+
+    C) Dynamic params    Javob: B    C) Bug bor
+
+    D) URL params
+
+    Javob: B    D) Production da ishlamaydi
+
+
+
+83. Dynamic rendering triggers?42. Suspense streaming?    **Javob: B**
+
+    A) Static content
+
+    B) cookies(), headers(), searchParams    A) Blocking
+
+    C) Props
+
+    D) State    B) Placeholder then content41. Concurrent Mode nima?
+
+    Javob: B
+
+    C) Error    A) State mode
+
+84. ISR (Incremental Static Regeneration)?
+
+    A) Full rebuild    D) Skip    B) React ning interruptible rendering mode
+
+    B) Static pages ni background da update qilish
+
+    C) Client rendering    Javob: B    C) Router mode
+
+    D) Server rendering
+
+    Javob: B    D) Test mode
+
+
+
+85. React Compiler (React Forget) nima?43. Out-of-order streaming?    **Javob: B**
+
+    A) Memory cleaner
+
+    B) Automatic memoization compiler    A) Sequential
+
+    C) Bundle compiler
+
+    D) TypeScript compiler    B) Ready components first42. useTransition hook nima qiladi?
+
+    Javob: B
+
+    C) Random    A) Animation
+
+86. React Compiler manual memo zaruriyatini kamaytiradi?
+
+    A) Yo'q    D) Error    B) State update ni low priority qilish
+
+    B) Ha, avtomatik useMemo/useCallback qo'shadi
+
+    C) Ko'paytiradi    Javob: B    C) Route transition
+
+    D) O'zgarmaydi
+
+    Javob: B    D) Style transition
+
+
+
+87. useFormStatus hook?44. RSC bundle size impact?    **Javob: B**
+
+    A) State management
+
+    B) Form submission status pending/data    A) Larger
+
+    C) Validation
+
+    D) Error handling    B) Smaller (no client JS)43. useDeferredValue hook nima?
+
+    Javob: B
+
+    C) Same    A) Async value
+
+88. useFormState hook?
+
+    A) Local state    D) Variable    B) Value ni defer qilish (low priority)
+
+    B) Server action return value bilan form state
+
+    C) Global state    Javob: B    C) Promise value
+
+    D) Session state
+
+    Javob: B    D) Cached value
+
+
+
+89. useOptimistic hook?45. Server-only modules?    **Javob: B**
+
+    A) Pessimistic update
+
+    B) Optimistic UI update pending action da    A) Client safe
+
+    C) State reset
+
+    D) Error handling    B) import "server-only"44. startTransition nima qiladi?
+
+    Javob: B
+
+    C) Both    A) Animation start
+
+90. React 19 use() hook?
+
+    A) useState alias    D) Either    B) Update ni transition sifatida mark qilish
+
+    B) Promise va Context ni read qilish
+
+    C) useEffect alias    Javob: B    C) Route change
+
+    D) useMemo alias
+
+    Javob: B    D) Component mount
+
+
+
+91. use() hook Suspense bilan qanday ishlaydi?46. client-only modules?    **Javob: B**
+
+    A) Ishlamaydi
+
+    B) Promise pending bo'lsa Suspense trigger    A) Server safe
+
+    C) Error beradi
+
+    D) Ignore qiladi    B) import "client-only"45. Suspense data fetching uchun ishlatish mumkinmi?
+
+    Javob: B
+
+    C) Both    A) Yo'q
+
+92. ref callback cleanup function (React 19)?
+
+    A) Yo'q    D) Either    B) Ha, React 18+ (Suspense for Data Fetching)
+
+    B) Callback cleanup function qaytarishi mumkin
+
+    C) Deprecated    Javob: B    C) Faqat lazy import
+
+    D) Error beradi
+
+    Javob: B    D) Hech qachon
+
+
+
+93. React 19 document metadata support?47. Shared components?    **Javob: B**
+
+    A) Yo'q
+
+    B) title, meta, link component da render mumkin    A) Client only
+
+    C) Plugin kerak
+
+    D) Manual only    B) No hooks, work both46. React Server Components nima?
+
+    Javob: B
+
+    C) Server only    A) Client component
+
+94. Asset loading components React 19?
+
+    A) Manual loading    D) Error    B) Server da render qilinadigan component
+
+    B) preload, preinit for stylesheets/scripts
+
+    C) Automatic only    Javob: B    C) Service worker
+
+    D) Not supported
+
+    Javob: B    D) API component
+
+
+
+95. React 19 Actions pattern?48. useActionState vs useFormState?    **Javob: B**
+
+    A) Redux actions
+
+    B) Async transitions managing pending, errors, forms    A) Different
+
+    C) Event actions
+
+    D) DOM actions    B) Renamed (React 19)47. Server Component vs Client Component farqi?
+
+    Javob: B
+
+    C) Same    A) Bir xil
+
+96. useActionState (React 19)?
+
+    A) Global state    D) Both exist    B) Server - serverda render, Client - browserda
+
+    B) Action result state va pending management
+
+    C) Local state    Javob: B    C) Farq yo'q
+
+    D) Server state
+
+    Javob: B    D) Faqat name farqi
+
+
+
+97. React 19 ref prop function components da?49. Form action attribute?    **Javob: B**
+
+    A) forwardRef kerak
+
+    B) forwardRef kerak emas, ref prop sifatida    A) URL only
+
+    C) Supported emas
+
+    D) Deprecated    B) Server Action function48. "use client" directive nima?
+
+    Javob: B
+
+    C) Event    A) Client install
+
+98. Hydration error improvements React 19?
+
+    A) O'zgarishsiz    D) State    B) File ni Client Component sifatida mark qilish
+
+    B) Better diff va error messages
+
+    C) Errors yo'q    Javob: B    C) Server disable
+
+    D) Silent fail
+
+    Javob: B    D) Browser check
+
+
+
+99. Custom elements support React 19?50. Progressive enhancement forms?    **Javob: B**
+
+    A) Yo'q
+
+    B) Full Web Components support    A) JS required
+
+    C) Partial
+
+    D) Deprecated    B) Works without JS49. "use server" directive nima?
+
+    Javob: B
+
+    C) Optional    A) Server install
+
+100. React 19 performance improvements?
+
+    A) O'zgarishsiz    D) Error    B) Server Action mark qilish
+
+    B) No memo needed, better hydration, smaller bundle
+
+    C) Sekinroq    Javob: B    C) Client disable
+
+    D) Bundle katta
+
+    Javob: B    D) API mark
+
+
+51. Optimistic updates pattern?    **Javob: B**
+
+    A) Wait for server
+
+    B) Immediate UI, rollback on fail50. Hydration nima?
+
+    C) No update    A) Water effect
+
+    D) Error    B) Server rendered HTML ga interactivity qo'shish
+
+    Javob: B    C) Data fetch
+
+    D) Component load
+
+52. useOptimistic rollback?    **Javob: B**
+
+    A) Manual
+
+    B) Automatic on error51. SSR (Server-Side Rendering) nima?
+
+    C) No rollback    A) Client render
+
+    D) Optional    B) Server da HTML render qilish
+
+    Javob: B    C) Static site
+
+    D) SPA
+
+53. cache() function scope?    **Javob: B**
+
+    A) Component
+
+    B) Request-level52. SSG (Static Site Generation) nima?
+
+    C) Global    A) Dynamic site
+
+    D) App    B) Build time da HTML generate qilish
+
+    Javob: B    C) SSR
+
+    D) CSR
+
+54. cache() vs useMemo?    **Javob: B**
+
+    A) Same
+
+    B) Request vs render scope53. ISR (Incremental Static Regeneration) nima?
+
+    C) No difference    A) SSR
+
+    D) Either    B) Static page ni runtime da yangilash
+
+    Javob: B    C) CSR
+
+    D) SSG
+
+55. React.cache deduplication?    **Javob: B**
+
+    A) No dedup
+
+    B) Same args = cached54. Next.js nima?
+
+    C) Always fetch    A) React library
+
+    D) Random    B) React framework (SSR, SSG, routing)
+
+    Javob: B    C) State manager
+
+    D) Component library
+
+56. preload() function?    **Javob: B**
+
+    A) Load later
+
+    B) Early resource loading55. Next.js App Router vs Pages Router?
+
+    C) Skip loading    A) Bir xil
+
+    D) Cache    B) App Router yangi (React Server Components)
+
+    Javob: B    C) Pages Router yangi
+
+    D) Farq yo'q
+
+57. preinit() function?    **Javob: B**
+
+    A) Load
+
+    B) Preload and execute56. getServerSideProps Next.js da nima?
+
+    C) Skip    A) Client data fetch
+
+    D) Cache    B) SSR data fetching method
+
+    Javob: B    C) Static data
+
+    D) API route
+
+58. prefetchDNS()?    **Javob: B**
+
+    A) Load resource
+
+    B) DNS prefetch57. getStaticProps Next.js da nima?
+
+    C) Skip    A) SSR data
+
+    D) Cache    B) SSG data fetching method (build time)
+
+    Javob: B    C) Client data
+
+    D) API route
+
+59. preconnect()?    **Javob: B**
+
+    A) DNS only
+
+    B) TCP/TLS connection58. getStaticPaths nima uchun?
+
+    C) Load    A) Dynamic route
+
+    D) Skip    B) SSG uchun dynamic paths define qilish
+
+    Javob: B    C) Client routing
+
+    D) API paths
+
+60. Document metadata RSC?    **Javob: B**
+
+    A) Head component
+
+    B) title, meta in component59. Remix nima?
+
+    C) Helmet    A) State manager
+
+    D) Manual    B) React framework (full-stack)
+
+    Javob: B    C) Component library
+
+    D) Testing tool
+
+61. Hoisting metadata?    **Javob: B**
+
+    A) Manual
+
+    B) Automatic to head60. Gatsby nima?
+
+    C) No hoist    A) SSR framework
+
+    D) Error    B) Static site generator (React)
+
+    Javob: B    C) State manager
+
+    D) Router
+
+62. use() conditional usage?    **Javob: B**
+
+    A) Forbidden
+
+    B) Allowed (unlike other hooks)61. React Testing Library philosophy nima?
+
+    C) Error    A) Implementation detail test
+
+    D) Warning    B) User behavior test qilish
+
+    Javob: B    C) Internal state test
+
+    D) Private method test
+
+63. use() vs await?    **Javob: B**
+
+    A) Same
+
+    B) use suspends, await blocks62. render() RTL da nima qiladi?
+
+    C) No difference    A) Production render
+
+    D) Either    B) Component ni test environment ga render
+
+    Javob: B    C) Browser render
+
+    D) SSR render
+
+64. Nested Suspense behavior?    **Javob: B**
+
+    A) Outer wins
+
+    B) Closest boundary63. screen object RTL da nima?
+
+    C) Error    A) Monitor
+
+    D) All trigger    B) Query methods (getBy, findBy, queryBy)
+
+    Javob: B    C) Component
+
+    D) State
+
+65. Suspense SuspenseException?    **Javob: B**
+
+    A) Error
+
+    B) Internal promise throw64. getBy vs queryBy farqi (RTL)?
+
+    C) Bug    A) Bir xil
+
+    D) Feature    B) getBy error throw, queryBy null return
+
+    Javob: B    C) queryBy error throw
+
+    D) Farq yo'q
+
+66. Promise throw pattern?    **Javob: B**
+
+    A) Error handling
+
+    B) Suspense mechanism65. findBy async mi (RTL)?
+
+    C) Async/await    A) Yo'q, sync
+
+    D) Callback    B) Ha, Promise return (async query)
+
+    Javob: B    C) Ba'zida
+
+    D) Hech qachon
+
+67. Data fetching libraries support?    **Javob: B**
+
+    A) Manual
+
+    B) Suspense integration66. waitFor() nima uchun (RTL)?
+
+    C) No support    A) Delay
+
+    D) Error    B) Async assertion wait qilish
+
+    Javob: B    C) Timeout
+
+    D) Animation wait
+
+68. Render-as-you-fetch?    **Javob: B**
+
+    A) Fetch-on-render
+
+    B) Parallel fetch and render67. userEvent vs fireEvent farqi (RTL)?
+
+    C) Sequential    A) Bir xil
+
+    D) Blocking    B) userEvent real user interaction simulate, fireEvent low-level
+
+    Javob: B    C) fireEvent yaxshiroq
+
+    D) Farq yo'q
+
+69. Waterfall problem?    **Javob: B**
+
+    A) Feature
+
+    B) Sequential fetching68. Jest nima?
+
+    C) Parallel    A) Linter
+
+    D) Optimization    B) JavaScript testing framework
+
+    Javob: B    C) Bundler
+
+    D) Compiler
+
+70. Parallel data loading?    **Javob: B**
+
+    A) Sequential
+
+    B) Promise.all or parallel start69. describe() Jest da nima?
+
+    C) Waterfall    A) Component describe
+
+    D) Blocking    B) Test suite group qilish
+
+    Javob: B    C) Test run
+
+    D) Mock create
+
+71. Resource preloading pattern?    **Javob: B**
+
+    A) Lazy
+
+    B) Start fetch before render70. it() va test() farqi Jest da?
+
+    C) On mount    A) Farq bor
+
+    D) On click    B) Farq yo'q, alias
+
+    Javob: B    C) it() yaxshiroq
+
+    D) test() deprecated
+
+72. startTransition microtask?    **Javob: B**
+
+    A) Sync
+
+    B) Scheduled async71. expect() Jest da nima?
+
+    C) Immediate    A) Component
+
+    D) Blocking    B) Assertion library
+
+    Javob: B    C) Mock
+
+    D) Spy
+
+73. Transition priority?    **Javob: B**
+
+    A) High
+
+    B) Low priority72. jest.fn() nima?
+
+    C) Normal    A) Function declare
+
+    D) Highest    B) Mock function yaratish
+
+    Javob: B    C) Test function
+
+    D) Async function
+
+74. Urgent vs transition update?    **Javob: B**
+
+    A) Same
+
+    B) Immediate vs deferrable73. jest.mock() nima qiladi?
+
+    C) No difference    A) Component mock
+
+    D) Either    B) Module ni mock qilish
+
+    Javob: B    C) State mock
+
+    D) Props mock
+
+75. useDeferredValue vs useTransition?    **Javob: B**
+
+    A) Same
+
+    B) Value vs update control74. jest.spyOn() nima?
+
+    C) No difference    A) Spy app
+
+    D) Either    B) Method/function spy qilish
+
+    Javob: B    C) Component spy
+
+    D) State spy
+
+76. Deferred value stale state?    **Javob: B**
+
+    A) Always fresh
+
+    B) Old value during transition75. beforeEach() nima uchun?
+
+    C) Error    A) Test dan keyin
+
+    D) Never    B) Har test dan oldin setup
+
+    Javob: B    C) Bir marta setup
+
+    D) Test cleanup
+
+77. Concurrent features opt-in?    **Javob: B**
+
+    A) Automatic
+
+    B) createRoot enables76. afterEach() nima uchun?
+
+    C) Always on    A) Test dan oldin
+
+    D) Never    B) Har test dan keyin cleanup
+
+    Javob: B    C) Bir marta cleanup
+
+    D) Test setup
+
+78. Strict Concurrent Mode?    **Javob: B**
+
+    A) Development
+
+    B) Extra strict checks77. snapshot testing nima?
+
+    C) Production    A) Photo test
+
+    D) Optional    B) Component output ni snapshot bilan compare
+
+    Javob: B    C) State snapshot
+
+    D) Props snapshot
+
+79. act() testing utility?    **Javob: B**
+
+    A) Production
+
+    B) Ensure updates processed78. toMatchSnapshot() nima qiladi?
+
+    C) Development    A) State match
+
+    D) Optional    B) Snapshot bilan compare qilish
+
+    Javob: B    C) Props match
+
+    D) Component match
+
+80. waitFor() testing?    **Javob: B**
+
+    A) Sync
+
+    B) Async assertion79. Coverage nima?
+
+    C) Blocking    A) Code style
+
+    D) Immediate    B) Test qoplagan kod foizi
+
+    Javob: B    C) Performance
+
+    D) Bundle size
+
+81. Testing concurrent features?    **Javob: B**
+
+    A) Simple
+
+    B) act() wrapping needed80. MSW (Mock Service Worker) nima?
+
+    C) No testing    A) State manager
+
+    D) Manual    B) API mocking library
+
+    Javob: B    C) Component library
+
+    D) Router
+
+82. React Testing Library philosophy?    **Javob: B**
+
+    A) Implementation
+
+    B) User behavior testing81. Redux Thunk nima?
+
+    C) Unit testing    A) State container
+
+    D) Snapshot    B) Async action middleware
+
+    Javob: B    C) Component
+
+    D) Router
+
+83. getBy vs queryBy?    **Javob: B**
+
+    A) Same
+
+    B) Throw vs null82. Redux Saga nima?
+
+    C) No difference    A) State manager
+
+    D) Either    B) Side effect middleware (generator functions)
+
+    Javob: B    C) Component
+
+    D) Router
+
+84. findBy queries?    **Javob: B**
+
+    A) Sync
+
+    B) Async (waitFor)83. Redux middleware nima?
+
+    C) Blocking    A) Component
+
+    D) Immediate    B) Action va reducer orasidagi layer
+
+    Javob: B    C) State
+
+    D) Store
+
+85. userEvent vs fireEvent?    **Javob: B**
+
+    A) Same
+
+    B) Real events vs synthetic84. applyMiddleware() nima qiladi?
+
+    C) No difference    A) Component apply
+
+    D) Either    B) Redux store ga middleware qo'shish
+
+    Javob: B    C) State apply
+
+    D) Props apply
+
+86. screen object?    **Javob: B**
+
+    A) DOM
+
+    B) Query container85. combineReducers() nima?
+
+    C) Window    A) Component combine
+
+    D) Document    B) Multiple reducers ni bitta root reducer ga combine
+
+    Javob: B    C) State combine
+
+    D) Store combine
+
+87. cleanup() function?    **Javob: B**
+
+    A) Setup
+
+    B) Unmount components86. Redux DevTools nima?
+
+    C) Build    A) Code editor
+
+    D) Test    B) Redux debugging tool (browser extension)
+
+    Javob: B    C) Testing tool
+
+    D) Bundler
+
+88. render() return value?    **Javob: B**
+
+    A) Component
+
+    B) Queries and container87. Time-travel debugging Redux da nima?
+
+    C) DOM    A) Time function
+
+    D) State    B) State history orqali harakat qilish
+
+    Javob: B    C) Async debug
+
+    D) Component debug
+
+89. rerender() method?    **Javob: B**
+
+    A) New mount
+
+    B) Update props88. Immer library nima uchun?
+
+    C) Unmount    A) State delete
+
+    D) Reset    B) Immutable state update ni oson qilish
+
+    Javob: B    C) State create
+
+    D) State read
+
+90. debug() helper?    **Javob: B**
+
+    A) Production
+
+    B) DOM tree output89. Redux Toolkit createAsyncThunk nima?
+
+    C) Console    A) Sync action
+
+    D) Network    B) Async action creator (pending, fulfilled, rejected)
+
+    Javob: B    C) State creator
+
+    D) Store creator
+
+91. within() helper?    **Javob: B**
+
+    A) Global
+
+    B) Scoped queries90. extraReducers RTK da nima uchun?
+
+    C) All    A) Extra state
+
+    D) None    B) Slice tashqaridagi actions handle qilish
+
+    Javob: B    C) Extra props
+
+    D) Extra components
+
+92. renderHook() utility?    **Javob: B**
+
+    A) Component
+
+    B) Test custom hooks91. RTK Query nima?
+
+    C) DOM    A) State manager
+
+    D) Event    B) Data fetching va caching tool
+
+    Javob: B    C) Router
+
+    D) Component library
+
+93. result.current?    **Javob: B**
+
+    A) Previous
+
+    B) Hook return value92. createApi() RTK Query da nima?
+
+    C) Future    A) REST API
+
+    D) Initial    B) API service definition yaratish
+
+    Javob: B    C) GraphQL API
+
+    D) WebSocket API
+
+94. waitForNextUpdate()?    **Javob: B**
+
+    A) Sync
+
+    B) Wait hook update93. React Query (TanStack Query) nima?
+
+    C) Immediate    A) State manager
+
+    D) Blocking    B) Data fetching, caching, sync library
+
+    Javob: B    C) Router
+
+    D) Component library
+
+95. Mock Service Worker pattern?    **Javob: B**
+
+    A) Real API
+
+    B) Network mocking94. useQuery hook (React Query) nima qaytaradi?
+
+    C) No mock    A) Faqat data
+
+    D) Manual    B) {data, isLoading, error, ...}
+
+    Javob: B    C) Faqat loading
+
+    D) Faqat error
+
+96. handlers in MSW?    **Javob: B**
+
+    A) Events
+
+    B) Request handlers95. useMutation hook (React Query) nima uchun?
+
+    C) Components    A) Data fetch
+
+    D) State    B) Data mutation (POST, PUT, DELETE)
+
+    Javob: B    C) State mutation
+
+    D) Component mutation
+
+97. rest.get() in MSW?    **Javob: B**
+
+    A) POST
+
+    B) GET request handler96. Stale time React Query da nima?
+
+    C) PUT    A) Cache time
+
+    D) DELETE    B) Data "fresh" dan "stale" ga o'tish vaqti
+
+    Javob: B    C) Loading time
+
+    D) Request time
+
+98. server.use() override?    **Javob: B**
+
+    A) Global
+
+    B) Test-specific handler97. Cache time React Query da nima?
+
+    C) Permanent    A) Stale time
+
+    D) None    B) Unused data cache da qolish vaqti
+
+    Javob: B    C) Request time
+
+    D) Loading time
+
+99. Memory leak testing?    **Javob: B**
+
+    A) Easy
+
+    B) Check cleanup98. Optimistic update nima?
+
+    C) Impossible    A) Pessimistic update
+
+    D) Manual    B) UI ni server response kutmasdan update qilish
+
+    Javob: B    C) Slow update
+
+    D) No update
+
+100. Performance testing React?    **Javob: B**
+
+     A) Simple
+
+     B) Profiler + metrics99. Debouncing React da qanday implement qilish?
+
+     C) No testing    A) setTimeout directly
+
+     D) Manual    B) useEffect + setTimeout + cleanup
+
+     Javob: B    C) setInterval
+
+    D) Promise
+    **Javob: B**
+
+100. Throttling vs Debouncing farqi?
+     A) Bir xil
+     B) Throttling - N ms da bir marta, Debouncing - oxirgi call
+     C) Debouncing tezroq
+     D) Farq yo'q
+     **Javob: B**

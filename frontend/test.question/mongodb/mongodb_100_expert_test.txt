@@ -1,0 +1,702 @@
+MONGODB - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+=================================================
+
+1. MongoDB WiredTiger storage engine features?
+   A) One feature
+   B) Document-level concurrency, compression, checkpoints
+   C) Two features
+   D) Three features
+   Javob: B
+
+2. WiredTiger cache configuration?
+   A) No cache
+   B) cacheSizeGB: typically 50% of RAM
+   C) Cache all
+   D) No config
+   Javob: B
+
+3. Journaling in MongoDB?
+   A) No journaling
+   B) Write-ahead log for crash recovery
+   C) After write log
+   D) No recovery
+   Javob: B
+
+4. MongoDB transactions ACID?
+   A) No ACID
+   B) Multi-document ACID (4.0+, replica sets; 4.2+ sharded)
+   C) Single document only
+   D) No transactions
+   Javob: B
+
+5. Read concern levels?
+   A) One level
+   B) local, available, majority, linearizable, snapshot
+   C) Two levels
+   D) Three levels
+   Javob: B
+
+6. Write concern options?
+   A) One option
+   B) w (number/majority), j (journal), wtimeout
+   C) Two options
+   D) Three options
+   Javob: B
+
+7. writeConcern: { w: "majority" }?
+   A) Majority write
+   B) Acknowledged by majority of replica set members
+   C) Write majority
+   D) Single acknowledgment
+   Javob: B
+
+8. Causal consistency sessions?
+   A) No causality
+   B) afterClusterTime for read-your-writes
+   C) Causality session
+   D) No session
+   Javob: B
+
+9. MongoDB indexes types?
+   A) One type
+   B) Single, Compound, Multikey, Text, Geo, Hashed, Wildcard
+   C) Two types
+   D) Three types
+   Javob: B
+
+10. Compound index ESR rule?
+    A) ESR rule
+    B) Equality, Sort, Range order for efficiency
+    C) Rule ESR
+    D) Any order
+    Javob: B
+
+11. Covered query nima?
+    A) Covered query
+    B) Query satisfied entirely by index (no doc fetch)
+    C) Query covered
+    D) Always fetch
+    Javob: B
+
+12. explain() execution stats?
+    A) Explain stats
+    B) executionStats shows docs examined, keys scanned
+    C) Stats explain
+    D) No stats
+    Javob: B
+
+13. Partial index nima?
+    A) Partial index
+    B) Index only documents matching filter expression
+    C) Index partial
+    D) All documents
+    Javob: B
+
+14. Sparse index vs Partial index?
+    A) Same
+    B) Sparse=null excluded, Partial=custom filter
+    C) Partial=null excluded
+    D) No difference
+    Javob: B
+
+15. TTL index nima?
+    A) TTL index
+    B) Auto-delete documents after time period
+    C) Index TTL
+    D) Manual delete
+    Javob: B
+
+16. Wildcard index ($**)?
+    A) Wildcard index
+    B) Index all fields or subset dynamically
+    C) Index wildcard
+    D) Single field
+    Javob: B
+
+17. Text index scoring?
+    A) No scoring
+    B) TF-IDF based relevance score
+    C) Scoring text
+    D) Equal weight
+    Javob: B
+
+18. $text search operators?
+    A) One operator
+    B) $text, $search, $language, $caseSensitive, $diacriticSensitive
+    C) Two operators
+    D) Three operators
+    Javob: B
+
+19. Aggregation pipeline optimization?
+    A) No optimization
+    B) $match and $project pushed early, pipeline coalescence
+    C) Late optimization
+    D) Manual only
+    Javob: B
+
+20. $lookup pipeline nima?
+    A) Lookup pipeline
+    B) Correlated subquery within $lookup
+    C) Pipeline lookup
+    D) Simple join
+    Javob: B
+
+21. $graphLookup nima?
+    A) Graph lookup
+    B) Recursive search for graph/tree data
+    C) Lookup graph
+    D) Single lookup
+    Javob: B
+
+22. $facet aggregation?
+    A) Facet
+    B) Multiple aggregation pipelines in single stage
+    C) Aggregation facet
+    D) Single pipeline
+    Javob: B
+
+23. $bucket vs $bucketAuto?
+    A) Same
+    B) bucket=defined boundaries, bucketAuto=automatic
+    C) bucketAuto=defined
+    D) No difference
+    Javob: B
+
+24. $merge aggregation stage?
+    A) Merge stage
+    B) Write results to collection (insert, update, replace)
+    C) Stage merge
+    D) Memory only
+    Javob: B
+
+25. $out vs $merge?
+    A) Same
+    B) $out=replace collection, $merge=flexible upsert
+    C) $merge=replace
+    D) No difference
+    Javob: B
+
+26. Window functions ($setWindowFields)?
+    A) Window function
+    B) Rolling calculations, ranking, running totals
+    C) Function window
+    D) No window
+    Javob: B
+
+27. $densify stage?
+    A) Densify
+    B) Fill gaps in time series data
+    C) Stage densify
+    D) No gaps
+    Javob: B
+
+28. $fill stage?
+    A) Fill stage
+    B) Replace missing field values
+    C) Stage fill
+    D) No fill
+    Javob: B
+
+29. MongoDB change streams?
+    A) Change stream
+    B) Real-time event notification on data changes
+    C) Stream change
+    D) Polling only
+    Javob: B
+
+30. Change stream resume tokens?
+    A) Resume token
+    B) Continue from specific point after disconnect
+    C) Token resume
+    D) Start over
+    Javob: B
+
+31. Replica set architecture?
+    A) Single node
+    B) Primary + secondaries + optional arbiters
+    C) All primary
+    D) No replica
+    Javob: B
+
+32. Replica set election?
+    A) No election
+    B) Raft-like consensus, priority and votes
+    C) Manual election
+    D) Fixed primary
+    Javob: B
+
+33. Hidden replica set members?
+    A) Hidden member
+    B) Invisible to clients, for backup/reporting
+    C) Member hidden
+    D) All visible
+    Javob: B
+
+34. Delayed replica set members?
+    A) Delayed member
+    B) Time-lagged for recovery from human errors
+    C) Member delayed
+    D) Real-time only
+    Javob: B
+
+35. Read preference modes?
+    A) One mode
+    B) primary, primaryPreferred, secondary, secondaryPreferred, nearest
+    C) Two modes
+    D) Three modes
+    Javob: B
+
+36. Read preference tags?
+    A) No tags
+    B) Route reads to specific data center/rack
+    C) Tags read
+    D) Random routing
+    Javob: B
+
+37. Sharding architecture components?
+    A) One component
+    B) mongos (router), config servers, shard servers
+    C) Two components
+    D) Three components
+    Javob: B
+
+38. Shard key selection criteria?
+    A) Any key
+    B) High cardinality, write distribution, query patterns
+    C) Low cardinality
+    D) Random key
+    Javob: B
+
+39. Ranged vs Hashed sharding?
+    A) Same
+    B) Ranged=range queries, Hashed=write distribution
+    C) Hashed=range queries
+    D) No difference
+    Javob: B
+
+40. Chunk migration?
+    A) No migration
+    B) Balancer moves chunks between shards
+    C) Manual migration
+    D) Fixed chunks
+    Javob: B
+
+41. Jumbo chunks?
+    A) Jumbo chunk
+    B) Chunk exceeding size limit, cannot split
+    C) Chunk jumbo
+    D) Normal chunk
+    Javob: B
+
+42. Zones (tag-aware sharding)?
+    A) Zone sharding
+    B) Associate shard key ranges with specific shards
+    C) Sharding zone
+    D) No zones
+    Javob: B
+
+43. mongos query routing?
+    A) Random routing
+    B) Targeted vs scatter-gather based on shard key
+    C) Routing query
+    D) All shards
+    Javob: B
+
+44. Orphan documents?
+    A) Orphan doc
+    B) Documents on wrong shard after failed migration
+    C) Doc orphan
+    D) Normal docs
+    Javob: B
+
+45. cleanupOrphaned command?
+    A) Cleanup orphan
+    B) Remove orphan documents from shard
+    C) Orphan cleanup
+    D) Keep orphans
+    Javob: B
+
+46. MongoDB authentication mechanisms?
+    A) One mechanism
+    B) SCRAM-SHA-256, x.509, LDAP, Kerberos
+    C) Two mechanisms
+    D) Three mechanisms
+    Javob: B
+
+47. Role-based access control?
+    A) No RBAC
+    B) Built-in roles + custom roles with privileges
+    C) RBAC role
+    D) All access
+    Javob: B
+
+48. Client-Side Field Level Encryption?
+    A) Server encryption
+    B) Encrypt fields before sending to server
+    C) Encryption client
+    D) No encryption
+    Javob: B
+
+49. Queryable Encryption (MongoDB 6.0+)?
+    A) No query
+    B) Query encrypted fields without decryption on server
+    C) Query encryption
+    D) Decrypt first
+    Javob: B
+
+50. Encryption at rest?
+    A) No rest encryption
+    B) WiredTiger encryption with key management
+    C) Rest encryption
+    D) Memory only
+    Javob: B
+
+51. MongoDB Atlas search?
+    A) Atlas search
+    B) Lucene-based full-text search integrated
+    C) Search atlas
+    D) Basic text only
+    Javob: B
+
+52. Atlas search analyzers?
+    A) One analyzer
+    B) Standard, keyword, simple, whitespace, custom
+    C) Two analyzers
+    D) Three analyzers
+    Javob: B
+
+53. Atlas search compound queries?
+    A) Compound query
+    B) must, mustNot, should, filter clauses
+    C) Query compound
+    D) Simple queries
+    Javob: B
+
+54. Atlas search facets?
+    A) Search facet
+    B) Categorize results with counts
+    C) Facet search
+    D) No categorization
+    Javob: B
+
+55. Atlas search autocomplete?
+    A) Autocomplete
+    B) Edge n-gram tokenization for suggestions
+    C) Search autocomplete
+    D) No suggestions
+    Javob: B
+
+56. Time series collections?
+    A) Time series
+    B) Optimized storage for time series data
+    C) Collection time
+    D) Regular collection
+    Javob: B
+
+57. Time series metaField?
+    A) Meta field
+    B) Field for series identification/grouping
+    C) Field meta
+    D) No grouping
+    Javob: B
+
+58. Time series granularity?
+    A) Granularity
+    B) seconds, minutes, hours for bucket optimization
+    C) Time granularity
+    D) Any granularity
+    Javob: B
+
+59. Time series secondary indexes?
+    A) No secondary
+    B) Supported on metaField and timeField
+    C) Secondary time
+    D) Primary only
+    Javob: B
+
+60. Capped collections?
+    A) Capped
+    B) Fixed-size, FIFO, high throughput
+    C) Collection capped
+    D) Unlimited size
+    Javob: B
+
+61. Capped collection restrictions?
+    A) No restrictions
+    B) No updates changing size, no $remove, no sharding
+    C) All operations
+    D) Full features
+    Javob: B
+
+62. MongoDB views?
+    A) View
+    B) Stored aggregation pipeline as virtual collection
+    C) Collection view
+    D) Materialized only
+    Javob: B
+
+63. On-demand materialized views?
+    A) Materialized view
+    B) $merge to persist aggregation results
+    C) View materialized
+    D) No persistence
+    Javob: B
+
+64. Schema validation?
+    A) No validation
+    B) JSON Schema with $jsonSchema in validator
+    C) Schema validate
+    D) No schema
+    Javob: B
+
+65. Validation actions?
+    A) One action
+    B) error (reject), warn (allow with warning)
+    C) Two actions
+    D) No actions
+    Javob: B
+
+66. validationLevel options?
+    A) One option
+    B) strict (all), moderate (only existing valid)
+    C) Two options
+    D) Three options
+    Javob: B
+
+67. MongoDB profiler?
+    A) Profiler
+    B) Log slow queries and operations
+    C) Profile mongodb
+    D) No profiling
+    Javob: B
+
+68. Profiler levels?
+    A) One level
+    B) 0 (off), 1 (slow ops), 2 (all)
+    C) Two levels
+    D) Three levels
+    Javob: B
+
+69. slowms threshold?
+    A) Slow ms
+    B) Minimum execution time for profiler logging
+    C) Ms slow
+    D) No threshold
+    Javob: B
+
+70. $currentOp aggregation?
+    A) Current op
+    B) See running operations like db.currentOp()
+    C) Op current
+    D) No visibility
+    Javob: B
+
+71. $planCacheStats?
+    A) Plan cache
+    B) View cached query plans
+    C) Cache plan
+    D) No cache
+    Javob: B
+
+72. Index hints?
+    A) Index hint
+    B) .hint() to force specific index usage
+    C) Hint index
+    D) Automatic only
+    Javob: B
+
+73. MongoDB Compass features?
+    A) Compass
+    B) GUI for queries, aggregation, schema analysis
+    C) Features compass
+    D) CLI only
+    Javob: B
+
+74. mongodump / mongorestore?
+    A) Dump restore
+    B) Binary backup and restore utilities
+    C) Restore dump
+    D) No backup
+    Javob: B
+
+75. MongoDB point-in-time recovery?
+    A) Point time
+    B) Oplog replay to specific timestamp
+    C) Time point
+    D) No recovery
+    Javob: B
+
+76. Oplog nima?
+    A) Op log
+    B) Capped collection of replication operations
+    C) Log op
+    D) No log
+    Javob: B
+
+77. Oplog size configuration?
+    A) Fixed size
+    B) oplogSizeMB, affects recovery window
+    C) Size oplog
+    D) Auto size
+    Javob: B
+
+78. Retryable writes?
+    A) No retry
+    B) Automatic retry on network errors (retryWrites=true)
+    C) Retry writes
+    D) Manual retry
+    Javob: B
+
+79. Retryable reads?
+    A) No retry
+    B) Automatic retry for read operations
+    C) Retry reads
+    D) Manual retry
+    Javob: B
+
+80. Server selection?
+    A) Random server
+    B) Algorithm choosing server based on latency, tags
+    C) Selection server
+    D) Fixed server
+    Javob: B
+
+81. Connection pooling?
+    A) No pool
+    B) maxPoolSize, minPoolSize, waitQueueTimeoutMS
+    C) Pool connection
+    D) Single connection
+    Javob: B
+
+82. MongoDB Node.js driver best practices?
+    A) No practice
+    B) Connection reuse, bulk operations, projection
+    C) Practice best
+    D) One connection per query
+    Javob: B
+
+83. Bulk write operations?
+    A) No bulk
+    B) bulkWrite() with insertOne, updateOne, deleteOne
+    C) Bulk operation
+    D) Single writes
+    Javob: B
+
+84. Ordered vs unordered bulk?
+    A) Same
+    B) Ordered=stop on error, unordered=continue
+    C) Unordered=stop
+    D) No difference
+    Javob: B
+
+85. Update operators?
+    A) One operator
+    B) $set, $unset, $inc, $push, $pull, $addToSet
+    C) Two operators
+    D) Three operators
+    Javob: B
+
+86. Array update operators?
+    A) No array
+    B) $push, $pop, $pull, $addToSet, $[]
+    C) Array update
+    D) Replace only
+    Javob: B
+
+87. Positional $ operator?
+    A) Positional
+    B) Update first matching array element
+    C) Operator positional
+    D) All elements
+    Javob: B
+
+88. $[] all positional operator?
+    A) All positional
+    B) Update all array elements
+    C) Positional all
+    D) Single element
+    Javob: B
+
+89. $[<identifier>] filtered positional?
+    A) Filtered positional
+    B) Update elements matching arrayFilters condition
+    C) Positional filtered
+    D) No filter
+    Javob: B
+
+90. findAndModify atomicity?
+    A) Not atomic
+    B) Atomic find and update single document
+    C) Atomic modify
+    D) Not guaranteed
+    Javob: B
+
+91. findOneAndUpdate returnDocument option?
+    A) Return document
+    B) "before" or "after" modification
+    C) Document return
+    D) No return
+    Javob: B
+
+92. Upsert operation?
+    A) Upsert
+    B) Insert if not exists, update if exists
+    C) Operation upsert
+    D) Insert only
+    Javob: B
+
+93. $expr in queries?
+    A) Expr query
+    B) Use aggregation expressions in find queries
+    C) Query expr
+    D) No expressions
+    Javob: B
+
+94. $regex options?
+    A) One option
+    B) i (case insensitive), m (multiline), x (extended)
+    C) Two options
+    D) Three options
+    Javob: B
+
+95. Geospatial queries?
+    A) No geo
+    B) $near, $geoWithin, $geoIntersects with 2dsphere
+    C) Geo query
+    D) 2d only
+    Javob: B
+
+96. GeoJSON types supported?
+    A) One type
+    B) Point, LineString, Polygon, MultiPoint, etc.
+    C) Two types
+    D) Three types
+    Javob: B
+
+97. Database commands vs collection methods?
+    A) Same
+    B) Commands=admin ops, methods=CRUD wrappers
+    C) Methods=admin
+    D) No difference
+    Javob: B
+
+98. collStats command?
+    A) Coll stats
+    B) Collection statistics (size, count, indexes)
+    C) Stats coll
+    D) No stats
+    Javob: B
+
+99. serverStatus command?
+    A) Server status
+    B) Comprehensive server metrics
+    C) Status server
+    D) No metrics
+    Javob: B
+
+100. Log rotation?
+     A) No rotation
+     B) logRotate command, SIGUSR1 signal
+     C) Rotation log
+     D) Manual only
+     Javob: B

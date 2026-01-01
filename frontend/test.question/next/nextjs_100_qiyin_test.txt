@@ -1,0 +1,706 @@
+NEXTJS - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. React Server Components (RSC) wire format:
+   A) HTML
+   B) Streaming JSON-like format with component tree + client references
+   C) Pure JSON
+   D) Binary
+   Javob: B
+
+2. RSC Payload parsing:
+   A) Client parse
+   B) Streaming parser - progressive UI render
+   C) Server parse
+   D) Build parse
+   Javob: B
+
+3. Flight protocol (RSC):
+   A) HTTP protocol
+   B) React server-to-client streaming protocol
+   C) WebSocket protocol
+   D) GraphQL protocol
+   Javob: B
+
+4. Hydration (RSC context):
+   A) Full hydration
+   B) Selective hydration - faqat Client Components hydrate bo'ladi
+   C) No hydration
+   D) Partial hydration
+   Javob: B
+
+5. Zero-bundle-size components:
+   A) All components
+   B) Server Components - client bundle ga kirmaydi
+   C) Client components
+   D) Shared components
+   Javob: B
+
+6. Serialization boundary:
+   A) Any boundary
+   B) Server-Client component o'rtasida props serialize bo'lishi kerak
+   C) No boundary
+   D) Route boundary
+   Javob: B
+
+7. use() hook (React 19):
+   A) useState alternative
+   B) Promise yoki Context ni unwrap qilish (Suspense bilan)
+   C) useEffect alternative
+   D) useRef alternative
+   Javob: B
+
+8. use(promise) Server Component da:
+   A) Error
+   B) await kabi ishlaydi (async component bilan)
+   C) Suspense kerak
+   D) useEffect kerak
+   Javob: B
+
+9. Streaming architecture - chunks:
+   A) Single response
+   B) Initial HTML shell + streamed RSC payload chunks
+   C) Multiple requests
+   D) WebSocket
+   Javob: B
+
+10. Out-of-order streaming:
+    A) Sequential only
+    B) Suspense boundaries parallel resolve bo'lganda flush
+    C) Random order
+    D) Client order
+    Javob: B
+
+11. Selective Hydration priority:
+    A) First come
+    B) User interaction (click, hover) priority qiladi
+    C) Random
+    D) Document order
+    Javob: B
+
+12. Data Cache internals:
+    A) Memory only
+    B) .next/cache/fetch-cache - persistent across builds
+    C) Redis
+    D) Database
+    Javob: B
+
+13. Full Route Cache storage:
+    A) Memory
+    B) .next/server/app - HTML + RSC payload
+    C) CDN only
+    D) Browser
+    Javob: B
+
+14. Cache invalidation hierarchy:
+    A) Random
+    B) revalidateTag -> Data Cache -> Full Route Cache -> Router Cache
+    C) Router Cache first
+    D) All at once
+    Javob: B
+
+15. unstable_cache options:
+    A) No options
+    B) revalidate, tags, keyParts
+    C) Faqat TTL
+    D) Faqat tags
+    Javob: B
+
+16. cache() function (React):
+    A) Data cache
+    B) Request memoization - bir render da function result cache
+    C) Route cache
+    D) Component cache
+    Javob: B
+
+17. connection() function (Next.js 15):
+    A) Database connection
+    B) Request context ga opt-in (dynamic rendering signal)
+    C) Network connection
+    D) WebSocket connection
+    Javob: B
+
+18. unstable_after() (Next.js 15):
+    A) Before response
+    B) Response streamed bo'lgandan keyin code run
+    C) After build
+    D) After deploy
+    Javob: B
+
+19. PPR (Partial Prerendering) architecture:
+    A) Full static
+    B) Static shell + Suspense holes for dynamic content
+    C) Full dynamic
+    D) ISR
+    Javob: B
+
+20. PPR - static shell generation:
+    A) Runtime
+    B) Build time - HTML with Suspense fallback placeholders
+    C) First request
+    D) Deploy time
+    Javob: B
+
+21. PPR - dynamic holes:
+    A) Client render
+    B) Edge/Server streaming into Suspense boundaries
+    C) API call
+    D) WebSocket
+    Javob: B
+
+22. dynamicIO flag:
+    A) Static rendering
+    B) Dynamic functions (cookies, headers) automatic dynamic opt-in
+    C) IO operations
+    D) Database IO
+    Javob: B
+
+23. useOptimistic() hook:
+    A) State hook
+    B) Optimistic UI update (Server Action pending)
+    C) Effect hook
+    D) Ref hook
+    Javob: B
+
+24. startTransition + Server Action:
+    A) Normal call
+    B) Non-blocking UI update, pending state
+    C) Sync call
+    D) Async call
+    Javob: B
+
+25. Server Action progressive enhancement:
+    A) JS required
+    B) JavaScript disabled bo'lsa ham form ishlaydi
+    C) No fallback
+    D) Client only
+    Javob: B
+
+26. Server Action - inline vs module:
+    A) Bir xil
+    B) Inline - function ichida 'use server', Module - file level
+    C) Inline only
+    D) Module only
+    Javob: B
+
+27. Server Action size limit:
+    A) No limit
+    B) 1MB default (configurable via serverActions.bodySizeLimit)
+    C) 10MB
+    D) 100KB
+    Javob: B
+
+28. Server Action closures:
+    A) All variables
+    B) Faqat serializable values closure da capture bo'ladi
+    C) No closures
+    D) Functions ham
+    Javob: B
+
+29. bind() with Server Actions:
+    A) Normal bind
+    B) Partial arguments bind qilish (hidden form fields kabi)
+    C) Context bind
+    D) Event bind
+    Javob: B
+
+30. Server Action encryption:
+    A) Plain text
+    B) Closure values encrypted (NEXT_SERVER_ACTIONS_ENCRYPTION_KEY)
+    C) No encryption
+    D) Client encryption
+    Javob: B
+
+31. Route Segment Config options:
+    A) Single option
+    B) dynamic, dynamicParams, revalidate, fetchCache, runtime, ...
+    C) Faqat dynamic
+    D) Faqat revalidate
+    Javob: B
+
+32. fetchCache segment option:
+    A) No effect
+    B) Segment dagi barcha fetch lar uchun default cache behavior
+    C) Single fetch
+    D) API only
+    Javob: B
+
+33. fetchCache: 'force-no-store':
+    A) Cache all
+    B) Segment dagi barcha fetch larni no-store
+    C) Force cache
+    D) Auto cache
+    Javob: B
+
+34. preferredRegion config:
+    A) CDN region
+    B) Edge Function deployment region preference
+    C) Database region
+    D) User region
+    Javob: B
+
+35. maxDuration config:
+    A) Cache duration
+    B) Serverless function timeout
+    C) Request duration
+    D) Build duration
+    Javob: B
+
+36. Edge Runtime limitations:
+    A) No limitations
+    B) No Node.js APIs (fs, child_process), limited npm packages
+    C) No fetch
+    D) No Response
+    Javob: B
+
+37. Edge vs Node.js runtime tradeoffs:
+    A) Edge har doim yaxshi
+    B) Edge - low latency, limited APIs; Node - full APIs, cold start
+    C) Node har doim yaxshi
+    D) Bir xil
+    Javob: B
+
+38. Middleware execution order:
+    A) Random
+    B) matcher pattern order, single middleware file
+    C) Alphabetical
+    D) Multiple files
+    Javob: B
+
+39. Middleware vs Route Handler:
+    A) Bir xil
+    B) Middleware - request intercept, Route Handler - response generate
+    C) Middleware - response
+    D) Route Handler - intercept
+    Javob: B
+
+40. Middleware chaining pattern:
+    A) Multiple files
+    B) Single middleware with conditional logic
+    C) Import chain
+    D) Plugin chain
+    Javob: B
+
+41. NextResponse.next() with headers:
+    A) No modification
+    B) Request headers modify qilib davom ettirish
+    C) Response headers
+    D) Replace headers
+    Javob: B
+
+42. Parallel Routes - @slot naming convention:
+    A) Any name
+    B) @ prefix - layout props ga slot sifatida keladi
+    C) # prefix
+    D) $ prefix
+    Javob: B
+
+43. Parallel Routes - conditional rendering:
+    A) Always render
+    B) slot content mavjudligiga qarab render (null check)
+    C) Never render
+    D) Random render
+    Javob: B
+
+44. Intercepting Routes - usecase:
+    A) Normal routing
+    B) Modal patterns, tab UIs, parallel experiences
+    C) API routing
+    D) Error routing
+    Javob: B
+
+45. Intercepting + useRouter:
+    A) Direct navigate
+    B) router.back() to close modal, preserving parallel route
+    C) router.push
+    D) router.refresh
+    Javob: B
+
+46. route.js vs page.js bir papkada:
+    A) Both work
+    B) Conflict - birini tanlash kerak
+    C) route.js wins
+    D) page.js wins
+    Javob: B
+
+47. Route Handler - CORS headers:
+    A) Automatic
+    B) Manual Response headers + OPTIONS handler
+    C) Middleware only
+    D) next.config.js only
+    Javob: B
+
+48. Route Handler - binary response (PDF, image):
+    A) return JSON
+    B) return new Response(buffer, { headers: { 'Content-Type': '...' } })
+    C) return file
+    D) return stream only
+    Javob: B
+
+49. Route Handlers - Webhooks pattern:
+    A) GET only
+    B) POST + signature verification (Stripe, GitHub, ...)
+    C) PUT only
+    D) DELETE only
+    Javob: B
+
+50. Image optimization - external images:
+    A) Automatic
+    B) remotePatterns config + Next.js image proxy
+    C) Direct load
+    D) No optimization
+    Javob: B
+
+51. Image - deviceSizes/imageSizes config:
+    A) Default only
+    B) Custom responsive breakpoints belgilash
+    C) No config
+    D) CSS only
+    Javob: B
+
+52. Image - formats: ['image/avif', 'image/webp']:
+    A) Default formats
+    B) Supported output formats priority
+    C) Input formats
+    D) No formats
+    Javob: B
+
+53. Image - minimumCacheTTL:
+    A) No cache
+    B) Optimized image cache muddati (sekundlarda)
+    C) Browser cache
+    D) CDN cache
+    Javob: B
+
+54. next/image - unoptimized prop:
+    A) Always optimize
+    B) Optimization o'chirish (external CDN, SVG, ...)
+    C) Low quality
+    D) High quality
+    Javob: B
+
+55. Metadata - generateMetadata async:
+    A) Static only
+    B) Params/searchParams ga asoslangan dynamic metadata
+    C) Sync only
+    D) No params
+    Javob: B
+
+56. Metadata - parent resolution:
+    A) Override only
+    B) Parent metadata + extend/override pattern
+    C) No parent
+    D) Replace all
+    Javob: B
+
+57. Metadata - openGraph images:
+    A) Static only
+    B) Static, dynamic (opengraph-image.js), yoki external URL
+    C) No OG support
+    D) Manual only
+    Javob: B
+
+58. JSON-LD (structured data):
+    A) Automatic
+    B) Manual <script type="application/ld+json"> in layout/page
+    C) Plugin
+    D) API
+    Javob: B
+
+59. Custom Document (_document.js - Pages Router):
+    A) App Router equivalent
+    B) Faqat Pages Router - custom HTML document
+    C) Both routers
+    D) Deprecated
+    Javob: B
+
+60. Turbopack architecture:
+    A) JavaScript based
+    B) Rust based - incremental compilation, parallel processing
+    C) Go based
+    D) C++ based
+    Javob: B
+
+61. Turbopack vs Webpack:
+    A) Same speed
+    B) Turbopack - faster HMR, incremental builds
+    C) Webpack faster
+    D) No difference
+    Javob: B
+
+62. HMR (Hot Module Replacement) speed:
+    A) Full rebuild
+    B) Turbopack - incremental, faqat o'zgargan modules
+    C) Full reload
+    D) No HMR
+    Javob: B
+
+63. next.config.js - webpack override:
+    A) Not possible
+    B) webpack: (config) => { return modified config }
+    C) Automatic
+    D) Plugin only
+    Javob: B
+
+64. Bundle analyzer:
+    A) Built-in
+    B) @next/bundle-analyzer plugin
+    C) Manual analysis
+    D) No analyzer
+    Javob: B
+
+65. Tree shaking Next.js:
+    A) No tree shaking
+    B) Automatic - unused exports remove bo'ladi
+    C) Manual configuration
+    D) Plugin required
+    Javob: B
+
+66. modularizeImports config:
+    A) No effect
+    B) Library imports optimizatsiyasi (lodash, MUI, ...)
+    C) Route imports
+    D) Image imports
+    Javob: B
+
+67. transpilePackages config:
+    A) All packages
+    B) node_modules dan specific packages transpile
+    C) No transpile
+    D) Auto detect
+    Javob: B
+
+68. optimizePackageImports:
+    A) Manual only
+    B) Automatic barrel file optimization
+    C) No optimization
+    D) Build only
+    Javob: B
+
+69. Server Components - database direct access:
+    A) Not possible
+    B) Prisma/Drizzle/etc directly in async components
+    C) API route only
+    D) Client fetch only
+    Javob: B
+
+70. Connection pooling (serverless):
+    A) Default pooling
+    B) Prisma Accelerate, PgBouncer, yoki connection limit
+    C) No pooling
+    D) Automatic
+    Javob: B
+
+71. Vercel Postgres/KV/Blob:
+    A) Self-hosted only
+    B) Vercel managed serverless storage
+    C) AWS only
+    D) GCP only
+    Javob: B
+
+72. Edge Config (Vercel):
+    A) Normal config
+    B) Ultra-low latency global key-value store
+    C) Database
+    D) Cache
+    Javob: B
+
+73. Testing - React Testing Library + Next.js:
+    A) Not compatible
+    B) Compatible with async Server Components testing
+    C) Client only
+    D) E2E only
+    Javob: B
+
+74. next/jest preset:
+    A) Manual config
+    B) Automatic Jest configuration for Next.js
+    C) No Jest support
+    D) Vitest only
+    Javob: B
+
+75. Playwright E2E tests:
+    A) Not supported
+    B) webServer config + full Next.js testing
+    C) Unit tests only
+    D) API tests only
+    Javob: B
+
+76. MSW (Mock Service Worker) + Next.js:
+    A) Not compatible
+    B) Server handlers for mocking external APIs
+    C) Client only
+    D) No mocking
+    Javob: B
+
+77. Storybook + Server Components:
+    A) Full support
+    B) Limited - Client Component wrappers kerak
+    C) No support
+    D) RSC mode
+    Javob: B
+
+78. CI/CD - build caching:
+    A) No caching
+    B) .next/cache - build cache, turbo remote caching
+    C) Manual cache
+    D) No remote cache
+    Javob: B
+
+79. Docker deployment:
+    A) Standard build
+    B) output: 'standalone' - minimal image
+    C) Full node_modules
+    D) No Docker support
+    Javob: B
+
+80. Self-hosting considerations:
+    A) Vercel only
+    B) Custom server, ISR implementation, image optimization
+    C) No self-hosting
+    D) Cloud only
+    Javob: B
+
+81. Custom server (server.js):
+    A) Recommended
+    B) Possible but loses some optimizations (Turbopack, ...)
+    C) Required
+    D) Not possible
+    Javob: B
+
+82. ISR self-hosting:
+    A) Automatic
+    B) File system cache yoki custom cache handler kerak
+    C) Not supported
+    D) Redis required
+    Javob: B
+
+83. incrementalCacheHandlerPath:
+    A) Default handler
+    B) Custom ISR cache handler (Redis, S3, ...)
+    C) No customization
+    D) Vercel only
+    Javob: B
+
+84. Static Export limitations:
+    A) No limitations
+    B) No dynamic routes, no ISR, no middleware, no image optimization
+    C) Full features
+    D) API only limitation
+    Javob: B
+
+85. Standalone output structure:
+    A) Full app
+    B) .next/standalone - minimal server + required node_modules
+    C) Static only
+    D) Docker image
+    Javob: B
+
+86. NEXT_SHARP_PATH:
+    A) Route path
+    B) Custom Sharp binary path for image optimization
+    C) Config path
+    D) Build path
+    Javob: B
+
+87. Multi-zone deployment:
+    A) Single zone
+    B) Multiple Next.js apps combined (rewrites/basePath)
+    C) Geographic zones
+    D) Time zones
+    Javob: B
+
+88. basePath config:
+    A) No effect
+    B) App /subpath da deploy (multi-zone)
+    C) Route path
+    D) Asset path
+    Javob: B
+
+89. assetPrefix config:
+    A) Route prefix
+    B) Static assets uchun CDN prefix
+    C) API prefix
+    D) Page prefix
+    Javob: B
+
+90. Security headers best practices:
+    A) No headers
+    B) CSP, X-Frame-Options, X-Content-Type-Options, ...
+    C) Auth headers only
+    D) CORS only
+    Javob: B
+
+91. Rate limiting patterns:
+    A) Built-in
+    B) Middleware + external store (Redis, Upstash)
+    C) No rate limiting
+    D) API only
+    Javob: B
+
+92. CSRF protection:
+    A) Automatic
+    B) Server Actions auto-protected, custom for APIs
+    C) No protection
+    D) Client only
+    Javob: B
+
+93. Server Actions - origin check:
+    A) No check
+    B) Automatic Origin/Host header validation
+    C) Manual check
+    D) Middleware check
+    Javob: B
+
+94. allowedOrigins (Server Actions):
+    A) No config
+    B) experimental.serverActions.allowedOrigins
+    C) Automatic
+    D) Middleware only
+    Javob: B
+
+95. Monitoring - Vercel Analytics:
+    A) Manual setup
+    B) @vercel/analytics - automatic performance tracking
+    C) No analytics
+    D) Third party only
+    Javob: B
+
+96. Vercel Speed Insights:
+    A) Analytics same
+    B) Real user Core Web Vitals monitoring
+    C) Build insights
+    D) Code insights
+    Javob: B
+
+97. useReportWebVitals():
+    A) No hook
+    B) Custom Web Vitals reporting hook
+    C) Automatic
+    D) Server only
+    Javob: B
+
+98. Error tracking (Sentry):
+    A) No support
+    B) @sentry/nextjs - automatic error boundary + source maps
+    C) Manual only
+    D) Client only
+    Javob: B
+
+99. Feature flags pattern:
+    A) Built-in
+    B) Middleware + Edge Config/LaunchDarkly/etc
+    C) No flags
+    D) Build time only
+    Javob: B
+
+100. A/B testing pattern:
+     A) Built-in
+     B) Middleware + cookie/header based routing
+     C) Client only
+     D) Not possible
+     Javob: B
+
+================================================
+                   YAKUNLANDI
+================================================

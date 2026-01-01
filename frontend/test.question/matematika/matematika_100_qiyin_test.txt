@@ -1,0 +1,706 @@
+MATEMATIKA - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+====================================================
+
+1. lim(x→0) (sin x)/x = ?
+   A) 0
+   B) 1
+   C) ∞
+   D) Mavjud emas
+   Javob: B
+
+2. lim(x→0) (1 - cos x)/x² = ?
+   A) 0
+   B) 1/2
+   C) 1
+   D) 2
+   Javob: B
+
+3. lim(x→∞) (1 + 1/x)^x = ?
+   A) 1
+   B) e
+   C) ∞
+   D) 0
+   Javob: B
+
+4. lim(x→0) (e^x - 1)/x = ?
+   A) 0
+   B) 1
+   C) e
+   D) ∞
+   Javob: B
+
+5. lim(x→0) (ln(1 + x))/x = ?
+   A) 0
+   B) 1
+   C) e
+   D) ln 2
+   Javob: B
+
+6. lim(x→0) (tan x)/x = ?
+   A) 0
+   B) 1
+   C) ∞
+   D) π
+   Javob: B
+
+7. lim(x→∞) (x² + 3x)/(2x² - 1) = ?
+   A) 0
+   B) 1/2
+   C) 1
+   D) ∞
+   Javob: B
+
+8. lim(x→∞) (3x³ - x)/(x³ + 2x²) = ?
+   A) 0
+   B) 3
+   C) 1
+   D) ∞
+   Javob: B
+
+9. f(x) = x³ bo'lsa, f'(x) = ?
+   A) x²
+   B) 3x²
+   C) 3x³
+   D) x³/3
+   Javob: B
+
+10. f(x) = sin x bo'lsa, f'(x) = ?
+    A) -cos x
+    B) cos x
+    C) sin x
+    D) -sin x
+    Javob: B
+
+11. f(x) = cos x bo'lsa, f'(x) = ?
+    A) sin x
+    B) -sin x
+    C) cos x
+    D) -cos x
+    Javob: B
+
+12. f(x) = e^x bo'lsa, f'(x) = ?
+    A) xe^(x-1)
+    B) e^x
+    C) e^(x-1)
+    D) xe^x
+    Javob: B
+
+13. f(x) = ln x bo'lsa, f'(x) = ?
+    A) x
+    B) 1/x
+    C) ln x
+    D) 1/(x ln x)
+    Javob: B
+
+14. f(x) = a^x bo'lsa, f'(x) = ?
+    A) xa^(x-1)
+    B) a^x · ln a
+    C) a^x / ln a
+    D) a^(x-1)
+    Javob: B
+
+15. f(x) = log_a(x) bo'lsa, f'(x) = ?
+    A) 1/x
+    B) 1/(x · ln a)
+    C) ln a / x
+    D) x · ln a
+    Javob: B
+
+16. f(x) = tan x bo'lsa, f'(x) = ?
+    A) -1/cos²x
+    B) 1/cos²x = sec²x
+    C) sin x/cos x
+    D) -sin²x
+    Javob: B
+
+17. f(x) = cot x bo'lsa, f'(x) = ?
+    A) 1/sin²x
+    B) -1/sin²x = -csc²x
+    C) cos x/sin x
+    D) -cos²x
+    Javob: B
+
+18. f(x) = arcsin x bo'lsa, f'(x) = ?
+    A) 1/√(1 - x²)
+    B) 1/√(1 + x²)
+    C) -1/√(1 - x²)
+    D) x/√(1 - x²)
+    Javob: A
+
+19. f(x) = arctan x bo'lsa, f'(x) = ?
+    A) 1/√(1 + x²)
+    B) 1/(1 + x²)
+    C) -1/(1 + x²)
+    D) x/(1 + x²)
+    Javob: B
+
+20. (uv)' = ? (Leybnits qoidasi)
+    A) u'v'
+    B) u'v + uv'
+    C) u'v - uv'
+    D) (u' + v')/2
+    Javob: B
+
+21. (u/v)' = ?
+    A) u'/v'
+    B) (u'v - uv')/v²
+    C) (u'v + uv')/v²
+    D) u'v'/v²
+    Javob: B
+
+22. [f(g(x))]' = ? (Zanjir qoidasi)
+    A) f'(x) · g'(x)
+    B) f'(g(x)) · g'(x)
+    C) f(g'(x))
+    D) f'(g(x))
+    Javob: B
+
+23. f(x) = (2x + 1)⁵ bo'lsa, f'(x) = ?
+    A) 5(2x + 1)⁴
+    B) 10(2x + 1)⁴
+    C) 2(2x + 1)⁵
+    D) 5·2(2x + 1)⁵
+    Javob: B
+
+24. f(x) = sin(3x) bo'lsa, f'(x) = ?
+    A) cos(3x)
+    B) 3cos(3x)
+    C) -3cos(3x)
+    D) 3sin(3x)
+    Javob: B
+
+25. f(x) = e^(2x) bo'lsa, f'(x) = ?
+    A) e^(2x)
+    B) 2e^(2x)
+    C) 2xe^(2x)
+    D) e^(2x)/2
+    Javob: B
+
+26. f(x) = ln(x²) bo'lsa, f'(x) = ?
+    A) 1/x²
+    B) 2/x
+    C) 2x
+    D) 1/(2x)
+    Javob: B
+
+27. f(x) = x·e^x bo'lsa, f'(x) = ?
+    A) e^x
+    B) (1 + x)e^x
+    C) xe^x
+    D) (x + 1)e^(x-1)
+    Javob: B
+
+28. f(x) = x² sin x bo'lsa, f'(x) = ?
+    A) 2x cos x
+    B) 2x sin x + x² cos x
+    C) x² cos x
+    D) 2x sin x - x² cos x
+    Javob: B
+
+29. f''(x) nima deyiladi?
+    A) Birinchi tartibli hosila
+    B) Ikkinchi tartibli hosila
+    C) Integral
+    D) Differensial
+    Javob: B
+
+30. f(x) = x⁴ bo'lsa, f''(x) = ?
+    A) 4x³
+    B) 12x²
+    C) 24x
+    D) 4x²
+    Javob: B
+
+31. f(x) = sin x bo'lsa, f''(x) = ?
+    A) cos x
+    B) -sin x
+    C) sin x
+    D) -cos x
+    Javob: B
+
+32. Funksiya maksimum/minimum nuqtasida f'(x) = ?
+    A) > 0
+    B) = 0
+    C) < 0
+    D) = 1
+    Javob: B
+
+33. f''(x) > 0 bo'lganda funksiya grafigi qanday?
+    A) Konkav (pastga qarab)
+    B) Konveks (yuqoriga qarab, qavariq)
+    C) To'g'ri chiziq
+    D) Aniqlab bo'lmaydi
+    Javob: B
+
+34. Egilish nuqtasida f''(x) = ?
+    A) > 0
+    B) = 0 (va f''' ≠ 0)
+    C) < 0
+    D) = 1
+    Javob: B
+
+35. L'Hôpital qoidasi qachon qo'llaniladi?
+    A) 0/1 holatda
+    B) 0/0 yoki ∞/∞ holatda
+    C) 1/0 holatda
+    D) Har doim
+    Javob: B
+
+36. lim(x→0) (x - sin x)/x³ ni L'Hôpital bilan hisoblang:
+    A) 0
+    B) 1/6
+    C) 1/3
+    D) 1/2
+    Javob: B
+
+37. ∫x^n dx = ? (n ≠ -1)
+    A) nx^(n-1) + C
+    B) x^(n+1)/(n+1) + C
+    C) x^n/n + C
+    D) (n+1)x^n + C
+    Javob: B
+
+38. ∫(1/x) dx = ?
+    A) x + C
+    B) ln|x| + C
+    C) 1/x² + C
+    D) -1/x + C
+    Javob: B
+
+39. ∫e^x dx = ?
+    A) xe^x + C
+    B) e^x + C
+    C) e^(x+1) + C
+    D) e^x/x + C
+    Javob: B
+
+40. ∫sin x dx = ?
+    A) cos x + C
+    B) -cos x + C
+    C) sin x + C
+    D) -sin x + C
+    Javob: B
+
+41. ∫cos x dx = ?
+    A) -sin x + C
+    B) sin x + C
+    C) cos x + C
+    D) -cos x + C
+    Javob: B
+
+42. ∫a^x dx = ?
+    A) a^x + C
+    B) a^x/ln a + C
+    C) a^x · ln a + C
+    D) xa^(x-1) + C
+    Javob: B
+
+43. ∫1/(1 + x²) dx = ?
+    A) ln(1 + x²) + C
+    B) arctan x + C
+    C) arcsin x + C
+    D) 1/(2x) + C
+    Javob: B
+
+44. ∫1/√(1 - x²) dx = ?
+    A) arctan x + C
+    B) arcsin x + C
+    C) arccos x + C
+    D) ln|x| + C
+    Javob: B
+
+45. ∫sec²x dx = ?
+    A) sec x + C
+    B) tan x + C
+    C) -tan x + C
+    D) cot x + C
+    Javob: B
+
+46. ∫(3x² + 2x - 1) dx = ?
+    A) 6x + 2 + C
+    B) x³ + x² - x + C
+    C) 3x³ + x² - x + C
+    D) x³ + 2x² - x + C
+    Javob: B
+
+47. ∫e^(2x) dx = ?
+    A) e^(2x) + C
+    B) e^(2x)/2 + C
+    C) 2e^(2x) + C
+    D) e^(2x)/2x + C
+    Javob: B
+
+48. ∫sin(3x) dx = ?
+    A) cos(3x) + C
+    B) -cos(3x)/3 + C
+    C) -3cos(3x) + C
+    D) cos(3x)/3 + C
+    Javob: B
+
+49. ∫x·e^x dx = ? (Bo'laklab integrallash)
+    A) e^x + C
+    B) (x - 1)e^x + C
+    C) xe^x + C
+    D) (x + 1)e^x + C
+    Javob: B
+
+50. ∫ln x dx = ?
+    A) 1/x + C
+    B) x ln x - x + C
+    C) x ln x + C
+    D) ln x / x + C
+    Javob: B
+
+51. ∫x sin x dx = ?
+    A) x cos x + C
+    B) sin x - x cos x + C
+    C) -x cos x + C
+    D) cos x + x sin x + C
+    Javob: B
+
+52. ∫[0,1] x² dx = ?
+    A) 1
+    B) 1/3
+    C) 1/2
+    D) 2/3
+    Javob: B
+
+53. ∫[0,π] sin x dx = ?
+    A) 0
+    B) 2
+    C) 1
+    D) π
+    Javob: B
+
+54. ∫[1,e] (1/x) dx = ?
+    A) e - 1
+    B) 1
+    C) e
+    D) ln e - ln 1 = 1
+    Javob: B
+
+55. y = x² va x o'qi orasidagi yuza [0, 2] oraliqda:
+    A) 4
+    B) 8/3
+    C) 2
+    D) 4/3
+    Javob: B
+
+56. y = x², y = x to'g'ri chiziqlar orasidagi yuza [0,1]:
+    A) 1/2
+    B) 1/6
+    C) 1/3
+    D) 1/4
+    Javob: B
+
+57. Aniq integralning geometrik ma'nosi:
+    A) Egri chiziq uzunligi
+    B) Egri chiziq ostidagi yuza
+    C) Funksiya qiymati
+    D) Hosila
+    Javob: B
+
+58. y' + 2y = 0 differensial tenglamaning umumiy yechimi:
+    A) y = Ce^(2x)
+    B) y = Ce^(-2x)
+    C) y = C·2x
+    D) y = C/e^(2x)
+    Javob: B
+
+59. y' = ky differensial tenglamaning yechimi:
+    A) y = kx + C
+    B) y = Ce^(kx)
+    C) y = Ck^x
+    D) y = C/k^x
+    Javob: B
+
+60. y'' + y = 0 differensial tenglamaning umumiy yechimi:
+    A) y = Ce^x
+    B) y = C₁cos x + C₂sin x
+    C) y = C₁e^x + C₂e^(-x)
+    D) y = Cx
+    Javob: B
+
+61. y'' - 4y = 0 differensial tenglamaning yechimi:
+    A) y = C₁cos 2x + C₂sin 2x
+    B) y = C₁e^(2x) + C₂e^(-2x)
+    C) y = Ce^(4x)
+    D) y = C₁ + C₂x
+    Javob: B
+
+62. y'' + 4y' + 4y = 0 tenglamaning xarakteristik tenglamasi:
+    A) r² + 4 = 0
+    B) r² + 4r + 4 = 0
+    C) r² - 4r + 4 = 0
+    D) r² + 4r = 0
+    Javob: B
+
+63. r² + 4r + 4 = 0 tenglamaning ildizlari:
+    A) r = 2, r = 2
+    B) r = -2, r = -2 (karrali)
+    C) r = 2, r = -2
+    D) r = ±2i
+    Javob: B
+
+64. Karrali ildiz r = -2 uchun umumiy yechim:
+    A) y = Ce^(-2x)
+    B) y = (C₁ + C₂x)e^(-2x)
+    C) y = C₁e^(-2x) + C₂e^(2x)
+    D) y = C₁cos 2x + C₂sin 2x
+    Javob: B
+
+65. Teylor qatori: e^x = ?
+    A) 1 + x + x² + x³ + ...
+    B) 1 + x + x²/2! + x³/3! + ...
+    C) x + x²/2 + x³/3 + ...
+    D) 1 - x + x² - x³ + ...
+    Javob: B
+
+66. Teylor qatori: sin x = ?
+    A) 1 - x²/2! + x⁴/4! - ...
+    B) x - x³/3! + x⁵/5! - ...
+    C) x + x³/3! + x⁵/5! + ...
+    D) 1 + x + x²/2! + ...
+    Javob: B
+
+67. Teylor qatori: cos x = ?
+    A) x - x³/3! + x⁵/5! - ...
+    B) 1 - x²/2! + x⁴/4! - ...
+    C) 1 + x²/2! + x⁴/4! + ...
+    D) x + x²/2! + x³/3! + ...
+    Javob: B
+
+68. Maklyuren qatori: ln(1 + x) = ? (|x| < 1)
+    A) x + x²/2 + x³/3 + ...
+    B) x - x²/2 + x³/3 - x⁴/4 + ...
+    C) 1 + x + x² + x³ + ...
+    D) x - x² + x³ - x⁴ + ...
+    Javob: B
+
+69. Geometrik qator yig'indisi: 1 + x + x² + x³ + ... (|x| < 1)
+    A) 1/(1 + x)
+    B) 1/(1 - x)
+    C) x/(1 - x)
+    D) 1/(x - 1)
+    Javob: B
+
+70. ∂f/∂x (xususiy hosila) f(x,y) = x²y + xy² uchun:
+    A) x² + y²
+    B) 2xy + y²
+    C) x² + 2xy
+    D) 2x + y
+    Javob: B
+
+71. ∂f/∂y f(x,y) = x²y + xy² uchun:
+    A) 2xy + y²
+    B) x² + 2xy
+    C) x² + y²
+    D) 2x + 2y
+    Javob: B
+
+72. Gradient ∇f = ?
+    A) ∂f/∂x + ∂f/∂y
+    B) (∂f/∂x, ∂f/∂y)
+    C) ∂²f/∂x∂y
+    D) ∂f/∂x · ∂f/∂y
+    Javob: B
+
+73. f(x,y) = x² + y² funksiyaning (0,0) da minimumi bormi?
+    A) Yo'q
+    B) Ha, minimum = 0
+    C) Maksimum
+    D) Egilish nuqtasi
+    Javob: B
+
+74. Ikki o'zgaruvchili funksiya ekstremum sharti:
+    A) ∂f/∂x = 0
+    B) ∂f/∂x = 0 va ∂f/∂y = 0
+    C) ∂f/∂x + ∂f/∂y = 0
+    D) ∂²f/∂x² = 0
+    Javob: B
+
+75. Ikkilamchi integral ∫∫_D f(x,y) dA ning geometrik ma'nosi:
+    A) Egri chiziq uzunligi
+    B) D ustidagi sirt ostidagi hajm
+    C) Yuza
+    D) Perimetr
+    Javob: B
+
+76. ∫∫_D 1 dA = ?
+    A) 0
+    B) D sohaning yuzasi
+    C) 1
+    D) ∞
+    Javob: B
+
+77. Qo'sh integral ∫[0,1]∫[0,1] xy dx dy = ?
+    A) 1
+    B) 1/4
+    C) 1/2
+    D) 1/3
+    Javob: B
+
+78. Polyar koordinatalarda x = ?
+    A) r sin θ
+    B) r cos θ
+    C) r/cos θ
+    D) r/sin θ
+    Javob: B
+
+79. Polyar koordinatalarda y = ?
+    A) r cos θ
+    B) r sin θ
+    C) r/sin θ
+    D) r/cos θ
+    Javob: B
+
+80. Polyar koordinatalarda dA = ?
+    A) dr dθ
+    B) r dr dθ
+    C) r² dr dθ
+    D) dr/r dθ
+    Javob: B
+
+81. ∫_C F·dr (chiziqli integral) nima hisoblaydi?
+    A) Yuza
+    B) C bo'ylab bajarilgan ish
+    C) Hajm
+    D) Uzunlik
+    Javob: B
+
+82. Grin teoremasi bog'laydi:
+    A) Sirt va hajm integrallarini
+    B) Chiziqli va ikkilamchi integrallarini
+    C) Oddiy va ikkilamchi integrallarini
+    D) Hajm va chiziqli integrallarini
+    Javob: B
+
+83. Vektorli maydon F = (P, Q) konservativ bo'lsa:
+    A) ∂P/∂x = ∂Q/∂y
+    B) ∂P/∂y = ∂Q/∂x
+    C) P = Q
+    D) ∂P/∂x + ∂Q/∂y = 0
+    Javob: B
+
+84. div F (divergensiya) nima?
+    A) Vektor
+    B) Skalyar (∂P/∂x + ∂Q/∂y + ∂R/∂z)
+    C) Matritsa
+    D) Tensor
+    Javob: B
+
+85. curl F (rotor) nima?
+    A) Skalyar
+    B) Vektor
+    C) Matritsa
+    D) Tensor
+    Javob: B
+
+86. Kompleks son z = a + bi uchun z̄ (sopryajeniy) = ?
+    A) a + bi
+    B) a - bi
+    C) -a + bi
+    D) -a - bi
+    Javob: B
+
+87. z · z̄ = ?
+    A) 0
+    B) |z|² = a² + b²
+    C) 2a
+    D) 2bi
+    Javob: B
+
+88. Eyler formulasi: e^(iθ) = ?
+    A) cos θ + sin θ
+    B) cos θ + i sin θ
+    C) sin θ + i cos θ
+    D) i(cos θ + sin θ)
+    Javob: B
+
+89. e^(iπ) = ?
+    A) 1
+    B) -1
+    C) i
+    D) -i
+    Javob: B
+
+90. Kompleks sonning trigonometrik ko'rinishi z = r(cos θ + i sin θ) da r = ?
+    A) Re(z)
+    B) |z| (modul)
+    C) Im(z)
+    D) arg(z)
+    Javob: B
+
+91. z₁z₂ ko'paytmasida arg(z₁z₂) = ?
+    A) arg(z₁) · arg(z₂)
+    B) arg(z₁) + arg(z₂)
+    C) arg(z₁) - arg(z₂)
+    D) arg(z₁) / arg(z₂)
+    Javob: B
+
+92. De Muavr formulasi: (cos θ + i sin θ)^n = ?
+    A) cos(θ^n) + i sin(θ^n)
+    B) cos(nθ) + i sin(nθ)
+    C) n cos θ + ni sin θ
+    D) cos θ^n + i sin θ^n
+    Javob: B
+
+93. 3×3 matritsa determinantini hisoblash (Sarrus qoidasi):
+    A) Faqat diagonal
+    B) Asosiy diagonal - yordamchi diagonal
+    C) Barcha elementlar yig'indisi
+    D) Diagonal ko'paytmasi
+    Javob: B
+
+94. A matritsaning rangi (rank) nima?
+    A) Determinant
+    B) Chiziqli mustaqil qatorlar (yoki ustunlar) soni
+    C) Elementlar yig'indisi
+    D) O'lchami
+    Javob: B
+
+95. Ax = b tenglamalar sistemasi yechimga ega bo'lishi sharti:
+    A) det(A) > 0
+    B) rank(A) = rank(A|b)
+    C) A = I
+    D) b = 0
+    Javob: B
+
+96. λ - A matritsaning xos qiymati (eigenvalue) bo'lsa:
+    A) A - λI = 0
+    B) det(A - λI) = 0
+    C) Av = v
+    D) A = λ
+    Javob: B
+
+97. Xos vektor (eigenvector) v uchun:
+    A) Av = 0
+    B) Av = λv
+    C) v = λA
+    D) A = λv
+    Javob: B
+
+98. Diagonal matritsa bo'lishi uchun:
+    A) Barcha elementlar teng
+    B) Faqat diagonal elementlar noldan farqli
+    C) Determinant = 0
+    D) Simmetrik
+    Javob: B
+
+99. Ortogonal matritsa Q uchun Q^T = ?
+    A) Q
+    B) Q⁻¹
+    C) -Q
+    D) 0
+    Javob: B
+
+100. Simmetrik matritsa A uchun A^T = ?
+     A) -A
+     B) A
+     C) A⁻¹
+     D) 0
+     Javob: B
+
+====================================================
+                     YAKUNLANDI
+====================================================

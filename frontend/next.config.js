@@ -2,7 +2,24 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost', 'api.bilimdon.uz', 't.me'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 't.me',
+        pathname: '/i/userpic/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3001',
+        pathname: '/uploads/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.bilimdon.uz',
+        pathname: '/uploads/**',
+      },
+    ],
   },
   async rewrites() {
     return [

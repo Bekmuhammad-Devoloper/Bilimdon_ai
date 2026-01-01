@@ -1,0 +1,2012 @@
+1. Redis RESP3 protocol yangiliklari?1. Redis single-threaded architecture?QIYIN DARAJA (ADVANCED)
+
+   A) Bir xil RESP2
+
+   B) Map, Set, Double, Boolean, Verbatim types   A) Multi-threadedVARIANT 1
+
+   C) Binary only
+
+   D) JSON only   B) Event loop, I/O multiplexing
+
+   Javob: B
+
+   C) Thread poolRedis Single-threaded mi?
+
+2. CLIENT TRACKING command nima?
+
+   A) Client location   D) Process poolA) Multi-threaded
+
+   B) Client-side caching invalidation
+
+   C) Command tracking   Javob: BB) Ha, single event loop (I/O threads Redis 6+)
+
+   D) Error tracking
+
+   Javob: BC) Multi-process
+
+
+
+3. RESP3 PUSH messages nima?2. Redis 6.0 threaded I/O?D) Async multi-threaded
+
+   A) Message push
+
+   B) Server-initiated notifications   A) Full multi-threadJavob: B
+
+   C) Client push
+
+   D) Data push   B) I/O threads, single command executionRedis 6+ I/O threading nima?
+
+   Javob: B
+
+   C) No threadsA) Command threading
+
+4. Tracking BCAST mode?
+
+   A) Unicast   D) All threadsB) Network I/O parallel processing
+
+   B) Prefix-based broadcast invalidation
+
+   C) Multicast   Javob: BC) Full multi-threading
+
+   D) Anycast
+
+   Javob: BD) CPU threading
+
+
+
+5. Tracking REDIRECT option?3. io-threads configuration?Javob: B
+
+   A) Request redirect
+
+   B) Invalidation ni boshqa client ga   A) Command threadsRedis event loop qanday model?
+
+   C) Connection redirect
+
+   D) Command redirect   B) Network I/O threadsA) Thread pool
+
+   Javob: B
+
+   C) Background threadsB) Reactor pattern (epoll/kqueue)
+
+6. Redis io-threads setting?
+
+   A) CPU threads   D) Client threadsC) Fork model
+
+   B) Network I/O threads
+
+   C) Disk threads   Javob: BD) Worker threads
+
+   D) Memory threads
+
+   Javob: BJavob: B
+
+
+
+7. io-threads-do-reads setting?4. Event loop implementation?RESP protocol nima?
+
+   A) Write threads
+
+   B) Read operations ham threaded   A) libuvA) REST protocol
+
+   C) IO disable
+
+   D) Thread disable   B) ae (Redis custom), epoll/kqueueB) Redis Serialization Protocol
+
+    Javob: B
+
+   C) Node.jsC) HTTP protocol
+
+8. Redis threaded model?
+
+   A) Full multi-threaded   D) asyncioD) WebSocket protocol
+
+   B) Single-threaded command + multi-threaded I/O
+
+   C) Single-threaded only   Javob: BJavob: B
+
+   D) Multi-process
+
+   Javob: BRESP2 va RESP3 farqi?
+
+
+
+9. Redis Copy-on-Write (COW) mechanism?5. epoll vs select performance?A) Bir xil
+
+   A) Write copy
+
+   B) Fork da memory sharing   A) Bir xilB) RESP3 yangi data types (push, streaming)
+
+   C) Read copy
+
+   D) Data copy   B) epoll O(1), select O(n)C) RESP2 yangi
+
+   Javob: B
+
+   C) select fasterD) Farq yo'q
+
+10. jemalloc vs libc malloc Redis da?
+
+    A) Bir xil   D) No differenceJavob: B
+
+    B) jemalloc better fragmentation handling
+
+    C) libc yaxshiroq   Javob: BRedis memory fragmentation nima?
+
+    D) Performance bir xil
+
+    Javob: BA) Disk fragmentation
+
+
+
+11. activerehashing setting?6. Copy-on-Write (COW) RDB'da?B) Allocated vs used memory ratio
+
+    A) Passive rehash
+
+    B) Background incremental rehashing   A) No COWC) CPU fragmentation
+
+    C) No rehash
+
+    D) Manual rehash   B) Fork child copy pages on writeD) Network fragmentation
+
+    Javob: B
+
+   C) Full copyJavob: B
+
+12. hz setting Redis da?
+
+    A) Sound frequency   D) No forkActivedefrag Redis da nima?
+
+    B) Background tasks frequency
+
+    C) Network frequency   Javob: BA) Defrag disk
+
+    D) CPU frequency
+
+    Javob: BB) Memory fragmentation ni avtomatik fix qilish
+
+
+
+13. dynamic-hz setting?7. BGSAVE fork overhead?C) Defrag logs
+
+    A) Static hz
+
+    B) Auto-adjusted hz based on clients   A) No overheadD) Defrag config
+
+    C) Disabled hz
+
+    D) Manual hz   B) Memory page tables copyJavob: B
+
+    Javob: B
+
+   C) Full data copyRedis lazy freeing nima?
+
+14. OBJECT REFCOUNT command?
+
+    A) Object count   D) No forkA) Lazy loading
+
+    B) Shared object reference count
+
+    C) Reference type   Javob: BB) Background da memory free qilish
+
+    D) Object type
+
+    Javob: BC) Immediate free
+
+
+
+15. Redis shared integer objects?8. RDB compression?D) No freeing
+
+    A) All integers
+
+    B) 0-9999 range integers   A) No compressionJavob: B
+
+    C) Negative only
+
+    D) No sharing   B) LZF compressionUNLINK command DEL dan farqi?
+
+    Javob: B
+
+   C) GZIPA) Bir xil
+
+16. MEMORY MALLOC-SIZE command?
+
+    A) Total malloc   D) ZSTDB) UNLINK async delete (lazy free)
+
+    B) Pointer ning actual allocated size
+
+    C) Free memory   Javob: BC) UNLINK tezroq
+
+    D) Used memory
+
+    Javob: BD) Farq yo'q
+
+
+
+17. active-defrag setting?9. AOF rewrite process?Javob: B
+
+    A) Passive defrag
+
+    B) Online memory defragmentation   A) In-placeRedis copy-on-write nima?
+
+    C) No defrag
+
+    D) Manual defrag   B) Fork + incremental bufferA) File copy
+
+    Javob: B
+
+   C) BlockB) Fork da memory sharing (RDB/replication)
+
+18. active-defrag-threshold-lower?
+
+    A) Upper threshold   D) No rewriteC) Copy paste
+
+    B) Defrag boshlash fragmentation %
+
+    C) Memory threshold   Javob: BD) Backup copy
+
+    D) CPU threshold
+
+    Javob: BJavob: B
+
+
+
+19. Redis Cluster gossip protocol?10. AOF fsync "always" performance?Redis maxmemory-policy qanday ishlaydi?
+
+    A) HTTP protocol
+
+    B) Node state propagation    A) FastestA) Fixed policy
+
+    C) TCP protocol
+
+    D) UDP protocol    B) Slowest, most durableB) Eviction algorithm policy execution
+
+    Javob: B
+
+    C) MediumC) Random policy
+
+20. CLUSTER MEET command?
+
+    A) Cluster info    D) No differenceD) No policy
+
+    B) Node ni cluster ga qo'shadi
+
+    C) Cluster delete    Javob: BJavob: B
+
+    D) Cluster create
+
+    Javob: BLRU vs LFU eviction farqi?
+
+
+
+21. cluster-node-timeout setting?11. Mixed AOF-RDB persistence (Redis 7)?A) Bir xil
+
+    A) Connection timeout
+
+    B) Node failure detection time    A) SeparateB) LRU - recently used, LFU - frequently used
+
+    C) Command timeout
+
+    D) Response timeout    B) RDB preamble + AOF tailC) LFU older
+
+    Javob: B
+
+    C) AOF onlyD) Farq yo'q
+
+22. CLUSTER REPLICATE command?
+
+    A) Master set    D) RDB onlyJavob: B
+
+    B) Node ni replica qiladi
+
+    C) Data replicate    Javob: BRedis approximate LRU nima?
+
+    D) Config replicate
+
+    Javob: BA) Exact LRU
+
+
+
+23. CLUSTER RESET command?12. PSYNC nima?B) Sample-based LRU (performance)
+
+    A) Data reset
+
+    B) Node ni cluster dan chiqaradi    A) Full syncC) No LRU
+
+    C) Config reset
+
+    D) Connection reset    B) Partial synchronizationD) Full scan LRU
+
+    Javob: B
+
+    C) No syncJavob: B
+
+24. Redis Cluster cross-slot commands?
+
+    A) Allowed    D) Async syncRedis info memory nima ko'rsatadi?
+
+    B) Keys bir slot da bo'lishi kerak
+
+    C) Partially allowed    Javob: BA) CPU info
+
+    D) Always error
+
+    Javob: BB) Memory stats (used, peak, fragmentation)
+
+
+
+25. MIGRATE command nima?13. Replication backlog nima?C) Disk info
+
+    A) Server migrate
+
+    B) Key ni boshqa instance ga atomic transfer    A) Error logD) Network info
+
+    C) Data migrate
+
+    D) Config migrate    B) Partial sync bufferJavob: B
+
+    Javob: B
+
+    C) Command logJemalloc allocator nima?
+
+26. MIGRATE COPY option?
+
+    A) Move key    D) Access logA) Python allocator
+
+    B) Source da ham saqlaydi
+
+    C) Copy config    Javob: BB) Redis default memory allocator
+
+    D) Copy data
+
+    Javob: BC) System allocator
+
+
+
+27. MIGRATE REPLACE option?14. repl-backlog-size?D) Custom allocator
+
+    A) No replace
+
+    B) Destination da mavjud key ni overwrite    A) Log sizeJavob: B
+
+    C) Replace config
+
+    D) Replace connection    B) Partial sync buffer sizeRedis RDB format nima?
+
+    Javob: B
+
+    C) Error bufferA) Text file
+
+28. CLUSTER ADDSLOTS command?
+
+    A) Remove slots    D) Command bufferB) Binary snapshot format
+
+    B) Node ga slots assign
+
+    C) List slots    Javob: BC) JSON format
+
+    D) Count slots
+
+    Javob: BD) XML format
+
+
+
+29. CLUSTER DELSLOTS command?15. Diskless replication?Javob: B
+
+    A) Add slots
+
+    B) Node dan slots olib tashlash    A) Disk requiredRDB compression qanday?
+
+    C) Move slots
+
+    D) Copy slots    B) RDB via socket directlyA) No compression
+
+    Javob: B
+
+    C) No replicationB) LZF compression
+
+30. CLUSTER SETSLOT MIGRATING?
+
+    A) Slot delete    D) Memory onlyC) GZIP
+
+    B) Slot migration boshlash source da
+
+    C) Slot create    Javob: BD) ZIP
+
+    D) Slot complete
+
+    Javob: BJavob: B
+
+
+
+31. CLUSTER SETSLOT IMPORTING?16. WAIT command semantics?AOF fsync performance trade-off nima?
+
+    A) Slot export
+
+    B) Slot migration qabul qilish destination da    A) SleepA) No trade-off
+
+    C) Slot delete
+
+    D) Slot create    B) Wait for replica acknowledgmentB) Durability vs performance balance
+
+    Javob: B
+
+    C) BlockC) Only performance
+
+32. CLUSTER SETSLOT NODE?
+
+    A) Slot migrate    D) PauseD) Only durability
+
+    B) Migration tugashi, slot ownership finalize
+
+    C) Slot delete    Javob: BJavob: B
+
+    D) Slot import
+
+    Javob: BAOF always fsync qachon ishlatiladi?
+
+
+
+33. READONLY command Cluster da?17. min-replicas-to-write?A) Production default
+
+    A) Write mode
+
+    B) Replica dan read allow    A) Max replicasB) Maximum durability kerak bo'lsa
+
+    C) Read deny
+
+    D) Admin mode    B) Minimum replicas for writeC) High performance
+
+    Javob: B
+
+    C) No replicasD) Never
+
+34. READWRITE command?
+
+    A) Readonly    D) All replicasJavob: B
+
+    B) READONLY ni bekor qiladi
+
+    C) Write only    Javob: BAOF no fsync xavfi nima?
+
+    D) Read only
+
+    Javob: BA) Xavf yo'q
+
+
+
+35. Sentinel CKQUORUM command?18. Sentinel notification-script?B) OS crash da data loss (up to 30s)
+
+    A) Delete quorum
+
+    B) Quorum reachability check    A) No scriptsC) No data loss
+
+    C) Set quorum
+
+    D) Get quorum    B) Event callback scriptD) Better durability
+
+    Javob: B
+
+    C) Failover scriptJavob: B
+
+36. Sentinel FLUSHCONFIG command?
+
+    A) Delete config    D) Recovery scriptRedis Cluster gossip protocol nima?
+
+    B) Config ni disk ga yozadi
+
+    C) Reset config    Javob: BA) HTTP gossip
+
+    D) Load config
+
+    Javob: BB) Node info exchange protocol
+
+
+
+37. sentinel parallel-syncs setting?19. Redis Functions (Redis 7)?C) No gossip
+
+    A) No parallel
+
+    B) Failover da parallel sync replicas soni    A) Lua scriptsD) TCP gossip
+
+    C) Serial sync
+
+    D) Async sync    B) Named, persisted functionsJavob: B
+
+    Javob: B
+
+    C) External functionsRedis Cluster bus port nima?
+
+38. sentinel failover-timeout setting?
+
+    A) Connection timeout    D) Built-in onlyA) HTTP port
+
+    B) Failover stages uchun max time
+
+    C) Command timeout    Javob: BB) Client port + 10000 (node communication)
+
+    D) Response timeout
+
+    Javob: BC) Same as client
+
+
+
+39. SENTINEL MASTER command?20. FUNCTION LOAD command?D) Random port
+
+    A) All masters
+
+    B) Specific master info    A) Run functionJavob: B
+
+    C) Master count
+
+    D) Master status    B) Register function libraryMOVED error Redis Cluster da nima?
+
+    Javob: B
+
+    C) Delete functionA) Server moved
+
+40. SENTINEL REPLICAS command?
+
+    A) Master replicas    D) List functionsB) Key wrong node (redirect)
+
+    B) Master ning replicas ro'yxati
+
+    C) All replicas    Javob: BC) Connection moved
+
+    D) Replica count
+
+    Javob: BD) Data moved
+
+
+
+41. SENTINEL SENTINELS command?21. FCALL command nima?Javob: B
+
+    A) Master sentinels
+
+    B) Master ni monitor qilayotgan sentinels    A) Define functionASK error Redis Cluster da nima?
+
+    C) All sentinels
+
+    D) Sentinel count    B) Call functionA) Permission ask
+
+    Javob: B
+
+    C) Delete functionB) Slot migration progress (temp redirect)
+
+42. Sentinel script execution?
+
+    A) No scripts    D) List functionsC) User ask
+
+    B) notification-script, client-reconfig-script
+
+    C) Lua only    Javob: BD) Data ask
+
+    D) Python only
+
+    Javob: BJavob: B
+
+
+
+43. ROLE command nima qaytaradi?22. Function vs Script farqi?Redis Cluster resharding nima?
+
+    A) User role
+
+    B) Instance role (master/replica/sentinel)    A) Bir xilA) Delete shards
+
+    C) Admin role
+
+    D) Client role    B) Functions persist, Scripts temporaryB) Slots ni nodes orasida ko'chirish
+
+    Javob: B
+
+    C) Scripts persistC) Add shards
+
+44. replica-announce-ip setting?
+
+    A) Master IP    D) No differenceD) Stop sharding
+
+    B) Replica ning advertised IP
+
+    C) Sentinel IP    Javob: BJavob: B
+
+    D) Client IP
+
+    Javob: B
+
+
+
+45. replica-announce-port setting?23. ACL key patterns?VARIANT 2
+
+    A) Master port
+
+    B) Replica ning advertised port    A) No patterns
+
+    C) Sentinel port
+
+    D) Client port    B) ~key:* patternsCLUSTER MEET command nima qiladi?
+
+    Javob: B
+
+    C) Exact keysA) User meet
+
+46. min-replicas-max-lag setting?
+
+    A) Min lag    D) All keysB) Node ni cluster ga qo'shish
+
+    B) Write uchun max replication lag
+
+    C) Read lag    Javob: BC) Client meet
+
+    D) Connection lag
+
+    Javob: BD) Server meet
+
+
+
+47. repl-diskless-sync setting?24. ACL command categories?Javob: B
+
+    A) Disk sync
+
+    B) Socket orqali RDB transfer    A) No categoriesCLUSTER NODES nima ko'rsatadi?
+
+    C) No sync
+
+    D) Manual sync    B) @read, @write, @admin, etc.A) Server nodes
+
+    Javob: B
+
+    C) Single categoryB) Cluster nodes info
+
+48. repl-diskless-sync-delay setting?
+
+    A) No delay    D) All commandsC) Client nodes
+
+    B) Diskless sync delay for more replicas
+
+    C) Max delay    Javob: BD) Network nodes
+
+    D) Min delay
+
+    Javob: BJavob: B
+
+
+
+49. repl-backlog-size setting?25. Consumer group XINFO?CLUSTER SLOTS nima qaytaradi?
+
+    A) Max size
+
+    B) Partial sync buffer size    A) Delete infoA) Memory slots
+
+    C) Min size
+
+    D) Default size    B) Group statisticsB) Slot-to-node mapping
+
+    Javob: B
+
+    C) Create infoC) Time slots
+
+50. repl-backlog-ttl setting?
+
+    A) Max TTL    D) Modify infoD) Connection slots
+
+    B) Backlog keep time without replicas
+
+    C) Min TTL    Javob: BJavob: B
+
+    D) Default TTL
+
+    Javob: BRedis Cluster quorum nima?
+
+
+
+51. AOF rewrite BGREWRITEAOF process?26. MINID trimming?A) Node count
+
+    A) Sync rewrite
+
+    B) Fork, write, rename atomic    A) MAXLENB) Majority for master failover decision
+
+    C) No rewrite
+
+    D) Manual rewrite    B) Minimum ID based trimC) Slot count
+
+    Javob: B
+
+    C) Maximum IDD) Connection count
+
+52. aof-use-rdb-preamble setting?
+
+    A) AOF only    D) No IDJavob: B
+
+    B) Mixed AOF with RDB prefix
+
+    C) RDB only    Javob: BRedis Cluster split-brain qanday oldini olish?
+
+    D) No preamble
+
+    Javob: BA) No prevention
+
+
+
+53. AOF fsync policies?27. OBJECT ENCODING ziplist?B) Majority quorum requirement
+
+    A) One policy
+
+    B) always, everysec, no    A) linkedlistC) Single master
+
+    C) Two policies
+
+    D) Four policies    B) Memory-efficient small listD) No split
+
+    Javob: B
+
+    C) hashtableJavob: B
+
+54. auto-aof-rewrite-percentage setting?
+
+    A) Fixed percentage    D) skiplistRedis Sentinel SDOWN nima?
+
+    B) AOF size growth trigger
+
+    C) Memory percentage    Javob: BA) Server down
+
+    D) CPU percentage
+
+    Javob: BB) Subjectively Down (single sentinel)
+
+
+
+55. auto-aof-rewrite-min-size?28. OBJECT ENCODING listpack (Redis 7)?C) System down
+
+    A) Max size
+
+    B) Minimum AOF size for rewrite    A) ziplistD) Service down
+
+    C) Default size
+
+    D) Optimal size    B) New compact encodingJavob: B
+
+    Javob: B
+
+    C) quicklistRedis Sentinel ODOWN nima?
+
+56. RDB save trigger format?
+
+    A) Time only    D) linkedlistA) Object down
+
+    B) "save <seconds> <changes>"
+
+    C) Changes only    Javob: BB) Objectively Down (quorum sentinels)
+
+    D) Manual only
+
+    Javob: BC) Only down
+
+
+
+57. stop-writes-on-bgsave-error?29. quicklist nima?D) Offline down
+
+    A) Continue writes
+
+    B) Error da write stop    A) Simple listJavob: B
+
+    C) Ignore errors
+
+    D) Log only    B) Linked list of ziplistsSentinel epoch nima?
+
+    Javob: B
+
+    C) ArrayA) Unix epoch
+
+58. rdb-save-incremental-fsync?
+
+    A) No fsync    D) HashB) Failover version number (split-brain prevention)
+
+    B) Incremental disk sync during save
+
+    C) Full fsync    Javob: BC) Time epoch
+
+    D) Async fsync
+
+    Javob: BD) Data epoch
+
+
+
+59. Redis fork() memory overhead?30. intset encoding?Javob: B
+
+    A) 2x memory
+
+    B) COW - write triggered copy    A) HashtableSentinel leader election qanday?
+
+    C) No overhead
+
+    D) 1.5x memory    B) Integer-only small setsA) Random
+
+    Javob: B
+
+    C) ListpackB) Raft-like consensus algorithm
+
+60. lazyfree-lazy-eviction setting?
+
+    A) Sync eviction    D) SkiplistC) Fixed leader
+
+    B) Background eviction
+
+    C) No eviction    Javob: BD) No election
+
+    D) Manual eviction
+
+    Javob: BJavob: B
+
+
+
+61. lazyfree-lazy-expire setting?31. skiplist nima?Redis Sentinel promotion nima?
+
+    A) Sync expire
+
+    B) Background expiration cleanup    A) Linked listA) User promotion
+
+    C) No expire
+
+    D) Manual expire    B) Probabilistic balanced structureB) Slave to master promotion process
+
+    Javob: B
+
+    C) Binary treeC) Server promotion
+
+62. lazyfree-lazy-server-del?
+
+    A) Sync delete    D) Hash tableD) Data promotion
+
+    B) Background RENAME/overwrite delete
+
+    C) No delete    Javob: BJavob: B
+
+    D) Manual delete
+
+    Javob: BSENTINEL masters command nima?
+
+
+
+63. replica-lazy-flush setting?32. Sorted set skiplist levels?A) Show users
+
+    A) Sync flush
+
+    B) Background full resync flush    A) FixedB) Monitored masters ro'yxati
+
+    C) No flush
+
+    D) Manual flush    B) Probabilistic (avg ~1.33)C) Show slaves
+
+    Javob: B
+
+    C) Always 1D) Show configs
+
+64. LRU clock resolution?
+
+    A) Seconds    D) Always 32Javob: B
+
+    B) Milliseconds (10 bits)
+
+    C) Microseconds    Javob: BSENTINEL failover command nima?
+
+    D) Nanoseconds
+
+    Javob: BA) Stop failover
+
+
+
+65. LFU decay time setting?33. Hash ziplist threshold?B) Manual failover trigger
+
+    A) No decay
+
+    B) lfu-decay-time minutes    A) Always ziplistC) Check failover
+
+    C) Instant decay
+
+    D) Linear decay    B) hash-max-ziplist-entries/valueD) Cancel failover
+
+    Javob: B
+
+    C) Always hashtableJavob: B
+
+66. lfu-log-factor setting?
+
+    A) Linear scaling    D) No thresholdRedis replication offset nima?
+
+    B) Logarithmic counter growth
+
+    C) Exponential scaling    Javob: BA) Time offset
+
+    D) No scaling
+
+    Javob: BB) Replication stream position
+
+
+
+67. maxmemory-samples setting?34. Set encoding threshold?C) Connection offset
+
+    A) All keys sample
+
+    B) Eviction candidate sample size    A) Always intsetD) Memory offset
+
+    C) Memory samples
+
+    D) Performance samples    B) set-max-intset-entriesJavob: B
+
+    Javob: B
+
+    C) Always hashtablePartial resynchronization (PSYNC) nima?
+
+68. volatile-ttl eviction policy?
+
+    A) Random TTL    D) No thresholdA) Full resync
+
+    B) Shortest TTL first
+
+    C) Longest TTL first    Javob: BB) Replication backlog dan incremental sync
+
+    D) No TTL check
+
+    Javob: BC) No sync
+
+
+
+69. allkeys-lfu eviction policy?35. Memory fragmentation?D) Manual sync
+
+    A) LRU eviction
+
+    B) Least Frequently Used    A) No fragmentationJavob: B
+
+    C) Random eviction
+
+    D) No eviction    B) Used vs RSS differenceReplication backlog nima?
+
+    Javob: B
+
+    C) Always highA) Error backlog
+
+70. MEMORY PURGE command?
+
+    A) Delete all    D) Always lowB) Circular buffer of replication stream
+
+    B) Allocator memory release attempt
+
+    C) Clear cache    Javob: BC) Connection backlog
+
+    D) Reset memory
+
+    Javob: BD) Command backlog
+
+
+
+71. Lua script KEYS vs ARGV?36. MEMORY MALLOC-SIZE nima?Javob: B
+
+    A) Bir xil
+
+    B) KEYS - key names, ARGV - arguments    A) Total memoryReplication backlog size qanday tanlanadi?
+
+    C) KEYS only
+
+    D) ARGV only    B) Pointer actual sizeA) Fixed size
+
+    Javob: B
+
+    C) Allocated sizeB) Network latency va write load ga qarab
+
+72. Lua script determinism requirement?
+
+    A) Optional    D) Free sizeC) Random size
+
+    B) Required for replication correctness
+
+    C) Not needed    Javob: BD) Auto size
+
+    D) Recommended
+
+    Javob: BJavob: B
+
+
+
+73. SCRIPT DEBUG command?37. Active defragmentation?SYNC vs PSYNC farqi?
+
+    A) No debug
+
+    B) Interactive Lua debugger    A) No defragA) Bir xil
+
+    C) Log debug
+
+    D) Print debug    B) Online memory compactionB) SYNC full transfer, PSYNC partial
+
+    Javob: B
+
+    C) Offline onlyC) PSYNC full
+
+74. lua-time-limit setting?
+
+    A) No limit    D) ManualD) Farq yo'q
+
+    B) Max script execution milliseconds
+
+    C) Min limit    Javob: BJavob: B
+
+    D) Default limit
+
+    Javob: BDiskless replication nima?
+
+
+
+75. SHUTDOWN NOSAVE option?38. activedefrag configuration?A) Disk required
+
+    A) Save before shutdown
+
+    B) No persistence before shutdown    A) Always onB) RDB directly to socket (no disk)
+
+    C) Async save
+
+    D) Quick save    B) Enabled with thresholdsC) Disk only
+
+    Javob: B
+
+    C) Always offD) No replication
+
+76. SHUTDOWN SAVE option?
+
+    A) No save    D) ExternalJavob: B
+
+    B) Force RDB save before shutdown
+
+    C) AOF save    Javob: BRedis Lua script caching qanday?
+
+    D) Auto save
+
+    Javob: BA) No caching
+
+
+
+77. DEBUG QUICKLIST-PACKED-THRESHOLD?39. jemalloc allocator?B) SHA1 hash caching
+
+    A) Default threshold
+
+    B) Quicklist ziplist entry threshold    A) libc mallocC) Name caching
+
+    C) No threshold
+
+    D) Max threshold    B) Default Redis allocatorD) Full caching
+
+    Javob: B
+
+    C) tcmallocJavob: B
+
+78. hash-max-ziplist-entries setting?
+
+    A) Max entries    D) CustomLua script KEYS vs ARGV farqi?
+
+    B) Ziplist encoding max entries
+
+    C) Min entries    Javob: BA) Bir xil
+
+    D) Default entries
+
+    Javob: BB) KEYS - key names, ARGV - arguments
+
+
+
+79. hash-max-ziplist-value setting?40. MEMORY PURGE nima?C) Farq yo'q
+
+    A) Max value
+
+    B) Ziplist encoding max value size    A) Delete dataD) ARGV keys
+
+    C) Min value
+
+    D) Default value    B) Release memory to OSJavob: B
+
+    Javob: B
+
+    C) Clear cacheSCRIPT EXISTS nima tekshiradi?
+
+80. zset-max-ziplist-entries setting?
+
+    A) Max entries    D) Reset statsA) File exists
+
+    B) Sorted set ziplist max entries
+
+    C) Min entries    Javob: BB) Script SHA1 cache da bormi
+
+    D) Default entries
+
+    Javob: BC) Key exists
+
+
+
+81. list-compress-depth setting?41. Client tracking nima?D) Command exists
+
+    A) No compression
+
+    B) Quicklist compress depth    A) LoggingJavob: B
+
+    C) Full compression
+
+    D) Auto compression    B) Client-side caching invalidationSCRIPT KILL nima qiladi?
+
+    Javob: B
+
+    C) MonitoringA) Kill server
+
+82. Cluster bus port formula?
+
+    A) port + 1000    D) ProfilingB) Running script ni to'xtatish
+
+    B) port + 10000
+
+    C) port * 2    Javob: BC) Kill connection
+
+    D) port + 100
+
+    Javob: BD) Kill process
+
+
+
+83. cluster-migration-barrier setting?42. CLIENT TRACKING ON?Javob: B
+
+    A) No barrier
+
+    B) Min replicas before migration    A) OffLua script timeout nima?
+
+    C) Max barrier
+
+    D) Migration block    B) Enable invalidation messagesA) No timeout
+
+    Javob: B
+
+    C) DeleteB) lua-time-limit config (5000ms default)
+
+84. cluster-slave-validity-factor?
+
+    A) Master factor    D) MonitorC) Infinite timeout
+
+    B) Replica failover eligibility factor
+
+    C) Cluster factor    Javob: BD) 1 second
+
+    D) Node factor
+
+    Javob: BJavob: B
+
+
+
+85. cluster-allow-reads-when-down?43. BCAST mode tracking?Redis blocking commands qanday ishlaydi?
+
+    A) No reads
+
+    B) Reads during cluster down    A) OPTINA) Block server
+
+    C) Writes allowed
+
+    D) Full access    B) Broadcast all invalidationsB) Client block, event loop continues
+
+    Javob: B
+
+    C) OPTOUTC) Block all
+
+86. cluster-require-full-coverage?
+
+    A) Partial OK    D) No broadcastD) No blocking
+
+    B) All slots must be covered
+
+    C) No coverage    Javob: BJavob: B
+
+    D) Optional coverage
+
+    Javob: BBLPOP timeout nima?
+
+
+
+87. CLUSTER BUMPEPOCH command?44. RESP3 protocol?A) No timeout
+
+    A) Reset epoch
+
+    B) Force config epoch increment    A) RESP2B) Seconds (0 = infinite wait)
+
+    C) Delete epoch
+
+    D) Get epoch    B) New protocol with typesC) Milliseconds
+
+    Javob: B
+
+    C) HTTPD) Minutes
+
+88. CLUSTER COUNTKEYSINSLOT?
+
+    A) All keys count    D) BinaryJavob: B
+
+    B) Specific slot key count
+
+    C) Slot count    Javob: B
+
+    D) Node count
+
+    Javob: BVARIANT 3
+
+
+
+89. CLUSTER GETKEYSINSLOT command?45. HELLO command (RESP3)?
+
+    A) All keys
+
+    B) Keys from specific slot    A) PingRedis command flags nima?
+
+    C) Slot info
+
+    D) Key info    B) Protocol negotiationA) Command options
+
+    Javob: B
+
+    C) AuthB) Command characteristics (write, readonly, fast, slow)
+
+90. CLUSTER INFO command?
+
+    A) Node info    D) ConnectC) Command parameters
+
+    B) Cluster state info
+
+    C) Slot info    Javob: BD) Command aliases
+
+    D) Connection info
+
+    Javob: BJavob: B
+
+
+
+91. CLUSTER MYID command?46. Pub/Sub sharded channels (Redis 7)?COMMAND INFO nima qaytaradi?
+
+    A) Cluster ID
+
+    B) Current node ID    A) Global onlyA) Server info
+
+    C) Master ID
+
+    D) Replica ID    B) Cluster slot-based channelsB) Command metadata (arity, flags, keys)
+
+    Javob: B
+
+    C) No shardingC) Client info
+
+92. CLUSTER SAVECONFIG command?
+
+    A) Load config    D) ExternalD) Memory info
+
+    B) Force nodes.conf write
+
+    C) Delete config    Javob: BJavob: B
+
+    D) Reset config
+
+    Javob: BRedis benchmark tool nima?
+
+
+
+93. nodes.conf file?47. SSUBSCRIBE command?A) Code benchmark
+
+    A) Main config
+
+    B) Cluster topology state    A) SUBSCRIBEB) redis-benchmark (performance testing)
+
+    C) Node settings
+
+    D) Cluster settings    B) Sharded channel subscribeC) Server benchmark
+
+    Javob: B
+
+    C) Pattern subscribeD) Network benchmark
+
+94. Redis Cluster Pub/Sub?
+
+    A) Node local    D) UnsubscribeJavob: B
+
+    B) Cluster-wide broadcast
+
+    C) Not supported    Javob: Bredis-cli --bigkeys nima qiladi?
+
+    D) Limited support
+
+    Javob: BA) Create keys
+
+
+
+95. Sharded Pub/Sub (Redis 7)?48. SPUBLISH command?B) Eng katta keys topish
+
+    A) Broadcast
+
+    B) Slot-based message routing    A) PUBLISHC) Delete keys
+
+    C) No sharding
+
+    D) Manual sharding    B) Sharded channel publishD) Count keys
+
+    Javob: B
+
+    C) Pattern publishJavob: B
+
+96. SSUBSCRIBE command?
+
+    A) Simple subscribe    D) Unpublishredis-cli --hotkeys nima? (Redis 4+)
+
+    B) Sharded channel subscribe
+
+    C) Server subscribe    Javob: BA) Temperature check
+
+    D) Secure subscribe
+
+    Javob: BB) Most accessed keys topish
+
+
+
+97. SPUBLISH command?49. DEBUG HTSTATS nima?C) Delete hot keys
+
+    A) Simple publish
+
+    B) Sharded channel publish    A) Memory statsD) Cool down keys
+
+    C) Server publish
+
+    D) Secure publish    B) Hash table statisticsJavob: B
+
+    Javob: B
+
+    C) CPU statsredis-cli --latency nima o'lchaydi?
+
+98. CLIENT TRACKINGINFO command?
+
+    A) Tracking disable    D) Network statsA) Throughput
+
+    B) Client tracking state info
+
+    C) Tracking enable    Javob: BB) Network latency monitoring
+
+    D) Tracking reset
+
+    Javob: BC) CPU latency
+
+
+
+99. RESET command?50. DEBUG STRUCTSIZE?D) Disk latency
+
+    A) Server reset
+
+    B) Connection state reset    A) Data sizeJavob: B
+
+    C) Data reset
+
+    D) Config reset    B) Internal structure sizesredis-cli --rdb nima qiladi?
+
+    Javob: B
+
+    C) Key sizeA) Create RDB
+
+100. LPOS command (Redis 6.0.6+)?
+
+     A) List position set    D) Value sizeB) Remote RDB backup olish
+
+     B) List da element position topish
+
+     C) List create    Javob: BC) Delete RDB
+
+     D) List delete
+
+     Javob: BD) View RDB
+
+
+51. SCAN COUNT parameter?Javob: B
+
+    A) Exact countROLE command nima qaytaradi?
+
+    B) Hint for iteration sizeA) User role
+
+    C) MaximumB) Instance role (master/slave/sentinel)
+
+    D) MinimumC) Command role
+
+    Javob: BD) Connection role
+
+Javob: B
+
+52. SCAN MATCH pattern?INFO replication nima ko'rsatadi?
+
+    A) No patternA) Server info
+
+    B) Glob-style filteringB) Replication status, offset, connected slaves
+
+    C) RegexC) CPU info
+
+    D) ExactD) Memory info
+
+    Javob: BJavob: B
+
+min-slaves-to-write nima?
+
+53. SCAN TYPE parameter?A) Max slaves
+
+    A) No typeB) Write accept uchun minimum connected slaves
+
+    B) Filter by key typeC) No slaves
+
+    C) All typesD) All slaves
+
+    D) Single typeJavob: B
+
+    Javob: Bmin-slaves-max-lag nima?
+
+A) No lag
+
+54. HSCAN/SSCAN/ZSCAN?B) Slave lag threshold (seconds)
+
+    A) Key scanC) Max lag
+
+    B) Collection element iterationD) Min lag
+
+    C) Database scanJavob: B
+
+    D) Server scanRedis fork child process qachon?
+
+    Javob: BA) Never
+
+B) RDB save, AOF rewrite, diskless replication
+
+55. Lazy freeing?C) Always
+
+    A) Immediate freeD) Every command
+
+    B) Background async freeJavob: B
+
+    C) No freeINFO stats qanday metrics?
+
+    D) Manual freeA) Memory only
+
+    Javob: BB) Commands, connections, keys, hits/misses
+
+C) CPU only
+
+56. lazyfree-lazy-eviction?D) Disk only
+
+    A) Sync evictionJavob: B
+
+    B) Async evictionkeyspace_hits vs keyspace_misses nima?
+
+    C) No evictionA) Connection stats
+
+    D) Manual evictionB) Cache hit/miss ratio
+
+    Javob: BC) Memory hits
+
+D) CPU hits
+
+57. UNLINK vs DEL internals?Javob: B
+
+    A) Sameinstantaneous_ops_per_sec nima?
+
+    B) UNLINK async freeA) Total ops
+
+    C) DEL asyncB) Current operations per second
+
+    D) No differenceC) Average ops
+
+    Javob: BD) Max ops
+
+Javob: B
+
+58. FLUSHDB ASYNC?used_memory_rss nima?
+
+    A) Sync flushA) Redis string size
+
+    B) Background flushB) Resident Set Size (OS allocated memory)
+
+    C) No flushC) Redis set size
+
+    D) Partial flushD) Reserved size
+
+    Javob: BJavob: B
+
+used_memory_peak nima?
+
+59. SWAPDB command?A) Current memory
+
+    A) Copy DBB) Maximum memory used since start
+
+    B) Atomic database swapC) Average memory
+
+    C) Delete DBD) Min memory
+
+    D) Create DBJavob: B
+
+    Javob: Bmem_fragmentation_ratio optimal qiymat?
+
+A) 0
+
+60. DEBUG QUICKLIST-PACKED-THRESHOLD?B) ~1.03 (above 1, below 1.5)
+
+    A) Ziplist thresholdC) 5
+
+    B) Quicklist node sizeD) 10
+
+    C) Memory thresholdJavob: B
+
+    D) Count thresholdRedis transparent huge pages (THP) muammo?
+
+    Javob: BA) No problem
+
+B) Latency spikes, memory bloat
+
+61. LATENCY HISTORY nima?C) Performance boost
+
+    A) Command historyD) Memory save
+
+    B) Latency event historyJavob: B
+
+    C) Access historyvm.overcommit_memory Linux nima?
+
+    D) Error historyA) No overcommit
+
+    Javob: BB) Kernel memory allocation policy
+
+C) Redis config
+
+62. LATENCY LATEST nima?D) Network setting
+
+    A) HistoryJavob: B
+
+    B) Most recent latency eventsRedis maxclients nima?
+
+    C) All eventsA) Max servers
+
+    D) No eventsB) Maximum concurrent client connections
+
+    Javob: BC) Max keys
+
+D) Max memory
+
+63. LATENCY DOCTOR nima?Javob: B
+
+    A) Fix latencytimeout config nima?
+
+    B) Latency analysisA) Command timeout
+
+    C) Memory doctorB) Idle client connection timeout
+
+    D) CPU doctorC) Server timeout
+
+    Javob: BD) Network timeout
+
+Javob: B
+
+64. slowlog-log-slower-than?tcp-keepalive nima uchun?
+
+    A) Faster thanA) Keep server alive
+
+    B) Microseconds thresholdB) Detect dead connections (SO_KEEPALIVE)
+
+    C) MillisecondsC) Keep keys alive
+
+    D) SecondsD) Keep memory
+
+    Javob: BJavob: B
+
+tcp-backlog nima?
+
+65. Module API nima?A) Backup log
+
+    A) HTTP APIB) Pending connections queue size
+
+    B) C API for extensionsC) TCP buffer
+
+    C) REST APID) Connection log
+
+    D) GraphQLJavob: B
+
+    Javob: BSHUTDOWN SAVE vs NOSAVE farqi?
+
+A) Bir xil
+
+66. RedisModule_CreateCommand?B) SAVE - RDB save, NOSAVE - no save
+
+    A) Delete commandC) NOSAVE - save
+
+    B) Register new commandD) Farq yo'q
+
+    C) Modify commandJavob: B
+
+    D) List commands
+
+    Javob: BVARIANT 4
+
+
+
+67. Module data types?CONFIG REWRITE nima qiladi?
+
+    A) Built-in onlyA) Rewrite keys
+
+    B) Custom native typesB) Runtime config ni file ga yozish
+
+    C) String onlyC) Rewrite logs
+
+    D) No customD) Rewrite data
+
+    Javob: BJavob: B
+
+CONFIG RESETSTAT nima?
+
+68. Module RDB callbacks?A) Reset config
+
+    A) No callbacksB) INFO stats ni reset qilish
+
+    B) Serialize/deserialize custom typesC) Reset server
+
+    C) Built-in onlyD) Reset connections
+
+    D) ExternalJavob: B
+
+    Javob: BMIGRATE command nima uchun?
+
+A) User migrate
+
+69. Module cluster messages?B) Key ni boshqa Redis instance ga ko'chirish
+
+    A) No messagesC) Server migrate
+
+    B) Inter-node communicationD) Data migrate
+
+    C) Client messagesJavob: B
+
+    D) Log messagesMIGRATE COPY option nima qiladi?
+
+    Javob: BA) Delete source
+
+B) Source key saqlanadi (copy)
+
+70. Object frequency tracking?C) Move only
+
+    A) No trackingD) No copy
+
+    B) LFU policy access countJavob: B
+
+    C) LRU onlyMIGRATE REPLACE option nima?
+
+    D) ManualA) No replace
+
+    Javob: BB) Destination da key mavjud bo'lsa replace
+
+C) Skip replace
+
+71. lfu-log-factor?D) Error on exist
+
+    A) LinearJavob: B
+
+    B) Logarithmic frequency scalingRedis Pub/Sub reliability qanday?
+
+    C) ExponentialA) Guaranteed delivery
+
+    D) ConstantB) At-most-once (no persistence)
+
+    Javob: BC) Exactly-once
+
+D) Durable messaging
+
+72. lfu-decay-time?Javob: B
+
+    A) No decayPUBSUB CHANNELS nima?
+
+    B) Frequency counter decay minutesA) Create channels
+
+    C) Increase timeB) Active channels ro'yxati
+
+    D) Reset timeC) Delete channels
+
+    Javob: BD) Subscribe channels
+
+Javob: B
+
+73. OBJECT IDLETIME accuracy?PUBSUB NUMSUB nima qaytaradi?
+
+    A) ExactA) Message count
+
+    B) ~10 seconds granularityB) Subscribers count per channel
+
+    C) 1 secondC) Channel count
+
+    D) 1 minuteD) Pattern count
+
+    Javob: BJavob: B
+
+PUBSUB NUMPAT nima?
+
+74. Keyspace notifications?A) Number of patterns
+
+    A) No notificationsB) Pattern subscriptions count
+
+    B) Pub/Sub key eventsC) Channel count
+
+    C) CallbackD) Subscriber count
+
+    D) WebhookJavob: B
+
+    Javob: BRedis Streams vs Pub/Sub farqi?
+
+A) Bir xil
+
+75. notify-keyspace-events?B) Streams persistent, Pub/Sub ephemeral
+
+    A) All eventsC) Pub/Sub better
+
+    B) Configuration flags (K, E, g, etc.)D) Farq yo'q
+
+    C) No configJavob: B
+
+    D) FixedXLEN command nima qaytaradi?
+
+    Javob: BA) String length
+
+B) Stream entries count
+
+76. __keyspace@0__ channel?C) List length
+
+    A) Key eventsD) Set size
+
+    B) Keyspace notifications prefixJavob: B
+
+    C) Command eventsXTRIM command nima qiladi?
+
+    D) Error eventsA) Trim string
+
+    Javob: BB) Stream ni limit ga trim qilish
+
+C) Trim list
+
+77. OBJECT REFCOUNT nima?D) Trim hash
+
+    A) Access countJavob: B
+
+    B) Shared object referencesXPENDING command nima?
+
+    C) Memory countA) Pending connections
+
+    D) Copy countB) Consumer group pending messages
+
+    Javob: BC) Pending operations
+
+D) Pending commands
+
+78. DEBUG RELOAD nima?Javob: B
+
+    A) RestartXCLAIM command nima uchun?
+
+    B) RDB save and reloadA) Claim ownership
+
+    C) Config reloadB) Pending message ownership transfer
+
+    D) Module reloadC) Claim key
+
+    Javob: BD) Claim connection
+
+Javob: B
+
+79. DEBUG CRASH-AND-RECOVER?Stream entry ID format nima?
+
+    A) Normal crashA) UUID
+
+    B) Controlled crash for testingB) timestamp-sequence (e.g. 1526919030474-0)
+
+    C) No crashC) Integer
+
+    D) Recovery onlyD) Random
+
+    Javob: BJavob: B
+
+Redis modules API thread-safe mi?
+
+80. Redis keyspace expiry algorithm?A) Ha, fully
+
+    A) Exact checkB) Yo'q, event loop da ishlaydi
+
+    B) Probabilistic samplingC) Partially
+
+    C) All keys checkD) Always safe
+
+    D) No expiryJavob: B
+
+    Javob: BRedisJSON JSON.GET command nima?
+
+A) Get string
+
+81. hz configuration parameter?B) JSON document/path dan value olish
+
+    A) Hertz frequencyC) Get key
+
+    B) Background tasks frequencyD) Get config
+
+    C) CPU frequencyJavob: B
+
+    D) Network frequencyRediSearch index qanday?
+
+    Javob: BA) B-Tree
+
+B) Inverted index
+
+82. dynamic-hz?C) Hash index
+
+    A) Fixed hzD) Array index
+
+    B) Adaptive hz based on clientsJavob: B
+
+    C) No hzRedisGraph query language nima?
+
+    D) Manual hzA) SQL
+
+    Javob: BB) Cypher
+
+C) GraphQL
+
+83. tcp-backlog setting?D) SPARQL
+
+    A) No backlogJavob: B
+
+    B) Connection queue sizeRedis Stack nima?
+
+    C) Data backlogA) Memory stack
+
+    D) Command backlogB) Redis + popular modules bundle
+
+    Javob: BC) Network stack
+
+D) Command stack
+
+84. tcp-keepalive?Javob: B
+
+    A) No keepaliveCLIENT PAUSE nima qiladi?
+
+    B) Connection health check intervalA) Pause server
+
+    C) Data checkB) Client commands ni pause qilish
+
+    D) Server checkC) Pause replication
+
+    Javob: BD) Pause logs
+
+Javob: B
+
+85. timeout configuration?CLIENT REPLY OFF nima?
+
+    A) No timeoutA) Delete replies
+
+    B) Idle client close secondsB) Client ga reply yuborilmaydi (batching)
+
+    C) Command timeoutC) All replies
+
+    D) Server timeoutD) Error replies
+
+    Javob: BJavob: B
+
+READONLY command nima? (Cluster)
+
+86. client-query-buffer-limit?A) Set readonly mode
+
+    A) No limitB) Slave dan o'qish enable qilish
+
+    B) Max query buffer per clientC) Disable writes
+
+    C) UnlimitedD) Lock keys
+
+    D) FixedJavob: B
+
+    Javob: BREADWRITE command nima? (Cluster)
+
+A) Enable write
+
+87. proto-max-bulk-len?B) READONLY ni disable qilish
+
+    A) No limitC) Read only
+
+    B) Max bulk string sizeD) Write only
+
+    C) UnlimitedJavob: B
+
+    D) FixedRedis 7.0 Redis Functions nima?
+
+    Javob: BA) Lua replacement
+
+B) Lua scripts bilan birga ishlaydi, library support
+
+88. lua-time-limit?C) No functions
+
+    A) No limitD) Command functions
+
+    B) Script execution timeoutJavob: B
+
+    C) Unlimited
+
+    D) Fixed===================================================
+
+    Javob: B
+
+89. cluster-require-full-coverage?
+    A) Partial OK
+    B) All slots must be covered
+    C) No coverage
+    D) Optional
+    Javob: B
+
+90. cluster-allow-reads-when-down?
+    A) No reads
+    B) Allow reads when cluster down
+    C) No config
+    D) Always deny
+    Javob: B
+
+91. acllog-max-len?
+    A) No log
+    B) ACL log entries limit
+    C) Unlimited
+    D) Fixed
+    Javob: B
+
+92. lazyfree-lazy-user-del?
+    A) Sync delete
+    B) User DEL becomes UNLINK
+    C) No config
+    D) Fixed
+    Javob: B
+
+93. lazyfree-lazy-expire?
+    A) Sync expire
+    B) Async key expiration
+    C) No expire
+    D) Fixed
+    Javob: B
+
+94. oom-score-adj configuration?
+    A) No adjust
+    B) Linux OOM killer priority
+    C) Memory adjust
+    D) CPU adjust
+    Javob: B
+
+95. DEBUG DIGEST nima?
+    A) Hash
+    B) Dataset checksum
+    C) Config digest
+    D) Command digest
+    Javob: B
+
+96. DEBUG SET-ACTIVE-EXPIRE?
+    A) Disable expire
+    B) Toggle active expiration
+    C) Enable expire
+    D) Reset expire
+    Javob: B
+
+97. OBJECT ENCODING skiplist?
+    A) List encoding
+    B) Sorted set large encoding
+    C) Set encoding
+    D) Hash encoding
+    Javob: B
+
+98. OBJECT ENCODING embstr?
+    A) Long string
+    B) Short string <44 bytes
+    C) Number
+    D) Binary
+    Javob: B
+
+99. OBJECT ENCODING raw?
+    A) Short string
+    B) Long string >44 bytes
+    C) Number
+    D) Binary
+    Javob: B
+
+100. OBJECT ENCODING int?
+     A) String
+     B) Integer representable number
+     C) Float
+     D) Binary
+     Javob: B

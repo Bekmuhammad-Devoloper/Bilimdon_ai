@@ -1,0 +1,148 @@
+===============================================
+REACT - MEDIUM SAVOLLARI
+===============================================
+
+SAVOL 1: useReducer hook nima?
+A) State yaratish
+B) Complex state logic
+C) Array reduce qilish
+D) Object reduce qilish
+JAVOB: B
+
+SAVOL 2: useCallback hook nima?
+A) Function cache qilish
+B) Re-render vaqtini o'zgartirish
+C) Function qo'llash
+D) Function tekshirish
+JAVOB: A
+
+SAVOL 3: useMemo hook nima?
+A) Value cache qilish
+B) Expensive computation optimize
+C) State
+D) Props
+JAVOB: B
+
+SAVOL 4: useLayoutEffect nima?
+A) useEffect kabi
+B) useEffect-dan keyin run (DOM update tushunmaydi)
+C) Timing
+D) Side effect
+JAVOB: B
+
+SAVOL 5: Higher-order component (HOC) nima?
+A) Component wrapping
+B) Function -> component return
+C) Pattern
+D) Reusable logic
+JAVOB: B
+
+SAVOL 6: Render props pattern nima?
+A) Props passing
+B) Function prop component render
+C) Component composition
+D) Logic sharing
+JAVOB: B
+
+SAVOL 7: Suspense nima?
+A) Suspend
+B) Component lazy loading (fallback UI)
+C) Code splitting
+D) Dynamic import
+JAVOB: B
+
+SAVOL 8: Error boundary nima?
+A) Error catching
+B) Child component errors catch
+C) Try-catch
+D) Error handling
+JAVOB: B
+
+SAVOL 9: Portals nima uchun?
+A) Regular DOM
+B) DOM node tashqarida render (modal, tooltip)
+C) Teleport
+D) Overlay
+JAVOB: B
+
+SAVOL 10: Reconciliation nima?
+A) Re-render
+B) React algorithms (Virtual DOM diffing)
+C) Update
+D) Change detection
+JAVOB: B
+
+SAVOL 11: React.memo nima?
+A) Memoization
+B) Props o'zgarmagin re-render yo'q
+C) Performance
+D) Optimization
+JAVOB: B
+
+SAVOL 12: useImperativeHandle nima uchun?
+A) Imperative style
+B) Ref orqali parent -> child direct method call
+C) Direct access
+D) Control
+JAVOB: B
+
+SAVOL 13: Custom hook conventions nima?
+A) Hook rules
+B) use prefix, rules of hooks follow
+C) Naming
+D) Pattern
+JAVOB: B
+
+SAVOL 14: Compound component pattern nima?
+A) Component composition
+B) Multiple components together work
+C) Flexibility
+D) Reusability
+JAVOB: B
+
+SAVOL 15: Provider pattern nima?
+A) Context API
+B) Value provide to consumers
+C) Global state
+D) Data flow
+JAVOB: B
+
+SAVOL 16: Event delegation nima React-da?
+A) Event handling
+B) React synthetic events (delegation)
+C) Performance
+D) Optimization
+JAVOB: B
+
+SAVOL 17: Batching nima?
+A) Batch process
+B) Multiple setState-s batched update
+C) Performance
+D) Optimization
+JAVOB: B
+
+SAVOL 18: Concurrent rendering nima?
+A) Rendering
+B) React interruptible rendering (new feature)
+C) Async
+D) Optimization
+JAVOB: B
+
+SAVOL 19: Automatic batching (React 18) nima?
+A) Manual batching
+B) All updates automatic batch (promises, setTimeout too)
+C) Performance
+D) Optimization
+JAVOB: B
+
+SAVOL 20: useId hook nima uchun?
+A) ID generate
+B) Unique ID generation (SSR safe)
+C) Accessibility
+D) Performance
+JAVOB: B
+
+===============================================
+MEDIUM SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: O'RTA
+===============================================

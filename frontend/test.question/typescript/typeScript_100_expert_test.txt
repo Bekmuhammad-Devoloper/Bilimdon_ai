@@ -1,0 +1,702 @@
+TYPESCRIPT - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+===================================================
+
+1. TypeScript compiler (tsc) nima asosida yozilgan?
+   A) JavaScript
+   B) TypeScript
+   C) C++
+   D) Rust
+   Javob: B
+
+2. Declaration merging nima?
+   A) File merge
+   B) Bir xil nomdagi deklaratsiyalar birlashishi
+   C) Type merge
+   D) Interface merge
+   Javob: B
+
+3. Module augmentation nima?
+   A) Module add
+   B) Mavjud module ga type qo'shish
+   C) Module extend
+   D) Module update
+   Javob: B
+
+4. Global augmentation nima?
+   A) Global variable
+   B) Global scope ga type qo'shish
+   C) Global module
+   D) Global extend
+   Javob: B
+
+5. declare global {} nima qiladi?
+   A) Global variable
+   B) Global scope augmentation
+   C) Declare variable
+   D) Global module
+   Javob: B
+
+6. Conditional types syntax?
+   A) if-else
+   B) T extends U ? X : Y
+   C) T ? X : Y
+   D) condition ? type
+   Javob: B
+
+7. infer keyword nima?
+   A) Inference
+   B) Conditional type ichida type extract
+   C) Type infer
+   D) Auto type
+   Javob: B
+
+8. ReturnType<T> qanday ishlaydi?
+   A) Manual type
+   B) T extends (...args: any) => infer R ? R : any
+   C) Return type
+   D) Function return
+   Javob: B
+
+9. Parameters<T> nima qaytaradi?
+   A) Parameter list
+   B) Function parameters tuple type
+   C) Argument type
+   D) Input type
+   Javob: B
+
+10. ConstructorParameters<T> nima?
+    A) Constructor args
+    B) Class constructor parameters tuple
+    C) New parameters
+    D) Init parameters
+    Javob: B
+
+11. InstanceType<T> nima?
+    A) Instance
+    B) Constructor return type
+    C) Class type
+    D) Object type
+    Javob: B
+
+12. ThisParameterType<T> nima?
+    A) This type
+    B) Function this parameter type
+    C) Context type
+    D) Bind type
+    Javob: B
+
+13. OmitThisParameter<T> nima?
+    A) Remove this
+    B) Function type without this parameter
+    C) Omit this
+    D) Skip this
+    Javob: B
+
+14. Mapped types syntax?
+    A) map()
+    B) { [K in keyof T]: T[K] }
+    C) T.map()
+    D) type map
+    Javob: B
+
+15. Mapped type modifiers (+, -)?
+    A) Math
+    B) Add/remove readonly, optional
+    C) Plus minus
+    D) Increase decrease
+    Javob: B
+
+16. -readonly nima qiladi?
+    A) Remove readonly
+    B) Readonly o'chirish
+    C) Add readonly
+    D) Toggle readonly
+    Javob: A
+
+17. Key remapping (as clause)?
+    A) Key rename
+    B) { [K in keyof T as NewKey]: T[K] }
+    C) As type
+    D) Key alias
+    Javob: B
+
+18. Template literal types?
+    A) String template
+    B) `${string}` type expressions
+    C) Template string
+    D) Literal string
+    Javob: B
+
+19. Intrinsic string manipulation types?
+    A) String methods
+    B) Uppercase, Lowercase, Capitalize, Uncapitalize
+    C) String functions
+    D) Text manipulation
+    Javob: B
+
+20. Recursive conditional types?
+    A) Recursive function
+    B) Self-referencing conditional types
+    C) Loop types
+    D) Nested types
+    Javob: B
+
+21. Variadic tuple types nima?
+    A) Variable tuple
+    B) ...T spread in tuple types
+    C) Tuple array
+    D) Dynamic tuple
+    Javob: B
+
+22. Labeled tuple elements?
+    A) Named tuple
+    B) [name: string, age: number]
+    C) Tuple labels
+    D) Element names
+    Javob: B
+
+23. const assertions nima?
+    A) Constant
+    B) as const - literal type inference
+    C) Const type
+    D) Immutable
+    Javob: B
+
+24. satisfies operator nima?
+    A) Satisfy condition
+    B) Type check without widening
+    C) Type satisfy
+    D) Check type
+    Javob: B
+
+25. satisfies vs as farqi?
+    A) Same
+    B) satisfies preserves type, as asserts
+    C) as preserves
+    D) No difference
+    Javob: B
+
+26. Discriminated unions nima?
+    A) Union type
+    B) Common literal property bilan union
+    C) Discriminated type
+    D) Tagged union
+    Javob: B
+
+27. Type narrowing techniques?
+    A) Type cast
+    B) typeof, instanceof, in, discriminant checks
+    C) Type check
+    D) Type assert
+    Javob: B
+
+28. type predicates (is keyword)?
+    A) Predicate
+    B) value is Type - custom type guard
+    C) Is type
+    D) Type check
+    Javob: B
+
+29. asserts keyword nima?
+    A) Assert statement
+    B) Assertion function type guard
+    C) Assert type
+    D) Assert check
+    Javob: B
+
+30. asserts value is Type nima?
+    A) Assert value
+    B) Assertion bilan type narrowing
+    C) Type assert
+    D) Value assert
+    Javob: B
+
+31. never type qachon ishlatiladi?
+    A) Never use
+    B) Unreachable code, exhaustive checks
+    C) Empty type
+    D) Null type
+    Javob: B
+
+32. Exhaustiveness checking nima?
+    A) Exhaust check
+    B) Switch all cases covered check
+    C) Complete check
+    D) Full check
+    Javob: B
+
+33. unknown vs any farqi?
+    A) Same
+    B) unknown=type-safe, any=no checking
+    C) any type-safe
+    D) No difference
+    Javob: B
+
+34. {} type nima?
+    A) Empty object
+    B) Any non-nullish value
+    C) Object type
+    D) Empty type
+    Javob: B
+
+35. object vs Object farqi?
+    A) Same
+    B) object=non-primitive, Object=Object type
+    C) Object=non-primitive
+    D) No difference
+    Javob: B
+
+36. Index signature syntax?
+    A) array[index]
+    B) { [key: string]: Type }
+    C) index: Type
+    D) key: Type
+    Javob: B
+
+37. noUncheckedIndexedAccess nima?
+    A) No check
+    B) Index access undefined qo'shadi
+    C) Unchecked access
+    D) Index check
+    Javob: B
+
+38. Symbols as index keys?
+    A) Not allowed
+    B) { [key: symbol]: Type }
+    C) Symbol index
+    D) Key symbol
+    Javob: B
+
+39. unique symbol type?
+    A) Unique type
+    B) Specific symbol identity type
+    C) Symbol unique
+    D) Single symbol
+    Javob: B
+
+40. const enum vs enum farqi?
+    A) Same
+    B) const enum=inlined, no runtime code
+    C) enum=inlined
+    D) No difference
+    Javob: B
+
+41. preserveConstEnums flag?
+    A) Preserve const
+    B) Const enum runtime code saqlash
+    C) Keep enum
+    D) Save enum
+    Javob: B
+
+42. String enums vs numeric enums?
+    A) Same
+    B) String=no reverse mapping, better debug
+    C) Numeric better
+    D) No difference
+    Javob: B
+
+43. Ambient declarations nima?
+    A) Environment
+    B) declare keyword - no emit
+    C) Ambient type
+    D) External declaration
+    Javob: B
+
+44. .d.ts files nima?
+    A) Data files
+    B) Declaration files (types only)
+    C) Definition files
+    D) Document files
+    Javob: B
+
+45. @types packages nima?
+    A) Type packages
+    B) DefinitelyTyped type definitions
+    C) Typed packages
+    D) Type modules
+    Javob: B
+
+46. typeRoots vs types tsconfig?
+    A) Same
+    B) typeRoots=folders, types=packages to include
+    C) types=folders
+    D) No difference
+    Javob: B
+
+47. Triple-slash directives nima?
+    A) Comments
+    B) /// <reference> compiler instructions
+    C) Slash directive
+    D) Import directive
+    Javob: B
+
+48. /// <reference types="" /> nima?
+    A) Type reference
+    B) Type package import
+    C) Reference type
+    D) Include type
+    Javob: B
+
+49. /// <reference lib="" /> nima?
+    A) Library reference
+    B) Built-in lib include
+    C) Lib import
+    D) Reference lib
+    Javob: B
+
+50. strict mode flags?
+    A) One flag
+    B) strictNullChecks, noImplicitAny, etc.
+    C) Strict true
+    D) Strict only
+    Javob: B
+
+51. strictPropertyInitialization nima?
+    A) Strict property
+    B) Class property initialization required
+    C) Property init
+    D) Init check
+    Javob: B
+
+52. useUnknownInCatchVariables flag?
+    A) Unknown catch
+    B) catch(e) e type unknown bo'ladi
+    C) Catch unknown
+    D) Error unknown
+    Javob: B
+
+53. exactOptionalPropertyTypes flag?
+    A) Exact optional
+    B) optional property ≠ property | undefined
+    C) Optional exact
+    D) Property exact
+    Javob: B
+
+54. noPropertyAccessFromIndexSignature?
+    A) No access
+    B) Dot notation for index signature disabled
+    C) Property access
+    D) Index access
+    Javob: B
+
+55. moduleResolution strategies?
+    A) One strategy
+    B) node, node16, bundler, classic
+    C) Module resolve
+    D) Import resolve
+    Javob: B
+
+56. bundler moduleResolution nima?
+    A) Bundler tool
+    B) Modern bundler-specific resolution
+    C) Bundle resolve
+    D) Pack resolve
+    Javob: B
+
+57. paths mapping tsconfig?
+    A) Path config
+    B) Module path aliases
+    C) Alias path
+    D) Import path
+    Javob: B
+
+58. baseUrl nima?
+    A) Base URL
+    B) Non-relative import base path
+    C) URL base
+    D) Root URL
+    Javob: B
+
+59. rootDir vs rootDirs?
+    A) Same
+    B) rootDir=single, rootDirs=virtual merged
+    C) rootDirs=single
+    D) No difference
+    Javob: B
+
+60. composite projects nima?
+    A) Combined projects
+    B) Project references incremental builds
+    C) Composite type
+    D) Multi project
+    Javob: B
+
+61. tsBuildInfoFile nima?
+    A) Build file
+    B) Incremental build cache
+    C) Info file
+    D) Build info
+    Javob: B
+
+62. incremental compilation benefit?
+    A) Slow build
+    B) Faster rebuilds
+    C) New build
+    D) Full build
+    Javob: B
+
+63. Project references benefits?
+    A) Reference
+    B) Faster builds, logical separation
+    C) File reference
+    D) Type reference
+    Javob: B
+
+64. extends tsconfig nima?
+    A) Extend type
+    B) Base config inheritance
+    C) Config extend
+    D) Settings extend
+    Javob: B
+
+65. verbatimModuleSyntax flag?
+    A) Verbose mode
+    B) import type always removed
+    C) Module syntax
+    D) Verbatim import
+    Javob: B
+
+66. isolatedModules flag?
+    A) Isolated
+    B) Single-file transpilation compatibility
+    C) Module isolation
+    D) File isolation
+    Javob: B
+
+67. esModuleInterop nima qiladi?
+    A) ES module
+    B) CommonJS default import compatibility
+    C) Module interop
+    D) Import interop
+    Javob: B
+
+68. allowSyntheticDefaultImports nima?
+    A) Allow default
+    B) import x from "y" without default export
+    C) Synthetic import
+    D) Default allow
+    Javob: B
+
+69. resolveJsonModule flag?
+    A) JSON resolve
+    B) .json file import enable
+    C) Module JSON
+    D) JSON module
+    Javob: B
+
+70. skipLibCheck benefit?
+    A) Skip check
+    B) Faster compilation, ignore .d.ts errors
+    C) Lib skip
+    D) Check skip
+    Javob: B
+
+71. declaration flag nima?
+    A) Declare
+    B) .d.ts files generate
+    C) Declaration file
+    D) Type declare
+    Javob: B
+
+72. declarationMap flag?
+    A) Declaration
+    B) .d.ts.map files for source navigation
+    C) Map declaration
+    D) Type map
+    Javob: B
+
+73. emitDeclarationOnly flag?
+    A) Emit only
+    B) Only .d.ts files, no .js
+    C) Declaration emit
+    D) Only declaration
+    Javob: B
+
+74. noEmit flag?
+    A) No emit
+    B) Type check only, no output
+    C) Emit no
+    D) Check only
+    Javob: B
+
+75. noEmitOnError flag?
+    A) No error
+    B) Error bo'lsa output yo'q
+    C) Emit error
+    D) Error emit
+    Javob: B
+
+76. Decorator metadata nima?
+    A) Decorator info
+    B) Reflect.metadata for runtime type info
+    C) Meta decorator
+    D) Info decorator
+    Javob: B
+
+77. emitDecoratorMetadata flag?
+    A) Emit decorator
+    B) Runtime type metadata generate
+    C) Decorator emit
+    D) Metadata emit
+    Javob: B
+
+78. experimentalDecorators vs 2024 decorators?
+    A) Same
+    B) experimental=legacy, new=TC39 standard
+    C) New=legacy
+    D) No difference
+    Javob: B
+
+79. Parameter decorators?
+    A) Param decorator
+    B) @decorator before parameter
+    C) Decorator param
+    D) Input decorator
+    Javob: A
+
+80. Accessor decorators?
+    A) Access decorator
+    B) @decorator before getter/setter
+    C) Decorator access
+    D) Get/set decorator
+    Javob: B
+
+81. Abstract classes vs interfaces?
+    A) Same
+    B) Abstract=implementation, interface=shape
+    C) Interface=implementation
+    D) No difference
+    Javob: B
+
+82. interface vs type alias farqi?
+    A) Same
+    B) interface=merging, extends; type=unions, mapped
+    C) type=merging
+    D) No difference
+    Javob: B
+
+83. Polymorphic this type?
+    A) Polymorphism
+    B) this return type for fluent APIs
+    C) This type
+    D) Self type
+    Javob: B
+
+84. Method overloads syntax?
+    A) Override
+    B) Multiple signatures + implementation
+    C) Overload method
+    D) Multi method
+    Javob: B
+
+85. Constructor overloads?
+    A) Multiple constructors
+    B) Multiple constructor signatures
+    C) Overload constructor
+    D) Constructor multi
+    Javob: B
+
+86. readonly tuple nima?
+    A) Read tuple
+    B) readonly [string, number]
+    C) Tuple read
+    D) Immutable tuple
+    Javob: B
+
+87. const type parameter?
+    A) Const parameter
+    B) <const T> - literal type inference
+    C) Type const
+    D) Constant type
+    Javob: B
+
+88. NoInfer utility type?
+    A) No inference
+    B) Type inference blocker
+    C) Infer no
+    D) Block infer
+    Javob: B
+
+89. Awaited<T> utility type?
+    A) Wait type
+    B) Promise unwrap recursively
+    C) Async type
+    D) Await type
+    Javob: B
+
+90. NonNullable<T> nima?
+    A) Not null
+    B) null | undefined remove qiladi
+    C) Nullable no
+    D) Non null
+    Javob: B
+
+91. Extract<T, U> vs Exclude<T, U>?
+    A) Same
+    B) Extract=keep matching, Exclude=remove matching
+    C) Extract=remove
+    D) No difference
+    Javob: B
+
+92. Record<K, T> nima?
+    A) Record type
+    B) { [P in K]: T }
+    C) Key record
+    D) Type record
+    Javob: B
+
+93. Pick<T, K> vs Omit<T, K>?
+    A) Same
+    B) Pick=keep keys, Omit=remove keys
+    C) Pick=remove
+    D) No difference
+    Javob: B
+
+94. Partial<T> vs Required<T>?
+    A) Same
+    B) Partial=optional, Required=required
+    C) Partial=required
+    D) No difference
+    Javob: B
+
+95. Readonly<T> nima?
+    A) Read type
+    B) All properties readonly
+    C) Only read
+    D) Immutable
+    Javob: B
+
+96. ReadonlyArray<T> vs readonly T[]?
+    A) Same
+    B) Same - immutable array type
+    C) Different
+    D) Array vs tuple
+    Javob: B
+
+97. ThisType<T> utility?
+    A) This type
+    B) this context type for object literals
+    C) Type this
+    D) Context type
+    Javob: B
+
+98. Function type variance?
+    A) Function variance
+    B) Parameters contravariant, return covariant
+    C) Both covariant
+    D) Both contravariant
+    Javob: B
+
+99. strictFunctionTypes flag?
+    A) Strict function
+    B) Function parameter bivariance disable
+    C) Function strict
+    D) Type strict
+    Javob: B
+
+100. TypeScript Language Service nima?
+     A) Language
+     B) IDE integration, intellisense provider
+     C) Service type
+     D) TS service
+     Javob: B

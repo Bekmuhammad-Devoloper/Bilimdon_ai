@@ -1,0 +1,702 @@
+GO DASTURLASH TILI - OSON TESTLAR
+=====================================
+
+1. Go dasturlash tili qachon yaratilgan?
+a) 2005-yil
+b) 2009-yil
+c) 2012-yil
+d) 2015-yil
+Javob: b
+
+2. Go tilini kim yaratgan?
+a) Linus Torvalds
+b) Robert Griesemer, Rob Pike, Ken Thompson
+c) Guido van Rossum
+d) James Gosling
+Javob: b
+
+3. Go dasturini ishga tushirish uchun qaysi buyruq ishlatiladi?
+a) go start
+b) go execute
+c) go run
+d) go launch
+Javob: c
+
+4. Go dasturida asosiy funksiya qanday nomlanadi?
+a) start()
+b) main()
+c) begin()
+d) init()
+Javob: b
+
+5. Go dasturida paketni import qilish uchun qaysi kalit so'z ishlatiladi?
+a) include
+b) require
+c) import
+d) using
+Javob: o'zgartiring
+
+6. Go tilida izoh yozish uchun qaysi belgi ishlatiladi?
+a) #
+b) //
+c) /* */
+d) b va c to'g'ri
+Javob: d
+
+7. Go dasturining kengaytmasi qanday?
+a) .go
+b) .golang
+c) .g
+d) .gol
+Javob: a
+
+8. O'zgaruvchi e'lon qilish uchun qaysi kalit so'z ishlatiladi?
+a) let
+b) const
+c) var
+d) variable
+Javob: c
+
+9. Qisqa o'zgaruvchi e'lon qilish uchun qaysi operator ishlatiladi?
+a) =
+b) :=
+c) ::
+d) =>
+Javob: b
+
+10. Go tilida butun son turi qanday nomlanadi?
+a) integer
+b) int
+c) number
+d) num
+Javob: b
+
+11. Go tilida matnli ma'lumot turi nima deb ataladi?
+a) text
+b) char
+c) string
+d) str
+Javob: c
+
+12. Go tilida mantiqiy qiymat turi nima?
+a) boolean
+b) bool
+c) logical
+d) bit
+Javob: b
+
+13. fmt paketi nima uchun ishlatiladi?
+a) Fayllar bilan ishlash
+b) Kiritish va chiqarish
+c) Matematika amallar
+d) Tarmoq bilan ishlash
+Javob: b
+
+14. Konsolga matn chiqarish uchun qaysi funksiya ishlatiladi?
+a) fmt.Print()
+b) console.log()
+c) print()
+d) output()
+Javob: a
+
+15. Go tilida funktsiya qanday e'lon qilinadi?
+a) function name()
+b) func name()
+c) def name()
+d) fn name()
+Javob: b
+
+16. Go dasturida asosiy paket qanday nomlanadi?
+a) start
+b) begin
+c) main
+d) root
+Javob: c
+
+17. Go tilida o'zgarmas qiymat e'lon qilish uchun qaysi kalit so'z ishlatiladi?
+a) final
+b) const
+c) readonly
+d) static
+Javob: b
+
+18. Go tilida massiv qanday e'lon qilinadi?
+a) array[5]int
+b) [5]int
+c) int[5]
+d) Array(5)
+Javob: b
+
+19. Go tilida slice nima?
+a) O'zgarmas massiv
+b) Dinamik massiv
+c) String qismi
+d) Funksiya turi
+Javob: b
+
+20. Go tilida map nima?
+a) Xarita
+b) Funksiya
+c) Kalit-qiymat juftligi
+d) Massiv
+Javob: c
+
+21. Go dasturini kompilyatsiya qilish uchun qaysi buyruq ishlatiladi?
+a) go compile
+b) go build
+c) go make
+d) go create
+Javob: b
+
+22. Go tilida sikl uchun qaysi kalit so'z ishlatiladi?
+a) while
+b) foreach
+c) for
+d) loop
+Javob: c
+
+23. Go tilida shartli operator qanday yoziladi?
+a) when
+b) if
+c) condition
+d) check
+Javob: b
+
+24. Go tilida funktsiyadan qiymat qaytarish uchun qaysi kalit so'z ishlatiladi?
+a) give
+b) send
+c) return
+d) output
+Javob: c
+
+25. Go tilida nechta sikl operatori bor?
+a) 1
+b) 2
+c) 3
+d) 4
+Javob: a
+
+26. Go tilida paketlarni boshqarish uchun qaysi vosita ishlatiladi?
+a) npm
+b) pip
+c) go mod
+d) cargo
+Javob: c
+
+27. Go tilida xatoliklarni qaytarish uchun qaysi tip ishlatiladi?
+a) exception
+b) error
+c) err
+d) mistake
+Javob: b
+
+28. Go tilida nil nima?
+a) Nol qiymat
+b) Bo'sh qiymat
+c) Xato
+d) O'zgaruvchi
+Javob: b
+
+29. Go tilida struktura qanday e'lon qilinadi?
+a) class
+b) struct
+c) object
+d) type
+Javob: b
+
+30. Go tilida goroutine nima?
+a) Oddiy funksiya
+b) Yengil thread
+c) Paket
+d) O'zgaruvchi
+Javob: b
+
+31. Goroutine yaratish uchun qaysi kalit so'z ishlatiladi?
+a) async
+b) thread
+c) go
+d) routine
+Javob: c
+
+32. Go tilida kanal (channel) nima?
+a) Tarmoq kanali
+b) Goroutinelar o'rtasida ma'lumot almashinuvi
+c) Fayl yo'li
+d) String turi
+Javob: b
+
+33. Go tilida switch operatori bor-mi?
+a) Yo'q
+b) Ha
+c) Faqat yangi versiyada
+d) Faqat eski versiyada
+Javob: b
+
+34. Go tilida defer kalit so'zi nima qiladi?
+a) Funksiyani to'xtatadi
+b) Funksiya oxirida bajariladi
+c) Funksiyani kechiktiradi
+d) Xatolik qaytaradi
+Javob: b
+
+35. Go tilida interface nima?
+a) Metod to'plami
+b) Klass
+c) Struktura
+d) Funksiya
+Javob: a
+
+36. Go tilida pointer qanday belgilanadi?
+a) &
+b) *
+c) @
+d) #
+Javob: b
+
+37. O'zgaruvchining manzilini olish uchun qaysi operator ishlatiladi?
+a) *
+b) &
+c) @
+d) $
+Javob: b
+
+38. Go tilida break operatori nima qiladi?
+a) Dasturni to'xtatadi
+b) Sikldan chiqadi
+c) Funksiyani qaytaradi
+d) Xatolik chiqaradi
+Javob: b
+
+39. Go tilida continue operatori nima qiladi?
+a) Siklni to'xtatadi
+b) Keyingi iteratsiyaga o'tadi
+c) Funksiyani davom ettiradi
+d) Dasturni to'xtatadi
+Javob: b
+
+40. Go tilida range kalit so'zi nima uchun ishlatiladi?
+a) Son oralig'i
+b) Massiv yoki slice bo'ylab iteratsiya
+c) Xatolikni tekshirish
+d) O'zgaruvchi e'lon qilish
+Javob: b
+
+41. Go tilida make funksiyasi nima uchun ishlatiladi?
+a) Fayl yaratish
+b) Slice, map, channel yaratish
+c) Funksiya yaratish
+d) Struktura yaratish
+Javob: b
+
+42. Go tilida new funksiyasi nima qaytaradi?
+a) Yangi qiymat
+b) Pointer
+c) Massiv
+d) String
+Javob: b
+
+43. Go tilida len() funksiyasi nima qaytaradi?
+a) Uzunlik
+b) O'lcham
+c) Hajm
+d) Barchasi to'g'ri
+Javob: d
+
+44. Go tilida cap() funksiyasi nima uchun?
+a) Sig'im
+b) Hajm
+c) Uzunlik
+d) O'lcham
+Javob: a
+
+45. Go tilida append() funksiyasi nima qiladi?
+a) Ma'lumot qo'shadi
+b) Ma'lumot o'chiradi
+c) Ma'lumot o'zgartiradi
+d) Ma'lumot ko'rsatadi
+Javob: a
+
+46. Go tilida paket nomini qanday yozish kerak?
+a) Katta harf bilan
+b) Kichik harf bilan
+c) CamelCase
+d) snake_case
+Javob: b
+
+47. Go tilida eksport qilinadigan identifikator qanday boshlanadi?
+a) Kichik harf bilan
+b) Katta harf bilan
+c) _ belgisi bilan
+d) $ belgisi bilan
+Javob: b
+
+48. Go tilida bo'sh identifikator qanday belgilanadi?
+a) null
+b) _
+c) nil
+d) empty
+Javob: b
+
+49. Go tilida type kalit so'zi nima uchun ishlatiladi?
+a) Yangi tip yaratish
+b) Tipni tekshirish
+c) Tipni o'zgartirish
+d) Tipni o'chirish
+Javob: a
+
+50. Go tilida iota nima?
+a) O'zgaruvchi
+b) Konstanta generatori
+c) Funksiya
+d) Operator
+Javob: b
+
+51. Go dasturi qaysi platformalarda ishlaydi?
+a) Faqat Linux
+b) Faqat Windows
+c) Ko'p platformada
+d) Faqat Mac
+Javob: c
+
+52. Go tilida panic() funksiyasi nima qiladi?
+a) Xatolik yaratadi
+b) Dasturni to'xtatadi
+c) Xatolikni ushlab qoladi
+d) a va b to'g'ri
+Javob: d
+
+53. Go tilida recover() funksiyasi nima uchun?
+a) Panicdan tiklash
+b) Xatolikni topish
+c) Dasturni qayta boshlash
+d) Xotirani tozalash
+Javob: a
+
+54. Go tilida select operatori nima uchun ishlatiladi?
+a) Ma'lumot tanlash
+b) Kanallar bilan ishlash
+c) Shart tekshirish
+d) Sikl yaratish
+Javob: b
+
+55. Go tilida fallthrough kalit so'zi qayerda ishlatiladi?
+a) if da
+b) for da
+c) switch da
+d) func da
+Javob: c
+
+56. Go tilida goto operatori bor-mi?
+a) Yo'q
+b) Ha
+c) Faqat yangi versiyada
+d) Deprecated
+Javob: b
+
+57. Go tilida label qanday yaratiladi?
+a) label:
+b) @label
+c) #label
+d) $label
+Javob: a
+
+58. Go tilida anonymous funksiya yaratish mumkinmi?
+a) Yo'q
+b) Ha
+c) Faqat boshqa funksiya ichida
+d) Faqat main da
+Javob: b
+
+59. Go tilida closure nima?
+a) Yopiq funksiya
+b) Tashqi o'zgaruvchilarga kiruvchi funksiya
+c) Maxfiy funksiya
+d) Static funksiya
+Javob: b
+
+60. Go tilida variadic funksiya nima?
+a) O'zgaruvchan parametrli funksiya
+b) Bir nechta qaytaruvchi funksiya
+c) Rekursiv funksiya
+d) Anonim funksiya
+Javob: a
+
+61. Variadic parametr qanday belgilanadi?
+a) *typ
+b) ...typ
+c) []typ
+d) &typ
+Javob: b
+
+62. Go tilida method nima?
+a) Funksiya
+b) Receiver bilan funksiya
+c) Struktura ichidagi funksiya
+d) Static funksiya
+Javob: b
+
+63. Go tilida embedding nima?
+a) Struktura ichida struktura
+b) Funksiya ichida funksiya
+c) Paket ichida paket
+d) Interface ichida interface
+Javob: a
+
+64. Go tilida type assertion nima?
+a) Tip tekshirish
+b) Tip o'zgartirish
+c) Interface qiymatining tipini aniqlash
+d) Yangi tip yaratish
+Javob: c
+
+65. Go tilida type switch nima?
+a) Tipga qarab switch
+b) Qiymatga qarab switch
+c) O'zgaruvchiga qarab switch
+d) Konstantaga qarab switch
+Javob: a
+
+66. Go tilida context paketi nima uchun?
+a) Kontekst saqlash
+b) Goroutinelarni boshqarish
+c) Fayllar bilan ishlash
+d) Xatoliklarni qaytarish
+Javob: b
+
+67. Go tilida testing paketi nima uchun?
+a) Testlar yozish
+b) Debug qilish
+c) Profilaktika
+d) Barchasi to'g'ri
+Javob: a
+
+68. Test faylining nomi qanday bo'lishi kerak?
+a) test_name.go
+b) name_test.go
+c) name.test.go
+d) test.name.go
+Javob: b
+
+69. Go tilida benchmark test qanday boshlanadi?
+a) func Test
+b) func Bench
+c) func Benchmark
+d) func Performance
+Javob: c
+
+70. Go tilida json paketi nima uchun?
+a) JSON bilan ishlash
+b) XML bilan ishlash
+c) CSV bilan ishlash
+d) YAML bilan ishlash
+Javob: a
+
+71. JSON ga o'girish uchun qaysi funksiya ishlatiladi?
+a) json.Convert()
+b) json.Marshal()
+c) json.Encode()
+d) json.Stringify()
+Javob: b
+
+72. JSON dan o'qish uchun qaysi funksiya ishlatiladi?
+a) json.Parse()
+b) json.Unmarshal()
+c) json.Decode()
+d) json.Read()
+Javob: b
+
+73. Go tilida time paketi nima uchun?
+a) Vaqt bilan ishlash
+b) Timer yaratish
+c) Sanalar bilan ishlash
+d) Barchasi to'g'ri
+Javob: d
+
+74. Go tilida math paketi nima uchun?
+a) Matematik funksiyalar
+b) Random sonlar
+c) Statistika
+d) Faqat a
+Javob: a
+
+75. Go tilida os paketi nima uchun?
+a) Operatsion tizim bilan ishlash
+b) Fayllar bilan ishlash
+c) Jarayon boshqarish
+d) Barchasi to'g'ri
+Javob: d
+
+76. Go tilida io paketi nima uchun?
+a) Kiritish/chiqarish
+b) Faqat chiqarish
+c) Faqat kiritish
+d) Fayllar
+Javob: a
+
+77. Go tilida net paketi nima uchun?
+a) Tarmoq dasturlash
+b) HTTP server
+c) TCP/UDP
+d) Barchasi to'g'ri
+Javob: d
+
+78. Go tilida http paketi nima uchun?
+a) HTTP client
+b) HTTP server
+c) Web dasturlash
+d) Barchasi to'g'ri
+Javob: d
+
+79. HTTP server yaratish qaysi funksiya bilan boshlanadi?
+a) http.Start()
+b) http.Listen()
+c) http.ListenAndServe()
+d) http.Serve()
+Javob: c
+
+80. Go tilida goroutine leak nima?
+a) Xotira oqishi
+b) Goroutine tugamasligi
+c) Kanal to'lib ketishi
+d) Deadlock
+Javob: b
+
+81. Go tilida deadlock nima?
+a) Dastur to'xtab qolishi
+b) Goroutinelar bir-birini kutishi
+c) Kanal yopilishi
+d) Xatolik
+Javob: b
+
+82. Go tilida buffered channel nima?
+a) Katta kanal
+b) Bufferli kanal
+c) Tez kanal
+d) Xavfsiz kanal
+Javob: b
+
+83. Buffered channel yaratish uchun nima qilish kerak?
+a) make(chan int)
+b) make(chan int, 10)
+c) new(chan int)
+d) chan int{10}
+Javob: b
+
+84. Go tilida WaitGroup nima uchun?
+a) Goroutinelarni kutish
+b) Vaqtni o'lchash
+c) Signallar yuborish
+d) Xatoliklarni yig'ish
+Javob: a
+
+85. Go tilida Mutex nima?
+a) Xotira
+b) Qulf
+c) Kanal
+d) Goroutine
+Javob: b
+
+86. Go tilida race condition nima?
+a) Tezlik muammosi
+b) Bir vaqtda yozish muammosi
+c) Xotira muammosi
+d) Kanal muammosi
+Javob: b
+
+87. Race condition aniqlash uchun qaysi flag ishlatiladi?
+a) -race
+b) -check
+c) -debug
+d) -test
+Javob: a
+
+88. Go tilida init() funksiyasi qachon bajariladi?
+a) main() dan oldin
+b) main() dan keyin
+c) manual chaqirilganda
+d) import qilinganda
+Javob: a
+
+89. Bitta faylda nechta init() funksiya bo'lishi mumkin?
+a) Faqat 1ta
+b) 2ta
+c) Ko'p
+d) Mumkin emas
+Javob: c
+
+90. Go tilida blank import nima?
+a) _ import
+b) Bo'sh import
+c) Import qilib ishlatmaslik
+d) Barchasi to'g'ri
+Javob: d
+
+91. Blank import qachon ishlatiladi?
+a) Faqat init() uchun
+b) Xech qachon
+c) Har doim
+d) Test uchun
+Javob: a
+
+92. Go tilida vendor papkasi nima uchun?
+a) Sotish uchun
+b) Dependencies saqlash
+c) Testlar uchun
+d) Build uchun
+Javob: b
+
+93. go.mod fayli nima uchun?
+a) Konfiguratsiya
+b) Modul boshqaruvi
+c) Dependencies
+d) b va c to'g'ri
+Javob: d
+
+94. Go tilida semantic versioning ishlatiladi-mi?
+a) Yo'q
+b) Ha
+c) Ba'zan
+d) Faqat yangi versiyada
+Javob: b
+
+95. Go tilida cross-compilation mumkinmi?
+a) Yo'q
+b) Ha
+c) Faqat Linux uchun
+d) Faqat Windows uchun
+Javob: b
+
+96. GOOS va GOARCH nima uchun?
+a) Versiya
+b) Platform belgilash
+c) Build sozlamalari
+d) Test sozlamalari
+Javob: b
+
+97. Go tilida CGO nima?
+a) C bilan integratsiya
+b) Go optimizatori
+c) Go compilatori
+d) Go debugger
+Javob: a
+
+98. Go tilida reflection mumkinmi?
+a) Yo'q
+b) Ha, reflect paketi orqali
+c) Faqat strukturalar uchun
+d) Yo'q, lekin interface bor
+Javob: b
+
+99. Go tilida generics bor-mi?
+a) Yo'q
+b) Ha, Go 1.18 dan boshlab
+c) Faqat eski versiyada
+d) Rejada
+Javob: b
+
+100. Go tilidagi eng katta ustunlik nima?
+a) Soddalik va tezlik
+b) Concurrency
+c) Kompilyatsiya tezligi
+d) Barchasi to'g'ri
+Javob: d

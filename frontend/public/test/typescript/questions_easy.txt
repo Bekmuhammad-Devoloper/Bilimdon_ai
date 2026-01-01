@@ -1,0 +1,148 @@
+===============================================
+TYPESCRIPT - EASY SAVOLLARI
+===============================================
+
+SAVOL 1: TypeScript nima?
+A) JavaScript
+B) JavaScript + type checking
+C) Python
+D) Java
+JAVOB: B
+
+SAVOL 2: Type annotation qanday yoziladi?
+A) let x: number
+B) let x = number
+C) let x [number]
+D) let x = <number>
+JAVOB: A
+
+SAVOL 3: Basic types qandaylar?
+A) number, string, boolean
+B) array, object
+C) any, unknown
+D) Hammasini
+JAVOB: D
+
+SAVOL 4: Union type nima?
+A) Yagona type
+B) Bir nechta type-ni birga
+C) Type guruhi
+D) Type array
+JAVOB: B
+
+SAVOL 5: Interface nima?
+A) Class
+B) Object struktura ta'rifi
+C) Function
+D) Variable
+JAVOB: B
+
+SAVOL 6: Type alias nima?
+A) Type name
+B) type keyword orqali type definition
+C) Object
+D) Function
+JAVOB: B
+
+SAVOL 7: Optional property qanday yoziladi?
+A) prop: type
+B) prop?: type
+C) prop!: type
+D) prop[]: type
+JAVOB: B
+
+SAVOL 8: Readonly property nima?
+A) O'zgartirish mumkin
+B) O'zgartirish mumkin emas
+C) Optional
+D) Never
+JAVOB: B
+
+SAVOL 9: Tuple type nima?
+A) Array
+B) Fixed length array with specific types
+C) Object
+D) String
+JAVOB: B
+
+SAVOL 10: Enum nima?
+A) Object
+B) Qiymatlar to'plami
+C) Function
+D) Array
+JAVOB: B
+
+SAVOL 11: any type nima?
+A) Barcha type
+B) Type checking yo'q
+C) Optional type
+D) Never type
+JAVOB: B
+
+SAVOL 12: unknown type nima?
+A) any kabi
+B) Type checking uchun xavfsiz any
+C) Never type
+D) Optional type
+JAVOB: B
+
+SAVOL 13: never type nima?
+A) Type yo'q
+B) Function not return (throw or infinite loop)
+C) Any type
+D) Unknown type
+JAVOB: B
+
+SAVOL 14: void return nima?
+A) Nothing return
+B) Function undefined return
+C) Return yo'q
+D) No return value
+JAVOB: B
+
+SAVOL 15: Null vs Undefined farqi nima?
+A) Farqi yo'q
+B) null - intent, undefined - uninitialized
+C) Type
+D) Value
+JAVOB: B
+
+SAVOL 16: Literal types nima?
+A) String literal
+B) Specific value (not type)
+C) Exact value
+D) Type narrowing
+JAVOB: B
+
+SAVOL 17: Type assertion nima?
+A) as keyword
+B) Type casting (no runtime)
+C) Type conversion
+D) Type check
+JAVOB: B
+
+SAVOL 18: typeof operator nima TypeScript-da?
+A) Runtime type
+B) Type guard (type narrowing)
+C) Type query
+D) Type extraction
+JAVOB: B
+
+SAVOL 19: instanceof operator nima?
+A) Class check
+B) Object-ni class instance mi tekshirish
+C) Type guard
+D) Class type
+JAVOB: B
+
+SAVOL 20: Discriminated union nima?
+A) Union type
+B) Common literal property (type narrowing)
+C) Type union
+D) Type safety
+JAVOB: B
+
+===============================================
+EASY SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: OSONGINA
+===============================================

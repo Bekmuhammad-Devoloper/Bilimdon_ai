@@ -92,4 +92,18 @@ export class AuthController {
   async sendPhoneToTelegram(@Body() dto: { phone: string; email: string }) {
     return this.authService.sendPhoneToTelegram(dto.phone, dto.email);
   }
+
+  @Post('forgot-password')
+  @ApiOperation({ summary: 'Parolni tiklash so\'rovi' })
+  @ApiResponse({ status: 200, description: 'Tiklash kodi yuborildi' })
+  async forgotPassword(@Body() dto: { email: string }) {
+    return this.authService.forgotPassword(dto.email);
+  }
+
+  @Post('reset-password')
+  @ApiOperation({ summary: 'Parolni tiklash' })
+  @ApiResponse({ status: 200, description: 'Parol yangilandi' })
+  async resetPassword(@Body() dto: { email: string; code: string; newPassword: string }) {
+    return this.authService.resetPassword(dto.email, dto.code, dto.newPassword);
+  }
 }

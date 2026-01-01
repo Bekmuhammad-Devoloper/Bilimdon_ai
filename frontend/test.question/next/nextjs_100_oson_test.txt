@@ -1,0 +1,706 @@
+NEXTJS - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+==============================================
+
+1. Next.js nima?
+   A) Backend framework
+   B) React asosidagi full-stack framework
+   C) Database
+   D) CSS framework
+   Javob: B
+
+2. Next.js kim tomonidan yaratilgan?
+   A) Facebook
+   B) Vercel
+   C) Google
+   D) Microsoft
+   Javob: B
+
+3. Next.js ning asosiy afzalligi:
+   A) Faqat client-side rendering
+   B) Server-side rendering (SSR), Static Generation (SSG), va boshqalar
+   C) Faqat styling
+   D) Faqat routing
+   Javob: B
+
+4. Next.js project yaratish buyrug'i:
+   A) npm init next
+   B) npx create-next-app@latest
+   C) npm create next
+   D) next new project
+   Javob: B
+
+5. Next.js da development server ishga tushirish:
+   A) npm start
+   B) npm run dev
+   C) next serve
+   D) npm run server
+   Javob: B
+
+6. Next.js da production build:
+   A) npm run dev
+   B) npm run build
+   C) next compile
+   D) npm run production
+   Javob: B
+
+7. Next.js da production server:
+   A) npm run dev
+   B) npm run start (yoki npm start)
+   C) next serve
+   D) npm run prod
+   Javob: B
+
+8. Next.js 13+ da App Router qaysi papkada?
+   A) pages/
+   B) app/
+   C) src/
+   D) routes/
+   Javob: B
+
+9. Next.js da Pages Router qaysi papkada?
+   A) app/
+   B) pages/
+   C) routes/
+   D) views/
+   Javob: B
+
+10. app/ papkasida page.js fayli nima?
+    A) Layout
+    B) Route uchun sahifa komponenti
+    C) API endpoint
+    D) Middleware
+    Javob: B
+
+11. app/about/page.js qaysi URL ga mos keladi?
+    A) /page/about
+    B) /about
+    C) /about/page
+    D) /pages/about
+    Javob: B
+
+12. app/blog/[id]/page.js - [id] nima?
+    A) Static segment
+    B) Dynamic route segment
+    C) Optional segment
+    D) Catch-all segment
+    Javob: B
+
+13. Dynamic route da params qanday olinadi?
+    A) query.id
+    B) params.id (props orqali)
+    C) request.id
+    D) route.id
+    Javob: B
+
+14. app/blog/[...slug]/page.js - [...slug] nima?
+    A) Dynamic segment
+    B) Catch-all segment (/blog/a/b/c)
+    C) Optional segment
+    D) Static segment
+    Javob: B
+
+15. app/shop/[[...slug]]/page.js - [[...slug]] nima?
+    A) Required catch-all
+    B) Optional catch-all (/shop va /shop/a/b ikkalasi ham)
+    C) Dynamic segment
+    D) Static segment
+    Javob: B
+
+16. layout.js fayli nima uchun?
+    A) API endpoint
+    B) Sahifalar uchun umumiy layout (wrapper)
+    C) Middleware
+    D) Error handler
+    Javob: B
+
+17. app/layout.js - RootLayout nima?
+    A) Page component
+    B) Butun app uchun asosiy layout (<html>, <body>)
+    C) API route
+    D) Middleware
+    Javob: B
+
+18. layout.js da {children} nima?
+    A) Static content
+    B) Nested page yoki layout content
+    C) Props
+    D) State
+    Javob: B
+
+19. loading.js fayli nima uchun?
+    A) Error handling
+    B) Sahifa yuklanayotganda ko'rsatiladigan UI (Suspense)
+    C) Layout
+    D) API
+    Javob: B
+
+20. error.js fayli nima?
+    A) Loading state
+    B) Xatolik yuz berganda ko'rsatiladigan UI
+    C) Layout
+    D) Page
+    Javob: B
+
+21. not-found.js fayli nima?
+    A) Error page
+    B) 404 sahifasi
+    C) Loading page
+    D) Layout
+    Javob: B
+
+22. Next.js da Link komponenti:
+    A) <a> tag
+    B) Client-side navigation uchun <Link>
+    C) <button>
+    D) <route>
+    Javob: B
+
+23. Link komponenti qayerdan import qilinadi?
+    A) 'react'
+    B) 'next/link'
+    C) 'next/router'
+    D) 'next/navigation'
+    Javob: B
+
+24. <Link href="/about">About</Link> nima qiladi?
+    A) Full page reload
+    B) Client-side navigation (reload yo'q)
+    C) API call
+    D) Form submit
+    Javob: B
+
+25. Next.js da Image komponenti afzalligi:
+    A) Oddiy img tag
+    B) Avtomatik optimization, lazy loading, responsive
+    C) Faqat SVG
+    D) Faqat PNG
+    Javob: B
+
+26. Image komponenti qayerdan import qilinadi?
+    A) 'react'
+    B) 'next/image'
+    C) 'next/img'
+    D) 'next/media'
+    Javob: B
+
+27. Image komponentida width va height nima uchun kerak?
+    A) Styling uchun
+    B) Layout shift oldini olish (CLS)
+    C) Optional
+    D) Animation uchun
+    Javob: B
+
+28. Image da fill property nima?
+    A) Background color
+    B) Parent container ni to'ldirish (width/height o'rniga)
+    C) Border
+    D) Padding
+    Javob: B
+
+29. Image da priority property:
+    A) Low priority
+    B) LCP (Largest Contentful Paint) uchun preload
+    C) Lazy load
+    D) No load
+    Javob: B
+
+30. public/ papkasi nima uchun?
+    A) Private files
+    B) Static assets (images, fonts, ...) - / dan accessible
+    C) API routes
+    D) Components
+    Javob: B
+
+31. public/logo.png faylga qanday murojaat qilinadi?
+    A) /public/logo.png
+    B) /logo.png
+    C) ./logo.png
+    D) ../public/logo.png
+    Javob: B
+
+32. Next.js da CSS Modules qanday ishlatiladi?
+    A) style.css
+    B) component.module.css
+    C) component.styles.css
+    D) styles/component.css
+    Javob: B
+
+33. CSS Module import qilish:
+    A) import './styles.css'
+    B) import styles from './component.module.css'
+    C) import { styles } from './styles'
+    D) require('./styles.css')
+    Javob: B
+
+34. CSS Module da class ishlatish:
+    A) className="button"
+    B) className={styles.button}
+    C) class="button"
+    D) style="button"
+    Javob: B
+
+35. Next.js da global CSS qayerda import qilinadi?
+    A) Har qanday component da
+    B) app/layout.js yoki pages/_app.js da
+    C) public/ da
+    D) next.config.js da
+    Javob: B
+
+36. Next.js da Tailwind CSS qo'llab-quvvatlanadimi?
+    A) Yo'q
+    B) Ha, built-in support
+    C) Plugin kerak
+    D) Faqat CSS Modules
+    Javob: B
+
+37. App Router da Server Component nima?
+    A) Client component
+    B) Default - serverda render bo'ladigan component
+    C) API route
+    D) Middleware
+    Javob: B
+
+38. Client Component qanday belgilanadi?
+    A) 'use server'
+    B) 'use client' (fayl boshida)
+    C) @client
+    D) export client
+    Javob: B
+
+39. Server Component da useState ishlatsa bo'ladimi?
+    A) Ha
+    B) Yo'q, faqat Client Component da
+    C) Ba'zan
+    D) Server da boshqacha
+    Javob: B
+
+40. Server Component da useEffect ishlatsa bo'ladimi?
+    A) Ha
+    B) Yo'q, faqat Client Component da
+    C) Ba'zan
+    D) Boshqacha syntax
+    Javob: B
+
+41. Server Component afzalligi:
+    A) Interactivity
+    B) Bundle size kichik, direct database access, SEO yaxshi
+    C) useState ishlaydi
+    D) useEffect ishlaydi
+    Javob: B
+
+42. Client Component qachon kerak?
+    A) Har doim
+    B) useState, useEffect, event handlers, browser API kerak bo'lganda
+    C) Hech qachon
+    D) Faqat form uchun
+    Javob: B
+
+43. Next.js da metadata nima uchun?
+    A) Styling
+    B) SEO (<title>, <meta>, ...)
+    C) Routing
+    D) API
+    Javob: B
+
+44. Static metadata export qilish:
+    A) const meta = {}
+    B) export const metadata = { title: '...', description: '...' }
+    C) export meta = {}
+    D) metadata = {}
+    Javob: B
+
+45. Dynamic metadata (generateMetadata):
+    A) const metadata
+    B) export async function generateMetadata({ params }) {...}
+    C) function metadata()
+    D) static metadata()
+    Javob: B
+
+46. next.config.js fayli nima?
+    A) Package.json
+    B) Next.js konfiguratsiya fayli
+    C) TypeScript config
+    D) ESLint config
+    Javob: B
+
+47. next.config.js da images.domains nima?
+    A) API domains
+    B) Tashqi image source larga ruxsat berish
+    C) Route domains
+    D) CSS domains
+    Javob: B
+
+48. next.config.js da redirects:
+    A) Image redirect
+    B) URL redirects sozlash
+    C) API redirect
+    D) Component redirect
+    Javob: B
+
+49. next.config.js da rewrites:
+    A) File rewrite
+    B) URL rewriting (proxy kabi)
+    C) Code rewrite
+    D) Image rewrite
+    Javob: B
+
+50. Environment variables qayerda saqlanadi?
+    A) next.config.js
+    B) .env, .env.local, .env.production, ...
+    C) package.json
+    D) tsconfig.json
+    Javob: B
+
+51. NEXT_PUBLIC_ prefix nima uchun?
+    A) Server only
+    B) Client-side da ham accessible qilish
+    C) Private variable
+    D) Build variable
+    Javob: B
+
+52. process.env.DATABASE_URL - bu qayerda accessible?
+    A) Client-side
+    B) Server-side only (NEXT_PUBLIC_ yo'q)
+    C) Ikkalasida
+    D) Hech qayerda
+    Javob: B
+
+53. Next.js da API Routes (App Router) qayerda?
+    A) pages/api/
+    B) app/api/route.js (yoki route.ts)
+    C) api/
+    D) routes/api/
+    Javob: B
+
+54. app/api/users/route.js - GET handler:
+    A) function GET() {}
+    B) export async function GET(request) {}
+    C) export const get = () => {}
+    D) GET: () => {}
+    Javob: B
+
+55. API route da POST handler:
+    A) function POST() {}
+    B) export async function POST(request) {}
+    C) post: () => {}
+    D) export post() {}
+    Javob: B
+
+56. API route da Response qaytarish:
+    A) res.json()
+    B) return Response.json({ data }) yoki NextResponse.json()
+    C) return { data }
+    D) send({ data })
+    Javob: B
+
+57. NextResponse qayerdan import qilinadi?
+    A) 'next'
+    B) 'next/server'
+    C) 'next/response'
+    D) 'next/api'
+    Javob: B
+
+58. API route da request body olish:
+    A) request.body
+    B) await request.json()
+    C) request.data
+    D) request.params
+    Javob: B
+
+59. API route da query params:
+    A) request.query
+    B) request.nextUrl.searchParams
+    C) request.params
+    D) request.search
+    Javob: B
+
+60. API route da dynamic segment ([id]):
+    A) request.id
+    B) params.id (ikkinchi argument)
+    C) query.id
+    D) route.id
+    Javob: B
+
+61. Next.js da Font optimization:
+    A) Manual font loading
+    B) next/font - avtomatik optimization
+    C) CSS only
+    D) Plugin kerak
+    Javob: B
+
+62. next/font/google dan font import:
+    A) import 'Inter'
+    B) import { Inter } from 'next/font/google'
+    C) import Inter from 'google-fonts'
+    D) const Inter = require('font')
+    Javob: B
+
+63. Google font ishlatish:
+    A) <link> tag
+    B) const inter = Inter({ subsets: ['latin'] }); className={inter.className}
+    C) @import
+    D) CSS variable
+    Javob: B
+
+64. next/font afzalligi:
+    A) Faqat styling
+    B) Zero layout shift, self-hosted, no external requests
+    C) Faqat Google fonts
+    D) Faqat local fonts
+    Javob: B
+
+65. Next.js da Script komponenti:
+    A) <script> tag
+    B) <Script> - optimized third-party scripts
+    C) <code>
+    D) <js>
+    Javob: B
+
+66. Script komponenti qayerdan import?
+    A) 'react'
+    B) 'next/script'
+    C) 'next/js'
+    D) 'next/code'
+    Javob: B
+
+67. Script strategy="lazyOnload" nima?
+    A) Immediately load
+    B) Browser idle vaqtida yuklash
+    C) Before interactive
+    D) Worker da
+    Javob: B
+
+68. Script strategy="beforeInteractive":
+    A) After page load
+    B) Page interactive bo'lishidan oldin yuklash
+    C) Lazy load
+    D) Never load
+    Javob: B
+
+69. useRouter hook (App Router):
+    A) 'next/router'
+    B) 'next/navigation' dan import
+    C) 'react-router'
+    D) 'next/link'
+    Javob: B
+
+70. router.push('/about') nima qiladi?
+    A) API call
+    B) Programmatic navigation
+    C) Form submit
+    D) Reload page
+    Javob: B
+
+71. router.replace('/login') nima?
+    A) Push
+    B) Navigate without adding to history
+    C) Reload
+    D) Back
+    Javob: B
+
+72. router.back() nima?
+    A) Forward
+    B) Browser history da orqaga
+    C) Home
+    D) Refresh
+    Javob: B
+
+73. router.refresh() nima qiladi?
+    A) Full reload
+    B) Server Component larni qayta fetch qilish
+    C) Clear cache
+    D) Reset state
+    Javob: B
+
+74. usePathname() hook nima qaytaradi?
+    A) Full URL
+    B) Current pathname (/about, /blog/123, ...)
+    C) Query params
+    D) Hash
+    Javob: B
+
+75. useSearchParams() hook:
+    A) Pathname
+    B) URL query parameters (?page=1&sort=asc)
+    C) Route params
+    D) Hash
+    Javob: B
+
+76. searchParams.get('page') nima?
+    A) Set param
+    B) Query param qiymatini olish
+    C) Delete param
+    D) Check param
+    Javob: B
+
+77. useParams() hook:
+    A) Query params
+    B) Dynamic route params ({id: '123'})
+    C) Search params
+    D) Hash
+    Javob: B
+
+78. Next.js da default rendering (App Router):
+    A) Client-side
+    B) Server-side (Server Components)
+    C) Static
+    D) ISR
+    Javob: B
+
+79. Static Generation (SSG) nima?
+    A) Runtime render
+    B) Build vaqtida HTML generate qilish
+    C) Client render
+    D) API render
+    Javob: B
+
+80. Next.js da fetch() default cache:
+    A) No cache
+    B) force-cache (static by default)
+    C) no-store
+    D) revalidate
+    Javob: B
+
+81. fetch(url, { cache: 'no-store' }) nima?
+    A) Cache forever
+    B) Har request da yangi fetch (dynamic)
+    C) Revalidate
+    D) Static
+    Javob: B
+
+82. fetch(url, { next: { revalidate: 60 } }) nima?
+    A) No cache
+    B) 60 sekundda bir marta revalidate (ISR)
+    C) Cache forever
+    D) No revalidate
+    Javob: B
+
+83. ISR (Incremental Static Regeneration) nima?
+    A) Full rebuild
+    B) Static sahifalarni vaqt o'tishi bilan yangilash
+    C) Client render
+    D) No cache
+    Javob: B
+
+84. export const dynamic = 'force-dynamic' nima?
+    A) Static page
+    B) Sahifani har request da render qilish
+    C) Cache forever
+    D) ISR
+    Javob: B
+
+85. export const revalidate = 60 nima?
+    A) No revalidate
+    B) Sahifani 60 sekundda revalidate qilish
+    C) Force dynamic
+    D) Force static
+    Javob: B
+
+86. generateStaticParams() nima uchun?
+    A) Dynamic rendering
+    B) Dynamic route lar uchun static params generate qilish (SSG)
+    C) API params
+    D) Query params
+    Javob: B
+
+87. Next.js da middleware.js fayli:
+    A) API route
+    B) Request intercept qilish (auth, redirect, ...)
+    C) Layout
+    D) Error handler
+    Javob: B
+
+88. Middleware qayerda joylashadi?
+    A) app/ ichida
+    B) Project root da (middleware.js yoki middleware.ts)
+    C) pages/ ichida
+    D) public/ da
+    Javob: B
+
+89. Middleware da NextResponse.redirect():
+    A) Continue
+    B) Boshqa URL ga yo'naltirish
+    C) Rewrite
+    D) Error
+    Javob: B
+
+90. Middleware da NextResponse.rewrite():
+    A) Redirect
+    B) URL ni o'zgartirmasdan boshqa route render
+    C) Continue
+    D) Error
+    Javob: B
+
+91. Middleware config matcher:
+    A) All routes
+    B) Qaysi route larda middleware ishlashini belgilash
+    C) API only
+    D) Pages only
+    Javob: B
+
+92. Next.js da Parallel Routes nima?
+    A) Sequential routes
+    B) Bir sahifada bir nechta route ni parallel render
+    C) Nested routes
+    D) Dynamic routes
+    Javob: B
+
+93. Parallel route folder naming:
+    A) [folder]
+    B) @folder (@ bilan)
+    C) (folder)
+    D) _folder
+    Javob: B
+
+94. Next.js da Intercepting Routes:
+    A) Normal routes
+    B) Route ni intercept qilib modal yoki boshqa UI ko'rsatish
+    C) API routes
+    D) Middleware
+    Javob: B
+
+95. Route Groups nima uchun ((folder))?
+    A) Dynamic route
+    B) URL ga ta'sir qilmasdan route larni guruhlash
+    C) Parallel route
+    D) Intercepting route
+    Javob: B
+
+96. (marketing) va (shop) route groups:
+    A) /marketing va /shop URL
+    B) URL da ko'rinmaydi, faqat organization uchun
+    C) Dynamic segments
+    D) Catch-all
+    Javob: B
+
+97. Next.js da template.js vs layout.js:
+    A) Bir xil
+    B) template - har navigation da remount, layout - persist
+    C) layout - remount
+    D) template - persist
+    Javob: B
+
+98. default.js fayli (Parallel Routes):
+    A) Error page
+    B) Parallel route uchun fallback
+    C) Layout
+    D) Loading
+    Javob: B
+
+99. Next.js build output:
+    A) public/
+    B) .next/ folder
+    C) dist/
+    D) build/
+    Javob: B
+
+100. Vercel da deploy qilish:
+     A) Manual server
+     B) Git push - avtomatik deploy
+     C) FTP upload
+     D) Docker only
+     Javob: B
+
+==============================================
+                  YAKUNLANDI
+==============================================

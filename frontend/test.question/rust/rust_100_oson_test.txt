@@ -1,0 +1,2002 @@
+1. Rust dasturlash tilini kim yaratgan?1. Rust nima?OSON DARAJA (1-100)
+
+   A) Google
+
+   B) Mozilla   A) Script languageVARIANT 1
+
+   C) Microsoft
+
+   D) Apple   B) Systems programming language1. Rust tilida o'zgaruvchi e'lon qilish uchun qaysi kalit so'z ishlatiladi?
+
+   Javob: B
+
+   C) Markup languageA) var
+
+2. Rust qaysi yilda chiqarilgan?
+
+   A) 2010   D) Query languageB) let
+
+   B) 2015
+
+   C) 2012   Javob: BC) const
+
+   D) 2018
+
+   Javob: BD) define
+
+
+
+3. Rust da o'zgaruvchi e'lon qilish uchun qaysi keyword ishlatiladi?2. Rust kim tomonidan yaratilgan?Javob: B
+
+   A) var
+
+   B) let   A) Google2. Rust da o'zgarmas (immutable) o'zgaruvchini o'zgaruvchan qilish uchun nima qo'shiladi?
+
+   C) dim
+
+   D) def   B) MozillaA) var
+
+   Javob: B
+
+   C) MicrosoftB) mut
+
+4. Rust da o'zgaruvchan o'zgaruvchi yaratish uchun nima qo'shiladi?
+
+   A) var   D) AppleC) change
+
+   B) mut
+
+   C) change   Javob: BD) modify
+
+   D) modify
+
+   Javob: BJavob: B
+
+
+
+5. Rust da funksiya e'lon qilish uchun qaysi keyword?3. Rustning asosiy xususiyati?3. Rust da butun sonlar uchun qaysi tip ishlatiladi?
+
+   A) function
+
+   B) fn   A) Garbage collectionA) int
+
+   C) def
+
+   D) func   B) Memory safety without GCB) i32
+
+   Javob: B
+
+   C) Dynamic typingC) number
+
+6. Rust da asosiy funksiya nomi nima?
+
+   A) start   D) InterpretedD) integer
+
+   B) main
+
+   C) run   Javob: BJavob: B
+
+   D) init
+
+   Javob: B4. Rust dasturining kirish nuqtasi qanday nomlanadi?
+
+
+
+7. Rust da println! nima?4. cargo nima?A) start()
+
+   A) Function
+
+   B) Macro   A) CompilerB) main()
+
+   C) Method
+
+   D) Variable   B) Package manager va build toolC) begin()
+
+   Javob: B
+
+   C) IDED) run()
+
+8. Rust da string type qaysi?
+
+   A) str   D) DebuggerJavob: B
+
+   B) String
+
+   C) string   Javob: B5. Rust da matnli qiymatlar qanday tip bilan ifodalanadi?
+
+   D) Text
+
+   Javob: BA) text
+
+
+
+9. Rust da butun son type?5. cargo new project_name nima qiladi?B) str
+
+   A) int
+
+   B) i32   A) Delete projectC) string
+
+   C) integer
+
+   D) number   B) Yangi project yaratishD) char
+
+   Javob: B
+
+   C) Build projectJavob: B
+
+10. Rust da mantiqiy type?
+
+    A) boolean   D) Run project6. Println! makrosi nima uchun ishlatiladi?
+
+    B) bool
+
+    C) Boolean   Javob: BA) O'qish uchun
+
+    D) logic
+
+    Javob: BB) Chop etish uchun
+
+
+
+11. Cargo nima?6. cargo build nima?C) Hisoblash uchun
+
+    A) Compiler
+
+    B) Package manager va build tool   A) RunD) Saqlash uchun
+
+    C) IDE
+
+    D) Debugger   B) Compile projectJavob: B
+
+    Javob: B
+
+   C) Test7. Rust da bool tipida qanday qiymatlar bo'ladi?
+
+12. Cargo.toml fayli nima uchun?
+
+    A) Code   D) CleanA) 0 va 1
+
+    B) Project konfiguratsiyasi
+
+    C) Logs   Javob: BB) true va false
+
+    D) Data
+
+    Javob: BC) yes va no
+
+
+
+13. Rust da yangi project yaratish uchun?7. cargo run nima?D) on va off
+
+    A) cargo init
+
+    B) cargo new   A) Build onlyJavob: B
+
+    C) cargo create
+
+    D) cargo start   B) Build va run8. Cargo nima?
+
+    Javob: B
+
+   C) TestA) Kompilyator
+
+14. Rust da project build qilish?
+
+    A) cargo compile   D) CleanB) Rust paket menejeri
+
+    B) cargo build
+
+    C) cargo make   Javob: BC) Matn muharriri
+
+    D) cargo run
+
+    Javob: BD) Debugger
+
+
+
+15. Rust da projectni run qilish?8. Cargo.toml nima?Javob: B
+
+    A) cargo start
+
+    B) cargo run   A) Source code9. Yangi Rust loyiha yaratish buyrug'i qaysi?
+
+    C) cargo exec
+
+    D) cargo go   B) Project configurationA) cargo new
+
+    Javob: B
+
+   C) Build outputB) rust create
+
+16. Rust da comment qanday yoziladi?
+
+    A) # comment   D) DocumentationC) cargo start
+
+    B) // comment
+
+    C) -- comment   Javob: BD) rust new
+
+    D) /* comment */
+
+    Javob: BJavob: A
+
+
+
+17. Rust da ko'p qatorli comment?9. src/main.rs nima?10. Rust dasturini ishga tushirish buyrug'i?
+
+    A) // comment
+
+    B) /* comment */   A) Config fileA) cargo start
+
+    C) ''' comment '''
+
+    D) """ comment """   B) Entry pointB) cargo run
+
+    Javob: B
+
+   C) Test fileC) rust execute
+
+18. Rust da if statement sintaksisi to'g'ri?
+
+    A) if (condition) {}   D) LibraryD) cargo execute
+
+    B) if condition {}
+
+    C) if condition then {}   Javob: BJavob: B
+
+    D) if: condition {}
+
+    Javob: B11. Rust da sharh yozish uchun qanday belgi ishlatiladi?
+
+
+
+19. Rust da loop qanday?10. fn nima?A) #
+
+    A) while true
+
+    B) loop    A) VariableB) //
+
+    C) forever
+
+    D) repeat    B) Function declarationC) /* */
+
+    Javob: B
+
+    C) ConstantD) --
+
+20. Rust da for loop range?
+
+    A) for i in 0 to 10    D) TypeJavob: B
+
+    B) for i in 0..10
+
+    C) for i = 0; i < 10; i++    Javob: B12. Rust da floating point sonlar uchun qaysi tip ishlatiladi?
+
+    D) for (i in range(10))
+
+    Javob: BA) float
+
+
+
+21. Rust da array yaratish?11. fn main() nima?B) f64
+
+    A) let arr = []
+
+    B) let arr = [1, 2, 3]    A) Library functionC) double
+
+    C) let arr = {}
+
+    D) let arr = ()    B) Entry point functionD) decimal
+
+    Javob: B
+
+    C) Helper functionJavob: B
+
+22. Rust da tuple yaratish?
+
+    A) let t = []    D) Test function13. Rust kompilyatori qanday nomlanadi?
+
+    B) let t = (1, 2, 3)
+
+    C) let t = {}    Javob: BA) gcc
+
+    D) let t = <1, 2, 3>
+
+    Javob: BB) rustc
+
+
+
+23. Rust da vector type?12. let nima?C) rust
+
+    A) Array
+
+    B) Vec    A) FunctionD) compiler
+
+    C) List
+
+    D) Vector    B) Variable declarationJavob: B
+
+    Javob: B
+
+    C) Constant14. Rust da char tipi qancha bayt egallaydi?
+
+24. Rust da yangi vector yaratish?
+
+    A) Vec[]    D) TypeA) 1 bayt
+
+    B) Vec::new()
+
+    C) new Vec()    Javob: BB) 4 bayt
+
+    D) Vector()
+
+    Javob: BC) 2 bayt
+
+
+
+25. vec! macro nima qiladi?13. let mut nima?D) 8 bayt
+
+    A) Vector delete
+
+    B) Qiymatlar bilan vector yaratadi    A) ImmutableJavob: B
+
+    C) Vector copy
+
+    D) Vector print    B) Mutable variable15. Tuple nima?
+
+    Javob: B
+
+    C) ConstantA) Massiv
+
+26. Rust da struct yaratish keyword?
+
+    A) class    D) StaticB) Turli turdagi qiymatlar to'plami
+
+    B) struct
+
+    C) type    Javob: BC) String
+
+    D) object
+
+    Javob: BD) Raqam
+
+
+
+27. Rust da enum yaratish keyword?14. Variable default holatda?Javob: B
+
+    A) enumeration
+
+    B) enum    A) Mutable16. Array uzunligini olish uchun qanday metod ishlatiladi?
+
+    C) type
+
+    D) variant    B) ImmutableA) size()
+
+    Javob: B
+
+    C) StaticB) len()
+
+28. Option type nima uchun?
+
+    A) Multiple values    D) DynamicC) length()
+
+    B) Some yoki None qiymat uchun
+
+    C) Error handling    Javob: BD) count()
+
+    D) Threading
+
+    Javob: BJavob: B
+
+
+
+29. Result type nima uchun?15. const nima?17. Rust da if-else konstruksiyasi nima uchun ishlatiladi?
+
+    A) Return value
+
+    B) Ok yoki Err natija uchun    A) VariableA) Sikl uchun
+
+    C) Optional value
+
+    D) Boolean result    B) Compile-time constantB) Shartli mantiq uchun
+
+    Javob: B
+
+    C) MutableC) Funksiya uchun
+
+30. Rust da & belgisi nima?
+
+    A) AND operator    D) FunctionD) O'zgaruvchi uchun
+
+    B) Reference (borrow)
+
+    C) Pointer    Javob: BJavob: B
+
+    D) Address
+
+    Javob: B18. Loop sikli qanday to'xtatiladi?
+
+
+
+31. &mut nima?16. i32 nima?A) stop
+
+    A) Immutable reference
+
+    B) Mutable reference    A) FloatB) break
+
+    C) Constant
+
+    D) Static    B) 32-bit signed integerC) end
+
+    Javob: B
+
+    C) StringD) exit
+
+32. Ownership nima Rust da?
+
+    A) Copyright    D) BooleanJavob: B
+
+    B) Har bir value ning bitta owner i bor
+
+    C) User permission    Javob: B19. While sikli nima qiladi?
+
+    D) File permission
+
+    Javob: BA) Bir marta bajaradi
+
+
+
+33. Borrowing nima Rust da?17. u64 nima?B) Shart true bo'lguncha takrorlaydi
+
+    A) Kopiya olish
+
+    B) Reference orqali ishlatish    A) SignedC) Hech qachon ishlamaydi
+
+    C) Ownership olish
+
+    D) Delete qilish    B) 64-bit unsigned integerD) Faqat 10 marta ishlaydi
+
+    Javob: B
+
+    C) FloatJavob: B
+
+34. Move nima Rust da?
+
+    A) File move    D) String20. For sikli odatda nima bilan ishlatiladi?
+
+    B) Ownership transfer
+
+    C) Function call    Javob: BA) Sonlar bilan
+
+    D) Variable rename
+
+    Javob: BB) Range yoki iterator bilan
+
+
+
+35. Clone trait nima qiladi?18. f64 nima?C) Stringlar bilan
+
+    A) Shallow copy
+
+    B) Deep copy    A) IntegerD) Bool bilan
+
+    C) Reference
+
+    D) Move    B) 64-bit floatJavob: B
+
+    Javob: B
+
+    C) String21. Funksiya qanday kalit so'z bilan yaratiladi?
+
+36. Copy trait nima qiladi?
+
+    A) Deep copy    D) BooleanA) function
+
+    B) Stack data ni implicit copy
+
+    C) Reference    Javob: BB) fn
+
+    D) Move
+
+    Javob: BC) def
+
+
+
+37. Rust da match expression?19. bool nima?D) func
+
+    A) if-else alternative
+
+    B) Pattern matching    A) IntegerJavob: B
+
+    C) String matching
+
+    D) Regex matching    B) Boolean (true/false)22. Funksiya qiymat qaytarishi uchun nima kerak?
+
+    Javob: B
+
+    C) FloatA) return kalit so'zi
+
+38. impl keyword nima uchun?
+
+    A) Import    D) StringB) -> va tip ko'rsatish
+
+    B) Implementation block
+
+    C) Implicit    Javob: BC) give kalit so'zi
+
+    D) Interface
+
+    Javob: BD) send kalit so'zi
+
+
+
+39. trait nima Rust da?20. char nima?Javob: B
+
+    A) Attribute
+
+    B) Interface ga o'xshash behavior    A) String23. Match konstruksiyasi nima uchun ishlatiladi?
+
+    C) Type alias
+
+    D) Constant    B) Single Unicode characterA) Qo'shish uchun
+
+    Javob: B
+
+    C) IntegerB) Pattern matching uchun
+
+40. Rust da generic type belgilash?
+
+    A) <T>    D) BooleanC) Ko'paytirish uchun
+
+    B) [T]
+
+    C) {T}    Javob: BD) Bo'lish uchun
+
+    D) (T)
+
+    Javob: AJavob: B
+
+
+
+41. Lifetime annotation belgisi?21. String vs &str farqi?24. Option enum nima uchun ishlatiladi?
+
+    A) @
+
+    B) '    A) Bir xilA) Xatolik uchun
+
+    C) #
+
+    D) $    B) String heap, &str referenceB) Qiymat bor yoki yo'qligini ifodalash uchun
+
+    Javob: B
+
+    C) &str heapC) Mantiq uchun
+
+42. 'static lifetime nima?
+
+    A) Static variable    D) No differenceD) Sikl uchun
+
+    B) Dastur davomida yashaydi
+
+    C) Function scope    Javob: BJavob: B
+
+    D) Block scope
+
+    Javob: B25. Result enum qanday variantlarga ega?
+
+
+
+43. Rust da module yaratish?22. String::new() nima?A) True va False
+
+    A) module
+
+    B) mod    A) strB) Ok va Err
+
+    C) package
+
+    D) import    B) Bo'sh String yaratishC) Success va Fail
+
+    Javob: B
+
+    C) ReferenceD) Good va Bad
+
+44. pub keyword nima uchun?
+
+    A) Publish    D) CopyJavob: B
+
+    B) Public visibility
+
+    C) Pure    Javob: BVARIANT 2
+
+    D) Put
+
+    Javob: B26. Unwrap() metodi nima qiladi?
+
+
+
+45. use keyword nima uchun?23. println! nima?A) Qiymatni o'rab oladi
+
+    A) Usage tracking
+
+    B) Path ni scope ga olib kelish    A) FunctionB) Qiymatni oladi yoki panic qiladi
+
+    C) Variable use
+
+    D) Function use    B) MacroC) Faqat o'qiydi
+
+    Javob: B
+
+    C) MethodD) Saqlaydi
+
+46. crate nima Rust da?
+
+    A) Container    D) TypeJavob: B
+
+    B) Compilation unit
+
+    C) Class    Javob: B27. Expect() metodi unwrap dan farqi nima?
+
+    D) Component
+
+    Javob: BA) Farq yo'q
+
+
+
+47. Rust da test yozish attribute?24. Macro belgisi?B) Custom xabar berish mumkin
+
+    A) @test
+
+    B) #[test]    A) #C) Tezroq ishlaydi
+
+    C) [test]
+
+    D) test:    B) !D) Xavfsizroq
+
+    Javob: B
+
+    C) @Javob: B
+
+48. panic! macro nima qiladi?
+
+    A) Warning beradi    D) $28. Vector qanday yaratiladi?
+
+    B) Dasturni to'xtatadi
+
+    C) Log yozadi    Javob: BA) array![]
+
+    D) Nothing
+
+    Javob: BB) Vec::new() yoki vec![]
+
+
+
+49. unwrap() method nima qiladi?25. {} placeholder nima?C) list![]
+
+    A) Wrap value
+
+    B) Some/Ok value oladi yoki panic    A) ArrayD) vector![]
+
+    C) Error handle
+
+    D) Clone value    B) Format placeholderJavob: B
+
+    Javob: B
+
+    C) Block29. Vector ga element qo'shish uchun qanday metod?
+
+50. expect() method unwrap dan farqi?
+
+    A) Farqi yo'q    D) ObjectA) add()
+
+    B) Custom error message beradi
+
+    C) Sekinroq    Javob: BB) push()
+
+    D) Tezroq
+
+    Javob: BC) insert()
+
+
+
+51. ? operator nima qiladi?26. if expression Rustda?D) append()
+
+    A) Ternary operator
+
+    B) Error ni propagate qiladi    A) StatementJavob: B
+
+    C) Null check
+
+    D) Option check    B) Expression (qiymat qaytaradi)30. String va &str farqi nima?
+
+    Javob: B
+
+    C) FunctionA) Bir xil
+
+52. Rust da closure sintaksisi?
+
+    A) lambda x: x + 1    D) MacroB) String - owned, &str - borrowed
+
+    B) |x| x + 1
+
+    C) (x) => x + 1    Javob: BC) &str kattaroq
+
+    D) fn(x) x + 1
+
+    Javob: BD) Farq yo'q
+
+
+
+53. Fn, FnMut, FnOnce farqi?27. loop nima?Javob: B
+
+    A) Bir xil
+
+    B) Borrow type farqlari    A) While31. String yaratish uchun qanday metod?
+
+    C) Performance farqi
+
+    D) Syntax farqi    B) Cheksiz loopA) new()
+
+    Javob: B
+
+    C) ForB) String::new() yoki String::from()
+
+54. Iterator trait nima beradi?
+
+    A) Loop    D) IteratorC) create()
+
+    B) next() method
+
+    C) Array    Javob: BD) make()
+
+    D) List
+
+    Javob: BJavob: B
+
+
+
+55. .iter() vs .into_iter()?28. while nima?32. Struct nima?
+
+    A) Bir xil
+
+    B) Reference vs ownership    A) Infinite loopA) Funksiya
+
+    C) Syntax farqi
+
+    D) Performance farqi    B) Condition based loopB) Ma'lumotlar strukturasi
+
+    Javob: B
+
+    C) IteratorC) Sikl
+
+56. .collect() method nima qiladi?
+
+    A) Garbage collect    D) ForD) Shart
+
+    B) Iterator ni collection ga aylantiradi
+
+    C) Data collect    Javob: BJavob: B
+
+    D) Memory collect
+
+    Javob: B33. Struct uchun metod qanday yaratiladi?
+
+
+
+57. Rust da async function keyword?29. for i in 0..10 nima?A) function
+
+    A) async def
+
+    B) async fn    A) While loopB) impl blok ichida
+
+    C) fn async
+
+    D) async function    B) Range iterationC) def bilan
+
+    Javob: B
+
+    C) Infinite loopD) method bilan
+
+58. .await nima qiladi?
+
+    A) Wait    D) MapJavob: B
+
+    B) Future ni poll qiladi
+
+    C) Sleep    Javob: B34. Enum nima?
+
+    D) Block
+
+    Javob: BA) Raqam
+
+
+
+59. Rust da thread yaratish?30. break nima?B) Variantlar to'plami
+
+    A) new Thread()
+
+    B) thread::spawn()    A) ContinueC) String
+
+    C) Thread.create()
+
+    D) spawn_thread()    B) Loop'dan chiqishD) Bool
+
+    Javob: B
+
+    C) ReturnJavob: B
+
+60. Mutex nima uchun?
+
+    A) Memory protection    D) Panic35. Ownership nima?
+
+    B) Thread-safe data access
+
+    C) File locking    Javob: BA) Foydalanuvchi huquqi
+
+    D) Network security
+
+    Javob: BB) Xotira boshqaruv tizimi
+
+
+
+61. Arc nima Rust da?31. continue nima?C) Fayl tizimi
+
+    A) Archive
+
+    B) Atomic Reference Counted pointer    A) BreakD) Tarmoq protokoli
+
+    C) Array container
+
+    D) Async runtime    B) Keyingi iteratsiyaga o'tishJavob: B
+
+    Javob: B
+
+    C) Return36. Borrowing nima?
+
+62. Rc nima Rust da?
+
+    A) Return code    D) PanicA) Xotira olish
+
+    B) Reference Counted pointer
+
+    C) Runtime config    Javob: BB) Muvaqqat referens olish
+
+    D) Resource container
+
+    Javob: BC) O'chirib tashlash
+
+
+
+63. Box nima Rust da?32. match nima?D) Nusxalash
+
+    A) Container
+
+    B) Heap allocation smart pointer    A) If-elseJavob: B
+
+    C) Array
+
+    D) Collection    B) Pattern matching37. Mutable reference nechta bo'lishi mumkin?
+
+    Javob: B
+
+    C) SwitchA) Cheksiz
+
+64. Deref trait nima qiladi?
+
+    A) Reference remove    D) LoopB) Faqat bitta
+
+    B) Custom dereference behavior
+
+    C) Memory deallocation    Javob: BC) 2 ta
+
+    D) Destructor
+
+    Javob: BD) 10 ta
+
+
+
+65. Drop trait nima qiladi?33. _ pattern nima?Javob: B
+
+    A) Variable delete
+
+    B) Cleanup code value drop da    A) Specific value38. Immutable reference nechta bo'lishi mumkin?
+
+    C) Error drop
+
+    D) Collection drop    B) Wildcard (catch-all)A) Faqat 1 ta
+
+    Javob: B
+
+    C) ErrorB) Ko'p
+
+66. Rust da const vs let?
+
+    A) Bir xil    D) NoneC) Yo'q
+
+    B) const compile-time, let runtime
+
+    C) const sekinroq    Javob: BD) 2 ta
+
+    D) let tezroq
+
+    Javob: BJavob: B
+
+
+
+67. static keyword nima?34. Option<T> nima?39. Lifetime nima?
+
+    A) Static method
+
+    B) Global lifetime static variable    A) ResultA) Dastur ishlash vaqti
+
+    C) Static class
+
+    D) Static import    B) Some(T) yoki NoneB) Reference yaroqlilik muddati
+
+    Javob: B
+
+    C) Error typeC) O'zgaruvchi nomi
+
+68. #[derive] attribute nima qiladi?
+
+    A) Inheritance    D) BooleanD) Funksiya nomi
+
+    B) Auto trait implementation
+
+    C) Derivation    Javob: BJavob: B
+
+    D) Definition
+
+    Javob: B40. Closure nima?
+
+
+
+69. Debug trait nima beradi?35. Some(value) nima?A) Fayl yopish
+
+    A) Debugger
+
+    B) {:?} format support    A) NoneB) Anonim funksiya
+
+    C) Debug mode
+
+    D) Debug info    B) Qiymat mavjudC) Sikl
+
+    Javob: B
+
+    C) ErrorD) Enum
+
+70. Display trait nima beradi?
+
+    A) Screen display    D) EmptyJavob: B
+
+    B) {} format support
+
+    C) Debug display    Javob: B41. Trait nima?
+
+    D) Console display
+
+    Javob: BA) String
+
+
+
+71. From va Into traits?36. None nima?B) Interfeys (umumiy xatti-harakat)
+
+    A) Input/Output
+
+    B) Type conversion    A) ValueC) Raqam
+
+    C) Import/Export
+
+    D) In/Out    B) Qiymat yo'qD) Massiv
+
+    Javob: B
+
+    C) ErrorJavob: B
+
+72. AsRef trait nima uchun?
+
+    A) Assignment reference    D) True42. Derive attribute nima qiladi?
+
+    B) Cheap reference conversion
+
+    C) Async reference    Javob: BA) Hech narsa
+
+    D) Array reference
+
+    Javob: BB) Trait avtomatik implement qiladi
+
+
+
+73. Default trait nima beradi?37. Result<T, E> nima?C) O'chiradi
+
+    A) Default parameter
+
+    B) Default value yaratish    A) OptionD) Nusxalaydi
+
+    C) Default method
+
+    D) Default type    B) Ok(T) yoki Err(E)Javob: B
+
+    Javob: B
+
+    C) Boolean43. Debug trait nima uchun kerak?
+
+74. Rust da error handling best practice?
+
+    A) panic    D) IntegerA) Kompilyatsiya uchun
+
+    B) Result type
+
+    C) Ignore    Javob: BB) {:?} format bilan chop etish uchun
+
+    D) Try-catch
+
+    Javob: BC) O'chirish uchun
+
+
+
+75. thiserror crate nima uchun?38. Ok(value) nima?D) Saqlash uchun
+
+    A) Error logging
+
+    B) Custom error derive    A) ErrorJavob: B
+
+    C) Error throwing
+
+    D) Error catching    B) Muvaffaqiyatli natija44. Clone trait nima qiladi?
+
+    Javob: B
+
+    C) NoneA) O'chiradi
+
+76. anyhow crate nima uchun?
+
+    A) Anything    D) FalseB) Deep copy yaratadi
+
+    B) Flexible error handling
+
+    C) Anonymous types    Javob: BC) Referens beradi
+
+    D) Any type
+
+    Javob: BD) Hech narsa
+
+
+
+77. Rust da string slice type?39. Err(error) nima?Javob: B
+
+    A) String
+
+    B) &str    A) Ok45. Copy trait nima qiladi?
+
+    C) str
+
+    D) Slice    B) XatolikA) Deep copy
+
+    Javob: B
+
+    C) NoneB) Bitwise copy (stack data)
+
+78. String vs &str?
+
+    A) Bir xil    D) TrueC) Move
+
+    B) Owned vs borrowed
+
+    C) Syntax farqi    Javob: BD) Borrow
+
+    D) Performance farqi
+
+    Javob: BJavob: B
+
+
+
+79. format! macro nima qiladi?40. ? operator nima?46. Module qanday yaratiladi?
+
+    A) File format
+
+    B) String format va qaytaradi    A) UnwrapA) module {}
+
+    C) Print format
+
+    D) Data format    B) Error propagationB) mod keyword bilan
+
+    Javob: B
+
+    C) MatchC) namespace {}
+
+80. println! vs print!?
+
+    A) Bir xil    D) IfD) package {}
+
+    B) println yangi qator qo'shadi
+
+    C) print tezroq    Javob: BJavob: B
+
+    D) println tezroq
+
+    Javob: B47. Use keyword nima uchun?
+
+
+
+81. eprintln! nima qiladi?41. unwrap() nima?A) O'chirish
+
+    A) Error print
+
+    B) stderr ga print    A) WrapB) Module/item ni import qilish
+
+    C) Exit print
+
+    D) End print    B) Qiymatni olish yoki panicC) Yaratish
+
+    Javob: B
+
+    C) Safe getD) O'zgartirish
+
+82. dbg! macro nima qiladi?
+
+    A) Database    D) MatchJavob: B
+
+    B) Debug print qiymat bilan
+
+    C) Debug mode    Javob: B48. Pub keyword nima qiladi?
+
+    D) Debug info
+
+    Javob: BA) Private qiladi
+
+
+
+83. Rust da file o'qish?42. expect("msg") nima?B) Public qiladi
+
+    A) File.read()
+
+    B) std::fs::read_to_string()    A) unwrapC) O'chiradi
+
+    C) read_file()
+
+    D) open_file()    B) Custom panic message bilan unwrapD) Nusxalaydi
+
+    Javob: B
+
+    C) SafeJavob: B
+
+84. Rust da file yozish?
+
+    A) File.write()    D) Match49. Crate nima?
+
+    B) std::fs::write()
+
+    C) write_file()    Javob: BA) Fayl
+
+    D) save_file()
+
+    Javob: BB) Kompilyatsiya birligi (kutubxona/binary)
+
+
+
+85. Path type nima uchun?43. Vec<T> nima?C) Papka
+
+    A) URL path
+
+    B) File system path    A) ArrayD) O'zgaruvchi
+
+    C) Network path
+
+    D) Memory path    B) Dynamic array (vector)Javob: B
+
+    Javob: B
+
+    C) HashMap50. Cargo.toml fayli nima uchun?
+
+86. PathBuf nima?
+
+    A) Path buffer    D) StringA) Kod yozish
+
+    B) Owned mutable path
+
+    C) Path builder    Javob: BB) Loyiha konfiguratsiyasi
+
+    D) Path bytes
+
+    Javob: BC) Test yozish
+
+
+
+87. std::env module nima uchun?44. vec![1, 2, 3] nima?D) Hujjat yaratish
+
+    A) Environment
+
+    B) Environment variables access    A) ArrayJavob: B
+
+    C) Encapsulation
+
+    D) Encryption    B) Vector macroVARIANT 3
+
+    Javob: B
+
+    C) HashMap51. Dependencies qayerda ko'rsatiladi?
+
+88. std::process module?
+
+    A) Processing    D) TupleA) main.rs
+
+    B) Process yaratish va boshqarish
+
+    C) Processor info    Javob: BB) Cargo.toml da
+
+    D) Progress tracking
+
+    Javob: BC) lib.rs
+
+
+
+89. HashMap nima?45. push() method nima?D) config.rs
+
+    A) Hash function
+
+    B) Key-value collection    A) PopJavob: B
+
+    C) Hash table
+
+    D) Map function    B) Elementni oxiriga qo'shish52. Cargo build nima qiladi?
+
+    Javob: B
+
+    C) RemoveA) O'chiradi
+
+90. HashSet nima?
+
+    A) Hash function    D) GetB) Loyihani kompilyatsiya qiladi
+
+    B) Unique values collection
+
+    C) Setting hash    Javob: BC) Ishga tushiradi
+
+    D) Hash config
+
+    Javob: BD) Test qiladi
+
+
+
+91. BTreeMap nima?46. pop() method nima?Javob: B
+
+    A) Binary tree
+
+    B) Sorted key-value map    A) Push53. --release flag nima beradi?
+
+    C) B-tree structure
+
+    D) Tree map    B) Oxirgi elementni olishA) Sekin ishlash
+
+    Javob: B
+
+    C) AddB) Optimizatsiyalangan build
+
+92. VecDeque nima?
+
+    A) Vector queue    D) GetC) Debug info
+
+    B) Double-ended queue
+
+    C) Deque vector    Javob: BD) Hech narsa
+
+    D) Queue collection
+
+    Javob: BJavob: B
+
+
+
+93. LinkedList nima uchun?47. len() method nima?54. Panic! makrosi nima qiladi?
+
+    A) Link tracking
+
+    B) Efficient insert/remove    A) CapacityA) Davom etadi
+
+    C) List linking
+
+    D) Chain list    B) Element soniB) Dasturni to'xtatadi va xabar beradi
+
+    Javob: B
+
+    C) Size bytesC) Saqlab qoladi
+
+94. std::time module?
+
+    A) Timer    D) IndexD) Hech narsa
+
+    B) Time va duration operations
+
+    C) Timestamp    Javob: BJavob: B
+
+    D) Timeout
+
+    Javob: B55. Assert! makrosi nima tekshiradi?
+
+
+
+95. Instant vs SystemTime?48. Tuple nima?A) Faylni
+
+    A) Bir xil
+
+    B) Monotonic vs wall clock    A) ArrayB) Shartning true ekanligini
+
+    C) Fast vs slow
+
+    D) Local vs UTC    B) Fixed-size mixed typesC) Stringni
+
+    Javob: B
+
+    C) VectorD) Raqamni
+
+96. Duration type nima?
+
+    A) Time duration    D) HashMapJavob: B
+
+    B) Time span
+
+    C) Time interval    Javob: B56. #[test] attribute nima uchun?
+
+    D) All above
+
+    Javob: DA) Kompilyatsiya
+
+
+
+97. std::mem module nima uchun?49. (a, b, c) nima?B) Test funksiyasini belgilash
+
+    A) Memory allocation
+
+    B) Memory utilities    A) ArrayC) Debug
+
+    C) Membership
+
+    D) Memorization    B) TupleD) Release
+
+    Javob: B
+
+    C) VectorJavob: B
+
+98. std::ptr module?
+
+    A) Printer    D) HashMap57. Cargo test buyrug'i nima qiladi?
+
+    B) Raw pointer operations
+
+    C) Protocol    Javob: BA) Build qiladi
+
+    D) Property
+
+    Javob: BB) Testlarni ishga tushiradi
+
+
+
+99. Rust da unsafe keyword?50. tuple.0 nima?C) O'chiradi
+
+    A) Unsafe code
+
+    B) Bypasses some compiler checks    A) MethodD) Format qiladi
+
+    C) Dangerous code
+
+    D) All above    B) Birinchi elementJavob: B
+
+    Javob: D
+
+    C) Length58. Documentation comment qanday boshlanadi?
+
+100. Rust da FFI nima?
+
+     A) File format interface    D) TypeA) //
+
+     B) Foreign Function Interface
+
+     C) Fast function invocation    Javob: BB) ///
+
+     D) Function file input
+
+     Javob: BC) ##
+
+
+51. Array nima Rustda?D) /*
+
+    A) DynamicJavob: B
+
+    B) Fixed-size same type59. Cargo doc nima yaratadi?
+
+    C) Mixed typesA) Test
+
+    D) VectorB) HTML hujjatlar
+
+    Javob: BC) Kod
+
+D) Konfiguratsiya
+
+52. [i32; 5] nima?Javob: B
+
+    A) Vector60. Generic type nima?
+
+    B) 5 ta i32 array typeA) Oddiy tip
+
+    C) TupleB) Umumiy/parametrli tip
+
+    D) HashMapC) String tip
+
+    Javob: BD) Number tip
+
+Javob: B
+
+53. struct nima?61. <T> belgisi nimani bildiradi?
+
+    A) FunctionA) Test
+
+    B) Custom data typeB) Generic type parameter
+
+    C) EnumC) Tuple
+
+    D) TraitD) Trait
+
+    Javob: BJavob: B
+
+62. Trait bound nima?
+
+54. impl nima?A) Cheklov yo'q
+
+    A) StructB) Generic tipga qo'yiladigan trait talabi
+
+    B) Implementation blockC) Raqam cheklovi
+
+    C) TraitD) String cheklovi
+
+    D) EnumJavob: B
+
+    Javob: B63. Where clause nima uchun ishlatiladi?
+
+A) Sikl uchun
+
+55. self nima?B) Trait bound aniqroq yozish uchun
+
+    A) OtherC) Shart uchun
+
+    B) Current instanceD) Funksiya uchun
+
+    C) StaticJavob: B
+
+    D) Const64. Box<T> nima?
+
+    Javob: BA) Massiv
+
+B) Heap allokatsiyasi (smart pointer)
+
+56. &self nima?C) Stack qiymati
+
+    A) Owned selfD) Funksiya
+
+    B) Borrowed referenceJavob: B
+
+    C) Mutable self65. Rc<T> nima uchun?
+
+    D) StaticA) Single ownership
+
+    Javob: BB) Multiple ownership (reference counting)
+
+C) No ownership
+
+57. &mut self nima?D) Temporary ownership
+
+    A) ImmutableJavob: B
+
+    B) Mutable reference to self66. RefCell<T> nimaga imkon beradi?
+
+    C) OwnedA) Static borrow
+
+    D) StaticB) Runtime borrow checking
+
+    Javob: BC) No borrowing
+
+D) Compile-time only
+
+58. enum nima?Javob: B
+
+    A) Struct67. Arc<T> nima?
+
+    B) Enumeration typeA) Array
+
+    C) TraitB) Atomic Rc (thread-safe)
+
+    D) ModuleC) Async
+
+    Javob: BD) Abstract
+
+Javob: B
+
+59. Ownership nima?68. Mutex<T> nima uchun?
+
+    A) BorrowingA) Array uchun
+
+    B) O'zgaruvchi qiymatga egalikB) Thread-safe mutable access
+
+    C) ReferenceC) String uchun
+
+    D) CopyD) Number uchun
+
+    Javob: BJavob: B
+
+69. Thread yaratish uchun qanday funksiya?
+
+60. Move semantics nima?A) new_thread()
+
+    A) CopyB) thread::spawn()
+
+    B) Ownership transferC) create_thread()
+
+    C) ReferenceD) start_thread()
+
+    D) CloneJavob: B
+
+    Javob: B70. Join() metodi nima qiladi?
+
+A) Threadlarni birlashtiradi
+
+61. Borrowing nima?B) Thread tugashini kutadi
+
+    A) Ownership transferC) Thread ni to'xtatadi
+
+    B) Reference olishD) Thread ni o'chiradi
+
+    C) CopyJavob: B
+
+    D) Clone71. Channel nima?
+
+    Javob: BA) Fayl
+
+B) Threadlar orasida xabar uzatish
+
+62. & operator nima?C) Network protokol
+
+    A) DereferenceD) String
+
+    B) Reference olishJavob: B
+
+    C) Pointer72. mpsc nima degani?
+
+    D) AddressA) single producer single consumer
+
+    Javob: BB) multiple producer single consumer
+
+C) multiple producer multiple consumer
+
+63. * operator nima?D) single producer multiple consumer
+
+    A) ReferenceJavob: B
+
+    B) Dereference73. Send trait nima bildiradi?
+
+    C) MultiplyA) Yuborish mumkin emas
+
+    D) PointerB) Threadlar orasida xavfsiz yuborish
+
+    Javob: BC) Faqat o'qish
+
+D) Faqat yozish
+
+64. Reference rules?Javob: B
+
+    A) Many mutable74. Sync trait nima bildiradi?
+
+    B) One mutable OR many immutableA) Async
+
+    C) No rulesB) Threadlar orasida xavfsiz referens sharing
+
+    D) Any combinationC) No sharing
+
+    Javob: BD) Single thread
+
+Javob: B
+
+65. Lifetime nima?75. Unsafe keyword nima uchun?
+
+    A) Variable scopeA) Xavfsiz kod uchun
+
+    B) Reference validity durationB) Xavfli operatsiyalarni belgilash uchun
+
+    C) Function durationC) Tez kod uchun
+
+    D) Program durationD) Sekin kod uchun
+
+    Javob: BJavob: B
+
+VARIANT 4
+
+66. 'a nima?76. Raw pointer nima?
+
+    A) StringA) Xavfsiz pointer
+
+    B) Lifetime annotationB) *const T yoki *mut T (xavfli pointer)
+
+    C) VariableC) Box pointer
+
+    D) TypeD) Rc pointer
+
+    Javob: BJavob: B
+
+77. Deref trait nima qiladi?
+
+67. 'static lifetime nima?A) O'chiradi
+
+    A) ShortB) * operatori uchun dereference xatti-harakatini belgilaydi
+
+    B) Entire program durationC) Qo'shadi
+
+    C) FunctionD) Ayiradi
+
+    D) BlockJavob: B
+
+    Javob: B78. Drop trait nima uchun?
+
+A) Yaratish
+
+68. trait nima?B) Cleanup logikasi (destructor)
+
+    A) StructC) Nusxalash
+
+    B) Shared behavior definitionD) O'qish
+
+    C) EnumJavob: B
+
+    D) Module79. Iterator trait asosiy metodi?
+
+    Javob: BA) loop()
+
+B) next()
+
+69. impl Trait for Type?C) get()
+
+    A) Define traitD) fetch()
+
+    B) Implement trait for typeJavob: B
+
+    C) Use trait80. Map() metodi nima qiladi?
+
+    D) Delete traitA) O'chiradi
+
+    Javob: BB) Har bir elementni transform qiladi
+
+C) Saqlaydi
+
+70. derive macro nima?D) O'qiydi
+
+    A) Manual implJavob: B
+
+    B) Automatic trait implementation81. Filter() metodi nima qiladi?
+
+    C) DeleteA) O'chiradi
+
+    D) OverrideB) Shartga mos elementlarni tanlaydi
+
+    Javob: BC) Hamma elementni oladi
+
+D) Hech narsani olmaydi
+
+71. #[derive(Debug)] nima?Javob: B
+
+    A) Clone82. Collect() metodi nima qiladi?
+
+    B) Debug trait auto-implementA) Ochadi
+
+    C) CopyB) Iterator ni collectionga aylantiradi
+
+    D) DisplayC) O'chiradi
+
+    Javob: BD) Yozadi
+
+Javob: B
+
+72. Clone trait nima?83. Fold() metodi nima qiladi?
+
+    A) CopyA) Ko'paytiradi
+
+    B) Deep copy abilityB) Akumulyatsiya qiladi (reduce)
+
+    C) MoveC) Bo'ladi
+
+    D) ReferenceD) Qo'shadi
+
+    Javob: BJavob: B
+
+84. Into trait nima uchun?
+
+73. Copy trait nima?A) O'chirish
+
+    A) CloneB) Type conversion (owning)
+
+    B) Bitwise copy (stack)C) Nusxalash
+
+    C) MoveD) O'qish
+
+    D) ReferenceJavob: B
+
+    Javob: B85. From trait nima uchun?
+
+A) Yaratish faqat
+
+74. mod nima?B) Type conversion (Into ni avtomatik beradi)
+
+    A) FunctionC) O'chirish
+
+    B) ModuleD) Move qilish
+
+    C) StructJavob: B
+
+    D) Trait86. AsRef trait nima qiladi?
+
+    Javob: BA) Move qiladi
+
+B) Cheap reference conversion
+
+75. use nima?C) Deep copy
+
+    A) DefineD) Delete qiladi
+
+    B) Import/bring into scopeJavob: B
+
+    C) Export87. ToString trait nima beradi?
+
+    D) DeleteA) Number
+
+    Javob: BB) to_string() metodi
+
+C) Bool
+
+76. pub nima?D) Array
+
+    A) PrivateJavob: B
+
+    B) Public visibility88. Display trait nima uchun?
+
+    C) ProtectedA) Debug uchun
+
+    D) InternalB) {} format bilan chop etish uchun
+
+    Javob: BC) Test uchun
+
+D) File uchun
+
+77. crate nima?Javob: B
+
+    A) Package89. Error trait nima?
+
+    B) Compilation unitA) Number trait
+
+    C) ModuleB) Xatoliklar uchun standard trait
+
+    D) FunctionC) String trait
+
+    Javob: BD) Bool trait
+
+Javob: B
+
+78. HashMap nima?90. ? operatori nima qiladi?
+
+    A) ArrayA) Savol beradi
+
+    B) Key-value collectionB) Error propagation (return early)
+
+    C) VectorC) Matematik amal
+
+    D) TupleD) Mantiqiy amal
+
+    Javob: BJavob: B
+
+91. Const fn nima?
+
+79. HashSet nima?A) Oddiy funksiya
+
+    A) HashMapB) Compile-time da bajarilishi mumkin bo'lgan funksiya
+
+    B) Unique values collectionC) Runtime funksiya
+
+    C) ArrayD) Async funksiya
+
+    D) VectorJavob: B
+
+    Javob: B92. Static o'zgaruvchi nima?
+
+A) Lokal o'zgaruvchi
+
+80. Iterator trait nima?B) Global lifetime bilan o'zgaruvchi
+
+    A) CollectionC) Funksiya o'zgaruvchisi
+
+    B) Iteration interfaceD) Temporary o'zgaruvchi
+
+    C) ArrayJavob: B
+
+    D) Vector93. Lazy_static nima uchun?
+
+    Javob: BA) Tez static
+
+B) Sekin initsializatsiya qilinadigan static
+
+81. iter() method nima?C) No static
+
+    A) CollectD) Dynamic variable
+
+    B) Iterator yaratishJavob: B
+
+    C) Map94. Macro_rules! nima yaratadi?
+
+    D) FilterA) Funksiya
+
+    Javob: BB) Deklarativ makro
+
+C) Struct
+
+82. map() method nima?D) Enum
+
+    A) FilterJavob: B
+
+    B) Transform elements95. Procedural macro nima?
+
+    C) CollectA) Oddiy makro
+
+    D) IterB) Rust kodini qabul qilib, kod generatsiya qiladigan funksiya
+
+    Javob: BC) Test makro
+
+D) Debug makro
+
+83. filter() method nima?Javob: B
+
+    A) Map96. Attribute nima?
+
+    B) Select elements by conditionA) O'zgaruvchi
+
+    C) CollectB) Item ga metadata qo'shadigan #[]
+
+    D) IterC) Funksiya
+
+    Javob: BD) Struct
+
+Javob: B
+
+84. collect() method nima?97. Cfg attribute nima uchun?
+
+    A) IterA) Config fayl
+
+    B) Iterator to collectionB) Conditional compilation
+
+    C) MapC) Network config
+
+    D) FilterD) Database config
+
+    Javob: BJavob: B
+
+98. Feature flag nima?
+
+85. closure nima?A) Dastur flagi
+
+    A) FunctionB) Cargo.toml da optional funksionallik
+
+    B) Anonymous functionC) Kompilyator flagi
+
+    C) MethodD) System flagi
+
+    D) MacroJavob: B
+
+    Javob: B99. Workspace nima?
+
+A) Ish joyi
+
+86. |x| x + 1 nima?B) Bir nechta crate larni boshqarish
+
+    A) FunctionC) Single crate
+
+    B) ClosureD) Fayl
+
+    C) MethodJavob: B
+
+    D) Macro100. Rustfmt nima qiladi?
+
+    Javob: BA) Kompilyatsiya
+
+B) Kod formatlash
+
+87. Fn trait nima?C) Test qilish
+
+    A) FnMutD) Debug qilish
+
+    B) Immutable closure traitJavob: B
+    C) FnOnce
+    D) Function
+    Javob: B
+
+88. FnMut trait nima?
+    A) Fn
+    B) Mutable closure trait
+    C) FnOnce
+    D) Function
+    Javob: B
+
+89. FnOnce trait nima?
+    A) Fn
+    B) Once-callable closure
+    C) FnMut
+    D) Function
+    Javob: B
+
+90. Box<T> nima?
+    A) Stack
+    B) Heap allocation
+    C) Reference
+    D) Copy
+    Javob: B
+
+91. Rc<T> nima?
+    A) Box
+    B) Reference counting
+    C) Arc
+    D) Cell
+    Javob: B
+
+92. Arc<T> nima?
+    A) Rc
+    B) Atomic reference counting
+    C) Box
+    D) Cell
+    Javob: B
+
+93. RefCell<T> nima?
+    A) Cell
+    B) Interior mutability
+    C) Box
+    D) Rc
+    Javob: B
+
+94. Mutex<T> nima?
+    A) RefCell
+    B) Thread-safe lock
+    C) RwLock
+    D) Cell
+    Javob: B
+
+95. panic! macro nima?
+    A) Return
+    B) Crash program
+    C) Error
+    D) Warning
+    Javob: B
+
+96. assert! macro nima?
+    A) Print
+    B) Test condition, panic if false
+    C) Return
+    D) Log
+    Javob: B
+
+97. #[test] nima?
+    A) Main
+    B) Test function attribute
+    C) Debug
+    D) Release
+    Javob: B
+
+98. cargo test nima?
+    A) Build
+    B) Run tests
+    C) Run
+    D) Clean
+    Javob: B
+
+99. unsafe nima?
+    A) Safe
+    B) Raw pointer operations
+    C) Error
+    D) Warning
+    Javob: B
+
+100. extern "C" nima?
+     A) Rust
+     B) C language FFI
+     C) C++
+     D) Assembly
+     Javob: B

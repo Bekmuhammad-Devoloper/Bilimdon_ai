@@ -1,0 +1,148 @@
+===============================================
+WEB FUNDAMENTALS - MEDIUM SAVOLLARI
+===============================================
+
+SAVOL 1: Virtual scrolling nima?
+A) Scrolling
+B) Large list efficient rendering
+C) Performance
+D) Optimization
+JAVOB: B
+
+SAVOL 2: Lazy loading nima?
+A) Slow loading
+B) Content load as needed (visibility)
+C) Performance
+D) Resource loading
+JAVOB: B
+
+SAVOL 3: Image optimization nima?
+A) Image resize
+B) Compression, format, responsive
+C) Performance
+D) Image quality
+JAVOB: B
+
+SAVOL 4: Minification nima?
+A) Code small
+B) Code whitespace/names reduce
+C) Build process
+D) File size
+JAVOB: B
+
+SAVOL 5: Bundling nima?
+A) Package
+B) Multiple files combine (webpack, rollup)
+C) Build process
+D) File combination
+JAVOB: B
+
+SAVOL 6: Tree shaking nima?
+A) Tree
+B) Unused code eliminate (bundler)
+C) Optimization
+D) Build process
+JAVOB: B
+
+SAVOL 7: Code splitting nima?
+A) Code divide
+B) Chunks divide (lazy load)
+C) Performance
+D) Bundle size
+JAVOB: B
+
+SAVOL 8: Critical rendering path nima?
+A) Rendering
+B) First paint steps (HTML, CSS, JS)
+C) Performance
+D) Loading sequence
+JAVOB: B
+
+SAVOL 9: Paint nima?
+A) Draw
+B) Rendered pixels screen
+C) Rendering
+D) Display
+JAVOB: B
+
+SAVOL 10: Reflow nima?
+A) Flow recompute
+B) DOM element layout recompute
+C) Rendering
+D) Performance issue
+JAVOB: B
+
+SAVOL 11: Repaint nima?
+A) Paint again
+B) Visual appearance update (not layout)
+C) Rendering
+D) Display
+JAVOB: B
+
+SAVOL 12: Compositing nima?
+A) Composition
+B) Layers combine (display)
+C) Rendering
+D) Drawing
+JAVOB: B
+
+SAVOL 13: GPU acceleration nima?
+A) Graphics
+B) GPU use rendering
+C) Performance
+D) Hardware acceleration
+JAVOB: B
+
+SAVOL 14: Web Worker nima?
+A) Worker
+B) Background thread (main thread separate)
+C) Threading
+D) Concurrency
+JAVOB: B
+
+SAVOL 15: Service Worker nima?
+A) Worker
+B) Offline support (proxy, caching)
+C) Background task
+D) Network
+JAVOB: B
+
+SAVOL 16: Progressive Web App (PWA) nima?
+A) App
+B) Web + native features (offline, installable)
+C) Web app
+D) Application type
+JAVOB: B
+
+SAVOL 17: Web Assembly (WASM) nima?
+A) Assembly
+B) Binary format (low-level performance)
+C) Binary code
+D) Performance
+JAVOB: B
+
+SAVOL 18: Service worker lifecycle nima?
+A) Lifecycle
+B) install, activate, fetch events
+C) Event lifecycle
+D) Service worker events
+JAVOB: B
+
+SAVOL 19: CSP (Content Security Policy) nima?
+A) Security
+B) XSS prevent (resource loading policy)
+C) Security policy
+D) Header
+JAVOB: B
+
+SAVOL 20: Subresource integrity nima?
+A) Integrity check
+B) CDN resource verification (hash)
+C) Security
+D) Verification
+JAVOB: B
+
+===============================================
+MEDIUM SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: O'RTA
+===============================================

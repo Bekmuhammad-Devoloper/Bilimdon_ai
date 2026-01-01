@@ -1,0 +1,719 @@
+# JAVASCRIPT DASTURLASH TESTI - QIYIN DARAJA (ADVANCED)
+## 100 SAVOL
+
+---
+
+**1.** JavaScript Event Loop qanday ishlaydi?
+- A) Sync bajaradi
+- B) Call stack, task queue, microtask queuelarni boshqaradi
+- C) Faqat async bajaradi
+- D) Random tartibda
+**Javob: B**
+
+**2.** JavaScript-da microtask va macrotask farqi nima?
+- A) Farq yo'q
+- B) Microtask (Promise) avval, macrotask (setTimeout) keyin
+- C) Macrotask avval
+- D) Bir xil prioritet
+**Javob: B**
+
+**3.** JavaScript-da queueMicrotask() nima qiladi?
+- A) Macrotask qo'shadi
+- B) Microtask queuega funksiya qo'shadi
+- C) Darhol bajaradi
+- D) Tsikl yaratadi
+**Javob: B**
+
+**4.** JavaScript-da execution context nima?
+- A) Kod fayli
+- B) Kod bajarilish muhiti (scope, this, variables)
+- C) Brauzer
+- D) Server
+**Javob: B**
+
+**5.** JavaScript-da lexical environment nima?
+- A) Global scope
+- B) O'zgaruvchilar va ularning qiymatlari joylashgan struktura
+- C) Function scope
+- D) Block scope
+**Javob: B**
+
+**6.** JavaScript-da variable environment nima?
+- A) Lexical environment bilan bir xil
+- B) var e'lonlari uchun maxsus environment
+- C) Global scope
+- D) Local scope
+**Javob: B**
+
+**7.** JavaScript-da Temporal Dead Zone (TDZ) nima?
+- A) let/const e'lon qilingan lekin ishlatilishidan oldingi zona
+- B) var uchun zona
+- C) Global zona
+- D) Function zona
+**Javob: A**
+
+**8.** JavaScript-da hoisting let/const uchun qanday?
+- A) Hoisting yo'q
+- B) Hoisting bor lekin TDZ tufayli kirish mumkin emas
+- C) var kabi
+- D) Function kabi
+**Javob: B**
+
+**9.** JavaScript-da function hoisting qanday ishlaydi?
+- A) Ishlamaydi
+- B) Function declaration to'liq hoisted, expression emas
+- C) Faqat expression hoisted
+- D) Hech qachon hoisted emas
+**Javob: B**
+
+**10.** JavaScript-da scope chain nima?
+- A) Variable nomi
+- B) O'zgaruvchilarni qidirish tartibi (inner -> outer)
+- C) Function tartibi
+- D) Class tartibi
+**Javob: B**
+
+**11.** JavaScript-da closure memory leak qanday yuzaga keladi?
+- A) Hech qachon
+- B) Kerak bo'lmagan katta o'zgaruvchilar closure'da qolganda
+- C) Har doim
+- D) Faqat async'da
+**Javob: B**
+
+**12.** JavaScript-da WeakMap nima uchun memory leak'dan saqlaydi?
+- A) Saqlamaydi
+- B) Kalitlar garbage collect qilinishi mumkin
+- C) Ko'proq xotira ishlatadi
+- D) Farq yo'q
+**Javob: B**
+
+**13.** JavaScript-da tail call optimization qo'llab-quvvatlanadimi?
+- A) Ha, hamma joyda
+- B) ES6'da strict mode'da spetsifikatsiyada bor, lekin ko'p engine'lar qo'llab-quvvatlamaydi
+- C) Yo'q, hech qachon
+- D) Faqat Chrome'da
+**Javob: B**
+
+**14.** JavaScript-da trampolining nima?
+- A) Oddiy rekursiya
+- B) Stack overflow'dan saqlanish usuli (rekursiyani iteratsiyaga aylantirish)
+- C) Tsikl
+- D) Async pattern
+**Javob: B**
+
+**15.** JavaScript-da thunk nima?
+- A) Chunk
+- B) Kechiktirilgan hisoblash uchun funksiya (lazy evaluation)
+- C) Array
+- D) Object
+**Javob: B**
+
+**16.** JavaScript-da Monad pattern nima?
+- A) Class pattern
+- B) Qiymatni o'rash va funksiyalarni chaining qilish strukturasi
+- C) Singleton pattern
+- D) Factory pattern
+**Javob: B**
+
+**17.** JavaScript-da Functor nima?
+- A) Function
+- B) map() metodi bilan obyekt (mappable)
+- C) Array
+- D) Object
+**Javob: B**
+
+**18.** JavaScript-da immutability nima uchun muhim?
+- A) Muhim emas
+- B) Oldindan aytish mumkin (predictable), bug'lar kam
+- C) Sekinroq ishlaydi
+- D) Xotira ko'p ishlatadi
+**Javob: B**
+
+**19.** JavaScript-da structural sharing nima?
+- A) Hamma narsani nusxalash
+- B) Immutable strukturalarda o'zgarmas qismlarni qayta ishlatish
+- C) Hech narsa nusxalanmaydi
+- D) Reference sharing
+**Javob: B**
+
+**20.** JavaScript-da Immer.js qanday ishlaydi?
+- A) Mutable qiladi
+- B) Proxy bilan immutable update qiladi (draft pattern)
+- C) Oddiy Object.assign
+- D) Deep clone
+**Javob: B**
+
+**21.** JavaScript-da Proxy trap'lar nima?
+- A) Obyekt metodlari
+- B) Obyekt operatsiyalarini to'sib olish metodlari (get, set, etc.)
+- C) Array metodlari
+- D) Function metodlari
+**Javob: B**
+
+**22.** JavaScript-da Proxy performance impact nima?
+- A) Performance yaxshi
+- B) Overhead bor, lekin ko'p hollarda acceptable
+- C) Juda tez
+- D) Farq yo'q
+**Javob: B**
+
+**23.** JavaScript-da Reflect.ownKeys() nima qaytaradi?
+- A) Faqat string kalitlar
+- B) Barcha kalitlar (string, symbol, non-enumerable)
+- C) Faqat symbol kalitlar
+- D) Bo'sh array
+**Javob: B**
+
+**24.** JavaScript-da property descriptor nima?
+- A) Property nomi
+- B) Property attributlari (value, writable, enumerable, configurable)
+- C) Property tipi
+- D) Property qiymati
+**Javob: B**
+
+**25.** JavaScript-da [[Prototype]] va .prototype farqi nima?
+- A) Farq yo'q
+- B) [[Prototype]] obyektning, .prototype funksiyaning prototypi
+- C) Bir xil narsa
+- D) Faqat nom farqi
+**Javob: B**
+
+**26.** JavaScript-da proto pollution nima va qanday oldini olish mumkin?
+- A) Xavf yo'q
+- B) __proto__ orqali Object.prototype'ga kirish, Object.create(null) ishlatish
+- C) Oddiy xatolik
+- D) Brauzer xatosi
+**Javob: B**
+
+**27.** JavaScript-da Object.preventExtensions() nima qiladi?
+- A) Hamma o'zgarishlarni bloklaydi
+- B) Yangi property qo'shishni oldini oladi
+- C) Obyektni o'chiradi
+- D) Hech narsa qilmaydi
+**Javob: B**
+
+**28.** JavaScript-da seal vs freeze farqi nima?
+- A) Farq yo'q
+- B) seal - property qo'shish/o'chirish yo'q, freeze - hech qanday o'zgartirish yo'q
+- C) freeze - faqat qo'shish yo'q
+- D) seal - hamma narsa bloklangan
+**Javob: B**
+
+**29.** JavaScript-da Symbol.iterator nima?
+- A) Oddiy symbol
+- B) Obyektni iterable qilish uchun well-known symbol
+- C) String symbol
+- D) Number symbol
+**Javob: B**
+
+**30.** JavaScript-da Symbol.toStringTag nima uchun?
+- A) Stringga aylantirish
+- B) Object.prototype.toString() natijasini sozlash
+- C) String qo'shish
+- D) Tag yaratish
+**Javob: B**
+
+**31.** JavaScript-da Symbol.toPrimitive nima qiladi?
+- A) Primitive yaratadi
+- B) Obyektni primitivega aylantirish metodini sozlash
+- C) Number yaratadi
+- D) String yaratadi
+**Javob: B**
+
+**32.** JavaScript-da coercion qanday ishlaydi?
+- A) Hech qachon
+- B) Tiplarni avtomatik aylantirish (implicit/explicit)
+- C) Har doim bir xil
+- D) Faqat string'da
+**Javob: B**
+
+**33.** JavaScript-da ToPrimitive abstract operation nima?
+- A) Primitive yaratadi
+- B) Obyektni primitivega aylantirish algoritmi
+- C) Number yaratadi
+- D) String yaratadi
+**Javob: B**
+
+**34.** JavaScript-da [] + [] natija nima?
+- A) []
+- B) "" (bo'sh string)
+- C) 0
+- D) undefined
+**Javob: B**
+
+**35.** JavaScript-da [] + {} natija nima?
+- A) {}
+- B) "[object Object]" (string)
+- C) 0
+- D) undefined
+**Javob: B**
+
+**36.** JavaScript-da {} + [] natija nima (expression sifatida)?
+- A) "[object Object]"
+- B) 0
+- C) NaN
+- D) undefined
+**Javob: B**
+
+**37.** JavaScript-da abstract equality (==) qanday ishlaydi?
+- A) Type checking bor
+- B) Type coercion qiladi, keyin solishtiradi
+- C) Hech qachon ishlamaydi
+- D) === kabi
+**Javob: B**
+
+**38.** JavaScript-da strict equality (===) qanday ishlaydi?
+- A) Type coercion qiladi
+- B) Type va qiymatni solishtiradi, coercion yo'q
+- C) Faqat qiymat
+- D) Hech qanday tekshirish yo'q
+**Javob: B**
+
+**39.** JavaScript-da Object.is() va === farqi nima?
+- A) Farq yo'q
+- B) Object.is(NaN, NaN) true, Object.is(+0, -0) false
+- C) === yaxshiroq
+- D) Bir xil
+**Javob: B**
+
+**40.** JavaScript-da SameValueZero algorithm nima?
+- A) === kabi
+- B) Object.is() ga o'xshash lekin +0 === -0
+- C) == kabi
+- D) Farq yo'q
+**Javob: B**
+
+**41.** JavaScript-da Tagged template literals nima?
+- A) Oddiy template
+- B) Funksiya bilan template literal (custom processing)
+- C) HTML template
+- D) String template
+**Javob: B**
+
+**42.** JavaScript-da String.raw nima qiladi?
+- A) Raw stringga aylantiradi
+- B) Escape sequencelarni qayta ishlamaydi
+- C) String yaratadi
+- D) String o'chiradi
+**Javob: B**
+
+**43.** JavaScript-da async iterator qanday yaratiladi?
+- A) Symbol.iterator bilan
+- B) Symbol.asyncIterator bilan
+- C) async function bilan
+- D) generator bilan
+**Javob: B**
+
+**44.** JavaScript-da for await...of nima uchun?
+- A) Sync iterator
+- B) Async iterable obyektlar uchun
+- C) Oddiy for
+- D) Object uchun
+**Javob: B**
+
+**45.** JavaScript-da async generator nima?
+- A) Oddiy generator
+- B) async function* sintaksisi
+- C) async function
+- D) generator function
+**Javob: B**
+
+**46.** JavaScript-da Promise.prototype.then() kaç argument oladi va qanday?
+- A) Bitta
+- B) Ikki: onFulfilled, onRejected
+- C) Uch
+- D) Argument yo'q
+**Javob: B**
+
+**47.** JavaScript-da Promise chaining qanday ishlaydi?
+- A) Oddiy chaining
+- B) Har bir .then() yangi Promise qaytaradi
+- C) Bir xil Promise
+- D) Array qaytaradi
+**Javob: B**
+
+**48.** JavaScript-da Promise.resolve() thenable obyektga qanday munosabatda bo'ladi?
+- A) Ignore qiladi
+- B) Thenable obyektni Promise'ga aylantiradi
+- C) Xatolik chiqaradi
+- D) Bo'sh Promise
+**Javob: B**
+
+**49.** JavaScript-da unhandled promise rejection nima?
+- A) Ushlangan xatolik
+- B) .catch() yoki error handler bo'lmagan rejection
+- C) Oddiy xatolik
+- D) Console xatosi
+**Javob: B**
+
+**50.** JavaScript-da Promise leak qanday yuzaga keladi?
+- A) Hech qachon
+- B) Pending Promise'lar cancel qilinmasa va resurslarga havola qolsa
+- C) Har doim
+- D) Faqat async'da
+**Javob: B**
+
+**51.** JavaScript-da AbortController nima uchun?
+- A) Dasturni to'xtatish
+- B) Fetch yoki boshqa async operatsiyalarni bekor qilish
+- C) Promise yaratish
+- D) Error handling
+**Javob: B**
+
+**52.** JavaScript-da AbortSignal qanday ishlaydi?
+- A) Signal yuboradi
+- B) Cancel signal'ini o'tkazish uchun obyekt
+- C) Promise yaratadi
+- D) Xatolik signal
+**Javob: B**
+
+**53.** JavaScript-da structured clone algorithm nima?
+- A) Shallow copy
+- B) Deep clone (circular references ham) - structuredClone()
+- C) Reference copy
+- D) JSON.parse/stringify
+**Javob: B**
+
+**54.** JavaScript-da Transferable objects nima?
+- A) Oddiy obyektlar
+- B) Worker'larga ownership transfer qilinishi mumkin bo'lgan obyektlar
+- C) Immutable obyektlar
+- D) Frozen obyektlar
+**Javob: B**
+
+**55.** JavaScript-da SharedArrayBuffer nima va xavfi nima?
+- A) Oddiy array
+- B) Worker'lar o'rtasida xotira sharing, Spectre xavfi
+- C) Lokal array
+- D) String array
+**Javob: B**
+
+**56.** JavaScript-da Atomics API nima uchun?
+- A) Atom yaratish
+- B) SharedArrayBuffer'da atomic operatsiyalar
+- C) Oddiy operatsiyalar
+- D) String operatsiyalar
+**Javob: B**
+
+**57.** JavaScript-da Web Worker nima?
+- A) Server worker
+- B) Alohida thread'da JavaScript bajarish
+- C) Main thread
+- D) Browser worker
+**Javob: B**
+
+**58.** JavaScript-da Service Worker nima uchun?
+- A) Oddiy worker
+- B) Offline caching, push notification, background sync
+- C) Hisoblash uchun
+- D) DOM manipulatsiya
+**Javob: B**
+
+**59.** JavaScript-da postMessage() qanday ishlaydi?
+- A) Email yuboradi
+- B) Worker/iframe o'rtasida xabar yuborish
+- C) Console'ga chiqaradi
+- D) Server'ga yuboradi
+**Javob: B**
+
+**60.** JavaScript-da MessageChannel nima?
+- A) Chat kanali
+- B) Ikki yo'nalishli message passing channel
+- C) HTTP channel
+- D) WebSocket
+**Javob: B**
+
+**61.** JavaScript-da Broadcast Channel API nima uchun?
+- A) Video broadcast
+- B) Bir xil origin'dagi context'lar o'rtasida message
+- C) Server broadcast
+- D) Network broadcast
+**Javob: B**
+
+**62.** JavaScript-da IndexedDB nima?
+- A) localStorage kabi
+- B) Browser'da transactional database
+- C) Server database
+- D) Session storage
+**Javob: B**
+
+**63.** JavaScript-da Cache API (Service Worker) nima?
+- A) Browser cache
+- B) Request/response juftliklarini saqlash
+- C) localStorage
+- D) sessionStorage
+**Javob: B**
+
+**64.** JavaScript-da Performance API nima beradi?
+- A) Kod tezligi
+- B) Performance metrics (timing, memory, etc.)
+- C) CPU info
+- D) RAM info
+**Javob: B**
+
+**65.** JavaScript-da performance.now() va Date.now() farqi nima?
+- A) Farq yo'q
+- B) performance.now() monotonic va high-resolution
+- C) Date.now() yaxshiroq
+- D) Bir xil
+**Javob: B**
+
+**66.** JavaScript-da requestAnimationFrame() nima uchun?
+- A) Timeout yaratish
+- B) Browser repaint oldidan callback bajarish (60fps)
+- C) Rasm yuklash
+- D) Video o'ynash
+**Javob: B**
+
+**67.** JavaScript-da requestIdleCallback() nima qiladi?
+- A) Darhol bajaradi
+- B) Browser bo'sh bo'lganda callback bajaradi
+- C) Har doim bajaradi
+- D) Hech qachon bajarmaydi
+**Javob: B**
+
+**68.** JavaScript-da Intersection Observer API nima uchun?
+- A) Obyekt kesishish
+- B) Element viewport'ga kirganini kuzatish
+- C) Mouse event
+- D) Click event
+**Javob: B**
+
+**69.** JavaScript-da Mutation Observer nima uchun?
+- A) Genetik mutatsiya
+- B) DOM o'zgarishlarini kuzatish
+- C) Variable o'zgarish
+- D) Event kuzatish
+**Javob: B**
+
+**70.** JavaScript-da Resize Observer nima qiladi?
+- A) Window resize
+- B) Element o'lchamining o'zgarishini kuzatish
+- C) Image resize
+- D) Font resize
+**Javob: B**
+
+**71.** JavaScript-da Web Components nima?
+- A) React componentlari
+- B) Custom elements, shadow DOM, templates
+- C) Vue componentlari
+- D) Angular componentlari
+**Javob: B**
+
+**72.** JavaScript-da Shadow DOM nima va nima uchun?
+- A) Qorong'i DOM
+- B) Encapsulated DOM tree (style isolation)
+- C) Yashirin element
+- D) Display none
+**Javob: B**
+
+**73.** JavaScript-da Custom Elements qanday yaratiladi?
+- A) class bilan
+- B) customElements.define() orqali
+- C) document.createElement()
+- D) new Element()
+**Javob: B**
+
+**74.** JavaScript-da <template> tagi nima uchun?
+- A) CSS template
+- B) Inert HTML structure (render qilinmaydi)
+- C) JavaScript template
+- D) Text template
+**Javob: B**
+
+**75.** JavaScript-da <slot> elementi nima qiladi?
+- A) O'yin slot
+- B) Shadow DOM'da content projection
+- C) Array slot
+- D) Object slot
+**Javob: B**
+
+**76.** JavaScript-da Module pattern nima?
+- A) Oddiy pattern
+- B) Private/public memberlarni IIFE bilan yaratish
+- C) Class pattern
+- D) Singleton
+**Javob: B**
+
+**77.** JavaScript-da Revealing Module pattern nima?
+- A) Module pattern variantasi
+- B) Public API'ni return obyektida aniqlash
+- C) Class pattern
+- D) Factory pattern
+**Javob: B**
+
+**78.** JavaScript-da Constructor pattern muammosi nima?
+- A) Muammo yo'q
+- B) Har bir instansiya uchun metodlar nusxalanadi
+- C) Juda tez
+- D) Xotira tejaladi
+**Javob: B**
+
+**79.** JavaScript-da Prototype pattern nima foydasi?
+- A) Sekinroq
+- B) Metodlarni prototype'ga qo'yib xotira tejash
+- C) Xotira ko'p ishlatish
+- D) Farq yo'q
+**Javob: B**
+
+**80.** JavaScript-da Mixin pattern nima?
+- A) Inheritance
+- B) Bir nechta obyektlarning xususiyatlarini birlashtirish
+- C) Class yaratish
+- D) Interface yaratish
+**Javob: B**
+
+**81.** JavaScript-da Decorator pattern qanday amalga oshiriladi?
+- A) Class inheritance
+- B) Wrapper funksiya yoki Higher-Order Component
+- C) Mixin
+- D) Prototype
+**Javob: B**
+
+**82.** JavaScript-da Observer pattern va Pub/Sub farqi nima?
+- A) Farq yo'q
+- B) Pub/Sub loosely coupled (event channel), Observer tightly coupled
+- C) Observer loosely coupled
+- D) Bir xil
+**Javob: B**
+
+**83.** JavaScript-da Command pattern nima uchun?
+- A) Buyruq yaratish
+- B) Action'larni obyekt sifatida encapsulate qilish (undo/redo)
+- C) Funksiya yaratish
+- D) Class yaratish
+**Javob: B**
+
+**84.** JavaScript-da Memento pattern nima?
+- A) Xotira pattern
+- B) Obyekt holatini saqlash va qaytarish
+- C) Cache pattern
+- D) Singleton
+**Javob: B**
+
+**85.** JavaScript-da State pattern nima?
+- A) Variable pattern
+- B) Obyekt holatiga qarab xatti-harakat o'zgartirish
+- C) Data pattern
+- D) Static pattern
+**Javob: B**
+
+**86.** JavaScript-da Strategy pattern nima?
+- A) Game strategy
+- B) Algoritm oilasini encapsulate qilish va almashtirish
+- C) Business strategy
+- D) Code strategy
+**Javob: B**
+
+**87.** JavaScript-da Adapter pattern nima uchun?
+- A) Plugin
+- B) Mos kelmaydigan interface'larni moslashtirish
+- C) Network adapter
+- D) Power adapter
+**Javob: B**
+
+**88.** JavaScript-da Facade pattern nima?
+- A) Murakkab interface
+- B) Murakkab sistema uchun sodda interface
+- C) Yashirin interface
+- D) Ochiq interface
+**Javob: B**
+
+**89.** JavaScript-da Proxy pattern (design) va Proxy obyekti farqi nima?
+- A) Bir xil
+- B) Pattern - access control, Proxy - language feature
+- C) Farq yo'q
+- D) Faqat nom
+**Javob: B**
+
+**90.** JavaScript-da Iterator pattern nima uchun?
+- A) Tsikl
+- B) Collection elementlariga sequential access
+- C) Random access
+- D) Direct access
+**Javob: B**
+
+**91.** JavaScript-da Composite pattern nima?
+- A) Ko'p obyekt
+- B) Tree strukturada obyektlarni bir xil ishlatish
+- C) Bitta obyekt
+- D) Linear struktura
+**Javob: B**
+
+**92.** JavaScript-da Chain of Responsibility pattern nima?
+- A) Single responsibility
+- B) Request'ni handler zanjiri orqali o'tkazish
+- C) Direct handling
+- D) Random handling
+**Javob: B**
+
+**93.** JavaScript-da Template Method pattern nima?
+- A) String template
+- B) Algoritm skeletini belgilash, qadamlarni subclass override qiladi
+- C) HTML template
+- D) Code template
+**Javob: B**
+
+**94.** JavaScript-da TC39 nima?
+- A) JavaScript version
+- B) ECMAScript spetsifikatsiyasini boshqaruvchi komitet
+- C) Browser engine
+- D) JavaScript framework
+**Javob: B**
+
+**95.** JavaScript-da Stage 0-4 (TC39 process) nima?
+- A) Kod bosqichlari
+- B) JavaScript feature taklif bosqichlari
+- C) Test bosqichlari
+- D) Release bosqichlari
+**Javob: B**
+
+**96.** JavaScript-da Babel transpiler nima qiladi?
+- A) Tarjima qiladi
+- B) Yangi JS sintaksisini eski JS'ga aylantiradi
+- C) Kompilyatsiya qiladi
+- D) Minify qiladi
+**Javob: B**
+
+**97.** JavaScript-da Polyfill nima?
+- A) Library
+- B) Eski browser'larda yangi API'larni qo'llash kodi
+- C) Framework
+- D) Plugin
+**Javob: B**
+
+**98.** JavaScript-da Tree shaking nima?
+- A) Daraxt silkitish
+- B) Ishlatilmagan kodni olib tashlash (dead code elimination)
+- C) Kod qo'shish
+- D) Test qilish
+**Javob: B**
+
+**99.** JavaScript-da Code splitting nima uchun?
+- A) Kodni buzish
+- B) Kodni bir nechta chunk'larga bo'lib lazy loading
+- C) Kodni birlashtirish
+- D) Kodni o'chirish
+**Javob: B**
+
+**100.** JavaScript-da Dynamic import() nima qiladi?
+- A) Static import
+- B) Runtime'da module yuklash (Promise qaytaradi)
+- C) Kompilyatsiya vaqtida import
+- D) Hech narsa
+**Javob: B**
+
+---
+
+## JAVOBLAR KALITI:
+
+1-B, 2-B, 3-B, 4-B, 5-B, 6-B, 7-A, 8-B, 9-B, 10-B
+11-B, 12-B, 13-B, 14-B, 15-B, 16-B, 17-B, 18-B, 19-B, 20-B
+21-B, 22-B, 23-B, 24-B, 25-B, 26-B, 27-B, 28-B, 29-B, 30-B
+31-B, 32-B, 33-B, 34-B, 35-B, 36-B, 37-B, 38-B, 39-B, 40-B
+41-B, 42-B, 43-B, 44-B, 45-B, 46-B, 47-B, 48-B, 49-B, 50-B
+51-B, 52-B, 53-B, 54-B, 55-B, 56-B, 57-B, 58-B, 59-B, 60-B
+61-B, 62-B, 63-B, 64-B, 65-B, 66-B, 67-B, 68-B, 69-B, 70-B
+71-B, 72-B, 73-B, 74-B, 75-B, 76-B, 77-B, 78-B, 79-B, 80-B
+81-B, 82-B, 83-B, 84-B, 85-B, 86-B, 87-B, 88-B, 89-B, 90-B
+91-B, 92-B, 93-B, 94-B, 95-B, 96-B, 97-B, 98-B, 99-B, 100-B

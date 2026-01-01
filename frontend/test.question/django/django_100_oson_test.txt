@@ -1,0 +1,706 @@
+DJANGO FRAMEWORK - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+=========================================================
+
+1. Django qaysi dasturlash tilida yozilgan?
+   A) Java
+   B) Python
+   C) JavaScript
+   D) Ruby
+   Javob: B
+
+2. Django frameworkni kim yaratgan?
+   A) Guido van Rossum
+   B) Adrian Holovaty va Simon Willison
+   C) Mark Zuckerberg
+   D) Elon Musk
+   Javob: B
+
+3. Django qaysi yilda yaratilgan?
+   A) 2003
+   B) 2005
+   C) 2010
+   D) 2015
+   Javob: B
+
+4. Django qaysi arxitektura patterniga amal qiladi?
+   A) MVC
+   B) MTV (Model-Template-View)
+   C) MVVM
+   D) MVP
+   Javob: B
+
+5. Yangi Django loyiha yaratish uchun qaysi buyruq ishlatiladi?
+   A) django new project
+   B) django-admin startproject
+   C) python create django
+   D) django init
+   Javob: B
+
+6. Django da yangi app yaratish buyrug'i qaysi?
+   A) django createapp
+   B) python manage.py startapp
+   C) django newapp
+   D) manage.py create app
+   Javob: B
+
+7. Django loyihasini ishga tushirish buyrug'i qaysi?
+   A) python manage.py start
+   B) python manage.py runserver
+   C) django run
+   D) python run django
+   Javob: B
+
+8. Django default ravishda qaysi portda ishlaydi?
+   A) 3000
+   B) 8000
+   C) 5000
+   D) 80
+   Javob: B
+
+9. Django da Model nima vazifani bajaradi?
+   A) HTML sahifalarni ko'rsatadi
+   B) Ma'lumotlar bazasi bilan ishlaydi
+   C) URL marshrutlaydi
+   D) Statik fayllarni saqlaydi
+   Javob: B
+
+10. Django da View nima qiladi?
+    A) Ma'lumotlar bazasini yaratadi
+    B) So'rovlarni qabul qilib javob qaytaradi
+    C) HTML yozadi
+    D) CSS stillari beradi
+    Javob: B
+
+11. Django da Template nima?
+    A) Python fayl
+    B) HTML fayl dinamik kontent bilan
+    C) CSS fayl
+    D) JavaScript fayl
+    Javob: B
+
+12. settings.py fayli nima uchun ishlatiladi?
+    A) URL lar uchun
+    B) Loyiha sozlamalari uchun
+    C) Model yaratish uchun
+    D) View yaratish uchun
+    Javob: B
+
+13. urls.py fayli nima uchun?
+    A) Sozlamalar uchun
+    B) URL marshrutlash uchun
+    C) Template uchun
+    D) Model uchun
+    Javob: B
+
+14. models.py fayli nima uchun?
+    A) View yaratish
+    B) Ma'lumotlar bazasi modellari uchun
+    C) URL marshrutlash
+    D) Sozlamalar
+    Javob: B
+
+15. views.py fayli nima uchun?
+    A) Model yaratish
+    B) So'rovlarni qayta ishlash funksiyalari uchun
+    C) URL lar uchun
+    D) Sozlamalar uchun
+    Javob: B
+
+16. admin.py fayli nima uchun?
+    A) Foydalanuvchi yaratish
+    B) Admin panelda modellarni ro'yxatga olish
+    C) URL yaratish
+    D) Template yaratish
+    Javob: B
+
+17. Django admin paneliga kirish URL qaysi?
+    A) /dashboard
+    B) /admin
+    C) /panel
+    D) /control
+    Javob: B
+
+18. Superuser yaratish buyrug'i qaysi?
+    A) python manage.py createuser
+    B) python manage.py createsuperuser
+    C) django createadmin
+    D) python manage.py addadmin
+    Javob: B
+
+19. Migratsiya fayllari yaratish buyrug'i?
+    A) python manage.py migrate
+    B) python manage.py makemigrations
+    C) python manage.py createdb
+    D) python manage.py syncdb
+    Javob: B
+
+20. Migratsiyalarni bajarish buyrug'i?
+    A) python manage.py makemigrations
+    B) python manage.py migrate
+    C) python manage.py runmigrate
+    D) python manage.py apply
+    Javob: B
+
+21. Django da CharField nima uchun ishlatiladi?
+    A) Raqamlar uchun
+    B) Qisqa matn uchun
+    C) Fayllar uchun
+    D) Sana uchun
+    Javob: B
+
+22. Django da TextField nima uchun?
+    A) Qisqa matn
+    B) Uzun matn uchun
+    C) Raqamlar
+    D) Boolean
+    Javob: B
+
+23. IntegerField nima saqlaydi?
+    A) Matn
+    B) Butun sonlar
+    C) Haqiqiy sonlar
+    D) Mantiqiy qiymatlar
+    Javob: B
+
+24. BooleanField qanday qiymatlar saqlaydi?
+    A) Matn
+    B) True yoki False
+    C) Raqamlar
+    D) Sanalar
+    Javob: B
+
+25. DateField nima saqlaydi?
+    A) Vaqt
+    B) Sana
+    C) Matn
+    D) Raqam
+    Javob: B
+
+26. DateTimeField nima saqlaydi?
+    A) Faqat sana
+    B) Sana va vaqt
+    C) Faqat vaqt
+    D) Matn
+    Javob: B
+
+27. EmailField nima uchun?
+    A) Parol
+    B) Email manzil
+    C) Telefon
+    D) Manzil
+    Javob: B
+
+28. URLField nima saqlaydi?
+    A) Email
+    B) Web havola
+    C) Fayl yo'li
+    D) Raqam
+    Javob: B
+
+29. FileField nima uchun ishlatiladi?
+    A) Matn
+    B) Fayl yuklash uchun
+    C) Raqam
+    D) Sana
+    Javob: B
+
+30. ImageField nima uchun?
+    A) Video
+    B) Rasm yuklash uchun
+    C) Audio
+    D) Matn
+    Javob: B
+
+31. ForeignKey nima?
+    A) Asosiy kalit
+    B) Bir-ko'pga bog'lanish
+    C) Ko'p-ko'pga bog'lanish
+    D) Unique kalit
+    Javob: B
+
+32. ManyToManyField nima?
+    A) Bir-birga
+    B) Ko'p-ko'pga bog'lanish
+    C) Bir-ko'pga
+    D) Hech qanday bog'lanish emas
+    Javob: B
+
+33. OneToOneField nima?
+    A) Ko'p-ko'pga
+    B) Bir-birga bog'lanish
+    C) Bir-ko'pga
+    D) Foreign key
+    Javob: B
+
+34. Model.objects.all() nima qaytaradi?
+    A) Bitta obyekt
+    B) Barcha obyektlar (QuerySet)
+    C) Bo'sh ro'yxat
+    D) Xato
+    Javob: B
+
+35. Model.objects.get() nima qaytaradi?
+    A) QuerySet
+    B) Bitta obyekt
+    C) Ro'yxat
+    D) Dictionary
+    Javob: B
+
+36. Model.objects.filter() nima qaytaradi?
+    A) Bitta obyekt
+    B) Shartga mos QuerySet
+    C) Xato
+    D) Boolean
+    Javob: B
+
+37. Model.objects.create() nima qiladi?
+    A) O'chiradi
+    B) Yangi obyekt yaratadi va saqlaydi
+    C) Yangilaydi
+    D) O'qiydi
+    Javob: B
+
+38. obj.save() metodi nima qiladi?
+    A) O'chiradi
+    B) Obyektni bazaga saqlaydi
+    C) O'qiydi
+    D) Filterlaydi
+    Javob: B
+
+39. obj.delete() metodi nima qiladi?
+    A) Saqlaydi
+    B) Obyektni o'chiradi
+    C) Yangilaydi
+    D) Yaratadi
+    Javob: B
+
+40. Django template da o'zgaruvchini qanday chiqaramiz?
+    A) {% variable %}
+    B) {{ variable }}
+    C) {# variable #}
+    D) [[ variable ]]
+    Javob: B
+
+41. Django template da tag qanday yoziladi?
+    A) {{ tag }}
+    B) {% tag %}
+    C) {# tag #}
+    D) << tag >>
+    Javob: B
+
+42. Django template da izoh qanday yoziladi?
+    A) <!-- izoh -->
+    B) {# izoh #}
+    C) // izoh
+    D) /* izoh */
+    Javob: B
+
+43. {% for %} tagi nima uchun?
+    A) Shart uchun
+    B) Takrorlash uchun
+    C) O'zgaruvchi uchun
+    D) Meros uchun
+    Javob: B
+
+44. {% if %} tagi nima uchun?
+    A) Takrorlash
+    B) Shart tekshirish
+    C) Meros olish
+    D) Blok yaratish
+    Javob: B
+
+45. {% block %} tagi nima uchun?
+    A) Shart uchun
+    B) Template merosida qayta yoziladigan qism
+    C) Takrorlash uchun
+    D) O'zgaruvchi uchun
+    Javob: B
+
+46. {% extends %} tagi nima qiladi?
+    A) Blok yaratadi
+    B) Boshqa templatedan meros oladi
+    C) Takrorlaydi
+    D) Shart tekshiradi
+    Javob: B
+
+47. {% include %} tagi nima qiladi?
+    A) Meros oladi
+    B) Boshqa templateni joriyga kiritadi
+    C) Blok yaratadi
+    D) Shart tekshiradi
+    Javob: B
+
+48. {% url %} tagi nima uchun?
+    A) Statik fayl
+    B) URL yaratish uchun
+    C) Rasm uchun
+    D) CSS uchun
+    Javob: B
+
+49. {% static %} tagi nima uchun?
+    A) URL yaratish
+    B) Statik fayllarga yo'l
+    C) Template meros
+    D) Shart tekshirish
+    Javob: B
+
+50. {% csrf_token %} nima uchun?
+    A) Session uchun
+    B) Forma xavfsizligi uchun
+    C) Login uchun
+    D) Logout uchun
+    Javob: B
+
+51. Django da HttpResponse nima?
+    A) So'rov
+    B) HTTP javob obyekti
+    C) Model
+    D) Template
+    Javob: B
+
+52. render() funksiyasi nima qiladi?
+    A) Faqat matn qaytaradi
+    B) Template ni context bilan render qilib HttpResponse qaytaradi
+    C) Redirect qiladi
+    D) JSON qaytaradi
+    Javob: B
+
+53. redirect() funksiyasi nima qiladi?
+    A) Template render qiladi
+    B) Boshqa URL ga yo'naltiradi
+    C) JSON qaytaradi
+    D) Xato qaytaradi
+    Javob: B
+
+54. JsonResponse nima qaytaradi?
+    A) HTML
+    B) JSON formatda javob
+    C) XML
+    D) Text
+    Javob: B
+
+55. get_object_or_404() nima qiladi?
+    A) Faqat obyekt qaytaradi
+    B) Obyekt topilmasa 404 xato qaytaradi
+    C) 500 xato qaytaradi
+    D) Redirect qiladi
+    Javob: B
+
+56. Django da request.method nima?
+    A) URL
+    B) HTTP metod (GET, POST, ...)
+    C) User
+    D) Session
+    Javob: B
+
+57. request.GET nima?
+    A) POST ma'lumotlari
+    B) URL query parametrlari
+    C) Fayllar
+    D) Cookie
+    Javob: B
+
+58. request.POST nima?
+    A) GET parametrlari
+    B) POST so'rov ma'lumotlari
+    C) Fayllar
+    D) Session
+    Javob: B
+
+59. request.FILES nima?
+    A) POST ma'lumotlari
+    B) Yuklangan fayllar
+    C) GET parametrlari
+    D) Cookie
+    Javob: B
+
+60. request.user nima?
+    A) Session
+    B) Joriy foydalanuvchi
+    C) URL
+    D) Method
+    Javob: B
+
+61. Django da Form class nima uchun?
+    A) Model yaratish
+    B) Forma yaratish va validatsiya
+    C) URL yaratish
+    D) Template yaratish
+    Javob: B
+
+62. ModelForm nima?
+    A) Oddiy forma
+    B) Modelga asoslangan forma
+    C) URL forma
+    D) Template forma
+    Javob: B
+
+63. form.is_valid() nima tekshiradi?
+    A) Forma mavjudligini
+    B) Forma ma'lumotlari to'g'riligini
+    C) URL to'g'riligini
+    D) Model mavjudligini
+    Javob: B
+
+64. form.cleaned_data nima?
+    A) Xom ma'lumotlar
+    B) Validatsiyadan o'tgan tozalangan ma'lumotlar
+    C) Xatolar
+    D) Forma nomi
+    Javob: B
+
+65. form.errors nima?
+    A) Tozalangan ma'lumotlar
+    B) Validatsiya xatolari
+    C) Forma maydonlari
+    D) Meta ma'lumotlar
+    Javob: B
+
+66. Django da INSTALLED_APPS nima?
+    A) URL ro'yxati
+    B) O'rnatilgan ilovalar ro'yxati
+    C) Middleware ro'yxati
+    D) Template ro'yxati
+    Javob: B
+
+67. DATABASES sozlamasi nima uchun?
+    A) URL sozlash
+    B) Ma'lumotlar bazasi ulanishini sozlash
+    C) Template sozlash
+    D) Statik fayl sozlash
+    Javob: B
+
+68. DEBUG = True nima anglatadi?
+    A) Production rejimi
+    B) Ishlab chiqish rejimi (xatolar ko'rsatiladi)
+    C) Test rejimi
+    D) Xavfsiz rejim
+    Javob: B
+
+69. ALLOWED_HOSTS nima uchun?
+    A) Foydalanuvchilar ro'yxati
+    B) Ruxsat etilgan domenlar ro'yxati
+    C) URL ro'yxati
+    D) App ro'yxati
+    Javob: B
+
+70. STATIC_URL nima?
+    A) Media URL
+    B) Statik fayllar URL prefiksi
+    C) Admin URL
+    D) API URL
+    Javob: B
+
+71. MEDIA_URL nima uchun?
+    A) Statik fayllar
+    B) Foydalanuvchi yuklagan fayllar URL
+    C) Template URL
+    D) Admin URL
+    Javob: B
+
+72. TEMPLATES sozlamasi nima uchun?
+    A) Statik fayllar
+    B) Template engine sozlamalari
+    C) URL sozlamalari
+    D) Database sozlamalari
+    Javob: B
+
+73. Django shell buyrug'i qaysi?
+    A) python manage.py console
+    B) python manage.py shell
+    C) django shell
+    D) python shell django
+    Javob: B
+
+74. Django da path() funksiyasi nima uchun?
+    A) Fayl yo'li yaratish
+    B) URL pattern yaratish
+    C) Template yo'li
+    D) Static yo'li
+    Javob: B
+
+75. path() da <int:pk> nima?
+    A) Matn parametr
+    B) Butun son URL parametri
+    C) Boolean parametr
+    D) Float parametr
+    Javob: B
+
+76. path() da <str:name> nima?
+    A) Raqam parametr
+    B) Matn URL parametri
+    C) Slug parametr
+    D) UUID parametr
+    Javob: B
+
+77. path() da <slug:slug> nima?
+    A) Raqam
+    B) Slug formatidagi matn (harf, raqam, -, _)
+    C) UUID
+    D) Email
+    Javob: B
+
+78. name parametri path() da nima uchun?
+    A) URL yaratish
+    B) URL ga nom berish (reverse uchun)
+    C) View nomi
+    D) App nomi
+    Javob: B
+
+79. include() funksiyasi nima qiladi?
+    A) Template kiritadi
+    B) Boshqa urls.py ni kiritadi
+    C) Model kiritadi
+    D) View kiritadi
+    Javob: B
+
+80. app_name o'zgaruvchisi urls.py da nima uchun?
+    A) View nomi
+    B) URL namespace yaratish
+    C) Model nomi
+    D) Template nomi
+    Javob: B
+
+81. Django da @login_required nima?
+    A) Logout decorator
+    B) Faqat login qilgan foydalanuvchilar uchun
+    C) Admin decorator
+    D) Staff decorator
+    Javob: B
+
+82. Django da User model qaysi modulda?
+    A) django.db.models
+    B) django.contrib.auth.models
+    C) django.forms
+    D) django.views
+    Javob: B
+
+83. authenticate() funksiyasi nima qiladi?
+    A) Logout qiladi
+    B) Foydalanuvchini tekshiradi
+    C) Ro'yxatdan o'tkazadi
+    D) Parol o'zgartiradi
+    Javob: B
+
+84. login() funksiyasi nima qiladi?
+    A) Logout qiladi
+    B) Foydalanuvchini tizimga kiritadi
+    C) Ro'yxatdan o'tkazadi
+    D) Tekshiradi
+    Javob: B
+
+85. logout() funksiyasi nima qiladi?
+    A) Login qiladi
+    B) Foydalanuvchini tizimdan chiqaradi
+    C) Ro'yxatdan o'tkazadi
+    D) Parol o'zgartiradi
+    Javob: B
+
+86. request.user.is_authenticated nima tekshiradi?
+    A) Admin ekanligini
+    B) Login qilganligini
+    C) Staff ekanligini
+    D) Superuser ekanligini
+    Javob: B
+
+87. Django da default ma'lumotlar bazasi qaysi?
+    A) MySQL
+    B) SQLite
+    C) PostgreSQL
+    D) MongoDB
+    Javob: B
+
+88. __str__ metodi modelda nima uchun?
+    A) Saqlash uchun
+    B) Obyektni matn ko'rinishida ifodalash
+    C) O'chirish uchun
+    D) Yaratish uchun
+    Javob: B
+
+89. class Meta modelda nima uchun?
+    A) Maydon yaratish
+    B) Model meta ma'lumotlari (ordering, verbose_name, ...)
+    C) View yaratish
+    D) URL yaratish
+    Javob: B
+
+90. verbose_name nima?
+    A) Maydon nomi
+    B) Inson o'qiy oladigan nom
+    C) Database nomi
+    D) URL nomi
+    Javob: B
+
+91. ordering Meta da nima qiladi?
+    A) Filtrlaydi
+    B) Default tartiblash belgilaydi
+    C) Limitlaydi
+    D) Guruhlab beradi
+    Javob: B
+
+92. Django da collectstatic buyrug'i nima qiladi?
+    A) Statik fayllarni o'chiradi
+    B) Barcha statik fayllarni bir joyga yig'adi
+    C) Statik fayllarni yaratadi
+    D) Statik fayllarni yuklaydi
+    Javob: B
+
+93. STATIC_ROOT nima?
+    A) Statik fayllar URL
+    B) collectstatic yig'adigan katalog
+    C) Media katalog
+    D) Template katalog
+    Javob: B
+
+94. MEDIA_ROOT nima?
+    A) Statik fayllar katalogi
+    B) Yuklangan fayllar saqlanadigan katalog
+    C) Template katalogi
+    D) URL prefiks
+    Javob: B
+
+95. Django da test yozish uchun qaysi modul ishlatiladi?
+    A) django.test
+    B) django.contrib.test
+    C) unittest
+    D) pytest
+    Javob: A
+
+96. python manage.py test nima qiladi?
+    A) Server ishga tushiradi
+    B) Testlarni bajaradi
+    C) Migratsiya qiladi
+    D) App yaratadi
+    Javob: B
+
+97. Django da TestCase nima?
+    A) Model
+    B) Test yozish uchun asos sinf
+    C) View
+    D) Form
+    Javob: B
+
+98. self.assertEqual() nima qiladi?
+    A) True tekshiradi
+    B) Ikki qiymat tengligini tekshiradi
+    C) False tekshiradi
+    D) None tekshiradi
+    Javob: B
+
+99. self.assertTrue() nima tekshiradi?
+    A) Tenglikni
+    B) Qiymat True ekanligini
+    C) False ekanligini
+    D) None ekanligini
+    Javob: B
+
+100. Django loyihasida manage.py fayli nima?
+     A) Sozlamalar fayli
+     B) Buyruqlar bajarish uchun utility script
+     C) URL fayli
+     D) Model fayli
+     Javob: B
+
+=========================================================
+                      YAKUNLANDI
+=========================================================

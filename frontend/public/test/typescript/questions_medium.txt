@@ -1,0 +1,148 @@
+===============================================
+TYPESCRIPT - MEDIUM SAVOLLARI
+===============================================
+
+SAVOL 1: Type vs Interface o'rtasida farq?
+A) Farqi yo'q
+B) Type primitive, interface object
+C) Interface merge qilinadi, type yo'q
+D) Hamma to'g'ri
+JAVOB: D
+
+SAVOL 2: Generics nima?
+A) Normal type
+B) Type placeholder <T>
+C) Interface
+D) Function
+JAVOB: B
+
+SAVOL 3: Conditional types nima?
+A) if-else
+B) Type selection (T extends U ? X : Y)
+C) Union
+D) Intersection
+JAVOB: B
+
+SAVOL 4: Mapped types nima?
+A) Type mapping
+B) Existing type properties transform
+C) New type
+D) Property mapping
+JAVOB: B
+
+SAVOL 5: Keyof operator nima?
+A) Key access
+B) Type object keys extract
+C) Key name
+D) Object key
+JAVOB: B
+
+SAVOL 6: Typeof operator (type level) nima?
+A) Runtime type
+B) Value type extract
+C) Type query
+D) Type narrowing
+JAVOB: B
+
+SAVOL 7: Utility types nima?
+A) Regular types
+B) Built-in types (Partial, Required, Pick)
+C) Type manipulation
+D) Type helpers
+JAVOB: B
+
+SAVOL 8: Readonly utility nima?
+A) Property
+B) All properties readonly qilish
+C) Immutable
+D) Type helper
+JAVOB: B
+
+SAVOL 9: Record<K, T> nima?
+A) Recording
+B) Keys K with values T object type
+C) Object type
+D) Mapping type
+JAVOB: B
+
+SAVOL 10: Partial<T> nima?
+A) Part type
+B) All properties optional
+C) Utility type
+D) Type helper
+JAVOB: B
+
+SAVOL 11: Required<T> nima?
+A) Required properties
+B) All properties required
+C) Opposite of Partial
+D) Utility type
+JAVOB: B
+
+SAVOL 12: Pick<T, K> nima?
+A) Pick properties
+B) Specific properties select
+C) Type subset
+D) Property selection
+JAVOB: B
+
+SAVOL 13: Omit<T, K> nima?
+A) Omit properties
+B) Specific properties remove
+C) Type modification
+D) Property removal
+JAVOB: B
+
+SAVOL 14: Exclude<T, U> nima?
+A) Exclude type
+B) Union type exclude
+C) Type difference
+D) Set operation
+JAVOB: B
+
+SAVOL 15: Extract<T, U> nima?
+A) Extract type
+B) Union type common
+C) Type intersection
+D) Set operation
+JAVOB: B
+
+SAVOL 16: NonNullable<T> nima?
+A) Not null type
+B) null/undefined remove
+C) Type guard
+D) Type filter
+JAVOB: B
+
+SAVOL 17: Parameters<T> nima?
+A) Function parameters
+B) Function parameter types tuple
+C) Type extraction
+D) Function signature
+JAVOB: B
+
+SAVOL 18: ReturnType<T> nima?
+A) Return type
+B) Function return type extract
+C) Type extraction
+D) Function signature
+JAVOB: B
+
+SAVOL 19: Module augmentation nima?
+A) Module extend
+B) Existing module extend (declare module)
+C) Module modification
+D) Type extension
+JAVOB: B
+
+SAVOL 20: Declaration merging nima?
+A) Merge declarations
+B) Same name interface/namespace merge
+C) Type combination
+D) Declaration duplication
+JAVOB: B
+
+===============================================
+MEDIUM SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: O'RTA
+===============================================

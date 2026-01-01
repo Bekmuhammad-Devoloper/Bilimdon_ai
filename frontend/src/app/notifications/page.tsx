@@ -16,6 +16,17 @@ interface Notification {
   type: 'SYSTEM' | 'ACHIEVEMENT' | 'LEVEL_UP' | 'RANKING' | 'MESSAGE';
   isRead: boolean;
   createdAt: string;
+  data?: {
+    adminId?: string;
+    adminUsername?: string;
+    adminAvatar?: string;
+    adminFullName?: string;
+    imageUrl?: string;
+    videoUrl?: string;
+    categoryId?: string;
+    categorySlug?: string;
+    iconUrl?: string;
+  };
 }
 
 export default function NotificationsPage() {
@@ -36,7 +47,15 @@ export default function NotificationsPage() {
     const fetchNotifications = async () => {
       try {
         const { data } = await notificationsApi.getAll(1, 50);
-        setNotifications(data.notifications || data);
+        console.log('Notifications data:', data);
+        const notifList = data.notifications || data;
+        // Video URL'larini log qilish
+        notifList.forEach((n: Notification) => {
+          if (n.data?.videoUrl) {
+            console.log('Notification video URL:', n.data.videoUrl);
+          }
+        });
+        setNotifications(notifList);
       } catch (error) {
         console.error('Error fetching notifications:', error);
       } finally {
@@ -168,7 +187,40 @@ export default function NotificationsPage() {
               )}
             >
               <div className="flex items-start gap-4">
-                <div className="text-2xl">{getTypeIcon(notification.type)}</div>
+                {/* Icon yoki Admin Avatar yoki Category Icon */}
+                {notification.data?.iconUrl ? (
+                  <img 
+                    src={notification.data.iconUrl.startsWith('http') 
+                      ? notification.data.iconUrl 
+                      : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001'}${notification.data.iconUrl}`
+                    }
+                    alt="Kategoriya"
+                    className="w-10 h-10 rounded-lg object-cover flex-shrink-0"
+                    onError={(e) => {
+                      // Fallback to emoji if image fails
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.parentElement?.insertAdjacentHTML('beforeend', '<div class="text-2xl">📚</div>');
+                    }}
+                  />
+                ) : notification.type === 'MESSAGE' && notification.data?.adminAvatar ? (
+                  <img 
+                    src={notification.data.adminAvatar.startsWith('http') 
+                      ? notification.data.adminAvatar 
+                      : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${notification.data.adminAvatar}`
+                    }
+                    alt={notification.data.adminUsername || 'Admin'}
+                    className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                  />
+                ) : notification.type === 'MESSAGE' && notification.data?.adminUsername ? (
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-sm">
+                      {notification.data.adminUsername.charAt(0).toUpperCase()}
+                    </span>
+                  </div>
+                ) : (
+                  <div className="text-2xl">{getTypeIcon(notification.type)}</div>
+                )}
                 
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
@@ -188,6 +240,54 @@ export default function NotificationsPage() {
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                     {notification.message}
                   </p>
+
+                  {/* Rasm yoki Video */}
+                  {notification.data?.imageUrl && (
+                    <div className="mt-3">
+                      <img
+                        src={notification.data.imageUrl.startsWith('http') 
+                          ? notification.data.imageUrl 
+                          : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${notification.data.imageUrl}`
+                        }
+                        alt="Xabar rasmi"
+                        className="rounded-xl max-w-full max-h-64 object-cover cursor-pointer hover:opacity-90 transition"
+                        onClick={() => window.open(
+                          notification.data?.imageUrl?.startsWith('http') 
+                            ? notification.data.imageUrl 
+                            : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${notification.data?.imageUrl}`,
+                          '_blank'
+                        )}
+                      />
+                    </div>
+                  )}
+                  
+                  {notification.data?.videoUrl && (
+                    <div className="mt-3">
+                      {(() => {
+                        const videoUrl = notification.data?.videoUrl?.startsWith('http') 
+                          ? notification.data.videoUrl 
+                          : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${notification.data?.videoUrl}`;
+                        return (
+                          <video
+                            controls
+                            playsInline
+                            preload="auto"
+                            className="rounded-xl max-w-full max-h-64 bg-black min-h-[150px]"
+                            onError={(e) => {
+                              console.error('Video load error for URL:', videoUrl);
+                            }}
+                          >
+                            <source src={videoUrl} type="video/mp4" />
+                            <source src={videoUrl} type="video/webm" />
+                            <source src={videoUrl} type="video/ogg" />
+                            <p className="text-white p-4">
+                              Video yuklanmadi. <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">Bu yerda ochish</a>
+                            </p>
+                          </video>
+                        );
+                      })()}
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex items-center gap-1">

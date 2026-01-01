@@ -1,0 +1,702 @@
+GO (GOLANG) - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+=====================================================
+
+1. Go runtime scheduler components?
+   A) One component
+   B) G (goroutine), M (machine/thread), P (processor)
+   C) Two components
+   D) Three components
+   Javob: B
+
+2. GOMAXPROCS nima?
+   A) Max process
+   B) Maximum concurrent OS threads for goroutines
+   C) Process max
+   D) Thread max
+   Javob: B
+
+3. Work stealing scheduler?
+   A) No stealing
+   B) Idle P steals goroutines from other P's queue
+   C) All queues equal
+   D) Single queue
+   Javob: B
+
+4. Goroutine stack growth?
+   A) Fixed stack
+   B) Starts 2KB, grows/shrinks dynamically
+   C) 1MB fixed
+   D) No growth
+   Javob: B
+
+5. Stack copying nima?
+   A) Copy stack
+   B) Move stack to larger allocation when growing
+   C) No copy
+   D) Stack reference
+   Javob: B
+
+6. Escape analysis nima?
+   A) Escape check
+   B) Compiler decides stack vs heap allocation
+   C) Always heap
+   D) Always stack
+   Javob: B
+
+7. go build -gcflags="-m"?
+   A) Build flags
+   B) Print escape analysis decisions
+   C) Flags build
+   D) No print
+   Javob: B
+
+8. Go garbage collector type?
+   A) Stop-the-world
+   B) Concurrent, tri-color mark-and-sweep
+   C) Reference counting
+   D) Manual
+   Javob: B
+
+9. GC pauses in Go?
+   A) Long pauses
+   B) Sub-millisecond pauses (concurrent)
+   C) No pauses
+   D) Second pauses
+   Javob: B
+
+10. GOGC environment variable?
+    A) GC enable
+    B) Target heap growth percentage (default 100)
+    C) GC disable
+    D) Fixed heap
+    Javob: B
+
+11. GOMEMLIMIT (Go 1.19+)?
+    A) Memory unlimited
+    B) Soft memory limit for GC
+    C) Hard limit
+    D) No limit
+    Javob: B
+
+12. sync.Pool nima?
+    A) Pool sync
+    B) Cache for temporary objects to reduce allocations
+    C) Thread pool
+    D) Connection pool
+    Javob: B
+
+13. sync.Pool victim cache?
+    A) No cache
+    B) Two-generation pool for better retention
+    C) Single pool
+    D) Three pools
+    Javob: B
+
+14. Channel internal structure?
+    A) Simple array
+    B) hchan struct: buffer, sendq, recvq, lock
+    C) Linked list
+    D) Tree
+    Javob: B
+
+15. Buffered vs unbuffered channel?
+    A) Same
+    B) Buffered=async send, unbuffered=synchronous
+    C) Unbuffered=async
+    D) No difference
+    Javob: B
+
+16. Channel select statement?
+    A) Select channel
+    B) Multiplex multiple channel operations
+    C) Channel select
+    D) Single channel
+    Javob: B
+
+17. select with default?
+    A) No default
+    B) Non-blocking channel operation
+    C) Blocking default
+    D) Error default
+    Javob: B
+
+18. nil channel behavior in select?
+    A) Error
+    B) Forever blocks (useful for disabling cases)
+    C) Immediate return
+    D) Panic
+    Javob: B
+
+19. sync.Mutex internals?
+    A) Simple lock
+    B) Spinlock + semaphore, starvation mode
+    C) Only spinlock
+    D) Only semaphore
+    Javob: B
+
+20. Mutex starvation mode?
+    A) No starvation
+    B) After 1ms waiting, switch to FIFO
+    C) Always FIFO
+    D) Never FIFO
+    Javob: B
+
+21. sync.RWMutex nima?
+    A) Read mutex
+    B) Multiple readers OR single writer
+    C) Write mutex
+    D) Single reader
+    Javob: B
+
+22. sync.Once implementation?
+    A) Mutex always
+    B) Fast path with atomic, slow path with mutex
+    C) No atomic
+    D) Always slow
+    Javob: B
+
+23. sync.Cond nima?
+    A) Condition sync
+    B) Condition variable for goroutine coordination
+    C) Sync condition
+    D) Variable condition
+    Javob: B
+
+24. sync.Map use case?
+    A) All maps
+    B) High read, few writes, disjoint key sets
+    C) High write
+    D) Low read
+    Javob: B
+
+25. atomic.Value nima?
+    A) Atomic value
+    B) Lock-free read/write of arbitrary type
+    C) Value atomic
+    D) Locked value
+    Javob: B
+
+26. atomic.Pointer (Go 1.19+)?
+    A) Pointer atomic
+    B) Type-safe atomic pointer operations
+    C) Unsafe pointer
+    D) No generic
+    Javob: B
+
+27. errgroup.Group nima?
+    A) Error group
+    B) Parallel tasks with first error propagation
+    C) Group error
+    D) All errors
+    Javob: B
+
+28. semaphore.Weighted?
+    A) Weighted semaphore
+    B) Bounded parallelism with weights
+    C) Semaphore weighted
+    D) No bounds
+    Javob: B
+
+29. Context cancellation propagation?
+    A) No propagation
+    B) Parent cancel propagates to children
+    C) Children to parent
+    D) Independent
+    Javob: B
+
+30. context.WithTimeout vs WithDeadline?
+    A) Same
+    B) Timeout=duration, Deadline=absolute time
+    C) Deadline=duration
+    D) No difference
+    Javob: B
+
+31. context.Cause (Go 1.20+)?
+    A) No cause
+    B) Retrieve cancellation reason
+    C) Cause context
+    D) Error only
+    Javob: B
+
+32. context.AfterFunc (Go 1.21+)?
+    A) After func
+    B) Run function when context is done
+    C) Func after
+    D) Before func
+    Javob: B
+
+33. Interface internal representation?
+    A) Single pointer
+    B) (type, value) pair - itab + data pointer
+    C) Value only
+    D) Type only
+    Javob: B
+
+34. Empty interface (any) cost?
+    A) No cost
+    B) Boxing + type assertion overhead
+    C) Same as concrete
+    D) Faster
+    Javob: B
+
+35. Type assertion vs type switch?
+    A) Same
+    B) Switch more efficient for multiple types
+    C) Assertion better
+    D) No difference
+    Javob: B
+
+36. Interface method dispatch?
+    A) Direct call
+    B) itab method table lookup
+    C) Virtual table
+    D) No dispatch
+    Javob: B
+
+37. reflect.Type vs reflect.Value?
+    A) Same
+    B) Type=metadata, Value=runtime data
+    C) Value=metadata
+    D) No difference
+    Javob: B
+
+38. reflect.Value.CanSet()?
+    A) Always true
+    B) True only for addressable, settable values
+    C) Always false
+    D) Type dependent
+    Javob: B
+
+39. unsafe.Pointer use?
+    A) Safe always
+    B) Bypass type system for low-level ops
+    C) Type check
+    D) Memory safe
+    Javob: B
+
+40. unsafe.Sizeof, Alignof, Offsetof?
+    A) Runtime functions
+    B) Compile-time type layout information
+    C) Dynamic size
+    D) No alignment
+    Javob: B
+
+41. cgo overhead?
+    A) No overhead
+    B) ~100-200ns per call, stack switch
+    C) Same as Go
+    D) Faster than Go
+    Javob: B
+
+42. //go:linkname directive?
+    A) Link name
+    B) Access unexported symbols from other packages
+    C) Name link
+    D) Public symbols
+    Javob: B
+
+43. //go:noescape directive?
+    A) No escape
+    B) Tell compiler arguments don't escape
+    C) Escape always
+    D) Runtime check
+    Javob: B
+
+44. //go:nosplit directive?
+    A) No split
+    B) Prevent stack growth check
+    C) Split always
+    D) Stack check
+    Javob: B
+
+45. Generics type constraints?
+    A) No constraints
+    B) Interface with type sets
+    C) Class constraints
+    D) Any type
+    Javob: B
+
+46. comparable constraint?
+    A) Any type
+    B) Types supporting == and !=
+    C) All comparable
+    D) No comparable
+    Javob: B
+
+47. ~T in type constraints?
+    A) Exact type
+    B) T and types with underlying type T
+    C) Only T
+    D) No underlying
+    Javob: B
+
+48. Generic type inference?
+    A) No inference
+    B) Compiler infers type arguments from function arguments
+    C) Always explicit
+    D) Runtime inference
+    Javob: B
+
+49. Monomorphization in Go generics?
+    A) Full monomorphization
+    B) GCShape stenciling (types with same shape share code)
+    C) No stenciling
+    D) Always box
+    Javob: B
+
+50. go test -race?
+    A) No race
+    B) Enable race detector (ThreadSanitizer)
+    C) Fast test
+    D) No detection
+    Javob: B
+
+51. Race detector overhead?
+    A) No overhead
+    B) 5-10x slowdown, 5-10x memory
+    C) 2x slowdown
+    D) Same speed
+    Javob: B
+
+52. go test -cover?
+    A) No cover
+    B) Code coverage analysis
+    C) Test cover
+    D) No analysis
+    Javob: B
+
+53. go test -bench=.?
+    A) No bench
+    B) Run all benchmarks
+    C) Bench none
+    D) Run tests
+    Javob: B
+
+54. b.ReportAllocs()?
+    A) No report
+    B) Include allocation stats in benchmark
+    C) Report allocs
+    D) Memory only
+    Javob: B
+
+55. Fuzz testing (Go 1.18+)?
+    A) No fuzz
+    B) func FuzzXxx(f *testing.F) with corpus
+    C) Manual fuzz
+    D) Random only
+    Javob: B
+
+56. testing.T.Parallel()?
+    A) No parallel
+    B) Mark test for parallel execution
+    C) Parallel testing
+    D) Sequential only
+    Javob: B
+
+57. testing.T.Cleanup()?
+    A) No cleanup
+    B) Register cleanup function run after test
+    C) Manual cleanup
+    D) Before test
+    Javob: B
+
+58. pprof CPU profiling?
+    A) No profiling
+    B) runtime/pprof or net/http/pprof
+    C) External tool
+    D) Manual profiling
+    Javob: B
+
+59. pprof heap profiling?
+    A) No heap
+    B) Track allocations and live objects
+    C) CPU only
+    D) No objects
+    Javob: B
+
+60. pprof goroutine profile?
+    A) No goroutine
+    B) Stack traces of all goroutines
+    C) Single goroutine
+    D) No stack
+    Javob: B
+
+61. trace tool?
+    A) No trace
+    B) go tool trace for scheduler/gc analysis
+    C) Trace manual
+    D) No analysis
+    Javob: B
+
+62. runtime.Gosched()?
+    A) No sched
+    B) Yield processor to other goroutines
+    C) Stop goroutine
+    D) Continue running
+    Javob: B
+
+63. runtime.Goexit()?
+    A) No exit
+    B) Terminate goroutine, run defers
+    C) Exit go
+    D) No defer
+    Javob: B
+
+64. runtime.LockOSThread()?
+    A) No lock
+    B) Pin goroutine to current OS thread
+    C) Lock thread
+    D) Unpin thread
+    Javob: B
+
+65. runtime.NumGoroutine()?
+    A) Num goroutine
+    B) Count of active goroutines
+    C) Goroutine num
+    D) Thread count
+    Javob: B
+
+66. go build -ldflags "-s -w"?
+    A) Large binary
+    B) Strip debug info, smaller binary
+    C) Debug info
+    D) No change
+    Javob: B
+
+67. go build -trimpath?
+    A) No trim
+    B) Remove local paths from binary
+    C) Trim path
+    D) Add paths
+    Javob: B
+
+68. CGO_ENABLED=0?
+    A) Enable cgo
+    B) Pure Go build, no C dependencies
+    C) C enabled
+    D) No change
+    Javob: B
+
+69. GOOS and GOARCH?
+    A) No cross
+    B) Cross-compilation target OS and architecture
+    C) Local only
+    D) Single target
+    Javob: B
+
+70. go:embed directive?
+    A) No embed
+    B) Embed files in binary at compile time
+    C) Runtime embed
+    D) External files
+    Javob: B
+
+71. embed.FS vs []byte vs string?
+    A) Same
+    B) FS=directory, []byte=binary, string=text
+    C) All binary
+    D) No difference
+    Javob: B
+
+72. init() function ordering?
+    A) Random order
+    B) Dependency order, then source file order
+    C) Alphabetical
+    D) No order
+    Javob: B
+
+73. Multiple init() in same file?
+    A) Not allowed
+    B) All run in order of appearance
+    C) Only one
+    D) Random one
+    Javob: B
+
+74. go.mod replace directive?
+    A) No replace
+    B) Override module path to local or different version
+    C) Replace mod
+    D) No override
+    Javob: B
+
+75. go.mod retract directive?
+    A) No retract
+    B) Mark versions as not recommended
+    C) Retract mod
+    D) Delete version
+    Javob: B
+
+76. go work (Go 1.18+)?
+    A) No work
+    B) Multi-module workspace
+    C) Single module
+    D) No workspace
+    Javob: B
+
+77. Module proxy (GOPROXY)?
+    A) No proxy
+    B) Module download proxy servers
+    C) Proxy module
+    D) Direct only
+    Javob: B
+
+78. GOSUMDB nima?
+    A) No sumdb
+    B) Checksum database for module verification
+    C) Sum database
+    D) No verification
+    Javob: B
+
+79. vendor directory?
+    A) No vendor
+    B) Local copy of dependencies
+    C) Vendor dir
+    D) Global deps
+    Javob: B
+
+80. go mod tidy?
+    A) No tidy
+    B) Add missing, remove unused dependencies
+    C) Tidy mod
+    D) No change
+    Javob: B
+
+81. Struct field alignment?
+    A) No alignment
+    B) Fields aligned to type size, padding added
+    C) All packed
+    D) No padding
+    Javob: B
+
+82. Struct field ordering for size?
+    A) No ordering
+    B) Largest to smallest reduces padding
+    C) Alphabetical
+    D) Random
+    Javob: B
+
+83. String internal structure?
+    A) Null terminated
+    B) Struct: pointer + length
+    C) Pointer only
+    D) Length only
+    Javob: B
+
+84. String immutability?
+    A) Mutable
+    B) Immutable, modifications create new string
+    C) Sometimes mutable
+    D) No new string
+    Javob: B
+
+85. strings.Builder nima?
+    A) String builder
+    B) Efficient string concatenation
+    C) Builder string
+    D) Slow concat
+    Javob: B
+
+86. bytes.Buffer vs strings.Builder?
+    A) Same
+    B) Buffer=io.Writer, Builder=string-only
+    C) Builder=io.Writer
+    D) No difference
+    Javob: B
+
+87. Slice header structure?
+    A) Simple array
+    B) Struct: pointer, length, capacity
+    C) Pointer only
+    D) Length only
+    Javob: B
+
+88. Slice append growth factor?
+    A) 1x
+    B) ~2x until 1024, then 1.25x
+    C) Always 2x
+    D) 1.5x
+    Javob: B
+
+89. Full slice expression [low:high:max]?
+    A) Two args
+    B) Set capacity with max argument
+    C) No capacity
+    D) Three slice
+    Javob: B
+
+90. Map bucket structure?
+    A) Linked list
+    B) Buckets with 8 key-value pairs each
+    C) Tree
+    D) Array
+    Javob: B
+
+91. Map growth trigger?
+    A) Always grow
+    B) Load factor > 6.5 or too many overflow buckets
+    C) Load > 1
+    D) Never grow
+    Javob: B
+
+92. Map iteration order?
+    A) Insertion order
+    B) Randomized (intentionally)
+    C) Sorted keys
+    D) Fixed order
+    Javob: B
+
+93. defer LIFO behavior?
+    A) FIFO
+    B) Last In First Out execution
+    C) Random
+    D) No order
+    Javob: B
+
+94. Defer argument evaluation?
+    A) At execution
+    B) At defer statement (immediate)
+    C) Lazy evaluation
+    D) No evaluation
+    Javob: B
+
+95. Named return values with defer?
+    A) No effect
+    B) Defer can modify named returns
+    C) Cannot modify
+    D) Error
+    Javob: B
+
+96. panic/recover mechanism?
+    A) Exception handling
+    B) Stack unwinding with deferred recovery
+    C) No recovery
+    D) Immediate exit
+    Javob: B
+
+97. recover() return value?
+    A) Always nil
+    B) Panic value or nil
+    C) Always panic
+    D) Error type
+    Javob: B
+
+98. errors.Is vs errors.As?
+    A) Same
+    B) Is=value comparison, As=type assertion
+    C) As=value
+    D) No difference
+    Javob: B
+
+99. Error wrapping with %w?
+    A) No wrap
+    B) fmt.Errorf("...: %w", err) for wrapping
+    C) Wrap manual
+    D) No chain
+    Javob: B
+
+100. slog (Go 1.21+)?
+     A) No slog
+     B) Structured logging in standard library
+     C) Text logging
+     D) No standard
+     Javob: B

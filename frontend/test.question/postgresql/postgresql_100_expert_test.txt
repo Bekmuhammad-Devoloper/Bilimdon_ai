@@ -1,0 +1,702 @@
+POSTGRESQL - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+=====================================================
+
+1. MVCC (Multi-Version Concurrency Control)?
+   A) MVCC
+   B) Each transaction sees snapshot of data
+   C) Lock-based
+   D) No versioning
+   Javob: B
+
+2. Transaction isolation levels?
+   A) One level
+   B) READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE
+   C) Two levels
+   D) No isolation
+   Javob: B
+
+3. SERIALIZABLE isolation?
+   A) Serializable
+   B) Prevents all concurrency anomalies
+   C) Fastest
+   D) No anomalies
+   Javob: B
+
+4. Dead tuple cleanup?
+   A) Auto cleanup
+   B) VACUUM removes dead tuples
+   C) No cleanup
+   D) Manual delete
+   Javob: B
+
+5. VACUUM vs VACUUM FULL?
+   A) Same
+   B) VACUUM=marks space, FULL=rewrites table
+   C) FULL faster
+   D) No difference
+   Javob: B
+
+6. autovacuum_vacuum_threshold?
+   A) Threshold
+   B) Minimum tuples before autovacuum
+   C) Auto threshold
+   D) No minimum
+   Javob: B
+
+7. Table bloat?
+   A) Bloat
+   B) Dead tuples taking space
+   C) Normal state
+   D) No bloat
+   Javob: B
+
+8. pg_repack extension?
+   A) Repack
+   B) Online table rebuild without locks
+   C) Offline rebuild
+   D) No rebuild
+   Javob: B
+
+9. TOAST (The Oversized-Attribute Storage)?
+   A) Toast
+   B) Store large values out-of-line compressed
+   C) Inline only
+   D) No compression
+   Javob: B
+
+10. Index-Only Scan requirement?
+    A) No requirement
+    B) Visibility map must show all visible
+    C) Any index
+    D) Always index-only
+    Javob: B
+
+11. Visibility map purpose?
+    A) Visibility
+    B) Track all-visible pages for index-only scans
+    C) No tracking
+    D) Data map
+    Javob: B
+
+12. Covering index INCLUDE clause?
+    A) Include clause
+    B) Add non-key columns to leaf pages
+    C) Key columns
+    D) No include
+    Javob: B
+
+13. Partial index?
+    A) Partial index
+    B) Index with WHERE clause
+    C) Full index
+    D) No condition
+    Javob: B
+
+14. Expression index?
+    A) Expression index
+    B) Index on function/expression result
+    C) Column only
+    D) No expression
+    Javob: B
+
+15. GiST index use case?
+    A) B-tree
+    B) Geometric data, full-text search
+    C) Hash only
+    D) Text only
+    Javob: B
+
+16. GIN index use case?
+    A) GiST
+    B) Array, JSONB, full-text search
+    C) Geometric
+    D) Numbers
+    Javob: B
+
+17. BRIN index use case?
+    A) Any data
+    B) Physically sorted large tables
+    C) Small tables
+    D) Random data
+    Javob: B
+
+18. SP-GiST index?
+    A) GiST
+    B) Space-partitioned trees for ranges
+    C) B-tree
+    D) No partition
+    Javob: B
+
+19. Index concurrently?
+    A) Block writes
+    B) CREATE INDEX CONCURRENTLY without locks
+    C) Fast create
+    D) Offline
+    Javob: B
+
+20. Index reindex?
+    A) Reindex
+    B) Rebuild corrupted/bloated index
+    C) No rebuild
+    D) Auto rebuild
+    Javob: B
+
+21. pg_stat_user_indexes view?
+    A) Stats view
+    B) Index usage statistics
+    C) No statistics
+    D) Table stats
+    Javob: B
+
+22. Unused index detection?
+    A) Auto detect
+    B) idx_scan=0 in pg_stat_user_indexes
+    C) No detection
+    D) Manual count
+    Javob: B
+
+23. EXPLAIN ANALYZE output?
+    A) Explain
+    B) Actual execution time and rows
+    C) Estimated only
+    D) No time
+    Javob: B
+
+24. EXPLAIN BUFFERS?
+    A) Explain
+    B) Buffer hits and reads statistics
+    C) No buffers
+    D) Time only
+    Javob: B
+
+25. Sequential scan vs Index scan cost?
+    A) Same cost
+    B) seq_page_cost vs random_page_cost
+    C) Index always better
+    D) Seq always better
+    Javob: B
+
+26. effective_cache_size purpose?
+    A) Cache size
+    B) Planner estimate of disk cache
+    C) Actual cache
+    D) No purpose
+    Javob: B
+
+27. work_mem parameter?
+    A) Work mem
+    B) Memory for sorts/hashes per operation
+    C) Total memory
+    D) No limit
+    Javob: B
+
+28. shared_buffers sizing?
+    A) Any size
+    B) 25% of RAM recommended
+    C) 100% RAM
+    D) No buffer
+    Javob: B
+
+29. maintenance_work_mem?
+    A) Work mem
+    B) Memory for VACUUM, CREATE INDEX
+    C) Query memory
+    D) No maintenance
+    Javob: B
+
+30. huge_pages configuration?
+    A) Small pages
+    B) Reduce TLB misses with large pages
+    C) No TLB
+    D) Default pages
+    Javob: B
+
+31. Connection pooling necessity?
+    A) Not needed
+    B) PostgreSQL forks per connection
+    C) Threads
+    D) No fork
+    Javob: B
+
+32. PgBouncer pooling modes?
+    A) One mode
+    B) session, transaction, statement
+    C) Two modes
+    D) No mode
+    Javob: B
+
+33. Transaction pooling limitations?
+    A) No limits
+    B) No prepared statements, session variables
+    C) All features
+    D) No limitations
+    Javob: B
+
+34. Prepared statements?
+    A) No statements
+    B) PREPARE/EXECUTE for plan caching
+    C) No caching
+    D) Auto prepare
+    Javob: B
+
+35. Generic vs Custom plan?
+    A) Same
+    B) Generic=cached, Custom=parameter-specific
+    C) Custom=cached
+    D) No difference
+    Javob: B
+
+36. Partitioning types?
+    A) One type
+    B) RANGE, LIST, HASH
+    C) Range only
+    D) No partition
+    Javob: B
+
+37. Partition pruning?
+    A) No pruning
+    B) Eliminate partitions not matching query
+    C) Scan all
+    D) Manual prune
+    Javob: B
+
+38. Foreign table?
+    A) Local table
+    B) Access external data via FDW
+    C) No external
+    D) Import only
+    Javob: B
+
+39. postgres_fdw?
+    A) Local access
+    B) Access remote PostgreSQL
+    C) MySQL only
+    D) No remote
+    Javob: B
+
+40. Logical replication?
+    A) Physical
+    B) Replicate specific tables/data
+    C) All data
+    D) No replication
+    Javob: B
+
+41. Physical replication?
+    A) Logical
+    B) WAL streaming byte-by-byte
+    C) Table level
+    D) No WAL
+    Javob: B
+
+42. Streaming replication lag?
+    A) No lag
+    B) pg_stat_replication shows lag
+    C) Always sync
+    D) No monitoring
+    Javob: B
+
+43. Synchronous replication?
+    A) Async only
+    B) Wait for standby confirmation
+    C) No waiting
+    D) Fire and forget
+    Javob: B
+
+44. Hot standby queries?
+    A) No queries
+    B) Read queries on replica
+    C) Write allowed
+    D) Standby down
+    Javob: B
+
+45. Replication slots?
+    A) No slots
+    B) Prevent WAL deletion before replica read
+    C) Auto delete
+    D) Manual WAL
+    Javob: B
+
+46. pg_basebackup tool?
+    A) Logical backup
+    B) Physical backup of cluster
+    C) Table backup
+    D) No backup
+    Javob: B
+
+47. Point-in-time recovery?
+    A) No PITR
+    B) Restore to specific timestamp with WAL
+    C) Full backup only
+    D) No recovery
+    Javob: B
+
+48. WAL archiving?
+    A) No archive
+    B) archive_command copies WAL files
+    C) Delete WAL
+    D) Auto archive
+    Javob: B
+
+49. pg_dump vs pg_basebackup?
+    A) Same
+    B) pg_dump=logical, pg_basebackup=physical
+    C) pg_dump=physical
+    D) No difference
+    Javob: B
+
+50. Parallel query execution?
+    A) Serial only
+    B) Parallel workers for large scans
+    C) No parallel
+    D) Always parallel
+    Javob: B
+
+51. max_parallel_workers_per_gather?
+    A) No workers
+    B) Max workers for single query
+    C) Total workers
+    D) One worker
+    Javob: B
+
+52. Parallel-safe functions?
+    A) All functions
+    B) PARALLEL SAFE marking required
+    C) No marking
+    D) No functions
+    Javob: B
+
+53. CTEs optimization?
+    A) Always optimized
+    B) MATERIALIZED/NOT MATERIALIZED control
+    C) No control
+    D) Never materialized
+    Javob: B
+
+54. Recursive CTE?
+    A) No recursion
+    B) WITH RECURSIVE for hierarchical queries
+    C) Loop only
+    D) No WITH
+    Javob: B
+
+55. Window functions?
+    A) No windows
+    B) OVER clause for calculations across rows
+    C) Aggregate only
+    D) No OVER
+    Javob: B
+
+56. ROWS vs RANGE frame?
+    A) Same
+    B) ROWS=physical, RANGE=logical grouping
+    C) RANGE=physical
+    D) No difference
+    Javob: B
+
+57. LATERAL join?
+    A) No lateral
+    B) Subquery can reference earlier tables
+    C) No reference
+    D) Cross join
+    Javob: B
+
+58. MERGE statement (v15+)?
+    A) No merge
+    B) UPSERT with WHEN MATCHED/NOT MATCHED
+    C) Insert only
+    D) Update only
+    Javob: B
+
+59. JSONB vs JSON performance?
+    A) Same
+    B) JSONB=binary, indexed, faster queries
+    C) JSON=binary
+    D) No difference
+    Javob: B
+
+60. JSONB operators @> and <@?
+    A) Equality
+    B) Contains and contained by
+    C) No operators
+    D) Text operators
+    Javob: B
+
+61. JSONB path queries?
+    A) No path
+    B) jsonb_path_query() with SQL/JSON
+    C) XPath
+    D) No query
+    Javob: B
+
+62. Array operators && and @>?
+    A) Math operators
+    B) Overlap and contains
+    C) No array ops
+    D) Text ops
+    Javob: B
+
+63. Full-text search tsvector?
+    A) Text column
+    B) Normalized lexemes for search
+    C) No normalization
+    D) String only
+    Javob: B
+
+64. Full-text search tsquery?
+    A) SQL query
+    B) Search query with operators
+    C) No operators
+    D) Text query
+    Javob: B
+
+65. Text search ranking?
+    A) No ranking
+    B) ts_rank() for relevance scoring
+    C) Manual rank
+    D) Equal scores
+    Javob: B
+
+66. pg_trgm extension?
+    A) No trigram
+    B) Trigram similarity for fuzzy matching
+    C) Exact only
+    D) No fuzzy
+    Javob: B
+
+67. Custom data types?
+    A) No custom
+    B) CREATE TYPE with operators
+    C) Built-in only
+    D) No operators
+    Javob: B
+
+68. Domain types?
+    A) No domain
+    B) Data type with constraints
+    C) No constraints
+    D) Table type
+    Javob: B
+
+69. Composite types?
+    A) No composite
+    B) Row type with named fields
+    C) Single value
+    D) No fields
+    Javob: B
+
+70. Range types?
+    A) No range
+    B) int4range, tsrange for intervals
+    C) Integer only
+    D) No interval
+    Javob: B
+
+71. Exclusion constraints?
+    A) Unique only
+    B) Prevent overlapping with EXCLUDE
+    C) No exclude
+    D) No overlap check
+    Javob: B
+
+72. Row-level security (RLS)?
+    A) No RLS
+    B) POLICY controls row access per user
+    C) Column level
+    D) No policy
+    Javob: B
+
+73. RLS USING vs WITH CHECK?
+    A) Same
+    B) USING=read, WITH CHECK=write
+    C) USING=write
+    D) No difference
+    Javob: B
+
+74. SECURITY DEFINER functions?
+    A) Invoker rights
+    B) Run with owner's privileges
+    C) No privileges
+    D) No definer
+    Javob: B
+
+75. Advisory locks?
+    A) Row locks
+    B) Application-defined locks
+    C) No advisory
+    D) Auto locks
+    Javob: B
+
+76. pg_advisory_lock vs pg_try_advisory_lock?
+    A) Same
+    B) Blocking vs non-blocking
+    C) Non-blocking first
+    D) No try
+    Javob: B
+
+77. Listen/Notify?
+    A) Polling
+    B) Pub/sub messaging between sessions
+    C) No pub/sub
+    D) External only
+    Javob: B
+
+78. pg_notify() function?
+    A) Listen
+    B) Send notification with payload
+    C) No payload
+    D) No function
+    Javob: B
+
+79. Event triggers?
+    A) Row triggers
+    B) DDL event handling
+    C) DML only
+    D) No event
+    Javob: B
+
+80. INSTEAD OF triggers?
+    A) After triggers
+    B) Replace operation on views
+    C) No views
+    D) No instead
+    Javob: B
+
+81. Trigger transition tables?
+    A) No transition
+    B) Access OLD TABLE/NEW TABLE in triggers
+    C) Row only
+    D) No access
+    Javob: B
+
+82. PL/pgSQL exception handling?
+    A) No exception
+    B) BEGIN/EXCEPTION/END blocks
+    C) Try/catch
+    D) No handling
+    Javob: B
+
+83. PL/pgSQL RETURN NEXT?
+    A) Return all
+    B) Return row in set-returning function
+    C) Single return
+    D) No return
+    Javob: B
+
+84. PL/pgSQL EXECUTE...INTO?
+    A) Static SQL
+    B) Dynamic SQL with result
+    C) No dynamic
+    D) No result
+    Javob: B
+
+85. pg_stat_statements extension?
+    A) No stats
+    B) Query performance statistics
+    C) Table stats
+    D) No query stats
+    Javob: B
+
+86. pg_stat_statements normalization?
+    A) No normalization
+    B) Replace constants with $n
+    C) Keep constants
+    D) No replace
+    Javob: B
+
+87. auto_explain extension?
+    A) Manual explain
+    B) Automatic EXPLAIN for slow queries
+    C) No auto
+    D) All queries
+    Javob: B
+
+88. pg_buffercache extension?
+    A) No buffer view
+    B) View shared buffer contents
+    C) No view
+    D) Cache only
+    Javob: B
+
+89. pgstattuple extension?
+    A) No tuple stats
+    B) Table-level bloat statistics
+    C) No bloat
+    D) Row stats
+    Javob: B
+
+90. amcheck extension?
+    A) No check
+    B) Verify index integrity
+    C) Table only
+    D) No verify
+    Javob: B
+
+91. pg_prewarm extension?
+    A) No prewarm
+    B) Load relation into buffer cache
+    C) Auto warm
+    D) No load
+    Javob: B
+
+92. pgcrypto extension?
+    A) No crypto
+    B) Cryptographic functions
+    C) External only
+    D) No encryption
+    Javob: B
+
+93. PostGIS extension?
+    A) No GIS
+    B) Geographic data types and functions
+    C) Built-in
+    D) No spatial
+    Javob: B
+
+94. TimescaleDB extension?
+    A) No time-series
+    B) Time-series data optimization
+    C) Built-in
+    D) No hypertable
+    Javob: B
+
+95. pg_cron extension?
+    A) No cron
+    B) Schedule jobs in database
+    C) External cron
+    D) No schedule
+    Javob: B
+
+96. postgres_exporter?
+    A) No export
+    B) Prometheus metrics exporter
+    C) Built-in metrics
+    D) No monitoring
+    Javob: B
+
+97. pg_stat_progress views?
+    A) No progress
+    B) Monitor long-running operations
+    C) No monitor
+    D) Complete only
+    Javob: B
+
+98. pg_catalog schema?
+    A) User schema
+    B) System catalog tables
+    C) No catalog
+    D) External schema
+    Javob: B
+
+99. information_schema?
+    A) PostgreSQL specific
+    B) SQL standard metadata views
+    C) No standard
+    D) No views
+    Javob: B
+
+100. pg_upgrade tool?
+     A) pg_dump
+     B) In-place major version upgrade
+     C) No upgrade
+     D) Manual upgrade
+     Javob: B

@@ -1,0 +1,702 @@
+SQL - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+==============================================
+
+1. ACID properties?
+   A) One property
+   B) Atomicity, Consistency, Isolation, Durability
+   C) Two properties
+   D) No properties
+   Javob: B
+
+2. Normalization purpose?
+   A) Increase redundancy
+   B) Reduce data redundancy and anomalies
+   C) Denormalize
+   D) No purpose
+   Javob: B
+
+3. First Normal Form (1NF)?
+   A) Any form
+   B) Atomic values, no repeating groups
+   C) Repeating allowed
+   D) No atomic
+   Javob: B
+
+4. Second Normal Form (2NF)?
+   A) 1NF only
+   B) 1NF + no partial dependencies
+   C) Full dependency
+   D) No 1NF
+   Javob: B
+
+5. Third Normal Form (3NF)?
+   A) 2NF only
+   B) 2NF + no transitive dependencies
+   C) Transitive allowed
+   D) No 2NF
+   Javob: B
+
+6. BCNF (Boyce-Codd Normal Form)?
+   A) 3NF
+   B) Every determinant is a candidate key
+   C) Non-key determinant
+   D) Same as 3NF
+   Javob: B
+
+7. Denormalization purpose?
+   A) Reduce redundancy
+   B) Improve read performance with redundancy
+   C) No performance
+   D) Normalize more
+   Javob: B
+
+8. Surrogate key?
+   A) Natural key
+   B) System-generated unique identifier
+   C) Business key
+   D) No key
+   Javob: B
+
+9. Composite primary key?
+   A) Single column
+   B) Multiple columns forming unique identifier
+   C) No composite
+   D) Foreign key
+   Javob: B
+
+10. Foreign key constraint?
+    A) No constraint
+    B) Referential integrity between tables
+    C) Unique constraint
+    D) Check constraint
+    Javob: B
+
+11. CASCADE DELETE?
+    A) No action
+    B) Delete child rows when parent deleted
+    C) Keep children
+    D) Set null
+    Javob: B
+
+12. SET NULL on delete?
+    A) Delete
+    B) Set foreign key to NULL on parent delete
+    C) Cascade
+    D) No action
+    Javob: B
+
+13. CHECK constraint?
+    A) Referential
+    B) Validate column value conditions
+    C) Unique
+    D) Primary
+    Javob: B
+
+14. UNIQUE constraint vs PRIMARY KEY?
+    A) Same
+    B) UNIQUE allows NULL, PRIMARY KEY doesn't
+    C) PRIMARY allows NULL
+    D) No difference
+    Javob: B
+
+15. Index types B-tree?
+    A) Hash
+    B) Balanced tree for range queries
+    C) Linear
+    D) No tree
+    Javob: B
+
+16. Hash index use case?
+    A) Range queries
+    B) Equality comparisons only
+    C) All queries
+    D) No use
+    Javob: B
+
+17. Covering index?
+    A) Partial index
+    B) Index contains all columns needed for query
+    C) Primary index
+    D) No columns
+    Javob: B
+
+18. Index selectivity?
+    A) Low better
+    B) High selectivity = more unique values = better
+    C) No selectivity
+    D) Same values
+    Javob: B
+
+19. Clustered index?
+    A) Non-clustered
+    B) Determines physical row order
+    C) Logical order
+    D) No order
+    Javob: B
+
+20. Non-clustered index?
+    A) Clustered
+    B) Separate structure pointing to rows
+    C) Physical order
+    D) No pointer
+    Javob: B
+
+21. Query execution plan?
+    A) No plan
+    B) Strategy chosen by optimizer
+    C) Random execution
+    D) Manual plan
+    Javob: B
+
+22. EXPLAIN statement?
+    A) Execute
+    B) Show query execution plan
+    C) No show
+    D) Run query
+    Javob: B
+
+23. Table scan?
+    A) Index use
+    B) Read all rows sequentially
+    C) Partial read
+    D) No read
+    Javob: B
+
+24. Index seek vs scan?
+    A) Same
+    B) Seek=specific values, Scan=all index
+    C) Scan=specific
+    D) No difference
+    Javob: B
+
+25. Nested loop join?
+    A) Single loop
+    B) For each row in outer, scan inner
+    C) No loop
+    D) Hash join
+    Javob: B
+
+26. Hash join?
+    A) Nested loop
+    B) Build hash table, probe with other table
+    C) No hash
+    D) Sort merge
+    Javob: B
+
+27. Merge join?
+    A) Hash
+    B) Sort both tables, merge sorted results
+    C) No sort
+    D) Nested loop
+    Javob: B
+
+28. Subquery vs JOIN performance?
+    A) Same always
+    B) Depends on optimizer, JOIN often better
+    C) Subquery always better
+    D) No comparison
+    Javob: B
+
+29. Correlated subquery?
+    A) Independent
+    B) References outer query columns
+    C) No reference
+    D) Static
+    Javob: B
+
+30. EXISTS vs IN performance?
+    A) Same
+    B) EXISTS often better for large datasets
+    C) IN always better
+    D) No difference
+    Javob: B
+
+31. CTE (Common Table Expression)?
+    A) Subquery
+    B) WITH clause for readable temp result
+    C) Permanent table
+    D) No temp
+    Javob: B
+
+32. Recursive CTE?
+    A) No recursion
+    B) Self-referencing CTE for hierarchical data
+    C) Loop only
+    D) No hierarchy
+    Javob: B
+
+33. Window function OVER clause?
+    A) Aggregate
+    B) Define partition and order for calculation
+    C) No partition
+    D) GROUP BY
+    Javob: B
+
+34. PARTITION BY in window?
+    A) GROUP BY
+    B) Divide rows into groups for function
+    C) No divide
+    D) ORDER BY
+    Javob: B
+
+35. ROW_NUMBER() function?
+    A) Count
+    B) Assign sequential integer to rows
+    C) Random number
+    D) No number
+    Javob: B
+
+36. RANK() vs DENSE_RANK()?
+    A) Same
+    B) RANK has gaps, DENSE_RANK doesn't
+    C) DENSE has gaps
+    D) No difference
+    Javob: B
+
+37. LAG() and LEAD()?
+    A) Current row
+    B) Access previous/next row values
+    C) First row
+    D) Last row
+    Javob: B
+
+38. FIRST_VALUE() function?
+    A) Last
+    B) First value in partition
+    C) Any value
+    D) Random value
+    Javob: B
+
+39. NTILE(n) function?
+    A) Count
+    B) Distribute rows into n groups
+    C) Divide value
+    D) No groups
+    Javob: B
+
+40. Frame specification ROWS BETWEEN?
+    A) All rows
+    B) Define window frame boundaries
+    C) No boundary
+    D) Single row
+    Javob: B
+
+41. UNBOUNDED PRECEDING?
+    A) Current row
+    B) From partition start
+    C) From end
+    D) Limited
+    Javob: B
+
+42. CURRENT ROW frame?
+    A) All rows
+    B) Include only current row
+    C) Previous
+    D) Next
+    Javob: B
+
+43. Running total with window?
+    A) GROUP BY
+    B) SUM() OVER (ORDER BY ...) 
+    C) No sum
+    D) COUNT
+    Javob: B
+
+44. Moving average calculation?
+    A) Static average
+    B) AVG() with frame specification
+    C) Simple AVG
+    D) No frame
+    Javob: B
+
+45. PIVOT operation?
+    A) UNPIVOT
+    B) Rows to columns transformation
+    C) No transform
+    D) Columns to rows
+    Javob: B
+
+46. UNPIVOT operation?
+    A) PIVOT
+    B) Columns to rows transformation
+    C) No transform
+    D) Rows to columns
+    Javob: B
+
+47. MERGE statement?
+    A) INSERT only
+    B) INSERT, UPDATE, DELETE in one statement
+    C) UPDATE only
+    D) SELECT
+    Javob: B
+
+48. UPSERT pattern?
+    A) Update only
+    B) Insert or update if exists
+    C) Insert only
+    D) Delete
+    Javob: B
+
+49. COALESCE function?
+    A) NULL
+    B) Return first non-NULL value
+    C) Last value
+    D) Any value
+    Javob: B
+
+50. NULLIF function?
+    A) Return NULL always
+    B) Return NULL if arguments equal
+    C) Never NULL
+    D) Return first
+    Javob: B
+
+51. CASE expression?
+    A) If statement
+    B) Conditional logic in SELECT
+    C) No condition
+    D) Loop
+    Javob: B
+
+52. IIF function (SQL Server)?
+    A) CASE
+    B) Inline IF condition
+    C) No inline
+    D) While
+    Javob: B
+
+53. String aggregation (STRING_AGG)?
+    A) Numeric
+    B) Concatenate values with separator
+    C) No concat
+    D) Count strings
+    Javob: B
+
+54. GROUP_CONCAT (MySQL)?
+    A) Numeric
+    B) Aggregate strings in group
+    C) No group
+    D) Split string
+    Javob: B
+
+55. JSON_VALUE function?
+    A) Full JSON
+    B) Extract scalar value from JSON
+    C) Object
+    D) Array
+    Javob: B
+
+56. JSON_QUERY function?
+    A) Scalar
+    B) Extract object or array from JSON
+    C) Value
+    D) No extract
+    Javob: B
+
+57. FOR JSON clause?
+    A) Parse JSON
+    B) Format result as JSON
+    C) No format
+    D) XML
+    Javob: B
+
+58. Transaction isolation READ UNCOMMITTED?
+    A) No dirty reads
+    B) Allow dirty reads
+    C) Serializable
+    D) Repeatable
+    Javob: B
+
+59. READ COMMITTED isolation?
+    A) Dirty reads
+    B) No dirty reads, non-repeatable allowed
+    C) Repeatable
+    D) Serializable
+    Javob: B
+
+60. REPEATABLE READ isolation?
+    A) Non-repeatable
+    B) No dirty/non-repeatable, phantom allowed
+    C) Phantom prevented
+    D) Dirty allowed
+    Javob: B
+
+61. SERIALIZABLE isolation?
+    A) Dirty reads
+    B) Highest isolation, no anomalies
+    C) Phantom allowed
+    D) Non-repeatable
+    Javob: B
+
+62. Dirty read anomaly?
+    A) Clean read
+    B) Read uncommitted data from other transaction
+    C) Committed only
+    D) No read
+    Javob: B
+
+63. Phantom read anomaly?
+    A) Real rows
+    B) New rows appear in repeated query
+    C) No new rows
+    D) Same results
+    Javob: B
+
+64. Deadlock?
+    A) No lock
+    B) Two transactions waiting for each other
+    C) Single transaction
+    D) No wait
+    Javob: B
+
+65. NOLOCK hint (SQL Server)?
+    A) Lock
+    B) Read without acquiring locks
+    C) Exclusive lock
+    D) Wait for lock
+    Javob: B
+
+66. Optimistic vs pessimistic locking?
+    A) Same
+    B) Optimistic=check at commit, Pessimistic=lock early
+    C) Optimistic=lock early
+    D) No difference
+    Javob: B
+
+67. Row-level vs table-level locking?
+    A) Same
+    B) Row=fine grain, Table=coarse grain
+    C) Table=fine
+    D) No difference
+    Javob: B
+
+68. Stored procedure advantages?
+    A) No advantage
+    B) Precompiled, reduced network traffic
+    C) Slow execution
+    D) More traffic
+    Javob: B
+
+69. Stored procedure vs function?
+    A) Same
+    B) Procedure=side effects, Function=return value
+    C) Function=side effects
+    D) No return
+    Javob: B
+
+70. User-defined function types?
+    A) One type
+    B) Scalar, table-valued, aggregate
+    C) Scalar only
+    D) Table only
+    Javob: B
+
+71. Inline table-valued function?
+    A) Multi-statement
+    B) Single SELECT, better optimization
+    C) No optimization
+    D) No return
+    Javob: B
+
+72. Trigger AFTER vs INSTEAD OF?
+    A) Same
+    B) AFTER=runs after, INSTEAD OF=replaces
+    C) INSTEAD OF=after
+    D) No difference
+    Javob: B
+
+73. DML trigger?
+    A) DDL
+    B) Fires on INSERT, UPDATE, DELETE
+    C) SELECT only
+    D) No fire
+    Javob: B
+
+74. DDL trigger?
+    A) DML
+    B) Fires on CREATE, ALTER, DROP
+    C) INSERT only
+    D) No DDL
+    Javob: B
+
+75. Materialized view?
+    A) Virtual view
+    B) Physically stored query result
+    C) No storage
+    D) Temporary
+    Javob: B
+
+76. Materialized view refresh?
+    A) Always current
+    B) Manual or scheduled refresh
+    C) Real-time
+    D) No refresh
+    Javob: B
+
+77. Indexed view (SQL Server)?
+    A) No index
+    B) View with clustered index
+    C) Heap
+    D) No store
+    Javob: B
+
+78. Partitioning types?
+    A) One type
+    B) Range, list, hash, composite
+    C) Range only
+    D) No partition
+    Javob: B
+
+79. Partition pruning?
+    A) No pruning
+    B) Eliminate partitions from query
+    C) Scan all
+    D) Manual exclude
+    Javob: B
+
+80. Partition switching?
+    A) No switch
+    B) Move partition between tables instantly
+    C) Copy data
+    D) Slow move
+    Javob: B
+
+81. Temporal table?
+    A) Permanent
+    B) System-versioned history tracking
+    C) No history
+    D) Manual versioning
+    Javob: B
+
+82. FOR SYSTEM_TIME clause?
+    A) No time
+    B) Query historical data at point in time
+    C) Current only
+    D) Future data
+    Javob: B
+
+83. Columnstore index?
+    A) Row store
+    B) Column-based storage for analytics
+    C) OLTP
+    D) No compression
+    Javob: B
+
+84. Columnstore compression?
+    A) No compression
+    B) High compression for repeated values
+    C) Expansion
+    D) Low compression
+    Javob: B
+
+85. In-memory OLTP?
+    A) Disk-based
+    B) Memory-optimized tables for high throughput
+    C) Low throughput
+    D) No optimization
+    Javob: B
+
+86. Hash index in memory-optimized?
+    A) B-tree only
+    B) Fast point lookup in memory
+    C) Range lookup
+    D) No hash
+    Javob: B
+
+87. Query Store?
+    A) No store
+    B) Capture and analyze query performance
+    C) No capture
+    D) Log only
+    Javob: B
+
+88. Plan forcing?
+    A) No force
+    B) Force specific execution plan
+    C) Auto only
+    D) No plan
+    Javob: B
+
+89. Parameter sniffing?
+    A) No sniffing
+    B) Plan based on first execution parameters
+    C) All parameters
+    D) No plan cache
+    Javob: B
+
+90. OPTION (RECOMPILE)?
+    A) Cache always
+    B) Generate new plan for each execution
+    C) Use cached
+    D) No compile
+    Javob: B
+
+91. SQL injection prevention?
+    A) String concatenation
+    B) Parameterized queries
+    C) No prevention
+    D) Trust input
+    Javob: B
+
+92. Dynamic SQL risks?
+    A) No risks
+    B) SQL injection if not parameterized
+    C) Always safe
+    D) Faster
+    Javob: B
+
+93. EXECUTE AS clause?
+    A) No context
+    B) Run with different security context
+    C) Current user
+    D) No security
+    Javob: B
+
+94. Row-level security?
+    A) Column level
+    B) Filter rows based on user context
+    C) No filter
+    D) Table level
+    Javob: B
+
+95. Dynamic data masking?
+    A) No masking
+    B) Hide sensitive data from unauthorized users
+    C) Show all
+    D) Encrypt
+    Javob: B
+
+96. Always Encrypted?
+    A) Decrypted
+    B) Client-side encryption, server never sees plaintext
+    C) Server decrypt
+    D) No encryption
+    Javob: B
+
+97. Transparent Data Encryption (TDE)?
+    A) Application level
+    B) Database-level encryption at rest
+    C) No encryption
+    D) Network only
+    Javob: B
+
+98. Database mirroring?
+    A) Single copy
+    B) Real-time copy to standby server
+    C) No standby
+    D) Async only
+    Javob: B
+
+99. Always On Availability Groups?
+    A) Single replica
+    B) Multiple replicas with automatic failover
+    C) Manual failover
+    D) No HA
+    Javob: B
+
+100. Log shipping?
+     A) Real-time
+     B) Periodic backup and restore to standby
+     C) No delay
+     D) No standby
+     Javob: B

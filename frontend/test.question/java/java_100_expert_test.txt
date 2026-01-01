@@ -1,0 +1,702 @@
+JAVA - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+==============================================
+
+1. JVM architecture components?
+   A) One component
+   B) Class Loader, Runtime Data Areas, Execution Engine
+   C) Two components
+   D) Three components
+   Javob: B
+
+2. Class loading phases?
+   A) One phase
+   B) Loading, Linking (Verification, Preparation, Resolution), Initialization
+   C) Two phases
+   D) Loading only
+   Javob: B
+
+3. Parent delegation model nima?
+   A) Parent delegate
+   B) Class loader hierarchy, parent first check
+   C) Delegation model
+   D) Model parent
+   Javob: B
+
+4. Method area vs Heap?
+   A) Same
+   B) Method area=class metadata, Heap=objects
+   C) Heap=metadata
+   D) No difference
+   Javob: B
+
+5. Metaspace nima?
+   A) Meta space
+   B) Native memory for class metadata (Java 8+)
+   C) Space meta
+   D) Memory space
+   Javob: B
+
+6. JIT compilation nima?
+   A) Just-in-Time
+   B) Bytecode to native code runtime compilation
+   C) JIT compile
+   D) Time compilation
+   Javob: B
+
+7. Tiered compilation levels?
+   A) One level
+   B) Level 0-4 (interpreter to C2 optimized)
+   C) Two levels
+   D) Three levels
+   Javob: B
+
+8. C1 vs C2 compiler?
+   A) Same
+   B) C1=fast compile, C2=heavy optimization
+   C) C2=fast
+   D) No difference
+   Javob: B
+
+9. Escape analysis nima?
+   A) Escape check
+   B) Object scope analysis for stack allocation
+   C) Analysis escape
+   D) Scope analysis
+   Javob: B
+
+10. Scalar replacement nima?
+    A) Scalar replace
+    B) Object fields to local variables optimization
+    C) Replace scalar
+    D) Field replacement
+    Javob: B
+
+11. Garbage collectors in Java?
+    A) One GC
+    B) Serial, Parallel, G1, ZGC, Shenandoah
+    C) Two GC
+    D) Three GC
+    Javob: B
+
+12. G1 garbage collector feature?
+    A) Generation 1
+    B) Region-based, concurrent, predictable pauses
+    C) First generation
+    D) GC first
+    Javob: B
+
+13. ZGC max pause time target?
+    A) 100ms
+    B) < 10ms (scalable low-latency)
+    C) 50ms
+    D) No target
+    Javob: B
+
+14. Shenandoah concurrent compaction?
+    A) No compaction
+    B) Concurrent evacuation during GC
+    C) Serial compaction
+    D) Parallel compaction
+    Javob: B
+
+15. String deduplication G1?
+    A) String copy
+    B) Identical strings share char array
+    C) Duplicate strings
+    D) String duplicate
+    Javob: B
+
+16. CompressedOops nima?
+    A) Compressed operations
+    B) 32-bit object references in 64-bit JVM
+    C) Oops compressed
+    D) Compress object
+    Javob: B
+
+17. invokedynamic instruction nima?
+    A) Dynamic invoke
+    B) Runtime method binding (lambdas, etc.)
+    C) Invoke dynamic
+    D) Method invoke
+    Javob: B
+
+18. MethodHandle vs Reflection?
+    A) Same
+    B) MethodHandle=type-safe, faster
+    C) Reflection better
+    D) No difference
+    Javob: B
+
+19. VarHandle nima?
+    A) Variable handle
+    B) Low-level variable access (atomic, volatile)
+    C) Handle variable
+    D) Var handle
+    Javob: B
+
+20. Record classes nima?
+    A) Recording
+    B) Immutable data carriers (Java 14+)
+    C) Record type
+    D) Data record
+    Javob: B
+
+21. Sealed classes benefit?
+    A) Sealed package
+    B) Restricted inheritance hierarchy
+    C) Class sealed
+    D) Sealed type
+    Javob: B
+
+22. Pattern matching for instanceof?
+    A) Pattern match
+    B) if (obj instanceof String s) - auto cast
+    C) Match pattern
+    D) Instance pattern
+    Javob: B
+
+23. Pattern matching for switch?
+    A) Switch pattern
+    B) Case with type patterns and guards
+    C) Pattern switch
+    D) Match switch
+    Javob: B
+
+24. Text blocks (""") nima?
+    A) Text string
+    B) Multi-line string literals
+    C) Block text
+    D) String block
+    Javob: B
+
+25. Virtual threads (Project Loom)?
+    A) Virtual machine
+    B) Lightweight threads (Java 21+)
+    C) Thread virtual
+    D) Loom threads
+    Javob: B
+
+26. Virtual vs Platform threads?
+    A) Same
+    B) Virtual=cheap, many; Platform=OS thread
+    C) Platform=cheap
+    D) No difference
+    Javob: B
+
+27. Structured concurrency nima?
+    A) Concurrent structure
+    B) Scoped thread lifetime management
+    C) Structure concurrent
+    D) Concurrency structure
+    Javob: B
+
+28. Scoped values nima?
+    A) Value scope
+    B) Immutable inherited thread-local (Java 21+)
+    C) Scope value
+    D) Scoped variable
+    Javob: B
+
+29. Foreign Function & Memory API?
+    A) Foreign memory
+    B) Native code/memory access without JNI
+    C) Memory foreign
+    D) Function foreign
+    Javob: B
+
+30. MemorySegment nima?
+    A) Memory part
+    B) Off-heap memory region
+    C) Segment memory
+    D) Memory section
+    Javob: B
+
+31. Arena memory management?
+    A) Arena
+    B) MemorySegment lifecycle scope
+    C) Memory arena
+    D) Management arena
+    Javob: B
+
+32. Vector API nima?
+    A) Vector class
+    B) SIMD operations (incubating)
+    C) API vector
+    D) Vector operations
+    Javob: B
+
+33. Stream.toList() vs Collectors.toList()?
+    A) Same
+    B) toList()=unmodifiable, shorter
+    C) Collectors better
+    D) No difference
+    Javob: B
+
+34. mapMulti vs flatMap?
+    A) Same
+    B) mapMulti=imperative, no intermediate stream
+    C) flatMap better
+    D) No difference
+    Javob: B
+
+35. Stream.teeing collector?
+    A) Tee stream
+    B) Two collectors combine results
+    C) Teeing stream
+    D) Collector tee
+    Javob: B
+
+36. Gatherer interface (Java 22)?
+    A) Gather interface
+    B) Custom intermediate stream operations
+    C) Interface gatherer
+    D) Gatherer custom
+    Javob: B
+
+37. CompletableFuture combinators?
+    A) Future combine
+    B) thenCompose, thenCombine, allOf, anyOf
+    C) Combine future
+    D) Future combinator
+    Javob: B
+
+38. ForkJoinPool commonPool?
+    A) Fork join
+    B) Shared work-stealing pool for parallel streams
+    C) Common pool
+    D) Pool common
+    Javob: B
+
+39. work-stealing algorithm?
+    A) Work steal
+    B) Idle threads take tasks from busy threads
+    C) Steal work
+    D) Algorithm work
+    Javob: B
+
+40. ReentrantLock vs synchronized?
+    A) Same
+    B) ReentrantLock=more control, fairness, tryLock
+    C) synchronized better
+    D) No difference
+    Javob: B
+
+41. StampedLock nima?
+    A) Stamp lock
+    B) Optimistic read lock support
+    C) Lock stamp
+    D) Stamped lock
+    Javob: B
+
+42. ReadWriteLock use case?
+    A) Read write
+    B) Multiple readers, single writer
+    C) Write read
+    D) Lock read write
+    Javob: B
+
+43. Phaser vs CyclicBarrier vs CountDownLatch?
+    A) Same
+    B) Phaser=dynamic parties, reusable; Barrier=reusable; Latch=one-time
+    C) All one-time
+    D) No difference
+    Javob: B
+
+44. Exchanger class nima?
+    A) Exchange data
+    B) Two threads swap data
+    C) Class exchanger
+    D) Data exchange
+    Javob: B
+
+45. SynchronousQueue nima?
+    A) Sync queue
+    B) Zero-capacity queue, direct handoff
+    C) Queue sync
+    D) Synchronous queue
+    Javob: B
+
+46. TransferQueue interface?
+    A) Transfer queue
+    B) Producer waits for consumer to receive
+    C) Queue transfer
+    D) Interface transfer
+    Javob: B
+
+47. ConcurrentHashMap compute methods?
+    A) Hash compute
+    B) compute, computeIfAbsent, computeIfPresent
+    C) Compute hash
+    D) Map compute
+    Javob: B
+
+48. ConcurrentHashMap parallelism threshold?
+    A) Parallel threshold
+    B) Minimum elements for parallel operations
+    C) Threshold parallel
+    D) Concurrent threshold
+    Javob: B
+
+49. CopyOnWriteArrayList use case?
+    A) Copy write
+    B) Read-heavy, rare write scenarios
+    C) Write copy
+    D) List copy
+    Javob: B
+
+50. Atomic*FieldUpdater classes?
+    A) Atomic update
+    B) Atomic operations on volatile fields
+    C) Field atomic
+    D) Updater atomic
+    Javob: B
+
+51. LongAdder vs AtomicLong?
+    A) Same
+    B) LongAdder=high contention optimized
+    C) AtomicLong better
+    D) No difference
+    Javob: B
+
+52. @Contended annotation nima?
+    A) Contended annotation
+    B) False sharing prevention padding
+    C) Annotation contended
+    D) Padding annotation
+    Javob: B
+
+53. happens-before relationship?
+    A) Before happens
+    B) Memory visibility guarantee between operations
+    C) Happens before
+    D) Relationship happens
+    Javob: B
+
+54. volatile guarantees?
+    A) Volatile only
+    B) Visibility + ordering (no atomicity for compound ops)
+    C) All guarantees
+    D) No guarantees
+    Javob: B
+
+55. Memory barrier/fence nima?
+    A) Memory fence
+    B) Reordering prevention instruction
+    C) Barrier memory
+    D) Fence barrier
+    Javob: B
+
+56. Safe publication nima?
+    A) Publish safe
+    B) Object properly visible to other threads
+    C) Safe publish
+    D) Publication safe
+    Javob: B
+
+57. Double-checked locking issue?
+    A) Double check
+    B) Without volatile, may see partially constructed object
+    C) Locking double
+    D) Check locking
+    Javob: B
+
+58. Initialization-on-demand holder idiom?
+    A) Holder idiom
+    B) Lazy singleton using class loading
+    C) Idiom holder
+    D) Demand initialization
+    Javob: B
+
+59. ServiceLoader nima?
+    A) Service load
+    B) SPI (Service Provider Interface) mechanism
+    C) Load service
+    D) Loader service
+    Javob: B
+
+60. Module system (JPMS) benefits?
+    A) Module benefit
+    B) Strong encapsulation, reliable configuration
+    C) Benefit module
+    D) System module
+    Javob: B
+
+61. module-info.java directives?
+    A) Module info
+    B) requires, exports, opens, uses, provides
+    C) Info module
+    D) Directives module
+    Javob: B
+
+62. requires transitive nima?
+    A) Transitive require
+    B) Dependency re-exported to consumers
+    C) Require transitive
+    D) Transitive dependency
+    Javob: B
+
+63. opens vs exports?
+    A) Same
+    B) opens=reflection access, exports=compile access
+    C) exports=reflection
+    D) No difference
+    Javob: B
+
+64. jlink nima?
+    A) Java link
+    B) Custom runtime image creator
+    C) Link java
+    D) JVM linker
+    Javob: B
+
+65. jpackage nima?
+    A) Java package
+    B) Self-contained application packager
+    C) Package java
+    D) JVM packager
+    Javob: B
+
+66. GraalVM native-image?
+    A) Graal native
+    B) AOT compiled native executable
+    C) Native graal
+    D) Image native
+    Javob: B
+
+67. Native image limitations?
+    A) No limits
+    B) Reflection config, dynamic class loading issues
+    C) Full support
+    D) No limitations
+    Javob: B
+
+68. Quarkus native mode?
+    A) Quarkus native
+    B) GraalVM native image optimized framework
+    C) Native quarkus
+    D) Mode native
+    Javob: B
+
+69. jcmd diagnostic commands?
+    A) JVM command
+    B) Runtime JVM operations (heap dump, GC, etc.)
+    C) Command jcmd
+    D) Diagnostic jcmd
+    Javob: B
+
+70. jmap heap dump?
+    A) Java map
+    B) jmap -dump:live,format=b,file=heap.hprof <pid>
+    C) Map java
+    D) Heap map
+    Javob: B
+
+71. jstack thread dump?
+    A) Java stack
+    B) Thread state snapshot
+    C) Stack java
+    D) Thread stack
+    Javob: B
+
+72. jstat GC statistics?
+    A) Java stat
+    B) GC performance monitoring
+    C) Stat java
+    D) GC stat
+    Javob: B
+
+73. JFR (Java Flight Recorder)?
+    A) Flight recorder
+    B) Low-overhead profiling and diagnostics
+    C) Recorder flight
+    D) Java recorder
+    Javob: B
+
+74. JMC (Java Mission Control)?
+    A) Mission control
+    B) JFR analysis and JVM monitoring GUI
+    C) Control mission
+    D) Java control
+    Javob: B
+
+75. Unified GC logging (-Xlog:gc)?
+    A) GC log
+    B) Flexible GC logging configuration
+    C) Log GC
+    D) Unified log
+    Javob: B
+
+76. Epsilon GC nima?
+    A) Epsilon collector
+    B) No-op garbage collector (no reclamation)
+    C) GC epsilon
+    D) Collector epsilon
+    Javob: B
+
+77. Epsilon GC use case?
+    A) Production
+    B) Performance testing, short-lived apps
+    C) Always use
+    D) Never use
+    Javob: B
+
+78. String.intern() behavior?
+    A) Intern string
+    B) Return canonical string from string pool
+    C) String intern
+    D) Pool string
+    Javob: B
+
+79. String pool location Java 7+?
+    A) PermGen
+    B) Heap (not PermGen/Metaspace)
+    C) Metaspace
+    D) Stack
+    Javob: B
+
+80. Compact Strings (Java 9+)?
+    A) Compact string
+    B) Latin-1 strings use byte[] instead of char[]
+    C) String compact
+    D) Compressed string
+    Javob: B
+
+81. Class data sharing (CDS)?
+    A) Data sharing
+    B) Shared class metadata for faster startup
+    C) Sharing data
+    D) CDS class
+    Javob: B
+
+82. Application CDS (AppCDS)?
+    A) App CDS
+    B) Application classes in shared archive
+    C) CDS app
+    D) Application sharing
+    Javob: B
+
+83. Dynamic CDS (Java 13+)?
+    A) Dynamic sharing
+    B) Auto CDS archive creation at exit
+    C) CDS dynamic
+    D) Dynamic archive
+    Javob: B
+
+84. AOT compilation vs JIT?
+    A) Same
+    B) AOT=ahead of time, JIT=runtime
+    C) JIT=ahead of time
+    D) No difference
+    Javob: B
+
+85. Safepoint nima?
+    A) Safe point
+    B) JVM can safely stop all threads
+    C) Point safe
+    D) Thread safe
+    Javob: B
+
+86. Biased locking (removed Java 15)?
+    A) Biased lock
+    B) Single-thread optimized locking
+    C) Lock biased
+    D) Locking biased
+    Javob: B
+
+87. Thin lock vs Fat lock?
+    A) Same
+    B) Thin=uncontended, Fat=contended (monitor)
+    C) Fat=uncontended
+    D) No difference
+    Javob: B
+
+88. Monitor nima?
+    A) Screen
+    B) Object intrinsic lock + wait/notify
+    C) Lock monitor
+    D) Monitor lock
+    Javob: B
+
+89. Java agent nima?
+    A) Agent java
+    B) JVM instrumentation (-javaagent)
+    C) Java agent
+    D) Agent JVM
+    Javob: B
+
+90. premain vs agentmain?
+    A) Same
+    B) premain=startup, agentmain=runtime attach
+    C) agentmain=startup
+    D) No difference
+    Javob: B
+
+91. ByteBuddy nima?
+    A) Byte buddy
+    B) Bytecode manipulation library
+    C) Buddy byte
+    D) Code buddy
+    Javob: B
+
+92. ASM vs Javassist vs ByteBuddy?
+    A) Same
+    B) ASM=low-level, Javassist=high-level, ByteBuddy=DSL
+    C) All same level
+    D) No difference
+    Javob: B
+
+93. Annotation processing (APT)?
+    A) Annotation process
+    B) Compile-time code generation
+    C) Process annotation
+    D) APT annotation
+    Javob: B
+
+94. AbstractProcessor methods?
+    A) One method
+    B) init, getSupportedAnnotationTypes, process
+    C) Two methods
+    D) Process only
+    Javob: B
+
+95. JVMTI nima?
+    A) JVM tool
+    B) JVM Tool Interface (native debugging)
+    C) Tool JVM
+    D) Interface JVM
+    Javob: B
+
+96. JDWP nima?
+    A) JD protocol
+    B) Java Debug Wire Protocol
+    C) Debug protocol
+    D) Wire debug
+    Javob: B
+
+97. JNI performance overhead?
+    A) No overhead
+    B) Marshalling, GC interaction costs
+    C) Fast always
+    D) Negligible
+    Javob: B
+
+98. Panama project goal?
+    A) Panama canal
+    B) Better foreign function/memory access
+    C) Project panama
+    D) Goal panama
+    Javob: B
+
+99. Valhalla project goal?
+    A) Valhalla
+    B) Value types, primitive classes
+    C) Project valhalla
+    D) Goal valhalla
+    Javob: B
+
+100. Leyden project goal?
+     A) Leyden
+     B) Faster startup (static images)
+     C) Project leyden
+     D) Goal leyden
+     Javob: B

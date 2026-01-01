@@ -1,0 +1,702 @@
+VUE.JS - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+===============================================
+
+1. Vue3 Reactivity internals: Proxy traps?
+   A) get only
+   B) get, set, deleteProperty, has, ownKeys
+   C) set only
+   D) get, set only
+   Javob: B
+
+2. track() va trigger() nima?
+   A) Rendering
+   B) Dependency tracking and effect trigger
+   C) Component lifecycle
+   D) Event handling
+   Javob: B
+
+3. effect() function nima?
+   A) Side effect
+   B) Reactive effect registration
+   C) Computed
+   D) Watch
+   Javob: B
+
+4. ReactiveEffect class role?
+   A) Data storage
+   B) Dependency tracking and execution
+   C) Component state
+   D) Event bus
+   Javob: B
+
+5. targetMap structure?
+   A) Simple object
+   B) WeakMap<target, Map<key, Set<effects>>>
+   C) Array
+   D) Set
+   Javob: B
+
+6. WeakMap usage in reactivity?
+   A) Memory
+   B) Garbage collection of reactive objects
+   C) Performance
+   D) Security
+   Javob: B
+
+7. Ref implementation: ObjectRefImpl?
+   A) Primitive
+   B) Object refs wrapping
+   C) Array
+   D) Function
+   Javob: B
+
+8. ComputedRefImpl internals?
+   A) Simple value
+   B) Lazy evaluation, caching, dirty flag
+   C) Eager
+   D) No cache
+   Javob: B
+
+9. Scheduler queue?
+   A) Sync only
+   B) queueJob, queuePostFlushCb, flushJobs
+   C) Async only
+   D) No queue
+   Javob: B
+
+10. nextTick implementation?
+    A) setTimeout
+    B) Promise.resolve().then()
+    C) setImmediate
+    D) requestAnimationFrame
+    Javob: B
+
+11. Component instance proxy?
+    A) Direct access
+    B) PublicInstanceProxyHandlers
+    C) No proxy
+    D) Simple object
+    Javob: B
+
+12. setupContext nima?
+    A) Component
+    B) { attrs, slots, emit, expose }
+    C) Props
+    D) Data
+    Javob: B
+
+13. Render function optimization: Block tree?
+    A) No optimization
+    B) Static hoisting, patch flags
+    C) Full diff
+    D) No diff
+    Javob: B
+
+14. Patch flags nima?
+    A) Component flags
+    B) Dynamic node type hints
+    C) Static flags
+    D) Event flags
+    Javob: B
+
+15. PatchFlag values?
+    A) Numbers
+    B) TEXT, CLASS, STYLE, PROPS, FULL_PROPS...
+    C) Strings
+    D) Booleans
+    Javob: B
+
+16. Static hoisting?
+    A) Dynamic
+    B) Static VNodes outside render
+    C) No hoisting
+    D) Runtime hoisting
+    Javob: B
+
+17. Cache handlers?
+    A) No cache
+    B) Inline event handlers caching
+    C) All handlers
+    D) External only
+    Javob: B
+
+18. Fragment VNode?
+    A) Single root
+    B) Multiple root elements wrapper
+    C) No fragment
+    D) Required root
+    Javob: B
+
+19. Comment VNode?
+    A) No support
+    B) v-if false placeholder
+    C) Text only
+    D) Element only
+    Javob: B
+
+20. Text VNode?
+    A) Element
+    B) Text content node
+    C) Comment
+    D) Fragment
+    Javob: B
+
+21. normalizeVNode?
+    A) No normalize
+    B) Various inputs to VNode conversion
+    C) VNode to element
+    D) Element to VNode
+    Javob: B
+
+22. cloneVNode usage?
+    A) No clone
+    B) VNode modification without mutation
+    C) Deep copy
+    D) Shallow copy
+    Javob: B
+
+23. mergeProps utility?
+    A) No merge
+    B) Multiple props objects merge
+    C) Single prop
+    D) Override
+    Javob: B
+
+24. withDirectives function?
+    A) No directives
+    B) Render function directive application
+    C) Template only
+    D) Global only
+    Javob: B
+
+25. resolveComponent function?
+    A) No resolve
+    B) String to component resolution
+    C) Direct import
+    D) Template only
+    Javob: B
+
+26. resolveDynamicComponent?
+    A) Static only
+    B) Dynamic component resolution
+    C) No dynamic
+    D) Template only
+    Javob: B
+
+27. Component lazy hydration (experimental)?
+    A) Eager only
+    B) Defer component hydration
+    C) No hydration
+    D) Always eager
+    Javob: B
+
+28. Hydration mismatch handling?
+    A) Error
+    B) Client-side recover with warnings
+    C) Fail silently
+    D) Server priority
+    Javob: B
+
+29. createStaticVNode?
+    A) Dynamic
+    B) Server-rendered static content
+    C) Client only
+    D) No static
+    Javob: B
+
+30. useSSRContext composable?
+    A) Client only
+    B) SSR context access
+    C) No context
+    D) Both
+    Javob: B
+
+31. SSR streaming renderToStream?
+    A) Buffer only
+    B) Node.js stream rendering
+    C) No streaming
+    D) Client only
+    Javob: B
+
+32. pipeToWebWritable?
+    A) Node only
+    B) Web Streams API support
+    C) No web
+    D) Buffer only
+    Javob: B
+
+33. Teleport SSR behavior?
+    A) Client only
+    B) Server renders at target
+    C) No SSR
+    D) Skip
+    Javob: B
+
+34. Suspense SSR behavior?
+    A) Client only
+    B) Wait for async, fallback on timeout
+    C) No SSR
+    D) Skip
+    Javob: B
+
+35. Compiler-SFC parseComponent?
+    A) No parse
+    B) SFC descriptor extraction
+    C) Template only
+    D) Script only
+    Javob: B
+
+36. compileScript function?
+    A) Template
+    B) Script setup compilation
+    C) Style
+    D) No compile
+    Javob: B
+
+37. compileTemplate function?
+    A) Script
+    B) Template to render function
+    C) Style
+    D) No compile
+    Javob: B
+
+38. compileStyle function?
+    A) Template
+    B) Style scoping, CSS Modules
+    C) Script
+    D) No compile
+    Javob: B
+
+39. SFC descriptor structure?
+    A) String
+    B) { template, script, styles, customBlocks }
+    C) Object
+    D) Array
+    Javob: B
+
+40. Custom blocks in SFC?
+    A) No custom
+    B) <custom-block> with transform
+    C) Built-in only
+    D) External only
+    Javob: B
+
+41. Vite plugin-vue options?
+    A) No options
+    B) include, exclude, template, style, script
+    C) Single option
+    D) Automatic
+    Javob: B
+
+42. reactivityTransform (experimental)?
+    A) Stable
+    B) $ref, $computed sugar
+    C) No transform
+    D) Deprecated
+    Javob: B
+
+43. props destructure transform?
+    A) No transform
+    B) defineProps destructure with reactivity
+    C) Manual
+    D) Always enabled
+    Javob: B
+
+44. Compiler macros expansion?
+    A) Runtime
+    B) Compile-time code transform
+    C) No expansion
+    D) Manual
+    Javob: B
+
+45. defineModel compilation output?
+    A) No output
+    B) Prop + emit + ref combination
+    C) Single prop
+    D) Single emit
+    Javob: B
+
+46. useModel runtime helper?
+    A) No helper
+    B) Two-way binding implementation
+    C) One-way
+    D) Manual
+    Javob: B
+
+47. Vapor mode (experimental)?
+    A) Stable
+    B) No virtual DOM compilation
+    C) More virtual DOM
+    D) Deprecated
+    Javob: B
+
+48. Vapor vs Standard Vue?
+    A) Bir xil
+    B) Vapor direct DOM, Standard VDOM
+    C) Standard direct DOM
+    D) Vapor VDOM
+    Javob: B
+
+49. createApp internals?
+    A) Simple
+    B) App context, mount, unmount, provide
+    C) Component only
+    D) No internals
+    Javob: B
+
+50. App context structure?
+    A) Simple object
+    B) { app, config, mixins, components, directives }
+    C) Array
+    D) Function
+    Javob: B
+
+51. mount() process?
+    A) Render only
+    B) Create VNode, render, patch, insert
+    C) Insert only
+    D) No process
+    Javob: B
+
+52. unmount() process?
+    A) Remove only
+    B) Unmount hooks, remove, cleanup
+    C) Delete only
+    D) No process
+    Javob: B
+
+53. Instance lifecycle internal order?
+    A) Random
+    B) setup, beforeCreate, created, beforeMount...
+    C) Created first
+    D) Mounted first
+    Javob: B
+
+54. ErrorCodes enum?
+    A) No codes
+    B) Internal error type identification
+    C) User errors
+    D) External
+    Javob: B
+
+55. callWithErrorHandling?
+    A) No handling
+    B) Try-catch with error propagation
+    C) Throw only
+    D) Silent
+    Javob: B
+
+56. Component type definition?
+    A) Any
+    B) DefineComponent<Props, RawBindings...>
+    C) Object
+    D) Function
+    Javob: B
+
+57. ExtractPropTypes utility?
+    A) No extract
+    B) Props runtime to type extraction
+    C) Type to runtime
+    D) Manual
+    Javob: B
+
+58. ExtractPublicPropTypes?
+    A) Private
+    B) Public props type extraction
+    C) All props
+    D) No extraction
+    Javob: B
+
+59. ComponentPublicInstance?
+    A) Private
+    B) Component instance type
+    C) Internal
+    D) No type
+    Javob: B
+
+60. ComponentInternalInstance?
+    A) Public
+    B) Internal component data
+    C) External
+    D) No data
+    Javob: B
+
+61. queuePostRenderEffect?
+    A) Sync
+    B) Post-render callback queue
+    C) Pre-render
+    D) Immediate
+    Javob: B
+
+62. invalidateJob?
+    A) Validate
+    B) Remove job from queue
+    C) Add job
+    D) No effect
+    Javob: B
+
+63. flushPostFlushCbs timing?
+    A) Before render
+    B) After DOM update
+    C) During render
+    D) Immediate
+    Javob: B
+
+64. effectScope() internals?
+    A) Simple scope
+    B) effects[], cleanups[], run(), stop()
+    C) Single effect
+    D) No scope
+    Javob: B
+
+65. getCurrentScope()?
+    A) No scope
+    B) Active effect scope
+    C) Global scope
+    D) Component scope
+    Javob: B
+
+66. onScopeDispose vs onUnmounted?
+    A) Bir xil
+    B) onScopeDispose any scope, onUnmounted component
+    C) onUnmounted any scope
+    D) No difference
+    Javob: B
+
+67. triggerRef implementation?
+    A) Simple trigger
+    B) Force effect re-run
+    C) No trigger
+    D) Automatic
+    Javob: B
+
+68. toValue utility (Vue 3.3+)?
+    A) toRef
+    B) ref or getter unwrap
+    C) No unwrap
+    D) toRefs
+    Javob: B
+
+69. MaybeRef type?
+    A) Always ref
+    B) T | Ref<T>
+    C) Never ref
+    D) ComputedRef
+    Javob: B
+
+70. MaybeRefOrGetter type?
+    A) Ref only
+    B) T | Ref<T> | (() => T)
+    C) Getter only
+    D) No getter
+    Javob: B
+
+71. Custom ref factory?
+    A) No custom
+    B) customRef((track, trigger) => ({get, set}))
+    C) Built-in only
+    D) External
+    Javob: B
+
+72. Debounced ref implementation?
+    A) Built-in
+    B) customRef with setTimeout
+    C) No debounce
+    D) External only
+    Javob: B
+
+73. proxyRefs usage?
+    A) No proxy
+    B) Auto .value unwrap in templates
+    C) Manual unwrap
+    D) No unwrap
+    Javob: B
+
+74. unref vs toValue?
+    A) Bir xil
+    B) toValue handles getters
+    C) unref handles getters
+    D) No difference
+    Javob: B
+
+75. isProxy utility?
+    A) No utility
+    B) reactive or readonly check
+    C) ref check
+    D) computed check
+    Javob: B
+
+76. Render function this access?
+    A) Always this
+    B) No this in setup, use getCurrentInstance
+    C) Direct this
+    D) No access
+    Javob: B
+
+77. defineComponent overloads?
+    A) Single
+    B) Options API, setup function, async setup
+    C) Options only
+    D) Setup only
+    Javob: B
+
+78. Generic component defineComponent?
+    A) No generics
+    B) <T>(props: Props<T>) => component
+    C) Built-in
+    D) External
+    Javob: B
+
+79. withDefaults macro?
+    A) No defaults
+    B) Props defaults for type-only props
+    C) Runtime defaults
+    D) Manual
+    Javob: B
+
+80. Prop type inference from default?
+    A) No inference
+    B) Automatic type from default function
+    C) Manual type
+    D) Always required
+    Javob: B
+
+81. emit type safety?
+    A) No safety
+    B) defineEmits with type literals
+    C) Runtime check
+    D) No check
+    Javob: B
+
+82. Slots type safety?
+    A) No safety
+    B) defineSlots with type definition
+    C) Runtime check
+    D) No check
+    Javob: B
+
+83. Component props TSX typing?
+    A) No typing
+    B) defineComponent generic props
+    C) Manual
+    D) Automatic
+    Javob: B
+
+84. GlobalComponents interface?
+    A) Local
+    B) Global component type registration
+    C) No interface
+    D) External
+    Javob: B
+
+85. ComponentCustomProperties?
+    A) Built-in
+    B) Global property type augmentation
+    C) Local
+    D) No custom
+    Javob: B
+
+86. Provide/inject type safety?
+    A) No safety
+    B) InjectionKey<T> typed symbol
+    C) Runtime check
+    D) Manual
+    Javob: B
+
+87. app.runWithContext()?
+    A) No context
+    B) Run callback with app context
+    C) Global context
+    D) Component context
+    Javob: B
+
+88. hasInjectionContext()?
+    A) No check
+    B) Check if inject available
+    C) Always true
+    D) Always false
+    Javob: B
+
+89. Async component retry mechanism?
+    A) No retry
+    B) retryWhen, retry in defineAsyncComponent
+    C) Automatic
+    D) Manual only
+    Javob: B
+
+90. onServerPrefetch hook?
+    A) Client only
+    B) SSR data fetching
+    C) Both
+    D) No hook
+    Javob: B
+
+91. useId() composable?
+    A) No id
+    B) Unique ID generation (SSR-safe)
+    C) Manual id
+    D) Random
+    Javob: B
+
+92. createRenderer custom renderer?
+    A) No custom
+    B) Platform-agnostic render API
+    C) DOM only
+    D) Built-in only
+    Javob: B
+
+93. RendererOptions interface?
+    A) Simple
+    B) createElement, insert, remove, patchProp...
+    C) Single method
+    D) No interface
+    Javob: B
+
+94. nodeOps in renderer?
+    A) Element ops
+    B) DOM manipulation operations
+    C) No ops
+    D) Event ops
+    Javob: B
+
+95. patchProp in renderer?
+    A) Node patch
+    B) Property/attribute patching
+    C) No patch
+    D) Full patch
+    Javob: B
+
+96. Transition enter/leave modes?
+    A) No modes
+    B) in-out, out-in
+    C) Sync only
+    D) Async only
+    Javob: B
+
+97. TransitionGroup tag prop?
+    A) No tag
+    B) Wrapper element specification
+    C) Always div
+    D) Fragment
+    Javob: B
+
+98. onVnodeBeforeMount directive hook?
+    A) No hook
+    B) VNode lifecycle in directives
+    C) Component hook
+    D) Template hook
+    Javob: B
+
+99. v-on with object syntax?
+    A) No object
+    B) v-on="{ click: handler, focus: handler2 }"
+    C) Single event
+    D) Array syntax
+    Javob: B
+
+100. withMemo optimization?
+     A) No optimization
+     B) Template compiler memoization
+     C) Manual memo
+     D) No memo
+     Javob: B

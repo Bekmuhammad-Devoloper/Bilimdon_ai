@@ -1,0 +1,702 @@
+MATEMATIKA - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+====================================================
+
+1. Limitning ε-δ ta'rifi nima?
+   A) Oddiy ta'rif
+   B) ∀ε>0 ∃δ>0: 0<|x-a|<δ ⇒ |f(x)-L|<ε
+   C) Sodda ta'rif
+   D) Formula
+   Javob: B
+
+2. Koshi yaqinlashish mezoni (ketma-ketlik)?
+   A) Oddiy mezon
+   B) ∀ε>0 ∃N: n,m>N ⇒ |aₙ-aₘ|<ε
+   C) Koshi mezoni
+   D) Sodda mezon
+   Javob: B
+
+3. Boltsano-Veyershtrass teoremasi?
+   A) Oddiy teorema
+   B) Har bir chegaralangan ketma-ketlikda yaqinlashuvchi qism-ketma-ketlik mavjud
+   C) Teorema
+   D) Mezon
+   Javob: B
+
+4. Lebesg integrali va Riman integrali farqi?
+   A) Farq yo'q
+   B) Lebesg=o'lchov bo'yicha, Riman=bo'linish bo'yicha
+   C) Riman=o'lchov
+   D) Bir xil
+   Javob: B
+
+5. Fubini teoremasi nima?
+   A) Fubini
+   B) Qo'sh integral = takroriy integrallar (agar |f| integrallanuvchi)
+   C) Teorema
+   D) Integral
+   Javob: B
+
+6. Chegaralangan variatsiya funksiyasi?
+   A) Variatsiya
+   B) sup Σ|f(xᵢ)-f(xᵢ₋₁)| < ∞
+   C) Chegaralangan
+   D) Funksiya
+   Javob: B
+
+7. Absolut uzluksiz funksiya?
+   A) Uzluksiz
+   B) ∀ε>0 ∃δ>0: Σ|bᵢ-aᵢ|<δ ⇒ Σ|f(bᵢ)-f(aᵢ)|<ε
+   C) Absolut
+   D) Funksiya
+   Javob: B
+
+8. Radon-Nikodim hosilasi?
+   A) Radon
+   B) dν/dμ agar ν absolut uzluksiz μ ga nisbatan
+   C) Nikodim
+   D) Hosila
+   Javob: B
+
+9. Lᵖ fazolari nima?
+   A) L fazo
+   B) ||f||ₚ = (∫|f|ᵖ)^(1/p) < ∞ funksiyalar
+   C) Fazo L
+   D) Funksiyalar
+   Javob: B
+
+10. Hilbert fazosi nima?
+    A) Hilbert
+    B) To'liq ichki ko'paytmali fazo
+    C) Fazo
+    D) Ko'paytma
+    Javob: B
+
+11. Banax fazosi nima?
+    A) Banax
+    B) To'liq normali fazo
+    C) Fazo
+    D) Norma
+    Javob: B
+
+12. Riesz tasvirlash teoremasi (Hilbert fazosi)?
+    A) Riesz
+    B) Har bir chiziqli funksional f(x) = ⟨x, y⟩ ko'rinishida
+    C) Teorema
+    D) Funksional
+    Javob: B
+
+13. Xan-Banax teoremasi?
+    A) Xan Banax
+    B) Chiziqli funksionalni kengaytirish mumkin
+    C) Teorema
+    D) Kengaytirish
+    Javob: B
+
+14. Yopiq graf teoremasi?
+    A) Graf teorema
+    B) Grafigi yopiq bo'lsa chiziqli operator chegaralangan
+    C) Yopiq graf
+    D) Operator
+    Javob: B
+
+15. Ochiq akslantirish teoremasi?
+    A) Ochiq akslantirik
+    B) Chegaralangan sürektiv operator ochiq to'plamni ochiqqa o'tkazadi
+    C) Teorema
+    D) To'plam
+    Javob: B
+
+16. Kompakt operator nima?
+    A) Kompakt
+    B) Chegaralangan to'plamni nisbatan kompaktga o'tkazadi
+    C) Operator
+    D) To'plam
+    Javob: B
+
+17. Spektral teorema (o'z-o'ziga qo'shma operator)?
+    A) Spektral
+    B) A = ∫λdEλ spektral yoyilma
+    C) Teorema
+    D) Yoyilma
+    Javob: B
+
+18. Fredgolm alternativasi?
+    A) Fredgolm
+    B) Ax=b yechimi mavjud ⟺ b ⊥ ker(A*)
+    C) Alternativa
+    D) Yechim
+    Javob: B
+
+19. Merkser teoremasi?
+    A) Merkser
+    B) Musbat yadro uchun: K(x,y) = Σλₙφₙ(x)φₙ(y)
+    C) Teorema
+    D) Yadro
+    Javob: B
+
+20. Sobolev fazolari Wᵏ,ᵖ?
+    A) Sobolev
+    B) k-tartibli zaif hosilalar Lᵖ da
+    C) Fazo
+    D) Hosila
+    Javob: B
+
+21. Zaif hosila nima?
+    A) Hosila
+    B) ∫fDαφ = (-1)^|α| ∫gφ barcha test funksiyalar uchun
+    C) Zaif
+    D) Test funksiya
+    Javob: B
+
+22. Sobolev joylashish teoremalari?
+    A) Joylashish
+    B) Wᵏ,ᵖ ⊂ Cʲ yoki Lq shartlar bilan
+    C) Teorema
+    D) Shart
+    Javob: B
+
+23. Umumlashgan funksiya (distribusiya) nima?
+    A) Distribusiya
+    B) Test funksiyalar fazosida chiziqli uzluksiz funksional
+    C) Funksiya
+    D) Fazo
+    Javob: B
+
+24. Dirak delta funksiyasi?
+    A) Dirak
+    B) δ(φ) = φ(0), ∫δ(x)φ(x)dx = φ(0)
+    C) Delta
+    D) Funksiya
+    Javob: B
+
+25. Furye preobrazovaniyasi L² da?
+    A) Furye
+    B) Izometriya: ||f̂||₂ = ||f||₂ (Plansherel)
+    C) Preobrazovaniya
+    D) Izometriya
+    Javob: B
+
+26. Konvolyutsiya teoremasi?
+    A) Konvolyutsiya
+    B) F(f*g) = F(f)·F(g)
+    C) Teorema
+    D) Ko'paytma
+    Javob: B
+
+27. Payley-Viner teoremasi?
+    A) Payley Viner
+    B) Kompakt tashuvchili funksiya ⟺ butun analitik cheksiz turli
+    C) Teorema
+    D) Funksiya
+    Javob: B
+
+28. Laplas preobrazovaniyasi xossalari?
+    A) Laplas
+    B) L{f'} = sL{f} - f(0), L{∫f} = L{f}/s
+    C) Xossa
+    D) Preobrazovaniya
+    Javob: B
+
+29. Abelning integral tenglamasi?
+    A) Abel
+    B) ∫₀ˣ f(t)/(x-t)^α dt = g(x), 0<α<1
+    C) Integral
+    D) Tenglama
+    Javob: B
+
+30. Voltera integral tenglamasi?
+    A) Voltera
+    B) f(x) = g(x) + ∫₀ˣ K(x,t)f(t)dt
+    C) Integral
+    D) Tenglama
+    Javob: B
+
+31. Fredgolm integral tenglamasi?
+    A) Fredgolm
+    B) f(x) = g(x) + λ∫ₐᵇ K(x,t)f(t)dt
+    C) Integral
+    D) Tenglama
+    Javob: B
+
+32. Issiqlik tenglamasi yechimi?
+    A) Issiqlik
+    B) uₜ = αuₓₓ, Furye qatorlari/preobrazovaniyasi
+    C) Tenglama
+    D) Yechim
+    Javob: B
+
+33. To'lqin tenglamasi?
+    A) To'lqin
+    B) uₜₜ = c²uₓₓ, d'Alamber formulasi
+    C) Tenglama
+    D) Formula
+    Javob: B
+
+34. Laplas tenglamasi?
+    A) Laplas
+    B) Δu = uₓₓ + uᵧᵧ + uᵤᵤ = 0, garmonik funksiyalar
+    C) Tenglama
+    D) Garmonik
+    Javob: B
+
+35. Puasson tenglamasi?
+    A) Puasson
+    B) Δu = f, Laplas tenglamasining nogarmonik shakli
+    C) Tenglama
+    D) Nogarmonik
+    Javob: B
+
+36. Grin funksiyasi nima?
+    A) Grin
+    B) Δ_y G(x,y) = δ(x-y), chegaraviy shartlar bilan
+    C) Funksiya
+    D) Chegaraviy
+    Javob: B
+
+37. Koshi-Kovalevskaya teoremasi?
+    A) Koshi Kovalevskaya
+    B) Analitik QPT uchun analitik yechim mavjud
+    C) Teorema
+    D) Yechim
+    Javob: B
+
+38. Xarakteristik usul?
+    A) Xarakteristik
+    B) QPT ni OPT ga keltirish xarakteristiklar bo'ylab
+    C) Usul
+    D) Keltirish
+    Javob: B
+
+39. Lyu-Vilma formulasi (matritsali eksponenta)?
+    A) Lyu Vilma
+    B) det(e^A) = e^(tr A)
+    C) Formula
+    D) Determinant
+    Javob: B
+
+40. Jordan normal shakli?
+    A) Jordan
+    B) A = PJP⁻¹, Jordan bloklardan
+    C) Normal
+    D) Blok
+    Javob: B
+
+41. Singular qiymat yoyilmasi (SVD)?
+    A) SVD
+    B) A = UΣV*, U,V unitar, Σ diagonal
+    C) Yoyilma
+    D) Unitar
+    Javob: B
+
+42. Psevdoteskari matritsa?
+    A) Psevdoteskari
+    B) A⁺ = (A*A)⁻¹A* yoki SVD orqali
+    C) Matritsa
+    D) SVD
+    Javob: B
+
+43. Keli-Gamilton teoremasi?
+    A) Keli Gamilton
+    B) Matritsa o'z xarakteristik polinomini qanoatlantiradi
+    C) Teorema
+    D) Polinom
+    Javob: B
+
+44. Perron-Frobenius teoremasi?
+    A) Perron Frobenius
+    B) Musbat matritsa uchun dominant xos qiymat mavjud
+    C) Teorema
+    D) Xos qiymat
+    Javob: B
+
+45. Guruh nima (algebrada)?
+    A) Guruh
+    B) To'plam + amalni qanoatlantiruvi: yopiqlik, assotsiativlik, birlik, teskari
+    C) To'plam
+    D) Amal
+    Javob: B
+
+46. Lagran teoremasi (guruhlar)?
+    A) Lagran
+    B) |H| | |G| agar H < G
+    C) Teorema
+    D) Bo'luvchi
+    Javob: B
+
+47. Sylov teoremalari?
+    A) Sylov
+    B) p-Sylov kichik guruhlar mavjudligi va soni
+    C) Teorema
+    D) Kichik guruh
+    Javob: B
+
+48. Halqa nima?
+    A) Halqa
+    B) (R, +, ·): kommutativ guruh (+), polugroup (·), distributivlik
+    C) Guruh
+    D) Amal
+    Javob: B
+
+49. Ideal nima (halqada)?
+    A) Ideal
+    B) I ⊂ R: a∈I, r∈R ⇒ ar, ra ∈ I
+    C) Kichik to'plam
+    D) Halqa
+    Javob: B
+
+50. Bosh ideal sohasi (PID)?
+    A) PID
+    B) Har bir ideal (a) ko'rinishida
+    C) Soha
+    D) Ideal
+    Javob: B
+
+51. Yagona faktorizatsiya sohasi (UFD)?
+    A) UFD
+    B) Har bir element yagona tub ko'paytuvchilarga ajraladi
+    C) Soha
+    D) Faktorizatsiya
+    Javob: B
+
+52. Evklid sohasi?
+    A) Evklid
+    B) Evklid algoritmi ishlaydi (norma funksiyasi)
+    C) Soha
+    D) Algoritm
+    Javob: B
+
+53. Maydon kengaytmasi darajasi?
+    A) Daraja
+    B) [L:K] = dim_K L vektor fazo sifatida
+    C) Maydon
+    D) O'lchov
+    Javob: B
+
+54. Galiua guruhi?
+    A) Galiua
+    B) Aut(L/K) - K ni fiksirovka qiluvchi avtomorfizmlar
+    C) Guruh
+    D) Avtomorfizm
+    Javob: B
+
+55. Galiua nazariyasining asosiy teoremasi?
+    A) Asosiy teorema
+    B) Oraliq maydonlar ↔ kichik guruhlar
+    C) Galiua
+    D) Maydon
+    Javob: B
+
+56. Yechiluvchi guruh nima?
+    A) Yechiluvchi
+    B) G = G₀ ⊃ G₁ ⊃ ... ⊃ {1}, Gᵢ/Gᵢ₊₁ abellik
+    C) Guruh
+    D) Abel
+    Javob: B
+
+57. n ≥ 5 uchun umumiy polinom radikal bilan yechilmaslik?
+    A) Yechiladi
+    B) Sₙ yechiluvchi emas (Abel-Ruffini)
+    C) Yechilmaydi
+    D) Radikal
+    Javob: B
+
+58. Sirkulyant va tsiklotomik maydonlar?
+    A) Sirkulyant
+    B) Q(ζₙ), ζₙ = e^(2πi/n) - n-chi birlik ildizi
+    C) Maydon
+    D) Ildiz
+    Javob: B
+
+59. Modul nima (halqa ustida)?
+    A) Modul
+    B) Abel guruhi + halqa ta'siri (vektor fazo umumlashtirishi)
+    C) Guruh
+    D) Fazo
+    Javob: B
+
+60. Noeterlik halqa?
+    A) Noeter
+    B) Har bir ideallar zanjiri turaydi
+    C) Halqa
+    D) Zanjir
+    Javob: B
+
+61. Gilbert bazis teoremasi?
+    A) Gilbert
+    B) K noeterlik bo'lsa K[x₁,...,xₙ] noeterlik
+    C) Bazis
+    D) Teorema
+    Javob: B
+
+62. Gyobner bazisi nima?
+    A) Gyobner
+    B) Polinomlar sistemasining standart bazisi
+    C) Bazis
+    D) Polinom
+    Javob: B
+
+63. Affin varietet nima?
+    A) Affin
+    B) Polinomlar sistemasi yechimlari to'plami
+    C) Varietet
+    D) Yechim
+    Javob: B
+
+64. Zariski topologiyasi?
+    A) Zariski
+    B) Yopiq = affin varietetlar
+    C) Topologiya
+    D) Varietet
+    Javob: B
+
+65. Proektiv fazo?
+    A) Proektiv
+    B) (kⁿ⁺¹ \ {0}) / ~ (proporsional nuqtalar)
+    C) Fazo
+    D) Nuqta
+    Javob: B
+
+66. Bezut teoremasi?
+    A) Bezut
+    B) deg(V₁ ∩ V₂) ≤ deg(V₁)·deg(V₂) (multiplikasiya bilan)
+    C) Teorema
+    D) Daraja
+    Javob: B
+
+67. Elliptik egri chiziq nima?
+    A) Elliptik
+    B) y² = x³ + ax + b (Δ ≠ 0), guruh strukturasi
+    C) Egri chiziq
+    D) Guruh
+    Javob: B
+
+68. Mordel-Veyl teoremasi?
+    A) Mordel Veyl
+    B) E(Q) chekli generatorli
+    C) Teorema
+    D) Generator
+    Javob: B
+
+69. Metrik fazo nima?
+    A) Metrik
+    B) (X, d): d(x,y)≥0, d(x,y)=0⟺x=y, simmetrik, uchburchak
+    C) Fazo
+    D) Masofa
+    Javob: B
+
+70. To'liq metrik fazo?
+    A) To'liq
+    B) Har bir Koshi ketma-ketligi yaqinlashadi
+    C) Metrik
+    D) Ketma-ketlik
+    Javob: B
+
+71. Kompaktlik ta'rifi?
+    A) Kompakt
+    B) Har bir ochiq qoplamadan chekli qoplam ajratish mumkin
+    C) Ta'rif
+    D) Qoplam
+    Javob: B
+
+72. Geyne-Borel teoremasi?
+    A) Geyne Borel
+    B) Rⁿ da kompakt ⟺ yopiq va chegaralangan
+    C) Teorema
+    D) Yopiq
+    Javob: B
+
+73. Bog'langanlik nima?
+    A) Bog'langan
+    B) X = A ∪ B, A ∩ B = ∅, A,B ochiq ⇒ biri bo'sh
+    C) Ta'rif
+    D) Ochiq
+    Javob: B
+
+74. Yo'l-bog'langan fazo?
+    A) Yo'l bog'langan
+    B) Ixtiyoriy ikki nuqta uzluksiz yo'l bilan tutashgan
+    C) Fazo
+    D) Yo'l
+    Javob: B
+
+75. Gomotopiya nima?
+    A) Gomotopiya
+    B) f₀ ≃ f₁: uzluksiz deformatsiya H: X×I → Y
+    C) Deformatsiya
+    D) Uzluksiz
+    Javob: B
+
+76. Fundamental guruh π₁(X, x₀)?
+    A) Fundamental
+    B) Gomotopik halqalar ekvivalentlik klasslari
+    C) Guruh
+    D) Halqa
+    Javob: B
+
+77. Qoplama fazosi nima?
+    A) Qoplama
+    B) p: E → B lokal gomeomorfizm, tekis ko'tarish
+    C) Fazo
+    D) Gomeomorfizm
+    Javob: B
+
+78. Simplitsial kompleks?
+    A) Simplitsial
+    B) Simplekslar (nuqta, kesma, uchburchak, ...) to'plami
+    C) Kompleks
+    D) To'plam
+    Javob: B
+
+79. Eyler xarakteristikasi?
+    A) Eyler
+    B) χ = V - E + F (uchlar, qirralar, yuzlar)
+    C) Xarakteristika
+    D) Formula
+    Javob: B
+
+80. de Ramn kohomologiyasi?
+    A) de Ram
+    B) Hᵏ = (yopiq k-formalar) / (aniq k-formalar)
+    C) Kohomologiya
+    D) Forma
+    Javob: B
+
+81. Stoks teoremasi (umumiy)?
+    A) Stoks
+    B) ∫_∂M ω = ∫_M dω
+    C) Teorema
+    D) Integral
+    Javob: B
+
+82. Puankare duallik?
+    A) Puankare
+    B) Hᵏ(M) ≅ Hₙ₋ₖ(M) orientatsiyalanuvchi yopiq manifold
+    C) Duallik
+    D) Izomorfizm
+    Javob: B
+
+83. Brauver fiksirovka nuqta teoremasi?
+    A) Brauver
+    B) f: Dⁿ → Dⁿ uzluksiz ⇒ fiksirovka nuqta mavjud
+    C) Teorema
+    D) Nuqta
+    Javob: B
+
+84. Borsuk-Ulam teoremasi?
+    A) Borsuk Ulam
+    B) f: Sⁿ → Rⁿ uzluksiz ⇒ f(x) = f(-x) bo'lgan x mavjud
+    C) Teorema
+    D) Sfera
+    Javob: B
+
+85. Ehtimollik o'lchovi aksiomatikasi (Kolmogorov)?
+    A) Kolmogorov
+    B) P(Ω)=1, P(A)≥0, σ-qo'shilish
+    C) Aksioma
+    D) O'lchov
+    Javob: B
+
+86. Tasodifiy o'zgaruvchilar yaqinlashishi turlari?
+    A) Bir tur
+    B) Deyarli hamma joyda, ehtimollikda, taqsimotda, Lᵖ da
+    C) Ikki tur
+    D) Uch tur
+    Javob: B
+
+87. Katta sonlar qonuni?
+    A) Katta son
+    B) X̄ₙ → E[X] ehtimollikda (n→∞)
+    C) Qonun
+    D) Yaqinlashish
+    Javob: B
+
+88. Markaziy limit teoremasi?
+    A) Markaziy
+    B) (X̄ₙ - μ)/(σ/√n) → N(0,1) taqsimotda
+    C) Limit
+    D) Normal
+    Javob: B
+
+89. Markov zanjiri nima?
+    A) Markov
+    B) P(Xₙ₊₁|Xₙ, ..., X₀) = P(Xₙ₊₁|Xₙ)
+    C) Zanjir
+    D) Ehtimollik
+    Javob: B
+
+90. Ergodik teorema?
+    A) Ergodik
+    B) Vaqt bo'yicha o'rtacha = fazo bo'yicha o'rtacha
+    C) Teorema
+    D) O'rtacha
+    Javob: B
+
+91. Martingal nima?
+    A) Martingal
+    B) E[Xₙ₊₁|Fₙ] = Xₙ (shartli kutilma)
+    C) Kutilma
+    D) Filtratsiya
+    Javob: B
+
+92. Doob martingal tengsizligi?
+    A) Doob
+    B) P(max Xᵢ ≥ λ) ≤ E[Xₙ]/λ (musbat submartingal)
+    C) Tengsizlik
+    D) Ehtimollik
+    Javob: B
+
+93. Broun harakati xossalari?
+    A) Broun
+    B) Uzluksiz yo'l, mustaqil ortiqchalar, B(t)~N(0,t)
+    C) Harakat
+    D) Normal
+    Javob: B
+
+94. Ito integrali?
+    A) Ito
+    B) ∫f(t)dB(t) stoxastik integral
+    C) Integral
+    D) Stoxastik
+    Javob: B
+
+95. Ito formulasi?
+    A) Ito
+    B) df = (∂f/∂t + μ∂f/∂x + σ²∂²f/∂x²/2)dt + σ∂f/∂x dB
+    C) Formula
+    D) Differensial
+    Javob: B
+
+96. Kombinatorika: Stirling soni (ikkinchi tur)?
+    A) Stirling
+    B) S(n,k) = n elementni k bo'sh emas to'plamga bo'lish usullari
+    C) Son
+    D) Bo'lish
+    Javob: B
+
+97. Möbius inversiya formulasi?
+    A) Mobius
+    B) f(n) = Σd|n g(d) ⟺ g(n) = Σd|n μ(n/d)f(d)
+    C) Inversiya
+    D) Formula
+    Javob: B
+
+98. Riman gipotezasi?
+    A) Riman
+    B) ζ(s) ning barcha notrivial nollari Re(s) = 1/2 to'g'ri chiziqda
+    C) Gipoteza
+    D) Nol
+    Javob: B
+
+99. Dirixle L-funksiyalari?
+    A) Dirixle
+    B) L(s, χ) = Σχ(n)/nˢ xarakterlar bo'yicha
+    C) L-funksiya
+    D) Xarakter
+    Javob: B
+
+100. Modular formalar?
+     A) Modular
+     B) SL₂(Z) ta'sirida invariant golomorfi funksiyalar
+     C) Forma
+     D) Invariant
+     Javob: B

@@ -1,0 +1,702 @@
+JAVASCRIPT - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+======================================================
+
+1. Closure nima?
+   A) Loop turi
+   B) Funksiya ichidagi funksiya outer scope'ga kirishi
+   C) Class turi
+   D) Array metodi
+   Javob: B
+
+2. Hoisting nima?
+   A) Xatolik
+   B) Deklaratsiyalarning yuqoriga ko'tarilishi
+   C) Loop
+   D) Event
+   Javob: B
+
+3. Event bubbling nima?
+   A) Event to'xtashi
+   B) Event ota elementlarga tarqalishi
+   C) Event capturing
+   D) Event delegation
+   Javob: B
+
+4. Event capturing nima?
+   A) Event bubbling
+   B) Event ota dan bola ga tarqalishi
+   C) Event to'xtashi
+   D) Event delegation
+   Javob: B
+
+5. stopPropagation() nima qiladi?
+   A) Eventni ishga tushiradi
+   B) Eventni tarqalishini to'xtatadi
+   C) Eventni o'chiradi
+   D) Eventni qo'shadi
+   Javob: B
+
+6. preventDefault() nima qiladi?
+   A) Eventni tarqatadi
+   B) Default xatti-harakatni to'xtatadi
+   C) Eventni o'chiradi
+   D) Eventni qo'shadi
+   Javob: B
+
+7. Promise nima?
+   A) Callback
+   B) Asinxron operatsiya natijasi
+   C) Sync operatsiya
+   D) Loop
+   Javob: B
+
+8. Promise.then() nima qiladi?
+   A) Xatoni ushlaydi
+   B) Muvaffaqiyatli natijani qayta ishlaydi
+   C) Promise yaratadi
+   D) Promise bekor qiladi
+   Javob: B
+
+9. Promise.catch() nima qiladi?
+   A) Natijani qayta ishlaydi
+   B) Xatoni ushlaydi
+   C) Promise yaratadi
+   D) Promise bekor qiladi
+   Javob: B
+
+10. Promise.finally() qachon ishlaydi?
+    A) Faqat muvaffaqiyatda
+    B) Har doim
+    C) Faqat xatoda
+    D) Hech qachon
+    Javob: B
+
+11. async/await nima?
+    A) Callback
+    B) Promise bilan ishlashning qulay usuli
+    C) Sinxron kod
+    D) Loop
+    Javob: B
+
+12. await nima qiladi?
+    A) Promise yaratadi
+    B) Promise natijasini kutadi
+    C) Funksiya yaratadi
+    D) Xato chiqaradi
+    Javob: B
+
+13. fetch() nima?
+    A) DOM metodi
+    B) HTTP so'rov yuborish API
+    C) Array metodi
+    D) String metodi
+    Javob: B
+
+14. fetch() nima qaytaradi?
+    A) Data
+    B) Promise
+    C) Array
+    D) Object
+    Javob: B
+
+15. response.json() nima qiladi?
+    A) String qaytaradi
+    B) JSON parse qiladi
+    C) Xato chiqaradi
+    D) So'rov yuboradi
+    Javob: B
+
+16. Callback hell nima?
+    A) Yaxshi pattern
+    B) Ichma-ich callback lar muammosi
+    C) Async pattern
+    D) Sync pattern
+    Javob: B
+
+17. Scope chain nima?
+    A) Array
+    B) O'zgaruvchilarni qidirish tartibi
+    C) Object
+    D) Function
+    Javob: B
+
+18. Lexical scope nima?
+    A) Runtime scope
+    B) Kod yozilgan joyga asoslangan scope
+    C) Global scope
+    D) Block scope
+    Javob: B
+
+19. IIFE nima?
+    A) Class
+    B) Immediately Invoked Function Expression
+    C) Interface
+    D) Import
+    Javob: B
+
+20. Module pattern nima?
+    A) Class pattern
+    B) Private va public member yaratish usuli
+    C) Singleton
+    D) Factory
+    Javob: B
+
+21. Prototype nima?
+    A) Class
+    B) Obyektlar meros olish mexanizmi
+    C) Interface
+    D) Module
+    Javob: B
+
+22. __proto__ nima?
+    A) Property
+    B) Obyekt prototypega havola
+    C) Method
+    D) Constructor
+    Javob: B
+
+23. Object.create() nima qiladi?
+    A) Nusxa oladi
+    B) Yangi obyekt prototype bilan yaratadi
+    C) O'chiradi
+    D) Birlashtiradi
+    Javob: B
+
+24. Object.assign() nima qiladi?
+    A) Yaratadi
+    B) Obyektlarni birlashtiradi
+    C) O'chiradi
+    D) Saralaydi
+    Javob: B
+
+25. Object.freeze() nima qiladi?
+    A) Nusxa oladi
+    B) Obyektni o'zgarmas qiladi
+    C) O'chiradi
+    D) Birlashtiradi
+    Javob: B
+
+26. Object.seal() nima qiladi?
+    A) Freeze qiladi
+    B) Yangi property qo'shishni taqiqlaydi
+    C) O'chiradi
+    D) Birlashtiradi
+    Javob: B
+
+27. Shallow copy nima?
+    A) Deep copy
+    B) Faqat birinchi daraja nusxalash
+    C) Reference copy
+    D) No copy
+    Javob: B
+
+28. Deep copy nima?
+    A) Shallow copy
+    B) Barcha darajalarni nusxalash
+    C) Reference copy
+    D) No copy
+    Javob: B
+
+29. Spread operator nima qiladi?
+    A) Birlashtiradi
+    B) Elementlarni yoyadi
+    C) O'chiradi
+    D) Saralaydi
+    Javob: B
+
+30. Rest parameter nima?
+    A) Spread
+    B) Qolgan argumentlarni to'playdi
+    C) Birinchi argument
+    D) Oxirgi argument
+    Javob: B
+
+31. Default parameter nima?
+    A) Required parameter
+    B) Parametr uchun default qiymat
+    C) Optional parameter
+    D) Rest parameter
+    Javob: B
+
+32. Destructuring assignment nima?
+    A) Yaratish
+    B) Qiymatlarni ajratib olish
+    C) O'chirish
+    D) Birlashtirish
+    Javob: B
+
+33. Symbol nima?
+    A) String
+    B) Noyob identifikator
+    C) Number
+    D) Boolean
+    Javob: B
+
+34. Map nima?
+    A) Array metodi
+    B) Kalit-qiymat to'plami
+    C) Object
+    D) Set
+    Javob: B
+
+35. Set nima?
+    A) Map
+    B) Noyob qiymatlar to'plami
+    C) Array
+    D) Object
+    Javob: B
+
+36. WeakMap nima?
+    A) Map
+    B) Zaif havola kalit bilan Map
+    C) Set
+    D) Array
+    Javob: B
+
+37. WeakSet nima?
+    A) Set
+    B) Zaif havola qiymatlar bilan Set
+    C) Map
+    D) Array
+    Javob: B
+
+38. Generator function nima?
+    A) Async function
+    B) function* bilan yaratilgan funksiya
+    C) Arrow function
+    D) Constructor
+    Javob: B
+
+39. yield kalit so'zi nima qiladi?
+    A) Return
+    B) Qiymat qaytarib to'xtatadi
+    C) Throw
+    D) Continue
+    Javob: B
+
+40. Iterator nima?
+    A) Loop
+    B) next() metodi bilan obyekt
+    C) Array
+    D) Object
+    Javob: B
+
+41. for...of nima iteratsiya qiladi?
+    A) Keys
+    B) Values
+    C) Index
+    D) Entries
+    Javob: B
+
+42. for...in nima iteratsiya qiladi?
+    A) Values
+    B) Keys/properties
+    C) Index
+    D) Entries
+    Javob: B
+
+43. Proxy nima?
+    A) Server
+    B) Obyektga trap o'rnatuvchi wrapper
+    C) Promise
+    D) Generator
+    Javob: B
+
+44. Reflect API nima?
+    A) Mirror
+    B) Metaprogramming uchun metodlar
+    C) DOM API
+    D) Fetch API
+    Javob: B
+
+45. Event delegation nima?
+    A) Event bubbling
+    B) Ota elementda eventni ushlash
+    C) Event capturing
+    D) Event stopping
+    Javob: B
+
+46. debounce nima?
+    A) throttle
+    B) Funksiyani kechiktirish
+    C) Darhol chaqirish
+    D) Bekor qilish
+    Javob: B
+
+47. throttle nima?
+    A) debounce
+    B) Funksiyani cheklash
+    C) Darhol chaqirish
+    D) Bekor qilish
+    Javob: B
+
+48. Memoization nima?
+    A) Memory leak
+    B) Natijalarni keshlash
+    C) Recursion
+    D) Iteration
+    Javob: B
+
+49. Currying nima?
+    A) Cooking
+    B) Funksiyani bir argumentli qilish
+    C) Closure
+    D) Hoisting
+    Javob: B
+
+50. Composition nima?
+    A) Inheritance
+    B) Funksiyalarni birlashtirish
+    C) Decomposition
+    D) Aggregation
+    Javob: B
+
+51. Higher-order function nima?
+    A) Loop
+    B) Funksiya qabul/qaytaruvchi funksiya
+    C) Class
+    D) Object
+    Javob: B
+
+52. Pure function nima?
+    A) Impure function
+    B) Side effect yo'q funksiya
+    C) Async function
+    D) Generator
+    Javob: B
+
+53. Side effect nima?
+    A) Pure function
+    B) Tashqi holatni o'zgartirish
+    C) Return
+    D) Parameter
+    Javob: B
+
+54. Immutability nima?
+    A) Mutability
+    B) O'zgarmaslik
+    C) Flexibility
+    D) Stability
+    Javob: B
+
+55. call() metodi nima qiladi?
+    A) apply()
+    B) this ni o'zgartirib funksiya chaqiradi
+    C) bind()
+    D) new
+    Javob: B
+
+56. apply() metodi nima qiladi?
+    A) call()
+    B) this va array argument bilan chaqiradi
+    C) bind()
+    D) new
+    Javob: B
+
+57. bind() metodi nima qaytaradi?
+    A) Natija
+    B) Yangi funksiya
+    C) Undefined
+    D) this
+    Javob: B
+
+58. Arrow function va this?
+    A) O'z this
+    B) Lexical this (tashqi)
+    C) Global this
+    D) Undefined this
+    Javob: B
+
+59. arguments object nima?
+    A) Array
+    B) Funksiya argumentlari array-like object
+    C) Parameter
+    D) Return value
+    Javob: B
+
+60. Strict mode nima?
+    A) Loose mode
+    B) Qattiq tekshirish rejimi
+    C) Debug mode
+    D) Production mode
+    Javob: B
+
+61. "use strict" qayerda yoziladi?
+    A) HTML da
+    B) JS fayl yoki funksiya boshida
+    C) CSS da
+    D) console da
+    Javob: B
+
+62. eval() nima qiladi?
+    A) Tekshiradi
+    B) String ni kod sifatida bajaradi
+    C) Qaytaradi
+    D) O'chiradi
+    Javob: B
+
+63. eval() nega xavfli?
+    A) Xavfsiz
+    B) Xavfsizlik va performance muammolari
+    C) Faqat slow
+    D) Faqat xavfli
+    Javob: B
+
+64. with statement nega yomon?
+    A) Yaxshi
+    B) Scope confusion va slow performance
+    C) Faqat slow
+    D) Deprecated emas
+    Javob: B
+
+65. delete operator nimani o'chira olmaydi?
+    A) Property
+    B) var bilan e'lon qilingan o'zgaruvchi
+    C) let bilan e'lon qilingan
+    D) const bilan e'lon qilingan
+    Javob: B
+
+66. typeof null nima qaytaradi?
+    A) "null"
+    B) "object"
+    C) "undefined"
+    D) "boolean"
+    Javob: B
+
+67. typeof [] nima qaytaradi?
+    A) "array"
+    B) "object"
+    C) "list"
+    D) "collection"
+    Javob: B
+
+68. NaN === NaN nima qaytaradi?
+    A) true
+    B) false
+    C) undefined
+    D) error
+    Javob: B
+
+69. 0.1 + 0.2 === 0.3 nima qaytaradi?
+    A) true
+    B) false (floating point xatolik)
+    C) undefined
+    D) error
+    Javob: B
+
+70. "" == false nima qaytaradi?
+    A) false
+    B) true
+    C) undefined
+    D) error
+    Javob: B
+
+71. null == undefined nima qaytaradi?
+    A) false
+    B) true
+    C) undefined
+    D) error
+    Javob: B
+
+72. null === undefined nima qaytaradi?
+    A) true
+    B) false
+    C) undefined
+    D) error
+    Javob: B
+
+73. Truthy value nima?
+    A) true
+    B) Boolean kontekstda true bo'ladigan qiymat
+    C) false
+    D) undefined
+    Javob: B
+
+74. Falsy values qaysilar?
+    A) 1, "hello", []
+    B) 0, "", null, undefined, NaN, false
+    C) true, 1, "0"
+    D) [], {}, function(){}
+    Javob: B
+
+75. Short-circuit evaluation nima?
+    A) Loop
+    B) && va || da birinchi qiymatda to'xtash
+    C) Recursion
+    D) Iteration
+    Javob: B
+
+76. Nullish coalescing (??) nima?
+    A) ||
+    B) null/undefined bo'lsa default qiymat
+    C) &&
+    D) !
+    Javob: B
+
+77. Optional chaining (?.) nima qiladi?
+    A) Xato chiqaradi
+    B) Undefined qaytaradi agar property yo'q bo'lsa
+    C) Error throw qiladi
+    D) Default qiymat beradi
+    Javob: B
+
+78. Object shorthand syntax?
+    A) {name: name}
+    B) {name} (name: name o'rniga)
+    C) {name = name}
+    D) {name -> name}
+    Javob: B
+
+79. Computed property name?
+    A) static name
+    B) [expression]: value
+    C) dynamic: value
+    D) var: value
+    Javob: B
+
+80. Method shorthand?
+    A) method: function() {}
+    B) method() {}
+    C) method = () => {}
+    D) function method() {}
+    Javob: B
+
+81. Tagged template literal nima?
+    A) Template literal
+    B) Funksiya bilan template literal
+    C) String
+    D) Array
+    Javob: B
+
+82. import statement nima qiladi?
+    A) export
+    B) Moduldan import qiladi
+    C) require
+    D) include
+    Javob: B
+
+83. export statement nima qiladi?
+    A) import
+    B) Moduldan export qiladi
+    C) require
+    D) exclude
+    Javob: B
+
+84. default export nima?
+    A) Named export
+    B) Asosiy export (bitta)
+    C) Multiple export
+    D) No export
+    Javob: B
+
+85. named export nima?
+    A) default export
+    B) Nomlangan bir nechta export
+    C) Single export
+    D) No export
+    Javob: B
+
+86. Dynamic import nima?
+    A) Static import
+    B) import() funksiyasi bilan runtime da yuklash
+    C) require()
+    D) include()
+    Javob: B
+
+87. ES6 module va CommonJS farqi?
+    A) Bir xil
+    B) ES6=import/export, CommonJS=require/module.exports
+    C) CommonJS=import
+    D) ES6=require
+    Javob: B
+
+88. Tree shaking nima?
+    A) Code writing
+    B) Ishlatilmagan kodni olib tashlash
+    C) Code adding
+    D) Code copying
+    Javob: B
+
+89. Babel nima qiladi?
+    A) Minify
+    B) Yangi JS ni eski JS ga transpile qiladi
+    C) Bundle
+    D) Lint
+    Javob: B
+
+90. Webpack nima?
+    A) Transpiler
+    B) Module bundler
+    C) Linter
+    D) Formatter
+    Javob: B
+
+91. ESLint nima qiladi?
+    A) Bundle
+    B) Kod sifatini tekshiradi
+    C) Transpile
+    D) Minify
+    Javob: B
+
+92. Prettier nima qiladi?
+    A) Lint
+    B) Kodni formatlaydi
+    C) Bundle
+    D) Transpile
+    Javob: B
+
+93. npm nima?
+    A) Node Package Manager
+    B) Node Process Manager
+    C) Node Project Manager
+    D) Node Program Manager
+    Javob: A
+
+94. package.json nima?
+    A) Config file
+    B) Loyiha meta-ma'lumotlari
+    C) Source code
+    D) Bundle
+    Javob: B
+
+95. node_modules nima?
+    A) Source folder
+    B) Dependencies papkasi
+    C) Config folder
+    D) Build folder
+    Javob: B
+
+96. package-lock.json nima?
+    A) Config
+    B) Aniq versiyalar ro'yxati
+    C) Source
+    D) Build
+    Javob: B
+
+97. devDependencies nima?
+    A) Production dependencies
+    B) Development uchun paketlar
+    C) Optional packages
+    D) Peer dependencies
+    Javob: B
+
+98. Semantic versioning (semver)?
+    A) Random versioning
+    B) MAJOR.MINOR.PATCH format
+    C) Date versioning
+    D) No versioning
+    Javob: B
+
+99. npx nima qiladi?
+    A) npm install
+    B) Paketni o'rnatmasdan ishlatish
+    C) npm uninstall
+    D) npm update
+    Javob: B
+
+100. yarn nima?
+     A) Thread
+     B) npm alternativasi
+     C) Bundler
+     D) Linter
+     Javob: B

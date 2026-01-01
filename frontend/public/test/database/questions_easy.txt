@@ -1,0 +1,148 @@
+===============================================
+DATABASE - EASY SAVOLLARI
+===============================================
+
+SAVOL 1: Database nima?
+A) Program
+B) Teradata saqlaydigan sistema
+C) Server
+D) Component
+JAVOB: B
+
+SAVOL 2: SQL nima?
+A) Programming language
+B) Query language databases uchun
+C) Markup
+D) Styling
+JAVOB: B
+
+SAVOL 3: SELECT statement nima uchun?
+A) Insert data
+B) Data o'qish
+C) Update
+D) Delete
+JAVOB: B
+
+SAVOL 4: WHERE clause nima?
+A) All records
+B) Specific conditions uchun data
+C) Join
+D) Order
+JAVOB: B
+
+SAVOL 5: Primary key nima?
+A) Biron key
+B) Unique record identifier
+C) Foreign key
+D) Index
+JAVOB: B
+
+SAVOL 6: Foreign key nima?
+A) Primary key
+B) Other table primary key link
+C) Index
+D) Constraint
+JAVOB: B
+
+SAVOL 7: JOIN nima?
+A) Insert
+B) Two tables-ni combine qilish
+C) Delete
+D) Update
+JAVOB: B
+
+SAVOL 8: INNER JOIN nima?
+A) All rows
+B) Matching rows both tables
+C) Left table
+D) Right table
+JAVOB: B
+
+SAVOL 9: LEFT JOIN nima?
+A) All rows both tables
+B) Left table all + right matching
+C) Right table
+D) Inner join
+JAVOB: B
+
+SAVOL 10: RIGHT JOIN nima?
+A) Left table
+B) Right table all + left matching
+C) Inner join
+D) Full join
+JAVOB: B
+
+SAVOL 11: DISTINCT nima uchun?
+A) Distinct value yo'q
+B) Unique/duplicate yo'q records
+C) Remove duplicates
+D) Filtering
+JAVOB: B
+
+SAVOL 12: ORDER BY nima?
+A) Random order
+B) Rows sort qilish (ASC/DESC)
+C) Group
+D) Filter
+JAVOB: B
+
+SAVOL 13: GROUP BY nima?
+A) Group rows
+B) Common column value orqali rows group
+C) Aggregate
+D) Summary
+JAVOB: B
+
+SAVOL 14: HAVING nima?
+A) WHERE kabi
+B) Grouped data filter (WHERE dan keyin)
+C) Condition
+D) Filter
+JAVOB: B
+
+SAVOL 15: Aggregate functions nima?
+A) Regular functions
+B) COUNT, SUM, AVG, MAX, MIN
+C) Math functions
+D) String functions
+JAVOB: B
+
+SAVOL 16: Index nima?
+A) Table
+B) Data lookup speed-ni oshiradigan struktura
+C) Column
+D) Row
+JAVOB: B
+
+SAVOL 17: Normalization nima?
+A) Data backup
+B) Database design organization
+C) Encryption
+D) Compression
+JAVOB: B
+
+SAVOL 18: INSERT statement nima?
+A) Select data
+B) Data insert
+C) Update data
+D) Delete data
+JAVOB: B
+
+SAVOL 19: UPDATE statement nima?
+A) Insert
+B) Data o'zgartiradigan
+C) Delete
+D) Select
+JAVOB: B
+
+SAVOL 20: DELETE statement nima?
+A) Insert
+B) Data o'chirish
+C) Update
+D) Select
+JAVOB: B
+
+===============================================
+EASY SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: OSONGINA
+===============================================

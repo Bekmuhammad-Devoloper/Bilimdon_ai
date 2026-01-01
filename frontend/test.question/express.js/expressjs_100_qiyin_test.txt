@@ -1,0 +1,706 @@
+EXPRESS.JS FRAMEWORK - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+==============================================================
+
+1. Express da app._router nima?
+   A) Public API
+   B) Internal router stack (middleware va route layerlar)
+   C) External router
+   D) Route list
+   Javob: B
+
+2. Layer object Express internal da nima?
+   A) CSS layer
+   B) Route yoki middleware ni wrap qiluvchi internal object
+   C) Network layer
+   D) Security layer
+   Javob: B
+
+3. app._router.stack da handle property nima?
+   A) Error handler
+   B) Middleware yoki route handler funksiyasi
+   C) Request handler
+   D) Response handler
+   Javob: B
+
+4. Express da path-to-regexp qanday ishlatiladi?
+   A) URL parse
+   B) Route pattern ni regex ga aylantiradi
+   C) Regex validate
+   D) Path validate
+   Javob: B
+
+5. Route parameter da custom regex /users/:id([a-f0-9]{24}) nima uchun?
+   A) Any string
+   B) MongoDB ObjectId formatini enforce qilish
+   C) Number only
+   D) Email format
+   Javob: B
+
+6. express.Router({ mergeParams: true }) nima qiladi?
+   A) Params o'chiradi
+   B) Parent router params ni child ga merge qiladi
+   C) Params copy
+   D) Params validate
+   Javob: B
+
+7. express.Router({ caseSensitive: true }) nima?
+   A) Case insensitive
+   B) /Users va /users turli route sifatida
+   C) Lowercase only
+   D) Uppercase only
+   Javob: B
+
+8. express.Router({ strict: true }) nima?
+   A) Loose matching
+   B) /users va /users/ turli route sifatida
+   C) No trailing slash
+   D) Required slash
+   Javob: B
+
+9. app.lazyrouter() internal method nima qiladi?
+   A) Lazy load
+   B) Router ni kerak bo'lganda yaratadi (lazy initialization)
+   C) Lazy route
+   D) Delayed routing
+   Javob: B
+
+10. finalhandler package Express da nima?
+    A) First handler
+    B) Response tugallanmasa default 404/error handler
+    C) Last middleware
+    D) Error logger
+    Javob: B
+
+11. Express da req.app nima?
+    A) App config
+    B) Express app instance ga reference
+    C) App name
+    D) App settings
+    Javob: B
+
+12. req.app.get('env') router ichida qanday ishlaydi?
+    A) Error
+    B) App darajasidagi setting ni oladi
+    C) Router env
+    D) Local env
+    Javob: B
+
+13. Express da mounted event nima?
+    A) File mount
+    B) Sub-app parent ga mount bo'lganda emit bo'ladi
+    C) Volume mount
+    D) Route mount
+    Javob: B
+
+14. app.on('mount', fn) qachon ishga tushadi?
+    A) App start
+    B) app.use() bilan boshqa app ga mount bo'lganda
+    C) Server start
+    D) Route add
+    Javob: B
+
+15. req.res va res.req nima?
+    A) Undefined
+    B) Request va response bir-biriga circular reference
+    C) Error
+    D) Parent objects
+    Javob: B
+
+16. res.headersSent property qachon true?
+    A) Har doim
+    B) Header yuborilgandan keyin (res.write, res.send keyin)
+    C) Hech qachon
+    D) Request kelganda
+    Javob: B
+
+17. res.headersSent true bo'lganda res.set() nima qiladi?
+    A) Header qo'shadi
+    B) Error otadi (header o'zgartirib bo'lmaydi)
+    C) Ignore qiladi
+    D) Override qiladi
+    Javob: B
+
+18. res.finished property nima?
+    A) Response started
+    B) Response to'liq yuborilganini bildiradi
+    C) Request finished
+    D) Connection finished
+    Javob: B
+
+19. res.writableEnded (Node 12.9+) nima?
+    A) Writable started
+    B) res.end() chaqirilganini bildiradi
+    C) Write error
+    D) Stream end
+    Javob: B
+
+20. res.socket nima?
+    A) WebSocket
+    B) Underlying TCP socket (net.Socket)
+    C) HTTP socket
+    D) Express socket
+    Javob: B
+
+21. req.socket.remoteAddress trust proxy yo'q bo'lganda nima?
+    A) Client IP
+    B) Proxy IP (agar proxy orqali)
+    C) Server IP
+    D) Gateway IP
+    Javob: B
+
+22. Express da 'trust proxy' = 'loopback' nima?
+    A) All proxies
+    B) Faqat localhost (127.0.0.1, ::1) dan proxy trust
+    C) No proxy
+    D) Remote proxy
+    Javob: B
+
+23. 'trust proxy' = 2 nima anglatadi?
+    A) 2 ta proxy
+    B) X-Forwarded-For dan 2-hop orqaga (2-proxy)
+    C) 2 ta IP
+    D) 2 ta request
+    Javob: B
+
+24. req.ips array (trust proxy enabled) nima?
+    A) Single IP
+    B) X-Forwarded-For headerdagi barcha IP lar
+    C) Server IPs
+    D) Gateway IPs
+    Javob: B
+
+25. Custom trust proxy function qanday yoziladi?
+    A) String
+    B) app.set('trust proxy', (ip) => boolean)
+    C) Number
+    D) Array
+    Javob: B
+
+26. Express da subdomains qanday olinadi?
+    A) req.domain
+    B) req.subdomains (array, reversed)
+    C) req.host
+    D) req.hostname
+    Javob: B
+
+27. app.set('subdomain offset', 2) nima?
+    A) Subdomain count
+    B) Hostname split qilishda o'tkazib yuborilgan qismlar soni
+    C) Domain offset
+    D) Host offset
+    Javob: B
+
+28. req.accepts('json') nima qaytaradi?
+    A) Boolean
+    B) Best match MIME type yoki false
+    C) Always true
+    D) Error
+    Javob: B
+
+29. req.acceptsEncodings() nima uchun?
+    A) Accept header
+    B) Accept-Encoding header bo'yicha content encoding tanlash
+    C) Character encoding
+    D) URL encoding
+    Javob: B
+
+30. req.acceptsCharsets() nima?
+    A) Encoding
+    B) Accept-Charset header bo'yicha charset tanlash
+    C) Language
+    D) Type
+    Javob: B
+
+31. req.acceptsLanguages() nima uchun?
+    A) Charset
+    B) Accept-Language header bo'yicha til tanlash
+    C) Encoding
+    D) Type
+    Javob: B
+
+32. req.is('json') nima tekshiradi?
+    A) Response type
+    B) Request Content-Type 'json' ekanini
+    C) Accept header
+    D) URL format
+    Javob: B
+
+33. req.is('multipart/*') nima?
+    A) Single part
+    B) Multipart form data (file upload) ekanini tekshiradi
+    C) JSON data
+    D) URL encoded
+    Javob: B
+
+34. type-is package Express da qanday ishlatiladi?
+    A) Type validate
+    B) req.is() uchun Content-Type matching
+    C) Type convert
+    D) Type create
+    Javob: B
+
+35. Express da res.jsonp() nima?
+    A) JSON only
+    B) JSONP callback bilan response (legacy CORS workaround)
+    C) JSON parse
+    D) JSON validate
+    Javob: B
+
+36. app.set('jsonp callback name', 'cb') nima?
+    A) JSON name
+    B) JSONP callback query parameter nomini o'zgartiradi
+    C) Callback function
+    D) Response name
+    Javob: B
+
+37. res.json() da app.set('json replacer', fn) nima?
+    A) JSON parse
+    B) JSON.stringify() uchun replacer funksiya
+    C) JSON validate
+    D) JSON format
+    Javob: B
+
+38. app.set('json spaces', 2) nima qiladi?
+    A) JSON compress
+    B) JSON pretty print (2 space indentation)
+    C) JSON validate
+    D) JSON minify
+    Javob: B
+
+39. Express da json escape setting nima uchun?
+    A) JSON parse
+    B) JSON hijacking himoyasi uchun < > & ni escape
+    C) HTML escape
+    D) URL escape
+    Javob: B
+
+40. res.render() da callback function nima?
+    A) Template callback
+    B) Rendered HTML ni string sifatida olish (send qilmasdan)
+    C) Error callback
+    D) Success callback
+    Javob: B
+
+41. app.engine() metodi nima uchun?
+    A) Engine start
+    B) Custom template engine ro'yxatga olish
+    C) Engine stop
+    D) Engine config
+    Javob: B
+
+42. app.engine('html', ejs.renderFile) nima qiladi?
+    A) HTML parse
+    B) .html fayllarni EJS bilan render qiladi
+    C) HTML validate
+    D) HTML create
+    Javob: B
+
+43. consolidate.js package nima?
+    A) Logging
+    B) Turli template engine larni unified API bilan ishlatish
+    C) Validation
+    D) Security
+    Javob: B
+
+44. Express da view cache setting nima?
+    A) Always cache
+    B) Production da template compile natijasini cache qiladi
+    C) No cache
+    D) Partial cache
+    Javob: B
+
+45. app.render() va res.render() farqi?
+    A) Farqi yo'q
+    B) app.render() send qilmaydi, res.render() send qiladi
+    C) res.render() send qilmaydi
+    D) app.render() faqat error
+    Javob: B
+
+46. Express da etag generation function qanday customize qilinadi?
+    A) app.etag()
+    B) app.set('etag', fn(body, encoding))
+    C) res.etag()
+    D) etag.set()
+    Javob: B
+
+47. fresh package Express da nima?
+    A) Data fresh
+    B) Conditional request (If-None-Match, If-Modified-Since) tekshirish
+    C) Cache fresh
+    D) Token fresh
+    Javob: B
+
+48. req.fresh va req.stale nima?
+    A) Data state
+    B) Conditional request natijasi (cache valid/invalid)
+    C) Session state
+    D) Connection state
+    Javob: B
+
+49. Express da Range header (partial content) qanday handle qilinadi?
+    A) Built-in
+    B) range-parser package va res.status(206)
+    C) express-range
+    D) Automatic
+    Javob: B
+
+50. send package Express da nima uchun?
+    A) Email send
+    B) res.sendFile() uchun static file serving
+    C) Message send
+    D) Data send
+    Javob: B
+
+51. serve-static package nima?
+    A) Dynamic content
+    B) express.static() ning underlying implementation
+    C) Static IP
+    D) Static config
+    Javob: B
+
+52. express.static({ maxAge: '1d' }) nima?
+    A) Min age
+    B) Cache-Control max-age header (1 kun)
+    C) Session age
+    D) File age
+    Javob: B
+
+53. express.static({ etag: false }) nima?
+    A) ETag enable
+    B) ETag generation o'chirish
+    C) ETag validate
+    D) ETag require
+    Javob: B
+
+54. express.static({ lastModified: false }) nima?
+    A) Last modified enable
+    B) Last-Modified header o'chirish
+    C) Modified check
+    D) Date header
+    Javob: B
+
+55. express.static({ setHeaders: fn }) nima uchun?
+    A) Get headers
+    B) Custom header qo'shish (CORS, cache, ...)
+    C) Delete headers
+    D) Validate headers
+    Javob: B
+
+56. express.static({ fallthrough: false }) nima?
+    A) Fallthrough enable
+    B) Fayl topilmasa next() o'rniga 404 error
+    C) Always fallthrough
+    D) Error handling
+    Javob: B
+
+57. Express da on-finished package nima uchun?
+    A) Start event
+    B) Response/request tugaganda callback
+    C) Error event
+    D) Data event
+    Javob: B
+
+58. onFinished(res, fn) qachon ishga tushadi?
+    A) Response start
+    B) Response close/finish bo'lganda
+    C) Request start
+    D) Request body end
+    Javob: B
+
+59. Express da on-headers package nima?
+    A) Body event
+    B) Header yozilishidan oldin callback
+    C) Header read
+    D) Header validate
+    Javob: B
+
+60. onHeaders(res, fn) qachon ishlaydi?
+    A) Header yozilgandan keyin
+    B) Header yozilishidan oldin (last chance)
+    C) Request header
+    D) Response end
+    Javob: B
+
+61. Express da depd package nima?
+    A) Dependency
+    B) Deprecation warning utility
+    C) Debug
+    D) Deploy
+    Javob: B
+
+62. Express debug nima bilan yoqiladi?
+    A) app.debug()
+    B) DEBUG=express:* environment variable
+    C) --debug flag
+    D) debug.enable()
+    Javob: B
+
+63. DEBUG=express:router nima ko'rsatadi?
+    A) All debug
+    B) Faqat router debug (matching, dispatch)
+    C) Error debug
+    D) Request debug
+    Javob: B
+
+64. Express da req.readable nima?
+    A) File readable
+    B) Request body stream o'qilishi mumkinligini bildiradi
+    C) Response readable
+    D) Socket readable
+    Javob: B
+
+65. req.pipe(writeStream) qachon ishlatiladi?
+    A) Response pipe
+    B) Request body ni file/stream ga pipe qilish (large file upload)
+    C) Socket pipe
+    D) Network pipe
+    Javob: B
+
+66. res.pipe() nima uchun ishlatilmaydi?
+    A) Ishlaydi
+    B) res Writable stream, pipe() Readable method
+    C) Deprecated
+    D) Error qiladi
+    Javob: B
+
+67. Readable stream ni response ga pipe qilish qanday?
+    A) res.pipe(readable)
+    B) readable.pipe(res)
+    C) res.stream(readable)
+    D) stream.to(res)
+    Javob: B
+
+68. Express da backpressure nima?
+    A) Network pressure
+    B) Consumer sekin bo'lganda producer to'xtatish
+    C) Memory pressure
+    D) CPU pressure
+    Javob: B
+
+69. stream.pipe() backpressure ni qanday handle qiladi?
+    A) Ignore
+    B) Avtomatik pause/resume
+    C) Error
+    D) Buffer
+    Javob: B
+
+70. Express da highWaterMark stream option nima?
+    A) Low water
+    B) Internal buffer size (backpressure threshold)
+    C) Max water
+    D) Water level
+    Javob: B
+
+71. Express da custom body parser qanday yoziladi?
+    A) app.bodyParser()
+    B) Middleware: raw-body, content-type parse, req.body set
+    C) express.parser()
+    D) body.parse()
+    Javob: B
+
+72. raw-body package nima qiladi?
+    A) JSON parse
+    B) Request stream ni buffer/string ga o'qiydi
+    C) Body validate
+    D) Body create
+    Javob: B
+
+73. content-type package nima uchun?
+    A) Body type
+    B) Content-Type header parse (type, charset, ...)
+    C) Response type
+    D) File type
+    Javob: B
+
+74. type-is package req.is() da qanday ishlaydi?
+    A) String compare
+    B) MIME type matching (wildcards, aliases)
+    C) Regex match
+    D) Simple compare
+    Javob: B
+
+75. Express da Symbol ishlatish (req[Symbol]) nima uchun?
+    A) Security
+    B) Private/internal properties (collision avoid)
+    C) Performance
+    D) Debug
+    Javob: B
+
+76. app.mountpath nima?
+    A) File path
+    B) App mount qilingan path pattern(s)
+    C) Route path
+    D) Static path
+    Javob: B
+
+77. Sub-app da app.mountpath array qachon bo'ladi?
+    A) Hech qachon
+    B) Ko'p path ga mount qilinganda app.use(['/a', '/b'], subApp)
+    C) Single path
+    D) No mount
+    Javob: B
+
+78. Express da app.path() metodi nima qaytaradi?
+    A) File path
+    B) Canonical path (parent app pathlar bilan)
+    C) Route path
+    D) Static path
+    Javob: B
+
+79. router.stack va app._router.stack farqi?
+    A) Farqi yo'q
+    B) router.stack to'g'ridan router, app._router.stack lazy init
+    C) app.stack tezroq
+    D) router.stack private
+    Javob: B
+
+80. Express da route.path nima?
+    A) URL
+    B) Route uchun original path pattern
+    C) File path
+    D) Mount path
+    Javob: B
+
+81. Express da route.methods nima?
+    A) Single method
+    B) Route qo'llab-quvvatlaydigan HTTP methodlar object
+    C) All methods
+    D) Method list
+    Javob: B
+
+82. route.stack nima?
+    A) App stack
+    B) Route uchun handler layerlar (multiple handlers)
+    C) Router stack
+    D) Middleware stack
+    Javob: B
+
+83. Express da handle property Layer da nima?
+    A) Error handler
+    B) Actual middleware/route function
+    C) Request handler
+    D) Response handler
+    Javob: B
+
+84. Express da Layer.prototype.handle_request nima?
+    A) Response handle
+    B) Normal middleware/route execution
+    C) Error handle
+    D) Request parse
+    Javob: B
+
+85. Express da Layer.prototype.handle_error nima?
+    A) Request handle
+    B) Error middleware execution (4 param)
+    C) Normal handle
+    D) Response handle
+    Javob: B
+
+86. Express da proto.handle (application.js) nima?
+    A) Route handle
+    B) Main request handler (incoming request entry point)
+    C) Error handle
+    D) Middleware handle
+    Javob: B
+
+87. Express da router.handle() nima qiladi?
+    A) Route create
+    B) Request ni router stack orqali dispatch qiladi
+    C) Route delete
+    D) Route update
+    Javob: B
+
+88. Express da trim_prefix internal function nima?
+    A) URL trim
+    B) Mount path ni URL dan olib req.url yangilaydi
+    C) String trim
+    D) Path trim
+    Javob: B
+
+89. Express da restore function (router) nima uchun?
+    A) Backup restore
+    B) req.url va req.baseUrl ni qayta tiklash (sub-app exit)
+    C) Route restore
+    D) State restore
+    Javob: B
+
+90. Express da setPrototypeOf (request.js, response.js) nima uchun?
+    A) Prototype create
+    B) req/res ni Express prototypes bilan extend qilish
+    C) Prototype delete
+    D) Prototype copy
+    Javob: B
+
+91. Express da application.init() nima qiladi?
+    A) Server init
+    B) Default middleware, settings, locals o'rnatadi
+    C) Route init
+    D) Database init
+    Javob: B
+
+92. Express da defaultConfiguration() nima?
+    A) Custom config
+    B) Default app settings (view engine, views, ...)
+    C) Env config
+    D) Route config
+    Javob: B
+
+93. Express da compileETag internal function nima?
+    A) ETag disable
+    B) ETag setting ni function ga compile qiladi
+    C) ETag validate
+    D) ETag parse
+    Javob: B
+
+94. Express da compileQueryParser nima?
+    A) Query execute
+    B) 'query parser' setting ni parser function ga compile
+    C) Query validate
+    D) Query create
+    Javob: B
+
+95. app.set('query parser', 'extended') nima?
+    A) Simple parser
+    B) qs package (nested objects, arrays)
+    C) No parser
+    D) JSON parser
+    Javob: B
+
+96. app.set('query parser', 'simple') nima?
+    A) Extended parser
+    B) querystring module (flat key-value)
+    C) No parser
+    D) JSON parser
+    Javob: B
+
+97. app.set('query parser', fn) custom parser qanday ishlaydi?
+    A) Built-in
+    B) req.query = fn(queryString)
+    C) Automatic
+    D) Override
+    Javob: B
+
+98. Express da compileTrust internal function nima?
+    A) Trust enable
+    B) 'trust proxy' setting ni function/number ga compile
+    C) Trust validate
+    D) Trust disable
+    Javob: B
+
+99. Express da proxy-addr package nima?
+    A) Proxy create
+    B) X-Forwarded-For dan trusted proxy orqali real IP olish
+    C) Proxy validate
+    D) Proxy config
+    Javob: B
+
+100. Express 5.x da qanday breaking changes bor?
+     A) Farq yo'q
+     B) Path regex, rejected promise handling, req.query getter, ...
+     C) Complete rewrite
+     D) Node version only
+     Javob: B
+
+==============================================================
+                         YAKUNLANDI
+==============================================================

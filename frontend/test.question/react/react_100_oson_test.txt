@@ -1,0 +1,702 @@
+REACT - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+=============================================
+
+1. React kim tomonidan yaratilgan?
+   A) Google
+   B) Facebook (Meta)
+   C) Microsoft
+   D) Amazon
+   Javob: B
+
+2. React nima?
+   A) Backend framework
+   B) Frontend UI library
+   C) Database
+   D) Operating system
+   Javob: B
+
+3. JSX nima?
+   A) JavaScript XML
+   B) Java Syntax Extension
+   C) JSON XML
+   D) JavaScript Extension
+   Javob: A
+
+4. Component nima?
+   A) HTML tag
+   B) Qayta ishlatiluvchi UI qism
+   C) CSS class
+   D) JavaScript function
+   Javob: B
+
+5. React qaysi yilda yaratilgan?
+   A) 2010
+   B) 2013
+   C) 2015
+   D) 2018
+   Javob: B
+
+6. Props nima?
+   A) Properties - componentga uzatiladigan data
+   B) Proper syntax
+   C) Program options
+   D) Protocol
+   Javob: A
+
+7. State nima?
+   A) Country state
+   B) Component ichki data
+   C) Global variable
+   D) Static data
+   Javob: B
+
+8. useState hook nima qaytaradi?
+   A) Faqat value
+   B) [value, setValue] array
+   C) Object
+   D) Function
+   Javob: B
+
+9. Virtual DOM nima?
+   A) Real DOM
+   B) DOM ning memory dagi nusxasi
+   C) Shadow DOM
+   D) Fake DOM
+   Javob: B
+
+10. React component qanday bo'lishi kerak?
+    A) Kichik harfdan boshlanadi
+    B) Katta harfdan boshlanadi
+    C) _ dan boshlanadi
+    D) $ dan boshlanadi
+    Javob: B
+
+11. Fragment nima?
+    A) <Fragment> yoki <> - extra DOM element qo'shmaslik
+    B) Broken component
+    C) Error state
+    D) Half component
+    Javob: A
+
+12. className nima uchun ishlatiladi?
+    A) JavaScript class
+    B) CSS class berish
+    C) Component class
+    D) Type class
+    Javob: B
+
+13. onClick event handler qanday yoziladi?
+    A) onclick
+    B) onClick
+    C) on-click
+    D) ONCLICK
+    Javob: B
+
+14. map() function React da nima uchun?
+    A) Geography
+    B) Array elementlarini render qilish
+    C) Object mapping
+    D) URL mapping
+    Javob: B
+
+15. key prop nima uchun?
+    A) Keyboard
+    B) List elementlarini unique identification
+    C) Password
+    D) API key
+    Javob: B
+
+16. npm start nima qiladi?
+    A) Server o'chirish
+    B) Development server ishga tushirish
+    C) Build qilish
+    D) Test run
+    Javob: B
+
+17. React extension qaysi?
+    A) .react
+    B) .jsx yoki .js
+    C) .rx
+    D) .rt
+    Javob: B
+
+18. export default nima?
+    A) Export qilish
+    B) Componentni boshqa faylda import qilish imkonini beradi
+    C) Default value
+    D) Exit
+    Javob: B
+
+19. import React from 'react' nima qiladi?
+    A) React o'chirish
+    B) React kutubxonasini import qilish
+    C) React install
+    D) React update
+    Javob: B
+
+20. Conditional rendering nima?
+    A) Condition check
+    B) Shart bo'yicha turli UI render qilish
+    C) If statement
+    D) Switch case
+    Javob: B
+
+21. {condition && <Component />} nima?
+    A) Error
+    B) condition true bo'lsa render
+    C) Always render
+    D) Never render
+    Javob: B
+
+22. Ternary operator JSX da?
+    A) if-else
+    B) {condition ? <A /> : <B />}
+    C) switch
+    D) for loop
+    Javob: B
+
+23. Create React App (CRA) nima?
+    A) Mobile app
+    B) React project starter tool
+    C) Desktop app
+    D) Backend app
+    Javob: B
+
+24. npx create-react-app myapp nima qiladi?
+    A) App o'chirish
+    B) Yangi React project yaratish
+    C) App update
+    D) App deploy
+    Javob: B
+
+25. public folder nima uchun?
+    A) Private files
+    B) Static fayllar (index.html, images)
+    C) Components
+    D) Styles
+    Javob: B
+
+26. src folder nima uchun?
+    A) Source code
+    B) Assets
+    C) Config
+    D) Test
+    Javob: A
+
+27. index.js nima?
+    A) Config file
+    B) Entry point
+    C) Exit point
+    D) Style file
+    Javob: B
+
+28. App.js nima?
+    A) Config
+    B) Asosiy root component
+    C) Style
+    D) Test
+    Javob: B
+
+29. npm install nima qiladi?
+    A) Uninstall
+    B) package.json dependencies o'rnatish
+    C) Update
+    D) Remove
+    Javob: B
+
+30. package.json nima?
+    A) JSON data
+    B) Project metadata va dependencies
+    C) Config file
+    D) Style file
+    Javob: B
+
+31. node_modules folder?
+    A) Node.js source
+    B) O'rnatilgan packages
+    C) Custom modules
+    D) Config
+    Javob: B
+
+32. .gitignore da node_modules bo'ladimi?
+    A) Yo'q
+    B) Ha, git ga push qilinmaydi
+    C) Optional
+    D) Required
+    Javob: B
+
+33. React strict mode nima?
+    A) Error mode
+    B) Development warnings ko'rsatish
+    C) Production mode
+    D) Debug mode
+    Javob: B
+
+34. Inline style React da?
+    A) style="color:red"
+    B) style={{color: 'red'}}
+    C) styles={color:red}
+    D) css="color:red"
+    Javob: B
+
+35. Event object React da?
+    A) Native event
+    B) SyntheticEvent
+    C) Custom event
+    D) DOM event
+    Javob: B
+
+36. e.preventDefault() nima?
+    A) Error prevent
+    B) Default browser behavior to'xtatish
+    C) Event stop
+    D) Form clear
+    Javob: B
+
+37. Controlled component nima?
+    A) Remote control
+    B) React state bilan boshqariluvchi input
+    C) Automatic component
+    D) Manual component
+    Javob: B
+
+38. value={state} input da nima?
+    A) Default value
+    B) Controlled input value
+    C) Placeholder
+    D) Name
+    Javob: B
+
+39. onChange handler nima?
+    A) Page change
+    B) Input value o'zgarganda chaqiriladi
+    C) Style change
+    D) Route change
+    Javob: B
+
+40. Form submit React da?
+    A) form.submit()
+    B) onSubmit handler
+    C) button click
+    D) Enter key
+    Javob: B
+
+41. setState async mi?
+    A) Yo'q
+    B) Ha, asynchronous
+    C) Sometimes
+    D) Never
+    Javob: B
+
+42. Re-render qachon bo'ladi?
+    A) Manual call
+    B) State yoki props o'zgarganda
+    C) Timer bilan
+    D) Automatically
+    Javob: B
+
+43. Children prop nima?
+    A) Child component
+    B) Component ichidagi content
+    C) Array
+    D) Object
+    Javob: B
+
+44. {props.children} nima ko'rsatadi?
+    A) Props
+    B) Component tagidagi nested content
+    C) Children array
+    D) Child count
+    Javob: B
+
+45. Lifting state up nima?
+    A) State ko'tarish
+    B) State ni parent component ga ko'chirish
+    C) State delete
+    D) State copy
+    Javob: B
+
+46. One-way data flow nima?
+    A) Bidirectional
+    B) Data faqat parent -> child oqadi
+    C) Random flow
+    D) No flow
+    Javob: B
+
+47. React Developer Tools nima?
+    A) Code editor
+    B) Browser extension for debugging
+    C) VS Code plugin
+    D) Terminal tool
+    Javob: B
+
+48. Component tree nima?
+    A) File tree
+    B) Components hierarchy
+    C) DOM tree
+    D) Folder tree
+    Javob: B
+
+49. Root component nima?
+    A) Last component
+    B) Eng yuqori component (App)
+    C) Middle component
+    D) Child component
+    Javob: B
+
+50. ReactDOM.render nima?
+    A) HTML render
+    B) React component ni DOM ga render qilish
+    C) CSS render
+    D) Image render
+    Javob: B
+
+51. document.getElementById('root') nima?
+    A) Random element
+    B) React mount qilinadigan element
+    C) Footer
+    D) Header
+    Javob: B
+
+52. Single Page Application (SPA) nima?
+    A) One page website
+    B) Page reload qilmasdan ishlash
+    C) Small app
+    D) Simple app
+    Javob: B
+
+53. React Router nima?
+    A) Network router
+    B) Client-side routing library
+    C) Server router
+    D) API router
+    Javob: B
+
+54. npm run build nima?
+    A) Development build
+    B) Production build yaratish
+    C) Test run
+    D) Server start
+    Javob: B
+
+55. build folder nima?
+    A) Source code
+    B) Production ready static files
+    C) Development files
+    D) Test files
+    Javob: B
+
+56. Environment variable React da?
+    A) .env file
+    B) REACT_APP_ prefix bilan
+    C) Direct access
+    D) Global variable
+    Javob: B
+
+57. process.env.REACT_APP_API_URL nima?
+    A) System variable
+    B) Custom environment variable
+    C) React internal
+    D) Node variable
+    Javob: B
+
+58. Component unmount nima?
+    A) Mount
+    B) Component DOM dan olib tashlanishi
+    C) Update
+    D) Render
+    Javob: B
+
+59. Functional component vs Class component?
+    A) Bir xil
+    B) Functional hooks ishlatadi, class lifecycle methods
+    C) Class tezroq
+    D) Functional eski
+    Javob: B
+
+60. Hooks qachon qo'shildi?
+    A) React 15
+    B) React 16.8
+    C) React 17
+    D) React 18
+    Javob: B
+
+61. Hook rules - qaerda ishlatish mumkin?
+    A) Har qayerda
+    B) Component top level da
+    C) Loop ichida
+    D) Condition ichida
+    Javob: B
+
+62. Custom hook nima bilan boshlanadi?
+    A) hook
+    B) use
+    C) custom
+    D) my
+    Javob: B
+
+63. useState initial value?
+    A) Required
+    B) useState(initialValue)
+    C) Auto set
+    D) Always null
+    Javob: B
+
+64. Multiple useState?
+    A) Mumkin emas
+    B) Ha, bir nechta useState ishlatish mumkin
+    C) Faqat 1 ta
+    D) Maximum 3 ta
+    Javob: B
+
+65. Object state update?
+    A) state.name = 'new'
+    B) setState({...state, name: 'new'})
+    C) state = {...state}
+    D) setState(state.name)
+    Javob: B
+
+66. Array state update - add item?
+    A) state.push(item)
+    B) setState([...state, item])
+    C) state = [...state]
+    D) setState(state.add(item))
+    Javob: B
+
+67. Immutability nima?
+    A) Mutable
+    B) Original data o'zgartirmaslik
+    C) Delete
+    D) Update
+    Javob: B
+
+68. Spread operator (...) nima qiladi?
+    A) Multiply
+    B) Array/Object copy qilish
+    C) Add
+    D) Remove
+    Javob: B
+
+69. Destructuring nima?
+    A) Destroy
+    B) Object/Array dan values ajratib olish
+    C) Create
+    D) Build
+    Javob: B
+
+70. const {name} = props nima?
+    A) Create name
+    B) props.name ni name ga destructure
+    C) Delete name
+    D) Update name
+    Javob: B
+
+71. Default props nima?
+    A) Required props
+    B) Prop berilmasa default value
+    C) Optional props
+    D) Main props
+    Javob: B
+
+72. Component.defaultProps = {} nima?
+    A) Clear props
+    B) Default values set qilish
+    C) Delete props
+    D) Update props
+    Javob: B
+
+73. prop-types library nima uchun?
+    A) Create props
+    B) Props type checking
+    C) Delete props
+    D) Update props
+    Javob: B
+
+74. PropTypes.string nima?
+    A) Any type
+    B) String type validation
+    C) Number type
+    D) Boolean type
+    Javob: B
+
+75. isRequired nima?
+    A) Optional
+    B) Prop required ekanligini belgilash
+    C) Default
+    D) Nullable
+    Javob: B
+
+76. Console warning props uchun?
+    A) Error
+    B) Development warning for wrong prop type
+    C) Build error
+    D) Runtime error
+    Javob: B
+
+77. React.memo nima?
+    A) Memory leak
+    B) Component memoization
+    C) Memo note
+    D) Memory allocation
+    Javob: B
+
+78. Pure component nima?
+    A) Impure
+    B) Same props = same output
+    C) Random output
+    D) Different output
+    Javob: B
+
+79. CSS modules nima?
+    A) Global CSS
+    B) Scoped CSS per component
+    C) Inline CSS
+    D) No CSS
+    Javob: B
+
+80. styles.module.css naming?
+    A) Required
+    B) CSS Modules convention
+    C) Optional
+    D) Random
+    Javob: B
+
+81. import styles from './Button.module.css'?
+    A) Global import
+    B) CSS Module import
+    C) Inline import
+    D) No import
+    Javob: B
+
+82. className={styles.button}?
+    A) String class
+    B) CSS Module class usage
+    C) Inline style
+    D) ID selector
+    Javob: B
+
+83. Styled-components nima?
+    A) Pre-styled library
+    B) CSS-in-JS library
+    C) Component library
+    D) Style guide
+    Javob: B
+
+84. Template literal CSS?
+    A) String CSS
+    B) styled.div`css rules`
+    C) Object CSS
+    D) Array CSS
+    Javob: B
+
+85. Tailwind CSS React da?
+    A) Inline styles
+    B) Utility-first CSS classes
+    C) CSS modules
+    D) Styled components
+    Javob: B
+
+86. className="bg-blue-500" nima?
+    A) Custom class
+    B) Tailwind utility class
+    C) Bootstrap class
+    D) CSS variable
+    Javob: B
+
+87. Conditional className?
+    A) class={condition}
+    B) className={condition ? 'a' : 'b'}
+    C) classes={condition}
+    D) style={condition}
+    Javob: B
+
+88. clsx library nima uchun?
+    A) Create class
+    B) Conditional className merging
+    C) Delete class
+    D) Update class
+    Javob: B
+
+89. Image import React da?
+    A) <img src="./image.png">
+    B) import img from './image.png'
+    C) require('./image.png')
+    D) Both B and C
+    Javob: D
+
+90. public folder images?
+    A) Import required
+    B) Direct path "/image.png"
+    C) Cannot use
+    D) Base64 only
+    Javob: B
+
+91. SVG as component?
+    A) Not possible
+    B) import {ReactComponent as Icon} from './icon.svg'
+    C) Only img tag
+    D) Only inline
+    Javob: B
+
+92. React.lazy nima?
+    A) Lazy loading
+    B) Dynamic import for code splitting
+    C) Slow loading
+    D) No loading
+    Javob: B
+
+93. Suspense nima?
+    A) Surprise
+    B) Loading fallback for lazy components
+    C) Error boundary
+    D) Async component
+    Javob: B
+
+94. fallback prop Suspense da?
+    A) Error message
+    B) Loading UI
+    C) Default component
+    D) Null
+    Javob: B
+
+95. Error boundary nima?
+    A) Error catcher component
+    B) Class component that catches errors
+    C) Error message
+    D) Error log
+    Javob: B
+
+96. componentDidCatch nima?
+    A) Mount event
+    B) Error handling lifecycle method
+    C) Update event
+    D) Unmount event
+    Javob: B
+
+97. React 18 new features?
+    A) Hooks
+    B) Concurrent rendering, automatic batching
+    C) Class components
+    D) Redux
+    Javob: B
+
+98. createRoot vs render?
+    A) Same
+    B) createRoot React 18 concurrent mode
+    C) render is new
+    D) No difference
+    Javob: B
+
+99. StrictMode double render?
+    A) Bug
+    B) Development feature to find side effects
+    C) Production behavior
+    D) Error
+    Javob: B
+
+100. React DevTools Profiler?
+     A) Code editor
+     B) Performance analysis tool
+     C) Debugger
+     D) Logger
+     Javob: B

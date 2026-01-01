@@ -1,0 +1,706 @@
+MONGODB - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+=================================================
+
+1. WiredTiger storage engine da document-level concurrency nima?
+   A) Collection-level lock
+   B) Har bir document uchun alohida lock (parallel yozish)
+   C) Database-level lock
+   D) Global lock
+   Javob: B
+
+2. WiredTiger da compression algorithm default:
+   A) LZ4
+   B) snappy
+   C) zlib
+   D) none
+   Javob: B
+
+3. WiredTiger cache size ni sozlash:
+   A) wiredTiger.cache.size
+   B) storage.wiredTiger.engineConfig.cacheSizeGB
+   C) wiredTiger.memory
+   D) storage.cache
+   Javob: B
+
+4. Checkpoint (WiredTiger) nima?
+   A) Backup point
+   B) Memory dan diskka durable write
+   C) Transaction point
+   D) Recovery point
+   Javob: B
+
+5. Journal (WiredTiger) nima uchun?
+   A) Query log
+   B) Write-ahead log (crash recovery uchun)
+   C) Slow query log
+   D) Access log
+   Javob: B
+
+6. storage.journal.commitIntervalMs default qiymati:
+   A) 10ms
+   B) 100ms (yoki 30ms w:majority uchun)
+   C) 1000ms
+   D) 50ms
+   Javob: B
+
+7. Oplog nima?
+   A) Operation log (query log)
+   B) Replication uchun idempotent operations log
+   C) Error log
+   D) Access log
+   Javob: B
+
+8. Oplog capped collection hajmi default (64-bit):
+   A) 1GB
+   B) 5% of free disk (min 990MB, max 50GB)
+   C) 10GB
+   D) Unlimited
+   Javob: B
+
+9. Oplog window nima?
+   A) GUI window
+   B) Oplog da saqlanadigan operatsiyalar vaqt oralig'i
+   C) Query window
+   D) Transaction window
+   Javob: B
+
+10. rs.printReplicationInfo() nima ko'rsatadi?
+    A) Server info
+    B) Oplog size va window haqida ma'lumot
+    C) Shard info
+    D) Index info
+    Javob: B
+
+11. Read Preference "primaryPreferred" nima?
+    A) Faqat primary
+    B) Primary dan, agar unavailable bo'lsa secondary dan
+    C) Faqat secondary
+    D) Nearest
+    Javob: B
+
+12. Read Preference "secondaryPreferred":
+    A) Faqat primary
+    B) Secondary dan, agar unavailable bo'lsa primary dan
+    C) Faqat secondary
+    D) Nearest
+    Javob: B
+
+13. Read Preference "nearest":
+    A) Primary only
+    B) Network latency bo'yicha eng yaqin member
+    C) Secondary only
+    D) Random
+    Javob: B
+
+14. maxStalenessSeconds nima?
+    A) Cache timeout
+    B) Secondary ning primary dan maksimal orqada qolishi
+    C) Connection timeout
+    D) Query timeout
+    Javob: B
+
+15. Tag sets (read preference) nima uchun?
+    A) Index tagging
+    B) Specific member larni tanlash (datacenter, region, ...)
+    C) Document tagging
+    D) Collection tagging
+    Javob: B
+
+16. Causal Consistency nima?
+    A) Eventual consistency
+    B) Read-your-writes va monotonic reads kafolati
+    C) Strong consistency
+    D) Weak consistency
+    Javob: B
+
+17. Causal Consistency session da:
+    A) Default yoqiq
+    B) {causalConsistency: true} bilan yoqish kerak
+    C) Har doim o'chirilgan
+    D) Faqat sharding da
+    Javob: B
+
+18. Retryable Writes nima?
+    A) Manual retry
+    B) Network xatolarida avtomatik write retry
+    C) Read retry
+    D) Transaction retry
+    Javob: B
+
+19. Retryable Writes qachon ishlaydi?
+    A) Standalone da
+    B) Replica Set yoki Sharded Cluster da
+    C) Barcha holatlarda
+    D) Faqat transaction da
+    Javob: B
+
+20. Snapshot isolation (transaction) nima?
+    A) No isolation
+    B) Transaction boshlanishidagi ma'lumot holatini ko'rish
+    C) Read committed
+    D) Read uncommitted
+    Javob: B
+
+21. Transaction sizeLimitMB default:
+    A) 8 MB
+    B) 16 MB
+    C) 32 MB
+    D) 64 MB
+    Javob: B
+
+22. transactionLifetimeLimitSeconds default:
+    A) 30 sekund
+    B) 60 sekund
+    C) 120 sekund
+    D) 300 sekund
+    Javob: B
+
+23. Two-phase commit nima?
+    A) Single commit
+    B) Distributed transaction commit protokoli
+    C) Rollback
+    D) Checkpoint
+    Javob: B
+
+24. Distributed transaction (sharded) qachon qo'llandi?
+    A) MongoDB 4.0
+    B) MongoDB 4.2
+    C) MongoDB 4.4
+    D) MongoDB 5.0
+    Javob: B
+
+25. $merge whenMatched option "keepExisting":
+    A) Yangilaydi
+    B) Mavjud document ni saqlab qoladi (yangilamaydi)
+    C) O'chiradi
+    D) Replace qiladi
+    Javob: B
+
+26. $merge whenNotMatched option "discard":
+    A) Insert qiladi
+    B) Yangi document ni tashlab yuboradi (insert yo'q)
+    C) Error beradi
+    D) Null qo'yadi
+    Javob: B
+
+27. $setWindowFields aggregation (MongoDB 5.0):
+    A) GUI window
+    B) Window functions (running totals, moving averages, ...)
+    C) Time window
+    D) Query window
+    Javob: B
+
+28. $setWindowFields da $rank:
+    A) Random rank
+    B) Partition ichida tartib raqami
+    C) Global rank
+    D) Index rank
+    Javob: B
+
+29. $setWindowFields da $denseRank:
+    A) Gaps bilan rank
+    B) Gaps siz rank (tie lar bir xil rank)
+    C) Random rank
+    D) Reverse rank
+    Javob: B
+
+30. $setWindowFields da documents window:
+    A) Time-based
+    B) Document position-based ([-5, 5], ["unbounded", "current"], ...)
+    C) Size-based
+    D) Index-based
+    Javob: B
+
+31. $densify aggregation (MongoDB 5.1):
+    A) Compress
+    B) Missing values/gaps ni to'ldirish (time series)
+    C) Remove duplicates
+    D) Sort
+    Javob: B
+
+32. Time Series Collection nima (MongoDB 5.0)?
+    A) Oddiy collection
+    B) Time series data uchun optimallashtirilgan collection
+    C) Capped collection
+    D) View
+    Javob: B
+
+33. Time Series Collection yaratish:
+    A) db.createCollection("ts", {type: "timeseries"})
+    B) db.createCollection("ts", {timeseries: {timeField: "timestamp"}})
+    C) db.createCollection("ts", {temporal: true})
+    D) db.createCollection("ts", {time: "timestamp"})
+    Javob: B
+
+34. Time Series da metaField nima?
+    A) Time field
+    B) Document ni guruhlash uchun metadata field
+    C) Index field
+    D) Primary field
+    Javob: B
+
+35. Time Series da granularity option:
+    A) Data type
+    B) Vaqt oralig'i (seconds, minutes, hours)
+    C) Compression level
+    D) Index type
+    Javob: B
+
+36. Clustered Collection nima (MongoDB 5.3)?
+    A) Sharded collection
+    B) _id bo'yicha fizik tartibda saqlangan collection
+    C) Replicated collection
+    D) Partitioned collection
+    Javob: B
+
+37. Clustered Collection afzalligi:
+    A) Har qanday query tez
+    B) _id bo'yicha range scan tezroq, storage samarali
+    C) Faqat write tez
+    D) Faqat read tez
+    Javob: B
+
+38. Queryable Encryption (MongoDB 6.0):
+    A) At-rest encryption
+    B) Client-side field-level encryption bilan query qilish
+    C) Network encryption
+    D) Index encryption
+    Javob: B
+
+39. Queryable Encryption da equality query:
+    A) Har doim ishlaydi
+    B) Deterministic encryption bilan ishlaydi
+    C) Hech qachon ishlamaydi
+    D) Faqat admin uchun
+    Javob: B
+
+40. Queryable Encryption da range query (MongoDB 7.0 preview):
+    A) Deterministic
+    B) Range-queryable encryption bilan
+    C) Plain text
+    D) Hashed
+    Javob: B
+
+41. Client-Side Field Level Encryption (CSFLE):
+    A) Server-side encryption
+    B) Application tomonidan field darajasida encryption
+    C) Network encryption
+    D) Disk encryption
+    Javob: B
+
+42. CSFLE da Data Encryption Key (DEK):
+    A) Master key
+    B) Field larni encrypt qiluvchi kalit
+    C) Network key
+    D) Session key
+    Javob: B
+
+43. CSFLE da Customer Master Key (CMK):
+    A) DEK
+    B) DEK larni encrypt qiluvchi kalit (KMS da)
+    C) Application key
+    D) Database key
+    Javob: B
+
+44. Supported KMS providers (CSFLE):
+    A) Faqat AWS
+    B) AWS, Azure, GCP, KMIP, Local
+    C) Faqat Local
+    D) Faqat Azure
+    Javob: B
+
+45. encryptedFieldsMap nima?
+    A) Index map
+    B) Qaysi fieldlar encrypt qilinishini belgilash
+    C) Key map
+    D) Schema map
+    Javob: B
+
+46. Automatic encryption (CSFLE):
+    A) Manual encryption
+    B) Driver avtomatik encrypt/decrypt qiladi
+    C) Server encryption
+    D) Network encryption
+    Javob: B
+
+47. Index build - background vs foreground (MongoDB 4.2+):
+    A) Har doim foreground
+    B) Background deprecated, optimized build (hybrid)
+    C) Har doim background
+    D) Manual tanlash
+    Javob: B
+
+48. Index build memory limit (maxIndexBuildMemoryUsageMegabytes):
+    A) 100 MB
+    B) 200 MB (default)
+    C) 500 MB
+    D) 1000 MB
+    Javob: B
+
+49. Rolling index build (replica set) nima?
+    A) Parallel build
+    B) Secondary larda ketma-ket, keyin primary da
+    C) Primary da birinchi
+    D) Random order
+    Javob: B
+
+50. Wildcard Index nima?
+    A) Bitta field index
+    B) Unknown/dynamic field lar uchun index
+    C) Text index
+    D) Geospatial index
+    Javob: B
+
+51. Wildcard Index yaratish:
+    A) db.col.createIndex({"*": 1})
+    B) db.col.createIndex({"$**": 1})
+    C) db.col.createIndex({wildcard: true})
+    D) db.col.createIndex({"?": 1})
+    Javob: B
+
+52. Wildcard Index projection (faqat specific pathlar):
+    A) {wildcardPath: ["a", "b"]}
+    B) {wildcardProjection: {a: 1, b: 1}}
+    C) {fields: ["a", "b"]}
+    D) {include: ["a", "b"]}
+    Javob: B
+
+53. Columnstore Index (MongoDB 7.0) nima?
+    A) Row-based index
+    B) Analytics query lar uchun columnar index
+    C) Text index
+    D) Geospatial index
+    Javob: B
+
+54. $search aggregation (Atlas Search):
+    A) Text index search
+    B) Lucene-based full-text search
+    C) Regex search
+    D) Simple find
+    Javob: B
+
+55. Atlas Search da compound query:
+    A) Bitta shart
+    B) must, mustNot, should, filter kombinatsiyasi
+    C) AND only
+    D) OR only
+    Javob: B
+
+56. Atlas Search da fuzzy matching:
+    A) Exact match
+    B) Typo tolerance (edit distance)
+    C) Prefix match
+    D) Suffix match
+    Javob: B
+
+57. Atlas Search da autocomplete:
+    A) Manual implementation
+    B) Edge n-gram yoki phrase autocomplete
+    C) Simple prefix
+    D) Regex
+    Javob: B
+
+58. Atlas Vector Search (MongoDB 7.0):
+    A) Text search
+    B) Vector embeddings uchun approximate nearest neighbor search
+    C) Numeric search
+    D) Date search
+    Javob: B
+
+59. Vector Search index type:
+    A) text
+    B) vectorSearch (HNSW algorithm)
+    C) 2dsphere
+    D) compound
+    Javob: B
+
+60. Vector Search da numCandidates:
+    A) Result limit
+    B) Ko'proq candidates = yuqori accuracy, sekinroq
+    C) Index size
+    D) Memory limit
+    Javob: B
+
+61. $vectorSearch aggregation sintaksisi:
+    A) {$vectorSearch: [1,2,3]}
+    B) {$vectorSearch: {index: "...", path: "...", queryVector: [...], numCandidates: N, limit: K}}
+    C) {$search: {vector: [...]}}
+    D) {$nearVector: [...]}
+    Javob: B
+
+62. Balancer (sharding) nima qiladi?
+    A) Load balancing (network)
+    B) Chunk larni shard lar o'rtasida muvozanatli taqsimlash
+    C) Query balancing
+    D) Connection balancing
+    Javob: B
+
+63. Balancer window sozlash:
+    A) balancer.window
+    B) activeWindow: {start: "23:00", stop: "06:00"}
+    C) balancerTime
+    D) migrationWindow
+    Javob: B
+
+64. Jumbo chunk nima?
+    A) Normal chunk
+    B) Split qilib bo'lmaydigan katta chunk
+    C) Empty chunk
+    D) Small chunk
+    Javob: B
+
+65. Jumbo chunk ni hal qilish:
+    A) Avtomatik
+    B) Manual split yoki shard key o'zgartirish
+    C) Delete
+    D) Ignore
+    Javob: B
+
+66. Zone sharding nima?
+    A) Random sharding
+    B) Shard key range larni specific shard larga biriktirish
+    C) Time-based sharding
+    D) Hash sharding
+    Javob: B
+
+67. Zone yaratish:
+    A) sh.zone("zoneName")
+    B) sh.addShardTag("shard0000", "zoneName") yoki sh.addShardToZone()
+    C) sh.createZone("zoneName")
+    D) sh.newZone("zoneName")
+    Javob: B
+
+68. Zone range qo'shish:
+    A) sh.addRange()
+    B) sh.updateZoneKeyRange("db.col", {min}, {max}, "zone")
+    C) sh.setRange()
+    D) sh.zoneRange()
+    Javob: B
+
+69. Orphaned documents nima (sharding)?
+    A) Normal documents
+    B) Noto'g'ri shard da qolgan documentlar
+    C) Deleted documents
+    D) Expired documents
+    Javob: B
+
+70. cleanupOrphaned command:
+    A) Delete all
+    B) Orphaned documentlarni o'chirish
+    C) Cleanup index
+    D) Cleanup cache
+    Javob: B
+
+71. Resharding (MongoDB 4.4+):
+    A) Shard key o'zgartirish mumkin emas
+    B) Online shard key o'zgartirish
+    C) Manual migration
+    D) Drop and recreate
+    Javob: B
+
+72. reshardCollection command:
+    A) Create collection
+    B) Mavjud sharded collection ning shard key ini o'zgartirish
+    C) Delete collection
+    D) Rename collection
+    Javob: B
+
+73. Hedged Reads nima?
+    A) Single read
+    B) Parallel read multiple members dan (birinchi javobni olish)
+    C) Sequential read
+    D) Cached read
+    Javob: B
+
+74. Hedged Reads qachon ishlaydi?
+    A) Har doim
+    B) Read Preference nearest bilan, sharded cluster da
+    C) Primary only
+    D) Secondary only
+    Javob: B
+
+75. Connection Pool sizing (maxPoolSize):
+    A) 10
+    B) 100 (default)
+    C) 50
+    D) 200
+    Javob: B
+
+76. minPoolSize nima?
+    A) Maximum connections
+    B) Minimum idle connections saqlab turish
+    C) Active connections
+    D) Total connections
+    Javob: B
+
+77. waitQueueTimeoutMS:
+    A) Connection timeout
+    B) Pool dan connection olish uchun maksimal kutish vaqti
+    C) Query timeout
+    D) Write timeout
+    Javob: B
+
+78. Server Selection timeout:
+    A) Connection timeout
+    B) Mos server topish uchun maksimal vaqt
+    C) Query timeout
+    D) Write timeout
+    Javob: B
+
+79. heartbeatFrequencyMS:
+    A) Query frequency
+    B) Driver server holatini tekshirish chastotasi
+    C) Write frequency
+    D) Index frequency
+    Javob: B
+
+80. Logical Sessions nima?
+    A) Physical sessions
+    B) Transactions, retryable writes, causal consistency uchun session
+    C) User sessions
+    D) Network sessions
+    Javob: B
+
+81. Session timeout (localLogicalSessionTimeoutMinutes):
+    A) 10 minutes
+    B) 30 minutes (default)
+    C) 60 minutes
+    D) 5 minutes
+    Javob: B
+
+82. $listSessions aggregation:
+    A) User sessions
+    B) System sessions ro'yxati
+    C) Network sessions
+    D) Database sessions
+    Javob: B
+
+83. $currentOp aggregation:
+    A) Past operations
+    B) Hozirgi operatsiyalar (currentOp command alternative)
+    C) Future operations
+    D) Completed operations
+    Javob: B
+
+84. $planCacheStats aggregation:
+    A) Query stats
+    B) Query plan cache statistikasi
+    C) Index stats
+    D) Collection stats
+    Javob: B
+
+85. Plan Cache nima?
+    A) Data cache
+    B) Query execution plan larni keshlash
+    C) Index cache
+    D) Document cache
+    Javob: B
+
+86. planCacheClear() nima qiladi?
+    A) Data o'chiradi
+    B) Query plan cache ni tozalaydi
+    C) Index o'chiradi
+    D) Collection o'chiradi
+    Javob: B
+
+87. Index Filter nima?
+    A) Document filter
+    B) Specific query uchun faqat ma'lum index ishlatish
+    C) Field filter
+    D) Collection filter
+    Javob: B
+
+88. $indexStats aggregation:
+    A) Query stats
+    B) Index ishlatilishi statistikasi
+    C) Collection stats
+    D) Server stats
+    Javob: B
+
+89. $collStats aggregation:
+    A) Index stats
+    B) Collection statistikasi (size, count, index sizes, ...)
+    C) Query stats
+    D) Server stats
+    Javob: B
+
+90. storageSize vs dataSize:
+    A) Bir xil
+    B) storageSize = disk space (compression bilan), dataSize = uncompressed
+    C) storageSize kichik
+    D) dataSize disk space
+    Javob: B
+
+91. freeStorageAfterDrop nima?
+    A) Avtomatik free
+    B) Drop dan keyin disk space ni OS ga qaytarish (compact alternative)
+    C) Manual free
+    D) Never free
+    Javob: B
+
+92. compact command:
+    A) Compress data
+    B) Collection defragment va disk space reclaim
+    C) Delete data
+    D) Index rebuild
+    Javob: B
+
+93. validate command:
+    A) Schema validation
+    B) Collection integrity tekshirish
+    C) Query validation
+    D) Index validation
+    Javob: B
+
+94. repairDatabase (deprecated) o'rniga nima?
+    A) validate
+    B) mongod --repair yoki initial sync (replica set)
+    C) compact
+    D) rebuild
+    Javob: B
+
+95. FTDC (Full Time Diagnostic Data Capture):
+    A) Manual logging
+    B) Avtomatik diagnostic ma'lumotlar yig'ish
+    C) Query logging
+    D) Access logging
+    Javob: B
+
+96. diagnostic.data directory:
+    A) Query logs
+    B) FTDC diagnostic files
+    C) Error logs
+    D) Access logs
+    Javob: B
+
+97. mongotop buyrug'i:
+    A) Server status
+    B) Collection bo'yicha read/write vaqti
+    C) Query top
+    D) Index top
+    Javob: B
+
+98. mongostat buyrug'i:
+    A) Collection stats
+    B) Real-time server statistikasi (insert, query, update, delete, ...)
+    C) Index stats
+    D) Shard stats
+    Javob: B
+
+99. logRotate command:
+    A) Delete logs
+    B) Log faylni rotate qilish
+    C) Compress logs
+    D) Archive logs
+    Javob: B
+
+100. setParameter command:
+     A) Permanent setting
+     B) Runtime server parameter o'zgartirish
+     C) Config file
+     D) Environment variable
+     Javob: B
+
+=================================================
+                    YAKUNLANDI
+=================================================

@@ -1,0 +1,706 @@
+GIT VERSION CONTROL - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+=================================================================
+
+1. git rebase nima qiladi?
+   A) Merge qiladi
+   B) Commit larni boshqa base ustiga qayta qo'yadi
+   C) Branch o'chiradi
+   D) Reset qiladi
+   Javob: B
+
+2. git rebase va git merge asosiy farqi?
+   A) Farqi yo'q
+   B) rebase tarixni chiziqli qiladi, merge commit yaratadi
+   C) merge tezroq
+   D) rebase commit yaratadi
+   Javob: B
+
+3. Interactive rebase qanday boshlanadi?
+   A) git rebase -a
+   B) git rebase -i HEAD~n
+   C) git rebase --edit
+   D) git rebase -m
+   Javob: B
+
+4. Interactive rebase da "squash" nima qiladi?
+   A) Commit o'chiradi
+   B) Commit ni oldingisi bilan birlashtiradi
+   C) Commit qayta nomlaydi
+   D) Commit tartibini o'zgartiradi
+   Javob: B
+
+5. Interactive rebase da "pick" nima?
+   A) O'chirish
+   B) Commit ni o'zgartirmasdan qoldirish
+   C) Birlashtirish
+   D) Qayta nomlash
+   Javob: B
+
+6. Interactive rebase da "reword" nima qiladi?
+   A) Commit o'chiradi
+   B) Commit xabarini o'zgartiradi
+   C) Commit birlashtiradi
+   D) Commit tashlab ketadi
+   Javob: B
+
+7. Interactive rebase da "drop" nima?
+   A) Commit saqlaydi
+   B) Commit ni o'chiradi
+   C) Commit birlashtiradi
+   D) Commit ko'chiradi
+   Javob: B
+
+8. Interactive rebase da "edit" nima imkonini beradi?
+   A) Faqat xabarni o'zgartirish
+   B) Commit da to'xtab, o'zgarishlar kiritish
+   C) Faqat o'chirish
+   D) Faqat birlashtirish
+   Javob: B
+
+9. git rebase --abort nima qiladi?
+   A) Rebase davom ettiradi
+   B) Rebase ni bekor qiladi, oldingi holatga qaytaradi
+   C) Rebase tugatadi
+   D) Conflict hal qiladi
+   Javob: B
+
+10. git rebase --continue nima?
+    A) Rebase bekor qiladi
+    B) Conflict hal qilingandan keyin rebase ni davom ettiradi
+    C) Rebase boshidan boshlaydi
+    D) Rebase to'xtatadi
+    Javob: B
+
+11. Fast-forward merge nima?
+    A) Sekin merge
+    B) Merge commit yaratmasdan branch ni oldinga surish
+    C) Recursive merge
+    D) Octopus merge
+    Javob: B
+
+12. git merge --no-ff nima qiladi?
+    A) Fast-forward merge
+    B) Har doim merge commit yaratadi
+    C) Merge bekor qiladi
+    D) Squash merge
+    Javob: B
+
+13. git merge --squash nima?
+    A) Oddiy merge
+    B) Barcha o'zgarishlarni bitta commit qilib merge
+    C) Fast-forward
+    D) Rebase
+    Javob: B
+
+14. 3-way merge nima?
+    A) 3 ta branch merge
+    B) Umumiy ancestor va ikkala branch ni solishtirish
+    C) 3 ta commit
+    D) 3 ta file
+    Javob: B
+
+15. Merge conflict da <<<<<<< nima?
+    A) Remote o'zgarishlar boshi
+    B) Joriy branch o'zgarishlari boshi (HEAD)
+    C) Conflict tugashi
+    D) Umumiy ancestor
+    Javob: B
+
+16. Merge conflict da ======= nima?
+    A) Conflict boshi
+    B) Ikki versiya orasidagi ajratuvchi
+    C) Conflict tugashi
+    D) Base version
+    Javob: B
+
+17. Merge conflict da >>>>>>> nima?
+    A) Local o'zgarishlar
+    B) Merge qilinayotgan branch o'zgarishlari tugashi
+    C) Conflict boshi
+    D) Ajratuvchi
+    Javob: B
+
+18. git mergetool nima?
+    A) Merge qiladi
+    B) Conflict hal qilish uchun visual tool ishga tushiradi
+    C) Branch yaratadi
+    D) Diff ko'rsatadi
+    Javob: B
+
+19. git cherry-pick nima qiladi?
+    A) Branch tanlaydi
+    B) Bitta commit ni boshqa branch ga qo'llaydi
+    C) Merge qiladi
+    D) Rebase qiladi
+    Javob: B
+
+20. git cherry-pick commit_hash nima?
+    A) Commit o'chiradi
+    B) Belgilangan commit ni joriy branch ga nusxalaydi
+    C) Commit ko'rsatadi
+    D) Commit tahrirlaydi
+    Javob: B
+
+21. git bisect nima uchun ishlatiladi?
+    A) Branch tanlash
+    B) Bug kiritilgan commit ni binary search bilan topish
+    C) Merge qilish
+    D) Rebase qilish
+    Javob: B
+
+22. git bisect start nima qiladi?
+    A) Bisect tugatadi
+    B) Bisect jarayonini boshlaydi
+    C) Bisect bekor qiladi
+    D) Bug topadi
+    Javob: B
+
+23. git bisect good va git bisect bad nima?
+    A) Branch belgilash
+    B) Commit ni yaxshi yoki yomon deb belgilash
+    C) File belgilash
+    D) Tag belgilash
+    Javob: B
+
+24. git reflog nima ko'rsatadi?
+    A) Faqat commit log
+    B) HEAD ning barcha harakatlarini (reset, checkout, ...)
+    C) Remote log
+    D) Branch log
+    Javob: B
+
+25. Reflog nima uchun foydali?
+    A) Remote bilan ishlash
+    B) Yo'qolgan commit larni topish va qaytarish
+    C) Branch yaratish
+    D) Merge qilish
+    Javob: B
+
+26. git reflog expire nima qiladi?
+    A) Reflog ko'rsatadi
+    B) Eski reflog yozuvlarini o'chiradi
+    C) Reflog yaratadi
+    D) Reflog nusxalaydi
+    Javob: B
+
+27. git gc (garbage collection) nima?
+    A) Git cache
+    B) Foydalanilmagan obyektlarni tozalash va repo optimizatsiya
+    C) Git config
+    D) Git clone
+    Javob: B
+
+28. Dangling commit nima?
+    A) Oxirgi commit
+    B) Hech bir branch/tag ga bog'lanmagan commit
+    C) Merge commit
+    D) Initial commit
+    Javob: B
+
+29. git fsck nima qiladi?
+    A) Fayl tekshiradi
+    B) Repository yaxlitligini tekshiradi
+    C) Branch tekshiradi
+    D) Remote tekshiradi
+    Javob: B
+
+30. git clean nima qiladi?
+    A) Commit tozalaydi
+    B) Untracked fayllarni o'chiradi
+    C) Branch tozalaydi
+    D) Remote tozalaydi
+    Javob: B
+
+31. git clean -n nima?
+    A) O'chiradi
+    B) Dry run (nimalar o'chirilishini ko'rsatadi, o'chirmaydi)
+    C) Force clean
+    D) Recursive clean
+    Javob: B
+
+32. git clean -f nima?
+    A) Dry run
+    B) Majburiy o'chirish (force)
+    C) Faqat fayllar
+    D) Faqat papkalar
+    Javob: B
+
+33. git clean -fd nima qiladi?
+    A) Faqat fayllar
+    B) Fayllar va papkalarni o'chiradi
+    C) Faqat papkalar
+    D) Dry run
+    Javob: B
+
+34. Detached HEAD nima?
+    A) Xato holat
+    B) HEAD branch emas, to'g'ridan-to'g'ri commit ga ko'rsatadi
+    C) Merge holat
+    D) Rebase holat
+    Javob: B
+
+35. Detached HEAD ga qanday tushiladi?
+    A) git branch
+    B) git checkout commit_hash yoki tag
+    C) git merge
+    D) git push
+    Javob: B
+
+36. Detached HEAD dan qanday chiqiladi?
+    A) git reset
+    B) git checkout branch_name yoki yangi branch yaratish
+    C) git rebase
+    D) git clean
+    Javob: B
+
+37. git submodule nima?
+    A) Oddiy branch
+    B) Boshqa repository ni sub-papka sifatida qo'shish
+    C) Sub-branch
+    D) Sub-commit
+    Javob: B
+
+38. git submodule add URL path nima qiladi?
+    A) Branch qo'shadi
+    B) Submodule qo'shadi
+    C) Remote qo'shadi
+    D) Tag qo'shadi
+    Javob: B
+
+39. git submodule update --init nima?
+    A) Submodule o'chiradi
+    B) Submodule larni klonlab yangilaydi
+    C) Submodule ko'rsatadi
+    D) Submodule tahrirlaydi
+    Javob: B
+
+40. .gitmodules fayli nima?
+    A) Git sozlamalari
+    B) Submodule konfiguratsiyasi
+    C) Ignore fayli
+    D) Attribute fayli
+    Javob: B
+
+41. git worktree nima?
+    A) Branch
+    B) Bir repo da bir nechta working directory
+    C) Submodule
+    D) Remote
+    Javob: B
+
+42. git worktree add path branch nima qiladi?
+    A) Branch yaratadi
+    B) Yangi working directory yaratadi belgilangan branch uchun
+    C) Worktree o'chiradi
+    D) Worktree ko'rsatadi
+    Javob: B
+
+43. git worktree afzalligi nima?
+    A) Tezroq commit
+    B) Bir vaqtda turli branchlarda ishlash
+    C) Tezroq merge
+    D) Tezroq push
+    Javob: B
+
+44. git archive nima qiladi?
+    A) Backup yaratadi
+    B) Repository ni tar/zip arxivga eksport qiladi
+    C) Branch arxivlaydi
+    D) Commit arxivlaydi
+    Javob: B
+
+45. git archive --format=zip HEAD nima?
+    A) Tar arxiv
+    B) Oxirgi commit ni zip formatda eksport
+    C) Barcha tarix
+    D) Faqat branch
+    Javob: B
+
+46. git bundle nima uchun?
+    A) Archive
+    B) Repository ni bitta faylga qadoqlash (offline transfer)
+    C) Zip yaratish
+    D) Backup
+    Javob: B
+
+47. Tracking branch nima?
+    A) Local branch
+    B) Remote branch bilan bog'langan local branch
+    C) Orphan branch
+    D) Bare branch
+    Javob: B
+
+48. git branch -u origin/main nima qiladi?
+    A) Branch yaratadi
+    B) Upstream (tracking) branch o'rnatadi
+    C) Branch o'chiradi
+    D) Branch merge qiladi
+    Javob: B
+
+49. git push -u origin main da -u nima?
+    A) Update
+    B) Upstream o'rnatadi (keyingi push/pull uchun)
+    C) User
+    D) URL
+    Javob: B
+
+50. git branch -vv nima ko'rsatadi?
+    A) Branch nomi faqat
+    B) Branchlar va ularning tracking ma'lumotlari
+    C) Verbose log
+    D) Version
+    Javob: B
+
+51. Remote tracking branch (origin/main) nima?
+    A) Local branch
+    B) Remote branch ning local kopiyasi (read-only)
+    C) Main branch
+    D) Tracking branch
+    Javob: B
+
+52. git remote prune origin nima qiladi?
+    A) Remote qo'shadi
+    B) Remote da yo'q bo'lgan tracking branchlarni tozalaydi
+    C) Remote o'chiradi
+    D) Remote yangilaydi
+    Javob: B
+
+53. git fetch --prune nima?
+    A) Faqat fetch
+    B) Fetch + remote da yo'q branchlarni tozalash
+    C) Faqat prune
+    D) Push
+    Javob: B
+
+54. git push --force nima qiladi?
+    A) Oddiy push
+    B) Remote ni local bilan majburiy almashtiradi (xavfli!)
+    C) Soft push
+    D) Safe push
+    Javob: B
+
+55. git push --force-with-lease nima?
+    A) Force push
+    B) Xavfsizroq force push (remote o'zgargan bo'lsa rad etadi)
+    C) Normal push
+    D) Soft push
+    Javob: B
+
+56. git push --force-with-lease nima uchun xavfsizroq?
+    A) Tezroq
+    B) Boshqalar o'zgarishlarini yo'qotmaydi
+    C) Sekinroq
+    D) Ko'proq commit
+    Javob: B
+
+57. git pull --rebase nima qiladi?
+    A) Merge pull
+    B) Remote o'zgarishlar ustiga local commitlarni rebase qiladi
+    C) Force pull
+    D) Soft pull
+    Javob: B
+
+58. git config pull.rebase true nima?
+    A) Merge default
+    B) git pull da default rebase qilish
+    C) Push rebase
+    D) Fetch rebase
+    Javob: B
+
+59. git stash branch branch_name nima?
+    A) Stash ko'rsatadi
+    B) Stash dan yangi branch yaratadi
+    C) Branch stash qiladi
+    D) Stash o'chiradi
+    Javob: B
+
+60. git stash drop nima qiladi?
+    A) Stash apply
+    B) Eng yuqoridagi stash ni o'chiradi
+    C) Stash pop
+    D) Stash list
+    Javob: B
+
+61. git stash clear nima?
+    A) Bitta stash o'chiradi
+    B) Barcha stash larni o'chiradi
+    C) Stash apply
+    D) Stash show
+    Javob: B
+
+62. git stash show -p nima?
+    A) Stash list
+    B) Stash diff ni batafsil ko'rsatadi
+    C) Stash apply
+    D) Stash drop
+    Javob: B
+
+63. git log --follow filename nima?
+    A) Oddiy log
+    B) Fayl qayta nomlanganda ham tarixni kuzatadi
+    C) Branch log
+    D) Remote log
+    Javob: B
+
+64. git log -S "text" nima qiladi?
+    A) Xabar qidiradi
+    B) Matn qo'shilgan/o'chirilgan commitlarni topadi (pickaxe)
+    C) Author qidiradi
+    D) Branch qidiradi
+    Javob: B
+
+65. git log -G "regex" nima?
+    A) Oddiy search
+    B) Regex bilan o'zgarishlarni qidiradi
+    C) Grep log
+    D) Graph log
+    Javob: B
+
+66. git log --all --decorate nima?
+    A) Faqat main
+    B) Barcha branchlar, tag va boshqa ref larni ko'rsatadi
+    C) Faqat decorate
+    D) Faqat tags
+    Javob: B
+
+67. git describe nima qiladi?
+    A) Branch tasvirlaydi
+    B) Eng yaqin tag va undan keyingi commit sonini ko'rsatadi
+    C) Commit tasvirlaydi
+    D) Remote tasvirlaydi
+    Javob: B
+
+68. git describe --tags nima?
+    A) Faqat annotated tags
+    B) Lightweight tags ham hisobga oladi
+    C) Tag yaratadi
+    D) Tag o'chiradi
+    Javob: B
+
+69. git rev-parse HEAD nima qaytaradi?
+    A) Branch nomi
+    B) HEAD ning to'liq commit hash
+    C) Short hash
+    D) Remote URL
+    Javob: B
+
+70. git rev-parse --short HEAD nima?
+    A) To'liq hash
+    B) Qisqa commit hash
+    C) Branch nomi
+    D) Tag nomi
+    Javob: B
+
+71. git ls-files nima ko'rsatadi?
+    A) Working directory fayllar
+    B) Git tomonidan kuzatilayotgan fayllar
+    C) Ignored fayllar
+    D) Deleted fayllar
+    Javob: B
+
+72. git ls-files --stage nima?
+    A) Oddiy list
+    B) Staging area fayllarini mode va blob bilan
+    C) Working directory
+    D) Deleted files
+    Javob: B
+
+73. git ls-tree HEAD nima?
+    A) Branch tree
+    B) HEAD commit dagi fayllar tree
+    C) Working directory
+    D) Staging area
+    Javob: B
+
+74. git cat-file -p hash nima?
+    A) Fayl yaratadi
+    B) Git obyekt tarkibini ko'rsatadi
+    C) Fayl o'chiradi
+    D) Fayl nusxalaydi
+    Javob: B
+
+75. git cat-file -t hash nima?
+    A) Content
+    B) Obyekt turini ko'rsatadi (blob, tree, commit, tag)
+    C) Size
+    D) Name
+    Javob: B
+
+76. git notes nima uchun?
+    A) Commit xabari
+    B) Commit ga qo'shimcha izoh qo'shish (tarixni o'zgartirmasdan)
+    C) Tag yaratish
+    D) Branch yaratish
+    Javob: B
+
+77. git notes add -m "note" nima?
+    A) Tag qo'shadi
+    B) Joriy commit ga note qo'shadi
+    C) Branch qo'shadi
+    D) Remote qo'shadi
+    Javob: B
+
+78. Signed commits nima uchun?
+    A) Commit tezlashtirish
+    B) GPG bilan commit autentifikatsiyasi
+    C) Commit shifrlash
+    D) Commit o'chirish
+    Javob: B
+
+79. git commit -S nima qiladi?
+    A) Oddiy commit
+    B) GPG bilan sign qilingan commit
+    C) Squash commit
+    D) Soft commit
+    Javob: B
+
+80. git verify-commit hash nima?
+    A) Commit yaratadi
+    B) Commit imzosini tekshiradi
+    C) Commit o'chiradi
+    D) Commit ko'rsatadi
+    Javob: B
+
+81. Signed tags qanday yaratiladi?
+    A) git tag name
+    B) git tag -s tag_name -m "message"
+    C) git tag -a name
+    D) git tag -m name
+    Javob: B
+
+82. git verify-tag tag_name nima?
+    A) Tag yaratadi
+    B) Tag imzosini tekshiradi
+    C) Tag o'chiradi
+    D) Tag ko'rsatadi
+    Javob: B
+
+83. git log --merges nima ko'rsatadi?
+    A) Barcha commitlar
+    B) Faqat merge commitlarni
+    C) Faqat non-merge
+    D) Faqat branch
+    Javob: B
+
+84. git log --no-merges nima?
+    A) Merge commitlar
+    B) Merge commitlarsiz tarix
+    C) Barcha commitlar
+    D) Faqat branch
+    Javob: B
+
+85. git log --first-parent nima?
+    A) Barcha parentlar
+    B) Faqat birinchi parent bo'ylab (merge tarmog'isiz)
+    C) Oxirgi parent
+    D) Hech parent
+    Javob: B
+
+86. git shortlog -sn nima?
+    A) Alphabetic
+    B) Author bo'yicha commit soni (ko'pdan kamga)
+    C) Date bo'yicha
+    D) Random
+    Javob: B
+
+87. git log --pretty=format:"%h %an %s" nima?
+    A) Oddiy log
+    B) Custom format (short hash, author, subject)
+    C) Full log
+    D) Graph log
+    Javob: B
+
+88. git diff --stat nima ko'rsatadi?
+    A) To'liq diff
+    B) O'zgargan fayllar statistikasi
+    C) Commit stat
+    D) Branch stat
+    Javob: B
+
+89. git diff --name-only nima?
+    A) Full diff
+    B) Faqat o'zgargan fayl nomlari
+    C) Stat only
+    D) Hash only
+    Javob: B
+
+90. git diff --cached va --staged farqi?
+    A) Katta farq
+    B) Bir xil (alias)
+    C) cached tezroq
+    D) staged yangi
+    Javob: B
+
+91. .gitattributes fayli nima uchun?
+    A) Ignore fayllar
+    B) Fayl atributlarini belgilash (line ending, diff, merge, ...)
+    C) Config fayli
+    D) Module fayli
+    Javob: B
+
+92. .gitattributes da * text=auto nima?
+    A) Binary qiladi
+    B) Avtomatik line ending normalizatsiya
+    C) Text o'chiradi
+    D) Auto detect o'chiradi
+    Javob: B
+
+93. .gitattributes da *.png binary nima?
+    A) Text qiladi
+    B) PNG fayllarni binary sifatida belgilaydi
+    C) PNG ignore
+    D) PNG delete
+    Javob: B
+
+94. git check-attr -a filename nima?
+    A) Attribute o'rnatadi
+    B) Fayl atributlarini ko'rsatadi
+    C) Attribute o'chiradi
+    D) Attribute yaratadi
+    Javob: B
+
+95. LFS (Large File Storage) nima uchun?
+    A) Kichik fayllar
+    B) Katta fayllarni alohida saqlash (video, rasm, ...)
+    C) Branch storage
+    D) Commit storage
+    Javob: B
+
+96. git lfs track "*.psd" nima?
+    A) Untrack qiladi
+    B) PSD fayllarni LFS bilan kuzatadi
+    C) PSD o'chiradi
+    D) PSD ignore qiladi
+    Javob: B
+
+97. Pre-commit hook nima?
+    A) Post-commit
+    B) Commit dan oldin ishlaydigan script
+    C) Push hook
+    D) Pull hook
+    Javob: B
+
+98. Git hooks qayerda joylashgan?
+    A) .git/config
+    B) .git/hooks/
+    C) .gitignore
+    D) .gitattributes
+    Javob: B
+
+99. Post-receive hook qayerda ishlaydi?
+    A) Client da
+    B) Server da (push qabul qilingandan keyin)
+    C) Local da
+    D) CI da
+    Javob: B
+
+100. Husky nima?
+     A) Git buyrug'i
+     B) Git hooks ni oson boshqarish uchun npm package
+     C) Git client
+     D) Git server
+     Javob: B
+
+=================================================================
+                          YAKUNLANDI
+=================================================================

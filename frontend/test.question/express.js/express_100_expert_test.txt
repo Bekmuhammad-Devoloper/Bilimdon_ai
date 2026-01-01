@@ -1,0 +1,702 @@
+EXPRESS.JS - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+====================================================
+
+1. Express middleware execution order?
+   A) Random order
+   B) Stack-based LIFO, route order matters
+   C) Alphabetical
+   D) No order
+   Javob: B
+
+2. app.use() vs router.use()?
+   A) Same
+   B) app.use=application level, router.use=router level
+   C) router.use=application level
+   D) No difference
+   Javob: B
+
+3. Error handling middleware signature?
+   A) (req, res)
+   B) (err, req, res, next) - 4 parameters
+   C) (req, res, next)
+   D) (err, res)
+   Javob: B
+
+4. next('route') nima?
+   A) Next route
+   B) Skip remaining callbacks in current route
+   C) Route next
+   D) Skip all routes
+   Javob: B
+
+5. next(err) nima?
+   A) Next error
+   B) Pass to error handling middleware
+   C) Error next
+   D) Stop execution
+   Javob: B
+
+6. Router-level middleware?
+   A) Router middleware
+   B) express.Router() + router.use()
+   C) Middleware router
+   D) App middleware
+   Javob: B
+
+7. app.param() nima?
+   A) App param
+   B) Parameter preprocessing middleware
+   C) Param app
+   D) Parameter validation
+   Javob: B
+
+8. req.params vs req.query vs req.body?
+   A) Same
+   B) params=URL, query=querystring, body=payload
+   C) All URL
+   D) No difference
+   Javob: B
+
+9. express.json() options?
+   A) No options
+   B) limit, inflate, reviver, strict, type
+   C) One option
+   D) Two options
+   Javob: B
+
+10. express.urlencoded() extended option?
+    A) Extended option
+    B) extended: true for nested objects (qs library)
+    C) Option extended
+    D) Simple objects only
+    Javob: B
+
+11. express.static() options?
+    A) No options
+    B) maxAge, etag, lastModified, index, dotfiles
+    C) One option
+    D) Two options
+    Javob: B
+
+12. Cache-Control headers?
+    A) Cache control
+    B) res.set('Cache-Control', 'max-age=31536000')
+    C) Control cache
+    D) No headers
+    Javob: B
+
+13. ETag handling?
+    A) ETag handle
+    B) Weak/strong ETags for conditional requests
+    C) Handle ETag
+    D) No ETag
+    Javob: B
+
+14. Conditional requests?
+    A) Conditional request
+    B) If-None-Match, If-Modified-Since headers
+    C) Request conditional
+    D) No conditions
+    Javob: B
+
+15. res.format() nima?
+    A) Response format
+    B) Content negotiation based on Accept header
+    C) Format response
+    D) Accept header only
+    Javob: B
+
+16. res.vary() nima?
+    A) Vary response
+    B) Set Vary header for caching
+    C) Response vary
+    D) Cache only
+    Javob: B
+
+17. Trust proxy setting?
+    A) Trust proxy
+    B) app.set('trust proxy', true) for X-Forwarded-*
+    C) Proxy trust
+    D) No trust
+    Javob: B
+
+18. req.ip with trust proxy?
+    A) IP address
+    B) Returns X-Forwarded-For first IP
+    C) Address IP
+    D) Local IP only
+    Javob: B
+
+19. req.secure nima?
+    A) Secure request
+    B) Check if HTTPS (with trust proxy)
+    C) Request secure
+    D) HTTP only
+    Javob: B
+
+20. Subdomain routing?
+    A) Subdomain route
+    B) vhost middleware, req.subdomains
+    C) Route subdomain
+    D) No subdomain
+    Javob: B
+
+21. express-rate-limit?
+    A) Rate limit
+    B) Request rate limiting middleware
+    C) Limit rate
+    D) No limit
+    Javob: B
+
+22. Rate limit store options?
+    A) One store
+    B) Memory, Redis, Memcached, MongoDB
+    C) Two stores
+    D) Memory only
+    Javob: B
+
+23. Sliding window rate limiting?
+    A) Sliding window
+    B) Rolling window for smoother limits
+    C) Window sliding
+    D) Fixed window only
+    Javob: B
+
+24. express-slow-down?
+    A) Slow down
+    B) Gradual response delay vs hard limit
+    C) Down slow
+    D) Hard limit only
+    Javob: B
+
+25. Helmet.js security headers?
+    A) Helmet
+    B) CSP, HSTS, X-Frame-Options, etc.
+    C) Security headers
+    D) One header
+    Javob: B
+
+26. Content Security Policy with helmet?
+    A) CSP helmet
+    B) helmet.contentSecurityPolicy({ directives })
+    C) Helmet CSP
+    D) No CSP
+    Javob: B
+
+27. CORS configuration?
+    A) CORS config
+    B) cors({ origin, methods, credentials, maxAge })
+    C) Config CORS
+    D) Origin only
+    Javob: B
+
+28. Preflight requests?
+    A) Preflight
+    B) OPTIONS request for CORS check
+    C) Request preflight
+    D) GET request
+    Javob: B
+
+29. express-session options?
+    A) Session options
+    B) secret, resave, saveUninitialized, cookie
+    C) Options session
+    D) One option
+    Javob: B
+
+30. Session stores?
+    A) One store
+    B) Memory, Redis, MongoDB, PostgreSQL
+    C) Two stores
+    D) Memory only
+    Javob: B
+
+31. connect-redis session store?
+    A) Redis store
+    B) Redis-backed session persistence
+    C) Store redis
+    D) Memory only
+    Javob: B
+
+32. Rolling sessions?
+    A) Rolling session
+    B) Extend expiry on each request
+    C) Session rolling
+    D) Fixed expiry
+    Javob: B
+
+33. Cookie security options?
+    A) Cookie security
+    B) secure, httpOnly, sameSite, maxAge
+    C) Security cookie
+    D) One option
+    Javob: B
+
+34. Signed cookies?
+    A) Signed cookie
+    B) cookie-parser with secret for tamper detection
+    C) Cookie signed
+    D) No signing
+    Javob: B
+
+35. Passport.js strategies?
+    A) Passport strategy
+    B) Local, OAuth, JWT, SAML strategies
+    C) Strategy passport
+    D) One strategy
+    Javob: B
+
+36. Passport serialize/deserialize?
+    A) Serialize
+    B) User session storage/retrieval
+    C) Deserialize
+    D) No session
+    Javob: B
+
+37. JWT authentication?
+    A) JWT auth
+    B) passport-jwt or express-jwt middleware
+    C) Auth JWT
+    D) Passport only
+    Javob: B
+
+38. JWT refresh tokens?
+    A) Refresh token
+    B) Long-lived token to get new access tokens
+    C) Token refresh
+    D) No refresh
+    Javob: B
+
+39. Multer file upload?
+    A) Multer upload
+    B) multipart/form-data handling
+    C) Upload multer
+    D) JSON only
+    Javob: B
+
+40. Multer storage options?
+    A) One storage
+    B) diskStorage, memoryStorage, cloud storage
+    C) Two storages
+    D) Disk only
+    Javob: B
+
+41. File validation with multer?
+    A) File validate
+    B) fileFilter callback for type/size check
+    C) Validate file
+    D) No validation
+    Javob: B
+
+42. Stream uploads to cloud?
+    A) Stream upload
+    B) multer-s3, multer-azure-blob-storage
+    C) Upload stream
+    D) Local only
+    Javob: B
+
+43. Request validation libraries?
+    A) One library
+    B) Joi, express-validator, Yup, Zod
+    C) Two libraries
+    D) No validation
+    Javob: B
+
+44. express-validator chain?
+    A) Validator chain
+    B) check('field').isEmail().normalizeEmail()
+    C) Chain validator
+    D) No chaining
+    Javob: B
+
+45. Custom validators?
+    A) Custom validate
+    B) .custom(async (value) => { })
+    C) Validate custom
+    D) No custom
+    Javob: B
+
+46. Sanitization vs validation?
+    A) Same
+    B) Sanitize=clean data, Validate=check data
+    C) Validate=clean
+    D) No difference
+    Javob: B
+
+47. Response compression?
+    A) Response compress
+    B) compression() middleware with threshold
+    C) Compress response
+    D) No compression
+    Javob: B
+
+48. Brotli vs gzip?
+    A) Same
+    B) Brotli=better ratio, gzip=wider support
+    C) Gzip better
+    D) No difference
+    Javob: B
+
+49. Cluster mode?
+    A) Cluster
+    B) cluster.fork() for multi-core utilization
+    C) Mode cluster
+    D) Single core only
+    Javob: B
+
+50. PM2 cluster mode?
+    A) PM2 cluster
+    B) pm2 start app.js -i max
+    C) Cluster PM2
+    D) Manual cluster
+    Javob: B
+
+51. Graceful shutdown?
+    A) Graceful shutdown
+    B) process.on('SIGTERM', close connections)
+    C) Shutdown graceful
+    D) Hard kill
+    Javob: B
+
+52. Health check endpoints?
+    A) Health check
+    B) /health, /ready, /live endpoints
+    C) Check health
+    D) No endpoints
+    Javob: B
+
+53. Liveness vs readiness?
+    A) Same
+    B) Liveness=running, Readiness=accepting traffic
+    C) Readiness=running
+    D) No difference
+    Javob: B
+
+54. Circuit breaker pattern?
+    A) Circuit breaker
+    B) opossum, cockatiel for failure handling
+    C) Breaker circuit
+    D) No pattern
+    Javob: B
+
+55. Retry with exponential backoff?
+    A) Retry backoff
+    B) Increasing delay between retries
+    C) Backoff retry
+    D) Fixed delay
+    Javob: B
+
+56. Request timeout handling?
+    A) Request timeout
+    B) connect-timeout, custom middleware
+    C) Timeout request
+    D) No timeout
+    Javob: B
+
+57. express-async-errors?
+    A) Async errors
+    B) Auto-catch async route errors
+    C) Errors async
+    D) Manual try/catch
+    Javob: B
+
+58. Async middleware?
+    A) Async middleware
+    B) async (req, res, next) with wrapper
+    C) Middleware async
+    D) No async
+    Javob: B
+
+59. Morgan logging?
+    A) Morgan log
+    B) HTTP request logger with formats
+    C) Log morgan
+    D) No logging
+    Javob: B
+
+60. Morgan custom tokens?
+    A) Custom token
+    B) morgan.token('name', callback)
+    C) Token custom
+    D) No tokens
+    Javob: B
+
+61. Winston integration?
+    A) Winston
+    B) express-winston for structured logging
+    C) Integration winston
+    D) Morgan only
+    Javob: B
+
+62. Request ID tracing?
+    A) Request ID
+    B) express-request-id for correlation
+    C) ID request
+    D) No tracing
+    Javob: B
+
+63. OpenTelemetry integration?
+    A) OpenTelemetry
+    B) @opentelemetry/instrumentation-express
+    C) Integration OpenTelemetry
+    D) No tracing
+    Javob: B
+
+64. Distributed tracing?
+    A) Distributed trace
+    B) Trace context propagation across services
+    C) Trace distributed
+    D) Single service
+    Javob: B
+
+65. API versioning?
+    A) API version
+    B) URL path, header, query param versioning
+    C) Version API
+    D) One method
+    Javob: B
+
+66. express-openapi-validator?
+    A) OpenAPI validator
+    B) Request/response validation from OpenAPI spec
+    C) Validator OpenAPI
+    D) No validation
+    Javob: B
+
+67. Swagger documentation?
+    A) Swagger doc
+    B) swagger-ui-express, swagger-jsdoc
+    C) Doc swagger
+    D) No documentation
+    Javob: B
+
+68. API rate limiting by key?
+    A) Rate key
+    B) keyGenerator: (req) => req.user.id
+    C) Key rate
+    D) IP only
+    Javob: B
+
+69. Response caching?
+    A) Response cache
+    B) apicache, node-cache middleware
+    C) Cache response
+    D) No caching
+    Javob: B
+
+70. Cache invalidation strategies?
+    A) Cache invalidate
+    B) TTL, event-based, versioning
+    C) Invalidate cache
+    D) No strategy
+    Javob: B
+
+71. WebSocket with Express?
+    A) WebSocket Express
+    B) express-ws, socket.io integration
+    C) Express WebSocket
+    D) No WebSocket
+    Javob: B
+
+72. Socket.io rooms?
+    A) Socket room
+    B) socket.join(), io.to(room).emit()
+    C) Room socket
+    D) No rooms
+    Javob: B
+
+73. Server-Sent Events?
+    A) SSE
+    B) res.write() with text/event-stream
+    C) Events server
+    D) WebSocket only
+    Javob: B
+
+74. GraphQL with Express?
+    A) GraphQL Express
+    B) express-graphql, Apollo Server
+    C) Express GraphQL
+    D) REST only
+    Javob: B
+
+75. Apollo Server Express integration?
+    A) Apollo Express
+    B) applyMiddleware(app) for mounting
+    C) Express Apollo
+    D) No integration
+    Javob: B
+
+76. Body size limits?
+    A) Body limit
+    B) express.json({ limit: '10mb' })
+    C) Limit body
+    D) No limit
+    Javob: B
+
+77. Request timeout middleware?
+    A) Timeout middleware
+    B) Custom middleware with setTimeout
+    C) Middleware timeout
+    D) No timeout
+    Javob: B
+
+78. Memory leak detection?
+    A) Memory leak
+    B) clinic.js, heapdump for profiling
+    C) Leak memory
+    D) No detection
+    Javob: B
+
+79. Event loop blocking detection?
+    A) Event loop
+    B) blocked-at, clinic doctor
+    C) Loop event
+    D) No detection
+    Javob: B
+
+80. APM integration?
+    A) APM
+    B) New Relic, Datadog, Elastic APM
+    C) Integration APM
+    D) No APM
+    Javob: B
+
+81. Feature flags middleware?
+    A) Feature flag
+    B) Middleware to check feature status
+    C) Flag feature
+    D) No flags
+    Javob: B
+
+82. A/B testing?
+    A) AB test
+    B) Middleware for traffic splitting
+    C) Test AB
+    D) No testing
+    Javob: B
+
+83. Request deduplication?
+    A) Dedupe request
+    B) Idempotency keys for duplicate prevention
+    C) Request dedupe
+    D) No deduplication
+    Javob: B
+
+84. Idempotency middleware?
+    A) Idempotency
+    B) Cache responses by idempotency key
+    C) Middleware idempotency
+    D) No caching
+    Javob: B
+
+85. Multi-tenant architecture?
+    A) Multi tenant
+    B) Tenant context middleware, DB per tenant
+    C) Tenant multi
+    D) Single tenant
+    Javob: B
+
+86. Database connection pooling?
+    A) Connection pool
+    B) Pool size, idle timeout configuration
+    C) Pool connection
+    D) No pooling
+    Javob: B
+
+87. Transaction middleware?
+    A) Transaction
+    B) Wrap request in database transaction
+    C) Middleware transaction
+    D) No transaction
+    Javob: B
+
+88. Unit of work pattern?
+    A) Unit work
+    B) Collect changes, commit at end
+    C) Work unit
+    D) No pattern
+    Javob: B
+
+89. CQRS pattern?
+    A) CQRS
+    B) Separate read/write models
+    C) Pattern CQRS
+    D) Single model
+    Javob: B
+
+90. Event sourcing?
+    A) Event source
+    B) Store events, derive state
+    C) Source event
+    D) No events
+    Javob: B
+
+91. Express app structure?
+    A) App structure
+    B) routes/, controllers/, services/, models/
+    C) Structure app
+    D) Single file
+    Javob: B
+
+92. Dependency injection?
+    A) DI
+    B) Inversion of control containers
+    C) Injection dependency
+    D) No DI
+    Javob: B
+
+93. Repository pattern?
+    A) Repository
+    B) Abstract data access layer
+    C) Pattern repository
+    D) Direct DB
+    Javob: B
+
+94. Service layer pattern?
+    A) Service layer
+    B) Business logic separation
+    C) Layer service
+    D) Controller logic
+    Javob: B
+
+95. Testing with supertest?
+    A) Supertest
+    B) HTTP assertions on Express apps
+    C) Test supertest
+    D) No testing
+    Javob: B
+
+96. Mocking dependencies?
+    A) Mock
+    B) jest.mock(), sinon for test isolation
+    C) Dependencies mock
+    D) No mocking
+    Javob: B
+
+97. Integration testing?
+    A) Integration test
+    B) Test app with real/mock dependencies
+    C) Test integration
+    D) Unit only
+    Javob: B
+
+98. Contract testing?
+    A) Contract test
+    B) Pact for API contracts
+    C) Test contract
+    D) No contracts
+    Javob: B
+
+99. Load testing?
+    A) Load test
+    B) Artillery, k6 for performance testing
+    C) Test load
+    D) No testing
+    Javob: B
+
+100. Docker deployment?
+     A) Docker deploy
+     B) Multi-stage build, health checks, non-root user
+     C) Deploy docker
+     D) No Docker
+     Javob: B

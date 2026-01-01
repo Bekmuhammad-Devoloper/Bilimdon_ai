@@ -1,0 +1,719 @@
+# JAVA DASTURLASH TESTI - ORTA DARAJA (INTERMEDIATE)
+## 100 SAVOL
+
+---
+
+**1.** Java-da method overriding nima?
+- A) Bir xil nomli metodlarni yaratish
+- B) Ota class metodini qayta yozish
+- C) Metodlarni o'chirish
+- D) Static metod yaratish
+**Javob: B**
+
+**2.** Java-da polymorphism nima?
+- A) Ko'p shakllilik
+- B) Meros olish
+- C) Inkapsulyatsiya
+- D) Abstraktsiya
+**Javob: A**
+
+**3.** Java-da encapsulation nima?
+- A) Ma'lumotlarni yashirish
+- B) Meros olish
+- C) Ko'p shakllilik
+- D) Abstraktsiya
+**Javob: A**
+
+**4.** Java-da final class nima demakdir?
+- A) Meros olinishi mumkin
+- B) Meros olinishi mumkin emas
+- C) Abstract class
+- D) Interface
+**Javob: B**
+
+**5.** Java-da final method nima demakdir?
+- A) Override qilinishi mumkin
+- B) Override qilinishi mumkin emas
+- C) Static method
+- D) Abstract method
+**Javob: B**
+
+**6.** Java-da abstract method qayerda bo'lishi kerak?
+- A) Oddiy classda
+- B) Abstract class yoki interfaceда
+- C) Final classda
+- D) Static classda
+**Javob: B**
+
+**7.** Java-da interface metodlari default holatda qanday?
+- A) private
+- B) protected
+- C) public abstract
+- D) static
+**Javob: C**
+
+**8.** Java 8 dan boshlab interfaceда qanday metodlar bo'lishi mumkin?
+- A) Faqat abstract
+- B) default va static
+- C) private
+- D) protected
+**Javob: B**
+
+**9.** Java-da multiple inheritance qanday amalga oshiriladi?
+- A) Class orqali
+- B) Interface orqali
+- C) Abstract class orqali
+- D) Amalga oshirilmaydi
+**Javob: B**
+
+**10.** Java-da == va equals() metodining farqi nima?
+- A) Farq yo'q
+- B) == havola, equals() qiymatni solishtiradi
+- C) == qiymat, equals() havolani solishtiradi
+- D) Ikkalasi ham havola solishtiradi
+**Javob: B**
+
+**11.** Java-da hashCode() metodi nima uchun kerak?
+- A) Hash-based collectionlarda ishlash uchun
+- B) Obyektni o'chirish uchun
+- C) Obyekt yaratish uchun
+- D) String yaratish uchun
+**Javob: A**
+
+**12.** Java-da String immutable nima demakdir?
+- A) O'zgaruvchan
+- B) O'zgarmas
+- C) Bo'sh
+- D) Null
+**Javob: B**
+
+**13.** Java-da String pool nima?
+- A) Obyektlar to'plami
+- B) Stringlar uchun maxsus xotira
+- C) Array
+- D) Collection
+**Javob: B**
+
+**14.** Java-da StringBuilder va StringBuffer orasidagi farq nima?
+- A) StringBuilder thread-safe
+- B) StringBuffer thread-safe
+- C) Farq yo'q
+- D) Ikkalasi ham thread-safe emas
+**Javob: B**
+
+**15.** Java-da synchronized kalit so'zi nima uchun ishlatiladi?
+- A) Tezlikni oshirish
+- B) Thread-safety ta'minlash
+- C) Xotira tejash
+- D) Kod qisqartirish
+**Javob: B**
+
+**16.** Java-da volatile kalit so'zi nima uchun ishlatiladi?
+- A) O'zgaruvchini cache'ga saqlash
+- B) O'zgaruvchini to'g'ridan-to'g'ri xotiradan o'qish
+- C) O'zgaruvchini tezlashtirish
+- D) O'zgaruvchini yashirish
+**Javob: B**
+
+**17.** Java-da transient kalit so'zi nima uchun ishlatiladi?
+- A) Serializatsiyadan chiqarish
+- B) Metodni tezlashtirish
+- C) Xotira tejash
+- D) Thread yaratish
+**Javob: A**
+
+**18.** Java-da serialization nima?
+- A) Obyektni faylga yozish
+- B) Obyektni byte oqimiga aylantirish
+- C) Obyektni o'chirish
+- D) Obyekt yaratish
+**Javob: B**
+
+**19.** Java-da Serializable nima?
+- A) Class
+- B) Interface
+- C) Metod
+- D) O'zgaruvchi
+**Javob: B**
+
+**20.** Java-da Cloneable interface nima uchun ishlatiladi?
+- A) Obyektni o'chirish
+- B) Obyektni nusxalash
+- C) Obyekt yaratish
+- D) Obyektni saqlash
+**Javob: B**
+
+**21.** Java-da shallow copy va deep copy orasidagi farq nima?
+- A) Farq yo'q
+- B) Shallow - havola, deep - yangi obyekt
+- C) Shallow - yangi obyekt, deep - havola
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**22.** Java-da Garbage Collector nima qiladi?
+- A) Kodni tozalaydi
+- B) Foydalanilmayotgan xotirani bo'shatadi
+- C) Xatoliklarni tuzatadi
+- D) Dasturni tezlashtiradi
+**Javob: B**
+
+**23.** Java-da finalize() metodi qachon chaqiriladi?
+- A) Obyekt yaratilganda
+- B) Obyekt o'chirilishidan oldin
+- C) Dastur boshida
+- D) Dastur oxirida
+**Javob: B**
+
+**24.** Java-da System.gc() nima qiladi?
+- A) Garbage Collectorni majburiy ishga tushiradi
+- B) Xotirani tozalaydi
+- C) Dasturni to'xtatadi
+- D) GC ni so'raydi (kafolat emas)
+**Javob: D**
+
+**25.** Java-da OutOfMemoryError qachon yuzaga keladi?
+- A) Disk to'lganda
+- B) Heap xotirasi tugaganda
+- C) CPU yuklanib ketganda
+- D) Dastur sekin ishlaganda
+**Javob: B**
+
+**26.** Java-da StackOverflowError qachon yuzaga keladi?
+- A) Heap to'lganda
+- B) Stack to'lganda (ko'pincha rekursiya)
+- C) Disk to'lganda
+- D) CPU yuklanib ketganda
+**Javob: B**
+
+**27.** Java-da checked exception nima?
+- A) Kompilyatsiya vaqtida tekshiriladi
+- B) Runtime vaqtida tekshiriladi
+- C) Hech qachon tekshirilmaydi
+- D) Faqat testda tekshiriladi
+**Javob: A**
+
+**28.** Java-da unchecked exception nima?
+- A) Kompilyatsiya vaqtida tekshiriladi
+- B) Runtime vaqtida yuzaga keladi
+- C) Hech qachon yuzaga kelmaydi
+- D) Faqat testda yuzaga keladi
+**Javob: B**
+
+**29.** Java-da RuntimeException qaysi turga kiradi?
+- A) Checked exception
+- B) Unchecked exception
+- C) Error
+- D) Throwable
+**Javob: B**
+
+**30.** Java-da IOException qaysi turga kiradi?
+- A) Unchecked exception
+- B) Checked exception
+- C) Error
+- D) Runtime exception
+**Javob: B**
+
+**31.** Java-da try-with-resources nima?
+- A) Oddiy try-catch
+- B) Avtomatik resurslarni yopish
+- C) Ko'p threadlar bilan ishlash
+- D) Xatoliklarni yashirish
+**Javob: B**
+
+**32.** Java-da AutoCloseable interface nima uchun kerak?
+- A) Obyektni yaratish
+- B) Resursni avtomatik yopish
+- C) Thread yaratish
+- D) Fayl o'qish
+**Javob: B**
+
+**33.** Java-da Generic nima?
+- A) Tip xavfsizligini ta'minlash
+- B) Dasturni tezlashtirish
+- C) Xotira tejash
+- D) Kod qisqartirish
+**Javob: A**
+
+**34.** Java-da <T> nimani anglatadi?
+- A) Text
+- B) Type parameter
+- C) Template
+- D) Thread
+**Javob: B**
+
+**35.** Java-da wildcard <?> nima?
+- A) Noma'lum tip
+- B) String tip
+- C) Integer tip
+- D) Boolean tip
+**Javob: A**
+
+**36.** Java-da <? extends T> nima demakdir?
+- A) T dan yuqori
+- B) T yoki uning subclassi
+- C) T dan boshqa
+- D) Faqat T
+**Javob: B**
+
+**37.** Java-da <? super T> nima demakdir?
+- A) T dan quyi
+- B) T yoki uning superclassi
+- C) T dan boshqa
+- D) Faqat T
+**Javob: B**
+
+**38.** Java-da type erasure nima?
+- A) Genericlar kompilyatsiyadan keyin o'chiriladi
+- B) Tiplar saqlanadi
+- C) Xotira tozalanadi
+- D) Kod o'chiriladi
+**Javob: A**
+
+**39.** Java-da Comparable interface nima uchun ishlatiladi?
+- A) Obyektlarni solishtirish
+- B) Obyektlarni yaratish
+- C) Obyektlarni o'chirish
+- D) Obyektlarni saqlash
+**Javob: A**
+
+**40.** Java-da Comparator interface nima uchun ishlatiladi?
+- A) Obyekt yaratish
+- B) Maxsus solishtirish logikasi
+- C) Obyektni o'chirish
+- D) Obyektni nusxalash
+**Javob: B**
+
+**41.** Java-da lambda expression nima?
+- A) Oddiy metod
+- B) Anonim funksiya
+- C) Class
+- D) Interface
+**Javob: B**
+
+**42.** Java-da functional interface nima?
+- A) Ko'p metodli interface
+- B) Bitta abstract metodli interface
+- C) Bo'sh interface
+- D) Final interface
+**Javob: B**
+
+**43.** Java-da @FunctionalInterface annotation nima qiladi?
+- A) Functional interfaceni belgilaydi
+- B) Metodni tezlashtiradi
+- C) Classni yaratadi
+- D) Obyektni o'chiradi
+**Javob: A**
+
+**44.** Java-da Stream API nima?
+- A) Fayl bilan ishlash
+- B) Collectionlarni funktsional qayta ishlash
+- C) Thread yaratish
+- D) Network bilan ishlash
+**Javob: B**
+
+**45.** Java-da Stream.filter() nima qiladi?
+- A) Elementlarni qo'shadi
+- B) Elementlarni filtrlaydi
+- C) Elementlarni o'chiradi
+- D) Elementlarni sanaydi
+**Javob: B**
+
+**46.** Java-da Stream.map() nima qiladi?
+- A) Har bir elementni o'zgartiradi
+- B) Elementlarni filtrlaydi
+- C) Elementlarni sanaydi
+- D) Elementlarni tartiblaydi
+**Javob: A**
+
+**47.** Java-da Stream.collect() nima qiladi?
+- A) Stream ochadi
+- B) Streamni collectionga aylantiradi
+- C) Streamni yopadi
+- D) Streamni sanaydi
+**Javob: B**
+
+**48.** Java-da Optional nima?
+- A) Majburiy qiymat
+- B) Null bo'lishi mumkin bo'lgan qiymat
+- C) Har doim to'ldirilgan qiymat
+- D) Static qiymat
+**Javob: B**
+
+**49.** Java-da Optional.of() va Optional.ofNullable() farqi nima?
+- A) Farq yo'q
+- B) of() null qabul qilmaydi, ofNullable() qabul qiladi
+- C) of() null qabul qiladi, ofNullable() qilmaydi
+- D) Ikkalasi ham null qabul qiladi
+**Javob: B**
+
+**50.** Java-da method reference nima?
+- A) Metod yaratish
+- B) Metodga havola (::)
+- C) Metodni o'chirish
+- D) Metodni nusxalash
+**Javob: B**
+
+**51.** Java-da Collections.synchronizedList() nima qiladi?
+- A) Listni tezlashtiradi
+- B) Thread-safe list yaratadi
+- C) Listni tartiblaydi
+- D) Listni o'chiradi
+**Javob: B**
+
+**52.** Java-da ConcurrentHashMap nima?
+- A) Oddiy HashMap
+- B) Thread-safe HashMap
+- C) Immutable HashMap
+- D) Empty HashMap
+**Javob: B**
+
+**53.** Java-da CopyOnWriteArrayList nima?
+- A) Oddiy ArrayList
+- B) Thread-safe ArrayList (o'qish uchun)
+- C) Immutable ArrayList
+- D) Empty ArrayList
+**Javob: B**
+
+**54.** Java-da Thread yaratishning necha usuli bor?
+- A) 1
+- B) 2
+- C) 3
+- D) 4
+**Javob: B**
+
+**55.** Java-da Runnable interface qanday metodga ega?
+- A) start()
+- B) run()
+- C) execute()
+- D) perform()
+**Javob: B**
+
+**56.** Java-da Thread.start() va Thread.run() farqi nima?
+- A) Farq yo'q
+- B) start() yangi thread, run() joriy threadda
+- C) run() yangi thread, start() joriy threadda
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**57.** Java-da Thread.sleep() nima qiladi?
+- A) Threadni to'xtatadi
+- B) Threadni vaqtincha to'xtatib turadi
+- C) Threadni o'chiradi
+- D) Threadni yaratadi
+**Javob: B**
+
+**58.** Java-da Thread.join() nima qiladi?
+- A) Ikki threadni birlashtiradi
+- B) Threadning tugashini kutadi
+- C) Threadni boshlaydi
+- D) Threadni to'xtatadi
+**Javob: B**
+
+**59.** Java-da deadlock nima?
+- A) Thread tugadi
+- B) Threadlar bir-birini kutib qoladi
+- C) Thread boshlanmadi
+- D) Thread tez ishlaydi
+**Javob: B**
+
+**60.** Java-da race condition nima?
+- A) Threadlar poygasi
+- B) Bir xil resursga bir vaqtda murojaat
+- C) Thread tezligi
+- D) Thread soni
+**Javob: B**
+
+**61.** Java-da Executor framework nima?
+- A) Oddiy thread
+- B) Threadlarni boshqarish tizimi
+- C) Xatoliklarni boshqarish
+- D) Fayllarni boshqarish
+**Javob: B**
+
+**62.** Java-da ExecutorService nima?
+- A) Service class
+- B) Thread havzasini boshqarish interfeysi
+- C) Fayl service
+- D) Network service
+**Javob: B**
+
+**63.** Java-da Future nima?
+- A) O'tmish natija
+- B) Kelajakdagi natija
+- C) Joriy natija
+- D) Xatolik
+**Javob: B**
+
+**64.** Java-da Callable interface va Runnable farqi nima?
+- A) Farq yo'q
+- B) Callable qiymat qaytaradi, Runnable yo'q
+- C) Runnable qiymat qaytaradi, Callable yo'q
+- D) Ikkalasi ham qiymat qaytaradi
+**Javob: B**
+
+**65.** Java-da wait() va sleep() farqi nima?
+- A) Farq yo'q
+- B) wait() lockni bo'shatadi, sleep() yo'q
+- C) sleep() lockni bo'shatadi, wait() yo'q
+- D) Ikkalasi ham lockni bo'shatadi
+**Javob: B**
+
+**66.** Java-da notify() va notifyAll() farqi nima?
+- A) Farq yo'q
+- B) notify() bitta, notifyAll() barcha threadni uyg'otadi
+- C) notifyAll() bitta, notify() barcha threadni uyg'otadi
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**67.** Java-da immutable class qanday yaratiladi?
+- A) final class, final fields, no setters
+- B) public class, public fields
+- C) abstract class
+- D) static class
+**Javob: A**
+
+**68.** Java-da singleton pattern nima?
+- A) Ko'p obyekt
+- B) Bitta obyekt
+- C) Bo'sh obyekt
+- D) Static obyekt
+**Javob: B**
+
+**69.** Java-da factory pattern nima uchun ishlatiladi?
+- A) Obyektlarni to'g'ridan-to'g'ri yaratish
+- B) Obyektlarni yaratish logikasini yashirish
+- C) Obyektlarni o'chirish
+- D) Obyektlarni nusxalash
+**Javob: B**
+
+**70.** Java-da builder pattern nima uchun ishlatiladi?
+- A) Ko'p parametrli obyektlarni yaratish
+- B) Oddiy obyektlar yaratish
+- C) Obyektlarni o'chirish
+- D) Obyektlarni o'zgartirish
+**Javob: A**
+
+**71.** Java-da observer pattern nima?
+- A) Obyektlarni kuzatish
+- B) Bir obyekt o'zgarganda boshqalarga xabar berish
+- C) Obyektlarni yaratish
+- D) Obyektlarni o'chirish
+**Javob: B**
+
+**72.** Java-da strategy pattern nima?
+- A) Algoritmlarni almashtirish
+- B) Obyekt yaratish
+- C) Obyekt o'chirish
+- D) Obyekt nusxalash
+**Javob: A**
+
+**73.** Java-da Reflection API nima?
+- A) Runtime'da classlarni tekshirish
+- B) Dasturni tezlashtirish
+- C) Xotira tejash
+- D) Fayl o'qish
+**Javob: A**
+
+**74.** Java-da Class.forName() nima qiladi?
+- A) Classni yaratadi
+- B) Classni dinamik yuklaydi
+- C) Classni o'chiradi
+- D) Classni nusxalaydi
+**Javob: B**
+
+**75.** Java-da Annotation nima?
+- A) Izoh
+- B) Metadata
+- C) Metod
+- D) Class
+**Javob: B**
+
+**76.** Java-da @Override annotation nima qiladi?
+- A) Metodni yaratadi
+- B) Metod override qilinganini bildiradi
+- C) Metodni o'chiradi
+- D) Metodni tezlashtiradi
+**Javob: B**
+
+**77.** Java-da @Deprecated annotation nima bildiradi?
+- A) Yangi metod
+- B) Eskirgan metod
+- C) Tez metod
+- D) Sekin metod
+**Javob: B**
+
+**78.** Java-da @SuppressWarnings annotation nima qiladi?
+- A) Ogohlantirishlarni ko'rsatadi
+- B) Ogohlantirishlarni yashiradi
+- C) Xatoliklarni tuzatadi
+- D) Dasturni to'xtatadi
+**Javob: B**
+
+**79.** Java-da custom annotation qanday yaratiladi?
+- A) @class
+- B) @interface
+- C) @annotation
+- D) @custom
+**Javob: B**
+
+**80.** Java-da enum nima?
+- A) O'zgaruvchi
+- B) Doimiy qiymatlar to'plami
+- C) Metod
+- D) Interface
+**Javob: B**
+
+**81.** Java-da enum constructor qanday bo'lishi mumkin?
+- A) public
+- B) private yoki default
+- C) protected
+- D) public static
+**Javob: B**
+
+**82.** Java-da nested class nima?
+- A) Classdan tashqaridagi class
+- B) Class ichidagi class
+- C) Abstract class
+- D) Final class
+**Javob: B**
+
+**83.** Java-da static nested class va inner class farqi nima?
+- A) Farq yo'q
+- B) static outer class instansiga bog'liq emas
+- C) inner outer class instansiga bog'liq emas
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**84.** Java-da anonymous class nima?
+- A) Nomli class
+- B) Nomsiz class
+- C) Abstract class
+- D) Final class
+**Javob: B**
+
+**85.** Java-da local class nima?
+- A) Global class
+- B) Metod ichidagi class
+- C) Package ichidagi class
+- D) File ichidagi class
+**Javob: B**
+
+**86.** Java-da varargs (...) nima?
+- A) Bir xil tipli o'zgaruvchan sonli parametrlar
+- B) Faqat bitta parametr
+- C) Ikki parametr
+- D) Parametrsiz
+**Javob: A**
+
+**87.** Java-da instanceof operator qanday ishlaydi?
+- A) Obyekt qiymatini tekshiradi
+- B) Obyekt turini tekshiradi
+- C) Obyektni yaratadi
+- D) Obyektni o'chiradi
+**Javob: B**
+
+**88.** Java-da covariant return type nima?
+- A) Bir xil qaytish tipi
+- B) Override metodda subclass qaytarish
+- C) Hech narsa qaytarmaslik
+- D) Static qaytish tipi
+**Javob: B**
+
+**89.** Java-da strictfp kalit so'zi nima uchun?
+- A) Qat'iy floating-point hisoblash
+- B) String ishlash
+- C) Thread ishlash
+- D) Final o'zgartirish
+**Javob: A**
+
+**90.** Java-da native kalit so'zi nima bildiradi?
+- A) Java kodida yozilgan
+- B) Platform-specific kodda yozilgan
+- C) Abstract metod
+- D) Final metod
+**Javob: B**
+
+**91.** Java-da assert statement nima uchun ishlatiladi?
+- A) Dasturni to'xtatish
+- B) Debug vaqtida shartlarni tekshirish
+- C) Obyekt yaratish
+- D) Metod chaqirish
+**Javob: B**
+
+**92.** Java-da -ea flag nima qiladi?
+- A) Error chiqaradi
+- B) Assertions yoqadi
+- C) Application boshlaydi
+- D) Everything stops
+**Javob: B**
+
+**93.** Java-da ClassLoader nima qiladi?
+- A) Classlarni kompilyatsiya qiladi
+- B) Classlarni runtime'da yuklaydi
+- C) Classlarni o'chiradi
+- D) Classlarni saqlaydi
+**Javob: B**
+
+**94.** Java-da garbage collection algorithm turlari qaysilar?
+- A) Faqat Mark-and-Sweep
+- B) Mark-and-Sweep, Generational, Concurrent
+- C) Faqat Generational
+- D) Faqat Concurrent
+**Javob: B**
+
+**95.** Java-da WeakReference nima?
+- A) Kuchli havola
+- B) Zaif havola (GC o'chirishi mumkin)
+- C) Oddiy havola
+- D) Static havola
+**Javob: B**
+
+**96.** Java-da SoftReference va WeakReference farqi nima?
+- A) Farq yo'q
+- B) SoftReference xotira kerak bo'lganda, WeakReference har doim o'chiriladi
+- C) WeakReference xotira kerak bo'lganda, SoftReference har doim o'chiriladi
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**97.** Java-da PhantomReference nima uchun ishlatiladi?
+- A) Oddiy havola
+- B) Obyekt o'chirilganda xabar olish
+- C) Obyekt yaratish
+- D) Obyekt nusxalash
+**Javob: B**
+
+**98.** Java-da CountDownLatch nima?
+- A) Threadlarni sanash
+- B) Threadlarning tugashini kutish
+- C) Threadlarni yaratish
+- D) Threadlarni o'chirish
+**Javob: B**
+
+**99.** Java-da CyclicBarrier nima?
+- A) Threadlarni to'sish
+- B) Threadlarni sinxronlash nuqtasi
+- C) Threadlarni yaratish
+- D) Threadlarni o'chirish
+**Javob: B**
+
+**100.** Java-da Semaphore nima uchun ishlatiladi?
+- A) Resurslarni cheklovchi mexanizm
+- B) Threadlarni yaratish
+- C) Obyektlarni o'chirish
+- D) Xotirani tozalash
+**Javob: A**
+
+---
+
+## JAVOBLAR KALITI:
+
+1-B, 2-A, 3-A, 4-B, 5-B, 6-B, 7-C, 8-B, 9-B, 10-B
+11-A, 12-B, 13-B, 14-B, 15-B, 16-B, 17-A, 18-B, 19-B, 20-B
+21-B, 22-B, 23-B, 24-D, 25-B, 26-B, 27-A, 28-B, 29-B, 30-B
+31-B, 32-B, 33-A, 34-B, 35-A, 36-B, 37-B, 38-A, 39-A, 40-B
+41-B, 42-B, 43-A, 44-B, 45-B, 46-A, 47-B, 48-B, 49-B, 50-B
+51-B, 52-B, 53-B, 54-B, 55-B, 56-B, 57-B, 58-B, 59-B, 60-B
+61-B, 62-B, 63-B, 64-B, 65-B, 66-B, 67-A, 68-B, 69-B, 70-A
+71-B, 72-A, 73-A, 74-B, 75-B, 76-B, 77-B, 78-B, 79-B, 80-B
+81-B, 82-B, 83-B, 84-B, 85-B, 86-A, 87-B, 88-B, 89-A, 90-B
+91-B, 92-B, 93-B, 94-B, 95-B, 96-B, 97-B, 98-B, 99-B, 100-A

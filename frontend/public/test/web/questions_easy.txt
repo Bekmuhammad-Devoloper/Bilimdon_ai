@@ -1,0 +1,148 @@
+===============================================
+WEB FUNDAMENTALS - EASY SAVOLLARI
+===============================================
+
+SAVOL 1: HTML nima?
+A) Styling
+B) Markup language
+C) Programming language
+D) Database
+JAVOB: B
+
+SAVOL 2: CSS nima?
+A) Markup
+B) Styling language
+C) Programming
+D) Database
+JAVOB: B
+
+SAVOL 3: Semantic HTML nima?
+A) Regular HTML
+B) HTML with meaning (<header>, <nav>)
+C) Styling HTML
+D) Programming HTML
+JAVOB: B
+
+SAVOL 4: Box model nima?
+A) Component
+B) Margin, Border, Padding, Content
+C) JavaScript
+D) HTML tag
+JAVOB: B
+
+SAVOL 5: Flexbox nima?
+A) HTML tag
+B) CSS layout system
+C) JavaScript
+D) Component
+JAVOB: B
+
+SAVOL 6: Grid nima?
+A) Table
+B) CSS 2D layout system
+C) HTML
+D) JavaScript
+JAVOB: B
+
+SAVOL 7: Responsive design nima?
+A) Bitta screen size
+B) Barcha screen size-ga moslashish
+C) Component
+D) Hook
+JAVOB: B
+
+SAVOL 8: Media queries nima?
+A) JavaScript query
+B) CSS rules for screen sizes
+C) HTML
+D) Component
+JAVOB: B
+
+SAVOL 9: Accessibility nima?
+A) Performance
+B) Hammasiga foydalanish imkoniyati
+C) Design
+D) JavaScript
+JAVOB: B
+
+SAVOL 10: REST API nima?
+A) Database
+B) Server-client communication
+C) Component
+D) Hook
+JAVOB: B
+
+SAVOL 11: HTTP methods qandaylar?
+A) GET, POST, PUT, DELETE
+B) SELECT, UPDATE, INSERT, DELETE
+C) Read, Write, Update, Delete
+D) Request types
+JAVOB: A
+
+SAVOL 12: Status codes nima?
+A) Error codes
+B) HTTP response codes (200, 404, 500)
+C) Error types
+D) Response types
+JAVOB: B
+
+SAVOL 13: CORS nima?
+A) Cross-origin request
+B) Cross-Origin Resource Sharing
+C) Restriction
+D) Security
+JAVOB: B
+
+SAVOL 14: Cookies nima?
+A) Client storage
+B) Small data storage (client side)
+C) Local storage
+D) Session storage
+JAVOB: B
+
+SAVOL 15: Local Storage nima?
+A) Browser cache
+B) Browser persistent storage
+C) Cookies
+D) Session
+JAVOB: B
+
+SAVOL 16: Session Storage nima?
+A) Persistent storage
+B) Temporary storage (session only)
+C) Local storage
+D) Cookies
+JAVOB: B
+
+SAVOL 17: WebSocket nima?
+A) HTTP
+B) Two-way real-time communication
+C) Socket
+D) Protocol
+JAVOB: B
+
+SAVOL 18: SSL/TLS nima?
+A) Protocol
+B) Encryption (HTTPS)
+C) Security
+D) Certificate
+JAVOB: B
+
+SAVOL 19: HTTPS nima?
+A) HTTP
+B) HTTP + secure (SSL/TLS)
+C) Protocol
+D) Encryption
+JAVOB: B
+
+SAVOL 20: DNS nima?
+A) Domain name
+B) Domain Name System (IP translate)
+C) Server
+D) Network
+JAVOB: B
+
+===============================================
+EASY SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: OSONGINA
+===============================================

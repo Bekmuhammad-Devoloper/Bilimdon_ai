@@ -1,0 +1,706 @@
+LINUX OPERATSION TIZIMI - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+=====================================================================
+
+1. /etc/passwd faylida qaysi maydon foydalanuvchi shell ini ko'rsatadi?
+   A) 5-maydon
+   B) 7-maydon (oxirgi)
+   C) 1-maydon
+   D) 3-maydon
+   Javob: B
+
+2. /etc/shadow faylida parollar qanday saqlanadi?
+   A) Oddiy matn
+   B) Hash qilingan (encrypted)
+   C) Base64
+   D) Hex
+   Javob: B
+
+3. chmod 755 file.sh buyrug'ida 7 nima anglatadi?
+   A) Faqat o'qish
+   B) O'qish + yozish + bajarish (rwx)
+   C) Faqat yozish
+   D) Faqat bajarish
+   Javob: B
+
+4. chmod u+s file nima qiladi?
+   A) Sticky bit
+   B) SUID bit o'rnatadi (fayl egasi huquqi bilan bajariladi)
+   C) SGID bit
+   D) Execute bit
+   Javob: B
+
+5. chmod g+s directory nima?
+   A) SUID
+   B) SGID o'rnatadi (yangi fayllar guruh egasini meros oladi)
+   C) Sticky bit
+   D) Write bit
+   Javob: B
+
+6. chmod +t /tmp nima qiladi?
+   A) SUID
+   B) Sticky bit (faqat egasi o'chira oladi)
+   C) SGID
+   D) Execute
+   Javob: B
+
+7. ls -l da 's' harfi nima anglatadi?
+   A) Sticky bit
+   B) SUID yoki SGID
+   C) Socket
+   D) Symbolic link
+   Javob: B
+
+8. umask 022 nima degani?
+   A) 022 permission
+   B) Yangi fayllar 644, papkalar 755 bo'ladi
+   C) 777 permission
+   D) 000 permission
+   Javob: B
+
+9. Default umask qiymati odatda qancha?
+   A) 000
+   B) 022
+   C) 777
+   D) 755
+   Javob: B
+
+10. chown user:group file nima qiladi?
+    A) Permission o'zgartiradi
+    B) Fayl egasi va guruhini o'zgartiradi
+    C) Fayl nomini o'zgartiradi
+    D) Fayl turini o'zgartiradi
+    Javob: B
+
+11. chown -R user directory nima?
+    A) Faqat papka
+    B) Papka va ichidagi barcha fayllar egasini o'zgartiradi
+    C) Faqat fayllar
+    D) Faqat permission
+    Javob: B
+
+12. ACL (Access Control List) nima uchun?
+    A) Oddiy permission
+    B) Standart permission dan tashqari qo'shimcha huquqlar
+    C) Network access
+    D) Disk access
+    Javob: B
+
+13. getfacl file nima ko'rsatadi?
+    A) Permission
+    B) Fayl uchun ACL ro'yxatini
+    C) File info
+    D) Disk usage
+    Javob: B
+
+14. setfacl -m u:user:rw file nima qiladi?
+    A) Permission o'chiradi
+    B) Userga read-write ACL qo'shadi
+    C) ACL o'chiradi
+    D) Default ACL
+    Javob: B
+
+15. ps aux buyrug'ida 'a' nima anglatadi?
+    A) All users
+    B) Barcha foydalanuvchilar processlari
+    C) Active only
+    D) Archived
+    Javob: B
+
+16. ps aux da VSZ va RSS farqi?
+    A) Farqi yo'q
+    B) VSZ - virtual memory, RSS - fizik memory
+    C) VSZ - fizik, RSS - virtual
+    D) Ikkalasi ham fizik
+    Javob: B
+
+17. top buyrug'ida load average 1.00 nima degani?
+    A) 100% CPU
+    B) 1 ta CPU to'liq band (single core uchun)
+    C) 1% CPU
+    D) 1 MB memory
+    Javob: B
+
+18. htop buyrug'ining top dan afzalligi?
+    A) Farqi yo'q
+    B) Interaktiv, ranglar, tree view, scroll
+    C) Tezroq
+    D) Kamroq resurs
+    Javob: B
+
+19. kill -9 PID nima qiladi?
+    A) SIGTERM
+    B) SIGKILL (majburiy to'xtatish, ignore qilib bo'lmaydi)
+    C) SIGHUP
+    D) SIGINT
+    Javob: B
+
+20. kill -15 PID nima?
+    A) SIGKILL
+    B) SIGTERM (graceful shutdown so'rovi)
+    C) SIGSTOP
+    D) SIGCONT
+    Javob: B
+
+21. killall process_name nima?
+    A) Bitta process
+    B) Shu nomdagi barcha processlarni to'xtatadi
+    C) Kernel process
+    D) System process
+    Javob: B
+
+22. pkill -u username nima qiladi?
+    A) User yaratadi
+    B) Foydalanuvchining barcha processlarini to'xtatadi
+    C) User o'chiradi
+    D) Password o'zgartiradi
+    Javob: B
+
+23. nice -n 10 command nima?
+    A) Priority oshiradi
+    B) Processni past priority (10) bilan ishga tushiradi
+    C) Nice message
+    D) Priority o'zgarmaydi
+    Javob: B
+
+24. renice -n -5 -p PID nima qiladi?
+    A) Priority pasaytiradi
+    B) Processning priority sini oshiradi (-5, yuqori)
+    C) Process o'chiradi
+    D) Process restart
+    Javob: B
+
+25. Nice qiymatlari diapazoni qanday?
+    A) 0 dan 100
+    B) -20 dan 19 gacha (-20 eng yuqori)
+    C) 1 dan 10
+    D) -100 dan 100
+    Javob: B
+
+26. nohup command & nima qiladi?
+    A) Foreground
+    B) Terminal yopilganda ham davom etadi
+    C) Faqat background
+    D) Priority oshiradi
+    Javob: B
+
+27. jobs buyrug'i nima ko'rsatadi?
+    A) Cron jobs
+    B) Joriy shell dagi background jobs
+    C) System jobs
+    D) User jobs
+    Javob: B
+
+28. fg %1 nima qiladi?
+    A) Background ga
+    B) Job 1 ni foreground ga olib keladi
+    C) Job o'chiradi
+    D) Job restart
+    Javob: B
+
+29. bg %2 nima?
+    A) Foreground ga
+    B) Suspended job 2 ni background da davom ettiradi
+    C) Job o'chiradi
+    D) Job stop
+    Javob: B
+
+30. Ctrl+Z nima qiladi?
+    A) Process o'chiradi
+    B) Process ni suspend qiladi (SIGTSTP)
+    C) Background ga yuboradi
+    D) Terminal yopadi
+    Javob: B
+
+31. /proc/cpuinfo faylida nima bor?
+    A) Memory info
+    B) CPU haqida ma'lumot (model, cores, speed)
+    C) Disk info
+    D) Network info
+    Javob: B
+
+32. /proc/meminfo nima ko'rsatadi?
+    A) CPU info
+    B) Memory statistikasi (total, free, buffers, cache)
+    C) Disk info
+    D) Process info
+    Javob: B
+
+33. free -h buyrug'ida -h nima?
+    A) Help
+    B) Human-readable (GB, MB formatda)
+    C) History
+    D) Header
+    Javob: B
+
+34. free buyrug'ida 'available' nima?
+    A) Total memory
+    B) Yangi process uchun mavjud memory (free + reclaimable cache)
+    C) Used memory
+    D) Swap memory
+    Javob: B
+
+35. vmstat 1 5 nima qiladi?
+    A) Bitta chiqish
+    B) Har 1 sekundda 5 marta virtual memory statistika
+    C) 5 sekund kutadi
+    D) 1 sekund kutadi
+    Javob: B
+
+36. iostat buyrug'i nima ko'rsatadi?
+    A) Memory stats
+    B) CPU va disk I/O statistikasi
+    C) Network stats
+    D) Process stats
+    Javob: B
+
+37. iotop buyrug'i nima uchun?
+    A) CPU monitoring
+    B) Disk I/O bo'yicha processlarni ko'rish
+    C) Memory monitoring
+    D) Network monitoring
+    Javob: B
+
+38. lsof nima ko'rsatadi?
+    A) Disk list
+    B) Ochiq fayllar va ularni ishlatayotgan processlar
+    C) User list
+    D) Group list
+    Javob: B
+
+39. lsof -i :80 nima?
+    A) Fayllarni ko'rsatadi
+    B) 80-portni ishlatayotgan processlarni ko'rsatadi
+    C) 80 ta fayl
+    D) IP 80
+    Javob: B
+
+40. netstat -tulpn nima ko'rsatadi?
+    A) Fayllarni
+    B) TCP/UDP listening portlar va processlar
+    C) Users
+    D) Groups
+    Javob: B
+
+41. ss -tulpn netstat dan farqi?
+    A) Bir xil
+    B) ss yangi va tezroq
+    C) netstat tezroq
+    D) ss eski
+    Javob: B
+
+42. /etc/fstab fayli nima uchun?
+    A) Network config
+    B) Boot da mount qilinadigan file systemlar
+    C) User config
+    D) Service config
+    Javob: B
+
+43. fstab da 'defaults' option nima?
+    A) Faqat read
+    B) rw, suid, dev, exec, auto, nouser, async
+    C) Faqat write
+    D) No options
+    Javob: B
+
+44. fstab da 0 0 (oxirgi ikki raqam) nima?
+    A) Permission
+    B) dump va fsck tartibi (0 = skip)
+    C) Mount order
+    D) Priority
+    Javob: B
+
+45. mount -o remount,rw / nima qiladi?
+    A) Unmount
+    B) Root ni read-write rejimda qayta mount
+    C) Mount yangi disk
+    D) Format
+    Javob: B
+
+46. df -h nima ko'rsatadi?
+    A) Memory
+    B) Disk bo'sh joy (human-readable)
+    C) Files
+    D) Processes
+    Javob: B
+
+47. du -sh /var nima?
+    A) Disk free
+    B) /var papka hajmi (summary, human-readable)
+    C) Directory list
+    D) User quota
+    Javob: B
+
+48. du -sh * | sort -h nima qiladi?
+    A) Alifbo tartibida
+    B) Papkalarni hajmi bo'yicha saralaydi
+    C) Vaqt bo'yicha
+    D) Nom bo'yicha
+    Javob: B
+
+49. lsblk buyrug'i nima ko'rsatadi?
+    A) Files
+    B) Block devices (disklar, partitionlar) tree ko'rinishda
+    C) Users
+    D) Processes
+    Javob: B
+
+50. blkid nima ko'rsatadi?
+    A) Block size
+    B) Block device UUID va file system turi
+    C) Disk speed
+    D) Disk health
+    Javob: B
+
+51. fdisk -l nima?
+    A) Format disk
+    B) Disk va partition ma'lumotlarini ko'rsatadi
+    C) Delete partition
+    D) Create partition
+    Javob: B
+
+52. parted va fdisk farqi?
+    A) Bir xil
+    B) parted GPT va 2TB+ disklar bilan ishlaydi
+    C) fdisk yangi
+    D) parted faqat MBR
+    Javob: B
+
+53. mkfs.ext4 /dev/sdb1 nima qiladi?
+    A) Mount
+    B) sdb1 partitionni ext4 formatda format qiladi
+    C) Delete
+    D) Resize
+    Javob: B
+
+54. ext4 va xfs farqi?
+    A) Bir xil
+    B) xfs katta fayllar va parallel I/O uchun yaxshiroq
+    C) ext4 yangi
+    D) xfs eski
+    Javob: B
+
+55. LVM nima?
+    A) Linux Version Manager
+    B) Logical Volume Manager (moslashuvchan disk boshqaruv)
+    C) Linux Virtual Machine
+    D) Linux Video Manager
+    Javob: B
+
+56. LVM da PV, VG, LV nima?
+    A) Fayllar
+    B) Physical Volume, Volume Group, Logical Volume
+    C) Processlar
+    D) Users
+    Javob: B
+
+57. lvextend -L +10G /dev/vg/lv nima?
+    A) Kamaytiradi
+    B) Logical volume ni 10GB ga oshiradi
+    C) O'chiradi
+    D) Yaratadi
+    Javob: B
+
+58. resize2fs /dev/vg/lv nima qiladi?
+    A) LV resize
+    B) ext2/3/4 file system ni LV ga moslashtiradi
+    C) Disk resize
+    D) Partition resize
+    Javob: B
+
+59. systemctl status nginx nima ko'rsatadi?
+    A) Nginx version
+    B) nginx service holati (running, stopped, ...)
+    C) Nginx config
+    D) Nginx logs
+    Javob: B
+
+60. systemctl enable nginx nima qiladi?
+    A) Start qiladi
+    B) Boot da avtomatik start bo'lishini yoqadi
+    C) Stop qiladi
+    D) Restart qiladi
+    Javob: B
+
+61. systemctl disable --now nginx nima?
+    A) Enable
+    B) To'xtatadi va boot dan o'chiradi
+    C) Faqat enable
+    D) Faqat start
+    Javob: B
+
+62. systemctl list-unit-files --type=service nima?
+    A) Running services
+    B) Barcha service unit fayllar va holatini
+    C) Failed services
+    D) Active services
+    Javob: B
+
+63. journalctl -u nginx -f nima qiladi?
+    A) Static log
+    B) nginx loglari real-time (follow)
+    C) Error only
+    D) Warning only
+    Javob: B
+
+64. journalctl --since "1 hour ago" nima?
+    A) Barcha loglar
+    B) Oxirgi 1 soatdagi loglar
+    C) 1 soatdan oldingi
+    D) Faqat error
+    Javob: B
+
+65. journalctl -p err nima ko'rsatadi?
+    A) Barcha loglar
+    B) Faqat error va undan yuqori darajadagi loglar
+    C) Faqat info
+    D) Faqat debug
+    Javob: B
+
+66. /etc/systemd/system/ va /usr/lib/systemd/system/ farqi?
+    A) Bir xil
+    B) /etc - admin sozlamalari, /usr/lib - package defaults
+    C) /usr/lib - admin
+    D) /etc - defaults
+    Javob: B
+
+67. systemd unit faylida [Service] section nima?
+    A) Timer config
+    B) Service qanday ishga tushishi (ExecStart, Type, ...)
+    C) Mount config
+    D) Socket config
+    Javob: B
+
+68. systemd da Type=oneshot nima?
+    A) Daemon
+    B) Bir marta ishlab tugaydigan service
+    C) Forking
+    D) Simple
+    Javob: B
+
+69. systemd da Type=forking nima?
+    A) Oneshot
+    B) Parent process fork qilib, child davom etadi
+    C) Simple
+    D) Notify
+    Javob: B
+
+70. crontab -e nima qiladi?
+    A) Cron ko'rsatadi
+    B) Foydalanuvchi crontab ni tahrirlaydi
+    C) Cron o'chiradi
+    D) Cron status
+    Javob: B
+
+71. Cron formatida "0 2 * * *" nima degani?
+    A) Har soatda
+    B) Har kuni soat 2:00 da
+    C) Har daqiqada
+    D) Har haftada
+    Javob: B
+
+72. Cron formatida "*/15 * * * *" nima?
+    A) 15-daqiqada
+    B) Har 15 daqiqada
+    C) 15-kuni
+    D) 15-oyda
+    Javob: B
+
+73. /etc/cron.d/ papkasi nima uchun?
+    A) User crontabs
+    B) System cron jobs (package lari uchun)
+    C) Cron logs
+    D) Cron config
+    Javob: B
+
+74. anacron va cron farqi?
+    A) Bir xil
+    B) anacron o'chirilgan vaqtda o'tkazib yuborilgan job larni bajaradi
+    C) cron yangi
+    D) anacron tezroq
+    Javob: B
+
+75. at command nima uchun?
+    A) Takroriy job
+    B) Bir martalik scheduled job
+    C) Cron alias
+    D) Timer alias
+    Javob: B
+
+76. ip addr show nima ko'rsatadi?
+    A) Routing table
+    B) Network interface va IP manzillar
+    C) DNS
+    D) Firewall
+    Javob: B
+
+77. ip route show nima?
+    A) IP addresses
+    B) Routing table
+    C) DNS servers
+    D) Firewall rules
+    Javob: B
+
+78. ip link set eth0 down nima qiladi?
+    A) IP o'rnatadi
+    B) eth0 interface ni o'chiradi
+    C) IP o'chiradi
+    D) Route o'chiradi
+    Javob: B
+
+79. nmcli device status nima?
+    A) IP addresses
+    B) NetworkManager bilan boshqariladigan device lar holati
+    C) Routes
+    D) DNS
+    Javob: B
+
+80. /etc/resolv.conf nima saqlaydi?
+    A) IP config
+    B) DNS server manzillari
+    C) Routing
+    D) Firewall
+    Javob: B
+
+81. /etc/hosts fayli nima uchun?
+    A) DNS server
+    B) Local hostname-IP mapping
+    C) Network config
+    D) Firewall rules
+    Javob: B
+
+82. hostnamectl set-hostname server1 nima?
+    A) IP o'rnatadi
+    B) System hostname ni o'zgartiradi
+    C) DNS o'rnatadi
+    D) Route o'rnatadi
+    Javob: B
+
+83. firewall-cmd --add-port=80/tcp --permanent nima?
+    A) Port yopadi
+    B) 80 TCP portni firewall da ochadi (doimiy)
+    C) Port ko'rsatadi
+    D) Port o'chiradi
+    Javob: B
+
+84. firewall-cmd --reload nima?
+    A) Firewall o'chiradi
+    B) Firewall rules ni qayta yuklaydi
+    C) Firewall status
+    D) Firewall stop
+    Javob: B
+
+85. iptables -L -n -v nima ko'rsatadi?
+    A) IP addresses
+    B) Firewall rules batafsil (numeric, verbose)
+    C) Routes
+    D) Ports
+    Javob: B
+
+86. iptables -A INPUT -p tcp --dport 22 -j ACCEPT nima?
+    A) Port yopadi
+    B) SSH (22) portga kiruvchi trafikni ruxsat
+    C) Port drop
+    D) Port reject
+    Javob: B
+
+87. SSH key-based authentication qanday ishlaydi?
+    A) Faqat password
+    B) Private key client da, public key serverda
+    C) Public key client da
+    D) Ikkalasi serverda
+    Javob: B
+
+88. ssh-keygen -t ed25519 nima qiladi?
+    A) RSA key
+    B) Ed25519 algorithm bilan SSH key yaratadi
+    C) DSA key
+    D) ECDSA key
+    Javob: B
+
+89. ssh-copy-id user@server nima?
+    A) Key yaratadi
+    B) Public key ni serverga nusxalaydi
+    C) Key o'chiradi
+    D) Private key nusxalaydi
+    Javob: B
+
+90. ~/.ssh/authorized_keys fayli nima?
+    A) Private keys
+    B) Server da ruxsat berilgan public keys
+    C) Config
+    D) Known hosts
+    Javob: B
+
+91. scp file user@server:/path nima qiladi?
+    A) Local copy
+    B) SSH orqali faylni remote serverga nusxalaydi
+    C) Download
+    D) Sync
+    Javob: B
+
+92. rsync -avz source/ dest/ nima?
+    A) Oddiy copy
+    B) Archive, verbose, compressed sync
+    C) Remove sync
+    D) Backup only
+    Javob: B
+
+93. rsync da --delete option nima?
+    A) Delete o'chiradi
+    B) Destinationda source da yo'q fayllarni o'chiradi
+    C) Source o'chiradi
+    D) Sync o'chiradi
+    Javob: B
+
+94. tar -czvf archive.tar.gz /dir nima?
+    A) Extract
+    B) Create, gzip, verbose, file - siqilgan arxiv yaratish
+    C) List
+    D) Test
+    Javob: B
+
+95. tar -xzvf archive.tar.gz nima?
+    A) Create
+    B) Extract, gzip, verbose, file - arxivni ochish
+    C) List
+    D) Compress
+    Javob: B
+
+96. find /var -name "*.log" -mtime +30 -delete nima?
+    A) Fayllarni ko'rsatadi
+    B) 30 kundan eski .log fayllarni topib o'chiradi
+    C) Fayllarni yaratadi
+    D) Fayllarni nusxalaydi
+    Javob: B
+
+97. xargs nima uchun ishlatiladi?
+    A) Argument ko'rsatadi
+    B) stdin dan argumentlar olib buyruqqa uzatadi
+    C) Argument yaratadi
+    D) Argument o'chiradi
+    Javob: B
+
+98. find . -name "*.txt" | xargs grep "error" nima?
+    A) Fayllarni o'chiradi
+    B) Barcha .txt fayllardan "error" so'zini qidiradi
+    C) Fayllarni yaratadi
+    D) Fayllarni ko'chiradi
+    Javob: B
+
+99. awk '{print $1, $3}' file nima qiladi?
+    A) Barcha ustunlar
+    B) 1 va 3-ustunlarni chiqaradi
+    C) 1 dan 3 gacha
+    D) Faqat 1-ustun
+    Javob: B
+
+100. sed 's/old/new/g' file nima?
+     A) Birinchi o'rnini
+     B) Barcha 'old' ni 'new' ga almashtiradi (global)
+     C) O'chiradi
+     D) Qo'shadi
+     Javob: B
+
+=====================================================================
+                            YAKUNLANDI
+=====================================================================

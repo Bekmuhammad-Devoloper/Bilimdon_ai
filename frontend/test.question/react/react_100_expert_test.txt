@@ -1,0 +1,702 @@
+REACT - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+===============================================
+
+1. Fiber architecture nima?
+   A) Fiber optics
+   B) React ning internal reconciliation engine
+   C) Network fiber
+   D) Component fiber
+   Javob: B
+
+2. Reconciliation nima?
+   A) Reconcile
+   B) Virtual DOM diffing algorithm
+   C) State merge
+   D) Props merge
+   Javob: B
+
+3. React element vs component farqi?
+   A) Bir xil
+   B) Element - object, Component - function/class
+   C) Component - object
+   D) No difference
+   Javob: B
+
+4. React.createElement signature?
+   A) (type)
+   B) (type, props, ...children)
+   C) (component, children)
+   D) (element, props)
+   Javob: B
+
+5. JSX transpilation natijasi?
+   A) HTML
+   B) React.createElement calls
+   C) JavaScript objects
+   D) DOM nodes
+   Javob: B
+
+6. Batching React 18 da?
+   A) Manual only
+   B) Automatic batching for all updates
+   C) No batching
+   D) Selective batching
+   Javob: B
+
+7. flushSync nima?
+   A) Flush memory
+   B) Synchronous state update force
+   C) Clear cache
+   D) Reset state
+   Javob: B
+
+8. unstable_batchedUpdates nima edi?
+   A) Error handler
+   B) Manual batching (before React 18)
+   C) State merger
+   D) Props updater
+   Javob: B
+
+9. Scheduler package nima?
+   A) Calendar
+   B) React internal task scheduler
+   C) Time scheduler
+   D) Event scheduler
+   Javob: B
+
+10. Priority levels React Scheduler?
+    A) Low, High
+    B) Immediate, UserBlocking, Normal, Low, Idle
+    C) 1-5
+    D) A-D
+    Javob: B
+
+11. Time slicing nima?
+    A) Time management
+    B) Long tasks ni qismlarga bo'lish
+    C) Date parsing
+    D) Schedule split
+    Javob: B
+
+12. Lane model nima?
+    A) Highway lane
+    B) Priority-based update scheduling
+    C) Component lane
+    D) Data lane
+    Javob: B
+
+13. useId hook nima?
+    A) User ID
+    B) Stable unique ID generation
+    C) Component ID
+    D) Element ID
+    Javob: B
+
+14. useSyncExternalStore nima?
+    A) Sync data
+    B) External store subscription hook
+    C) Local storage hook
+    D) Session storage hook
+    Javob: B
+
+15. getSnapshot parameter?
+    A) Screenshot
+    B) Current store state getter
+    C) State snapshot
+    D) Memory snapshot
+    Javob: B
+
+16. getServerSnapshot parameter?
+    A) Server data
+    B) SSR initial state getter
+    C) Server snapshot
+    D) API snapshot
+    Javob: B
+
+17. useInsertionEffect nima?
+    A) Insert element
+    B) CSS-in-JS libraries uchun DOM insertion
+    C) Add effect
+    D) Insert hook
+    Javob: B
+
+18. useInsertionEffect order?
+    A) After layout
+    B) Before useLayoutEffect, before mutations
+    C) After paint
+    D) Last
+    Javob: B
+
+19. React.Children utilities?
+    A) Child components
+    B) Children manipulation (map, forEach, count, etc.)
+    C) Props children
+    D) DOM children
+    Javob: B
+
+20. React.cloneElement nima?
+    A) Clone component
+    B) Element copy with new props
+    C) Deep clone
+    D) Shallow clone
+    Javob: B
+
+21. isValidElement nima?
+    A) DOM validation
+    B) React element check
+    C) Props validation
+    D) State validation
+    Javob: B
+
+22. createPortal nima?
+    A) Portal game
+    B) DOM tree dan tashqariga render
+    C) Create component
+    D) Create route
+    Javob: B
+
+23. Portal use cases?
+    A) Games
+    B) Modals, tooltips outside parent
+    C) Routing
+    D) State management
+    Javob: B
+
+24. Error boundary componentDidCatch params?
+    A) (error)
+    B) (error, errorInfo)
+    C) (errorInfo)
+    D) (info)
+    Javob: B
+
+25. getDerivedStateFromError nima?
+    A) Get error
+    B) Static method - error dan state derive
+    C) Set error
+    D) Clear error
+    Javob: B
+
+26. Suspense for data fetching (experimental)?
+    A) Loading state
+    B) Promise throw pattern
+    C) Error handling
+    D) Async component
+    Javob: B
+
+27. throw promise pattern?
+    A) Error throwing
+    B) Suspense trigger mechanism
+    C) Promise rejection
+    D) Async error
+    Javob: B
+
+28. Resource pattern Suspense?
+    A) File resource
+    B) read() method promise status check
+    C) Network resource
+    D) Memory resource
+    Javob: B
+
+29. SuspenseList (experimental)?
+    A) List component
+    B) Multiple Suspense coordination
+    C) Async list
+    D) Loading list
+    Javob: B
+
+30. revealOrder prop?
+    A) Z-index
+    B) SuspenseList reveal sequence
+    C) Sort order
+    D) Display order
+    Javob: B
+
+31. Server Components benefits?
+    A) Faster server
+    B) Zero bundle size, direct backend access
+    C) Better SEO
+    D) All above
+    Javob: D
+
+32. Client Component limitations Server Components da?
+    A) No limits
+    B) Cannot import Server Component directly
+    C) No state
+    D) No effects
+    Javob: B
+
+33. Serialization boundary nima?
+    A) Data boundary
+    B) Server->Client data transfer limit
+    C) File boundary
+    D) Module boundary
+    Javob: B
+
+34. RSC payload nima?
+    A) API response
+    B) Server Component serialized output
+    C) Data payload
+    D) Network payload
+    Javob: B
+
+35. Streaming with Suspense?
+    A) Video stream
+    B) Progressive HTML chunks
+    C) Audio stream
+    D) Data stream
+    Javob: B
+
+36. renderToPipeableStream nima?
+    A) Video render
+    B) Node.js streaming SSR
+    C) Pipe render
+    D) Stream component
+    Javob: B
+
+37. renderToReadableStream nima?
+    A) Read render
+    B) Web Streams API SSR
+    C) Stream render
+    D) Read component
+    Javob: B
+
+38. hydrateRoot vs createRoot?
+    A) Same
+    B) hydrateRoot SSR hydration uchun
+    C) createRoot SSR uchun
+    D) No difference
+    Javob: B
+
+39. Selective hydration nima?
+    A) Select hydrate
+    B) Priority-based partial hydration
+    C) Full hydration
+    D) No hydration
+    Javob: B
+
+40. Progressive hydration nima?
+    A) Progress bar
+    B) Gradual component hydration
+    C) Full hydration
+    D) Instant hydration
+    Javob: B
+
+41. Islands architecture nima?
+    A) Island design
+    B) Isolated interactive components in static HTML
+    C) Component islands
+    D) DOM islands
+    Javob: B
+
+42. Partial prerendering nima?
+    A) Partial render
+    B) Static shell + dynamic holes
+    C) Half render
+    D) Incomplete render
+    Javob: B
+
+43. React cache() function?
+    A) Browser cache
+    B) Request-level memoization
+    C) State cache
+    D) Props cache
+    Javob: B
+
+44. taintUniqueValue nima?
+    A) Unique ID
+    B) Prevent value client exposure
+    C) Taint check
+    D) Value mark
+    Javob: B
+
+45. taintObjectReference nima?
+    A) Object ref
+    B) Prevent object client exposure
+    C) Taint object
+    D) Reference mark
+    Javob: B
+
+46. useOptimistic hook?
+    A) Positive hook
+    B) Optimistic UI update
+    C) Hope hook
+    D) Expect hook
+    Javob: B
+
+47. useFormStatus hook?
+    A) Form state
+    B) Form submission status
+    C) Input status
+    D) Validation status
+    Javob: B
+
+48. useFormState hook (useActionState)?
+    A) State hook
+    B) Server action state management
+    C) Form state
+    D) Input state
+    Javob: B
+
+49. Compiler (React Forget)?
+    A) Memory compiler
+    B) Auto-memoization compiler
+    C) Code compiler
+    D) Build compiler
+    Javob: B
+
+50. React Compiler benefits?
+    A) Faster build
+    B) No manual useMemo/useCallback
+    C) Smaller bundle
+    D) All above
+    Javob: B
+
+51. Fine-grained reactivity nima?
+    A) Coarse updates
+    B) Minimal re-renders per change
+    C) Full re-render
+    D) No reactivity
+    Javob: B
+
+52. Signals concept nima?
+    A) Traffic signals
+    B) Reactive primitives
+    C) Event signals
+    D) Network signals
+    Javob: B
+
+53. React vs Signals approach?
+    A) Same
+    B) React pulls state, Signals push updates
+    C) Signals pulls
+    D) No difference
+    Javob: B
+
+54. Concurrent Mode features?
+    A) Multi-threading
+    B) Interruptible rendering, transitions
+    C) Parallel computing
+    D) Async only
+    Javob: B
+
+55. isPending from useTransition?
+    A) Pending state
+    B) Transition in progress indicator
+    C) Loading state
+    D) Error state
+    Javob: B
+
+56. useDeferredValue vs debounce?
+    A) Same
+    B) useDeferredValue React-aware, interruptible
+    C) debounce better
+    D) No difference
+    Javob: B
+
+57. act() internal implementation?
+    A) Simple wrapper
+    B) Flush updates synchronously for testing
+    C) Async wrapper
+    D) Event wrapper
+    Javob: B
+
+58. React Testing Library philosophy?
+    A) Test implementation
+    B) Test behavior, not implementation
+    C) Test everything
+    D) Test nothing
+    Javob: B
+
+59. getByTestId vs getByRole priority?
+    A) TestId higher
+    B) Role higher (accessibility-first)
+    C) Same
+    D) Depends
+    Javob: B
+
+60. data-testid attribute use?
+    A) Always use
+    B) Last resort when accessible queries fail
+    C) Never use
+    D) Primary query
+    Javob: B
+
+61. Custom render function Testing Library?
+    A) renderDOM
+    B) Wrapper providers (Router, Theme, etc.)
+    C) renderHTML
+    D) renderComponent
+    Javob: B
+
+62. Mock router for testing?
+    A) Real router
+    B) MemoryRouter or mock hooks
+    C) BrowserRouter
+    D) HashRouter
+    Javob: B
+
+63. Testing custom hooks?
+    A) renderHook from @testing-library/react
+    B) Direct call
+    C) Component test
+    D) Mock hook
+    Javob: A
+
+64. @testing-library/react-hooks (deprecated)?
+    A) Still use
+    B) Merged into main library
+    C) Removed
+    D) Replaced
+    Javob: B
+
+65. Performance testing React?
+    A) Jest only
+    B) React Profiler API, DevTools
+    C) Manual timing
+    D) No testing
+    Javob: B
+
+66. Profiler component onRender?
+    A) Log render
+    B) Performance measurement callback
+    C) Render counter
+    D) Debug log
+    Javob: B
+
+67. actualDuration vs baseDuration?
+    A) Same
+    B) actual=with memo, base=without memo
+    C) base=actual
+    D) No difference
+    Javob: B
+
+68. React.memo shallow comparison?
+    A) Deep compare
+    B) Object.is for props
+    C) JSON compare
+    D) String compare
+    Javob: B
+
+69. When NOT to use React.memo?
+    A) Never
+    B) Frequently changing props, cheap components
+    C) Always use
+    D) Expensive components
+    Javob: B
+
+70. Virtualization benefits?
+    A) VR
+    B) Render only visible items
+    C) Virtual DOM
+    D) Virtual components
+    Javob: B
+
+71. react-window vs react-virtualized?
+    A) Same
+    B) react-window smaller, newer
+    C) react-virtualized better
+    D) No difference
+    Javob: B
+
+72. Windowing technique?
+    A) Windows OS
+    B) Visible viewport rendering only
+    C) Window object
+    D) Modal windows
+    Javob: B
+
+73. Infinite scroll implementation?
+    A) Scroll forever
+    B) IntersectionObserver + pagination
+    C) All data load
+    D) Manual scroll
+    Javob: B
+
+74. IntersectionObserver hook?
+    A) useIntersection
+    B) Custom hook with IntersectionObserver API
+    C) Built-in hook
+    D) React hook
+    Javob: B
+
+75. ResizeObserver use case?
+    A) Window resize
+    B) Element size change detection
+    C) Image resize
+    D) Font resize
+    Javob: B
+
+76. useLayoutEffect DOM measurement?
+    A) useEffect better
+    B) Synchronous DOM read before paint
+    C) No measurement
+    D) Async measurement
+    Javob: B
+
+77. getBoundingClientRect timing?
+    A) Any time
+    B) After layout, before paint (useLayoutEffect)
+    C) Before render
+    D) After paint
+    Javob: B
+
+78. requestAnimationFrame pattern?
+    A) useEffect
+    B) useLayoutEffect + rAF for animations
+    C) setState
+    D) useRef
+    Javob: B
+
+79. CSS-in-JS runtime cost?
+    A) No cost
+    B) Style parsing, injection at runtime
+    C) Build cost only
+    D) Zero runtime
+    Javob: B
+
+80. Zero-runtime CSS-in-JS?
+    A) Styled-components
+    B) Linaria, vanilla-extract
+    C) Emotion
+    D) JSS
+    Javob: B
+
+81. Atomic CSS benefits?
+    A) Science
+    B) No dead CSS, consistent styling
+    C) Atomic structure
+    D) Small atoms
+    Javob: B
+
+82. Bundle analyzer setup?
+    A) Manual
+    B) webpack-bundle-analyzer, source-map-explorer
+    C) Built-in
+    D) No analysis
+    Javob: B
+
+83. Tree shaking React?
+    A) Shake trees
+    B) Dead code elimination
+    C) Code splitting
+    D) Minification
+    Javob: B
+
+84. sideEffects: false in package.json?
+    A) No effects
+    B) Enable aggressive tree shaking
+    C) Disable effects
+    D) Remove hooks
+    Javob: B
+
+85. Code splitting strategies?
+    A) No strategy
+    B) Route-based, component-based, library-based
+    C) Single split
+    D) Random split
+    Javob: B
+
+86. Prefetching routes?
+    A) No prefetch
+    B) Link prefetch on hover/viewport
+    C) Always prefetch
+    D) Manual prefetch
+    Javob: B
+
+87. Module federation nima?
+    A) Module group
+    B) Micro-frontend runtime sharing
+    C) Module export
+    D) Module import
+    Javob: B
+
+88. Micro-frontends architecture?
+    A) Small frontend
+    B) Independent deployable frontend modules
+    C) Mini app
+    D) Tiny components
+    Javob: B
+
+89. Single-spa framework?
+    A) Single page
+    B) Micro-frontend orchestrator
+    C) SPA builder
+    D) Route manager
+    Javob: B
+
+90. React Native vs React DOM?
+    A) Same
+    B) Native=mobile components, DOM=web
+    C) Native=web
+    D) No difference
+    Javob: B
+
+91. react-three-fiber nima?
+    A) Fiber glass
+    B) Three.js React renderer
+    C) CSS fiber
+    D) DOM fiber
+    Javob: B
+
+92. Custom renderer React?
+    A) Not possible
+    B) react-reconciler package
+    C) DOM only
+    D) Native only
+    Javob: B
+
+93. react-reconciler API?
+    A) Reconcile data
+    B) Build custom React renderers
+    C) DOM reconciler
+    D) State reconciler
+    Javob: B
+
+94. HostConfig object nima?
+    A) Server config
+    B) Custom renderer configuration
+    C) Host settings
+    D) Environment config
+    Javob: B
+
+95. createInstance HostConfig da?
+    A) React instance
+    B) Host element creation
+    C) Component instance
+    D) State instance
+    Javob: B
+
+96. commitUpdate HostConfig da?
+    A) Git commit
+    B) Apply prop changes to host element
+    C) State commit
+    D) DOM commit
+    Javob: B
+
+97. React strict concurrency?
+    A) Strict mode
+    B) Concurrent-safe component design
+    C) Strict rules
+    D) Concurrent rules
+    Javob: B
+
+98. Idempotent components nima?
+    A) Identical components
+    B) Same input = same output, no side effects
+    C) ID components
+    D) Unique components
+    Javob: B
+
+99. Pure render guarantee?
+    A) Clean render
+    B) No side effects during render phase
+    C) Pure component
+    D) Clean component
+    Javob: B
+
+100. React 19 major changes?
+     A) Hooks removal
+     B) Actions, use(), compiler, Document Metadata
+     C) Class components
+     D) No changes
+     Javob: B

@@ -1,0 +1,706 @@
+GIT VERSION CONTROL - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+=============================================================
+
+1. Git nima?
+   A) Dasturlash tili
+   B) Taqsimlangan versiya boshqaruv tizimi
+   C) Operatsion tizim
+   D) Ma'lumotlar bazasi
+   Javob: B
+
+2. Git ni kim yaratgan?
+   A) Bill Gates
+   B) Linus Torvalds
+   C) Mark Zuckerberg
+   D) Steve Jobs
+   Javob: B
+
+3. Git qaysi yilda yaratilgan?
+   A) 2000
+   B) 2005
+   C) 2010
+   D) 2015
+   Javob: B
+
+4. Git dastlab qaysi loyiha uchun yaratilgan?
+   A) Windows
+   B) Linux kernel
+   C) Android
+   D) macOS
+   Javob: B
+
+5. Repository (repo) nima?
+   A) Fayl turi
+   B) Loyiha fayllari va Git tarixini saqlovchi papka
+   C) Branch
+   D) Commit
+   Javob: B
+
+6. Yangi Git repository yaratish buyrug'i?
+   A) git create
+   B) git init
+   C) git new
+   D) git start
+   Javob: B
+
+7. Mavjud repository ni klonlash buyrug'i?
+   A) git copy
+   B) git clone
+   C) git download
+   D) git get
+   Javob: B
+
+8. git clone URL nima qiladi?
+   A) Faqat fayl yuklab oladi
+   B) Remote repository ni to'liq nusxalaydi (tarix bilan)
+   C) Faqat oxirgi versiyani oladi
+   D) Branch yaratadi
+   Javob: B
+
+9. Working directory nima?
+   A) Git papkasi
+   B) Hozirda ishlayotgan loyiha fayllari joylashgan papka
+   C) Remote server
+   D) Branch
+   Javob: B
+
+10. Staging area (index) nima?
+    A) Working directory
+    B) Keyingi commit uchun tayyorlangan o'zgarishlar joyi
+    C) Remote repository
+    D) Branch
+    Javob: B
+
+11. Faylni staging area ga qo'shish buyrug'i?
+    A) git stage
+    B) git add
+    C) git put
+    D) git insert
+    Javob: B
+
+12. git add . nima qiladi?
+    A) Bitta fayl qo'shadi
+    B) Barcha o'zgargan fayllarni staging ga qo'shadi
+    C) Commit qiladi
+    D) Push qiladi
+    Javob: B
+
+13. git add filename nima qiladi?
+    A) Barcha fayllarni qo'shadi
+    B) Faqat belgilangan faylni staging ga qo'shadi
+    C) Faylni o'chiradi
+    D) Faylni yaratadi
+    Javob: B
+
+14. Commit nima?
+    A) Fayl nomi
+    B) O'zgarishlarning saqlab qo'yilgan holati (snapshot)
+    C) Branch
+    D) Remote
+    Javob: B
+
+15. Commit yaratish buyrug'i?
+    A) git save
+    B) git commit
+    C) git snapshot
+    D) git store
+    Javob: B
+
+16. git commit -m "message" da -m nima?
+    A) Merge
+    B) Message (xabar) qo'shish
+    C) Main branch
+    D) Move
+    Javob: B
+
+17. Repository holatini ko'rish buyrug'i?
+    A) git info
+    B) git status
+    C) git state
+    D) git check
+    Javob: B
+
+18. git status nima ko'rsatadi?
+    A) Commit tarixini
+    B) O'zgargan, staged va untracked fayllarni
+    C) Remote URL ni
+    D) Branch ro'yxatini
+    Javob: B
+
+19. Commit tarixini ko'rish buyrug'i?
+    A) git history
+    B) git log
+    C) git commits
+    D) git show
+    Javob: B
+
+20. git log nima ko'rsatadi?
+    A) Fayllar ro'yxatini
+    B) Commit tarixini (hash, author, date, message)
+    C) Branch ro'yxatini
+    D) Remote ro'yxatini
+    Javob: B
+
+21. git log --oneline nima qiladi?
+    A) To'liq log
+    B) Qisqartirilgan format (bir qatorda)
+    C) Grafik ko'rinish
+    D) Reverse tartib
+    Javob: B
+
+22. Branch nima?
+    A) Commit
+    B) Loyihaning mustaqil rivojlanish yo'nalishi
+    C) Remote
+    D) Tag
+    Javob: B
+
+23. Yangi branch yaratish buyrug'i?
+    A) git new branch
+    B) git branch branch_name
+    C) git create branch
+    D) git add branch
+    Javob: B
+
+24. Mavjud branchlarni ko'rish buyrug'i?
+    A) git branches
+    B) git branch
+    C) git list branch
+    D) git show branch
+    Javob: B
+
+25. Boshqa branch ga o'tish buyrug'i?
+    A) git switch branch_name yoki git checkout branch_name
+    B) git move branch_name
+    C) git go branch_name
+    D) git change branch_name
+    Javob: A
+
+26. git checkout branch_name nima qiladi?
+    A) Branch o'chiradi
+    B) Belgilangan branch ga o'tadi
+    C) Branch yaratadi
+    D) Branch merge qiladi
+    Javob: B
+
+27. Yangi branch yaratib unga o'tish?
+    A) git branch -b name
+    B) git checkout -b name yoki git switch -c name
+    C) git new -b name
+    D) git create -b name
+    Javob: B
+
+28. Branch ni o'chirish buyrug'i?
+    A) git branch -r name
+    B) git branch -d name
+    C) git delete branch name
+    D) git remove branch name
+    Javob: B
+
+29. git branch -D name -d dan farqi?
+    A) Farqi yo'q
+    B) -D majburiy o'chirish (merge qilinmagan bo'lsa ham)
+    C) -D sekinroq
+    D) -d majburiy
+    Javob: B
+
+30. Default branch nomi odatda qanday?
+    A) master yoki main
+    B) default
+    C) primary
+    D) root
+    Javob: A
+
+31. Merge nima?
+    A) Branch yaratish
+    B) Ikki branch ni birlashtirish
+    C) Branch o'chirish
+    D) Commit yaratish
+    Javob: B
+
+32. Branch ni merge qilish buyrug'i?
+    A) git combine
+    B) git merge branch_name
+    C) git join branch_name
+    D) git unite branch_name
+    Javob: B
+
+33. Merge conflict nima?
+    A) Branch yo'q
+    B) Bir xil faylda bir xil qatorlar turlicha o'zgartirilganda
+    C) Commit yo'q
+    D) Remote yo'q
+    Javob: B
+
+34. Remote repository nima?
+    A) Local repository
+    B) Server dagi repository (GitHub, GitLab, ...)
+    C) Branch
+    D) Commit
+    Javob: B
+
+35. Remote qo'shish buyrug'i?
+    A) git add remote
+    B) git remote add name URL
+    C) git new remote
+    D) git create remote
+    Javob: B
+
+36. Remote larni ko'rish buyrug'i?
+    A) git remotes
+    B) git remote -v
+    C) git list remote
+    D) git show remote
+    Javob: B
+
+37. Default remote nomi odatda qanday?
+    A) server
+    B) origin
+    C) remote
+    D) main
+    Javob: B
+
+38. Local o'zgarishlarni remote ga yuklash buyrug'i?
+    A) git upload
+    B) git push
+    C) git send
+    D) git sync
+    Javob: B
+
+39. git push origin main nima qiladi?
+    A) Pull qiladi
+    B) main branch ni origin remote ga yuklaydi
+    C) Branch yaratadi
+    D) Merge qiladi
+    Javob: B
+
+40. Remote dan o'zgarishlarni olish buyrug'i?
+    A) git get
+    B) git pull
+    C) git download
+    D) git receive
+    Javob: B
+
+41. git pull nima qiladi?
+    A) Faqat yuklab oladi
+    B) fetch + merge (yuklab olib birlashtiradi)
+    C) Faqat merge
+    D) Push qiladi
+    Javob: B
+
+42. git fetch nima qiladi?
+    A) Pull qiladi
+    B) Remote o'zgarishlarni yuklab oladi (merge qilmaydi)
+    C) Push qiladi
+    D) Commit qiladi
+    Javob: B
+
+43. git fetch va git pull farqi?
+    A) Farqi yo'q
+    B) fetch faqat yuklab oladi, pull yuklab olib merge qiladi
+    C) pull faqat yuklab oladi
+    D) fetch merge qiladi
+    Javob: B
+
+44. .gitignore fayli nima uchun?
+    A) Git sozlamalari
+    B) Git tomonidan kuzatilmaydigan fayllar ro'yxati
+    C) Commit xabarlari
+    D) Branch ro'yxati
+    Javob: B
+
+45. .gitignore da *.log nima anglatadi?
+    A) Faqat log fayl
+    B) Barcha .log kengaytmali fayllarni ignore qilish
+    C) Log papkani
+    D) Bitta fayl
+    Javob: B
+
+46. .gitignore da node_modules/ nima anglatadi?
+    A) Bitta fayl
+    B) node_modules papkasini ignore qilish
+    C) Faqat ichidagi fayllar
+    D) Hech narsa
+    Javob: B
+
+47. Faylni Git kuzatuvidan olib tashlash (lekin diskda saqlash)?
+    A) git delete
+    B) git rm --cached filename
+    C) git remove filename
+    D) git untrack filename
+    Javob: B
+
+48. git rm filename nima qiladi?
+    A) Faqat Git dan o'chiradi
+    B) Git dan ham, diskdan ham o'chiradi
+    C) Faqat diskdan o'chiradi
+    D) Ignore qiladi
+    Javob: B
+
+49. Oxirgi commit xabarini o'zgartirish?
+    A) git edit
+    B) git commit --amend
+    C) git modify
+    D) git change
+    Javob: B
+
+50. git commit --amend nima qiladi?
+    A) Yangi commit
+    B) Oxirgi commit ni tahrirlash (xabar yoki fayllar)
+    C) Commit o'chirish
+    D) Merge qilish
+    Javob: B
+
+51. O'zgarishlarni vaqtincha saqlash buyrug'i?
+    A) git save
+    B) git stash
+    C) git temp
+    D) git hold
+    Javob: B
+
+52. git stash nima qiladi?
+    A) Commit qiladi
+    B) O'zgarishlarni vaqtincha saqlab, working directory ni tozalaydi
+    C) Push qiladi
+    D) Pull qiladi
+    Javob: B
+
+53. Stash dan o'zgarishlarni qaytarish?
+    A) git stash get
+    B) git stash pop yoki git stash apply
+    C) git stash return
+    D) git stash restore
+    Javob: B
+
+54. git stash pop va git stash apply farqi?
+    A) Farqi yo'q
+    B) pop stash dan o'chiradi, apply saqlab qoladi
+    C) apply o'chiradi
+    D) pop saqlab qoladi
+    Javob: B
+
+55. Stash ro'yxatini ko'rish?
+    A) git stash show
+    B) git stash list
+    C) git stash all
+    D) git stash view
+    Javob: B
+
+56. git diff nima ko'rsatadi?
+    A) Commit tarixini
+    B) Working directory va staging orasidagi farqni
+    C) Branch ro'yxatini
+    D) Remote ro'yxatini
+    Javob: B
+
+57. git diff --staged nima ko'rsatadi?
+    A) Working directory farqi
+    B) Staging va oxirgi commit orasidagi farqni
+    C) Branch farqi
+    D) Remote farqi
+    Javob: B
+
+58. git diff branch1..branch2 nima?
+    A) Commit farqi
+    B) Ikki branch orasidagi farqni ko'rsatadi
+    C) Fayl farqi
+    D) Remote farqi
+    Javob: B
+
+59. Tag nima?
+    A) Branch
+    B) Commit ga beriladigan doimiy belgi/nom (version uchun)
+    C) Remote
+    D) Stash
+    Javob: B
+
+60. Tag yaratish buyrug'i?
+    A) git label
+    B) git tag tag_name
+    C) git mark
+    D) git version
+    Javob: B
+
+61. Annotated tag yaratish?
+    A) git tag name
+    B) git tag -a tag_name -m "message"
+    C) git tag -m name
+    D) git tag --note name
+    Javob: B
+
+62. Taglarni ko'rish buyrug'i?
+    A) git tags
+    B) git tag
+    C) git list tag
+    D) git show tags
+    Javob: B
+
+63. Tagni remote ga push qilish?
+    A) git push tag
+    B) git push origin tag_name yoki git push --tags
+    C) git send tag
+    D) git upload tag
+    Javob: B
+
+64. git show commit_hash nima qiladi?
+    A) Branch ko'rsatadi
+    B) Commit tafsilotlarini ko'rsatadi (o'zgarishlar bilan)
+    C) Tag ko'rsatadi
+    D) Remote ko'rsatadi
+    Javob: B
+
+65. HEAD nima?
+    A) Branch nomi
+    B) Hozirgi branch yoki commit ga ko'rsatkich
+    C) Remote
+    D) Tag
+    Javob: B
+
+66. HEAD~1 nima anglatadi?
+    A) Keyingi commit
+    B) HEAD dan bir oldingi commit
+    C) HEAD ning o'zi
+    D) Branch
+    Javob: B
+
+67. HEAD~3 nima anglatadi?
+    A) 3 ta commit oldinga
+    B) HEAD dan 3 ta oldingi commit
+    C) 3 ta branch
+    D) 3 ta tag
+    Javob: B
+
+68. git reset nima uchun ishlatiladi?
+    A) Remote reset
+    B) HEAD ni boshqa commit ga ko'chirish
+    C) Branch reset
+    D) Tag reset
+    Javob: B
+
+69. git reset --soft HEAD~1 nima qiladi?
+    A) O'zgarishlarni o'chiradi
+    B) Oxirgi commit ni bekor qiladi, o'zgarishlar staged da qoladi
+    C) Hard reset
+    D) Remote reset
+    Javob: B
+
+70. git reset --hard HEAD~1 nima qiladi?
+    A) Soft reset
+    B) Oxirgi commit va barcha o'zgarishlarni o'chiradi
+    C) O'zgarishlar qoladi
+    D) Faqat commit o'chiradi
+    Javob: B
+
+71. git reset --mixed HEAD~1 nima?
+    A) Hard reset
+    B) Commit bekor, o'zgarishlar working directory da (default)
+    C) Soft reset
+    D) O'zgarishlar yo'qoladi
+    Javob: B
+
+72. git revert nima qiladi?
+    A) Commit o'chiradi
+    B) Commit o'zgarishlarini bekor qiluvchi yangi commit yaratadi
+    C) Branch o'chiradi
+    D) Reset qiladi
+    Javob: B
+
+73. git reset va git revert farqi?
+    A) Farqi yo'q
+    B) reset tarixni o'zgartiradi, revert yangi commit yaratadi
+    C) revert tarixni o'zgartiradi
+    D) reset yangi commit yaratadi
+    Javob: B
+
+74. git checkout -- filename nima qiladi?
+    A) Branch ga o'tadi
+    B) Fayldagi o'zgarishlarni bekor qiladi (oxirgi commit ga qaytaradi)
+    C) Fayl yaratadi
+    D) Fayl o'chiradi
+    Javob: B
+
+75. git restore filename nima? (Git 2.23+)
+    A) Branch restore
+    B) Fayldagi o'zgarishlarni bekor qilish
+    C) Commit restore
+    D) Remote restore
+    Javob: B
+
+76. git restore --staged filename nima?
+    A) Working directory restore
+    B) Faylni staging dan chiqaradi (unstage)
+    C) Commit restore
+    D) Branch restore
+    Javob: B
+
+77. GitHub nima?
+    A) Git ning o'zi
+    B) Git repository uchun hosting xizmati
+    C) Dasturlash tili
+    D) IDE
+    Javob: B
+
+78. GitLab nima?
+    A) Git ning versiyasi
+    B) Git repository hosting va DevOps platformasi
+    C) GitHub ning qismi
+    D) IDE
+    Javob: B
+
+79. Fork nima (GitHub da)?
+    A) Branch
+    B) Boshqa odamning repository sini o'z accountiga nusxalash
+    C) Clone
+    D) Merge
+    Javob: B
+
+80. Pull Request (PR) nima?
+    A) git pull
+    B) O'z o'zgarishlarini boshqa repo/branch ga qo'shish so'rovi
+    C) git request
+    D) git fetch
+    Javob: B
+
+81. git config --global user.name "Name" nima qiladi?
+    A) Branch nomi
+    B) Global Git foydalanuvchi nomini o'rnatadi
+    C) Repo nomi
+    D) Remote nomi
+    Javob: B
+
+82. git config --global user.email "email" nima?
+    A) Remote email
+    B) Git commit larda ko'rinadigan email ni o'rnatadi
+    C) GitHub email
+    D) Branch email
+    Javob: B
+
+83. Git konfiguratsiyalarni ko'rish?
+    A) git settings
+    B) git config --list
+    C) git show config
+    D) git view config
+    Javob: B
+
+84. .git papkasi nima?
+    A) Oddiy papka
+    B) Repository ma'lumotlari saqlanadigan yashirin papka
+    C) Working directory
+    D) Remote papka
+    Javob: B
+
+85. git init qilganda nima yaratiladi?
+    A) Fayllar
+    B) .git papkasi (repository ma'lumotlari)
+    C) Branch
+    D) Remote
+    Javob: B
+
+86. Bare repository nima?
+    A) Bo'sh repo
+    B) Working directory yo'q, faqat Git ma'lumotlari (server uchun)
+    C) Oddiy repo
+    D) Fork
+    Javob: B
+
+87. git init --bare nima yaratadi?
+    A) Oddiy repo
+    B) Bare repository
+    C) Remote
+    D) Branch
+    Javob: B
+
+88. git blame filename nima ko'rsatadi?
+    A) Xatolarni
+    B) Har bir qatorni kim va qachon o'zgartirganini
+    C) Branch tarixini
+    D) Merge tarixini
+    Javob: B
+
+89. git log --graph nima qiladi?
+    A) Oddiy log
+    B) Branch va merge tarixini grafik ko'rinishda
+    C) Faqat commit
+    D) Faqat branch
+    Javob: B
+
+90. git log -p nima ko'rsatadi?
+    A) Faqat commit xabari
+    B) Har bir commit bilan birga diff (o'zgarishlar)
+    C) Faqat hash
+    D) Faqat author
+    Javob: B
+
+91. git log --author="name" nima?
+    A) Barcha commitlar
+    B) Faqat belgilangan author commitlari
+    C) Branch log
+    D) Remote log
+    Javob: B
+
+92. git log --since="2024-01-01" nima?
+    A) Barcha commitlar
+    B) Belgilangan sanadan keyingi commitlar
+    C) Faqat bitta commit
+    D) Branch log
+    Javob: B
+
+93. git shortlog nima ko'rsatadi?
+    A) To'liq log
+    B) Author bo'yicha guruhlangan qisqa log
+    C) Branch log
+    D) Remote log
+    Javob: B
+
+94. Commit hash nima?
+    A) Commit xabari
+    B) Commit ning noyob identifikatori (SHA-1)
+    C) Author nomi
+    D) Branch nomi
+    Javob: B
+
+95. Qisqa commit hash uzunligi odatda qancha?
+    A) 4 belgi
+    B) 7 belgi
+    C) 10 belgi
+    D) 40 belgi
+    Javob: B
+
+96. To'liq commit hash uzunligi qancha?
+    A) 7 belgi
+    B) 40 belgi (SHA-1)
+    C) 20 belgi
+    D) 64 belgi
+    Javob: B
+
+97. git help command nima qiladi?
+    A) Xato ko'rsatadi
+    B) Buyruq haqida yordam ko'rsatadi
+    C) Git versiyasi
+    D) Git sozlamalari
+    Javob: B
+
+98. git --version nima ko'rsatadi?
+    A) Repo versiyasi
+    B) Git versiyasini
+    C) Branch versiyasi
+    D) Commit versiyasi
+    Javob: B
+
+99. SSH key nima uchun ishlatiladi Git da?
+    A) Fayllarni shifrlash
+    B) Remote bilan xavfsiz autentifikatsiya
+    C) Commit imzolash
+    D) Branch himoyalash
+    Javob: B
+
+100. HTTPS va SSH clone farqi?
+     A) Farqi yo'q
+     B) SSH key-based auth, HTTPS username/password yoki token
+     C) HTTPS tezroq
+     D) SSH sekinroq
+     Javob: B
+
+=============================================================
+                        YAKUNLANDI
+=============================================================

@@ -28,7 +28,14 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error: AxiosError) => {
-    if (error.response?.status === 401) {
+    // Login va register endpointlarida 401 xatosi bilan redirect qilmaslik
+    const url = error.config?.url || '';
+    const isAuthEndpoint = url.includes('/auth/login') || 
+                           url.includes('/auth/register') || 
+                           url.includes('/auth/forgot-password') ||
+                           url.includes('/auth/reset-password');
+    
+    if (error.response?.status === 401 && !isAuthEndpoint) {
       useAuthStore.getState().logout();
       if (typeof window !== 'undefined') {
         window.location.href = '/auth/login';
@@ -40,10 +47,10 @@ api.interceptors.response.use(
 
 // ==================== AUTH ====================
 export const authApi = {
-  register: (data: { email: string; username: string; password: string; fullName: string }) =>
+  register: (data: { email: string; username: string; password: string; fullName: string; telegramPhone?: string }) =>
     api.post('/auth/register', data),
   
-  login: (data: { email: string; password: string }) =>
+  login: (data: { emailOrUsername: string; password: string }) =>
     api.post('/auth/login', data),
   
   telegramAuth: (initData: string) =>
@@ -54,6 +61,12 @@ export const authApi = {
   
   changePassword: (data: { currentPassword: string; newPassword: string }) =>
     api.patch('/auth/change-password', data),
+
+  forgotPassword: (email: string) =>
+    api.post('/auth/forgot-password', { email }),
+
+  resetPassword: (data: { email: string; code: string; newPassword: string }) =>
+    api.post('/auth/reset-password', data),
 };
 
 // ==================== USERS ====================
@@ -118,8 +131,8 @@ export const leaderboardApi = {
 
 // ==================== AI ====================
 export const aiApi = {
-  chat: (message: string, categoryId?: string) =>
-    api.post('/ai/chat', { message, categoryId }),
+  chat: (message: string, categorySlug?: string) =>
+    api.post('/ai/chat', { message, categorySlug }),
   
   getHistory: (page = 1, limit = 50) =>
     api.get(`/ai/history?page=${page}&limit=${limit}`),
@@ -138,6 +151,9 @@ export const achievementsApi = {
   
   getMy: () =>
     api.get('/achievements/my'),
+
+  check: () =>
+    api.post('/achievements/check'),
 };
 
 // ==================== NOTIFICATIONS ====================
@@ -160,12 +176,29 @@ export const notificationsApi = {
 
 // ==================== UPLOAD ====================
 export const uploadApi = {
-  uploadAvatar: (file: File) => {
+  uploadAvatar: async (file: File) => {
     const formData = new FormData();
     formData.append('file', file);
-    return api.post('/upload/avatar', formData, {
-      headers: { 'Content-Type': 'multipart/form-data' },
+    
+    // Token olish store'dan
+    const token = useAuthStore.getState().token;
+    
+    // Axios FormData yuborilganda Content-Type ni o'zi qo'yadi, 
+    // lekin biz default 'application/json' ni override qilishimiz kerak
+    return axios.post(`${API_URL}/upload/avatar`, formData, {
+      headers: {
+        ...(token && { Authorization: `Bearer ${token}` }),
+        // Content-Type ni umuman qo'ymaslik - axios FormData uchun avtomatik multipart/form-data + boundary qo'yadi
+      },
     });
+  },
+};
+
+// ==================== STATS ====================
+export const statsApi = {
+  getPublic: async () => {
+    const response = await api.get('/stats/public');
+    return response;
   },
 };
 

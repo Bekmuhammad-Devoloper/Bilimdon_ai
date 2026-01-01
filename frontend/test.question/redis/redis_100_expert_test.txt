@@ -1,0 +1,702 @@
+REDIS - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. Redis single-threaded model?
+   A) Multi-threaded
+   B) Event loop handles all commands sequentially
+   C) Thread per client
+   D) No threading
+   Javob: B
+
+2. IO threads in Redis 6+?
+   A) No IO threads
+   B) Parallel network IO, serial command execution
+   C) Parallel commands
+   D) Single IO
+   Javob: B
+
+3. Memory management policy?
+   A) No policy
+   B) maxmemory-policy for eviction
+   C) Auto manage
+   D) Manual only
+   Javob: B
+
+4. LRU vs LFU eviction?
+   A) Same
+   B) LRU=recent access, LFU=frequency
+   C) LFU=recent
+   D) No difference
+   Javob: B
+
+5. volatile-lru policy?
+   A) All keys
+   B) Evict LRU keys with TTL only
+   C) No TTL
+   D) Volatile all
+   Javob: B
+
+6. allkeys-lfu policy?
+   A) TTL only
+   B) Evict least frequently used from all keys
+   C) Recent keys
+   D) No eviction
+   Javob: B
+
+7. noeviction policy?
+   A) Evict all
+   B) Return error when memory full
+   C) Random evict
+   D) No error
+   Javob: B
+
+8. Redis persistence RDB?
+   A) Log-based
+   B) Point-in-time snapshots
+   C) Continuous
+   D) No snapshot
+   Javob: B
+
+9. RDB BGSAVE fork?
+   A) Blocking save
+   B) Copy-on-write child process
+   C) No fork
+   D) Main thread
+   Javob: B
+
+10. AOF persistence?
+    A) Snapshot
+    B) Append-only log of commands
+    C) No logging
+    D) Sync only
+    Javob: B
+
+11. AOF fsync policies?
+    A) No sync
+    B) always, everysec, no
+    C) One policy
+    D) Manual sync
+    Javob: B
+
+12. AOF rewrite?
+    A) No rewrite
+    B) Compact AOF file in background
+    C) Manual compact
+    D) Append only
+    Javob: B
+
+13. Hybrid persistence?
+    A) One mode
+    B) RDB preamble + AOF tail
+    C) No hybrid
+    D) RDB only
+    Javob: B
+
+14. Redis transactions MULTI/EXEC?
+    A) Rollback
+    B) Atomic execution of queued commands
+    C) No atomic
+    D) Distributed
+    Javob: B
+
+15. WATCH command purpose?
+    A) No watch
+    B) Optimistic locking for transactions
+    C) Pessimistic lock
+    D) No lock
+    Javob: B
+
+16. Transaction abort with WATCH?
+    A) Continue
+    B) EXEC returns nil if watched key changed
+    C) No abort
+    D) Error throw
+    Javob: B
+
+17. Lua scripting EVAL?
+    A) No Lua
+    B) Atomic script execution
+    C) Not atomic
+    D) JavaScript
+    Javob: B
+
+18. EVALSHA command?
+    A) Eval script
+    B) Execute cached script by SHA1
+    C) No cache
+    D) New script
+    Javob: B
+
+19. SCRIPT LOAD?
+    A) Execute script
+    B) Cache script and return SHA1
+    C) No load
+    D) Delete script
+    Javob: B
+
+20. Redis Functions (7.0+)?
+    A) Lua only
+    B) Persistent named functions with library
+    C) No functions
+    D) Temporary
+    Javob: B
+
+21. FUNCTION LOAD?
+    A) Script load
+    B) Register function library
+    C) No load
+    D) Execute
+    Javob: B
+
+22. Redis Pub/Sub?
+    A) Persistent
+    B) Fire-and-forget messaging
+    C) Guaranteed delivery
+    D) Queue based
+    Javob: B
+
+23. PSUBSCRIBE command?
+    A) Subscribe
+    B) Pattern-based subscription
+    C) Exact match
+    D) No pattern
+    Javob: B
+
+24. Pub/Sub limitations?
+    A) No limits
+    B) No persistence, no acknowledgment
+    C) Full queue
+    D) All features
+    Javob: B
+
+25. Redis Streams data structure?
+    A) Pub/Sub
+    B) Append-only log with consumer groups
+    C) No log
+    D) List only
+    Javob: B
+
+26. XADD command?
+    A) List push
+    B) Append entry to stream
+    C) No append
+    D) Read stream
+    Javob: B
+
+27. XREAD BLOCK?
+    A) Non-blocking
+    B) Wait for new entries
+    C) No wait
+    D) Immediate return
+    Javob: B
+
+28. XREADGROUP command?
+    A) Solo read
+    B) Read as consumer group member
+    C) No group
+    D) All consumers
+    Javob: B
+
+29. Stream consumer groups?
+    A) No groups
+    B) Distribute messages among consumers
+    C) Broadcast
+    D) Single consumer
+    Javob: B
+
+30. XACK command?
+    A) No ack
+    B) Acknowledge processed message
+    C) Auto ack
+    D) Nack
+    Javob: B
+
+31. XPENDING command?
+    A) No pending
+    B) View unacknowledged messages
+    C) All messages
+    D) Acked only
+    Javob: B
+
+32. XCLAIM command?
+    A) No claim
+    B) Take ownership of pending messages
+    C) Release
+    D) Delete
+    Javob: B
+
+33. Stream trimming MAXLEN?
+    A) No trim
+    B) Limit stream length
+    C) Unlimited
+    D) Manual delete
+    Javob: B
+
+34. MINID trimming?
+    A) Maxlen
+    B) Remove entries older than ID
+    C) No min
+    D) Keep all
+    Javob: B
+
+35. HyperLogLog structure?
+    A) List
+    B) Probabilistic cardinality estimation
+    C) Exact count
+    D) Set
+    Javob: B
+
+36. HyperLogLog error rate?
+    A) 0%
+    B) ~0.81% standard error
+    C) 10%
+    D) No error
+    Javob: B
+
+37. PFADD and PFCOUNT?
+    A) Set operations
+    B) Add element and count unique
+    C) No count
+    D) List ops
+    Javob: B
+
+38. Bloom filter (RedisBloom)?
+    A) Built-in
+    B) Probabilistic membership test
+    C) Exact test
+    D) No bloom
+    Javob: B
+
+39. BF.ADD and BF.EXISTS?
+    A) Set ops
+    B) Add and check membership
+    C) No check
+    D) List ops
+    Javob: B
+
+40. Cuckoo filter vs Bloom?
+    A) Same
+    B) Cuckoo supports deletion
+    C) Bloom supports deletion
+    D) No difference
+    Javob: B
+
+41. Sorted set ZADD options NX/XX?
+    A) No options
+    B) NX=only new, XX=only existing
+    C) NX=existing
+    D) Same
+    Javob: B
+
+42. ZRANGEBYLEX?
+    A) By score
+    B) Lexicographic range query
+    C) By rank
+    D) No lex
+    Javob: B
+
+43. ZRANGESTORE (6.2+)?
+    A) No store
+    B) Store range result in new key
+    C) In-place
+    D) No result
+    Javob: B
+
+44. GEOADD command?
+    A) No geo
+    B) Add geospatial items with coordinates
+    C) List add
+    D) Set add
+    Javob: B
+
+45. GEOSEARCH (6.2+)?
+    A) Old geo commands
+    B) Search by radius or box
+    C) No search
+    D) Exact only
+    Javob: B
+
+46. GEODIST calculation?
+    A) Cartesian
+    B) Haversine formula distance
+    C) Manhattan
+    D) No distance
+    Javob: B
+
+47. Redis Cluster architecture?
+    A) Master-slave
+    B) Multi-master with hash slots
+    C) Single master
+    D) No cluster
+    Javob: B
+
+48. Hash slot count?
+    A) 1000
+    B) 16384 slots
+    C) Unlimited
+    D) 256
+    Javob: B
+
+49. Cluster key slot calculation?
+    A) Random
+    B) CRC16 mod 16384
+    C) Hash mod
+    D) Sequential
+    Javob: B
+
+50. Hash tag for slot assignment?
+    A) No tag
+    B) {tag} in key for co-location
+    C) Prefix
+    D) Suffix
+    Javob: B
+
+51. MOVED redirect?
+    A) Stay
+    B) Key moved to different node
+    C) Error
+    D) No redirect
+    Javob: B
+
+52. ASK redirect?
+    A) Permanent move
+    B) Slot in migration, temporary redirect
+    C) No migration
+    D) Error
+    Javob: B
+
+53. Cluster resharding?
+    A) No reshard
+    B) Move slots between nodes online
+    C) Offline only
+    D) Delete slots
+    Javob: B
+
+54. CLUSTER FAILOVER command?
+    A) Automatic only
+    B) Manual replica promotion
+    C) No failover
+    D) Restart
+    Javob: B
+
+55. Redis Sentinel purpose?
+    A) Cluster
+    B) HA for master-replica with failover
+    C) No HA
+    D) Monitoring only
+    Javob: B
+
+56. Sentinel quorum?
+    A) No quorum
+    B) Minimum sentinels to agree on failover
+    C) All agree
+    D) One agree
+    Javob: B
+
+57. Sentinel MONITOR command?
+    A) No monitor
+    B) Start monitoring a master
+    C) Stop monitor
+    D) Query
+    Javob: B
+
+58. Replica-of-replica?
+    A) Not allowed
+    B) Chained replication supported
+    C) No chain
+    D) Master only
+    Javob: B
+
+59. REPLICAOF NO ONE?
+    A) Stay replica
+    B) Promote to master
+    C) No effect
+    D) Stop
+    Javob: B
+
+60. Diskless replication?
+    A) Disk based
+    B) Stream RDB directly to replica
+    C) No RDB
+    D) No replication
+    Javob: B
+
+61. Client-side caching protocol?
+    A) No protocol
+    B) Invalidation messages via RESP3
+    C) RESP2
+    D) Polling
+    Javob: B
+
+62. CLIENT TRACKING ON?
+    A) No tracking
+    B) Enable client-side caching
+    C) Disable
+    D) Reset
+    Javob: B
+
+63. OPTIN vs OPTOUT tracking?
+    A) Same
+    B) OPTIN=explicit, OPTOUT=all cached
+    C) OPTOUT=explicit
+    D) No difference
+    Javob: B
+
+64. NOLOOP option?
+    A) Loop
+    B) Don't send invalidation for own writes
+    C) Send all
+    D) No option
+    Javob: B
+
+65. Redis memory optimization?
+    A) No optimization
+    B) ziplist, intset, listpack encodings
+    C) Plain only
+    D) Fixed encoding
+    Javob: B
+
+66. hash-max-ziplist-entries?
+    A) No limit
+    B) Threshold for ziplist to hash encoding
+    C) Hash limit
+    D) Entry limit
+    Javob: B
+
+67. MEMORY DOCTOR?
+    A) No doctor
+    B) Memory usage report and advice
+    C) Stats only
+    D) No report
+    Javob: B
+
+68. MEMORY USAGE command?
+    A) No memory
+    B) Key memory consumption estimate
+    C) Total only
+    D) No estimate
+    Javob: B
+
+69. activedefrag configuration?
+    A) Manual
+    B) Background memory defragmentation
+    C) No defrag
+    D) Foreground
+    Javob: B
+
+70. OBJECT ENCODING?
+    A) No object
+    B) View internal encoding of key
+    C) No encoding
+    D) Set encoding
+    Javob: B
+
+71. SCAN cursor iteration?
+    A) KEYS blocking
+    B) Non-blocking incremental iteration
+    C) Blocking
+    D) No cursor
+    Javob: B
+
+72. SCAN COUNT hint?
+    A) Exact count
+    B) Approximate work per call
+    C) No hint
+    D) Limit
+    Javob: B
+
+73. HSCAN, SSCAN, ZSCAN?
+    A) No variants
+    B) Cursor iteration for hash/set/zset
+    C) SCAN only
+    D) Keys only
+    Javob: B
+
+74. OBJECT FREQ for LFU?
+    A) No freq
+    B) Access frequency counter
+    C) LRU only
+    D) No counter
+    Javob: B
+
+75. OBJECT IDLETIME for LRU?
+    A) No idle
+    B) Seconds since last access
+    C) LFU only
+    D) No time
+    Javob: B
+
+76. DEBUG SLEEP?
+    A) No debug
+    B) Block server for testing
+    C) Client sleep
+    D) No block
+    Javob: B
+
+77. SLOWLOG GET?
+    A) No slowlog
+    B) Retrieve slow queries log
+    C) Fast log
+    D) No retrieve
+    Javob: B
+
+78. LATENCY DOCTOR?
+    A) No latency
+    B) Analyze and diagnose latency
+    C) Stats only
+    D) No diagnosis
+    Javob: B
+
+79. LATENCY HISTORY?
+    A) No history
+    B) Latency events for specific event
+    C) All events
+    D) No events
+    Javob: B
+
+80. CLIENT PAUSE?
+    A) No pause
+    B) Block all client commands
+    C) One client
+    D) Resume
+    Javob: B
+
+81. CLIENT NO-EVICT?
+    A) Evict
+    B) Protect client from memory limit eviction
+    C) No protection
+    D) All evict
+    Javob: B
+
+82. ACL SETUSER?
+    A) No ACL
+    B) Create/modify user permissions
+    C) Delete user
+    D) List users
+    Javob: B
+
+83. ACL command categories?
+    A) No categories
+    B) @read, @write, @admin, etc.
+    C) One category
+    D) Commands only
+    Javob: B
+
+84. ACL key patterns?
+    A) All keys
+    B) ~pattern for key access control
+    C) No patterns
+    D) Exact only
+    Javob: B
+
+85. TLS/SSL encryption?
+    A) No TLS
+    B) tls-port configuration
+    C) Built-in default
+    D) No encryption
+    Javob: B
+
+86. tls-auth-clients?
+    A) No auth
+    B) Require client certificates
+    C) Server only
+    D) No certificate
+    Javob: B
+
+87. Redis module API?
+    A) No modules
+    B) Extend Redis with C modules
+    C) Lua only
+    D) No extension
+    Javob: B
+
+88. RedisJSON module?
+    A) Built-in
+    B) Native JSON document storage
+    C) String only
+    D) No JSON
+    Javob: B
+
+89. RediSearch module?
+    A) Built-in
+    B) Full-text search and secondary indexing
+    C) No search
+    D) Primary only
+    Javob: B
+
+90. RedisTimeSeries module?
+    A) Built-in
+    B) Time-series data with downsampling
+    C) No time-series
+    D) Manual
+    Javob: B
+
+91. RedisGraph module?
+    A) Built-in
+    B) Graph database with Cypher queries
+    C) No graph
+    D) SQL only
+    Javob: B
+
+92. Redis RESP3 protocol?
+    A) RESP2 only
+    B) New data types and push notifications
+    C) No push
+    D) Same as RESP2
+    Javob: B
+
+93. HELLO command?
+    A) No hello
+    B) Switch protocol version
+    C) Greeting
+    D) No switch
+    Javob: B
+
+94. CLIENT INFO?
+    A) No info
+    B) Current connection information
+    C) All clients
+    D) No connection
+    Javob: B
+
+95. DEBUG SEGFAULT?
+    A) No debug
+    B) Crash server for testing
+    C) Safe
+    D) No crash
+    Javob: B
+
+96. SHUTDOWN NOSAVE?
+    A) Save always
+    B) Exit without persistence
+    C) Save and exit
+    D) No exit
+    Javob: B
+
+97. BGREWRITEAOF?
+    A) Blocking
+    B) Background AOF rewrite
+    C) No background
+    D) RDB
+    Javob: B
+
+98. LASTSAVE timestamp?
+    A) No timestamp
+    B) Last successful RDB save time
+    C) AOF time
+    D) No save
+    Javob: B
+
+99. CONFIG REWRITE?
+    A) No rewrite
+    B) Persist runtime config to file
+    C) Reset config
+    D) Load config
+    Javob: B
+
+100. MIGRATE command?
+     A) No migrate
+     B) Atomically transfer key to another instance
+     C) Copy only
+     D) No transfer
+     Javob: B

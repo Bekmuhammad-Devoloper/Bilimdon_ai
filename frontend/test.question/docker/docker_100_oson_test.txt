@@ -1,0 +1,706 @@
+DOCKER TEXNOLOGIYASI - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+=============================================================
+
+1. Docker nima?
+   A) Operatsion tizim
+   B) Konteynerlashtirish platformasi
+   C) Dasturlash tili
+   D) Ma'lumotlar bazasi
+   Javob: B
+
+2. Docker qaysi yilda yaratilgan?
+   A) 2010
+   B) 2013
+   C) 2015
+   D) 2018
+   Javob: B
+
+3. Docker qaysi kompaniya tomonidan yaratilgan?
+   A) Google
+   B) dotCloud (keyinchalik Docker, Inc.)
+   C) Microsoft
+   D) Amazon
+   Javob: B
+
+4. Docker image nima?
+   A) Ishlaydigan konteyner
+   B) Konteyner yaratish uchun shablon
+   C) Log fayli
+   D) Tarmoq sozlamasi
+   Javob: B
+
+5. Docker container nima?
+   A) Image fayli
+   B) Image dan yaratilgan ishlaydigan instance
+   C) Dockerfile
+   D) Volume
+   Javob: B
+
+6. Dockerfile nima?
+   A) Log fayli
+   B) Image yaratish uchun ko'rsatmalar fayli
+   C) Konfiguratsiya fayli
+   D) Ma'lumotlar bazasi
+   Javob: B
+
+7. Docker Hub nima?
+   A) Lokal repository
+   B) Docker imagelar uchun public registry
+   C) IDE
+   D) Monitoring tool
+   Javob: B
+
+8. Docker versiyasini tekshirish buyrug'i qaysi?
+   A) docker --version
+   B) docker -v
+   C) Ikkalasi ham to'g'ri
+   D) docker version check
+   Javob: C
+
+9. Docker image ni yuklab olish buyrug'i?
+   A) docker download
+   B) docker pull
+   C) docker get
+   D) docker fetch
+   Javob: B
+
+10. Lokal imagelni ko'rish buyrug'i?
+    A) docker images
+    B) docker list
+    C) docker show
+    D) docker view
+    Javob: A
+
+11. Konteyner ishga tushirish buyrug'i?
+    A) docker start
+    B) docker run
+    C) docker execute
+    D) docker begin
+    Javob: B
+
+12. Ishlaydigan konteynerlarni ko'rish buyrug'i?
+    A) docker containers
+    B) docker ps
+    C) docker list
+    D) docker show
+    Javob: B
+
+13. Barcha konteynerlarni (to'xtagan ham) ko'rish?
+    A) docker ps --all
+    B) docker ps -a
+    C) Ikkalasi ham to'g'ri
+    D) docker ps --stopped
+    Javob: C
+
+14. Konteynerni to'xtatish buyrug'i?
+    A) docker kill
+    B) docker stop
+    C) docker end
+    D) docker pause
+    Javob: B
+
+15. To'xtatilgan konteynerni ishga tushirish?
+    A) docker run
+    B) docker start
+    C) docker resume
+    D) docker continue
+    Javob: B
+
+16. Konteynerni o'chirish buyrug'i?
+    A) docker delete
+    B) docker rm
+    C) docker remove
+    D) docker erase
+    Javob: B
+
+17. Image ni o'chirish buyrug'i?
+    A) docker rm
+    B) docker rmi
+    C) docker delete image
+    D) docker remove image
+    Javob: B
+
+18. docker run -d flag nima qiladi?
+    A) Debug rejimi
+    B) Detached mode (background da ishlaydi)
+    C) Delete after stop
+    D) Development mode
+    Javob: B
+
+19. docker run -it flaglari nima uchun?
+    A) Image tag
+    B) Interactive terminal (interaktiv rejim)
+    C) Install tools
+    D) Internal test
+    Javob: B
+
+20. docker run --name flag nima uchun?
+    A) Image nomi
+    B) Konteynerga nom berish
+    C) Network nomi
+    D) Volume nomi
+    Javob: B
+
+21. docker run -p 8080:80 nima qiladi?
+    A) Parol o'rnatadi
+    B) Host 8080 portini konteyner 80 portiga bog'laydi
+    C) 8080 ta port ochadi
+    D) Priority o'rnatadi
+    Javob: B
+
+22. docker exec buyrug'i nima uchun?
+    A) Konteyner yaratish
+    B) Ishlaydigan konteynerda buyruq bajarish
+    C) Image yaratish
+    D) Konteyner o'chirish
+    Javob: B
+
+23. docker exec -it container_name bash nima qiladi?
+    A) Konteyner yaratadi
+    B) Konteyner ichiga interaktiv shell ochadi
+    C) Bash o'rnatadi
+    D) Konteyner o'chiradi
+    Javob: B
+
+24. docker logs buyrug'i nima uchun?
+    A) Login qilish
+    B) Konteyner loglarini ko'rish
+    C) Log fayl yaratish
+    D) Log o'chirish
+    Javob: B
+
+25. docker logs -f flag nima qiladi?
+    A) Filter qiladi
+    B) Loglarni real-time kuzatadi (follow)
+    C) Format qiladi
+    D) File ga yozadi
+    Javob: B
+
+26. docker build buyrug'i nima qiladi?
+    A) Konteyner yaratadi
+    B) Dockerfile dan image yaratadi
+    C) Network yaratadi
+    D) Volume yaratadi
+    Javob: B
+
+27. docker build -t flag nima uchun?
+    A) Test mode
+    B) Image ga tag (nom) berish
+    C) Time limit
+    D) Terminal mode
+    Javob: B
+
+28. docker build . da nuqta (.) nima?
+    A) Joriy papka
+    B) Build context (Dockerfile joylashgan joy)
+    C) Hidden files
+    D) All files
+    Javob: B
+
+29. Dockerfile da FROM instruksiyasi nima?
+    A) Fayldan o'qish
+    B) Base image ni belgilash
+    C) Forma yaratish
+    D) Forward qilish
+    Javob: B
+
+30. Dockerfile da RUN instruksiyasi nima qiladi?
+    A) Konteyner ishga tushiradi
+    B) Build vaqtida buyruq bajaradi
+    C) Dastur ishga tushiradi
+    D) Test bajaradi
+    Javob: B
+
+31. Dockerfile da CMD instruksiyasi nima?
+    A) Comment
+    B) Konteyner ishga tushganda default buyruq
+    C) Copy command
+    D) Check memory
+    Javob: B
+
+32. Dockerfile da COPY instruksiyasi nima qiladi?
+    A) Konteynerdan nusxa oladi
+    B) Host dan konteynerga fayl nusxalaydi
+    C) Image nusxalaydi
+    D) Volume nusxalaydi
+    Javob: B
+
+33. Dockerfile da WORKDIR instruksiyasi nima?
+    A) Worker directory
+    B) Ishchi papkani o'rnatadi
+    C) Windows directory
+    D) Web directory
+    Javob: B
+
+34. Dockerfile da EXPOSE instruksiyasi nima qiladi?
+    A) Portni ochadi
+    B) Konteyner qaysi portni ishlatishini dokumentatsiya qiladi
+    C) Portni yopadi
+    D) Export qiladi
+    Javob: B
+
+35. Dockerfile da ENV instruksiyasi nima?
+    A) Envelope
+    B) Environment variable o'rnatadi
+    C) Entry point
+    D) Error handling
+    Javob: B
+
+36. ENTRYPOINT va CMD farqi nima?
+    A) Farqi yo'q
+    B) ENTRYPOINT o'zgartirib bo'lmaydi, CMD override qilish mumkin
+    C) CMD o'zgartirib bo'lmaydi
+    D) ENTRYPOINT faqat shell uchun
+    Javob: B
+
+37. Docker volume nima?
+    A) Tovush sozlamasi
+    B) Ma'lumotlarni saqlash uchun persistent storage
+    C) Tarmoq sozlamasi
+    D) CPU sozlamasi
+    Javob: B
+
+38. docker volume create buyrug'i nima qiladi?
+    A) Konteyner yaratadi
+    B) Yangi volume yaratadi
+    C) Image yaratadi
+    D) Network yaratadi
+    Javob: B
+
+39. docker volume ls buyrug'i nima?
+    A) Volume yaratadi
+    B) Volumelar ro'yxatini ko'rsatadi
+    C) Volume o'chiradi
+    D) Volume nusxalaydi
+    Javob: B
+
+40. docker run -v host:container nima qiladi?
+    A) Version ko'rsatadi
+    B) Host papkani konteynerga mount qiladi
+    C) Verbose mode
+    D) Virtual mode
+    Javob: B
+
+41. Docker network nima uchun?
+    A) Internet ulanish
+    B) Konteynerlar orasida aloqa
+    C) VPN
+    D) Firewall
+    Javob: B
+
+42. docker network ls buyrug'i nima?
+    A) Network yaratadi
+    B) Networklar ro'yxatini ko'rsatadi
+    C) Network o'chiradi
+    D) Network sozlaydi
+    Javob: B
+
+43. docker network create buyrug'i nima qiladi?
+    A) Konteyner yaratadi
+    B) Yangi network yaratadi
+    C) Image yaratadi
+    D) Volume yaratadi
+    Javob: B
+
+44. Docker da default network driver qaysi?
+    A) host
+    B) bridge
+    C) overlay
+    D) none
+    Javob: B
+
+45. bridge network nima?
+    A) Tashqi tarmoq
+    B) Bitta host dagi konteynerlarni bog'lovchi default network
+    C) Overlay network
+    D) Host network
+    Javob: B
+
+46. host network driver nima qiladi?
+    A) Bridge yaratadi
+    B) Konteyner host network stack ini ishlatadi
+    C) Overlay yaratadi
+    D) Tarmoqni o'chiradi
+    Javob: B
+
+47. none network driver nima?
+    A) Default network
+    B) Tarmoqni o'chiradi (isolated)
+    C) Bridge network
+    D) Host network
+    Javob: B
+
+48. docker inspect buyrug'i nima uchun?
+    A) Kodni tekshirish
+    B) Konteyner/image haqida batafsil ma'lumot
+    C) Security tekshirish
+    D) Performance tekshirish
+    Javob: B
+
+49. docker stats buyrug'i nima ko'rsatadi?
+    A) Statistika
+    B) Konteynerlar resurs ishlatishini real-time
+    C) Network stats
+    D) Disk stats
+    Javob: B
+
+50. docker system df buyrug'i nima?
+    A) Disk format
+    B) Docker disk usage ko'rsatadi
+    C) System delete
+    D) Docker file
+    Javob: B
+
+51. docker system prune buyrug'i nima qiladi?
+    A) Hech narsa
+    B) Ishlatilmagan resurslarni (image, container, network) o'chiradi
+    C) System restart
+    D) System backup
+    Javob: B
+
+52. docker image prune nima qiladi?
+    A) Image yaratadi
+    B) Dangling (foydalanilmagan) imagelarni o'chiradi
+    C) Image nusxalaydi
+    D) Image yangilaydi
+    Javob: B
+
+53. Dangling image nima?
+    A) Ishlatilayotgan image
+    B) Tag yo'q, hech qanday konteyner ishlatmayotgan image
+    C) Base image
+    D) Official image
+    Javob: B
+
+54. docker tag buyrug'i nima qiladi?
+    A) Tag o'chiradi
+    B) Imagega yangi tag (nom) beradi
+    C) Konteyner tag
+    D) Volume tag
+    Javob: B
+
+55. docker push buyrug'i nima?
+    A) Pull qiladi
+    B) Imageni registry ga yuklaydi
+    C) Konteyner push
+    D) Volume push
+    Javob: B
+
+56. docker login buyrug'i nima uchun?
+    A) Konteynerga kirish
+    B) Docker registry ga autentifikatsiya
+    C) System login
+    D) Network login
+    Javob: B
+
+57. docker logout buyrug'i nima qiladi?
+    A) Konteynerdan chiqish
+    B) Registry dan chiqish
+    C) System shutdown
+    D) Network disconnect
+    Javob: B
+
+58. docker history buyrug'i nima ko'rsatadi?
+    A) Buyruqlar tarixi
+    B) Image layerlari tarixi
+    C) Konteyner tarixi
+    D) Login tarixi
+    Javob: B
+
+59. docker diff buyrug'i nima?
+    A) Ikki image farqi
+    B) Konteyner filesystem dagi o'zgarishlar
+    C) Version farqi
+    D) Config farqi
+    Javob: B
+
+60. docker cp buyrug'i nima qiladi?
+    A) Konteyner yaratadi
+    B) Host va konteyner orasida fayl nusxalaydi
+    C) Image nusxalaydi
+    D) Volume nusxalaydi
+    Javob: B
+
+61. docker rename buyrug'i nima?
+    A) Image qayta nomlaydi
+    B) Konteynerni qayta nomlaydi
+    C) Volume qayta nomlaydi
+    D) Network qayta nomlaydi
+    Javob: B
+
+62. docker pause buyrug'i nima qiladi?
+    A) Konteyner o'chiradi
+    B) Konteyner jarayonlarini to'xtatib turadi
+    C) Image pause
+    D) Network pause
+    Javob: B
+
+63. docker unpause buyrug'i nima?
+    A) Konteyner o'chiradi
+    B) Pause qilingan konteynerni davom ettiradi
+    C) Image unpause
+    D) Network unpause
+    Javob: B
+
+64. docker kill buyrug'i docker stop dan farqi?
+    A) Farqi yo'q
+    B) kill SIGKILL (darhol), stop SIGTERM (graceful)
+    C) stop tezroq
+    D) kill sekinroq
+    Javob: B
+
+65. docker restart buyrug'i nima qiladi?
+    A) Docker daemon restart
+    B) Konteynerni stop va start qiladi
+    C) Image restart
+    D) System restart
+    Javob: B
+
+66. docker wait buyrug'i nima?
+    A) Kutmaydi
+    B) Konteyner to'xtaguncha kutadi va exit code qaytaradi
+    C) Image wait
+    D) Network wait
+    Javob: B
+
+67. docker attach buyrug'i nima qiladi?
+    A) Volume ulaydi
+    B) Ishlaydigan konteynerning STDIN/STDOUT ga ulanadi
+    C) Network ulaydi
+    D) Image ulaydi
+    Javob: B
+
+68. docker top buyrug'i nima ko'rsatadi?
+    A) Top images
+    B) Konteyner ichidagi jarayonlarni
+    C) Top containers
+    D) Top networks
+    Javob: B
+
+69. docker port buyrug'i nima?
+    A) Port ochadi
+    B) Konteyner port mapping ini ko'rsatadi
+    C) Port yopadi
+    D) Port yaratadi
+    Javob: B
+
+70. .dockerignore fayli nima uchun?
+    A) Docker ignore qiladi
+    B) Build context dan chiqariladigan fayllar ro'yxati
+    C) Image ignore
+    D) Container ignore
+    Javob: B
+
+71. Docker layer nima?
+    A) Network layer
+    B) Image ning read-only qatlami
+    C) Security layer
+    D) Application layer
+    Javob: B
+
+72. Docker image layerlari qanday saqlanadi?
+    A) Bitta fayl sifatida
+    B) Union file system orqali
+    C) Zip arxiv sifatida
+    D) Database da
+    Javob: B
+
+73. Konteyner qo'shadigan layer qanday nomlanadi?
+    A) Base layer
+    B) Writable layer (container layer)
+    C) Read-only layer
+    D) Network layer
+    Javob: B
+
+74. docker save buyrug'i nima qiladi?
+    A) Konteyner saqlaydi
+    B) Imageni tar arxivga eksport qiladi
+    C) Volume saqlaydi
+    D) Network saqlaydi
+    Javob: B
+
+75. docker load buyrug'i nima?
+    A) Konteyner yuklaydi
+    B) tar arxivdan image yuklaydi
+    C) Volume yuklaydi
+    D) Network yuklaydi
+    Javob: B
+
+76. docker export buyrug'i nima?
+    A) Image eksport
+    B) Konteyner filesystem ini tar ga eksport qiladi
+    C) Volume eksport
+    D) Network eksport
+    Javob: B
+
+77. docker import buyrug'i nima qiladi?
+    A) Konteyner import
+    B) tar arxivdan image yaratadi
+    C) Volume import
+    D) Network import
+    Javob: B
+
+78. docker commit buyrug'i nima?
+    A) Git commit
+    B) Konteynerdan yangi image yaratadi
+    C) Volume commit
+    D) Network commit
+    Javob: B
+
+79. Alpine Linux nima uchun Docker da mashhur?
+    A) Eng katta
+    B) Juda kichik hajm (~5MB)
+    C) Eng tez
+    D) Eng xavfsiz
+    Javob: B
+
+80. docker run --rm flag nima qiladi?
+    A) Remote mode
+    B) Konteyner to'xtaganda avtomatik o'chiradi
+    C) Read mode
+    D) Root mode
+    Javob: B
+
+81. docker run -e flag nima uchun?
+    A) Execute
+    B) Environment variable o'rnatish
+    C) Error handling
+    D) Exit code
+    Javob: B
+
+82. docker run --env-file flag nima?
+    A) Error file
+    B) Environment variables fayldan o'qish
+    C) Execute file
+    D) Export file
+    Javob: B
+
+83. docker run -w flag nima?
+    A) Wait
+    B) Working directory o'rnatish
+    C) Write mode
+    D) Windows mode
+    Javob: B
+
+84. docker run --network flag nima uchun?
+    A) Network o'chirish
+    B) Konteyner qaysi networkka ulanishini belgilash
+    C) Network yaratish
+    D) Network ko'rish
+    Javob: B
+
+85. docker run --restart flag nima?
+    A) Manual restart
+    B) Restart policy o'rnatish (always, on-failure, ...)
+    C) Restart disable
+    D) Restart count
+    Javob: B
+
+86. --restart=always nima qiladi?
+    A) Hech qachon restart qilmaydi
+    B) Docker daemon start bo'lganda va crash bo'lganda restart
+    C) Faqat crash da
+    D) Faqat manual
+    Javob: B
+
+87. docker run --memory flag nima uchun?
+    A) Memory ko'rsatadi
+    B) Konteyner memory limitini o'rnatadi
+    C) Memory tozalaydi
+    D) Memory tekshiradi
+    Javob: B
+
+88. docker run --cpus flag nima?
+    A) CPU ko'rsatadi
+    B) CPU limit o'rnatadi
+    C) CPU tozalaydi
+    D) CPU tekshiradi
+    Javob: B
+
+89. Docker Desktop nima?
+    A) Faqat CLI tool
+    B) Windows/Mac uchun Docker GUI application
+    C) Web application
+    D) Mobile app
+    Javob: B
+
+90. Docker Engine nima?
+    A) GUI tool
+    B) Docker ning asosiy runtime komponenti
+    C) Web server
+    D) Database
+    Javob: B
+
+91. Docker daemon nima?
+    A) GUI
+    B) Background da ishlaydigan Docker servisi (dockerd)
+    C) CLI tool
+    D) Web service
+    Javob: B
+
+92. Docker client nima?
+    A) Daemon
+    B) Docker CLI (docker command)
+    C) Web interface
+    D) Mobile app
+    Javob: B
+
+93. Docker client va daemon qanday aloqa qiladi?
+    A) HTTP
+    B) REST API (Unix socket yoki TCP)
+    C) FTP
+    D) SSH
+    Javob: B
+
+94. containerd nima?
+    A) Docker CLI
+    B) Container runtime
+    C) Image registry
+    D) Network driver
+    Javob: B
+
+95. runc nima?
+    A) Image builder
+    B) OCI container runtime
+    C) Network tool
+    D) Volume manager
+    Javob: B
+
+96. OCI nima?
+    A) Docker company
+    B) Open Container Initiative (standartlar)
+    C) Online Container Interface
+    D) Operating Container Instance
+    Javob: B
+
+97. Docker Compose nima uchun?
+    A) Bitta konteyner
+    B) Ko'p konteynerli applicationlarni boshqarish
+    C) Image yaratish
+    D) Network yaratish
+    Javob: B
+
+98. docker-compose.yml nima?
+    A) Dockerfile
+    B) Multi-container application konfiguratsiyasi
+    C) Network config
+    D) Volume config
+    Javob: B
+
+99. docker-compose up buyrug'i nima qiladi?
+    A) Faqat build
+    B) Servicelarni yaratadi va ishga tushiradi
+    C) Faqat start
+    D) Faqat stop
+    Javob: B
+
+100. docker-compose down buyrug'i nima?
+     A) Faqat stop
+     B) Servicelarni to'xtatadi va o'chiradi (container, network)
+     C) Faqat restart
+     D) Faqat pause
+     Javob: B
+
+=============================================================
+                        YAKUNLANDI
+=============================================================

@@ -1,0 +1,706 @@
+MONGODB - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. MongoDB qanday turdagi ma'lumotlar bazasi?
+   A) Relyatsion
+   B) NoSQL, document-oriented
+   C) Graph database
+   D) Key-value store
+   Javob: B
+
+2. MongoDB da ma'lumotlar qanday formatda saqlanadi?
+   A) XML
+   B) BSON (Binary JSON)
+   C) CSV
+   D) Plain text
+   Javob: B
+
+3. MongoDB da jadval (table) o'rniga nima ishlatiladi?
+   A) Row
+   B) Collection
+   C) Schema
+   D) Index
+   Javob: B
+
+4. MongoDB da qator (row) o'rniga nima ishlatiladi?
+   A) Collection
+   B) Document
+   C) Field
+   D) Index
+   Javob: B
+
+5. MongoDB da ustun (column) o'rniga nima ishlatiladi?
+   A) Document
+   B) Field
+   C) Collection
+   D) Key
+   Javob: B
+
+6. MongoDB ning default porti qaysi?
+   A) 3306
+   B) 27017
+   C) 5432
+   D) 6379
+   Javob: B
+
+7. MongoDB shell ni ishga tushirish buyrug'i:
+   A) mysql
+   B) mongosh
+   C) psql
+   D) redis-cli
+   Javob: B
+
+8. Barcha ma'lumotlar bazalarini ko'rsatish buyrug'i:
+   A) SHOW DATABASES
+   B) show dbs
+   C) list databases
+   D) db.list()
+   Javob: B
+
+9. Ma'lumotlar bazasiga o'tish yoki yaratish:
+   A) CREATE DATABASE mydb
+   B) use mydb
+   C) SELECT mydb
+   D) db.switch('mydb')
+   Javob: B
+
+10. Joriy ma'lumotlar bazasini ko'rsatish:
+    A) current_db
+    B) db
+    C) show current
+    D) database()
+    Javob: B
+
+11. Collection dagi barcha documentlarni ko'rsatish:
+    A) SELECT * FROM users
+    B) db.users.find()
+    C) db.users.all()
+    D) db.users.select()
+    Javob: B
+
+12. Bitta document qo'shish:
+    A) db.users.add({})
+    B) db.users.insertOne({})
+    C) db.users.create({})
+    D) db.users.new({})
+    Javob: B
+
+13. Bir nechta document qo'shish:
+    A) db.users.insertOne([])
+    B) db.users.insertMany([])
+    C) db.users.addMany([])
+    D) db.users.createMany([])
+    Javob: B
+
+14. Document o'chirish:
+    A) db.users.remove({})
+    B) db.users.deleteOne({})
+    C) db.users.drop({})
+    D) db.users.erase({})
+    Javob: B
+
+15. Bir nechta document o'chirish:
+    A) db.users.deleteOne({})
+    B) db.users.deleteMany({})
+    C) db.users.removeAll({})
+    D) db.users.dropMany({})
+    Javob: B
+
+16. Document yangilash:
+    A) db.users.change({}, {})
+    B) db.users.updateOne({}, {})
+    C) db.users.modify({}, {})
+    D) db.users.edit({}, {})
+    Javob: B
+
+17. Bir nechta document yangilash:
+    A) db.users.updateOne({}, {})
+    B) db.users.updateMany({}, {})
+    C) db.users.changeMany({}, {})
+    D) db.users.modifyAll({}, {})
+    Javob: B
+
+18. Collection ni o'chirish:
+    A) db.users.delete()
+    B) db.users.drop()
+    C) db.users.remove()
+    D) db.users.destroy()
+    Javob: B
+
+19. Ma'lumotlar bazasini o'chirish:
+    A) db.delete()
+    B) db.dropDatabase()
+    C) db.remove()
+    D) db.destroy()
+    Javob: B
+
+20. Collection dagi documentlar sonini aniqlash:
+    A) db.users.count()
+    B) db.users.countDocuments()
+    C) db.users.length()
+    D) db.users.size()
+    Javob: B
+
+21. _id field nima?
+    A) Oddiy field
+    B) Har bir document uchun avtomatik yaratiladigan unique identifier
+    C) Index nomi
+    D) Collection nomi
+    Javob: B
+
+22. _id ning default turi:
+    A) Integer
+    B) ObjectId
+    C) String
+    D) UUID
+    Javob: B
+
+23. ObjectId necha baytdan iborat?
+    A) 8 bayt
+    B) 12 bayt
+    C) 16 bayt
+    D) 24 bayt
+    Javob: B
+
+24. name fieldi "Ali" bo'lgan documentni topish:
+    A) db.users.find("name", "Ali")
+    B) db.users.find({name: "Ali"})
+    C) db.users.search({name: "Ali"})
+    D) db.users.get({name: "Ali"})
+    Javob: B
+
+25. Faqat bitta documentni topish:
+    A) db.users.find({})
+    B) db.users.findOne({})
+    C) db.users.first({})
+    D) db.users.single({})
+    Javob: B
+
+26. Faqat name va age fieldlarini ko'rsatish (projection):
+    A) db.users.find({}, ["name", "age"])
+    B) db.users.find({}, {name: 1, age: 1})
+    C) db.users.find({}).select("name", "age")
+    D) db.users.find({}).fields("name", "age")
+    Javob: B
+
+27. _id ni yashirish (projection da):
+    A) db.users.find({}, {_id: false})
+    B) db.users.find({}, {_id: 0})
+    C) db.users.find({}, {hide: "_id"})
+    D) db.users.find({}).exclude("_id")
+    Javob: B
+
+28. age > 18 bo'lgan documentlarni topish:
+    A) db.users.find({age: > 18})
+    B) db.users.find({age: {$gt: 18}})
+    C) db.users.find({age: greater(18)})
+    D) db.users.find("age > 18")
+    Javob: B
+
+29. $gt operatori nima?
+    A) Greater than or equal
+    B) Greater than (katta)
+    C) Get
+    D) Group
+    Javob: B
+
+30. $lt operatori nima?
+    A) Less than or equal
+    B) Less than (kichik)
+    C) List
+    D) Limit
+    Javob: B
+
+31. $gte operatori nima?
+    A) Greater than
+    B) Greater than or equal (katta yoki teng)
+    C) Get equal
+    D) Group equal
+    Javob: B
+
+32. $lte operatori nima?
+    A) Less than
+    B) Less than or equal (kichik yoki teng)
+    C) List equal
+    D) Limit equal
+    Javob: B
+
+33. $eq operatori nima?
+    A) Not equal
+    B) Equal (teng)
+    C) Exist
+    D) Empty
+    Javob: B
+
+34. $ne operatori nima?
+    A) Equal
+    B) Not equal (teng emas)
+    C) Negative
+    D) New
+    Javob: B
+
+35. age 20 dan 30 gacha bo'lgan documentlar:
+    A) db.users.find({age: {20, 30}})
+    B) db.users.find({age: {$gte: 20, $lte: 30}})
+    C) db.users.find({age: between(20, 30)})
+    D) db.users.find({age: range(20, 30)})
+    Javob: B
+
+36. $in operatori nima qiladi?
+    A) Ichiga qo'shish
+    B) Berilgan qiymatlar ichida borligini tekshiradi
+    C) Index yaratadi
+    D) Insert qiladi
+    Javob: B
+
+37. status "active" yoki "pending" bo'lganlarni topish:
+    A) db.users.find({status: "active" || "pending"})
+    B) db.users.find({status: {$in: ["active", "pending"]}})
+    C) db.users.find({status: or("active", "pending")})
+    D) db.users.find({status: ["active", "pending"]})
+    Javob: B
+
+38. $nin operatori nima?
+    A) In
+    B) Not in (ro'yxatda yo'q)
+    C) Null in
+    D) New in
+    Javob: B
+
+39. $and operatori bilan shart:
+    A) db.users.find({$and: {a: 1, b: 2}})
+    B) db.users.find({$and: [{a: 1}, {b: 2}]})
+    C) db.users.find({and: [a, b]})
+    D) db.users.find({a: 1 && b: 2})
+    Javob: B
+
+40. $or operatori:
+    A) db.users.find({$or: {a: 1, b: 2}})
+    B) db.users.find({$or: [{a: 1}, {b: 2}]})
+    C) db.users.find({or: [a, b]})
+    D) db.users.find({a: 1 || b: 2})
+    Javob: B
+
+41. Natijalarni cheklash (limit):
+    A) db.users.find().max(5)
+    B) db.users.find().limit(5)
+    C) db.users.find().take(5)
+    D) db.users.find().first(5)
+    Javob: B
+
+42. Natijalarni o'tkazib yuborish (skip):
+    A) db.users.find().offset(10)
+    B) db.users.find().skip(10)
+    C) db.users.find().pass(10)
+    D) db.users.find().ignore(10)
+    Javob: B
+
+43. Natijalarni saralash (sort) - o'sish tartibida:
+    A) db.users.find().sort({age: "asc"})
+    B) db.users.find().sort({age: 1})
+    C) db.users.find().orderBy({age: true})
+    D) db.users.find().arrange({age: "up"})
+    Javob: B
+
+44. Natijalarni kamayish tartibida saralash:
+    A) db.users.find().sort({age: "desc"})
+    B) db.users.find().sort({age: -1})
+    C) db.users.find().orderBy({age: false})
+    D) db.users.find().arrange({age: "down"})
+    Javob: B
+
+45. $set operatori nima qiladi?
+    A) Yangi document yaratadi
+    B) Field qiymatini o'zgartiradi
+    C) Field o'chiradi
+    D) Collection yaratadi
+    Javob: B
+
+46. name ni "Vali" ga o'zgartirish:
+    A) db.users.updateOne({_id: id}, {"name": "Vali"})
+    B) db.users.updateOne({_id: id}, {$set: {name: "Vali"}})
+    C) db.users.updateOne({_id: id}, {change: {name: "Vali"}})
+    D) db.users.updateOne({_id: id}, {modify: {name: "Vali"}})
+    Javob: B
+
+47. $unset operatori nima?
+    A) Field qo'shadi
+    B) Field o'chiradi
+    C) Field yangilaydi
+    D) Field nomini o'zgartiradi
+    Javob: B
+
+48. age fieldini o'chirish:
+    A) db.users.updateOne({}, {$delete: {age: 1}})
+    B) db.users.updateOne({}, {$unset: {age: ""}})
+    C) db.users.updateOne({}, {$remove: {age: 1}})
+    D) db.users.updateOne({}, {$drop: {age: 1}})
+    Javob: B
+
+49. $inc operatori nima?
+    A) Include
+    B) Increment (qiymatni oshirish)
+    C) Index
+    D) Insert
+    Javob: B
+
+50. age ni 1 ga oshirish:
+    A) db.users.updateOne({}, {$add: {age: 1}})
+    B) db.users.updateOne({}, {$inc: {age: 1}})
+    C) db.users.updateOne({}, {$plus: {age: 1}})
+    D) db.users.updateOne({}, {$increase: {age: 1}})
+    Javob: B
+
+51. $push operatori nima?
+    A) Document qo'shadi
+    B) Array ga element qo'shadi
+    C) Field qo'shadi
+    D) Index qo'shadi
+    Javob: B
+
+52. hobbies array ga "reading" qo'shish:
+    A) db.users.updateOne({}, {$add: {hobbies: "reading"}})
+    B) db.users.updateOne({}, {$push: {hobbies: "reading"}})
+    C) db.users.updateOne({}, {$append: {hobbies: "reading"}})
+    D) db.users.updateOne({}, {$insert: {hobbies: "reading"}})
+    Javob: B
+
+53. $pull operatori nima?
+    A) Array ga qo'shadi
+    B) Array dan element o'chiradi
+    C) Document o'chiradi
+    D) Field o'chiradi
+    Javob: B
+
+54. $addToSet operatori $push dan farqi:
+    A) Farqi yo'q
+    B) Faqat unique qiymat qo'shadi (duplicate bo'lmasa)
+    C) Bir nechta qo'shadi
+    D) Boshiga qo'shadi
+    Javob: B
+
+55. Collection dagi barcha collectionlarni ko'rish:
+    A) db.collections()
+    B) show collections
+    C) list collections
+    D) db.list()
+    Javob: B
+
+56. Index yaratish:
+    A) db.users.addIndex({name: 1})
+    B) db.users.createIndex({name: 1})
+    C) db.users.newIndex({name: 1})
+    D) db.users.index({name: 1})
+    Javob: B
+
+57. Mavjud indexlarni ko'rish:
+    A) db.users.showIndexes()
+    B) db.users.getIndexes()
+    C) db.users.listIndexes()
+    D) db.users.indexes()
+    Javob: B
+
+58. Index o'chirish:
+    A) db.users.deleteIndex("name_1")
+    B) db.users.dropIndex("name_1")
+    C) db.users.removeIndex("name_1")
+    D) db.users.eraseIndex("name_1")
+    Javob: B
+
+59. Unique index nima?
+    A) Bitta field uchun index
+    B) Takrorlanmas qiymatlarni ta'minlaydigan index
+    C) Birinchi index
+    D) Primary index
+    Javob: B
+
+60. Unique index yaratish:
+    A) db.users.createIndex({email: 1}, {primary: true})
+    B) db.users.createIndex({email: 1}, {unique: true})
+    C) db.users.createIndex({email: 1}, {distinct: true})
+    D) db.users.createIndex({email: 1}, {single: true})
+    Javob: B
+
+61. MongoDB da embedding nima?
+    A) Alohida collection
+    B) Document ichida document saqlash
+    C) Reference
+    D) Join
+    Javob: B
+
+62. MongoDB da referencing nima?
+    A) Document ichida document
+    B) Boshqa document ga _id orqali bog'lanish
+    C) Index
+    D) Embedding
+    Javob: B
+
+63. Embedded document misoli:
+    A) {user_id: ObjectId("...")}
+    B) {address: {city: "Tashkent", street: "Amir Temur"}}
+    C) {address: "addresses collection"}
+    D) {$ref: "addresses"}
+    Javob: B
+
+64. find() natijasi nima qaytaradi?
+    A) Array
+    B) Cursor
+    C) Document
+    D) Collection
+    Javob: B
+
+65. Cursor ni array ga aylantirish:
+    A) db.users.find().array()
+    B) db.users.find().toArray()
+    C) db.users.find().list()
+    D) db.users.find().asArray()
+    Javob: B
+
+66. pretty() metodi nima qiladi?
+    A) Natijani o'chiradi
+    B) Natijani chiroyli formatda ko'rsatadi
+    C) Natijani saralaydi
+    D) Natijani cheklaydi
+    Javob: B
+
+67. MongoDB da BSON nima?
+    A) JavaScript Object Notation
+    B) Binary JSON
+    C) Basic JSON
+    D) Big JSON
+    Javob: B
+
+68. BSON JSON dan farqi:
+    A) Farqi yo'q
+    B) Binary format, qo'shimcha turlar (Date, ObjectId, ...)
+    C) BSON kichikroq
+    D) BSON tezroq parse qilinadi
+    Javob: B
+
+69. MongoDB da Date saqlash:
+    A) "2024-01-15"
+    B) new Date() yoki ISODate()
+    C) Date("2024-01-15")
+    D) timestamp
+    Javob: B
+
+70. $exists operatori nima tekshiradi?
+    A) Qiymat bormi
+    B) Field mavjudligini
+    C) Document bormi
+    D) Collection bormi
+    Javob: B
+
+71. age field mavjud bo'lgan documentlar:
+    A) db.users.find({age: {$has: true}})
+    B) db.users.find({age: {$exists: true}})
+    C) db.users.find({age: {$defined: true}})
+    D) db.users.find({age: {$present: true}})
+    Javob: B
+
+72. $type operatori nima?
+    A) Tur o'zgartiradi
+    B) Field turini tekshiradi
+    C) Document turini qaytaradi
+    D) Collection turini ko'rsatadi
+    Javob: B
+
+73. age string turda bo'lgan documentlar:
+    A) db.users.find({age: {$type: string}})
+    B) db.users.find({age: {$type: "string"}})
+    C) db.users.find({age: {$typeof: "string"}})
+    D) db.users.find({age: {$is: "string"}})
+    Javob: B
+
+74. $regex operatori nima uchun?
+    A) Regular expression
+    B) Matn bo'yicha qidirish (pattern matching)
+    C) Replace
+    D) Rename
+    Javob: B
+
+75. name "A" harfidan boshlanuvchi documentlar:
+    A) db.users.find({name: {$starts: "A"}})
+    B) db.users.find({name: {$regex: /^A/}})
+    C) db.users.find({name: {$like: "A%"}})
+    D) db.users.find({name: {$begin: "A"}})
+    Javob: B
+
+76. Case-insensitive regex:
+    A) db.users.find({name: {$regex: /ali/}})
+    B) db.users.find({name: {$regex: /ali/i}})
+    C) db.users.find({name: {$regex: /ali/, $nocase: true}})
+    D) db.users.find({name: {$regex: /ALI/}})
+    Javob: B
+
+77. MongoDB Compass nima?
+    A) Command line tool
+    B) GUI tool for MongoDB
+    C) Programming language
+    D) Database engine
+    Javob: B
+
+78. mongodump buyrug'i nima qiladi?
+    A) Ma'lumotlarni tiklaydi
+    B) Ma'lumotlar bazasi backup oladi
+    C) Ma'lumotlarni o'chiradi
+    D) Ma'lumotlarni ko'chiradi
+    Javob: B
+
+79. mongorestore buyrug'i nima?
+    A) Backup oladi
+    B) Backup dan ma'lumotlarni tiklaydi
+    C) Ma'lumotlarni o'chiradi
+    D) Ma'lumotlarni yangilaydi
+    Javob: B
+
+80. mongoexport nima qiladi?
+    A) Binary backup
+    B) JSON/CSV formatda export qiladi
+    C) Import qiladi
+    D) Restore qiladi
+    Javob: B
+
+81. mongoimport nima?
+    A) Export qiladi
+    B) JSON/CSV dan import qiladi
+    C) Backup oladi
+    D) Restore qiladi
+    Javob: B
+
+82. MongoDB Atlas nima?
+    A) Local database
+    B) Cloud-based MongoDB service
+    C) GUI tool
+    D) Backup tool
+    Javob: B
+
+83. Replica Set nima?
+    A) Bitta server
+    B) Ma'lumotlar nusxalari uchun serverlar guruhi
+    C) Sharding
+    D) Index
+    Javob: B
+
+84. Primary node nima?
+    A) Secondary server
+    B) Yozish operatsiyalarini qabul qiluvchi asosiy server
+    C) Arbiter
+    D) Backup server
+    Javob: B
+
+85. Secondary node nima?
+    A) Primary server
+    B) Primary dan ma'lumotlarni replikatsiya qiluvchi server
+    C) Arbiter
+    D) Router
+    Javob: B
+
+86. MongoDB da Schema nima?
+    A) Qat'iy struktura
+    B) Flexible (schema-less yoki dynamic schema)
+    C) Fixed schema
+    D) No data
+    Javob: B
+
+87. Mongoose nima?
+    A) MongoDB driver
+    B) Node.js uchun MongoDB ODM (Object Data Modeling)
+    C) GUI tool
+    D) Cloud service
+    Javob: B
+
+88. findOneAndUpdate() metodi:
+    A) Faqat topadi
+    B) Topadi, yangilaydi va qaytaradi
+    C) Faqat yangilaydi
+    D) Faqat o'chiradi
+    Javob: B
+
+89. findOneAndDelete() metodi:
+    A) Faqat topadi
+    B) Topadi, o'chiradi va qaytaradi
+    C) Faqat o'chiradi
+    D) Faqat yangilaydi
+    Javob: B
+
+90. upsert option nima qiladi?
+    A) Faqat update
+    B) Topilmasa yangi document yaratadi (update + insert)
+    C) Faqat insert
+    D) Delete qiladi
+    Javob: B
+
+91. db.users.updateOne({name: "Ali"}, {$set: {age: 25}}, {upsert: true}) - "Ali" topilmasa:
+    A) Xato beradi
+    B) Yangi document yaratiladi
+    C) Hech narsa qilmaydi
+    D) Barcha documentlarni yangilaydi
+    Javob: B
+
+92. bulkWrite() nima uchun?
+    A) Bitta operatsiya
+    B) Bir nechta operatsiyalarni batch da bajarish
+    C) Faqat write
+    D) Faqat read
+    Javob: B
+
+93. MongoDB da collection schema validation qo'yish:
+    A) Mumkin emas
+    B) db.createCollection() da validator orqali
+    C) Avtomatik
+    D) Faqat Mongoose da
+    Javob: B
+
+94. $not operatori:
+    A) And
+    B) Shartni invert qiladi (teskarisi)
+    C) Or
+    D) Null
+    Javob: B
+
+95. $nor operatori:
+    A) Not or
+    B) Barcha shartlar false bo'lishi kerak
+    C) And
+    D) Or
+    Javob: B
+
+96. Collection ni qayta nomlash:
+    A) db.users.rename("clients")
+    B) db.users.renameCollection("clients")
+    C) db.users.changeName("clients")
+    D) db.rename("users", "clients")
+    Javob: B
+
+97. explain() metodi nima uchun?
+    A) Hujjat tuzadi
+    B) Query execution plan ni ko'rsatadi
+    C) Xatolarni ko'rsatadi
+    D) Natijani chiroyli ko'rsatadi
+    Javob: B
+
+98. db.users.find().explain("executionStats"):
+    A) Faqat natija
+    B) Query statistikasi (vaqt, skanerlangan documentlar, ...)
+    C) Faqat plan
+    D) Xatolar
+    Javob: B
+
+99. MongoDB ning maksimal document hajmi:
+    A) 4 MB
+    B) 16 MB
+    C) 64 MB
+    D) 1 GB
+    Javob: B
+
+100. GridFS nima uchun ishlatiladi?
+     A) Kichik fayllar
+     B) 16 MB dan katta fayllarni saqlash
+     C) Index yaratish
+     D) Query optimization
+     Javob: B
+
+================================================
+                   YAKUNLANDI
+================================================

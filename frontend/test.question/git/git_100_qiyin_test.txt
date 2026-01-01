@@ -1,0 +1,706 @@
+GIT VERSION CONTROL - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+==============================================================
+
+1. Git internal da blob obyekti nima?
+   A) Commit
+   B) Fayl tarkibini saqlovchi obyekt (compressed)
+   C) Tree
+   D) Tag
+   Javob: B
+
+2. Git internal da tree obyekti nima?
+   A) Blob
+   B) Directory strukturasini saqlovchi obyekt (blob va tree pointerlar)
+   C) Commit
+   D) Tag
+   Javob: B
+
+3. Git commit obyekti nimalarni o'z ichiga oladi?
+   A) Faqat xabar
+   B) Tree pointer, parent(s), author, committer, message
+   C) Faqat tree
+   D) Faqat parent
+   Javob: B
+
+4. Git obyekt hash qanday hisoblanadi?
+   A) MD5
+   B) SHA-1 (type + size + content)
+   C) SHA-256
+   D) CRC32
+   Javob: B
+
+5. Git 2.29+ da yangi hash algoritmi qaysi?
+   A) MD5
+   B) SHA-256 (experimental)
+   C) SHA-512
+   D) Blake2
+   Javob: B
+
+6. .git/objects papkasida obyektlar qanday saqlanadi?
+   A) Bitta fayl
+   B) Hash ning birinchi 2 belgisi papka, qolgani fayl nomi
+   C) Hash to'liq fayl nomi
+   D) Random papkalar
+   Javob: B
+
+7. Pack file nima?
+   A) Oddiy fayl
+   B) Ko'p obyektlarni siqilgan holda saqlash (delta compression)
+   C) Config fayl
+   D) Log fayl
+   Javob: B
+
+8. .git/objects/pack papkasida nima bor?
+   A) Loose objects
+   B) Packfile (.pack) va index (.idx)
+   C) Config
+   D) Hooks
+   Javob: B
+
+9. Delta compression Git da qanday ishlaydi?
+   A) To'liq nusxa
+   B) O'xshash obyektlar uchun faqat farqni saqlash
+   C) Zip compression
+   D) Gzip faqat
+   Javob: B
+
+10. git repack nima qiladi?
+    A) Unpack qiladi
+    B) Loose objects ni packfile ga yig'adi
+    C) Config yozadi
+    D) Hook yaratadi
+    Javob: B
+
+11. git count-objects -v nima ko'rsatadi?
+    A) Commit count
+    B) Repository obyektlari statistikasi
+    C) Branch count
+    D) File count
+    Javob: B
+
+12. Shallow clone nima?
+    A) To'liq clone
+    B) Cheklangan tarix bilan clone (--depth)
+    C) Bare clone
+    D) Mirror clone
+    Javob: B
+
+13. git clone --depth 1 nima?
+    A) To'liq tarix
+    B) Faqat oxirgi commit (shallow)
+    C) Faqat branch
+    D) Faqat tags
+    Javob: B
+
+14. git fetch --unshallow nima qiladi?
+    A) Shallow qiladi
+    B) Shallow clone ni to'liq tarixga aylantiradi
+    C) Depth oshiradi
+    D) Depth kamaytiradi
+    Javob: B
+
+15. Partial clone (--filter) nima?
+    A) Full clone
+    B) Blob larni kerak bo'lganda yuklaydigan clone
+    C) Shallow clone
+    D) Mirror clone
+    Javob: B
+
+16. git clone --filter=blob:none nima?
+    A) Barcha blob
+    B) Blob larsiz clone (tarix bor, fayllar kerak bo'lganda)
+    C) Tree larsiz
+    D) Commit larsiz
+    Javob: B
+
+17. Sparse checkout nima?
+    A) Full checkout
+    B) Repository ning faqat bir qismini checkout qilish
+    C) Shallow checkout
+    D) Partial checkout
+    Javob: B
+
+18. git sparse-checkout set dir1 dir2 nima?
+    A) Barcha papkalar
+    B) Faqat belgilangan papkalarni checkout
+    C) Papka yaratadi
+    D) Papka o'chiradi
+    Javob: B
+
+19. git sparse-checkout init --cone nima?
+    A) No cone
+    B) Cone mode (papka asosida, tezroq)
+    C) Full checkout
+    D) Sparse off
+    Javob: B
+
+20. git replace nima qiladi?
+    A) Fayl almashtiradi
+    B) Bir obyektni boshqasi bilan virtual almashtiradi
+    C) Branch almashtiradi
+    D) Remote almashtiradi
+    Javob: B
+
+21. git replace --graft nima?
+    A) Replace o'chiradi
+    B) Commit parent larini o'zgartiradi (tarixni ulash)
+    C) Replace ko'rsatadi
+    D) Replace yaratadi
+    Javob: B
+
+22. git filter-branch (legacy) nima uchun?
+    A) Branch filtrlash
+    B) Tarixni qayta yozish (author, file, ...)
+    C) Commit filtrlash
+    D) Remote filtrlash
+    Javob: B
+
+23. git filter-repo (tavsiya etiladi) nima?
+    A) Eski tool
+    B) Tezroq tarix qayta yozish tool (Python)
+    C) Filter-branch alias
+    D) Git builtin
+    Javob: B
+
+24. BFG Repo-Cleaner nima uchun?
+    A) Code cleanup
+    B) Katta fayllar yoki sensitive ma'lumotlarni tarixdan o'chirish
+    C) Branch cleanup
+    D) Remote cleanup
+    Javob: B
+
+25. git rev-list --all --count nima?
+    A) Branch count
+    B) Barcha commit lar soni
+    C) File count
+    D) Object count
+    Javob: B
+
+26. git rev-list --objects --all nima?
+    A) Faqat commit
+    B) Barcha reachable obyektlar (commit, tree, blob)
+    C) Faqat tree
+    D) Faqat blob
+    Javob: B
+
+27. git for-each-ref nima qiladi?
+    A) Commit ko'rsatadi
+    B) Barcha ref larni formatlangan holda ko'rsatadi
+    C) Branch yaratadi
+    D) Tag yaratadi
+    Javob: B
+
+28. git for-each-ref --format nima?
+    A) Default format
+    B) Custom output format belgilash
+    C) JSON format
+    D) XML format
+    Javob: B
+
+29. git show-ref nima?
+    A) Commit ko'rsatadi
+    B) Local ref larni (branch, tag) hash bilan ko'rsatadi
+    C) Remote ko'rsatadi
+    D) Config ko'rsatadi
+    Javob: B
+
+30. git symbolic-ref HEAD nima qaytaradi?
+    A) Commit hash
+    B) HEAD ko'rsatayotgan branch ref
+    C) Tag
+    D) Remote
+    Javob: B
+
+31. git update-ref refs/heads/branch hash nima?
+    A) Branch o'chiradi
+    B) Branch ni ma'lum commit ga o'rnatadi (low-level)
+    C) Branch yaratadi
+    D) Branch ko'rsatadi
+    Javob: B
+
+32. .git/HEAD fayli nima saqlaydi?
+    A) Commit hash faqat
+    B) ref: refs/heads/branch_name yoki commit hash
+    C) Branch nomi faqat
+    D) Remote URL
+    Javob: B
+
+33. .git/refs/heads/ papkasida nima?
+    A) Remote branches
+    B) Local branch fayllar (har biri commit hash)
+    C) Tags
+    D) Stash
+    Javob: B
+
+34. .git/refs/remotes/ papkasida nima?
+    A) Local branches
+    B) Remote tracking branch fayllar
+    C) Tags
+    D) Stash
+    Javob: B
+
+35. .git/refs/tags/ papkasida nima?
+    A) Branches
+    B) Tag fayllar
+    C) Remotes
+    D) Stash
+    Javob: B
+
+36. Packed-refs fayli nima?
+    A) Packfile
+    B) Ko'p ref larni bitta faylda saqlash (optimization)
+    C) Config
+    D) Index
+    Javob: B
+
+37. .git/index fayli nima?
+    A) Config
+    B) Staging area (binary format)
+    C) Commit log
+    D) Branch list
+    Javob: B
+
+38. git update-index nima qiladi?
+    A) Config yangilaydi
+    B) Index ni to'g'ridan-to'g'ri manipulyatsiya qiladi
+    C) Branch yangilaydi
+    D) Remote yangilaydi
+    Javob: B
+
+39. git update-index --assume-unchanged file nima?
+    A) Track qiladi
+    B) Faylni o'zgargan deb hisoblamaslik
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+40. git update-index --skip-worktree file nima?
+    A) assume-unchanged
+    B) Sparse checkout uchun faylni skip qilish
+    C) Faylni track qiladi
+    D) Faylni o'chiradi
+    Javob: B
+
+41. assume-unchanged va skip-worktree farqi?
+    A) Farqi yo'q
+    B) assume-unchanged developer uchun, skip-worktree Git uchun (sparse)
+    C) assume-unchanged tezroq
+    D) skip-worktree tezroq
+    Javob: B
+
+42. git read-tree nima qiladi?
+    A) Fayl o'qiydi
+    B) Tree obyektini index ga o'qiydi
+    C) Commit o'qiydi
+    D) Config o'qiydi
+    Javob: B
+
+43. git write-tree nima?
+    A) Fayl yozadi
+    B) Index dan tree obyekt yaratadi
+    C) Commit yozadi
+    D) Config yozadi
+    Javob: B
+
+44. git commit-tree nima qiladi?
+    A) Oddiy commit
+    B) Tree va parent lardan commit obyekt yaratadi (low-level)
+    C) Tree yaratadi
+    D) Blob yaratadi
+    Javob: B
+
+45. git mktree nima?
+    A) Commit yaratadi
+    B) stdin dan tree obyekt yaratadi
+    C) Blob yaratadi
+    D) Tag yaratadi
+    Javob: B
+
+46. git hash-object nima qiladi?
+    A) Hash tekshiradi
+    B) Fayl/stdin dan blob hash hisoblaydi (optional -w bilan saqlaydi)
+    C) Commit hash
+    D) Tree hash
+    Javob: B
+
+47. git hash-object -w file nima?
+    A) Faqat hash
+    B) Hash hisoblab, obyektni .git/objects ga yozadi
+    C) Faylni o'chiradi
+    D) Faylni ko'rsatadi
+    Javob: B
+
+48. Plumbing va Porcelain commands farqi?
+    A) Farqi yo'q
+    B) Plumbing - low-level internal, Porcelain - user-friendly
+    C) Plumbing - user-friendly
+    D) Porcelain - internal
+    Javob: B
+
+49. git merge-base branch1 branch2 nima?
+    A) Merge qiladi
+    B) Ikkala branch ning umumiy ancestor commit ini topadi
+    C) Branch yaratadi
+    D) Branch o'chiradi
+    Javob: B
+
+50. Octopus merge nima?
+    A) Ikki branch merge
+    B) Bir vaqtda ko'p branch merge (3+)
+    C) Recursive merge
+    D) Fast-forward
+    Javob: B
+
+51. git merge -s ours nima?
+    A) Theirs strategy
+    B) Ours strategy (conflict da bizning versiya)
+    C) Recursive
+    D) Octopus
+    Javob: B
+
+52. git merge -X theirs nima?
+    A) Strategy
+    B) Recursive strategy option (conflict da ularning versiya)
+    C) Ours option
+    D) Octopus option
+    Javob: B
+
+53. Merge strategy (-s) va strategy option (-X) farqi?
+    A) Farqi yo'q
+    B) -s butun strategy, -X strategy ichidagi option
+    C) -X butun strategy
+    D) -s option
+    Javob: B
+
+54. git rerere nima?
+    A) Remote command
+    B) Reuse Recorded Resolution (conflict yechimini eslab qolish)
+    C) Rebase command
+    D) Reset command
+    Javob: B
+
+55. git config rerere.enabled true nima qiladi?
+    A) Rerere o'chiradi
+    B) Conflict resolution larni saqlash va qayta ishlatishni yoqadi
+    C) Rebase yoqadi
+    D) Reset yoqadi
+    Javob: B
+
+56. .git/rr-cache papkasida nima?
+    A) Remote cache
+    B) Rerere conflict resolution cache
+    C) Ref cache
+    D) Object cache
+    Javob: B
+
+57. git range-diff nima ko'rsatadi?
+    A) Oddiy diff
+    B) Ikki commit range orasidagi farq (rebase natijasini tekshirish)
+    C) File diff
+    D) Branch diff
+    Javob: B
+
+58. git range-diff main..feature1 main..feature2 nima?
+    A) Oddiy diff
+    B) Feature1 va feature2 qanday farq qilishini ko'rsatadi
+    C) Merge diff
+    D) Rebase diff
+    Javob: B
+
+59. git maintenance nima? (Git 2.30+)
+    A) Manual cleanup
+    B) Background repository maintenance (gc, prefetch, ...)
+    C) Config tool
+    D) Debug tool
+    Javob: B
+
+60. git maintenance start nima qiladi?
+    A) Maintenance to'xtatadi
+    B) Background maintenance task larni schedule qiladi
+    C) Manual maintenance
+    D) Maintenance ko'rsatadi
+    Javob: B
+
+61. Commit-graph file nima uchun?
+    A) Log uchun
+    B) Commit ancestry traversal ni tezlashtirish
+    C) Diff uchun
+    D) Merge uchun
+    Javob: B
+
+62. git commit-graph write nima?
+    A) Commit yozadi
+    B) Commit-graph fayl yaratadi (performance)
+    C) Graph ko'rsatadi
+    D) Graph o'chiradi
+    Javob: B
+
+63. Multi-pack-index nima?
+    A) Single pack
+    B) Bir nechta packfile uchun yagona index
+    C) Config file
+    D) Log file
+    Javob: B
+
+64. git multi-pack-index write nima?
+    A) Pack yaratadi
+    B) MIDX fayl yaratadi (ko'p pack uchun)
+    C) Index o'chiradi
+    D) Pack o'chiradi
+    Javob: B
+
+65. Bitmap index Git da nima uchun?
+    A) Image index
+    B) Reachability query larni tezlashtirish (clone, fetch)
+    C) Commit index
+    D) Branch index
+    Javob: B
+
+66. git repack -b nima?
+    A) Oddiy repack
+    B) Bitmap yaratadi packfile bilan
+    C) Blob repack
+    D) Branch repack
+    Javob: B
+
+67. git fsmonitor nima?
+    A) File system monitor
+    B) Watchman/fsmonitor bilan file change larni tez aniqlash
+    C) Memory monitor
+    D) CPU monitor
+    Javob: B
+
+68. core.fsmonitor config nima qiladi?
+    A) Monitor o'chiradi
+    B) File system monitor ni yoqadi (performance)
+    C) Config monitor
+    D) Log monitor
+    Javob: B
+
+69. git credential nima uchun?
+    A) Commit author
+    B) Remote autentifikatsiya ma'lumotlarini boshqarish
+    C) Config credential
+    D) Local credential
+    Javob: B
+
+70. git credential-cache nima?
+    A) Permanent storage
+    B) Vaqtinchalik credential cache (memory)
+    C) Disk cache
+    D) Network cache
+    Javob: B
+
+71. git credential-store nima?
+    A) Memory storage
+    B) Plain text file da credential saqlash
+    C) Encrypted storage
+    D) Remote storage
+    Javob: B
+
+72. credential.helper=osxkeychain nima (macOS)?
+    A) Windows helper
+    B) macOS Keychain da credential saqlash
+    C) Linux helper
+    D) Memory helper
+    Javob: B
+
+73. credential.helper=manager-core nima (Windows)?
+    A) Mac helper
+    B) Git Credential Manager (Windows Credential Manager)
+    C) Linux helper
+    D) Memory helper
+    Javob: B
+
+74. git send-email nima?
+    A) GitHub email
+    B) Patch larni email orqali yuborish
+    C) Commit email
+    D) Author email
+    Javob: B
+
+75. git format-patch nima?
+    A) Format commit
+    B) Commit lardan email patch fayllar yaratish
+    C) Format branch
+    D) Format config
+    Javob: B
+
+76. git am (apply mailbox) nima?
+    A) Auto merge
+    B) Email patch fayllarni apply qilish
+    C) Add message
+    D) Amend commit
+    Javob: B
+
+77. git request-pull nima?
+    A) git pull
+    B) Pull request xabari yaratadi (email workflow)
+    C) Request merge
+    D) Request push
+    Javob: B
+
+78. git instaweb nima?
+    A) Web hook
+    B) Local web interface ishga tushiradi (gitweb)
+    C) Web push
+    D) Web pull
+    Javob: B
+
+79. git daemon nima?
+    A) Background git
+    B) Git protocol server (anonymous read access)
+    C) SSH daemon
+    D) HTTP daemon
+    Javob: B
+
+80. git protocol versiyalari (v0, v1, v2) farqi?
+    A) Farqi yo'q
+    B) v2 samaraliroq (capability negotiation, fetch optimizations)
+    C) v0 eng yangi
+    D) v1 eng tez
+    Javob: B
+
+81. GIT_PROTOCOL=version=2 nima?
+    A) Old protocol
+    B) Protocol v2 ni majburiy ishlatish
+    C) Protocol v1
+    D) Protocol v0
+    Javob: B
+
+82. git var -l nima ko'rsatadi?
+    A) Variables set
+    B) Git logical variables (GIT_AUTHOR_IDENT, ...)
+    C) Environment variables
+    D) Config variables
+    Javob: B
+
+83. GIT_TRACE=1 nima qiladi?
+    A) Trace o'chiradi
+    B) Git buyruqlari debug ma'lumotlarini ko'rsatadi
+    C) Performance trace
+    D) Network trace
+    Javob: B
+
+84. GIT_TRACE_PERFORMANCE=1 nima?
+    A) Debug trace
+    B) Performance timing ma'lumotlarini ko'rsatadi
+    C) Network trace
+    D) Disk trace
+    Javob: B
+
+85. GIT_CURL_VERBOSE=1 nima ko'rsatadi?
+    A) Git verbose
+    B) HTTP(S) so'rovlar debug ma'lumotlari
+    C) SSH verbose
+    D) Git verbose
+    Javob: B
+
+86. git bugreport nima yaratadi?
+    A) Bug fix
+    B) Diagnostics ma'lumotlarini yig'ib bug report fayl
+    C) Error log
+    D) Crash report
+    Javob: B
+
+87. git diagnose nima? (Git 2.38+)
+    A) Bug fix
+    B) Repository diagnostics ma'lumotlarini zip ga yig'adi
+    C) Health check
+    D) Performance check
+    Javob: B
+
+88. Gitdir va worktree separation nima?
+    A) Bir xil papka
+    B) .git papka va working directory alohida bo'lishi
+    C) Remote separation
+    D) Branch separation
+    Javob: B
+
+89. git init --separate-git-dir path nima?
+    A) Normal init
+    B) .git ni alohida joyda yaratadi
+    C) Bare init
+    D) Template init
+    Javob: B
+
+90. .git fayli (papka emas) nima?
+    A) Config
+    B) gitdir: path (real .git papkaga pointer)
+    C) Ignore file
+    D) Attribute file
+    Javob: B
+
+91. git clone --reference local_repo nima?
+    A) Normal clone
+    B) Local repo dan obyektlarni oldindan olish (tezlashtirish)
+    C) Mirror clone
+    D) Bare clone
+    Javob: B
+
+92. Alternates file (.git/objects/info/alternates) nima?
+    A) Config file
+    B) Boshqa repo dan obyektlar o'qish yo'llari
+    C) Remote file
+    D) Branch file
+    Javob: B
+
+93. git clone --dissociate nima?
+    A) Associate
+    B) Reference clone dan keyin alternates ni olib tashlaydi
+    C) Mirror clone
+    D) Shallow clone
+    Javob: B
+
+94. git clone --mirror va --bare farqi?
+    A) Farqi yo'q
+    B) mirror barcha ref lar va remote config, bare faqat refs/heads
+    C) bare ko'proq
+    D) mirror kamroq
+    Javob: B
+
+95. Monorepo da Git performance muammolari?
+    A) Muammo yo'q
+    B) Katta index, ko'p fayllar, sekin status/checkout
+    C) Faqat network
+    D) Faqat merge
+    Javob: B
+
+96. Scalar (Microsoft) nima?
+    A) Git command
+    B) Katta repo lar uchun Git optimizatsiya tool
+    C) Git GUI
+    D) Git server
+    Javob: B
+
+97. VFS for Git (GVFS) nima?
+    A) Virtual file system
+    B) Katta repo lar uchun virtual file system (partial checkout)
+    C) Git fork
+    D) Git GUI
+    Javob: B
+
+98. git gc --aggressive nima?
+    A) Normal gc
+    B) Ko'proq vaqt sarflab yaxshiroq compression
+    C) Fast gc
+    D) No gc
+    Javob: B
+
+99. git prune nima qiladi?
+    A) Branch prune
+    B) Unreachable loose objects ni o'chiradi
+    C) Remote prune
+    D) Ref prune
+    Javob: B
+
+100. Reflogs necha kun saqlanadi (default)?
+     A) 30 kun
+     B) 90 kun (reachable), 30 kun (unreachable)
+     C) 7 kun
+     D) 365 kun
+     Javob: B
+
+==============================================================
+                         YAKUNLANDI
+==============================================================

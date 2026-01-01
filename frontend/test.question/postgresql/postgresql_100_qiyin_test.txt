@@ -1,0 +1,707 @@
+
+POSTGRESQL - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+==========================================================
+
+1. JSONB vs JSON data type farqi?
+   A) Bir xil
+   B) JSONB - binary, tezroq query, JSON - text format
+   C) JSON tezroq
+   D) JSONB - text format
+   Javob: B
+
+2. JSONB indexing qanday?
+   A) B-tree only
+   B) GIN va GiST index support
+   C) No indexing
+   D) Hash only
+   Javob: B
+
+3. -> vs ->> operators (JSONB)?
+   A) Bir xil
+   B) -> returns JSON, ->> returns text
+   C) -> returns text
+   D) ->> returns JSON
+   Javob: B
+
+4. jsonb_set() function nima?
+   A) Get value
+   B) JSONB da qiymat o'zgartirish
+   C) Delete key
+   D) Create JSONB
+   Javob: B
+
+5. Array data type nima?
+   A) Single value
+   B) Bir nechta qiymatlar to'plami
+   C) JSON
+   D) JSONB
+   Javob: B
+
+6. ARRAY[] constructor nima?
+   A) JSON
+   B) Array yaratish
+   C) JSONB
+   D) HSTORE
+   Javob: B
+
+7. array_agg() function nima?
+   A) Split array
+   B) Qiymatlarni array ga yig'ish (aggregation)
+   C) Count array
+   D) Sort array
+   Javob: B
+
+8. unnest() function nima?
+   A) Create array
+   B) Array ni rows ga yoyish
+   C) Join arrays
+   D) Sort array
+   Javob: B
+
+9. ANY() operator (array) nima?
+   A) All elements
+   B) Kamida bitta element match
+   C) No match
+   D) Exact match
+   Javob: B
+
+10. ALL() operator (array) nima?
+    A) Any element
+    B) Barcha elementlar match
+    C) No match
+    D) Some elements
+    Javob: B
+
+11. HSTORE data type nima?
+    A) JSON
+    B) Key-value pairs storage
+    C) Array
+    D) XML
+    Javob: B
+
+12. UUID data type nima uchun?
+    A) Integer ID
+    B) Universally Unique Identifier (128-bit)
+    C) String ID
+    D) Serial ID
+    Javob: B
+
+13. gen_random_uuid() nima?
+    A) Random integer
+    B) Random UUID generate
+    C) Random string
+    D) Random date
+    Javob: B
+
+14. ENUM data type nima?
+    A) Dynamic values
+    B) Predefined static values set
+    C) Integer range
+    D) Text type
+    Javob: B
+
+15. CREATE TYPE nima uchun?
+    A) Create table
+    B) Custom data type yaratish (ENUM, composite)
+    C) Create function
+    D) Create index
+    Javob: B
+
+16. Composite type nima?
+    A) Simple type
+    B) Multiple fields grouped (struct kabi)
+    C) Array type
+    D) JSON type
+    Javob: B
+
+17. Window functions nima?
+    A) WHERE filter
+    B) Rows set bo'yicha calculation (GROUP BY siz)
+    C) JOIN operation
+    D) HAVING filter
+    Javob: B
+
+18. ROW_NUMBER() window function?
+    A) Count rows
+    B) Har bir row ga tartib raqam berish
+    C) Sum values
+    D) Average
+    Javob: B
+
+19. RANK() vs DENSE_RANK()?
+    A) Bir xil
+    B) RANK - gaps, DENSE_RANK - no gaps (ties da)
+    C) DENSE_RANK - gaps
+    D) Random
+    Javob: B
+
+20. PARTITION BY (window functions)?
+    A) Filter rows
+    B) Data ni guruhlarga bo'lish (window ichida)
+    C) Sort rows
+    D) Join tables
+    Javob: B
+
+21. OVER() clause nima?
+    A) WHERE clause
+    B) Window function define qilish
+    C) JOIN clause
+    D) GROUP BY
+    Javob: B
+
+22. LAG() window function nima?
+    A) Next row
+    B) Previous row qiymatiga access
+    C) Current row
+    D) First row
+    Javob: B
+
+23. LEAD() window function nima?
+    A) Previous row
+    B) Next row qiymatiga access
+    C) Current row
+    D) Last row
+    Javob: B
+
+24. FIRST_VALUE() va LAST_VALUE()?
+    A) Random values
+    B) Window dagi birinchi va oxirgi qiymat
+    C) Average values
+    D) Sum values
+    Javob: B
+
+25. CTE (Common Table Expression) nima?
+    A) Permanent table
+    B) WITH keyword - temporary named result set
+    C) View
+    D) Index
+    Javob: B
+
+26. Recursive CTE nima uchun?
+    A) Simple queries
+    B) Hierarchical/tree data (org chart, categories)
+    C) JOIN only
+    D) GROUP BY
+    Javob: B
+
+27. LATERAL join nima?
+    A) INNER join
+    B) Subquery previous columns ga access (correlated)
+    C) LEFT join
+    D) CROSS join
+    Javob: B
+
+28. Subquery nima?
+    A) Main query
+    B) Query ichidagi query (nested)
+    C) JOIN
+    D) UNION
+    Javob: B
+
+29. Correlated subquery nima?
+    A) Independent
+    B) Outer query ga bog'liq subquery
+    C) Simple subquery
+    D) UNION
+    Javob: B
+
+30. EXISTS operator nima?
+    A) COUNT
+    B) Subquery result mavjudligini tekshirish (boolean)
+    C) IN operator
+    D) LIKE
+    Javob: B
+
+31. NOT EXISTS nima?
+    A) EXISTS
+    B) Subquery result yo'qligini tekshirish
+    C) IN
+    D) NOT IN
+    Javob: B
+
+32. UNION nima qiladi?
+    A) JOIN
+    B) Ikki query natijasini birlashtirish (duplicates remove)
+    C) INTERSECT
+    D) EXCEPT
+    Javob: B
+
+33. UNION ALL nima?
+    A) Remove duplicates
+    B) UNION + keep all duplicates
+    C) INTERSECT
+    D) EXCEPT
+    Javob: B
+
+34. INTERSECT nima?
+    A) UNION
+    B) Ikkala query da bo'lgan rows (common)
+    C) EXCEPT
+    D) JOIN
+    Javob: B
+
+35. EXCEPT nima?
+    A) UNION
+    B) Birinchi query da bor, ikkinchisida yo'q rows
+    C) INTERSECT
+    D) JOIN
+    Javob: B
+
+36. Materialized View nima?
+    A) Normal view
+    B) Physical stored view (cached results)
+    C) Temporary view
+    D) Virtual view
+    Javob: B
+
+37. REFRESH MATERIALIZED VIEW nima?
+    A) Drop view
+    B) Materialized view data ni yangilash
+    C) Create view
+    D) Delete view
+    Javob: B
+
+38. CONCURRENTLY (refresh) nima?
+    A) Block access
+    B) Non-blocking refresh (view accessible)
+    C) Fast refresh
+    D) No refresh
+    Javob: B
+
+39. Partial Index nima?
+    A) Full index
+    B) WHERE condition bilan index (subset)
+    C) Clustered index
+    D) Primary index
+    Javob: B
+
+40. Expression Index nima?
+    A) Column index
+    B) Expression/function result index (LOWER(name))
+    C) Partial index
+    D) Unique index
+    Javob: B
+
+41. B-tree index nima uchun?
+    A) Text search
+    B) Default, <, <=, >, >=, = operators
+    C) Full text
+    D) Geometric
+    Javob: B
+
+42. Hash index nima uchun?
+    A) Range queries
+    B) Faqat = equality checks
+    C) Pattern matching
+    D) Full text
+    Javob: B
+
+43. GiST index nima?
+    A) B-tree
+    B) Generalized Search Tree (geometric, full-text)
+    C) Hash
+    D) Bitmap
+    Javob: B
+
+44. GIN index nima uchun?
+    A) Integers
+    B) Full-text search, JSONB, arrays
+    C) Dates
+    D) Floats
+    Javob: B
+
+45. BRIN index nima?
+    A) B-tree
+    B) Block Range Index (katta sequential data)
+    C) Hash
+    D) GiST
+    Javob: B
+
+46. CLUSTER command nima?
+    A) Create cluster
+    B) Table ni index bo'yicha physically sort
+    C) Join cluster
+    D) Drop cluster
+    Javob: B
+
+47. VACUUM nima qiladi?
+    A) Backup
+    B) Dead tuples clean, space reclaim
+    C) Index rebuild
+    D) Table lock
+    Javob: B
+
+48. VACUUM FULL vs VACUUM?
+    A) Bir xil
+    B) FULL - table rewrite, space return to OS
+    C) FULL - faster
+    D) VACUUM - slower
+    Javob: B
+
+49. ANALYZE nima?
+    A) Vacuum
+    B) Table statistics collect (query planner uchun)
+    C) Index rebuild
+    D) Backup
+    Javob: B
+
+50. VACUUM ANALYZE nima?
+    A) Faqat vacuum
+    B) Vacuum + statistics update
+    C) Faqat analyze
+    D) Nothing
+    Javob: B
+
+51. EXPLAIN nima uchun?
+    A) Execute query
+    B) Query execution plan ko'rsatish
+    C) Create query
+    D) Delete query
+    Javob: B
+
+52. EXPLAIN ANALYZE nima?
+    A) Plan only
+    B) Plan + actual execution statistics
+    C) No execution
+    D) Estimate only
+    Javob: B
+
+53. Sequential Scan nima?
+    A) Index scan
+    B) Table ni row-by-row o'qish
+    C) Bitmap scan
+    D) Index only scan
+    Javob: B
+
+54. Index Scan nima?
+    A) Sequential
+    B) Index orqali data o'qish
+    C) Full scan
+    D) Table scan
+    Javob: B
+
+55. Bitmap Scan nima?
+    A) Sequential scan
+    B) Multiple indexes combine (bitmap create -> table read)
+    C) Index scan
+    D) Full scan
+    Javob: B
+
+56. Index Only Scan nima?
+    A) Table read
+    B) Faqat index dan data (table read siz)
+    C) Sequential scan
+    D) Bitmap scan
+    Javob: B
+
+57. Nested Loop join nima?
+    A) Hash join
+    B) Har bir outer row uchun inner scan
+    C) Merge join
+    D) Cross join
+    Javob: B
+
+58. Hash Join nima?
+    A) Nested loop
+    B) Hash table build -> probe (katta tables uchun)
+    C) Merge join
+    D) Index join
+    Javob: B
+
+59. Merge Join nima?
+    A) Hash join
+    B) Sorted inputs merge (= operator, sorted data)
+    C) Nested loop
+    D) Cross join
+    Javob: B
+
+60. FILLFACTOR nima (table/index)?
+    A) 100% fill
+    B) Page fill percentage (HOT updates uchun space)
+    C) Empty space
+    D) Compression
+    Javob: B
+
+61. HOT (Heap Only Tuple) updates nima?
+    A) Cold updates
+    B) Index update siz table update (same page)
+    C) Full update
+    D) Index update
+    Javob: B
+
+62. TOAST (The Oversized-Attribute Storage Technique)?
+    A) Small data
+    B) Katta values ni alohida storage (>2KB)
+    C) Index storage
+    D) Cache
+    Javob: B
+
+63. MVCC (Multi-Version Concurrency Control)?
+    A) Locking
+    B) Concurrent transactions - multiple row versions
+    C) Single version
+    D) No concurrency
+    Javob: B
+
+64. Transaction Isolation Levels (PostgreSQL)?
+    A) Faqat 1ta level
+    B) Read Committed, Repeatable Read, Serializable
+    C) No isolation
+    D) 2ta level
+    Javob: B
+
+65. Read Committed isolation nima?
+    A) Dirty reads
+    B) Default - faqat committed data o'qiydi
+    C) Uncommitted reads
+    D) No reads
+    Javob: B
+
+66. Repeatable Read isolation nima?
+    A) Non-repeatable reads
+    B) Transaction boshida snapshot (phantom reads yo'q)
+    C) Read committed
+    D) Dirty reads
+    Javob: B
+
+67. Serializable isolation nima?
+    A) Repeatable read
+    B) Eng yuqori - transactions serial kabi
+    C) Read committed
+    D) No isolation
+    Javob: B
+
+68. Deadlock nima?
+    A) Single lock
+    B) Ikki transaction bir-birini kutadi (circular wait)
+    C) No locks
+    D) Fast lock
+    Javob: B
+
+69. Advisory Locks nima?
+    A) Table locks
+    B) Application-level locks (manual control)
+    C) Row locks
+    D) Automatic locks
+    Javob: B
+
+70. FOR UPDATE lock nima?
+    A) Shared lock
+    B) Exclusive row lock (SELECT da)
+    C) No lock
+    D) Table lock
+    Javob: B
+
+71. FOR SHARE lock nima?
+    A) Exclusive lock
+    B) Shared row lock (read, prevent updates)
+    C) No lock
+    D) Advisory lock
+    Javob: B
+
+72. SKIP LOCKED nima (locking)?
+    A) Wait for lock
+    B) Locked rows ni skip qilish (queue systems)
+    C) Lock all
+    D) No skip
+    Javob: B
+
+73. Stored Procedures (PROCEDURE) nima?
+    A) Function
+    B) Transaction control bilan reusable code (COMMIT/ROLLBACK)
+    C) Trigger
+    D) View
+    Javob: B
+
+74. Functions (FUNCTION) vs Procedures?
+    A) Bir xil
+    B) Function - return value, no txn control; Procedure - txn control
+    C) Procedure - return value
+    D) Function - txn control
+    Javob: B
+
+75. PL/pgSQL nima?
+    A) SQL
+    B) Procedural Language (functions/procedures uchun)
+    C) Python
+    D) JavaScript
+    Javob: B
+
+76. RETURNS TABLE (function) nima?
+    A) Scalar value
+    B) Table result set return
+    C) Void
+    D) Boolean
+    Javob: B
+
+77. VARIADIC parameters nima?
+    A) Fixed params
+    B) Variable number of arguments (array)
+    C) No params
+    D) Single param
+    Javob: B
+
+78. DEFAULT parameter values (functions)?
+    A) Required params
+    B) Optional params (default qiymat bilan)
+    C) No defaults
+    D) All required
+    Javob: B
+
+79. IMMUTABLE vs STABLE vs VOLATILE (functions)?
+    A) Bir xil
+    B) Caching: IMMUTABLE - always same, STABLE - same txn, VOLATILE - no cache
+    C) Random
+    D) No difference
+    Javob: B
+
+80. STRICT (RETURNS NULL ON NULL INPUT)?
+    A) Execute with NULL
+    B) NULL input -> NULL return (no execution)
+    C) Error on NULL
+    D) Convert NULL
+    Javob: B
+
+81. Trigger nima?
+    A) Function
+    B) Event bo'lganda avtomatik function execute
+    C) Procedure
+    D) View
+    Javob: B
+
+82. BEFORE vs AFTER triggers?
+    A) Bir xil
+    B) BEFORE - operation oldidan, AFTER - keyindan
+    C) AFTER oldidan
+    D) Random
+    Javob: B
+
+83. FOR EACH ROW vs FOR EACH STATEMENT?
+    A) Bir xil
+    B) ROW - har row uchun, STATEMENT - bir marta
+    C) ROW - bir marta
+    D) Random
+    Javob: B
+
+84. NEW va OLD (triggers)?
+    A) Variables
+    B) NEW - yangi row, OLD - eski row (UPDATE/DELETE da)
+    C) Functions
+    D) Tables
+    Javob: B
+
+85. INSTEAD OF triggers nima?
+    A) BEFORE alternative
+    B) View larda operation replace (editable views)
+    C) AFTER alternative
+    D) No operation
+    Javob: B
+
+86. Event Triggers nima?
+    A) Table triggers
+    B) DDL events (CREATE, DROP, ALTER)
+    C) DML triggers
+    D) Function triggers
+    Javob: B
+
+87. Rules (Rule System) nima?
+    A) Constraints
+    B) Query rewrite system (view updates)
+    C) Triggers
+    D) Indexes
+    Javob: B
+
+88. CHECK constraint complex conditions?
+    A) Simple only
+    B) Expressions, functions (row level)
+    C) No conditions
+    D) Basic only
+    Javob: B
+
+89. EXCLUSION constraint nima?
+    A) Unique
+    B) Custom uniqueness (overlapping prevention)
+    C) Foreign key
+    D) Check
+    Javob: B
+
+90. DEFERRABLE constraints nima?
+    A) Immediate check
+    B) Transaction oxirida check (complex operations uchun)
+    C) No check
+    D) Always deferred
+    Javob: B
+
+91. ON DELETE CASCADE nima?
+    A) Restrict delete
+    B) Parent delete -> child rows ham delete
+    C) No action
+    D) Set null
+    Javob: B
+
+92. ON UPDATE CASCADE nima?
+    A) Restrict update
+    B) Parent update -> child rows ham update
+    C) No action
+    D) Set null
+    Javob: B
+
+93. SET NULL (foreign key action)?
+    A) Cascade
+    B) Parent delete/update -> child foreign key = NULL
+    C) Restrict
+    D) No action
+    Javob: B
+
+94. SET DEFAULT (foreign key action)?
+    A) Set NULL
+    B) Parent delete/update -> child foreign key = default value
+    C) Cascade
+    D) Restrict
+    Javob: B
+
+95. LISTEN/NOTIFY nima?
+    A) Backup/restore
+    B) Async messaging between sessions
+    C) Replication
+    D) Clustering
+    Javob: B
+
+96. pg_notify() function nima?
+    A) Listen
+    B) Notification yuborish (payload bilan)
+    C) Stop notify
+    D) Create channel
+    Javob: B
+
+97. Inheritance (Table Inheritance) nima?
+    A) No relation
+    B) Child table parent dan inherit (partitioning uchun)
+    C) Foreign key
+    D) View
+    Javob: B
+
+98. Partitioning (Table Partitioning) nima?
+    A) Sharding
+    B) Katta table ni kichik partitions ga bo'lish
+    C) Replication
+    D) Clustering
+    Javob: B
+
+99. Range Partitioning nima?
+    A) Hash based
+    B) Value range bo'yicha (dates, IDs)
+    C) List based
+    D) Random
+    Javob: B
+
+100. List Partitioning nima?
+     A) Range based
+     B) Discrete values list bo'yicha (regions, categories)
+     C) Hash based
+     D) Random
+     Javob: B
+
+==========================================================
+                       YAKUNLANDI
+==========================================================

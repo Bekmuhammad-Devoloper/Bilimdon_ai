@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
-import { CheckCircle, XCircle, ArrowLeft, Share2, RotateCcw, Trophy, Zap, Star } from 'lucide-react';
+import { CheckCircle, XCircle, ArrowLeft, Share2, RotateCcw, Trophy, Zap, Star, X, Copy, MessageCircle, Send } from 'lucide-react';
 import { testsApi } from '@/lib/api';
 import { Button, Card, Badge, Progress } from '@/components/ui';
 import { cn, getScoreColor, getDifficultyColor, getDifficultyLabel, formatXP } from '@/lib/utils';
@@ -41,12 +41,29 @@ export default function TestResultPage() {
   const [loading, setLoading] = useState(true);
   const [result, setResult] = useState<TestResult | null>(null);
   const [showAnswers, setShowAnswers] = useState(false);
+  const [showShareModal, setShowShareModal] = useState(false);
 
   useEffect(() => {
     const fetchResult = async () => {
       try {
         const { data } = await testsApi.getResult(testId);
-        setResult(data);
+        
+        // Backend'dan kelgan testAnswers'ni answers formatiga o'tkazish
+        const answers = data.testAnswers?.map((ta: any) => ({
+          questionId: ta.question.id,
+          question: ta.question.question,
+          options: ta.question.options,
+          selectedAnswer: ta.selectedAnswer,
+          correctAnswer: ta.question.correctAnswer,
+          isCorrect: ta.isCorrect,
+          explanation: ta.question.explanation,
+          xpReward: ta.xpEarned || 0,
+        })) || [];
+        
+        setResult({
+          ...data,
+          answers,
+        });
 
         // Celebration for good scores
         if (data.score >= 80) {
@@ -72,18 +89,42 @@ export default function TestResultPage() {
 
   const handleShare = () => {
     if (!result) return;
+    setShowShareModal(true);
+  };
 
-    const text = `🎓 Bilimdon platformasida ${result.score}% natija oldim! ${result.correctAnswers}/${result.totalQuestions} to'g'ri javob, ${result.xpEarned} XP qo'lga kiritdim. Sen ham sinab ko'r!`;
-    
+  const shareText = result ? `🎓 Bilimdon platformasida ${result.score}% natija oldim! ${result.correctAnswers}/${result.totalQuestions} to'g'ri javob, ${result.xpEarned} XP qo'lga kiritdim. Sen ham sinab ko'r!` : '';
+  const shareUrl = typeof window !== 'undefined' ? window.location.origin : 'https://bilimdon.uz';
+
+  const handleCopyText = () => {
+    navigator.clipboard.writeText(`${shareText}\n${shareUrl}`);
+    toast.success('Matn nusxalandi!');
+    setShowShareModal(false);
+  };
+
+  const handleTelegramShare = () => {
+    const url = `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`;
+    window.open(url, '_blank');
+    setShowShareModal(false);
+  };
+
+  const handleWhatsAppShare = () => {
+    const url = `https://wa.me/?text=${encodeURIComponent(shareText + '\n' + shareUrl)}`;
+    window.open(url, '_blank');
+    setShowShareModal(false);
+  };
+
+  const handleNativeShare = async () => {
     if (navigator.share) {
-      navigator.share({
-        title: 'Bilimdon - Test natijasi',
-        text,
-        url: window.location.origin,
-      });
-    } else {
-      navigator.clipboard.writeText(text);
-      toast.success('Nusxa olindi!');
+      try {
+        await navigator.share({
+          title: 'Bilimdon - Test natijasi',
+          text: shareText,
+          url: shareUrl,
+        });
+        setShowShareModal(false);
+      } catch (err) {
+        console.log('Share cancelled');
+      }
     }
   };
 
@@ -109,6 +150,66 @@ export default function TestResultPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950 pb-24 md:pb-8">
+      {/* Share Modal */}
+      {showShareModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div 
+            className="absolute inset-0 bg-black/50" 
+            onClick={() => setShowShareModal(false)}
+          />
+          <div className="relative bg-white dark:bg-gray-900 rounded-2xl p-6 w-full max-w-sm shadow-xl">
+            <button
+              onClick={() => setShowShareModal(false)}
+              className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
+              title="Yopish"
+              aria-label="Modalni yopish"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+              Natijani ulashish
+            </h3>
+            
+            <div className="space-y-3">
+              <button
+                onClick={handleTelegramShare}
+                className="w-full flex items-center gap-4 p-4 rounded-xl bg-[#0088cc] hover:bg-[#0077b5] text-white transition-colors"
+              >
+                <Send className="w-6 h-6" />
+                <span className="font-medium">Telegram</span>
+              </button>
+              
+              <button
+                onClick={handleWhatsAppShare}
+                className="w-full flex items-center gap-4 p-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white transition-colors"
+              >
+                <MessageCircle className="w-6 h-6" />
+                <span className="font-medium">WhatsApp</span>
+              </button>
+              
+              <button
+                onClick={handleCopyText}
+                className="w-full flex items-center gap-4 p-4 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+              >
+                <Copy className="w-6 h-6" />
+                <span className="font-medium">Matnni nusxalash</span>
+              </button>
+              
+              {typeof navigator !== 'undefined' && navigator.share && (
+                <button
+                  onClick={handleNativeShare}
+                  className="w-full flex items-center gap-4 p-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white transition-colors"
+                >
+                  <Share2 className="w-6 h-6" />
+                  <span className="font-medium">Boshqa ilovalar</span>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white py-12 px-4">
         <div className="container mx-auto text-center">
@@ -197,7 +298,7 @@ export default function TestResultPage() {
         )}
 
         {/* New Achievements */}
-        {result.newAchievements.length > 0 && (
+        {(Array.isArray(result.newAchievements) && result.newAchievements.length > 0) && (
           <Card className="mt-6">
             <h3 className="font-bold text-gray-900 dark:text-white mb-4">
               🏆 Yangi yutuqlar
@@ -241,79 +342,63 @@ export default function TestResultPage() {
         </div>
 
         {/* Show/Hide Answers */}
-        <button
-          onClick={() => setShowAnswers(!showAnswers)}
-          className="w-full mt-6 py-3 text-indigo-600 dark:text-indigo-400 font-medium"
-        >
-          {showAnswers ? 'Javoblarni yashirish' : 'Javoblarni ko\'rish'}
-        </button>
+        {Array.isArray(result.answers) && result.answers.filter(a => !a.isCorrect).length > 0 && (
+          <button
+            onClick={() => setShowAnswers(!showAnswers)}
+            className="w-full mt-6 py-3 text-indigo-600 dark:text-indigo-400 font-medium"
+          >
+            {showAnswers ? 'Xatolarni yashirish' : `Xatolarni ko'rish (${result.answers.filter(a => !a.isCorrect).length} ta)`}
+          </button>
+        )}
 
-        {/* Answers Review */}
-        {showAnswers && (
+        {/* Wrong Answers Review - faqat noto'g'ri javoblar */}
+        {showAnswers && Array.isArray(result.answers) && (
           <div className="space-y-4 mt-4 pb-8">
-            {result.answers.map((answer, index) => (
-              <Card key={answer.questionId} className={cn(
-                'border-l-4',
-                answer.isCorrect ? 'border-l-green-500' : 'border-l-red-500'
-              )}>
+            <h3 className="font-bold text-red-600 dark:text-red-400 mb-4">
+              ❌ Noto'g'ri javoblar
+            </h3>
+            {result.answers
+              .map((answer, originalIndex) => ({ ...answer, originalIndex: originalIndex + 1 }))
+              .filter(answer => !answer.isCorrect)
+              .map((answer) => (
+              <Card key={answer.questionId} className="border-l-4 border-l-red-500">
                 <div className="flex items-start gap-3 mb-4">
-                  <div className={cn(
-                    'w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0',
-                    answer.isCorrect ? 'bg-green-100 text-green-600' : 'bg-red-100 text-red-600'
-                  )}>
-                    {answer.isCorrect ? <CheckCircle className="w-5 h-5" /> : <XCircle className="w-5 h-5" />}
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-red-100 text-red-600">
+                    <XCircle className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Savol {index + 1}</p>
+                    <p className="text-sm text-gray-500 mb-1">Savol {answer.originalIndex}</p>
                     <p className="font-medium text-gray-900 dark:text-white">
                       {answer.question}
                     </p>
                   </div>
                 </div>
 
+                {/* Faqat tanlangan noto'g'ri javob va to'g'ri javobni ko'rsatish */}
                 <div className="space-y-2 mb-4">
-                  {answer.options.map((option, optIndex) => {
-                    const isCorrect = optIndex === answer.correctAnswer;
-                    const isSelected = optIndex === answer.selectedAnswer;
-                    const labels = ['A', 'B', 'C', 'D'];
+                  {/* Sizning javobingiz - noto'g'ri */}
+                  <div className="p-3 rounded-xl flex items-center gap-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
+                    <span className="w-8 h-8 rounded-lg flex items-center justify-center font-medium text-sm bg-red-500 text-white">
+                      {['A', 'B', 'C', 'D'][answer.selectedAnswer]}
+                    </span>
+                    <span className="flex-1 text-red-700 dark:text-red-400">
+                      {answer.options[answer.selectedAnswer]}
+                    </span>
+                    <span className="text-xs text-red-500 font-medium">Sizning javobingiz</span>
+                    <XCircle className="w-5 h-5 text-red-500" />
+                  </div>
 
-                    return (
-                      <div
-                        key={optIndex}
-                        className={cn(
-                          'p-3 rounded-xl flex items-center gap-3',
-                          isCorrect
-                            ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800'
-                            : isSelected && !isCorrect
-                              ? 'bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800'
-                              : 'bg-gray-50 dark:bg-gray-800'
-                        )}
-                      >
-                        <span className={cn(
-                          'w-8 h-8 rounded-lg flex items-center justify-center font-medium text-sm',
-                          isCorrect
-                            ? 'bg-green-500 text-white'
-                            : isSelected && !isCorrect
-                              ? 'bg-red-500 text-white'
-                              : 'bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400'
-                        )}>
-                          {labels[optIndex]}
-                        </span>
-                        <span className={cn(
-                          'flex-1',
-                          isCorrect
-                            ? 'text-green-700 dark:text-green-400 font-medium'
-                            : isSelected && !isCorrect
-                              ? 'text-red-700 dark:text-red-400'
-                              : 'text-gray-600 dark:text-gray-400'
-                        )}>
-                          {option}
-                        </span>
-                        {isCorrect && <CheckCircle className="w-5 h-5 text-green-500" />}
-                        {isSelected && !isCorrect && <XCircle className="w-5 h-5 text-red-500" />}
-                      </div>
-                    );
-                  })}
+                  {/* To'g'ri javob */}
+                  <div className="p-3 rounded-xl flex items-center gap-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
+                    <span className="w-8 h-8 rounded-lg flex items-center justify-center font-medium text-sm bg-green-500 text-white">
+                      {['A', 'B', 'C', 'D'][answer.correctAnswer]}
+                    </span>
+                    <span className="flex-1 text-green-700 dark:text-green-400 font-medium">
+                      {answer.options[answer.correctAnswer]}
+                    </span>
+                    <span className="text-xs text-green-500 font-medium">To'g'ri javob</span>
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                  </div>
                 </div>
 
                 {answer.explanation && (
@@ -323,12 +408,6 @@ export default function TestResultPage() {
                     </p>
                   </div>
                 )}
-
-                <div className="flex items-center gap-2 mt-3">
-                  <Badge variant={answer.isCorrect ? 'success' : 'error'}>
-                    {answer.isCorrect ? `+${answer.xpReward} XP` : '0 XP'}
-                  </Badge>
-                </div>
               </Card>
             ))}
           </div>

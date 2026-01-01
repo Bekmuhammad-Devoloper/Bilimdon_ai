@@ -40,10 +40,13 @@ export default function AchievementsPage() {
   useEffect(() => {
     const fetchAchievements = async () => {
       try {
-        const { data } = await achievementsApi.getMy();
+        // getAll barcha yutuqlarni progress bilan qaytaradi
+        const { data } = await achievementsApi.getAll();
+        const achievementsList = Array.isArray(data) ? data : [];
+        
         setAchievements({
-          unlocked: data.filter((a: Achievement) => a.unlockedAt),
-          locked: data.filter((a: Achievement) => !a.unlockedAt),
+          unlocked: achievementsList.filter((a: Achievement) => a.unlockedAt),
+          locked: achievementsList.filter((a: Achievement) => !a.unlockedAt),
         });
       } catch (error) {
         console.error('Error fetching achievements:', error);

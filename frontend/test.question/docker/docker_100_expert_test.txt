@@ -1,0 +1,702 @@
+DOCKER - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. Docker engine architecture?
+   A) Single process
+   B) dockerd daemon + containerd + runc
+   C) Only containerd
+   D) Only daemon
+   Javob: B
+
+2. containerd nima?
+   A) Container daemon
+   B) Container runtime (high-level)
+   C) Docker daemon
+   D) Image builder
+   Javob: B
+
+3. runc nima?
+   A) Run command
+   B) OCI container runtime (low-level)
+   C) Docker run
+   D) Container runner
+   Javob: B
+
+4. OCI (Open Container Initiative) nima?
+   A) Open source
+   B) Container format va runtime standartlari
+   C) Open container
+   D) Container interface
+   Javob: B
+
+5. Docker socket (/var/run/docker.sock) nima?
+   A) Network socket
+   B) Docker API Unix socket
+   C) TCP socket
+   D) UDP socket
+   Javob: B
+
+6. Docker socket security risk?
+   A) No risk
+   B) Root access to host
+   C) Minor risk
+   D) Container risk only
+   Javob: B
+
+7. Rootless Docker nima?
+   A) No root
+   B) Docker without root privileges
+   C) Root container
+   D) Root image
+   Javob: B
+
+8. User namespace nima?
+   A) Username space
+   B) Container UID mapping to host
+   C) User folder
+   D) User group
+   Javob: B
+
+9. seccomp profile nima?
+   A) Security company
+   B) System call filtering
+   C) Secure compile
+   D) Security profile
+   Javob: B
+
+10. AppArmor vs SELinux Docker da?
+    A) Same
+    B) Mandatory Access Control systems
+    C) AppArmor better
+    D) SELinux better
+    Javob: B
+
+11. Docker Content Trust (DCT)?
+    A) Trust content
+    B) Image signing va verification
+    C) Content delivery
+    D) Trust certificate
+    Javob: B
+
+12. Notary nima?
+    A) Notary public
+    B) Docker image signing server
+    C) Note server
+    D) Notification server
+    Javob: B
+
+13. Multi-stage build benefit?
+    A) Multiple stages
+    B) Smaller final image, build tools excluded
+    C) Faster build
+    D) More layers
+    Javob: B
+
+14. BuildKit nima?
+    A) Build tools
+    B) Docker ning yangi build engine
+    C) Kit for building
+    D) Build package
+    Javob: B
+
+15. BuildKit frontend nima?
+    A) UI frontend
+    B) Dockerfile parser (dockerfile.v0, etc.)
+    C) Build UI
+    D) Dashboard
+    Javob: B
+
+16. --mount=type=cache nima?
+    A) Cache mount
+    B) Build cache persistence across builds
+    C) File cache
+    D) Layer cache
+    Javob: B
+
+17. --mount=type=secret nima?
+    A) Secret mount
+    B) Build-time secret injection
+    C) Password mount
+    D) Key mount
+    Javob: B
+
+18. --mount=type=ssh nima?
+    A) SSH mount
+    B) SSH agent forwarding for builds
+    C) SSH tunnel
+    D) SSH key
+    Javob: B
+
+19. DOCKER_BUILDKIT=1 nima?
+    A) Enable BuildKit
+    B) Legacy build engine disable
+    C) Build configuration
+    D) Kit enable
+    Javob: A
+
+20. Buildx nima?
+    A) Build extension
+    B) Docker CLI plugin for advanced builds
+    C) Build extra
+    D) Extended build
+    Javob: B
+
+21. docker buildx bake nima?
+    A) Bake bread
+    B) Multi-target build from file
+    C) Build batch
+    D) Bake image
+    Javob: B
+
+22. Cross-platform build (multi-arch)?
+    A) Multiple platforms
+    B) buildx --platform linux/amd64,linux/arm64
+    C) Cross compile
+    D) Platform switch
+    Javob: B
+
+23. QEMU emulation Docker da?
+    A) Game emulator
+    B) Cross-architecture build support
+    C) Virtual machine
+    D) Simulator
+    Javob: B
+
+24. Manifest list nima?
+    A) File list
+    B) Multi-arch image reference
+    C) Layer list
+    D) Tag list
+    Javob: B
+
+25. docker manifest inspect nima ko'rsatadi?
+    A) Dockerfile
+    B) Multi-platform image details
+    C) Container manifest
+    D) Build manifest
+    Javob: B
+
+26. Image layer deduplication?
+    A) No dedup
+    B) Shared layers between images
+    C) Layer copy
+    D) Unique layers
+    Javob: B
+
+27. Overlay2 storage driver?
+    A) Overlay network
+    B) Union filesystem for layers
+    C) Storage overlay
+    D) File overlay
+    Javob: B
+
+28. Copy-on-write (CoW) nima?
+    A) Copy always
+    B) Write triggerlari copy
+    C) Write on copy
+    D) Copy trigger
+    Javob: B
+
+29. /var/lib/docker directory?
+    A) Docker config
+    B) Docker data (images, containers, volumes)
+    C) Docker logs
+    D) Docker cache
+    Javob: B
+
+30. docker system df nima ko'rsatadi?
+    A) Disk free
+    B) Docker disk usage
+    C) System disk
+    D) File system
+    Javob: B
+
+31. docker system prune -a --volumes nima?
+    A) Clean some
+    B) Remove all unused data
+    C) Prune containers
+    D) Remove images
+    Javob: B
+
+32. Dangling images nima?
+    A) Hanging images
+    B) Untagged intermediate images
+    C) Broken images
+    D) Old images
+    Javob: B
+
+33. docker image prune -a?
+    A) Remove all
+    B) Remove all unused images
+    C) Prune tags
+    D) Clean cache
+    Javob: B
+
+34. Health check HEALTHCHECK instruction?
+    A) Manual check
+    B) Container health monitoring
+    C) Image check
+    D) Build check
+    Javob: B
+
+35. --health-cmd, --health-interval?
+    A) Health config
+    B) Health check parameters
+    C) Health command
+    D) Health timing
+    Javob: A
+
+36. Container states?
+    A) Running, Stopped
+    B) Created, Running, Paused, Restarting, Exited, Dead
+    C) Start, Stop
+    D) On, Off
+    Javob: B
+
+37. OOM killer Docker da?
+    A) Kill command
+    B) Out of Memory container kill
+    C) Process killer
+    D) Container stop
+    Javob: B
+
+38. --memory-swap setting?
+    A) Swap memory
+    B) Total memory limit (RAM + swap)
+    C) Memory switch
+    D) Swap only
+    Javob: B
+
+39. --cpu-shares nima?
+    A) CPU count
+    B) Relative CPU weight
+    C) CPU share
+    D) CPU limit
+    Javob: B
+
+40. --cpus=1.5 nima?
+    A) 1.5 CPUs
+    B) 1.5 CPU cores limit
+    C) CPU percent
+    D) CPU count
+    Javob: B
+
+41. --cpuset-cpus="0,1" nima?
+    A) CPU set
+    B) Pin to specific CPU cores
+    C) CPU list
+    D) CPU range
+    Javob: B
+
+42. cgroups v2 nima?
+    A) Control groups
+    B) Resource limiting v2
+    C) Container groups
+    D) Process groups
+    Javob: B
+
+43. --pids-limit nima?
+    A) PID number
+    B) Maximum processes in container
+    C) Process ID
+    D) PID file
+    Javob: B
+
+44. --ulimit nofile nima?
+    A) No file
+    B) Open file descriptor limit
+    C) File upload
+    D) File limit
+    Javob: B
+
+45. Docker logging drivers?
+    A) Log files
+    B) json-file, syslog, journald, fluentd, etc.
+    C) Console log
+    D) Error log
+    Javob: B
+
+46. --log-opt max-size nima?
+    A) Log size
+    B) Maximum log file size
+    C) Max option
+    D) Size limit
+    Javob: B
+
+47. Container log rotation?
+    A) Manual
+    B) max-size + max-file options
+    C) Auto rotate
+    D) No rotation
+    Javob: B
+
+48. docker logs --since nima?
+    A) Since start
+    B) Logs from specific time
+    C) Since creation
+    D) Since build
+    Javob: B
+
+49. Docker network drivers?
+    A) bridge only
+    B) bridge, host, none, overlay, macvlan, ipvlan
+    C) host only
+    D) overlay only
+    Javob: B
+
+50. bridge network default behavior?
+    A) Public access
+    B) Isolated, NAT to host
+    C) No isolation
+    D) Direct access
+    Javob: B
+
+51. host network mode?
+    A) Host only
+    B) Container shares host network namespace
+    C) Host bridge
+    D) Host overlay
+    Javob: B
+
+52. none network mode?
+    A) No container
+    B) No network interfaces
+    C) None available
+    D) Default
+    Javob: B
+
+53. overlay network requirement?
+    A) Single node
+    B) Swarm mode or external KV store
+    C) Bridge
+    D) Host mode
+    Javob: B
+
+54. macvlan network?
+    A) MAC address
+    B) Container gets physical network MAC
+    C) Virtual MAC
+    D) VLAN tag
+    Javob: B
+
+55. ipvlan L2 vs L3 mode?
+    A) Layer 2, 3
+    B) L2=bridge-like, L3=routed
+    C) Level 2, 3
+    D) IP level
+    Javob: B
+
+56. --network-alias nima?
+    A) Network name
+    B) Additional DNS name for container
+    C) Alias IP
+    D) Hostname
+    Javob: B
+
+57. Embedded DNS server Docker?
+    A) External DNS
+    B) 127.0.0.11 for container name resolution
+    C) Host DNS
+    D) No DNS
+    Javob: B
+
+58. --dns flag nima?
+    A) DNS server
+    B) Custom DNS server for container
+    C) DNS name
+    D) DNS alias
+    Javob: B
+
+59. Docker volume drivers?
+    A) local only
+    B) local, nfs, cifs, cloud providers
+    C) bind only
+    D) tmpfs only
+    Javob: B
+
+60. Named volume vs bind mount?
+    A) Same
+    B) Named=Docker managed, bind=host path
+    C) Bind=Docker managed
+    D) No difference
+    Javob: B
+
+61. tmpfs mount nima?
+    A) Temp file
+    B) RAM-based temporary storage
+    C) Tmp folder
+    D) File system
+    Javob: B
+
+62. --mount vs -v syntax?
+    A) Same
+    B) --mount more explicit, -v shorthand
+    C) -v better
+    D) --mount deprecated
+    Javob: B
+
+63. Volume backup strategy?
+    A) Manual copy
+    B) docker run --volumes-from + tar
+    C) Auto backup
+    D) No backup
+    Javob: B
+
+64. docker cp nima?
+    A) Copy command
+    B) Copy files between container and host
+    C) Container path
+    D) Copy image
+    Javob: B
+
+65. Docker Compose version 3 vs 2?
+    A) Same
+    B) v3 for Swarm, v2 more features locally
+    C) v2 for Swarm
+    D) No difference
+    Javob: B
+
+66. docker-compose.override.yml nima?
+    A) Override settings
+    B) Automatic merge with base compose
+    C) Manual override
+    D) Config override
+    Javob: B
+
+67. depends_on condition?
+    A) Dependency
+    B) service_healthy, service_started, service_completed_successfully
+    C) Container start
+    D) Image ready
+    Javob: B
+
+68. profiles in docker-compose?
+    A) User profile
+    B) Conditional service groups
+    C) Config profile
+    D) Build profile
+    Javob: B
+
+69. docker compose watch (Compose Watch)?
+    A) Watch files
+    B) Auto-sync and rebuild on changes
+    C) Container watch
+    D) Log watch
+    Javob: B
+
+70. Compose file interpolation?
+    A) Interpolate
+    B) ${VARIABLE} environment substitution
+    C) Variable insert
+    D) Config insert
+    Javob: B
+
+71. .env file precedence?
+    A) Highest
+    B) Lower than shell environment
+    C) Only file
+    D) No precedence
+    Javob: B
+
+72. Docker Swarm init?
+    A) swarm start
+    B) docker swarm init
+    C) swarm create
+    D) init swarm
+    Javob: B
+
+73. Manager vs Worker nodes?
+    A) Same
+    B) Manager=orchestration, Worker=run tasks
+    C) Worker=orchestration
+    D) No difference
+    Javob: B
+
+74. Raft consensus Swarm da?
+    A) Raft boat
+    B) Manager node agreement protocol
+    C) Consensus algorithm
+    D) Vote system
+    Javob: B
+
+75. Recommended manager count?
+    A) 1
+    B) 3 or 5 (odd number)
+    C) 2 or 4
+    D) Any number
+    Javob: B
+
+76. docker service create vs docker run?
+    A) Same
+    B) service=Swarm replicated, run=single container
+    C) run=Swarm
+    D) No difference
+    Javob: B
+
+77. Service replicas?
+    A) Copy service
+    B) --replicas N containers
+    C) Replica image
+    D) Service copy
+    Javob: B
+
+78. Rolling update Swarm?
+    A) Manual update
+    B) --update-parallelism, --update-delay
+    C) All at once
+    D) No update
+    Javob: B
+
+79. --update-failure-action?
+    A) Fail action
+    B) pause, continue, rollback
+    C) Stop action
+    D) Error action
+    Javob: B
+
+80. docker service rollback?
+    A) Manual rollback
+    B) Revert to previous service version
+    C) Delete service
+    D) Stop service
+    Javob: B
+
+81. Docker secrets nima?
+    A) Password file
+    B) Encrypted sensitive data for Swarm
+    C) Secret key
+    D) Hidden file
+    Javob: B
+
+82. docker secret create?
+    A) Create password
+    B) Create encrypted secret
+    C) Secret file
+    D) Hidden create
+    Javob: B
+
+83. Secrets mount location?
+    A) /etc/secrets
+    B) /run/secrets/<secret_name>
+    C) /var/secrets
+    D) /secrets
+    Javob: B
+
+84. Docker configs nima?
+    A) Configuration files
+    B) Non-sensitive config data for Swarm
+    C) Config settings
+    D) Setup files
+    Javob: B
+
+85. Placement constraints?
+    A) Place container
+    B) --constraint node.labels.key==value
+    C) Location limit
+    D) Container place
+    Javob: B
+
+86. Global vs replicated mode?
+    A) Same
+    B) Global=one per node, replicated=N total
+    C) Replicated=one per node
+    D) No difference
+    Javob: B
+
+87. Ingress network Swarm?
+    A) Ingress controller
+    B) Routing mesh for service access
+    C) Entry network
+    D) Public network
+    Javob: B
+
+88. docker stack deploy?
+    A) Deploy stack
+    B) Deploy compose file to Swarm
+    C) Stack create
+    D) Service deploy
+    Javob: B
+
+89. docker stack ls vs docker service ls?
+    A) Same
+    B) stack=all services in stack, service=all services
+    C) stack=one service
+    D) No difference
+    Javob: B
+
+90. Container orchestration alternatives?
+    A) Docker only
+    B) Kubernetes, Nomad, Mesos
+    C) Swarm only
+    D) No alternatives
+    Javob: B
+
+91. Docker vs containerd in Kubernetes?
+    A) Docker required
+    B) containerd directly, dockershim removed
+    C) Docker only
+    D) Both required
+    Javob: B
+
+92. crictl vs docker CLI?
+    A) Same
+    B) crictl=CRI interface, docker=Docker daemon
+    C) docker=CRI
+    D) No difference
+    Javob: B
+
+93. Podman vs Docker?
+    A) Same
+    B) Podman=daemonless, rootless
+    C) Docker=daemonless
+    D) No difference
+    Javob: B
+
+94. Buildah nima?
+    A) Build tool
+    B) OCI image builder (daemonless)
+    C) Docker builder
+    D) Container builder
+    Javob: B
+
+95. Skopeo nima?
+    A) Image viewer
+    B) Image copy/inspect tool (no daemon)
+    C) Container tool
+    D) Registry tool
+    Javob: B
+
+96. Harbor registry nima?
+    A) Ship harbor
+    B) Enterprise container registry
+    C) Docker Hub
+    D) Private registry
+    Javob: B
+
+97. Registry garbage collection?
+    A) Delete images
+    B) Reclaim unreferenced blob storage
+    C) Clean registry
+    D) Remove tags
+    Javob: B
+
+98. Image vulnerability scanning?
+    A) Scan image
+    B) Trivy, Clair, Snyk for CVE detection
+    C) Virus scan
+    D) Security scan
+    Javob: B
+
+99. SBOM (Software Bill of Materials)?
+    A) Bill receipt
+    B) Image component inventory
+    C) Software list
+    D) Package list
+    Javob: B
+
+100. Docker Scout nima?
+     A) Scout badge
+     B) Docker image analysis and recommendations
+     C) Container scout
+     D) Image search
+     Javob: B

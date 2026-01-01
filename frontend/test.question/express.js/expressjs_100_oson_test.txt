@@ -1,0 +1,706 @@
+EXPRESS.JS FRAMEWORK - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+=============================================================
+
+1. Express.js nima?
+   A) Database
+   B) Node.js uchun web framework
+   C) Frontend framework
+   D) Operatsion tizim
+   Javob: B
+
+2. Express.js qaysi dasturlash tilida yozilgan?
+   A) Python
+   B) JavaScript
+   C) Java
+   D) Ruby
+   Javob: B
+
+3. Express.js qaysi platformada ishlaydi?
+   A) Browser
+   B) Node.js
+   C) Python
+   D) PHP
+   Javob: B
+
+4. Express.js ni o'rnatish buyrug'i qaysi?
+   A) npm install express
+   B) npm get express
+   C) node install express
+   D) install express
+   Javob: A
+
+5. Express applicationni yaratish uchun qanday kod yoziladi?
+   A) new Express()
+   B) const app = express()
+   C) express.create()
+   D) Express.init()
+   Javob: B
+
+6. Express serverni ishga tushirish metodi qaysi?
+   A) app.start()
+   B) app.listen()
+   C) app.run()
+   D) app.begin()
+   Javob: B
+
+7. app.listen() metodiga qanday argumentlar beriladi?
+   A) Faqat callback
+   B) Port va optional callback
+   C) Faqat port
+   D) URL va port
+   Javob: B
+
+8. Express da GET so'rovni handle qilish metodi?
+   A) app.post()
+   B) app.get()
+   C) app.fetch()
+   D) app.receive()
+   Javob: B
+
+9. Express da POST so'rovni handle qilish metodi?
+   A) app.get()
+   B) app.post()
+   C) app.send()
+   D) app.submit()
+   Javob: B
+
+10. Express da PUT so'rovni handle qilish metodi?
+    A) app.update()
+    B) app.put()
+    C) app.modify()
+    D) app.change()
+    Javob: B
+
+11. Express da DELETE so'rovni handle qilish metodi?
+    A) app.remove()
+    B) app.delete()
+    C) app.destroy()
+    D) app.erase()
+    Javob: B
+
+12. Route handler funksiyasiga qanday parametrlar keladi?
+    A) request, response
+    B) req, res, next
+    C) data, callback
+    D) url, method
+    Javob: B
+
+13. res.send() metodi nima qiladi?
+    A) So'rov yuboradi
+    B) Javob yuboradi
+    C) Fayl yuboradi
+    D) Email yuboradi
+    Javob: B
+
+14. res.json() metodi nima qaytaradi?
+    A) HTML
+    B) JSON formatda javob
+    C) XML
+    D) Text
+    Javob: B
+
+15. res.status() metodi nima qiladi?
+    A) Server statusini ko'rsatadi
+    B) HTTP status code o'rnatadi
+    C) Status tekshiradi
+    D) Error status
+    Javob: B
+
+16. res.status(200) qanday status?
+    A) Error
+    B) OK (muvaffaqiyatli)
+    C) Not Found
+    D) Server Error
+    Javob: B
+
+17. res.status(404) qanday status?
+    A) OK
+    B) Not Found
+    C) Server Error
+    D) Unauthorized
+    Javob: B
+
+18. res.status(500) qanday status?
+    A) OK
+    B) Internal Server Error
+    C) Not Found
+    D) Bad Request
+    Javob: B
+
+19. res.status(201) qanday status?
+    A) OK
+    B) Created (yaratildi)
+    C) Not Found
+    D) Error
+    Javob: B
+
+20. res.status(400) qanday status?
+    A) OK
+    B) Bad Request
+    C) Not Found
+    D) Server Error
+    Javob: B
+
+21. req.params nima?
+    A) Query parameters
+    B) URL route parametrlari
+    C) Body parameters
+    D) Header parameters
+    Javob: B
+
+22. /users/:id da :id nima?
+    A) Static path
+    B) Route parameter
+    C) Query parameter
+    D) Body parameter
+    Javob: B
+
+23. req.query nima?
+    A) Route params
+    B) URL query string parametrlari (?key=value)
+    C) Body params
+    D) Headers
+    Javob: B
+
+24. /search?q=hello da q qiymatini qanday olamiz?
+    A) req.params.q
+    B) req.query.q
+    C) req.body.q
+    D) req.q
+    Javob: B
+
+25. req.body nima?
+    A) Query params
+    B) POST/PUT so'rov tanasi ma'lumotlari
+    C) Route params
+    D) Headers
+    Javob: B
+
+26. req.body ishlatish uchun qanday middleware kerak?
+    A) body-parser yoki express.json()
+    B) cookie-parser
+    C) cors
+    D) helmet
+    Javob: A
+
+27. express.json() middleware nima qiladi?
+    A) JSON yaratadi
+    B) JSON body ni parse qiladi
+    C) JSON yuboradi
+    D) JSON validatsiya
+    Javob: B
+
+28. express.urlencoded() middleware nima uchun?
+    A) URL encode
+    B) Form data ni parse qiladi
+    C) URL decode
+    D) URL validate
+    Javob: B
+
+29. express.urlencoded({ extended: true }) da extended nima?
+    A) URL uzunligi
+    B) Nested objects parse qilish (qs kutubxonasi)
+    C) Extended URL
+    D) More fields
+    Javob: B
+
+30. Middleware nima?
+    A) Database
+    B) Request va response orasidagi funksiya
+    C) Template engine
+    D) Router
+    Javob: B
+
+31. app.use() metodi nima uchun?
+    A) Router yaratish
+    B) Middleware qo'shish
+    C) Route yaratish
+    D) Server yaratish
+    Javob: B
+
+32. Middleware da next() funksiyasi nima qiladi?
+    A) So'rovni tugatadi
+    B) Keyingi middleware/route ga o'tkazadi
+    C) Xato otadi
+    D) Response yuboradi
+    Javob: B
+
+33. next() chaqirilmasa nima bo'ladi?
+    A) Xato chiqadi
+    B) So'rov "osilib" qoladi (hang)
+    C) Avtomatik davom etadi
+    D) Server to'xtaydi
+    Javob: B
+
+34. express.static() middleware nima uchun?
+    A) Dinamik fayllar
+    B) Statik fayllarni serve qilish (HTML, CSS, JS, images)
+    C) API yaratish
+    D) Database ulanish
+    Javob: B
+
+35. app.use(express.static('public')) nima qiladi?
+    A) public papkani yaratadi
+    B) public papkadagi fayllarni serve qiladi
+    C) public route yaratadi
+    D) public middleware
+    Javob: B
+
+36. res.sendFile() metodi nima qiladi?
+    A) JSON yuboradi
+    B) Faylni response sifatida yuboradi
+    C) Fayl yuklaydi
+    D) Fayl o'chiradi
+    Javob: B
+
+37. res.download() metodi nima qiladi?
+    A) Fayl yuklaydi serverga
+    B) Faylni download sifatida yuboradi
+    C) Fayl o'chiradi
+    D) Fayl nusxalaydi
+    Javob: B
+
+38. res.redirect() metodi nima qiladi?
+    A) Faylga yo'naltiradi
+    B) Boshqa URL ga yo'naltiradi
+    C) Error ga yo'naltiradi
+    D) Database ga yo'naltiradi
+    Javob: B
+
+39. res.redirect('/login') nima qiladi?
+    A) Login sahifasini render qiladi
+    B) /login URL ga redirect qiladi
+    C) Login qiladi
+    D) Login tekshiradi
+    Javob: B
+
+40. res.render() metodi nima uchun?
+    A) JSON render
+    B) Template engine bilan HTML render qilish
+    C) Image render
+    D) CSS render
+    Javob: B
+
+41. Template engine nima?
+    A) JavaScript engine
+    B) Dinamik HTML yaratish uchun shablon tizimi
+    C) Database engine
+    D) CSS engine
+    Javob: B
+
+42. Express da qaysi template enginelar mashhur?
+    A) React, Vue
+    B) EJS, Pug, Handlebars
+    C) Angular, Svelte
+    D) jQuery, Bootstrap
+    Javob: B
+
+43. app.set('view engine', 'ejs') nima qiladi?
+    A) View yaratadi
+    B) Default template engine ni EJS qilib belgilaydi
+    C) EJS o'rnatadi
+    D) View o'chiradi
+    Javob: B
+
+44. app.set('views', './templates') nima?
+    A) View engine
+    B) Template fayllar papkasini belgilaydi
+    C) View yaratadi
+    D) Template yaratadi
+    Javob: B
+
+45. EJS da o'zgaruvchini qanday chiqaramiz?
+    A) {{ variable }}
+    B) <%= variable %>
+    C) {% variable %}
+    D) {# variable #}
+    Javob: B
+
+46. EJS da JavaScript kod qanday yoziladi?
+    A) {{ code }}
+    B) <% code %>
+    C) {% code %}
+    D) {# code #}
+    Javob: B
+
+47. EJS da HTML escape qilmasdan chiqarish?
+    A) <%= %>
+    B) <%- %> (unescaped)
+    C) <% %>
+    D) <%# %>
+    Javob: B
+
+48. Express Router nima?
+    A) URL parser
+    B) Routelarni modular qilish uchun mini-app
+    C) Middleware
+    D) Template
+    Javob: B
+
+49. express.Router() nima qaytaradi?
+    A) App instance
+    B) Router instance
+    C) Middleware
+    D) Server
+    Javob: B
+
+50. Router ni app ga qanday ulaymiz?
+    A) app.router(router)
+    B) app.use('/path', router)
+    C) app.add(router)
+    D) app.connect(router)
+    Javob: B
+
+51. req.method nima qaytaradi?
+    A) URL
+    B) HTTP method (GET, POST, ...)
+    C) Headers
+    D) Body
+    Javob: B
+
+52. req.url nima qaytaradi?
+    A) Method
+    B) So'rov URL si
+    C) Body
+    D) Headers
+    Javob: B
+
+53. req.path nima qaytaradi?
+    A) Full URL
+    B) URL ning path qismi (query dan oldin)
+    C) Query string
+    D) Protocol
+    Javob: B
+
+54. req.headers nima?
+    A) Body
+    B) HTTP request headerlari
+    C) Query params
+    D) Route params
+    Javob: B
+
+55. req.headers['content-type'] nima qaytaradi?
+    A) URL
+    B) Content-Type header qiymati
+    C) Body
+    D) Method
+    Javob: B
+
+56. req.get('Content-Type') nima qiladi?
+    A) Content o'rnatadi
+    B) Header qiymatini oladi
+    C) Content yuboradi
+    D) Type tekshiradi
+    Javob: B
+
+57. res.set() metodi nima qiladi?
+    A) Body o'rnatadi
+    B) Response header o'rnatadi
+    C) Status o'rnatadi
+    D) Cookie o'rnatadi
+    Javob: B
+
+58. res.set('Content-Type', 'application/json') nima?
+    A) JSON parse
+    B) Response Content-Type headerini o'rnatadi
+    C) JSON yaratadi
+    D) Content tekshiradi
+    Javob: B
+
+59. res.type('json') nima qiladi?
+    A) JSON parse
+    B) Content-Type ni application/json qiladi
+    C) JSON validate
+    D) JSON create
+    Javob: B
+
+60. res.end() metodi nima?
+    A) Server to'xtaydi
+    B) Response ni tugatadi
+    C) Connection to'xtaydi
+    D) Route to'xtaydi
+    Javob: B
+
+61. app.all() metodi nima?
+    A) Faqat GET
+    B) Barcha HTTP methodlar uchun handler
+    C) Faqat POST
+    D) Faqat DELETE
+    Javob: B
+
+62. app.route() metodi nima uchun?
+    A) Router yaratadi
+    B) Bitta path uchun turli methodlarni chain qilish
+    C) Route o'chiradi
+    D) Route tekshiradi
+    Javob: B
+
+63. app.route('/users').get().post() qanday ishlaydi?
+    A) Faqat GET
+    B) /users uchun GET va POST alohida handlerlar
+    C) Faqat POST
+    D) Xato
+    Javob: B
+
+64. Express da 404 error qanday handle qilinadi?
+    A) Avtomatik
+    B) Barcha routelardan keyin middleware qo'shish
+    C) app.404()
+    D) res.404()
+    Javob: B
+
+65. Error handling middleware nechta parameter oladi?
+    A) 2 (req, res)
+    B) 4 (err, req, res, next)
+    C) 3 (req, res, next)
+    D) 1 (err)
+    Javob: B
+
+66. Error middleware qayerda joylashadi?
+    A) Boshida
+    B) Barcha routelardan keyin
+    C) O'rtada
+    D) Farqi yo'q
+    Javob: B
+
+67. next(error) nima qiladi?
+    A) Keyingi route
+    B) Error handling middleware ga o'tkazadi
+    C) Server to'xtatadi
+    D) Response yuboradi
+    Javob: B
+
+68. req.ip nima qaytaradi?
+    A) Server IP
+    B) Client IP manzili
+    C) Database IP
+    D) Gateway IP
+    Javob: B
+
+69. req.hostname nima?
+    A) Server name
+    B) Host header qiymati
+    C) Domain
+    D) IP
+    Javob: B
+
+70. req.protocol nima qaytaradi?
+    A) Port
+    B) http yoki https
+    C) Method
+    D) Version
+    Javob: B
+
+71. req.secure nima?
+    A) Security check
+    B) HTTPS ekanligini tekshiradi (boolean)
+    C) Password
+    D) Token
+    Javob: B
+
+72. req.xhr nima tekshiradi?
+    A) HTTP method
+    B) AJAX so'rovi ekanligini
+    C) XML request
+    D) JSON request
+    Javob: B
+
+73. req.cookies nima uchun?
+    A) Cookie yaratadi
+    B) Cookie qiymatlarini o'qiydi (cookie-parser kerak)
+    C) Cookie o'chiradi
+    D) Cookie yuboradi
+    Javob: B
+
+74. cookie-parser middleware nima qiladi?
+    A) Cookie yaratadi
+    B) Cookie headerini parse qiladi
+    C) Cookie o'chiradi
+    D) Cookie shifrlaydi
+    Javob: B
+
+75. res.cookie() metodi nima?
+    A) Cookie o'qiydi
+    B) Cookie o'rnatadi
+    C) Cookie o'chiradi
+    D) Cookie tekshiradi
+    Javob: B
+
+76. res.cookie('name', 'value', options) da options nima?
+    A) Cookie nomi
+    B) Cookie sozlamalari (maxAge, httpOnly, secure, ...)
+    C) Cookie qiymati
+    D) Cookie turi
+    Javob: B
+
+77. res.clearCookie() nima qiladi?
+    A) Cookie o'rnatadi
+    B) Cookie ni o'chiradi
+    C) Cookie o'qiydi
+    D) Cookie yangilaydi
+    Javob: B
+
+78. httpOnly: true cookie da nima?
+    A) Faqat HTTP
+    B) JavaScript orqali cookie ga kirish taqiqlanadi
+    C) HTTPS faqat
+    D) HTTP only server
+    Javob: B
+
+79. secure: true cookie da nima?
+    A) Shifrlangan cookie
+    B) Faqat HTTPS da yuboriladi
+    C) Xavfsiz server
+    D) Password protected
+    Javob: B
+
+80. Express da CORS nima?
+    A) CSS framework
+    B) Cross-Origin Resource Sharing
+    C) Cookie system
+    D) Cache system
+    Javob: B
+
+81. cors middleware ni qanday o'rnatamiz?
+    A) npm install express-cors
+    B) npm install cors
+    C) npm install cross-origin
+    D) npm install origin
+    Javob: B
+
+82. app.use(cors()) nima qiladi?
+    A) CORS o'chiradi
+    B) Barcha originlarga ruxsat beradi
+    C) Faqat bitta origin
+    D) CORS tekshiradi
+    Javob: B
+
+83. cors({ origin: 'http://example.com' }) nima?
+    A) Barcha originlar
+    B) Faqat belgilangan origin ga ruxsat
+    C) Origin o'chiradi
+    D) Origin tekshiradi
+    Javob: B
+
+84. Express da helmet middleware nima uchun?
+    A) Design
+    B) Security headers o'rnatish
+    C) Performance
+    D) Logging
+    Javob: B
+
+85. morgan middleware nima qiladi?
+    A) Security
+    B) HTTP request logging
+    C) Error handling
+    D) Authentication
+    Javob: B
+
+86. morgan('dev') nima?
+    A) Production format
+    B) Development format (rangli, qisqa)
+    C) Debug format
+    D) Test format
+    Javob: B
+
+87. morgan('combined') nima?
+    A) Dev format
+    B) Apache combined log format
+    C) Simple format
+    D) JSON format
+    Javob: B
+
+88. Express da compression middleware nima?
+    A) Fayl compression
+    B) Response gzip compression
+    C) Image compression
+    D) Database compression
+    Javob: B
+
+89. Express da dotenv nima uchun?
+    A) DNS
+    B) Environment variables .env fayldan yuklash
+    C) Domain
+    D) Docker
+    Javob: B
+
+90. process.env.PORT nima?
+    A) Process ID
+    B) PORT environment variable qiymati
+    C) Port number
+    D) Process port
+    Javob: B
+
+91. const port = process.env.PORT || 3000 nima qiladi?
+    A) Faqat 3000
+    B) PORT env bo'lsa uni, bo'lmasa 3000 ishlatadi
+    C) Faqat env
+    D) Xato
+    Javob: B
+
+92. Express da nodemon nima?
+    A) Database
+    B) Development da auto-restart tool
+    C) Production server
+    D) Testing tool
+    Javob: B
+
+93. nodemon server.js nima qiladi?
+    A) Bir marta ishga tushiradi
+    B) Fayl o'zgarganda avtomatik restart
+    C) Test qiladi
+    D) Build qiladi
+    Javob: B
+
+94. package.json da "start": "node server.js" nima?
+    A) Test script
+    B) npm start buyrug'i uchun script
+    C) Build script
+    D) Dev script
+    Javob: B
+
+95. npm start nima qiladi?
+    A) Test
+    B) package.json dagi start scriptni bajaradi
+    C) Build
+    D) Install
+    Javob: B
+
+96. Express application qaysi portda default ishlaydi?
+    A) 80
+    B) Default port yo'q (developer belgilaydi)
+    C) 8080
+    D) 443
+    Javob: B
+
+97. app.locals nima?
+    A) Local variables
+    B) App darajasidagi o'zgaruvchilar (barcha requestlarda)
+    C) Request locals
+    D) Response locals
+    Javob: B
+
+98. res.locals nima?
+    A) App locals
+    B) Bitta request-response siklidagi o'zgaruvchilar
+    C) Global locals
+    D) Session locals
+    Javob: B
+
+99. Express Generator nima?
+    A) Code generator
+    B) Express app scaffold yaratuvchi CLI tool
+    C) Template generator
+    D) Route generator
+    Javob: B
+
+100. npx express-generator myapp nima qiladi?
+     A) Express o'rnatadi
+     B) myapp nomli Express project structure yaratadi
+     C) Server ishga tushiradi
+     D) Test yaratadi
+     Javob: B
+
+=============================================================
+                        YAKUNLANDI
+=============================================================

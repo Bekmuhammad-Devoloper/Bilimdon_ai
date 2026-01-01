@@ -1,0 +1,702 @@
+GO DASTURLASH TILI - O'RTACHA TESTLAR 2
+==========================================
+
+1. Quyidagi kod nima chiqaradi? s := []int{1,2,3}; s = append(s[:1], s[2:]...); fmt.Println(s)
+a) [1 2 3]
+b) [1 3]
+c) [1 2]
+d) [2 3]
+Javob: b
+
+2. Copy funksiyasi slice uchun qanday ishlaydi?
+a) To'liq nusxa yaratadi
+b) Minimum len(dst, src) element ko'chiradi
+c) Har doim yangi slice qaytaradi
+d) Pointer ko'chiradi
+Javob: b
+
+3. bytes.Buffer va strings.Builder dan qaysi biri immutable string uchun yaxshi?
+a) bytes.Buffer
+b) strings.Builder
+c) Farq yo'q
+d) Ikkisi ham mos emas
+Javob: b
+
+4. sort.Slice() funksiyasi qanday ishlaydi?
+a) Yangi slice qaytaradi
+b) In-place sorting
+c) Copy qilib sort qiladi
+d) Immutable
+Javob: b
+
+5. sort.SliceStable() va sort.Slice() farqi nima?
+a) Stable teng elementlar tartibini saqlaydi
+b) Tezlik
+c) Xotira iste'moli
+d) Algoritm
+Javob: a
+
+6. errors.New() va fmt.Errorf() farqi nima?
+a) fmt.Errorf formatting qiladi
+b) errors.New tezroq
+c) Ikkalasi bir xil
+d) Faqat type farqi
+Javob: a
+
+7. errors.Is() va errors.As() qachon ishlatiladi?
+a) Is - equality, As - type extraction
+b) Is - type check, As - equality
+c) Bir xil
+d) Deprecated
+Javob: a
+
+8. Wrapped error qanday yaratiladi?
+a) fmt.Errorf("text: %w", err)
+b) errors.Wrap(err, "text")
+c) err.Wrap("text")
+d) Faqat a
+Javob: a
+
+9. Custom error type qanday yaratiladi?
+a) Error() string method implement qilish
+b) Struct yaratish
+c) Interface implement qilish
+d) Barchasi to'g'ri
+Javob: d
+
+10. Sentinel error nima?
+a) var ErrNotFound = errors.New("not found")
+b) Global error o'zgaruvchi
+c) errors.Is bilan tekshirish uchun
+d) Barchasi to'g'ri
+Javob: d
+
+11. strconv.Atoi() xatolik qaytarmasdan qanday ishlatish mumkin?
+a) Ikkinchi qiymatni ignore qilish
+b) _ ishlatish
+c) if err != nil check
+d) b va c
+Javob: d
+
+12. strconv.ParseInt() va strconv.Atoi() farqi nima?
+a) ParseInt base va bit size qabul qiladi
+b) Atoi faqat base 10
+c) ParseInt ko'proq flexible
+d) Barchasi to'g'ri
+Javob: d
+
+13. fmt.Sprint() va fmt.Sprintf() farqi nima?
+a) Sprintf formatting qiladi
+b) Sprint oddiy string
+c) Farq yo'q
+d) Faqat a
+Javob: a
+
+14. fmt.Scan() qanday ishlaydi?
+a) stdin dan o'qiydi
+b) Space-separated values
+c) Pointer argument kerak
+d) Barchasi to'g'ri
+Javob: d
+
+15. log.Fatal() va log.Panic() farqi nima?
+a) Fatal os.Exit(1), Panic recover mumkin
+b) Fatal log qilmaydi
+c) Panic log qilmaydi
+d) Farq yo'q
+Javob: a
+
+16. log package thread-safe mi?
+a) Ha
+b) Yo'q
+c) Faqat Default logger
+d) Manual sync kerak
+Javob: a
+
+17. Custom logger qanday yaratiladi?
+a) log.New()
+b) log.Logger struct
+c) io.Writer interface
+d) Barchasi to'g'ri
+Javob: d
+
+18. regexp.Compile() va regexp.MustCompile() farqi nima?
+a) MustCompile panic qiladi xatolikda
+b) Compile error qaytaradi
+c) MustCompile init uchun yaxshi
+d) Barchasi to'g'ri
+Javob: d
+
+19. regexp.Match() va regexp.MatchString() farqi nima?
+a) Match []byte, MatchString string
+b) MatchString tezroq
+c) Farq yo'q
+d) Faqat input type
+Javob: d
+
+20. Template Execute() qanday ishlaydi?
+a) io.Writer va data qabul qiladi
+b) HTML escape qiladi
+c) Type-safe
+d) a to'g'ri
+Javob: a
+
+21. html/template va text/template farqi nima?
+a) html/template auto-escape qiladi
+b) XSS protection
+c) text/template raw output
+d) Barchasi to'g'ri
+Javob: d
+
+22. Template action {{.}} nima degani?
+a) Current data
+b) Root data
+c) Dot notation
+d) Barchasi to'g'ri
+Javob: d
+
+23. Template pipeline qanday ishlaydi?
+a) {{. | func1 | func2}}
+b) Chain functions
+c) Left to right
+d) Barchasi to'g'ri
+Javob: d
+
+24. crypto/rand vs math/rand qachon ishlatish kerak?
+a) crypto/rand security uchun
+b) math/rand tezroq
+c) crypto/rand cryptographic random
+d) Barchasi to'g'ri
+Javob: d
+
+25. rand.Seed() qachon chaqirish kerak?
+a) Program boshida
+b) Har safar random kerak bo'lganda
+c) Go 1.20 da kerak emas (auto-seed)
+d) a yoki c
+Javob: d
+
+26. crypto/sha256 vs crypto/md5 qaysi biri secure?
+a) SHA256
+b) MD5
+c) Ikkalasi ham
+d) Hech biri
+Javob: a
+
+27. Hash.Sum() qanday ishlaydi?
+a) Append to slice
+b) Final hash qaytaradi
+c) []byte argument kerak
+d) Barchasi to'g'ri
+Javob: d
+
+28. base64.StdEncoding va base64.URLEncoding farqi nima?
+a) URL-safe characters
+b) + va / o'rniga - va _
+c) Web uchun URLEncoding
+d) Barchasi to'g'ri
+Javob: d
+
+29. json.Marshal() nil slice va empty slice qanday handle qiladi?
+a) nil -> null, empty -> []
+b) Ikkalasi ham null
+c) Ikkalasi ham []
+d) Xatolik
+Javob: a
+
+30. json.Decoder vs json.Unmarshal qachon ishlatish kerak?
+a) Decoder stream uchun
+b) Unmarshal []byte uchun
+c) Decoder memory efficient
+d) Barchasi to'g'ri
+Javob: d
+
+31. JSON tag omitempty bilan nil pointer qanday ishlaydi?
+a) Omit qilinadi
+b) null qaytaradi
+c) Xatolik
+d) Depends on type
+Javob: a
+
+32. Custom JSON marshaling qanday test qilish mumkin?
+a) json.Marshal() chaqirish
+b) Output tekshirish
+c) Roundtrip test
+d) Barchasi to'g'ri
+Javob: d
+
+33. xml.Decoder vs xml.Unmarshal farqi nimada?
+a) Decoder streaming
+b) Unmarshal memory
+c) Decoder large files uchun
+d) Barchasi to'g'ri
+Javob: d
+
+34. XML attribute vs element qanday map qilinadi?
+a) Attribute: `xml:"name,attr"`
+b) Element: `xml:"name"`
+c) XMLName: `xml:"rootname"`
+d) Barchasi to'g'ri
+Javob: d
+
+35. csv.Reader qanday configure qilish mumkin?
+a) Comma separator
+b) Comment character
+c) LazyQuotes
+d) Barchasi to'g'ri
+Javob: d
+
+36. csv.Reader.Read() va ReadAll() farqi nima?
+a) Read bitta record, ReadAll hammasi
+b) ReadAll xotira ko'p oladi
+c) Read streaming uchun
+d) Barchasi to'g'ri
+Javob: d
+
+37. bufio.Scanner qanday sozlash mumkin?
+a) Split funksiyasini set qilish
+b) Buffer size
+c) Max token size
+d) Barchasi to'g'ri
+Javob: d
+
+38. Scanner.Split() qanday funksiya qabul qiladi?
+a) SplitFunc type
+b) Custom tokenizer
+c) (data, atEOF) -> (advance, token, err)
+d) Barchasi to'g'ri
+Javob: d
+
+39. bufio.Writer qachon flush qiladi?
+a) Buffer to'lganda
+b) Flush() chaqirilganda
+c) Close() chaqirilganda
+d) Barchasi to'g'ri
+Javob: d
+
+40. io.Copy() qanday buffer ishlatadi?
+a) 32KB internal buffer
+b) Custom buffer berib bo'lmaydi
+c) io.CopyBuffer() custom buffer uchun
+d) a va c
+Javob: d
+
+41. io.Pipe() qanday ishlaydi?
+a) In-memory pipe
+b) Reader va Writer qaytaradi
+c) Synchronous
+d) Barchasi to'g'ri
+Javob: d
+
+42. io.MultiWriter nima uchun?
+a) Bir vaqtda bir nechta writer ga yozish
+b) Fan-out pattern
+c) Logging multiple destinations
+d) Barchasi to'g'ri
+Javob: d
+
+43. io.TeeReader nima qiladi?
+a) Read qilib writer ga ham yozadi
+b) Copy while reading
+c) Spy pattern
+d) Barchasi to'g'ri
+Javob: d
+
+44. filepath.Walk() qanday ishlaydi?
+a) Recursive directory traversal
+b) WalkFunc callback
+c) Error handling har bir file uchun
+d) Barchasi to'g'ri
+Javob: d
+
+45. filepath.Join() vs path.Join() farqi nima?
+a) filepath OS-specific, path always /
+b) filepath Windows uchun ham
+c) path URL paths uchun
+d) Barchasi to'g'ri
+Javob: d
+
+46. os.Stat() va os.Lstat() farqi nima?
+a) Lstat symlink follow qilmaydi
+b) Stat symlink follow qiladi
+c) Lstat link haqida ma'lumot beradi
+d) Barchasi to'g'ri
+Javob: d
+
+47. FileInfo.Mode() qanday information beradi?
+a) Permission bits
+b) File type
+c) os.ModeDir, os.ModeSymlink
+d) Barchasi to'g'ri
+Javob: d
+
+48. os.OpenFile() flags qanday ishlaydi?
+a) Bitwise OR
+b) os.O_RDWR | os.O_CREATE
+c) Multiple flags combine
+d) Barchasi to'g'ri
+Javob: d
+
+49. File.Sync() nima qiladi?
+a) Disk ga flush qiladi
+b) Durability guarantee
+c) fsync system call
+d) Barchasi to'g'ri
+Javob: d
+
+50. ioutil package deprecated bo'ldi, o'rnini nima oldi?
+a) os package
+b) io package
+c) a va b
+d) Hech narsa
+Javob: c
+
+51. os.ReadFile() va ioutil.ReadFile() farqi nima?
+a) Farq yo'q, aliaslar
+b) os.ReadFile Go 1.16+
+c) ioutil deprecated
+d) Barchasi to'g'ri
+Javob: d
+
+52. Temporary file qanday yaratiladi?
+a) os.CreateTemp()
+b) Auto cleanup yo'q
+c) defer os.Remove() kerak
+d) Barchasi to'g'ri
+Javob: d
+
+53. path/filepath.Glob() qanday pattern qabul qiladi?
+a) Shell glob patterns
+b) *, ?, [abc]
+c) Recursive ** yo'q
+d) Barchasi to'g'ri
+Javob: d
+
+54. os.Getwd() vs os.Executable() farqi nima?
+a) Getwd current dir, Executable binary path
+b) Getwd relative, Executable absolute
+c) Ikkalasi ham absolute
+d) Faqat a
+Javob: a
+
+55. Environment variable qanday set qilinadi?
+a) os.Setenv()
+b) Faqat current process uchun
+c) Child processlar inherit qiladi
+d) Barchasi to'g'ri
+Javob: d
+
+56. os.LookupEnv() vs os.Getenv() farqi nima?
+a) LookupEnv existence check qiladi
+b) Getenv empty string qaytaradi
+c) LookupEnv (value, exists) qaytaradi
+d) Barchasi to'g'ri
+Javob: d
+
+57. Signal handling qanday qilinadi?
+a) signal.Notify()
+b) Channel orqali
+c) os.Interrupt, syscall.SIGTERM
+d) Barchasi to'g'ri
+Javob: d
+
+58. context.WithTimeout() vs context.WithDeadline() farqi nima?
+a) Timeout duration, Deadline time.Time
+b) Timeout relative, Deadline absolute
+c) Ikkalasi ham cancel qiladi
+d) Barchasi to'g'ri
+Javob: d
+
+59. Context cancellation goroutine da qanday check qilinadi?
+a) select with ctx.Done()
+b) <-ctx.Done() blocking
+c) ctx.Err() error check
+d) Barchasi to'g'ri
+Javob: d
+
+60. HTTP request qanday cancel qilish mumkin?
+a) Request.WithContext()
+b) Context cancel
+c) Connection close
+d) Barchasi to'g'ri
+Javob: d
+
+61. http.Client.Timeout vs context.WithTimeout farqi nima?
+a) Client.Timeout butun request uchun
+b) Context har bir operation uchun
+c) Context ko'proq granular
+d) Barchasi to'g'ri
+Javob: d
+
+62. HTTP redirect qanday handle qilinadi?
+a) Client.CheckRedirect funksiyasi
+b) Default 10 redirect
+c) Manual handling mumkin
+d) Barchasi to'g'ri
+Javob: d
+
+63. http.Transport qanday sozlash mumkin?
+a) MaxIdleConns
+b) TLSClientConfig
+c) Proxy settings
+d) Barchasi to'g'ri
+Javob: d
+
+64. Keep-alive connections qanday ishlaydi?
+a) Connection reuse
+b) DisableKeepAlives = false default
+c) IdleConnTimeout
+d) Barchasi to'g'ri
+Javob: d
+
+65. HTTP request body qanday close qilish kerak?
+a) defer resp.Body.Close()
+b) io.ReadAll() to'liq o'qish
+c) Connection leak oldini olish
+d) Barchasi to'g'ri
+Javob: d
+
+66. http.ServeMux pattern matching qanday ishlaydi?
+a) Longest match wins
+b) Exact match > prefix match
+c) Trailing slash matters
+d) Barchasi to'g'ri
+Javob: d
+
+67. Middleware chain qanday build qilish mumkin?
+a) Handler wrapping
+b) func(http.Handler) http.Handler
+c) Composition pattern
+d) Barchasi to'g'ri
+Javob: d
+
+68. ResponseWriter.WriteHeader() qachon chaqirish kerak?
+a) Write() dan oldin
+b) Faqat bir marta
+c) Default 200 status
+d) Barchasi to'g'ri
+Javob: d
+
+69. http.Error() nima qiladi?
+a) Error response yozadi
+b) Header + body set qiladi
+c) WriteHeader + Write
+d) Barchasi to'g'ri
+Javob: d
+
+70. File server qanday yaratiladi?
+a) http.FileServer()
+b) http.Dir() root directory
+c) http.StripPrefix() path cleanup
+d) Barchasi to'g'ri
+Javob: d
+
+71. Static file serving security qanday?
+a) Path traversal prevention
+b) http.Dir() check qiladi
+c) .. attacks blocked
+d) Barchasi to'g'ri
+Javob: d
+
+72. Cookie qanday set qilinadi?
+a) http.SetCookie()
+b) http.Cookie struct
+c) ResponseWriter.Header().Add()
+d) a va b
+Javob: d
+
+73. Cookie attributes qanday?
+a) HttpOnly, Secure, SameSite
+b) Path, Domain, Expires
+c) MaxAge
+d) Barchasi to'g'ri
+Javob: d
+
+74. URL query parameters qanday parse qilinadi?
+a) req.URL.Query()
+b) url.Values type
+c) Get() method
+d) Barchasi to'g'ri
+Javob: d
+
+75. Form data qanday o'qiladi?
+a) req.ParseForm()
+b) req.FormValue()
+c) req.PostFormValue()
+d) Barchasi to'g'ri
+Javob: d
+
+76. Multipart form qanday handle qilinadi?
+a) req.ParseMultipartForm()
+b) req.FormFile()
+c) multipart.Reader
+d) Barchasi to'g'ri
+Javob: d
+
+77. File upload size qanday limit qilish mumkin?
+a) req.Body = http.MaxBytesReader()
+b) ParseMultipartForm(maxMemory)
+c) Manual check
+d) Barchasi to'g'ri
+Javob: d
+
+78. TLS server qanday yaratiladi?
+a) http.ListenAndServeTLS()
+b) Certificate va key file
+c) tls.Config sozlash
+d) Barchasi to'g'ri
+Javob: d
+
+79. HTTP/2 qanday enable qilinadi?
+a) Default HTTPS da
+b) Manual h2c uchun
+c) golang.org/x/net/http2
+d) Barchasi to'g'ri
+Javob: d
+
+80. Graceful shutdown qanday pattern?
+a) signal.Notify(SIGTERM)
+b) server.Shutdown(ctx)
+c) In-flight requests finish
+d) Barchasi to'g'ri
+Javob: d
+
+81. net.Dial() va net.DialTimeout() farqi nima?
+a) DialTimeout timeout qo'yadi
+b) Dial indefinite wait
+c) DialTimeout cancel qilish uchun
+d) Barchasi to'g'ri
+Javob: d
+
+82. TCP KeepAlive qanday sozlanadi?
+a) net.Dialer.KeepAlive
+b) TCPConn.SetKeepAlive()
+c) Connection alive checking
+d) Barchasi to'g'ri
+Javob: d
+
+83. UDP connection qanday ochiladi?
+a) net.ListenUDP()
+b) net.DialUDP()
+c) UDPConn.ReadFromUDP()
+d) Barchasi to'g'ri
+Javob: d
+
+84. net.Listener qanday ishlaydi?
+a) Accept() blocking call
+b) Goroutine per connection
+c) Close() to stop
+d) Barchasi to'g'ri
+Javob: d
+
+85. Connection deadline qanday set qilinadi?
+a) Conn.SetDeadline()
+b) SetReadDeadline(), SetWriteDeadline()
+c) Per-operation timeout
+d) Barchasi to'g'ri
+Javob: d
+
+86. net.LookupHost() nima qiladi?
+a) DNS lookup
+b) Hostname -> IP addresses
+c) Network request
+d) Barchasi to'g'ri
+Javob: d
+
+87. Custom Dialer qanday yaratiladi?
+a) net.Dialer struct
+b) Timeout, KeepAlive sozlash
+c) Control funksiya
+d) Barchasi to'g'ri
+Javob: d
+
+88. Unix domain socket qanday ishlatiladi?
+a) net.Dial("unix", path)
+b) Local IPC
+c) File-based socket
+d) Barchasi to'g'ri
+Javob: d
+
+89. database/sql package qanday ishlaydi?
+a) Driver interface
+b) Connection pool
+c) Prepared statements
+d) Barchasi to'g'ri
+Javob: d
+
+90. sql.Open() immediately connect qiladi-mi?
+a) Yo'q
+b) Lazy connection
+c) Ping() bilan test qilish kerak
+d) Barchasi to'g'ri
+Javob: d
+
+91. sql.DB thread-safe mi?
+a) Ha
+b) Connection pool manage qiladi
+c) Concurrent queries safe
+d) Barchasi to'g'ri
+Javob: d
+
+92. Prepared statement qanday ishlaydi?
+a) db.Prepare()
+b) SQL injection prevention
+c) Performance optimization
+d) Barchasi to'g'ri
+Javob: d
+
+93. Transaction qanday boshlanadi?
+a) db.Begin()
+b) Commit() yoki Rollback()
+c) defer tx.Rollback() pattern
+d) Barchasi to'g'ri
+Javob: d
+
+94. sql.NullString nima uchun?
+a) NULL value handling
+b) Valid field check
+c) Database NULL vs Go zero value
+d) Barchasi to'g'ri
+Javob: d
+
+95. Row.Scan() qanday ishlaydi?
+a) Pointer arguments
+b) Column order muhim
+c) Type conversion
+d) Barchasi to'g'ri
+Javob: d
+
+96. Context timeout database query da qanday?
+a) db.QueryContext()
+b) Query cancel
+c) Long-running query prevention
+d) Barchasi to'g'ri
+Javob: d
+
+97. Connection pool qanday sozlanadi?
+a) SetMaxOpenConns()
+b) SetMaxIdleConns()
+c) SetConnMaxLifetime()
+d) Barchasi to'g'ri
+Javob: d
+
+98. sql.Result nima qaytaradi?
+a) LastInsertId()
+b) RowsAffected()
+c) INSERT/UPDATE/DELETE uchun
+d) Barchasi to'g'ri
+Javob: d
+
+99. Rows.Close() qachon chaqirish kerak?
+a) defer rows.Close()
+b) Iteration tugatgandan keyin
+c) Resource leak prevention
+d) Barchasi to'g'ri
+Javob: d
+
+100. sqlx package qanday yaxshilanish beradi?
+a) Struct scanning
+b) Named queries
+c) Get(), Select() helpers
+d) Barchasi to'g'ri
+Javob: d

@@ -1,0 +1,702 @@
+JAVA - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. Java'da Inheritance nima?
+   A) Encapsulation
+   B) Ota classdan xususiyat olish
+   C) Polymorphism
+   D) Abstraction
+   Javob: B
+
+2. Multiple inheritance nima?
+   A) Bitta ota class
+   B) Bir nechta ota class
+   C) Interface
+   D) Abstract class
+   Javob: B
+
+3. Java'da multiple inheritance qo'llab-quvvatlanadi?
+   A) Ha, class bilan
+   B) Yo'q, faqat interface bilan
+   C) Ha, to'liq
+   D) Yo'q, umuman
+   Javob: B
+
+4. Diamond problem nima?
+   A) Syntax error
+   B) Multiple inheritance muammosi
+   C) Runtime error
+   D) Logic error
+   Javob: B
+
+5. super() qachon chaqiriladi?
+   A) Method oxirida
+   B) Constructor birinchi qatorida
+   C) Istalgan joyda
+   D) Method boshida
+   Javob: B
+
+6. Method overriding qoidasi?
+   A) Turli nom
+   B) Bir xil signature subclassda
+   C) Turli parametrlar
+   D) Turli return type
+   Javob: B
+
+7. @Override annotation nima uchun?
+   A) Majburiy
+   B) Compile-time tekshiruv
+   C) Runtime check
+   D) No purpose
+   Javob: B
+
+8. Covariant return type nima?
+   A) Bir xil return type
+   B) Subclass return type overrideda
+   C) Void return
+   D) Primitive return
+   Javob: B
+
+9. abstract method qayerda implement bo'ladi?
+   A) Abstract classda
+   B) Concrete subclassda
+   C) Interfaceda
+   D) Main methodda
+   Javob: B
+
+10. Interface'da variable qanday bo'ladi?
+    A) Instance variable
+    B) public static final
+    C) Private
+    D) Protected
+    Javob: B
+
+11. Interface'da default method (Java 8+)?
+    A) Yo'q
+    B) Body bilan method
+    C) Abstract only
+    D) Static only
+    Javob: B
+
+12. Functional interface nima?
+    A) Ko'p method
+    B) Bitta abstract method
+    C) No method
+    D) Faqat static
+    Javob: B
+
+13. @FunctionalInterface annotation?
+    A) Majburiy
+    B) Compile-time tekshiruv
+    C) Runtime
+    D) No effect
+    Javob: B
+
+14. Lambda expression sintaksisi?
+    A) function(){}
+    B) (params) -> expression
+    C) lambda x: x
+    D) => expression
+    Javob: B
+
+15. Lambda expression qayerda ishlatiladi?
+    A) Hamma joyda
+    B) Functional interface bilan
+    C) Abstract class bilan
+    D) Enum bilan
+    Javob: B
+
+16. Method reference sintaksisi?
+    A) method.call()
+    B) ClassName::methodName
+    C) method()
+    D) @method
+    Javob: B
+
+17. Stream API nima?
+    A) I/O
+    B) Collection ustida operatsiyalar
+    C) Network
+    D) Thread
+    Javob: B
+
+18. stream().filter() nima qiladi?
+    A) Map qiladi
+    B) Shartga mos elementlar
+    C) Sort qiladi
+    D) Reduce qiladi
+    Javob: B
+
+19. stream().map() nima qiladi?
+    A) Filter qiladi
+    B) Har bir elementni o'zgartiradi
+    C) Sort qiladi
+    D) Reduce qiladi
+    Javob: B
+
+20. stream().collect() nima qiladi?
+    A) Filter
+    B) Stream'ni collectionga aylantiradi
+    C) Map
+    D) Reduce
+    Javob: B
+
+21. Optional class nima uchun?
+    A) Array uchun
+    B) NullPointerException oldini olish
+    C) Collection uchun
+    D) Stream uchun
+    Javob: B
+
+22. Optional.of() vs Optional.ofNullable()?
+    A) Bir xil
+    B) ofNullable null qabul qiladi
+    C) of null qabul qiladi
+    D) Ikkalasi null qabul qilmaydi
+    Javob: B
+
+23. Optional.orElse() nima qiladi?
+    A) Exception chiqaradi
+    B) Default qiymat beradi
+    C) null qaytaradi
+    D) Error chiqaradi
+    Javob: B
+
+24. Generics nima?
+    A) Array type
+    B) Type parametrization
+    C) Primitive type
+    D) Object type
+    Javob: B
+
+25. Generic class sintaksisi?
+    A) class Name[]
+    B) class Name<T>
+    C) class Name()
+    D) class Name{}
+    Javob: B
+
+26. Generic method sintaksisi?
+    A) method<T>()
+    B) <T> void method(T param)
+    C) void method(T)
+    D) T method<>()
+    Javob: B
+
+27. Type erasure nima?
+    A) Runtime type
+    B) Compile timeda generic info o'chirilishi
+    C) Type checking
+    D) Type casting
+    Javob: B
+
+28. Bounded type parameter nima?
+    A) <T>
+    B) <T extends SomeClass>
+    C) <T super SomeClass>
+    D) <?>
+    Javob: B
+
+29. Wildcard <?> nima?
+    A) Specific type
+    B) Unknown type
+    C) Object type
+    D) Primitive type
+    Javob: B
+
+30. Upper bounded wildcard?
+    A) <? super T>
+    B) <? extends T>
+    C) <?>
+    D) <T>
+    Javob: B
+
+31. Lower bounded wildcard?
+    A) <? extends T>
+    B) <? super T>
+    C) <?>
+    D) <T>
+    Javob: B
+
+32. Collection framework nima?
+    A) Array
+    B) Data structures to'plami
+    C) Single class
+    D) Interface
+    Javob: B
+
+33. List vs Set farqi?
+    A) Bir xil
+    B) List ordered/duplicates, Set unique
+    C) Set ordered
+    D) List unique
+    Javob: B
+
+34. ArrayList vs LinkedList?
+    A) Bir xil
+    B) ArrayList array-based, LinkedList node-based
+    C) LinkedList array-based
+    D) ArrayList node-based
+    Javob: B
+
+35. HashSet vs TreeSet?
+    A) Bir xil
+    B) HashSet unordered, TreeSet sorted
+    C) HashSet sorted
+    D) TreeSet unordered
+    Javob: B
+
+36. HashMap vs TreeMap?
+    A) Bir xil
+    B) HashMap unordered, TreeMap sorted
+    C) HashMap sorted
+    D) TreeMap unordered
+    Javob: B
+
+37. HashMap vs Hashtable?
+    A) Bir xil
+    B) HashMap null allowed, Hashtable synchronized
+    C) Hashtable null allowed
+    D) HashMap synchronized
+    Javob: B
+
+38. ConcurrentHashMap nima?
+    A) HashMap
+    B) Thread-safe HashMap
+    C) Hashtable
+    D) TreeMap
+    Javob: B
+
+39. Iterator nima?
+    A) Array
+    B) Collection elementlarini traverse qilish
+    C) Map
+    D) Set
+    Javob: B
+
+40. Iterator vs ListIterator?
+    A) Bir xil
+    B) ListIterator bidirectional
+    C) Iterator bidirectional
+    D) ListIterator forward only
+    Javob: B
+
+41. Comparable interface nima uchun?
+    A) Equality check
+    B) Natural ordering
+    C) Hashing
+    D) Iteration
+    Javob: B
+
+42. Comparator interface nima uchun?
+    A) Natural ordering
+    B) Custom ordering
+    C) Hashing
+    D) Iteration
+    Javob: B
+
+43. compareTo() qaytaradi?
+    A) boolean
+    B) int (-1, 0, 1)
+    C) String
+    D) Object
+    Javob: B
+
+44. Collections.sort() nima ishlatadi?
+    A) Hashing
+    B) Comparable/Comparator
+    C) Iterator
+    D) Random
+    Javob: B
+
+45. Exception hierarchy root?
+    A) Exception
+    B) Throwable
+    C) Error
+    D) RuntimeException
+    Javob: B
+
+46. Checked vs Unchecked exception?
+    A) Bir xil
+    B) Checked compile-time, Unchecked runtime
+    C) Unchecked compile-time
+    D) Checked runtime
+    Javob: B
+
+47. RuntimeException misollar?
+    A) IOException
+    B) NullPointerException, IndexOutOfBounds
+    C) FileNotFoundException
+    D) SQLException
+    Javob: B
+
+48. Checked exception misollar?
+    A) NullPointerException
+    B) IOException, SQLException
+    C) ArithmeticException
+    D) IndexOutOfBoundsException
+    Javob: B
+
+49. Custom exception qanday yaratiladi?
+    A) interface
+    B) class extends Exception
+    C) enum
+    D) annotation
+    Javob: B
+
+50. try-with-resources nima?
+    A) try-catch
+    B) AutoCloseable resource auto close
+    C) finally block
+    D) throw statement
+    Javob: B
+
+51. AutoCloseable interface nima?
+    A) Serializable
+    B) close() method uchun
+    C) Comparable
+    D) Iterable
+    Javob: B
+
+52. Multi-catch block (Java 7+)?
+    A) catch(E1)catch(E2)
+    B) catch(E1 | E2 e)
+    C) catch(E1, E2)
+    D) catch(E1 && E2)
+    Javob: B
+
+53. File class nima uchun?
+    A) File read
+    B) File/directory metadata
+    C) File write
+    D) File delete only
+    Javob: B
+
+54. FileReader vs BufferedReader?
+    A) Bir xil
+    B) BufferedReader samaraliroq
+    C) FileReader samaraliroq
+    D) Boshqa narsa
+    Javob: B
+
+55. FileWriter vs BufferedWriter?
+    A) Bir xil
+    B) BufferedWriter samaraliroq
+    C) FileWriter samaraliroq
+    D) Boshqa narsa
+    Javob: B
+
+56. Files.readAllLines() (NIO) nima qaytaradi?
+    A) String
+    B) List<String>
+    C) byte[]
+    D) Stream
+    Javob: B
+
+57. Path interface (NIO) nima?
+    A) File
+    B) Fayl yo'lini ifodalash
+    C) Directory
+    D) Stream
+    Javob: B
+
+58. Serialization nima?
+    A) Deserialization
+    B) Obyektni byte streamga aylantirish
+    C) File read
+    D) Network
+    Javob: B
+
+59. Serializable interface xususiyati?
+    A) Methods bor
+    B) Marker interface
+    C) Abstract methods
+    D) Default methods
+    Javob: B
+
+60. transient keyword nima?
+    A) Serialize qilinadi
+    B) Serialize qilinmaydi
+    C) Static
+    D) Final
+    Javob: B
+
+61. Thread yaratish usullari?
+    A) Bitta usul
+    B) extends Thread yoki implements Runnable
+    C) Faqat Thread
+    D) Faqat Runnable
+    Javob: B
+
+62. Thread.start() vs run()?
+    A) Bir xil
+    B) start() yangi thread, run() joriy threadda
+    C) run() yangi thread
+    D) start() joriy threadda
+    Javob: B
+
+63. Thread states qanday?
+    A) 2 ta
+    B) NEW, RUNNABLE, BLOCKED, WAITING, TERMINATED
+    C) 3 ta
+    D) 1 ta
+    Javob: B
+
+64. synchronized keyword nima uchun?
+    A) Speed up
+    B) Thread safety
+    C) Memory
+    D) Performance
+    Javob: B
+
+65. volatile keyword nima?
+    A) Constant
+    B) Visibility across threads
+    C) Synchronization
+    D) Final
+    Javob: B
+
+66. wait() vs sleep()?
+    A) Bir xil
+    B) wait() lock release, sleep() yo'q
+    C) sleep() lock release
+    D) Ikkalasi lock release
+    Javob: B
+
+67. notify() vs notifyAll()?
+    A) Bir xil
+    B) notify() bitta, notifyAll() hammasi
+    C) notify() hammasi
+    D) notifyAll() bitta
+    Javob: B
+
+68. ExecutorService nima?
+    A) Thread
+    B) Thread pool management
+    C) Runnable
+    D) Callable
+    Javob: B
+
+69. Callable vs Runnable?
+    A) Bir xil
+    B) Callable return qiladi
+    C) Runnable return qiladi
+    D) Ikkalasi void
+    Javob: B
+
+70. Future interface nima?
+    A) Past
+    B) Async result olish
+    C) Present
+    D) Thread
+    Javob: B
+
+71. CompletableFuture nima?
+    A) Future
+    B) Enhanced async programming
+    C) Thread
+    D) Callable
+    Javob: B
+
+72. Reflection API nima?
+    A) Mirror
+    B) Runtime class inspection
+    C) Compile time
+    D) Static
+    Javob: B
+
+73. Class.forName() nima qiladi?
+    A) Object yaratadi
+    B) Class yuklab oladi
+    C) Method chaqiradi
+    D) Field o'qiydi
+    Javob: B
+
+74. getDeclaredMethods() nima qaytaradi?
+    A) Fields
+    B) Methods array
+    C) Constructors
+    D) Classes
+    Javob: B
+
+75. Annotation nima?
+    A) Comment
+    B) Metadata
+    C) Documentation
+    D) Code
+    Javob: B
+
+76. Annotation retention policies?
+    A) Bitta
+    B) SOURCE, CLASS, RUNTIME
+    C) Ikkita
+    D) To'rtta
+    Javob: B
+
+77. Custom annotation qanday yaratiladi?
+    A) class
+    B) @interface
+    C) interface
+    D) enum
+    Javob: B
+
+78. @Retention annotation nima uchun?
+    A) Target
+    B) Annotation qachongacha saqlanishi
+    C) Documentation
+    D) Inheritance
+    Javob: B
+
+79. @Target annotation nima uchun?
+    A) Retention
+    B) Annotation qayerda ishlatilishi
+    C) Documentation
+    D) Inheritance
+    Javob: B
+
+80. Inner class nima?
+    A) Outer class
+    B) Class ichida class
+    C) Interface
+    D) Enum
+    Javob: B
+
+81. Static inner class vs non-static?
+    A) Bir xil
+    B) Static outer reference yo'q
+    C) Non-static reference yo'q
+    D) Ikkalasi reference bor
+    Javob: B
+
+82. Anonymous class nima?
+    A) Named class
+    B) Nomsiz class bir marta ishlatish uchun
+    C) Abstract class
+    D) Final class
+    Javob: B
+
+83. Local class nima?
+    A) Global class
+    B) Method ichidagi class
+    C) Static class
+    D) Inner class
+    Javob: B
+
+84. Enum constructor visibility?
+    A) Public
+    B) Private
+    C) Protected
+    D) Default
+    Javob: B
+
+85. Enum values() method nima qaytaradi?
+    A) Single value
+    B) Array of all enum constants
+    C) String
+    D) Integer
+    Javob: B
+
+86. Enum ordinal() nima?
+    A) Name
+    B) Index position
+    C) Value
+    D) String
+    Javob: B
+
+87. String pool nima?
+    A) Array
+    B) String literals cache
+    C) Collection
+    D) Map
+    Javob: B
+
+88. String.intern() nima qiladi?
+    A) New string
+    B) Pool'dan string oladi
+    C) Copy qiladi
+    D) Delete qiladi
+    Javob: B
+
+89. StringBuilder vs StringBuffer?
+    A) Bir xil
+    B) StringBuffer synchronized
+    C) StringBuilder synchronized
+    D) Ikkalasi synchronized
+    Javob: B
+
+90. equals() va hashCode() qoidasi?
+    A) Bog'liq emas
+    B) equals true bo'lsa hashCode bir xil
+    C) hashCode har doim turli
+    D) equals false bo'lsa hashCode bir xil
+    Javob: B
+
+91. Object.clone() nima?
+    A) Reference copy
+    B) Shallow copy
+    C) Deep copy
+    D) No copy
+    Javob: B
+
+92. Shallow vs Deep copy?
+    A) Bir xil
+    B) Deep nested objects ham copy
+    C) Shallow nested copy
+    D) Deep reference only
+    Javob: B
+
+93. Cloneable interface xususiyati?
+    A) Methods bor
+    B) Marker interface
+    C) Abstract methods
+    D) Default methods
+    Javob: B
+
+94. BigInteger class nima uchun?
+    A) Small integers
+    B) Arbitrary precision integers
+    C) Floating point
+    D) Decimal
+    Javob: B
+
+95. BigDecimal class nima uchun?
+    A) Integer
+    B) Precise decimal arithmetic
+    C) Small decimal
+    D) Double replacement
+    Javob: B
+
+96. LocalDate (Java 8+) nima?
+    A) Date with time
+    B) Date without time
+    C) Time only
+    D) DateTime with zone
+    Javob: B
+
+97. LocalDateTime (Java 8+) nima?
+    A) Date only
+    B) Date with time
+    C) Time only
+    D) Date with zone
+    Javob: B
+
+98. ZonedDateTime nima?
+    A) Local date
+    B) Date time with timezone
+    C) Time only
+    D) Date only
+    Javob: B
+
+99. Duration vs Period?
+    A) Bir xil
+    B) Duration time-based, Period date-based
+    C) Period time-based
+    D) Duration date-based
+    Javob: B
+
+100. DateTimeFormatter nima uchun?
+     A) Parse only
+     B) Date/time format va parse
+     C) Format only
+     D) Validation only
+     Javob: B

@@ -1,0 +1,702 @@
+SQL - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. ACID nima?
+   A) Data type
+   B) Atomicity, Consistency, Isolation, Durability
+   C) Query type
+   D) Index type
+   Javob: B
+
+2. Transaction nima?
+   A) Query
+   B) Bir yoki ko'p operatsiyalar guruhi
+   C) Table
+   D) Index
+   Javob: B
+
+3. BEGIN TRANSACTION nima?
+   A) End
+   B) Tranzaksiyani boshlash
+   C) Rollback
+   D) Commit
+   Javob: B
+
+4. COMMIT nima qiladi?
+   A) Rollback
+   B) O'zgarishlarni saqlash
+   C) Begin
+   D) Cancel
+   Javob: B
+
+5. ROLLBACK nima qiladi?
+   A) Commit
+   B) O'zgarishlarni bekor qilish
+   C) Begin
+   D) Save
+   Javob: B
+
+6. SAVEPOINT nima?
+   A) Commit point
+   B) Tranzaksiya ichidagi nuqta
+   C) Begin point
+   D) End point
+   Javob: B
+
+7. Isolation levels nechta?
+   A) 2 ta
+   B) 4 ta: Read Uncommitted, Read Committed, Repeatable Read, Serializable
+   C) 3 ta
+   D) 5 ta
+   Javob: B
+
+8. Dirty read nima?
+   A) Clean read
+   B) Commit qilinmagan ma'lumotni o'qish
+   C) Repeated read
+   D) Phantom read
+   Javob: B
+
+9. Phantom read nima?
+   A) Dirty read
+   B) Yangi qatorlar paydo bo'lishi
+   C) Non-repeatable read
+   D) Lost update
+   Javob: B
+
+10. Non-repeatable read nima?
+    A) Phantom
+    B) Bir tranzaksiyada turli qiymatlar
+    C) Dirty read
+    D) Lost update
+    Javob: B
+
+11. READ COMMITTED isolation?
+    A) Dirty read allowed
+    B) Faqat commit qilingan ma'lumotlar
+    C) Phantom allowed
+    D) Serializable
+    Javob: B
+
+12. SERIALIZABLE isolation?
+    A) Fastest
+    B) Eng yuqori isolation
+    C) Dirty allowed
+    D) Phantom allowed
+    Javob: B
+
+13. Normalization nima?
+    A) Denormalization
+    B) Ma'lumotlar takrorlanishini kamaytirish
+    C) Indexing
+    D) Partitioning
+    Javob: B
+
+14. 1NF (First Normal Form)?
+    A) No primary key
+    B) Atomic values, no repeating groups
+    C) Denormalized
+    D) Third form
+    Javob: B
+
+15. 2NF (Second Normal Form)?
+    A) First form
+    B) 1NF + no partial dependencies
+    C) Third form
+    D) BCNF
+    Javob: B
+
+16. 3NF (Third Normal Form)?
+    A) Second form
+    B) 2NF + no transitive dependencies
+    C) BCNF
+    D) First form
+    Javob: B
+
+17. BCNF nima?
+    A) 3NF
+    B) Boyce-Codd Normal Form
+    C) 2NF
+    D) 1NF
+    Javob: B
+
+18. Denormalization nima?
+    A) Normalization
+    B) Performance uchun redundancy qo'shish
+    C) Indexing
+    D) Partitioning
+    Javob: B
+
+19. Clustered index nima?
+    A) Non-clustered
+    B) Physical data order
+    C) Secondary
+    D) Unique
+    Javob: B
+
+20. Non-clustered index nima?
+    A) Clustered
+    B) Alohida index struktura
+    C) Primary
+    D) Physical order
+    Javob: B
+
+21. Composite index nima?
+    A) Single column
+    B) Bir nechta ustun index
+    C) Clustered
+    D) Non-clustered
+    Javob: B
+
+22. Covering index nima?
+    A) Partial index
+    B) Query uchun barcha ustunlar index'da
+    C) Non-covering
+    D) Clustered
+    Javob: B
+
+23. Index scan vs Index seek?
+    A) Bir xil
+    B) Scan barcha, Seek ma'lum qatorlar
+    C) Seek barcha
+    D) Scan ma'lum
+    Javob: B
+
+24. EXPLAIN nima qiladi?
+    A) Execute
+    B) Query execution plan ko'rsatish
+    C) Create
+    D) Drop
+    Javob: B
+
+25. Table scan nima?
+    A) Index scan
+    B) Butun tableni o'qish
+    C) Index seek
+    D) Partial scan
+    Javob: B
+
+26. Query optimization?
+    A) Slow query
+    B) Query performance yaxshilash
+    C) No optimization
+    D) Manual only
+    Javob: B
+
+27. N+1 query problem?
+    A) Optimal
+    B) Ko'p ortiqcha query'lar
+    C) Single query
+    D) No problem
+    Javob: B
+
+28. Eager loading vs Lazy loading?
+    A) Bir xil
+    B) Eager oldindan, Lazy kerak bo'lganda
+    C) Lazy oldindan
+    D) No difference
+    Javob: B
+
+29. Stored procedure nima?
+    A) View
+    B) Saqlangan SQL kod
+    C) Function
+    D) Trigger
+    Javob: B
+
+30. CREATE PROCEDURE nima?
+    A) Create view
+    B) Procedure yaratish
+    C) Create function
+    D) Create trigger
+    Javob: B
+
+31. Stored function nima?
+    A) Procedure
+    B) Qiymat qaytaruvchi kod
+    C) View
+    D) Trigger
+    Javob: B
+
+32. Stored procedure vs function?
+    A) Bir xil
+    B) Function return qiladi, procedure yo'q
+    C) Procedure return
+    D) No difference
+    Javob: B
+
+33. Trigger nima?
+    A) Procedure
+    B) Event'da avtomatik ishlovchi kod
+    C) Function
+    D) View
+    Javob: B
+
+34. BEFORE trigger nima?
+    A) After
+    B) Operatsiyadan oldin ishlaydi
+    C) Instead of
+    D) During
+    Javob: B
+
+35. AFTER trigger nima?
+    A) Before
+    B) Operatsiyadan keyin ishlaydi
+    C) Instead of
+    D) During
+    Javob: B
+
+36. INSERT trigger qachon?
+    A) Update
+    B) Yangi qator qo'shilganda
+    C) Delete
+    D) Select
+    Javob: B
+
+37. UPDATE trigger qachon?
+    A) Insert
+    B) Qator o'zgartirilganda
+    C) Delete
+    D) Select
+    Javob: B
+
+38. DELETE trigger qachon?
+    A) Insert
+    B) Qator o'chirilganda
+    C) Update
+    D) Select
+    Javob: B
+
+39. CTE (Common Table Expression) nima?
+    A) View
+    B) Vaqtinchalik named result set
+    C) Subquery
+    D) Table
+    Javob: B
+
+40. WITH clause nima?
+    A) WHERE
+    B) CTE definition
+    C) JOIN
+    D) HAVING
+    Javob: B
+
+41. Recursive CTE nima?
+    A) Non-recursive
+    B) O'ziga murojaat qiluvchi CTE
+    C) Simple CTE
+    D) View
+    Javob: B
+
+42. Window function nima?
+    A) Aggregate
+    B) Qatorlar oynasi ustida hisoblash
+    C) Scalar
+    D) Table function
+    Javob: B
+
+43. ROW_NUMBER() nima?
+    A) Count
+    B) Qatorlarga raqam berish
+    C) Rank
+    D) Dense rank
+    Javob: B
+
+44. RANK() nima?
+    A) Row number
+    B) Ranking with gaps
+    C) Dense rank
+    D) Count
+    Javob: B
+
+45. DENSE_RANK() nima?
+    A) Rank
+    B) Ranking without gaps
+    C) Row number
+    D) Count
+    Javob: B
+
+46. PARTITION BY nima?
+    A) Group by
+    B) Window function uchun guruhlash
+    C) Order by
+    D) Having
+    Javob: B
+
+47. OVER() clause nima?
+    A) Under
+    B) Window specification
+    C) Where
+    D) Having
+    Javob: B
+
+48. LAG() function nima?
+    A) Lead
+    B) Oldingi qator qiymati
+    C) Current
+    D) Next
+    Javob: B
+
+49. LEAD() function nima?
+    A) Lag
+    B) Keyingi qator qiymati
+    C) Current
+    D) Previous
+    Javob: B
+
+50. FIRST_VALUE() nima?
+    A) Last
+    B) Window'dagi birinchi qiymat
+    C) Any
+    D) Middle
+    Javob: B
+
+51. LAST_VALUE() nima?
+    A) First
+    B) Window'dagi oxirgi qiymat
+    C) Any
+    D) Middle
+    Javob: B
+
+52. SUM() OVER() nima?
+    A) Group sum
+    B) Running sum
+    C) Total only
+    D) No sum
+    Javob: B
+
+53. AVG() OVER() nima?
+    A) Group average
+    B) Moving average
+    C) Total only
+    D) No average
+    Javob: B
+
+54. NTILE() nima?
+    A) Tile
+    B) Qatorlarni guruhlar bo'lish
+    C) Row number
+    D) Rank
+    Javob: B
+
+55. PERCENT_RANK() nima?
+    A) Rank
+    B) Percentile rank
+    C) Row number
+    D) Dense rank
+    Javob: B
+
+56. CUME_DIST() nima?
+    A) Distance
+    B) Cumulative distribution
+    C) Rank
+    D) Row number
+    Javob: B
+
+57. PIVOT nima?
+    A) Unpivot
+    B) Rows to columns
+    C) Columns to rows
+    D) Join
+    Javob: B
+
+58. UNPIVOT nima?
+    A) Pivot
+    B) Columns to rows
+    C) Rows to columns
+    D) Join
+    Javob: B
+
+59. MERGE statement nima?
+    A) Join
+    B) INSERT, UPDATE, DELETE bitta statement
+    C) Union
+    D) Intersect
+    Javob: B
+
+60. UPSERT nima?
+    A) Insert
+    B) Insert or Update
+    C) Delete
+    D) Select
+    Javob: B
+
+61. ON DUPLICATE KEY UPDATE?
+    A) Insert
+    B) Duplicate'da update
+    C) Delete
+    D) Ignore
+    Javob: B
+
+62. INSERT IGNORE nima?
+    A) Error
+    B) Duplicate'ni ignore qilish
+    C) Update
+    D) Delete
+    Javob: B
+
+63. REPLACE INTO nima?
+    A) Insert
+    B) Delete va insert
+    C) Update
+    D) Ignore
+    Javob: B
+
+64. Partitioning nima?
+    A) Indexing
+    B) Tableni bo'laklarga bo'lish
+    C) Sharding
+    D) Replication
+    Javob: B
+
+65. Range partitioning?
+    A) Hash
+    B) Qiymat oralig'i bo'yicha
+    C) List
+    D) Key
+    Javob: B
+
+66. Hash partitioning?
+    A) Range
+    B) Hash qiymat bo'yicha
+    C) List
+    D) Key
+    Javob: B
+
+67. List partitioning?
+    A) Range
+    B) Aniq qiymatlar ro'yxati
+    C) Hash
+    D) Key
+    Javob: B
+
+68. Sharding nima?
+    A) Partitioning
+    B) Horizontal scaling across servers
+    C) Indexing
+    D) Replication
+    Javob: B
+
+69. Replication nima?
+    A) Sharding
+    B) Ma'lumotlarni nusxalash
+    C) Partitioning
+    D) Indexing
+    Javob: B
+
+70. Master-slave replication?
+    A) Multi-master
+    B) Bir master, ko'p slave
+    C) No replication
+    D) Peer-to-peer
+    Javob: B
+
+71. Deadlock nima?
+    A) No lock
+    B) Bir-birini kutuvchi lock'lar
+    C) Single lock
+    D) Shared lock
+    Javob: B
+
+72. Row-level locking?
+    A) Table lock
+    B) Faqat qator lock
+    C) Database lock
+    D) Page lock
+    Javob: B
+
+73. Table-level locking?
+    A) Row lock
+    B) Butun table lock
+    C) Database lock
+    D) Page lock
+    Javob: B
+
+74. Optimistic locking?
+    A) Pessimistic
+    B) Version-based conflict detection
+    C) No locking
+    D) Row lock
+    Javob: B
+
+75. Pessimistic locking?
+    A) Optimistic
+    B) Oldindan lock qilish
+    C) No locking
+    D) Version based
+    Javob: B
+
+76. SELECT FOR UPDATE nima?
+    A) Normal select
+    B) Qatorlarni lock qilish
+    C) Update
+    D) Delete
+    Javob: B
+
+77. JSON data type?
+    A) Text
+    B) Native JSON storage
+    C) Varchar
+    D) Blob
+    Javob: B
+
+78. JSON_EXTRACT() nima?
+    A) Insert
+    B) JSON'dan qiymat olish
+    C) Update
+    D) Delete
+    Javob: B
+
+79. JSON_SET() nima?
+    A) Get
+    B) JSON qiymatini o'rnatish
+    C) Delete
+    D) Extract
+    Javob: B
+
+80. Full-text search?
+    A) LIKE
+    B) Matn qidirish
+    C) Regex
+    D) Pattern
+    Javob: B
+
+81. MATCH ... AGAINST nima?
+    A) Like
+    B) Full-text search query
+    C) Regex
+    D) Pattern
+    Javob: B
+
+82. Full-text index?
+    A) Normal index
+    B) Matn qidirish uchun index
+    C) Clustered
+    D) Non-clustered
+    Javob: B
+
+83. REGEXP operator nima?
+    A) Like
+    B) Regular expression match
+    C) Pattern
+    D) Exact
+    Javob: B
+
+84. UUID data type?
+    A) Integer
+    B) Universally unique identifier
+    C) String
+    D) Binary
+    Javob: B
+
+85. ENUM data type?
+    A) Integer
+    B) Belgilangan qiymatlar to'plami
+    C) String
+    D) Boolean
+    Javob: B
+
+86. SET data type?
+    A) Enum
+    B) Ko'p qiymatlar to'plami
+    C) Array
+    D) Boolean
+    Javob: B
+
+87. BLOB data type?
+    A) Text
+    B) Binary Large Object
+    C) Integer
+    D) String
+    Javob: B
+
+88. BINARY vs VARBINARY?
+    A) Bir xil
+    B) Binary fixed, varbinary variable
+    C) Varbinary fixed
+    D) No difference
+    Javob: B
+
+89. CHARACTER SET?
+    A) Collation
+    B) Belgilar to'plami (utf8, latin1)
+    C) Encoding
+    D) Font
+    Javob: B
+
+90. COLLATION nima?
+    A) Character set
+    B) Solishtirish qoidalari
+    C) Encoding
+    D) Sorting
+    Javob: B
+
+91. utf8mb4 nima?
+    A) utf8
+    B) 4-byte UTF-8 (emoji support)
+    C) ASCII
+    D) Latin
+    Javob: B
+
+92. Foreign key ON DELETE CASCADE?
+    A) Set null
+    B) Parent o'chirilsa child ham o'chadi
+    C) Restrict
+    D) No action
+    Javob: B
+
+93. Foreign key ON UPDATE CASCADE?
+    A) Set null
+    B) Parent yangilansa child ham yangilanadi
+    C) Restrict
+    D) No action
+    Javob: B
+
+94. SET NULL foreign key action?
+    A) Cascade
+    B) Child'ni NULL qilish
+    C) Restrict
+    D) Delete
+    Javob: B
+
+95. RESTRICT foreign key action?
+    A) Cascade
+    B) Operatsiyani rad etish
+    C) Set null
+    D) No action
+    Javob: B
+
+96. CHECK constraint nima?
+    A) Unique
+    B) Qiymat shartini tekshirish
+    C) Not null
+    D) Primary
+    Javob: B
+
+97. Generated column nima?
+    A) Normal column
+    B) Hisoblangan ustun
+    C) Virtual
+    D) Stored
+    Javob: B
+
+98. Materialized view nima?
+    A) Normal view
+    B) Ma'lumot saqlanadigan view
+    C) Virtual
+    D) Temporary
+    Javob: B
+
+99. Temporary table nima?
+    A) Permanent
+    B) Session uchun vaqtinchalik table
+    C) View
+    D) Index
+    Javob: B
+
+100. Performance schema nima?
+     A) User schema
+     B) Server performance monitoring
+     C) Database schema
+     D) Table schema
+     Javob: B

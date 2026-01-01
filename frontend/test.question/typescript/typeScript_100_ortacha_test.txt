@@ -1,0 +1,808 @@
+1. Generic constraints nima?
+
+   A) No constraints================================================================================
+
+   B) T extends InterfaceO'RTA DARAJA (INTERMEDIATE) - 100 TA SAVOL
+
+   C) Any type================================================================================
+
+   D) Specific type
+
+   Javob: B1. Branded types nima? A) Nom B) Primitive tipga unique identifikator qo'shish C) Class D) Interface | Javob: B
+
+2. Phantom types nima uchun ishlatiladi? A) Ko'rinmas B) Compile-time tekshiruvlar uchun C) Runtime D) Debug | Javob: B
+
+2. T extends { length: number }?3. Recursive types qanday yaratiladi? A) Loop B) O'ziga havola qiluvchi tip C) Funksiya D) Class | Javob: B
+
+   A) Any T4. Tail recursion TypeScript'da optimallashtirilganmi? A) Ha B) Yo'q, JavaScript limitga ega C) Ba'zan D) Faqat strict | Javob: B
+
+   B) T must have length property5. Contravariance va covariance nima? A) O'xshash B) Funksiya parametr va return'da tip xavfsizligi C) Bir xil D) Class | Javob: B
+
+   C) T is number6. Variance annotation TypeScript'da bormi? A) Ha B) Yo'q, avtomatik chiqariladi C) Faqat class D) Faqat interface | Javob: B
+
+   D) T is string7. Distributive conditional types qanday ishlaydi? A) To'plam B) Union ustida har bir tip uchun qo'llanadi C) Faqat bitta D) Manual | Javob: B
+
+   Javob: B8. Non-distributive qilish uchun nima qilish kerak? A) Hech narsa B) [T] qavs ichiga olish C) Remove D) Add | Javob: B
+
+9. Type narrowing qanday usullar bor? A) Bitta B) typeof, instanceof, in, custom guards C) Faqat typeof D) Faqat instanceof | Javob: B
+
+3. Multiple generic constraints?10. Control flow analysis nima? A) Loop B) Kod oqimida tip toraytirish C) Function D) Class | Javob: B
+
+   A) Single11. Assertion functions qanday e'lon qilinadi? A) function B) asserts param is Type C) return D) void | Javob: B
+
+   B) T extends A & B12. User-defined type guards qanday? A) Built-in B) param is Type return qiluvchi funksiya C) Auto D) Manual | Javob: B
+
+   C) T extends A | B13. const assertions nima beradi? A) Variable B) Literal tiplar va readonly C) Number D) String | Javob: B
+
+   D) No multiple14. as const qachon foydali? A) Hech qachon B) Immutable literal qiymatlar uchun C) Faqat number D) Faqat string | Javob: B
+
+   Javob: B15. Double assertion (as unknown as Type) qachon kerak? A) Har doim B) Tip tizimi ruxsat bermaganda, xavfli C) Hech qachon D) Faqat any | Javob: B
+
+16. Non-null assertion operator (!) nima? A) Not B) Null emasligini majburan bildirish C) Equal D) Optional | Javob: B
+
+4. Default generic parameter?17. Definite assignment assertion (!) qachon? A) Yo'q B) O'zgaruvchi albatta assign qilinadi deb bildirish C) Optional D) Nullable | Javob: B
+
+   A) Required18. Satisfies operator (TS 4.9+) nima? A) Qoniqtirmaydi B) Tip mosligini tekshirish, tipni o'zgartirmasdan C) Change D) Convert | Javob: B
+
+   B) <T = string>19. Abstract construct signatures nima? A) Concrete B) Abstract class constructor tipini belgilash C) Interface D) Type | Javob: B
+
+   C) Optional20. Constructor parameters utility type nima? A) Return B) ConstructorParameters<T> class constructor parametrlarini oladi C) Void D) Any | Javob: B
+
+   D) Any
+
+   Javob: B21. ThisParameterType<T> nimani chiqaradi? A) Return B) Funksiyadan this tipini oladi C) Parameter D) Void | Javob: B
+
+22. OmitThisParameter<T> nima qiladi? A) Qo'shadi B) Funksiya tipidan this'ni olib tashlaydi C) Readonly D) Optional | Javob: B
+
+5. Generic class nima?23. Uppercase<S> utility type nima? A) Lowercase B) String literal tipni katta harf qiladi C) Number D) Boolean | Javob: B
+
+   A) Regular class24. Lowercase<S>, Capitalize<S>, Uncapitalize<S> bormi? A) Yo'q B) Ha, string literal type manipulyatsiyasi C) Faqat runtime D) Faqat any | Javob: B
+
+   B) class Container<T>25. Intrinsic string manipulation types qachon qo'shildi? A) TS 1.0 B) TS 4.1 C) TS 3.0 D) TS 5.0 | Javob: B
+
+   C) Interface26. Awaited<T> utility type vazifasi? A) Sync B) Promise ichidagi tipni chiqarish C) Array D) Object | Javob: B
+
+   D) Type27. NoInfer<T> (TS 5.4+) nima? A) Infer qiladi B) Tip chiqarishni to'xtatadi C) Auto D) Manual | Javob: B
+
+   Javob: B28. Const type parameters (TS 5.0+) nima? A) Variable B) Generic parametrni const qilish C) String D) Number | Javob: B
+
+29. Variance annotations (out, in) TS 4.7+ nima? A) Same B) Explicit covariance/contravariance C) Auto D) None | Javob: B
+
+6. Generic interface nima?30. satisfies vs as farqi nima? A) Bir xil B) satisfies tip o'zgartirmaydi, as o'zgartiradi C) Farqi yo'q D) Faqat sintaksis | Javob: B
+
+   A) Regular interface31. Type predicates (is) qayerda foydali? A) Hamma joyda B) Type guard funksiyalarda C) Faqat class D) Faqat interface | Javob: B
+
+   B) interface Container<T>32. Discriminated unions'da exhaustiveness checking qanday? A) Manual B) never tipidan foydalanib C) Auto D) Ignore | Javob: B
+
+   C) Class33. Tagged unions va discriminated unions farqi? A) Katta B) Nomlanish farqi, mohiyat bir xil C) Butunlay boshqa D) Yo'q | Javob: B
+
+   D) Type34. Symbol primitive type TypeScript'da qo'llab-quvvatlanadimi? A) Yo'q B) Ha C) Faqat ES6 D) Faqat Node | Javob: B
+
+   Javob: B35. Unique symbol type qanday? A) Oddiy symbol B) declare const sym: unique symbol C) String D) Number | Javob: B
+
+36. BigInt TypeScript'da bormi? A) Yo'q B) Ha, bigint tipi C) Faqat number D) Faqat string | Javob: B
+
+7. Variance annotations?37. Type-level programming nima? A) Runtime B) Tiplar bilan funksional dasturlash C) Normal code D) Logic | Javob: B
+
+   A) No annotations38. Mapped types'da as clause qanday ishlaydi? A) Yo'q B) Key'ni remap qilish uchun C) Value D) Both | Javob: B
+
+   B) in/out modifiers39. Template literal types'da inference ishlaydi? A) Yo'q B) Ha, infer bilan C) Faqat string D) Faqat number | Javob: B
+
+   C) const40. Recursive conditional types depth limit bormi? A) Yo'q B) Ha, TS'da 1000 depth limit C) Cheksiz D) 10 | Javob: B
+
+   D) readonly
+
+   Javob: B41. Higher-kinded types TypeScript'da bormi? A) Ha B) Yo'q, to'liq qo'llab-quvvatlanmaydi C) Partial D) Full | Javob: B
+
+42. Module augmentation qanday qilinadi? A) Overwrite B) declare module '...' ichida qo'shimcha e'lonlar C) Replace D) Delete | Javob: B
+
+8. out T (covariance)?43. Global augmentation qanday? A) Local B) declare global {} C) Module D) Class | Javob: B
+
+   A) Contravariant44. Namespace merging qanday ishlaydi? A) Yo'q B) Bir xil nomdagi namespace'lar birlashadi C) Xato D) Ignore | Javob: B
+
+   B) Producer position only45. Interface merging nima? A) Yo'q B) Bir xil nomdagi interface'lar birlashadi C) Xato D) Override | Javob: B
+
+   C) Invariant46. Class va interface merge bo'ladimi? A) Yo'q B) Ha, declaration merging C) Faqat class D) Faqat interface | Javob: B
+
+   D) Bivariant47. Enum merging qo'llab-quvvatlanadimi? A) Yo'q B) Ha, const enum bundan mustasno C) Faqat numeric D) Faqat string | Javob: B
+
+   Javob: B48. const enum va regular enum farqi? A) Yo'q B) const enum inline qilinadi C) Bir xil D) Faqat sintaksis | Javob: B
+
+49. Ambient enum nima? A) Local B) declare enum, implementation yo'q C) Regular D) Inline | Javob: B
+
+9. in T (contravariance)?50. Reverse mapping faqat qaysi enum'da? A) String B) Numeric enum C) Const D) Ambient | Javob: B
+
+   A) Covariant51. Heterogeneous enums tavsiya qilinadimi? A) Ha B) Yo'q, faqat numeric yoki string C) Majburiy D) Har doim | Javob: B
+
+   B) Consumer position only52. Enum member'lar constant yoki computed bo'ladimi? A) Faqat constant B) Ikkalasi ham C) Faqat computed D) Yo'q | Javob: B
+
+   C) Invariant53. Enum vs union of literals qachon afzalroq? A) Enum har doim B) Odatda union literal yaxshiroq C) Bir xil D) Yo'q | Javob: B
+
+   D) Bivariant54. Numeric enum default boshlanish qiymati? A) 1 B) 0 C) -1 D) Random | Javob: B
+
+   Javob: B55. String enum member'larga auto value berilmaydi? A) Beriladi B) To'g'ri, har birini belgilash kerak C) Ba'zan D) Default bor | Javob: B
+
+56. Computed enum member qanday? A) Literal B) Expression orqali hisoblanadi C) Static D) Manual | Javob: B
+
+10. Declaration merging nima?57. Ambient modules nima? A) Local B) declare module 'module-name' C) Regular D) Class | Javob: B
+
+    A) No merging58. Wildcard module declarations qanday? A) * yo'q B) declare module '*.json' C) Faqat ts D) Faqat js | Javob: B
+
+    B) Combine declarations59. UMD modules TypeScript'da qo'llab-quvvatlanadimi? A) Yo'q B) Ha, UMD global va module export C) Faqat ES6 D) Faqat CommonJS | Javob: B
+
+    C) Override60. Dynamic import() TypeScript'da ishlaydi? A) Yo'q B) Ha, Promise<typeof module> qaytaradi C) Faqat static D) Faqat require | Javob: B
+
+    D) Replace
+
+    Javob: B61. Import assertions (TS 4.5+) nima? A) Yo'q B) import x from 'file' assert { type: 'json' } C) Faqat JSON D) Faqat TS | Javob: B
+
+62. Type-only imports nima foyda beradi? A) Hech narsa B) Faqat tip import, runtime'da yo'q C) Tezlik D) Xotira | Javob: B
+
+11. Interface merging?63. Import elision nima? A) Qo'shish B) Faqat tip import'larni o'chirish C) Barchasi D) Yo'q | Javob: B
+
+    A) Error64. Barrel exports (index.ts) pattern yaxshimi? A) Har doim B) Ba'zan, tree-shaking muammosi bo'lishi mumkin C) Hech qachon D) Majburiy | Javob: B
+
+    B) Combine properties65. Re-exports (export * from '...') qanday? A) Import B) Boshqa moduldan export qilish C) Delete D) Update | Javob: B
+
+    C) Replace66. Side-effect imports qanday? A) import x B) import './file' C) export D) require | Javob: B
+
+    D) Override67. import() type syntax nima? A) Dynamic B) typeof import('./module') C) Static D) Require | Javob: B
+
+    Javob: B68. Export = va import = require() qanday modulda? A) ES6 B) CommonJS uchun C) UMD D) AMD | Javob: B
+
+69. --esModuleInterop flag nima qiladi? A) Yo'q B) CommonJS import'ni osonlashtiradi C) Faqat export D) Faqat class | Javob: B
+
+12. Module augmentation?70. --allowSyntheticDefaultImports nima? A) Real default B) Default import'ga ruxsat, type tekshiruvda C) Yo'q D) Faqat named | Javob: B
+
+    A) Replace module71. Module resolution strategies nechta? A) 1ta B) 2ta (Node, Classic) C) 3ta D) 5ta | Javob: B
+
+    B) Add to existing module72. NodeNext module resolution (TS 4.7+) nima? A) Eski B) Node.js ESM qo'llab-quvvatlash C) CommonJS D) AMD | Javob: B
+
+    C) Delete module73. Path mapping (paths in tsconfig) nima uchun? A) Delete B) Import yo'llarini qisqartirish C) Export D) Class | Javob: B
+
+    D) Override module74. baseUrl option vazifasi? A) Yo'q B) Nisbiy import'lar uchun baza yo'l C) Export D) Class | Javob: B
+
+    Javob: B75. rootDirs option nima uchun? A) Bitta B) Bir nechta virtual rootlarni birlashtirish C) Delete D) Export | Javob: B
+
+76. typeRoots va types option farqi? A) Yo'q B) typeRoots - kataloglar, types - paketlar C) Bir xil D) Faqat sintaksis | Javob: B
+
+13. Global augmentation?77. skipLibCheck nima qiladi? A) Check qiladi B) .d.ts fayllarni tekshirishni o'tkazib yuboradi C) Barchasini D) Yo'q | Javob: B
+
+    A) Local78. Declaration map (declarationMap) nima? A) Regular map B) .d.ts uchun source map C) JSON D) Object | Javob: B
+
+    B) declare global {}79. Composite projects (composite: true) nima? A) Bitta B) Project references uchun C) Simple D) None | Javob: B
+
+    C) Module80. Project references (references: []) vazifasi? A) Delete B) Katta proyektni bo'laklarga ajratish C) Merge D) Copy | Javob: B
+
+    D) Namespace
+
+    Javob: B81. Incremental compilation (incremental: true) nima beradi? A) Sekinlashtiradi B) Tezlashtiradi, kesh ishlatadi C) Xotira D) Yo'q | Javob: B
+
+82. tsBuildInfoFile nima? A) Source B) Incremental build info fayli C) Config D) Package | Javob: B
+
+14. Triple-slash directive?83. noEmit option nima qiladi? A) Emit qiladi B) Faqat tekshiradi, fayl yaratmaydi C) Delete D) Update | Javob: B
+
+    A) Comment84. emitDeclarationOnly nima? A) JS ham B) Faqat .d.ts yaratadi C) Faqat JS D) Hech narsa | Javob: B
+
+    B) /// <reference>85. sourceMap option vazifasi? A) Yo'q B) .js.map debugging uchun yaratadi C) Delete D) Compile | Javob: B
+
+    C) Import86. inlineSourceMap va sourceMap farqi? A) Yo'q B) inline - bitta faylda, sourceMap - alohida C) Bir xil D) Speed | Javob: B
+
+    D) Export87. noEmitOnError nima qiladi? A) Emit qiladi B) Xato bo'lsa emit qilmaydi C) Har doim emit D) Ignore | Javob: B
+
+    Javob: B88. preserveConstEnums nima? A) Inline B) Const enum'ni saqlab qoladi C) Delete D) Update | Javob: B
+
+89. isolatedModules nima tekshiradi? A) Yo'q B) Har bir fayl alohida transpile bo'lishi mumkinligini C) Merge D) Link | Javob: B
+
+15. /// <reference path="">?90. allowJs va checkJs farqi? A) Yo'q B) allowJs - ruxsat, checkJs - tekshirish ham C) Bir xil D) Faqat sintaksis | Javob: B
+
+    A) Types91. maxNodeModuleJsDepth nima? A) Min B) node_modules ichida JS tekshirish chuqurligi C) None D) Auto | Javob: B
+
+    B) File dependency92. esModuleInterop'siz default import muammosi? A) Yo'q B) CommonJS modullardan default import xato C) Ishlaydi D) Same | Javob: B
+
+    C) Library93. forceConsistentCasingInFileNames nima? A) Yo'q B) Fayl nomlarida register mosligi C) Uppercase D) Lowercase | Javob: B
+
+    D) Module94. resolveJsonModule nima beradi? A) Yo'q B) JSON fayllarni import qilish C) Faqat JS D) Faqat TS | Javob: B
+
+    Javob: B95. useDefineForClassFields qanday o'zgarish? A) Yo'q B) Class field semantikasi ECMAScript'ga moslash C) Old D) Same | Javob: B
+
+96. importsNotUsedAsValues deprecated, o'rniga nima? A) Yo'q B) verbatimModuleSyntax (TS 5.0+) C) Same D) None | Javob: B
+
+16. /// <reference types="">?97. verbatimModuleSyntax nima qiladi? A) O'zgartiradi B) Import/export sintaksisini saqlab qoladi C) Delete D) Update | Javob: B
+
+    A) Path98. allowImportingTsExtensions qachon kerak? A) Har doim B) --noEmit bilan .ts extension import C) Hech qachon D) Always emit | Javob: B
+
+    B) @types package99. JSDoc comments TypeScript'da tip sifatida ishlaydi? A) Yo'q B) Ha, checkJs bilan C) Faqat izoh D) Never | Javob: B
+
+    C) Library100. @ts-check va @ts-nocheck nima? A) Hech narsa B) JS faylda TS tekshiruvni yoqish/o'chirish C) Faqat TS D) Faqat JSON | Javob: B
+
+    D) Module
+    Javob: B
+
+17. Type-only import?
+    A) Value import
+    B) import type { T }
+    C) Regular import
+    D) Default import
+    Javob: B
+
+18. import type nima?
+    A) Runtime import
+    B) Compile-time only
+    C) Default import
+    D) Star import
+    Javob: B
+
+19. export type nima?
+    A) Value export
+    B) Type-only export
+    C) Default export
+    D) Star export
+    Javob: B
+
+20. isolatedModules nima?
+    A) Combined
+    B) Single-file transform safe
+    C) Multiple
+    D) Global
+    Javob: B
+
+21. Ambient module nima?
+    A) Regular module
+    B) declare module "name"
+    C) Import
+    D) Export
+    Javob: B
+
+22. Wildcard module?
+    A) Specific
+    B) declare module "*.css"
+    C) No pattern
+    D) Exact
+    Javob: B
+
+23. Type predicate nima?
+    A) Boolean
+    B) x is Type
+    C) typeof
+    D) instanceof
+    Javob: B
+
+24. Assertion function?
+    A) Returns
+    B) asserts x is Type
+    C) Throws
+    D) Guards
+    Javob: B
+
+25. Narrowing nima?
+    A) Widening
+    B) Type refinement
+    C) Casting
+    D) Assertion
+    Javob: B
+
+26. Control flow analysis?
+    A) Manual
+    B) Automatic type narrowing
+    C) Static
+    D) Runtime
+    Javob: B
+
+27. Discriminated union?
+    A) Regular union
+    B) Union with common literal property
+    C) Intersection
+    D) Mapped
+    Javob: B
+
+28. type: "circle" | "square"?
+    A) Regular property
+    B) Discriminant property
+    C) Optional
+    D) Readonly
+    Javob: B
+
+29. Exhaustiveness checking?
+    A) Partial
+    B) never for unhandled cases
+    C) Any
+    D) Unknown
+    Javob: B
+
+30. _exhaustiveCheck: never?
+    A) Any
+    B) Ensure all cases handled
+    C) Unknown
+    D) Void
+    Javob: B
+
+31. Recursive type alias?
+    A) No recursion
+    B) type List<T> = T | List<T>[]
+    C) Error
+    D) Infinite
+    Javob: B
+
+32. Mutually recursive types?
+    A) Single recursion
+    B) A references B, B references A
+    C) No recursion
+    D) Error
+    Javob: B
+
+33. Index signature nima?
+    A) Property
+    B) [key: string]: Type
+    C) Array index
+    D) Tuple
+    Javob: B
+
+34. [key: string]: number?
+    A) Specific key
+    B) Any string key, number value
+    C) Array
+    D) Tuple
+    Javob: B
+
+35. [key: number]: T?
+    A) String key
+    B) Array-like index signature
+    C) Object
+    D) Map
+    Javob: B
+
+36. Symbol index signature?
+    A) String only
+    B) [key: symbol]: Type
+    C) Number only
+    D) No symbol
+    Javob: B
+
+37. Template index signature?
+    A) Regular
+    B) [key: `data-${string}`]: string
+    C) Simple
+    D) No template
+    Javob: B
+
+38. Accessor decorators?
+    A) Property
+    B) get/set decorators
+    C) Method
+    D) Class
+    Javob: B
+
+39. Parameter decorators?
+    A) Property
+    B) Function parameter decorators
+    C) Method
+    D) Class
+    Javob: B
+
+40. Decorator factories?
+    A) Simple decorator
+    B) Function returning decorator
+    C) Class
+    D) Method
+    Javob: B
+
+41. Decorator composition?
+    A) Single
+    B) Multiple decorators
+    C) No composition
+    D) Error
+    Javob: B
+
+42. Decorator evaluation order?
+    A) Top to bottom
+    B) Bottom to top (execution)
+    C) Random
+    D) Alphabetical
+    Javob: B
+
+43. Class expression nima?
+    A) Declaration
+    B) const C = class {}
+    C) Statement
+    D) Block
+    Javob: B
+
+44. Abstract method nima?
+    A) Concrete
+    B) No implementation
+    C) Final
+    D) Static
+    Javob: B
+
+45. static blocks?
+    A) Instance
+    B) static { } initialization
+    C) Constructor
+    D) Method
+    Javob: B
+
+46. #private fields?
+    A) Private keyword
+    B) Hard private (runtime)
+    C) Protected
+    D) Public
+    Javob: B
+
+47. #name vs private name?
+    A) Same
+    B) # is runtime private
+    C) private better
+    D) No difference
+    Javob: B
+
+48. implements vs extends?
+    A) Same
+    B) implements interface, extends class
+    C) extends interface
+    D) implements class
+    Javob: B
+
+49. Interface extending class?
+    A) Error
+    B) interface extends Class
+    C) Not possible
+    D) Always error
+    Javob: B
+
+50. Constructor signature interface?
+    A) Method
+    B) new (): Type
+    C) Property
+    D) Index
+    Javob: B
+
+51. this parameter nima?
+    A) Regular parameter
+    B) Fake first parameter
+    C) Last parameter
+    D) Optional
+    Javob: B
+
+52. function f(this: Type)?
+    A) Error
+    B) this type annotation
+    C) Parameter
+    D) Return
+    Javob: B
+
+53. ThisParameterType<T>?
+    A) ReturnType
+    B) Extract this type
+    C) Parameters
+    D) InstanceType
+    Javob: B
+
+54. OmitThisParameter<T>?
+    A) Add this
+    B) Remove this parameter
+    C) Keep this
+    D) Replace this
+    Javob: B
+
+55. Variadic tuple types?
+    A) Fixed
+    B) [...T] spread
+    C) Single
+    D) No spread
+    Javob: B
+
+56. [...T, string] nima?
+    A) Error
+    B) T spread then string
+    C) Only T
+    D) Only string
+    Javob: B
+
+57. [string, ...T, number]?
+    A) Error
+    B) Middle spread
+    C) End only
+    D) Start only
+    Javob: B
+
+58. Named tuple elements?
+    A) Unnamed
+    B) [first: string, second: number]
+    C) Index only
+    D) No names
+    Javob: B
+
+59. Rest elements in tuples?
+    A) No rest
+    B) [...rest: string[]]
+    C) Fixed only
+    D) Error
+    Javob: B
+
+60. Labeled tuple rest?
+    A) Unlabeled
+    B) [...args: string[]]
+    C) No label
+    D) Error
+    Javob: B
+
+61. const assertion effect?
+    A) Mutable
+    B) Readonly + literal types
+    C) Any
+    D) Unknown
+    Javob: B
+
+62. Object literal as const?
+    A) Mutable
+    B) Readonly with literal types
+    C) Any
+    D) Unknown
+    Javob: B
+
+63. Array as const?
+    A) number[]
+    B) readonly [1, 2, 3]
+    C) any[]
+    D) unknown[]
+    Javob: B
+
+64. Recursive readonly?
+    A) Shallow
+    B) Deep readonly type
+    C) No recursion
+    D) Error
+    Javob: B
+
+65. type DeepReadonly<T>?
+    A) Shallow
+    B) Recursive mapped type
+    C) Built-in
+    D) Error
+    Javob: B
+
+66. Recursive Partial?
+    A) Shallow
+    B) Deep optional properties
+    C) Built-in
+    D) Error
+    Javob: B
+
+67. Awaited<Promise<Promise<T>>>?
+    A) Promise<T>
+    B) T (deeply unwrapped)
+    C) Promise<Promise<T>>
+    D) Error
+    Javob: B
+
+68. String manipulation types?
+    A) Number
+    B) Uppercase, Lowercase, etc.
+    C) Boolean
+    D) Object
+    Javob: B
+
+69. Uppercase<"hello">?
+    A) "hello"
+    B) "HELLO"
+    C) "Hello"
+    D) Error
+    Javob: B
+
+70. Lowercase<"HELLO">?
+    A) "HELLO"
+    B) "hello"
+    C) "Hello"
+    D) Error
+    Javob: B
+
+71. Capitalize<"hello">?
+    A) "hello"
+    B) "Hello"
+    C) "HELLO"
+    D) Error
+    Javob: B
+
+72. Uncapitalize<"Hello">?
+    A) "Hello"
+    B) "hello"
+    C) "HELLO"
+    D) Error
+    Javob: B
+
+73. Template literal inference?
+    A) No inference
+    B) infer in template
+    C) Error
+    D) Manual
+    Javob: B
+
+74. `${infer F}${infer R}`?
+    A) Error
+    B) Split string type
+    C) No split
+    D) Single char
+    Javob: B
+
+75. Mapped type modifiers?
+    A) No modifiers
+    B) +/- readonly, +/- ?
+    C) Only +
+    D) Only -
+    Javob: B
+
+76. -readonly modifier?
+    A) Add readonly
+    B) Remove readonly
+    C) No effect
+    D) Error
+    Javob: B
+
+77. -? modifier?
+    A) Add optional
+    B) Remove optional
+    C) No effect
+    D) Error
+    Javob: B
+
+78. Key remapping as clause?
+    A) No remapping
+    B) [K in keyof T as NewK]
+    C) Error
+    D) Manual
+    Javob: B
+
+79. Filter keys via as never?
+    A) Keep all
+    B) Remove key
+    C) Error
+    D) Add key
+    Javob: B
+
+80. as `get${Capitalize<K>}`?
+    A) No change
+    B) Rename keys
+    C) Error
+    D) Remove keys
+    Javob: B
+
+81. Symbol.iterator type?
+    A) String
+    B) unique symbol
+    C) Number
+    D) Any
+    Javob: B
+
+82. unique symbol nima?
+    A) Regular symbol
+    B) Specific symbol type
+    C) Any symbol
+    D) Unknown
+    Javob: B
+
+83. Iterable<T> interface?
+    A) Iterator
+    B) [Symbol.iterator](): Iterator<T>
+    C) Array
+    D) Generator
+    Javob: B
+
+84. Iterator<T> interface?
+    A) Iterable
+    B) next(): IteratorResult<T>
+    C) Array
+    D) Generator
+    Javob: B
+
+85. IteratorResult<T>?
+    A) T only
+    B) { done: boolean, value: T }
+    C) Iterator
+    D) Iterable
+    Javob: B
+
+86. AsyncIterable<T>?
+    A) Sync
+    B) [Symbol.asyncIterator]()
+    C) Promise
+    D) Generator
+    Javob: B
+
+87. AsyncIterator<T>?
+    A) Sync
+    B) next(): Promise<IteratorResult<T>>
+    C) Iterator
+    D) Iterable
+    Javob: B
+
+88. Generator<T, TReturn, TNext>?
+    A) Function
+    B) Generator function type
+    C) Iterator
+    D) Iterable
+    Javob: B
+
+89. AsyncGenerator type?
+    A) Generator
+    B) Async generator function type
+    C) Promise
+    D) Iterator
+    Javob: B
+
+90. Const type parameters?
+    A) let
+    B) <const T>
+    C) var
+    D) readonly
+    Javob: B
+
+91. <const T>(x: T)?
+    A) Mutable T
+    B) Literal inference
+    C) Any T
+    D) Unknown T
+    Javob: B
+
+92. using declaration?
+    A) let
+    B) Disposable resource
+    C) const
+    D) var
+    Javob: B
+
+93. Symbol.dispose?
+    A) Regular method
+    B) Disposable interface
+    C) Static method
+    D) Property
+    Javob: B
+
+94. await using?
+    A) Sync dispose
+    B) Async disposable
+    C) No await
+    D) Error
+    Javob: B
+
+95. Import assertions?
+    A) No assertions
+    B) import x assert { type: "json" }
+    C) Error
+    D) Deprecated
+    Javob: B
+
+96. Import attributes?
+    A) Assertions
+    B) import x with { type: "json" }
+    C) No attributes
+    D) Error
+    Javob: B
+
+97. satisfies operator use?
+    A) Assertion
+    B) Type check, keep inference
+    C) Cast
+    D) Narrow
+    Javob: B
+
+98. const obj = {} satisfies Type?
+    A) obj: Type
+    B) obj keeps literal type
+    C) obj: any
+    D) obj: unknown
+    Javob: B
+
+99. accessor keyword?
+    A) get/set
+    B) Auto accessor property
+    C) Method
+    D) Field
+    Javob: B
+
+100. accessor name: string?
+     A) Regular property
+     B) Auto get/set with backing field
+     C) Method
+     D) Static
+     Javob: B

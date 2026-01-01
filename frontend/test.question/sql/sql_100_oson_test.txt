@@ -1,0 +1,702 @@
+SQL - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+===========================================
+
+1. SQL nima?
+   A) Programming language
+   B) Structured Query Language
+   C) System Query Language
+   D) Simple Query Language
+   Javob: B
+
+2. SQL nima uchun ishlatiladi?
+   A) Web design
+   B) Database bilan ishlash
+   C) Graphics
+   D) Animation
+   Javob: B
+
+3. Database nima?
+   A) File
+   B) Ma'lumotlar to'plami
+   C) Program
+   D) Website
+   Javob: B
+
+4. Table nima?
+   A) Array
+   B) Qator va ustunlardan iborat ma'lumotlar
+   C) List
+   D) Object
+   Javob: B
+
+5. Row (qator) nima?
+   A) Column
+   B) Bitta yozuv (record)
+   C) Table
+   D) Database
+   Javob: B
+
+6. Column (ustun) nima?
+   A) Row
+   B) Ma'lumot turi (field)
+   C) Table
+   D) Database
+   Javob: B
+
+7. SELECT nima qiladi?
+   A) Insert
+   B) Ma'lumotlarni tanlash
+   C) Update
+   D) Delete
+   Javob: B
+
+8. SELECT * nima degani?
+   A) Bitta ustun
+   B) Barcha ustunlarni tanlash
+   C) Hech narsa
+   D) Error
+   Javob: B
+
+9. FROM clause nima?
+   A) WHERE
+   B) Qaysi tabledan olishni ko'rsatish
+   C) ORDER BY
+   D) GROUP BY
+   Javob: B
+
+10. SELECT name FROM users sintaksisi?
+    A) Incorrect
+    B) users tabledan name ustunini olish
+    C) Insert
+    D) Delete
+    Javob: B
+
+11. WHERE clause nima?
+    A) ORDER BY
+    B) Shart qo'yish
+    C) GROUP BY
+    D) HAVING
+    Javob: B
+
+12. WHERE age > 18 nima qiladi?
+    A) All rows
+    B) age 18 dan katta bo'lgan qatorlar
+    C) age 18 bo'lgan
+    D) Error
+    Javob: B
+
+13. AND operator nima?
+    A) OR
+    B) Ikkala shart ham true bo'lishi kerak
+    C) Bitta shart
+    D) NOT
+    Javob: B
+
+14. OR operator nima?
+    A) AND
+    B) Kamida bitta shart true bo'lishi kerak
+    C) Ikkala shart
+    D) NOT
+    Javob: B
+
+15. NOT operator nima?
+    A) AND
+    B) Shartni inkor qilish
+    C) OR
+    D) XOR
+    Javob: B
+
+16. ORDER BY nima?
+    A) Filter
+    B) Saralash
+    C) Group
+    D) Join
+    Javob: B
+
+17. ORDER BY name ASC nima?
+    A) Descending
+    B) A dan Z ga saralash
+    C) Random
+    D) No order
+    Javob: B
+
+18. ORDER BY age DESC nima?
+    A) Ascending
+    B) Kattadan kichikka saralash
+    C) Random
+    D) No order
+    Javob: B
+
+19. LIMIT nima?
+    A) Offset
+    B) Qatorlar sonini cheklash
+    C) Filter
+    D) Order
+    Javob: B
+
+20. LIMIT 10 nima?
+    A) Skip 10
+    B) Faqat 10 ta qator olish
+    C) All rows
+    D) Error
+    Javob: B
+
+21. INSERT INTO nima?
+    A) Select
+    B) Yangi qator qo'shish
+    C) Update
+    D) Delete
+    Javob: B
+
+22. INSERT INTO users (name) VALUES ('John')?
+    A) Select
+    B) users ga John ismli qator qo'shish
+    C) Update
+    D) Delete
+    Javob: B
+
+23. UPDATE nima?
+    A) Insert
+    B) Mavjud qatorni o'zgartirish
+    C) Delete
+    D) Select
+    Javob: B
+
+24. UPDATE users SET name = 'Jane'?
+    A) Insert
+    B) Barcha users name'ini Jane qilish
+    C) Delete
+    D) Select
+    Javob: B
+
+25. DELETE nima?
+    A) Insert
+    B) Qatorlarni o'chirish
+    C) Update
+    D) Select
+    Javob: B
+
+26. DELETE FROM users WHERE id = 1?
+    A) All delete
+    B) id=1 bo'lgan qatorni o'chirish
+    C) Insert
+    D) Update
+    Javob: B
+
+27. DELETE FROM users (WHERE yo'q)?
+    A) One row
+    B) Barcha qatorlarni o'chirish
+    C) Error
+    D) No delete
+    Javob: B
+
+28. PRIMARY KEY nima?
+    A) Foreign key
+    B) Unique identifier
+    C) Index
+    D) Constraint
+    Javob: B
+
+29. FOREIGN KEY nima?
+    A) Primary key
+    B) Boshqa tablega bog'lanish
+    C) Index
+    D) Constraint
+    Javob: B
+
+30. UNIQUE constraint nima?
+    A) Duplicate allowed
+    B) Takrorlanmas qiymat
+    C) Null allowed
+    D) Any value
+    Javob: B
+
+31. NOT NULL constraint nima?
+    A) Null allowed
+    B) Bo'sh bo'lishi mumkin emas
+    C) Unique
+    D) Primary
+    Javob: B
+
+32. DEFAULT constraint nima?
+    A) No default
+    B) Standart qiymat
+    C) Unique
+    D) Null
+    Javob: B
+
+33. CREATE TABLE nima?
+    A) Delete table
+    B) Yangi table yaratish
+    C) Alter table
+    D) Select table
+    Javob: B
+
+34. DROP TABLE nima?
+    A) Create
+    B) Tableni o'chirish
+    C) Alter
+    D) Truncate
+    Javob: B
+
+35. ALTER TABLE nima?
+    A) Create
+    B) Table strukturasini o'zgartirish
+    C) Drop
+    D) Truncate
+    Javob: B
+
+36. TRUNCATE TABLE nima?
+    A) Drop
+    B) Barcha qatorlarni tezkor o'chirish
+    C) Alter
+    D) Create
+    Javob: B
+
+37. INT data type nima?
+    A) String
+    B) Butun son
+    C) Decimal
+    D) Boolean
+    Javob: B
+
+38. VARCHAR nima?
+    A) Integer
+    B) O'zgaruvchan uzunlikdagi string
+    C) Fixed string
+    D) Text
+    Javob: B
+
+39. VARCHAR(255) nima?
+    A) Fixed 255
+    B) Maksimum 255 ta belgi
+    C) Minimum 255
+    D) Exactly 255
+    Javob: B
+
+40. TEXT data type nima?
+    A) Short string
+    B) Uzun matn
+    C) Number
+    D) Boolean
+    Javob: B
+
+41. DATE data type nima?
+    A) Time
+    B) Sana (YYYY-MM-DD)
+    C) DateTime
+    D) Timestamp
+    Javob: B
+
+42. DATETIME data type nima?
+    A) Date only
+    B) Sana va vaqt
+    C) Time only
+    D) Timestamp
+    Javob: B
+
+43. BOOLEAN data type nima?
+    A) Number
+    B) true/false
+    C) String
+    D) Date
+    Javob: B
+
+44. DECIMAL(10,2) nima?
+    A) Integer
+    B) 10 raqam, 2 ta o'nlik
+    C) 10.2
+    D) Float
+    Javob: B
+
+45. NULL nima?
+    A) Zero
+    B) Qiymat yo'q
+    C) Empty string
+    D) False
+    Javob: B
+
+46. IS NULL nima?
+    A) = NULL
+    B) NULL qiymatni tekshirish
+    C) Not null
+    D) Error
+    Javob: B
+
+47. IS NOT NULL nima?
+    A) IS NULL
+    B) NULL emas tekshirish
+    C) Error
+    D) = NOT NULL
+    Javob: B
+
+48. COUNT() nima?
+    A) Sum
+    B) Qatorlar sonini hisoblash
+    C) Average
+    D) Max
+    Javob: B
+
+49. SUM() nima?
+    A) Count
+    B) Yig'indini hisoblash
+    C) Average
+    D) Max
+    Javob: B
+
+50. AVG() nima?
+    A) Sum
+    B) O'rtacha qiymat
+    C) Count
+    D) Max
+    Javob: B
+
+51. MAX() nima?
+    A) Min
+    B) Eng katta qiymat
+    C) Average
+    D) Sum
+    Javob: B
+
+52. MIN() nima?
+    A) Max
+    B) Eng kichik qiymat
+    C) Average
+    D) Sum
+    Javob: B
+
+53. GROUP BY nima?
+    A) Order by
+    B) Guruhlash
+    C) Filter
+    D) Join
+    Javob: B
+
+54. GROUP BY city nima?
+    A) Order by city
+    B) Shahar bo'yicha guruhlash
+    C) Filter by city
+    D) Join city
+    Javob: B
+
+55. HAVING nima?
+    A) WHERE
+    B) GROUP BY uchun shart
+    C) ORDER BY
+    D) LIMIT
+    Javob: B
+
+56. HAVING vs WHERE farqi?
+    A) Bir xil
+    B) HAVING aggregate, WHERE individual
+    C) WHERE aggregate
+    D) No difference
+    Javob: B
+
+57. DISTINCT nima?
+    A) All values
+    B) Takrorlanmas qiymatlar
+    C) Duplicate
+    D) Null
+    Javob: B
+
+58. SELECT DISTINCT city nima?
+    A) All cities
+    B) Unikal shaharlar
+    C) Duplicate cities
+    D) Null cities
+    Javob: B
+
+59. LIKE operator nima?
+    A) Exact match
+    B) Pattern matching
+    C) Greater than
+    D) Less than
+    Javob: B
+
+60. LIKE 'J%' nima?
+    A) Ends with J
+    B) J bilan boshlanadigan
+    C) Contains J
+    D) Exactly J
+    Javob: B
+
+61. LIKE '%son' nima?
+    A) Starts with son
+    B) son bilan tugaydigan
+    C) Contains son
+    D) Exactly son
+    Javob: B
+
+62. LIKE '%oh%' nima?
+    A) Starts
+    B) oh ni o'z ichiga olgan
+    C) Ends
+    D) Exact
+    Javob: B
+
+63. _ wildcard LIKE da?
+    A) Any characters
+    B) Bitta belgi
+    C) Zero characters
+    D) No wildcard
+    Javob: B
+
+64. IN operator nima?
+    A) Not in
+    B) Ro'yxatdagi qiymatlardan biri
+    C) Between
+    D) Like
+    Javob: B
+
+65. WHERE city IN ('NYC', 'LA')?
+    A) All cities
+    B) NYC yoki LA bo'lgan
+    C) Neither
+    D) Error
+    Javob: B
+
+66. BETWEEN operator nima?
+    A) In
+    B) Oraliqda
+    C) Like
+    D) Not between
+    Javob: B
+
+67. WHERE age BETWEEN 18 AND 30?
+    A) 18 or 30
+    B) 18 dan 30 gacha (inclusive)
+    C) 18 to 29
+    D) Error
+    Javob: B
+
+68. ALIAS nima?
+    A) Permanent name
+    B) Vaqtinchalik nom
+    C) Column
+    D) Table
+    Javob: B
+
+69. SELECT name AS n nima?
+    A) Rename permanent
+    B) name ustunni n deb ko'rsatish
+    C) Create column
+    D) Delete column
+    Javob: B
+
+70. INNER JOIN nima?
+    A) All rows
+    B) Mos kelgan qatorlar
+    C) Left rows
+    D) Right rows
+    Javob: B
+
+71. LEFT JOIN nima?
+    A) Right join
+    B) Chap tabledagi barcha + mos o'ng
+    C) Inner join
+    D) Full join
+    Javob: B
+
+72. RIGHT JOIN nima?
+    A) Left join
+    B) O'ng tabledagi barcha + mos chap
+    C) Inner join
+    D) Full join
+    Javob: B
+
+73. FULL JOIN nima?
+    A) Inner join
+    B) Ikkala tabledan barcha qatorlar
+    C) Left join
+    D) Right join
+    Javob: B
+
+74. JOIN ... ON nima?
+    A) WHERE
+    B) JOIN sharti
+    C) ORDER BY
+    D) GROUP BY
+    Javob: B
+
+75. UNION nima?
+    A) Join
+    B) Ikki SELECT natijasini birlashtirish
+    C) Intersect
+    D) Except
+    Javob: B
+
+76. UNION vs UNION ALL?
+    A) Bir xil
+    B) UNION unique, UNION ALL hammasi
+    C) UNION ALL unique
+    D) No difference
+    Javob: B
+
+77. Subquery nima?
+    A) Main query
+    B) Query ichidagi query
+    C) Join
+    D) Union
+    Javob: B
+
+78. SELECT * FROM users WHERE id IN (SELECT user_id FROM orders)?
+    A) All users
+    B) Orders'da bor userlar
+    C) No users
+    D) Error
+    Javob: B
+
+79. INDEX nima?
+    A) Primary key
+    B) Qidiruvni tezlashtiruvchi
+    C) Foreign key
+    D) Constraint
+    Javob: B
+
+80. CREATE INDEX nima qiladi?
+    A) Delete index
+    B) Index yaratish
+    C) Alter index
+    D) Drop index
+    Javob: B
+
+81. VIEW nima?
+    A) Table
+    B) Virtual table (saved query)
+    C) Index
+    D) Constraint
+    Javob: B
+
+82. CREATE VIEW nima qiladi?
+    A) Table yaratish
+    B) View yaratish
+    C) Index yaratish
+    D) Delete view
+    Javob: B
+
+83. CASE expression nima?
+    A) Loop
+    B) Conditional logic
+    C) Join
+    D) Subquery
+    Javob: B
+
+84. CASE WHEN age < 18 THEN 'minor' ELSE 'adult' END?
+    A) Loop
+    B) Shartli qiymat
+    C) Error
+    D) Always minor
+    Javob: B
+
+85. COALESCE nima?
+    A) Null
+    B) Birinchi null bo'lmagan qiymat
+    C) All nulls
+    D) Error
+    Javob: B
+
+86. COALESCE(null, null, 'default') natijasi?
+    A) null
+    B) 'default'
+    C) Error
+    D) Empty
+    Javob: B
+
+87. NULLIF nima?
+    A) IS NULL
+    B) Ikkala qiymat teng bo'lsa NULL
+    C) Not null
+    D) Coalesce
+    Javob: B
+
+88. CONCAT nima?
+    A) Split
+    B) Stringlarni birlashtirish
+    C) Trim
+    D) Substring
+    Javob: B
+
+89. UPPER() nima?
+    A) Lower
+    B) Katta harfga aylantirish
+    C) Title case
+    D) Reverse
+    Javob: B
+
+90. LOWER() nima?
+    A) Upper
+    B) Kichik harfga aylantirish
+    C) Title case
+    D) Reverse
+    Javob: B
+
+91. LENGTH() nima?
+    A) Width
+    B) String uzunligi
+    C) Height
+    D) Size
+    Javob: B
+
+92. SUBSTRING() nima?
+    A) Concat
+    B) String qismini olish
+    C) Replace
+    D) Trim
+    Javob: B
+
+93. TRIM() nima?
+    A) Add space
+    B) Bo'sh joylarni olib tashlash
+    C) Replace
+    D) Concat
+    Javob: B
+
+94. NOW() nima?
+    A) Date only
+    B) Hozirgi sana va vaqt
+    C) Time only
+    D) Timestamp
+    Javob: B
+
+95. CURDATE() nima?
+    A) Time
+    B) Hozirgi sana
+    C) DateTime
+    D) Timestamp
+    Javob: B
+
+96. YEAR() nima?
+    A) Month
+    B) Yilni olish
+    C) Day
+    D) Hour
+    Javob: B
+
+97. MONTH() nima?
+    A) Year
+    B) Oyni olish
+    C) Day
+    D) Week
+    Javob: B
+
+98. DAY() nima?
+    A) Month
+    B) Kunni olish
+    C) Year
+    D) Hour
+    Javob: B
+
+99. DATEDIFF() nima?
+    A) Add dates
+    B) Sanalar orasidagi farq
+    C) Subtract time
+    D) Compare dates
+    Javob: B
+
+100. AUTO_INCREMENT nima?
+     A) Manual
+     B) Avtomatik ortuvchi qiymat
+     C) Decrement
+     D) Static
+     Javob: B

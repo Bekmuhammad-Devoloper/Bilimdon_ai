@@ -1,0 +1,702 @@
+VUE.JS - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+==============================================
+
+1. Vue.js nima?
+   A) Backend framework
+   B) Progressive JavaScript framework
+   C) CSS framework
+   D) Database
+   Javob: B
+
+2. Vue.js kim tomonidan yaratilgan?
+   A) Facebook
+   B) Evan You
+   C) Google
+   D) Microsoft
+   Javob: B
+
+3. Vue komponentida template nima?
+   A) JavaScript
+   B) HTML qismi
+   C) CSS
+   D) Data
+   Javob: B
+
+4. Vue3 da reaktiv data qanday yaratiladi?
+   A) data()
+   B) ref() yoki reactive()
+   C) state()
+   D) useState()
+   Javob: B
+
+5. ref() import qilish?
+   A) import ref from 'vue'
+   B) import { ref } from 'vue'
+   C) require('vue').ref
+   D) vue.ref
+   Javob: B
+
+6. ref() qiymati qanday olinadi script'da?
+   A) value
+   B) myRef.value
+   C) myRef
+   D) myRef.get()
+   Javob: B
+
+7. v-bind nima qiladi?
+   A) Event binding
+   B) Attribute binding
+   C) Two-way binding
+   D) Style binding
+   Javob: B
+
+8. v-bind shorthand?
+   A) @
+   B) :
+   C) #
+   D) $
+   Javob: B
+
+9. v-on nima qiladi?
+   A) Attribute binding
+   B) Event binding
+   C) Two-way binding
+   D) Loop
+   Javob: B
+
+10. v-on shorthand?
+    A) :
+    B) @
+    C) #
+    D) $
+    Javob: B
+
+11. v-model nima qiladi?
+    A) One-way binding
+    B) Two-way binding
+    C) Event binding
+    D) Loop
+    Javob: B
+
+12. v-if nima qiladi?
+    A) Loop
+    B) Conditional rendering
+    C) Binding
+    D) Event
+    Javob: B
+
+13. v-show vs v-if farqi?
+    A) Bir xil
+    B) v-show CSS display, v-if DOM add/remove
+    C) v-if CSS display
+    D) v-show DOM remove
+    Javob: B
+
+14. v-for sintaksisi?
+    A) v-for="item of items"
+    B) v-for="item in items"
+    C) v-for="items"
+    D) v-for(item in items)
+    Javob: B
+
+15. v-for da :key nima uchun?
+    A) Styling
+    B) DOM element identification
+    C) Sorting
+    D) Filtering
+    Javob: B
+
+16. computed property nima?
+    A) Method
+    B) Cached reactive value
+    C) Data
+    D) Watcher
+    Javob: B
+
+17. computed() import qilish?
+    A) import computed from 'vue'
+    B) import { computed } from 'vue'
+    C) require computed
+    D) vue.computed
+    Javob: B
+
+18. watch nima qiladi?
+    A) Computed
+    B) Data o'zgarishini kuzatish
+    C) Method chaqirish
+    D) Event handling
+    Javob: B
+
+19. watch() import qilish?
+    A) import watch from 'vue'
+    B) import { watch } from 'vue'
+    C) require watch
+    D) vue.watch
+    Javob: B
+
+20. Lifecycle hook onMounted qachon ishlaydi?
+    A) Component destroy
+    B) Component DOM'ga qo'shilganda
+    C) Component update
+    D) Component create
+    Javob: B
+
+21. onUnmounted qachon ishlaydi?
+    A) Mount
+    B) Component DOM'dan olib tashlanayotganda
+    C) Update
+    D) Create
+    Javob: B
+
+22. onUpdated qachon ishlaydi?
+    A) Mount
+    B) Component reactive data o'zgarganidan keyin
+    C) Unmount
+    D) Create
+    Javob: B
+
+23. Props nima?
+    A) Event
+    B) Parent to child data
+    C) Child to parent
+    D) State
+    Javob: B
+
+24. defineProps qanday ishlatiladi?
+    A) import qilinadi
+    B) Macro sifatida (import kerak emas)
+    C) Function
+    D) Method
+    Javob: B
+
+25. emit nima?
+    A) Props
+    B) Child to parent communication
+    C) Data
+    D) State
+    Javob: B
+
+26. defineEmits qanday ishlatiladi?
+    A) import
+    B) Macro sifatida
+    C) Function
+    D) Method
+    Javob: B
+
+27. slot nima?
+    A) Props
+    B) Content distribution
+    C) Event
+    D) Data
+    Javob: B
+
+28. Named slot sintaksisi?
+    A) <slot>
+    B) <slot name="header">
+    C) <slot id="header">
+    D) <slot:header>
+    Javob: B
+
+29. v-slot shorthand?
+    A) @
+    B) #
+    C) :
+    D) $
+    Javob: B
+
+30. Scoped slot nima?
+    A) Normal slot
+    B) Data bilan slot
+    C) Named slot
+    D) Default slot
+    Javob: B
+
+31. provide/inject nima uchun?
+    A) Props
+    B) Dependency injection
+    C) Event
+    D) State
+    Javob: B
+
+32. provide() sintaksisi?
+    A) provide('key')
+    B) provide('key', value)
+    C) provide(value)
+    D) provide.key = value
+    Javob: B
+
+33. inject() sintaksisi?
+    A) inject()
+    B) inject('key')
+    C) inject(value)
+    D) inject.key
+    Javob: B
+
+34. Vue Router nima?
+    A) State management
+    B) Client-side routing
+    C) HTTP client
+    D) Build tool
+    Javob: B
+
+35. router-view nima?
+    A) Link
+    B) Route component render
+    C) Navigation
+    D) Guard
+    Javob: B
+
+36. router-link nima?
+    A) router-view
+    B) Navigation link
+    C) Route definition
+    D) Guard
+    Javob: B
+
+37. router-link to attribute?
+    A) href
+    B) to="path" yoki :to="object"
+    C) link
+    D) url
+    Javob: B
+
+38. useRouter() nima qaytaradi?
+    A) Route
+    B) Router instance
+    C) Routes array
+    D) Navigation
+    Javob: B
+
+39. useRoute() nima qaytaradi?
+    A) Router
+    B) Current route object
+    C) Routes array
+    D) Navigation
+    Javob: B
+
+40. Route params qanday olinadi?
+    A) route.query
+    B) route.params
+    C) route.path
+    D) route.name
+    Javob: B
+
+41. Route query qanday olinadi?
+    A) route.params
+    B) route.query
+    C) route.path
+    D) route.name
+    Javob: B
+
+42. Dynamic route sintaksisi?
+    A) /user/id
+    B) /user/:id
+    C) /user/{id}
+    D) /user?id
+    Javob: B
+
+43. Nested routes nima?
+    A) Parallel routes
+    B) Children routes
+    C) Sibling routes
+    D) Parent routes
+    Javob: B
+
+44. Navigation guard nima?
+    A) Route protection
+    B) Route qoidalari
+    C) Route animation
+    D) Route cache
+    Javob: B
+
+45. beforeEach guard nima?
+    A) After each
+    B) Global navigation guard
+    C) Route guard
+    D) Component guard
+    Javob: B
+
+46. Pinia nima?
+    A) Router
+    B) State management
+    C) HTTP client
+    D) Build tool
+    Javob: B
+
+47. defineStore sintaksisi?
+    A) defineStore('id')
+    B) defineStore('id', { state, actions })
+    C) defineStore({ state })
+    D) defineStore(state)
+    Javob: B
+
+48. Pinia store'da state?
+    A) function
+    B) state: () => ({})
+    C) state: {}
+    D) data()
+    Javob: B
+
+49. Pinia actions nima?
+    A) Mutations
+    B) State o'zgartiruvchi funksiyalar
+    C) Getters
+    D) Computed
+    Javob: B
+
+50. Pinia getters nima?
+    A) Actions
+    B) Computed properties for store
+    C) Mutations
+    D) State
+    Javob: B
+
+51. store.$reset() nima qiladi?
+    A) Store o'chirish
+    B) State'ni initial qiymatga qaytarish
+    C) Store yaratish
+    D) Store update
+    Javob: B
+
+52. storeToRefs() nima uchun?
+    A) Store yaratish
+    B) Destructuring bilan reactivity saqlash
+    C) Store o'chirish
+    D) Store update
+    Javob: B
+
+53. script setup nima?
+    A) Options API
+    B) Composition API sugar syntax
+    C) Normal script
+    D) External script
+    Javob: B
+
+54. Composition API vs Options API?
+    A) Bir xil
+    B) Composition yanada flexible
+    C) Options yanada flexible
+    D) Options yangi
+    Javob: B
+
+55. composable nima?
+    A) Component
+    B) Reusable composition function
+    C) Directive
+    D) Plugin
+    Javob: B
+
+56. Composable naming convention?
+    A) use
+    B) useXxx (camelCase)
+    C) xxx
+    D) Xxx
+    Javob: B
+
+57. Teleport component nima qiladi?
+    A) Clone
+    B) DOM'ning boshqa joyiga render
+    C) Delete
+    D) Move component
+    Javob: B
+
+58. Suspense component nima?
+    A) Error handling
+    B) Async component loading state
+    C) Animation
+    D) Transition
+    Javob: B
+
+59. Transition component nima?
+    A) Suspense
+    B) Animation wrapper
+    C) Error boundary
+    D) Loading
+    Javob: B
+
+60. v-enter-from class qachon?
+    A) After enter
+    B) Before element enters
+    C) Leave
+    D) Active
+    Javob: B
+
+61. v-leave-to class qachon?
+    A) Before leave
+    B) After element leaves
+    C) Enter
+    D) Active
+    Javob: B
+
+62. TransitionGroup nima uchun?
+    A) Single element
+    B) List transitions
+    C) Page transitions
+    D) Modal transitions
+    Javob: B
+
+63. KeepAlive component nima?
+    A) Destroy
+    B) Component state cache
+    C) Clone
+    D) Refresh
+    Javob: B
+
+64. Custom directive qanday yaratiladi?
+    A) defineDirective
+    B) vMyDirective = { mounted() }
+    C) directive()
+    D) createDirective
+    Javob: B
+
+65. Directive hooks?
+    A) Bitta
+    B) created, beforeMount, mounted, beforeUpdate...
+    C) Ikkita
+    D) Uchta
+    Javob: B
+
+66. nextTick() nima?
+    A) setTimeout
+    B) DOM update'dan keyin callback
+    C) Immediately
+    D) setInterval
+    Javob: B
+
+67. toRef() nima qiladi?
+    A) Copy
+    B) Single property'ni ref qilish
+    C) Clone
+    D) Destroy
+    Javob: B
+
+68. toRefs() nima qiladi?
+    A) Single property
+    B) All properties'ni refs qilish
+    C) Clone
+    D) Destroy
+    Javob: B
+
+69. readonly() nima qiladi?
+    A) Writable
+    B) Read-only reactive copy
+    C) Clone
+    D) Mutable
+    Javob: B
+
+70. shallowRef() nima?
+    A) Deep ref
+    B) Top-level only reactive
+    C) No reactive
+    D) Full reactive
+    Javob: B
+
+71. shallowReactive() nima?
+    A) Deep reactive
+    B) Top-level only reactive object
+    C) No reactive
+    D) Full reactive
+    Javob: B
+
+72. triggerRef() nima qiladi?
+    A) No trigger
+    B) shallowRef update trigger
+    C) Deep trigger
+    D) Auto trigger
+    Javob: B
+
+73. markRaw() nima qiladi?
+    A) Reactive qilish
+    B) Reactive bo'lmasligini belgilash
+    C) Clone
+    D) Delete
+    Javob: B
+
+74. isRef() nima tekshiradi?
+    A) Reactive
+    B) Ref yoki yo'qligini
+    C) Computed
+    D) Readonly
+    Javob: B
+
+75. unref() nima qiladi?
+    A) Create ref
+    B) ref.value yoki value qaytarish
+    C) Delete ref
+    D) Clone ref
+    Javob: B
+
+76. isReactive() nima tekshiradi?
+    A) Ref
+    B) reactive() bilan yaratilganligini
+    C) Computed
+    D) Readonly
+    Javob: B
+
+77. isReadonly() nima tekshiradi?
+    A) Ref
+    B) readonly() bilan yaratilganligini
+    C) Reactive
+    D) Computed
+    Javob: B
+
+78. toRaw() nima qaytaradi?
+    A) Reactive object
+    B) Original non-reactive object
+    C) Clone
+    D) Ref
+    Javob: B
+
+79. effectScope() nima?
+    A) Global scope
+    B) Reactive effect scope
+    C) Local scope
+    D) Component scope
+    Javob: B
+
+80. getCurrentInstance() nima qaytaradi?
+    A) Component
+    B) Current component instance
+    C) App instance
+    D) Router
+    Javob: B
+
+81. app.use() nima qiladi?
+    A) Create app
+    B) Plugin install
+    C) Mount app
+    D) Destroy app
+    Javob: B
+
+82. app.component() nima qiladi?
+    A) Create component
+    B) Global component register
+    C) Local component
+    D) Delete component
+    Javob: B
+
+83. app.directive() nima qiladi?
+    A) Create directive
+    B) Global directive register
+    C) Local directive
+    D) Delete directive
+    Javob: B
+
+84. app.config.globalProperties?
+    A) Local properties
+    B) Global properties for all components
+    C) Config options
+    D) Private properties
+    Javob: B
+
+85. Single File Component (SFC)?
+    A) Multiple files
+    B) .vue fayl (template, script, style)
+    C) .js fayl
+    D) .html fayl
+    Javob: B
+
+86. <style scoped> nima?
+    A) Global style
+    B) Component-scoped CSS
+    C) External style
+    D) Inline style
+    Javob: B
+
+87. :deep() selector nima?
+    A) Shallow
+    B) Child components'ga style apply
+    C) Parent
+    D) Sibling
+    Javob: B
+
+88. :slotted() selector nima?
+    A) Deep
+    B) Slot content styling
+    C) Parent
+    D) Sibling
+    Javob: B
+
+89. :global() selector nima?
+    A) Scoped
+    B) Global style in scoped block
+    C) Local
+    D) Private
+    Javob: B
+
+90. <style module> nima?
+    A) Scoped
+    B) CSS Modules
+    C) Global
+    D) Inline
+    Javob: B
+
+91. v-bind in CSS?
+    A) JavaScript only
+    B) v-bind(var) reactive CSS
+    C) No support
+    D) Inline only
+    Javob: B
+
+92. defineExpose() nima qiladi?
+    A) Hide
+    B) Child component methods/props expose
+    C) Import
+    D) Export
+    Javob: B
+
+93. Template ref nima?
+    A) Props
+    B) DOM element reference
+    C) Data
+    D) Computed
+    Javob: B
+
+94. ref attribute template'da?
+    A) id
+    B) ref="myRef"
+    C) class
+    D) name
+    Javob: B
+
+95. Async component qanday yaratiladi?
+    A) import
+    B) defineAsyncComponent(() => import())
+    C) require
+    D) async import
+    Javob: B
+
+96. v-memo directive nima?
+    A) Memoize
+    B) Conditional re-render skip
+    C) Cache
+    D) Store
+    Javob: B
+
+97. v-once directive nima?
+    A) Loop
+    B) Bir marta render
+    C) Many times
+    D) Conditional
+    Javob: B
+
+98. v-pre directive nima?
+    A) Post
+    B) Skip compilation
+    C) Before
+    D) After
+    Javob: B
+
+99. v-cloak directive nima?
+    A) Show
+    B) Hide until compiled
+    C) Display
+    D) Remove
+    Javob: B
+
+100. v-html directive nima?
+     A) Text
+     B) Raw HTML render
+     C) Template
+     D) Component
+     Javob: B

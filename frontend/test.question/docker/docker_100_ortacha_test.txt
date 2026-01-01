@@ -1,0 +1,706 @@
+DOCKER TEXNOLOGIYASI - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+=================================================================
+
+1. Multi-stage build nima uchun ishlatiladi?
+   A) Ko'p konteyner yaratish
+   B) Image hajmini kamaytirish (build va runtime alohida)
+   C) Ko'p network yaratish
+   D) Ko'p volume yaratish
+   Javob: B
+
+2. Multi-stage build da FROM instruksiyasi necha marta bo'lishi mumkin?
+   A) Faqat 1
+   B) Bir nechta (har bir stage uchun)
+   C) Faqat 2
+   D) Maximum 3
+   Javob: B
+
+3. COPY --from=builder nima qiladi multi-stage da?
+   A) Xost dan nusxalaydi
+   B) Oldingi stage dan fayl nusxalaydi
+   C) Network dan nusxalaydi
+   D) Volume dan nusxalaydi
+   Javob: B
+
+4. ARG va ENV farqi Dockerfile da?
+   A) Farqi yo'q
+   B) ARG faqat build vaqtida, ENV runtime da ham mavjud
+   C) ENV faqat build vaqtida
+   D) ARG runtime da ham mavjud
+   Javob: B
+
+5. ARG instruksiyasi qayerda ishlatiladi?
+   A) Faqat FROM dan keyin
+   B) FROM dan oldin ham, keyin ham (scope farq qiladi)
+   C) Faqat CMD da
+   D) Faqat RUN da
+   Javob: B
+
+6. HEALTHCHECK instruksiyasi nima qiladi?
+   A) Security tekshiradi
+   B) Konteyner sog'ligini tekshirish buyrug'ini belgilaydi
+   C) Network tekshiradi
+   D) Volume tekshiradi
+   Javob: B
+
+7. HEALTHCHECK --interval flag nima?
+   A) Timeout
+   B) Tekshiruvlar orasidagi vaqt
+   C) Retry count
+   D) Start period
+   Javob: B
+
+8. HEALTHCHECK --timeout flag nima?
+   A) Interval
+   B) Tekshiruv uchun maksimal kutish vaqti
+   C) Retry count
+   D) Start period
+   Javob: B
+
+9. HEALTHCHECK --retries flag nima?
+   A) Interval
+    B) Unhealthy deb belgilashdan oldin urinishlar soni
+   C) Timeout
+   D) Start period
+   Javob: B
+
+10. Konteyner health statuslari qaysilar?
+    A) running, stopped
+    B) starting, healthy, unhealthy
+    C) active, inactive
+    D) up, down
+    Javob: B
+
+11. ONBUILD instruksiyasi nima?
+    A) Build to'xtatadi
+    B) Bu image base sifatida ishlatilganda bajariladigan instruksiya
+    C) Build boshida
+    D) Build oxirida
+    Javob: B
+
+12. STOPSIGNAL instruksiyasi nima uchun?
+    A) Start signal
+    B) Konteyner to'xtatish uchun signal (default SIGTERM)
+    C) Health signal
+    D) Network signal
+    Javob: B
+
+13. SHELL instruksiyasi nima qiladi?
+    A) Shell o'chiradi
+    B) RUN instruksiyalari uchun default shell o'zgartiradi
+    C) Shell yaratadi
+    D) Shell nusxalaydi
+    Javob: B
+
+14. ADD va COPY farqi?
+    A) Farqi yo'q
+    B) ADD URL dan yuklay oladi va arxivlarni avtomatik ochadi
+    C) COPY URL dan yuklay oladi
+    D) ADD sekinroq
+    Javob: B
+
+15. Nima uchun COPY ADD dan ko'proq tavsiya etiladi?
+    A) ADD tezroq
+    B) COPY predictable va aniq (faqat nusxalaydi)
+    C) COPY ko'proq imkoniyatga ega
+    D) ADD ishlamaydi
+    Javob: B
+
+16. USER instruksiyasi nima qiladi?
+    A) User yaratadi
+    B) Keyingi instruksiyalar qaysi user sifatida ishlashini belgilaydi
+    C) User o'chiradi
+    D) User password
+    Javob: B
+
+17. Non-root user ishlatish nima uchun muhim?
+    A) Tezlik uchun
+    B) Xavfsizlik uchun (konteyner compromise bo'lsa)
+    C) Xotira tejash
+    D) Disk tejash
+    Javob: B
+
+18. LABEL instruksiyasi nima uchun?
+    A) Volume label
+    B) Image ga metadata qo'shish
+    C) Network label
+    D) Container label
+    Javob: B
+
+19. docker image inspect da Labels qayerda ko'rinadi?
+    A) Config.Env
+    B) Config.Labels
+    C) Config.Cmd
+    D) Config.User
+    Javob: B
+
+20. .dockerignore da ** pattern nima?
+    A) Bitta papka
+    B) Recursive (barcha ichki papkalar)
+    C) Bitta fayl
+    D) Hech narsa
+    Javob: B
+
+21. .dockerignore da ! pattern nima qiladi?
+    A) Ignore qiladi
+    B) Exception (ignore qilinmaslik kerak)
+    C) Comment
+    D) Wildcard
+    Javob: B
+
+22. Docker layer caching qanday ishlaydi?
+    A) Har doim qayta build
+    B) O'zgarish bo'lmagan layer cache dan olinadi
+    C) Hech qachon cache
+    D) Faqat base image cache
+    Javob: B
+
+23. Layer cache invalidate qachon bo'ladi?
+    A) Hech qachon
+    B) Instruksiya yoki uning dependency o'zgarganda
+    C) Har doim
+    D) Faqat RUN da
+    Javob: B
+
+24. COPY instruksiyasi cacheni qachon invalidate qiladi?
+    A) Hech qachon
+    B) Nusxalanayotgan fayl content o'zgarganda
+    C) Har doim
+    D) Faqat katta fayllarda
+    Javob: B
+
+25. RUN apt-get update && apt-get install nima uchun bitta qatorda?
+    A) Qisqaroq
+    B) Cache muammosini oldini olish (update alohida bo'lsa eskirgan cache)
+    C) Tezroq
+    D) Xavfsizroq
+    Javob: B
+
+26. Docker build --no-cache flag nima?
+    A) Cache ishlatadi
+    B) Cachedan foydalanmay to'liq qayta build
+    C) Faqat ba'zi layer cache
+    D) Faqat base image cache
+    Javob: B
+
+27. docker build --target flag nima uchun multi-stage da?
+    A) Oxirgi stage
+    B) Ma'lum bir stage gacha build qilish
+    C) Birinchi stage
+    D) Barcha stage
+    Javob: B
+
+28. BuildKit nima?
+    A) Eski builder
+    B) Docker ning yangi build engine (parallel, cache efficient)
+    C) GUI tool
+    D) Network tool
+    Javob: B
+
+29. DOCKER_BUILDKIT=1 nima qiladi?
+    A) BuildKit o'chiradi
+    B) BuildKit ni yoqadi
+    C) Debug mode
+    D) Verbose mode
+    Javob: B
+
+30. BuildKit da --mount=type=cache nima?
+    A) Volume mount
+    B) Build vaqtida cache directory (dependency cache)
+    C) Network mount
+    D) Secret mount
+    Javob: B
+
+31. BuildKit da --mount=type=secret nima uchun?
+    A) Public data
+    B) Build vaqtida secret fayllar (layer da saqlanmaydi)
+    C) Cache
+    D) Volume
+    Javob: B
+
+32. docker buildx nima?
+    A) Eski build
+    B) Extended build qobiliyatlari (multi-platform, ...)
+    C) Simple build
+    D) Network build
+    Javob: B
+
+33. Multi-platform image nima?
+    A) Faqat Linux
+    B) Turli arxitekturalar uchun (amd64, arm64, ...) bitta tag
+    C) Faqat Windows
+    D) Faqat Mac
+    Javob: B
+
+34. docker buildx build --platform flag nima?
+    A) Single platform
+    B) Qaysi platformalar uchun build qilishni belgilaydi
+    C) Host platform
+    D) Default platform
+    Javob: B
+
+35. Docker Compose da version key nima uchun?
+    A) Docker version
+    B) Compose file format versiyasi (3.8, 3.9, ...)
+    C) App version
+    D) Image version
+    Javob: B
+
+36. Docker Compose da services key nima?
+    A) Network
+    B) Konteynerlar (servicelar) konfiguratsiyasi
+    C) Volume
+    D) Secrets
+    Javob: B
+
+37. Docker Compose da depends_on nima qiladi?
+    A) Volume dependency
+    B) Service ishga tushish tartibini belgilaydi
+    C) Network dependency
+    D) Image dependency
+    Javob: B
+
+38. depends_on service "healthy" bo'lguncha kutishni qanday belgilaymiz?
+    A) depends_on: [service]
+    B) depends_on: service: condition: service_healthy
+    C) depends_on: service: wait: true
+    D) depends_on: service: health: true
+    Javob: B
+
+39. Docker Compose da build context qanday belgilanadi?
+    A) context: url
+    B) build: context: ./path
+    C) build: path
+    D) dockerfile: path
+    Javob: B
+
+40. Docker Compose da environment variables qanday o'rnatiladi?
+    A) vars:
+    B) environment: yoki env_file:
+    C) envs:
+    D) variables:
+    Javob: B
+
+41. Docker Compose da ports qanday yoziladi?
+    A) port: 8080
+    B) ports: - "8080:80"
+    C) expose: 8080
+    D) publish: 8080
+    Javob: B
+
+42. ports va expose farqi Compose da?
+    A) Farqi yo'q
+    B) ports host ga, expose faqat boshqa containerlarga
+    C) expose host ga
+    D) ports faqat internal
+    Javob: B
+
+43. Docker Compose da volumes qanday mount qilinadi?
+    A) mount:
+    B) volumes: - ./host:/container
+    C) disks:
+    D) storage:
+    Javob: B
+
+44. Docker Compose da named volume qanday yaratiladi?
+    A) Faqat CLI da
+    B) Top-level volumes: key da
+    C) Services ichida
+    D) Networks ichida
+    Javob: B
+
+45. Docker Compose da networks qanday yaratiladi?
+    A) Faqat CLI
+    B) Top-level networks: key da
+    C) Services ichida
+    D) Volumes ichida
+    Javob: B
+
+46. Docker Compose da default network nomi qanday?
+    A) bridge
+    B) {project_name}_default
+    C) default
+    D) compose_network
+    Javob: B
+
+47. docker-compose up -d flag nima?
+    A) Debug mode
+    B) Detached mode (background)
+    C) Delete mode
+    D) Development mode
+    Javob: B
+
+48. docker-compose up --build flag nima?
+    A) Faqat start
+    B) Imagelarni qayta build qilib ishga tushiradi
+    C) Faqat build
+    D) Build skip
+    Javob: B
+
+49. docker-compose logs -f nima?
+    A) Filter
+    B) Follow (real-time logs)
+    C) Format
+    D) File
+    Javob: B
+
+50. docker-compose ps nima ko'rsatadi?
+    A) Images
+    B) Compose project dagi konteynerlar
+    C) Networks
+    D) Volumes
+    Javob: B
+
+51. docker-compose exec nima qiladi?
+    A) Konteyner yaratadi
+    B) Ishlaydigan service konteynerida buyruq bajaradi
+    C) Image yaratadi
+    D) Network yaratadi
+    Javob: B
+
+52. docker-compose run nima qiladi?
+    A) Mavjud konteynerda
+    B) Yangi konteyner yaratib buyruq bajaradi (one-off)
+    C) Image yaratadi
+    D) Network yaratadi
+    Javob: B
+
+53. docker-compose scale (yoki --scale) nima?
+    A) Image scale
+    B) Service konteynerlar sonini belgilash
+    C) Network scale
+    D) Volume scale
+    Javob: B
+
+54. Docker Compose da replicas deploy da nima?
+    A) Image copies
+    B) Service nechta konteyner ishlashini (Swarm mode)
+    C) Network copies
+    D) Volume copies
+    Javob: B
+
+55. Docker Compose da restart policy qanday o'rnatiladi?
+    A) restart_policy:
+    B) restart: always/on-failure/unless-stopped
+    C) policy:
+    D) auto_restart:
+    Javob: B
+
+56. Docker Compose da healthcheck qanday yoziladi?
+    A) health:
+    B) healthcheck: test: ["CMD", "curl", "-f", "..."]
+    C) check:
+    D) status:
+    Javob: B
+
+57. Docker Compose da secrets nima uchun?
+    A) Public data
+    B) Sensitive ma'lumotlarni xavfsiz uzatish
+    C) Environment
+    D) Volumes
+    Javob: B
+
+58. Docker Compose da configs nima?
+    A) Secrets
+    B) Non-sensitive konfiguratsiya fayllarini uzatish
+    C) Volumes
+    D) Networks
+    Javob: B
+
+59. docker-compose.override.yml nima?
+    A) Asosiy fayl
+    B) Local development uchun override konfiguratsiya
+    C) Production fayl
+    D) Test fayl
+    Javob: B
+
+60. Docker Compose da extends nima qiladi?
+    A) Network kengaytiradi
+    B) Boshqa service konfiguratsiyasini meros oladi
+    C) Volume kengaytiradi
+    D) Image kengaytiradi
+    Javob: B
+
+61. docker-compose -f flag nima?
+    A) Force
+    B) Boshqa compose fayl ko'rsatish
+    C) Format
+    D) Filter
+    Javob: B
+
+62. docker-compose -p flag nima?
+    A) Port
+    B) Project name belgilash
+    C) Path
+    D) Platform
+    Javob: B
+
+63. Docker Compose V2 (docker compose) V1 dan farqi?
+    A) Farqi yo'q
+    B) Go da yozilgan, docker CLI plugin sifatida
+    C) V1 tezroq
+    D) V2 alohida binary
+    Javob: B
+
+64. Bind mount va named volume farqi?
+    A) Farqi yo'q
+    B) Bind mount host path, named volume Docker boshqaradi
+    C) Named volume host path
+    D) Bind mount Docker boshqaradi
+    Javob: B
+
+65. tmpfs mount nima?
+    A) Disk storage
+    B) RAM da vaqtinchalik storage (konteyner to'xtaganda yo'qoladi)
+    C) Network storage
+    D) Persistent storage
+    Javob: B
+
+66. docker run --tmpfs flag nima?
+    A) Disk mount
+    B) Konteynerda tmpfs mount
+    C) Volume mount
+    D) Network mount
+    Javob: B
+
+67. Volume driver nima?
+    A) Network driver
+    B) Volume qanday saqlanishini boshqaruvchi plugin
+    C) Image driver
+    D) Container driver
+    Javob: B
+
+68. local volume driver nima qiladi?
+    A) Remote storage
+    B) Host filesystem da saqlaydi (default)
+    C) Cloud storage
+    D) Network storage
+    Javob: B
+
+69. docker volume inspect nima ko'rsatadi?
+    A) Container info
+    B) Volume haqida batafsil ma'lumot (Mountpoint, ...)
+    C) Image info
+    D) Network info
+    Javob: B
+
+70. Overlay network nima uchun?
+    A) Single host
+    B) Multi-host konteyner aloqasi (Swarm/Kubernetes)
+    C) Bridge alternative
+    D) Host alternative
+    Javob: B
+
+71. Docker Swarm nima?
+    A) Bitta host
+    B) Docker native container orchestration
+    C) Kubernetes
+    D) Mesos
+    Javob: B
+
+72. docker swarm init nima qiladi?
+    A) Swarm o'chiradi
+    B) Swarm cluster yaratadi (manager node)
+    C) Worker qo'shadi
+    D) Service yaratadi
+    Javob: B
+
+73. docker swarm join nima?
+    A) Manager yaratadi
+    B) Node ni mavjud Swarm ga qo'shadi
+    C) Service yaratadi
+    D) Network yaratadi
+    Javob: B
+
+74. Swarm da manager va worker node farqi?
+    A) Farqi yo'q
+    B) Manager cluster boshqaradi, worker faqat konteyner ishlaydi
+    C) Worker boshqaradi
+    D) Manager faqat konteyner
+    Javob: B
+
+75. docker service create nima?
+    A) Container yaratadi
+    B) Swarm service yaratadi (replicated containers)
+    C) Network yaratadi
+    D) Volume yaratadi
+    Javob: B
+
+76. docker service scale nima qiladi?
+    A) Image scale
+    B) Service replicas sonini o'zgartiradi
+    C) Node scale
+    D) Network scale
+    Javob: B
+
+77. docker stack deploy nima?
+    A) Container deploy
+    B) Compose file dan Swarm stack deploy
+    C) Image deploy
+    D) Network deploy
+    Javob: B
+
+78. Docker registry nima?
+    A) DNS server
+    B) Docker imagelar saqlanadigan server
+    C) Database
+    D) Web server
+    Javob: B
+
+79. Private Docker registry qanday ishga tushiriladi?
+    A) docker run hub
+    B) docker run registry:2
+    C) docker run private
+    D) docker run repo
+    Javob: B
+
+80. docker pull localhost:5000/myimage nima qiladi?
+    A) Docker Hub dan
+    B) Local registry dan image tortadi
+    C) GitHub dan
+    D) AWS dan
+    Javob: B
+
+81. Image tag da latest nima?
+    A) Eng yangi versiya (kafolatsiz)
+    B) Default tag (explicit versiya tavsiya etiladi)
+    C) Eng eski versiya
+    D) Stable versiya
+    Javob: B
+
+82. Nima uchun latest tag ishlatish tavsiya etilmaydi production da?
+    A) Sekin
+    B) Reproducibility yo'q (qaysi versiya noaniq)
+    C) Xavfsiz emas
+    D) Katta hajm
+    Javob: B
+
+83. Docker content trust nima?
+    A) Auth
+    B) Image signing va verification
+    C) Network trust
+    D) Volume trust
+    Javob: B
+
+84. DOCKER_CONTENT_TRUST=1 nima qiladi?
+    A) Trust o'chiradi
+    B) Faqat signed imagelarni pull/push qilishga ruxsat
+    C) Debug mode
+    D) Verbose mode
+    Javob: B
+
+85. docker scan buyrug'i nima?
+    A) Network scan
+    B) Image vulnerability scanning
+    C) Port scan
+    D) Disk scan
+    Javob: B
+
+86. Distroless image nima?
+    A) To'liq OS
+    B) Minimal image (faqat app va runtime, shell yo'q)
+    C) Debug image
+    D) Development image
+    Javob: B
+
+87. Scratch base image nima?
+    A) Ubuntu
+    B) Bo'sh image (0 bytes, static binary uchun)
+    C) Alpine
+    D) Debian
+    Javob: B
+
+88. docker run --read-only flag nima?
+    A) Write mode
+    B) Konteyner filesystem ni read-only qiladi
+    C) Read mode off
+    D) Volume read-only
+    Javob: B
+
+89. docker run --security-opt flag nima uchun?
+    A) Network security
+    B) Security options (seccomp, apparmor, ...)
+    C) Volume security
+    D) Image security
+    Javob: B
+
+90. Seccomp profile nima?
+    A) Network profile
+    B) System calls filtering (security)
+    C) Volume profile
+    D) Image profile
+    Javob: B
+
+91. AppArmor Docker da nima uchun?
+    A) Network security
+    B) Mandatory access control (file, network access)
+    C) Volume security
+    D) Image security
+    Javob: B
+
+92. docker run --cap-drop ALL nima qiladi?
+    A) Capabilities qo'shadi
+    B) Barcha Linux capabilities ni olib tashlaydi
+    C) Network drop
+    D) Volume drop
+    Javob: B
+
+93. docker run --privileged flag nima?
+    A) Unprivileged
+    B) Host ga to'liq kirish (xavfli, ehtiyot bo'ling)
+    C) Read-only
+    D) Network privileged
+    Javob: B
+
+94. PID namespace isolation nima?
+    A) Network isolation
+    B) Konteyner o'z process ID space ga ega
+    C) Volume isolation
+    D) User isolation
+    Javob: B
+
+95. docker run --pid=host nima qiladi?
+    A) Isolated PID
+    B) Host PID namespace ishlatadi (host processlarni ko'radi)
+    C) No PID
+    D) Shared PID
+    Javob: B
+
+96. User namespace remapping nima?
+    A) Network mapping
+    B) Konteyner root ni host da non-root ga mapping
+    C) Volume mapping
+    D) Port mapping
+    Javob: B
+
+97. docker system events nima ko'rsatadi?
+    A) Logs
+    B) Real-time Docker events (container, image, ...)
+    C) Stats
+    D) Info
+    Javob: B
+
+98. docker context nima uchun?
+    A) Build context
+    B) Turli Docker host/endpoint larga ulanish
+    C) Network context
+    D) Volume context
+    Javob: B
+
+99. docker context use nima qiladi?
+    A) Context yaratadi
+    B) Active context ni o'zgartiradi
+    C) Context o'chiradi
+    D) Context ko'rsatadi
+    Javob: B
+
+100. Docker da resource constraints (--memory, --cpus) nima orqali ishlaydi?
+     A) Virtual machine
+     B) Linux cgroups
+     C) Docker daemon
+     D) Network
+     Javob: B
+
+=================================================================
+                          YAKUNLANDI
+=================================================================

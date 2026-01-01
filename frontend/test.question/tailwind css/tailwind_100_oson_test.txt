@@ -1,0 +1,702 @@
+TAILWIND CSS - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+====================================================
+
+1. Tailwind CSS nima?
+   A) JavaScript framework
+   B) Utility-first CSS framework
+   C) Component library
+   D) Backend framework
+   Javob: B
+
+2. Tailwind CSS'ni loyihaga qo'shish?
+   A) Link tag
+   B) npm install tailwindcss
+   C) CDN only
+   D) Download
+   Javob: B
+
+3. tailwind.config.js nima?
+   A) CSS file
+   B) Tailwind konfiguratsiya fayli
+   C) JavaScript file
+   D) HTML file
+   Javob: B
+
+4. Asosiy rang classlari?
+   A) color-red
+   B) bg-red-500, text-blue-600
+   C) red-color
+   D) #red
+   Javob: B
+
+5. Text rangi berish?
+   A) color-red
+   B) text-red-500
+   C) font-red
+   D) text: red
+   Javob: B
+
+6. Background rangi?
+   A) background-blue
+   B) bg-blue-500
+   C) bgcolor-blue
+   D) back-blue
+   Javob: B
+
+7. Padding classi?
+   A) padding-4
+   B) p-4
+   C) pad-4
+   D) pd-4
+   Javob: B
+
+8. Margin classi?
+   A) margin-4
+   B) m-4
+   C) mar-4
+   D) mg-4
+   Javob: B
+
+9. Horizontal padding?
+   A) ph-4
+   B) px-4
+   C) p-h-4
+   D) padding-x-4
+   Javob: B
+
+10. Vertical margin?
+    A) mv-4
+    B) my-4
+    C) m-v-4
+    D) margin-y-4
+    Javob: B
+
+11. Top margin?
+    A) m-top-4
+    B) mt-4
+    C) margin-t-4
+    D) top-4
+    Javob: B
+
+12. Left padding?
+    A) p-left-4
+    B) pl-4
+    C) padding-l-4
+    D) left-4
+    Javob: B
+
+13. Width class?
+    A) width-full
+    B) w-full yoki w-64
+    C) wd-full
+    D) wi-full
+    Javob: B
+
+14. Height class?
+    A) height-full
+    B) h-full yoki h-64
+    C) ht-full
+    D) he-full
+    Javob: B
+
+15. Full width?
+    A) width-100
+    B) w-full
+    C) w-100%
+    D) full-width
+    Javob: B
+
+16. Flexbox container?
+    A) display-flex
+    B) flex
+    C) flexbox
+    D) d-flex
+    Javob: B
+
+17. Flex direction row?
+    A) flex-horizontal
+    B) flex-row
+    C) row
+    D) direction-row
+    Javob: B
+
+18. Flex direction column?
+    A) flex-vertical
+    B) flex-col
+    C) column
+    D) direction-col
+    Javob: B
+
+19. Justify content center?
+    A) justify-middle
+    B) justify-center
+    C) center
+    D) align-center
+    Javob: B
+
+20. Items center (align)?
+    A) align-middle
+    B) items-center
+    C) center
+    D) vertical-center
+    Javob: B
+
+21. Space between items?
+    A) space-items
+    B) justify-between
+    C) between
+    D) gap-between
+    Javob: B
+
+22. Gap between flex items?
+    A) spacing-4
+    B) gap-4
+    C) flex-gap-4
+    D) space-4
+    Javob: B
+
+23. Grid container?
+    A) display-grid
+    B) grid
+    C) grid-container
+    D) d-grid
+    Javob: B
+
+24. Grid 3 columns?
+    A) grid-3
+    B) grid-cols-3
+    C) columns-3
+    D) col-3
+    Javob: B
+
+25. Font size?
+    A) font-16
+    B) text-lg, text-xl, text-2xl
+    C) size-lg
+    D) fs-lg
+    Javob: B
+
+26. Font bold?
+    A) text-bold
+    B) font-bold
+    C) bold
+    D) fw-bold
+    Javob: B
+
+27. Font weight normal?
+    A) font-regular
+    B) font-normal
+    C) weight-normal
+    D) fw-normal
+    Javob: B
+
+28. Text center?
+    A) align-center
+    B) text-center
+    C) center-text
+    D) ta-center
+    Javob: B
+
+29. Text left?
+    A) align-left
+    B) text-left
+    C) left-text
+    D) ta-left
+    Javob: B
+
+30. Border?
+    A) border-1
+    B) border
+    C) b-1
+    D) bd-1
+    Javob: B
+
+31. Border width 2?
+    A) border-width-2
+    B) border-2
+    C) bw-2
+    D) bd-2
+    Javob: B
+
+32. Border color?
+    A) border-color-red
+    B) border-red-500
+    C) bc-red
+    D) b-red
+    Javob: B
+
+33. Border radius?
+    A) radius-md
+    B) rounded-md
+    C) br-md
+    D) corner-md
+    Javob: B
+
+34. Full circle (border radius)?
+    A) rounded-100
+    B) rounded-full
+    C) circle
+    D) round
+    Javob: B
+
+35. Shadow?
+    A) shadow-normal
+    B) shadow-md yoki shadow-lg
+    C) box-shadow
+    D) sh-md
+    Javob: B
+
+36. Display none?
+    A) display-none
+    B) hidden
+    C) d-none
+    D) invisible
+    Javob: B
+
+37. Display block?
+    A) display-block
+    B) block
+    C) d-block
+    D) show
+    Javob: B
+
+38. Display inline-block?
+    A) inline
+    B) inline-block
+    C) d-inline-block
+    D) ib
+    Javob: B
+
+39. Position relative?
+    A) pos-relative
+    B) relative
+    C) position-relative
+    D) rel
+    Javob: B
+
+40. Position absolute?
+    A) pos-absolute
+    B) absolute
+    C) position-absolute
+    D) abs
+    Javob: B
+
+41. Position fixed?
+    A) pos-fixed
+    B) fixed
+    C) position-fixed
+    D) fix
+    Javob: B
+
+42. Top position?
+    A) position-top-0
+    B) top-0
+    C) t-0
+    D) pos-t-0
+    Javob: B
+
+43. Z-index?
+    A) index-10
+    B) z-10
+    C) zindex-10
+    D) z-i-10
+    Javob: B
+
+44. Overflow hidden?
+    A) overflow-hide
+    B) overflow-hidden
+    C) oh
+    D) hide-overflow
+    Javob: B
+
+45. Cursor pointer?
+    A) pointer
+    B) cursor-pointer
+    C) c-pointer
+    D) mouse-pointer
+    Javob: B
+
+46. Hover state?
+    A) :hover:bg-blue
+    B) hover:bg-blue-500
+    C) on-hover-bg-blue
+    D) h:bg-blue
+    Javob: B
+
+47. Focus state?
+    A) :focus:border
+    B) focus:border-blue-500
+    C) on-focus:border
+    D) f:border
+    Javob: B
+
+48. Active state?
+    A) :active:bg
+    B) active:bg-blue-700
+    C) on-active:bg
+    D) a:bg
+    Javob: B
+
+49. Responsive sm prefix?
+    A) small:
+    B) sm:
+    C) @sm:
+    D) s:
+    Javob: B
+
+50. Responsive md prefix?
+    A) medium:
+    B) md:
+    C) @md:
+    D) m:
+    Javob: B
+
+51. Responsive lg prefix?
+    A) large:
+    B) lg:
+    C) @lg:
+    D) l:
+    Javob: B
+
+52. Responsive xl prefix?
+    A) extra-large:
+    B) xl:
+    C) @xl:
+    D) x:
+    Javob: B
+
+53. Dark mode class?
+    A) theme-dark:
+    B) dark:
+    C) d:
+    D) night:
+    Javob: B
+
+54. Container class?
+    A) wrapper
+    B) container
+    C) main
+    D) content
+    Javob: B
+
+55. Max width?
+    A) max-width-lg
+    B) max-w-lg
+    C) mw-lg
+    D) maxw-lg
+    Javob: B
+
+56. Min height?
+    A) min-height-full
+    B) min-h-full
+    C) mh-full
+    D) minh-full
+    Javob: B
+
+57. Opacity?
+    A) opacity-50
+    B) opacity-50
+    C) op-50
+    D) alpha-50
+    Javob: B
+
+58. Transition?
+    A) trans-all
+    B) transition-all
+    C) t-all
+    D) animate-transition
+    Javob: B
+
+59. Duration?
+    A) time-300
+    B) duration-300
+    C) d-300
+    D) dur-300
+    Javob: B
+
+60. Ease timing?
+    A) timing-ease
+    B) ease-in-out
+    C) t-ease
+    D) easing
+    Javob: B
+
+61. Transform scale?
+    A) size-110
+    B) scale-110
+    C) transform-scale-110
+    D) sc-110
+    Javob: B
+
+62. Transform rotate?
+    A) turn-45
+    B) rotate-45
+    C) transform-rotate-45
+    D) rot-45
+    Javob: B
+
+63. Transform translate?
+    A) move-x-4
+    B) translate-x-4
+    C) transform-x-4
+    D) tx-4
+    Javob: B
+
+64. Flex grow?
+    A) grow-1
+    B) flex-grow yoki grow
+    C) fg-1
+    D) flex-1
+    Javob: B
+
+65. Flex shrink?
+    A) shrink-1
+    B) flex-shrink-0 yoki shrink-0
+    C) fs-0
+    D) no-shrink
+    Javob: B
+
+66. Object fit cover?
+    A) fit-cover
+    B) object-cover
+    C) img-cover
+    D) of-cover
+    Javob: B
+
+67. Object position?
+    A) position-center
+    B) object-center
+    C) img-center
+    D) op-center
+    Javob: B
+
+68. List none (no bullets)?
+    A) no-list
+    B) list-none
+    C) ul-none
+    D) bullets-none
+    Javob: B
+
+69. Underline?
+    A) text-underline
+    B) underline
+    C) decoration-underline
+    D) u
+    Javob: B
+
+70. Line through (strikethrough)?
+    A) strike
+    B) line-through
+    C) text-strike
+    D) strikethrough
+    Javob: B
+
+71. Uppercase?
+    A) text-caps
+    B) uppercase
+    C) caps
+    D) all-caps
+    Javob: B
+
+72. Lowercase?
+    A) text-lower
+    B) lowercase
+    C) lower
+    D) small-caps
+    Javob: B
+
+73. Capitalize?
+    A) text-cap
+    B) capitalize
+    C) cap
+    D) first-cap
+    Javob: B
+
+74. Leading (line height)?
+    A) line-height-6
+    B) leading-6
+    C) lh-6
+    D) height-line-6
+    Javob: B
+
+75. Tracking (letter spacing)?
+    A) letter-spacing-wide
+    B) tracking-wide
+    C) ls-wide
+    D) spacing-wide
+    Javob: B
+
+76. Truncate text?
+    A) text-ellipsis
+    B) truncate
+    C) overflow-ellipsis
+    D) text-truncate
+    Javob: B
+
+77. Whitespace nowrap?
+    A) no-wrap
+    B) whitespace-nowrap
+    C) nowrap
+    D) ws-nowrap
+    Javob: B
+
+78. Break words?
+    A) word-break
+    B) break-words
+    C) break-all
+    D) wb
+    Javob: B
+
+79. Select none (text selection)?
+    A) no-select
+    B) select-none
+    C) user-select-none
+    D) us-none
+    Javob: B
+
+80. Pointer events none?
+    A) no-pointer
+    B) pointer-events-none
+    C) pe-none
+    D) click-none
+    Javob: B
+
+81. Screen reader only?
+    A) hidden
+    B) sr-only
+    C) visually-hidden
+    D) screen-only
+    Javob: B
+
+82. Appearance none (form)?
+    A) no-style
+    B) appearance-none
+    C) reset
+    D) plain
+    Javob: B
+
+83. Ring (focus ring)?
+    A) outline
+    B) ring
+    C) focus-ring
+    D) border-ring
+    Javob: B
+
+84. Ring color?
+    A) ring-color-blue
+    B) ring-blue-500
+    C) rc-blue
+    D) ring:blue
+    Javob: B
+
+85. Divide (border between children)?
+    A) border-between
+    B) divide-y yoki divide-x
+    C) separate
+    D) divider
+    Javob: B
+
+86. Space between children?
+    A) gap
+    B) space-y-4 yoki space-x-4
+    C) spacing
+    D) between
+    Javob: B
+
+87. Aspect ratio?
+    A) ratio-16-9
+    B) aspect-video yoki aspect-square
+    C) ar-video
+    D) size-ratio
+    Javob: B
+
+88. Place items center (grid)?
+    A) grid-center
+    B) place-items-center
+    C) place-center
+    D) center-items
+    Javob: B
+
+89. Col span (grid)?
+    A) column-span-2
+    B) col-span-2
+    C) span-2
+    D) cs-2
+    Javob: B
+
+90. Row span (grid)?
+    A) row-span-2
+    B) row-span-2
+    C) rs-2
+    D) span-row-2
+    Javob: B
+
+91. Auto cols (grid)?
+    A) columns-auto
+    B) auto-cols-fr
+    C) col-auto
+    D) ac-fr
+    Javob: B
+
+92. Order (flex)?
+    A) flex-order-1
+    B) order-1
+    C) o-1
+    D) position-1
+    Javob: B
+
+93. Flex wrap?
+    A) wrap
+    B) flex-wrap
+    C) f-wrap
+    D) flex-w
+    Javob: B
+
+94. Content start?
+    A) align-start
+    B) content-start
+    C) start
+    D) justify-start
+    Javob: B
+
+95. Self center?
+    A) align-self
+    B) self-center
+    C) sc
+    D) item-center
+    Javob: B
+
+96. Inset (all positions)?
+    A) all-0
+    B) inset-0
+    C) position-all-0
+    D) trbl-0
+    Javob: B
+
+97. Backdrop blur?
+    A) blur-bg
+    B) backdrop-blur-md
+    C) bg-blur
+    D) background-blur
+    Javob: B
+
+98. Filter blur?
+    A) blur-filter
+    B) blur-md
+    C) filter-blur
+    D) fb-md
+    Javob: B
+
+99. Grayscale filter?
+    A) gray
+    B) grayscale
+    C) filter-gray
+    D) gs
+    Javob: B
+
+100. Mix blend mode?
+     A) blend-mode
+     B) mix-blend-multiply
+     C) blending
+     D) mb-multiply
+     Javob: B

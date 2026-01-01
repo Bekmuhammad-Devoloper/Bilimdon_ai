@@ -1,0 +1,148 @@
+===============================================
+JAVASCRIPT - MEDIUM SAVOLLARI
+===============================================
+
+SAVOL 1: map() method nima uchun?
+A) Array chiqaradi
+B) Har elementga funksiya qo'llaydi
+C) Arrayni sortirlaydi
+D) Arrayni tekshiradi
+JAVOB: B
+
+SAVOL 2: filter() method nima uchun?
+A) Array sortirlaydi
+B) Shart bo'ycha elementlarni tanlaydi
+C) Array yaratadi
+D) Array qo'shadi
+JAVOB: B
+
+SAVOL 3: reduce() method nima?
+A) Arrayni kichiklashtiradi
+B) Arrayni bitta qiymatga ixchamlashtiradi
+C) Arrayni sortirlaydi
+D) Arrayni qayta o'rganadi
+JAVOB: B
+
+SAVOL 4: Promise nima?
+A) Shart
+B) Asinxron operatsiya for async/await
+C) Object
+D) Funksiya
+JAVOB: B
+
+SAVOL 5: async/await nima?
+A) Loop
+B) Promise bajarilishini kutish
+C) Function
+D) Object
+JAVOB: B
+
+SAVOL 6: Closure nima?
+A) Loop tugashi
+B) Inner funksiya outer funksiyaning scope-ini saqlashi
+C) Object
+D) Array
+JAVOB: B
+
+SAVOL 7: this keyword nima?
+A) Loop
+B) Current object reference
+C) Variable
+D) Function
+JAVOB: B
+
+SAVOL 8: Prototype nima?
+A) Class
+B) Object yaratishning bazasi
+C) Function
+D) Array
+JAVOB: B
+
+SAVOL 9: Class in JavaScript nima?
+A) CSS class
+B) Syntax sugar for prototype
+C) Object
+D) Function
+JAVOB: B
+
+SAVOL 10: .find() method nima?
+A) Index qaytaradi
+B) Shart bo'ycha birinchi elementni qaytaradi
+C) Barcha elementlarni qaytaradi
+D) Boolean qaytaradi
+JAVOB: B
+
+SAVOL 11: .findIndex() method nima?
+A) Element qaytaradi
+B) Shart bo'ycha birinchi indexni qaytaradi
+C) Barcha indexlarni qaytaradi
+D) Boolean qaytaradi
+JAVOB: B
+
+SAVOL 12: .every() method nima?
+A) Barcha qiymatlar shart bo'ycha
+B) Kamita bitta qiymat shart bo'ycha
+C) Qiymatlarni hisoblaydi
+D) Qiymatlarni sortirlaydi
+JAVOB: A
+
+SAVOL 13: .some() method nima?
+A) Barcha qiymatlar shart bo'ycha
+B) Kamita bitta qiymat shart bo'ycha
+C) Qiymatlarni hisoblaydi
+D) Qiymatlarni sortirlaydi
+JAVOB: B
+
+SAVOL 14: .sort() method nima?
+A) Array sortirlaydi (o'zini o'zgartirmaydi)
+B) Array sortirlaydi (o'zini o'zgartiradi)
+C) Array tekshiradi
+D) Array qayta aralashtiradi
+JAVOB: B
+
+SAVOL 15: Template literals nima?
+A) String birlashtirish
+B) String + variable birlashtiradigan
+C) String create
+D) String copy
+JAVOB: B
+
+SAVOL 16: Spread operator (...) nima?
+A) Array/Object copy
+B) Array/Object distribute qilish
+C) Array/Object combine qilish
+D) Barcha to'g'ri
+JAVOB: D
+
+SAVOL 17: Destructuring nima?
+A) Object qayta o'rganish
+B) Array/Object variable qilish
+C) String parsing
+D) Function call
+JAVOB: B
+
+SAVOL 18: setTimeout() nima?
+A) Vaqt tekshirish
+B) Code-ni vaqt ichida ishlatish
+C) Loop
+D) Function
+JAVOB: B
+
+SAVOL 19: setInterval() nima?
+A) Faqat bir marta
+B) Takroran vaqtda ishlatish
+C) Vaqt tekshirish
+D) Loop
+JAVOB: B
+
+SAVOL 20: .splice() method nima?
+A) Array bo'lish (o'zgartiradigan)
+B) Array qismini olish (o'zgartirmaydi)
+C) Array o'chirish
+D) Array tekshirish
+JAVOB: A
+
+===============================================
+MEDIUM SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: O'RTA
+===============================================

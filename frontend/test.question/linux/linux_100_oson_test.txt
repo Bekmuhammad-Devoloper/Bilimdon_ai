@@ -1,0 +1,706 @@
+LINUX OPERATSION TIZIMI - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+=================================================================
+
+1. Linux nima?
+   A) Dasturlash tili
+   B) Ochiq kodli operatsion tizim yadrosi
+   C) Ma'lumotlar bazasi
+   D) Web browser
+   Javob: B
+
+2. Linux yadrosi kim tomonidan yaratilgan?
+   A) Bill Gates
+   B) Linus Torvalds
+   C) Steve Jobs
+   D) Mark Zuckerberg
+   Javob: B
+
+3. Linux qaysi yilda yaratilgan?
+   A) 1985
+   B) 1991
+   C) 1995
+   D) 2000
+   Javob: B
+
+4. Linux distributiv (distro) nima?
+   A) Faqat kernel
+   B) Linux yadrosi + dasturlar to'plami
+   C) Faqat GUI
+   D) Faqat terminal
+   Javob: B
+
+5. Quyidagilardan qaysi biri Linux distributivi?
+   A) Windows
+   B) Ubuntu
+   C) macOS
+   D) iOS
+   Javob: B
+
+6. Terminal nima?
+   A) Grafik interfeys
+   B) Matnli buyruqlar interfeysi (CLI)
+   C) Web browser
+   D) Fayl menejeri
+   Javob: B
+
+7. Shell nima?
+   A) Grafik interfeys
+   B) Buyruqlarni interpretatsiya qiluvchi dastur
+   C) Kernel
+   D) Driver
+   Javob: B
+
+8. Bash nima?
+   A) Kernel
+   B) Bourne Again Shell (mashhur shell)
+   C) Fayl tizimi
+   D) Desktop environment
+   Javob: B
+
+9. pwd buyrug'i nima qiladi?
+   A) Password o'zgartiradi
+   B) Joriy papkani ko'rsatadi (print working directory)
+   C) Fayl yaratadi
+   D) Papka yaratadi
+   Javob: B
+
+10. ls buyrug'i nima?
+    A) Papka yaratadi
+    B) Papka ichidagi fayllarni ro'yxatlaydi
+    C) Fayl o'chiradi
+    D) Fayl nusxalaydi
+    Javob: B
+
+11. ls -l nima ko'rsatadi?
+    A) Faqat nomlar
+    B) Batafsil ro'yxat (permission, size, date)
+    C) Yashirin fayllar
+    D) Faqat papkalar
+    Javob: B
+
+12. ls -a nima qiladi?
+    A) Faqat fayllar
+    B) Yashirin fayllarni ham ko'rsatadi (. bilan boshlanuvchi)
+    C) Faqat papkalar
+    D) Tartiblaydi
+    Javob: B
+
+13. cd buyrug'i nima?
+    A) Copy directory
+    B) Change directory (papkani almashtirish)
+    C) Create directory
+    D) Clear directory
+    Javob: B
+
+14. cd .. nima qiladi?
+    A) Root ga o'tadi
+    B) Bir daraja yuqori papkaga o'tadi
+    C) Home ga o'tadi
+    D) Oldingi papkaga
+    Javob: B
+
+15. cd ~ nima?
+    A) Root papka
+    B) Home papkaga o'tadi
+    C) Tmp papka
+    D) Var papka
+    Javob: B
+
+16. cd / nima qiladi?
+    A) Home papka
+    B) Root (/) papkaga o'tadi
+    C) Tmp papka
+    D) Current papka
+    Javob: B
+
+17. mkdir buyrug'i nima?
+    A) Fayl yaratadi
+    B) Papka yaratadi (make directory)
+    C) Fayl o'chiradi
+    D) Papka o'chiradi
+    Javob: B
+
+18. mkdir -p /a/b/c nima qiladi?
+    A) Faqat c yaratadi
+    B) Yo'lda yo'q papkalarni ham yaratadi
+    C) Xato beradi
+    D) Faqat a yaratadi
+    Javob: B
+
+19. rmdir buyrug'i nima?
+    A) Fayl o'chiradi
+    B) Bo'sh papkani o'chiradi
+    C) To'liq papkani o'chiradi
+    D) Fayl yaratadi
+    Javob: B
+
+20. rm buyrug'i nima?
+    A) Papka yaratadi
+    B) Fayl yoki papkani o'chiradi
+    C) Fayl nusxalaydi
+    D) Fayl ko'chiradi
+    Javob: B
+
+21. rm -r directory nima qiladi?
+    A) Faqat fayl o'chiradi
+    B) Papka va ichidagilarni rekursiv o'chiradi
+    C) Bo'sh papka o'chiradi
+    D) Fayl yaratadi
+    Javob: B
+
+22. rm -rf nima uchun xavfli?
+    A) Sekin ishlaydi
+    B) So'ramasdan hammasini o'chiradi (force + recursive)
+    C) Faqat fayllar
+    D) Faqat papkalar
+    Javob: B
+
+23. cp buyrug'i nima?
+    A) Cut paste
+    B) Copy (nusxalash)
+    C) Create
+    D) Change
+    Javob: B
+
+24. cp file1 file2 nima qiladi?
+    A) file1 ni o'chiradi
+    B) file1 ni file2 ga nusxalaydi
+    C) file2 ni o'chiradi
+    D) Ikkalasini birlashtiradi
+    Javob: B
+
+25. cp -r dir1 dir2 nima?
+    A) Faqat fayllar
+    B) Papkani rekursiv nusxalaydi
+    C) Papkani o'chiradi
+    D) Papkani ko'chiradi
+    Javob: B
+
+26. mv buyrug'i nima qiladi?
+    A) Faqat nusxalaydi
+    B) Ko'chiradi yoki qayta nomlaydi
+    C) O'chiradi
+    D) Yaratadi
+    Javob: B
+
+27. mv oldname newname nima?
+    A) Nusxalaydi
+    B) Faylni qayta nomlaydi
+    C) O'chiradi
+    D) Yaratadi
+    Javob: B
+
+28. touch filename nima qiladi?
+    A) Faylni o'chiradi
+    B) Bo'sh fayl yaratadi yoki vaqtini yangilaydi
+    C) Faylni nusxalaydi
+    D) Faylni ko'chiradi
+    Javob: B
+
+29. cat filename nima?
+    A) Fayl yaratadi
+    B) Fayl tarkibini ko'rsatadi
+    C) Fayl o'chiradi
+    D) Fayl nusxalaydi
+    Javob: B
+
+30. cat file1 file2 > file3 nima?
+    A) Fayllarni o'chiradi
+    B) Ikki faylni birlashtirib file3 ga yozadi
+    C) Fayllarni ajratadi
+    D) Fayllarni nusxalaydi
+    Javob: B
+
+31. less filename nima uchun?
+    A) Fayl o'chirish
+    B) Katta faylni sahifalab ko'rish
+    C) Fayl yaratish
+    D) Fayl nusxalash
+    Javob: B
+
+32. head filename nima ko'rsatadi?
+    A) Oxirgi qatorlar
+    B) Birinchi 10 qatorni (default)
+    C) O'rtadagi qatorlar
+    D) Barcha qatorlar
+    Javob: B
+
+33. tail filename nima?
+    A) Birinchi qatorlar
+    B) Oxirgi 10 qatorni ko'rsatadi
+    C) O'rtadagi qatorlar
+    D) Barcha qatorlar
+    Javob: B
+
+34. tail -f logfile nima qiladi?
+    A) Faylni yopadi
+    B) Real-time yangilanishlarni ko'rsatadi (follow)
+    C) Faylni o'chiradi
+    D) Faylni nusxalaydi
+    Javob: B
+
+35. grep "text" file nima?
+    A) Matnni o'chiradi
+    B) Faylda matnni qidiradi va topilgan qatorlarni chiqaradi
+    C) Matnni qo'shadi
+    D) Matnni almashtiradi
+    Javob: B
+
+36. grep -i "text" file da -i nima?
+    A) Invert
+    B) Case-insensitive (katta-kichik harf farqsiz)
+    C) Include
+    D) Index
+    Javob: B
+
+37. grep -r "text" /dir nima?
+    A) Bitta faylda
+    B) Papkada rekursiv qidiradi
+    C) Reverse
+    D) Regex
+    Javob: B
+
+38. echo "Hello" nima qiladi?
+    A) Faylga yozadi
+    B) Ekranga "Hello" chiqaradi
+    C) Fayldan o'qiydi
+    D) O'chiradi
+    Javob: B
+
+39. echo "text" > file nima?
+    A) Faylga qo'shadi
+    B) Faylga yozadi (ustiga yozadi)
+    C) Fayldan o'qiydi
+    D) Faylni o'chiradi
+    Javob: B
+
+40. echo "text" >> file nima?
+    A) Ustiga yozadi
+    B) Fayl oxiriga qo'shadi (append)
+    C) Faylni o'chiradi
+    D) Fayldan o'qiydi
+    Javob: B
+
+41. > va >> farqi nima?
+    A) Farqi yo'q
+    B) > ustiga yozadi, >> qo'shadi
+    C) >> ustiga yozadi
+    D) > qo'shadi
+    Javob: B
+
+42. | (pipe) nima qiladi?
+    A) Faylga yozadi
+    B) Bir buyruq chiqishini boshqasiga uzatadi
+    C) Fayldan o'qiydi
+    D) Ikki faylni birlashtiradi
+    Javob: B
+
+43. ls | grep "txt" nima qiladi?
+    A) Barcha fayllarni ko'rsatadi
+    B) Faqat "txt" mavjud fayllarni ko'rsatadi
+    C) txt fayllarni o'chiradi
+    D) txt fayllarni yaratadi
+    Javob: B
+
+44. wc filename nima ko'rsatadi?
+    A) Fayl hajmi
+    B) Qatorlar, so'zlar, belgilar sonini
+    C) Fayl turi
+    D) Fayl egasi
+    Javob: B
+
+45. wc -l filename nima?
+    A) So'zlar soni
+    B) Qatorlar sonini ko'rsatadi
+    C) Belgilar soni
+    D) Baytlar soni
+    Javob: B
+
+46. sort filename nima qiladi?
+    A) Faylni o'chiradi
+    B) Qatorlarni tartiblaydi
+    C) Faylni nusxalaydi
+    D) Faylni ko'chiradi
+    Javob: B
+
+47. uniq filename nima?
+    A) Barcha qatorlar
+    B) Ketma-ket takroriy qatorlarni olib tashlaydi
+    C) Unique fayllar
+    D) Fayl yaratadi
+    Javob: B
+
+48. clear buyrug'i nima?
+    A) Fayllarni o'chiradi
+    B) Terminal ekranini tozalaydi
+    C) Papkani o'chiradi
+    D) Xotirani tozalaydi
+    Javob: B
+
+49. history buyrug'i nima?
+    A) Fayllar tarixi
+    B) Oldin kiritilgan buyruqlar ro'yxati
+    C) System tarixi
+    D) User tarixi
+    Javob: B
+
+50. man ls nima?
+    A) ls ni ishga tushiradi
+    B) ls buyrug'i haqida qo'llanma (manual)
+    C) ls ni o'chiradi
+    D) ls ni yaratadi
+    Javob: B
+
+51. whoami buyrug'i nima ko'rsatadi?
+    A) Kompyuter nomi
+    B) Joriy foydalanuvchi nomini
+    C) IP manzilni
+    D) Vaqtni
+    Javob: B
+
+52. id buyrug'i nima?
+    A) Fayl ID
+    B) Foydalanuvchi UID, GID va guruhlarini ko'rsatadi
+    C) Process ID
+    D) System ID
+    Javob: B
+
+53. su username nima qiladi?
+    A) User yaratadi
+    B) Boshqa foydalanuvchiga o'tadi (switch user)
+    C) User o'chiradi
+    D) User ko'rsatadi
+    Javob: B
+
+54. sudo command nima?
+    A) User yaratadi
+    B) Buyruqni root huquqi bilan bajaradi
+    C) User o'chiradi
+    D) System restart
+    Javob: B
+
+55. passwd buyrug'i nima?
+    A) Password ko'rsatadi
+    B) Password o'zgartiradi
+    C) Password o'chiradi
+    D) User yaratadi
+    Javob: B
+
+56. useradd username nima qiladi?
+    A) User o'chiradi
+    B) Yangi foydalanuvchi yaratadi
+    C) User ko'rsatadi
+    D) Password o'zgartiradi
+    Javob: B
+
+57. userdel username nima?
+    A) User yaratadi
+    B) Foydalanuvchini o'chiradi
+    C) Password o'zgartiradi
+    D) User ko'rsatadi
+    Javob: B
+
+58. groupadd groupname nima qiladi?
+    A) Guruh o'chiradi
+    B) Yangi guruh yaratadi
+    C) Guruh ko'rsatadi
+    D) Guruhga qo'shadi
+    Javob: B
+
+59. usermod -aG group user nima?
+    A) Guruhdan olib tashlaydi
+    B) Foydalanuvchini guruhga qo'shadi
+    C) Guruh yaratadi
+    D) User o'chiradi
+    Javob: B
+
+60. chmod 644 file nima degani?
+    A) rwxrwxrwx
+    B) rw-r--r-- (owner: rw, group: r, others: r)
+    C) rwx------
+    D) ---------
+    Javob: B
+
+61. chmod +x file nima qiladi?
+    A) Execute o'chiradi
+    B) Execute (bajarish) huquqini qo'shadi
+    C) Read qo'shadi
+    D) Write qo'shadi
+    Javob: B
+
+62. Linux da fayl permission da 'r' nima?
+    A) Run
+    B) Read (o'qish)
+    C) Remove
+    D) Rename
+    Javob: B
+
+63. Linux da 'w' permission nima?
+    A) Wait
+    B) Write (yozish)
+    C) Watch
+    D) Work
+    Javob: B
+
+64. Linux da 'x' permission nima?
+    A) Exit
+    B) Execute (bajarish)
+    C) Export
+    D) Extract
+    Javob: B
+
+65. / (root) papkasi nima?
+    A) Home papka
+    B) Fayl tizimining eng yuqori darajasi
+    C) Tmp papka
+    D) User papka
+    Javob: B
+
+66. /home papkasida nima bor?
+    A) System fayllar
+    B) Foydalanuvchilar shaxsiy papkalari
+    C) Temporary fayllar
+    D) Boot fayllar
+    Javob: B
+
+67. /etc papkasi nima uchun?
+    A) User fayllar
+    B) Tizim konfiguratsiya fayllari
+    C) Temporary fayllar
+    D) Boot fayllar
+    Javob: B
+
+68. /var papkasida nima saqlanadi?
+    A) Static fayllar
+    B) O'zgaruvchan fayllar (log, cache, mail)
+    C) User fayllar
+    D) Config fayllar
+    Javob: B
+
+69. /tmp papkasi nima?
+    A) Doimiy fayllar
+    B) Vaqtinchalik fayllar (reboot da o'chadi)
+    C) System fayllar
+    D) User fayllar
+    Javob: B
+
+70. /bin papkasida nima?
+    A) User fayllar
+    B) Asosiy buyruqlar (ls, cp, mv, ...)
+    C) Config fayllar
+    D) Log fayllar
+    Javob: B
+
+71. /usr papkasi nima uchun?
+    A) User home
+    B) User utilities va dasturlar
+    C) User config
+    D) User tmp
+    Javob: B
+
+72. /boot papkasida nima?
+    A) User fayllar
+    B) Kernel va bootloader fayllar
+    C) Config fayllar
+    D) Log fayllar
+    Javob: B
+
+73. /dev papkasi nima?
+    A) Development
+    B) Device fayllari (qurilmalar)
+    C) User fayllar
+    D) Config fayllar
+    Javob: B
+
+74. /proc papkasi nima?
+    A) Real papka
+    B) Virtual fayl tizimi (kernel va process ma'lumotlari)
+    C) User papka
+    D) Config papka
+    Javob: B
+
+75. ps buyrug'i nima ko'rsatadi?
+    A) Fayllarni
+    B) Ishlab turgan processlarni
+    C) Userlarni
+    D) Diskni
+    Javob: B
+
+76. ps aux nima?
+    A) Faqat user processlari
+    B) Barcha processlarni batafsil
+    C) Faqat system processlari
+    D) Faqat root processlari
+    Javob: B
+
+77. top buyrug'i nima?
+    A) Fayllarni ko'rsatadi
+    B) Real-time process monitoring
+    C) Disk ko'rsatadi
+    D) Network ko'rsatadi
+    Javob: B
+
+78. kill PID nima qiladi?
+    A) Fayl o'chiradi
+    B) Process ni to'xtatadi
+    C) User o'chiradi
+    D) Service o'chiradi
+    Javob: B
+
+79. df buyrug'i nima ko'rsatadi?
+    A) Fayllarni
+    B) Disk bo'sh joyini
+    C) Processlarni
+    D) Userlarni
+    Javob: B
+
+80. du buyrug'i nima?
+    A) Disk free
+    B) Disk usage (papka/fayl hajmi)
+    C) Download
+    D) Delete user
+    Javob: B
+
+81. free buyrug'i nima ko'rsatadi?
+    A) Disk
+    B) Memory (RAM) holatini
+    C) CPU
+    D) Network
+    Javob: B
+
+82. uname -a nima ko'rsatadi?
+    A) User name
+    B) Tizim ma'lumotlari (kernel, hostname, ...)
+    C) File name
+    D) Process name
+    Javob: B
+
+83. hostname buyrug'i nima?
+    A) User name
+    B) Kompyuter nomini ko'rsatadi
+    C) File name
+    D) IP address
+    Javob: B
+
+84. date buyrug'i nima?
+    A) Faylni ko'rsatadi
+    B) Sana va vaqtni ko'rsatadi
+    C) Userni ko'rsatadi
+    D) Diskni ko'rsatadi
+    Javob: B
+
+85. cal buyrug'i nima?
+    A) Calculator
+    B) Kalendar ko'rsatadi
+    C) Call function
+    D) Clear all
+    Javob: B
+
+86. uptime buyrug'i nima ko'rsatadi?
+    A) Download time
+    B) Tizim qancha vaqt ishlab turganini
+    C) Upload time
+    D) User time
+    Javob: B
+
+87. reboot buyrug'i nima?
+    A) Tizimni o'chiradi
+    B) Tizimni qayta ishga tushiradi
+    C) Faylni o'chiradi
+    D) Userni o'chiradi
+    Javob: B
+
+88. shutdown -h now nima?
+    A) Reboot
+    B) Tizimni hozir o'chiradi (halt)
+    C) Hibernate
+    D) Sleep
+    Javob: B
+
+89. ping google.com nima qiladi?
+    A) Sayt ochadi
+    B) Tarmoq ulanishini tekshiradi
+    C) Saytni yuklab oladi
+    D) Saytni o'chiradi
+    Javob: B
+
+90. ifconfig yoki ip addr nima ko'rsatadi?
+    A) Fayllarni
+    B) Tarmoq interfeyslari va IP manzillar
+    C) Processlarni
+    D) Userlarni
+    Javob: B
+
+91. wget URL nima qiladi?
+    A) Sayt ochadi
+    B) Faylni internetdan yuklab oladi
+    C) Saytni o'chiradi
+    D) Saytni yaratadi
+    Javob: B
+
+92. curl URL nima?
+    A) Faylni o'chiradi
+    B) URL dan ma'lumot oladi/yuboradi
+    C) Faylni yaratadi
+    D) Faylni nusxalaydi
+    Javob: B
+
+93. apt update (Debian/Ubuntu) nima qiladi?
+    A) Dasturlarni o'rnatadi
+    B) Paket ro'yxatini yangilaydi
+    C) Dasturlarni o'chiradi
+    D) Tizimni reboot qiladi
+    Javob: B
+
+94. apt install package nima?
+    A) Paketni o'chiradi
+    B) Paketni o'rnatadi
+    C) Paketni yangilaydi
+    D) Paketni ko'rsatadi
+    Javob: B
+
+95. apt remove package nima qiladi?
+    A) Paketni o'rnatadi
+    B) Paketni o'chiradi
+    C) Paketni yangilaydi
+    D) Paketni nusxalaydi
+    Javob: B
+
+96. yum yoki dnf (RHEL/CentOS/Fedora) nima?
+    A) User manager
+    B) Paket menejeri
+    C) File manager
+    D) Process manager
+    Javob: B
+
+97. which command nima ko'rsatadi?
+    A) Fayl joylashuvi
+    B) Buyruq joylashgan yo'lni
+    C) User joylashuvi
+    D) Process joylashuvi
+    Javob: B
+
+98. alias ll='ls -la' nima qiladi?
+    A) Fayl yaratadi
+    B) ll buyrug'ini ls -la ga qisqartma qiladi
+    C) Faylni o'chiradi
+    D) Buyruqni o'chiradi
+    Javob: B
+
+99. exit buyrug'i nima?
+    A) Faylni yopadi
+    B) Shell/terminal dan chiqadi
+    C) Tizimni o'chiradi
+    D) Userni o'chiradi
+    Javob: B
+
+100. Ctrl+C nima qiladi?
+     A) Copy
+     B) Joriy buyruqni to'xtatadi (interrupt)
+     C) Clear
+     D) Close
+     Javob: B
+
+=================================================================
+                         YAKUNLANDI
+=================================================================

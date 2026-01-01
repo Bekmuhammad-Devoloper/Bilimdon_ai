@@ -1,0 +1,706 @@
+NESTJS - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+===============================================
+
+1. NestJS qanday framework?
+   A) Frontend framework
+   B) Backend Node.js framework (TypeScript asosida)
+   C) Mobile framework
+   D) Desktop framework
+   Javob: B
+
+2. NestJS qaysi dasturlash tilida yozilgan?
+   A) JavaScript
+   B) TypeScript
+   C) Python
+   D) Java
+   Javob: B
+
+3. NestJS qaysi framework dan ilhomlangan?
+   A) React
+   B) Angular
+   C) Vue
+   D) Django
+   Javob: B
+
+4. NestJS ning asosiy arxitektura patterni:
+   A) MVC
+   B) Modular architecture (Module-based)
+   C) Microkernel
+   D) Layered
+   Javob: B
+
+5. NestJS da yangi project yaratish buyrug'i:
+   A) npm create nest
+   B) nest new project-name
+   C) npx nest init
+   D) npm init nest
+   Javob: B
+
+6. NestJS CLI ni global o'rnatish:
+   A) npm install nest
+   B) npm install -g @nestjs/cli
+   C) npm install nestjs
+   D) npm install -g nest-cli
+   Javob: B
+
+7. NestJS da default HTTP framework qaysi?
+   A) Koa
+   B) Express
+   C) Fastify
+   D) Hapi
+   Javob: B
+
+8. NestJS project ni ishga tushirish (development):
+   A) npm start
+   B) npm run start:dev
+   C) npm run dev
+   D) nest serve
+   Javob: B
+
+9. NestJS da Module nima?
+   A) Oddiy fayl
+   B) Application ni tashkil qiluvchi asosiy blok (@Module decorator)
+   C) Database
+   D) Route
+   Javob: B
+
+10. @Module() decorator da imports nima?
+    A) Export qilinadigan modullar
+    B) Shu modul ishlatadigan boshqa modullar
+    C) Controller lar
+    D) Service lar
+    Javob: B
+
+11. @Module() decorator da controllers nima?
+    A) Service lar
+    B) Shu modulga tegishli controller lar
+    C) Import lar
+    D) Export lar
+    Javob: B
+
+12. @Module() decorator da providers nima?
+    A) Controller lar
+    B) Shu modulda inject qilinadigan service/provider lar
+    C) Import lar
+    D) Export lar
+    Javob: B
+
+13. @Module() decorator da exports nima?
+    A) Import lar
+    B) Boshqa modullarga ochiq qilinadigan provider lar
+    C) Controller lar
+    D) Routes
+    Javob: B
+
+14. NestJS da Controller nima vazifa bajaradi?
+    A) Database bilan ishlash
+    B) HTTP request larni qabul qilish va response qaytarish
+    C) Business logic
+    D) Validation
+    Javob: B
+
+15. Controller yaratish CLI buyrug'i:
+    A) nest create controller users
+    B) nest generate controller users (yoki nest g co users)
+    C) nest new controller users
+    D) nest add controller users
+    Javob: B
+
+16. @Controller() decorator nima qiladi?
+    A) Service belgilaydi
+    B) Class ni controller sifatida belgilaydi
+    C) Module belgilaydi
+    D) Middleware belgilaydi
+    Javob: B
+
+17. @Controller('users') da 'users' nima?
+    A) Controller nomi
+    B) Route prefix (/users)
+    C) Service nomi
+    D) Module nomi
+    Javob: B
+
+18. @Get() decorator nima?
+    A) POST request
+    B) GET HTTP method uchun handler
+    C) PUT request
+    D) DELETE request
+    Javob: B
+
+19. @Post() decorator nima?
+    A) GET request
+    B) POST HTTP method uchun handler
+    C) PUT request
+    D) DELETE request
+    Javob: B
+
+20. @Put() decorator nima?
+    A) GET request
+    B) PUT HTTP method uchun handler (to'liq yangilash)
+    C) POST request
+    D) PATCH request
+    Javob: B
+
+21. @Patch() decorator nima?
+    A) PUT request
+    B) PATCH HTTP method uchun handler (qisman yangilash)
+    C) POST request
+    D) DELETE request
+    Javob: B
+
+22. @Delete() decorator nima?
+    A) GET request
+    B) DELETE HTTP method uchun handler
+    C) POST request
+    D) PUT request
+    Javob: B
+
+23. @Get(':id') da :id nima?
+    A) Query parameter
+    B) Route parameter (dynamic)
+    C) Body parameter
+    D) Header parameter
+    Javob: B
+
+24. Route parameter ni olish uchun qaysi decorator ishlatiladi?
+    A) @Query()
+    B) @Param()
+    C) @Body()
+    D) @Headers()
+    Javob: B
+
+25. @Param('id') id: string - bu nima?
+    A) Query param
+    B) URL dan id parametrni olish
+    C) Body dan olish
+    D) Header dan olish
+    Javob: B
+
+26. Query parameter ni olish uchun qaysi decorator?
+    A) @Param()
+    B) @Query()
+    C) @Body()
+    D) @Headers()
+    Javob: B
+
+27. @Query('page') page: number - nima oladi?
+    A) URL param
+    B) ?page=1 query string dan
+    C) Body dan
+    D) Header dan
+    Javob: B
+
+28. Request body ni olish uchun qaysi decorator?
+    A) @Param()
+    B) @Body()
+    C) @Query()
+    D) @Headers()
+    Javob: B
+
+29. @Body() createUserDto: CreateUserDto - nima?
+    A) Query param
+    B) Request body ni DTO ga map qilish
+    C) URL param
+    D) Header
+    Javob: B
+
+30. Header olish uchun qaysi decorator?
+    A) @Body()
+    B) @Headers()
+    C) @Query()
+    D) @Param()
+    Javob: B
+
+31. NestJS da Service nima?
+    A) Route handler
+    B) Business logic saqlovchi class (@Injectable)
+    C) Database
+    D) View
+    Javob: B
+
+32. Service yaratish CLI buyrug'i:
+    A) nest create service users
+    B) nest generate service users (yoki nest g s users)
+    C) nest new service users
+    D) nest add service users
+    Javob: B
+
+33. @Injectable() decorator nima qiladi?
+    A) Controller belgilaydi
+    B) Class ni DI container ga qo'shadi (inject qilish mumkin)
+    C) Module belgilaydi
+    D) Guard belgilaydi
+    Javob: B
+
+34. Dependency Injection (DI) nima?
+    A) Manual object yaratish
+    B) Framework tomonidan avtomatik dependency yaratish va inject qilish
+    C) Import qilish
+    D) Export qilish
+    Javob: B
+
+35. Constructor injection misoli:
+    A) this.userService = new UserService()
+    B) constructor(private userService: UserService) {}
+    C) @Inject userService
+    D) userService = inject(UserService)
+    Javob: B
+
+36. NestJS da DTO nima?
+    A) Database Table Object
+    B) Data Transfer Object (ma'lumot tashish uchun class)
+    C) Data Type Object
+    D) Database Transaction Object
+    Javob: B
+
+37. DTO nima uchun ishlatiladi?
+    A) Database schema
+    B) Request/response ma'lumotlarini validatsiya va tipizatsiya
+    C) Routing
+    D) Middleware
+    Javob: B
+
+38. class-validator paketi nima uchun?
+    A) Type checking
+    B) DTO validatsiya (decorator lar bilan)
+    C) Database validation
+    D) Route validation
+    Javob: B
+
+39. @IsString() decorator nima?
+    A) Number tekshiradi
+    B) String turini tekshiradi
+    C) Boolean tekshiradi
+    D) Array tekshiradi
+    Javob: B
+
+40. @IsEmail() decorator nima qiladi?
+    A) Phone tekshiradi
+    B) Email formatini tekshiradi
+    C) URL tekshiradi
+    D) Date tekshiradi
+    Javob: B
+
+41. @IsNotEmpty() decorator:
+    A) Empty bo'lishi kerak
+    B) Bo'sh bo'lmasligi kerak
+    C) Null bo'lishi kerak
+    D) Undefined bo'lishi kerak
+    Javob: B
+
+42. @IsNumber() decorator:
+    A) String tekshiradi
+    B) Number turini tekshiradi
+    C) Boolean tekshiradi
+    D) Object tekshiradi
+    Javob: B
+
+43. @IsOptional() decorator nima?
+    A) Majburiy field
+    B) Field ixtiyoriy (bo'lmasligi mumkin)
+    C) Required field
+    D) Null field
+    Javob: B
+
+44. @Min(0) va @Max(100) decorator lar:
+    A) String length
+    B) Number qiymat chegarasi
+    C) Array length
+    D) Object size
+    Javob: B
+
+45. @Length(3, 20) decorator:
+    A) Number range
+    B) String uzunligi chegarasi
+    C) Array length
+    D) Object size
+    Javob: B
+
+46. ValidationPipe nima?
+    A) Database pipe
+    B) Request body ni DTO ga validatsiya qiluvchi pipe
+    C) Response pipe
+    D) Route pipe
+    Javob: B
+
+47. Global ValidationPipe qo'shish:
+    A) @UseValidation()
+    B) app.useGlobalPipes(new ValidationPipe())
+    C) app.use(ValidationPipe)
+    D) @GlobalPipe()
+    Javob: B
+
+48. class-transformer paketi nima uchun?
+    A) Validation
+    B) Object transformation (plain to class, exclude, ...)
+    C) Database transform
+    D) Route transform
+    Javob: B
+
+49. @Exclude() decorator (class-transformer):
+    A) Include qiladi
+    B) Response dan field ni yashiradi
+    C) Required qiladi
+    D) Validate qiladi
+    Javob: B
+
+50. @Transform() decorator nima?
+    A) Validate
+    B) Qiymatni o'zgartirish (transform)
+    C) Exclude
+    D) Include
+    Javob: B
+
+51. NestJS da Pipe nima?
+    A) Route handler
+    B) Data transformation va validation
+    C) Middleware
+    D) Guard
+    Javob: B
+
+52. Built-in ParseIntPipe nima qiladi?
+    A) String qaytaradi
+    B) String ni number ga parse qiladi
+    C) Number ni string ga
+    D) Boolean parse
+    Javob: B
+
+53. @Param('id', ParseIntPipe) id: number - nima?
+    A) String bo'lib qoladi
+    B) 'id' parameter avtomatik number ga aylanadi
+    C) Validation skip
+    D) Error throw
+    Javob: B
+
+54. ParseUUIDPipe nima?
+    A) Number parse
+    B) UUID formatini tekshiradi va parse qiladi
+    C) String parse
+    D) Date parse
+    Javob: B
+
+55. DefaultValuePipe nima uchun?
+    A) Error throw
+    B) Parametr bo'lmasa default qiymat
+    C) Validation
+    D) Transform
+    Javob: B
+
+56. NestJS da Guard nima?
+    A) Validation
+    B) Request ni ruxsat berish yoki rad etish (authorization)
+    C) Transformation
+    D) Logging
+    Javob: B
+
+57. @UseGuards() decorator nima qiladi?
+    A) Pipe qo'shadi
+    B) Guard ni controller/method ga biriktiradi
+    C) Middleware qo'shadi
+    D) Filter qo'shadi
+    Javob: B
+
+58. CanActivate interface nima?
+    A) Pipe interface
+    B) Guard implement qiladigan interface
+    C) Controller interface
+    D) Service interface
+    Javob: B
+
+59. NestJS da Interceptor nima?
+    A) Guard
+    B) Request/response ni o'zgartirish, logging, caching, ...
+    C) Pipe
+    D) Filter
+    Javob: B
+
+60. @UseInterceptors() decorator:
+    A) Guard qo'shadi
+    B) Interceptor ni biriktiradi
+    C) Pipe qo'shadi
+    D) Filter qo'shadi
+    Javob: B
+
+61. NestJS da Exception Filter nima?
+    A) Validation
+    B) Exception larni catch qilish va custom response
+    C) Guard
+    D) Interceptor
+    Javob: B
+
+62. @Catch() decorator nima?
+    A) Guard yaratadi
+    B) Qaysi exception larni catch qilishni belgilaydi
+    C) Interceptor yaratadi
+    D) Pipe yaratadi
+    Javob: B
+
+63. HttpException class nima?
+    A) Success response
+    B) HTTP error response yaratish uchun base class
+    C) Database exception
+    D) Validation exception
+    Javob: B
+
+64. throw new NotFoundException() nima qaytaradi?
+    A) 200 OK
+    B) 404 Not Found
+    C) 500 Error
+    D) 400 Bad Request
+    Javob: B
+
+65. throw new BadRequestException() nima?
+    A) 404 Not Found
+    B) 400 Bad Request
+    C) 500 Error
+    D) 401 Unauthorized
+    Javob: B
+
+66. throw new UnauthorizedException() nima?
+    A) 400 Bad Request
+    B) 401 Unauthorized
+    C) 403 Forbidden
+    D) 404 Not Found
+    Javob: B
+
+67. throw new ForbiddenException() nima?
+    A) 401 Unauthorized
+    B) 403 Forbidden
+    C) 400 Bad Request
+    D) 404 Not Found
+    Javob: B
+
+68. throw new InternalServerErrorException() nima?
+    A) 400
+    B) 500 Internal Server Error
+    C) 404
+    D) 401
+    Javob: B
+
+69. NestJS da Middleware nima?
+    A) Guard
+    B) Route handler dan oldin ishlaydigan funksiya
+    C) Pipe
+    D) Interceptor
+    Javob: B
+
+70. Middleware qanday implement qilinadi?
+    A) CanActivate
+    B) NestMiddleware interface
+    C) PipeTransform
+    D) ExceptionFilter
+    Javob: B
+
+71. Middleware ni qo'llash (Module da):
+    A) @UseMiddleware()
+    B) configure(consumer: MiddlewareConsumer) method
+    C) @Middleware()
+    D) app.useMiddleware()
+    Javob: B
+
+72. NestJS da default port qaysi?
+    A) 8080
+    B) 3000
+    C) 5000
+    D) 4000
+    Javob: B
+
+73. Port ni o'zgartirish:
+    A) app.port(4000)
+    B) app.listen(4000)
+    C) app.setPort(4000)
+    D) app.use(4000)
+    Javob: B
+
+74. CORS ni yoqish:
+    A) app.use(cors)
+    B) app.enableCors()
+    C) @EnableCors()
+    D) app.cors(true)
+    Javob: B
+
+75. Global prefix qo'shish (masalan /api):
+    A) app.prefix('api')
+    B) app.setGlobalPrefix('api')
+    C) @GlobalPrefix('api')
+    D) app.use('/api')
+    Javob: B
+
+76. NestJS da ConfigModule nima uchun?
+    A) Routing
+    B) Environment variables va configuration
+    C) Database
+    D) Authentication
+    Javob: B
+
+77. @nestjs/config paketi:
+    A) Database config
+    B) Environment va config management
+    C) Route config
+    D) Auth config
+    Javob: B
+
+78. ConfigService nima?
+    A) Database service
+    B) Config qiymatlarini olish uchun service
+    C) Auth service
+    D) Cache service
+    Javob: B
+
+79. configService.get('DATABASE_URL') nima qiladi?
+    A) Database yaratadi
+    B) Environment variable qiymatini oladi
+    C) URL validate qiladi
+    D) Connection ochadi
+    Javob: B
+
+80. .env fayli nima uchun?
+    A) Code saqlash
+    B) Environment variables saqlash
+    C) Database schema
+    D) Routes
+    Javob: B
+
+81. NestJS da @Req() decorator:
+    A) Response object
+    B) Request object (Express/Fastify)
+    C) Query params
+    D) Body
+    Javob: B
+
+82. @Res() decorator:
+    A) Request object
+    B) Response object
+    C) Query params
+    D) Body
+    Javob: B
+
+83. @HttpCode(201) decorator nima?
+    A) Error code
+    B) Response HTTP status code ni belgilash
+    C) Request code
+    D) Error handling
+    Javob: B
+
+84. @Header('Cache-Control', 'none') decorator:
+    A) Request header oladi
+    B) Response header qo'shadi
+    C) Remove header
+    D) Validate header
+    Javob: B
+
+85. @Redirect() decorator nima qiladi?
+    A) Request redirect
+    B) Response ni boshqa URL ga yo'naltiradi
+    C) Error redirect
+    D) Route redirect
+    Javob: B
+
+86. NestJS da async/await ishlaydi?
+    A) Yo'q
+    B) Ha, to'liq qo'llab-quvvatlanadi
+    C) Faqat service da
+    D) Faqat controller da
+    Javob: B
+
+87. @Get() async findAll(): Promise<User[]> - bu nima?
+    A) Sync method
+    B) Async method Promise qaytaradi
+    C) Error method
+    D) Void method
+    Javob: B
+
+88. NestJS da Swagger nima uchun?
+    A) Authentication
+    B) API documentation
+    C) Database
+    D) Caching
+    Javob: B
+
+89. @nestjs/swagger paketi:
+    A) Database
+    B) OpenAPI/Swagger documentation
+    C) Auth
+    D) Cache
+    Javob: B
+
+90. @ApiTags('users') decorator:
+    A) Route tag
+    B) Swagger da API ni guruhlash
+    C) Auth tag
+    D) Cache tag
+    Javob: B
+
+91. @ApiOperation() decorator:
+    A) Database operation
+    B) Endpoint haqida tavsif (Swagger)
+    C) Auth operation
+    D) Cache operation
+    Javob: B
+
+92. @ApiResponse() decorator:
+    A) Request describe
+    B) Response turini dokumentatsiya qilish
+    C) Error describe
+    D) Body describe
+    Javob: B
+
+93. @ApiProperty() decorator (DTO da):
+    A) Route property
+    B) DTO field ni Swagger da ko'rsatish
+    C) Database property
+    D) Auth property
+    Javob: B
+
+94. SwaggerModule.setup('api', app, document):
+    A) Database setup
+    B) Swagger UI ni /api yo'lida sozlash
+    C) Auth setup
+    D) Cache setup
+    Javob: B
+
+95. NestJS project structure da src/ papkasi:
+    A) Build output
+    B) Source code (asosiy kod)
+    C) Config files
+    D) Tests
+    Javob: B
+
+96. main.ts fayli nima?
+    A) Config file
+    B) Application entry point (bootstrap)
+    C) Test file
+    D) Module file
+    Javob: B
+
+97. app.module.ts fayli:
+    A) Controller
+    B) Root module (asosiy modul)
+    C) Service
+    D) Config
+    Javob: B
+
+98. nest build buyrug'i nima qiladi?
+    A) Development run
+    B) Production uchun TypeScript ni compile qiladi
+    C) Test run
+    D) Lint run
+    Javob: B
+
+99. dist/ papkasi nima?
+    A) Source code
+    B) Compiled JavaScript output
+    C) Config files
+    D) Tests
+    Javob: B
+
+100. nest generate resource users nima yaratadi?
+     A) Faqat controller
+     B) CRUD uchun module, controller, service, dto, entity
+     C) Faqat service
+     D) Faqat module
+     Javob: B
+
+===============================================
+                  YAKUNLANDI
+===============================================

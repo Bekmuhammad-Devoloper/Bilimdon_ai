@@ -1,0 +1,706 @@
+NEXTJS - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+===================================================
+
+1. Server Actions nima?
+   A) Client functions
+   B) Server-side functions to'g'ridan-to'g'ri client dan chaqirish
+   C) API routes
+   D) Middleware
+   Javob: B
+
+2. Server Action qanday belgilanadi?
+   A) 'use client'
+   B) 'use server' (function yoki file boshida)
+   C) @server
+   D) export server
+   Javob: B
+
+3. Server Action form bilan ishlatish:
+   A) onSubmit
+   B) <form action={serverAction}>
+   C) onClick
+   D) onAction
+   Javob: B
+
+4. useFormStatus() hook nima?
+   A) Form validation
+   B) Form submission pending holatini bilish
+   C) Form data
+   D) Form errors
+   Javob: B
+
+5. useFormState() hook nima uchun?
+   A) Form pending
+   B) Server Action natijasi bilan state boshqarish
+   C) Form validation
+   D) Form reset
+   Javob: B
+
+6. Server Action da revalidatePath():
+   A) Redirect
+   B) Specific path cache ni invalidate qilish
+   C) Form reset
+   D) Error throw
+   Javob: B
+
+7. Server Action da revalidateTag():
+   A) Path revalidate
+   B) Tag bo'yicha cache invalidate
+   C) Full revalidate
+   D) No revalidate
+   Javob: B
+
+8. Server Action da redirect():
+    A) Return redirect
+    B) Boshqa sahifaga yo'naltirish
+    C) Revalidate
+    D) Error
+    Javob: B
+
+9. Server Action da cookies() API:
+    A) Client cookies
+    B) Server-side cookie o'qish/yozish
+    C) Session
+    D) Storage
+    Javob: B
+
+10. Server Action da headers() API:
+    A) Set headers
+    B) Request headers o'qish
+    C) Response headers
+    D) Cookie headers
+    Javob: B
+
+11. Streaming nima (Next.js)?
+    A) Video streaming
+    B) UI ni qismlarga bo'lib progressively render
+    C) File streaming
+    D) Data streaming
+    Javob: B
+
+12. Suspense component streaming uchun:
+    A) <Loading>
+    B) <Suspense fallback={<Loading />}>
+    C) <Stream>
+    D) <Async>
+    Javob: B
+
+13. loading.js avtomatik Suspense yaratadimi?
+    A) Yo'q
+    B) Ha, segment uchun Suspense boundary
+    C) Manual kerak
+    D) Faqat API uchun
+    Javob: B
+
+14. Partial Prerendering (PPR) nima?
+    A) Full static
+    B) Static shell + streaming dynamic content
+    C) Full dynamic
+    D) ISR
+    Javob: B
+
+15. React Server Components (RSC) payload nima?
+    A) HTML
+    B) Server Component larni client ga uzatish uchun format
+    C) JSON
+    D) JavaScript
+    Javob: B
+
+16. 'use client' boundary nima anglatadi?
+    A) Server only
+    B) Shu component va children lari client bundle ga kiradi
+    C) API boundary
+    D) Layout boundary
+    Javob: B
+
+17. Server Component dan Client Component ga props:
+    A) Function pass mumkin
+    B) Faqat serializable data (no functions, classes)
+    C) Hamma narsa mumkin
+    D) Hech narsa mumkin emas
+    Javob: B
+
+18. Client Component ichida Server Component:
+    A) Direct import
+    B) children prop orqali pass qilish kerak
+    C) Mumkin emas
+    D) Automatic
+    Javob: B
+
+19. Data fetching - Server Component da:
+    A) useEffect
+    B) async/await directly (async function component)
+    C) useSWR
+    D) useState
+    Javob: B
+
+20. fetch() request deduplication:
+    A) Manual kerak
+    B) Avtomatik - bir xil request lar dedupe bo'ladi
+    C) Yo'q
+    D) Plugin kerak
+    Javob: B
+
+21. fetch cache tags qo'shish:
+    A) cache: 'tag'
+    B) next: { tags: ['posts'] }
+    C) tags: ['posts']
+    D) cacheTag: 'posts'
+    Javob: B
+
+22. unstable_cache() nima uchun?
+    A) Fetch cache
+    B) Non-fetch data caching (database queries, ...)
+    C) Component cache
+    D) Route cache
+    Javob: B
+
+23. Next.js caching layers:
+    A) Faqat fetch
+    B) Request Memoization, Data Cache, Full Route Cache, Router Cache
+    C) Faqat router cache
+    D) No cache
+    Javob: B
+
+24. Request Memoization nima?
+    A) Permanent cache
+    B) Bitta render pass da bir xil request larni dedupe
+    C) Browser cache
+    D) CDN cache
+    Javob: B
+
+25. Data Cache nima?
+    A) Request cache
+    B) fetch() natijalarini server da persistent cache
+    C) Router cache
+    D) Browser cache
+    Javob: B
+
+26. Full Route Cache nima?
+    A) Data cache
+    B) Static route larning HTML va RSC payload cache
+    C) Router cache
+    D) API cache
+    Javob: B
+
+27. Router Cache (Client-side):
+    A) Server cache
+    B) Browser da visited route larni cache
+    C) API cache
+    D) Image cache
+    Javob: B
+
+28. Router Cache muddati (static routes):
+    A) 30 seconds
+    B) 5 minutes (default)
+    C) 1 minute
+    D) Forever
+    Javob: B
+
+29. Router Cache muddati (dynamic routes):
+    A) 5 minutes
+    B) 30 seconds (default)
+    C) 1 minute
+    D) Forever
+    Javob: B
+
+30. generateStaticParams() + dynamic route = ?
+    A) Dynamic rendering
+    B) Build vaqtida static HTML generate
+    C) ISR
+    D) SSR
+    Javob: B
+
+31. dynamicParams = false nima?
+    A) All params allowed
+    B) generateStaticParams da yo'q params 404 qaytaradi
+    C) Dynamic rendering
+    D) No params
+    Javob: B
+
+32. Parallel Routes - @modal folder:
+    A) Normal route
+    B) Modal uchun parallel slot
+    C) API route
+    D) Layout
+    Javob: B
+
+33. Parallel Routes da default.js qachon render bo'ladi?
+    A) Har doim
+    B) Hard navigation da slot content yo'q bo'lganda
+    C) Soft navigation da
+    D) Error da
+    Javob: B
+
+34. Intercepting Routes - (.) notation:
+    A) Parent intercept
+    B) Same level intercept
+    C) Root intercept
+    D) Two levels up
+    Javob: B
+
+35. Intercepting Routes - (..) notation:
+    A) Same level
+    B) One level up intercept
+    C) Root
+    D) Two levels
+    Javob: B
+
+36. Intercepting Routes - (...) notation:
+    A) Same level
+    B) Root (app) dan intercept
+    C) One level up
+    D) Two levels up
+    Javob: B
+
+37. Modal pattern (Parallel + Intercepting):
+    A) Normal page
+    B) Soft navigation = modal, hard navigation = full page
+    C) Always modal
+    D) Always page
+    Javob: B
+
+38. Route Handlers da HTTP methods:
+    A) Faqat GET
+    B) GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
+    C) Faqat GET, POST
+    D) Custom methods
+    Javob: B
+
+39. Route Handler da cookies ishlatish:
+    A) document.cookie
+    B) cookies() from 'next/headers'
+    C) request.cookies (read-only)
+    D) A va B ikkalasi
+    Javob: B
+
+40. Route Handler static vs dynamic:
+    A) Har doim dynamic
+    B) GET + no dynamic functions = static, boshqasi dynamic
+    C) Har doim static
+    D) Manual belgilash
+    Javob: B
+
+41. Route Handler da streaming response:
+    A) return Response
+    B) return new Response(ReadableStream, {...})
+    C) return stream()
+    D) yield response
+    Javob: B
+
+42. Edge Runtime nima?
+    A) Node.js runtime
+    B) Lightweight V8-based runtime (Vercel Edge, Cloudflare Workers)
+    C) Browser runtime
+    D) Deno runtime
+    Javob: B
+
+43. export const runtime = 'edge' nima?
+    A) Node.js
+    B) Edge Runtime da run qilish
+    C) Browser
+    D) Worker
+    Javob: B
+
+44. Edge Runtime cheklovlari:
+    A) Cheklov yo'q
+    B) Node.js API lari cheklangan (fs, ...)
+    C) Faqat GET
+    D) No database
+    Javob: B
+
+45. Middleware da runtime:
+    A) Node.js
+    B) Edge Runtime (default)
+    C) Browser
+    D) Worker
+    Javob: B
+
+46. Middleware matcher patterns:
+    A) Regex only
+    B) String yoki array of strings (supports :path*)
+    C) Function
+    D) Object
+    Javob: B
+
+47. Middleware conditional logic:
+    A) matcher only
+    B) matcher + request.nextUrl.pathname check
+    C) Faqat pathname
+    D) Faqat method
+    Javob: B
+
+48. next/headers da cookies():
+    A) Set only
+    B) get(), set(), delete(), has(), ...
+    C) Get only
+    D) Read-only
+    Javob: B
+
+49. next/headers da headers():
+    A) Set headers
+    B) Read-only request headers
+    C) Response headers
+    D) All headers
+    Javob: B
+
+50. NextRequest vs Request:
+    A) Bir xil
+    B) NextRequest - cookies, nextUrl, geo kabi qo'shimcha properties
+    C) Request kengroq
+    D) NextRequest - browser only
+    Javob: B
+
+51. Image component - sizes prop:
+    A) Fixed sizes
+    B) Responsive breakpoints uchun hint
+    C) Max size
+    D) Min size
+    Javob: B
+
+52. Image component - placeholder="blur":
+    A) No placeholder
+    B) Low-quality blur placeholder
+    C) Color placeholder
+    D) Text placeholder
+    Javob: B
+
+53. Image - blurDataURL nima?
+    A) Image URL
+    B) Base64 encoded blur placeholder
+    C) CSS blur
+    D) Filter
+    Javob: B
+
+54. Image - loader prop:
+    A) Built-in loader
+    B) Custom image optimization loader
+    C) Lazy loader
+    D) Preloader
+    Javob: B
+
+55. next/image remote patterns (next.config.js):
+    A) domains only
+    B) remotePatterns - protocol, hostname, port, pathname
+    C) allowedDomains
+    D) imageDomains
+    Javob: B
+
+56. On-demand Revalidation nima?
+    A) Time-based
+    B) Event-based cache invalidation (webhook, form submit, ...)
+    C) Manual cache clear
+    D) Auto revalidate
+    Javob: B
+
+57. revalidatePath('/blog') qayerda ishlatiladi?
+    A) Client component
+    B) Server Action, Route Handler, yoki API
+    C) Middleware
+    D) Layout
+    Javob: B
+
+58. revalidateTag('posts') nima qiladi?
+    A) Path revalidate
+    B) 'posts' tag li barcha cache ni invalidate
+    C) Full revalidate
+    D) No effect
+    Javob: B
+
+59. Next.js da Authentication pattern:
+    A) Built-in auth
+    B) Middleware + NextAuth.js/Clerk/Auth.js
+    C) Only API routes
+    D) Only client
+    Javob: B
+
+60. NextAuth.js (Auth.js) nima?
+    A) Custom auth
+    B) Authentication library for Next.js
+    C) OAuth provider
+    D) JWT library
+    Javob: B
+
+61. Middleware da auth check:
+    A) Database query
+    B) JWT/session token verify, redirect if unauthenticated
+    C) API call
+    D) Client check
+    Javob: B
+
+62. Protected routes pattern:
+    A) Client check only
+    B) Middleware redirect + Server Component check
+    C) API check only
+    D) Layout check only
+    Javob: B
+
+63. next.config.js - experimental features:
+    A) stable
+    B) experimental: { ... } - yangi/test features
+    C) beta
+    D) alpha
+    Javob: B
+
+64. next.config.js - output: 'standalone':
+    A) Normal build
+    B) Self-contained production build (Docker uchun)
+    C) Static export
+    D) Edge build
+    Javob: B
+
+65. next.config.js - output: 'export':
+    A) Dynamic build
+    B) Fully static HTML export
+    C) Edge build
+    D) Standalone build
+    Javob: B
+
+66. Static Export cheklovlari:
+    A) Cheklov yo'q
+    B) Dynamic routes, API routes, middleware cheklangan
+    C) Faqat pages
+    D) Faqat app
+    Javob: B
+
+67. Internationalization (i18n) App Router:
+    A) Built-in config
+    B) Middleware + [locale] segment
+    C) next.config.js i18n
+    D) Plugin
+    Javob: B
+
+68. i18n - locale detection middleware:
+    A) Auto
+    B) Accept-Language header + negotiation
+    C) Manual only
+    D) Cookie only
+    Javob: B
+
+69. [locale]/layout.js pattern:
+    A) Optional locale
+    B) Locale-based routing structure
+    C) Static locale
+    D) No locale
+    Javob: B
+
+70. next-intl yoki next-i18next:
+    A) Official packages
+    B) Community i18n libraries
+    C) Built-in
+    D) Deprecated
+    Javob: B
+
+71. Error boundary (error.js) - reset() function:
+    A) Page reload
+    B) Error boundary ni reset qilish (re-render)
+    C) Clear error
+    D) Redirect
+    Javob: B
+
+72. global-error.js nima?
+    A) Page error
+    B) Root layout error boundary (app level)
+    C) API error
+    D) Build error
+    Javob: B
+
+73. notFound() function nima qiladi?
+    A) Return 404
+    B) not-found.js ni trigger qiladi
+    C) Redirect
+    D) Error throw
+    Javob: B
+
+74. redirect() vs permanentRedirect():
+    A) Bir xil
+    B) redirect = 307, permanentRedirect = 308
+    C) redirect = 308
+    D) permanentRedirect = 307
+    Javob: B
+
+75. useSelectedLayoutSegment():
+    A) Full path
+    B) Active child segment (navigation highlight uchun)
+    C) All segments
+    D) Parent segment
+    Javob: B
+
+76. useSelectedLayoutSegments():
+    A) Single segment
+    B) Barcha active child segments array
+    C) Parent segments
+    D) Root segments
+    Javob: B
+
+77. generateViewport() function:
+    A) Metadata
+    B) Viewport meta tag (mobile responsive)
+    C) Layout
+    D) Theme
+    Javob: B
+
+78. opengraph-image.js convention:
+    A) Static image
+    B) Dynamic OG image generation
+    C) Favicon
+    D) Logo
+    Javob: B
+
+79. sitemap.js/sitemap.xml:
+    A) robots.txt
+    B) Dynamic sitemap generation
+    C) Static only
+    D) Manual only
+    Javob: B
+
+80. robots.js/robots.txt:
+    A) Sitemap
+    B) Search engine crawler rules
+    C) Auth
+    D) Redirect
+    Javob: B
+
+81. manifest.json (PWA):
+    A) package.json
+    B) Web App manifest for PWA
+    C) Build manifest
+    D) Route manifest
+    Javob: B
+
+82. Instrumentation (instrumentation.js):
+    A) Testing
+    B) Server startup code (monitoring, tracing setup)
+    C) Build code
+    D) Client code
+    Javob: B
+
+83. register() function (instrumentation):
+    A) Route register
+    B) Server startup da bir marta run bo'ladigan code
+    C) Component register
+    D) Event register
+    Javob: B
+
+84. OpenTelemetry integration:
+    A) Manual only
+    B) @vercel/otel - automatic instrumentation
+    C) Built-in
+    D) Not supported
+    Javob: B
+
+85. Draft Mode nima?
+    A) Development mode
+    B) Preview/draft content ko'rish (CMS)
+    C) Test mode
+    D) Debug mode
+    Javob: B
+
+86. draftMode().enable() nima qiladi?
+    A) Development enable
+    B) Draft mode cookie set qiladi
+    C) Preview mode
+    D) Test mode
+    Javob: B
+
+87. Content Security Policy (CSP):
+    A) CORS
+    B) XSS prevention headers
+    C) Auth
+    D) Rate limiting
+    Javob: B
+
+88. nonce (CSP):
+    A) Static value
+    B) Unique per-request token for inline scripts
+    C) Session token
+    D) CSRF token
+    Javob: B
+
+89. next/third-parties:
+    A) NPM packages
+    B) Optimized third-party script loading (GA, GTM, ...)
+    C) API clients
+    D) UI libraries
+    Javob: B
+
+90. GoogleAnalytics component:
+    A) Manual script
+    B) Optimized GA loading from next/third-parties
+    C) GTM
+    D) Custom analytics
+    Javob: B
+
+91. Turbopack nima?
+    A) Bundler
+    B) Rust-based bundler (Webpack successor)
+    C) Compiler
+    D) Minifier
+    Javob: B
+
+92. next dev --turbo:
+    A) Normal dev
+    B) Turbopack bilan development
+    C) Production
+    D) Debug
+    Javob: B
+
+93. Server-only package:
+    A) Client utilities
+    B) Server-only code ni client dan himoyalash
+    C) API utilities
+    D) Database utilities
+    Javob: B
+
+94. import 'server-only' nima qiladi?
+    A) Export server
+    B) Client import da build error
+    C) Server export
+    D) API import
+    Javob: B
+
+95. client-only package:
+    A) Server utilities
+    B) Client-only code ni server dan himoyalash
+    C) Browser utilities
+    D) DOM utilities
+    Javob: B
+
+96. Composition patterns - props drilling:
+    A) Good pattern
+    B) Children/slots orqali o'rniga context yoki composition
+    C) Required pattern
+    D) Best pattern
+    Javob: B
+
+97. Context Providers (App Router):
+    A) Server Component da
+    B) Client Component wrapper da (providers.tsx)
+    C) Layout da direct
+    D) Page da
+    Javob: B
+
+98. Zustand/Jotai Server Components bilan:
+    A) Direct usage
+    B) Client Component wrapper kerak
+    C) Server state
+    D) Built-in support
+    Javob: B
+
+99. taint API (experimental):
+    A) Styling
+    B) Sensitive data client ga leak bo'lishini oldini olish
+    C) Validation
+    D) Caching
+    Javob: B
+
+100. Next.js 14+ default (App Router):
+     A) Pages Router
+     B) App Router (recommended)
+     C) Both equal
+     D) Custom router
+     Javob: B
+
+===================================================
+                     YAKUNLANDI
+===================================================

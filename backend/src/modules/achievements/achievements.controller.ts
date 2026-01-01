@@ -1,6 +1,7 @@
 import {
   Controller,
   Get,
+  Post,
   UseGuards,
   Req,
 } from '@nestjs/common';
@@ -34,5 +35,19 @@ export class AchievementsController {
   @ApiResponse({ status: 200, description: 'Foydalanuvchi yutuqlari' })
   async getMyAchievements(@Req() req: any) {
     return this.achievementsService.getUserAchievements(req.user.id);
+  }
+
+  @Post('check')
+  @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Yutuqlarni tekshirish va yangilash' })
+  @ApiResponse({ status: 200, description: 'Yangi olingan yutuqlar' })
+  async checkMyAchievements(@Req() req: any) {
+    const newAchievements = await this.achievementsService.checkAchievements(req.user.id);
+    return {
+      message: 'Yutuqlar tekshirildi',
+      newAchievements,
+      newCount: newAchievements.length,
+    };
   }
 }

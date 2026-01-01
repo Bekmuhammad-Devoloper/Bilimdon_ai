@@ -1,0 +1,706 @@
+NODEJS - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+==============================================
+
+1. Node.js nima?
+   A) Browser JavaScript
+   B) Server-side JavaScript runtime (V8 engine asosida)
+   C) Database
+   D) Framework
+   Javob: B
+
+2. Node.js qaysi JavaScript engine da ishlaydi?
+   A) SpiderMonkey
+   B) V8 (Google Chrome)
+   C) JavaScriptCore
+   D) Chakra
+   Javob: B
+
+3. Node.js kim tomonidan yaratilgan?
+   A) Brendan Eich
+   B) Ryan Dahl
+   C) Mark Zuckerberg
+   D) Linus Torvalds
+   Javob: B
+
+4. Node.js qachon yaratilgan?
+   A) 2005
+   B) 2009
+   C) 2012
+   D) 2015
+   Javob: B
+
+5. Node.js ning asosiy xususiyati:
+   A) Multi-threaded
+   B) Single-threaded, event-driven, non-blocking I/O
+   C) Synchronous
+   D) Blocking I/O
+   Javob: B
+
+6. Node.js versiyasini tekshirish:
+   A) node -v yoki node --version
+   B) node version
+   C) node -ver
+   D) node check
+   Javob: A
+
+7. npm nima?
+   A) Node Package Manager
+   B) New Package Manager
+   C) Node Program Manager
+   D) Network Package Manager
+   Javob: A
+
+8. npm versiyasini tekshirish:
+   A) npm version
+   B) npm -v yoki npm --version
+   C) npm -ver
+   D) npm check
+   Javob: B
+
+9. Node.js REPL nima?
+   A) Framework
+   B) Read-Eval-Print Loop (interactive shell)
+   C) Package manager
+   D) Debugger
+   Javob: B
+
+10. REPL ni ishga tushirish:
+    A) node start
+    B) node (terminal da)
+    C) node repl
+    D) npm repl
+    Javob: B
+
+11. JavaScript faylni Node.js da ishga tushirish:
+    A) run app.js
+    B) node app.js
+    C) npm app.js
+    D) start app.js
+    Javob: B
+
+12. package.json fayli nima?
+    A) JavaScript code
+    B) Project metadata va dependencies
+    C) Config file
+    D) Log file
+    Javob: B
+
+13. package.json yaratish buyrug'i:
+    A) npm create
+    B) npm init
+    C) npm new
+    D) npm start
+    Javob: B
+
+14. npm init -y nima qiladi?
+    A) Error beradi
+    B) Default qiymatlar bilan package.json yaratadi
+    C) Package o'rnatadi
+    D) Project o'chiradi
+    Javob: B
+
+15. Package o'rnatish buyrug'i:
+    A) npm add express
+    B) npm install express (yoki npm i express)
+    C) npm get express
+    D) npm download express
+    Javob: B
+
+16. Package ni devDependencies ga o'rnatish:
+    A) npm install lodash
+    B) npm install lodash --save-dev (yoki -D)
+    C) npm install lodash --dev
+    D) npm install lodash -d
+    Javob: B
+
+17. dependencies vs devDependencies:
+    A) Bir xil
+    B) dependencies - production, devDependencies - development only
+    C) devDependencies - production
+    D) dependencies - development
+    Javob: B
+
+18. Global package o'rnatish:
+    A) npm install -g nodemon
+    B) npm install nodemon --global
+    C) A va B ikkalasi
+    D) npm global install nodemon
+    Javob: C
+
+19. node_modules papkasi nima?
+    A) Source code
+    B) O'rnatilgan packages saqlangan papka
+    C) Config files
+    D) Log files
+    Javob: B
+
+20. package-lock.json nima?
+    A) Config file
+    B) Exact dependency versions (reproducible builds)
+    C) Source code
+    D) Log file
+    Javob: B
+
+21. Barcha dependencies ni o'rnatish:
+    A) npm install all
+    B) npm install (package.json dan)
+    C) npm get all
+    D) npm download
+    Javob: B
+
+22. Package o'chirish:
+    A) npm delete express
+    B) npm uninstall express (yoki npm remove, npm rm)
+    C) npm remove express
+    D) B va C ikkalasi
+    Javob: D
+
+23. O'rnatilgan packages ro'yxati:
+    A) npm show
+    B) npm list (yoki npm ls)
+    C) npm packages
+    D) npm view
+    Javob: B
+
+24. npm scripts nima?
+    A) JavaScript files
+    B) package.json da custom commands
+    C) Shell scripts
+    D) Config scripts
+    Javob: B
+
+25. npm run start nima qiladi?
+    A) Node.js o'rnatadi
+    B) package.json dagi "start" script ni ishga tushiradi
+    C) Package o'rnatadi
+    D) Server to'xtatadi
+    Javob: B
+
+26. require() funksiyasi nima qiladi?
+    A) Export qiladi
+    B) Module ni import qiladi (CommonJS)
+    C) File yaratadi
+    D) Package o'rnatadi
+    Javob: B
+
+27. module.exports nima?
+    A) Import qiladi
+    B) Module dan export qilish (CommonJS)
+    C) File o'qiydi
+    D) Package yaratadi
+    Javob: B
+
+28. CommonJS import misoli:
+    A) import fs from 'fs'
+    B) const fs = require('fs')
+    C) include fs
+    D) load fs
+    Javob: B
+
+29. ES Modules import (Node.js 14+):
+    A) require('fs')
+    B) import fs from 'fs'
+    C) include fs
+    D) load fs
+    Javob: B
+
+30. ES Modules ishlatish uchun package.json da:
+    A) "module": true
+    B) "type": "module"
+    C) "esm": true
+    D) "import": true
+    Javob: B
+
+31. Built-in module nima?
+    A) npm dan o'rnatilgan
+    B) Node.js bilan birga kelgan module (fs, http, path, ...)
+    C) Custom module
+    D) Third-party module
+    Javob: B
+
+32. fs module nima uchun?
+    A) HTTP server
+    B) File System - fayllar bilan ishlash
+    C) Path operations
+    D) URL parsing
+    Javob: B
+
+33. fs.readFile() nima qiladi?
+    A) File yozadi
+    B) File ni async o'qiydi
+    C) File o'chiradi
+    D) File yaratadi
+    Javob: B
+
+34. fs.readFileSync() nima?
+    A) Async read
+    B) Sync (blocking) file o'qish
+    C) Write file
+    D) Delete file
+    Javob: B
+
+35. fs.writeFile() nima qiladi?
+    A) File o'qiydi
+    B) File ga async yozadi
+    C) File o'chiradi
+    D) File nomini o'zgartiradi
+    Javob: B
+
+36. fs.appendFile() nima?
+    A) Overwrite
+    B) File oxiriga qo'shadi (append)
+    C) Delete
+    D) Read
+    Javob: B
+
+37. fs.unlink() nima qiladi?
+    A) File yaratadi
+    B) File ni o'chiradi
+    C) File o'qiydi
+    D) Link yaratadi
+    Javob: B
+
+38. fs.mkdir() nima?
+    A) File yaratadi
+    B) Directory (papka) yaratadi
+    C) File o'chiradi
+    D) Directory o'chiradi
+    Javob: B
+
+39. fs.readdir() nima qiladi?
+    A) File o'qiydi
+    B) Directory ichidagi fayllar ro'yxatini o'qiydi
+    C) Directory yaratadi
+    D) Directory o'chiradi
+    Javob: B
+
+40. path module nima uchun?
+    A) File read
+    B) File path operations (join, resolve, basename, ...)
+    C) HTTP
+    D) URL
+    Javob: B
+
+41. path.join() nima qiladi?
+    A) String join
+    B) Path segmentlarni birlashtiradi
+    C) Array join
+    D) Object join
+    Javob: B
+
+42. path.resolve() nima?
+    A) Relative path
+    B) Absolute path qaytaradi
+    C) Path split
+    D) Path check
+    Javob: B
+
+43. path.basename('/home/user/file.txt'):
+    A) '/home/user'
+    B) 'file.txt'
+    C) '/home/user/file.txt'
+    D) '.txt'
+    Javob: B
+
+44. path.extname('file.txt'):
+    A) 'file'
+    B) '.txt'
+    C) 'txt'
+    D) 'file.txt'
+    Javob: B
+
+45. path.dirname('/home/user/file.txt'):
+    A) 'file.txt'
+    B) '/home/user'
+    C) '/home'
+    D) 'user'
+    Javob: B
+
+46. __dirname nima?
+    A) File name
+    B) Current file ning directory path i
+    C) Root directory
+    D) Home directory
+    Javob: B
+
+47. __filename nima?
+    A) Directory path
+    B) Current file ning to'liq path i
+    C) File name only
+    D) Extension
+    Javob: B
+
+48. http module nima uchun?
+    A) File system
+    B) HTTP server va client yaratish
+    C) Path operations
+    D) URL parsing
+    Javob: B
+
+49. http.createServer() nima qaytaradi?
+    A) Response
+    B) HTTP Server instance
+    C) Request
+    D) URL
+    Javob: B
+
+50. server.listen(3000) nima qiladi?
+    A) Server to'xtatadi
+    B) Server ni 3000 port da tinglashni boshlaydi
+    C) Port o'zgartiradi
+    D) Server yaratadi
+    Javob: B
+
+51. Callback function nima?
+    A) Sync function
+    B) Boshqa function ga argument sifatida beriladigan function
+    C) Arrow function
+    D) Constructor function
+    Javob: B
+
+52. Node.js da callback pattern:
+    A) (result, error)
+    B) (error, result) - error-first callback
+    C) (error)
+    D) (result)
+    Javob: B
+
+53. Callback hell nima?
+    A) Fast code
+    B) Nested callbacks - o'qish qiyin code
+    C) Clean code
+    D) Sync code
+    Javob: B
+
+54. Promise nima?
+    A) Sync operation
+    B) Async operation natijasini ifodalovchi object
+    C) Callback
+    D) Event
+    Javob: B
+
+55. Promise states:
+    A) success, failure
+    B) pending, fulfilled, rejected
+    C) start, end
+    D) open, closed
+    Javob: B
+
+56. promise.then() nima?
+    A) Error handler
+    B) Fulfilled bo'lganda ishlaydigan callback
+    C) Reject handler
+    D) Finally handler
+    Javob: B
+
+57. promise.catch() nima?
+    A) Success handler
+    B) Rejected bo'lganda ishlaydigan callback
+    C) Finally handler
+    D) Then handler
+    Javob: B
+
+58. promise.finally() nima?
+    A) Success only
+    B) Har qanday holatda (success/error) ishlaydigan callback
+    C) Error only
+    D) Pending only
+    Javob: B
+
+59. async/await nima?
+    A) Callback pattern
+    B) Promise lar bilan ishlashning sodda usuli
+    C) Sync code
+    D) Event pattern
+    Javob: B
+
+60. async function ichida await nima qiladi?
+    A) Function to'xtatadi
+    B) Promise resolve bo'lguncha kutadi
+    C) Error throw
+    D) Return qiladi
+    Javob: B
+
+61. try/catch async/await bilan:
+    A) Kerak emas
+    B) Error handling uchun ishlatiladi
+    C) Promise.catch
+    D) Callback error
+    Javob: B
+
+62. process object nima?
+    A) File object
+    B) Global object - current Node.js process haqida
+    C) HTTP object
+    D) Event object
+    Javob: B
+
+63. process.env nima?
+    A) Error object
+    B) Environment variables
+    C) Event object
+    D) Process ID
+    Javob: B
+
+64. process.argv nima?
+    A) Environment
+    B) Command line arguments array
+    C) Process ID
+    D) Current directory
+    Javob: B
+
+65. process.cwd() nima qaytaradi?
+    A) File name
+    B) Current working directory
+    C) Home directory
+    D) Root directory
+    Javob: B
+
+66. process.exit() nima qiladi?
+    A) Restart
+    B) Process ni to'xtatadi
+    C) Pause
+    D) Continue
+    Javob: B
+
+67. process.exit(0) vs process.exit(1):
+    A) Bir xil
+    B) 0 - success, 1 - error
+    C) 0 - error, 1 - success
+    D) Random
+    Javob: B
+
+68. console.log() nima?
+    A) File ga yozadi
+    B) stdout ga chiqaradi
+    C) Error chiqaradi
+    D) File o'qiydi
+    Javob: B
+
+69. console.error() nima?
+    A) stdout ga
+    B) stderr ga chiqaradi
+    C) File ga
+    D) Ignore
+    Javob: B
+
+70. console.table() nima qiladi?
+    A) Simple log
+    B) Array/Object ni table formatda ko'rsatadi
+    C) Error log
+    D) Warning log
+    Javob: B
+
+71. console.time() va console.timeEnd():
+    A) Date log
+    B) Code execution vaqtini o'lchash
+    C) Timer set
+    D) Delay
+    Javob: B
+
+72. setTimeout() nima qiladi?
+    A) Immediately run
+    B) Belgilangan vaqtdan keyin function chaqiradi
+    C) Interval set
+    D) Clear timer
+    Javob: B
+
+73. setInterval() nima?
+    A) One time
+    B) Har belgilangan vaqtda function chaqiradi
+    C) Clear interval
+    D) Timeout
+    Javob: B
+
+74. clearTimeout() nima qiladi?
+    A) Set timeout
+    B) setTimeout ni bekor qiladi
+    C) Clear interval
+    D) Stop server
+    Javob: B
+
+75. clearInterval() nima?
+    A) Set interval
+    B) setInterval ni bekor qiladi
+    C) Clear timeout
+    D) Stop server
+    Javob: B
+
+76. setImmediate() nima?
+    A) Sync run
+    B) Current event loop iteration oxirida run
+    C) Next tick
+    D) Timeout
+    Javob: B
+
+77. process.nextTick() nima?
+    A) setImmediate bilan bir xil
+    B) Current operation tugagach, event loop dan oldin run
+    C) setTimeout(0)
+    D) setInterval
+    Javob: B
+
+78. Buffer nima?
+    A) String
+    B) Binary data bilan ishlash uchun class
+    C) Array
+    D) Object
+    Javob: B
+
+79. Buffer.from('hello') nima qaytaradi?
+    A) String
+    B) Buffer object (binary representation)
+    C) Array
+    D) Number
+    Javob: B
+
+80. buffer.toString() nima qiladi?
+    A) Binary qaytaradi
+    B) Buffer ni string ga convert qiladi
+    C) JSON qaytaradi
+    D) Number qaytaradi
+    Javob: B
+
+81. JSON.parse() nima?
+    A) Object to string
+    B) JSON string ni JavaScript object ga
+    C) String to array
+    D) Array to string
+    Javob: B
+
+82. JSON.stringify() nima?
+    A) String to object
+    B) JavaScript object ni JSON string ga
+    C) Array to object
+    D) Object to array
+    Javob: B
+
+83. url module nima uchun?
+    A) File system
+    B) URL parsing va formatting
+    C) HTTP server
+    D) Path operations
+    Javob: B
+
+84. new URL('https://example.com/path?q=1'):
+    A) String
+    B) URL object (hostname, pathname, searchParams, ...)
+    C) HTTP request
+    D) Path object
+    Javob: B
+
+85. url.searchParams.get('q') nima?
+    A) Set param
+    B) Query parameter qiymatini olish
+    C) Delete param
+    D) Check param
+    Javob: B
+
+86. os module nima uchun?
+    A) File system
+    B) Operating system ma'lumotlari
+    C) HTTP
+    D) URL
+    Javob: B
+
+87. os.platform() nima qaytaradi?
+    A) CPU info
+    B) OS platform ('linux', 'darwin', 'win32')
+    C) Memory info
+    D) User info
+    Javob: B
+
+88. os.cpus() nima?
+    A) OS platform
+    B) CPU cores haqida ma'lumot
+    C) Memory
+    D) Disk
+    Javob: B
+
+89. os.totalmem() va os.freemem():
+    A) CPU info
+    B) Total va free memory (bytes)
+    C) Disk info
+    D) Network info
+    Javob: B
+
+90. os.homedir() nima?
+    A) Current dir
+    B) User home directory
+    C) Root dir
+    D) Temp dir
+    Javob: B
+
+91. events module nima uchun?
+    A) File events
+    B) Event-driven programming (EventEmitter)
+    C) HTTP events
+    D) Timer events
+    Javob: B
+
+92. EventEmitter class nima?
+    A) HTTP class
+    B) Custom events yaratish va handle qilish
+    C) File class
+    D) Buffer class
+    Javob: B
+
+93. emitter.on('event', callback) nima?
+    A) Emit event
+    B) Event listener qo'shish
+    C) Remove listener
+    D) Once listener
+    Javob: B
+
+94. emitter.emit('event', data) nima?
+    A) Add listener
+    B) Event ni trigger qilish
+    C) Remove listener
+    D) Check listener
+    Javob: B
+
+95. emitter.once('event', callback) nima?
+    A) Multiple times
+    B) Faqat bir marta ishlaydigan listener
+    C) Remove listener
+    D) Emit event
+    Javob: B
+
+96. emitter.removeListener() nima?
+    A) Add listener
+    B) Listener ni olib tashlash
+    C) Emit event
+    D) Clear all
+    Javob: B
+
+97. crypto module nima uchun?
+    A) File encryption
+    B) Cryptographic functions (hash, cipher, ...)
+    C) HTTP security
+    D) Password manager
+    Javob: B
+
+98. crypto.createHash('sha256') nima?
+    A) Random number
+    B) SHA256 hash object yaratadi
+    C) Encrypt data
+    D) Decrypt data
+    Javob: B
+
+99. util module nima uchun?
+    A) HTTP utilities
+    B) Utility functions (promisify, format, ...)
+    C) File utilities
+    D) Math utilities
+    Javob: B
+
+100. util.promisify() nima qiladi?
+     A) Promise to callback
+     B) Callback-based function ni Promise-based ga aylantiradi
+     C) Async to sync
+     D) Sync to async
+     Javob: B
+
+==============================================
+                  YAKUNLANDI
+==============================================

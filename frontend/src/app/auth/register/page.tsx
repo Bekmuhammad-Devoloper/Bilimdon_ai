@@ -177,6 +177,7 @@ export default function RegisterPage() {
         username: formData.username,
         password: formData.password,
         fullName: formData.fullName,
+        telegramPhone: telegramPhone || undefined,
       });
 
       login(response.data.user, response.data.token);
@@ -447,52 +448,206 @@ export default function RegisterPage() {
                 exit={{ opacity: 0, x: -20 }}
                 className="text-center"
               >
-                <div className="mx-auto h-20 w-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg">
-                  <Mail className="h-10 w-10 text-white" />
-                </div>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                  Email Tasdiqlash
-                </h2>
-                <p className="text-gray-600 dark:text-gray-400 mb-8">
-                  <span className="font-medium">{email}</span> manziliga yuborilgan 6 raqamli kodni kiriting
-                </p>
-
-                <div className="flex justify-center gap-2 mb-6">
-                  {verificationCode.map((digit, index) => (
-                    <input
-                      key={index}
-                      id={`code-${index}`}
-                      type="text"
-                      inputMode="numeric"
-                      maxLength={1}
-                      value={digit}
-                      onChange={(e) => handleCodeInput(index, e.target.value.replace(/\D/g, ''))}
-                      onKeyDown={(e) => handleKeyDown(index, e)}
-                      className="w-12 h-14 text-center text-2xl font-bold border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white transition-all"
-                    />
-                  ))}
-                </div>
-
-                <div className="flex flex-col gap-3">
-                  {countdown > 0 ? (
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Qayta yuborish: {countdown} soniya
-                    </p>
-                  ) : (
-                    <button
-                      onClick={() => sendVerificationCode(email)}
-                      className="text-sm text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 font-medium"
+                {/* Animated Icon */}
+                <motion.div 
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 200, delay: 0.1 }}
+                  className="relative mx-auto mb-6"
+                >
+                  <div className="h-24 w-24 mx-auto bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600 rounded-3xl flex items-center justify-center shadow-2xl shadow-green-500/30">
+                    <motion.div
+                      animate={{ 
+                        rotateY: [0, 10, -10, 0],
+                      }}
+                      transition={{ 
+                        duration: 2, 
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
                     >
-                      Kodni qayta yuborish
-                    </button>
-                  )}
-                </div>
-
-                {isLoading && (
-                  <div className="mt-4 flex justify-center">
-                    <Loader2 className="animate-spin h-6 w-6 text-indigo-600" />
+                      <Mail className="h-12 w-12 text-white" />
+                    </motion.div>
                   </div>
+                  {/* Decorative rings */}
+                  <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full blur-xl -z-10" />
+                  <motion.div 
+                    animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.2, 0.5] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="absolute -inset-2 border-2 border-green-400/30 rounded-3xl"
+                  />
+                </motion.div>
+
+                <motion.h2 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                  className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-2"
+                >
+                  ✨ Email Tasdiqlash
+                </motion.h2>
+                
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="mb-8"
+                >
+                  <p className="text-gray-500 dark:text-gray-400 mb-2">
+                    6 raqamli tasdiqlash kodi yuborildi
+                  </p>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-full border border-indigo-200 dark:border-indigo-700">
+                    <Mail className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+                    <span className="font-semibold text-indigo-700 dark:text-indigo-300">{email}</span>
+                  </div>
+                </motion.div>
+
+                {/* Premium OTP Input */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="mb-8"
+                >
+                  <div className="flex justify-center gap-3">
+                    {verificationCode.map((digit, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4 + index * 0.05 }}
+                        className="relative group"
+                      >
+                        <input
+                          id={`code-${index}`}
+                          type="text"
+                          inputMode="numeric"
+                          maxLength={1}
+                          value={digit}
+                          onChange={(e) => handleCodeInput(index, e.target.value.replace(/\D/g, ''))}
+                          onKeyDown={(e) => handleKeyDown(index, e)}
+                          aria-label={`Kod raqami ${index + 1}`}
+                          className={`
+                            w-14 h-16 text-center text-2xl font-bold 
+                            bg-white dark:bg-gray-800 
+                            border-2 rounded-2xl
+                            transition-all duration-300 ease-out
+                            outline-none
+                            ${digit 
+                              ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 shadow-lg shadow-emerald-500/20' 
+                              : 'border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white hover:border-indigo-400 dark:hover:border-indigo-500'
+                            }
+                            focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 dark:focus:ring-indigo-500/30
+                            focus:scale-110 focus:shadow-xl
+                          `}
+                        />
+                        {/* Glow effect on focus */}
+                        <div className={`absolute inset-0 rounded-2xl transition-opacity duration-300 pointer-events-none ${digit ? 'opacity-100' : 'opacity-0'}`}>
+                          <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent rounded-2xl" />
+                        </div>
+                        {/* Number indicator */}
+                        <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[10px] text-gray-400 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                          {index + 1}
+                        </span>
+                      </motion.div>
+                    ))}
+                  </div>
+                  
+                  {/* Progress dots */}
+                  <div className="flex justify-center gap-1.5 mt-6">
+                    {verificationCode.map((digit, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ delay: 0.6 + index * 0.05 }}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          digit 
+                            ? 'bg-emerald-500 scale-125' 
+                            : 'bg-gray-300 dark:bg-gray-600'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* Resend Section */}
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.6 }}
+                  className="space-y-4"
+                >
+                  {countdown > 0 ? (
+                    <div className="inline-flex items-center gap-3 px-5 py-3 bg-gray-100 dark:bg-gray-800 rounded-2xl">
+                      <div className="relative">
+                        <svg className="w-10 h-10 transform -rotate-90">
+                          <circle
+                            cx="20" cy="20" r="16"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="3"
+                            className="text-gray-300 dark:text-gray-600"
+                          />
+                          <circle
+                            cx="20" cy="20" r="16"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="3"
+                            strokeDasharray={100}
+                            strokeDashoffset={100 - (countdown / 60) * 100}
+                            strokeLinecap="round"
+                            className="text-indigo-600 dark:text-indigo-400 transition-all duration-1000"
+                          />
+                        </svg>
+                        <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-700 dark:text-gray-300">
+                          {countdown}
+                        </span>
+                      </div>
+                      <div className="text-left">
+                        <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Qayta yuborish</p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400">{countdown} soniya kutib turing</p>
+                      </div>
+                    </div>
+                  ) : (
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => sendVerificationCode(email)}
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium rounded-2xl shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/40 transition-all"
+                    >
+                      <Send className="h-4 w-4" />
+                      Kodni qayta yuborish
+                    </motion.button>
+                  )}
+                </motion.div>
+
+                {/* Loading State */}
+                {isLoading && (
+                  <motion.div 
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="mt-6 flex flex-col items-center gap-3"
+                  >
+                    <div className="relative">
+                      <Loader2 className="animate-spin h-8 w-8 text-indigo-600" />
+                      <div className="absolute inset-0 blur-lg bg-indigo-500/30 animate-pulse" />
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 animate-pulse">
+                      Tekshirilmoqda...
+                    </p>
+                  </motion.div>
                 )}
+
+                {/* Help text */}
+                <motion.p 
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.8 }}
+                  className="mt-6 text-xs text-gray-400 dark:text-gray-500"
+                >
+                  📬 Spam papkasini ham tekshirib ko'ring
+                </motion.p>
               </motion.div>
             )}
 
@@ -522,12 +677,29 @@ export default function RegisterPage() {
                     </div>
                     <input
                       type="tel"
-                      value={telegramPhone}
-                      onChange={(e) => setTelegramPhone(e.target.value.replace(/\D/g, ''))}
+                      value={telegramPhone.startsWith('+') ? telegramPhone : (telegramPhone ? `+${telegramPhone}` : '')}
+                      onChange={(e) => {
+                        const val = e.target.value.replace(/[^\d+]/g, '');
+                        setTelegramPhone(val.startsWith('+') ? val : val);
+                      }}
                       className="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"
                       placeholder="+998901234567"
                     />
                   </div>
+
+                  {/* Kiritilgan raqam */}
+                  {telegramPhone && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-3"
+                    >
+                      <p className="text-green-700 dark:text-green-400 text-sm flex items-center gap-2">
+                        <span>✅</span> 
+                        Kiritilgan raqam: <strong>{telegramPhone.startsWith('+') ? telegramPhone : `+${telegramPhone}`}</strong>
+                      </p>
+                    </motion.div>
+                  )}
 
                   <div className="flex gap-3">
                     <button

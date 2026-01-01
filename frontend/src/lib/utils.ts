@@ -42,8 +42,14 @@ export function calculateLevelProgress(xp: number): { current: number; required:
 }
 
 // Format date
-export function formatDate(date: Date | string): string {
+export function formatDate(date: Date | string | null | undefined): string {
+  if (!date) return '';
+  
   const d = new Date(date);
+  
+  // Invalid date check
+  if (isNaN(d.getTime())) return '';
+  
   return d.toLocaleDateString('uz-UZ', {
     year: 'numeric',
     month: 'long',

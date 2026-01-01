@@ -1,0 +1,702 @@
+TAILWIND CSS - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+======================================================
+
+1. JIT (Just-In-Time) mode?
+   A) Build time only
+   B) Generate styles on-demand during development
+   C) No generation
+   D) Manual styles
+   Javob: B
+
+2. content configuration purpose?
+   A) No purpose
+   B) Define files to scan for class usage
+   C) Style content
+   D) HTML content
+   Javob: B
+
+3. Arbitrary value syntax [value]?
+   A) Predefined only
+   B) Use any value with bracket notation
+   C) No arbitrary
+   D) Config only
+   Javob: B
+
+4. Arbitrary properties [property:value]?
+   A) No custom
+   B) Any CSS property with bracket notation
+   C) Predefined props
+   D) No bracket
+   Javob: B
+
+5. Important modifier (!)?
+   A) No modifier
+   B) !class for !important
+   C) Important auto
+   D) Config only
+   Javob: B
+
+6. important selector configuration?
+   A) No config
+   B) Prefix all utilities with selector
+   C) All important
+   D) No prefix
+   Javob: B
+
+7. prefix configuration?
+   A) No prefix
+   B) Add prefix to all utility classes
+   C) Suffix
+   D) No config
+   Javob: B
+
+8. separator configuration?
+   A) Colon default
+   B) Change variant separator character
+   C) No separator
+   D) Fixed
+   Javob: B
+
+9. corePlugins configuration?
+   A) All enabled
+   B) Enable/disable specific utilities
+   C) No disable
+   D) Plugin only
+   Javob: B
+
+10. theme.extend vs theme?
+    A) Same
+    B) extend=add, theme=replace defaults
+    C) theme=add
+    D) No difference
+    Javob: B
+
+11. DEFAULT key in config?
+    A) No default
+    B) Value without suffix (e.g., rounded)
+    C) Required suffix
+    D) Auto suffix
+    Javob: B
+
+12. screens breakpoints?
+    A) Fixed
+    B) Define responsive breakpoints
+    C) No breakpoints
+    D) Auto detect
+    Javob: B
+
+13. min-width vs max-width breakpoints?
+    A) Same
+    B) Tailwind uses min-width (mobile-first)
+    C) max-width default
+    D) No difference
+    Javob: B
+
+14. Custom breakpoint with max?
+    A) Min only
+    B) raw for complex media queries
+    C) No max
+    D) Auto max
+    Javob: B
+
+15. colors configuration?
+    A) Fixed colors
+    B) Define custom color palette
+    C) No custom
+    D) CSS variables only
+    Javob: B
+
+16. Color opacity modifier?
+    A) No opacity
+    B) bg-red-500/50 for 50% opacity
+    C) Separate class
+    D) No modifier
+    Javob: B
+
+17. spacing scale?
+    A) Pixel only
+    B) rem-based scale (0.25rem increments)
+    C) No scale
+    D) Percentage
+    Javob: B
+
+18. Negative values?
+    A) No negative
+    B) -m-4 for negative margin
+    C) Positive only
+    D) Config required
+    Javob: B
+
+19. container configuration?
+    A) Fixed
+    B) center, padding, screens options
+    C) No center
+    D) No config
+    Javob: B
+
+20. fontSize with line-height?
+    A) Separate classes
+    B) text-xl includes default line-height
+    C) No line-height
+    D) Manual only
+    Javob: B
+
+21. fontSize tuple configuration?
+    A) Single value
+    B) ['size', { lineHeight, letterSpacing }]
+    C) No tuple
+    D) Object only
+    Javob: B
+
+22. fontFamily fallback stack?
+    A) Single font
+    B) Array of font families
+    C) No fallback
+    D) Auto fallback
+    Javob: B
+
+23. Custom font with @font-face?
+    A) CDN only
+    B) Use in fontFamily config
+    C) No custom
+    D) Inline style
+    Javob: B
+
+24. animation configuration?
+    A) No config
+    B) Custom keyframes and animation utilities
+    C) Predefined only
+    D) CSS only
+    Javob: B
+
+25. keyframes in config?
+    A) CSS file
+    B) Define animations in tailwind.config
+    C) No keyframes
+    D) Inline only
+    Javob: B
+
+26. transitionProperty customization?
+    A) Fixed
+    B) Define which properties transition
+    C) All properties
+    D) No transition
+    Javob: B
+
+27. @layer directive?
+    A) No layers
+    B) Add styles to base, components, utilities
+    C) Single layer
+    D) No directive
+    Javob: B
+
+28. @layer base purpose?
+    A) Components
+    B) Global element styles, resets
+    C) Utilities
+    D) No base
+    Javob: B
+
+29. @layer components purpose?
+    A) Base
+    B) Reusable component patterns
+    C) Utilities
+    D) No components
+    Javob: B
+
+30. @layer utilities purpose?
+    A) Base
+    B) Custom utility classes
+    C) Components
+    D) No utilities
+    Javob: B
+
+31. @apply directive?
+    A) No apply
+    B) Use utilities within CSS
+    C) Inline only
+    D) Config only
+    Javob: B
+
+32. @apply in components?
+    A) Not recommended
+    B) Compose utility classes into component
+    C) No compose
+    D) Always recommended
+    Javob: B
+
+33. @apply limitations?
+    A) No limitations
+    B) No arbitrary values, responsive variants
+    C) All features
+    D) Full support
+    Javob: B
+
+34. theme() function in CSS?
+    A) No function
+    B) Access config values in CSS
+    C) Config only
+    D) No access
+    Javob: B
+
+35. screen() function in CSS?
+    A) No function
+    B) Reference breakpoints in media queries
+    C) Hard-coded only
+    D) No media
+    Javob: B
+
+36. Plugin system?
+    A) No plugins
+    B) Extend Tailwind functionality
+    C) Core only
+    D) No extension
+    Javob: B
+
+37. addUtilities in plugins?
+    A) No add
+    B) Register new utility classes
+    C) Components only
+    D) No utilities
+    Javob: B
+
+38. addComponents in plugins?
+    A) Utilities only
+    B) Register component classes
+    C) No components
+    D) No register
+    Javob: B
+
+39. addBase in plugins?
+    A) Utilities only
+    B) Add global base styles
+    C) No base
+    D) Components
+    Javob: B
+
+40. matchUtilities for dynamic?
+    A) Static only
+    B) Generate utilities from values
+    C) No generate
+    D) Manual only
+    Javob: B
+
+41. theme() in plugins?
+    A) No theme
+    B) Access theme config values
+    C) Config direct
+    D) No access
+    Javob: B
+
+42. variants in plugins?
+    A) No variants
+    B) Generate responsive/state variants
+    C) Core only
+    D) No generate
+    Javob: B
+
+43. @tailwindcss/typography plugin?
+    A) No typography
+    B) Prose class for rich text styling
+    C) Manual styling
+    D) No plugin
+    Javob: B
+
+44. prose customization?
+    A) Fixed styles
+    B) prose-{color}, modifiers in config
+    C) No customize
+    D) CSS override
+    Javob: B
+
+45. @tailwindcss/forms plugin?
+    A) No forms
+    B) Base form element styling
+    C) Manual forms
+    D) No plugin
+    Javob: B
+
+46. forms strategy option?
+    A) One strategy
+    B) base or class strategy
+    C) No strategy
+    D) Fixed
+    Javob: B
+
+47. @tailwindcss/aspect-ratio plugin?
+    A) Built-in
+    B) Legacy aspect ratio support
+    C) No aspect
+    D) CSS only
+    Javob: B
+
+48. @tailwindcss/container-queries?
+    A) Media queries
+    B) @container and @[size]:utility
+    C) No container
+    D) Built-in
+    Javob: B
+
+49. @tailwindcss/line-clamp plugin?
+    A) Built-in now
+    B) Legacy multiline text truncation
+    C) No truncate
+    D) CSS only
+    Javob: B
+
+50. dark mode configuration?
+    A) No dark
+    B) class or media strategy
+    C) One strategy
+    D) No config
+    Javob: B
+
+51. darkMode: 'class'?
+    A) Media query
+    B) Toggle via dark class on html/body
+    C) Auto detect
+    D) No toggle
+    Javob: B
+
+52. darkMode: 'media'?
+    A) Class toggle
+    B) Follow prefers-color-scheme
+    C) Manual only
+    D) No media
+    Javob: B
+
+53. dark: variant usage?
+    A) No variant
+    B) dark:bg-gray-800 for dark mode
+    C) Default dark
+    D) No usage
+    Javob: B
+
+54. Responsive variants?
+    A) No responsive
+    B) sm:, md:, lg:, xl:, 2xl:
+    C) One breakpoint
+    D) Mobile only
+    Javob: B
+
+55. hover: variant?
+    A) No hover
+    B) Apply on mouse hover
+    C) Always hover
+    D) Click only
+    Javob: B
+
+56. focus: vs focus-visible:?
+    A) Same
+    B) focus=all, focus-visible=keyboard only
+    C) focus-visible=all
+    D) No difference
+    Javob: B
+
+57. focus-within: variant?
+    A) Self focus
+    B) Parent when child has focus
+    C) No parent
+    D) Sibling
+    Javob: B
+
+58. group-hover variant?
+    A) Self hover
+    B) Style child when parent group hovered
+    C) No group
+    D) Always apply
+    Javob: B
+
+59. group/{name} syntax?
+    A) No name
+    B) Named groups for nested hover
+    C) Single group
+    D) No nested
+    Javob: B
+
+60. peer variant?
+    A) Group
+    B) Style based on sibling state
+    C) Parent state
+    D) No sibling
+    Javob: B
+
+61. peer/{name} syntax?
+    A) No name
+    B) Named peers for specific siblings
+    C) Single peer
+    D) No specific
+    Javob: B
+
+62. has-[selector]: variant?
+    A) No has
+    B) Style parent based on child state
+    C) Child style
+    D) No parent
+    Javob: B
+
+63. first: and last: variants?
+    A) No variants
+    B) Style first/last child elements
+    C) All children
+    D) Middle only
+    Javob: B
+
+64. odd: and even: variants?
+    A) No variants
+    B) Style alternating children
+    C) All same
+    D) First only
+    Javob: B
+
+65. empty: variant?
+    A) Full only
+    B) Style element with no children
+    C) With children
+    D) No style
+    Javob: B
+
+66. disabled: variant?
+    A) Enabled only
+    B) Style disabled form elements
+    C) No form
+    D) Always disabled
+    Javob: B
+
+67. checked: variant?
+    A) Unchecked
+    B) Style checked inputs
+    C) All inputs
+    D) No checked
+    Javob: B
+
+68. placeholder: variant?
+    A) No placeholder
+    B) Style input placeholder text
+    C) Input value
+    D) Label
+    Javob: B
+
+69. selection:: variant?
+    A) No selection
+    B) Style selected text
+    C) All text
+    D) No style
+    Javob: B
+
+70. marker: variant?
+    A) No marker
+    B) Style list markers
+    C) List items
+    D) No list
+    Javob: B
+
+71. before: and after: variants?
+    A) No pseudo
+    B) Style ::before and ::after
+    C) Real elements
+    D) No content
+    Javob: B
+
+72. content-['text'] with before:?
+    A) Empty content
+    B) Set pseudo-element content
+    C) No content
+    D) HTML only
+    Javob: B
+
+73. file: variant?
+    A) No file
+    B) Style file input button
+    C) File content
+    D) No input
+    Javob: B
+
+74. backdrop: variant?
+    A) No backdrop
+    B) Style ::backdrop pseudo-element
+    C) Background
+    D) No modal
+    Javob: B
+
+75. supports-[feature]: variant?
+    A) No supports
+    B) Feature detection with @supports
+    C) All features
+    D) No detection
+    Javob: B
+
+76. aria-[attribute]: variant?
+    A) No aria
+    B) Style based on aria attributes
+    C) All elements
+    D) No attribute
+    Javob: B
+
+77. data-[attribute]: variant?
+    A) No data
+    B) Style based on data attributes
+    C) All elements
+    D) No attribute
+    Javob: B
+
+78. rtl: and ltr: variants?
+    A) No direction
+    B) Direction-aware styling
+    C) LTR only
+    D) No RTL
+    Javob: B
+
+79. portrait: and landscape: variants?
+    A) No orientation
+    B) Device orientation styles
+    C) Portrait only
+    D) No device
+    Javob: B
+
+80. print: variant?
+    A) Screen only
+    B) Print media styles
+    C) No print
+    D) All media
+    Javob: B
+
+81. motion-reduce: variant?
+    A) No motion
+    B) prefers-reduced-motion: reduce
+    C) All motion
+    D) No preference
+    Javob: B
+
+82. motion-safe: variant?
+    A) Reduce motion
+    B) prefers-reduced-motion: no-preference
+    C) All motion
+    D) No safe
+    Javob: B
+
+83. contrast-more: variant?
+    A) No contrast
+    B) prefers-contrast: more
+    C) Less contrast
+    D) No preference
+    Javob: B
+
+84. forced-colors: variant?
+    A) No forced
+    B) Windows high contrast mode
+    C) Normal colors
+    D) No Windows
+    Javob: B
+
+85. Stacking variants order?
+    A) Any order
+    B) Right-to-left application
+    C) Left-to-right
+    D) No order
+    Javob: B
+
+86. sm:dark:hover: interpretation?
+    A) sm AND dark AND hover
+    B) On sm+ screens, in dark mode, on hover
+    C) Any condition
+    D) All screens
+    Javob: B
+
+87. safelist configuration?
+    A) No safelist
+    B) Always include specific classes
+    C) Exclude classes
+    D) No include
+    Javob: B
+
+88. safelist patterns?
+    A) Exact only
+    B) Regex patterns for dynamic classes
+    C) No regex
+    D) Config only
+    Javob: B
+
+89. blocklist configuration?
+    A) Allow list
+    B) Prevent specific classes from generating
+    C) No block
+    D) Include all
+    Javob: B
+
+90. PurgeCSS integration?
+    A) Built-in
+    B) Tailwind has own content scanning
+    C) Required
+    D) No purge
+    Javob: B
+
+91. future configuration?
+    A) No future
+    B) Opt-in to upcoming features
+    C) All future
+    D) No opt-in
+    Javob: B
+
+92. experimental features?
+    A) Stable only
+    B) Test unreleased features
+    C) No test
+    D) All stable
+    Javob: B
+
+93. CSS variables in theme?
+    A) No variables
+    B) Use CSS custom properties
+    C) Hard-coded only
+    D) No custom
+    Javob: B
+
+94. opacity with CSS variables?
+    A) Not possible
+    B) rgb format with opacity modifier
+    C) No opacity
+    D) Fixed opacity
+    Javob: B
+
+95. PostCSS plugin order?
+    A) No order
+    B) tailwindcss before autoprefixer
+    C) Autoprefixer first
+    D) Any order
+    Javob: B
+
+96. autoprefixer necessity?
+    A) Optional
+    B) Recommended for vendor prefixes
+    C) Included
+    D) Not needed
+    Javob: B
+
+97. cssnano for production?
+    A) Not needed
+    B) Minify CSS output
+    C) Development only
+    D) No minify
+    Javob: B
+
+98. @import in CSS?
+    A) Not supported
+    B) Use postcss-import plugin
+    C) Native support
+    D) No import
+    Javob: B
+
+99. Tailwind CLI standalone?
+    A) Node required
+    B) No Node.js needed
+    C) npm only
+    D) Yarn only
+    Javob: B
+
+100. CDN vs build?
+     A) Same
+     B) CDN=no customization, Build=full features
+     C) CDN=full
+     D) No difference
+     Javob: B

@@ -1,0 +1,808 @@
+1. Type-level programming nima?
+
+   A) Runtime================================================================================
+
+   B) Compile-time type manipulationYUQORI DARAJA (ADVANCED) - 100 TA SAVOL
+
+   C) Dynamic================================================================================
+
+   D) Static
+
+   Javob: B1. Nominal typing TypeScript'da qanday emulyatsiya qilinadi? A) Built-in B) Branded types yoki private fields orqali C) Impossible D) Auto | Javob: B
+
+2. Type-safe event emitter qanday yaratiladi? A) Any B) Generic + mapped types + string literal union C) Simple D) Class only | Javob: B
+
+2. Type-level arithmetic?3. Builder pattern'ni type-safe qilish qanday? A) Yo'q B) Return type'da accumulative interface C) Simple D) Any | Javob: B
+
+   A) Runtime4. Fluent API'larda type-safety qanday? A) Yo'q B) Har bir metod yangi tip qaytaradi C) Same D) Any | Javob: B
+
+   B) Tuple length manipulation5. Function composition type-safe qilish? A) Impossible B) Generic chaining bilan C) Simple D) Manual | Javob: B
+
+   C) No arithmetic6. Pipe operator type inference qanday? A) Yo'q B) Har bir funksiya return'i keyingi input'ga mos C) Any D) Unknown | Javob: B
+
+   D) Error7. Deep partial implementation qanday? A) Partial B) Recursive mapped type C) Simple D) Shallow | Javob: B
+
+   Javob: B8. Deep readonly qanday yaratiladi? A) Readonly B) Recursive readonly mapped type C) Shallow D) Simple | Javob: B
+
+9. Deep required type qanday? A) Required B) Recursive required mapped type C) Partial D) Optional | Javob: B
+
+3. type Add<A, B>?10. Opaque types nima? A) Transparent B) Tashqi tomonga interface berkitilgan tip C) Public D) Open | Javob: B
+
+   A) Simple11. New type idiom nima? A) Old B) Unique symbol bilan nominal typing C) Same D) Public | Javob: B
+
+   B) [...Tuple<A>, ...Tuple<B>]["length"]12. Type-level arithmetic mumkinmi? A) Yo'q B) Ha, tuple length va template literals bilan C) Faqat runtime D) Impossible | Javob: B
+
+   C) A + B13. Type-level fibonacci qanday yoziladi? A) Impossible B) Recursive conditional + tuple accumulator C) Runtime only D) Simple loop | Javob: B
+
+   D) Error14. Type-level string parsing qanday? A) Impossible B) Template literal types + recursive conditional C) Runtime D) RegExp | Javob: B
+
+   Javob: B15. Type-level regex simulation mumkinmi? A) Yo'q B) Partial, template literals bilan cheklangan C) Full D) Easy | Javob: B
+
+16. HKT (Higher-Kinded Types) workaround qanday? A) Yo'q B) Interface + generic + brand technique C) Native D) Impossible | Javob: B
+
+4. type Subtract via tuple?17. Type-level list operations qanday? A) Runtime B) Tuple manipulation + recursive types C) Array methods D) Simple | Javob: B
+
+   A) Simple18. Type-level tree structures mumkinmi? A) Yo'q B) Ha, recursive object types C) Faqat flat D) Linear | Javob: B
+
+   B) Tuple manipulation19. Variadic tuple types (TS 4.0+) nima beradi? A) Fixed B) O'zgaruvchan uzunlikdagi tuple operations C) Faqat fixed D) None | Javob: B
+
+   C) A - B20. Variadic generics qanday ishlaydi? A) Bitta B) ...T[] rest elementlari C) Fixed D) Simple | Javob: B
+
+   D) Not possible
+
+   Javob: B21. Tuple concatenation type-level qanday? A) Runtime B) [...T, ...U] C) Push only D) Simple | Javob: B
+
+22. Type-level sorting algorithm mumkinmi? A) Yo'q B) Nazariy jihatdan ha, lekin juda murakkab C) Oson D) Built-in | Javob: B
+
+5. Type-level recursion limit?23. Const assertions va readonly farqi? A) Yo'q B) const assertion chuqur readonly + literal C) Same D) Shallow | Javob: B
+
+   A) No limit24. as const object'da nima beradi? A) Mutable B) Readonly + literal property types C) Normal D) Same | Javob: B
+
+   B) ~1000 depth25. as const array'da qanday o'zgaradi? A) Array B) Readonly tuple C) Mutable D) Same | Javob: B
+
+   C) 1026. Type instantiation depth limit xatosi qachon? A) Hech qachon B) Juda chuqur recursive types C) Simple types D) Always | Javob: B
+
+   D) 10027. Tail-call optimization type level'da bormi? A) Ha B) Yo'q, depth limit bor C) Partial D) Auto | Javob: B
+
+   Javob: B28. Type-level loop unrolling kerakmi? A) Yo'q B) Ha, performance uchun C) Never D) Auto | Javob: B
+
+29. Type computation caching qanday? A) Manual B) TS avtomatik memoize qiladi C) Yo'q D) Always recalc | Javob: B
+
+6. Tail recursion optimization?30. Structural vs nominal typing qaysi xavfsizroq? A) Structural B) Nominal, lekin TS structural C) Same D) Neither | Javob: B
+
+   A) No31. Type guards runtime performance ta'siri? A) Katta B) Minimal, faqat check logic C) Yo'q D) Sekin | Javob: B
+
+   B) Yes for some patterns32. Type assertions runtime'da qoladi? A) Ha B) Yo'q, compile vaqtida o'chiriladi C) Ba'zan D) Always | Javob: B
+
+   C) Always33. Excess property checks qachon trigger bo'ladi? A) Har doim B) Object literal to'g'ridan-to'g'ri assign qilinganda C) Hech qachon D) Variable orqali | Javob: B
+
+   D) Never34. Index signature va optional property farqi? A) Yo'q B) Index signature - cheksiz keys, optional - ma'lum C) Same D) Speed | Javob: B
+
+   Javob: B35. String literal union vs enum performance? A) Enum tezroq B) Union tezroq (inline) C) Same D) Enum sekin | Javob: B
+
+36. const enum inline qilish qanday ishlaydi? A) Yo'q B) Har bir enum reference qiymat bilan almashtiriladi C) Same D) Runtime | Javob: B
+
+7. Type instantiation depth?37. const enum isolatedModules bilan muammo? A) Yo'q B) Ha, cross-file inline qila olmaydi C) Ishlaydi D) Perfect | Javob: B
+
+   A) No limit38. Enum'ni object literal bilan almashtirish yaxshimi? A) Yo'q B) Ko'pincha ha, tree-shaking uchun C) Hech qachon D) Always enum | Javob: B
+
+   B) Configurable depth limit39. Namespace vs module qaysi zamonaviy? A) Namespace B) ES modules C) Same D) Both good | Javob: B
+
+   C) 1040. Triple-slash directives zaruratimi? A) Ha B) Kam, faqat maxsus holatlarda C) Har doim D) Never | Javob: B
+
+   D) 100
+
+   Javob: B41. lib compiler option nima uchun? A) Yo'q B) Qaysi built-in API tiplarini qo'shish C) Remove D) None | Javob: B
+
+42. target vs lib farqi? A) Same B) target - output JS, lib - qaysi API'lar bor C) None D) Speed | Javob: B
+
+8. Type-level string parsing?43. Downlevel iteration nima? A) Up B) for-of, spread'ni eski JS'ga transform C) Modern only D) None | Javob: B
+
+   A) Not possible44. importHelpers nima beradi? A) Katta fayl B) Tslib'dan helper import, kamroq kod C) Same D) Sekinroq | Javob: B
+
+   B) Template literal inference45. Polyfill vs type declaration farqi? A) Same B) Polyfill - runtime kod, declaration - faqat tip C) None D) Both type | Javob: B
+
+   C) Error46. DOM lib tiplarini qo'shish qanday? A) Auto B) lib: ["dom"] C) Import D) None | Javob: B
+
+   D) Runtime only47. WebWorker lib alohida kerakmi? A) Yo'q B) Ha, lib: ["webworker"] C) Auto D) Same as DOM | Javob: B
+
+   Javob: B48. ES2023 lib va target ES5 birga ishlaydimi? A) Yo'q B) Ha, lekin polyfill kerak C) Xato D) Perfect | Javob: B
+
+49. Custom lib.d.ts yaratish mumkinmi? A) Yo'q B) Ha, skipDefaultLibCheck bilan C) Never D) Auto | Javob: B
+
+9. Parse JSON at type-level?50. Triple-slash lib reference nima? A) Import B) /// <reference lib="es2015.promise" /> C) Export D) None | Javob: B
+
+   A) Easy51. noLib option xavflimi? A) Yo'q B) Ha, hech qanday built-in tip yo'q C) Safe D) Recommended | Javob: B
+
+   B) Complex recursive types52. JSX factory function nima? A) Component B) JSX elementlarni yaratuvchi funksiya C) Import D) Export | Javob: B
+
+   C) Not possible53. jsxFactory option qanday ishlaydi? A) Auto B) React.createElement o'rniga boshqa funksiya C) Same D) None | Javob: B
+
+   D) Runtime only54. jsxFragmentFactory nima uchun? A) Component B) Fragment yaratish funksiyasi C) None D) Auto | Javob: B
+
+   Javob: B55. jsx: "preserve" vs "react" farqi? A) Same B) preserve - JSX saqlanadi, react - transform C) None D) Speed | Javob: B
+
+56. jsx: "react-jsx" (React 17+) nima yangiligi? A) Old B) Avtomatik import, factory kerak emas C) Same D) Slow | Javob: B
+
+10. HKT (Higher-Kinded Types)?57. Emotion, styled-components bilan jsx pragma? A) Yo'q B) /** @jsxImportSource */ C) Normal D) Same | Javob: B
+
+    A) Built-in58. TSX faylda generics <T> va JSX konflikt? A) Yo'q B) Ha, <T,> yoki <T extends unknown> kerak C) Never D) Auto fix | Javob: B
+
+    B) Simulated via patterns59. Intrinsic elements nima? A) Custom B) Built-in HTML elementlar (JSX.IntrinsicElements) C) None D) User | Javob: B
+
+    C) Not possible60. JSX namespace augmentation qanday? A) Yo'q B) declare global { namespace JSX {...}} C) Local D) None | Javob: B
+
+    D) Error
+
+    Javob: B61. React.FC vs function component typing? A) Same B) FC children implicit, function explicit yaxshi C) FC better D) No difference | Javob: B
+
+62. children prop type React'da? A) any B) React.ReactNode C) string D) Element | Javob: B
+
+11. Type-level function application?63. Generic component type safety qanday? A) Impossible B) <T,>(props: Props<T>) => ... C) Any D) Unknown | Javob: B
+
+    A) Direct64. forwardRef typing qanday? A) Simple B) React.forwardRef<RefType, PropsType> C) Auto D) Any | Javob: B
+
+    B) Conditional type pattern65. useRef typing RefObject vs MutableRefObject farqi? A) Same B) RefObject - readonly, MutableRefObject - mutable C) None D) Speed | Javob: B
+
+    C) Not possible66. useState initial value inference qanday? A) any B) Avtomatik, yoki explicit <Type> C) unknown D) never | Javob: B
+
+    D) Error67. useReducer typing qanday? A) any B) Action union + state type C) Simple D) Auto | Javob: B
+
+    Javob: B68. Custom hooks typing best practice? A) any B) Return type aniq belgilash C) Infer D) unknown | Javob: B
+
+69. Event handler typing qanday? A) any B) React.MouseEvent<HTMLButtonElement> C) Event D) Object | Javob: B
+
+12. F<T> generic simulation?70. Synthetic events vs native events typing? A) Same B) React.SyntheticEvent vs Event C) None D) Both native | Javob: B
+
+    A) Native71. Controlled vs uncontrolled input typing farqi? A) None B) Controlled - value required, uncontrolled - optional C) Same D) Both required | Javob: B
+
+    B) { arg: T, fn: (x: T) => R }72. Form submission typing qanday? A) any B) React.FormEvent<HTMLFormElement> C) Event D) Submit | Javob: B
+
+    C) Not possible73. Context typing qanday? A) any B) createContext<Type | undefined>(undefined) C) Simple D) Auto | Javob: B
+
+    D) Error74. Context with default value vs undefined? A) Same B) undefined - provider talab qiladi C) None D) Both good | Javob: B
+
+    Javob: B75. Higher-order component typing qanday? A) any B) Generic wrapped props + injected props C) Simple D) Auto | Javob: B
+
+76. Render props pattern typing? A) any B) children: (data: T) => ReactNode C) Simple D) Auto | Javob: B
+
+13. Phantom types?77. Discriminated unions React props'da qanday? A) Yo'q B) type="a" bo'lsa props A, type="b" bo'lsa B C) any D) Same | Javob: B
+
+    A) Real types78. Exhaustive deps linting type-safe qilish? A) Impossible B) useCallback/useMemo generic type inference C) Manual D) any | Javob: B
+
+    B) Unused type parameters79. Redux action typing qanday? A) any B) Discriminated union of actions C) Simple D) string | Javob: B
+
+    C) Error types80. Redux state typing approach? A) any B) RootState type + typed useSelector C) Simple D) Auto | Javob: B
+
+    D) Never types
+
+    Javob: B81. Redux Toolkit createSlice typing? A) Manual B) Avtomatik action types chiqaradi C) any D) unknown | Javob: B
+
+82. Thunk action typing qanday? A) any B) ThunkAction<ReturnType, State, Extra, Action> C) Simple D) Auto | Javob: B
+
+14. Branded types?83. Middleware typing Redux'da? A) any B) Middleware<{}, State, Dispatch> C) Simple D) None | Javob: B
+
+    A) Regular types84. Selector memoization typing (reselect)? A) any B) createSelector type inference C) Manual D) Simple | Javob: B
+
+    B) type Brand<T, B> = T & { __brand: B }85. GraphQL codegen nimani beradi? A) Runtime B) Schema'dan TypeScript tiplar C) None D) Simple | Javob: B
+
+    C) Union types86. Apollo Client useQuery typing? A) any B) useQuery<DataType, VariablesType> C) Auto D) Simple | Javob: B
+
+    D) Intersection types87. tRPC type-safety qanday ishlaydi? A) Manual B) Server router'dan avtomatik client types C) Codegen D) any | Javob: B
+
+    Javob: B88. Zod va TypeScript integratsiyasi? A) Yo'q B) z.infer<typeof schema> runtime + compile time C) Separate D) Manual | Javob: B
+
+89. io-ts vs Zod farqi? A) Same B) io-ts - functional, Zod - fluent API C) None D) Speed only | Javob: B
+
+15. Opaque types pattern?90. Runtime validation keraklimi? A) Yo'q B) Ha, API, user input uchun C) Never D) TS enough | Javob: B
+
+    A) Transparent91. JSON.parse type-safe qanday? A) Impossible B) Validation library (Zod, io-ts) C) any D) unknown | Javob: B
+
+    B) Unique symbol brand92. Type guards generator tools bormi? A) Yo'q B) Ha, ts-auto-guard, typebox C) Manual only D) None | Javob: B
+
+    C) Public93. Nominal typing library (newtype) qanday? A) Yo'q B) Brand symbol bilan wrapper C) Built-in D) Impossible | Javob: B
+
+    D) Open94. Effect-TS nima beradi? A) Simple B) Functional programming + type-safe error handling C) None D) Same as Promise | Javob: B
+
+    Javob: B95. fp-ts library type-safety qanday? A) Weak B) Kuchli, HKT emulyatsiyasi bilan C) any D) unknown | Javob: B
+
+96. Monadic error handling type-safe qanday? A) try-catch B) Either<Error, Success> C) any D) throw | Javob: B
+
+16. declare const __brand: unique symbol?97. Option/Maybe type TypeScript'da? A) Yo'q B) Library (fp-ts) yoki custom T | undefined C) Native D) null | Javob: B
+
+    A) Regular symbol98. Type-safe builder library (Fluent API)? A) Yo'q B) Typescript-builder pattern C) Impossible D) Manual | Javob: B
+
+    B) Type branding99. AST manipulation TypeScript'da? A) Impossible B) ts.factory API C) Manual string D) None | Javob: B
+
+    C) Runtime symbol100. Custom transformer plugin yaratish qanday? A) Impossible B) ts.TransformerFactory<ts.Node> C) Simple D) Auto | Javob: B
+
+    D) Error
+    Javob: B
+
+17. Nominal typing simulation?
+    A) Structural
+    B) Brands for nominal
+    C) Built-in
+    D) Not possible
+    Javob: B
+
+18. Builder pattern types?
+    A) Simple
+    B) Method chaining with types
+    C) No types
+    D) Error
+    Javob: B
+
+19. Fluent interface types?
+    A) Static
+    B) this return type
+    C) void
+    D) any
+    Javob: B
+
+20. State machine types?
+    A) Runtime only
+    B) Discriminated unions
+    C) Not possible
+    D) Error
+    Javob: B
+
+21. Type-safe Redux?
+    A) Any
+    B) Action discriminated union
+    C) Unknown
+    D) No types
+    Javob: B
+
+22. createAction with type inference?
+    A) Manual
+    B) Generic with inference
+    C) Any
+    D) Unknown
+    Javob: B
+
+23. Reducer type safety?
+    A) Any
+    B) Exhaustive action handling
+    C) Unknown
+    D) No safety
+    Javob: B
+
+24. Module path mapping?
+    A) No mapping
+    B) paths in tsconfig
+    C) Webpack only
+    D) Error
+    Javob: B
+
+25. baseUrl configuration?
+    A) No base
+    B) Import resolution base
+    C) Export base
+    D) Build base
+    Javob: B
+
+26. Project references?
+    A) Single project
+    B) Multi-project builds
+    C) No references
+    D) Error
+    Javob: B
+
+27. Composite projects?
+    A) Simple
+    B) Incremental builds
+    C) No composite
+    D) Error
+    Javob: B
+
+28. Declaration maps?
+    A) Source maps
+    B) .d.ts to source mapping
+    C) No maps
+    D) Error
+    Javob: B
+
+29. sourceMap vs declarationMap?
+    A) Same
+    B) JS vs .d.ts mapping
+    C) No difference
+    D) Either
+    Javob: B
+
+30. incremental compilation?
+    A) Full rebuild
+    B) Cache previous build
+    C) No cache
+    D) Error
+    Javob: B
+
+31. tsBuildInfoFile?
+    A) Source file
+    B) Incremental build cache
+    C) Config
+    D) Output
+    Javob: B
+
+32. skipLibCheck?
+    A) Check all
+    B) Skip .d.ts checking
+    C) Skip source
+    D) Skip both
+    Javob: B
+
+33. Performance: skipLibCheck effect?
+    A) Slower
+    B) Faster compilation
+    C) No effect
+    D) Error
+    Javob: B
+
+34. forceConsistentCasingInFileNames?
+    A) Ignore case
+    B) Case-sensitive imports
+    C) Lowercase only
+    D) Uppercase only
+    Javob: B
+
+35. moduleResolution strategies?
+    A) One
+    B) node, bundler, classic
+    C) Two
+    D) None
+    Javob: B
+
+36. moduleResolution: "bundler"?
+    A) Node
+    B) Modern bundler support
+    C) Classic
+    D) None
+    Javob: B
+
+37. resolveJsonModule?
+    A) No JSON
+    B) Import JSON files
+    C) Error
+    D) Ignore
+    Javob: B
+
+38. allowSyntheticDefaultImports?
+    A) No default
+    B) Enable default from CJS
+    C) Error
+    D) Ignore
+    Javob: B
+
+39. esModuleInterop effect?
+    A) No effect
+    B) __importDefault helper
+    C) Error
+    D) Ignore
+    Javob: B
+
+40. verbatimModuleSyntax?
+    A) Transform
+    B) Keep import/export as-is
+    C) Remove
+    D) Error
+    Javob: B
+
+41. Type narrowing with in?
+    A) No narrowing
+    B) Discriminate by property presence
+    C) Error
+    D) Ignore
+    Javob: B
+
+42. Narrowing with equality?
+    A) No narrowing
+    B) === narrows to literal
+    C) Error
+    D) Ignore
+    Javob: B
+
+43. Narrowing with typeof?
+    A) No narrowing
+    B) Primitive type narrowing
+    C) Error
+    D) Ignore
+    Javob: B
+
+44. Narrowing with instanceof?
+    A) No narrowing
+    B) Class instance narrowing
+    C) Error
+    D) Ignore
+    Javob: B
+
+45. Narrowing with Array.isArray?
+    A) No narrowing
+    B) Array type narrowing
+    C) Error
+    D) Ignore
+    Javob: B
+
+46. Control flow for const?
+    A) Mutable
+    B) Literal type preserved
+    C) General type
+    D) Any
+    Javob: B
+
+47. Aliased condition narrowing?
+    A) No narrowing
+    B) const isString = ... narrows
+    C) Error
+    D) Ignore
+    Javob: B
+
+48. assert(x is Type)?
+    A) No assertion
+    B) asserts x is Type
+    C) Error
+    D) Ignore
+    Javob: B
+
+49. asserts condition?
+    A) Returns
+    B) Narrows after call
+    C) Throws
+    D) No effect
+    Javob: B
+
+50. Throw expressions proposal?
+    A) Stable
+    B) TC39 proposal
+    C) Error
+    D) Ignore
+    Javob: B
+
+51. Pattern matching proposal?
+    A) Stable
+    B) TC39 Stage 1
+    C) Error
+    D) Ignore
+    Javob: B
+
+52. Decorator metadata?
+    A) No metadata
+    B) Symbol.metadata
+    C) Error
+    D) Ignore
+    Javob: B
+
+53. Legacy decorators vs stage 3?
+    A) Same
+    B) Different API
+    C) No difference
+    D) Either
+    Javob: B
+
+54. experimentalDecorators?
+    A) Stage 3
+    B) Legacy decorators
+    C) No decorators
+    D) Error
+    Javob: B
+
+55. emitDecoratorMetadata?
+    A) No metadata
+    B) Reflect metadata emit
+    C) Error
+    D) Ignore
+    Javob: B
+
+56. useDefineForClassFields?
+    A) [[Set]]
+    B) [[Define]] semantics
+    C) No effect
+    D) Error
+    Javob: B
+
+57. Class field initialization order?
+    A) Random
+    B) Declaration order
+    C) Alphabetical
+    D) No order
+    Javob: B
+
+58. Super call timing?
+    A) Any time
+    B) Before this access
+    C) After
+    D) Optional
+    Javob: B
+
+59. Static initialization blocks?
+    A) Instance
+    B) Class-level init code
+    C) Constructor
+    D) Method
+    Javob: B
+
+60. Private method mangling?
+    A) None
+    B) Compiler transforms
+    C) Runtime
+    D) No transform
+    Javob: B
+
+61. WeakMap for private?
+    A) Map
+    B) Runtime private emulation
+    C) Set
+    D) Array
+    Javob: B
+
+62. downlevelIteration?
+    A) No transform
+    B) for-of for ES5
+    C) Error
+    D) Ignore
+    Javob: B
+
+63. importHelpers?
+    A) Inline
+    B) tslib external helpers
+    C) No helpers
+    D) Error
+    Javob: B
+
+64. noEmitHelpers?
+    A) Emit
+    B) Skip helper emission
+    C) Error
+    D) Ignore
+    Javob: B
+
+65. inlineSources?
+    A) External
+    B) Embed source in sourcemap
+    C) No source
+    D) Error
+    Javob: B
+
+66. inlineSourceMap?
+    A) External
+    B) Embed map in JS
+    C) No map
+    D) Error
+    Javob: B
+
+67. stripInternal?
+    A) Keep
+    B) Remove @internal
+    C) Error
+    D) Ignore
+    Javob: B
+
+68. @internal JSDoc?
+    A) Public
+    B) Don't emit to .d.ts
+    C) Private
+    D) Protected
+    Javob: B
+
+69. preserveConstEnums?
+    A) Inline
+    B) Keep enum runtime
+    C) Remove
+    D) Error
+    Javob: B
+
+70. isolatedDeclarations?
+    A) Combined
+    B) Per-file .d.ts possible
+    C) No declarations
+    D) Error
+    Javob: B
+
+71. Type-only imports benefit?
+    A) Runtime
+    B) Tree-shaking
+    C) No benefit
+    D) Error
+    Javob: B
+
+72. importsNotUsedAsValues?
+    A) Keep
+    B) remove/preserve/error
+    C) Ignore
+    D) No effect
+    Javob: B
+
+73. preserveValueImports?
+    A) Remove
+    B) Keep side-effect imports
+    C) Error
+    D) Ignore
+    Javob: B
+
+74. Circular type references?
+    A) Error
+    B) Lazy evaluation handles
+    C) Always error
+    D) Ignore
+    Javob: B
+
+75. Interface vs type circular?
+    A) Same
+    B) Interface more flexible
+    C) Type better
+    D) No difference
+    Javob: B
+
+76. Distributive conditional why?
+    A) No reason
+    B) Union member distribution
+    C) Error
+    D) Ignore
+    Javob: B
+
+77. Preventing distribution?
+    A) Can't prevent
+    B) Wrap in tuple [T]
+    C) Use any
+    D) Error
+    Javob: B
+
+78. Homomorphic mapped types?
+    A) Non-homomorphic
+    B) Preserve modifiers
+    C) Remove modifiers
+    D) No effect
+    Javob: B
+
+79. keyof any?
+    A) never
+    B) string | number | symbol
+    C) any
+    D) unknown
+    Javob: B
+
+80. keyof unknown?
+    A) any
+    B) never
+    C) unknown
+    D) string
+    Javob: B
+
+81. keyof never?
+    A) never
+    B) string | number | symbol
+    C) any
+    D) unknown
+    Javob: B
+
+82. Union of functions?
+    A) Intersection params
+    B) Intersection of params
+    C) Union of params
+    D) Error
+    Javob: B
+
+83. Intersection of functions?
+    A) Intersection params
+    B) Overloaded function
+    C) Union of params
+    D) Error
+    Javob: B
+
+84. Covariant positions?
+    A) Parameter
+    B) Return type, property
+    C) Contravariant
+    D) Invariant
+    Javob: B
+
+85. Contravariant positions?
+    A) Return
+    B) Function parameters
+    C) Covariant
+    D) Invariant
+    Javob: B
+
+86. strictFunctionTypes effect?
+    A) Bivariant
+    B) Contravariant params
+    C) Covariant
+    D) No effect
+    Javob: B
+
+87. Method vs function property?
+    A) Same
+    B) Method bivariant
+    C) Property bivariant
+    D) No difference
+    Javob: B
+
+88. Object type widening?
+    A) Narrowing
+    B) Literal to general type
+    C) No change
+    D) Error
+    Javob: B
+
+89. Fresh object literal?
+    A) Stale
+    B) Excess property check
+    C) No check
+    D) Error
+    Javob: B
+
+90. Excess property checks when?
+    A) Always
+    B) Direct literal assignment
+    C) Never
+    D) Sometimes
+    Javob: B
+
+91. Weak type detection?
+    A) Strong
+    B) All optional props
+    C) Required props
+    D) No detection
+    Javob: B
+
+92. Type {} meaning?
+    A) Empty object
+    B) Any non-null
+    C) Object
+    D) Never
+    Javob: B
+
+93. object type meaning?
+    A) Any
+    B) Non-primitive
+    C) {}
+    D) Unknown
+    Javob: B
+
+94. Object vs object vs {}?
+    A) Same
+    B) Different: wrapper, non-primitive, non-null
+    C) No difference
+    D) Error
+    Javob: B
+
+95. unknown vs any safety?
+    A) Same
+    B) unknown requires narrowing
+    C) any safer
+    D) No difference
+    Javob: B
+
+96. Type inference algorithm?
+    A) Simple
+    B) Bidirectional with constraints
+    C) No algorithm
+    D) Random
+    Javob: B
+
+97. Contextual typing?
+    A) No context
+    B) Infer from usage context
+    C) Manual only
+    D) Error
+    Javob: B
+
+98. Best common type?
+    A) Any
+    B) Union of candidates
+    C) First type
+    D) Last type
+    Javob: B
+
+99. Structural vs nominal?
+    A) Nominal
+    B) Structural (shape-based)
+    C) Both
+    D) Neither
+    Javob: B
+
+100. Type compatibility rules?
+     A) Exact match
+     B) Subtype relationship
+     C) Any match
+     D) No rules
+     Javob: B

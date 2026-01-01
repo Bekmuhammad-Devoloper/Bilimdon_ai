@@ -1,0 +1,706 @@
+C++ DASTURLASH TILIDAN 100 TA TEST SAVOLLARI
+=============================================
+
+1. C++ dasturlash tilini kim yaratgan?
+   A) Dennis Ritchie
+   B) Bjarne Stroustrup
+   C) James Gosling
+   D) Guido van Rossum
+   Javob: B
+
+2. C++ dasturida asosiy funksiya qanday nomlanadi?
+   A) start()
+   B) begin()
+   C) main()
+   D) run()
+   Javob: C
+
+3. C++ da bir qatorli izoh qanday yoziladi?
+   A) /* izoh */
+   B) // izoh
+   C) # izoh
+   D) -- izoh
+   Javob: B
+
+4. Quyidagilardan qaysi biri butun son turi?
+   A) float
+   B) double
+   C) int
+   D) char
+   Javob: C
+
+5. C++ da o'zgaruvchi e'lon qilish uchun qaysi sintaksis to'g'ri?
+   A) int x = 5;
+   B) x int = 5;
+   C) 5 = int x;
+   D) var x = 5;
+   Javob: A
+
+6. cout nima uchun ishlatiladi?
+   A) Kiritish uchun
+   B) Chiqarish uchun
+   C) Hisoblash uchun
+   D) Saqlash uchun
+   Javob: B
+
+7. cin nima uchun ishlatiladi?
+   A) Chiqarish uchun
+   B) Kiritish uchun
+   C) O'chirish uchun
+   D) Ko'chirish uchun
+   Javob: B
+
+8. Quyidagilardan qaysi biri mantiqiy tur?
+   A) int
+   B) char
+   C) bool
+   D) float
+   Javob: C
+
+9. endl nima vazifani bajaradi?
+   A) Dasturni tugatadi
+   B) Yangi qatorga o'tkazadi
+   C) Bo'sh joy qo'yadi
+   D) Tab qo'yadi
+   Javob: B
+
+10. #include direktivasi nima qiladi?
+    A) O'zgaruvchi e'lon qiladi
+    B) Kutubxonani ulaydi
+    C) Funksiya chaqiradi
+    D) Tsikl yaratadi
+    Javob: B
+
+11. Quyidagilardan qaysi biri arifmetik operator emas?
+    A) +
+    B) -
+    C) &&
+    D) *
+    Javob: C
+
+12. 5 % 2 ifodaning natijasi nima?
+    A) 2
+    B) 2.5
+    C) 1
+    D) 0
+    Javob: C
+
+13. Quyidagilardan qaysi biri taqqoslash operatori?
+    A) =
+    B) ==
+    C) +=
+    D) ++
+    Javob: B
+
+14. C++ da haqiqiy sonlar uchun qaysi tur ishlatiladi?
+    A) int
+    B) char
+    C) double
+    D) bool
+    Javob: C
+
+15. Quyidagi kodning natijasi nima: int a = 10 / 3;
+    A) 3.33
+    B) 3
+    C) 4
+    D) 10
+    Javob: B
+
+16. C++ da belgi turi qaysi?
+    A) string
+    B) char
+    C) text
+    D) letter
+    Javob: B
+
+17. Quyidagilardan qaysi biri mantiqiy operator?
+    A) +
+    B) -
+    C) ||
+    D) /
+    Javob: C
+
+18. if operatori nima uchun ishlatiladi?
+    A) Takrorlash uchun
+    B) Shart tekshirish uchun
+    C) Funksiya yaratish uchun
+    D) O'zgaruvchi e'lon qilish uchun
+    Javob: B
+
+19. Quyidagilardan qaysi biri tsikl operatori?
+    A) if
+    B) switch
+    C) for
+    D) else
+    Javob: C
+
+20. break operatori nima qiladi?
+    A) Dasturni to'xtatadi
+    B) Tsikldan chiqadi
+    C) Funksiyani tugatadi
+    D) Xato chiqaradi
+    Javob: B
+
+21. continue operatori nima qiladi?
+    A) Tsiklni to'xtatadi
+    B) Keyingi iteratsiyaga o'tadi
+    C) Dasturni tugatadi
+    D) Xato chiqaradi
+    Javob: B
+
+22. while tsikli qachon bajariladi?
+    A) Doimo
+    B) Shart rost bo'lganda
+    C) Shart yolg'on bo'lganda
+    D) Bir marta
+    Javob: B
+
+23. do-while tsiklining xususiyati nima?
+    A) Hech qachon bajarilmaydi
+    B) Kamida bir marta bajariladi
+    C) Cheksiz ishlaydi
+    D) Faqat juft sonlarda ishlaydi
+    Javob: B
+
+24. Massiv nima?
+    A) Bitta qiymat
+    B) Bir xil turdagi elementlar to'plami
+    C) Funksiya
+    D) Operator
+    Javob: B
+
+25. int arr[5]; da massiv nechta elementdan iborat?
+    A) 4
+    B) 5
+    C) 6
+    D) 0
+    Javob: B
+
+26. Massiv indeksi nechadanchi elementdan boshlanadi?
+    A) 0
+    B) 1
+    C) -1
+    D) 10
+    Javob: A
+
+27. Funksiya nima?
+    A) O'zgaruvchi
+    B) Qayta ishlatiluvchi kod bloki
+    C) Ma'lumot turi
+    D) Operator
+    Javob: B
+
+28. void kalit so'zi nima anglatadi?
+    A) Butun son qaytaradi
+    B) Hech narsa qaytarmaydi
+    C) Haqiqiy son qaytaradi
+    D) Belgi qaytaradi
+    Javob: B
+
+29. return operatori nima qiladi?
+    A) Tsikl yaratadi
+    B) Funksiyadan qiymat qaytaradi
+    C) O'zgaruvchi e'lon qiladi
+    D) Xato chiqaradi
+    Javob: B
+
+30. Funksiya parametri nima?
+    A) Funksiya nomi
+    B) Funksiyaga uzatiladigan qiymat
+    C) Funksiya turi
+    D) Funksiya tanasi
+    Javob: B
+
+31. C++ da satr turi qaysi kutubxonada?
+    A) <iostream>
+    B) <string>
+    C) <math>
+    D) <vector>
+    Javob: B
+
+32. sizeof operatori nima qaytaradi?
+    A) Qiymatni
+    B) Xotira hajmini baytlarda
+    C) Massiv uzunligini
+    D) Satr uzunligini
+    Javob: B
+
+33. Pointer nima?
+    A) Oddiy o'zgaruvchi
+    B) Xotira manzilini saqlovchi o'zgaruvchi
+    C) Funksiya
+    D) Massiv
+    Javob: B
+
+34. Pointer e'lon qilish uchun qaysi belgi ishlatiladi?
+    A) &
+    B) *
+    C) #
+    D) @
+    Javob: B
+
+35. & operatori nima qaytaradi?
+    A) Qiymatni
+    B) Xotira manzilini
+    C) Turni
+    D) Uzunlikni
+    Javob: B
+
+36. new operatori nima qiladi?
+    A) O'zgaruvchi o'chiradi
+    B) Dinamik xotira ajratadi
+    C) Funksiya yaratadi
+    D) Tsikl yaratadi
+    Javob: B
+
+37. delete operatori nima qiladi?
+    A) Faylni o'chiradi
+    B) Dinamik xotirani bo'shatadi
+    C) O'zgaruvchini o'chiradi
+    D) Dasturni o'chiradi
+    Javob: B
+
+38. struct nima?
+    A) Funksiya
+    B) Foydalanuvchi tomonidan yaratilgan tur
+    C) Massiv
+    D) Tsikl
+    Javob: B
+
+39. class va struct ning asosiy farqi nima?
+    A) Farqi yo'q
+    B) Standart kirish darajasi
+    C) Hajmi
+    D) Tezligi
+    Javob: B
+
+40. OOP ning to'liq nomi nima?
+    A) Object Oriented Programming
+    B) Only One Program
+    C) Open Online Platform
+    D) Order Of Process
+    Javob: A
+
+41. Enkapsulatsiya nima?
+    A) Merosxo'rlik
+    B) Ma'lumotlarni yashirish
+    C) Ko'pshaklilik
+    D) Abstraksiya
+    Javob: B
+
+42. public kirish modifikatori nima anglatadi?
+    A) Faqat sinf ichida
+    B) Hamma joydan kirish mumkin
+    C) Faqat vorislar uchun
+    D) Hech kim kira olmaydi
+    Javob: B
+
+43. private kirish modifikatori nima anglatadi?
+    A) Hamma joydan kirish mumkin
+    B) Faqat sinf ichida kirish mumkin
+    C) Faqat vorislar uchun
+    D) Faqat do'stlar uchun
+    Javob: B
+
+44. protected kirish modifikatori nima anglatadi?
+    A) Hamma uchun
+    B) Sinf va vorislar uchun
+    C) Faqat sinf ichida
+    D) Hech kim uchun emas
+    Javob: B
+
+45. Constructor nima?
+    A) O'chiruvchi funksiya
+    B) Obyekt yaratilganda chaqiriluvchi funksiya
+    C) Oddiy funksiya
+    D) Virtual funksiya
+    Javob: B
+
+46. Destructor qachon chaqiriladi?
+    A) Obyekt yaratilganda
+    B) Obyekt yo'q qilinganda
+    C) Funksiya chaqirilganda
+    D) Tsikl tugaganda
+    Javob: B
+
+47. Destructor qanday belgilanadi?
+    A) &ClassName
+    B) ~ClassName
+    C) *ClassName
+    D) #ClassName
+    Javob: B
+
+48. Merosxo'rlik (inheritance) nima?
+    A) Ma'lumotlarni yashirish
+    B) Bir sinfdan boshqasiga xususiyatlarni olish
+    C) Ko'pshaklilik
+    D) Abstraksiya
+    Javob: B
+
+49. Qaysi kalit so'z merosxo'rlik uchun ishlatiladi?
+    A) extends
+    B) :
+    C) inherits
+    D) ->
+    Javob: B
+
+50. Polimorfizm nima?
+    A) Ma'lumotlarni yashirish
+    B) Bir xil nomli funksiyalarning turli ishlashi
+    C) Merosxo'rlik
+    D) Xotirani boshqarish
+    Javob: B
+
+51. virtual kalit so'zi nima uchun ishlatiladi?
+    A) O'zgaruvchi yaratish
+    B) Polimorfizmni ta'minlash
+    C) Massiv yaratish
+    D) Tsikl yaratish
+    Javob: B
+
+52. Abstrakt sinf nima?
+    A) Bo'sh sinf
+    B) Obyekt yaratib bo'lmaydigan sinf
+    C) Oddiy sinf
+    D) Statik sinf
+    Javob: B
+
+53. Pure virtual funksiya qanday yoziladi?
+    A) virtual void func();
+    B) virtual void func() = 0;
+    C) void virtual func();
+    D) abstract void func();
+    Javob: B
+
+54. this pointer nima?
+    A) Tashqi o'zgaruvchiga ko'rsatkich
+    B) Joriy obyektga ko'rsatkich
+    C) Funksiyaga ko'rsatkich
+    D) Massivga ko'rsatkich
+    Javob: B
+
+55. static o'zgaruvchi qanday xususiyatga ega?
+    A) Har safar yangilanadi
+    B) Qiymatini saqlaydi
+    C) Faqat funksiyada ishlaydi
+    D) Xotirada saqlanmaydi
+    Javob: B
+
+56. const kalit so'zi nima qiladi?
+    A) O'zgaruvchini dinamik qiladi
+    B) O'zgaruvchini o'zgarmas qiladi
+    C) O'zgaruvchini o'chiradi
+    D) O'zgaruvchini kattalashtiradi
+    Javob: B
+
+57. Overloading nima?
+    A) Funksiyani o'chirish
+    B) Bir xil nomli funksiyalarni turli parametrlar bilan yaratish
+    C) Funksiyani qayta yozish
+    D) Funksiyani chaqirish
+    Javob: B
+
+58. Overriding nima?
+    A) Yangi funksiya yaratish
+    B) Ota sinf funksiyasini qayta yozish
+    C) Funksiyani o'chirish
+    D) Funksiyani ko'chirish
+    Javob: B
+
+59. friend funksiya nima?
+    A) Oddiy funksiya
+    B) Sinfning private a'zolariga kiruvchi tashqi funksiya
+    C) Virtual funksiya
+    D) Statik funksiya
+    Javob: B
+
+60. namespace nima uchun ishlatiladi?
+    A) O'zgaruvchi yaratish
+    B) Nomlar to'qnashuvini oldini olish
+    C) Funksiya yaratish
+    D) Tsikl yaratish
+    Javob: B
+
+61. std namespace nimani o'z ichiga oladi?
+    A) Foydalanuvchi kodini
+    B) Standart kutubxona elementlarini
+    C) Xatolarni
+    D) Fayllarni
+    Javob: B
+
+62. using namespace std; nima qiladi?
+    A) Yangi namespace yaratadi
+    B) std namespacedan foydalanishga ruxsat beradi
+    C) Namespace o'chiradi
+    D) Xato chiqaradi
+    Javob: B
+
+63. try-catch nima uchun ishlatiladi?
+    A) Tsikl yaratish
+    B) Xatolarni ushlash
+    C) Funksiya yaratish
+    D) O'zgaruvchi yaratish
+    Javob: B
+
+64. throw kalit so'zi nima qiladi?
+    A) Xatoni ushlaydi
+    B) Xatoni otadi (chiqaradi)
+    C) Xatoni o'chiradi
+    D) Xatoni saqlaydi
+    Javob: B
+
+65. Template nima?
+    A) Oddiy funksiya
+    B) Umumiy (generic) kod yaratish usuli
+    C) Xato turi
+    D) Ma'lumot turi
+    Javob: B
+
+66. template<typename T> da T nima?
+    A) O'zgaruvchi
+    B) Tur parametri
+    C) Funksiya
+    D) Sinf nomi
+    Javob: B
+
+67. vector nima?
+    A) Oddiy massiv
+    B) Dinamik massiv
+    C) Ko'rsatkich
+    D) Funksiya
+    Javob: B
+
+68. vector qaysi kutubxonada joylashgan?
+    A) <iostream>
+    B) <vector>
+    C) <string>
+    D) <array>
+    Javob: B
+
+69. push_back() metodi nima qiladi?
+    A) Elementni o'chiradi
+    B) Oxiriga element qo'shadi
+    C) Boshiga element qo'shadi
+    D) Elementni almashtiradi
+    Javob: B
+
+70. pop_back() metodi nima qiladi?
+    A) Oxiridan element qo'shadi
+    B) Oxiridan elementni o'chiradi
+    C) Boshidan element o'chiradi
+    D) Hammasini o'chiradi
+    Javob: B
+
+71. size() metodi nima qaytaradi?
+    A) Xotira hajmini
+    B) Elementlar sonini
+    C) Birinchi elementni
+    D) Oxirgi elementni
+    Javob: B
+
+72. empty() metodi nima tekshiradi?
+    A) To'lganligini
+    B) Bo'shligini
+    C) Hajmini
+    D) Turini
+    Javob: B
+
+73. Fayldan o'qish uchun qaysi sinf ishlatiladi?
+    A) ofstream
+    B) ifstream
+    C) fstream
+    D) iostream
+    Javob: B
+
+74. Faylga yozish uchun qaysi sinf ishlatiladi?
+    A) ifstream
+    B) ofstream
+    C) iostream
+    D) istream
+    Javob: B
+
+75. Fayl ochilganini tekshirish uchun qaysi metod ishlatiladi?
+    A) open()
+    B) is_open()
+    C) check()
+    D) test()
+    Javob: B
+
+76. Faylni yopish uchun qaysi metod ishlatiladi?
+    A) end()
+    B) close()
+    C) stop()
+    D) finish()
+    Javob: B
+
+77. ++ operatori nima qiladi?
+    A) 2 ga ko'paytiradi
+    B) 1 ga oshiradi
+    C) 1 ga kamaytiradi
+    D) 2 ga bo'ladi
+    Javob: B
+
+78. -- operatori nima qiladi?
+    A) 1 ga oshiradi
+    B) 1 ga kamaytiradi
+    C) 2 ga ko'paytiradi
+    D) 2 ga bo'ladi
+    Javob: B
+
+79. += operatori nima qiladi?
+    A) Faqat tenglashtiradi
+    B) Qo'shib tenglashtiradi
+    C) Ayirib tenglashtiradi
+    D) Bo'lib tenglashtiradi
+    Javob: B
+
+80. Ternar operator qanday yoziladi?
+    A) if-else
+    B) ? :
+    C) &&
+    D) ||
+    Javob: B
+
+81. NULL nima?
+    A) 1 ga teng
+    B) Bo'sh ko'rsatkich
+    C) Musbat son
+    D) Manfiy son
+    Javob: B
+
+82. nullptr C++ ning qaysi versiyasidan kiritilgan?
+    A) C++98
+    B) C++11
+    C) C++03
+    D) C++17
+    Javob: B
+
+83. auto kalit so'zi nima qiladi?
+    A) O'zgaruvchini o'chiradi
+    B) Turni avtomatik aniqlaydi
+    C) Funksiya yaratadi
+    D) Tsikl yaratadi
+    Javob: B
+
+84. range-based for loop qanday ko'rinishda?
+    A) for(int i=0; i<n; i++)
+    B) for(auto x : arr)
+    C) while(true)
+    D) do-while
+    Javob: B
+
+85. Lambda funksiya qanday boshlanadi?
+    A) lambda
+    B) []
+    C) {}
+    D) ()
+    Javob: B
+
+86. Quyidagilardan qaysi biri header fayl?
+    A) main.cpp
+    B) iostream
+    C) program.exe
+    D) data.txt
+    Javob: B
+
+87. Preprocessor direktivalari qaysi belgi bilan boshlanadi?
+    A) //
+    B) #
+    C) /*
+    D) @
+    Javob: B
+
+88. #define nima uchun ishlatiladi?
+    A) O'zgaruvchi yaratish
+    B) Makro aniqlash
+    C) Funksiya yaratish
+    D) Sinf yaratish
+    Javob: B
+
+89. #ifndef nima tekshiradi?
+    A) Aniqlangan bo'lsa
+    B) Aniqlanmagan bo'lsa
+    C) Bo'sh bo'lsa
+    D) To'la bo'lsa
+    Javob: B
+
+90. Compilation error qachon yuz beradi?
+    A) Dastur ishlayotganda
+    B) Kod kompilyatsiya qilinayotganda
+    C) Dastur tugaganda
+    D) Fayl ochilganda
+    Javob: B
+
+91. Runtime error qachon yuz beradi?
+    A) Kompilyatsiya vaqtida
+    B) Dastur ishlayotganda
+    C) Kod yozilayotganda
+    D) Fayl saqlanayotganda
+    Javob: B
+
+92. Segmentation fault nima?
+    A) Sintaksis xatosi
+    B) Xotiraga noto'g'ri murojaat
+    C) Mantiqiy xato
+    D) Kompilyatsiya xatosi
+    Javob: B
+
+93. cin.ignore() nima qiladi?
+    A) Kiritishni to'xtatadi
+    B) Buferdagi belgilarni o'tkazib yuboradi
+    C) Chiqarishni to'xtatadi
+    D) Dasturni to'xtatadi
+    Javob: B
+
+94. getline() funksiyasi nima qiladi?
+    A) Bitta so'z o'qiydi
+    B) Butun qatorni o'qiydi
+    C) Son o'qiydi
+    D) Belgi o'qiydi
+    Javob: B
+
+95. C++ da ko'p o'lchamli massiv qanday e'lon qilinadi?
+    A) int arr[5];
+    B) int arr[3][4];
+    C) int arr[];
+    D) int arr;
+    Javob: B
+
+96. strlen() funksiyasi nima qaytaradi?
+    A) Satr hajmini baytlarda
+    B) Satr uzunligini belgilarda
+    C) Massiv uzunligini
+    D) Xotira manzilini
+    Javob: B
+
+97. strcpy() funksiyasi nima qiladi?
+    A) Satrlarni taqqoslaydi
+    B) Satrni ko'chiradi
+    C) Satrlarni birlashtiradi
+    D) Satr uzunligini aniqlaydi
+    Javob: B
+
+98. strcmp() funksiyasi nima qaytaradi agar satrlar teng bo'lsa?
+    A) 1
+    B) 0
+    C) -1
+    D) true
+    Javob: B
+
+99. C++ standart kutubxonasining qisqartmasi nima?
+    A) SCL
+    B) STL
+    C) CPP
+    D) LIB
+    Javob: B
+
+100. main() funksiyasi odatda nima qaytaradi muvaffaqiyatli tugaganda?
+     A) 1
+     B) 0
+     C) -1
+     D) true
+     Javob: B
+
+=============================================
+                    YAKUNLANDI
+=============================================

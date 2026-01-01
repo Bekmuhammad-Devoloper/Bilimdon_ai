@@ -1,0 +1,706 @@
+MONGODB - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+====================================================
+
+1. Aggregation Framework nima?
+   A) Index yaratish
+   B) Ma'lumotlarni qayta ishlash va tahlil qilish pipeline
+   C) Backup olish
+   D) Replication
+   Javob: B
+
+2. Aggregation pipeline da $match stage:
+   A) Grouping
+   B) Filtrlash (WHERE kabi)
+   C) Projection
+   D) Sorting
+   Javob: B
+
+3. Aggregation da $group stage:
+   A) Filtrlash
+   B) Documentlarni guruhlash (GROUP BY kabi)
+   C) Sorting
+   D) Projection
+   Javob: B
+
+4. $group da _id nima?
+   A) Document ID
+   B) Guruhlash kaliti (field)
+   C) Index
+   D) Collection ID
+   Javob: B
+
+5. Yoshlar bo'yicha guruhlash va har bir yoshdagi foydalanuvchilar soni:
+   A) db.users.group({age: 1})
+   B) db.users.aggregate([{$group: {_id: "$age", count: {$sum: 1}}}])
+   C) db.users.find().groupBy("age")
+   D) db.users.count({groupBy: "age"})
+   Javob: B
+
+6. $sum aggregation operatori:
+   A) Sonlar farqi
+   B) Yig'indi hisoblash
+   C) O'rtacha
+   D) Maksimum
+   Javob: B
+
+7. $avg aggregation operatori:
+   A) Sum
+   B) O'rtacha qiymat
+   C) Count
+   D) Max
+   Javob: B
+
+8. $min va $max:
+   A) Birinchi va oxirgi
+   B) Minimal va maksimal qiymatlar
+   C) Add va remove
+   D) Start va end
+   Javob: B
+
+9. $project stage nima qiladi?
+   A) Filtrlaydi
+   B) Fieldlarni tanlash/o'zgartirish (SELECT kabi)
+   C) Guruhlaydi
+   D) Saralaydi
+   Javob: B
+
+10. $sort stage:
+    A) Filtrlash
+    B) Natijalarni saralash
+    C) Guruhlash
+    D) Projection
+    Javob: B
+
+11. $limit va $skip aggregation da:
+    A) Filter va sort
+    B) Natijalarni cheklash va o'tkazib yuborish
+    C) Group va project
+    D) Match va unwind
+    Javob: B
+
+12. $unwind stage nima qiladi?
+    A) Array yaratadi
+    B) Array ni alohida documentlarga ajratadi
+    C) Documentlarni birlashtiradi
+    D) Fieldni o'chiradi
+    Javob: B
+
+13. hobbies: ["reading", "gaming", "coding"] - $unwind qilganda:
+    A) Bitta document
+    B) 3 ta alohida document (har biri bitta hobby bilan)
+    C) Array o'chadi
+    D) Xato beradi
+    Javob: B
+
+14. $lookup stage nima (aggregation)?
+    A) Qidirish
+    B) LEFT OUTER JOIN - boshqa collection bilan bog'lash
+    C) Index lookup
+    D) Field lookup
+    Javob: B
+
+15. $lookup sintaksisi:
+    A) {$lookup: {collection: "orders"}}
+    B) {$lookup: {from: "orders", localField: "user_id", foreignField: "_id", as: "orders"}}
+    C) {$lookup: {join: "orders", on: "user_id"}}
+    D) {$lookup: "orders"}
+    Javob: B
+
+16. $addFields stage:
+    A) Field o'chiradi
+    B) Yangi fieldlar qo'shadi yoki mavjudini o'zgartiradi
+    C) Collection qo'shadi
+    D) Index qo'shadi
+    Javob: B
+
+17. $count stage:
+    A) Array uzunligi
+    B) Pipeline dagi documentlar sonini qaytaradi
+    C) Field soni
+    D) Collection soni
+    Javob: B
+
+18. $out stage nima qiladi?
+    A) Console ga chiqaradi
+    B) Natijani yangi collection ga yozadi
+    C) Export qiladi
+    D) Delete qiladi
+    Javob: B
+
+19. $merge stage ($out dan farqi):
+    A) Bir xil
+    B) Mavjud collection ga merge qiladi (upsert, replace, ...)
+    C) Export qiladi
+    D) Backup oladi
+    Javob: B
+
+20. Compound index nima?
+    A) Bitta field index
+    B) Bir nechta field dan tashkil topgan index
+    C) Unique index
+    D) Text index
+    Javob: B
+
+21. Compound index yaratish {name: 1, age: -1}:
+    A) Faqat name bo'yicha
+    B) name o'sish, age kamayish tartibida
+    C) Faqat age bo'yicha
+    D) Ikkalasi ham o'sish
+    Javob: B
+
+22. Compound index da "left prefix rule" nima?
+    A) Faqat oxirgi field
+    B) Index chapdan o'ngga ishlatiladi (birinchi field kerak)
+    C) Faqat o'rtadagi field
+    D) Tartib muhim emas
+    Javob: B
+
+23. Index {a: 1, b: 1, c: 1} - qaysi query foydalanadi?
+    A) {c: 1}
+    B) {a: 1} yoki {a: 1, b: 1} yoki {a: 1, b: 1, c: 1}
+    C) {b: 1}
+    D) {b: 1, c: 1}
+    Javob: B
+
+24. Text index nima uchun?
+    A) Number qidirish
+    B) Matnli qidirish (full-text search)
+    C) Date qidirish
+    D) ObjectId qidirish
+    Javob: B
+
+25. Text index yaratish:
+    A) db.articles.createIndex({content: "string"})
+    B) db.articles.createIndex({content: "text"})
+    C) db.articles.createIndex({content: "fulltext"})
+    D) db.articles.createIndex({content: "search"})
+    Javob: B
+
+26. Text search query:
+    A) db.articles.find({content: "mongodb"})
+    B) db.articles.find({$text: {$search: "mongodb"}})
+    C) db.articles.find({$search: "mongodb"})
+    D) db.articles.search("mongodb")
+    Javob: B
+
+27. Text search da score olish:
+    A) {score: 1}
+    B) {score: {$meta: "textScore"}}
+    C) {$score: true}
+    D) {textScore: 1}
+    Javob: B
+
+28. Geospatial index - 2dsphere:
+    A) Text search
+    B) Geografik nuqtalar uchun (longitude, latitude)
+    C) Number range
+    D) Date range
+    Javob: B
+
+29. GeoJSON Point formati:
+    A) {lat: 41.3, lng: 69.2}
+    B) {type: "Point", coordinates: [69.2, 41.3]}
+    C) [41.3, 69.2]
+    D) {coordinates: {lat: 41.3, lng: 69.2}}
+    Javob: B
+
+30. $near operatori:
+    A) Matn qidirish
+    B) Yaqin joylashgan nuqtalarni topish
+    C) Number compare
+    D) Date compare
+    Javob: B
+
+31. $geoWithin operatori:
+    A) Near
+    B) Berilgan hudud ichidagi nuqtalar
+    C) Outside
+    D) Distance
+    Javob: B
+
+32. TTL (Time-To-Live) index nima?
+    A) Unique index
+    B) Vaqt o'tganda documentni avtomatik o'chiruvchi index
+    C) Text index
+    D) Compound index
+    Javob: B
+
+33. TTL index yaratish (30 kundan keyin o'chirish):
+    A) db.logs.createIndex({createdAt: 1}, {ttl: 30})
+    B) db.logs.createIndex({createdAt: 1}, {expireAfterSeconds: 2592000})
+    C) db.logs.createIndex({createdAt: 1}, {expire: "30d"})
+    D) db.logs.createIndex({createdAt: 1}, {deleteAfter: 30})
+    Javob: B
+
+34. Sparse index nima?
+    A) Dense index
+    B) Faqat mavjud field lar uchun index (null/missing ni o'tkazib yuboradi)
+    C) Full index
+    D) Partial index
+    Javob: B
+
+35. Partial index nima?
+    A) Sparse index
+    B) Filter sharti bo'yicha faqat ba'zi documentlar uchun index
+    C) Full index
+    D) Unique index
+    Javob: B
+
+36. Partial index yaratish (faqat active: true uchun):
+    A) db.users.createIndex({email: 1}, {sparse: true})
+    B) db.users.createIndex({email: 1}, {partialFilterExpression: {active: true}})
+    C) db.users.createIndex({email: 1}, {filter: {active: true}})
+    D) db.users.createIndex({email: 1}, {where: {active: true}})
+    Javob: B
+
+37. Hidden index nima?
+    A) O'chirilgan index
+    B) Query planner dan yashirilgan index (test uchun)
+    C) Invisible field
+    D) Private index
+    Javob: B
+
+38. Index ni hide qilish:
+    A) db.users.deleteIndex("name_1")
+    B) db.users.hideIndex("name_1")
+    C) db.users.removeIndex("name_1")
+    D) db.users.disableIndex("name_1")
+    Javob: B
+
+39. Covered query nima?
+    A) Slow query
+    B) Butunlay index dan javob qaytariladigan query (collection scan yo'q)
+    C) Uncovered query
+    D) Full scan query
+    Javob: B
+
+40. Covered query bo'lishi uchun:
+    A) Index kerak emas
+    B) Barcha so'ralgan fieldlar index da bo'lishi kerak
+    C) Faqat _id bo'lishi kerak
+    D) Collection kichik bo'lishi kerak
+    Javob: B
+
+41. $facet aggregation stage:
+    A) Bitta pipeline
+    B) Bir nechta parallel pipeline larni bitta stage da
+    C) Filter
+    D) Group
+    Javob: B
+
+42. $bucket aggregation:
+    A) Random grouping
+    B) Qiymatlarni belgilangan diapazonlarga guruhlash
+    C) Sort
+    D) Filter
+    Javob: B
+
+43. $bucketAuto aggregation:
+    A) Manual bucket
+    B) Avtomatik teng bucket larga bo'lish
+    C) Sort
+    D) Filter
+    Javob: B
+
+44. $redact aggregation:
+    A) Add fields
+    B) Document yoki field darajasida access control
+    C) Remove fields
+    D) Rename fields
+    Javob: B
+
+45. $sample aggregation:
+    A) Barcha documentlar
+    B) Tasodifiy n ta document tanlash
+    C) Birinchi n ta
+    D) Oxirgi n ta
+    Javob: B
+
+46. $graphLookup nima?
+    A) Oddiy lookup
+    B) Recursive/graph traversal lookup
+    C) Index lookup
+    D) Text lookup
+    Javob: B
+
+47. $arrayElemAt aggregation operatori:
+    A) Array yaratadi
+    B) Array dan index bo'yicha element oladi
+    C) Array ga qo'shadi
+    D) Array ni o'chiradi
+    Javob: B
+
+48. $filter aggregation operatori:
+    A) Document filtrlash
+    B) Array ichidagi elementlarni filtrlash
+    C) Field filtrlash
+    D) Collection filtrlash
+    Javob: B
+
+49. $map aggregation operatori:
+    A) Geo map
+    B) Array har bir elementiga funksiya qo'llash
+    C) Key-value map
+    D) Index map
+    Javob: B
+
+50. $reduce aggregation operatori:
+    A) Array yaratadi
+    B) Array ni bitta qiymatga kamaytirish (reduce)
+    C) Document o'chiradi
+    D) Field o'chiradi
+    Javob: B
+
+51. $expr operatori find() da:
+    A) Expression yozish
+    B) Aggregation expression lardan foydalanish
+    C) Regular expression
+    D) Math expression
+    Javob: B
+
+52. $expr bilan ikkita fieldni solishtirish:
+    A) db.orders.find({qty: {$gt: "$stock"}})
+    B) db.orders.find({$expr: {$gt: ["$qty", "$stock"]}})
+    C) db.orders.find({$compare: ["qty", "stock"]})
+    D) db.orders.find({qty: {$field: "stock"}})
+    Javob: B
+
+53. $cond aggregation (if-then-else):
+    A) {$if: {...}}
+    B) {$cond: {if: ..., then: ..., else: ...}}
+    C) {$case: {...}}
+    D) {$switch: {...}}
+    Javob: B
+
+54. $switch aggregation:
+    A) If-else
+    B) Multiple conditions (case-when kabi)
+    C) Loop
+    D) Break
+    Javob: B
+
+55. $ifNull operatori:
+    A) Null tekshirish
+    B) Null bo'lsa default qiymat qaytarish
+    C) Null o'chirish
+    D) Null yaratish
+    Javob: B
+
+56. Transactions MongoDB da qachon qo'llandi?
+    A) MongoDB 3.0
+    B) MongoDB 4.0 (multi-document transactions)
+    C) MongoDB 2.0
+    D) MongoDB 5.0
+    Javob: B
+
+57. Transaction boshlash:
+    A) db.startTransaction()
+    B) session.startTransaction()
+    C) db.beginTransaction()
+    D) mongo.transaction()
+    Javob: B
+
+58. Transaction commit:
+    A) session.commit()
+    B) session.commitTransaction()
+    C) db.commit()
+    D) transaction.save()
+    Javob: B
+
+59. Transaction abort:
+    A) session.cancel()
+    B) session.abortTransaction()
+    C) db.rollback()
+    D) transaction.undo()
+    Javob: B
+
+60. Read Concern nima?
+    A) Write sozlamasi
+    B) O'qish operatsiyasi uchun consistency darajasi
+    C) Security sozlamasi
+    D) Index sozlamasi
+    Javob: B
+
+61. Read Concern "majority":
+    A) Bitta node dan o'qish
+    B) Ko'pchilik node larga yozilgan ma'lumotni o'qish
+    C) Primary dan o'qish
+    D) Local o'qish
+    Javob: B
+
+62. Write Concern nima?
+    A) Read sozlamasi
+    B) Yozish operatsiyasi uchun acknowledgment darajasi
+    C) Security sozlamasi
+    D) Index sozlamasi
+    Javob: B
+
+63. Write Concern {w: "majority"}:
+    A) Bitta node ga yozish
+    B) Ko'pchilik node larga yozilganda tasdiqlash
+    C) Barcha node larga yozish
+    D) Primary ga yozish
+    Javob: B
+
+64. Write Concern {j: true}:
+    A) Journal o'chirish
+    B) Journal ga yozilganda tasdiqlash
+    C) Journal o'qish
+    D) Journal yaratish
+    Javob: B
+
+65. Replica Set da arbiter nima?
+    A) Primary node
+    B) Voting member (ma'lumot saqlamaydi, faqat saylovda)
+    C) Secondary node
+    D) Hidden node
+    Javob: B
+
+66. Replica Set da priority 0:
+    A) Eng yuqori priority
+    B) Bu node hech qachon primary bo'lmaydi
+    C) Normal priority
+    D) Priority yo'q
+    Javob: B
+
+67. Replica Set da hidden member:
+    A) Visible
+    B) Clients dan yashirin (backup, reporting uchun)
+    C) Primary
+    D) Arbiter
+    Javob: B
+
+68. Replica Set da delayed member:
+    A) Real-time sync
+    B) Ma'lum vaqt kechiktirib sync (disaster recovery)
+    C) Fast sync
+    D) No sync
+    Javob: B
+
+69. rs.status() nima ko'rsatadi?
+    A) Database status
+    B) Replica Set holati
+    C) Server status
+    D) Collection status
+    Javob: B
+
+70. rs.initiate() nima qiladi?
+    A) Replica Set o'chiradi
+    B) Yangi Replica Set boshlaydi
+    C) Member qo'shadi
+    D) Member o'chiradi
+    Javob: B
+
+71. rs.add("hostname:27017") nima?
+    A) Database qo'shadi
+    B) Replica Set ga yangi member qo'shadi
+    C) Collection qo'shadi
+    D) Index qo'shadi
+    Javob: B
+
+72. Sharding nima?
+    A) Replication
+    B) Ma'lumotlarni bir nechta server larga taqsimlash (horizontal scaling)
+    C) Backup
+    D) Indexing
+    Javob: B
+
+73. Shard key nima?
+    A) Primary key
+    B) Ma'lumotlarni shard larga taqsimlash uchun field
+    C) Foreign key
+    D) Index key
+    Javob: B
+
+74. Chunk (sharding da) nima?
+    A) Butun collection
+    B) Ma'lumotlarning bir qismi (shard key range)
+    C) Bitta document
+    D) Bitta shard
+    Javob: B
+
+75. mongos nima?
+    A) MongoDB server
+    B) Sharded cluster uchun query router
+    C) Config server
+    D) Shard server
+    Javob: B
+
+76. Config server nima (sharding)?
+    A) Application server
+    B) Cluster metadata va shard key range larni saqlaydi
+    C) Data server
+    D) Backup server
+    Javob: B
+
+77. Hashed shard key afzalligi:
+    A) Range query yaxshi
+    B) Ma'lumotlarni tekis taqsimlash
+    C) Sorting yaxshi
+    D) Compound key
+    Javob: B
+
+78. Range shard key afzalligi:
+    A) Tekis taqsimot
+    B) Range query lar samarali
+    C) Random access
+    D) Hashed access
+    Javob: B
+
+79. sh.status() nima ko'rsatadi?
+    A) Server status
+    B) Sharded cluster holati
+    C) Shard status
+    D) Database status
+    Javob: B
+
+80. sh.enableSharding("mydb"):
+    A) Sharding o'chiradi
+    B) Database uchun sharding ni yoqadi
+    C) Collection sharding
+    D) Index sharding
+    Javob: B
+
+81. sh.shardCollection("mydb.users", {user_id: "hashed"}):
+    A) Database sharding
+    B) Collection ni shard qiladi (hashed key bilan)
+    C) Index yaratadi
+    D) Backup oladi
+    Javob: B
+
+82. Change Streams nima?
+    A) File stream
+    B) Real-time ma'lumot o'zgarishlarini kuzatish
+    C) Network stream
+    D) Log stream
+    Javob: B
+
+83. Change Stream ochish:
+    A) db.users.stream()
+    B) db.users.watch()
+    C) db.users.listen()
+    D) db.users.observe()
+    Javob: B
+
+84. Change Stream event turlari:
+    A) Faqat insert
+    B) insert, update, replace, delete, drop, ...
+    C) Faqat delete
+    D) Faqat update
+    Javob: B
+
+85. $changeStream aggregation:
+    A) File stream
+    B) Aggregation pipeline da change stream
+    C) Network stream
+    D) Data stream
+    Javob: B
+
+86. Capped collection nima?
+    A) Unlimited collection
+    B) Fixed-size collection (FIFO, eski documentlar avtomatik o'chadi)
+    C) Temporary collection
+    D) Virtual collection
+    Javob: B
+
+87. Capped collection yaratish:
+    A) db.createCollection("logs", {fixed: true})
+    B) db.createCollection("logs", {capped: true, size: 1000000})
+    C) db.createCollection("logs", {limited: true})
+    D) db.createCollection("logs", {maxSize: 1000000})
+    Javob: B
+
+88. Capped collection da document o'chirish mumkinmi?
+    A) Ha, oddiy delete
+    B) Yo'q, faqat avtomatik (FIFO) yoki drop
+    C) Faqat updateMany bilan
+    D) Faqat admin
+    Javob: B
+
+89. View nima MongoDB da?
+    A) GUI
+    B) Virtual collection (aggregation pipeline asosida)
+    C) Index
+    D) Backup
+    Javob: B
+
+90. View yaratish:
+    A) db.createIndex("myView", ...)
+    B) db.createView("myView", "sourceCollection", [pipeline])
+    C) db.createCollection("myView", {view: true})
+    D) db.view("myView", ...)
+    Javob: B
+
+91. Schema validation qo'shish:
+    A) db.users.addSchema({})
+    B) db.runCommand({collMod: "users", validator: {...}})
+    C) db.users.setSchema({})
+    D) db.users.validate({})
+    Javob: B
+
+92. Validation action: "warn" nima?
+    A) Reject qiladi
+    B) Xato log qiladi lekin yozishga ruxsat
+    C) Ignore qiladi
+    D) Delete qiladi
+    Javob: B
+
+93. Validation action: "error" nima?
+    A) Warning beradi
+    B) Invalid document ni reject qiladi
+    C) Log qiladi
+    D) Skip qiladi
+    Javob: B
+
+94. $jsonSchema validator:
+    A) BSON schema
+    B) JSON Schema standartida validation
+    C) XML schema
+    D) GraphQL schema
+    Javob: B
+
+95. MongoDB profiler nima?
+    A) User profiler
+    B) Query performance ni log qilish
+    C) Memory profiler
+    D) CPU profiler
+    Javob: B
+
+96. db.setProfilingLevel(1, {slowms: 100}):
+    A) Barcha query lar
+    B) 100ms dan sekin query larni log qilish
+    C) Faqat tez query lar
+    D) Profiling o'chirish
+    Javob: B
+
+97. system.profile collection:
+    A) User profiles
+    B) Profiled query lar saqlanadigan collection
+    C) System info
+    D) Index info
+    Javob: B
+
+98. currentOp() nima ko'rsatadi?
+    A) Past operations
+    B) Hozirda bajarilayotgan operatsiyalar
+    C) Future operations
+    D) Completed operations
+    Javob: B
+
+99. db.killOp(opId):
+    A) Database o'chiradi
+    B) Berilgan operatsiyani to'xtatadi
+    C) Collection o'chiradi
+    D) Server o'chiradi
+    Javob: B
+
+100. serverStatus() nima qaytaradi?
+     A) Database status
+     B) MongoDB server haqida batafsil ma'lumot
+     C) Collection status
+     D) Index status
+     Javob: B
+
+====================================================
+                     YAKUNLANDI
+====================================================

@@ -1,0 +1,148 @@
+===============================================
+JAVASCRIPT - HARD SAVOLLARI
+===============================================
+
+SAVOL 1: Event delegation nima?
+A) Event o'zgartiradigan
+B) Parent element event handling
+C) DOM element
+D) Event listener
+JAVOB: B
+
+SAVOL 2: Hoisting nima?
+A) Function move
+B) Variable/function declaration top-ga siljish
+C) Scope
+D) Closure
+JAVOB: B
+
+SAVOL 3: Temporal Dead Zone (TDZ) nima?
+A) Zone
+B) let/const initialize vaqtigacha access yo'q
+C) Variable declaration
+D) Function declaration
+JAVOB: B
+
+SAVOL 4: Call vs Apply vs Bind farqi nima?
+A) Farqi yo'q
+B) Call(context, args), Apply(context, [args]), Bind(context)
+C) Scope
+D) Function
+JAVOB: B
+
+SAVOL 5: Currying nima?
+A) Function calling
+B) Multi-arg function -> single-arg functions
+C) Partial application
+D) Function composition
+JAVOB: B
+
+SAVOL 6: Module pattern nima?
+A) Design pattern
+B) Closure-based encapsulation
+C) IIFE
+D) Factory pattern
+JAVOB: B
+
+SAVOL 7: Observer pattern nima?
+A) Watch pattern
+B) Subject-Observer communication (event driven)
+C) Pub-sub
+D) Event emitter
+JAVOB: B
+
+SAVOL 8: Memoization nima?
+A) Memory allocation
+B) Function result caching
+C) Optimization
+D) Performance
+JAVOB: B
+
+SAVOL 9: WeakMap nima uchun?
+A) Regular map
+B) Weak references (garbage collect)
+C) Object storage
+D) Key-value
+JAVOB: B
+
+SAVOL 10: Symbol nima?
+A) String
+B) Unique primitive value
+C) Object key
+D) Identifier
+JAVOB: B
+
+SAVOL 11: Proxy nima?
+A) Object wrapper
+B) Object behavior intercept
+C) Meta-programming
+D) Reflect
+JAVOB: B
+
+SAVOL 12: Reflect API nima?
+A) Mirror
+B) Meta-programming built-in methods
+C) Proxy
+D) Object methods
+JAVOB: B
+
+SAVOL 13: Event loop nima?
+A) Loop
+B) Async operation handling (call stack, queue)
+C) Callback
+D) Promise
+JAVOB: B
+
+SAVOL 14: Microtask vs Macrotask farqi nima?
+A) Task size
+B) Microtask execute first (Promise, then macrotask)
+C) Timing
+D) Priority
+JAVOB: B
+
+SAVOL 15: Tree shaking nima?
+A) DOM tree
+B) Unused code elimination (bundler)
+C) Optimization
+D) Build process
+JAVOB: B
+
+SAVOL 16: Prototype pollution nima?
+A) Prototype modification
+B) Security vulnerability (prototype override)
+C) Attack
+D) Injection
+JAVOB: B
+
+SAVOL 17: Immutability patterns nima?
+A) Mutable
+B) Object-ni o'zgartirilmaydigan qilish
+C) Copy
+D) Reference
+JAVOB: B
+
+SAVOL 18: Higher-order function nima?
+A) Regular function
+B) Function return/take function
+C) Callback
+D) Arrow function
+JAVOB: B
+
+SAVOL 19: Function composition nima?
+A) Function combine
+B) f(g(x)) pattern
+C) Pipeline
+D) Flow
+JAVOB: B
+
+SAVOL 20: Debounce vs Throttle farqi nima?
+A) Time delay
+B) Debounce(call after delay), Throttle(max 1 per interval)
+C) Function timing
+D) Event handling
+JAVOB: B
+
+===============================================
+HARD SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: MURAKKAB
+===============================================

@@ -1,0 +1,706 @@
+NODEJS - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+===================================================
+
+1. Event Loop nima?
+   A) Sync loop
+   B) Async operations ni boshqaruvchi mexanizm
+   C) For loop
+   D) While loop
+   Javob: B
+
+2. Event Loop phases (tartibda):
+   A) Random order
+   B) Timers -> Pending -> Idle -> Poll -> Check -> Close
+   C) Poll -> Timers -> Check
+   D) Check -> Poll -> Timers
+   Javob: B
+
+3. Timers phase nima?
+   A) setImmediate
+   B) setTimeout va setInterval callbacks
+   C) I/O callbacks
+   D) process.nextTick
+   Javob: B
+
+4. Poll phase nima?
+   A) Timers
+   B) I/O events va callbacks
+   C) setImmediate
+   D) nextTick
+   Javob: B
+
+5. Check phase nima?
+   A) setTimeout
+   B) setImmediate callbacks
+   C) I/O callbacks
+   D) Close callbacks
+   Javob: B
+
+6. process.nextTick() vs setImmediate() farqi:
+   A) Bir xil
+   B) nextTick - current phase oxirida, setImmediate - check phase da
+   C) setImmediate birinchi
+   D) Random
+   Javob: B
+
+7. Microtask queue nima?
+   A) Macrotask queue
+   B) Promise callbacks, process.nextTick (yuqori priority)
+   C) Timer queue
+   D) I/O queue
+   Javob: B
+
+8. Macrotask vs Microtask:
+   A) Bir xil
+   B) Microtask har phase o'rtasida, Macrotask o'z phase da
+   C) Macrotask birinchi
+   D) Random order
+   Javob: B
+
+9. Stream nima?
+   A) Static data
+   B) Data ni qismlarga bo'lib o'qish/yozish (memory efficient)
+   C) Buffer
+   D) File
+   Javob: B
+
+10. Stream turlari:
+    A) Faqat Readable
+    B) Readable, Writable, Duplex, Transform
+    C) Faqat Writable
+    D) Faqat Duplex
+    Javob: B
+
+11. Readable stream nima?
+    A) Write only
+    B) Data o'qish uchun (fs.createReadStream, http.request)
+    C) Transform
+    D) Duplex
+    Javob: B
+
+12. Writable stream nima?
+    A) Read only
+    B) Data yozish uchun (fs.createWriteStream, http.response)
+    C) Transform
+    D) Duplex
+    Javob: B
+
+13. Duplex stream nima?
+    A) Read only
+    B) Read va Write ikkalasi (TCP socket)
+    C) Write only
+    D) Transform
+    Javob: B
+
+14. Transform stream nima?
+    A) Read only
+    B) Data ni o'qib, transform qilib, yozish (zlib.createGzip)
+    C) Duplex
+    D) Write only
+    Javob: B
+
+15. stream.pipe() nima qiladi?
+    A) Create stream
+    B) Readable ni Writable ga ulaydi
+    C) Close stream
+    D) Read data
+    Javob: B
+
+16. fs.createReadStream() nima?
+    A) Sync read
+    B) File ni stream sifatida o'qish
+    C) Write stream
+    D) Buffer read
+    Javob: B
+
+17. stream.on('data', callback) nima?
+    A) End event
+    B) Data chunk kelganda ishlaydigan event
+    C) Error event
+    D) Close event
+    Javob: B
+
+18. stream.on('end', callback) nima?
+    A) Data event
+    B) Stream tugaganda ishlaydigan event
+    C) Error event
+    D) Start event
+    Javob: B
+
+19. Backpressure nima?
+    A) Fast processing
+    B) Writer tezligi reader dan sekinroq bo'lganda
+    C) No pressure
+    D) High pressure
+    Javob: B
+
+20. stream.pause() va stream.resume():
+    A) Stop/start
+    B) Flow control (backpressure handling)
+    C) Error handling
+    D) Close stream
+    Javob: B
+
+21. Child Process nima?
+    A) Main process
+    B) Yangi process yaratib, parallel ishlatish
+    C) Thread
+    D) Cluster
+    Javob: B
+
+22. child_process.spawn() nima?
+    A) Sync execute
+    B) Yangi process yaratib, stream orqali muloqot
+    C) Fork process
+    D) Exec command
+    Javob: B
+
+23. child_process.exec() nima?
+    A) Stream based
+    B) Shell command bajarib, buffer da natija
+    C) Spawn
+    D) Fork
+    Javob: B
+
+24. child_process.execFile() nima?
+    A) Shell orqali
+    B) Direct executable file (shell siz)
+    C) Spawn
+    D) Fork
+    Javob: B
+
+25. child_process.fork() nima?
+    A) exec
+    B) Yangi Node.js process (IPC bilan)
+    C) spawn
+    D) exec
+    Javob: B
+
+26. spawn() vs exec() farqi:
+    A) Bir xil
+    B) spawn - stream, exec - buffer (katta output uchun spawn)
+    C) exec - stream
+    D) spawn - buffer
+    Javob: B
+
+27. IPC (Inter-Process Communication) nima?
+    A) HTTP
+    B) Process lar o'rtasida message almashish
+    C) File sharing
+    D) Network
+    Javob: B
+
+28. child.send() va process.on('message') nima?
+    A) HTTP message
+    B) Fork qilingan process bilan IPC
+    C) File message
+    D) Event message
+    Javob: B
+
+29. Cluster module nima uchun?
+    A) Single process
+    B) Multi-core CPU dan foydalanish (load balancing)
+    C) Child process
+    D) Thread
+    Javob: B
+
+30. cluster.fork() nima qiladi?
+    A) Child process
+    B) Worker process yaratadi
+    C) Thread yaratadi
+    D) Cluster to'xtatadi
+    Javob: B
+
+31. cluster.isMaster vs cluster.isWorker:
+    A) Bir xil
+    B) Master - asosiy process, Worker - fork qilingan
+    C) Master - worker
+    D) Worker - master
+    Javob: B
+
+32. os.cpus().length nima uchun (cluster da)?
+    A) Memory size
+    B) CPU cores soni - worker lar soni uchun
+    C) Disk size
+    D) Network interfaces
+    Javob: B
+
+33. Worker Threads nima?
+    A) Cluster
+    B) True multi-threading (shared memory)
+    C) Child process
+    D) Event loop
+    Javob: B
+
+34. Worker Threads vs Cluster farqi:
+    A) Bir xil
+    B) Workers - threads (shared memory), Cluster - processes (separate memory)
+    C) Cluster - threads
+    D) Workers - processes
+    Javob: B
+
+35. new Worker('./worker.js') nima?
+    A) Cluster worker
+    B) Worker thread yaratadi
+    C) Child process
+    D) Event emitter
+    Javob: B
+
+36. SharedArrayBuffer nima?
+    A) Normal buffer
+    B) Worker threads o'rtasida shared memory
+    C) File buffer
+    D) Network buffer
+    Javob: B
+
+37. fs.promises API nima?
+    A) Callback API
+    B) Promise-based file system API
+    C) Sync API
+    D) Stream API
+    Javob: B
+
+38. const fs = require('fs').promises:
+    A) Callback fs
+    B) Promise-based fs methods
+    C) Sync fs
+    D) Stream fs
+    Javob: B
+
+39. fs/promises module (Node.js 14+):
+    A) Callback API
+    B) import { readFile } from 'fs/promises'
+    C) Sync API
+    D) Stream API
+    Javob: B
+
+40. fs.watch() nima qiladi?
+    A) Read file
+    B) File/directory o'zgarishlarini kuzatadi
+    C) Write file
+    D) Delete file
+    Javob: B
+
+41. http.request() nima?
+    A) Server yaratish
+    B) HTTP client request yuborish
+    C) File request
+    D) Database request
+    Javob: B
+
+42. http.get() nima?
+    A) POST request
+    B) GET request (shorthand)
+    C) PUT request
+    D) DELETE request
+    Javob: B
+
+43. https module nima uchun?
+    A) HTTP only
+    B) HTTPS (SSL/TLS) server va client
+    C) HTTP2
+    D) WebSocket
+    Javob: B
+
+44. http2 module nima?
+    A) HTTP/1.1
+    B) HTTP/2 protocol support
+    C) HTTPS
+    D) WebSocket
+    Javob: B
+
+45. net module nima uchun?
+    A) HTTP
+    B) Low-level TCP/IPC networking
+    C) UDP
+    D) DNS
+    Javob: B
+
+46. net.createServer() nima?
+    A) HTTP server
+    B) TCP server
+    C) UDP server
+    D) WebSocket server
+    Javob: B
+
+47. dgram module nima?
+    A) TCP
+    B) UDP datagram sockets
+    C) HTTP
+    D) WebSocket
+    Javob: B
+
+48. dns module nima uchun?
+    A) HTTP
+    B) DNS lookups
+    C) TCP
+    D) UDP
+    Javob: B
+
+49. dns.lookup() vs dns.resolve():
+    A) Bir xil
+    B) lookup - OS resolver, resolve - DNS protocol
+    C) resolve - OS resolver
+    D) lookup - DNS protocol
+    Javob: B
+
+50. zlib module nima uchun?
+    A) File system
+    B) Compression (gzip, deflate, brotli)
+    C) Encryption
+    D) Hashing
+    Javob: B
+
+51. zlib.createGzip() nima?
+    A) Decompress
+    B) Gzip compress stream
+    C) Deflate
+    D) Brotli
+    Javob: B
+
+52. zlib.createGunzip() nima?
+    A) Compress
+    B) Gzip decompress stream
+    C) Inflate
+    D) Brotli decompress
+    Javob: B
+
+53. crypto.randomBytes() nima?
+    A) Hash
+    B) Cryptographically secure random bytes
+    C) Encrypt
+    D) Decrypt
+    Javob: B
+
+54. crypto.createCipheriv() nima?
+    A) Hash
+    B) Symmetric encryption
+    C) Random
+    D) Key generation
+    Javob: B
+
+55. crypto.createDecipheriv() nima?
+    A) Encrypt
+    B) Symmetric decryption
+    C) Hash
+    D) Random
+    Javob: B
+
+56. crypto.scrypt() nima uchun?
+    A) Hash
+    B) Password-based key derivation
+    C) Random
+    D) Encrypt
+    Javob: B
+
+57. crypto.pbkdf2() nima?
+    A) Encrypt
+    B) Password-Based Key Derivation Function 2
+    C) Hash
+    D) Random
+    Javob: B
+
+58. Readline module nima?
+    A) File read
+    B) Line-by-line input (stdin, file)
+    C) Write line
+    D) Buffer read
+    Javob: B
+
+59. readline.createInterface() nima?
+    A) File interface
+    B) Input/output interface (stdin/stdout)
+    C) Network interface
+    D) HTTP interface
+    Javob: B
+
+60. rl.question() nima?
+    A) Answer
+    B) User input so'rash
+    C) Close
+    D) Write
+    Javob: B
+
+61. querystring module nima?
+    A) SQL query
+    B) URL query string parsing/stringify
+    C) File query
+    D) Database query
+    Javob: B
+
+62. querystring.parse() vs URLSearchParams:
+    A) Bir xil
+    B) URLSearchParams - modern, WHATWG URL standard
+    C) querystring yangi
+    D) URLSearchParams eski
+    Javob: B
+
+63. assert module nima?
+    A) Logging
+    B) Testing assertions
+    C) Error handling
+    D) Debugging
+    Javob: B
+
+64. assert.strictEqual() nima?
+    A) Loose equality
+    B) Strict equality (===) test
+    C) Deep equality
+    D) Not equal
+    Javob: B
+
+65. assert.deepStrictEqual() nima?
+    A) Reference equality
+    B) Deep object/array equality
+    C) Shallow equality
+    D) Strict equal
+    Javob: B
+
+66. Error handling best practices:
+    A) Ignore errors
+    B) try/catch, .catch(), error-first callbacks
+    C) console.log only
+    D) process.exit
+    Javob: B
+
+67. Unhandled Promise rejection:
+    A) Silent fail
+    B) process.on('unhandledRejection') bilan handle
+    C) Auto handle
+    D) Ignore
+    Javob: B
+
+68. Uncaught Exception:
+    A) Silent fail
+    B) process.on('uncaughtException') - cleanup va exit
+    C) Auto recover
+    D) Ignore
+    Javob: B
+
+69. Custom Error class:
+    A) Not possible
+    B) class CustomError extends Error
+    C) Error.create()
+    D) new Error.Custom()
+    Javob: B
+
+70. Error.captureStackTrace() nima?
+    A) Log stack
+    B) Custom error uchun stack trace capture
+    C) Print stack
+    D) Clear stack
+    Javob: B
+
+71. Debugging - inspect flag:
+    A) node debug
+    B) node --inspect app.js (Chrome DevTools)
+    C) node --debug
+    D) node -d
+    Javob: B
+
+72. node --inspect-brk nima?
+    A) No break
+    B) Birinchi line da break point
+    C) Inspect only
+    D) Debug mode
+    Javob: B
+
+73. debugger statement nima?
+    A) Console.log
+    B) Code da breakpoint qo'yish
+    C) Error throw
+    D) Exit
+    Javob: B
+
+74. Environment variables - dotenv package:
+    A) Built-in
+    B) .env fayldan variables yuklash
+    C) System env
+    D) Config file
+    Javob: B
+
+75. NODE_ENV environment variable:
+    A) Node version
+    B) development/production/test mode
+    C) Node path
+    D) Module mode
+    Javob: B
+
+76. npm scripts - pre/post hooks:
+    A) No hooks
+    B) pretest, posttest, prebuild, ... avtomatik run
+    C) Manual hooks
+    D) Custom hooks
+    Javob: B
+
+77. npx nima?
+    A) npm install
+    B) Package ni install qilmasdan run qilish
+    C) npm update
+    D) npm publish
+    Javob: B
+
+78. npm audit nima qiladi?
+    A) Install packages
+    B) Security vulnerabilities tekshiradi
+    C) Update packages
+    D) Remove packages
+    Javob: B
+
+79. npm outdated nima?
+    A) Install
+    B) Eskirgan packages ko'rsatadi
+    C) Update
+    D) Remove
+    Javob: B
+
+80. npm update nima qiladi?
+    A) Install
+    B) Packages ni yangilaydi (semver range ichida)
+    C) Remove
+    D) Audit
+    Javob: B
+
+81. Semantic versioning (semver):
+    A) Random versioning
+    B) MAJOR.MINOR.PATCH (1.2.3)
+    C) Date versioning
+    D) Alpha versioning
+    Javob: B
+
+82. ^1.2.3 nima degani (package.json)?
+    A) Exact version
+    B) Compatible updates (1.x.x, minor va patch)
+    C) Major updates
+    D) No updates
+    Javob: B
+
+83. ~1.2.3 nima degani?
+    A) Major updates
+    B) Patch updates only (1.2.x)
+    C) Minor updates
+    D) Exact version
+    Javob: B
+
+84. package.json - engines field:
+    A) Dependencies
+    B) Node.js/npm version requirements
+    C) Scripts
+    D) Config
+    Javob: B
+
+85. package.json - main field:
+    A) Start script
+    B) Module entry point
+    C) Test file
+    D) Config file
+    Javob: B
+
+86. package.json - exports field (Node.js 12+):
+    A) Old syntax
+    B) Modern module exports (conditional exports)
+    C) Import syntax
+    D) Require syntax
+    Javob: B
+
+87. ESM vs CommonJS Node.js da:
+    A) Bir xil
+    B) ESM - import/export, CJS - require/module.exports
+    C) CJS - import
+    D) ESM - require
+    Javob: B
+
+88. .mjs vs .cjs extensions:
+    A) Bir xil
+    B) .mjs - ES Modules, .cjs - CommonJS
+    C) .mjs - CommonJS
+    D) .cjs - ES Modules
+    Javob: B
+
+89. Top-level await (ESM):
+    A) CJS da ham
+    B) ES Modules da async/await module top level da
+    C) Faqat functions da
+    D) Not supported
+    Javob: B
+
+90. __dirname ESM da:
+    A) Mavjud
+    B) import.meta.url dan olish kerak
+    C) Bir xil
+    D) global.__dirname
+    Javob: B
+
+91. import.meta.url nima?
+    A) Package URL
+    B) Current module file URL
+    C) HTTP URL
+    D) API URL
+    Javob: B
+
+92. path.dirname(fileURLToPath(import.meta.url)):
+    A) File name
+    B) ESM da __dirname equivalent
+    C) URL path
+    D) Module name
+    Javob: B
+
+93. Performance hooks (perf_hooks):
+    A) Logging
+    B) Performance measurement API
+    C) Debugging
+    D) Profiling
+    Javob: B
+
+94. performance.now() nima?
+    A) Date.now()
+    B) High-resolution time (microseconds)
+    C) Unix timestamp
+    D) Random number
+    Javob: B
+
+95. PerformanceObserver nima?
+    A) Error observer
+    B) Performance entries observe qilish
+    C) Event observer
+    D) File observer
+    Javob: B
+
+96. vm module nima uchun?
+    A) Virtual machine
+    B) JavaScript code compilation va execution (sandbox)
+    C) Memory management
+    D) CPU management
+    Javob: B
+
+97. vm.runInNewContext() nima?
+    A) Main context
+    B) Isolated context da code run
+    C) Shared context
+    D) Global context
+    Javob: B
+
+98. REPL module programmatic usage:
+    A) CLI only
+    B) repl.start() - custom REPL yaratish
+    C) Not possible
+    D) Built-in only
+    Javob: B
+
+99. inspector module nima?
+    A) File inspector
+    B) V8 inspector API (programmatic debugging)
+    C) HTTP inspector
+    D) Memory inspector
+    Javob: B
+
+100. async_hooks module nima?
+     A) Event hooks
+     B) Async resources lifecycle tracking
+     C) HTTP hooks
+     D) File hooks
+     Javob: B
+
+===================================================
+                     YAKUNLANDI
+===================================================

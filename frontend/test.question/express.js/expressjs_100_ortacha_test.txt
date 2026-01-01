@@ -1,0 +1,706 @@
+EXPRESS.JS FRAMEWORK - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+=================================================================
+
+1. Express da middleware execution order qanday?
+   A) Random
+   B) Qo'shilgan tartibda (yuqoridan pastga)
+   C) Alifbo tartibida
+   D) Teskari tartibda
+   Javob: B
+
+2. app.use() va app.get() middleware farqi?
+   A) Farqi yo'q
+   B) app.use() barcha methodlar, app.get() faqat GET uchun
+   C) app.get() barcha methodlar
+   D) app.use() faqat GET
+   Javob: B
+
+3. Path pattern '/users/*' nima match qiladi?
+   A) Faqat /users
+   B) /users/ va undan keyingi barcha path
+   C) Faqat /users/id
+   D) Hech narsa
+   Javob: B
+
+4. app.use('/api', apiRouter) da /api nima?
+   A) Full path
+   B) Mount path (prefix)
+   C) Query param
+   D) Route param
+   Javob: B
+
+5. Router ichida '/' route mount path bilan qanday ishlaydi?
+   A) Root '/' ga boradi
+   B) Mount path ga qo'shiladi (/api + / = /api)
+   C) Xato beradi
+   D) Ignore qilinadi
+   Javob: B
+
+6. req.baseUrl nima qaytaradi?
+   A) Full URL
+   B) Router mount qilingan path
+   C) Query string
+   D) Protocol
+   Javob: B
+
+7. req.originalUrl va req.url farqi?
+   A) Farqi yo'q
+   B) originalUrl to'liq, url mount path dan keyingi qism
+   C) url to'liq
+   D) originalUrl qisqa
+   Javob: B
+
+8. Route parameter da regex qanday ishlatiladi?
+   A) /users/:id([0-9]+)
+   B) /users/:id(\\d+)
+   C) /users/:id{regex}
+   D) /users/:id/regex/
+   Javob: B
+
+9. Optional route parameter qanday yoziladi?
+   A) /users/:id?
+   B) /users/:id(optional)
+   C) /users/[:id]
+   D) /users/{id}
+   Javob: A
+
+10. Bir nechta route parameter qanday?
+    A) /users/:userId/:postId
+    B) /users/:userId:postId
+    C) /users/(:userId, :postId)
+    D) /users/{userId}/{postId}
+    Javob: A
+
+11. app.param() middleware nima uchun?
+    A) Query param
+    B) Route param uchun pre-processing middleware
+    C) Body param
+    D) Header param
+    Javob: B
+
+12. app.param('id', callback) qachon ishlaydi?
+    A) Har doim
+    B) :id parametri bor route dan oldin
+    C) Faqat GET da
+    D) Faqat POST da
+    Javob: B
+
+13. res.format() metodi nima qiladi?
+    A) Response format
+    B) Content negotiation (Accept header bo'yicha)
+    C) Data format
+    D) JSON format
+    Javob: B
+
+14. res.format({ 'text/html': fn, 'application/json': fn }) qanday ishlaydi?
+    A) Ikkalasini ham
+    B) Accept header ga mos handlerni chaqiradi
+    C) Birinchisini
+    D) Oxirgisini
+    Javob: B
+
+15. res.vary() metodi nima?
+    A) Variable o'rnatadi
+    B) Vary header qo'shadi (caching uchun)
+    C) Variation yaratadi
+    D) Value o'rnatadi
+    Javob: B
+
+16. res.append() metodi nima qiladi?
+    A) Body ga qo'shadi
+    B) Mavjud header ga qiymat qo'shadi
+    C) URL ga qo'shadi
+    D) Query ga qo'shadi
+    Javob: B
+
+17. res.links() metodi nima uchun?
+    A) URL links
+    B) Link header o'rnatadi (pagination uchun)
+    C) Hyperlinks
+    D) Navigation
+    Javob: B
+
+18. res.location() metodi nima?
+    A) Server location
+    B) Location header o'rnatadi (redirect uchun)
+    C) IP location
+    D) File location
+    Javob: B
+
+19. res.sendStatus(204) nima qiladi?
+    A) Faqat status
+    B) Status va status message yuboradi (No Content)
+    C) Body bilan
+    D) Error bilan
+    Javob: B
+
+20. app.disable('x-powered-by') nima qiladi?
+    A) App o'chiradi
+    B) X-Powered-By headerini olib tashlaydi
+    C) Feature o'chiradi
+    D) Security o'chiradi
+    Javob: B
+
+21. app.enable('trust proxy') nima uchun?
+    A) Proxy disable
+    B) Reverse proxy ortidagi real client IP ni olish
+    C) Proxy yaratish
+    D) Proxy test
+    Javob: B
+
+22. 'trust proxy' enabled bo'lganda req.ip nima qaytaradi?
+    A) Proxy IP
+    B) X-Forwarded-For headerdagi real client IP
+    C) Server IP
+    D) Gateway IP
+    Javob: B
+
+23. app.settings nima?
+    A) App config
+    B) app.set() bilan o'rnatilgan sozlamalar
+    C) Environment
+    D) Options
+    Javob: B
+
+24. app.get('env') nima qaytaradi?
+    A) Environment variables
+    B) NODE_ENV qiymati (default: development)
+    C) App environment
+    D) System env
+    Javob: B
+
+25. Express da 'etag' setting nima uchun?
+    A) Tag yaratish
+    B) Caching uchun ETag header generatsiyasi
+    C) HTML tag
+    D) Version tag
+    Javob: B
+
+26. app.set('etag', 'weak') nima?
+    A) Strong ETag
+    B) Weak ETag (W/ prefix bilan)
+    C) No ETag
+    D) Custom ETag
+    Javob: B
+
+27. res.attachment() metodi nima qiladi?
+    A) Fayl yuklaydi
+    B) Content-Disposition: attachment header o'rnatadi
+    C) Fayl o'chiradi
+    D) Fayl yaratadi
+    Javob: B
+
+28. express.raw() middleware nima?
+    A) Text parse
+    B) Raw body ni Buffer sifatida parse qiladi
+    C) JSON parse
+    D) Form parse
+    Javob: B
+
+29. express.text() middleware nima?
+    A) JSON parse
+    B) Body ni text/string sifatida parse qiladi
+    C) HTML parse
+    D) XML parse
+    Javob: B
+
+30. express.json({ limit: '10mb' }) nima?
+    A) 10 ta JSON
+    B) Maksimal body size 10MB
+    C) 10 ta request
+    D) 10MB response
+    Javob: B
+
+31. express.json({ strict: false }) nima qiladi?
+    A) Strict mode
+    B) Primitive qiymatlarni ham qabul qiladi (faqat object/array emas)
+    C) Validation o'chiradi
+    D) Error o'chiradi
+    Javob: B
+
+32. express.urlencoded({ limit: '1mb', parameterLimit: 1000 }) nima?
+    A) URL limit
+    B) Body size va parameter soni limiti
+    C) Query limit
+    D) Route limit
+    Javob: B
+
+33. Router-level middleware nima?
+    A) App middleware
+    B) Faqat ma'lum router uchun middleware
+    C) Global middleware
+    D) Error middleware
+    Javob: B
+
+34. router.use() va app.use() farqi?
+    A) Farqi yo'q
+    B) router.use() faqat o'sha router uchun ishlaydi
+    C) app.use() faqat bitta route
+    D) router.use() global
+    Javob: B
+
+35. Sub-router (nested router) qanday yaratiladi?
+    A) new Router()
+    B) router.use('/path', anotherRouter)
+    C) router.add()
+    D) router.nest()
+    Javob: B
+
+36. Express da route chaining qanday?
+    A) app.get().post()
+    B) app.route('/path').get(fn).post(fn).put(fn)
+    C) app.chain()
+    D) app.routes()
+    Javob: B
+
+37. Multiple callback functions route da qanday?
+    A) app.get('/', [fn1, fn2])
+    B) app.get('/', fn1, fn2, fn3) yoki array
+    C) app.get('/', fn1).get('/', fn2)
+    D) app.multi()
+    Javob: B
+
+38. Route callback da next('route') nima qiladi?
+    A) Keyingi middleware
+    B) Joriy route ni skip qilib keyingi matching route ga o'tadi
+    C) Error handling
+    D) Route tugatadi
+    Javob: B
+
+39. Async/await Express route da qanday ishlatiladi?
+    A) Avtomatik
+    B) try-catch bilan yoki async wrapper
+    C) Promise.then()
+    D) Callback
+    Javob: B
+
+40. Async error handling uchun wrapper nima?
+    A) try-catch
+    B) Funksiya error ni catch qilib next() ga uzatadi
+    C) Promise.catch()
+    D) Error event
+    Javob: B
+
+41. express-async-errors package nima qiladi?
+    A) Error yaratadi
+    B) Async funksiyalarda avtomatik error catching
+    C) Error logging
+    D) Error formatting
+    Javob: B
+
+42. Custom error class yaratish nima uchun?
+    A) Chiroyli xabar
+    B) Turli xato turlari uchun (statusCode, message, ...)
+    C) Logging
+    D) Debugging
+    Javob: B
+
+43. Error handling middleware da res.headersSent ni tekshirish nima uchun?
+    A) Header count
+    B) Agar header yuborilgan bo'lsa next(err) qilish kerak
+    C) Header validate
+    D) Header log
+    Javob: B
+
+44. app.use((err, req, res, next) => {}) qayerda bo'lishi kerak?
+    A) Boshida
+    B) Barcha route va middleware lardan keyin
+    C) O'rtada
+    D) Farqi yo'q
+    Javob: B
+
+45. Centralized error handling nima?
+    A) Har joyda try-catch
+    B) Bitta joyda barcha errorlarni handle qilish
+    C) Error ignore
+    D) Error throw
+    Javob: B
+
+46. Express da validator kutubxonasi (express-validator) nima uchun?
+    A) Password validation
+    B) Request data validation va sanitization
+    C) URL validation
+    D) JSON validation
+    Javob: B
+
+47. body('email').isEmail() nima qiladi?
+    A) Email yaratadi
+    B) email field email formatda ekanini tekshiradi
+    C) Email yuboradi
+    D) Email o'qiydi
+    Javob: B
+
+48. validationResult(req) nima qaytaradi?
+    A) Boolean
+    B) Validation xatolari ro'yxati
+    C) Valid data
+    D) Request
+    Javob: B
+
+49. sanitizeBody('name').trim().escape() nima qiladi?
+    A) Validate
+    B) Bo'sh joylarni olib XSS dan himoya qiladi
+    C) Delete
+    D) Format
+    Javob: B
+
+50. Express da session qanday ishlatiladi?
+    A) Built-in
+    B) express-session middleware bilan
+    C) Cookie only
+    D) Database only
+    Javob: B
+
+51. express-session da secret nima uchun?
+    A) Password
+    B) Session ID ni sign qilish uchun
+    C) Encryption key
+    D) API key
+    Javob: B
+
+52. Session store nima?
+    A) Cookie store
+    B) Session ma'lumotlarini saqlash joyi (memory, Redis, DB)
+    C) File store
+    D) Cache store
+    Javob: B
+
+53. connect-redis package nima uchun?
+    A) Redis client
+    B) Session store sifatida Redis ishlatish
+    C) Redis cache
+    D) Redis pub/sub
+    Javob: B
+
+54. req.session.user = data qachon saqlanadi?
+    A) Darhol
+    B) Response tugaganda avtomatik
+    C) Manual save
+    D) Saqlanmaydi
+    Javob: B
+
+55. req.session.destroy() nima qiladi?
+    A) Server destroy
+    B) Session ni o'chiradi (logout uchun)
+    C) Request destroy
+    D) Cookie destroy
+    Javob: B
+
+56. Session cookie options da resave: false nima?
+    A) Har doim save
+    B) O'zgarmagan session ni qayta saqlamaydi
+    C) Save disable
+    D) Save enable
+    Javob: B
+
+57. saveUninitialized: false nima?
+    A) Save all
+    B) Bo'sh/yangi session saqlanmaydi
+    C) Initialize all
+    D) Save nothing
+    Javob: B
+
+58. Express da JWT authentication qanday ishlaydi?
+    A) Session bilan
+    B) Token header/cookie da, verify middleware
+    C) Cookie only
+    D) Basic auth
+    Javob: B
+
+59. jsonwebtoken package da jwt.sign() nima qiladi?
+    A) Token verify
+    B) JWT token yaratadi
+    C) Token decode
+    D) Token delete
+    Javob: B
+
+60. jwt.verify() nima qiladi?
+    A) Token yaratadi
+    B) Token ni tekshiradi va decode qiladi
+    C) Token refresh
+    D) Token delete
+    Javob: B
+
+61. JWT payload da exp nima?
+    A) Experience
+    B) Expiration time (Unix timestamp)
+    C) Export
+    D) Expect
+    Javob: B
+
+62. Passport.js nima?
+    A) Visa service
+    B) Authentication middleware
+    C) Authorization
+    D) Encryption
+    Javob: B
+
+63. Passport strategy nima?
+    A) Game strategy
+    B) Authentication usuli (local, OAuth, JWT, ...)
+    C) Security strategy
+    D) Routing strategy
+    Javob: B
+
+64. passport.authenticate('local') nima?
+    A) OAuth
+    B) Username/password authentication
+    C) JWT auth
+    D) API key auth
+    Javob: B
+
+65. serializeUser va deserializeUser nima uchun?
+    A) JSON serialize
+    B) Session da user ni saqlash/olish
+    C) Database serialize
+    D) Token serialize
+    Javob: B
+
+66. Express da rate limiting nima uchun?
+    A) Speed up
+    B) So'rovlar sonini cheklash (DDoS himoya)
+    C) Data limit
+    D) Response limit
+    Javob: B
+
+67. express-rate-limit package qanday ishlatiladi?
+    A) Built-in
+    B) app.use(rateLimit({ windowMs, max }))
+    C) Manual counting
+    D) Database counting
+    Javob: B
+
+68. Rate limit da windowMs nima?
+    A) Window size
+    B) Vaqt oynasi millisekundlarda
+    C) Max requests
+    D) Response time
+    Javob: B
+
+69. Rate limit da max: 100 nima?
+    A) Max connections
+    B) windowMs ichida maksimal so'rovlar soni
+    C) Max users
+    D) Max data
+    Javob: B
+
+70. Express da file upload qanday amalga oshiriladi?
+    A) Built-in
+    B) multer middleware bilan
+    C) express-upload
+    D) fs module
+    Javob: B
+
+71. multer({ dest: 'uploads/' }) nima?
+    A) Source folder
+    B) Upload fayllar saqlanadigan papka
+    C) Temp folder
+    D) Cache folder
+    Javob: B
+
+72. upload.single('avatar') nima?
+    A) Ko'p fayl
+    B) Bitta fayl 'avatar' field nomida
+    C) Array fayl
+    D) No file
+    Javob: B
+
+73. upload.array('photos', 5) nima?
+    A) Bitta fayl
+    B) 'photos' fieldidan maksimum 5 ta fayl
+    C) 5 ta field
+    D) 5 MB limit
+    Javob: B
+
+74. req.file nima (single upload)?
+    A) Array
+    B) Yuklangan fayl ma'lumotlari obyekti
+    C) File content
+    D) File name only
+    Javob: B
+
+75. req.files nima (array upload)?
+    A) Single file
+    B) Yuklangan fayllar array
+    C) File names
+    D) File paths
+    Javob: B
+
+76. multer da fileFilter nima uchun?
+    A) File delete
+    B) Fayl turini tekshirish/filtrlash
+    C) File rename
+    D) File compress
+    Javob: B
+
+77. multer da limits: { fileSize: 1024 * 1024 } nima?
+    A) File count
+    B) Maksimal fayl hajmi 1MB
+    C) Min size
+    D) Total size
+    Javob: B
+
+78. multer storage engine nima?
+    A) Database storage
+    B) Fayl qanday va qayerda saqlanishini boshqaradi
+    C) Memory storage
+    D) Cloud storage
+    Javob: B
+
+79. multer.diskStorage() nima beradi?
+    A) Memory storage
+    B) Custom disk storage (destination, filename)
+    C) Cloud storage
+    D) Database storage
+    Javob: B
+
+80. multer.memoryStorage() qachon ishlatiladi?
+    A) Katta fayllar
+    B) Faylni buffer da saqlash (S3 ga yuklash uchun)
+    C) Disk save
+    D) Database save
+    Javob: B
+
+81. Express da HTTPS server qanday yaratiladi?
+    A) app.https()
+    B) https.createServer(options, app)
+    C) app.secure()
+    D) express.https()
+    Javob: B
+
+82. HTTPS uchun qanday fayllar kerak?
+    A) Faqat key
+    B) key va cert (SSL sertifikat)
+    C) Faqat cert
+    D) Password only
+    Javob: B
+
+83. Express da WebSocket qanday qo'shiladi?
+    A) Built-in
+    B) ws yoki socket.io kutubxonasi bilan
+    C) express-ws
+    D) http module
+    Javob: B
+
+84. Socket.io Express bilan qanday integratsiya?
+    A) app.use(socket)
+    B) io.attach(server) yoki require('socket.io')(server)
+    C) app.socket()
+    D) express.io()
+    Javob: B
+
+85. Express da SSE (Server-Sent Events) qanday?
+    A) WebSocket
+    B) res.write() bilan Content-Type: text/event-stream
+    C) Socket.io
+    D) Long polling
+    Javob: B
+
+86. res.write() va res.send() farqi?
+    A) Farqi yo'q
+    B) write() stream, send() bir marta va response tugaydi
+    C) send() stream
+    D) write() bir marta
+    Javob: B
+
+87. Express da clustering nima uchun?
+    A) Database cluster
+    B) Ko'p CPU core dan foydalanish
+    C) Load balancing only
+    D) Memory sharing
+    Javob: B
+
+88. cluster.fork() Express da qanday ishlaydi?
+    A) Bitta process
+    B) Har bir CPU uchun worker process yaratadi
+    C) Thread yaratadi
+    D) Container yaratadi
+    Javob: B
+
+89. PM2 process manager nima?
+    A) Package manager
+    B) Node.js production process manager (cluster, restart, logs)
+    C) Database manager
+    D) File manager
+    Javob: B
+
+90. PM2 da cluster mode qanday?
+    A) pm2 start app.js
+    B) pm2 start app.js -i max
+    C) pm2 cluster app.js
+    D) pm2 fork app.js
+    Javob: B
+
+91. Express da graceful shutdown nima?
+    A) Hard shutdown
+    B) Mavjud requestlarni tugatib keyin to'xtash
+    C) Immediate stop
+    D) Force quit
+    Javob: B
+
+92. SIGTERM signal handle qilish nima uchun?
+    A) Error handling
+    B) Graceful shutdown (cleanup, close connections)
+    C) Logging
+    D) Restart
+    Javob: B
+
+93. Express da health check endpoint nima?
+    A) Error check
+    B) Application sog'ligini tekshirish (/health, /ready)
+    C) Security check
+    D) Performance check
+    Javob: B
+
+94. Liveness va Readiness probe farqi?
+    A) Farqi yo'q
+    B) Liveness - ishlayaptimi, Readiness - traffic qabul qila oladimi
+    C) Readiness - ishlayaptimi
+    D) Liveness - traffic
+    Javob: B
+
+95. Express da request timeout qanday o'rnatiladi?
+    A) Built-in
+    B) connect-timeout middleware yoki custom
+    C) app.timeout()
+    D) res.timeout()
+    Javob: B
+
+96. Express da response caching qanday?
+    A) Built-in
+    B) Cache-Control header o'rnatish
+    C) app.cache()
+    D) res.cache()
+    Javob: B
+
+97. res.set('Cache-Control', 'public, max-age=3600') nima?
+    A) No cache
+    B) 1 soat public cache
+    C) Private cache
+    D) Disable cache
+    Javob: B
+
+98. Express da ETag qanday ishlaydi?
+    A) Manual
+    B) Avtomatik (static fayllar va res.send() uchun)
+    C) Built-in always
+    D) Never
+    Javob: B
+
+99. Conditional request (If-None-Match) nima?
+    A) Always fetch
+    B) ETag mos kelsa 304 Not Modified qaytaradi
+    C) Force refresh
+    D) No cache
+    Javob: B
+
+100. Express da API versioning qanday qilinadi?
+     A) Query param only
+     B) URL prefix (/v1/), header, yoki query param
+     C) Header only
+     D) Body param
+     Javob: B
+
+=================================================================
+                          YAKUNLANDI
+=================================================================

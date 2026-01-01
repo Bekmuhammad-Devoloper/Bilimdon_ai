@@ -1,0 +1,706 @@
+NESTJS - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. NestJS da Execution Context turlari:
+   A) Faqat HTTP
+   B) HTTP, WebSocket, RPC (Microservices), GraphQL
+   C) Faqat WebSocket
+   D) Faqat RPC
+   Javob: B
+
+2. ArgumentsHost vs ExecutionContext farqi:
+   A) Bir xil
+   B) ExecutionContext - ArgumentsHost + handler/class metadata
+   C) ArgumentsHost kengroq
+   D) Farqi yo'q
+   Javob: B
+
+3. context.getType() nima qaytaradi?
+   A) Handler type
+   B) 'http' | 'ws' | 'rpc' - context turi
+   C) Module type
+   D) Service type
+   Javob: B
+
+4. NestJS Request Lifecycle tartibi:
+   A) Guard -> Pipe -> Controller
+   B) Middleware -> Guard -> Interceptor(pre) -> Pipe -> Handler -> Interceptor(post) -> Filter
+   C) Pipe -> Guard -> Middleware
+   D) Controller -> Pipe -> Guard
+   Javob: B
+
+5. Exception Filter qachon ishlaydi?
+   A) Request boshida
+   B) Exception throw bo'lganda (lifecycle oxirida catch)
+   C) Response da
+   D) Middleware da
+   Javob: B
+
+6. Global filter/guard/pipe/interceptor priority:
+   A) Global birinchi
+   B) Controller-level -> Method-level -> Global (method eng yuqori)
+   C) Method-level birinchi
+   D) Random
+   Javob: B
+
+7. APP_FILTER token nima uchun?
+   A) Route filter
+   B) Global exception filter ni DI orqali register qilish
+   C) Database filter
+   D) Query filter
+   Javob: B
+
+8. APP_GUARD, APP_PIPE, APP_INTERCEPTOR tokenlar:
+   A) Local registration
+   B) Global guard/pipe/interceptor ni DI orqali register qilish
+   C) Module registration
+   D) Controller registration
+   Javob: B
+
+9. @UseFilters(), @UseGuards(), @UsePipes(), @UseInterceptors() tartibi:
+   A) Random
+   B) Class-level birinchi, method-level keyin (override qiladi)
+   C) Method-level birinchi
+   D) Bir xil
+   Javob: B
+
+10. Custom Decorator yaratish (createParamDecorator):
+    A) @Injectable()
+    B) createParamDecorator((data, ctx) => ...) - param decorator
+    C) @Controller()
+    D) @Module()
+    Javob: B
+
+11. applyDecorators() utility nima?
+    A) Single decorator
+    B) Bir nechta decorator ni birlashtirib yangi decorator yaratish
+    C) Remove decorator
+    D) Override decorator
+    Javob: B
+
+12. @SetMetadata() qanday o'qiladi?
+    A) @GetMetadata()
+    B) Reflector.get() yoki Reflector.getAllAndMerge()
+    C) context.getMetadata()
+    D) handler.getMetadata()
+    Javob: B
+
+13. Reflector.getAllAndMerge() nima qiladi?
+    A) Bitta metadata
+    B) Class va method metadata larni birlashtiradi
+    C) Override qiladi
+    D) Delete qiladi
+    Javob: B
+
+14. Reflector.getAllAndOverride() nima?
+    A) Merge qiladi
+    B) Method metadata mavjud bo'lsa uni, bo'lmasa class nikini oladi
+    C) Barcha metadata
+    D) Delete qiladi
+    Javob: B
+
+15. Custom method decorator yaratish:
+    A) createParamDecorator
+    B) applyDecorators + SetMetadata kombinatsiyasi
+    C) @Injectable
+    D) @Controller
+    Javob: B
+
+16. Interceptor da next.handle() nima qaytaradi?
+    A) void
+    B) Observable<any> - response stream
+    C) Promise
+    D) Response object
+    Javob: B
+
+17. Interceptor da response ni o'zgartirish:
+    A) return response
+    B) return next.handle().pipe(map(data => transform(data)))
+    C) response.send()
+    D) ctx.response
+    Javob: B
+
+18. Interceptor da timeout qo'yish:
+    A) setTimeout
+    B) next.handle().pipe(timeout(5000))
+    C) @Timeout(5000)
+    D) ctx.timeout
+    Javob: B
+
+19. Interceptor da retry logic:
+    A) while loop
+    B) next.handle().pipe(retry(3))
+    C) try-catch
+    D) @Retry(3)
+    Javob: B
+
+20. Interceptor da caching (RxJS):
+    A) Manual cache
+    B) next.handle().pipe(tap(data => cache.set(key, data)))
+    C) @Cache()
+    D) ctx.cache
+    Javob: B
+
+21. CallHandler interface:
+    A) Guard interface
+    B) Interceptor da route handler ni chaqirish uchun
+    C) Pipe interface
+    D) Filter interface
+    Javob: B
+
+22. NestInterceptor<T, R> generic turlari:
+    A) Request, Response
+    B) T - input type, R - output type
+    C) Handler, Context
+    D) Module, Controller
+    Javob: B
+
+23. Custom Pipe da PipeTransform interface:
+    A) transform(value, metadata) method
+    B) transform(value: any, metadata: ArgumentMetadata)
+    C) validate(value) method
+    D) process(value) method
+    Javob: B
+
+24. ArgumentMetadata nima o'z ichiga oladi?
+    A) Faqat value
+    B) type ('body'|'query'|'param'|'custom'), metatype, data
+    C) Faqat type
+    D) Faqat data
+    Javob: B
+
+25. Custom validation pipe yaratish:
+    A) @Injectable() + CanActivate
+    B) @Injectable() + PipeTransform + class-validator
+    C) @Injectable() + NestInterceptor
+    D) @Injectable() + ExceptionFilter
+    Javob: B
+
+26. ValidationPipe options - whitelist:
+    A) Blacklist
+    B) DTO da yo'q property larni avtomatik olib tashlash
+    C) All properties
+    D) No validation
+    Javob: B
+
+27. ValidationPipe options - forbidNonWhitelisted:
+    A) Allow all
+    B) DTO da yo'q property bo'lsa error throw
+    C) Remove properties
+    D) Ignore
+    Javob: B
+
+28. ValidationPipe options - transform:
+    A) No transform
+    B) Avtomatik type conversion (string -> number, plain -> class)
+    C) Manual transform
+    D) Skip transform
+    Javob: B
+
+29. ValidationPipe options - disableErrorMessages:
+    A) Show all errors
+    B) Production da error details yashirish
+    C) No errors
+    D) Custom errors
+    Javob: B
+
+30. class-validator da custom decorator yaratish:
+    A) @Injectable()
+    B) registerDecorator() va ValidatorConstraint
+    C) @Custom()
+    D) @Validate()
+    Javob: B
+
+31. @ValidatorConstraint({ async: true }) nima?
+    A) Sync validator
+    B) Async validation (database check, API call, ...)
+    C) No validation
+    D) Skip validation
+    Javob: B
+
+32. @Validate(CustomValidator, [args]) nima?
+    A) Built-in validator
+    B) Custom validator ni ishlatish
+    C) Skip validation
+    D) No validation
+    Javob: B
+
+33. Validation groups nima?
+    A) All validations
+    B) Turli scenario larda turli validation (create vs update)
+    C) No validation
+    D) Group by field
+    Javob: B
+
+34. @IsString({ groups: ['create'] }) qanday ishlaydi?
+    A) Har doim
+    B) Faqat 'create' group da validate qilinadi
+    C) Hech qachon
+    D) All groups
+    Javob: B
+
+35. TypeORM da Entity Listeners:
+    A) No listeners
+    B) @BeforeInsert, @AfterInsert, @BeforeUpdate, @AfterUpdate, ...
+    C) Manual listeners
+    D) External listeners
+    Javob: B
+
+36. @BeforeInsert() decorator nima qiladi?
+    A) Insert dan keyin
+    B) Insert dan oldin method chaqiradi (password hash, ...)
+    C) Update da
+    D) Delete da
+    Javob: B
+
+37. TypeORM Subscriber nima?
+    A) Entity listener
+    B) Global entity events listener (external class)
+    C) Query subscriber
+    D) Transaction subscriber
+    Javob: B
+
+38. EntitySubscriberInterface methods:
+    A) Faqat insert
+    B) beforeInsert, afterInsert, beforeUpdate, afterUpdate, beforeRemove, afterRemove, ...
+    C) Faqat update
+    D) Faqat remove
+    Javob: B
+
+39. TypeORM Migration yaratish:
+    A) prisma migrate
+    B) typeorm migration:generate -n MigrationName
+    C) nest generate migration
+    D) npm run migration
+    Javob: B
+
+40. typeorm migration:run nima qiladi?
+    A) Migration yaratadi
+    B) Pending migration larni database ga apply qiladi
+    C) Migration revert
+    D) Migration show
+    Javob: B
+
+41. TypeORM da Soft Delete:
+    A) Hard delete
+    B) @DeleteDateColumn() + softDelete/softRemove
+    C) Manual delete
+    D) No delete
+    Javob: B
+
+42. @DeleteDateColumn() bilan query:
+    A) O'chirilganlarni ko'rsatadi
+    B) Soft deleted entity larni avtomatik exclude qiladi
+    C) Barcha entitylarni ko'rsatadi
+    D) Faqat o'chirilganlar
+    Javob: B
+
+43. withDeleted() QueryBuilder da:
+    A) Exclude deleted
+    B) Soft deleted entity larni ham include qiladi
+    C) Only deleted
+    D) No deleted
+    Javob: B
+
+44. TypeORM da Query Caching:
+    A) No caching
+    B) { cache: true } yoki { cache: { id: 'key', milliseconds: 60000 } }
+    C) Manual caching
+    D) Redis only
+    Javob: B
+
+45. TypeORM da Tree Entity (@Tree):
+    A) Flat structure
+    B) Hierarchical data (nested set, materialized path, closure table, ...)
+    C) Graph structure
+    D) List structure
+    Javob: B
+
+46. @TreeChildren() va @TreeParent() nima?
+    A) Normal relations
+    B) Tree structure da parent-child relation
+    C) Many-to-many
+    D) One-to-one
+    Javob: B
+
+47. GraphQL NestJS da qanday implement qilinadi?
+    A) REST only
+    B) @nestjs/graphql + Apollo Server yoki Mercurius
+    C) Manual implementation
+    D) Express middleware
+    Javob: B
+
+48. @Resolver() decorator nima?
+    A) Controller
+    B) GraphQL resolver class
+    C) Service
+    D) Module
+    Javob: B
+
+49. @Query() decorator (GraphQL):
+    A) HTTP query
+    B) GraphQL query resolver
+    C) Database query
+    D) URL query
+    Javob: B
+
+50. @Mutation() decorator (GraphQL):
+    A) Query
+    B) GraphQL mutation resolver
+    C) Update
+    D) Delete
+    Javob: B
+
+51. @Args() decorator (GraphQL):
+    A) HTTP args
+    B) GraphQL arguments olish
+    C) Query params
+    D) Body
+    Javob: B
+
+52. Code-first vs Schema-first approach:
+    A) Bir xil
+    B) Code-first - TypeScript class lardan schema, Schema-first - SDL dan code
+    C) Code-first - SDL
+    D) Schema-first - TypeScript
+    Javob: B
+
+53. @ObjectType() decorator (Code-first):
+    A) Input type
+    B) GraphQL object type yaratish
+    C) Scalar type
+    D) Enum type
+    Javob: B
+
+54. @Field() decorator (GraphQL):
+    A) Database field
+    B) GraphQL field expose qilish
+    C) HTTP field
+    D) Query field
+    Javob: B
+
+55. @InputType() decorator:
+    A) Output type
+    B) GraphQL input type (mutation arguments)
+    C) Object type
+    D) Scalar type
+    Javob: B
+
+56. GraphQL Subscription NestJS da:
+    A) REST webhook
+    B) @Subscription() decorator + PubSub
+    C) WebSocket only
+    D) Polling
+    Javob: B
+
+57. PubSub class nima?
+    A) HTTP client
+    B) GraphQL subscription uchun publish/subscribe
+    C) Database pub/sub
+    D) Message queue
+    Javob: B
+
+58. @ResolveField() decorator:
+    A) Query field
+    B) Nested field resolver (N+1 muammosi uchun)
+    C) Mutation field
+    D) Subscription field
+    Javob: B
+
+59. DataLoader nima uchun (GraphQL)?
+    A) Data loading
+    B) N+1 query muammosini hal qilish (batching)
+    C) Caching
+    D) Validation
+    Javob: B
+
+60. NestJS da Health Check:
+    A) Manual check
+    B) @nestjs/terminus paketi (health indicators)
+    C) REST endpoint
+    D) GraphQL query
+    Javob: B
+
+61. HealthCheckService nima?
+    A) Database service
+    B) Application health status tekshiruvchi
+    C) Cache service
+    D) Auth service
+    Javob: B
+
+62. TypeOrmHealthIndicator nima tekshiradi?
+    A) Cache
+    B) Database connection health
+    C) HTTP
+    D) Disk
+    Javob: B
+
+63. HttpHealthIndicator nima?
+    A) Database check
+    B) External HTTP service health check
+    C) Disk check
+    D) Memory check
+    Javob: B
+
+64. DiskHealthIndicator nima?
+    A) Database
+    B) Disk storage health (threshold based)
+    C) HTTP
+    D) Memory
+    Javob: B
+
+65. MemoryHealthIndicator nima?
+    A) Disk
+    B) Memory usage health check
+    C) Database
+    D) HTTP
+    Javob: B
+
+66. NestJS da Testing - unit test:
+    A) E2E test
+    B) Test.createTestingModule() bilan isolated test
+    C) Integration test
+    D) Manual test
+    Javob: B
+
+67. Test.createTestingModule({...}).compile() nima?
+    A) Production build
+    B) Test uchun module yaratish va compile qilish
+    C) Development build
+    D) Deployment
+    Javob: B
+
+68. moduleRef.get(ServiceClass) nima?
+    A) Controller olish
+    B) Compiled module dan provider instance olish
+    C) Module olish
+    D) Guard olish
+    Javob: B
+
+69. Mock provider yaratish:
+    A) Real provider
+    B) { provide: Service, useValue: mockService }
+    C) @Mock()
+    D) Mock.create()
+    Javob: B
+
+70. @nestjs/testing da jest-mock-extended:
+    A) Manual mock
+    B) Type-safe mock yaratish uchun kutubxona
+    C) Built-in mock
+    D) No mock
+    Javob: B
+
+71. E2E test yaratish:
+    A) Unit test
+    B) request(app.getHttpServer()).get('/users').expect(200)
+    C) Mock test
+    D) Integration test
+    Javob: B
+
+72. beforeEach vs beforeAll (test da):
+    A) Bir xil
+    B) beforeEach - har test, beforeAll - barcha testlardan oldin bir marta
+    C) beforeEach - bir marta
+    D) beforeAll - har test
+    Javob: B
+
+73. INestApplication interface:
+    A) Module interface
+    B) Application instance interface (testing va bootstrap)
+    C) Controller interface
+    D) Service interface
+    Javob: B
+
+74. app.init() vs app.listen():
+    A) Bir xil
+    B) init - faqat initialize, listen - port da tinglash
+    C) init - listen
+    D) listen - init
+    Javob: B
+
+75. overrideProvider() test da:
+    A) Add provider
+    B) Real provider ni mock bilan almashtirish
+    C) Remove provider
+    D) Update provider
+    Javob: B
+
+76. NestJS da CQRS pattern:
+    A) CRUD
+    B) @nestjs/cqrs - Command Query Responsibility Segregation
+    C) REST
+    D) GraphQL
+    Javob: B
+
+77. Command vs Query (CQRS):
+    A) Bir xil
+    B) Command - write operation, Query - read operation
+    C) Command - read
+    D) Query - write
+    Javob: B
+
+78. @CommandHandler() decorator:
+    A) Query handler
+    B) Command ni process qiluvchi handler
+    C) Event handler
+    D) Saga handler
+    Javob: B
+
+79. @QueryHandler() decorator:
+    A) Command handler
+    B) Query ni process qiluvchi handler
+    C) Event handler
+    D) Saga handler
+    Javob: B
+
+80. EventBus nima (CQRS)?
+    A) Command bus
+    B) Domain event larni publish/subscribe qilish
+    C) Query bus
+    D) Message bus
+    Javob: B
+
+81. @EventsHandler() decorator:
+    A) Command handler
+    B) Domain event handler
+    C) Query handler
+    D) HTTP handler
+    Javob: B
+
+82. Saga nima (CQRS)?
+    A) Simple handler
+    B) Event larni kuzatib, yangi command lar trigger qiluvchi
+    C) Query handler
+    D) Command handler
+    Javob: B
+
+83. AggregateRoot class (CQRS):
+    A) Simple entity
+    B) Domain events to'plovchi base class
+    C) Repository
+    D) Service
+    Javob: B
+
+84. Event Sourcing nima?
+    A) CRUD
+    B) State o'rniga event lar ketma-ketligini saqlash
+    C) Caching
+    D) Logging
+    Javob: B
+
+85. NestJS da OpenTelemetry:
+    A) Logging only
+    B) Distributed tracing, metrics, logs
+    C) Metrics only
+    D) Tracing only
+    Javob: B
+
+86. @opentelemetry/auto-instrumentations-node:
+    A) Manual instrumentation
+    B) Avtomatik HTTP, database, ... tracing
+    C) Custom instrumentation
+    D) No instrumentation
+    Javob: B
+
+87. Span nima (tracing)?
+    A) Log entry
+    B) Operation yoki work unit ning trace representation
+    C) Metric
+    D) Event
+    Javob: B
+
+88. NestJS da rate limiting:
+    A) Manual implementation
+    B) @nestjs/throttler paketi
+    C) Express middleware
+    D) Guard only
+    Javob: B
+
+89. @Throttle(10, 60) decorator nima?
+    A) 10 requests per second
+    B) 60 sekund ichida maksimum 10 request
+    C) 10 sekund delay
+    D) 60 requests total
+    Javob: B
+
+90. @SkipThrottle() decorator:
+    A) Apply throttle
+    B) Throttling ni bu route/controller uchun o'chirish
+    C) Double throttle
+    D) Custom throttle
+    Javob: B
+
+91. NestJS da Helmet middleware:
+    A) Authentication
+    B) Security HTTP headers (XSS, clickjacking, ...)
+    C) Compression
+    D) Logging
+    Javob: B
+
+92. app.use(helmet()) nima qiladi?
+    A) Auth qo'shadi
+    B) Security headers qo'shadi
+    C) Compression qo'shadi
+    D) Logging qo'shadi
+    Javob: B
+
+93. NestJS da Compression:
+    A) Security
+    B) compression() middleware - response gzip/deflate
+    C) Authentication
+    D) Validation
+    Javob: B
+
+94. Fastify adapter afzalliklari Express dan:
+    A) Bir xil
+    B) Performance (2-3x tezroq), JSON Schema validation
+    C) Express tezroq
+    D) Farqi yo'q
+    Javob: B
+
+95. NestFastifyApplication vs NestExpressApplication:
+    A) Bir xil API
+    B) Platform-specific API (Fastify vs Express methods)
+    C) Farqi yo'q
+    D) Express only
+    Javob: B
+
+96. Hybrid Application nima?
+    A) Faqat HTTP
+    B) HTTP + Microservice bitta application da
+    C) Faqat Microservice
+    D) Faqat WebSocket
+    Javob: B
+
+97. app.connectMicroservice() nima qiladi?
+    A) HTTP connection
+    B) Hybrid app ga microservice transport qo'shish
+    C) Database connection
+    D) Cache connection
+    Javob: B
+
+98. app.startAllMicroservices() nima?
+    A) Start HTTP
+    B) Barcha connected microservice larni start
+    C) Stop microservices
+    D) Restart microservices
+    Javob: B
+
+99. Custom Transport (Microservices):
+    A) Built-in only
+    B) ClientProxy va Server abstract class larni extend qilish
+    C) No custom
+    D) Plugin only
+    Javob: B
+
+100. NestJS Standalone Application:
+     A) Full HTTP app
+     B) HTTP server siz NestJS (CLI tools, workers, ...)
+     C) Microservice only
+     D) WebSocket only
+     Javob: B
+
+================================================
+                   YAKUNLANDI
+================================================

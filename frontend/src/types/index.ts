@@ -48,6 +48,7 @@ export interface Category {
   color: string;
   order: number;
   isActive: boolean;
+  difficultyLevels?: string[];
   _count?: {
     questions: number;
     testAttempts: number;

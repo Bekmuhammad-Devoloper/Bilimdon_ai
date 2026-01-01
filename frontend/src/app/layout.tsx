@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
 import { Header, BottomNav } from '@/components/layout';
+import { VideoBackground } from '@/components/ui';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] });
@@ -78,9 +79,10 @@ export default function RootLayout({
         <script src="https://telegram.org/js/telegram-web-app.js" async />
       </head>
       <body className={inter.className}>
+        <VideoBackground />
         <div className="min-h-screen flex flex-col">
           <Header />
-          <main className="flex-1 pb-20 md:pb-0">
+          <main className="flex-1 pb-20">
             {children}
           </main>
           <BottomNav />

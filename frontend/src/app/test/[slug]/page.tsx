@@ -9,18 +9,31 @@ import { Button, Card, Progress, Badge } from '@/components/ui';
 import { cn, getDifficultyColor, getDifficultyLabel } from '@/lib/utils';
 import { telegramHaptic, isTelegramWebApp } from '@/lib/telegram';
 import toast from 'react-hot-toast';
+import { Category } from '@/types';
 
 interface Question {
   id: string;
   question: string;
   options: string[];
   difficulty: 'EASY' | 'MEDIUM' | 'HARD';
+  levelIndex?: number;
   xpReward: number;
 }
 
 interface Answer {
   questionId: string;
   selectedAnswer: number;
+}
+
+// Helper function to get difficulty label from category's difficultyLevels array or default
+function getCategoryDifficultyLabel(question: Question, category?: Category): string {
+  // Agar kategoriyada difficultyLevels array bo'lsa va savolda levelIndex bo'lsa
+  if (category?.difficultyLevels && question.levelIndex !== undefined) {
+    const label = category.difficultyLevels[question.levelIndex];
+    if (label) return label;
+  }
+  // Aks holda default label qaytaramiz
+  return getDifficultyLabel(question.difficulty);
 }
 
 export default function TestPage() {
@@ -226,7 +239,7 @@ export default function TestPage() {
           <Card className="mb-6">
             <div className="flex items-center gap-2 mb-4">
               <Badge className={getDifficultyColor(currentQuestion.difficulty)}>
-                {getDifficultyLabel(currentQuestion.difficulty)}
+                {getCategoryDifficultyLabel(currentQuestion, category)}
               </Badge>
               <Badge variant="info">+{currentQuestion.xpReward} XP</Badge>
             </div>
@@ -310,36 +323,45 @@ export default function TestPage() {
       )}
 
       {/* Navigation Footer */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 p-4 md:relative md:border-t-0 md:mt-8">
-        <div className="container mx-auto flex items-center justify-between gap-4">
+      <div className="fixed bottom-16 md:bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 p-3 md:p-4 md:relative md:border-t-0 md:mt-8 z-50">
+        <div className="container mx-auto flex items-center justify-between gap-2">
           <Button
             variant="outline"
             onClick={goToPrev}
             disabled={currentIndex === 0}
+            size="sm"
+            className="px-2 md:px-4"
           >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Oldingi
+            <ArrowLeft className="w-4 h-4 md:mr-2" />
+            <span className="hidden md:inline">Oldingi</span>
           </Button>
 
-          <div className="flex items-center gap-2 text-sm text-gray-500">
+          <div className="flex items-center gap-1 text-xs md:text-sm text-gray-500">
             <CheckCircle className="w-4 h-4 text-green-500" />
             {answeredCount}/{questions.length}
           </div>
 
-          {currentIndex === questions.length - 1 ? (
-            <Button
-              onClick={handleSubmit}
-              loading={submitting}
-              className="bg-green-600 hover:bg-green-700"
-            >
-              Yakunlash
-            </Button>
-          ) : (
-            <Button onClick={goToNext}>
-              Keyingi
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-          )}
+          <div className="flex items-center gap-1 md:gap-2">
+            {/* Keyingi tugmasi - oxirgi savol bo'lmasa va barcha javob berilmagan */}
+            {currentIndex < questions.length - 1 && answeredCount < questions.length && (
+              <Button onClick={goToNext} size="sm" className="px-2 md:px-4">
+                <span className="hidden md:inline">Keyingi</span>
+                <ArrowRight className="w-4 h-4 md:ml-2" />
+              </Button>
+            )}
+            
+            {/* Yakunlash tugmasi - barcha savollar javob berilganda YOKI oxirgi savolda */}
+            {(answeredCount === questions.length || currentIndex === questions.length - 1) && (
+              <Button
+                onClick={handleSubmit}
+                loading={submitting}
+                size="sm"
+                className="bg-green-600 hover:bg-green-700 px-3 md:px-4"
+              >
+                Yakunlash
+              </Button>
+            )}
+          </div>
         </div>
       </div>
     </div>

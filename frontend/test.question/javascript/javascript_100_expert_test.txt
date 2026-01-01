@@ -1,0 +1,702 @@
+JAVASCRIPT - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+====================================================
+
+1. Event Loop qanday ishlaydi?
+   A) Synchronous execution
+   B) Call stack, callback queue, microtask queue bilan
+   C) Multi-threaded
+   D) Parallel execution
+   Javob: B
+
+2. Microtask vs Macrotask farqi?
+   A) Bir xil
+   B) Microtask (Promise) macrotask (setTimeout) dan oldin
+   C) Macrotask birinchi
+   D) Farq yo'q
+   Javob: B
+
+3. Proxy object nima?
+   A) Network proxy
+   B) Object operationlarini intercept qilish
+   C) Copy object
+   D) Clone object
+   Javob: B
+
+4. Reflect API nima uchun?
+   A) Mirror
+   B) Object manipulation methods
+   C) Image reflection
+   D) Code reflection
+   Javob: B
+
+5. WeakMap vs Map farqi?
+   A) Bir xil
+   B) WeakMap keys garbage collect bo'lishi mumkin
+   C) Map tezroq
+   D) WeakMap kattaroq
+   Javob: B
+
+6. Symbol.iterator nima?
+   A) Loop counter
+   B) Iterable protocol method
+   C) Symbol type
+   D) Iterator count
+   Javob: B
+
+7. Generator function (*) nima qaytaradi?
+   A) Array
+   B) Iterator object
+   C) Promise
+   D) Callback
+   Javob: B
+
+8. async/await hood ostida nima?
+   A) Threads
+   B) Generators + Promises
+   C) Callbacks
+   D) Web Workers
+   Javob: B
+
+9. Closure nima?
+   A) Function end
+   B) Function + lexical environment
+   C) Loop closure
+   D) File close
+   Javob: B
+
+10. Prototype chain nima?
+    A) Array chain
+    B) Object inheritance mechanism
+    C) String chain
+    D) Method chain
+    Javob: B
+
+11. __proto__ vs prototype farqi?
+    A) Bir xil
+    B) __proto__ instance, prototype constructor da
+    C) prototype instance da
+    D) Farq yo'q
+    Javob: B
+
+12. Object.create(null) nima beradi?
+    A) Empty object
+    B) Pure dictionary (no prototype)
+    C) Null
+    D) Undefined
+    Javob: B
+
+13. typeof null nima qaytaradi?
+    A) "null"
+    B) "object"
+    C) "undefined"
+    D) "boolean"
+    Javob: B
+
+14. NaN === NaN natijasi?
+    A) true
+    B) false
+    C) NaN
+    D) Error
+    Javob: B
+
+15. Object.is(NaN, NaN) natijasi?
+    A) false
+    B) true
+    C) NaN
+    D) Error
+    Javob: B
+
+16. Temporal Dead Zone (TDZ) nima?
+    A) Time zone
+    B) let/const hoisting va initialization orasidagi zona
+    C) Memory zone
+    D) Dead code
+    Javob: B
+
+17. Hoisting qanday ishlaydi?
+    A) Faqat var
+    B) var, function declarations ko'tariladi
+    C) Barcha variables
+    D) Faqat functions
+    Javob: B
+
+18. "use strict" nima qiladi?
+    A) String mode
+    B) Strict mode (xatolarni aniqlash)
+    C) Use module
+    D) Type checking
+    Javob: B
+
+19. call vs apply vs bind farqi?
+    A) Bir xil
+    B) call(args), apply([args]), bind returns function
+    C) bind immediate
+    D) apply returns function
+    Javob: B
+
+20. Arrow function this binding?
+    A) Dynamic
+    B) Lexical (enclosing scope)
+    C) Global
+    D) Undefined
+    Javob: B
+
+21. Promise.all vs Promise.allSettled farqi?
+    A) Bir xil
+    B) all reject da fail, allSettled hammasi tugaydi
+    C) allSettled reject da fail
+    D) Farq yo'q
+    Javob: B
+
+22. Promise.race vs Promise.any farqi?
+    A) Bir xil
+    B) race first settled, any first fulfilled
+    C) any first settled
+    D) Farq yo'q
+    Javob: B
+
+23. Object.freeze vs Object.seal farqi?
+    A) Bir xil
+    B) freeze immutable, seal faqat new property taqiqlaydi
+    C) seal immutable
+    D) Farq yo'q
+    Javob: B
+
+24. Spread operator (...) shallow yoki deep copy?
+    A) Deep copy
+    B) Shallow copy
+    C) Reference
+    D) Clone
+    Javob: B
+
+25. structuredClone() nima?
+    A) Shallow clone
+    B) Deep clone native method
+    C) Structure copy
+    D) Class clone
+    Javob: B
+
+26. Private class fields (#) qachon qo'shildi?
+    A) ES5
+    B) ES2022
+    C) ES6
+    D) ES2015
+    Javob: B
+
+27. Static initialization blocks nima?
+    A) Static methods
+    B) Class static property initialization
+    C) Constructor
+    D) Instance init
+    Javob: B
+
+28. Intl.NumberFormat nima uchun?
+    A) Number parsing
+    B) Locale-based number formatting
+    C) Math operations
+    D) Number validation
+    Javob: B
+
+29. Intl.DateTimeFormat nima uchun?
+    A) Date parsing
+    B) Locale-based date formatting
+    C) Time calculation
+    D) Calendar
+    Javob: B
+
+30. Intl.Collator nima?
+    A) Data collection
+    B) Locale-based string comparison
+    C) Array sorting
+    D) Object comparison
+    Javob: B
+
+31. queueMicrotask() nima?
+    A) Queue data structure
+    B) Microtask queue ga task qo'shish
+    C) Task queue
+    D) Job queue
+    Javob: B
+
+32. requestAnimationFrame() nima?
+    A) Animation library
+    B) Browser optimized animation callback
+    C) Video frame
+    D) Image animation
+    Javob: B
+
+33. requestIdleCallback() nima?
+    A) Idle timeout
+    B) Browser idle time callback
+    C) Sleep function
+    D) Pause function
+    Javob: B
+
+34. AbortController nima uchun?
+    A) Error handling
+    B) Fetch/Promise cancellation
+    C) Abort program
+    D) Exit function
+    Javob: B
+
+35. SharedArrayBuffer nima?
+    A) Array copy
+    B) Worker threads shared memory
+    C) Shared array
+    D) Buffer array
+    Javob: B
+
+36. Atomics object nima uchun?
+    A) Atomic operations
+    B) SharedArrayBuffer uchun thread-safe operations
+    C) Math operations
+    D) Chemical elements
+    Javob: B
+
+37. FinalizationRegistry nima?
+    A) Final class
+    B) Object garbage collection callback
+    C) Registry pattern
+    D) Final method
+    Javob: B
+
+38. WeakRef nima?
+    A) Weak password
+    B) Garbage collectible reference
+    C) Reference count
+    D) Strong reference
+    Javob: B
+
+39. import.meta nima?
+    A) Import statement
+    B) Module metadata object
+    C) Meta tag
+    D) Import path
+    Javob: B
+
+40. Top-level await qaysi context da ishlaydi?
+    A) Barcha joyda
+    B) ES Modules da
+    C) CommonJS da
+    D) Script tag da
+    Javob: B
+
+41. Dynamic import() nima qaytaradi?
+    A) Module
+    B) Promise<Module>
+    C) Object
+    D) Function
+    Javob: B
+
+42. Nullish coalescing (??) vs OR (||) farqi?
+    A) Bir xil
+    B) ?? faqat null/undefined, || barcha falsy
+    C) || faqat null
+    D) Farq yo'q
+    Javob: B
+
+43. Optional chaining (?.) nima?
+    A) Chain pattern
+    B) Safe property access
+    C) Optional parameter
+    D) Default value
+    Javob: B
+
+44. BigInt qanday yaratiladi?
+    A) new BigInt()
+    B) 123n yoki BigInt(123)
+    C) Big(123)
+    D) Integer(123)
+    Javob: B
+
+45. Symbol.hasInstance nima uchun?
+    A) Instance check
+    B) instanceof customization
+    C) Has property
+    D) Instance count
+    Javob: B
+
+46. Symbol.toStringTag nima?
+    A) String conversion
+    B) Object.prototype.toString customization
+    C) Tag element
+    D) Label
+    Javob: B
+
+47. Symbol.toPrimitive nima?
+    A) Primitive type
+    B) Type coercion customization
+    C) Convert function
+    D) Cast operator
+    Javob: B
+
+48. Reflect.construct vs new farqi?
+    A) Bir xil
+    B) Reflect.construct new.target o'rnatish mumkin
+    C) new tezroq
+    D) Farq yo'q
+    Javob: B
+
+49. Object.getOwnPropertyDescriptor nima qaytaradi?
+    A) Property value
+    B) Property descriptor object
+    C) Property name
+    D) Property type
+    Javob: B
+
+50. Property descriptor attributes?
+    A) name, type
+    B) value, writable, enumerable, configurable
+    C) key, value
+    D) get, set
+    Javob: B
+
+51. Accessor descriptor attributes?
+    A) value, writable
+    B) get, set, enumerable, configurable
+    C) read, write
+    D) getter, setter
+    Javob: B
+
+52. Object.defineProperty nima qiladi?
+    A) Add property
+    B) Property descriptor bilan property qo'shish/o'zgartirish
+    C) Remove property
+    D) Get property
+    Javob: B
+
+53. Object.entries vs Object.fromEntries?
+    A) Bir xil
+    B) entries object->array, fromEntries array->object
+    C) fromEntries object->array
+    D) Farq yo'q
+    Javob: B
+
+54. Array.prototype.at(-1) nima?
+    A) Error
+    B) Last element
+    C) First element
+    D) Undefined
+    Javob: B
+
+55. Array.prototype.flat(Infinity) nima?
+    A) Flat design
+    B) Deeply flatten nested arrays
+    C) Sort array
+    D) Filter array
+    Javob: B
+
+56. Array.prototype.flatMap nima?
+    A) Map function
+    B) map() + flat(1)
+    C) Filter + map
+    D) Reduce + map
+    Javob: B
+
+57. findLast vs find farqi?
+    A) Bir xil
+    B) findLast oxiridan qidiradi
+    C) find oxiridan
+    D) Farq yo'q
+    Javob: B
+
+58. toSorted vs sort farqi?
+    A) Bir xil
+    B) toSorted yangi array qaytaradi (immutable)
+    C) sort yangi array
+    D) Farq yo'q
+    Javob: B
+
+59. toReversed vs reverse farqi?
+    A) Bir xil
+    B) toReversed yangi array (immutable)
+    C) reverse yangi array
+    D) Farq yo'q
+    Javob: B
+
+60. with() array method nima?
+    A) With statement
+    B) Immutable element replacement
+    C) Add element
+    D) Remove element
+    Javob: B
+
+61. Array.prototype.group (proposed) nima?
+    A) Array grouping
+    B) Group by callback result
+    C) Sort groups
+    D) Filter groups
+    Javob: A
+
+62. String.prototype.replaceAll qachon qo'shildi?
+    A) ES5
+    B) ES2021
+    C) ES6
+    D) ES2015
+    Javob: B
+
+63. String.prototype.matchAll nima qaytaradi?
+    A) Array
+    B) Iterator of matches
+    C) String
+    D) Boolean
+    Javob: B
+
+64. Logical assignment operators (||=, &&=, ??=)?
+    A) ES5
+    B) ES2021
+    C) ES6
+    D) ES2015
+    Javob: B
+
+65. Error.cause property nima?
+    A) Error message
+    B) Chained error cause
+    C) Error stack
+    D) Error type
+    Javob: B
+
+66. AggregateError nima?
+    A) Single error
+    B) Multiple errors container
+    C) Error sum
+    D) Error count
+    Javob: B
+
+67. Promise.withResolvers() nima qaytaradi?
+    A) Promise
+    B) { promise, resolve, reject }
+    C) Resolver
+    D) Handler
+    Javob: B
+
+68. Object.hasOwn vs hasOwnProperty farqi?
+    A) Bir xil
+    B) hasOwn null prototype safe
+    C) hasOwnProperty safe
+    D) Farq yo'q
+    Javob: B
+
+69. Object.groupBy (ES2024) nima?
+    A) Sort objects
+    B) Group objects by key
+    C) Filter objects
+    D) Map objects
+    Javob: B
+
+70. Map.groupBy (ES2024) nima qaytaradi?
+    A) Object
+    B) Map
+    C) Array
+    D) Set
+    Javob: B
+
+71. Set operations (ES2025 proposed)?
+    A) Add, delete
+    B) union, intersection, difference, etc.
+    C) Sort, filter
+    D) Map, reduce
+    Javob: B
+
+72. Iterator helpers (proposed) nima?
+    A) Array methods
+    B) map, filter, etc. on iterators
+    C) Loop helpers
+    D) Function helpers
+    Javob: B
+
+73. Decorators (Stage 3) nima?
+    A) Design pattern
+    B) Class/method annotation syntax
+    C) Decoration library
+    D) Style decorator
+    Javob: B
+
+74. Record & Tuple (proposed) nima?
+    A) Database record
+    B) Immutable data structures
+    C) Music tuple
+    D) Data tuple
+    Javob: B
+
+75. Pattern matching (proposed) nima?
+    A) Regex
+    B) switch-case alternative with destructuring
+    C) String match
+    D) Array match
+    Javob: B
+
+76. Pipeline operator (|>) nima?
+    A) Unix pipe
+    B) Function chaining syntax
+    C) OR operator
+    D) Filter operator
+    Javob: B
+
+77. Temporal API nima?
+    A) Time travel
+    B) Modern date/time API
+    C) Temporary storage
+    D) Timer API
+    Javob: B
+
+78. Realms API nima?
+    A) Game realm
+    B) Isolated JavaScript environment
+    C) Virtual realm
+    D) Domain realm
+    Javob: B
+
+79. ShadowRealm vs iframe farqi?
+    A) Bir xil
+    B) ShadowRealm same-origin, lightweight
+    C) iframe lightweight
+    D) Farq yo'q
+    Javob: B
+
+80. Module expressions (proposed)?
+    A) Import expression
+    B) Inline module definition
+    C) Export expression
+    D) Module literal
+    Javob: B
+
+81. do expressions (proposed) nima?
+    A) Do-while loop
+    B) Expression-oriented block
+    C) Do function
+    D) Do statement
+    Javob: B
+
+82. throw expressions (proposed)?
+    A) Throw statement
+    B) throw as expression (in ternary, etc.)
+    C) Error throw
+    D) Exception throw
+    Javob: B
+
+83. Explicit Resource Management (using)?
+    A) Memory management
+    B) Automatic cleanup (like try-with-resources)
+    C) Resource loader
+    D) Asset management
+    Javob: B
+
+84. Symbol.dispose nima?
+    A) Garbage collection
+    B) Cleanup method for using statement
+    C) Dispose pattern
+    D) Delete symbol
+    Javob: B
+
+85. RegExp v flag (unicodeSets)?
+    A) Verbose mode
+    B) Extended Unicode property escapes
+    C) Value flag
+    D) Validate flag
+    Javob: B
+
+86. RegExp named capture groups syntax?
+    A) (name:pattern)
+    B) (?<name>pattern)
+    C) {name:pattern}
+    D) [name:pattern]
+    Javob: B
+
+87. RegExp lookbehind assertions?
+    A) (?=...)
+    B) (?<=...) positive, (?<!...) negative
+    C) (?:...)
+    D) (?!...)
+    Javob: B
+
+88. String.prototype.normalize nima?
+    A) Case normalize
+    B) Unicode normalization (NFC, NFD, etc.)
+    C) String cleanup
+    D) Trim
+    Javob: B
+
+89. TextEncoder/TextDecoder nima?
+    A) Encryption
+    B) String <-> binary encoding
+    C) Base64
+    D) Compression
+    Javob: B
+
+90. Blob vs ArrayBuffer farqi?
+    A) Bir xil
+    B) Blob immutable file-like, ArrayBuffer mutable binary
+    C) ArrayBuffer file-like
+    D) Farq yo'q
+    Javob: B
+
+91. DataView nima uchun?
+    A) Database view
+    B) ArrayBuffer multi-type read/write
+    C) Data visualization
+    D) View component
+    Javob: B
+
+92. TypedArray types?
+    A) Int, Float
+    B) Int8/16/32, Uint8/16/32, Float32/64, BigInt64/BigUint64
+    C) Number array
+    D) Type array
+    Javob: B
+
+93. postMessage structured clone algorithm?
+    A) JSON parse
+    B) Deep clone with circular refs, typed arrays
+    C) Shallow clone
+    D) Reference copy
+    Javob: B
+
+94. MessageChannel nima?
+    A) Chat channel
+    B) Two-way communication port
+    C) Event channel
+    D) Data channel
+    Javob: B
+
+95. BroadcastChannel nima?
+    A) TV broadcast
+    B) Same-origin tabs communication
+    C) Network broadcast
+    D) Event broadcast
+    Javob: B
+
+96. CompressionStream/DecompressionStream nima?
+    A) Video compression
+    B) gzip/deflate streaming compression
+    C) Audio compression
+    D) Image compression
+    Javob: B
+
+97. Streams API (ReadableStream, WritableStream)?
+    A) Video streaming
+    B) Chunked data processing
+    C) Audio streaming
+    D) Network streaming
+    Javob: B
+
+98. TransformStream nima?
+    A) CSS transform
+    B) Readable + Writable stream pipe
+    C) Data transform
+    D) Object transform
+    Javob: B
+
+99. SubtleCrypto vs Node crypto farqi?
+    A) Bir xil
+    B) SubtleCrypto browser, async; Node crypto sync available
+    C) Node browser uchun
+    D) Farq yo'q
+    Javob: B
+
+100. Performance.now() vs Date.now() farqi?
+     A) Bir xil
+     B) Performance.now() DOMHighResTimeStamp, more precise
+     C) Date.now() precise
+     D) Farq yo'q
+     Javob: B

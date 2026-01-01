@@ -1,0 +1,706 @@
+MATEMATIKA - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+===================================================
+
+1. 25 + 37 = ?
+   A) 52
+   B) 62
+   C) 72
+   D) 42
+   Javob: B
+
+2. 84 - 39 = ?
+   A) 55
+   B) 45
+   C) 35
+   D) 65
+   Javob: B
+
+3. 12 × 7 = ?
+   A) 74
+   B) 84
+   C) 94
+   D) 64
+   Javob: B
+
+4. 96 ÷ 8 = ?
+   A) 11
+   B) 12
+   C) 13
+   D) 14
+   Javob: B
+
+5. (-5) + (-8) = ?
+   A) 3
+   B) -13
+   C) 13
+   D) -3
+   Javob: B
+
+6. (-12) - (-7) = ?
+   A) -19
+   B) -5
+   C) 5
+   D) 19
+   Javob: B
+
+7. (-4) × 6 = ?
+   A) 24
+   B) -24
+   C) -10
+   D) 10
+   Javob: B
+
+8. (-36) ÷ (-9) = ?
+   A) -4
+   B) 4
+   C) -27
+   D) 27
+   Javob: B
+
+9. |−15| = ?
+   A) -15
+   B) 15
+   C) 0
+   D) -1
+   Javob: B
+
+10. 2³ = ?
+    A) 6
+    B) 8
+    C) 9
+    D) 12
+    Javob: B
+
+11. 5² = ?
+    A) 10
+    B) 25
+    C) 15
+    D) 20
+    Javob: B
+
+12. √49 = ?
+    A) 6
+    B) 7
+    C) 8
+    D) 9
+    Javob: B
+
+13. √81 = ?
+    A) 8
+    B) 9
+    C) 10
+    D) 11
+    Javob: B
+
+14. 10⁰ = ?
+    A) 0
+    B) 1
+    C) 10
+    D) 100
+    Javob: B
+
+15. 2⁴ = ?
+    A) 8
+    B) 16
+    C) 32
+    D) 64
+    Javob: B
+
+16. 1/2 + 1/4 = ?
+    A) 2/6
+    B) 3/4
+    C) 1/3
+    D) 2/4
+    Javob: B
+
+17. 3/5 - 1/5 = ?
+    A) 4/5
+    B) 2/5
+    C) 2/10
+    D) 1/5
+    Javob: B
+
+18. 2/3 × 3/4 = ?
+    A) 5/7
+    B) 1/2
+    C) 6/12
+    D) 2/4
+    Javob: B
+
+19. 3/4 ÷ 1/2 = ?
+    A) 3/8
+    B) 3/2
+    C) 1/2
+    D) 6/4
+    Javob: B
+
+20. 0.5 ni kasr ko'rinishida yozing:
+    A) 1/3
+    B) 1/2
+    C) 1/4
+    D) 1/5
+    Javob: B
+
+21. 0.25 = ?
+    A) 1/5
+    B) 1/4
+    C) 1/3
+    D) 1/2
+    Javob: B
+
+22. 3/4 ni o'nli kasr ko'rinishda yozing:
+    A) 0.34
+    B) 0.75
+    C) 0.25
+    D) 0.50
+    Javob: B
+
+23. 50 ning 20% ini toping:
+    A) 5
+    B) 10
+    C) 15
+    D) 20
+    Javob: B
+
+24. 80 ning 25% i qancha?
+    A) 15
+    B) 20
+    C) 25
+    D) 30
+    Javob: B
+
+25. 15 - bu 60 ning necha foizi?
+    A) 15%
+    B) 25%
+    C) 30%
+    D) 20%
+    Javob: B
+
+26. Agar x + 5 = 12 bo'lsa, x = ?
+    A) 5
+    B) 7
+    C) 17
+    D) 12
+    Javob: B
+
+27. Agar 3x = 18 bo'lsa, x = ?
+    A) 3
+    B) 6
+    C) 9
+    D) 15
+    Javob: B
+
+28. Agar x - 8 = 15 bo'lsa, x = ?
+    A) 7
+    B) 23
+    C) 8
+    D) 15
+    Javob: B
+
+29. Agar x/4 = 5 bo'lsa, x = ?
+    A) 9
+    B) 20
+    C) 1
+    D) 25
+    Javob: B
+
+30. Agar 2x + 3 = 11 bo'lsa, x = ?
+    A) 3
+    B) 4
+    C) 5
+    D) 7
+    Javob: B
+
+31. 3(x + 2) = 15 tenglamani yeching:
+    A) 2
+    B) 3
+    C) 4
+    D) 5
+    Javob: B
+
+32. To'rtburchakning perimetri formulasi (a va b tomonlar):
+    A) a × b
+    B) 2(a + b)
+    C) a + b
+    D) 4a
+    Javob: B
+
+33. To'rtburchakning yuzi formulasi:
+    A) 2(a + b)
+    B) a × b
+    C) a + b
+    D) 2ab
+    Javob: B
+
+34. Kvadratning perimetri formulasi (a tomon):
+    A) a²
+    B) 4a
+    C) 2a
+    D) a
+    Javob: B
+
+35. Kvadratning yuzi formulasi:
+    A) 4a
+    B) a²
+    C) 2a
+    D) a/2
+    Javob: B
+
+36. Uchburchakning yuzi formulasi (a - asos, h - balandlik):
+    A) a × h
+    B) (a × h)/2
+    C) a + h
+    D) 2ah
+    Javob: B
+
+37. Aylana uzunligi formulasi (r - radius):
+    A) πr
+    B) 2πr
+    C) πr²
+    D) 2r
+    Javob: B
+
+38. Doira yuzi formulasi:
+    A) 2πr
+    B) πr²
+    C) πd
+    D) 2r²
+    Javob: B
+
+39. Uchburchak burchaklari yig'indisi necha gradus?
+    A) 90°
+    B) 180°
+    C) 270°
+    D) 360°
+    Javob: B
+
+40. To'rtburchak burchaklari yig'indisi:
+    A) 180°
+    B) 360°
+    C) 270°
+    D) 90°
+    Javob: B
+
+41. To'g'ri burchak necha gradus?
+    A) 45°
+    B) 90°
+    C) 180°
+    D) 60°
+    Javob: B
+
+42. O'tkir burchak qanday bo'ladi?
+    A) 90° dan katta
+    B) 90° dan kichik
+    C) 90° ga teng
+    D) 180° ga teng
+    Javob: B
+
+43. To'mtoq burchak qanday bo'ladi?
+    A) 90° dan kichik
+    B) 90° dan katta, 180° dan kichik
+    C) 180° ga teng
+    D) 90° ga teng
+    Javob: B
+
+44. Teng yonli uchburchakda nechta tomon teng?
+    A) 3 ta
+    B) 2 ta
+    C) 1 ta
+    D) 0 ta
+    Javob: B
+
+45. Teng tomonli uchburchakda har bir burchak necha gradus?
+    A) 90°
+    B) 60°
+    C) 45°
+    D) 30°
+    Javob: B
+
+46. To'g'ri burchakli uchburchakda gipotenuzani topish (Pifagor teoremasi, a=3, b=4):
+    A) 7
+    B) 5
+    C) 6
+    D) 12
+    Javob: B
+
+47. Parallelogrammning qarama-qarshi tomonlari qanday?
+    A) Perpendicular
+    B) Teng va parallel
+    C) Teng emas
+    D) Perpendicular va teng
+    Javob: B
+
+48. Rombning barcha tomonlari qanday?
+    A) Har xil
+    B) Teng
+    C) Parallel
+    D) Perpendicular
+    Javob: B
+
+49. Trapetsiyada nechta tomon parallel?
+    A) 4 ta
+    B) 2 ta
+    C) 3 ta
+    D) 0 ta
+    Javob: B
+
+50. Kubning qirralari soni:
+    A) 6
+    B) 12
+    C) 8
+    D) 4
+    Javob: B
+
+51. Kubning uchlari (cho'qqilari) soni:
+    A) 6
+    B) 8
+    C) 12
+    D) 4
+    Javob: B
+
+52. Kubning yoqlari soni:
+    A) 4
+    B) 6
+    C) 8
+    D) 12
+    Javob: B
+
+53. Kubning hajmi formulasi (a - qirra):
+    A) 6a²
+    B) a³
+    C) 4a
+    D) a²
+    Javob: B
+
+54. Kubning to'la sirti formulasi:
+    A) a³
+    B) 6a²
+    C) 4a²
+    D) a²
+    Javob: B
+
+55. Silindrning hajmi formulasi (r - radius, h - balandlik):
+    A) 2πrh
+    B) πr²h
+    C) πr²
+    D) 2πr²h
+    Javob: B
+
+56. Sharning hajmi formulasi:
+    A) 4πr²
+    B) (4/3)πr³
+    C) πr³
+    D) (2/3)πr³
+    Javob: B
+
+57. 5! (factorial) = ?
+    A) 25
+    B) 120
+    C) 60
+    D) 20
+    Javob: B
+
+58. 0! = ?
+    A) 0
+    B) 1
+    C) Aniqlanmagan
+    D) -1
+    Javob: B
+
+59. Arifmetik progressiyada a₁=2, d=3 bo'lsa, a₅ = ?
+    A) 11
+    B) 14
+    C) 17
+    D) 8
+    Javob: B
+
+60. Geometrik progressiyada b₁=3, q=2 bo'lsa, b₄ = ?
+    A) 12
+    B) 24
+    C) 48
+    D) 6
+    Javob: B
+
+61. Sonlar o'rtacha arifmetigi: 10, 20, 30
+    A) 30
+    B) 20
+    C) 60
+    D) 15
+    Javob: B
+
+62. 2, 4, 6, 8, 10 sonlar yig'indisi:
+    A) 20
+    B) 30
+    C) 40
+    D) 25
+    Javob: B
+
+63. EKUB (12, 18) = ?
+    A) 36
+    B) 6
+    C) 3
+    D) 12
+    Javob: B
+
+64. EKUK (4, 6) = ?
+    A) 24
+    B) 12
+    C) 2
+    D) 6
+    Javob: B
+
+65. 24 ning natural bo'luvchilari soni:
+    A) 6
+    B) 8
+    C) 4
+    D) 12
+    Javob: B
+
+66. 17 soni qanday son?
+    A) Murakkab
+    B) Tub
+    C) Juft
+    D) Manfiy
+    Javob: B
+
+67. 100 gacha tub sonlar ichida eng kattasi:
+    A) 99
+    B) 97
+    C) 91
+    D) 93
+    Javob: B
+
+68. Juft va toq son ko'paytmasi qanday son?
+    A) Juft
+    B) Toq
+    C) Tub
+    D) Nol
+    Javob: A
+
+69. 3 ga bo'linish belgisi:
+    A) Oxirgi raqami 3 ga bo'linadi
+    B) Raqamlari yig'indisi 3 ga bo'linadi
+    C) Oxirgi ikki raqami 3 ga bo'linadi
+    D) Birinchi raqami 3 ga bo'linadi
+    Javob: B
+
+70. 9 ga bo'linish belgisi:
+    A) Oxirgi raqami 9
+    B) Raqamlari yig'indisi 9 ga bo'linadi
+    C) Oxirgi ikki raqami 9 ga bo'linadi
+    D) Birinchi raqami 9
+    Javob: B
+
+71. 4 ga bo'linish belgisi:
+    A) Raqamlari yig'indisi 4 ga bo'linadi
+    B) Oxirgi ikki raqami 4 ga bo'linadi
+    C) Oxirgi raqami 4 ga bo'linadi
+    D) Birinchi raqami 4 ga bo'linadi
+    Javob: B
+
+72. (-3)² = ?
+    A) -9
+    B) 9
+    C) -6
+    D) 6
+    Javob: B
+
+73. -3² = ?
+    A) 9
+    B) -9
+    C) 6
+    D) -6
+    Javob: B
+
+74. √(16 + 9) = ?
+    A) 7
+    B) 5
+    C) 25
+    D) 4
+    Javob: B
+
+75. (a + b)² formulasini yoying:
+    A) a² + b²
+    B) a² + 2ab + b²
+    C) a² - 2ab + b²
+    D) 2a + 2b
+    Javob: B
+
+76. (a - b)² = ?
+    A) a² + 2ab + b²
+    B) a² - 2ab + b²
+    C) a² - b²
+    D) (a + b)(a - b)
+    Javob: B
+
+77. a² - b² = ?
+    A) (a + b)²
+    B) (a - b)(a + b)
+    C) (a - b)²
+    D) a² + b²
+    Javob: B
+
+78. 3x + 2x = ?
+    A) 6x
+    B) 5x
+    C) x
+    D) 5x²
+    Javob: B
+
+79. 4x² · 2x = ?
+    A) 6x³
+    B) 8x³
+    C) 8x²
+    D) 6x²
+    Javob: B
+
+80. 12x⁴ ÷ 3x² = ?
+    A) 9x²
+    B) 4x²
+    C) 4x⁴
+    D) 36x²
+    Javob: B
+
+81. y = 2x + 3 funksiyada x = 4 bo'lganda y = ?
+    A) 9
+    B) 11
+    C) 14
+    D) 7
+    Javob: B
+
+82. y = x² funksiya grafigi qanday shakl?
+    A) To'g'ri chiziq
+    B) Parabola
+    C) Aylana
+    D) Giperbola
+    Javob: B
+
+83. y = kx to'g'ri proporsionallik. k nima?
+    A) Erkin had
+    B) Proporsionallik koeffitsienti
+    C) O'zgaruvchi
+    D) Konstanta
+    Javob: B
+
+84. y = k/x - bu qanday funksiya?
+    A) Chiziqli
+    B) Teskari proporsionallik
+    C) Kvadratik
+    D) Kubik
+    Javob: B
+
+85. Koordinata tekisligida nuqta (3, 5) qayerda joylashgan?
+    A) I chorak
+    B) I chorak (x > 0, y > 0)
+    C) III chorak
+    D) IV chorak
+    Javob: B
+
+86. Koordinata tekisligida (-2, 4) qaysi chorakda?
+    A) I chorak
+    B) II chorak
+    C) III chorak
+    D) IV chorak
+    Javob: B
+
+87. Ikki nuqta orasidagi masofa formulasi (x₁,y₁) va (x₂,y₂):
+    A) |x₂ - x₁| + |y₂ - y₁|
+    B) √[(x₂-x₁)² + (y₂-y₁)²]
+    C) (x₂-x₁) × (y₂-y₁)
+    D) |x₂ + x₁| + |y₂ + y₁|
+    Javob: B
+
+88. y = 2x + 1 to'g'ri chiziq uchun burchak koeffitsienti (k):
+    A) 1
+    B) 2
+    C) 3
+    D) -1
+    Javob: B
+
+89. To'g'ri chiziq OX o'qini qayerda kesadi (y = 2x - 4)?
+    A) x = 4
+    B) x = 2
+    C) x = -2
+    D) x = -4
+    Javob: B
+
+90. To'g'ri chiziq OY o'qini qayerda kesadi (y = 3x + 6)?
+    A) y = 3
+    B) y = 6
+    C) y = -6
+    D) y = 0
+    Javob: B
+
+91. Nisbat 3:5 ni kasr ko'rinishda yozing:
+    A) 5/3
+    B) 3/5
+    C) 3/8
+    D) 5/8
+    Javob: B
+
+92. Agar 2:3 = x:12 bo'lsa, x = ?
+    A) 6
+    B) 8
+    C) 4
+    D) 18
+    Javob: B
+
+93. 1 km = ? m
+    A) 100
+    B) 1000
+    C) 10000
+    D) 10
+    Javob: B
+
+94. 1 soat = ? daqiqa
+    A) 100
+    B) 60
+    C) 30
+    D) 120
+    Javob: B
+
+95. 1 m² = ? cm²
+    A) 100
+    B) 10000
+    C) 1000
+    D) 10
+    Javob: B
+
+96. 1 litr = ? ml
+    A) 100
+    B) 1000
+    C) 10
+    D) 10000
+    Javob: B
+
+97. Tezlik = ?
+    A) Vaqt × Masofa
+    B) Masofa ÷ Vaqt
+    C) Masofa + Vaqt
+    D) Masofa - Vaqt
+    Javob: B
+
+98. Agar tezlik 60 km/soat va vaqt 2 soat bo'lsa, masofa = ?
+    A) 30 km
+    B) 120 km
+    C) 62 km
+    D) 58 km
+    Javob: B
+
+99. Yuzni topish: to'rtburchak 8 m × 5 m
+    A) 26 m²
+    B) 40 m²
+    C) 13 m²
+    D) 80 m²
+    Javob: B
+
+100. Perimetrni topish: kvadrat tomoni 7 cm
+     A) 49 cm
+     B) 28 cm
+     C) 14 cm
+     D) 21 cm
+     Javob: B
+
+===================================================
+                    YAKUNLANDI
+===================================================

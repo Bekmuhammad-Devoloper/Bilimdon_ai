@@ -1,0 +1,706 @@
+NODEJS - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. V8 Engine internals - JIT compilation:
+   A) Interpretation only
+   B) Just-In-Time - runtime da machine code ga compile
+   C) AOT compilation
+   D) No compilation
+   Javob: B
+
+2. V8 - Ignition va TurboFan:
+   A) Memory managers
+   B) Ignition - interpreter, TurboFan - optimizing compiler
+   C) Garbage collectors
+   D) Event handlers
+   Javob: B
+
+3. Hidden classes (V8):
+   A) JavaScript classes
+   B) Object shape optimization uchun internal structures
+   C) Private classes
+   D) Abstract classes
+   Javob: B
+
+4. Inline caching (V8):
+   A) File caching
+   B) Property access optimization (monomorphic, polymorphic)
+   C) Memory caching
+   D) Network caching
+   Javob: B
+
+5. V8 Garbage Collection - Generational:
+   A) Single generation
+   B) Young generation (Scavenge) + Old generation (Mark-Sweep-Compact)
+   C) No GC
+   D) Manual GC
+   Javob: B
+
+6. Scavenger (V8 GC):
+   A) Old space GC
+   B) Young generation - fast, frequent GC (Cheney's algorithm)
+   C) Full GC
+   D) Incremental GC
+   Javob: B
+
+7. Mark-Sweep-Compact (V8):
+   A) Young generation
+   B) Old generation GC - mark live objects, sweep dead, compact memory
+   C) Scavenge
+   D) Incremental only
+   Javob: B
+
+8. Incremental marking (V8):
+   A) Full stop
+   B) GC work ni small chunks ga bo'lish (pause time kamaytirish)
+   C) No marking
+   D) Concurrent marking
+   Javob: B
+
+9. --max-old-space-size flag:
+   A) Young space
+   B) V8 heap old space limit (MB)
+   C) Stack size
+   D) Buffer size
+   Javob: B
+
+10. --max-semi-space-size flag:
+    A) Old space
+    B) Young generation semi-space size
+    C) Heap size
+    D) Stack size
+    Javob: B
+
+11. Memory leak detection:
+    A) Automatic fix
+    B) Heap snapshots, --inspect, process.memoryUsage()
+    C) No detection
+    D) Manual only
+    Javob: B
+
+12. process.memoryUsage() fields:
+    A) Single value
+    B) heapTotal, heapUsed, external, arrayBuffers, rss
+    C) Faqat heap
+    D) Faqat rss
+    Javob: B
+
+13. RSS (Resident Set Size) nima?
+    A) Heap only
+    B) Total memory allocated (heap + stack + code + ...)
+    C) Stack only
+    D) External only
+    Javob: B
+
+14. External memory (V8):
+    A) Heap memory
+    B) C++ objects (Buffers) bilan bog'liq memory
+    C) Stack memory
+    D) Code memory
+    Javob: B
+
+15. WeakRef va FinalizationRegistry:
+    A) Strong reference
+    B) GC-friendly references, cleanup callbacks
+    C) No reference
+    D) Circular reference
+    Javob: B
+
+16. libuv nima?
+    A) JavaScript library
+    B) Cross-platform async I/O library (Event Loop)
+    C) HTTP library
+    D) File system library
+    Javob: B
+
+17. libuv thread pool:
+    A) No threads
+    B) Default 4 threads (UV_THREADPOOL_SIZE) - blocking operations
+    C) Unlimited threads
+    D) Single thread
+    Javob: B
+
+18. UV_THREADPOOL_SIZE:
+    A) Event loop size
+    B) libuv thread pool size (default 4, max 1024)
+    C) Memory size
+    D) Buffer size
+    Javob: B
+
+19. Thread pool operations:
+    A) All async ops
+    B) fs (sync), DNS (getaddrinfo), crypto, zlib
+    C) HTTP only
+    D) No operations
+    Javob: B
+
+20. epoll/kqueue/IOCP nima?
+    A) JavaScript APIs
+    B) OS-level async I/O mechanisms (Linux/macOS/Windows)
+    C) Node.js modules
+    D) npm packages
+    Javob: B
+
+21. Event Loop starvation:
+    A) Normal operation
+    B) Long sync operation Event Loop ni block qiladi
+    C) Fast operation
+    D) Async operation
+    Javob: B
+
+22. setImmediate() vs setTimeout(fn, 0):
+    A) Bir xil
+    B) setImmediate - check phase, setTimeout - timers phase
+    C) setTimeout birinchi
+    D) Random order
+    Javob: B
+
+23. I/O callback ichida setImmediate vs setTimeout:
+    A) setTimeout birinchi
+    B) setImmediate har doim birinchi
+    C) Random
+    D) Bir xil
+    Javob: B
+
+24. queueMicrotask() nima?
+    A) Macrotask
+    B) Microtask queue ga task qo'shish (Promise.resolve alternative)
+    C) Timer queue
+    D) I/O queue
+    Javob: B
+
+25. Microtask vs process.nextTick priority:
+    A) Microtask birinchi
+    B) process.nextTick har doim birinchi (nextTick queue)
+    C) Bir xil
+    D) Random
+    Javob: B
+
+26. Stream highWaterMark nima?
+    A) Error threshold
+    B) Internal buffer size threshold (backpressure)
+    C) Max data
+    D) Min data
+    Javob: B
+
+27. stream.push(null) nima qiladi?
+    A) Error
+    B) Readable stream end signal
+    C) Push data
+    D) Clear buffer
+    Javob: B
+
+28. stream._read() method nima?
+    A) Public API
+    B) Readable stream implement qilishda override
+    C) Write method
+    D) Transform method
+    Javob: B
+
+29. stream._write() method nima?
+    A) Read method
+    B) Writable stream implement qilishda override
+    C) Transform
+    D) Public API
+    Javob: B
+
+30. stream._transform() method:
+    A) Read
+    B) Transform stream implement qilishda override
+    C) Write
+    D) Flush
+    Javob: B
+
+31. stream.pipeline() nima?
+    A) Single pipe
+    B) Multiple streams pipe + error handling + cleanup
+    C) Create stream
+    D) Destroy stream
+    Javob: B
+
+32. stream.finished() nima?
+    A) Create stream
+    B) Stream end/error detection
+    C) Pipeline
+    D) Transform
+    Javob: B
+
+33. Object mode streams:
+    A) Binary only
+    B) objectMode: true - JavaScript objects stream
+    C) String only
+    D) Buffer only
+    Javob: B
+
+34. Readable.from() nima?
+    A) Write stream
+    B) Iterable/async iterable dan Readable stream yaratish
+    C) Transform stream
+    D) Duplex stream
+    Javob: B
+
+35. Async iterators bilan streams:
+    A) Not supported
+    B) for await (const chunk of stream) - modern pattern
+    C) for loop only
+    D) while loop only
+    Javob: B
+
+36. N-API nima?
+    A) Node.js API
+    B) Native Addon API (C/C++ extensions, ABI stable)
+    C) npm API
+    D) HTTP API
+    Javob: B
+
+37. node-gyp nima?
+    A) npm package
+    B) Native addon build tool (C++ to .node)
+    C) JavaScript compiler
+    D) TypeScript compiler
+    Javob: B
+
+38. .node files nima?
+    A) Config files
+    B) Compiled native addons (shared libraries)
+    C) JavaScript files
+    D) JSON files
+    Javob: B
+
+39. Worker threads - parentPort:
+    A) Main thread port
+    B) Worker ichida parent bilan communication
+    C) Network port
+    D) File port
+    Javob: B
+
+40. Worker threads - workerData:
+    A) Empty data
+    B) Worker yaratishda initial data pass
+    C) Return data
+    D) Error data
+    Javob: B
+
+41. Worker threads - MessageChannel:
+    A) Single channel
+    B) Custom port pairs (port1, port2) for communication
+    C) HTTP channel
+    D) File channel
+    Javob: B
+
+42. Atomics va SharedArrayBuffer:
+    A) Normal operations
+    B) Thread-safe atomic operations on shared memory
+    C) Async operations
+    D) File operations
+    Javob: B
+
+43. Atomics.wait() va Atomics.notify():
+    A) No blocking
+    B) Thread synchronization primitives
+    C) Async wait
+    D) Event wait
+    Javob: B
+
+44. Cluster - sticky sessions:
+    A) Random distribution
+    B) Same client -> same worker (session state)
+    C) Round robin
+    D) No sessions
+    Javob: B
+
+45. Cluster scheduling policies:
+    A) Single policy
+    B) cluster.SCHED_RR (round-robin), cluster.SCHED_NONE
+    C) Random
+    D) Manual only
+    Javob: B
+
+46. PM2 nima?
+    A) Package manager
+    B) Production process manager (cluster, monitoring, logs)
+    C) Version manager
+    D) Build tool
+    Javob: B
+
+47. Graceful shutdown pattern:
+    A) process.exit() immediately
+    B) SIGTERM handle -> finish requests -> cleanup -> exit
+    C) Kill process
+    D) Force quit
+    Javob: B
+
+48. SIGTERM vs SIGKILL:
+    A) Bir xil
+    B) SIGTERM - graceful (catchable), SIGKILL - immediate (uncatchable)
+    C) SIGKILL - graceful
+    D) SIGTERM - uncatchable
+    Javob: B
+
+49. process.on('SIGTERM') pattern:
+    A) Auto handle
+    B) Manual graceful shutdown implementation
+    C) No signal handling
+    D) Windows only
+    Javob: B
+
+50. HTTP Keep-Alive:
+    A) New connection per request
+    B) Connection reuse for multiple requests
+    C) No connection
+    D) UDP
+    Javob: B
+
+51. http.Agent nima?
+    A) HTTP server
+    B) Connection pooling va management
+    C) HTTP client
+    D) Proxy
+    Javob: B
+
+52. agent.maxSockets nima?
+    A) Min sockets
+    B) Host uchun maksimum concurrent connections
+    C) Total sockets
+    D) Free sockets
+    Javob: B
+
+53. http.globalAgent:
+    A) Local agent
+    B) Default shared HTTP agent
+    C) No agent
+    D) Custom agent
+    Javob: B
+
+54. Connection timeout vs socket timeout:
+    A) Bir xil
+    B) Connection - connect vaqti, Socket - data transfer vaqti
+    C) Socket - connect
+    D) Connection - data
+    Javob: B
+
+55. TLS/SSL - tls module:
+    A) HTTP only
+    B) Transport Layer Security - secure connections
+    C) UDP security
+    D) File security
+    Javob: B
+
+56. tls.createSecureContext():
+    A) HTTP context
+    B) TLS credentials (cert, key, ca)
+    C) File context
+    D) Memory context
+    Javob: B
+
+57. SNI (Server Name Indication):
+    A) Single domain
+    B) Multiple SSL certs on one IP (hostname-based)
+    C) No SSL
+    D) IP-based only
+    Javob: B
+
+58. crypto.createHmac() nima?
+    A) Hash
+    B) HMAC - keyed hash (authentication)
+    C) Encrypt
+    D) Random
+    Javob: B
+
+59. crypto.createSign() va crypto.createVerify():
+    A) Symmetric crypto
+    B) Asymmetric digital signatures (RSA, ECDSA)
+    C) Hash
+    D) Random
+    Javob: B
+
+60. crypto.generateKeyPair():
+    A) Symmetric key
+    B) Asymmetric key pair (public/private)
+    C) Hash
+    D) Random
+    Javob: B
+
+61. crypto.diffieHellman():
+    A) Encryption
+    B) Key exchange protocol
+    C) Hashing
+    D) Signing
+    Javob: B
+
+62. crypto.constants.RSA_PKCS1_OAEP_PADDING:
+    A) Symmetric padding
+    B) RSA encryption padding scheme
+    C) Hash padding
+    D) No padding
+    Javob: B
+
+63. AES-GCM mode:
+    A) ECB mode
+    B) Authenticated encryption (confidentiality + integrity)
+    C) CBC mode
+    D) CTR mode
+    Javob: B
+
+64. Initialization Vector (IV) nima uchun:
+    A) Encryption key
+    B) Same plaintext -> different ciphertext (randomness)
+    C) Decryption key
+    D) Hash key
+    Javob: B
+
+65. Error handling - operational vs programmer errors:
+    A) Bir xil
+    B) Operational - runtime (handle), Programmer - bugs (fix)
+    C) Programmer - handle
+    D) Operational - fix
+    Javob: B
+
+66. Domain module (deprecated):
+    A) Current recommended
+    B) Async error handling (deprecated, use async_hooks)
+    C) DNS module
+    D) File module
+    Javob: B
+
+67. async_hooks - executionAsyncId():
+    A) Process ID
+    B) Current async resource ID
+    C) Thread ID
+    D) Event ID
+    Javob: B
+
+68. async_hooks - triggerAsyncId():
+    A) Current ID
+    B) Parent async resource ID (trigger)
+    C) Thread ID
+    D) Process ID
+    Javob: B
+
+69. AsyncLocalStorage nima?
+    A) File storage
+    B) Async context propagation (request context, ...)
+    C) Memory storage
+    D) Database storage
+    Javob: B
+
+70. AsyncLocalStorage.run(store, callback):
+    A) Storage create
+    B) Context da callback execute
+    C) Storage delete
+    D) Storage read
+    Javob: B
+
+71. diagnostics_channel module:
+    A) Error channel
+    B) Diagnostic events publish/subscribe
+    C) Log channel
+    D) HTTP channel
+    Javob: B
+
+72. diagnostics_channel.subscribe():
+    A) Unsubscribe
+    B) Channel events listen
+    C) Publish
+    D) Create channel
+    Javob: B
+
+73. trace_events module:
+    A) Log events
+    B) Chrome DevTools Trace Event format
+    C) Error events
+    D) HTTP events
+    Javob: B
+
+74. --trace-warnings flag:
+    A) No warnings
+    B) Warning stack traces ko'rsatish
+    C) Trace events
+    D) Error traces
+    Javob: B
+
+75. --trace-deprecation flag:
+    A) No deprecation
+    B) Deprecation warning stack traces
+    C) Trace events
+    D) Error traces
+    Javob: B
+
+76. --pending-deprecation flag:
+    A) Hide warnings
+    B) Pending deprecation warnings ko'rsatish
+    C) No deprecation
+    D) Force deprecation
+    Javob: B
+
+77. Module resolution algorithm:
+    A) Single path
+    B) node_modules walking, package.json exports, file extensions
+    C) Current dir only
+    D) Global only
+    Javob: B
+
+78. require.resolve() nima?
+    A) Load module
+    B) Module path resolve (without loading)
+    C) Delete module
+    D) Create module
+    Javob: B
+
+79. require.cache nima?
+    A) File cache
+    B) Loaded modules cache
+    C) Memory cache
+    D) HTTP cache
+    Javob: B
+
+80. Module caching - singleton pattern:
+    A) New instance har require
+    B) First require cached, subsequent - same instance
+    C) No caching
+    D) Random
+    Javob: B
+
+81. delete require.cache[modulePath]:
+    A) No effect
+    B) Module cache invalidation (force reload)
+    C) Delete file
+    D) Delete module
+    Javob: B
+
+82. Conditional exports (package.json):
+    A) Single export
+    B) "exports": { "import": "./esm.js", "require": "./cjs.js" }
+    C) No exports
+    D) Default only
+    Javob: B
+
+83. package.json - "sideEffects":
+    A) No effect
+    B) Tree shaking hint (webpack/bundlers)
+    C) Side effects enable
+    D) Module effects
+    Javob: B
+
+84. Corepack nima?
+    A) npm
+    B) Package manager manager (yarn, pnpm versions)
+    C) Core module
+    D) Build tool
+    Javob: B
+
+85. pnpm vs npm/yarn:
+    A) Bir xil
+    B) pnpm - content-addressable storage, hard links (disk efficient)
+    C) npm tezroq
+    D) yarn samaraliroq
+    Javob: B
+
+86. node:prefix imports (Node.js 16+):
+    A) npm package
+    B) import fs from 'node:fs' - explicit core module
+    C) File import
+    D) URL import
+    Javob: B
+
+87. Experimental features flag:
+    A) No flags
+    B) --experimental-* (--experimental-modules, --experimental-vm-modules)
+    C) --enable-*
+    D) --feature-*
+    Javob: B
+
+88. --experimental-loader:
+    A) File loader
+    B) Custom ESM loader hooks
+    C) Package loader
+    D) HTTP loader
+    Javob: B
+
+89. module.register() (Node.js 20+):
+    A) Module create
+    B) ESM loader hooks registration
+    C) Module delete
+    D) Module update
+    Javob: B
+
+90. Test runner (node:test) Node.js 18+:
+    A) Jest
+    B) Built-in test runner (describe, it, test)
+    C) Mocha
+    D) Tap
+    Javob: B
+
+91. node --test nima qiladi?
+    A) Unit test
+    B) Built-in test runner ishga tushiradi
+    C) Integration test
+    D) E2E test
+    Javob: B
+
+92. test runner - mocking (mock):
+    A) External library
+    B) Built-in mock.fn(), mock.method()
+    C) No mocking
+    D) Jest mock
+    Javob: B
+
+93. Permission model (Node.js 20+):
+    A) No permissions
+    B) --experimental-permission (--allow-fs-read, --allow-fs-write)
+    C) Full access
+    D) Sandbox
+    Javob: B
+
+94. Single Executable Applications (SEA):
+    A) Multiple files
+    B) Node.js + app single binary
+    C) Installer
+    D) Container
+    Javob: B
+
+95. --experimental-sea-config:
+    A) Environment config
+    B) Single Executable Application config
+    C) Server config
+    D) Module config
+    Javob: B
+
+96. Snapshot (startup) - --build-snapshot:
+    A) Memory snapshot
+    B) V8 heap snapshot for faster startup
+    C) File snapshot
+    D) Process snapshot
+    Javob: B
+
+97. node --heapsnapshot-signal=SIGUSR2:
+    A) No snapshot
+    B) Signal bilan heap snapshot trigger
+    C) Auto snapshot
+    D) File snapshot
+    Javob: B
+
+98. --heapprof flag:
+    A) CPU profile
+    B) Heap allocation profile
+    C) Memory profile
+    D) I/O profile
+    Javob: B
+
+99. --cpu-prof flag:
+    A) Heap profile
+    B) CPU profiling (V8 profiler)
+    C) Memory profile
+    D) I/O profile
+    Javob: B
+
+100. --report-on-signal:
+     A) No report
+     B) Diagnostic report on signal (SIGUSR2)
+     C) Log report
+     D) Error report
+     Javob: B
+
+================================================
+                   YAKUNLANDI
+================================================

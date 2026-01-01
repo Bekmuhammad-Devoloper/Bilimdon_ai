@@ -1,0 +1,702 @@
+HTML & CSS - O'RTACHA TESTLAR
+===================================
+
+1. HTML5 da yangi semantik taglar qaysilar?
+a) <article>, <section>, <nav>
+b) <header>, <footer>, <aside>
+c) <main>, <figure>, <figcaption>
+d) Barchasi to'g'ri
+Javob: d
+
+2. <article> va <section> farqi nima?
+a) Article mustaqil kontent, section guruhlovchi
+b) Farq yo'q
+c) Section mustaqil, article guruhlovchi
+d) Ikkalasi ham bir xil
+Javob: a
+
+3. Data atributlari qanday yaratiladi?
+a) data-*
+b) custom-*
+c) attr-*
+d) info-*
+Javob: a
+
+4. HTML5 da video qanday qo'shiladi?
+a) <video src="video.mp4"></video>
+b) <video><source src="video.mp4"></video>
+c) Ikkalasi ham to'g'ri
+d) <media type="video">
+Javob: c
+
+5. HTML5 audio qo'shish uchun qaysi tag?
+a) <audio>
+b) <sound>
+c) <music>
+d) <media>
+Javob: a
+
+6. Canvas elementi nima uchun?
+a) JavaScript orqali rasm chizish
+b) Video ko'rsatish
+c) Matn yozish
+d) Forma yaratish
+Javob: a
+
+7. SVG nima?
+a) Scalable Vector Graphics
+b) Simple Vector Graphics
+c) Standard Vector Graphics
+d) Small Vector Graphics
+Javob: a
+
+8. Local Storage va Session Storage farqi nima?
+a) LocalStorage doimiy, SessionStorage vaqtinchalik
+b) Farq yo'q
+c) SessionStorage doimiy, LocalStorage vaqtinchalik
+d) Ikkalasi ham vaqtinchalik
+Javob: a
+
+9. Input validation atributlari qaysilar?
+a) required, pattern, min, max
+b) Faqat required
+c) Faqat pattern
+d) Validation yo'q
+Javob: a
+
+10. Input type="email" nima tekshiradi?
+a) Email formatini
+b) Faqat @ belgisini
+c) Hech narsani
+d) Faqat domenni
+Javob: a
+
+11. Input type="number" qanday atributlar oladi?
+a) min, max, step
+b) Faqat min
+c) Faqat max
+d) Hech qanday
+Javob: a
+
+12. Input type="range" nima yaratadi?
+a) Slider
+b) Number input
+c) Text input
+d) Checkbox
+Javob: a
+
+13. Input type="date" qanday ko'rinadi?
+a) Date picker
+b) Oddiy text input
+c) Calendar
+d) a va c to'g'ri
+Javob: d
+
+14. Placeholder atributi nima qiladi?
+a) Input ichida ko'rsatma matn ko'rsatadi
+b) Default qiymat beradi
+c) Validatsiya qo'shadi
+d) Input label beradi
+Javob: a
+
+15. Autofocus atributi nima qiladi?
+a) Sahifa ochilganda inputga focus beradi
+b) Input ichini tozalaydi
+c) Inputni yopadi
+d) Hech narsa
+Javob: a
+
+16. Autocomplete atributi qanday qiymatlar oladi?
+a) on, off
+b) true, false
+c) yes, no
+d) 1, 0
+Javob: a
+
+17. Form novalidate atributi nima qiladi?
+a) Validatsiyani o'chiradi
+b) Validatsiya qo'shadi
+c) Formani jo'natmaydi
+d) Hech narsa
+Javob: a
+
+18. Input readonly va disabled farqi nima?
+a) Readonly o'qish mumkin, disabled yo'q
+b) Farq yo'q
+c) Disabled o'qish mumkin, readonly yo'q
+d) Ikkalasi ham bir xil
+Javob: a
+
+19. Label for atributi nima uchun?
+a) Input bilan bog'lash
+b) Label rangini o'zgartirish
+c) Label joyini belgilash
+d) Hech narsa
+Javob: a
+
+20. Fieldset va legend taglari nima uchun?
+a) Forma elementlarini guruhlash
+b) Jadval yaratish
+c) Ro'yxat yaratish
+d) Matn formatlash
+Javob: a
+
+21. CSS specificity qanday hisoblanadi?
+a) Inline > ID > Class > Element
+b) Element > Class > ID > Inline
+c) ID > Class > Inline > Element
+d) Class > ID > Element > Inline
+Javob: a
+
+22. !important qachon ishlatish kerak?
+a) Oxirgi chora sifatida
+b) Har doim
+c) Hech qachon
+d) Faqat inline CSS da
+Javob: a
+
+23. CSS inheritance nima?
+a) Child element parent stilini oladi
+b) Parent element child stilini oladi
+c) Hech narsa
+d) Faqat rang inherit bo'ladi
+Javob: a
+
+24. Inherit qilinmaydigan xususiyatlar qaysilar?
+a) margin, padding, border
+b) color, font-family
+c) width, height
+d) a va c to'g'ri
+Javob: d
+
+25. Pseudo-element qanday yoziladi?
+a) ::before, ::after
+b) :before, :after
+c) Ikkalasi ham to'g'ri
+d) before(), after()
+Javob: c
+
+26. ::before va ::after nima uchun?
+a) Element oldiga/keyiniga kontent qo'shish
+b) Element o'chirish
+c) Element yashirish
+d) Element ko'rsatish
+Javob: a
+
+27. Content xususiyati qayerda ishlatiladi?
+a) ::before va ::after da
+b) Hamma joyda
+c) Faqat paragrafda
+d) Faqat divda
+Javob: a
+
+28. :nth-child(odd) nima tanlaydi?
+a) Toq tartibdagi elementlar
+b) Juft tartibdagi elementlar
+c) Birinchi element
+d) Oxirgi element
+Javob: a
+
+29. :first-child va :first-of-type farqi nima?
+a) first-child birinchi child, first-of-type birinchi tip
+b) Farq yo'q
+c) first-of-type birinchi child
+d) Ikkalasi ham bir xil
+Javob: a
+
+30. :not() pseudo-class qanday ishlaydi?
+a) Teskari tanlash
+b) Hech narsani tanlamaydi
+c) Hammasini tanlaydi
+d) Faqat birinchisini tanlaydi
+Javob: a
+
+31. Adjacent sibling selector qanday?
+a) h1 + p
+b) h1 ~ p
+c) h1 > p
+d) h1 p
+Javob: a
+
+32. General sibling selector qanday?
+a) h1 ~ p
+b) h1 + p
+c) h1 > p
+d) h1 p
+Javob: a
+
+33. Child selector qanday?
+a) div > p
+b) div + p
+c) div ~ p
+d) div p
+Javob: a
+
+34. Descendant selector qanday?
+a) div p
+b) div > p
+c) div + p
+d) div ~ p
+Javob: a
+
+35. Attribute selector qanday yoziladi?
+a) [attribute]
+b) {attribute}
+c) (attribute)
+d) <attribute>
+Javob: a
+
+36. [attribute^="value"] nima degani?
+a) Attribute value bilan boshlanadi
+b) Attribute value bilan tugaydi
+c) Attribute value ni o'z ichiga oladi
+d) Attribute value ga teng
+Javob: a
+
+37. [attribute$="value"] nima degani?
+a) Attribute value bilan tugaydi
+b) Attribute value bilan boshlanadi
+c) Attribute value ni o'z ichiga oladi
+d) Attribute value ga teng
+Javob: a
+
+38. [attribute*="value"] nima degani?
+a) Attribute value ni o'z ichiga oladi
+b) Attribute value bilan boshlanadi
+c) Attribute value bilan tugaydi
+d) Attribute value ga teng
+Javob: a
+
+39. CSS variables qanday yaratiladi?
+a) --variable-name: value;
+b) $variable-name: value;
+c) @variable-name: value;
+d) variable-name: value;
+Javob: a
+
+40. CSS variable qanday ishlatiladi?
+a) var(--variable-name)
+b) $(variable-name)
+c) @variable-name
+d) variable-name
+Javob: a
+
+41. :root pseudo-class nima uchun?
+a) Global variables uchun
+b) Body uchun
+c) HTML uchun
+d) a va c to'g'ri
+Javob: d
+
+42. Calc() funksiyasi nima uchun?
+a) Hisoblashlar qilish
+b) Ranglarni aralash
+c) Matnni birlashtirish
+d) Hech narsa
+Javob: a
+
+43. Min() va max() funksiyalari nima qiladi?
+a) Minimal va maksimal qiymat tanlaydi
+b) O'lchamni belgilaydi
+c) Rangni o'zgartiradi
+d) Hech narsa
+Javob: a
+
+44. Clamp() funksiyasi qanday ishlaydi?
+a) clamp(min, preferred, max)
+b) clamp(max, min, preferred)
+c) clamp(preferred, min, max)
+d) clamp(min, max, preferred)
+Javob: a
+
+45. Flexbox justify-content qiymatlari qaysilar?
+a) flex-start, flex-end, center, space-between, space-around
+b) Faqat center
+c) Faqat flex-start
+d) Faqat space-between
+Javob: a
+
+46. Align-items qiymatlari qaysilar?
+a) flex-start, flex-end, center, stretch, baseline
+b) Faqat center
+c) Faqat stretch
+d) Faqat flex-start
+Javob: a
+
+47. Flex-wrap nima qiladi?
+a) Elementlarni yangi qatorga o'tkazadi
+b) Elementlarni yashiradi
+c) Elementlarni o'chiradi
+d) Hech narsa
+Javob: a
+
+48. Flex-grow nima uchun?
+a) Elementning o'sish koeffitsienti
+b) Element o'lchami
+c) Element joyi
+d) Element rangi
+Javob: a
+
+49. Flex-shrink nima uchun?
+a) Elementning kichrayish koeffitsienti
+b) Element o'lchami
+c) Element joyi
+d) Element rangi
+Javob: a
+
+50. Flex-basis nima?
+a) Elementning boshlang'ich o'lchami
+b) Element rangi
+c) Element joyi
+d) Element shakli
+Javob: a
+
+51. Order xususiyati nima qiladi?
+a) Flex elementlar tartibini o'zgartiradi
+b) Elementni yashiradi
+c) Elementni o'chiradi
+d) Hech narsa
+Javob: a
+
+52. Gap xususiyati nima uchun?
+a) Flex/Grid elementlar orasidagi masofa
+b) Element o'lchami
+c) Element rangi
+d) Element joyi
+Javob: a
+
+53. Grid-template-columns qanday ishlaydi?
+a) Ustunlar sonini va o'lchamini belgilaydi
+b) Qatorlar sonini belgilaydi
+c) Element rangini belgilaydi
+d) Hech narsa
+Javob: a
+
+54. Grid-template-rows qanday ishlaydi?
+a) Qatorlar sonini va o'lchamini belgilaydi
+b) Ustunlar sonini belgilaydi
+c) Element rangini belgilaydi
+d) Hech narsa
+Javob: a
+
+55. Fr (fraction) birligi nima?
+a) Grid da mavjud bo'sh joyning ulushi
+b) Pixel
+c) Protsent
+d) Em
+Javob: a
+
+56. Repeat() funksiyasi Grid da nima uchun?
+a) Bir xil qiymatlarni takrorlash
+b) Elementlarni takrorlash
+c) Ranglarni takrorlash
+d) Hech narsa
+Javob: a
+
+57. Minmax() funksiyasi Grid da nima qiladi?
+a) Minimal va maksimal o'lchamni belgilaydi
+b) Faqat minimal
+c) Faqat maksimal
+d) Hech narsa
+Javob: a
+
+58. Grid-column qanday yoziladi?
+a) grid-column: 1 / 3;
+b) grid-column: 1;
+c) column: 1 / 3;
+d) Faqat a
+Javob: a
+
+59. Grid-row qanday yoziladi?
+a) grid-row: 1 / 3;
+b) grid-row: 1;
+c) row: 1 / 3;
+d) Faqat a
+Javob: a
+
+60. Grid-area nima uchun?
+a) Element joyini belgilash
+b) Element rangini belgilash
+c) Element o'lchamini belgilash
+d) Hech narsa
+Javob: a
+
+61. Grid-template-areas qanday ishlaydi?
+a) Grid layoutni vizual belgilash
+b) Faqat area nomlarini belgilash
+c) Hech narsa
+d) Faqat ranglarni belgilash
+Javob: a
+
+62. Auto-fit va auto-fill farqi nima?
+a) auto-fit bo'sh joyni to'ldiradi, auto-fill yo'q
+b) Farq yo'q
+c) auto-fill bo'sh joyni to'ldiradi
+d) Ikkalasi ham bir xil
+Javob: a
+
+63. Position: sticky; qanday ishlaydi?
+a) Scroll da ma'lum joyda mahkamlanadi
+b) Har doim mahkamlangan
+c) Hech qachon mahkamlanmaydi
+d) Faqat top da
+Javob: a
+
+64. Top, right, bottom, left xususiyatlari qachon ishlaydi?
+a) Position relative/absolute/fixed/sticky da
+b) Har doim
+c) Faqat absolute da
+d) Faqat fixed da
+Javob: a
+
+65. Transform: translate() nima qiladi?
+a) Elementni siljitadi
+b) Elementni aylantiradi
+c) Elementni kattalashtiradi
+d) Hech narsa
+Javob: a
+
+66. Transform: rotate() nima qiladi?
+a) Elementni aylantiradi
+b) Elementni siljitadi
+c) Elementni kattalashtiradi
+d) Hech narsa
+Javob: a
+
+67. Transform: scale() nima qiladi?
+a) Elementni kattalashtiradi/kichiklashtiradi
+b) Elementni siljitadi
+c) Elementni aylantiradi
+d) Hech narsa
+Javob: a
+
+68. Transform: skew() nima qiladi?
+a) Elementni egib qo'yadi
+b) Elementni aylantiradi
+c) Elementni siljitadi
+d) Hech narsa
+Javob: a
+
+69. Transform-origin nima uchun?
+a) Transform markazini belgilaydi
+b) Transform tezligini belgilaydi
+c) Transform rangini belgilaydi
+d) Hech narsa
+Javob: a
+
+70. Transition-property nima?
+a) Qaysi xususiyat transition bo'lishini belgilaydi
+b) Transition tezligi
+c) Transition vaqti
+d) Hech narsa
+Javob: a
+
+71. Transition-duration nima?
+a) Transition davomiyligi
+b) Transition tezligi
+c) Transition xususiyati
+d) Hech narsa
+Javob: a
+
+72. Transition-timing-function qiymatlari qaysilar?
+a) ease, linear, ease-in, ease-out, ease-in-out
+b) Faqat linear
+c) Faqat ease
+d) Hech qanday
+Javob: a
+
+73. Transition-delay nima qiladi?
+a) Transition boshlanishini kechiktiradi
+b) Transition tugashini kechiktiradi
+c) Hech narsa
+d) Transition tezligini belgilaydi
+Javob: a
+
+74. Animation qanday yaratiladi?
+a) @keyframes qoidasi bilan
+b) @animation bilan
+c) @animate bilan
+d) Faqat transition bilan
+Javob: a
+
+75. @keyframes qanday yoziladi?
+a) @keyframes name { from {} to {} }
+b) @keyframes name { 0% {} 100% {} }
+c) Ikkalasi ham to'g'ri
+d) Hech biri
+Javob: c
+
+76. Animation-name nima?
+a) Keyframes nomi
+b) Element nomi
+c) Class nomi
+d) ID nomi
+Javob: a
+
+77. Animation-duration nima?
+a) Animatsiya davomiyligi
+b) Animatsiya tezligi
+c) Animatsiya nomi
+d) Hech narsa
+Javob: a
+
+78. Animation-iteration-count nima?
+a) Animatsiya takrorlanish soni
+b) Animatsiya tezligi
+c) Animatsiya nomi
+d) Hech narsa
+Javob: a
+
+79. Animation-direction qiymatlari qaysilar?
+a) normal, reverse, alternate, alternate-reverse
+b) Faqat normal
+c) Faqat reverse
+d) Hech qanday
+Javob: a
+
+80. Animation-fill-mode nima qiladi?
+a) Animatsiya tugaganda stil qolishini belgilaydi
+b) Animatsiya tezligini belgilaydi
+c) Animatsiya nomini belgilaydi
+d) Hech narsa
+Javob: a
+
+81. Animation-play-state qiymatlari qaysilar?
+a) running, paused
+b) play, stop
+c) start, end
+d) on, off
+Javob: a
+
+82. Filter xususiyati nima uchun?
+a) Vizual effektlar (blur, brightness, contrast)
+b) Faqat blur
+c) Faqat brightness
+d) Hech narsa
+Javob: a
+
+83. Backdrop-filter nima qiladi?
+a) Fon orqasiga effekt qo'shadi
+b) Element o'ziga effekt qo'shadi
+c) Matnni filtrlaydi
+d) Hech narsa
+Javob: a
+
+84. Mix-blend-mode nima uchun?
+a) Elementlarni aralash rejimlari
+b) Ranglarni aralashtirish
+c) Faqat opacity
+d) a va b to'g'ri
+Javob: d
+
+85. Object-fit nima qiladi?
+a) Img/video ni container ga moslashtiradi
+b) Faqat img uchun
+c) Faqat video uchun
+d) Hech narsa
+Javob: a
+
+86. Object-position nima?
+a) Object-fit bilan ishlatiladi, joy belgilaydi
+b) Element joyini belgilaydi
+c) Faqat img uchun
+d) Hech narsa
+Javob: a
+
+87. Aspect-ratio nima uchun?
+a) Nisbatni belgilash
+b) Element o'lchamini belgilash
+c) Element rangini belgilash
+d) Hech narsa
+Javob: a
+
+88. Pointer-events nima qiladi?
+a) Mouse eventlarni boshqaradi
+b) Element rangini o'zgartiradi
+c) Element joyini belgilaydi
+d) Hech narsa
+Javob: a
+
+89. User-select nima uchun?
+a) Matn tanlashni boshqarish
+b) User rolini belgilash
+c) User nomini belgilash
+d) Hech narsa
+Javob: a
+
+90. Scroll-behavior nima qiladi?
+a) Smooth scrolling
+b) Scroll tezligini belgilaydi
+c) Scrollni o'chiradi
+d) Hech narsa
+Javob: a
+
+91. Scroll-snap-type nima uchun?
+a) Scroll snap points yaratish
+b) Scroll tezligini belgilash
+c) Scrollni o'chirish
+d) Hech narsa
+Javob: a
+
+92. Will-change nima qiladi?
+a) Browser ga optimizatsiya qilishni bildiradi
+b) Element rangini o'zgartiradi
+c) Element joyini o'zgartiradi
+d) Hech narsa
+Javob: a
+
+93. Writing-mode nima uchun?
+a) Matn yo'nalishini o'zgartirish
+b) Matn rangini o'zgartirish
+c) Matn o'lchamini o'zgartirish
+d) Hech narsa
+Javob: a
+
+94. Text-orientation nima qiladi?
+a) Vertikal matnda harf yo'nalishi
+b) Gorizontal matn yo'nalishi
+c) Matn rangini belgilaydi
+d) Hech narsa
+Javob: a
+
+95. Column-count nima uchun?
+a) Matnni ustunlarga bo'lish
+b) Grid ustunlari
+c) Table ustunlari
+d) Hech narsa
+Javob: a
+
+96. Column-gap va column-rule nima?
+a) Ustunlar orasidagi masofa va chiziq
+b) Faqat masofa
+c) Faqat chiziq
+d) Hech narsa
+Javob: a
+
+97. @import qoidasi nima uchun?
+a) Boshqa CSS faylni import qilish
+b) JavaScript import qilish
+c) HTML import qilish
+d) Hech narsa
+Javob: a
+
+98. @font-face nima uchun?
+a) Custom font yuklash
+b) Faqat Google Fonts
+c) Faqat system fontlar
+d) Hech narsa
+Javob: a
+
+99. @supports qoidasi nima qiladi?
+a) CSS xususiyat qo'llab-quvvatlashni tekshirish
+b) Browser versiyasini tekshirish
+c) JavaScript tekshirish
+d) Hech narsa
+Javob: a
+
+100. Contain xususiyati nima uchun?
+a) Browser optimizatsiyasi uchun
+b) Element o'lchamini cheklash
+c) Element rangini cheklash
+d) Hech narsa
+Javob: a

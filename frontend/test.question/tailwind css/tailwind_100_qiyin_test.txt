@@ -1,0 +1,702 @@
+TAILWIND CSS - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+=====================================================
+
+1. Tailwind CSS engine internals?
+   A) Runtime
+   B) PostCSS plugin with regex-based extraction
+   C) JavaScript runtime
+   D) Browser parsing
+   Javob: B
+
+2. PurgeCSS vs JIT farqi?
+   A) Bir xil
+   B) JIT on-demand, PurgeCSS post-build removal
+   C) PurgeCSS faster
+   D) JIT slower
+   Javob: B
+
+3. Content extraction qanday ishlaydi?
+   A) AST parsing
+   B) Regex pattern matching
+   C) DOM parsing
+   D) CSS parsing
+   Javob: B
+
+4. Class detection patterns?
+   A) Exact match
+   B) Word boundary matching with heuristics
+   C) Full parsing
+   D) Manual list
+   Javob: B
+
+5. Dynamic class detection issue?
+   A) No issue
+   B) String concatenation class'lar aniqlanmaydi
+   C) All detected
+   D) Runtime detection
+   Javob: B
+
+6. Safelist patterns?
+   A) String only
+   B) Regex patterns in safelist
+   C) No patterns
+   D) Manual only
+   Javob: B
+
+7. Layer specificity order?
+   A) Random
+   B) base < components < utilities
+   C) utilities < components
+   D) components < base
+   Javob: B
+
+8. @layer importance?
+   A) No importance
+   B) Specificity control via source order
+   C) Random order
+   D) Alphabetical
+   Javob: B
+
+9. Important strategy tradeoffs?
+   A) No tradeoffs
+   B) important: true vs selector strategy
+   C) Always use true
+   D) Never use
+   Javob: B
+
+10. CSS cascade layers (@layer)?
+    A) Tailwind only
+    B) Native CSS feature integration
+    C) No support
+    D) Custom implementation
+    Javob: B
+
+11. Variant plugin architecture?
+    A) Static
+    B) addVariant with selector transformation
+    C) Runtime
+    D) Manual
+    Javob: B
+
+12. Complex variant creation?
+    A) Simple string
+    B) Array of selectors, nested syntax
+    C) Single selector
+    D) No complex
+    Javob: B
+
+13. Parent variant syntax?
+    A) & syntax
+    B) :merge() for selector merging
+    C) No merge
+    D) Automatic
+    Javob: B
+
+14. matchVariant function?
+    A) Static variant
+    B) Dynamic variant with values
+    C) Match utility
+    D) Match component
+    Javob: B
+
+15. Variant modifier values?
+    A) No values
+    B) Arbitrary values in variants [&:nth-child(3)]
+    C) Fixed values
+    D) Numeric only
+    Javob: B
+
+16. Plugin with/without options?
+    A) Always options
+    B) plugin() vs plugin.withOptions()
+    C) Never options
+    D) No difference
+    Javob: B
+
+17. plugin.withOptions() usage?
+    A) No usage
+    B) Configurable plugins with options
+    C) Simple plugins
+    D) Core plugins
+    Javob: B
+
+18. Theme function values?
+    A) CSS only
+    B) Closures with theme callback
+    C) Static only
+    D) No closures
+    Javob: B
+
+19. Negative utility generation?
+    A) Manual
+    B) negative() helper in matchUtilities
+    C) Automatic
+    D) No negative
+    Javob: B
+
+20. Type in matchUtilities?
+    A) No type
+    B) type: 'length' | 'color' | 'percentage'
+    C) Any type
+    D) String only
+    Javob: B
+
+21. CSS variables in arbitrary values?
+    A) No support
+    B) [var(--custom)] syntax
+    C) Native only
+    D) Theme only
+    Javob: B
+
+22. Arbitrary variant syntax?
+    A) No arbitrary
+    B) [&:hover]:bg-blue or [@media(...)]:
+    C) Custom only
+    D) Built-in only
+    Javob: B
+
+23. Complex arbitrary selectors?
+    A) Simple only
+    B) [&>.child]:bg-blue, [&[data-active]]:
+    C) No complex
+    D) Class only
+    Javob: B
+
+24. Arbitrary property restrictions?
+    A) No restrictions
+    B) No semicolons, must be valid CSS
+    C) All allowed
+    D) Some properties
+    Javob: B
+
+25. Space in arbitrary values?
+    A) Normal space
+    B) Underscore to space conversion
+    C) No space
+    D) Plus sign
+    Javob: B
+
+26. theme() in arbitrary values?
+    A) No support
+    B) bg-[theme(colors.blue.500)]
+    C) Direct access
+    D) Variable only
+    Javob: B
+
+27. Calc in arbitrary values?
+    A) No calc
+    B) w-[calc(100%-2rem)]
+    C) calc() function
+    D) Math only
+    Javob: B
+
+28. CSS functions in arbitrary?
+    A) No functions
+    B) All CSS functions: url(), linear-gradient()
+    C) Some functions
+    D) No support
+    Javob: B
+
+29. Multi-value arbitrary syntax?
+    A) No multi-value
+    B) grid-cols-[repeat(3,minmax(0,1fr))]
+    C) Simple values
+    D) Single value
+    Javob: B
+
+30. Responsive arbitrary values?
+    A) No responsive
+    B) md:w-[calc(50%-1rem)]
+    C) Fixed values
+    D) Mobile only
+    Javob: B
+
+31. Color opacity modifier?
+    A) No modifier
+    B) bg-blue-500/75 (75% opacity)
+    C) opacity-75
+    D) Manual
+    Javob: B
+
+32. Arbitrary color opacity?
+    A) No support
+    B) bg-[#ff0000]/50
+    C) Fixed opacity
+    D) No arbitrary
+    Javob: B
+
+33. CSS custom properties with Tailwind?
+    A) No integration
+    B) --tw-* variables, var() in classes
+    C) Separate systems
+    D) Manual only
+    Javob: B
+
+34. Tailwind CSS variables architecture?
+    A) No variables
+    B) Layered CSS variable system
+    C) Hardcoded values
+    D) JavaScript variables
+    Javob: B
+
+35. Transform origin customization?
+    A) No custom
+    B) origin-[30%_50%]
+    C) Fixed origins
+    D) Preset only
+    Javob: B
+
+36. Multi-transform handling?
+    A) Override
+    B) Composable via CSS variables
+    C) First only
+    D) Last only
+    Javob: B
+
+37. Filter composability?
+    A) Single filter
+    B) blur-md brightness-110 (composes)
+    C) Override
+    D) Manual
+    Javob: B
+
+38. Backdrop filter handling?
+    A) Same as filter
+    B) Separate --tw-backdrop-* variables
+    C) No backdrop
+    D) Combined
+    Javob: B
+
+39. Ring utility implementation?
+    A) Border
+    B) Box-shadow with offset simulation
+    C) Outline
+    D) Pseudo-element
+    Javob: B
+
+40. Ring offset technique?
+    A) Margin
+    B) Multiple box-shadows
+    C) Border
+    D) Padding
+    Javob: B
+
+41. Divide utility implementation?
+    A) Border
+    B) Border on children with lobotomized owl
+    C) Gap
+    D) Margin
+    Javob: B
+
+42. Space utility implementation?
+    A) Gap
+    B) Margin on children (not first)
+    C) Padding
+    D) Border
+    Javob: B
+
+43. Aspect ratio without plugin?
+    A) No support
+    B) aspect-[16/9] arbitrary value
+    C) Plugin required
+    D) Native only
+    Javob: B
+
+44. Container queries polyfill?
+    A) Native only
+    B) ResizeObserver-based polyfill option
+    C) No polyfill
+    D) JavaScript required
+    Javob: B
+
+45. Tailwind Oxide engine?
+    A) Old engine
+    B) New Rust-based engine (experimental)
+    C) JavaScript engine
+    D) WASM engine
+    Javob: B
+
+46. Performance optimization strategies?
+    A) No optimization
+    B) Content paths, safelist, JIT
+    C) Always purge
+    D) No JIT
+    Javob: B
+
+47. Build size optimization?
+    A) No optimization
+    B) Proper content paths, no safelist abuse
+    C) Safelist all
+    D) No content
+    Javob: B
+
+48. Development vs production?
+    A) Same
+    B) Full CSS dev, purged production
+    C) Purged dev
+    D) Full production
+    Javob: B
+
+49. Source maps in Tailwind?
+    A) No support
+    B) PostCSS source maps integration
+    C) Built-in
+    D) External
+    Javob: B
+
+50. IntelliSense configuration?
+    A) No config
+    B) tailwindCSS.includeLanguages, files
+    C) Automatic
+    D) Manual
+    Javob: B
+
+51. ESLint Tailwind plugin?
+    A) No plugin
+    B) eslint-plugin-tailwindcss
+    C) Built-in
+    D) External only
+    Javob: B
+
+52. Class sorting convention?
+    A) Random
+    B) Responsive, state, property order
+    C) Alphabetical
+    D) User-defined
+    Javob: B
+
+53. Prettier Tailwind plugin?
+    A) No plugin
+    B) prettier-plugin-tailwindcss
+    C) Built-in
+    D) External only
+    Javob: B
+
+54. @config directive?
+    A) No directive
+    B) CSS file config override
+    C) JavaScript only
+    D) JSON only
+    Javob: B
+
+55. Multiple config files?
+    A) Single only
+    B) Presets array configuration
+    C) No multiple
+    D) Manual merge
+    Javob: B
+
+56. Preset concept?
+    A) No presets
+    B) Shareable configuration packages
+    C) Theme only
+    D) Plugin only
+    Javob: B
+
+57. Config resolution order?
+    A) Random
+    B) Presets merged, then user config
+    C) User first
+    D) Presets only
+    Javob: B
+
+58. Theme extending vs overriding?
+    A) Always override
+    B) extend key preserves defaults
+    C) Always extend
+    D) No difference
+    Javob: B
+
+59. Negative spacing configuration?
+    A) Manual
+    B) Automatic negative scale generation
+    C) No negative
+    D) Separate config
+    Javob: B
+
+60. Color palette from palette generator?
+    A) Manual
+    B) tailwindcss-palette-generator
+    C) Built-in generator
+    D) No generator
+    Javob: B
+
+61. Custom color scale?
+    A) No custom
+    B) 50-950 numeric keys
+    C) Fixed scale
+    D) Alphabetical
+    Javob: B
+
+62. DEFAULT key in theme?
+    A) No DEFAULT
+    B) Utility without size suffix
+    C) First value
+    D) Last value
+    Javob: B
+
+63. Responsive design approach?
+    A) Desktop-first
+    B) Mobile-first (min-width)
+    C) Both
+    D) No approach
+    Javob: B
+
+64. Max-width breakpoints?
+    A) Not supported
+    B) max-sm:, max-md: variants
+    C) Default
+    D) Only min-width
+    Javob: B
+
+65. Arbitrary breakpoints?
+    A) No support
+    B) min-[320px]:, max-[1200px]:
+    C) Fixed only
+    D) Config only
+    Javob: B
+
+66. Range breakpoints?
+    A) Not supported
+    B) sm:max-lg: for range targeting
+    C) Single breakpoint
+    D) No range
+    Javob: B
+
+67. Typography plugin prose modifiers?
+    A) No modifiers
+    B) prose-lg, prose-invert, prose-slate
+    C) Fixed size
+    D) No customization
+    Javob: B
+
+68. Typography element customization?
+    A) No customization
+    B) prose-headings:, prose-a:, prose-code:
+    C) Global only
+    D) Fixed styles
+    Javob: B
+
+69. Forms plugin strategy?
+    A) No strategy
+    B) strategy: 'base' | 'class'
+    C) Always base
+    D) Always class
+    Javob: B
+
+70. animate-* customization?
+    A) No custom
+    B) theme.extend.animation + keyframes
+    C) Built-in only
+    D) CSS only
+    Javob: B
+
+71. Animation keyframes config?
+    A) CSS file only
+    B) theme.extend.keyframes object
+    C) JavaScript only
+    D) No config
+    Javob: B
+
+72. Complex animation sequence?
+    A) Single animation
+    B) Multiple animation classes + CSS
+    C) No sequence
+    D) JavaScript only
+    Javob: B
+
+73. Animation delay utilities?
+    A) No delay
+    B) delay-150, delay-300, etc.
+    C) CSS only
+    D) Arbitrary only
+    Javob: B
+
+74. Multi-column layout?
+    A) No support
+    B) columns-2, columns-3, etc.
+    C) Grid only
+    D) Flex only
+    Javob: B
+
+75. Column gap in multi-column?
+    A) No gap
+    B) gap-* with columns
+    C) Separate property
+    D) No support
+    Javob: B
+
+76. Break utilities?
+    A) No break
+    B) break-inside-avoid, break-after-page
+    C) CSS only
+    D) No support
+    Javob: B
+
+77. Writing mode utilities?
+    A) Not supported
+    B) Plugin or arbitrary [writing-mode:vertical-rl]
+    C) Built-in
+    D) CSS only
+    Javob: B
+
+78. Logical properties?
+    A) No support
+    B) ps-*, pe-* (padding-inline-start/end)
+    C) Physical only
+    D) No difference
+    Javob: B
+
+79. Float utilities with logical?
+    A) No logical
+    B) float-start, float-end (logical)
+    C) float-left only
+    D) No support
+    Javob: B
+
+80. Text indent?
+    A) No support
+    B) indent-* utilities
+    C) CSS only
+    D) Plugin required
+    Javob: B
+
+81. Font variant numeric?
+    A) No support
+    B) tabular-nums, oldstyle-nums
+    C) CSS only
+    D) Plugin required
+    Javob: B
+
+82. Hyphens utilities?
+    A) No support
+    B) hyphens-auto, hyphens-none
+    C) CSS only
+    D) Plugin required
+    Javob: B
+
+83. Text wrap utilities?
+    A) No support
+    B) text-wrap, text-nowrap, text-balance
+    C) CSS only
+    D) Plugin required
+    Javob: B
+
+84. Forced colors mode?
+    A) No support
+    B) forced-colors:bg-[Canvas]
+    C) CSS only
+    D) No mode
+    Javob: B
+
+85. High contrast mode?
+    A) No support
+    B) contrast-more:, contrast-less:
+    C) CSS only
+    D) No mode
+    Javob: B
+
+86. Subgrid support?
+    A) No support
+    B) grid-cols-subgrid, grid-rows-subgrid
+    C) Plugin required
+    D) Arbitrary only
+    Javob: B
+
+87. Named grid lines?
+    A) No support
+    B) Arbitrary values [grid-area:header]
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+88. Grid auto flow?
+    A) No support
+    B) grid-flow-row, grid-flow-col, grid-flow-dense
+    C) CSS only
+    D) Plugin required
+    Javob: B
+
+89. Masonry layout?
+    A) Built-in
+    B) Experimental, grid-rows-[masonry]
+    C) Plugin required
+    D) Not supported
+    Javob: B
+
+90. Variable fonts?
+    A) No support
+    B) font-[family], arbitrary font-weight values
+    C) Fixed fonts
+    D) Plugin required
+    Javob: B
+
+91. Font feature settings?
+    A) No support
+    B) Arbitrary [font-feature-settings:'ss01']
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+92. Color mix function?
+    A) No support
+    B) Arbitrary [color:color-mix(...)]
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+93. oklch/oklab colors?
+    A) No support
+    B) Arbitrary [color:oklch(...)]
+    C) Built-in config
+    D) Plugin required
+    Javob: B
+
+94. Container style queries?
+    A) No support
+    B) Experimental container style queries
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+95. View transitions API?
+    A) No support
+    B) Arbitrary [view-transition-name:...]
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+96. Anchor positioning?
+    A) No support
+    B) Experimental/future CSS feature
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+97. Popover API styling?
+    A) No support
+    B) Arbitrary selectors [:popover-open]
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+98. Dialog ::backdrop?
+    A) No support
+    B) backdrop: modifier or arbitrary
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+99. ::part() pseudo-element?
+    A) No support
+    B) Arbitrary [&::part(button)]
+    C) Built-in
+    D) Plugin required
+    Javob: B
+
+100. Starting style (transitions)?
+     A) No support
+     B) Arbitrary @starting-style in CSS
+     C) Built-in
+     D) Plugin required
+     Javob: B

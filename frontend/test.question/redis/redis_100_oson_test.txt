@@ -1,0 +1,2008 @@
+1. Redis nima?1. Redis nima?REDIS - TEST SAVOLLARI
+
+   A) SQL database
+
+   B) In-memory key-value data store   A) SQL database300 TA SAVOL (3 DARAJA, 4 VARIANT)
+
+   C) File system
+
+   D) Web server   B) In-memory key-value store===================================================
+
+   Javob: B
+
+   C) File systemOSON DARAJA (EASY)
+
+2. Redis qaysi tilida yozilgan?
+
+   A) Java   D) Web serverVARIANT 1
+
+   B) C
+
+   C) Python   Javob: B
+
+   D) Go
+
+   Javob: BRedis nima?
+
+
+
+3. Redis default port nomer?2. Redis qanday saqlaydi?A) Relational database
+
+   A) 3306
+
+   B) 6379   A) Disk onlyB) In-memory data structure store
+
+   C) 5432
+
+   D) 27017   B) RAM (memory) daC) File system
+
+   Javob: B
+
+   C) Cloud onlyD) Web server
+
+4. redis-cli nima?
+
+   A) Web interface   D) NetworkJavob: B
+
+   B) Command line interface
+
+   C) GUI tool   Javob: BRedis qaysi tilida yozilgan?
+
+   D) Config file
+
+   Javob: BA) Python
+
+
+
+5. Redis server ishga tushirish command?3. Redis default port?B) C
+
+   A) redis-start
+
+   B) redis-server   A) 3306C) Java
+
+   C) start-redis
+
+   D) redis-run   B) 6379D) JavaScript
+
+   Javob: B
+
+   C) 5432Javob: B
+
+6. SET command nima qiladi?
+
+   A) Data o'chiradi   D) 27017Redis default port nima?
+
+   B) Key-value saqlaydi
+
+   C) Key topadi   Javob: BA) 3306
+
+   D) Data yangilaydi
+
+   Javob: BB) 6379
+
+
+
+7. GET command nima qiladi?4. redis-cli nima?C) 27017
+
+   A) Data o'chiradi
+
+   B) Key bo'yicha value oladi   A) ServerD) 5432
+
+   C) Data saqlaydi
+
+   D) Key yaratadi   B) Command line clientJavob: B
+
+   Javob: B
+
+   C) Config fileRedis qaysi turdagi ma'lumotlarni saqlaydi?
+
+8. DEL command nima qiladi?
+
+   A) Data qo'shadi   D) Log fileA) Faqat string
+
+   B) Key ni o'chiradi
+
+   C) Data yangilaydi   Javob: BB) Key-value pairs
+
+   D) Key nomini o'zgartiradi
+
+   Javob: BC) Faqat JSON
+
+
+
+9. EXISTS command nima tekshiradi?5. SET command nima qiladi?D) Faqat XML
+
+   A) Server status
+
+   B) Key mavjudligini   A) Get valueJavob: B
+
+   C) Memory size
+
+   D) Connection   B) Key-value saqlashRedis qayerda ma'lumot saqlaydi?
+
+   Javob: B
+
+   C) DeleteA) Disk
+
+10. KEYS * command nima qaytaradi?
+
+    A) Bitta key   D) ListB) RAM (Memory)
+
+    B) Barcha keylarni
+
+    C) Faqat values   Javob: BC) Cloud
+
+    D) Server info
+
+    Javob: BD) External storage
+
+
+
+11. EXPIRE command nima qiladi?6. GET command nima qiladi?Javob: B
+
+    A) Key ni yaratadi
+
+    B) Key ga TTL o'rnatadi   A) Set valueSET command nima qiladi?
+
+    C) Key ni o'chiradi
+
+    D) Key ni copy qiladi   B) Qiymatni olishA) Get value
+
+    Javob: B
+
+   C) DeleteB) Key-value set qiladi
+
+12. TTL command nima qaytaradi?
+
+    A) Key value   D) ListC) Delete key
+
+    B) Qolgan vaqt soniyada
+
+    C) Key size   Javob: BD) List create
+
+    D) Memory usage
+
+    Javob: BJavob: B
+
+
+
+13. PERSIST command nima qiladi?7. DEL command nima qiladi?GET command nima qiladi?
+
+    A) Data saqlaydi
+
+    B) TTL ni olib tashlaydi   A) GetA) Set value
+
+    C) Data o'chiradi
+
+    D) Backup yaratadi   B) Key'ni o'chirishB) Key bo'yicha value olish
+
+    Javob: B
+
+   C) SetC) Delete value
+
+14. INCR command nima qiladi?
+
+    A) Kamaytiradi   D) ListD) Update value
+
+    B) 1 ga oshiradi
+
+    C) Ko'paytiradi   Javob: BJavob: B
+
+    D) Bo'ladi
+
+    Javob: BDEL command nima qiladi?
+
+
+
+15. DECR command nima qiladi?8. EXISTS command nima?A) Set value
+
+    A) Oshiradi
+
+    B) 1 ga kamaytiradi   A) CreateB) Key ni o'chirish
+
+    C) Ko'paytiradi
+
+    D) Bo'ladi   B) Key mavjudligini tekshirishC) Get value
+
+    Javob: B
+
+   C) DeleteD) Update value
+
+16. INCRBY command nima qiladi?
+
+    A) 1 ga oshiradi   D) GetJavob: B
+
+    B) Berilgan songa oshiradi
+
+    C) Kamaytiradi   Javob: BEXISTS command nima qaytaradi?
+
+    D) Ko'paytiradi
+
+    Javob: BA) Value
+
+
+
+17. APPEND command nima qiladi?9. KEYS * nima?B) 1 (mavjud) yoki 0 (yo'q)
+
+    A) Key o'chiradi
+
+    B) String oxiriga qo'shadi   A) One keyC) String
+
+    C) Boshiga qo'shadi
+
+    D) O'rtasiga qo'shadi   B) Barcha keylarD) Array
+
+    Javob: B
+
+   C) No keysJavob: B
+
+18. STRLEN command nima qaytaradi?
+
+    A) Key soni   D) ErrorKEYS * command nima qiladi?
+
+    B) String uzunligi
+
+    C) Memory size   Javob: BA) Bitta key olish
+
+    D) TTL
+
+    Javob: BB) Barcha keylarni ko'rsatish
+
+
+
+19. MSET command nima qiladi?10. TTL nima?C) Key o'chirish
+
+    A) Bitta key set
+
+    B) Bir nechta key-value set    A) ValueD) Key yaratish
+
+    C) Key delete
+
+    D) Key rename    B) Time To Live (qolgan vaqt)Javob: B
+
+    Javob: B
+
+    C) Total TimeEXPIRE command nima uchun?
+
+20. MGET command nima qiladi?
+
+    A) Bitta value    D) TransferA) Key o'chirish
+
+    B) Bir nechta value oladi
+
+    C) All keys    Javob: BB) Key ga TTL (Time To Live) set qilish
+
+    D) Server info
+
+    Javob: BC) Key olish
+
+
+
+21. LPUSH command qayerga qo'shadi?11. EXPIRE command nima?D) Key yangilash
+
+    A) Oxiriga
+
+    B) Boshiga (list)    A) DeleteJavob: B
+
+    C) O'rtasiga
+
+    D) Random    B) Key uchun TTL o'rnatishTTL command nima qaytaradi?
+
+    Javob: B
+
+    C) GetA) Value
+
+22. RPUSH command qayerga qo'shadi?
+
+    A) Boshiga    D) SetB) Key ning qolgan vaqti (seconds)
+
+    B) Oxiriga (list)
+
+    C) O'rtasiga    Javob: BC) Key nomi
+
+    D) Random
+
+    Javob: BD) Type
+
+
+
+23. LPOP command nima qiladi?12. SETEX nima?Javob: B
+
+    A) Oxiridan oladi
+
+    B) Boshidan oladi va o'chiradi    A) SETPERSIST command nima qiladi?
+
+    C) O'rtadan oladi
+
+    D) Copy qiladi    B) SET + EXPIRE bir komandadaA) Key o'chirish
+
+    Javob: B
+
+    C) GETB) TTL ni olib tashlash (key permanent)
+
+24. RPOP command nima qiladi?
+
+    A) Boshidan oladi    D) DELETEC) Key saqlash
+
+    B) Oxiridan oladi va o'chiradi
+
+    C) O'rtadan oladi    Javob: BD) Value saqlash
+
+    D) Copy qiladi
+
+    Javob: BJavob: B
+
+
+
+25. LRANGE command nima qiladi?13. INCR command nima?TYPE command nima qaytaradi?
+
+    A) Single element
+
+    B) Range bo'yicha elementlar oladi    A) DecrementA) Value
+
+    C) Delete elements
+
+    D) Count elements    B) Qiymatni 1 ga oshirishB) Key ning data type
+
+    Javob: B
+
+    C) GetC) Key nomi
+
+26. LLEN command nima qaytaradi?
+
+    A) Element qiymati    D) SetD) Size
+
+    B) List uzunligi
+
+    C) Memory size    Javob: BJavob: B
+
+    D) TTL
+
+    Javob: BFLUSHDB command nima qiladi?
+
+
+
+27. LINDEX command nima qiladi?14. DECR command nima?A) Bitta key o'chirish
+
+    A) All elements
+
+    B) Index bo'yicha element oladi    A) IncrementB) Hozirgi DB dagi barcha keylarni o'chirish
+
+    C) Delete by index
+
+    D) Update by index    B) Qiymatni 1 ga kamaytirishC) Server restart
+
+    Javob: B
+
+    C) GetD) Backup create
+
+28. LSET command nima qiladi?
+
+    A) List yaratadi    D) SetJavob: B
+
+    B) Index bo'yicha element o'zgartiradi
+
+    C) List o'chiradi    Javob: BFLUSHALL command nima qiladi?
+
+    D) List copy
+
+    Javob: BA) Bitta DB tozalash
+
+
+
+29. SADD command nima qiladi?15. APPEND command nima?B) Barcha DB larni tozalash
+
+    A) String add
+
+    B) Set ga member qo'shadi    A) PrependC) Server stop
+
+    C) List add
+
+    D) Hash add    B) Stringga qo'shishD) Key create
+
+    Javob: B
+
+    C) ReplaceJavob: B
+
+30. SREM command nima qiladi?
+
+    A) Set yaratadi    D) DeletePING command nima qaytaradi?
+
+    B) Set dan member o'chiradi
+
+    C) Set copy    Javob: BA) ERROR
+
+    D) Set rename
+
+    Javob: BB) PONG
+
+
+
+31. SMEMBERS command nima qaytaradi?16. STRLEN command nima?C) OK
+
+    A) Member count
+
+    B) Barcha memberlarni    A) CountD) TRUE
+
+    C) Random member
+
+    D) First member    B) String uzunligiJavob: B
+
+    Javob: B
+
+    C) SizeSELECT command nima uchun?
+
+32. SISMEMBER command nima tekshiradi?
+
+    A) Set size    D) LengthA) Key tanlash
+
+    B) Member mavjudligini
+
+    C) Set type    Javob: BB) Database index tanlash
+
+    D) Member value
+
+    Javob: BC) Value tanlash
+
+
+
+33. SCARD command nima qaytaradi?17. MSET command nima?D) Type tanlash
+
+    A) Random member
+
+    B) Set element soni    A) Single setJavob: B
+
+    C) Set value
+
+    D) Set type    B) Ko'p key-value o'rnatishRedis default nechta database bor?
+
+    Javob: B
+
+    C) GetA) 8
+
+34. SUNION command nima qiladi?
+
+    A) Set intersection    D) DeleteB) 16
+
+    B) Set larning union i
+
+    C) Set difference    Javob: BC) 32
+
+    D) Set copy
+
+    Javob: BD) 64
+
+
+
+35. SINTER command nima qiladi?18. MGET command nima?Javob: B
+
+    A) Set union
+
+    B) Set larning intersection i    A) Single getDBSIZE command nima qaytaradi?
+
+    C) Set difference
+
+    D) Set copy    B) Ko'p qiymatlarni olishA) Database size MB
+
+    Javob: B
+
+    C) SetB) Hozirgi DB dagi keylar soni
+
+36. SDIFF command nima qiladi?
+
+    A) Set union    D) DeleteC) Memory size
+
+    B) Set larning difference i
+
+    C) Set intersection    Javob: BD) Connection count
+
+    D) Set copy
+
+    Javob: BJavob: B
+
+
+
+37. HSET command nima qiladi?19. List nima Redis'da?INCR command nima qiladi?
+
+    A) String set
+
+    B) Hash field value set    A) SetA) String append
+
+    C) List set
+
+    D) Set add    B) Ordered collectionB) Integer value ni 1 ga oshirish
+
+    Javob: B
+
+    C) HashC) Value delete
+
+38. HGET command nima qiladi?
+
+    A) All fields    D) StringD) Key create
+
+    B) Hash field value oladi
+
+    C) Hash delete    Javob: BJavob: B
+
+    D) Hash count
+
+    Javob: BDECR command nima qiladi?
+
+
+
+39. HDEL command nima qiladi?20. LPUSH command nima?A) String trim
+
+    A) Hash yaratadi
+
+    B) Hash field o'chiradi    A) Right pushB) Integer value ni 1 ga kamaytirish
+
+    C) Hash copy
+
+    D) Hash rename    B) List boshiga qo'shishC) Value delete
+
+    Javob: B
+
+    C) PopD) Key delete
+
+40. HGETALL command nima qaytaradi?
+
+    A) One field    D) GetJavob: B
+
+    B) Barcha field va valuelar
+
+    C) Only fields    Javob: BAPPEND command nima qiladi?
+
+    D) Only values
+
+    Javob: BA) List append
+
+
+
+41. HKEYS command nima qaytaradi?21. RPUSH command nima?B) String value ga text qo'shish
+
+    A) All values
+
+    B) Barcha field nomlari    A) Left pushC) Key delete
+
+    C) Hash count
+
+    D) Hash size    B) List oxiriga qo'shishD) Value replace
+
+    Javob: B
+
+    C) PopJavob: B
+
+42. HVALS command nima qaytaradi?
+
+    A) All keys    D) GetSTRLEN command nima qaytaradi?
+
+    B) Barcha field valuelari
+
+    C) Hash count    Javob: BA) Key length
+
+    D) Hash type
+
+    Javob: BB) String value length
+
+
+
+43. HEXISTS command nima tekshiradi?22. LPOP command nima?C) List size
+
+    A) Hash size
+
+    B) Field mavjudligini    A) PushD) Set size
+
+    C) Value type
+
+    D) Hash type    B) List boshidan olish va o'chirishJavob: B
+
+    Javob: B
+
+    C) Right popGETRANGE command nima qiladi?
+
+44. HLEN command nima qaytaradi?
+
+    A) Hash value    D) GetA) List range
+
+    B) Field soni
+
+    C) Hash size    Javob: BB) String substring olish
+
+    D) Memory usage
+
+    Javob: BC) Set range
+
+
+
+45. ZADD command nima qiladi?23. RPOP command nima?D) Hash range
+
+    A) List add
+
+    B) Sorted Set ga score bilan member qo'shadi    A) PushJavob: B
+
+    C) Set add
+
+    D) Hash add    B) List oxiridan olish va o'chirishMGET command nima qiladi?
+
+    Javob: B
+
+    C) Left popA) Bitta value olish
+
+46. ZRANGE command nima qiladi?
+
+    A) Random elements    D) GetB) Multiple keys bo'yicha values olish
+
+    B) Score bo'yicha range elementlar
+
+    C) Delete elements    Javob: BC) List olish
+
+    D) Count elements
+
+    Javob: BD) Set olish
+
+
+
+47. ZRANK command nima qaytaradi?24. LRANGE command nima?Javob: B
+
+    A) Score value
+
+    B) Member ning rank i (index)    A) SingleMSET command nima qiladi?
+
+    C) Member count
+
+    D) Set size    B) List elementlar oralig'iA) Bitta set
+
+    Javob: B
+
+    C) PushB) Multiple key-value pairs set qilish
+
+48. ZSCORE command nima qaytaradi?
+
+    A) Member rank    D) PopC) List set
+
+    B) Member ning score i
+
+    C) Member count    Javob: BD) Hash set
+
+    D) Set type
+
+    Javob: BJavob: B
+
+
+
+49. ZCARD command nima qaytaradi?25. LLEN command nima?LPUSH command nima qiladi?
+
+    A) Random member
+
+    B) Sorted Set element soni    A) RangeA) String push
+
+    C) Score range
+
+    D) Rank range    B) List uzunligiB) List boshiga element qo'shish
+
+    Javob: B
+
+    C) PushC) Set add
+
+50. ZREM command nima qiladi?
+
+    A) Set yaratadi    D) PopD) Hash add
+
+    B) Sorted Set dan member o'chiradi
+
+    C) Set copy    Javob: BJavob: B
+
+    D) Set rename
+
+    Javob: BRPUSH command nima qiladi?
+
+
+
+51. PING command nima qaytaradi?26. Set nima Redis'da?A) List boshiga add
+
+    A) Server time
+
+    B) PONG    A) ListB) List oxiriga element qo'shish
+
+    C) OK
+
+    D) Status    B) Unique elementlar to'plamiC) Set add
+
+    Javob: B
+
+    C) HashD) Hash add
+
+52. INFO command nima ko'rsatadi?
+
+    A) Keys    D) StringJavob: B
+
+    B) Server statistikasi
+
+    C) Values    Javob: BLPOP command nima qiladi?
+
+    D) Clients
+
+    Javob: BA) List oxiridan olish
+
+
+
+53. FLUSHDB command nima qiladi?27. SADD command nima?B) List boshidan element olish va o'chirish
+
+    A) Server restart
+
+    B) Current database ni tozalaydi    A) RemoveC) Set remove
+
+    C) All databases clear
+
+    D) Backup create    B) Set'ga element qo'shishD) Hash remove
+
+    Javob: B
+
+    C) GetJavob: B
+
+54. FLUSHALL command nima qiladi?
+
+    A) One database clear    D) ListRPOP command nima qiladi?
+
+    B) Barcha database larni tozalaydi
+
+    C) Server stop    Javob: BA) List boshidan olish
+
+    D) Backup create
+
+    Javob: BB) List oxiridan element olish va o'chirish
+
+
+
+55. SELECT command nima qiladi?28. SMEMBERS command nima?C) Set remove
+
+    A) Data select
+
+    B) Database ni tanlaydi    A) AddD) Hash remove
+
+    C) Key select
+
+    D) Value select    B) Set'ning barcha elementlariJavob: B
+
+    Javob: B
+
+    C) RemoveLLEN command nima qaytaradi?
+
+56. Redis da nechta database bo'lishi mumkin default?
+
+    A) 1    D) CountA) String length
+
+    B) 16
+
+    C) 100    Javob: BB) List uzunligi
+
+    D) Unlimited
+
+    Javob: BC) Set size
+
+
+
+57. DBSIZE command nima qaytaradi?29. SISMEMBER command nima?D) Hash size
+
+    A) Database MB size
+
+    B) Current database key soni    A) AddJavob: B
+
+    C) All databases size
+
+    D) Memory total    B) Element set'da bormi tekshirishLRANGE command nima qiladi?
+
+    Javob: B
+
+    C) RemoveA) String range
+
+58. TYPE command nima qaytaradi?
+
+    A) Key value    D) MembersB) List dan range bo'yicha elementlar olish
+
+    B) Key ning data type i
+
+    C) Key size    Javob: BC) Set range
+
+    D) Key TTL
+
+    Javob: BD) Hash range
+
+
+
+59. RENAME command nima qiladi?30. SREM command nima?Javob: B
+
+    A) Value rename
+
+    B) Key nomini o'zgartiradi    A) AddSADD command nima qiladi?
+
+    C) Database rename
+
+    D) Server rename    B) Set'dan element o'chirishA) List add
+
+    Javob: B
+
+    C) MembersB) Set ga member qo'shish
+
+60. COPY command nima qiladi?
+
+    A) Server copy    D) CountC) Hash add
+
+    B) Key ni copy qiladi
+
+    C) Database copy    Javob: BD) String add
+
+    D) Value copy
+
+    Javob: BJavob: B
+
+
+
+61. DUMP command nima qiladi?31. SCARD command nima?SREM command nima qiladi?
+
+    A) Delete data
+
+    B) Key ni serialized format da qaytaradi    A) AddA) List remove
+
+    C) Server dump
+
+    D) Memory dump    B) Set elementlar soniB) Set dan member o'chirish
+
+    Javob: B
+
+    C) RemoveC) Hash remove
+
+62. RESTORE command nima qiladi?
+
+    A) Delete restore    D) MembersD) String remove
+
+    B) Serialized value dan key yaratadi
+
+    C) Server restore    Javob: BJavob: B
+
+    D) Backup restore
+
+    Javob: BSMEMBERS command nima qaytaradi?
+
+
+
+63. SCAN command nima qiladi?32. SUNION command nima?A) List members
+
+    A) Delete keys
+
+    B) Iterative key scanning    A) IntersectionB) Set ning barcha members
+
+    C) Value scan
+
+    D) Type scan    B) Set'lar birlashmasiC) Hash fields
+
+    Javob: B
+
+    C) DifferenceD) String value
+
+64. OBJECT ENCODING command nima ko'rsatadi?
+
+    A) Object type    D) MembersJavob: B
+
+    B) Internal encoding type
+
+    C) Object size    Javob: BSISMEMBER command nima tekshiradi?
+
+    D) Object value
+
+    Javob: BA) List member
+
+
+
+65. RANDOMKEY command nima qaytaradi?33. SINTER command nima?B) Element set da bormi
+
+    A) All keys
+
+    B) Random key nomi    A) UnionC) Hash field
+
+    C) Random value
+
+    D) Key count    B) Set'lar kesishmasiD) String exists
+
+    Javob: B
+
+    C) DifferenceJavob: B
+
+66. Redis da string max size?
+
+    A) 1MB    D) MembersSCARD command nima qaytaradi?
+
+    B) 512MB
+
+    C) 1GB    Javob: BA) List size
+
+    D) Unlimited
+
+    Javob: BB) Set dagi elementlar soni
+
+
+
+67. Redis Pub/Sub nima uchun?34. Sorted Set nima?C) Hash size
+
+    A) Database
+
+    B) Messaging pattern    A) Regular setD) String length
+
+    C) Caching
+
+    D) Storage    B) Score bilan tartiblangan setJavob: B
+
+    Javob: B
+
+    C) ListHSET command nima qiladi?
+
+68. PUBLISH command nima qiladi?
+
+    A) Subscribe    D) HashA) String set
+
+    B) Channel ga message yuboradi
+
+    C) Unsubscribe    Javob: BB) Hash field-value set qilish
+
+    D) Create channel
+
+    Javob: BC) List set
+
+
+
+69. SUBSCRIBE command nima qiladi?35. ZADD command nima?D) Set add
+
+    A) Publish
+
+    B) Channel ga subscribe bo'ladi    A) RemoveJavob: B
+
+    C) Unsubscribe
+
+    D) Delete channel    B) Sorted set'ga element qo'shishHGET command nima qiladi?
+
+    Javob: B
+
+    C) GetA) String get
+
+70. PSUBSCRIBE nima uchun?
+
+    A) Simple subscribe    D) RangeB) Hash dan field bo'yicha value olish
+
+    B) Pattern bo'yicha subscribe
+
+    C) Private subscribe    Javob: BC) List get
+
+    D) Public subscribe
+
+    Javob: BD) Set get
+
+
+
+71. Redis Transactions nima?36. ZRANGE command nima?Javob: B
+
+    A) Money transfer
+
+    B) Atomic command group    A) AddHGETALL command nima qaytaradi?
+
+    C) Data transfer
+
+    D) Key transfer    B) Index bo'yicha elementlarA) String all
+
+    Javob: B
+
+    C) ScoreB) Hash ning barcha field-value pairs
+
+72. MULTI command nima boshlaydi?
+
+    A) Multi delete    D) RemoveC) List all
+
+    B) Transaction
+
+    C) Multi get    Javob: BD) Set all
+
+    D) Multi set
+
+    Javob: BJavob: B
+
+
+
+73. EXEC command nima qiladi?37. ZSCORE command nima?HDEL command nima qiladi?
+
+    A) Cancel transaction
+
+    B) Transaction ni execute qiladi    A) AddA) String delete
+
+    C) Exit server
+
+    D) Execute script    B) Element'ning score'ini olishB) Hash dan field o'chirish
+
+    Javob: B
+
+    C) RangeC) List delete
+
+74. DISCARD command nima qiladi?
+
+    A) Execute transaction    D) RemoveD) Set delete
+
+    B) Transaction ni bekor qiladi
+
+    C) Discard key    Javob: BJavob: B
+
+    D) Discard value
+
+    Javob: BHEXISTS command nima tekshiradi?
+
+
+
+75. WATCH command nima qiladi?38. Hash nima Redis'da?A) String exists
+
+    A) Watch server
+
+    B) Key ni optimistic locking qiladi    A) SetB) Hash da field bormi
+
+    C) Watch client
+
+    D) Watch database    B) Field-value pairs (object)C) List exists
+
+    Javob: B
+
+    C) ListD) Set exists
+
+76. Redis Lua scripting command?
+
+    A) RUN    D) StringJavob: B
+
+    B) EVAL
+
+    C) EXECUTE    Javob: BHLEN command nima qaytaradi?
+
+    D) SCRIPT
+
+    Javob: BA) String length
+
+
+
+77. EVALSHA nima uchun?39. HSET command nima?B) Hash dagi fieldlar soni
+
+    A) Eval alternative
+
+    B) Cached script ni SHA bilan chaqirish    A) GetC) List length
+
+    C) Eval share
+
+    D) Script share    B) Hash field o'rnatishD) Set size
+
+    Javob: B
+
+    C) DeleteJavob: B
+
+78. Redis persistence options?
+
+    A) Faqat RDB    D) ListZADD command nima qiladi?
+
+    B) RDB va AOF
+
+    C) Faqat AOF    Javob: BA) Set add
+
+    D) Memory only
+
+    Javob: BB) Sorted Set ga score bilan member qo'shish
+
+
+
+79. RDB nima?40. HGET command nima?C) List add
+
+    A) Relational Database
+
+    B) Point-in-time snapshot    A) SetD) Hash add
+
+    C) Real-time Database
+
+    D) Remote Database    B) Hash field qiymatini olishJavob: B
+
+    Javob: B
+
+    C) DeleteZRANGE command nima qiladi?
+
+80. AOF nima?
+
+    A) Append Only File    D) AllA) List range
+
+    B) All Operations File
+
+    C) Async Output File    Javob: BB) Sorted Set dan range bo'yicha members olish
+
+    D) Auto Optimize File
+
+    Javob: AC) Set range
+
+
+
+81. SAVE command nima qiladi?41. HGETALL command nima?D) Hash range
+
+    A) Async save
+
+    B) Synchronous RDB snapshot    A) Single fieldJavob: B
+
+    C) AOF save
+
+    D) Config save    B) Hash'ning barcha field-valueZREM command nima qiladi?
+
+    Javob: B
+
+    C) DeleteA) List remove
+
+82. BGSAVE command nima qiladi?
+
+    A) Sync save    D) SetB) Sorted Set dan member o'chirish
+
+    B) Background RDB snapshot
+
+    C) Big save    Javob: BC) Set remove
+
+    D) Backup save
+
+    Javob: BD) Hash remove
+
+
+
+83. BGREWRITEAOF nima qiladi?42. HDEL command nima?Javob: B
+
+    A) Delete AOF
+
+    B) Background AOF rewrite    A) SetZCARD command nima qaytaradi?
+
+    C) Big rewrite
+
+    D) Backup rewrite    B) Hash field o'chirishA) Set size
+
+    Javob: B
+
+    C) GetB) Sorted Set dagi members soni
+
+84. Redis Cluster nima?
+
+    A) Single server    D) AllC) List size
+
+    B) Distributed Redis setup
+
+    C) Backup cluster    Javob: BD) Hash size
+
+    D) Test cluster
+
+    Javob: BJavob: B
+
+
+
+85. Redis Cluster da minimum master soni?43. HKEYS command nima?ZSCORE command nima qaytaradi?
+
+    A) 1
+
+    B) 3    A) ValuesA) List score
+
+    C) 5
+
+    D) 7    B) Hash'ning barcha key'lariB) Sorted Set member ning score
+
+    Javob: B
+
+    C) AllC) Set score
+
+86. Hash slot nechta Redis Cluster da?
+
+    A) 1000    D) DeleteD) Hash score
+
+    B) 16384
+
+    C) 65536    Javob: BJavob: B
+
+    D) Unlimited
+
+    Javob: BZRANK command nima qaytaradi?
+
+
+
+87. Redis Sentinel nima uchun?44. HVALS command nima?A) List rank
+
+    A) Security
+
+    B) High availability va monitoring    A) KeysB) Sorted Set da member ning rank (index)
+
+    C) Backup
+
+    D) Performance    B) Hash'ning barcha qiymatlariC) Set rank
+
+    Javob: B
+
+    C) AllD) Hash rank
+
+88. Sentinel nechta master monitor qiladi default?
+
+    A) 1    D) DeleteJavob: B
+
+    B) Ko'p (configurable)
+
+    C) 3    Javob: B
+
+    D) 5
+
+    Javob: BVARIANT 2
+
+
+
+89. SLAVEOF command nima qiladi?45. PING command nima?
+
+    A) Create slave
+
+    B) Replication sozlaydi    A) ErrorRedis CLI nima?
+
+    C) Delete slave
+
+    D) List slaves    B) Server connection testA) Web interface
+
+    Javob: B
+
+    C) GetB) Command-line interface
+
+90. REPLICAOF command (yangi)?
+
+    A) Old command    D) SetC) GUI tool
+
+    B) SLAVEOF ning yangi nomi
+
+    C) Different function    Javob: BD) Mobile app
+
+    D) Deprecated
+
+    Javob: BJavob: B
+
+
+
+91. Redis memory eviction policy default?46. PING natijasi?INFO command nima ko'rsatadi?
+
+    A) allkeys-lru
+
+    B) noeviction    A) OKA) Keylar
+
+    C) volatile-lru
+
+    D) allkeys-random    B) PONGB) Server statistika va konfiguratsiya
+
+    Javob: B
+
+    C) SUCCESSC) Values
+
+92. maxmemory setting nima qiladi?
+
+    A) Min memory    D) CONNECTEDD) Users
+
+    B) Maximum memory limit
+
+    C) Memory type    Javob: BJavob: B
+
+    D) Memory speed
+
+    Javob: BSAVE command nima qiladi?
+
+
+
+93. volatile-lru policy nima?47. DBSIZE command nima?A) Key save
+
+    A) All keys LRU
+
+    B) TTL li keys dan LRU    A) MemoryB) Synchronous RDB snapshot yaratish
+
+    C) Random eviction
+
+    D) No eviction    B) Key'lar soniC) Config save
+
+    Javob: B
+
+    C) Database countD) Log save
+
+94. Redis da lazy free nima?
+
+    A) Free memory    D) Size bytesJavob: B
+
+    B) Async memory free
+
+    C) Lazy loading    Javob: BBGSAVE command nima qiladi?
+
+    D) Free tier
+
+    Javob: BA) Foreground save
+
+
+
+95. UNLINK command nima?48. FLUSHDB command nima?B) Background da RDB snapshot yaratish
+
+    A) DEL alias
+
+    B) Async DEL    A) BackupC) Config save
+
+    C) Link remove
+
+    D) Connection unlink    B) Joriy database'ni tozalashD) Memory save
+
+    Javob: B
+
+    C) Delete oneJavob: B
+
+96. CLIENT LIST command nima ko'rsatadi?
+
+    A) Server list    D) SaveRDB nima?
+
+    B) Connected clients info
+
+    C) Key list    Javob: BA) Relational DB
+
+    D) Database list
+
+    Javob: BB) Redis Database (snapshot file)
+
+
+
+97. CONFIG GET command nima?49. FLUSHALL command nima?C) Remote DB
+
+    A) Set config
+
+    B) Configuration parameter oladi    A) Flush oneD) Read DB
+
+    C) Delete config
+
+    D) Config file    B) Barcha database'larni tozalashJavob: B
+
+    Javob: B
+
+    C) SaveAOF nima?
+
+98. CONFIG SET command nima?
+
+    A) Get config    D) BackupA) Array Of Files
+
+    B) Runtime da config o'zgartiradi
+
+    C) Delete config    Javob: BB) Append Only File (persistence)
+
+    D) Reset config
+
+    Javob: BC) API Of Functions
+
+
+
+99. SLOWLOG command nima uchun?50. SELECT command nima?D) Auto Off File
+
+    A) Error log
+
+    B) Sekin querylar log i    A) GetJavob: B
+
+    C) Access log
+
+    D) System log    B) Database tanlash (0-15)SHUTDOWN command nima qiladi?
+
+    Javob: B
+
+    C) QueryA) Key shutdown
+
+100. DEBUG command nima uchun?
+
+     A) Production use    D) FilterB) Redis serverni to'xtatish
+
+     B) Development va debugging uchun
+
+     C) Performance test    Javob: BC) Connection close
+
+     D) Security check
+
+     Javob: BD) DB close
+
+
+51. INFO command nima?Javob: B
+
+    A) GetCONFIG GET nima uchun?
+
+    B) Server ma'lumotlariA) Key get
+
+    C) SetB) Konfiguratsiya parametrini olish
+
+    D) DeleteC) Value get
+
+    Javob: BD) User get
+
+Javob: B
+
+52. TYPE command nima?CONFIG SET nima uchun?
+
+    A) Get valueA) Key set
+
+    B) Key turi (string, list, set...)B) Runtime da konfiguratsiya o'zgartirish
+
+    C) Set typeC) Value set
+
+    D) DeleteD) User set
+
+    Javob: BJavob: B
+
+RENAME command nima qiladi?
+
+53. RENAME command nima?A) Value rename
+
+    A) CopyB) Key nomini o'zgartirish
+
+    B) Key nomini o'zgartirishC) DB rename
+
+    C) DeleteD) User rename
+
+    D) GetJavob: B
+
+    Javob: BRENAMENX command qachon ishlatiladi?
+
+A) Har doim
+
+54. COPY command nima?B) Yangi key mavjud bo'lmasa rename qilish
+
+    A) MoveC) Key delete
+
+    B) Key'ni nusxalashD) Key create
+
+    C) RenameJavob: B
+
+    D) DeleteRANDOMKEY command nima qiladi?
+
+    Javob: BA) Key delete
+
+B) Tasodifiy key qaytarish
+
+55. SCAN command nima?C) Key create
+
+    A) KEYSD) Key rename
+
+    B) Cursor-based key iterationJavob: B
+
+    C) Get allSCAN command nima uchun?
+
+    D) DeleteA) DB scan virus
+
+    Javob: BB) Keylarni iterate qilish (cursor-based)
+
+C) Value scan
+
+56. RANDOMKEY command nima?D) Memory scan
+
+    A) Specific keyJavob: B
+
+    B) Random key qaytarishRedis Strings nima?
+
+    C) Create keyA) Faqat text
+
+    D) Delete keyB) Binary-safe strings (binary data ham)
+
+    Javob: BC) Faqat numbers
+
+D) Faqat JSON
+
+57. SORT command nima?Javob: B
+
+    A) OrderString max size Redis da?
+
+    B) List/Set elementlarini saralashA) 1 KB
+
+    C) GroupB) 512 MB
+
+    D) FilterC) 1 GB
+
+    Javob: BD) Unlimited
+
+Javob: B
+
+58. DUMP command nima?SETEX command nima qiladi?
+
+    A) DeleteA) Set without expiry
+
+    B) Key'ni serialize qilishB) Set value va expiry time birga
+
+    C) Backup allC) Set multiple
+
+    D) InfoD) Set if exists
+
+    Javob: BJavob: B
+
+SETNX command nima qiladi?
+
+59. RESTORE command nima?A) Set always
+
+    A) DumpB) Set agar key mavjud bo'lmasa
+
+    B) Serialize qilingan key'ni tiklashC) Set with expiry
+
+    C) DeleteD) Set multiple
+
+    D) CreateJavob: B
+
+    Javob: BGETSET command nima qiladi?
+
+A) Faqat get
+
+60. UNLINK command nima?B) Eski value olish va yangi set qilish
+
+    A) DELC) Faqat set
+
+    B) Async deleteD) Delete and get
+
+    C) LinkJavob: B
+
+    D) CopyINCRBY command nima qiladi?
+
+    Javob: BA) 1 ga oshirish
+
+B) Berilgan qiymatga oshirish
+
+61. CLIENT LIST nima?C) 2 ga oshirish
+
+    A) Server listD) 10 ga oshirish
+
+    B) Ulangan clientlarJavob: B
+
+    C) Key listDECRBY command nima qiladi?
+
+    D) Database listA) 1 ga kamaytirish
+
+    Javob: BB) Berilgan qiymatga kamaytirish
+
+C) 2 ga kamaytirish
+
+62. MONITOR command nima?D) 10 ga kamaytirish
+
+    A) InfoJavob: B
+
+    B) Real-time command streamINCRBYFLOAT command nima uchun?
+
+    C) LogA) Integer increment
+
+    D) DebugB) Float number oshirish
+
+    Javob: BC) String append
+
+D) List increment
+
+63. SLOWLOG command nima?Javob: B
+
+    A) Error logSETRANGE command nima qiladi?
+
+    B) Sekin command'lar logiA) Get range
+
+    C) Access logB) String ning offset dan value yozish
+
+    D) Debug logC) Delete range
+
+    Javob: BD) List range
+
+Javob: B
+
+64. MEMORY USAGE nima?LINDEX command nima qiladi?
+
+    A) Total memoryA) List length
+
+    B) Key uchun memoryB) List dan index bo'yicha element olish
+
+    C) Server memoryC) List delete
+
+    D) Database memoryD) List add
+
+    Javob: BJavob: B
+
+LSET command nima qiladi?
+
+65. ECHO command nima?A) List create
+
+    A) PrintB) List dagi index ga value set qilish
+
+    B) Argumentni qaytarishC) List delete
+
+    C) LogD) List length
+
+    D) DebugJavob: B
+
+    Javob: BLINSERT command nima qiladi?
+
+A) List boshiga
+
+66. QUIT command nima?B) List ga element dan oldin/keyin insert
+
+    A) Exit serverC) List oxiriga
+
+    B) Connectionni yopishD) List delete
+
+    C) Delete allJavob: B
+
+    D) ShutdownLTRIM command nima qiladi?
+
+    Javob: BA) List clear
+
+B) List ni trim qilish (range tashqarisini o'chirish)
+
+67. Redis persistence turlari?C) List add
+
+    A) BittaD) List get
+
+    B) RDB va AOFJavob: B
+
+    C) UchtaRPOPLPUSH command nima qiladi?
+
+    D) To'rttaA) List copy
+
+    Javob: BB) Bir list oxiridan olib boshqa list boshiga qo'yish
+
+C) List delete
+
+68. RDB nima?D) List create
+
+    A) AOFJavob: B
+
+    B) Point-in-time snapshotBLPOP command nima?
+
+    C) LogA) Non-blocking pop
+
+    D) StreamB) Blocking LPOP (element kutish)
+
+    Javob: BC) Bitta pop
+
+D) Fast pop
+
+69. AOF nima?Javob: B
+
+    A) RDBBRPOP command nima?
+
+    B) Append-Only File (command log)A) Non-blocking pop
+
+    C) SnapshotB) Blocking RPOP (element kutish)
+
+    D) BackupC) Bitta pop
+
+    Javob: BD) Fast pop
+
+Javob: B
+
+70. SAVE command nima?SUNION command nima qiladi?
+
+    A) Async saveA) Set intersection
+
+    B) Blocking RDB snapshotB) Ikki yoki ko'p Set ning union
+
+    C) AOFC) Set difference
+
+    D) DeleteD) Set copy
+
+    Javob: BJavob: B
+
+SINTER command nima qiladi?
+
+71. BGSAVE command nima?A) Set union
+
+    A) Blocking saveB) Set lar ning intersection
+
+    B) Background RDB snapshotC) Set difference
+
+    C) AOFD) Set copy
+
+    D) DeleteJavob: B
+
+    Javob: BSDIFF command nima qiladi?
+
+A) Set union
+
+72. Pub/Sub nima?B) Set lar ning difference
+
+    A) QueueC) Set intersection
+
+    B) Publish-Subscribe messagingD) Set copy
+
+    C) StreamJavob: B
+
+    D) ListSPOP command nima qiladi?
+
+    Javob: BA) Set add
+
+B) Set dan random member olib o'chirish
+
+73. PUBLISH command nima?C) Set clear
+
+    A) SubscribeD) Set copy
+
+    B) Channel'ga message yuborishJavob: B
+
+    C) Get messageSRANDMEMBER command nima qiladi?
+
+    D) Create channelA) Set add
+
+    Javob: BB) Set dan random member olish (o'chirmay)
+
+C) Set clear
+
+74. SUBSCRIBE command nima?D) Set pop
+
+    A) PublishJavob: B
+
+    B) Channel'ga obuna bo'lishHMSET command nima qiladi?
+
+    C) UnsubscribeA) Bitta field set
+
+    D) CreateB) Multiple field-value pairs set qilish
+
+    Javob: BC) Hash delete
+
+D) Hash get
+
+75. Transaction nima Redis'da?Javob: B
+
+    A) ACIDHMGET command nima qiladi?
+
+    B) MULTI/EXEC command blockA) Bitta field get
+
+    C) Lua onlyB) Multiple fields bo'yicha values olish
+
+    D) No transactionsC) Hash delete
+
+    Javob: BD) Hash set
+
+Javob: B
+
+76. MULTI command nima?HKEYS command nima qaytaradi?
+
+    A) End transactionA) Hash values
+
+    B) Transaction boshlashB) Hash ning barcha field names
+
+    C) ExecuteC) Hash size
+
+    D) DiscardD) Hash type
+
+    Javob: BJavob: B
+
+HVALS command nima qaytaradi?
+
+77. EXEC command nima?A) Hash keys
+
+    A) MultiB) Hash ning barcha values
+
+    B) Transaction ishga tushirishC) Hash size
+
+    C) DiscardD) Hash type
+
+    D) WatchJavob: B
+
+    Javob: BHINCRBY command nima qiladi?
+
+A) Hash size increment
+
+78. DISCARD command nima?B) Hash field value ni increment qilish
+
+    A) ExecC) Hash delete
+
+    B) Transaction bekor qilishD) Hash set
+
+    C) MultiJavob: B
+
+    D) WatchHINCRBYFLOAT command nima uchun?
+
+    Javob: BA) Integer increment
+
+B) Hash field float value increment
+
+79. Pipeline nima?C) Hash size
+
+    A) TransactionD) Hash delete
+
+    B) Batch commands without waitingJavob: B
+
+    C) QueueZINCRBY command nima qiladi?
+
+    D) StreamA) Set increment
+
+    Javob: BB) Sorted Set member score increment
+
+C) List increment
+
+80. HyperLogLog nima?D) Hash increment
+
+    A) ListJavob: B
+
+    B) Probabilistic cardinality estimationZCOUNT command nima qiladi?
+
+    C) SetA) Count all
+
+    D) HashB) Score range dagi members sonini sanash
+
+    Javob: BC) Count keys
+
+D) Count sets
+
+81. PFADD command nima?Javob: B
+
+    A) Get countZRANGEBYSCORE command nima qiladi?
+
+    B) HyperLogLog'ga element qo'shishA) Index range
+
+    C) DeleteB) Score range bo'yicha members olish
+
+    D) MergeC) Member range
+
+    Javob: BD) Time range
+
+Javob: B
+
+82. PFCOUNT command nima?ZREMRANGEBYRANK command nima qiladi?
+
+    A) AddA) Remove all
+
+    B) Estimated unique countB) Rank range bo'yicha members o'chirish
+
+    C) DeleteC) Remove one
+
+    D) MergeD) Remove score
+
+    Javob: BJavob: B
+
+ZREMRANGEBYSCORE command nima qiladi?
+
+83. Bitmap nima?A) Remove all
+
+    A) ImageB) Score range bo'yicha members o'chirish
+
+    B) Bit array operationsC) Remove one
+
+    C) StringD) Remove rank
+
+    D) ListJavob: B
+
+    Javob: BZUNIONSTORE command nima qiladi?
+
+A) Store set
+
+84. SETBIT command nima?B) Sorted Sets union qilib yangi set ga saqlash
+
+    A) Get bitC) Store list
+
+    B) Bit qiymatini o'rnatishD) Store hash
+
+    C) Count bitsJavob: B
+
+    D) Delete bitZINTERSTORE command nima qiladi?
+
+    Javob: BA) Store union
+
+B) Sorted Sets intersection qilib saqlash
+
+85. GETBIT command nima?C) Store all
+
+    A) Set bitD) Store difference
+
+    B) Bit qiymatini olishJavob: B
+
+    C) CountPUBLISH command nima uchun?
+
+    D) DeleteA) Key publish
+
+    Javob: BB) Channel ga message publish qilish
+
+C) DB publish
+
+86. BITCOUNT command nima?D) User publish
+
+    A) SetJavob: B
+
+    B) 1 bo'lgan bitlar soniSUBSCRIBE command nima uchun?
+
+    C) GetA) User subscribe
+
+    D) DeleteB) Channel ga subscribe qilish
+
+    Javob: BC) DB subscribe
+
+D) Key subscribe
+
+87. Geospatial nima?Javob: B
+
+    A) Regular indexPSUBSCRIBE command nima uchun?
+
+    B) Geografik koordinatalarA) Single subscribe
+
+    C) Text indexB) Pattern bo'yicha channels ga subscribe
+
+    D) Hash indexC) Private subscribe
+
+    Javob: BD) Public subscribe
+
+Javob: B
+
+88. GEOADD command nima?
+
+    A) Get location===================================================
+    B) Lokatsiya qo'shish
+    C) Delete
+    D) Distance
+    Javob: B
+
+89. GEODIST command nima?
+    A) Add
+    B) Ikki nuqta orasidagi masofa
+    C) Delete
+    D) Search
+    Javob: B
+
+90. LRU nima?
+    A) LFU
+    B) Least Recently Used
+    C) Most Recently Used
+    D) Random
+    Javob: B
+
+91. maxmemory configuration?
+    A) No limit
+    B) Maksimum memory limit
+    C) Minimum
+    D) Average
+    Javob: B
+
+92. Redis module nima?
+    A) Built-in
+    B) External functionality extension
+    C) Plugin
+    D) Script
+    Javob: B
+
+93. ACL nima?
+    A) Config
+    B) Access Control List
+    C) API
+    D) Cache
+    Javob: B
+
+94. redis-benchmark nima?
+    A) Monitor
+    B) Performance testing tool
+    C) Debug
+    D) Log
+    Javob: B
+
+95. SHUTDOWN command nima?
+    A) Restart
+    B) Server'ni to'xtatish
+    C) Pause
+    D) Sleep
+    Javob: B
+
+96. Redis Sentinel nima?
+    A) Cluster
+    B) High availability monitoring
+    C) Sharding
+    D) Backup
+    Javob: B
+
+97. Redis Cluster nima?
+    A) Sentinel
+    B) Horizontal scaling, sharding
+    C) Replication only
+    D) Backup
+    Javob: B
+
+98. Redis Streams nima?
+    A) Pub/Sub
+    B) Persistent message log
+    C) List
+    D) Set
+    Javob: B
+
+99. XADD command nima?
+    A) Read
+    B) Stream'ga entry qo'shish
+    C) Delete
+    D) Create stream
+    Javob: B
+
+100. XREAD command nima?
+     A) Write
+     B) Stream'dan o'qish
+     C) Delete
+     D) Create
+     Javob: B

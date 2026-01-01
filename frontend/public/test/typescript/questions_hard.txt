@@ -1,0 +1,148 @@
+===============================================
+TYPESCRIPT - HARD SAVOLLARI
+===============================================
+
+SAVOL 1: Infer keyword nima?
+A) Type infer
+B) Conditional types-da type extract
+C) Type inference
+D) Type narrowing
+JAVOB: B
+
+SAVOL 2: Never type advanced nima?
+A) Type yo'q
+B) Exhaustive checking
+C) Impossible type
+D) No return
+JAVOB: B
+
+SAVOL 3: Template literal types nima?
+A) String template
+B) String union types
+C) Literal types
+D) Type string
+JAVOB: B
+
+SAVOL 4: Variance nima?
+A) Variance math
+B) Type compatibility (covariant/contravariant)
+C) Type theory
+D) Type safety
+JAVOB: B
+
+SAVOL 5: Const assertions nima?
+A) as const
+B) Literal type immutability
+C) Type assertion
+D) Type narrowing
+JAVOB: B
+
+SAVOL 6: typeof on const assertion nima?
+A) Type narrowing
+B) Literal types preserve
+C) Type precision
+D) Type safety
+JAVOB: B
+
+SAVOL 7: Type-only imports nima?
+A) Import type
+B) Type only import (no runtime)
+C) Import optimization
+D) Module import
+JAVOB: B
+
+SAVOL 8: Type-only exports nima?
+A) Export type
+B) Type only export
+C) Type sharing
+D) Module export
+JAVOB: B
+
+SAVOL 9: This parameter nima?
+A) Function parameter
+B) this type specify
+C) Type annotation
+D) Context type
+JAVOB: B
+
+SAVOL 10: Satisfies operator (TypeScript 4.9) nima?
+A) Type check
+B) Type assertion looser (value type preserve)
+C) Type satisfaction
+D) Type validation
+JAVOB: B
+
+SAVOL 11: Accessor auto-inference nima?
+A) Auto property
+B) Getter/setter type auto-infer
+C) Type inference
+D) Type generation
+JAVOB: B
+
+SAVOL 12: JSDoc type annotations nima?
+A) Documentation
+B) JS file-da TypeScript types (@type, @param)
+C) Type comments
+D) Type hints
+JAVOB: B
+
+SAVOL 13: Type predicate nima?
+A) Type guard
+B) is keyword (type narrowing in function)
+C) Type check
+D) Type assertion
+JAVOB: B
+
+SAVOL 14: Assertion signature nima?
+A) Signature assert
+B) asserts keyword (throw or pass)
+C) Type assertion
+D) Function signature
+JAVOB: B
+
+SAVOL 15: Overload signatures nima?
+A) Function overload
+B) Multiple function signatures (implementation 1)
+C) Function type
+D) Function definition
+JAVOB: B
+
+SAVOL 16: Private fields nima?
+A) Private property
+B) # syntax (true private)
+C) Encapsulation
+D) Field privacy
+JAVOB: B
+
+SAVOL 17: Class static block nima?
+A) Static code
+B) static { } initialization code
+C) Static initialization
+D) Class setup
+JAVOB: B
+
+SAVOL 18: Ambient declarations nima?
+A) Declaration
+B) declare keyword (type-only)
+C) Type declarations
+D) Type hints
+JAVOB: B
+
+SAVOL 19: Augmenting global types nima?
+A) Global type
+B) declare global (global scope extend)
+C) Global augmentation
+D) Type extension
+JAVOB: B
+
+SAVOL 20: Type-only module syntax nima?
+A) Module type
+B) import type * as X from 'module'
+C) Module import
+D) Import optimization
+JAVOB: B
+
+===============================================
+HARD SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: MURAKKAB
+===============================================

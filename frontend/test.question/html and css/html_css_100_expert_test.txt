@@ -1,0 +1,702 @@
+HTML VA CSS - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+======================================================
+
+1. Critical rendering path nima?
+   A) Render path
+   B) DOM, CSSOM, Render Tree, Layout, Paint, Composite
+   C) Path render
+   D) Simple render
+   Javob: B
+
+2. Render-blocking resources?
+   A) No blocking
+   B) CSS, synchronous JS in head block rendering
+   C) Images block
+   D) All resources
+   Javob: B
+
+3. <link rel="preload">?
+   A) Preload link
+   B) Early resource fetch without blocking
+   C) Link preload
+   D) Blocking fetch
+   Javob: B
+
+4. <link rel="preconnect">?
+   A) Preconnect link
+   B) Early TCP/TLS handshake to origin
+   C) Link preconnect
+   D) No handshake
+   Javob: B
+
+5. <link rel="prefetch">?
+   A) Prefetch link
+   B) Low-priority future navigation resource
+   C) Link prefetch
+   D) High priority
+   Javob: B
+
+6. <link rel="modulepreload">?
+   A) Module preload
+   B) Preload ES modules with dependency graph
+   C) Preload module
+   D) No dependencies
+   Javob: B
+
+7. async vs defer script attributes?
+   A) Same
+   B) async=download parallel execute immediate, defer=execute after DOM
+   C) defer=immediate
+   D) No difference
+   Javob: B
+
+8. <script type="module">?
+   A) Script module
+   B) ES modules, defer by default, strict mode
+   C) Module script
+   D) No defer
+   Javob: B
+
+9. Content-Security-Policy header?
+   A) CSP header
+   B) Control allowed resource sources
+   C) Header CSP
+   D) No control
+   Javob: B
+
+10. CSP nonce attribute?
+    A) CSP nonce
+    B) Unique token for inline script/style whitelisting
+    C) Nonce CSP
+    D) No whitelist
+    Javob: B
+
+11. CSS contain property?
+    A) Contain CSS
+    B) Isolate element rendering scope
+    C) CSS contain
+    D) No isolation
+    Javob: B
+
+12. contain: strict?
+    A) Strict contain
+    B) size + layout + style + paint containment
+    C) Contain strict
+    D) No containment
+    Javob: B
+
+13. content-visibility: auto?
+    A) Visibility auto
+    B) Skip rendering of off-screen content
+    C) Auto visibility
+    D) Always render
+    Javob: B
+
+14. CSS will-change property?
+    A) Will change
+    B) Hint browser about upcoming changes for optimization
+    C) Change will
+    D) No hint
+    Javob: B
+
+15. will-change gotchas?
+    A) No gotchas
+    B) Creates stacking context, uses memory
+    C) Always use
+    D) No side effects
+    Javob: B
+
+16. CSS Layers (@layer)?
+    A) Layer CSS
+    B) Control cascade precedence explicitly
+    C) CSS layer
+    D) No control
+    Javob: B
+
+17. @layer order importance?
+    A) No importance
+    B) Later layers have higher precedence
+    C) Earlier layers
+    D) Alphabetical
+    Javob: B
+
+18. CSS @scope rule?
+    A) Scope CSS
+    B) Define styling boundaries
+    C) CSS scope
+    D) Global only
+    Javob: B
+
+19. CSS :has() selector?
+    A) Has selector
+    B) Parent selector based on children
+    C) Selector has
+    D) Child selector
+    Javob: B
+
+20. :has() performance?
+    A) Always fast
+    B) Can be expensive, avoid in large DOM
+    C) Always slow
+    D) No impact
+    Javob: B
+
+21. CSS :is() vs :where()?
+    A) Same
+    B) :is()=highest specificity, :where()=zero specificity
+    C) :where()=highest
+    D) No difference
+    Javob: B
+
+22. CSS @container queries?
+    A) Container query
+    B) Style based on parent container size
+    C) Query container
+    D) Viewport only
+    Javob: B
+
+23. Container query units (cqw, cqh)?
+    A) No units
+    B) Relative to container width/height
+    C) Viewport units
+    D) Fixed units
+    Javob: B
+
+24. CSS Subgrid?
+    A) Sub grid
+    B) Child inherits parent grid tracks
+    C) Grid sub
+    D) New grid
+    Javob: B
+
+25. grid-template-rows: subgrid?
+    A) Subgrid rows
+    B) Use parent row tracks
+    C) Rows subgrid
+    D) Own rows
+    Javob: B
+
+26. CSS anchor positioning?
+    A) Anchor position
+    B) Position relative to another element
+    C) Position anchor
+    D) Fixed position
+    Javob: B
+
+27. position-anchor property?
+    A) Anchor position
+    B) Specify anchor element for positioning
+    C) Position anchor
+    D) No anchor
+    Javob: B
+
+28. CSS scroll-snap-type?
+    A) Snap type
+    B) Enable snap points (x, y, block, inline) (mandatory, proximity)
+    C) Type snap
+    D) No snap
+    Javob: B
+
+29. scroll-snap-align?
+    A) Snap align
+    B) Alignment point (start, center, end)
+    C) Align snap
+    D) No alignment
+    Javob: B
+
+30. CSS scroll-timeline?
+    A) Scroll timeline
+    B) Animation based on scroll progress
+    C) Timeline scroll
+    D) Time-based only
+    Javob: B
+
+31. view-timeline?
+    A) View timeline
+    B) Animation based on element visibility
+    C) Timeline view
+    D) No visibility
+    Javob: B
+
+32. CSS animation-timeline?
+    A) Timeline animation
+    B) Connect animation to scroll/view timeline
+    C) Animation timeline
+    D) No connection
+    Javob: B
+
+33. @property CSS rule?
+    A) Property rule
+    B) Define custom property type and behavior
+    C) Rule property
+    D) No type
+    Javob: B
+
+34. @property syntax types?
+    A) No types
+    B) <number>, <color>, <length>, <percentage>, etc.
+    C) String only
+    D) Number only
+    Javob: B
+
+35. CSS @property initial-value?
+    A) Initial value
+    B) Required for registered properties
+    C) Value initial
+    D) Optional
+    Javob: B
+
+36. CSS Houdini APIs?
+    A) Houdini API
+    B) Low-level CSS engine access (Paint, Layout, Animation)
+    C) API Houdini
+    D) High-level only
+    Javob: B
+
+37. CSS Paint Worklet?
+    A) Paint worklet
+    B) Custom paint() function for backgrounds
+    C) Worklet paint
+    D) No custom paint
+    Javob: B
+
+38. CSS Layout Worklet?
+    A) Layout worklet
+    B) Custom display property behavior
+    C) Worklet layout
+    D) No custom display
+    Javob: B
+
+39. CSS Typed OM?
+    A) Typed OM
+    B) Strongly typed CSS values (computedStyleMap)
+    C) OM typed
+    D) String values
+    Javob: B
+
+40. HTML <dialog> element?
+    A) Dialog element
+    B) Native modal/non-modal dialog
+    C) Element dialog
+    D) Div modal
+    Javob: B
+
+41. dialog.showModal() vs dialog.show()?
+    A) Same
+    B) showModal=modal with backdrop, show=non-modal
+    C) show=modal
+    D) No difference
+    Javob: B
+
+42. ::backdrop pseudo-element?
+    A) Backdrop pseudo
+    B) Style dialog/fullscreen backdrop
+    C) Pseudo backdrop
+    D) No styling
+    Javob: B
+
+43. HTML <details> and <summary>?
+    A) Details summary
+    B) Native collapsible content
+    C) Summary details
+    D) Custom collapse
+    Javob: B
+
+44. <details> open attribute?
+    A) Open attribute
+    B) Initially expanded state
+    C) Attribute open
+    D) Always closed
+    Javob: B
+
+45. HTML <template> element?
+    A) Template element
+    B) Inert DOM fragment for cloning
+    C) Element template
+    D) Active DOM
+    Javob: B
+
+46. template.content?
+    A) Content template
+    B) DocumentFragment inside template
+    C) Template content
+    D) HTML string
+    Javob: B
+
+47. HTML <slot> element?
+    A) Slot element
+    B) Web Components content distribution
+    C) Element slot
+    D) No distribution
+    Javob: B
+
+48. Named slots?
+    A) No names
+    B) slot="name" and <slot name="name">
+    C) Auto slots
+    D) Single slot
+    Javob: B
+
+49. Shadow DOM encapsulation?
+    A) No encapsulation
+    B) Scoped styles and DOM tree isolation
+    C) Global styles
+    D) No isolation
+    Javob: B
+
+50. ::slotted() pseudo-element?
+    A) Slotted pseudo
+    B) Style distributed nodes in shadow DOM
+    C) Pseudo slotted
+    D) No styling
+    Javob: B
+
+51. :host selector?
+    A) Host selector
+    B) Style shadow host from within shadow DOM
+    C) Selector host
+    D) Global styling
+    Javob: B
+
+52. :host-context() selector?
+    A) Host context
+    B) Style based on ancestor outside shadow DOM
+    C) Context host
+    D) No ancestor
+    Javob: B
+
+53. CSS part attribute?
+    A) Part attribute
+    B) Expose element for external styling
+    C) Attribute part
+    D) No exposure
+    Javob: B
+
+54. ::part() pseudo-element?
+    A) Part pseudo
+    B) Style exported parts from outside
+    C) Pseudo part
+    D) No styling
+    Javob: B
+
+55. Constructable Stylesheets?
+    A) Constructable CSS
+    B) new CSSStyleSheet(), adoptedStyleSheets
+    C) CSS constructable
+    D) No construct
+    Javob: B
+
+56. adoptedStyleSheets?
+    A) Adopted styles
+    B) Share stylesheets across shadow roots
+    C) Styles adopted
+    D) No sharing
+    Javob: B
+
+57. HTML inert attribute?
+    A) Inert attribute
+    B) Disable interactions and accessibility
+    C) Attribute inert
+    D) Always active
+    Javob: B
+
+58. HTML popover attribute?
+    A) Popover attribute
+    B) Native popover behavior with light dismiss
+    C) Attribute popover
+    D) Custom popover
+    Javob: B
+
+59. popover=auto vs popover=manual?
+    A) Same
+    B) auto=light dismiss, manual=explicit close
+    C) manual=light dismiss
+    D) No difference
+    Javob: B
+
+60. popovertarget attribute?
+    A) Popover target
+    B) Button to toggle popover
+    C) Target popover
+    D) No button
+    Javob: B
+
+61. HTML Selectmenu (experimental)?
+    A) Select menu
+    B) Styleable dropdown component
+    C) Menu select
+    D) Standard select
+    Javob: B
+
+62. CSS color-scheme property?
+    A) Color scheme
+    B) Declare supported color schemes (light, dark)
+    C) Scheme color
+    D) No scheme
+    Javob: B
+
+63. @media (prefers-color-scheme)?
+    A) Prefers color
+    B) Detect system dark/light mode preference
+    C) Color prefers
+    D) No detection
+    Javob: B
+
+64. @media (prefers-reduced-motion)?
+    A) Reduced motion
+    B) Detect user motion sensitivity preference
+    C) Motion reduced
+    D) No detection
+    Javob: B
+
+65. @media (prefers-contrast)?
+    A) Prefers contrast
+    B) Detect high/low contrast preference
+    C) Contrast prefers
+    D) No detection
+    Javob: B
+
+66. CSS accent-color property?
+    A) Accent color
+    B) Theme form control colors
+    C) Color accent
+    D) No theming
+    Javob: B
+
+67. CSS color-mix() function?
+    A) Color mix
+    B) Mix two colors in color space
+    C) Mix color
+    D) No mixing
+    Javob: B
+
+68. CSS relative color syntax?
+    A) Relative color
+    B) Derive color from another: from red r g b
+    C) Color relative
+    D) Absolute only
+    Javob: B
+
+69. oklch() color function?
+    A) OKLCH color
+    B) Perceptually uniform, wide gamut color
+    C) Color OKLCH
+    D) RGB only
+    Javob: B
+
+70. CSS light-dark() function?
+    A) Light dark
+    B) Provide light and dark mode values
+    C) Dark light
+    D) Single value
+    Javob: B
+
+71. CSS forced-colors mode?
+    A) Forced colors
+    B) System high contrast mode handling
+    C) Colors forced
+    D) No handling
+    Javob: B
+
+72. @media (forced-colors)?
+    A) Forced colors
+    B) Detect forced colors mode
+    C) Colors forced
+    D) No detection
+    Javob: B
+
+73. CSS text-wrap: balance?
+    A) Text wrap
+    B) Equalize line lengths in headings
+    C) Wrap text
+    D) No balance
+    Javob: B
+
+74. CSS text-wrap: pretty?
+    A) Pretty wrap
+    B) Avoid orphans in paragraphs
+    C) Wrap pretty
+    D) No orphans handling
+    Javob: B
+
+75. CSS initial-letter property?
+    A) Initial letter
+    B) Style drop caps
+    C) Letter initial
+    D) No drop caps
+    Javob: B
+
+76. CSS @font-feature-values?
+    A) Font feature
+    B) Define named font feature settings
+    C) Feature font
+    D) No names
+    Javob: B
+
+77. font-variant-alternates?
+    A) Font variant
+    B) Access alternate glyphs by name
+    C) Variant font
+    D) No alternates
+    Javob: B
+
+78. CSS font-palette property?
+    A) Font palette
+    B) Select color font palette
+    C) Palette font
+    D) No palette
+    Javob: B
+
+79. @font-palette-values rule?
+    A) Palette values
+    B) Customize color font palettes
+    C) Values palette
+    D) No custom
+    Javob: B
+
+80. Variable fonts?
+    A) Fixed fonts
+    B) Single file with multiple weight/width/etc. axes
+    C) Multiple files
+    D) No variation
+    Javob: B
+
+81. font-variation-settings?
+    A) Variation settings
+    B) Control variable font axes
+    C) Settings variation
+    D) No control
+    Javob: B
+
+82. CSS size-adjust descriptor?
+    A) Size adjust
+    B) Normalize font metrics for fallback matching
+    C) Adjust size
+    D) No matching
+    Javob: B
+
+83. CSS ascent-override, descent-override?
+    A) Override ascent
+    B) Fine-tune font metrics
+    C) Ascent override
+    D) No fine-tune
+    Javob: B
+
+84. ARIA roles?
+    A) No roles
+    B) Define element semantics for assistive tech
+    C) Visual roles
+    D) Styling roles
+    Javob: B
+
+85. aria-live attribute?
+    A) Live ARIA
+    B) Announce dynamic content changes
+    C) ARIA live
+    D) No announce
+    Javob: B
+
+86. aria-live="polite" vs "assertive"?
+    A) Same
+    B) polite=wait, assertive=interrupt
+    C) assertive=wait
+    D) No difference
+    Javob: B
+
+87. aria-describedby vs aria-labelledby?
+    A) Same
+    B) labelledby=name, describedby=description
+    C) describedby=name
+    D) No difference
+    Javob: B
+
+88. Skip links?
+    A) No skip
+    B) Hidden link to main content for keyboard users
+    C) Skip all
+    D) Visual only
+    Javob: B
+
+89. Focus trap?
+    A) No trap
+    B) Keep focus within modal/dialog
+    C) Trap focus
+    D) Global focus
+    Javob: B
+
+90. Focus visible?
+    A) Always visible
+    B) :focus-visible for keyboard-only focus styles
+    C) Never visible
+    D) Mouse focus
+    Javob: B
+
+91. CSS aspect-ratio property?
+    A) Aspect ratio
+    B) Maintain element proportions
+    C) Ratio aspect
+    D) No proportions
+    Javob: B
+
+92. CSS object-view-box?
+    A) Object view
+    B) Crop replaced element to view box
+    C) View object
+    D) No crop
+    Javob: B
+
+93. CSS @supports rule?
+    A) Supports rule
+    B) Feature query for progressive enhancement
+    C) Rule supports
+    D) No query
+    Javob: B
+
+94. @supports selector()?
+    A) Supports selector
+    B) Test selector support
+    C) Selector supports
+    D) No test
+    Javob: B
+
+95. CSS logical properties?
+    A) Physical properties
+    B) Writing-mode aware (inline-start, block-end)
+    C) Fixed direction
+    D) No awareness
+    Javob: B
+
+96. margin-inline vs margin-left?
+    A) Same
+    B) margin-inline adapts to writing mode
+    C) margin-left adapts
+    D) No difference
+    Javob: B
+
+97. CSS nesting (native)?
+    A) No nesting
+    B) Selector nesting with & in CSS
+    C) Sass only
+    D) No &
+    Javob: B
+
+98. CSS @starting-style rule?
+    A) Starting style
+    B) Define initial state for transitions
+    C) Style starting
+    D) No initial
+    Javob: B
+
+99. CSS @media (scripting)?
+    A) Scripting media
+    B) Detect JavaScript availability
+    C) Media scripting
+    D) No detection
+    Javob: B
+
+100. CSS @media (pointer)?
+     A) Pointer media
+     B) Detect input device precision (coarse, fine)
+     C) Media pointer
+     D) No detection
+     Javob: B

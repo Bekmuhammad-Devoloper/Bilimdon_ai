@@ -1,0 +1,702 @@
+NESTJS - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. NestJS dependency injection scope?
+   A) One scope
+   B) DEFAULT (singleton), REQUEST, TRANSIENT
+   C) Two scopes
+   D) Three scopes
+   Javob: B
+
+2. REQUEST scope use case?
+   A) Always use
+   B) Per-request state, user context isolation
+   C) Never use
+   D) Singleton better
+   Javob: B
+
+3. TRANSIENT scope behavior?
+   A) Shared
+   B) New instance for each consumer
+   C) Singleton
+   D) Request shared
+   Javob: B
+
+4. Custom providers types?
+   A) One type
+   B) useClass, useValue, useFactory, useExisting
+   C) Two types
+   D) Three types
+   Javob: B
+
+5. useFactory async provider?
+   A) Sync only
+   B) async factory with inject dependencies
+   C) Factory sync
+   D) No async
+   Javob: B
+
+6. Module @Global() decorator?
+   A) Global module
+   B) Make module providers available everywhere
+   C) Module global
+   D) Local only
+   Javob: B
+
+7. Dynamic modules nima?
+   A) Static modules
+   B) Modules with forRoot/forRootAsync configuration
+   C) Dynamic static
+   D) No configuration
+   Javob: B
+
+8. forRoot vs forFeature?
+   A) Same
+   B) forRoot=once in AppModule, forFeature=feature modules
+   C) forFeature=once
+   D) No difference
+   Javob: B
+
+9. Circular dependency resolution?
+   A) No resolution
+   B) forwardRef() for forward reference
+   C) Automatic
+   D) Not possible
+    Javob: B
+
+10. Module lifecycle hooks?
+    A) One hook
+    B) OnModuleInit, OnModuleDestroy, OnApplicationBootstrap, OnApplicationShutdown
+    C) Two hooks
+    D) Three hooks
+    Javob: B
+
+11. NestJS middleware vs interceptors vs guards?
+    A) Same
+    B) Middleware=request/response, Guard=authorization, Interceptor=transform
+    C) All same
+    D) No difference
+    Javob: B
+
+12. Execution context types?
+    A) One type
+    B) HTTP, RPC, WebSocket execution contexts
+    C) Two types
+    D) HTTP only
+    Javob: B
+
+13. ExecutionContext.switchToHttp()?
+    A) Switch HTTP
+    B) Access HTTP-specific objects (req, res, next)
+    C) HTTP switch
+    D) No access
+    Javob: B
+
+14. Custom decorator with createParamDecorator?
+    A) No custom
+    B) Extract custom data from request
+    C) Custom decorator
+    D) Built-in only
+    Javob: B
+
+15. Reflector service nima?
+    A) Reflect service
+    B) Access metadata set by decorators
+    C) Service reflect
+    D) No metadata
+    Javob: B
+
+16. SetMetadata() usage?
+    A) Set metadata
+    B) Attach custom metadata to handlers/classes
+    C) Metadata set
+    D) No attachment
+    Javob: B
+
+17. Guard canActivate() return types?
+    A) Boolean only
+    B) boolean, Promise<boolean>, Observable<boolean>
+    C) Promise only
+    D) Observable only
+    Javob: B
+
+18. @UseGuards() order of execution?
+    A) Random
+    B) Global → Controller → Route order
+    C) Route first
+    D) No order
+    Javob: B
+
+19. Interceptor transform response?
+    A) No transform
+    B) map() in RxJS pipe to transform data
+    C) Transform direct
+    D) Request only
+    Javob: B
+
+20. Interceptor handle() returns?
+    A) Response
+    B) Observable<any> from route handler
+    C) Promise
+    D) Nothing
+    Javob: B
+
+21. Exception filter @Catch() decorator?
+    A) Catch all
+    B) Specify exception types to handle
+    C) Catch none
+    D) Automatic catch
+    Javob: B
+
+22. HttpException built-in subclasses?
+    A) One class
+    B) BadRequestException, NotFoundException, UnauthorizedException, etc.
+    C) Two classes
+    D) Three classes
+    Javob: B
+
+23. Pipe transform() method?
+    A) Transform method
+    B) Validate/transform input values
+    C) Method transform
+    D) No validation
+    Javob: B
+
+24. ValidationPipe options?
+    A) One option
+    B) whitelist, forbidNonWhitelisted, transform, disableErrorMessages
+    C) Two options
+    D) Three options
+    Javob: B
+
+25. whitelist: true effect?
+    A) Whitelist true
+    B) Strip properties not in DTO
+    C) True whitelist
+    D) Allow all
+    Javob: B
+
+26. Class-validator groups?
+    A) No groups
+    B) Conditional validation based on groups
+    C) Groups class
+    D) Always validate
+    Javob: B
+
+27. Custom validation decorator?
+    A) No custom
+    B) registerDecorator() with ValidatorConstraint
+    C) Custom register
+    D) Built-in only
+    Javob: B
+
+28. ParseIntPipe vs DefaultValuePipe?
+    A) Same
+    B) ParseInt=convert, DefaultValue=fallback
+    C) DefaultValue=convert
+    D) No difference
+    Javob: B
+
+29. @UsePipes() scope?
+    A) Global only
+    B) Method, Controller, or Global level
+    C) Method only
+    D) Controller only
+    Javob: B
+
+30. ConfigModule.forRoot() options?
+    A) One option
+    B) envFilePath, isGlobal, cache, validationSchema
+    C) Two options
+    D) Three options
+    Javob: B
+
+31. ConfigService.get() type safety?
+    A) No type
+    B) Generic get<T>() with interface
+    C) Type config
+    D) String only
+    Javob: B
+
+32. Environment variable validation?
+    A) No validation
+    B) Joi schema in validationSchema option
+    C) Validation auto
+    D) Manual only
+    Javob: B
+
+33. Configuration namespaces?
+    A) No namespace
+    B) registerAs() for typed configuration
+    C) Namespace register
+    D) Flat config
+    Javob: B
+
+34. TypeORM integration module?
+    A) TypeORM module
+    B) TypeOrmModule.forRoot(), forFeature()
+    C) Module TypeORM
+    D) No integration
+    Javob: B
+
+35. TypeORM repository injection?
+    A) Repository inject
+    B) @InjectRepository(Entity) decorator
+    C) Inject repository
+    D) Manual create
+    Javob: B
+
+36. TypeORM transaction decorators?
+    A) No transaction
+    B) @Transaction(), @TransactionRepository()
+    C) Transaction decorator
+    D) Manual only
+    Javob: B
+
+37. Prisma integration?
+    A) Prisma module
+    B) PrismaService extending PrismaClient
+    C) Module prisma
+    D) No integration
+    Javob: B
+
+38. Prisma onModuleInit/onModuleDestroy?
+    A) No lifecycle
+    B) $connect() and $disconnect() calls
+    C) Lifecycle prisma
+    D) Auto connect
+    Javob: B
+
+39. JWT authentication setup?
+    A) No JWT
+    B) JwtModule.register() with secret and options
+    C) JWT setup
+    D) Manual only
+    Javob: B
+
+40. Passport strategies integration?
+    A) No passport
+    B) PassportModule + @AuthGuard('strategy')
+    C) Passport integrate
+    D) Manual auth
+    Javob: B
+
+41. LocalStrategy validate() method?
+    A) Validate local
+    B) Return user object or throw UnauthorizedException
+    C) Local validate
+    D) No validation
+    Javob: B
+
+42. JwtStrategy validate() payload?
+    A) Validate JWT
+    B) Decode and return user from payload
+    C) JWT validate
+    D) No decode
+    Javob: B
+
+43. RefreshToken rotation?
+    A) No rotation
+    B) Issue new refresh token on each use
+    C) Rotation refresh
+    D) Same token
+    Javob: B
+
+44. RBAC (Role-Based Access Control)?
+    A) No RBAC
+    B) @Roles() decorator + RolesGuard
+    C) RBAC decorator
+    D) No roles
+    Javob: B
+
+45. CASL integration?
+    A) No CASL
+    B) Ability factory for attribute-based access
+    C) CASL integrate
+    D) RBAC only
+    Javob: B
+
+46. Swagger/OpenAPI integration?
+    A) No Swagger
+    B) @nestjs/swagger with decorators
+    C) Swagger integrate
+    D) Manual docs
+    Javob: B
+
+47. @ApiProperty() options?
+    A) One option
+    B) description, example, required, enum, type
+    C) Two options
+    D) Three options
+    Javob: B
+
+48. @ApiOperation() decorator?
+    A) Operation API
+    B) Describe endpoint summary and description
+    C) API operation
+    D) No description
+    Javob: B
+
+49. @ApiResponse() decorator?
+    A) Response API
+    B) Document possible responses with status codes
+    C) API response
+    D) No documentation
+    Javob: B
+
+50. Swagger CLI plugin?
+    A) No plugin
+    B) Auto-generate API decorators from types
+    C) Plugin swagger
+    D) Manual decorators
+    Javob: B
+
+51. CQRS module?
+    A) No CQRS
+    B) Commands, Queries, Events separation
+    C) CQRS module
+    D) MVC only
+    Javob: B
+
+52. CommandBus.execute()?
+    A) Execute command
+    B) Dispatch command to handler
+    C) Command execute
+    D) Direct call
+    Javob: B
+
+53. EventBus.publish()?
+    A) Publish event
+    B) Publish domain events to handlers
+    C) Event publish
+    D) No events
+    Javob: B
+
+54. Event sourcing with NestJS?
+    A) No event sourcing
+    B) Store events, rebuild state from history
+    C) Event source
+    D) State only
+    Javob: B
+
+55. Saga pattern implementation?
+    A) No saga
+    B) @Saga() decorator with Observable streams
+    C) Saga implement
+    D) Simple events
+    Javob: B
+
+56. GraphQL code-first approach?
+    A) Schema first
+    B) Decorators generate schema from code
+    C) Code first
+    D) Manual schema
+    Javob: B
+
+57. @Resolver() decorator?
+    A) Resolver decorator
+    B) Mark class as GraphQL resolver
+    C) Decorator resolver
+    D) No resolver
+    Javob: B
+
+58. @Query() vs @Mutation() vs @Subscription()?
+    A) Same
+    B) Query=read, Mutation=write, Subscription=real-time
+    C) All write
+    D) No difference
+    Javob: B
+
+59. GraphQL field resolver @ResolveField()?
+    A) Resolve field
+    B) Resolve computed/relation fields
+    C) Field resolve
+    D) No computation
+    Javob: B
+
+60. DataLoader integration?
+    A) No DataLoader
+    B) Batch loading to prevent N+1
+    C) DataLoader integrate
+    D) N+1 allowed
+    Javob: B
+
+61. GraphQL subscriptions transport?
+    A) HTTP only
+    B) WebSocket with graphql-ws
+    C) Transport graphql
+    D) Polling
+    Javob: B
+
+62. WebSocket gateway @WebSocketGateway()?
+    A) Gateway WebSocket
+    B) WebSocket server with port and namespace
+    C) WebSocket gateway
+    D) HTTP only
+    Javob: B
+
+63. @SubscribeMessage() decorator?
+    A) Subscribe message
+    B) Handle specific WebSocket event
+    C) Message subscribe
+    D) All events
+    Javob: B
+
+64. WebSocket rooms?
+    A) No rooms
+    B) client.join(room), server.to(room).emit()
+    C) Rooms WebSocket
+    D) Broadcast only
+    Javob: B
+
+65. Microservices transport layers?
+    A) One transport
+    B) TCP, Redis, NATS, MQTT, Kafka, gRPC, RabbitMQ
+    C) Two transports
+    D) TCP only
+    Javob: B
+
+66. @MessagePattern() decorator?
+    A) Message pattern
+    B) Handle request-response pattern
+    C) Pattern message
+    D) Event only
+    Javob: B
+
+67. @EventPattern() decorator?
+    A) Event pattern
+    B) Handle event-based messaging
+    C) Pattern event
+    D) Request only
+    Javob: B
+
+68. ClientProxy send vs emit?
+    A) Same
+    B) send=request-response, emit=event
+    C) emit=request-response
+    D) No difference
+    Javob: B
+
+69. Hybrid application?
+    A) No hybrid
+    B) HTTP + Microservices in same app
+    C) Hybrid app
+    D) Single type
+    Javob: B
+
+70. Health checks module?
+    A) No health
+    B) @nestjs/terminus with health indicators
+    C) Health module
+    D) Manual endpoint
+    Javob: B
+
+71. Health indicator types?
+    A) One type
+    B) HttpHealthIndicator, TypeOrmHealthIndicator, MemoryHealthIndicator
+    C) Two types
+    D) Three types
+    Javob: B
+
+72. Throttler module?
+    A) No throttler
+    B) Rate limiting with @nestjs/throttler
+    C) Throttler module
+    D) Manual limiting
+    Javob: B
+
+73. @Throttle() decorator override?
+    A) Override throttle
+    B) Custom limit/ttl per route
+    C) Throttle override
+    D) Global only
+    Javob: B
+
+74. @SkipThrottle() decorator?
+    A) Skip throttle
+    B) Exempt route from rate limiting
+    C) Throttle skip
+    D) Always limit
+    Javob: B
+
+75. Cache module?
+    A) No cache
+    B) CacheModule with @nestjs/cache-manager
+    C) Cache module
+    D) Manual cache
+    Javob: B
+
+76. @CacheKey() and @CacheTTL() decorators?
+    A) Cache key
+    B) Custom cache key and time-to-live
+    C) Key cache
+    D) Default only
+    Javob: B
+
+77. Cache interceptor?
+    A) No interceptor
+    B) CacheInterceptor for automatic response caching
+    C) Interceptor cache
+    D) Manual cache
+    Javob: B
+
+78. Bull queue integration?
+    A) No Bull
+    B) @nestjs/bull for job queues
+    C) Bull integrate
+    D) Manual queues
+    Javob: B
+
+79. @Processor() decorator?
+    A) Processor decorator
+    B) Mark class as queue processor
+    C) Decorator processor
+    D) No processor
+    Javob: B
+
+80. @Process() handler?
+    A) Process handler
+    B) Handle specific job name
+    C) Handler process
+    D) All jobs
+    Javob: B
+
+81. Queue events (completed, failed)?
+    A) No events
+    B) @OnQueueCompleted(), @OnQueueFailed()
+    C) Events queue
+    D) Manual check
+    Javob: B
+
+82. Schedule module?
+    A) No schedule
+    B) @nestjs/schedule with cron decorators
+    C) Schedule module
+    D) Manual cron
+    Javob: B
+
+83. @Cron() decorator?
+    A) Cron decorator
+    B) Schedule recurring tasks with cron expression
+    C) Decorator cron
+    D) No scheduling
+    Javob: B
+
+84. @Interval() decorator?
+    A) Interval decorator
+    B) Execute at fixed intervals (ms)
+    C) Decorator interval
+    D) Cron only
+    Javob: B
+
+85. @Timeout() decorator?
+    A) Timeout decorator
+    B) Execute once after delay
+    C) Decorator timeout
+    D) No delay
+    Javob: B
+
+86. Testing with @nestjs/testing?
+    A) No testing
+    B) Test.createTestingModule() for unit/integration tests
+    C) Testing nestjs
+    D) Manual mocks
+    Javob: B
+
+87. Testing module overrideProvider()?
+    A) Override provider
+    B) Mock dependencies in tests
+    C) Provider override
+    D) Real dependencies
+    Javob: B
+
+88. E2E testing with supertest?
+    A) No E2E
+    B) app.getHttpServer() with supertest
+    C) E2E testing
+    D) Unit only
+    Javob: B
+
+89. Testing database isolation?
+    A) No isolation
+    B) Separate test database or in-memory
+    C) Isolation database
+    D) Production DB
+    Javob: B
+
+90. File upload with Multer?
+    A) No upload
+    B) @UseInterceptors(FileInterceptor())
+    C) Upload file
+    D) Manual handling
+    Javob: B
+
+91. @UploadedFile() decorator?
+    A) Uploaded file
+    B) Access uploaded file in controller
+    C) File uploaded
+    D) No access
+    Javob: B
+
+92. Streaming response?
+    A) No streaming
+    B) StreamableFile or res.pipe()
+    C) Streaming response
+    D) Buffer only
+    Javob: B
+
+93. Server-Sent Events?
+    A) No SSE
+    B) @Sse() decorator returning Observable
+    C) SSE server
+    D) WebSocket only
+    Javob: B
+
+94. Versioning strategies?
+    A) One strategy
+    B) URI, Header, Media Type, Custom
+    C) Two strategies
+    D) Three strategies
+    Javob: B
+
+95. @Version() decorator?
+    A) Version decorator
+    B) Specify endpoint version
+    C) Decorator version
+    D) No version
+    Javob: B
+
+96. Compression middleware?
+    A) No compression
+    B) compression() from compression package
+    C) Compression middleware
+    D) Gzip only
+    Javob: B
+
+97. Helmet security?
+    A) No helmet
+    B) helmet() middleware for security headers
+    C) Helmet security
+    D) No headers
+    Javob: B
+
+98. CORS configuration?
+    A) No CORS
+    B) app.enableCors() with options
+    C) CORS config
+    D) Manual headers
+    Javob: B
+
+99. Graceful shutdown?
+    A) No shutdown
+    B) enableShutdownHooks() + onModuleDestroy
+    C) Shutdown graceful
+    D) Hard kill
+    Javob: B
+
+100. Standalone application?
+     A) No standalone
+     B) NestFactory.createApplicationContext() without HTTP
+     C) Standalone app
+     D) HTTP required
+     Javob: B

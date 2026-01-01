@@ -1,0 +1,705 @@
+# JAVA DASTURLASH TESTI - QIYIN DARAJA (ADVANCED)
+## 100 SAVOL
+
+---
+
+**1.** Java Memory Model (JMM) da happens-before munosabati nima?
+- A) Vaqt tartibi
+- B) Operatsiyalarning ko'rinish tartibi
+- C) Thread prioriteti
+- D) Obyekt yaratilish tartibi
+**Javob: B**
+
+**2.** Java-da memory barrier (fence) nima?
+- A) Xotira chegarasi
+- B) CPU instrukciyalarini qayta tartiblashni cheklash
+- C) Xotira o'lchami
+- D) Xotira tozalash
+**Javob: B**
+
+**3.** Java-da false sharing nima va qanday oldini olish mumkin?
+- A) Xotira xatosi
+- B) Cache line'da turgan o'zgaruvchilarning muammosi, padding bilan hal qilinadi
+- C) Thread xatosi
+- D) Kompilyatsiya xatosi
+**Javob: B**
+
+**4.** Java-da double-checked locking pattern nima va muammosi nima?
+- A) Ikki marta lock qilish
+- B) Lazy initialization paterni, volatile kerak
+- C) Ko'p threadli lock
+- D) Xatolik paterni
+**Javob: B**
+
+**5.** Java-da compare-and-swap (CAS) operatsiyasi nima?
+- A) Stringlarni solishtirish
+- B) Atomik operatsiya (kutilgan va yangi qiymat)
+- C) Thread solishtirish
+- D) Obyekt solishtirish
+**Javob: B**
+
+**6.** Java-da AtomicInteger qanday ishlaydi?
+- A) synchronized bilan
+- B) CAS operatsiyalari bilan
+- C) volatile bilan
+- D) Lock bilan
+**Javob: B**
+
+**7.** Java-da ABA problem nima?
+- A) Uch harfli muammo
+- B) CAS operatsiyasida qiymat A->B->A o'zgarganda
+- C) Thread nomi muammosi
+- D) Class nomi muammosi
+**Javob: B**
+
+**8.** Java-da StampedLock nima va qanday afzalligi bor?
+- A) Oddiy lock
+- B) Optimistic o'qish imkoniyati bilan lock
+- C) Readonly lock
+- D) Writeonly lock
+**Javob: B**
+
+**9.** Java-da ForkJoinPool qanday ishlaydi?
+- A) Threadlarni birlashtiradi
+- B) Work-stealing algoritmi bilan parallel ishlov
+- C) Threadlarni ajratadi
+- D) Threadlarni yaratadi
+**Javob: B**
+
+**10.** Java-da RecursiveTask va RecursiveAction farqi nima?
+- A) Farq yo'q
+- B) RecursiveTask qiymat qaytaradi, RecursiveAction yo'q
+- C) RecursiveAction qiymat qaytaradi, RecursiveTask yo'q
+- D) Ikkalasi ham qiymat qaytaradi
+**Javob: B**
+
+**11.** Java-da CompletableFuture ning afzalliklari nima?
+- A) Oddiy Future
+- B) Async operatsiyalarni chaining qilish, exception handling
+- C) Sync operatsiyalar
+- D) Thread yaratish
+**Javob: B**
+
+**12.** Java-da CompletableFuture.thenCompose() va thenApply() farqi nima?
+- A) Farq yo'q
+- B) thenCompose flatMap, thenApply map
+- C) thenApply flatMap, thenCompose map
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**13.** Java-da Phaser class nima uchun ishlatiladi?
+- A) Thread yaratish
+- B) Ko'p fazali thread sinxronizatsiyasi
+- C) Obyekt yaratish
+- D) Xotira boshqarish
+**Javob: B**
+
+**14.** Java-da Exchanger class nima qiladi?
+- A) Obyekt almashtiradi
+- B) Ikki thread o'rtasida ma'lumot almashtirish
+- C) String almashtiradi
+- D) Class almashtiradi
+**Javob: B**
+
+**15.** Java-da ThreadLocal qanday ishlaydi va xavfi nima?
+- A) Global o'zgaruvchi
+- B) Har bir thread uchun alohida nusxa, memory leak xavfi
+- C) Static o'zgaruvchi
+- D) Local o'zgaruvchi
+**Javob: B**
+
+**16.** Java-da InheritableThreadLocal nima?
+- A) Oddiy ThreadLocal
+- B) Child threadlarga meros qoladigan ThreadLocal
+- C) Static ThreadLocal
+- D) Final ThreadLocal
+**Javob: B**
+
+**17.** Java-da Unsafe class nima va nima uchun dangerous?
+- A) Xavfsiz class
+- B) To'g'ridan-to'g'ri xotira bilan ishlash, JVM checks bypass
+- C) Oddiy class
+- D) Abstract class
+**Javob: B**
+
+**18.** Java-da VarHandle nima uchun ishlatiladi?
+- A) Oddiy o'zgaruvchi
+- B) Low-level atomik operatsiyalar va xotira tartibini boshqarish
+- C) String o'zgaruvchi
+- D) Static o'zgaruvchi
+**Javob: B**
+
+**19.** Java-da MethodHandle va Reflection farqi nima?
+- A) Farq yo'q
+- B) MethodHandle tezroq va type-safe
+- C) Reflection tezroq
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**20.** Java-da invokedynamic instruction nima uchun kerak?
+- A) Static metodlarni chaqirish
+- B) Runtime'da metod chaqirish strategiyasini aniqlash
+- C) Konstruktor chaqirish
+- D) Field o'qish
+**Javob: B**
+
+**21.** Java-da JIT compiler qanday ishlaydi?
+- A) Kompilyatsiya vaqtida ishlaydi
+- B) Runtime'da hot code'ni native kodga kompilyatsiya qiladi
+- C) Hech qachon ishlamaydi
+- D) Faqat boshida ishlaydi
+**Javob: B**
+
+**22.** Java-da tiered compilation nima?
+- A) Bir bosqichli kompilyatsiya
+- B) C1 (client) va C2 (server) kompilerlarni birga ishlatish
+- C) Faqat interpretatsiya
+- D) Faqat kompilyatsiya
+**Javob: B**
+
+**23.** Java-da escape analysis nima?
+- A) Xatoliklarni topish
+- B) Obyektning scope'dan chiqishini aniqlash (stack allocation)
+- C) Thread escape qilish
+- D) Memory escape qilish
+**Javob: B**
+
+**24.** Java-da scalar replacement optimization nima?
+- A) Obyektni o'chirish
+- B) Obyektni primitiv fieldlarga ajratish
+- C) Obyektni almashtirish
+- D) Obyektni yaratish
+**Javob: B**
+
+**25.** Java-da lock elision va lock coarsening nima?
+- A) Lock qo'shish
+- B) JIT optimization: lockni o'chirish/yiriklashtirish
+- C) Lock o'zgartirish
+- D) Lock yaratish
+**Javob: B**
+
+**26.** Java-da biased locking nima?
+- A) Noto'g'ri lock
+- B) Bitta thread tomonidan ishlatiladigan lock uchun optimizatsiya
+- C) Ko'p threadli lock
+- D) Static lock
+**Javob: B**
+
+**27.** Java-da String interning qanday ishlaydi?
+- A) String yaratish
+- B) String literallarni pool'da saqlash va qayta ishlatish
+- C) String o'chirish
+- D) String o'zgartirish
+**Javob: B**
+
+**28.** Java-da G1 garbage collector qanday ishlaydi?
+- A) Butun heap'ni tozalaydi
+- B) Heap'ni regionlarga bo'lib, eng ko'p garbage'li regionlarni tozalaydi
+- C) Hech narsani tozalamaydi
+- D) Faqat young generationni tozalaydi
+**Javob: B**
+
+**29.** Java-da ZGC va Shenandoah GC ning asosiy xususiyati nima?
+- A) Sekin GC
+- B) Sub-millisecond pause time bilan concurrent GC
+- C) Stop-the-world GC
+- D) Serial GC
+**Javob: B**
+
+**30.** Java-da card table nima uchun ishlatiladi?
+- A) O'yin o'ynash
+- B) Generational GC'da old->young havolalarni kuzatish
+- C) Ma'lumot saqlash
+- D) Thread kuzatish
+**Javob: B**
+
+**31.** Java-da remember set nima?
+- A) Xotira to'plami
+- B) Regionlar o'rtasidagi havolalarni kuzatish (G1)
+- C) Thread to'plami
+- D) Obyekt to'plami
+**Javob: B**
+
+**32.** Java-da TLAB (Thread-Local Allocation Buffer) nima?
+- A) Global buffer
+- B) Har bir thread uchun alohida allocation buffer
+- C) Static buffer
+- D) Network buffer
+**Javob: B**
+
+**33.** Java-da PLAB (Promotion-Local Allocation Buffer) nima?
+- A) Yaratish bufferi
+- B) Old generationga ko'chirish uchun buffer
+- C) O'chirish bufferi
+- D) O'qish bufferi
+**Javob: B**
+
+**34.** Java-da class loading delegation model qanday ishlaydi?
+- A) Child birinchi yuklaydi
+- B) Parent birinchi tekshiriladi, keyin child
+- C) Parallel yuklash
+- D) Random yuklash
+**Javob: B**
+
+**35.** Java-da bootstrap, extension va application classloaderlar tartibi qanday?
+- A) application -> extension -> bootstrap
+- B) bootstrap -> extension -> application
+- C) extension -> bootstrap -> application
+- D) Tartib yo'q
+**Javob: B**
+
+**36.** Java-da custom classloader yaratishda qaysi metodlarni override qilish kerak?
+- A) loadClass()
+- B) findClass()
+- C) defineClass()
+- D) resolveClass()
+**Javob: B**
+
+**37.** Java-da constant pool nima?
+- A) O'zgaruvchilar to'plami
+- B) Class file'da literal va symbolic havolalar
+- C) Thread pool
+- D) Connection pool
+**Javob: B**
+
+**38.** Java-da string constant pool va heap orasidagi farq nima?
+- A) Farq yo'q
+- B) String pool metaspace/permgen'da edi, Java 7'dan heap'da
+- C) Heap katta
+- D) Pool kichik
+**Javob: B**
+
+**39.** Java-da interned string va regular string xotira joylashuvi qanday farq qiladi?
+- A) Farq yo'q
+- B) Interned string pool'da, regular heap'da
+- C) Ikkalasi ham heap'da
+- D) Ikkalasi ham stack'da
+**Javob: B**
+
+**40.** Java-da bytecode verification qanday ishlaydi?
+- A) Runtime'da
+- B) Class loading vaqtida bytecode xavfsizligini tekshirish
+- C) Kompilyatsiya vaqtida
+- D) Hech qachon
+**Javob: B**
+
+**41.** Java-da invokespecial, invokevirtual, invokeinterface, invokestatic farqi nima?
+- A) Farq yo'q
+- B) Turli metod chaqirish turlari (konstruktor, virtual, interface, static)
+- C) Faqat nom farqi
+- D) Tezlik farqi
+**Javob: B**
+
+**42.** Java-da virtual method dispatch qanday ishlaydi?
+- A) Kompilyatsiya vaqtida aniqlanadi
+- B) Runtime'da vtable orqali metod topiladi
+- C) Static aniqlanadi
+- D) Hech qachon
+**Javob: B**
+
+**43.** Java-da interface method dispatch qanday amalga oshiriladi?
+- A) vtable
+- B) itable yoki inline cache
+- C) Direct call
+- D) Static call
+**Javob: B**
+
+**44.** Java-da monomorphic, polymorphic, megamorphic call sites nima?
+- A) Metod turlari
+- B) Call site'dagi receiver tiplarining xilma-xilligi
+- C) Class turlari
+- D) Interface turlari
+**Javob: B**
+
+**45.** Java-da inline caching nima uchun ishlatiladi?
+- A) Xotirani tejash
+- B) Virtual/interface call'larni tezlashtirish
+- C) Kodni qisqartirish
+- D) Xatoliklarni topish
+**Javob: B**
+
+**46.** Java-da deoptimization qachon sodir bo'ladi?
+- A) Hech qachon
+- B) JIT optimizatsiya assumptions noto'g'ri chiqqanda
+- C) Har doim
+- D) Faqat boshida
+**Javob: B**
+
+**47.** Java-da safepoint nima?
+- A) Xavfsiz kod
+- B) GC yoki deoptimization uchun threadlarni to'xtatish nuqtasi
+- C) Thread yaratish nuqtasi
+- D) Obyekt yaratish nuqtasi
+**Javob: B**
+
+**48.** Java-da stop-the-world pause nima?
+- A) Dasturni to'xtatish
+- B) GC vaqtida barcha application threadlarini to'xtatish
+- C) Thread to'xtatish
+- D) Obyekt to'xtatish
+**Javob: B**
+
+**49.** Java-da concurrent mode failure (CMS GC) nima?
+- A) Kompilyatsiya xatosi
+- B) GC promotion uchun joyni yetkazmaslik
+- C) Thread xatosi
+- D) Xotira to'ldirish
+**Javob: B**
+
+**50.** Java-da humongous objects (G1 GC) nima?
+- A) Kichik obyektlar
+- B) Region hajmining 50%'idan katta obyektlar
+- C) Oddiy obyektlar
+- D) Static obyektlar
+**Javob: B**
+
+**51.** Java-da mixed GC (G1) va full GC farqi nima?
+- A) Farq yo'q
+- B) Mixed young+old regionlarni, full butun heap'ni tozalaydi
+- C) Full tezroq
+- D) Mixed to'liq
+**Javob: B**
+
+**52.** Java-da G1 GC'ning IHOP (Initiating Heap Occupancy Percent) nima?
+- A) Thread soni
+- B) Concurrent marking boshlash uchun heap foizi
+- C) Obyekt soni
+- D) CPU foizi
+**Javob: B**
+
+**53.** Java-da adaptive sizing policy nima?
+- A) Obyekt o'lchami
+- B) GC heap generationlarini dinamik o'zgartirish
+- C) Thread o'lchami
+- D) Stack o'lchami
+**Javob: B**
+
+**54.** Java-da soft/weak/phantom reference'larning GC bilan o'zaro ta'siri qanday?
+- A) Bir xil
+- B) Turli GC cycle'larida va shartlarda o'chiriladi
+- C) Hech qachon o'chirilmaydi
+- D) Darhol o'chiriladi
+**Javob: B**
+
+**56.** Java-da object header nima saqlaydi?
+- A) Faqat class pointer
+- B) Mark word (lock, GC info, hash) va class pointer
+- C) Faqat field qiymatlari
+- D) Hech narsa
+**Javob: B**
+
+**56.** Java-da compressed oops nima?
+- A) Obyektlarni siqish
+- B) 64-bit JVM'da 32-bit object pointerlardan foydalanish
+- C) Kodni siqish
+- D) Stringlarni siqish
+**Javob: B**
+
+**57.** Java-da UseCompressedClassPointers nima qiladi?
+- A) Hech narsa
+- B) Class metadatasi uchun compressed pointerlar
+- C) Obyektlarni siqadi
+- D) Stringlarni siqadi
+**Javob: B**
+
+**58.** Java-da object alignment nima va nima uchun kerak?
+- A) Obyektlarni tartiblash
+- B) Xotirada obyektlarni muayyan baytga tekislash (CPU efficiency)
+- C) Obyektlarni saqlash
+- D) Obyektlarni o'chirish
+**Javob: B**
+
+**59.** Java-da padding (in object layout) nima uchun qo'shiladi?
+- A) Ko'rinish uchun
+- B) Alignment requirementlarini qondirish uchun
+- C) Xotira ko'paytirish
+- D) Tezlikni pasaytirish
+**Javob: B**
+
+**60.** Java-da @Contended annotation nima qiladi?
+- A) Hech narsa
+- B) False sharing'dan saqlanish uchun padding qo'shadi
+- C) Obyektni kattalashtiradi
+- D) Threadni tezlashtiradi
+**Javob: B**
+
+**61.** Java-da JMH (Java Microbenchmark Harness) nima uchun ishlatiladi?
+- A) Xatolik topish
+- B) Aniq performance o'lchash (warmup, JIT ta'siri)
+- C) Kod yozish
+- D) Test yozish
+**Javob: B**
+
+**62.** Java-da warmup nima va nima uchun kerak?
+- A) Dasturni qizdirish
+- B) JIT compiler optimizatsiya qilishi uchun kod ishlashi
+- C) Xotirani tozalash
+- D) Threadlarni boshlash
+**Javob: B**
+
+**63.** Java-da OSR (On-Stack Replacement) nima?
+- A) Stack almashtirish
+- B) Uzun tsikl davomida interpretatsiyadan compiled kodga o'tish
+- C) Obyekt almashtirish
+- D) Thread almashtirish
+**Javob: B**
+
+**64.** Java-da inlining nima va qanday cheklovlari bor?
+- A) Kodni yoyish
+- B) Metod chaqiruvni tanasiga almashtirish, bytecode size chegarasi
+- C) Kodni qisqartirish
+- D) Kodni o'chirish
+**Javob: B**
+
+**65.** Java-da branch prediction va misprediction penalty nima?
+- A) Git branch
+- B) CPU conditional jump'larni bashorat qilishi, noto'g'ri bo'lsa kechikish
+- C) Thread branch
+- D) Class branch
+**Javob: B**
+
+**66.** Java-da loop unrolling optimization nima?
+- A) Tsiklni o'chirish
+- B) Tsikl tanasini takrorlash (overhead kamaytirish)
+- C) Tsiklni yaratish
+- D) Tsiklni qisqartirish
+**Javob: B**
+
+**67.** Java-da constant folding nima?
+- A) Konstantani o'chirish
+- B) Kompilyatsiya vaqtida konstantalarni hisoblash
+- C) Konstantani yaratish
+- D) Konstantani o'zgartirish
+**Javob: B**
+
+**68.** Java-da dead code elimination nima?
+- A) Barcha kodni o'chirish
+- B) Hech qachon bajarilaydigan bo'lmagan kodni o'chirish
+- C) Ishlaydigan kodni o'chirish
+- D) Xatolik kodni o'chirish
+**Javob: B**
+
+**69.** Java-da tail call optimization Java'da qo'llab-quvvatlanadimi?
+- A) Ha, har doim
+- B) Yo'q, JVM spetsifikatsiyasi talab qilmaydi
+- C) Faqat rekursiyada
+- D) Faqat tsiklda
+**Javob: B**
+
+**70.** Java-da Project Loom nima va qanday muammo hal qiladi?
+- A) Grafiklar
+- B) Virtual threadlar (lightweight concurrency)
+- C) Grafik interfeyslar
+- D) Database connections
+**Javob: B**
+
+**71.** Java-da virtual thread va platform thread farqi nima?
+- A) Farq yo'q
+- B) Virtual thread JVM schedule qiladi, platform thread OS
+- C) Platform thread JVM schedule qiladi
+- D) Ikkalasi ham OS schedule qiladi
+**Javob: B**
+
+**72.** Java-da structured concurrency nima?
+- A) Strukturasiz concurrency
+- B) Parent-child threadlar scope'ini boshqarish
+- C) Oddiy thread yaratish
+- D) Thread o'chirish
+**Javob: B**
+
+**73.** Java-da Project Panama nima maqsad qiladi?
+- A) Java va JavaScript
+- B) Java va native kod o'zaro ishlashi (FFM API)
+- C) Java va Python
+- D) Java va C#
+**Javob: B**
+
+**74.** Java-da Foreign Function & Memory API qanday foydalar beradi?
+- A) Sekinroq native call
+- B) JNI'dan tezroq va xavfsizroq native call
+- C) Java ichidagi call
+- D) Network call
+**Javob: B**
+
+**75.** Java-da JNI (Java Native Interface) ning kamchiliklari nima?
+- A) Kamchiligi yo'q
+- B) Sekin, xavfsizlik muammolari, murakkab
+- C) Juda tez
+- D) Juda oddiy
+**Javob: B**
+
+**76.** Java-da vector API (Project Panama) nima uchun kerak?
+- A) Matematik vektorlar
+- B) SIMD instructionlaridan foydalanish
+- C) Arraylar yaratish
+- D) Listlar yaratish
+**Javob: B**
+
+**77.** Java-da pattern matching (Java 14+) qanday ishlaydi?
+- A) String pattern
+- B) instanceof va switch'da type patternlar
+- C) Regex pattern
+- D) Template pattern
+**Javob: B**
+
+**78.** Java-da sealed classes (Java 17) nima uchun kerak?
+- A) Classni yopish
+- B) Meros olishni cheklash (permits)
+- C) Classni ochish
+- D) Interfeys yaratish
+**Javob: B**
+
+**79.** Java-da record class (Java 14+) ning xususiyatlari nima?
+- A) Oddiy class
+- B) Immutable, equals/hashCode/toString avtomatik
+- C) Mutable class
+- D) Abstract class
+**Javob: B**
+
+**80.** Java-da text blocks (Java 15) qanday ishlaydi?
+- A) Oddiy String
+- B) Ko'p qatorli String literallari (""")
+- C) Char array
+- D) StringBuilder
+**Javob: B**
+
+**81.** Java-da switch expression (Java 14) ning afzalliklari nima?
+- A) Qadimgi switch
+- B) Qiymat qaytaradi, arrow syntax, exhaustiveness check
+- C) Faqat statement
+- D) Hech qanday farq yo'q
+**Javob: B**
+
+**82.** Java-da var (local variable type inference) qachon ishlatish maqsadga muvofiq?
+- A) Har doim
+- B) Tip ravshan bo'lganda, o'qilishni yaxshilash uchun
+- C) Hech qachon
+- D) Faqat testzda
+**Javob: B**
+
+**83.** Java-da module system (Java 9+) ning asosiy tushunchalari nima?
+- A) Package
+- B) module-info.java, requires, exports, opens
+- C) Class
+- D) Interface
+**Javob: B**
+
+**84.** Java-da strong encapsulation (Java 9+) nima?
+- A) Kuchli shifrlash
+- B) Internal API'larga kirishni cheklash
+- C) Public API
+- D) Private field
+**Javob: B**
+
+**85.** Java-da ServiceLoader pattern (module system) qanday ishlaydi?
+- A) Serverni yuklash
+- B) Service provider interface orqali implementatsiyalarni topish
+- C) Faylni yuklash
+- D) Classni yuklash
+**Javob: B**
+
+**86.** Java-da jlink tool nima qiladi?
+- A) Linkni ochadi
+- B) Custom runtime image yaratadi (faqat kerakli modullar)
+- C) Kodni kompilyatsiya qiladi
+- D) Dasturni ishga tushiradi
+**Javob: B**
+
+**87.** Java-da jdeps tool nima uchun ishlatiladi?
+- A) Dependency topish
+- B) Classlar o'rtasidagi bog'liqlikni tahlil qilish
+- C) Xatolik topish
+- D) Kod formatlash
+**Javob: B**
+
+**88.** Java-da String concatenation (+) qanday optimizatsiya qilinadi?
+- A) Optimizatsiya yo'q
+- B) javac StringBuilder'ga yoki invokedynamic'ga aylantiradi
+- C) Har doim yangi String
+- D) Xotiraga yoziladi
+**Javob: B**
+
+**89.** Java-da StringConcatFactory (Java 9+) nima?
+- A) Factory pattern
+- B) Optimallashgan String concatenation (invokedynamic)
+- C) String yaratish
+- D) String o'chirish
+**Javob: B**
+
+**90.** Java-da compact strings (Java 9+) nima?
+- A) Qisqa stringlar
+- B) Latin-1 stringlar uchun byte[] ishlatish (xotira tejash)
+- C) UTF-16 stringlar
+- D) Unicode stringlar
+**Javob: B**
+
+**91.** Java-da StackWalker API (Java 9) nima uchun Throwable.getStackTrace()'dan yaxshiroq?
+- A) Yomonroq
+- B) Lazy evaluation, efficient, filtering
+- C) Sekinroq
+- D) Farq yo'q
+**Javob: B**
+
+**92.** Java-da Process API improvements (Java 9+) nima beradi?
+- A) Hech narsa
+- B) Process tree, info, destroy bilan ishlash
+- C) Faqat process yaratish
+- D) Threadlar bilan ishlash
+**Javob: B**
+
+**93.** Java-da Reactive Streams API asosiy interfeyslari qaysilar?
+- A) List, Set, Map
+- B) Publisher, Subscriber, Subscription, Processor
+- C) Stream, Filter, Map
+- D) Thread, Runnable, Callable
+**Javob: B**
+
+**94.** Java-da Flow API (Java 9) nima?
+- A) Code flow
+- B) Reactive Streams standardini Java'ga kiritish
+- C) Control flow
+- D) Data flow
+**Javob: B**
+
+**95.** Java-da backpressure (reactive programming) nima?
+- A) Orqaga bosim
+- B) Consumer producer'ni sekinlashtirishi
+- C) Tezlikni oshirish
+- D) Xotira bosimi
+**Javob: B**
+
+**96.** Java-da HTTP Client API (Java 11) ning afzalliklari nima?
+- A) Qadimgi API
+- B) Async, HTTP/2, WebSocket qo'llab-quvvatlash
+- C) Faqat sync
+- D) HTTP/1 faqat
+**Javob: B**
+
+**97.** Java-da CompletionStage ning chaining metodlari qanday ishlaydi?
+- A) Blokirovka qiladi
+- B) Async operatsiyalarni ketma-ket bog'lash (pipeline)
+- C) Sync operatsiyalar
+- D) Thread yaratish
+**Javob: B**
+
+**98.** Java-da exceptionally(), handle(), whenComplete() farqi nima?
+- A) Farq yo'q
+- B) Exception handling usullari (recover, handle both, side-effect)
+- C) Bir xil metodlar
+- D) Faqat nom farqi
+**Javob: B**
+
+**99.** Java-da Stream parallel() metodining xavflari nima?
+- A) Xavf yo'q
+- B) Thread contention, overhead, stateful operations muammosi
+- C) Har doim tezroq
+- D) Har doim yaxshiroq
+**Javob: B**
+
+**100.** Java-da spliterator nima va qanday ishlaydi?
+- A) Stringni bo'lish
+- B) Collection elementlarini parallel qayta ishlash uchun bo'lish
+- C) Arrayni bo'lish
+- D) Listni bo'lish
+**Javob: B**
+

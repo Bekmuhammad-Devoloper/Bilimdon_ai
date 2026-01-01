@@ -1,0 +1,702 @@
+HTML & CSS - QIYIN TESTLAR
+================================
+
+1. CSS Houdini API nima?
+a) Low-level CSS API
+b) JavaScript orqali CSS engine ga kirish
+c) Custom properties va paint worklets
+d) Barchasi to'g'ri
+Javob: d
+
+2. Paint API qanday ishlaydi?
+a) CSS.paintWorklet.addModule()
+b) Custom rasm chizish
+c) Canvas API kabi
+d) Barchasi to'g'ri
+Javob: d
+
+3. CSS Custom Properties vs SASS variables farqi?
+a) CSS variables runtime, SASS compile-time
+b) CSS variables DOM da o'zgaradi
+c) SASS variables statik
+d) Barchasi to'g'ri
+Javob: d
+
+4. @property qoidasi nima uchun?
+a) Custom property type definition
+b) Animatable custom properties
+c) Inheritance control
+d) Barchasi to'g'ri
+Javob: d
+
+5. Cascade layers (@layer) nima?
+a) CSS priority qatlamlarini boshqarish
+b) Z-index alternative
+c) Specificity boshqaruvi
+d) a va c to'g'ri
+Javob: d
+
+6. Container queries qanday ishlaydi?
+a) @container qoidasi bilan
+b) Parent element o'lchamiga qarab stil
+c) Media query alternative
+d) Barchasi to'g'ri
+Javob: d
+
+7. Container-type qiymatlari qaysilar?
+a) size, inline-size, normal
+b) Faqat size
+c) Faqat inline-size
+d) width, height
+Javob: a
+
+8. :has() pseudo-class qanday ishlaydi?
+a) Parent selector (if child exists)
+b) Child selector
+c) Sibling selector
+d) Attribute selector
+Javob: a
+
+9. :is() va :where() farqi nima?
+a) :is() specificity bor, :where() yo'q
+b) Farq yo'q
+c) :where() specificity bor
+d) Ikkalasi ham bir xil
+Javob: a
+
+10. Subgrid nima?
+a) Nested grid parent grid ga align
+b) Kichik grid
+c) Grid ichida grid
+d) Faqat a
+Javob: a
+
+11. display: contents nima qiladi?
+a) Element o'zini DOM dan olib tashlaydi, childlar qoladi
+b) Elementni yashiradi
+c) Elementni o'chiradi
+d) Hech narsa
+Javob: a
+
+12. Logical properties nima?
+a) Direction-agnostic properties (block-start)
+b) margin-inline, padding-block
+c) RTL uchun yaxshi
+d) Barchasi to'g'ri
+Javob: d
+
+13. Inline-size va block-size nima?
+a) Writing-mode ga qarab width/height
+b) Faqat width
+c) Faqat height
+d) Pixel o'lchami
+Javob: a
+
+14. Intrinsic sizing (min-content, max-content) qanday?
+a) Content asosida o'lcham
+b) Faqat min-width
+c) Faqat max-width
+d) Fixed o'lcham
+Javob: a
+
+15. Fit-content() funksiyasi qanday ishlaydi?
+a) min(max-content, max(min-content, available))
+b) Faqat max-content
+c) Faqat min-content
+d) Fixed qiymat
+Javob: a
+
+16. CSS masking nima?
+a) Mask-image, clip-path orqali clipping
+b) Visibility control
+c) Opacity control
+d) Faqat a
+Javob: a
+
+17. Mask-composite nima qiladi?
+a) Multiple mask aralashtirilishi
+b) Faqat bitta mask
+c) Rang aralashtirilishi
+d) Hech narsa
+Javob: a
+
+18. Clip-path shapes qaysilar?
+a) circle(), ellipse(), polygon(), inset()
+b) Faqat circle
+c) Faqat polygon
+d) Faqat rectangle
+Javob: a
+
+19. Shape-outside nima uchun?
+a) Text wrapping non-rectangular shapes atrofida
+b) Element shakli
+c) Border shakli
+d) Faqat a
+Javob: a
+
+20. Offset-path nima qiladi?
+a) Motion path animation
+b) Element joyi
+c) Transform path
+d) a va c to'g'ri
+Javob: d
+
+21. CSS Counters qanday ishlaydi?
+a) counter-reset, counter-increment, counter()
+b) Automatic numbering
+c) Custom lists
+d) Barchasi to'g'ri
+Javob: d
+
+22. Content() funksiyasi @counter da qanday?
+a) content: counter(name)
+b) content: counters(name, ".")
+c) Ikkalasi ham to'g'ri
+d) Bunday funksiya yo'q
+Javob: c
+
+23. CSS scroll-timeline nima?
+a) Scroll-driven animations
+b) Timeline animation
+c) Scroll position ga qarab animation
+d) Barchasi to'g'ri
+Javob: d
+
+24. Animation-timeline property qanday?
+a) animation-timeline: scroll()
+b) Scroll position ga bog'lash
+c) Auto yoki scroll name
+d) Barchasi to'g'ri
+Javob: d
+
+25. View transitions API nima?
+a) Smooth page transitions
+b) SPA transitions
+c) document.startViewTransition()
+d) Barchasi to'g'ri
+Javob: d
+
+26. ::view-transition pseudo-elements qaysilar?
+a) ::view-transition-old, ::view-transition-new
+b) ::view-transition-group
+c) ::view-transition-image-pair
+d) Barchasi to'g'ri
+Javob: d
+
+27. Anchor positioning nima?
+a) Element boshqa element ga nisbatan joylashuvi
+b) Tooltips, popovers uchun
+c) anchor() funksiyasi
+d) Barchasi to'g'ri
+Javob: d
+
+28. Popover API HTML da qanday?
+a) popover attribute
+b) Auto dismiss behavior
+c) ::backdrop pseudo-element
+d) Barchasi to'g'ri
+Javob: d
+
+29. Dialog element qanday ishlaydi?
+a) <dialog> tag
+b) showModal() method
+c) ::backdrop styling
+d) Barchasi to'g'ri
+Javob: d
+
+30. Inert attribute nima qiladi?
+a) Element va childlarni non-interactive qiladi
+b) Elementni yashiradi
+c) Elementni o'chiradi
+d) Focus prevention
+Javob: a
+
+31. AccentColor property nima uchun?
+a) Form controls rangini o'zgartirish
+b) Faqat button rangi
+c) Faqat input rangi
+d) a to'g'ri
+Javob: a
+
+32. Color-scheme property qanday ishlaydi?
+a) light, dark, light dark
+b) Browser UI theme
+c) Prefers-color-scheme bilan
+d) Barchasi to'g'ri
+Javob: d
+
+33. Color-mix() funksiyasi qanday?
+a) color-mix(in srgb, red 50%, blue)
+b) Ikki rangni aralash
+c) Color space specification
+d) Barchasi to'g'ri
+Javob: d
+
+34. Relative color syntax qanday?
+a) rgb(from blue r g b / 50%)
+b) Mavjud rangdan yangi rang
+c) Channel manipulation
+d) Barchasi to'g'ri
+Javob: d
+
+35. Light-dark() funksiyasi nima qiladi?
+a) color-scheme ga qarab rang tanlaydi
+b) Faqat light rang
+c) Faqat dark rang
+d) Hech narsa
+Javob: a
+
+36. Oklch va Oklab color spaces nima?
+a) Perceptually uniform color spaces
+b) Better than RGB
+c) Hue-based
+d) Barchasi to'g'ri
+Javob: d
+
+37. Wide-gamut colors nima?
+a) P3, Rec2020 color spaces
+b) RGB dan kengroq
+c) HDR displays uchun
+d) Barchasi to'g'ri
+Javob: d
+
+38. @color-profile qoidasi nima uchun?
+a) Custom color profile definition
+b) ICC profiles
+c) Color management
+d) Barchasi to'g'ri
+Javob: d
+
+39. Gradient interpolation color space qanday?
+a) linear-gradient(in oklch, red, blue)
+b) Default srgb
+c) Smoother gradients
+d) Barchasi to'g'ri
+Javob: d
+
+40. Conic-gradient qanday ishlaydi?
+a) Markazdan boshlanadigan gradient
+b) Pie chart uchun yaxshi
+c) Angle-based
+d) Barchasi to'g'ri
+Javob: d
+
+41. CSS nesting qanday yoziladi?
+a) .parent { & .child {} }
+b) SCSS kabi
+c) Native CSS
+d) Barchasi to'g'ri
+Javob: d
+
+42. & (nesting selector) qanday ishlaydi?
+a) Parent selector reference
+b) .parent & -> .parent.class
+c) Combinator bilan
+d) Barchasi to'g'ri
+Javob: d
+
+43. Scope qoidasi (@scope) nima?
+a) CSS scope limiting
+b) Donut scope
+c) Proximity-based styling
+d) Barchasi to'g'ri
+Javob: d
+
+44. :scope pseudo-class qachon ishlatiladi?
+a) @scope ichida root element
+b) querySelectorAll scope
+c) Scoped context
+d) Barchasi to'g'ri
+Javob: d
+
+45. View() funksiyasi animation da qanday?
+a) animation-timeline: view()
+b) Scroll-driven by viewport
+c) IntersectionObserver alternative
+d) Barchasi to'g'ri
+Javob: d
+
+46. Animation-range property nima?
+a) Scroll range for animation
+b) entry, exit, contain
+c) Percentage yoki name
+d) Barchasi to'g'ri
+Javob: d
+
+47. Timeline-scope property nima uchun?
+a) Named timeline sharing
+b) Timeline visibility
+c) Ancestor-descendant timelines
+d) Barchasi to'g'ri
+Javob: d
+
+48. CSS Trigonometric functions qaysilar?
+a) sin(), cos(), tan(), asin(), acos(), atan()
+b) atan2(), sqrt(), pow()
+c) abs(), sign()
+d) a va b to'g'ri
+Javob: d
+
+49. CSS sign() funksiyasi nima qaytaradi?
+a) -1, 0, yoki 1
+b) Faqat boolean
+c) Faqat 0 yoki 1
+d) Absolute value
+Javob: a
+
+50. Round() funksiyasi qanday ishlaydi?
+a) round(strategy, value, interval)
+b) Faqat nearest
+c) Faqat up
+d) Faqat down
+Javob: a
+
+51. Mod() va rem() funksiyalari farqi nima?
+a) mod() modulo, rem() remainder
+b) Farq yo'q
+c) rem() modulo
+d) Ikkalasi ham bir xil
+Javob: a
+
+52. Hypot() funksiyasi nima hisoblaydi?
+a) sqrt(a² + b²)
+b) Hypotenuse
+c) Pythagorean theorem
+d) Barchasi to'g'ri
+Javob: d
+
+53. CSS comparison functions qaysilar?
+a) min(), max(), clamp()
+b) Faqat min
+c) Faqat max
+d) Faqat clamp
+Javob: a
+
+54. @starting-style qoidasi nima uchun?
+a) Entry animation styles
+b) display: none dan transition
+c) Discrete properties animation
+d) Barchasi to'g'ri
+Javob: d
+
+55. Transition-behavior property nima?
+a) Discrete properties uchun transition
+b) allow-discrete keyword
+c) display, content-visibility uchun
+d) Barchasi to'g'ri
+Javob: d
+
+56. Overlay property nima qiladi?
+a) Top layer rendering control
+b) Dialog, popover uchun
+c) Stacking context
+d) Barchasi to'g'ri
+Javob: d
+
+57. Field-sizing property nima uchun?
+a) Input/textarea auto-sizing
+b) content keyword
+c) Intrinsic sizing
+d) Barchasi to'g'ri
+Javob: d
+
+58. Interpolate-size property nima qiladi?
+a) Auto va intrinsic size transition
+b) allow-keywords
+c) height: auto animation
+d) Barchasi to'g'ri
+Javob: d
+
+59. CSS initial-letter property nima?
+a) Drop caps yaratish
+b) Birinchi harf styling
+c) Float-like behavior
+d) Barchasi to'g'ri
+Javob: d
+
+60. Text-wrap: balance nima qiladi?
+a) Qatorlarni teng taqsimlaydi
+b) Orphans/widows prevention
+c) Headlines uchun
+d) Barchasi to'g'ri
+Javob: d
+
+61. Text-wrap: pretty nima?
+a) Improved line breaking
+b) Orphans prevention
+c) Better typography
+d) Barchasi to'g'ri
+Javob: d
+
+62. Hanging-punctuation nima uchun?
+a) Punctuation margin tashqariga
+b) Typography refinement
+c) first, last, allow-end
+d) Barchasi to'g'ri
+Javob: d
+
+63. Text-spacing-trim property nima?
+a) CJK typography spacing
+b) Ideographic spaces
+c) space-first, space-all
+d) Barchasi to'g'ri
+Javob: d
+
+64. White-space-collapse property qanday?
+a) Whitespace handling
+b) preserve, collapse
+c) White-space replacement
+d) Barchasi to'g'ri
+Javob: d
+
+65. Scrollbar-gutter property nima qiladi?
+a) Scrollbar uchun joy ajratish
+b) Layout shift prevention
+c) stable keyword
+d) Barchasi to'g'ri
+Javob: d
+
+66. Scrollbar-width property qiymatlari?
+a) auto, thin, none
+b) Faqat pixel
+c) Faqat thin
+d) Percentage
+Javob: a
+
+67. Scrollbar-color property qanday?
+a) scrollbar-color: thumb track
+b) Ikki rang
+c) Auto keyword
+d) Barchasi to'g'ri
+Javob: d
+
+68. Overscroll-behavior nima qiladi?
+a) Scroll chaining control
+b) contain, none, auto
+c) Pull-to-refresh prevention
+d) Barchasi to'g'ri
+Javob: d
+
+69. Scroll-padding va scroll-margin nima uchun?
+a) Scroll snap offset
+b) Sticky headers bilan
+c) Focus scroll adjustment
+d) Barchasi to'g'ri
+Javob: d
+
+70. Scroll-snap-stop property qanday?
+a) normal, always
+b) Forced snap points
+c) Touch scrolling control
+d) Barchasi to'g'ri
+Javob: d
+
+71. Touch-action property qanday ishlaydi?
+a) Touch gesture control
+b) pan-x, pan-y, pinch-zoom
+c) manipulation keyword
+d) Barchasi to'g'ri
+Javob: d
+
+72. Forced-color-adjust property nima?
+a) High contrast mode handling
+b) auto, none
+c) Accessibility feature
+d) Barchasi to'g'ri
+Javob: d
+
+73. Print-color-adjust property nima qiladi?
+a) Print media colors control
+b) economy, exact
+c) Ink saving
+d) Barchasi to'g'ri
+Javob: d
+
+74. Page-break properties zamonaviy alternative?
+a) break-before, break-after, break-inside
+b) Faqat page-break
+c) Farq yo'q
+d) Print media uchun
+Javob: a
+
+75. Contain-intrinsic-size nima uchun?
+a) Content-visibility bilan
+b) Placeholder size
+c) Performance optimization
+d) Barchasi to'g'ri
+Javob: d
+
+76. Content-visibility property qiymatlari?
+a) visible, hidden, auto
+b) Rendering optimization
+c) Off-screen content
+d) Barchasi to'g'ri
+Javob: d
+
+77. CSS Containment levels qanday?
+a) size, layout, style, paint
+b) Faqat size
+c) Faqat layout
+d) Strict yoki content
+Javob: a
+
+78. :focus-visible vs :focus farqi?
+a) :focus-visible faqat keyboard focus
+b) :focus har doim
+c) Accessibility uchun
+d) Barchasi to'g'ri
+Javob: d
+
+79. :focus-within nima tanlaydi?
+a) Element yoki descendant focus bo'lsa
+b) Faqat element focus
+c) Faqat children focus
+d) Hech narsa
+Javob: a
+
+80. :target-within nima?
+a) Element yoki descendant target bo'lsa
+b) Faqat element target
+c) Faqat children target
+d) :target kabi
+Javob: a
+
+81. :blank pseudo-class nima tanlaydi?
+a) Empty input/textarea
+b) :empty kabi
+c) User input uchun
+d) a va c to'g'ri
+Javob: d
+
+82. :placeholder-shown nima tanlaydi?
+a) Placeholder ko'rsatilayotgan input
+b) Bo'sh input
+c) To'ldirilgan input
+d) Disabled input
+Javob: a
+
+83. :user-valid va :user-invalid qachon trigger bo'ladi?
+a) User interaction keyin
+b) :valid/:invalid darhol
+c) Form submit keyin
+d) Faqat a
+Javob: a
+
+84. :modal pseudo-class nima tanlaydi?
+a) Modal state element (dialog)
+b) Faqat <dialog>
+c) Top layer element
+d) a va c to'g'ri
+Javob: d
+
+85. :popover-open nima tanlaydi?
+a) Open popover element
+b) Faqat yopiq
+c) Hamma popover
+d) Faqat a
+Javob: a
+
+86. :defined pseudo-class nima uchun?
+a) Custom element definition check
+b) Web components
+c) Undefined elements styling
+d) Barchasi to'g'ri
+Javob: d
+
+87. :state() pseudo-class qanday?
+a) Custom element state
+b) Web components internal state
+c) CSS exposure
+d) Barchasi to'g'ri
+Javob: d
+
+88. ::slotted() pseudo-element nima tanlaydi?
+a) Shadow DOM slot content
+b) Web components
+c) Light DOM children
+d) Barchasi to'g'ri
+Javob: d
+
+89. ::part() pseudo-element qanday?
+a) Shadow DOM exportable parts
+b) part attribute
+c) Cross shadow styling
+d) Barchasi to'g'ri
+Javob: d
+
+90. CSS Shadow Parts export qanday?
+a) exportparts attribute
+b) Nested shadow DOM
+c) Part forwarding
+d) Barchasi to'g'ri
+Javob: d
+
+91. ::highlight() pseudo-element nima uchun?
+a) Custom highlight styling
+b) CSS Highlight API
+c) Text selection custom
+d) Barchasi to'g'ri
+Javob: d
+
+92. ::spelling-error va ::grammar-error nima?
+a) Browser spellcheck styling
+b) Input/textarea xatoliklar
+c) User-agent controls
+d) Barchasi to'g'ri
+Javob: d
+
+93. ::file-selector-button nima style qiladi?
+a) File input button
+b) type="file" input
+c) Browse button
+d) Barchasi to'g'ri
+Javob: d
+
+94. ::marker pseudo-element nima style qiladi?
+a) List item marker (bullet/number)
+b) Faqat ::before
+c) Faqat content
+d) a to'g'ri
+Javob: a
+
+95. Attr() funksiyasi type va fallback qanday?
+a) attr(name type, fallback)
+b) Faqat string
+c) Future feature (limited support)
+d) a va c to'g'ri
+Javob: d
+
+96. CSS env() funksiyasi nima uchun?
+a) Environment variables
+b) safe-area-inset-*
+c) Notch/rounded corners
+d) Barchasi to'g'ri
+Javob: d
+
+97. CSS stripes() pattern function qanday?
+a) Repeating stripes
+b) Background pattern
+c) Future proposal
+d) a va c to'g'ri
+Javob: d
+
+98. @when/@else qoidasi nima? (future)
+a) Conditional CSS
+b) @supports alternative
+c) @media alternative
+d) Barchasi to'g'ri
+Javob: d
+
+99. Selector nesting va specificity qanday?
+a) & selector specificity adds up
+b) :is() wrapping
+c) Complex calculation
+d) Barchasi to'g'ri
+Javob: d
+
+100. CSS cascade algorithm qanday ishlaydi?
+a) Origin → Context → Specificity → Order
+b) !important priority
+c) Shadow DOM cascade
+d) Barchasi to'g'ri
+Javob: d

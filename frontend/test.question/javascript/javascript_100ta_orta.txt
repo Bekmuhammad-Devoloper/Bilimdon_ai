@@ -1,0 +1,719 @@
+# JAVASCRIPT DASTURLASH TESTI - ORTA DARAJA (INTERMEDIATE)
+## 100 SAVOL
+
+---
+
+**1.** JavaScript-da closure nima?
+- A) Yopiq funksiya
+- B) Funksiya o'z scope'idagi o'zgaruvchilarni eslab qolishi
+- C) Tsikl
+- D) Class
+**Javob: B**
+
+**2.** JavaScript-da IIFE (Immediately Invoked Function Expression) nima?
+- A) Oddiy funksiya
+- B) Darhol bajariluvchi funksiya
+- C) Async funksiya
+- D) Generator funksiya
+**Javob: B**
+
+**3.** JavaScript-da callback function nima?
+- A) Orqaga qaytaruvchi funksiya
+- B) Boshqa funksiyaga argument sifatida beriladigan funksiya
+- C) Birinchi funksiya
+- D) Oxirgi funksiya
+**Javob: B**
+
+**4.** JavaScript-da higher-order function nima?
+- A) Yuqori darajali funksiya
+- B) Funksiyani qabul qiluvchi yoki qaytaruvchi funksiya
+- C) Oddiy funksiya
+- D) Kichik funksiya
+**Javob: B**
+
+**5.** JavaScript-da pure function nima?
+- A) Har doim bir xil natija beradigan funksiya
+- B) Toza funksiya
+- C) Murakkab funksiya
+- D) Async funksiya
+**Javob: A**
+
+**6.** JavaScript-da side effect nima?
+- A) Funksiya natijasi
+- B) Funksiya tashqariga ta'siri
+- C) Funksiya parametri
+- D) Funksiya nomi
+**Javob: B**
+
+**7.** JavaScript-da event bubbling nima?
+- A) Event pastga tushadi
+- B) Event yuqoriga ko'tariladi (child -> parent)
+- C) Event to'xtaydi
+- D) Event yo'qoladi
+**Javob: B**
+
+**8.** JavaScript-da event capturing nima?
+- A) Event yuqoridan pastga (parent -> child)
+- B) Event pastdan yuqoriga
+- C) Event to'xtash
+- D) Event yaratish
+**Javob: A**
+
+**9.** JavaScript-da event.preventDefault() nima qiladi?
+- A) Eventni o'chiradi
+- B) Default harakatni to'xtatadi
+- C) Eventni yaratadi
+- D) Eventni nusxalaydi
+**Javob: B**
+
+**10.** JavaScript-da event.stopPropagation() nima qiladi?
+- A) Eventni boshlaydi
+- B) Event tarqalishini to'xtatadi
+- C) Eventni o'chiradi
+- D) Eventni yaratadi
+**Javob: B**
+
+**11.** JavaScript-da Promise nima?
+- A) Va'da
+- B) Async operatsiyaning kelajakdagi natijasi
+- C) Sync operatsiya
+- D) Tsikl
+**Javob: B**
+
+**12.** JavaScript-da Promise.resolve() nima qiladi?
+- A) Rad etilgan Promise
+- B) Muvaffaqiyatli Promise yaratadi
+- C) Promise'ni o'chiradi
+- D) Promise'ni to'xtatadi
+**Javob: B**
+
+**13.** JavaScript-da Promise.reject() nima qiladi?
+- A) Muvaffaqiyatli Promise
+- B) Rad etilgan Promise yaratadi
+- C) Promise'ni o'chiradi
+- D) Promise'ni to'xtatadi
+**Javob: B**
+
+**14.** JavaScript-da .then() metodi nima qiladi?
+- A) Xatolikni ushlaydi
+- B) Muvaffaqiyatli natijani qayta ishlaydi
+- C) Promise'ni o'chiradi
+- D) Promise'ni to'xtatadi
+**Javob: B**
+
+**15.** JavaScript-da .catch() metodi nima qiladi?
+- A) Muvaffaqiyatni ushlaydi
+- B) Xatolikni ushlaydi
+- C) Promise yaratadi
+- D) Promise o'chiradi
+**Javob: B**
+
+**16.** JavaScript-da .finally() metodi nima qiladi?
+- A) Faqat xatolikda ishlaydi
+- B) Har doim ishlaydi
+- C) Hech qachon ishlamaydi
+- D) Faqat muvaffaqiyatda ishlaydi
+**Javob: B**
+
+**17.** JavaScript-da async/await nima?
+- A) Sync kod
+- B) Promise bilan ishlashni osonlashtiruvchi sintaksis
+- C) Tsikl
+- D) Class
+**Javob: B**
+
+**18.** JavaScript-da await qayerda ishlatiladi?
+- A) Har qanday joyda
+- B) Faqat async funksiya ichida
+- C) Faqat sync funksiyada
+- D) Global scope'da
+**Javob: B**
+
+**19.** JavaScript-da async funksiya nima qaytaradi?
+- A) String
+- B) Promise
+- C) Number
+- D) Boolean
+**Javob: B**
+
+**20.** JavaScript-da Promise.all() nima qiladi?
+- A) Bitta Promise'ni kutadi
+- B) Barcha Promise'lar bajarilishini kutadi
+- C) Birinchi Promise'ni kutadi
+- D) Hech narsa qilmaydi
+**Javob: B**
+
+**21.** JavaScript-da Promise.race() nima qiladi?
+- A) Barcha Promise'larni kutadi
+- B) Birinchi tugagan Promise natijasini qaytaradi
+- C) Oxirgi Promise'ni kutadi
+- D) Hamma Promise'larni bekor qiladi
+**Javob: B**
+
+**22.** JavaScript-da Promise.allSettled() nima qiladi?
+- A) Faqat muvaffaqiyatlilarni kutadi
+- B) Barcha Promise'lar tugashini kutadi (reject/resolve)
+- C) Birinchisini kutadi
+- D) Hech narsa qilmaydi
+**Javob: B**
+
+**23.** JavaScript-da Promise.any() nima qiladi?
+- A) Barcha Promise'larni kutadi
+- B) Birinchi muvaffaqiyatli Promise'ni qaytaradi
+- C) Oxirgi Promise'ni kutadi
+- D) Hamma Promise'larni rad etadi
+**Javob: B**
+
+**24.** JavaScript-da prototype nima?
+- A) Klass nusxasi
+- B) Obyektlar zanjiri (inheritance mexanizmi)
+- C) Funksiya
+- D) O'zgaruvchi
+**Javob: B**
+
+**25.** JavaScript-da __proto__ nima?
+- A) Funksiya
+- B) Obyektning prototype'iga havola
+- C) Class
+- D) Method
+**Javob: B**
+
+**26.** JavaScript-da Object.create() nima qiladi?
+- A) Array yaratadi
+- B) Belgilangan prototype bilan obyekt yaratadi
+- C) String yaratadi
+- D) Number yaratadi
+**Javob: B**
+
+**27.** JavaScript-da Object.assign() nima qiladi?
+- A) Obyektni o'chiradi
+- B) Obyektlarni nusxalaydi/birlashtiradi
+- C) Obyektni topadi
+- D) Obyektni sanaydi
+**Javob: B**
+
+**28.** JavaScript-da Object.keys() nima qaytaradi?
+- A) Qiymatlar arrayini
+- B) Kalitlar arrayini
+- C) Juftliklar arrayini
+- D) Bo'sh array
+**Javob: B**
+
+**29.** JavaScript-da Object.values() nima qaytaradi?
+- A) Kalitlar arrayini
+- B) Qiymatlar arrayini
+- C) Juftliklar arrayini
+- D) Bo'sh array
+**Javob: B**
+
+**30.** JavaScript-da Object.entries() nima qaytaradi?
+- A) Kalitlar arrayini
+- B) Qiymatlar arrayini
+- C) [key, value] juftliklari arrayini
+- D) Bo'sh array
+**Javob: C**
+
+**31.** JavaScript-da Object.freeze() nima qiladi?
+- A) Obyektni issiq qiladi
+- B) Obyektni o'zgarmas qiladi
+- C) Obyektni o'chiradi
+- D) Obyektni yaratadi
+**Javob: B**
+
+**32.** JavaScript-da Object.seal() nima qiladi?
+- A) Obyektni ochadi
+- B) Property qo'shish/o'chirishni oldini oladi
+- C) Obyektni o'chiradi
+- D) Obyektni yaratadi
+**Javob: B**
+
+**33.** JavaScript-da Array.map() nima qiladi?
+- A) Filtrlaydi
+- B) Har bir elementni o'zgartirib yangi array yaratadi
+- C) Element qo'shadi
+- D) Element o'chiradi
+**Javob: B**
+
+**34.** JavaScript-da Array.filter() nima qiladi?
+- A) Hamma elementlarni o'zgartiradi
+- B) Shartga mos elementlarni filtrlaydi
+- C) Element qo'shadi
+- D) Arrayni tartiblaydi
+**Javob: B**
+
+**35.** JavaScript-da Array.reduce() nima qiladi?
+- A) Arrayni kichraytiradi
+- B) Elementlarni bitta qiymatga kamaytiradi
+- C) Element qo'shadi
+- D) Element o'chiradi
+**Javob: B**
+
+**36.** JavaScript-da Array.forEach() nima qiladi?
+- A) Yangi array qaytaradi
+- B) Har bir element uchun funksiya bajaradi
+- C) Element topadi
+- D) Array o'chiradi
+**Javob: B**
+
+**37.** JavaScript-da Array.find() nima qaytaradi?
+- A) Barcha mos elementlarni
+- B) Birinchi mos keladigan elementni
+- C) Element indeksini
+- D) Boolean
+**Javob: B**
+
+**38.** JavaScript-da Array.findIndex() nima qaytaradi?
+- A) Elementni
+- B) Birinchi mos keladigan element indeksini
+- C) Barcha indekslarni
+- D) Boolean
+**Javob: B**
+
+**39.** JavaScript-da Array.some() nima qaytaradi?
+- A) Barcha elementlarni
+- B) Kamida bitta element shartga mos kelsa true
+- C) Hamma elementlar
+- D) Bo'sh array
+**Javob: B**
+
+**40.** JavaScript-da Array.every() nima qaytaradi?
+- A) Birinchi elementni
+- B) Hamma elementlar shartga mos kelsa true
+- C) Oxirgi elementni
+- D) Bo'sh array
+**Javob: B**
+
+**41.** JavaScript-da Array.includes() nima qiladi?
+- A) Element qo'shadi
+- B) Element mavjudligini tekshiradi
+- C) Element o'chiradi
+- D) Arrayni bo'sh qiladi
+**Javob: B**
+
+**42.** JavaScript-da Array.concat() nima qiladi?
+- A) Arrayni bo'ladi
+- B) Arraylarni birlashtiradi
+- C) Arrayni tartiblaydi
+- D) Arrayni o'chiradi
+**Javob: B**
+
+**43.** JavaScript-da Array.slice() nima qiladi?
+- A) Arrayni o'zgartiradi
+- B) Array qismini nusxalaydi
+- C) Element qo'shadi
+- D) Arrayni o'chiradi
+**Javob: B**
+
+**44.** JavaScript-da Array.splice() nima qiladi?
+- A) Faqat nusxalaydi
+- B) Element qo'shadi/o'chiradi (asl arrayni o'zgartiradi)
+- C) Faqat topadi
+- D) Arrayni tartiblaydi
+**Javob: B**
+
+**45.** JavaScript-da Array.sort() qanday ishlaydi?
+- A) Har doim to'g'ri tartiblaydi
+- B) Default string comparison, custom funktsiya olishi mumkin
+- C) Raqamlarni avtomatik tartiblaydi
+- D) Hech narsa qilmaydi
+**Javob: B**
+
+**46.** JavaScript-da Array.reverse() nima qiladi?
+- A) Yangi array yaratadi
+- B) Arrayni teskari tartibga o'zgartiradi
+- C) Arrayni tartiblaydi
+- D) Arrayni nusxalaydi
+**Javob: B**
+
+**47.** JavaScript-da Array.flat() nima qiladi?
+- A) Arrayni kengaytiradi
+- B) Ichma-ich arraylarni tekislaydi
+- C) Arrayni tartiblaydi
+- D) Arrayni bo'ladi
+**Javob: B**
+
+**48.** JavaScript-da Array.flatMap() nima qiladi?
+- A) Faqat map
+- B) map() + flat() birgalikda
+- C) Faqat flat
+- D) Filter qiladi
+**Javob: B**
+
+**49.** JavaScript-da Set nima?
+- A) Takrorlanuvchi qiymatlar to'plami
+- B) Unikal qiymatlar to'plami
+- C) Oddiy array
+- D) Object
+**Javob: B**
+
+**50.** JavaScript-da Map nima?
+- A) Oddiy obyekt
+- B) Kalit-qiymat juftliklari (har qanday tip kalit)
+- C) Array
+- D) Set
+**Javob: B**
+
+**51.** JavaScript-da WeakMap nima?
+- A) Kuchli Map
+- B) Faqat obyekt kalitli, garbage collection friendly Map
+- C) Oddiy Map
+- D) Zaif obyekt
+**Javob: B**
+
+**52.** JavaScript-da WeakSet nima?
+- A) Kuchli Set
+- B) Faqat obyektli, garbage collection friendly Set
+- C) Oddiy Set
+- D) Zaif obyekt
+**Javob: B**
+
+**53.** JavaScript-da Symbol nima?
+- A) Belgj
+- B) Unikal va o'zgarmas primitiv tip
+- C) String
+- D) Number
+**Javob: B**
+
+**54.** JavaScript-da Symbol() qanday ishlatiladi?
+- A) new Symbol()
+- B) Symbol() yoki Symbol('description')
+- C) Symbol[]
+- D) Symbol{}
+**Javob: B**
+
+**55.** JavaScript-da class nima?
+- A) Yangi tip
+- B) Constructor funksiya uchun syntactic sugar
+- C) Interfeys
+- D) Module
+**Javob: B**
+
+**56.** JavaScript-da constructor metodi nima?
+- A) Oddiy metod
+- B) Class instansiyasi yaratilganda chaqiriluvchi metod
+- C) Static metod
+- D) Getter metod
+**Javob: B**
+
+**57.** JavaScript-da extends kalit so'zi nima uchun?
+- A) Interface yaratish
+- B) Meros olish
+- C) Metod yaratish
+- D) O'zgaruvchi yaratish
+**Javob: B**
+
+**58.** JavaScript-da super kalit so'zi nima?
+- A) Super o'zgaruvchi
+- B) Ota classga murojaat
+- C) Child class
+- D) Oddiy funksiya
+**Javob: B**
+
+**59.** JavaScript-da static metod nima?
+- A) Obyekt metodi
+- B) Classga tegishli metod (instansiya kerak emas)
+- C) Private metod
+- D) Async metod
+**Javob: B**
+
+**60.** JavaScript-da getter va setter nima?
+- A) Oddiy metodlar
+- B) Property'ni o'qish/yozishni boshqarish
+- C) Konstruktorlar
+- D) Static metodlar
+**Javob: B**
+
+**61.** JavaScript-da private field (#) qanday yaratiladi?
+- A) private field
+- B) #field
+- C) _field
+- D) __field__
+**Javob: B**
+
+**62.** JavaScript-da import va export nima uchun?
+- A) Fayl yuklash
+- B) Module'larni import/export qilish
+- C) Class yaratish
+- D) Funksiya yaratish
+**Javob: B**
+
+**63.** JavaScript-da default export nima?
+- A) Bir nechta export
+- B) Bitta asosiy export
+- C) Named export
+- D) Class export
+**Javob: B**
+
+**64.** JavaScript-da named export nima?
+- A) Default export
+- B) Bir nechta nomli exportlar
+- C) Bitta export
+- D) Class export
+**Javob: B**
+
+**65.** JavaScript-da JSON.stringify() nima qiladi?
+- A) JSON'ni obyektga aylantiradi
+- B) Obyektni JSON stringga aylantiradi
+- C) Stringni arrayga aylantiradi
+- D) Raqamni stringga aylantiradi
+**Javob: B**
+
+**66.** JavaScript-da JSON.parse() nima qiladi?
+- A) Obyektni JSON'ga aylantiradi
+- B) JSON stringni obyektga aylantiradi
+- C) Stringni raqamga aylantiradi
+- D) Arrayni obyektga aylantiradi
+**Javob: B**
+
+**67.** JavaScript-da localStorage nima?
+- A) Vaqtinchalik saqlash
+- B) Brauzerda doimiy ma'lumot saqlash
+- C) Server saqlash
+- D) RAM saqlash
+**Javob: B**
+
+**68.** JavaScript-da sessionStorage nima?
+- A) Doimiy saqlash
+- B) Session davomida saqlash
+- C) Server saqlash
+- D) Cookie
+**Javob: B**
+
+**69.** JavaScript-da localStorage va sessionStorage farqi nima?
+- A) Farq yo'q
+- B) localStorage doimiy, sessionStorage session davomida
+- C) sessionStorage doimiy
+- D) Ikkalasi ham vaqtinchalik
+**Javob: B**
+
+**70.** JavaScript-da fetch() API nima uchun?
+- A) Local ma'lumot olish
+- B) HTTP so'rovlar yuborish
+- C) Fayl o'qish
+- D) Console'ga chiqarish
+**Javob: B**
+
+**71.** JavaScript-da fetch() nima qaytaradi?
+- A) String
+- B) Promise
+- C) Object
+- D) Array
+**Javob: B**
+
+**72.** JavaScript-da response.json() nima qiladi?
+- A) String qaytaradi
+- B) Response bodyni JSON obyektga aylantiradi
+- C) XML qaytaradi
+- D) Text qaytaradi
+**Javob: B**
+
+**73.** JavaScript-da XMLHttpRequest nima?
+- A) Yangi API
+- B) Eski AJAX so'rov usuli
+- C) JSON parser
+- D) XML parser
+**Javob: B**
+
+**74.** JavaScript-da AJAX nima?
+- A) Java kutubxonasi
+- B) Asynchronous JavaScript And XML
+- C) Array metodi
+- D) Class nomi
+**Javob: B**
+
+**75.** JavaScript-da debounce nima?
+- A) Funksiyani darhol chaqirish
+- B) Funksiya chaqiruvini kechiktirish (oxirgi chaqiruvni kutish)
+- C) Funksiyani o'chirish
+- D) Funksiyani tezlashtirish
+**Javob: B**
+
+**76.** JavaScript-da throttle nima?
+- A) Cheksiz chaqirish
+- B) Funksiyani ma'lum vaqt oralig'ida faqat bir marta chaqirish
+- C) Funksiyani o'chirish
+- D) Funksiyani yaratish
+**Javob: B**
+
+**77.** JavaScript-da memoization nima?
+- A) Xotirani tozalash
+- B) Funksiya natijalarini keshlash
+- C) Xotirani ko'paytirish
+- D) Funksiyani o'chirish
+**Javob: B**
+
+**78.** JavaScript-da currying nima?
+- A) Funksiyani o'chirish
+- B) Ko'p parametrli funksiyani bir parametrli funksiyalar zanjiriga aylantirish
+- C) Funksiyani tezlashtirish
+- D) Funksiyani yaratish
+**Javob: B**
+
+**79.** JavaScript-da function composition nima?
+- A) Funksiyani o'chirish
+- B) Funksiyalarni birlashtirish (f(g(x)))
+- C) Funksiya yaratish
+- D) Funksiyani nusxalash
+**Javob: B**
+
+**80.** JavaScript-da generator function nima?
+- A) Oddiy funksiya
+- B) function* sintaksisi, yield bilan ishlaydi
+- C) Async funksiya
+- D) Arrow funksiya
+**Javob: B**
+
+**81.** JavaScript-da yield kalit so'zi nima qiladi?
+- A) Funksiyani to'xtatadi
+- B) Generator'dan qiymat qaytaradi va to'xtatib turadi
+- C) Funksiyani yaratadi
+- D) Funksiyani o'chiradi
+**Javob: B**
+
+**82.** JavaScript-da Iterator nima?
+- A) Tsikl
+- B) next() metodi bilan ketma-ket qiymatlar beruvchi obyekt
+- C) Array
+- D) Object
+**Javob: B**
+
+**83.** JavaScript-da for...of tsikli nima uchun?
+- A) Obyektlar uchun
+- B) Iterable obyektlar uchun (Array, String, etc.)
+- C) Faqat obyektlar uchun
+- D) Raqamlar uchun
+**Javob: B**
+
+**84.** JavaScript-da for...in tsikli nima uchun?
+- A) Array uchun
+- B) Obyekt kalitlari uchun
+- C) String uchun
+- D) Number uchun
+**Javob: B**
+
+**85.** JavaScript-da Proxy nima?
+- A) Server
+- B) Obyekt operatsiyalarini to'sib olish (intercept)
+- C) Class
+- D) Function
+**Javob: B**
+
+**86.** JavaScript-da Reflect API nima uchun?
+- A) Obyektni nusxalash
+- B) Obyekt operatsiyalarini bajarish (metadata)
+- C) Obyektni o'chirish
+- D) Obyekt yaratish
+**Javob: B**
+
+**87.** JavaScript-da Optional chaining (?.) nima qiladi?
+- A) Xatolik chiqaradi
+- B) Null/undefined bo'lsa xatolik chiqarmasdan undefined qaytaradi
+- C) Obyekt yaratadi
+- D) Qiymat beradi
+**Javob: B**
+
+**88.** JavaScript-da Nullish coalescing (??) operatori nima?
+- A) || kabi
+- B) Faqat null/undefined uchun default qiymat beradi
+- C) Hamma falsy qiymatlar uchun
+- D) Xatolik operatori
+**Javob: B**
+
+**89.** JavaScript-da ?? va || farqi nima?
+- A) Farq yo'q
+- B) ?? faqat null/undefined, || barcha falsy qiymatlar
+- C) || faqat null/undefined
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**90.** JavaScript-da BigInt nima?
+- A) Katta obyekt
+- B) Juda katta butun sonlar uchun tip
+- C) Katta string
+- D) Katta array
+**Javob: B**
+
+**91.** JavaScript-da RegExp nima?
+- A) Oddiy string
+- B) Regular expression (pattern matching)
+- C) Array
+- D) Number
+**Javob: B**
+
+**92.** JavaScript-da .test() metodi (RegExp) nima qiladi?
+- A) String yaratadi
+- B) Pattern mos kelishini tekshiradi (true/false)
+- C) String o'zgartiradi
+- D) Raqam qaytaradi
+**Javob: B**
+
+**93.** JavaScript-da .match() metodi nima qiladi?
+- A) String yaratadi
+- B) Pattern mos keladigan qismlarni topadi
+- C) Boolean qaytaradi
+- D) Raqam qaytaradi
+**Javob: B**
+
+**94.** JavaScript-da .replace() metodi nima qiladi?
+- A) String'ni o'chiradi
+- B) String qismini almashtiradi
+- C) String qo'shadi
+- D) String nusxalaydi
+**Javob: B**
+
+**95.** JavaScript-da Error obyekti nima uchun?
+- A) Xatolik yaratish
+- B) Custom xatoliklar yaratish/ushlash
+- C) Dasturni to'xtatish
+- D) Log yozish
+**Javob: B**
+
+**96.** JavaScript-da call() va apply() farqi nima?
+- A) Farq yo'q
+- B) call() argumentlarni alohida, apply() array sifatida oladi
+- C) apply() argumentlarni alohida oladi
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**97.** JavaScript-da bind() metodi nima qiladi?
+- A) Darhol chaqiradi
+- B) this kontekstini bog'lab yangi funksiya qaytaradi
+- C) Obyekt yaratadi
+- D) Funksiyani o'chiradi
+**Javob: B**
+
+**98.** JavaScript-da Object.defineProperty() nima uchun?
+- A) Property o'chirish
+- B) Property ni descriptor bilan aniqlash
+- C) Obyekt yaratish
+- D) Obyektni o'chirish
+**Javob: B**
+
+**99.** JavaScript-da Object.getPrototypeOf() nima qaytaradi?
+- A) Obyekt qiymatini
+- B) Obyektning prototype'ini
+- C) Obyekt kalitlarini
+- D) Bo'sh obyekt
+**Javob: B**
+
+**100.** JavaScript-da Object.setPrototypeOf() nima qiladi?
+- A) Prototype o'chiradi
+- B) Obyektning prototype'ini o'rnatadi
+- C) Obyekt yaratadi
+- D) Prototype nusxalaydi
+**Javob: B**
+
+---
+
+## JAVOBLAR KALITI:
+
+1-B, 2-B, 3-B, 4-B, 5-A, 6-B, 7-B, 8-A, 9-B, 10-B
+11-B, 12-B, 13-B, 14-B, 15-B, 16-B, 17-B, 18-B, 19-B, 20-B
+21-B, 22-B, 23-B, 24-B, 25-B, 26-B, 27-B, 28-B, 29-B, 30-C
+31-B, 32-B, 33-B, 34-B, 35-B, 36-B, 37-B, 38-B, 39-B, 40-B
+41-B, 42-B, 43-B, 44-B, 45-B, 46-B, 47-B, 48-B, 49-B, 50-B
+51-B, 52-B, 53-B, 54-B, 55-B, 56-B, 57-B, 58-B, 59-B, 60-B
+61-B, 62-B, 63-B, 64-B, 65-B, 66-B, 67-B, 68-B, 69-B, 70-B
+71-B, 72-B, 73-B, 74-B, 75-B, 76-B, 77-B, 78-B, 79-B, 80-B
+81-B, 82-B, 83-B, 84-B, 85-B, 86-B, 87-B, 88-B, 89-B, 90-B
+91-B, 92-B, 93-B, 94-B, 95-B, 96-B, 97-B, 98-B, 99-B, 100-B

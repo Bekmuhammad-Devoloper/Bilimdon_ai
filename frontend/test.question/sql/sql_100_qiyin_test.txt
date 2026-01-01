@@ -1,0 +1,702 @@
+SQL - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+=============================================
+
+1. B-Tree index structure?
+   A) Linear
+   B) Balanced tree with sorted keys
+   C) Hash table
+   D) Linked list
+   Javob: B
+
+2. B+Tree vs B-Tree farqi?
+   A) Bir xil
+   B) B+Tree data faqat leaf'da
+   C) B-Tree data faqat leaf'da
+   D) No difference
+   Javob: B
+
+3. Hash index qachon yaxshi?
+   A) Range queries
+   B) Equality lookups
+   C) Sorting
+   D) Pattern matching
+   Javob: B
+
+4. GiST index nima?
+   A) B-Tree
+   B) Generalized Search Tree
+   C) Hash
+   D) Full-text
+   Javob: B
+
+5. GIN index nima?
+   A) GiST
+   B) Generalized Inverted Index
+   C) B-Tree
+   D) Hash
+   Javob: B
+
+6. BRIN index nima?
+   A) B-Tree
+   B) Block Range Index
+   C) Hash
+   D) GIN
+   Javob: B
+
+7. Partial index nima?
+   A) Full index
+   B) Shartli index (WHERE clause)
+   C) Covering
+   D) Composite
+   Javob: B
+
+8. Expression index nima?
+   A) Column index
+   B) Function/expression ustida index
+   C) Partial
+   D) Covering
+   Javob: B
+
+9. Index-only scan?
+   A) Table scan
+   B) Faqat index'dan ma'lumot olish
+   C) Index seek
+   D) Bitmap scan
+   Javob: B
+
+10. Bitmap index scan?
+    A) B-Tree scan
+    B) Multiple index results OR
+    C) Hash scan
+    D) Sequential scan
+    Javob: B
+
+11. Query planner nima qiladi?
+    A) Execute
+    B) Optimal execution plan tanlash
+    C) Parse
+    D) Compile
+    Javob: B
+
+12. Cost-based optimization?
+    A) Rule-based
+    B) Statistika asosida plan tanlash
+    C) No optimization
+    D) Manual
+    Javob: B
+
+13. Table statistics nima?
+    A) Query count
+    B) Row count, value distribution
+    C) Connection count
+    D) Error count
+    Javob: B
+
+14. ANALYZE command nima?
+    A) Explain
+    B) Statistikalarni yangilash
+    C) Vacuum
+    D) Reindex
+    Javob: B
+
+15. VACUUM nima (PostgreSQL)?
+    A) Analyze
+    B) Dead tuples tozalash
+    C) Reindex
+    D) Cluster
+    Javob: B
+
+16. MVCC nima?
+    A) Locking
+    B) Multi-Version Concurrency Control
+    C) Serialization
+    D) Isolation
+    Javob: B
+
+17. MVCC qanday ishlaydi?
+    A) Locking
+    B) Multiple row versions
+    C) Queue
+    D) Serialization
+    Javob: B
+
+18. Dead tuple nima?
+    A) Live tuple
+    B) Ko'rinmas eski version
+    C) Deleted
+    D) Updated
+    Javob: B
+
+19. Transaction ID wraparound?
+    A) No issue
+    B) XID limit muammosi
+    C) Deadlock
+    D) Lock issue
+    Javob: B
+
+20. Write-Ahead Logging (WAL)?
+    A) No logging
+    B) O'zgarishlarni oldin log qilish
+    C) After write
+    D) No WAL
+    Javob: B
+
+21. WAL purpose?
+    A) Performance
+    B) Durability va recovery
+    C) Space saving
+    D) Speed
+    Javob: B
+
+22. Checkpoint nima?
+    A) Savepoint
+    B) WAL dan disk'ga flush
+    C) Transaction
+    D) Rollback
+    Javob: B
+
+23. Point-in-time recovery?
+    A) Backup
+    B) Ma'lum vaqtga restore
+    C) Replication
+    D) Failover
+    Javob: B
+
+24. Logical replication vs Physical?
+    A) Bir xil
+    B) Logical row-based, Physical block-based
+    C) Physical row-based
+    D) No difference
+    Javob: B
+
+25. Streaming replication?
+    A) Snapshot
+    B) WAL real-time transfer
+    C) Logical
+    D) Async only
+    Javob: B
+
+26. Synchronous replication?
+    A) Async
+    B) Commit faqat replica'da ham yozilganda
+    C) Delayed
+    D) No sync
+    Javob: B
+
+27. Asynchronous replication?
+    A) Sync
+    B) Lag bilan replicate
+    C) Real-time
+    D) No lag
+    Javob: B
+
+28. Failover nima?
+    A) Replication
+    B) Master o'lganda slave'ga o'tish
+    C) Backup
+    D) Recovery
+    Javob: B
+
+29. Connection pooling?
+    A) No pooling
+    B) Connection'larni qayta ishlatish
+    C) Single connection
+    D) Multiple database
+    Javob: B
+
+30. PgBouncer nima?
+    A) Database
+    B) PostgreSQL connection pooler
+    C) Replication
+    D) Backup
+    Javob: B
+
+31. Session pooling vs Transaction pooling?
+    A) Bir xil
+    B) Transaction har so'rovda connection o'zgarishi mumkin
+    C) Session transaction
+    D) No difference
+    Javob: B
+
+32. Prepared statement advantage?
+    A) No advantage
+    B) Parse once, execute many
+    C) Slow
+    D) Insecure
+    Javob: B
+
+33. SQL injection prevention?
+    A) String concat
+    B) Parameterized queries
+    C) Escape manually
+    D) No prevention
+    Javob: B
+
+34. Query caching?
+    A) No cache
+    B) Result cache for identical queries
+    C) Index cache
+    D) Connection cache
+    Javob: B
+
+35. Buffer pool nima?
+    A) Connection pool
+    B) Data pages cache
+    C) Query cache
+    D) Result cache
+    Javob: B
+
+36. Shared buffers (PostgreSQL)?
+    A) Private
+    B) Shared data cache
+    C) No buffers
+    D) Query cache
+    Javob: B
+
+37. Work_mem parameter?
+    A) Total memory
+    B) Sort/hash operations memory
+    C) Cache memory
+    D) Buffer memory
+    Javob: B
+
+38. Effective_cache_size?
+    A) Actual cache
+    B) Planner uchun estimated cache
+    C) Buffer size
+    D) Work mem
+    Javob: B
+
+39. Maintenance_work_mem?
+    A) Work mem
+    B) Vacuum, index operations memory
+    C) Cache
+    D) Buffer
+    Javob: B
+
+40. Cursor nima?
+    A) Index
+    B) Result set pointer
+    C) View
+    D) Table
+    Javob: B
+
+41. DECLARE CURSOR?
+    A) Create
+    B) Cursor yaratish
+    C) Open
+    D) Fetch
+    Javob: B
+
+42. FETCH cursor'da?
+    A) Declare
+    B) Keyingi qatorni olish
+    C) Close
+    D) Open
+    Javob: B
+
+43. Scrollable cursor?
+    A) Forward only
+    B) Oldinga va orqaga harakat
+    C) No scroll
+    D) Static
+    Javob: B
+
+44. WITH HOLD cursor?
+    A) Transaction bound
+    B) Transaction tugagandan keyin ham mavjud
+    C) Immediate
+    D) No hold
+    Javob: B
+
+45. Lateral join nima?
+    A) Inner join
+    B) Subquery referencing outer query
+    C) Cross join
+    D) Natural join
+    Javob: B
+
+46. CROSS JOIN nima?
+    A) Inner
+    B) Kartesian ko'paytma
+    C) Left
+    D) Right
+    Javob: B
+
+47. NATURAL JOIN nima?
+    A) Cross
+    B) Bir xil nomdagi ustunlar bo'yicha
+    C) Inner
+    D) Left
+    Javob: B
+
+48. SELF JOIN nima?
+    A) Inner join
+    B) Table'ni o'ziga join
+    C) Cross join
+    D) Outer join
+    Javob: B
+
+49. Anti-join nima?
+    A) Inner join
+    B) NOT EXISTS/NOT IN pattern
+    C) Cross join
+    D) Natural join
+    Javob: B
+
+50. Semi-join nima?
+    A) Full join
+    B) EXISTS/IN pattern
+    C) Anti-join
+    D) Cross join
+    Javob: B
+
+51. Correlated subquery nima?
+    A) Non-correlated
+    B) Outer query'ga bog'liq subquery
+    C) Independent
+    D) Simple
+    Javob: B
+
+52. Scalar subquery nima?
+    A) Table
+    B) Bitta qiymat qaytaruvchi
+    C) Multiple rows
+    D) No value
+    Javob: B
+
+53. Table subquery nima?
+    A) Scalar
+    B) Table sifatida ishlatiluvchi
+    C) Row
+    D) Single
+    Javob: B
+
+54. EXISTS vs IN performance?
+    A) IN faster
+    B) EXISTS ko'pincha tezroq
+    C) Same
+    D) Neither
+    Javob: B
+
+55. ANY/SOME operator?
+    A) All
+    B) Biror qiymatga mos
+    C) None
+    D) Exact
+    Javob: B
+
+56. ALL operator?
+    A) Any
+    B) Barcha qiymatlar bilan solishtiruv
+    C) Some
+    D) None
+    Javob: B
+
+57. GROUPING SETS nima?
+    A) Group by
+    B) Multiple grouping combinations
+    C) Having
+    D) Order by
+    Javob: B
+
+58. ROLLUP nima?
+    A) Cube
+    B) Hierarchical grouping
+    C) Simple group
+    D) Pivot
+    Javob: B
+
+59. CUBE nima?
+    A) Rollup
+    B) All grouping combinations
+    C) Simple group
+    D) Pivot
+    Javob: B
+
+60. FILTER clause (window)?
+    A) Where
+    B) Aggregate filter
+    C) Having
+    D) Group by
+    Javob: B
+
+61. ROWS vs RANGE frame?
+    A) Same
+    B) ROWS physical, RANGE logical
+    C) RANGE physical
+    D) No difference
+    Javob: B
+
+62. GROUPS frame (SQL:2011)?
+    A) Rows
+    B) Peer groups
+    C) Range
+    D) Partition
+    Javob: B
+
+63. EXCLUDE clause (frame)?
+    A) Include
+    B) Qatorlarni frame'dan chiqarish
+    C) Filter
+    D) Where
+    Javob: B
+
+64. WITHIN GROUP (LISTAGG)?
+    A) Group by
+    B) Ordering for aggregate
+    C) Having
+    D) Order by
+    Javob: B
+
+65. STRING_AGG vs GROUP_CONCAT?
+    A) Same function
+    B) Turli DBMS'larda string aggregation
+    C) Different
+    D) No aggregation
+    Javob: B
+
+66. ARRAY_AGG nima?
+    A) String agg
+    B) Qiymatlarni array'ga
+    C) Sum
+    D) Count
+    Javob: B
+
+67. JSON_AGG nima?
+    A) Array agg
+    B) JSON array aggregate
+    C) Object
+    D) String
+    Javob: B
+
+68. JSON_OBJECT_AGG nima?
+    A) Array
+    B) JSON object aggregate
+    C) String
+    D) Number
+    Javob: B
+
+69. JSONB vs JSON (PostgreSQL)?
+    A) Same
+    B) JSONB binary, tezroq query
+    C) JSON binary
+    D) No difference
+    Javob: B
+
+70. JSONB operators (PostgreSQL)?
+    A) No operators
+    B) @>, <@, ?, ?|, ?&
+    C) Standard SQL
+    D) MySQL
+    Javob: B
+
+71. GIN index for JSONB?
+    A) B-Tree
+    B) JSONB qidirish uchun optimal
+    C) Hash
+    D) GiST
+    Javob: B
+
+72. Array data type operations?
+    A) No operations
+    B) ANY, ALL, @>, <@, &&
+    C) Standard only
+    D) Join only
+    Javob: B
+
+73. Range types (PostgreSQL)?
+    A) No ranges
+    B) int4range, daterange, etc.
+    C) Custom only
+    D) Integer only
+    Javob: B
+
+74. Range type operators?
+    A) No operators
+    B) @>, <@, &&, -|-, <<, >>
+    C) Standard
+    D) Numeric
+    Javob: B
+
+75. EXCLUDE constraint?
+    A) Check
+    B) Range overlap prevention
+    C) Unique
+    D) Foreign
+    Javob: B
+
+76. Domain nima (SQL)?
+    A) Table
+    B) Named data type with constraints
+    C) Schema
+    D) Database
+    Javob: B
+
+77. Composite type?
+    A) Simple type
+    B) Multiple field type
+    C) Array
+    D) JSON
+    Javob: B
+
+78. RETURNING clause?
+    A) Return
+    B) Modified rows return
+    C) Output
+    D) Result
+    Javob: B
+
+79. ON CONFLICT (UPSERT)?
+    A) Error
+    B) Conflict handling action
+    C) Ignore
+    D) Update
+    Javob: B
+
+80. INSERT ... SELECT?
+    A) Simple insert
+    B) Query natijasini insert qilish
+    C) Update
+    D) Delete
+    Javob: B
+
+81. CREATE TABLE ... AS SELECT?
+    A) Insert
+    B) Query natijasidan table yaratish
+    C) View
+    D) Copy
+    Javob: B
+
+82. COPY command?
+    A) Insert
+    B) Bulk data import/export
+    C) Clone
+    D) Backup
+    Javob: B
+
+83. TRUNCATE vs DELETE?
+    A) Same
+    B) TRUNCATE tezroq, trigger yo'q
+    C) DELETE tezroq
+    D) No difference
+    Javob: B
+
+84. Foreign data wrapper (FDW)?
+    A) Internal
+    B) External data source access
+    C) Wrapper
+    D) API
+    Javob: B
+
+85. postgres_fdw nima?
+    A) MySQL
+    B) Remote PostgreSQL access
+    C) Oracle
+    D) SQL Server
+    Javob: B
+
+86. Table inheritance (PostgreSQL)?
+    A) No inheritance
+    B) Parent-child table relationship
+    C) Foreign key
+    D) View
+    Javob: B
+
+87. Declarative partitioning?
+    A) Manual
+    B) Built-in partition management
+    C) No partitioning
+    D) External
+    Javob: B
+
+88. Partition pruning?
+    A) No pruning
+    B) Keraksiz partition'larni skip
+    C) All partitions
+    D) Manual
+    Javob: B
+
+89. Parallel query?
+    A) Single thread
+    B) Ko'p worker bilan query
+    C) Serial
+    D) No parallel
+    Javob: B
+
+90. Just-in-time compilation (JIT)?
+    A) No JIT
+    B) Query expression compilation
+    C) Interpretation
+    D) Static
+    Javob: B
+
+91. pg_stat_statements?
+    A) No stats
+    B) Query statistics extension
+    C) Built-in
+    D) External
+    Javob: B
+
+92. EXPLAIN ANALYZE?
+    A) Explain only
+    B) Actual execution statistics
+    C) No analyze
+    D) Parse only
+    Javob: B
+
+93. EXPLAIN BUFFERS?
+    A) No buffers
+    B) Buffer usage statistics
+    C) Memory
+    D) Disk
+    Javob: B
+
+94. Slow query log?
+    A) No log
+    B) Sekin query'larni log qilish
+    C) Fast log
+    D) All queries
+    Javob: B
+
+95. auto_explain extension?
+    A) Manual
+    B) Automatic slow query explain
+    C) No explain
+    D) Query log
+    Javob: B
+
+96. Row-level security?
+    A) No security
+    B) Qator darajasida access control
+    C) Table level
+    D) Database level
+    Javob: B
+
+97. POLICY (row security)?
+    A) Constraint
+    B) RLS rule definition
+    C) Trigger
+    D) Check
+    Javob: B
+
+98. Event trigger?
+    A) DML trigger
+    B) DDL operations trigger
+    C) System trigger
+    D) No trigger
+    Javob: B
+
+99. Advisory locks?
+    A) Row lock
+    B) Application-level locks
+    C) Table lock
+    D) Database lock
+    Javob: B
+
+100. LISTEN/NOTIFY?
+     A) Polling
+     B) Async notification system
+     C) Trigger
+     D) Event
+     Javob: B

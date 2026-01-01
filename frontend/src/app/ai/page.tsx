@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { Send, Bot, User, Trash2, Copy, Check, Sparkles } from 'lucide-react';
 import { useAuth, useCategories } from '@/hooks';
 import { aiApi } from '@/lib/api';
@@ -11,6 +12,41 @@ import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import toast from 'react-hot-toast';
+
+// Map category slugs to logo paths
+const getCategoryLogo = (slug: string): string | null => {
+  const logoMap: Record<string, string> = {
+    'python': '/img/Python-logo.png',
+    'javascript': '/img/JavaScript-logo.png',
+    'typescript': '/img/TypeScript-logo.png',
+    'java': '/img/Java-logo.png',
+    'cpp': '/img/c++-logo.png',
+    'c++': '/img/c++-logo.png',
+    'go': '/img/Go-Logo_Aqua.png',
+    'golang': '/img/Go-Logo_Aqua.png',
+    'react': '/img/react-logo.png',
+    'nodejs': '/img/node.js-logo.png',
+    'node.js': '/img/node.js-logo.png',
+    'nextjs': '/img/next.js-logo.png',
+    'next.js': '/img/next.js-logo.png',
+    'nestjs': '/img/nestjs-logo.png',
+    'postgresql': '/img/postgreSql-logo.png',
+    'mongodb': '/img/mongodb-logo.png',
+    'sql': '/img/sql-logo.png',
+    'redis': '/img/redis-logo.png',
+    'git': '/img/git-logo.png',
+    'linux': '/img/linux-logo.png',
+    'html-css': '/img/html-css-logo.png',
+    'rust': '/img/rust-logo.png',
+    'vue': '/img/vue.js-logo.png',
+    'express': '/img/express.js-logo.png',
+    'django': '/img/django-logo.png',
+    'tailwind': '/img/tailwind-css-logo.png',
+    'docker': '/img/docker-logo.png',
+  };
+  
+  return logoMap[slug?.toLowerCase()] || null;
+};
 
 interface Message {
   id: string;
@@ -110,7 +146,11 @@ export default function AIPage() {
     setLoading(true);
 
     try {
-      const { data } = await aiApi.chat(userMessage.content, selectedCategory || undefined);
+      // selectedCategory id, shuning uchun slug'ni topish kerak
+      const categorySlug = selectedCategory 
+        ? categories.find(c => c.id === selectedCategory)?.slug 
+        : undefined;
+      const { data } = await aiApi.chat(userMessage.content, categorySlug);
 
       const assistantMessage: Message = {
         id: `${data.id}-assistant`,
@@ -186,7 +226,7 @@ export default function AIPage() {
             </div>
             <div>
               <h1 className="font-bold text-gray-900 dark:text-white">AI Yordamchi</h1>
-              <p className="text-xs text-gray-500">Gemini AI • O'zbek tilida</p>
+              <p className="text-xs text-gray-500">Bilimdon AI • O'zbek tilida</p>
             </div>
           </div>
 
@@ -223,20 +263,28 @@ export default function AIPage() {
             >
               Umumiy
             </button>
-            {categories.slice(0, 6).map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
-                className={cn(
-                  'px-3 py-1.5 rounded-lg text-sm font-medium whitespace-nowrap',
-                  selectedCategory === cat.id
-                    ? 'bg-indigo-600 text-white'
-                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400'
-                )}
-              >
-                {cat.icon} {cat.name}
-              </button>
-            ))}
+            {categories.slice(0, 6).map((cat) => {
+              const logoPath = getCategoryLogo(cat.slug);
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={cn(
+                    'flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium whitespace-nowrap',
+                    selectedCategory === cat.id
+                      ? 'bg-indigo-600 text-white'
+                      : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+                  )}
+                >
+                  {logoPath ? (
+                    <Image src={logoPath} alt={cat.name} width={18} height={18} className="object-contain" />
+                  ) : (
+                    <span>{cat.icon}</span>
+                  )}
+                  {cat.name}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -342,7 +390,7 @@ export default function AIPage() {
                 </div>
 
                 {message.role === 'user' && (
-                  <Avatar src={user?.avatar} name={user?.fullName || 'User'} size="sm" />
+                  <Avatar key={user?.avatar || 'no-avatar'} src={user?.avatar} name={user?.fullName || 'User'} size="sm" />
                 )}
               </div>
             ))

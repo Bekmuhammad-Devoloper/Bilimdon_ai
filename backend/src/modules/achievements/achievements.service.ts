@@ -3,7 +3,7 @@ import { PrismaService } from '../../prisma/prisma.service';
 import { NotificationsService } from '../notifications/notifications.service';
 
 interface AchievementCondition {
-  type: 'xp' | 'tests' | 'perfect_tests' | 'level' | 'category_tests' | 'ai_chats' | 'ranking';
+  type: 'xp' | 'tests' | 'perfect_tests' | 'perfect' | 'level' | 'category_tests' | 'category' | 'categories' | 'ai_chats' | 'ai' | 'ranking' | 'rank';
   value: number;
   categoryId?: string;
 }
@@ -113,6 +113,7 @@ export class AchievementsService {
           break;
 
         case 'perfect_tests':
+        case 'perfect':
           progress = perfectTests;
           completed = perfectTests >= condition.value;
           break;
@@ -123,18 +124,51 @@ export class AchievementsService {
           break;
 
         case 'ai_chats':
+        case 'ai':
           progress = user._count.aiChats;
           completed = user._count.aiChats >= condition.value;
           break;
 
+        case 'ranking':
+        case 'rank':
+          // Get user's current rank
+          const usersAbove = await this.prisma.user.count({
+            where: { totalXP: { gt: user.totalXP } },
+          });
+          const currentRank = usersAbove + 1;
+          progress = currentRank;
+          completed = currentRank <= condition.value;
+          break;
+
         case 'category_tests':
+        case 'category':
           if (condition.categoryId) {
             const categoryTests = await this.prisma.testAttempt.count({
               where: { userId, categoryId: condition.categoryId, completedAt: { not: null } },
             });
             progress = categoryTests;
             completed = categoryTests >= condition.value;
+          } else {
+            // Any category with enough tests
+            const categoryGroups = await this.prisma.testAttempt.groupBy({
+              by: ['categoryId'],
+              where: { userId, completedAt: { not: null } },
+              _count: true,
+            });
+            const maxCategoryTests = Math.max(...categoryGroups.map(g => g._count), 0);
+            progress = maxCategoryTests;
+            completed = maxCategoryTests >= condition.value;
           }
+          break;
+
+        case 'categories':
+          // Count unique categories where user has completed tests
+          const uniqueCategories = await this.prisma.testAttempt.groupBy({
+            by: ['categoryId'],
+            where: { userId, completedAt: { not: null } },
+          });
+          progress = uniqueCategories.length;
+          completed = uniqueCategories.length >= condition.value;
           break;
       }
 

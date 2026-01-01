@@ -1,0 +1,702 @@
+JAVA - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+=============================================
+
+1. Java qanday dasturlash tili?
+   A) Interpreted
+   B) Object-Oriented, Platform Independent
+   C) Procedural
+   D) Functional only
+   Javob: B
+
+2. Java dasturini qanday kompilyatsiya qilish?
+   A) gcc
+   B) javac
+   C) python
+   D) node
+   Javob: B
+
+3. Java dasturini qanday ishga tushirish?
+   A) run
+   B) java ClassName
+   C) execute
+   D) start
+   Javob: B
+
+4. Java fayl kengaytmasi?
+   A) .py
+   B) .java
+   C) .js
+   D) .c
+   Javob: B
+
+5. Bytecode fayl kengaytmasi?
+   A) .java
+   B) .class
+   C) .exe
+   D) .bin
+   Javob: B
+
+6. main() metodi sintaksisi?
+   A) def main()
+   B) public static void main(String[] args)
+   C) function main()
+   D) void main()
+   Javob: B
+
+7. Java'da comment qanday yoziladi?
+   A) # comment
+   B) // comment
+   C) -- comment
+   D) ** comment
+   Javob: B
+
+8. System.out.println() nima qiladi?
+   A) Kiritish
+   B) Chiqarish va yangi qator
+   C) Xato chiqarish
+   D) Faylga yozish
+   Javob: B
+
+9. int turi necha bit?
+   A) 8
+   B) 32
+   C) 64
+   D) 16
+   Javob: B
+
+10. double turi nima uchun?
+    A) Integer
+    B) O'nlik sonlar
+    C) String
+    D) Boolean
+    Javob: B
+
+11. boolean qanday qiymatlar oladi?
+    A) 0, 1
+    B) true, false
+    C) yes, no
+    D) on, off
+    Javob: B
+
+12. String yaratish?
+    A) String s = 'hello'
+    B) String s = "hello"
+    C) String s = hello
+    D) s = "hello"
+    Javob: B
+
+13. Array yaratish?
+    A) int[] arr = [1,2,3]
+    B) int[] arr = {1, 2, 3}
+    C) int arr = {1, 2, 3}
+    D) array int arr
+    Javob: B
+
+14. Array uzunligini olish?
+    A) arr.size()
+    B) arr.length
+    C) len(arr)
+    D) arr.count()
+    Javob: B
+
+15. for loop sintaksisi?
+    A) for i in range(5)
+    B) for (int i = 0; i < 5; i++)
+    C) for i = 1 to 5
+    D) for each i
+    Javob: B
+
+16. while loop sintaksisi?
+    A) while x < 5:
+    B) while (x < 5) {}
+    C) do while x < 5
+    D) loop while
+    Javob: B
+
+17. if statement sintaksisi?
+    A) if x > 5:
+    B) if (x > 5) {}
+    C) if x > 5 then
+    D) if [x > 5]
+    Javob: B
+
+18. else if qanday yoziladi?
+    A) elif
+    B) else if
+    C) elseif
+    D) elsif
+    Javob: B
+
+19. switch statement nima?
+    A) if-else
+    B) Ko'p tanlov uchun shart
+    C) Loop
+    D) Function
+    Javob: B
+
+20. break nima qiladi?
+    A) Davom etadi
+    B) Loopdan chiqadi
+    C) O'tkazib yuboradi
+    D) Takrorlaydi
+    Javob: B
+
+21. continue nima qiladi?
+    A) To'xtatadi
+    B) Keyingi iteratsiyaga o'tadi
+    C) Chiqadi
+    D) Qaytadi
+    Javob: B
+
+22. Method nima?
+    A) Variable
+    B) Funksiya
+    C) Class
+    D) Object
+    Javob: B
+
+23. void nima degani?
+    A) Integer qaytaradi
+    B) Hech narsa qaytarmaydi
+    C) String qaytaradi
+    D) Boolean qaytaradi
+    Javob: B
+
+24. return nima qiladi?
+    A) O'chiradi
+    B) Qiymat qaytaradi
+    C) Yaratadi
+    D) Boshlaydi
+    Javob: B
+
+25. Class nima?
+    A) Function
+    B) Obyekt shabloni
+    C) Variable
+    D) Array
+    Javob: B
+
+26. Object nima?
+    A) Class
+    B) Class dan yaratilgan instansiya
+    C) Method
+    D) Variable
+    Javob: B
+
+27. new kalit so'zi nima qiladi?
+    A) O'chiradi
+    B) Yangi obyekt yaratadi
+    C) O'zgartiradi
+    D) Nusxa oladi
+    Javob: B
+
+28. Constructor nima?
+    A) Method
+    B) Obyekt yaratuvchi maxsus metod
+    C) Variable
+    D) Class
+    Javob: B
+
+29. this kalit so'zi nima?
+    A) Global object
+    B) Joriy obyektga havola
+    C) Super class
+    D) Static
+    Javob: B
+
+30. public modifikatori nima?
+    A) Private
+    B) Hamma joydan kirish mumkin
+    C) Protected
+    D) Default
+    Javob: B
+
+31. private modifikatori nima?
+    A) Public
+    B) Faqat class ichida
+    C) Protected
+    D) Default
+    Javob: B
+
+32. protected modifikatori nima?
+    A) Public
+    B) Class va subclasslar uchun
+    C) Private
+    D) Default
+    Javob: B
+
+33. static nima degani?
+    A) Instance level
+    B) Class level
+    C) Object level
+    D) Method level
+    Javob: B
+
+34. final variable nima?
+    A) O'zgaruvchan
+    B) O'zgarmas
+    C) Static
+    D) Public
+    Javob: B
+
+35. final method nima?
+    A) Override qilinadi
+    B) Override qilinmaydi
+    C) Static
+    D) Abstract
+    Javob: B
+
+36. final class nima?
+    A) Extend qilinadi
+    B) Extend qilinmaydi
+    C) Abstract
+    D) Interface
+    Javob: B
+
+37. extends nima qiladi?
+    A) Interface implement
+    B) Classdan meros olish
+    C) Method yaratish
+    D) Object yaratish
+    Javob: B
+
+38. implements nima qiladi?
+    A) Class extend
+    B) Interface implement qilish
+    C) Method override
+    D) Object create
+    Javob: B
+
+39. super nima?
+    A) this
+    B) Ota classga havola
+    C) Static
+    D) Final
+    Javob: B
+
+40. Interface nima?
+    A) Abstract class
+    B) Method imzolari to'plami
+    C) Concrete class
+    D) Object
+    Javob: B
+
+41. abstract class nima?
+    A) Concrete class
+    B) Instantiate qilib bo'lmaydigan class
+    C) Final class
+    D) Static class
+    Javob: B
+
+42. abstract method nima?
+    A) Implemented method
+    B) Body yo'q method
+    C) Static method
+    D) Final method
+    Javob: B
+
+43. Override annotation nima?
+    A) Overload
+    B) @Override metodni qayta yozish
+    C) No annotation
+    D) @Ignore
+    Javob: B
+
+44. Overloading nima?
+    A) Override
+    B) Bir xil nom, boshqa parametrlar
+    C) Bir xil hammasi
+    D) No overload
+    Javob: B
+
+45. Polymorphism nima?
+    A) Encapsulation
+    B) Ko'p shakllilik
+    C) Inheritance
+    D) Abstraction
+    Javob: B
+
+46. Encapsulation nima?
+    A) Polymorphism
+    B) Ma'lumotlarni yashirish
+    C) Inheritance
+    D) Abstraction
+    Javob: B
+
+47. Getter method nima?
+    A) Setter
+    B) Private fieldni olish
+    C) Constructor
+    D) Static method
+    Javob: B
+
+48. Setter method nima?
+    A) Getter
+    B) Private fieldga qiymat berish
+    C) Constructor
+    D) Static method
+    Javob: B
+
+49. ArrayList nima?
+    A) Array
+    B) Dynamic array
+    C) LinkedList
+    D) Set
+    Javob: B
+
+50. ArrayList.add() nima qiladi?
+    A) O'chiradi
+    B) Element qo'shadi
+    C) Topadi
+    D) Saralaydi
+    Javob: B
+
+51. ArrayList.get(index) nima qiladi?
+    A) O'chiradi
+    B) Elementni qaytaradi
+    C) Qo'shadi
+    D) Saralaydi
+    Javob: B
+
+52. ArrayList.remove() nima qiladi?
+    A) Qo'shadi
+    B) O'chiradi
+    C) Topadi
+    D) Saralaydi
+    Javob: B
+
+53. ArrayList.size() nima qaytaradi?
+    A) Element
+    B) Uzunlik
+    C) Index
+    D) Boolean
+    Javob: B
+
+54. HashMap nima?
+    A) Array
+    B) Kalit-qiymat to'plami
+    C) List
+    D) Set
+    Javob: B
+
+55. HashMap.put() nima qiladi?
+    A) O'chiradi
+    B) Kalit-qiymat qo'shadi
+    C) Topadi
+    D) Saralaydi
+    Javob: B
+
+56. HashMap.get(key) nima qiladi?
+    A) O'chiradi
+    B) Qiymatni qaytaradi
+    C) Qo'shadi
+    D) Saralaydi
+    Javob: B
+
+57. HashSet nima?
+    A) HashMap
+    B) Unique elementlar to'plami
+    C) ArrayList
+    D) LinkedList
+    Javob: B
+
+58. for-each loop sintaksisi?
+    A) for (i in arr)
+    B) for (Type item : collection)
+    C) foreach (item in arr)
+    D) for item in arr
+    Javob: B
+
+59. try-catch nima uchun?
+    A) Loop
+    B) Xatolarni ushlash
+    C) Shart
+    D) Method
+    Javob: B
+
+60. throw nima qiladi?
+    A) Xatoni ushlaydi
+    B) Xato chiqaradi
+    C) Davom etadi
+    D) Qaytadi
+    Javob: B
+
+61. throws nima?
+    A) Xato chiqarish
+    B) Metod xato chiqarishi mumkinligini bildirish
+    C) Xato ushlash
+    D) Xato o'chirish
+    Javob: B
+
+62. finally nima?
+    A) try only
+    B) Har doim ishlaydigan blok
+    C) catch only
+    D) No finally
+    Javob: B
+
+63. Exception nima?
+    A) Error
+    B) Runtime xato
+    C) Syntax error
+    D) Logic error
+    Javob: B
+
+64. NullPointerException qachon chiqadi?
+    A) Array bo'sh
+    B) null ga murojaat
+    C) Division by zero
+    D) Index out
+    Javob: B
+
+65. ArrayIndexOutOfBoundsException?
+    A) Null
+    B) Array chegarasidan tashqari
+    C) Division
+    D) Type mismatch
+    Javob: B
+
+66. String.length() nima qaytaradi?
+    A) Character
+    B) Uzunlik
+    C) Index
+    D) Boolean
+    Javob: B
+
+67. String.charAt(index) nima qaytaradi?
+    A) String
+    B) Character
+    C) Index
+    D) Boolean
+    Javob: B
+
+68. String.substring() nima qiladi?
+    A) Birlashtiradi
+    B) Qismini oladi
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+69. String.equals() vs == farqi?
+    A) Bir xil
+    B) equals() content, == reference
+    C) == content
+    D) No difference
+    Javob: B
+
+70. String.toUpperCase() nima qiladi?
+    A) Kichik harf
+    B) Katta harf
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+71. String.toLowerCase() nima qiladi?
+    A) Katta harf
+    B) Kichik harf
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+72. String.trim() nima qiladi?
+    A) Qo'shadi
+    B) Bo'sh joylarni olib tashlaydi
+    C) O'chiradi
+    D) Birlashtiradi
+    Javob: B
+
+73. String.split() nima qiladi?
+    A) Birlashtiradi
+    B) Array ga bo'ladi
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+74. String.replace() nima qiladi?
+    A) O'chiradi
+    B) Almashtiradi
+    C) Qo'shadi
+    D) Bo'ladi
+    Javob: B
+
+75. String.contains() nima qaytaradi?
+    A) Index
+    B) Boolean
+    C) String
+    D) Integer
+    Javob: B
+
+76. String.indexOf() nima qaytaradi?
+    A) Boolean
+    B) Index (yoki -1)
+    C) String
+    D) Character
+    Javob: B
+
+77. StringBuilder nima?
+    A) Immutable string
+    B) Mutable string
+    C) String array
+    D) Character array
+    Javob: B
+
+78. StringBuilder.append() nima qiladi?
+    A) O'chiradi
+    B) Oxiriga qo'shadi
+    C) Boshiga qo'shadi
+    D) O'zgartiradi
+    Javob: B
+
+79. Integer.parseInt() nima qiladi?
+    A) int to String
+    B) String to int
+    C) int to double
+    D) String to double
+    Javob: B
+
+80. String.valueOf() nima qiladi?
+    A) int ga aylantiradi
+    B) String ga aylantiradi
+    C) double ga
+    D) boolean ga
+    Javob: B
+
+81. Math.abs() nima qaytaradi?
+    A) Manfiy
+    B) Modul (musbat)
+    C) Nol
+    D) Random
+    Javob: B
+
+82. Math.max() nima qaytaradi?
+    A) Minimum
+    B) Maximum
+    C) O'rtacha
+    D) Random
+    Javob: B
+
+83. Math.min() nima qaytaradi?
+    A) Maximum
+    B) Minimum
+    C) O'rtacha
+    D) Random
+    Javob: B
+
+84. Math.pow(a, b) nima?
+    A) a + b
+    B) a ^ b (daraja)
+    C) a * b
+    D) a / b
+    Javob: B
+
+85. Math.sqrt() nima?
+    A) Kvadrat
+    B) Kvadrat ildiz
+    C) Kub
+    D) Kub ildiz
+    Javob: B
+
+86. Math.random() nima qaytaradi?
+    A) Integer
+    B) 0.0 - 1.0 orasida
+    C) Boolean
+    D) String
+    Javob: B
+
+87. Scanner class nima uchun?
+    A) Output
+    B) Input o'qish
+    C) File write
+    D) Network
+    Javob: B
+
+88. Scanner.nextLine() nima qiladi?
+    A) Integer o'qiydi
+    B) Qatorni o'qiydi
+    C) Character o'qiydi
+    D) Boolean o'qiydi
+    Javob: B
+
+89. Scanner.nextInt() nima qiladi?
+    A) String o'qiydi
+    B) Integer o'qiydi
+    C) Double o'qiydi
+    D) Boolean o'qiydi
+    Javob: B
+
+90. package nima?
+    A) Class
+    B) Classlarni guruhlash
+    C) Method
+    D) Variable
+    Javob: B
+
+91. import nima qiladi?
+    A) Export
+    B) Boshqa package classini ishlatish
+    C) Create
+    D) Delete
+    Javob: B
+
+92. java.util package nima?
+    A) IO classes
+    B) Utility classes (ArrayList, HashMap...)
+    C) Network classes
+    D) GUI classes
+    Javob: B
+
+93. java.io package nima?
+    A) Utility
+    B) Input/Output classes
+    C) Network
+    D) GUI
+    Javob: B
+
+94. Wrapper class nima?
+    A) Primitive type
+    B) Primitive uchun object wrapper
+    C) Array
+    D) Collection
+    Javob: B
+
+95. Autoboxing nima?
+    A) Manual boxing
+    B) Primitive to wrapper avtomatik
+    C) Wrapper to primitive
+    D) No conversion
+    Javob: B
+
+96. Unboxing nima?
+    A) Autoboxing
+    B) Wrapper to primitive avtomatik
+    C) Primitive to wrapper
+    D) No conversion
+    Javob: B
+
+97. null nima?
+    A) Zero
+    B) Reference yo'q
+    C) Empty string
+    D) False
+    Javob: B
+
+98. instanceof nima tekshiradi?
+    A) Value
+    B) Obyekt turi
+    C) Size
+    D) Length
+    Javob: B
+
+99. enum nima?
+    A) Class
+    B) Konstantalar to'plami
+    C) Interface
+    D) Array
+    Javob: B
+
+100. var (Java 10+) nima?
+     A) JavaScript var
+     B) Local variable type inference
+     C) Global var
+     D) No type
+     Javob: B

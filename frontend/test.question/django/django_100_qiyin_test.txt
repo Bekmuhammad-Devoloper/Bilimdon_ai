@@ -1,0 +1,706 @@
+DJANGO FRAMEWORK - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+==========================================================
+
+1. Django ORM da Prefetch object nima imkonini beradi?
+   A) Oddiy prefetch
+   B) Custom queryset va attribute bilan prefetch qilish
+   C) Select related
+   D) Filter qilish
+   Javob: B
+
+2. QuerySet.iterator() nima uchun ishlatiladi?
+   A) Tezlashtirish
+   B) Katta ma'lumotlarda xotirani tejash (server-side cursor)
+   C) Filtrlash
+   D) Saralash
+   Javob: B
+
+3. Django da database router nima uchun?
+   A) URL routing
+   B) Ko'p database bilan ishlash va qaysi model qaysi DB ga yozilishini boshqarish
+   C) View routing
+   D) Template routing
+   Javob: B
+
+4. allow_relation() database router da nima tekshiradi?
+   A) URL relation
+   B) Ikki model orasida relation ruxsat berilganligini
+   C) View relation
+   D) Template relation
+   Javob: B
+
+5. db_for_read() va db_for_write() farqi?
+   A) Farqi yo'q
+   B) O'qish va yozish uchun alohida database tanlash
+   C) Read va write permission
+   D) Model farqi
+   Javob: B
+
+6. Django da connection.cursor() nima qaytaradi?
+   A) QuerySet
+   B) Database cursor (raw SQL uchun)
+   C) Model
+   D) View
+   Javob: B
+
+7. Django da Subquery expression nima?
+   A) Oddiy query
+   B) Boshqa query ni annotate/filter ichida ishlatish
+   C) Join
+   D) Union
+   Javob: B
+
+8. OuterRef() nima uchun ishlatiladi?
+   A) Inner query uchun
+   B) Subquery da outer query fieldiga reference
+   C) Model reference
+   D) View reference
+   Javob: B
+
+9. Exists() expression nima qaytaradi?
+   A) QuerySet
+   B) Subquery mavjudligini tekshiruvchi boolean expression
+   C) Count
+   D) Sum
+   Javob: B
+
+10. Window function Django ORM da qanday ishlatiladi?
+    A) aggregate()
+    B) annotate() bilan Window() expression
+    C) filter()
+    D) exclude()
+    Javob: B
+
+11. Django da custom database backend qanday yaratiladi?
+    A) Model yaratish
+    B) django.db.backends dan meros olib
+    C) View yaratish
+    D) Form yaratish
+    Javob: B
+
+12. DatabaseFeatures class nima uchun?
+    A) Model features
+    B) Database qo'llab-quvvatlaydigan xususiyatlarni belgilash
+    C) View features
+    D) Template features
+    Javob: B
+
+13. Django da Atomic block ichida savepoint qanday yaratiladi?
+    A) transaction.begin()
+    B) transaction.savepoint()
+    C) transaction.start()
+    D) transaction.save()
+    Javob: B
+
+14. transaction.on_commit() nima qiladi?
+    A) Commit qiladi
+    B) Transaction muvaffaqiyatli tugagandan keyin callback chaqiradi
+    C) Rollback qiladi
+    D) Savepoint yaratadi
+    Javob: B
+
+15. select_for_update(nowait=True) nima qiladi?
+    A) Kutadi
+    B) Lock olinmasa darhol DatabaseError otadi
+    C) Skip qiladi
+    D) Retry qiladi
+    Javob: B
+
+16. select_for_update(skip_locked=True) nima qiladi?
+    A) Xato otadi
+    B) Qulflangan rowlarni o'tkazib yuboradi
+    C) Kutadi
+    D) Retry qiladi
+    Javob: B
+
+17. Django da ExpressionWrapper nima uchun?
+    A) Template expression
+    B) Murakkab expression uchun output_field belgilash
+    C) View wrapper
+    D) Form wrapper
+    Javob: B
+
+18. Cast() expression nima qiladi?
+    A) Model cast
+    B) Database darajasida type cast
+    C) View cast
+    D) Form cast
+    Javob: B
+
+19. Coalesce() expression nima qaytaradi?
+    A) Birinchi qiymat
+    B) Birinchi NULL bo'lmagan qiymatni
+    C) Oxirgi qiymat
+    D) O'rtacha qiymat
+    Javob: B
+
+20. Greatest() va Least() expressionlar nima uchun?
+    A) Saralash
+    B) Bir nechta qiymatdan eng katta/kichigini olish
+    C) Filtrlash
+    D) Guruhlab berish
+    Javob: B
+
+21. Django da JSONField ichida filter qilish qanday?
+    A) filter(data='key')
+    B) filter(data__key=value) yoki filter(data__contains={})
+    C) filter(data[key]=value)
+    D) filter(json.key=value)
+    Javob: B
+
+22. ArrayField (PostgreSQL) da __overlap lookup nima?
+    A) To'liq mos
+    B) Kamida bitta umumiy element bor
+    C) To'liq kiradi
+    D) Bo'sh
+    Javob: B
+
+23. ArrayField da __contained_by nima tekshiradi?
+    A) O'z ichiga oladi
+    B) Berilgan arrayga to'liq kiradi
+    C) Mos keladi
+    D) Bo'sh
+    Javob: B
+
+24. Django da Full-text search qaysi database uchun built-in?
+    A) SQLite
+    B) PostgreSQL (SearchVector, SearchQuery, SearchRank)
+    C) MySQL
+    D) Oracle
+    Javob: B
+
+25. SearchVector nima qiladi?
+    A) Filter
+    B) Matn maydonlarini search uchun vektor qiladi
+    C) Sort
+    D) Group
+    Javob: B
+
+26. SearchQuery nima?
+    A) Oddiy query
+    B) Qidiruv so'rovini parse qiladi
+    C) Database query
+    D) URL query
+    Javob: B
+
+27. SearchRank nima qaytaradi?
+    A) Boolean
+    B) Relevantlik ballini
+    C) Count
+    D) Sum
+    Javob: B
+
+28. TrigramSimilarity nima uchun ishlatiladi?
+    A) Exact match
+    B) Fuzzy search (o'xshash so'zlarni topish)
+    C) Full-text search
+    D) Regex search
+    Javob: B
+
+29. Django da unaccent lookup nima qiladi?
+    A) Accent qo'shadi
+    B) Accentlarni hisobga olmay qidiradi (café = cafe)
+    C) Case sensitive
+    D) Exact match
+    Javob: B
+
+30. Django da database functions (Concat, Length, Upper, Lower, ...) qayerda?
+    A) django.db.functions
+    B) django.db.models.functions
+    C) django.utils.functions
+    D) django.core.functions
+    Javob: B
+
+31. Func() base class nima uchun?
+    A) View yaratish
+    B) Custom database function yaratish
+    C) Model yaratish
+    D) Form yaratish
+    Javob: B
+
+32. Django da RawSQL expression qachon ishlatiladi?
+    A) Har doim
+    B) ORM bilan ifodalab bo'lmaydigan SQL uchun
+    C) Hech qachon
+    D) Faqat PostgreSQL da
+    Javob: B
+
+33. Django da custom lookup qanday yaratiladi?
+    A) Model yaratish
+    B) Lookup classdan meros va register_lookup
+    C) View yaratish
+    D) Form yaratish
+    Javob: B
+
+34. Transform vs Lookup farqi Django da?
+    A) Farqi yo'q
+    B) Transform chaining mumkin, Lookup oxirida bo'ladi
+    C) Lookup tezroq
+    D) Transform sekinroq
+    Javob: B
+
+35. Django da QuerySet._result_cache nima?
+    A) Database cache
+    B) Evaluate qilingan QuerySet natijalari cache
+    C) Template cache
+    D) View cache
+    Javob: B
+
+36. QuerySet.query attribute nima qaytaradi?
+    A) String
+    B) SQL query representation (Query object)
+    C) Boolean
+    D) List
+    Javob: B
+
+37. Django da django.db.connection.queries nima?
+    A) QuerySet
+    B) Debug modeda bajarilgan SQL so'rovlar ro'yxati
+    C) Model
+    D) View
+    Javob: B
+
+38. reset_queries() nima qiladi?
+    A) QuerySet reset
+    B) connection.queries ro'yxatini tozalaydi
+    C) Database reset
+    D) Cache reset
+    Javob: B
+
+39. Django da assertNumQueries() test da nima qiladi?
+    A) Query count
+    B) Berilgan code block nechta SQL so'rov bajarishini tekshiradi
+    C) QuerySet test
+    D) Model test
+    Javob: B
+
+40. Django da custom model field qanday yaratiladi?
+    A) View dan meros
+    B) Field classdan meros (CharField, etc.)
+    C) Form dan meros
+    D) Model dan meros
+    Javob: B
+
+41. from_db_value() metodi custom field da nima qiladi?
+    A) DB ga yozadi
+    B) DB dan o'qilgan qiymatni Python qiymatga aylantiradi
+    C) Validatsiya
+    D) Default qo'yadi
+    Javob: B
+
+42. get_prep_value() metodi nima qiladi?
+    A) DB dan o'qiydi
+    B) Python qiymatni DB formatiga aylantiradi
+    C) Validatsiya
+    D) Default qo'yadi
+    Javob: B
+
+43. deconstruct() metodi field da nima uchun?
+    A) Field o'chirish
+    B) Migratsiya uchun field qanday yaratilganini saqlash
+    C) Field yaratish
+    D) Field validatsiya
+    Javob: B
+
+44. Django da contribute_to_class() metodi nima qiladi?
+    A) Class yaratadi
+    B) Model classga field/method qo'shadi
+    C) Class o'chiradi
+    D) Class validatsiya
+    Javob: B
+
+45. Django da ModelBase metaclass nima qiladi?
+    A) Model yaratadi
+    B) Model class yaratilganda custom logic (fields, meta, manager setup)
+    C) View yaratadi
+    D) Form yaratadi
+    Javob: B
+
+46. Django da deferred fields (DeferredAttribute) qanday ishlaydi?
+    A) Darhol yuklaydi
+    B) Field qiymatini kerak bo'lganda database dan oladi
+    C) Hech qachon yuklamaydi
+    D) Cache dan oladi
+    Javob: B
+
+47. refresh_from_db() metodi nima qiladi?
+    A) Cache yangilaydi
+    B) Obyekt qiymatlarini database dan qayta yuklaydi
+    C) Database yangilaydi
+    D) Model yangilaydi
+    Javob: B
+
+48. Django da _state attribute (ModelState) nima uchun?
+    A) View state
+    B) Obyektning DB holati (adding, db alias)
+    C) Form state
+    D) Template state
+    Javob: B
+
+49. Django da Options class (Model._meta) nimani saqlaydi?
+    A) View meta
+    B) Model metadata (fields, relations, db_table, ...)
+    C) Form meta
+    D) Template meta
+    Javob: B
+
+50. get_field() va get_fields() farqi _meta da?
+    A) Farqi yo'q
+    B) get_field() bitta field, get_fields() barcha fieldlar
+    C) get_fields() bitta field
+    D) get_field() barcha fieldlar
+    Javob: B
+
+51. Django da ForwardManyToOneDescriptor nima?
+    A) Reverse relation
+    B) ForeignKey uchun forward access descriptor
+    C) ManyToMany descriptor
+    D) OneToOne descriptor
+    Javob: B
+
+52. ReverseManyToOneDescriptor nima uchun?
+    A) Forward relation
+    B) ForeignKey ning teskari tomoni uchun (related_name)
+    C) ManyToMany forward
+    D) OneToOne forward
+    Javob: B
+
+53. Django da through model ManyToMany da nima uchun?
+    A) Oddiy m2m
+    B) Intermediate table ga qo'shimcha maydonlar qo'shish
+    C) Foreign key
+    D) OneToOne
+    Javob: B
+
+54. symmetrical=False ManyToMany da nima anglatadi?
+    A) Simmetrik
+    B) Self-referential m2m da teskari relation alohida
+    C) Oddiy m2m
+    D) Through model kerak
+    Javob: B
+
+55. Django da lazy relationship resolution qanday ishlaydi?
+    A) Darhol resolve
+    B) String model nomi berilganda app registry tayyor bo'lganda resolve
+    C) Hech qachon resolve qilmaydi
+    D) Cache dan resolve
+    Javob: B
+
+56. Django da Apps registry nima?
+    A) URL registry
+    B) O'rnatilgan applar va modellar registri
+    C) View registry
+    D) Template registry
+    Javob: B
+
+57. apps.get_model('app_label', 'ModelName') nima qiladi?
+    A) Model yaratadi
+    B) Registered model classni qaytaradi
+    C) Model o'chiradi
+    D) Model validatsiya
+    Javob: B
+
+58. Django da AppConfig.ready() metodi qachon chaqiriladi?
+    A) App yaratilganda
+    B) App to'liq yuklangandan keyin (signals ro'yxatga olish uchun)
+    C) App o'chirilganda
+    D) Request kelganda
+    Javob: B
+
+59. Django da override_settings decorator nima qiladi?
+    A) Settings saqlaydi
+    B) Test uchun settings vaqtinchalik o'zgartiradi
+    C) Settings o'chiradi
+    D) Settings validatsiya
+    Javob: B
+
+60. modify_settings decorator override_settings dan farqi?
+    A) Farqi yo'q
+    B) List/tuple settings ga append/remove qiladi
+    C) Dict settings uchun
+    D) String settings uchun
+    Javob: B
+
+61. Django da TestCase va TransactionTestCase farqi?
+    A) Farqi yo'q
+    B) TestCase transaction rollback, TransactionTestCase truncate ishlatadi
+    C) TransactionTestCase tezroq
+    D) TestCase sekinroq
+    Javob: B
+
+62. setUpTestData() classmethod qachon ishlatiladi?
+    A) Har bir test da
+    B) Test class uchun bir marta expensive setup
+    C) Test tugaganda
+    D) Test boshida har safar
+    Javob: B
+
+63. Django da Client test client nima uchun?
+    A) Database client
+    B) HTTP so'rovlarni simulyatsiya qilish
+    C) WebSocket client
+    D) Email client
+    Javob: B
+
+64. client.force_login() nima qiladi?
+    A) Logout qiladi
+    B) Autentifikatsiyasiz login qiladi (test uchun)
+    C) Parol tekshiradi
+    D) Session o'chiradi
+    Javob: B
+
+65. RequestFactory Client dan farqi?
+    A) Farqi yo'q
+    B) RequestFactory faqat request yaratadi, middleware bajarmaydi
+    C) Client tezroq
+    D) RequestFactory sekinroq
+    Javob: B
+
+66. Django da LiveServerTestCase nima uchun?
+    A) Unit test
+    B) Real HTTP server bilan integration test (Selenium uchun)
+    C) Database test
+    D) Email test
+    Javob: B
+
+67. Django da assertTemplateUsed() nima tekshiradi?
+    A) Template mavjudligini
+    B) Response da qaysi template ishlatilganini
+    C) Template syntax
+    D) Template context
+    Javob: B
+
+68. assertContains() va assertInHTML() farqi?
+    A) Farqi yo'q
+    B) assertInHTML HTML structure tekshiradi, assertContains oddiy text
+    C) assertContains tezroq
+    D) assertInHTML sekinroq
+    Javob: B
+
+69. Django da django-debug-toolbar qanday ishlaydi?
+    A) Console da
+    B) Middleware orqali HTML ga panel inject qiladi
+    C) Log fayl
+    D) Email
+    Javob: B
+
+70. Django da silk profiler nima qiladi?
+    A) Template profiling
+    B) Request/response va SQL profiling
+    C) Memory profiling
+    D) CPU profiling
+    Javob: B
+
+71. Django da ASGI nima?
+    A) Sync interface
+    B) Async Server Gateway Interface
+    C) Database interface
+    D) Template interface
+    Javob: B
+
+72. Django da async view qanday yoziladi?
+    A) def view
+    B) async def view
+    C) @async decorator
+    D) asyncio.view
+    Javob: B
+
+73. sync_to_async() nima qiladi?
+    A) Async ni sync qiladi
+    B) Sync funksiyani async contextda ishlatish imkonini beradi
+    C) Database sync
+    D) Cache sync
+    Javob: B
+
+74. async_to_sync() nima uchun?
+    A) Sync ni async qiladi
+    B) Async funksiyani sync contextda chaqirish
+    C) Template sync
+    D) View sync
+    Javob: B
+
+75. Django Channels nima uchun ishlatiladi?
+    A) TV channels
+    B) WebSocket, real-time features
+    C) Database channels
+    D) Email channels
+    Javob: B
+
+76. Consumer Django Channels da nima?
+    A) HTTP view
+    B) WebSocket connection handler
+    C) Database consumer
+    D) Queue consumer
+    Javob: B
+
+77. Channel layer nima?
+    A) Template layer
+    B) Consumers orasida message passing uchun backend
+    C) Database layer
+    D) Cache layer
+    Javob: B
+
+78. group_send() Channels da nima qiladi?
+    A) Bitta consumer ga
+    B) Gruppadagi barcha consumerlarga message yuboradi
+    C) Database ga
+    D) Cache ga
+    Javob: B
+
+79. Django da content negotiation nima?
+    A) Template tanlash
+    B) Accept header ga qarab response format tanlash
+    C) Database tanlash
+    D) Cache tanlash
+    Javob: B
+
+80. Django REST Framework da Throttling nima?
+    A) Tezlashtirish
+    B) Request rate limiting
+    C) Sekinlashtirish
+    D) Caching
+    Javob: B
+
+81. AnonRateThrottle va UserRateThrottle farqi?
+    A) Farqi yo'q
+    B) Anon IP bo'yicha, User foydalanuvchi bo'yicha limit
+    C) Anon tezroq
+    D) User sekinroq
+    Javob: B
+
+82. DRF da pagination_class nima uchun?
+    A) Filtrlash
+    B) Natijalarni sahifalash
+    C) Saralash
+    D) Qidirish
+    Javob: B
+
+83. CursorPagination PageNumberPagination dan farqi?
+    A) Farqi yo'q
+    B) Cursor opaque pointer ishlatadi, katta datasetlar uchun efficient
+    C) PageNumber tezroq
+    D) Cursor sekinroq
+    Javob: B
+
+84. DRF da filter_backends nima?
+    A) Database backend
+    B) QuerySet filtrlash backendlari
+    C) Template backend
+    D) Cache backend
+    Javob: B
+
+85. SearchFilter DRF da qanday ishlaydi?
+    A) Exact match
+    B) icontains bo'yicha search maydonlarida qidiradi
+    C) Regex search
+    D) Full-text search
+    Javob: B
+
+86. OrderingFilter nima qiladi?
+    A) Filtrlaydi
+    B) Query param bo'yicha dinamik saralash
+    C) Qidiradi
+    D) Pagination
+    Javob: B
+
+87. DRF da HyperlinkedModelSerializer farqi?
+    A) Farqi yo'q
+    B) Relations uchun ID o'rniga URL ishlatadi
+    C) Tezroq
+    D) Sekinroq
+    Javob: B
+
+88. SerializerMethodField nima uchun?
+    A) Model field
+    B) Custom read-only field (method orqali qiymat)
+    C) Write field
+    D) Relation field
+    Javob: B
+
+89. DRF da depth option serializer da nima qiladi?
+    A) Hech narsa
+    B) Nested relations ni ko'rsatilgan chuqurlikkacha serialize qiladi
+    C) Validatsiya depth
+    D) Query depth
+    Javob: B
+
+90. DRF da @action decorator ViewSet da nima uchun?
+    A) CRUD action
+    B) Custom endpoint yaratish
+    C) Permission action
+    D) Auth action
+    Javob: B
+
+91. get_serializer_class() metodi qachon override qilinadi?
+    A) Har doim
+    B) Action yoki requestga qarab turli serializer ishlatish kerak bo'lganda
+    C) Hech qachon
+    D) Faqat ViewSet da
+    Javob: B
+
+92. DRF da GenericViewSet va ModelViewSet farqi?
+    A) Farqi yo'q
+    B) ModelViewSet CRUD mixinlarni o'z ichiga oladi
+    C) GenericViewSet to'liq CRUD
+    D) ModelViewSet bo'sh
+    Javob: B
+
+93. Django da drf-spectacular nima uchun?
+    A) Template
+    B) OpenAPI schema generation
+    C) Database
+    D) Cache
+    Javob: B
+
+94. Django da Sentry integration nima uchun?
+    A) Database monitoring
+    B) Error tracking va monitoring
+    C) Template monitoring
+    D) Cache monitoring
+    Javob: B
+
+95. Django da django-storages nima qiladi?
+    A) Database storage
+    B) Cloud storage backends (S3, GCS, Azure)
+    C) Template storage
+    D) Session storage
+    Javob: B
+
+96. DEFAULT_FILE_STORAGE sozlamasi nima?
+    A) Database storage
+    B) FileField uchun storage backend
+    C) Template storage
+    D) Static storage
+    Javob: B
+
+97. Django da custom storage backend qanday yaratiladi?
+    A) Model dan meros
+    B) Storage classdan meros
+    C) View dan meros
+    D) Form dan meros
+    Javob: B
+
+98. Django da LocMemCache vs Redis cache farqi?
+    A) Farqi yo'q
+    B) LocMemCache process-local, Redis distributed
+    C) Redis sekinroq
+    D) LocMemCache distributed
+    Javob: B
+
+99. Django da cache versioning nima uchun?
+    A) Cache o'chirish
+    B) Deployment da cache invalidation
+    C) Cache yaratish
+    D) Cache monitoring
+    Javob: B
+
+100. Django da django-health-check nima uchun?
+     A) Code quality
+     B) Application health endpoints (database, cache, storage status)
+     C) Security check
+     D) Performance check
+     Javob: B
+
+==========================================================
+                       YAKUNLANDI
+==========================================================

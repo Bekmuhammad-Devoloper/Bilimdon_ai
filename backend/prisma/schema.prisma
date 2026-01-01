@@ -35,21 +35,24 @@ enum NotificationType {
 // ==================== USERS ====================
 
 model User {
-  id           String   @id @default(uuid())
-  email        String?  @unique
-  username     String   @unique
-  password     String?
-  fullName     String
-  avatar       String?
-  bio          String?
-  totalXP      Int      @default(0)
-  level        Int      @default(1)
-  role         Role     @default(USER)
-  isActive     Boolean  @default(true)
-  telegramId   String?  @unique
-  lastActiveAt DateTime @default(now())
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id               String   @id @default(uuid())
+  email            String?  @unique
+  username         String   @unique
+  password         String?
+  fullName         String
+  avatar           String?
+  bio              String?
+  phone            String?
+  totalXP          Int      @default(0)
+  level            Int      @default(1)
+  role             Role     @default(USER)
+  isActive         Boolean  @default(true)
+  telegramId       String?  @unique
+  telegramUsername String?
+  telegramPhone    String?
+  lastActiveAt     DateTime @default(now())
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 
   // Relations
   testAttempts     TestAttempt[]
@@ -70,18 +73,21 @@ model User {
 // ==================== CATEGORIES ====================
 
 model Category {
-  id          String   @id @default(uuid())
-  name        String
-  nameEn      String?
-  nameRu      String?
-  slug        String   @unique
-  description String?
-  icon        String?
-  color       String   @default("#6366f1")
-  order       Int      @default(0)
-  isActive    Boolean  @default(true)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id               String   @id @default(uuid())
+  name             String
+  nameEn           String?
+  nameRu           String?
+  slug             String   @unique
+  description      String?
+  icon             String?
+  color            String   @default("#6366f1")
+  group            String   @default("other") // programming, frontend, backend, database, devops, science, other
+  order            Int      @default(0)
+  isActive         Boolean  @default(true)
+  // Custom difficulty labels for this category (JSON array)
+  difficultyLevels String[] @default(["Oson", "O'rta", "Qiyin"])
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 
   // Relations
   questions     Question[]
@@ -91,6 +97,7 @@ model Category {
 
   @@index([slug])
   @@index([isActive])
+  @@index([group])
 }
 
 // ==================== QUESTIONS ====================
@@ -103,6 +110,7 @@ model Question {
   correctAnswer Int // Index of correct option (0-3)
   explanation   String?
   difficulty    Difficulty @default(MEDIUM)
+  levelIndex    Int        @default(0) // Index in category's difficultyLevels array
   xpReward      Int        @default(10)
   tags          String[]
   isActive      Boolean    @default(true)
@@ -115,6 +123,7 @@ model Question {
 
   @@index([categoryId])
   @@index([difficulty])
+  @@index([levelIndex])
   @@index([isActive])
 }
 
@@ -259,16 +268,22 @@ model Notification {
 // ==================== ADMIN MESSAGES ====================
 
 model AdminMessage {
-  id          String    @id @default(uuid())
-  adminId     String
-  title       String
-  message     String
-  targetType  String // 'all', 'selected', 'level', 'xp', 'category'
-  targetIds   String[] // User IDs or filter values
-  scheduledAt DateTime?
-  sentAt      DateTime?
-  readCount   Int       @default(0)
-  createdAt   DateTime  @default(now())
+  id           String    @id @default(uuid())
+  adminId      String
+  title        String
+  message      String
+  imageUrl     String? // Optional image attachment
+  videoUrl     String? // Optional video attachment
+  targetType   String // 'all', 'selected', 'level', 'xp', 'category'
+  targetIds    String[] // User IDs or filter values
+  channels     String[] // ['email', 'telegram', 'notification']
+  scheduledAt  DateTime?
+  sentAt       DateTime?
+  emailSent    Int       @default(0)
+  telegramSent Int       @default(0)
+  notifSent    Int       @default(0)
+  readCount    Int       @default(0)
+  createdAt    DateTime  @default(now())
 
   // Relations
   admin User @relation("SentMessages", fields: [adminId], references: [id], onDelete: Cascade)
@@ -316,6 +331,22 @@ model Setting {
   key       String   @unique
   value     Json
   updatedAt DateTime @updatedAt
+}
+
+// ==================== DESIGN SETTINGS ====================
+
+model DesignSetting {
+  id            String   @id @default(uuid())
+  theme         String   @default("default") // default, custom
+  lightVideoUrl String? // Light mode background video URL
+  darkVideoUrl  String? // Dark mode background video URL
+  lightImageUrl String? // Light mode background image (fallback)
+  darkImageUrl  String? // Dark mode background image (fallback)
+  videoLoop     Boolean  @default(true)
+  videoMuted    Boolean  @default(true)
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
 
 // ==================== EMAIL VERIFICATION ====================

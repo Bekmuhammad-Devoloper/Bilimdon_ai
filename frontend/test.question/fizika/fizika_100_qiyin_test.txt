@@ -1,0 +1,706 @@
+FIZIKA FANI - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+======================================================
+
+1. Galiley nisbiylik prinsipi qaysi tizimlar uchun o'rinli?
+   A) Barcha tizimlar
+   B) Inersial sanoq tizimlari
+   C) Noinersial tizimlar
+   D) Faqat aylanuvchi tizimlar
+   Javob: B
+
+2. Maxsus nisbiylik nazariyasining birinchi postulati nima?
+   A) Yorug'lik tezligi o'zgaruvchan
+   B) Fizika qonunlari barcha inersial tizimlarda bir xil
+   C) Vaqt mutlaq
+   D) Massa o'zgarmaydi
+   Javob: B
+
+3. Maxsus nisbiylik nazariyasining ikkinchi postulati nima?
+   A) Yorug'lik tezligi manbaga bog'liq
+   B) Vakuumdagi yorug'lik tezligi barcha inersial tizimlarda bir xil (c = const)
+   C) Yorug'lik tezligi kuzatuvchiga bog'liq
+   D) Yorug'lik tezligi cheksiz
+   Javob: B
+
+4. Lorens qisqarishi formulasi?
+   A) l = l₀√(1 - v²/c²)
+   B) l = l₀/√(1 - v²/c²)
+   C) l = l₀(1 - v²/c²)
+   D) l = l₀(1 + v²/c²)
+   Javob: A
+
+5. Vaqtning kengayishi (dilatasiya) formulasi?
+   A) t = t₀√(1 - v²/c²)
+   B) t = t₀/√(1 - v²/c²)
+   C) t = t₀(1 - v²/c²)
+   D) t = t₀(1 + v²/c²)
+   Javob: B
+
+6. Relyativistik massa formulasi?
+   A) m = m₀√(1 - v²/c²)
+   B) m = m₀/√(1 - v²/c²)
+   C) m = m₀(1 - v²/c²)
+   D) m = m₀c²
+   Javob: B
+
+7. Relyativistik impuls formulasi?
+   A) p = mv
+   B) p = m₀v/√(1 - v²/c²)
+   C) p = m₀v√(1 - v²/c²)
+   D) p = m₀c
+   Javob: B
+
+8. To'liq relyativistik energiya formulasi?
+   A) E = mc
+   B) E = mc² = m₀c²/√(1 - v²/c²)
+   C) E = mv²/2
+   D) E = m₀c
+   Javob: B
+
+9. Tinchlikdagi energiya formulasi?
+   A) E₀ = m₀v²
+   B) E₀ = m₀c²
+   C) E₀ = m₀v
+   D) E₀ = m₀c
+   Javob: B
+
+10. Energiya va impuls orasidagi relyativistik bog'lanish?
+    A) E = pc
+    B) E² = (pc)² + (m₀c²)²
+    C) E² = p²c²
+    D) E = p + m₀c²
+    Javob: B
+
+11. Foton uchun tinchlik massasi qancha?
+    A) m > 0
+    B) m = 0
+    C) m < 0
+    D) m = ∞
+    Javob: B
+
+12. Foton impulsi formulasi?
+    A) p = E/c²
+    B) p = E/c = h/λ
+    C) p = Ec
+    D) p = hλ
+    Javob: B
+
+13. Foton energiyasi formulasi?
+    A) E = hf = hc/λ
+    B) E = h/f
+    C) E = hλ
+    D) E = f/h
+    Javob: A
+
+14. Plank doimiysi qiymati qancha?
+    A) 3×10⁸ J·s
+    B) 6.63×10⁻³⁴ J·s
+    C) 1.6×10⁻¹⁹ J·s
+    D) 9.1×10⁻³¹ J·s
+    Javob: B
+
+15. Kvant mexanikada to'lqin funksiyasi (ψ) nima ifodalaydi?
+    A) Energiya
+    B) Zarrachaning ma'lum joyda bo'lish ehtimollik amplitudasi
+    C) Impuls
+    D) Tezlik
+    Javob: B
+
+16. |ψ|² nima?
+    A) Energiya zichligi
+    B) Ehtimollik zichligi
+    C) Zaryad zichligi
+    D) Massa zichligi
+    Javob: B
+
+17. Shredinger tenglamasi vaqtga bog'liq shaklda nima uchun ishlatiladi?
+    A) Statsionar holatlar
+    B) Kvant sistemaning vaqt bo'yicha evolyutsiyasi
+    C) Faqat energiya hisoblash
+    D) Faqat impuls hisoblash
+    Javob: B
+
+18. Statsionar Shredinger tenglamasidan nima aniqlanadi?
+    A) Vaqt
+    B) Energiya xos qiymatlari va xos funksiyalar
+    C) Tezlik
+    D) Koordinata aniq
+    Javob: B
+
+19. Tunnel effekt nima?
+    A) Klassik o'tish
+    B) Zarrachaning klassik mumkin bo'lmagan potensial to'siqdan o'tishi
+    C) Qaytish
+    D) Yutilish
+    Javob: B
+
+20. Geyzenberg noaniqlik munosabati (koordinata-impuls)?
+    A) Δx·Δp ≥ ħ/2
+    B) Δx·Δp = 0
+    C) Δx·Δp ≤ ħ/2
+    D) Δx·Δp = ħ
+    Javob: A
+
+21. Geyzenberg noaniqlik munosabati (energiya-vaqt)?
+    A) ΔE·Δt ≥ ħ/2
+    B) ΔE·Δt = 0
+    C) ΔE·Δt ≤ ħ/2
+    D) ΔE·Δt = ħ
+    Javob: A
+
+22. Pauli taqiqi prinsipi nima?
+    A) Ikki fermion bir xil holatda bo'lishi mumkin
+    B) Ikki fermion bir xil kvant holatda bo'la olmaydi
+    C) Bozonlarga tegishli
+    D) Faqat fotonlarga tegishli
+    Javob: B
+
+23. Fermionlar va bozonlarni qanday farqlash mumkin?
+    A) Massa bo'yicha
+    B) Spin bo'yicha (fermion - yarim butun, bozon - butun)
+    C) Zaryad bo'yicha
+    D) Energiya bo'yicha
+    Javob: B
+
+24. Elektronning spini qancha?
+    A) 0
+    B) 1/2 (ħ birligida)
+    C) 1
+    D) 2
+    Javob: B
+
+25. Fotonning spini qancha?
+    A) 0
+    B) 1
+    C) 1/2
+    D) 2
+    Javob: B
+
+26. Kvant sonlar (n, l, m, s) nimalarni belgilaydi?
+    A) Faqat energiyani
+    B) Elektron holatini (energiya, orbital moment, proyeksiya, spin)
+    C) Faqat orbitani
+    D) Faqat spinni
+    Javob: B
+
+27. Asosiy kvant son n nimani belgilaydi?
+    A) Orbital shaklini
+    B) Energiya darajasini (qobiq raqami)
+    C) Spinni
+    D) Magnit momentini
+    Javob: B
+
+28. Orbital kvant son l qanday qiymatlar oladi?
+    A) 0 dan ∞ gacha
+    B) 0 dan (n-1) gacha
+    C) 1 dan n gacha
+    D) -l dan +l gacha
+    Javob: B
+
+29. Magnit kvant son m qanday qiymatlar oladi?
+    A) 0 dan l gacha
+    B) -l dan +l gacha
+    C) 0 dan n gacha
+    D) Faqat 0 va 1
+    Javob: B
+
+30. Spin kvant soni s (elektron uchun) qanday qiymatlar oladi?
+    A) 0 va 1
+    B) +1/2 va -1/2
+    C) -1 va +1
+    D) 0 dan n gacha
+    Javob: B
+
+31. Zeeman effekti nima?
+    A) Spektr chiziqlari yo'qolishi
+    B) Magnit maydonda spektr chiziqlarining bo'linishi
+    C) Elektr maydonda bo'linish
+    D) Temperatura ta'sirida bo'linish
+    Javob: B
+
+32. Shtark effekti nima?
+    A) Magnit maydon ta'siri
+    B) Elektr maydonda spektr chiziqlarining bo'linishi
+    C) Temperatura ta'siri
+    D) Bosim ta'siri
+    Javob: B
+
+33. Kompton effekti nima?
+    A) Fotoeffekt
+    B) Fotonning elektron bilan soqqurishida to'lqin uzunligining ortishi
+    C) Yorug'lik sinishi
+    D) Yorug'lik qaytishi
+    Javob: B
+
+34. Kompton siljishi formulasida Δλ nimaga bog'liq?
+    A) Foton energiyasiga
+    B) Sochilish burchagiga (Δλ = λc(1 - cos θ))
+    C) Elektron massasiga faqat
+    D) Yorug'lik tezligiga faqat
+    Javob: B
+
+35. Kompton to'lqin uzunligi (elektron uchun) qancha?
+    A) 0.0024 nm
+    B) 0.00243 nm (λc = h/m₀c)
+    C) 0.024 nm
+    D) 0.24 nm
+    Javob: B
+
+36. Qora jism nurlanishi uchun Vien siljish qonuni?
+    A) λmax·T = const
+    B) λmax·T = b (b = 2.9×10⁻³ m·K)
+    C) λmax/T = const
+    D) λmax + T = const
+    Javob: B
+
+37. Stefan-Bolsman qonuni?
+    A) R = σT
+    B) R = σT⁴ (energetik luminozlik)
+    C) R = σT²
+    D) R = σT³
+    Javob: B
+
+38. Plank nurlanish formulasida energiya kvantlangan, bu nima degani?
+    A) Uzluksiz
+    B) E = nhf (diskret qiymatlar)
+    C) Cheksiz
+    D) Nolga teng
+    Javob: B
+
+39. Ultrabinafsha katastrofa nima edi?
+    A) Klassik nazariya to'g'ri
+    B) Klassik nazariyada qisqa to'lqinlarda energiya cheksizga intilishi
+    C) Kvant nazariya xatosi
+    D) Infraqizil muammo
+    Javob: B
+
+40. Lazer (LASER) qisqartmasi nimani anglatadi?
+    A) Light And Sound
+    B) Light Amplification by Stimulated Emission of Radiation
+    C) Laser And Sound Emission
+    D) Light Absorption
+    Javob: B
+
+41. Majburiy nurlanish (stimulated emission) spontan nurlanishdan farqi?
+    A) Farqi yo'q
+    B) Kelayotgan foton bilan bir xil yo'nalish, chastota, faza
+    C) Tasodifiy yo'nalish
+    D) Turli chastota
+    Javob: B
+
+42. Populyatsiya inversiyasi nima?
+    A) Quyi daraja to'la
+    B) Yuqori energiya darajasida atomlar soni ko'proq
+    C) Normal taqsimot
+    D) Bir xil taqsimot
+    Javob: B
+
+43. Qattiq jismda energiya zonalari nima?
+    A) Diskret darajalar
+    B) Atomlarning yaqinlashuvidan energiya darajalarining kengayishi
+    C) Faqat metalarda
+    D) Faqat dielektriklarda
+    Javob: B
+
+44. Valent zona va o'tkazuvchanlik zonasi orasidagi taqiqlangan zona nima?
+    A) Elektronlar bo'lgan zona
+    B) Elektronlar bo'la olmaydigan energiya oralig'i
+    C) O'tkazuvchanlik zonasi
+    D) Valent zona
+    Javob: B
+
+45. Metallda taqiqlangan zona kengligi qancha?
+    A) Katta
+    B) Nolga teng yoki zonalar ustma-ust
+    C) O'rtacha
+    D) Cheksiz
+    Javob: B
+
+46. Yarim o'tkazgichda taqiqlangan zona kengligi qancha (taxminan)?
+    A) 0
+    B) 0.1 - 3 eV
+    C) 10 eV dan katta
+    D) Cheksiz
+    Javob: B
+
+47. Dielektrikda taqiqlangan zona kengligi qancha?
+    A) 0
+    B) 3 eV dan katta
+    C) 0.1 - 1 eV
+    D) Nolga yaqin
+    Javob: B
+
+48. n-tipdagi yarim o'tkazgichda asosiy zaryad tashuvchilar qaysi?
+    A) Kovaklar
+    B) Elektronlar
+    C) Ionlar
+    D) Protonlar
+    Javob: B
+
+49. p-tipdagi yarim o'tkazgichda asosiy zaryad tashuvchilar qaysi?
+    A) Elektronlar
+    B) Kovaklar (holes)
+    C) Ionlar
+    D) Neytronlar
+    Javob: B
+
+50. p-n o'tish (diod) da to'g'ri yo'nalish nima?
+    A) n dan p ga
+    B) p dan n ga (p - musbat, n - manfiy ulanganda)
+    C) Har ikki yo'nalish
+    D) Hech qaysi
+    Javob: B
+
+51. Tranzistor qanday ishlaydi?
+    A) To'g'rilangan kuchaytirgich
+    B) Kichik baza tokini katta kollektor tokiga o'zgartiradi
+    C) Faqat kalit sifatida
+    D) Faqat detektor sifatida
+    Javob: B
+
+52. Sverhto'tkazuvchanlik nima?
+    A) Yuqori qarshilik
+    B) Kritik temperaturadan pastda qarshilikning nolga tushishi
+    C) O'rtacha qarshilik
+    D) Cheksiz qarshilik
+    Javob: B
+
+53. Maysner effekti nima?
+    A) Magnit maydon kirib boradi
+    B) Sverhto'tkazgichdan magnit maydonning siqib chiqarilishi
+    C) Elektr maydon ta'siri
+    D) Temperatura ta'siri
+    Javob: B
+
+54. BKSh nazariyasi (sverhto'tkazuvchanlik) nimani tushuntiradi?
+    A) Oddiy o'tkazuvchanlik
+    B) Kuper juftliklari orqali qarshiliksiz tok
+    C) Yarim o'tkazuvchanlik
+    D) Dielektrik xossalar
+    Javob: B
+
+55. Kuper juftligi nima?
+    A) Ikki proton
+    B) Fonon almashishi orqali bog'langan ikki elektron
+    C) Ikki neytron
+    D) Elektron va kovak
+    Javob: B
+
+56. Jozefson effekti nima?
+    A) Oddiy tok
+    B) Sverhto'tkazgichlar orasidagi tunnellash toki
+    C) Yuqori qarshilik
+    D) Magnit effekt
+    Javob: B
+
+57. Kvant Hall effekti nimada namoyon bo'ladi?
+    A) Oddiy metallarda
+    B) 2D elektron gazda kuchli magnit maydonda (kvantlangan Hall qarshilik)
+    C) 3D materiallarda
+    D) Vakuumda
+    Javob: B
+
+58. Grafenning o'ziga xos xususiyati nima?
+    A) 3D struktura
+    B) 2D struktura, yuqori elektr o'tkazuvchanlik, mustahkamlik
+    C) Dielektrik
+    D) Magnit
+    Javob: B
+
+59. Kvant nuqtalar (quantum dots) nima?
+    A) Katta kristallar
+    B) Nanoo'lchamli yarim o'tkazgich, kvantlangan energiya darajalari
+    C) Oddiy atomlar
+    D) Molekulalar
+    Javob: B
+
+60. Kuchli yadro kuchi (strong force) qanday xususiyatga ega?
+    A) Uzoq masofada ta'sir qiladi
+    B) Qisqa masofada (10⁻¹⁵ m) juda kuchli, nuklonlarni bog'laydi
+    C) Faqat zaryadlangan zarrachalarga
+    D) Faqat elektronlarga
+    Javob: B
+
+61. Kuchsiz yadro kuchi (weak force) qaysi jarayonlarga mas'ul?
+    A) Elektr o'zaro ta'sir
+    B) Beta yemirilish, neytrinolar bilan o'zaro ta'sir
+    C) Gravitatsiya
+    D) Elektromagnit nurlanish
+    Javob: B
+
+62. Kvarklar qanday zaryadga ega?
+    A) Butun zaryad
+    B) Fraksion zaryad (1/3 yoki 2/3 e)
+    C) Nol zaryad
+    D) Cheksiz zaryad
+    Javob: B
+
+63. Proton qanday kvarklardan tuzilgan?
+    A) ddd
+    B) uud (2 up + 1 down)
+    C) udd
+    D) uuu
+    Javob: B
+
+64. Neytron qanday kvarklardan tuzilgan?
+    A) uuu
+    B) udd (1 up + 2 down)
+    C) uud
+    D) ddd
+    Javob: B
+
+65. Gluonlar nima?
+    A) Elektromagnit tashuvchi
+    B) Kuchli o'zaro ta'sir tashuvchisi (kvarklar orasida)
+    C) Kuchsiz ta'sir tashuvchisi
+    D) Gravitatsiya tashuvchisi
+    Javob: B
+
+66. W va Z bozonlar qaysi o'zaro ta'sirni tashiydi?
+    A) Elektromagnit
+    B) Kuchsiz yadro kuchini
+    C) Kuchli yadro kuchini
+    D) Gravitatsiyani
+    Javob: B
+
+67. Higgs bozoni nima uchun muhim?
+    A) Zaryad beradi
+    B) Zarrachalarga massa berish mexanizmini tushuntiradi
+    C) Spin beradi
+    D) Rang zaryadi beradi
+    Javob: B
+
+68. Standart model qanday fundamental kuchlarni birlashtiradi?
+    A) Gravitatsiya bilan
+    B) Elektromagnit, kuchsiz va kuchli (gravitatsiyadan tashqari)
+    C) Faqat elektromagnit
+    D) Faqat gravitatsiya
+    Javob: B
+
+69. Antizarracha nima?
+    A) Oddiy zarracha
+    B) Zarrachaning qarama-qarshi zaryad (va boshqa kvant sonlari)ga ega egizagi
+    C) Neytral zarracha
+    D) Foton
+    Javob: B
+
+70. Annihilatsiya nima?
+    A) Zarracha yaratilishi
+    B) Zarracha va antizarrachaning yo'qolib energiya hosil qilishi
+    C) Zarracha saqlash
+    D) Zarracha bo'linishi
+    Javob: B
+
+71. Juftlik hosil bo'lishi (pair production) nima?
+    A) Annihilatsiya
+    B) Yuqori energiyali fotondan zarracha-antizarracha hosil bo'lishi
+    C) Fotoeffekt
+    D) Kompton effekt
+    Javob: B
+
+72. Neytrinoning xususiyatlari?
+    A) Katta massa, zaryadli
+    B) Juda kichik massa, zaryadlanmagan, kam o'zaro ta'sir
+    C) Katta zaryad
+    D) Kuchli o'zaro ta'sir
+    Javob: B
+
+73. Kosmik nurlar (cosmic rays) asosan nimadan iborat?
+    A) Fotonlar
+    B) Yuqori energiyali protonlar va yadro
+    C) Elektronlar
+    D) Neytrinolar
+    Javob: B
+
+74. Cherenkov nurlanishi qachon sodir bo'ladi?
+    A) Har doim
+    B) Zaryadli zarracha muhitda yorug'lik tezligidan (muhitda) tez harakatlanganda
+    C) Sekin harakatda
+    D) Tinch holatda
+    Javob: B
+
+75. Sinxrotron nurlanishi nima?
+    A) Oddiy nurlanish
+    B) Tezlashtirilayotgan (aylanayotgan) zaryadli zarrachaning nurlanishi
+    C) Termonurlanish
+    D) Radioaktiv nurlanish
+    Javob: B
+
+76. Qora tuynuk (black hole) nima?
+    A) Oddiy yulduz
+    B) Gravitatsiyasi shu qadar kuchli, yorug'lik ham chiqa olmaydigan jism
+    C) Planeta
+    D) Galaktika
+    Javob: B
+
+77. Shvartsshild radiusi nima?
+    A) Yulduz radiusi
+    B) Qora tuynuk uchun voqealar gorizonti radiusi (Rs = 2GM/c²)
+    C) Planeta radiusi
+    D) Atom radiusi
+    Javob: B
+
+78. Xoking nurlanishi nima?
+    A) Oddiy nurlanish
+    B) Qora tuynuk chegarasida kvant effektlari tufayli nurlanish
+    C) Yulduz nurlanishi
+    D) Radioaktiv nurlanish
+    Javob: B
+
+79. Gravitatsion to'lqinlar qanday aniqlandi (2015)?
+    A) Teleskop bilan
+    B) LIGO interferometri bilan
+    C) Mikroskop bilan
+    D) Spektroskop bilan
+    Javob: B
+
+80. Gravitatsion to'lqinlar qanday hodisalarda hosil bo'ladi?
+    A) Harakatsiz massalar
+    B) Tezlashuvchi massalar (masalan, qo'shaloq qora tuynuklar qo'shilishi)
+    C) Tekis harakat
+    D) Elektr zaryadlar
+    Javob: B
+
+81. Kosmologik qizil siljish nima?
+    A) Dopler effekti faqat
+    B) Koinot kengayishi tufayli to'lqin uzunligining ortishi
+    C) Gravitatsion siljish
+    D) Yorug'lik yutilishi
+    Javob: B
+
+82. Hubble qonuni nima?
+    A) v = c
+    B) v = H₀d (galaktikalar uzoqlashish tezligi masofaga proportsional)
+    C) v = d/H₀
+    D) v = H₀/d
+    Javob: B
+
+83. Katta portlash (Big Bang) nazariyasining asosiy dalillari?
+    A) Faqat galaktikalar
+    B) Kosmologik qizil siljish, CMB, elementlar tarqalishi
+    C) Faqat yulduzlar
+    D) Faqat planetalar
+    Javob: B
+
+84. Kosmik mikroto'lqinli fon nurlanishi (CMB) nima?
+    A) Yulduz nurlanishi
+    B) Koinotning erta davridan qolgan nurlanish (T ≈ 2.7 K)
+    C) Galaktika nurlanishi
+    D) Quyosh nurlanishi
+    Javob: B
+
+85. Qorong'i materiya (dark matter) nima uchun kerak?
+    A) Ko'rinadi
+    B) Galaktikalar aylanish tezligini tushuntirish uchun
+    C) Yorug'lik chiqaradi
+    D) Elektromagnit nurlanadi
+    Javob: B
+
+86. Qorong'i energiya (dark energy) nima uchun kerak?
+    A) Koinot qisqarishi
+    B) Koinot tezlashib kengayishini tushuntirish uchun
+    C) Galaktikalar yaqinlashishi
+    D) Yorug'lik yutilishi
+    Javob: B
+
+87. Kvant zapútannost (entanglement) nima?
+    A) Klassik bog'lanish
+    B) Ikki zarrachaning holatlarining bir-biriga bog'liqligi (masofa qat'iy nazar)
+    C) Elektromagnit bog'lanish
+    D) Gravitatsion bog'lanish
+    Javob: B
+
+88. Bell tengsizliklari nima ko'rsatadi?
+    A) Klassik fizika to'g'ri
+    B) Kvant mexanika klassik "yashirin parametrlar" bilan tushuntirib bo'lmaydi
+    C) Kvant mexanika noto'g'ri
+    D) Nisbiylik noto'g'ri
+    Javob: B
+
+89. Kvant kompyuterda qubit nima?
+    A) Klassik bit
+    B) Superpozitsiyada bo'la oladigan kvant bit (0 va 1 bir vaqtda)
+    C) Faqat 0
+    D) Faqat 1
+    Javob: B
+
+90. Kvant teleportatsiya nima?
+    A) Jismoniy ko'chirish
+    B) Kvant holatini entanglement yordamida uzatish
+    C) Yorug'lik tezligidan tez
+    D) Oddiy ma'lumot uzatish
+    Javob: B
+
+91. Bose-Einstein kondensati nima?
+    A) Yuqori temperaturada
+    B) Juda past temperaturada bozonlarning bir kvant holatga to'planishi
+    C) Oddiy gaz
+    D) Suyuqlik
+    Javob: B
+
+92. Fermi gazi nima?
+    A) Bozonlar gazi
+    B) Fermionlardan tashkil topgan kvant gaz
+    C) Klassik gaz
+    D) Ideal gaz
+    Javob: B
+
+93. Qattiq jismda fononlar nima?
+    A) Fotonlar
+    B) Kristall panjara tebranishlari kvantlari
+    C) Elektronlar
+    D) Protonlar
+    Javob: B
+
+94. Brillyuen zonasi nima?
+    A) Energiya zonasi
+    B) Impuls fazosida birinchi Brillyuen zonasi (kristall strukturaga bog'liq)
+    C) Koordinata zonasi
+    D) Vaqt zonasi
+    Javob: B
+
+95. Effektiv massa nima?
+    A) Haqiqiy massa
+    B) Kristallda elektron massasi (panjara bilan o'zaro ta'sir hisobga olingan)
+    C) Yadro massasi
+    D) Atom massasi
+    Javob: B
+
+96. Topologik izolyatorlar nima?
+    A) Oddiy izolyatorlar
+    B) Ichida izolyator, sirtida o'tkazgich (topologik himoyalangan)
+    C) Metalllar
+    D) Yarim o'tkazgichlar
+    Javob: B
+
+97. Kvant spinli suyuqlik nima?
+    A) Oddiy suyuqlik
+    B) Magnit tartibsiz, kvant fluktuatsiyalar ustun holat
+    C) Ferromagnet
+    D) Antiferromagnet
+    Javob: B
+
+98. Casimir effekti nima?
+    A) Klassik kuch
+    B) Vakuum fluktuatsiyalari tufayli yaqin plastinkalar orasidagi kuch
+    C) Elektr kuchi
+    D) Magnit kuchi
+    Javob: B
+
+99. Lamb siljishi nima?
+    A) Klassik siljish
+    B) Vodorod spektrida kvant elektrodinamika tuzatmalari
+    C) Doppler siljish
+    D) Gravitatsion siljish
+    Javob: B
+
+100. Kvant elektrodinamika (QED) nima o'rganadi?
+     A) Kuchli o'zaro ta'sirni
+     B) Zaryadli zarrachalar va elektromagnit maydon kvant o'zaro ta'sirini
+     C) Gravitatsiyani
+     D) Kuchsiz o'zaro ta'sirni
+     Javob: B
+
+======================================================
+                     YAKUNLANDI
+======================================================

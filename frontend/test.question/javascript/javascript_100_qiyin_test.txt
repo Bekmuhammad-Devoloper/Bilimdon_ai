@@ -1,0 +1,702 @@
+JAVASCRIPT - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+===================================================
+
+1. JavaScript engine qanday ishlaydi?
+   A) Compile only
+   B) Parse -> AST -> Bytecode -> Execute (JIT)
+   C) Interpret only
+   D) Direct execute
+   Javob: B
+
+2. V8 engine qanday optimizatsiya qiladi?
+   A) No optimization
+   B) Inline caching, hidden classes, JIT
+   C) Only caching
+   D) Only JIT
+   Javob: B
+
+3. Event loop qanday ishlaydi?
+   A) Sync only
+   B) Call stack -> Callback queue -> Event loop
+   C) Async only
+   D) Random order
+   Javob: B
+
+4. Microtask vs Macrotask farqi?
+   A) Same priority
+   B) Microtask yuqori prioritet (Promise)
+   C) Macrotask yuqori
+   D) No difference
+   Javob: B
+
+5. queueMicrotask() nima qiladi?
+   A) Macrotask qo'shadi
+   B) Microtask navbatiga qo'shadi
+   C) Sync bajaradi
+   D) Bekor qiladi
+   Javob: B
+
+6. requestAnimationFrame() qachon ishlaydi?
+   A) Immediately
+   B) Keyingi repaint dan oldin
+   C) Random time
+   D) After 1 second
+   Javob: B
+
+7. Memory leak qanday hosil bo'ladi?
+   A) Normal behavior
+   B) Reference saqlanib qolishi
+   C) Memory allocation
+   D) Garbage collection
+   Javob: B
+
+8. Garbage collection qanday ishlaydi?
+   A) Manual
+   B) Mark-and-sweep algorithm
+   C) Reference counting only
+   D) No GC
+   Javob: B
+
+9. WeakRef nima?
+   A) Strong reference
+   B) GC ga to'sqinlik qilmaydigan havola
+   C) No reference
+   D) Circular reference
+   Javob: B
+
+10. FinalizationRegistry nima?
+    A) Memory management
+    B) Obyekt GC bo'lganda callback
+    C) Reference counting
+    D) Memory allocation
+    Javob: B
+
+11. Temporal Dead Zone (TDZ) nima?
+    A) No zone
+    B) let/const e'londan oldingi zona
+    C) var zone
+    D) Global zone
+    Javob: B
+
+12. Block scope vs Function scope?
+    A) Same
+    B) let/const=block, var=function
+    C) var=block
+    D) No difference
+    Javob: B
+
+13. Tail call optimization nima?
+    A) Loop optimization
+    B) Recursive funksiya oxirida chaqiruv optim.
+    C) No optimization
+    D) Memory optimization
+    Javob: B
+
+14. Trampolining nima?
+    A) Jumping
+    B) TCO yo'qligida recursion optim.
+    C) Looping
+    D) Caching
+    Javob: B
+
+15. SharedArrayBuffer nima?
+    A) Normal array
+    B) Web Workers o'rtasida shared memory
+    C) TypedArray
+    D) ArrayBuffer
+    Javob: B
+
+16. Atomics API nima uchun?
+    A) Chemistry
+    B) SharedArrayBuffer ustida atomic ops
+    C) DOM manipulation
+    D) Event handling
+    Javob: B
+
+17. Web Workers nima?
+    A) DOM workers
+    B) Background thread
+    C) Main thread
+    D) UI thread
+    Javob: B
+
+18. Service Worker nima?
+    A) Web Worker
+    B) Network proxy, offline cache
+    C) DOM Worker
+    D) UI Worker
+    Javob: B
+
+19. postMessage() nima qiladi?
+    A) console.log
+    B) Workers yoki frames orasida xabar
+    C) alert
+    D) confirm
+    Javob: B
+
+20. structuredClone() nima qiladi?
+    A) Shallow copy
+    B) Deep clone
+    C) Reference copy
+    D) No copy
+    Javob: B
+
+21. Object.getOwnPropertyDescriptor() nima qaytaradi?
+    A) Value
+    B) Property descriptor
+    C) Property name
+    D) Property type
+    Javob: B
+
+22. Property descriptor qanday flaglar bor?
+    A) value only
+    B) writable, enumerable, configurable
+    C) readable only
+    D) No flags
+    Javob: B
+
+23. Object.defineProperty() nima qiladi?
+    A) Normal property
+    B) Descriptor bilan property yaratadi
+    C) Delete property
+    D) Get property
+    Javob: B
+
+24. Getter va Setter nima?
+    A) Normal methods
+    B) Property get/set interceptors
+    C) Event handlers
+    D) Callbacks
+    Javob: B
+
+25. Proxy handler traps qaysilar?
+    A) One trap
+    B) get, set, has, deleteProperty, apply, construct...
+    C) Only get
+    D) Only set
+    Javob: B
+
+26. Reflect.get() vs obj[prop] farqi?
+    A) Same
+    B) Reflect receiver ni belgilash imkoniyati
+    C) obj faster
+    D) Reflect faster
+    Javob: B
+
+27. Symbol.iterator nima?
+    A) Normal symbol
+    B) Iterable protocol uchun kalit
+    C) String symbol
+    D) Number symbol
+    Javob: B
+
+28. Symbol.toStringTag nima?
+    A) String method
+    B) Object.prototype.toString uchun tag
+    C) Number tag
+    D) Boolean tag
+    Javob: B
+
+29. Symbol.species nima?
+    A) Normal symbol
+    B) Derived class yaratish uchun constructor
+    C) String symbol
+    D) Number symbol
+    Javob: B
+
+30. Symbol.hasInstance nima?
+    A) Constructor
+    B) instanceof behavior custom
+    C) Type check
+    D) Instance create
+    Javob: B
+
+31. Async iterator nima?
+    A) Sync iterator
+    B) Symbol.asyncIterator bilan async values
+    C) Generator
+    D) Promise
+    Javob: B
+
+32. for await...of nima qiladi?
+    A) Sync iteration
+    B) Async iterable ustida iteratsiya
+    C) Promise iteration
+    D) Generator iteration
+    Javob: B
+
+33. Promise.all() qachon reject bo'ladi?
+    A) Oxirgi reject
+    B) Birinchi reject
+    C) Barchasi reject
+    D) Hech qachon
+    Javob: B
+
+34. Promise.allSettled() vs Promise.all()?
+    A) Same
+    B) allSettled xato bo'lsa ham kutadi
+    C) all xatoni kechiktiradi
+    D) No difference
+    Javob: B
+
+35. Promise.race() nima qaytaradi?
+    A) Barcha natijalar
+    B) Birinchi tugagan natija
+    C) Oxirgi natija
+    D) Random natija
+    Javob: B
+
+36. Promise.any() nima qaytaradi?
+    A) Birinchi reject
+    B) Birinchi resolve
+    C) Barcha resolve
+    D) Random
+    Javob: B
+
+37. AbortController nima qiladi?
+    A) Start request
+    B) Abort signal beradi
+    C) Resume request
+    D) Pause request
+    Javob: B
+
+38. AbortSignal.timeout() nima?
+    A) No timeout
+    B) Vaqt o'tganda abort signal
+    C) Reset timeout
+    D) Clear timeout
+    Javob: B
+
+39. TextEncoder/TextDecoder nima qiladi?
+    A) Image encode
+    B) String/Uint8Array convert
+    C) Audio encode
+    D) Video encode
+    Javob: B
+
+40. Blob nima?
+    A) String
+    B) Binary large object
+    C) Number
+    D) Boolean
+    Javob: B
+
+41. FileReader API nima?
+    A) Write files
+    B) Read files async
+    C) Delete files
+    D) Create files
+    Javob: B
+
+42. URL.createObjectURL() nima qiladi?
+    A) HTTP URL
+    B) Blob/File uchun URL yaratadi
+    C) Data URL
+    D) Base64 URL
+    Javob: B
+
+43. FormData nima?
+    A) JSON data
+    B) Multipart form data
+    C) XML data
+    D) Text data
+    Javob: B
+
+44. Headers API nima?
+    A) HTML headers
+    B) HTTP headers bilan ishlash
+    C) Document headers
+    D) Meta headers
+    Javob: B
+
+45. Request/Response objects nima?
+    A) DOM objects
+    B) Fetch API abstractions
+    C) Event objects
+    D) Error objects
+    Javob: B
+
+46. ReadableStream nima?
+    A) Writable
+    B) Data oqimini o'qish
+    C) Transform
+    D) Duplex
+    Javob: B
+
+47. WritableStream nima?
+    A) Readable
+    B) Data oqimiga yozish
+    C) Transform
+    D) Duplex
+    Javob: B
+
+48. TransformStream nima?
+    A) Read only
+    B) Read va write o'rtasida transform
+    C) Write only
+    D) No transform
+    Javob: B
+
+49. Compression Streams API nima?
+    A) Decompress
+    B) gzip/deflate compress/decompress
+    C) Image compress
+    D) Audio compress
+    Javob: B
+
+50. Encoding API nima?
+    A) Decoding
+    B) Text encoding/decoding
+    C) Image encoding
+    D) Audio encoding
+    Javob: B
+
+51. Intl.DateTimeFormat nima?
+    A) Date create
+    B) Locale-aware date formatting
+    C) Date parse
+    D) Date compare
+    Javob: B
+
+52. Intl.NumberFormat nima?
+    A) Number create
+    B) Locale-aware number formatting
+    C) Number parse
+    D) Number compare
+    Javob: B
+
+53. Intl.Collator nima?
+    A) Collection
+    B) Locale-aware string comparison
+    C) Array sort
+    D) Object merge
+    Javob: B
+
+54. Intl.PluralRules nima?
+    A) Grammar rules
+    B) Plural forms uchun qoidalar
+    C) Regex rules
+    D) CSS rules
+    Javob: B
+
+55. Intl.RelativeTimeFormat nima?
+    A) Absolute time
+    B) "3 days ago" kabi format
+    C) Date format
+    D) Number format
+    Javob: B
+
+56. Intl.Segmenter nima?
+    A) Segment create
+    B) Text segmentation (word, sentence)
+    C) Array segment
+    D) Object segment
+    Javob: B
+
+57. RegExp named groups nima?
+    A) Unnamed groups
+    B) (?<name>pattern) sintaksisi
+    C) Global groups
+    D) Local groups
+    Javob: B
+
+58. RegExp lookbehind nima?
+    A) Lookahead
+    B) (?<=pattern) oldingi match
+    C) Lookforward
+    D) Lookafter
+    Javob: B
+
+59. RegExp dotAll flag (s) nima?
+    A) Global
+    B) . newline ni ham match qiladi
+    C) Case insensitive
+    D) Multiline
+    Javob: B
+
+60. RegExp unicode flag (u) nima?
+    A) ASCII
+    B) Unicode to'liq qo'llab-quvvatlash
+    C) UTF-8
+    D) Latin
+    Javob: B
+
+61. RegExp sticky flag (y) nima?
+    A) Global
+    B) lastIndex dan boshlab match
+    C) Case flag
+    D) Multi flag
+    Javob: B
+
+62. String.prototype.matchAll() nima qaytaradi?
+    A) First match
+    B) Iterator of all matches
+    C) Boolean
+    D) Count
+    Javob: B
+
+63. String.prototype.replaceAll() nima qiladi?
+    A) First replace
+    B) Barcha matchlarni almashtiradi
+    C) No replace
+    D) Delete
+    Javob: B
+
+64. Array.prototype.flat() nima qiladi?
+    A) Sort
+    B) Nested arraylarni flatten qiladi
+    C) Filter
+    D) Map
+    Javob: B
+
+65. Array.prototype.flatMap() nima?
+    A) flat then map
+    B) map then flat (depth 1)
+    C) Only map
+    D) Only flat
+    Javob: B
+
+66. Array.prototype.at() nima qiladi?
+    A) First element
+    B) Negative index qo'llab-quvvatlaydi
+    C) Last element
+    D) Random element
+    Javob: B
+
+67. Object.fromEntries() nima qiladi?
+    A) Object to entries
+    B) Entries dan object yaratadi
+    C) Array create
+    D) Map create
+    Javob: B
+
+68. Object.hasOwn() vs hasOwnProperty farqi?
+    A) Same
+    B) hasOwn null prototype ishleydi
+    C) hasOwnProperty better
+    D) No difference
+    Javob: B
+
+69. globalThis nima?
+    A) window
+    B) Universal global object
+    C) global
+    D) self
+    Javob: B
+
+70. BigInt nima?
+    A) Normal number
+    B) Arbitrary precision integer
+    C) Float
+    D) Decimal
+    Javob: B
+
+71. BigInt limitations?
+    A) No limitations
+    B) Math functions, JSON bilan ishlamaydi
+    C) Only positive
+    D) Only small numbers
+    Javob: B
+
+72. Private class fields (#) nima?
+    A) Public
+    B) Class ichida private property
+    C) Protected
+    D) Static
+    Javob: B
+
+73. Static class fields nima?
+    A) Instance field
+    B) Class levelda property
+    C) Private field
+    D) Public field
+    Javob: B
+
+74. Class static initialization blocks?
+    A) Constructor
+    B) static {} block for complex init
+    C) Method
+    D) Field
+    Javob: B
+
+75. Top-level await nima?
+    A) Function await
+    B) Module darajasida await
+    C) Class await
+    D) Object await
+    Javob: B
+
+76. import.meta nima?
+    A) Export info
+    B) Module meta-information
+    C) Import list
+    D) Export list
+    Javob: B
+
+77. import assertions nima?
+    A) Export
+    B) import {x} from './x.json' assert {type: 'json'}
+    C) No assertion
+    D) Type check
+    Javob: B
+
+78. Error.cause property nima?
+    A) Error message
+    B) Ichki xato sababi
+    C) Error stack
+    D) Error name
+    Javob: B
+
+79. AggregateError nima?
+    A) Single error
+    B) Bir nechta xatolarni o'rash
+    C) No error
+    D) Warning
+    Javob: B
+
+80. Object.groupBy() nima qiladi?
+    A) Sort
+    B) Array ni kalit bo'yicha guruhlash
+    C) Filter
+    D) Map
+    Javob: B
+
+81. Map.groupBy() nima qiladi?
+    A) Object.groupBy
+    B) Array ni Map ga guruhlash
+    C) Filter
+    D) Sort
+    Javob: B
+
+82. Array.prototype.toSorted() nima?
+    A) Mutates
+    B) Yangi sorted array qaytaradi
+    C) Same as sort
+    D) No sort
+    Javob: B
+
+83. Array.prototype.toReversed() nima?
+    A) Mutates
+    B) Yangi reversed array qaytaradi
+    C) Same as reverse
+    D) No reverse
+    Javob: B
+
+84. Array.prototype.toSpliced() nima?
+    A) Mutates
+    B) Yangi spliced array qaytaradi
+    C) Same as splice
+    D) No splice
+    Javob: B
+
+85. Array.prototype.with() nima?
+    A) forEach
+    B) Index da yangi qiymat bilan yangi array
+    C) map
+    D) filter
+    Javob: B
+
+86. Set methods (union, intersection)?
+    A) Array methods
+    B) Set mathematical operations
+    C) Object methods
+    D) Map methods
+    Javob: B
+
+87. Temporal API nima?
+    A) Date
+    B) Yangi vaqt API (proposal)
+    C) Timer
+    D) Timeout
+    Javob: B
+
+88. Record & Tuple nima?
+    A) Array & Object
+    B) Immutable primitives (proposal)
+    C) Map & Set
+    D) WeakMap & WeakSet
+    Javob: B
+
+89. Pattern matching proposal nima?
+    A) RegExp
+    B) match expression (proposal)
+    C) switch
+    D) if/else
+    Javob: B
+
+90. Pipeline operator (|>) nima?
+    A) OR
+    B) Funksiya chaining (proposal)
+    C) AND
+    D) NOT
+    Javob: B
+
+91. Decorators proposal nima?
+    A) Design pattern
+    B) Class/method annotatsiyalar
+    C) Comments
+    D) Types
+    Javob: B
+
+92. do expressions proposal nima?
+    A) do-while
+    B) Block dan expression
+    C) for loop
+    D) while loop
+    Javob: B
+
+93. Realm API nima?
+    A) Domain
+    B) Isolated JS environment
+    C) Scope
+    D) Module
+    Javob: B
+
+94. ShadowRealm nima?
+    A) Shadow DOM
+    B) Lightweight isolated realm
+    C) Dark mode
+    D) Theme
+    Javob: B
+
+95. Module expressions/declarations?
+    A) Normal modules
+    B) Inline module syntax (proposal)
+    C) No modules
+    D) CommonJS
+    Javob: B
+
+96. Source Maps nima?
+    A) Geographic maps
+    B) Minified code to original mapping
+    C) Memory maps
+    D) Data maps
+    Javob: B
+
+97. JavaScript Profiling API?
+    A) console.log
+    B) Performance profiling
+    C) Error logging
+    D) Debug API
+    Javob: B
+
+98. PerformanceObserver nima?
+    A) MutationObserver
+    B) Performance metrics kuzatish
+    C) IntersectionObserver
+    D) ResizeObserver
+    Javob: B
+
+99. Navigation Timing API nima?
+    A) GPS navigation
+    B) Page load performance metrics
+    C) URL routing
+    D) History API
+    Javob: B
+
+100. User Timing API nima?
+     A) System timing
+     B) Custom performance marks/measures
+     C) Date timing
+     D) Timer API
+     Javob: B

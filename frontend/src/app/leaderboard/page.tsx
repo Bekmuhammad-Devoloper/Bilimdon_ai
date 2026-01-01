@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Trophy, Medal, Crown, TrendingUp, Calendar, Clock } from 'lucide-react';
 import { useAuth, useCategories } from '@/hooks';
 import { leaderboardApi } from '@/lib/api';
@@ -8,18 +9,78 @@ import { Card, Avatar, Badge } from '@/components/ui';
 import { cn, formatXP } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
+// Map category slugs to logo paths
+const getCategoryLogo = (slug: string): string | null => {
+  const logoMap: Record<string, string> = {
+    'python': '/img/Python-logo.png',
+    'javascript': '/img/JavaScript-logo.png',
+    'typescript': '/img/TypeScript-logo.png',
+    'java': '/img/Java-logo.png',
+    'cpp': '/img/c++-logo.png',
+    'c++': '/img/c++-logo.png',
+    'go': '/img/Go-Logo_Aqua.png',
+    'golang': '/img/Go-Logo_Aqua.png',
+    'react': '/img/react-logo.png',
+    'nodejs': '/img/node.js-logo.png',
+    'node.js': '/img/node.js-logo.png',
+    'node': '/img/node.js-logo.png',
+    'nextjs': '/img/next.js-logo.png',
+    'next.js': '/img/next.js-logo.png',
+    'next': '/img/next.js-logo.png',
+    'nestjs': '/img/nestjs-logo.png',
+    'postgresql': '/img/postgreSql-logo.png',
+    'mongodb': '/img/mongodb-logo.png',
+    'sql': '/img/sql-logo.png',
+    'redis': '/img/redis-logo.png',
+    'git': '/img/git-logo.png',
+    'linux': '/img/linux-logo.png',
+    'html-css': '/img/html-css-logo.png',
+    'html': '/img/html-css-logo.png',
+    'html and css': '/img/html-css-logo.png',
+    'css': '/img/html-css-logo.png',
+    'rust': '/img/rust-logo.png',
+    'vue': '/img/vue.js-logo.png',
+    'vue.js': '/img/vue.js-logo.png',
+    'vuejs': '/img/vue.js-logo.png',
+    'express': '/img/express.js-logo.png',
+    'express.js': '/img/express.js-logo.png',
+    'expressjs': '/img/express.js-logo.png',
+    'django': '/img/django-logo.png',
+    'tailwind': '/img/tailwind-css-logo.png',
+    'tailwind-css': '/img/tailwind-css-logo.png',
+    'tailwind css': '/img/tailwind-css-logo.png',
+    'ingliz-tili': '/img/english-logo.png',
+    'ingliz tili': '/img/english-logo.png',
+    'english': '/img/english-logo.png',
+    'matematika': '/img/matematika-logo.png',
+    'fizika': '/img/fizika-logo.png',
+    'tarix': '/img/history-logo.png',
+    'history': '/img/history-logo.png',
+    'docker': '/img/docker-logo.png',
+  };
+  
+  return logoMap[slug.toLowerCase()] || null;
+};
+
 interface LeaderboardEntry {
   rank: number;
   id: string;
   username: string;
   fullName: string;
   avatar: string | null;
-  totalXP: number;
+  totalXP?: number;
+  weeklyXP?: number;
+  monthlyXP?: number;
   level: number;
   testsCount?: number;
 }
 
 type TabType = 'global' | 'weekly' | 'monthly';
+
+// XP ni olish uchun yordamchi funksiya
+const getEntryXP = (entry: LeaderboardEntry): number => {
+  return entry.totalXP || entry.weeklyXP || entry.monthlyXP || 0;
+};
 
 export default function LeaderboardPage() {
   const { user } = useAuth();
@@ -38,7 +99,10 @@ export default function LeaderboardPage() {
         
         let data;
         if (selectedCategory) {
+          console.log('Fetching category leaderboard:', selectedCategory);
           const res = await leaderboardApi.getCategory(selectedCategory);
+          console.log('Category response:', res.data);
+          console.log('Leaderboard array:', res.data.leaderboard);
           data = res.data;
         } else {
           switch (activeTab) {
@@ -53,7 +117,9 @@ export default function LeaderboardPage() {
           }
         }
         
-        setLeaderboard(data.leaderboard || data);
+        const leaderboardData = data.leaderboard || data;
+        console.log('Setting leaderboard:', leaderboardData);
+        setLeaderboard(leaderboardData);
 
         // Fetch my rank
         if (user) {
@@ -62,6 +128,7 @@ export default function LeaderboardPage() {
         }
       } catch (error) {
         console.error('Leaderboard error:', error);
+        console.error('Selected category was:', selectedCategory);
         toast.error('Reytingni yuklashda xatolik');
       } finally {
         setLoading(false);
@@ -116,10 +183,10 @@ export default function LeaderboardPage() {
       </div>
 
       {/* My Rank Card */}
-      {user && myRank && (
+      {user && (
         <Card className="mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
           <div className="flex items-center gap-4">
-            <Avatar src={user.avatar} name={user.fullName} size="lg" />
+            <Avatar key={user.avatar || 'no-avatar'} src={user.avatar} name={user.fullName} size="lg" />
             <div className="flex-1">
               <p className="font-bold text-lg">{user.fullName}</p>
               <p className="text-white/70">@{user.username}</p>
@@ -127,7 +194,23 @@ export default function LeaderboardPage() {
             <div className="text-right">
               <p className="text-sm text-white/70">Sizning o'rningiz</p>
               <p className="text-3xl font-bold">
-                #{activeTab === 'global' ? myRank.global : activeTab === 'weekly' ? myRank.weekly : myRank.monthly}
+                #{(() => {
+                  // Leaderboard'dan user rank'ini topish
+                  const userEntry = leaderboard.find(e => e.id === user.id);
+                  if (userEntry?.rank) return userEntry.rank;
+                  
+                  const userIndex = leaderboard.findIndex(e => e.id === user.id);
+                  if (userIndex >= 0) return userIndex + 1;
+                  
+                  // myRank'dan olish
+                  if (myRank) {
+                    if (activeTab === 'global') return myRank.global;
+                    if (activeTab === 'weekly') return myRank.weekly;
+                    if (activeTab === 'monthly') return myRank.monthly;
+                  }
+                  
+                  return '-';
+                })()}
               </p>
             </div>
           </div>
@@ -171,20 +254,28 @@ export default function LeaderboardPage() {
           >
             Barchasi
           </button>
-          {categories.slice(0, 8).map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
-              className={cn(
-                'px-3 py-1.5 rounded-lg text-sm font-medium whitespace-nowrap',
-                selectedCategory === cat.id
-                  ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400'
-                  : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
-              )}
-            >
-              {cat.icon} {cat.name}
-            </button>
-          ))}
+          {categories.slice(0, 8).map((cat) => {
+            const logoPath = getCategoryLogo(cat.slug);
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id)}
+                className={cn(
+                  'flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium whitespace-nowrap',
+                  selectedCategory === cat.id
+                    ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400'
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+                )}
+              >
+                {logoPath ? (
+                  <Image src={logoPath} alt={cat.name} width={20} height={20} className="object-contain" style={{ width: 'auto', height: 'auto' }} />
+                ) : (
+                  <span>{cat.icon}</span>
+                )}
+                {cat.name}
+              </button>
+            );
+          })}
         </div>
       </div>
 
@@ -202,14 +293,31 @@ export default function LeaderboardPage() {
         </Card>
       ) : (
         <>
-          {/* Top 3 */}
+          {/* Top 3 Podium */}
           <div className="grid grid-cols-3 gap-3 mb-6">
-            {leaderboard.slice(0, 3).map((entry, index) => {
-              const positions = [1, 0, 2]; // 2nd, 1st, 3rd
-              const actualIndex = positions[index];
+            {[1, 0, 2].map((actualIndex) => {
               const actualEntry = leaderboard[actualIndex];
-              if (!actualEntry) return null;
+              if (!actualEntry) {
+                // Empty placeholder for missing positions
+                return (
+                  <div
+                    key={`empty-${actualIndex}`}
+                    className={cn(
+                      'text-center p-4 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-xl opacity-50',
+                      actualIndex === 0 && 'md:col-start-2'
+                    )}
+                  >
+                    <div className="w-16 h-16 mx-auto mb-2 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                      <span className="text-2xl text-gray-400">?</span>
+                    </div>
+                    <p className="text-sm text-gray-400">Bo'sh</p>
+                  </div>
+                );
+              }
 
+              // Use store avatar for current user
+              const avatarToShow = user?.id === actualEntry.id && user?.avatar ? user.avatar : actualEntry.avatar;
+              
               return (
                 <Card
                   key={actualEntry.id}
@@ -218,12 +326,12 @@ export default function LeaderboardPage() {
                     actualIndex === 0 && 'md:col-start-2 border-yellow-300 dark:border-yellow-600 bg-gradient-to-b from-yellow-50 to-white dark:from-yellow-900/20 dark:to-gray-900',
                     actualIndex === 1 && 'border-gray-300 dark:border-gray-600',
                     actualIndex === 2 && 'border-orange-300 dark:border-orange-600',
-                    index === 1 && '-mt-4'
+                    actualIndex === 0 && '-mt-4'
                   )}
                 >
                   <div className="relative inline-block mb-2">
                     <Avatar
-                      src={actualEntry.avatar}
+                      src={avatarToShow}
                       name={actualEntry.fullName}
                       size={actualIndex === 0 ? 'xl' : 'lg'}
                     />
@@ -241,7 +349,7 @@ export default function LeaderboardPage() {
                   </p>
                   <p className="text-xs text-gray-500 truncate">@{actualEntry.username}</p>
                   <p className="text-indigo-600 dark:text-indigo-400 font-bold mt-2">
-                    {formatXP(actualEntry.totalXP)} XP
+                    {formatXP(getEntryXP(actualEntry))} XP
                   </p>
                   <Badge variant="info" size="sm" className="mt-1">
                     Level {actualEntry.level}
@@ -251,10 +359,13 @@ export default function LeaderboardPage() {
             })}
           </div>
 
-          {/* Rest of leaderboard */}
+          {/* Rest of leaderboard (4th place and below) */}
+          {leaderboard.length > 3 && (
           <div className="space-y-2">
             {leaderboard.slice(3).map((entry) => {
               const isCurrentUser = user?.id === entry.id;
+              // Use store avatar for current user
+              const avatarToShow = isCurrentUser && user?.avatar ? user.avatar : entry.avatar;
 
               return (
                 <Card
@@ -271,7 +382,7 @@ export default function LeaderboardPage() {
                     {getRankIcon(entry.rank)}
                   </div>
                   
-                  <Avatar src={entry.avatar} name={entry.fullName} size="md" />
+                  <Avatar src={avatarToShow} name={entry.fullName} size="md" />
                   
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-gray-900 dark:text-white truncate">
@@ -283,7 +394,7 @@ export default function LeaderboardPage() {
 
                   <div className="text-right">
                     <p className="font-bold text-indigo-600 dark:text-indigo-400">
-                      {formatXP(entry.totalXP)} XP
+                      {formatXP(getEntryXP(entry))} XP
                     </p>
                     <p className="text-xs text-gray-500">Level {entry.level}</p>
                   </div>
@@ -291,6 +402,7 @@ export default function LeaderboardPage() {
               );
             })}
           </div>
+          )}
         </>
       )}
     </div>

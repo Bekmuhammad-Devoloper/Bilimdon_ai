@@ -1,0 +1,706 @@
+PYTHON - 100 TA BOSHLANG'ICH DARAJADAGI TEST SAVOLLARI
+=====================================================
+
+1. Python qaysi tilga asoslangan?
+   A) Java
+   B) C
+   C) JavaScript
+   D) Ruby
+   Javob: B
+
+2. Python qaysi yilda yaratilgan?
+   A) 1985
+   B) 1991
+   C) 1995
+   D) 2000
+   Javob: B
+
+3. Python yaratuvchisi kim?
+   A) James Gosling
+   B) Guido van Rossum
+   C) Brendan Eich
+   D) Dennis Ritchie
+   Javob: B
+
+4. Python interpreted yoki compiled?
+   A) Faqat compiled
+   B) Interpreted language
+   C) Assembly
+   D) Machine code
+   Javob: B
+
+5. print() function nima qiladi?
+   A) Input olish
+   B) Ekranga chiqarish
+   C) File o'qish
+   D) Variable yaratish
+   Javob: B
+
+6. input() function nima qiladi?
+   A) Print
+   B) Foydalanuvchidan input olish
+   C) File yozish
+   D) Calculate
+   Javob: B
+
+7. Variable e'lon qilish uchun keyword kerakmi?
+   A) Ha, var
+   B) Yo'q, to'g'ridan-to'g'ri assign
+   C) Ha, let
+   D) Ha, const
+   Javob: B
+
+8. Comment yozish uchun belgisi?
+   A) //
+   B) #
+   C) /* */
+   D) --
+   Javob: B
+
+9. Multi-line comment qanday?
+   A) # har line uchun
+   B) """ yoki ''' orasida
+   C) /* */
+   D) <!-- -->
+   Javob: B
+
+10. int() function nima?
+    A) String
+    B) Integer ga convert
+    C) Float
+    D) Boolean
+    Javob: B
+
+11. float() function nima?
+    A) Integer
+    B) Float ga convert
+    C) String
+    D) Boolean
+    Javob: B
+
+12. str() function nima?
+    A) Integer
+    B) String ga convert
+    C) Float
+    D) List
+    Javob: B
+
+13. type() function nima?
+    A) Convert
+    B) O'zgaruvchi type ni ko'rsatish
+    C) Print
+    D) Input
+    Javob: B
+
+14. String concatenation qanday?
+    A) + operator
+    B) concat()
+    C) append()
+    D) join() faqat
+    Javob: A
+
+15. String indexing qayerdan boshlanadi?
+    A) 1
+    B) 0
+    C) -1
+    D) Random
+    Javob: B
+
+16. Negative indexing nima?
+    A) Error
+    B) Oxiridan hisoblash (-1 oxirgi element)
+    C) Boshidan
+    D) Not supported
+    Javob: B
+
+17. String slicing syntax?
+    A) string(start:end)
+    B) string[start:end]
+    C) string{start:end}
+    D) string<start:end>
+    Javob: B
+
+18. len() function nima?
+    A) Type
+    B) Uzunlikni qaytaradi
+    C) Sum
+    D) Max
+    Javob: B
+
+19. upper() method nima?
+    A) Lower case
+    B) Upper case ga o'zgartirish
+    C) Title case
+    D) Capitalize
+    Javob: B
+
+20. lower() method nima?
+    A) Upper case
+    B) Lower case ga o'zgartirish
+    C) Title case
+    D) Capitalize
+    Javob: B
+
+21. strip() method nima?
+    A) Split
+    B) Bo'sh joylarni olib tashlash (boshi va oxiri)
+    C) Replace
+    D) Join
+    Javob: B
+
+22. replace() method nima?
+    A) Remove
+    B) Substring ni almashtirish
+    C) Strip
+    D) Split
+    Javob: B
+
+23. split() method nima?
+    A) Join
+    B) String ni list ga bo'lish
+    C) Replace
+    D) Strip
+    Javob: B
+
+24. List yaratish syntax?
+    A) list()
+    B) []
+    C) {}
+    D) ()
+    Javob: B
+
+25. List elementiga access qanday?
+    A) list.get(index)
+    B) list[index]
+    C) list(index)
+    D) list{index}
+    Javob: B
+
+26. append() method (list) nima?
+    A) Remove
+    B) Oxiriga element qo'shish
+    C) Insert
+    D) Pop
+    Javob: B
+
+27. insert() method (list) nima?
+    A) End ga qo'shish
+    B) Specific position ga qo'shish
+    C) Remove
+    D) Pop
+    Javob: B
+
+28. remove() method (list) nima?
+    A) Index bo'yicha
+    B) Value bo'yicha element o'chirish
+    C) Pop
+    D) Clear
+    Javob: B
+
+29. pop() method (list) nima?
+    A) Add element
+    B) Index bo'yicha o'chirish va return
+    C) Remove by value
+    D) Clear
+    Javob: B
+
+30. clear() method (list) nima?
+    A) Remove one
+    B) Barcha elementlarni o'chirish
+    C) Pop
+    D) Delete list
+    Javob: B
+
+31. Tuple yaratish syntax?
+    A) tuple[]
+    B) ()
+    C) {}
+    D) []
+    Javob: B
+
+32. Tuple vs List asosiy farq?
+    A) Bir xil
+    B) Tuple immutable (o'zgarmas)
+    C) List immutable
+    D) No difference
+    Javob: B
+
+33. Set yaratish syntax?
+    A) set[]
+    B) {} yoki set()
+    C) ()
+    D) []
+    Javob: B
+
+34. Set xususiyati nima?
+    A) Ordered
+    B) Unordered, unique elements
+    C) Indexed
+    D) Duplicates allowed
+    Javob: B
+
+35. Dictionary yaratish syntax?
+    A) dict[]
+    B) {key: value}
+    C) [key: value]
+    D) (key: value)
+    Javob: B
+
+36. Dictionary value ga access?
+    A) dict.value
+    B) dict[key]
+    C) dict(key)
+    D) dict->key
+    Javob: B
+
+37. keys() method (dict) nima?
+    A) Values
+    B) Barcha key larni qaytaradi
+    C) Items
+    D) Clear
+    Javob: B
+
+38. values() method (dict) nima?
+    A) Keys
+    B) Barcha value larni qaytaradi
+    C) Items
+    D) Get
+    Javob: B
+
+39. items() method (dict) nima?
+    A) Keys only
+    B) Key-value pairs ni qaytaradi
+    C) Values only
+    D) Clear
+    Javob: B
+
+40. if statement syntax?
+    A) if condition {}
+    B) if condition:
+    C) if (condition)
+    D) if condition then
+    Javob: B
+
+41. elif nima?
+    A) end if
+    B) else if
+    C) else
+    D) end elif
+    Javob: B
+
+42. == operator nima?
+    A) Assignment
+    B) Equality check
+    C) Identity check
+    D) Greater than
+    Javob: B
+
+43. != operator nima?
+    A) Equal
+    B) Not equal
+    C) Assignment
+    D) Identity
+    Javob: B
+
+44. and operator nima?
+    A) OR logic
+    B) Logical AND
+    C) NOT logic
+    D) XOR
+    Javob: B
+
+45. or operator nima?
+    A) AND logic
+    B) Logical OR
+    C) NOT logic
+    D) XOR
+    Javob: B
+
+46. not operator nima?
+    A) AND
+    B) Logical NOT
+    C) OR
+    D) XOR
+    Javob: B
+
+47. for loop syntax?
+    A) for (i=0; i<10; i++)
+    B) for i in range(10):
+    C) for i to 10
+    D) loop 10 times
+    Javob: B
+
+48. range() function nima?
+    A) Random
+    B) Sequence of numbers
+    C) List
+    D) String
+    Javob: B
+
+49. while loop syntax?
+    A) while (condition) {}
+    B) while condition:
+    C) loop while condition
+    D) repeat while
+    Javob: B
+
+50. break statement nima?
+    A) Continue loop
+    B) Loop dan chiqish
+    C) Pass
+    D) Return
+    Javob: B
+
+51. continue statement nima?
+    A) Stop loop
+    B) Keyingi iteration ga o'tish
+    C) Break
+    D) Return
+    Javob: B
+
+52. pass statement nima?
+    A) Break loop
+    B) Placeholder (hech narsa qilmaydi)
+    C) Continue
+    D) Return
+    Javob: B
+
+53. Function define qilish keyword?
+    A) function
+    B) def
+    C) func
+    D) define
+    Javob: B
+
+54. Function qiymat qaytarish uchun?
+    A) return
+    B) yield
+    C) send
+    D) give
+    Javob: A
+
+55. Function parameters nima?
+    A) Returns
+    B) Function ga argument lar
+    C) Variables
+    D) Constants
+    Javob: B
+
+56. Default parameter values qanday?
+    A) Not supported
+    B) def func(param=default):
+    C) def func(param: default)
+    D) def func(param default)
+    Javob: B
+
+57. *args nima (functions)?
+    A) Fixed args
+    B) Variable number of positional arguments
+    C) Keyword args
+    D) Default args
+    Javob: B
+
+58. **kwargs nima (functions)?
+    A) Positional args
+    B) Variable number of keyword arguments
+    C) Fixed args
+    D) No args
+    Javob: B
+
+59. Lambda function nima?
+    A) Named function
+    B) Anonymous one-line function
+    C) Class method
+    D) Generator
+    Javob: B
+
+60. lambda syntax?
+    A) lambda x: x + 1
+    B) def lambda(x): x + 1
+    C) lambda(x) { x + 1 }
+    D) x => x + 1
+    Javob: A
+
+61. map() function nima?
+    A) Filter
+    B) Function ni iterable har elementga apply
+    C) Reduce
+    D) Sort
+    Javob: B
+
+62. filter() function nima?
+    A) Map
+    B) Condition bo'yicha filter qilish
+    C) Reduce
+    D) Sort
+    Javob: B
+
+63. File ochish uchun function?
+    A) read()
+    B) open()
+    C) file()
+    D) load()
+    Javob: B
+
+64. File o'qish mode?
+    A) 'w'
+    B) 'r'
+    C) 'a'
+    D) 'x'
+    Javob: B
+
+65. File yozish mode?
+    A) 'r'
+    B) 'w'
+    C) 'x'
+    D) 'd'
+    Javob: B
+
+66. File append mode?
+    A) 'w'
+    B) 'a'
+    C) 'r'
+    D) 'x'
+    Javob: B
+
+67. read() method (file) nima?
+    A) Write
+    B) File content ni o'qish
+    C) Close
+    D) Append
+    Javob: B
+
+68. readline() method nima?
+    A) Read all
+    B) Bitta line o'qish
+    C) Write line
+    D) Close
+    Javob: B
+
+69. write() method (file) nima?
+    A) Read
+    B) File ga yozish
+    C) Close
+    D) Open
+    Javob: B
+
+70. close() method (file) nima?
+    A) Open
+    B) File ni yopish
+    C) Read
+    D) Write
+    Javob: B
+
+71. with statement (file) nima uchun?
+    A) Loop
+    B) Auto file close (context manager)
+    C) Condition
+    D) Function
+    Javob: B
+
+72. try-except nima?
+    A) Loop
+    B) Exception handling
+    C) Condition
+    D) Function
+    Javob: B
+
+73. Exception nima?
+    A) Warning
+    B) Runtime error
+    C) Syntax error
+    D) Logic error
+    Javob: B
+
+74. finally block nima?
+    A) Optional catch
+    B) Har doim execute bo'ladi (error bo'lsa ham)
+    C) First execute
+    D) Never execute
+    Javob: B
+
+75. raise keyword nima?
+    A) Catch exception
+    B) Exception throw qilish
+    C) Handle exception
+    D) Ignore exception
+    Javob: B
+
+76. import keyword nima?
+    A) Export
+    B) Module import qilish
+    C) Include
+    D) Require
+    Javob: B
+
+77. from ... import ... syntax?
+    A) Import all
+    B) Module dan specific items import
+    C) Export
+    D) Include
+    Javob: B
+
+78. Module nima?
+    A) Function
+    B) Python file (.py) - reusable code
+    C) Class
+    D) Variable
+    Javob: B
+
+79. Package nima?
+    A) Single file
+    B) Modules directory (__init__.py bilan)
+    C) Function
+    D) Variable
+    Javob: B
+
+80. __name__ == "__main__" nima?
+    A) Import check
+    B) Script direct run check
+    C) Module name
+    D) Package check
+    Javob: B
+
+81. Class yaratish keyword?
+    A) object
+    B) class
+    C) def
+    D) new
+    Javob: B
+
+82. __init__() method nima?
+    A) Destructor
+    B) Constructor
+    C) Class method
+    D) Static method
+    Javob: B
+
+83. self parameter nima?
+    A) Class name
+    B) Instance reference
+    C) Static variable
+    D) Method name
+    Javob: B
+
+84. Object yaratish qanday?
+    A) new ClassName()
+    B) ClassName()
+    C) create ClassName()
+    D) instance ClassName()
+    Javob: B
+
+85. Inheritance qanday?
+    A) class Child extends Parent:
+    B) class Child(Parent):
+    C) class Child -> Parent:
+    D) class Child: Parent
+    Javob: B
+
+86. super() function nima?
+    A) Child method
+    B) Parent class ga access
+    C) Static method
+    D) Class method
+    Javob: B
+
+87. is operator nima?
+    A) Equality
+    B) Identity check (same object)
+    C) Type check
+    D) Membership
+    Javob: B
+
+88. in operator nima?
+    A) Identity
+    B) Membership test
+    C) Equality
+    D) Type check
+    Javob: B
+
+89. None nima?
+    A) 0
+    B) Null value
+    C) False
+    D) Empty string
+    Javob: B
+
+90. True va False nima?
+    A) Strings
+    B) Boolean values
+    C) Integers
+    D) None
+    Javob: B
+
+91. List comprehension syntax?
+    A) [x for x in range(10)]
+    B) [x | x in range(10)]
+    C) {x for x in range(10)}
+    D) (x for x in range(10))
+    Javob: A
+
+92. Dictionary comprehension syntax?
+    A) [k: v for ...]
+    B) {k: v for ...}
+    C) (k: v for ...)
+    D) <k: v for ...>
+    Javob: B
+
+93. enumerate() function nima?
+    A) Count only
+    B) Index va value return (loop da)
+    C) Range
+    D) Zip
+    Javob: B
+
+94. zip() function nima?
+    A) Compress
+    B) Parallel iteration (multiple iterables)
+    C) Unzip
+    D) Split
+    Javob: B
+
+95. sorted() function nima?
+    A) In-place sort
+    B) Yangi sorted list return
+    C) Reverse
+    D) Shuffle
+    Javob: B
+
+96. sort() method (list) nima?
+    A) Return new list
+    B) In-place sort (listni o'zgartiradi)
+    C) Reverse
+    D) Copy
+    Javob: B
+
+97. reversed() function nima?
+    A) Sort
+    B) Reverse iterator return
+    C) Shuffle
+    D) Clear
+    Javob: B
+
+98. all() function nima?
+    A) Any true
+    B) Barcha elements True bo'lsa True
+    C) None true
+    D) Count true
+    Javob: B
+
+99. any() function nima?
+    A) All true
+    B) Kamida bitta True bo'lsa True
+    C) None true
+    D) Count true
+    Javob: B
+
+100. sum() function nima?
+     A) Average
+     B) Yig'indini hisoblash
+     C) Count
+     D) Max
+     Javob: B
+
+=====================================================
+                    YAKUNLANDI
+=====================================================

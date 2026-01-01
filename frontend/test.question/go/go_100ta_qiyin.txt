@@ -1,0 +1,702 @@
+GO DASTURLASH TILI - QIYIN TESTLAR
+======================================
+
+1. Memory model da happens-before relationship qanday ta'minlanadi?
+a) Channel communication
+b) Mutex lock/unlock
+c) sync/atomic operations
+d) Barchasi to'g'ri
+Javob: d
+
+2. Go scheduler M:N scheduling modelini qanday implement qilgan?
+a) M goroutines on N OS threads
+b) N goroutines on M OS threads
+c) 1:1 mapping
+d) Random assignment
+Javob: a
+
+3. GMP model da G, M, P nima degani?
+a) Goroutine, Machine(thread), Processor
+b) Go, Memory, Process
+c) Generic, Method, Package
+d) Global, Mutex, Pointer
+Javob: a
+
+4. Work stealing algorithm qanday ishlaydi?
+a) Idle P boshqa P dan runqueue steal qiladi
+b) M boshqa M dan goroutine oladi
+c) G boshqa G ni interrupt qiladi
+d) Random goroutine selection
+Javob: a
+
+5. Escape analysis nima uchun kerak?
+a) Heap yoki stack allocation aniqlash
+b) Memory leak detection
+c) Performance optimization
+d) a va c to'g'ri
+Javob: d
+
+6. Stack split qanday ishlaydi?
+a) Goroutine stack to'lganda kengayadi
+b) Yangi stack allocate qilinadi
+c) Copy old stack to new
+d) Barchasi to'g'ri (Go 1.4 dan oldin)
+Javob: d
+
+7. Go 1.4 dan keyin stack split o'rniga nima ishlatiladi?
+a) Contiguous stacks
+b) Segmented stacks
+c) Fixed-size stacks
+d) Dynamic allocation
+Javob: a
+
+8. Compiler optimization da inlining qachon ishlaydi?
+a) Kichik funksiyalar
+b) Non-recursive funksiyalar
+c) Compiler heuristics
+d) Barchasi to'g'ri
+Javob: d
+
+9. //go:noinline directive nima qiladi?
+a) Funksiyani inline qilmaydi
+b) Optimization off
+c) Debug information
+d) Performance hint
+Javob: a
+
+10. Compiler directive //go:linkname nima uchun?
+a) Symbol linking
+b) Private function access
+c) Unsafe operation
+d) Barchasi to'g'ri
+Javob: d
+
+11. SSA (Static Single Assignment) compiler da nima uchun?
+a) Optimization
+b) Code generation
+c) Intermediate representation
+d) Barchasi to'g'ri
+Javob: d
+
+12. Write barrier nima va qachon ishlaydi?
+a) GC uchun pointer write tracking
+b) Data race detection
+c) Memory protection
+d) Concurrent write handling
+Javob: a
+
+13. Tri-color marking algorithm qanday ishlaydi?
+a) White (unscanned), Grey (scanning), Black (scanned)
+b) RGB colors for objects
+c) Three-phase marking
+d) Color-based GC
+Javob: a
+
+14. STW (Stop-The-World) pause nimani anglatadi?
+a) GC paytida hamma goroutinelar to'xtaydi
+b) Program crash
+c) Deadlock
+d) Performance issue
+Javob: a
+
+15. Concurrent mark-and-sweep GC qanday ishlaydi?
+a) GC va program parallel
+b) Write barriers
+c) Incremental collection
+d) Barchasi to'g'ri
+Javob: d
+
+16. GOGC environment variable nima qiladi?
+a) GC triggering threshold
+b) GC off/on
+c) GC frequency
+d) Memory limit
+Javob: a
+
+17. Memory ballast technique nima?
+a) Katta array allocate qilib GC pauses kamaytirish
+b) Memory leak
+c) Performance test
+d) Heap expansion
+Javob: a
+
+18. sync.Map oddiy map dan qanday farq qiladi?
+a) Lock-free reads for stable keys
+b) Thread-safe
+c) Optimized for specific patterns
+d) Barchasi to'g'ri
+Javob: d
+
+19. sync.Map qachon ishlatish kerak?
+a) Key set stable
+b) Many reads, few writes
+c) Disjoint key sets
+d) Barchasi to'g'ri
+Javob: d
+
+20. atomic.Value qanday ishlaydi?
+a) Lock-free load/store
+b) Type-safe atomic
+c) Interface{} storage
+d) Barchasi to'g'ri
+Javob: d
+
+21. Memory ordering da acquire va release semantics nima?
+a) Synchronization points
+b) Memory visibility
+c) Happens-before edges
+d) Barchasi to'g'ri
+Javob: d
+
+22. Channel internal implementation qanday?
+a) Circular buffer
+b) Lock va condition variables
+c) Goroutine queues
+d) Barchasi to'g'ri
+Javob: d
+
+23. Unbuffered channel send/receive qanday synchronize qiladi?
+a) Rendezvous point
+b) Sender va receiver meet
+c) Happens-before guarantee
+d) Barchasi to'g'ri
+Javob: d
+
+24. Channel close panic qachon bo'ladi?
+a) Send to closed channel
+b) Close closed channel
+c) Ikkalasi ham
+d) Receive from closed
+Javob: c
+
+25. nil channel ga send/receive qilish nima qiladi?
+a) Panic
+b) Block forever
+c) Return zero value
+d) Error
+Javob: b
+
+26. Context cancellation qanday propagate bo'ladi?
+a) Tree structure
+b) Parent cancel -> child cancel
+c) Context chain
+d) Barchasi to'g'ri
+Javob: d
+
+27. context.Value qachon ishlatish kerak?
+a) Request-scoped data
+b) API boundaries
+c) Sparingly
+d) Barchasi to'g'ri
+Javob: d
+
+28. Interface type assertion vs type switch performance farqi?
+a) Type switch faster for multiple checks
+b) Type assertion faster
+c) No difference
+d) Depends on types
+Javob: a
+
+29. Empty interface interface{} qanday implement qilingan?
+a) Two-word structure (type, value)
+b) Single pointer
+c) Runtime type info
+d) a va c to'g'ri
+Javob: d
+
+30. Interface comparison qanday ishlaydi?
+a) Type va value comparison
+b) Deep equality
+c) Pointer comparison
+d) Panic for incomparable types
+Javob: d
+
+31. Comparable vs non-comparable types qanday aniqlanadi?
+a) Language specification
+b) == operator validity
+c) map key eligibility
+d) Barchasi to'g'ri
+Javob: d
+
+32. Struct comparison qachon panic qiladi?
+a) Hech qachon
+b) Incomparable field bor bo'lsa
+c) Pointer field bor bo'lsa
+d) Method bor bo'lsa
+Javob: b
+
+33. Slice comparison nima uchun compile error?
+a) Reference type
+b) Size unknown
+c) Deep comparison expensive
+d) Language design
+Javob: d
+
+34. Function value comparison natijasi nima?
+a) Panic
+b) False (except nil)
+c) Compile error
+d) Address comparison
+Javob: b
+
+35. Map concurrent read/write qanday detect qilinadi?
+a) Runtime race detector
+b) Hash collision check
+c) Panic at runtime
+d) Compile-time check
+Javob: c
+
+36. reflect.DeepEqual qanday ishlaydi?
+a) Recursive comparison
+b) Pointer dereferencing
+c) Slice/map comparison
+d) Barchasi to'g'ri
+Javob: d
+
+37. String interning Go da bor-mi?
+a) Yo'q
+b) Ha, compile-time
+c) Ha, runtime
+d) Faqat constants
+Javob: d
+
+38. String concatenation optimization qanday?
+a) strings.Builder
+b) bytes.Buffer
+c) Ikkalasi ham
+d) + operator best
+Javob: c
+
+39. strings.Builder qanday optimized?
+a) Pre-allocate buffer
+b) Minimize allocations
+c) Grow strategy
+d) Barchasi to'g'ri
+Javob: d
+
+40. UTF-8 encoding Go da qanday handled?
+a) Native support
+b) rune type
+c) unicode/utf8 package
+d) Barchasi to'g'ri
+Javob: d
+
+41. Slice append capacity growth strategy qanday?
+a) Double until 1024, then 25% growth
+b) Always double
+c) Fixed increment
+d) Random
+Javob: a
+
+42. Slice 3-index slicing a[i:j:k] da k nima?
+a) Capacity limit
+b) New cap = k-i
+c) Prevents unwanted sharing
+d) Barchasi to'g'ri
+Javob: d
+
+43. Array/slice full slice expression nima beradi?
+a) Capacity control
+b) New backing array
+c) Memory isolation
+d) a va c
+Javob: d
+
+44. Copy-on-write slice pattern qanday implement qilinadi?
+a) Full slice expression
+b) Manual copy
+c) append with 0 growth
+d) a yoki b
+Javob: d
+
+45. Type embedding method promotion qanday ishlaydi?
+a) Compile-time method copying
+b) Runtime method lookup
+c) Syntactic sugar
+d) a to'g'ri
+Javob: d
+
+46. Embedded field ambiguity qanday resolve qilinadi?
+a) Compile error
+b) Explicit selection
+c) First match
+d) a va b
+Javob: d
+
+47. Method set rules pointer vs value receiver?
+a) Pointer method set includes value methods
+b) Value method set doesn't include pointer methods
+c) *T method set = T methods + *T methods
+d) Barchasi to'g'ri
+Javob: d
+
+48. Interface satisfaction compile-time vs runtime?
+a) Compile-time check
+b) Runtime check
+c) Both
+d) Depends on usage
+Javob: c
+
+49. Blank identifier method nima uchun?
+a) Interface implementation check
+b) Compile-time guarantee
+c) var _ Interface = (*Type)(nil)
+d) Barchasi to'g'ri
+Javob: d
+
+50. init() execution order multiple packages da qanday?
+a) Dependency order (topological sort)
+b) Import order
+c) Alphabetical
+d) Random
+Javob: a
+
+51. Circular import Go da qanday handled?
+a) Compile error
+b) Runtime error
+c) Allowed
+d) Warning
+Javob: a
+
+52. Internal package restriction qanday?
+a) Faqat parent va subtree import qila oladi
+b) Hamma import qila oladi
+c) Faqat same module
+d) a to'g'ri
+Javob: d
+
+53. Vendor directory precedence qanday?
+a) Module cache dan oldin
+b) Module cache dan keyin
+c) Parallel
+d) Replaced by modules
+Javob: d
+
+54. Go modules proxy protocol qanday ishlaydi?
+a) HTTPS-based
+b) Checksums
+c) Go sumdb
+d) Barchasi to'g'ri
+Javob: d
+
+55. Module version query syntax qanday?
+a) @latest, @v1.2.3, @commit
+b) Faqat semantic version
+c) Faqat branch name
+d) Faqat tag
+Javob: a
+
+56. Pseudo-version format qanday?
+a) v0.0.0-timestamp-commit
+b) Arbitrary string
+c) Semantic version
+d) Date-based
+Javob: a
+
+57. +incompatible suffix nima uchun?
+a) Pre-module v2+ packages
+b) Breaking changes
+c) Compatibility marker
+d) a va c
+Javob: d
+
+58. Retract directive nima qiladi?
+a) Version ni "bad" deb belgilaydi
+b) Version delete
+c) Downgrade force
+d) Rollback
+Javob: a
+
+59. Build cache qanday ishlaydi?
+a) Content-based hashing
+b) GOCACHE directory
+c) Automatic invalidation
+d) Barchasi to'g'ri
+Javob: d
+
+60. Compiler link-time optimization qanday?
+a) Dead code elimination
+b) Cross-package inlining
+c) Symbol resolution
+d) Barchasi to'g'ri
+Javob: d
+
+61. -ldflags nima uchun?
+a) Linker flags
+b) Set variables at build time
+c) Optimization level
+d) a va b
+Javob: d
+
+62. -X linker flag syntax qanday?
+a) -X package.variable=value
+b) -X variable=value
+c) -X "package.var=value"
+d) a va c
+Javob: d
+
+63. Build tag qanday evaluate qilinadi?
+a) Boolean expression
+b) Go version check
+c) Custom tags
+d) Barchasi to'g'ri
+Javob: d
+
+64. //go:build vs // +build farqi?
+a) //go:build yangi syntax
+b) Boolean expressions powerful
+c) +build deprecated
+d) Barchasi to'g'ri
+Javob: d
+
+65. CGO performance overhead qanday?
+a) Call overhead significant
+b) Type conversion cost
+c) Memory crossing boundaries
+d) Barchasi to'g'ri
+Javob: d
+
+66. CGO memory rules qanday?
+a) Go memory = C pointer danger
+b) C memory = manual management
+c) Pointer passing restrictions
+d) Barchasi to'g'ri
+Javob: d
+
+67. Finalizer qanday ishlaydi?
+a) runtime.SetFinalizer
+b) Before GC collects object
+c) Not guaranteed to run
+d) Barchasi to'g'ri
+Javob: d
+
+68. Finalizer pitfalls qanday?
+a) Resurrection
+b) Order undefined
+c) Performance impact
+d) Barchasi to'g'ri
+Javob: d
+
+69. sync.Cond qanday ishlaydi?
+a) Condition variable
+b) Wait/Signal/Broadcast
+c) Must hold lock
+d) Barchasi to'g'ri
+Javob: d
+
+70. Spurious wakeup nima?
+a) Wait returns without signal
+b) Must recheck condition
+c) While loop pattern
+d) Barchasi to'g'ri
+Javob: d
+
+71. Lock contention profiling qanday?
+a) go test -mutexprofile
+b) runtime/pprof
+c) Mutex wait time
+d) Barchasi to'g'ri
+Javob: d
+
+72. Lock-free data structures Go da qanday?
+a) atomic package
+b) CAS operations
+c) ABA problem
+d) Barchasi to'g'ri
+Javob: d
+
+73. GOMAXPROCS nima qiladi?
+a) P count (logical processors)
+b) Parallel goroutines limit
+c) Default = CPU count
+d) Barchasi to'g'ri
+Javob: d
+
+74. Goroutine local storage bor-mi?
+a) Yo'q (by design)
+b) Ha
+c) context.Value workaround
+d) a va c
+Javob: d
+
+75. Goroutine ID olish mumkinmi?
+a) Yo'q (no official API)
+b) Ha, runtime package
+c) Hacky ways exist
+d) a va c
+Javob: d
+
+76. Stack trace goroutine da qanday?
+a) runtime.Stack()
+b) debug.Stack()
+c) panic recovery
+d) Barchasi to'g'ri
+Javob: d
+
+77. Deadlock detection qanday ishlaydi?
+a) Runtime checks all goroutines blocked
+b) Channel dependency graph
+c) Only at program end
+d) a va c
+Javob: d
+
+78. Network poller qanday implement qilingan?
+a) epoll (Linux), kqueue (BSD), IOCP (Windows)
+b) Integrated with scheduler
+c) Non-blocking I/O
+d) Barchasi to'g'ri
+Javob: d
+
+79. File I/O blocking vs network I/O?
+a) File I/O blocks OS thread
+b) Network I/O non-blocking
+c) Different implementations
+d) Barchasi to'g'ri
+Javob: d
+
+80. HTTP/2 server push Go da qanday?
+a) http.Pusher interface
+b) ResponseWriter type assertion
+c) Server push method
+d) Barchasi to'g'ri
+Javob: d
+
+81. HTTP client connection pooling qanday?
+a) MaxIdleConns
+b) MaxIdleConnsPerHost
+c) IdleConnTimeout
+d) Barchasi to'g'ri
+Javob: d
+
+82. Transport RoundTripper interface nima?
+a) HTTP request execution
+b) Middleware pattern
+c) Connection management
+d) Barchasi to'g'ri
+Javob: d
+
+83. Request context cancellation nima propagate qiladi?
+a) Network connection close
+b) In-flight request cancel
+c) Goroutine cleanup
+d) Barchasi to'g'ri
+Javob: d
+
+84. Server-Sent Events (SSE) Go da qanday?
+a) Flusher interface
+b) ResponseWriter flush
+c) Long-lived connection
+d) Barchasi to'g'ri
+Javob: d
+
+85. WebSocket connection qanday maintained?
+a) Goroutine per connection
+b) Read/write goroutines
+c) Ping/pong frames
+d) Barchasi to'g'ri
+Javob: d
+
+86. Protocol Buffers vs JSON performance?
+a) Protobuf faster serialization
+b) Smaller payload
+c) Type safety
+d) Barchasi to'g'ri
+Javob: d
+
+87. Reflection performance overhead qancha?
+a) 10-100x slower
+b) Type assertions 1-2x
+c) Depends on operation
+d) Barchasi to'g'ri
+Javob: d
+
+88. Generics type constraint inference qanday?
+a) Type unification
+b) Constraint satisfaction
+c) Compile-time type checking
+d) Barchasi to'g'ri
+Javob: d
+
+89. Generics type parameters method set qanday?
+a) Intersection of constraint methods
+b) Union of methods
+c) Faqat interface methods
+d) a to'g'ri
+Javob: d
+
+90. Type list restrictions generic constraintda?
+a) Faqat basic types
+b) Faqat defined types
+c) Approximation element ~T
+d) Barchasi to'g'ri
+Javob: d
+
+91. Generic function instantiation qanday?
+a) Monomorphization
+b) Type erasure
+c) Dictionary passing
+d) a (compile-time) va c (runtime) combination
+Javob: d
+
+92. Fuzzing Go da qanday ishlaydi?
+a) go test -fuzz
+b) Corpus generation
+c) Coverage-guided
+d) Barchasi to'g'ri
+Javob: d
+
+93. Fuzz target qanday yoziladi?
+a) func FuzzXxx(f *testing.F)
+b) f.Fuzz(func(...))
+c) Seed corpus f.Add()
+d) Barchasi to'g'ri
+Javob: d
+
+94. Memory sanitizer (MSan) nima detect qiladi?
+a) Uninitialized memory reads
+b) Use-after-free
+c) Buffer overflows
+d) Faqat a
+Javob: d
+
+95. Address sanitizer (ASan) nima detect qiladi?
+a) Buffer overflows
+b) Use-after-free
+c) Double free
+d) Barchasi to'g'ri
+Javob: d
+
+96. Assembly Go da qanday yoziladi?
+a) Plan9 assembly
+b) .s files
+c) //go:noescape directive
+d) Barchasi to'g'ri
+Javob: d
+
+97. Compiler intrinsics qanday ishlatiladi?
+a) Automatic recognition
+b) Optimized implementations
+c) math/bits package
+d) Barchasi to'g'ri
+Javob: d
+
+98. Plugin system Go da qanday ishlaydi?
+a) Shared libraries
+b) -buildmode=plugin
+c) plugin.Open()
+d) Barchasi to'g'ri
+Javob: d
+
+99. WASM target qanday build qilinadi?
+a) GOOS=js GOARCH=wasm
+b) go build
+c) .wasm output
+d) Barchasi to'g'ri
+Javob: d
+
+100. PGO (Profile-Guided Optimization) qanday ishlaydi?
+a) Runtime profile collection
+b) Recompile with profile
+c) Hot path optimization
+d) Barchasi to'g'ri
+Javob: d

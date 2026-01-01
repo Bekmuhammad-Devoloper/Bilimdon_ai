@@ -1,0 +1,702 @@
+FIZIKA - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+=================================================
+
+1. Nyuton mexanikasining chegaralari?
+   A) Hech qanday cheklov
+   B) Yorug'lik tezligiga yaqin va kvant o'lchamlarda
+   C) Faqat katta jismlarda
+   D) Har doim ishlaydi
+   Javob: B
+
+2. Lagranjianning tenglamasi nima?
+   A) F=ma
+   B) d/dt(∂L/∂q̇) - ∂L/∂q = 0
+   C) E=mc²
+   D) p=mv
+   Javob: B
+
+3. Gamiltonning tenglamalari?
+   A) Bitta tenglama
+   B) q̇ = ∂H/∂p, ṗ = -∂H/∂q
+   C) Ikkita tenglama
+   D) Uchta tenglama
+   Javob: B
+
+4. Kanonnik almashtirishlar nima?
+   A) Oddiy almashtirish
+   B) Gamil'ton tenglamalar shaklini saqlovchi
+   C) Koordinata almashtirish
+   D) Vaqt almashtirish
+   Javob: B
+
+5. Puasson qavslari nima?
+   A) Qavslar
+   B) {f,g} = Σ(∂f/∂qᵢ ∂g/∂pᵢ - ∂f/∂pᵢ ∂g/∂qᵢ)
+   C) Matematik qavslar
+   D) Fizik qavslar
+   Javob: B
+
+6. Noyter teoremasi?
+   A) Noyter teoremasi
+   B) Simmetriya → Saqlanish qonuni
+   C) Teorema
+   D) Saqlanish
+   Javob: B
+
+7. Lorentz o'zgarishlari formulasi?
+   A) Oddiy formula
+   B) x' = γ(x - vt), t' = γ(t - vx/c²)
+   C) x' = x - vt
+   D) t' = t
+   Javob: B
+
+8. Lorentz faktor (γ) qanday hisoblanadi?
+   A) γ = 1
+   B) γ = 1/√(1 - v²/c²)
+   C) γ = v/c
+   D) γ = c/v
+   Javob: B
+
+9. Vaqt kengayishi (Time dilation)?
+   A) Vaqt o'zgarmaydi
+   B) Δt' = γΔt
+   C) Vaqt qisqaradi
+   D) Vaqt tezlashadi
+   Javob: B
+
+10. Uzunlik qisqarishi (Length contraction)?
+    A) Uzunlik o'zgarmaydi
+    B) L' = L/γ
+    C) Uzunlik uzayadi
+    D) Uzunlik ikkilanadi
+    Javob: B
+
+11. Massa-energiya ekvivalentligi?
+    A) E = mv
+    B) E = mc²
+    C) E = m/c
+    D) E = mc
+    Javob: B
+
+12. Relativistik impuls formulasi?
+    A) p = mv
+    B) p = γmv
+    C) p = m/v
+    D) p = mc
+    Javob: B
+
+13. 4-vektor nima?
+    A) Oddiy vektor
+    B) (ct, x, y, z) - Minkovskiy fazosida
+    C) 3D vektor
+    D) 2D vektor
+    Javob: B
+
+14. Umumiy nisbiylik nazariyasining asosi?
+    A) Nyuton qonunlari
+    B) Eynshteyn maydon tenglamalari Gμν = 8πG/c⁴ Tμν
+    C) Maxvell tenglamalari
+    D) Shredinger tenglamasi
+    Javob: B
+
+15. Geodezik chiziq nima?
+    A) To'g'ri chiziq
+    B) Egri fazoda eng qisqa yo'l
+    C) Aylana
+    D) Parabola
+    Javob: B
+
+16. Shvartsshild radiusi formulasi?
+    A) r = m/c
+    B) r = 2GM/c²
+    C) r = GM/c
+    D) r = mc²
+    Javob: B
+
+17. Gravitatsion qizil siljish?
+    A) Ko'k siljish
+    B) Δf/f = -GM/rc²
+    C) Siljish yo'q
+    D) Oq siljish
+    Javob: B
+
+18. Gravitatsion to'lqinlar nima?
+    A) Ovoz to'lqinlari
+    B) Fazo-vaqt to'lqinlanishi
+    C) Elektromagnit to'lqinlar
+    D) Suv to'lqinlari
+    Javob: B
+
+19. Kvant mexanikasining asosiy postulatlari?
+    A) Bitta postulat
+    B) To'lqin funksiyasi, superpozitsiya, o'lchov
+    C) Ikki postulat
+    D) Postulat yo'q
+    Javob: B
+
+20. Shredinger tenglamasi (vaqtga bog'liq)?
+    A) F = ma
+    B) iℏ ∂Ψ/∂t = ĤΨ
+    C) E = mc²
+    D) p = mv
+    Javob: B
+
+21. Geyzenberg noaniqlik prinsipi?
+    A) Aniq o'lchash mumkin
+    B) ΔxΔp ≥ ℏ/2
+    C) Faqat x aniq
+    D) Faqat p aniq
+    Javob: B
+
+22. Kvant superpozitsiyasi nima?
+    A) Oddiy qo'shilish
+    B) |Ψ⟩ = α|0⟩ + β|1⟩ holatlar kombinatsiyasi
+    C) Bitta holat
+    D) Ikki holat
+    Javob: B
+
+23. Bornning statistik talqini?
+    A) Aniq joy
+    B) |Ψ|² ehtimollik zichligi
+    C) Aniq tezlik
+    D) Aniq energiya
+    Javob: B
+
+24. Hilbert fazosi nima?
+    A) Oddiy fazo
+    B) Kvant holatlar cheksiz o'lchamli vektor fazosi
+    C) 3D fazo
+    D) 2D fazo
+    Javob: B
+
+25. Dirak notatsiyasi (bra-ket)?
+    A) Oddiy belgi
+    B) ⟨φ|Â|ψ⟩ matritsa elementi
+    C) Matematik belgi
+    D) Fizik belgi
+    Javob: B
+
+26. Kvant chigallashuv (Entanglement)?
+    A) Oddiy bog'lanish
+    B) Korrelyatsiyali kvant holat |Ψ⟩ ≠ |ψ₁⟩⊗|ψ₂⟩
+    C) Klassik korrelyatsiya
+    D) Tasodifiy bog'lanish
+    Javob: B
+
+27. Bell tengsizliklari nima?
+    A) Oddiy tengsizlik
+    B) Klassik va kvant korrelyatsiyalarni farqlash
+    C) Matematik tengsizlik
+    D) Fizik tengsizlik
+    Javob: B
+
+28. Kvant teleportatsiya?
+    A) Jism ko'chirish
+    B) Kvant holat ma'lumotini uzatish
+    C) Energiya uzatish
+    D) Tezlik uzatish
+    Javob: B
+
+29. Fermi-Dirak statistikasi?
+    A) Oddiy statistika
+    B) Fermionlar uchun: f(E) = 1/(e^((E-μ)/kT) + 1)
+    C) Barcha zarralar
+    D) Faqat fotonlar
+    Javob: B
+
+30. Boze-Eynshteyn statistikasi?
+    A) Oddiy statistika
+    B) Bozonlar uchun: f(E) = 1/(e^((E-μ)/kT) - 1)
+    C) Barcha zarralar
+    D) Faqat elektronlar
+    Javob: B
+
+31. Pauli taqiqlash prinsipi?
+    A) Ruxsat etilgan
+    B) Ikki fermion bir kvant holatda bo'lolmaydi
+    C) Barcha zarralar
+    D) Faqat bozonlar
+    Javob: B
+
+32. Spin nima?
+    A) Aylanish
+    B) Ichki burchak momenti ℏ/2 yoki butun
+    C) Tashqi aylanish
+    D) Orbital moment
+    Javob: B
+
+33. Kvant maydon nazariyasi asosi?
+    A) Klassik maydon
+    B) Maydon operatorlari va yaratish/yo'qotish operatorlari
+    C) Statik maydon
+    D) Oddiy maydon
+    Javob: B
+
+34. Feynman diagrammalari?
+    A) Oddiy chizma
+    B) Zarralar o'zaro ta'sirini grafik tasvirlash
+    C) Matematik grafik
+    D) Statistik grafik
+    Javob: B
+
+35. Renormalizatsiya nima?
+    A) Normallashtirish
+    B) Cheksizliklarni fizik kattaliklarni qayta aniqlash orqali bartaraf etish
+    C) O'lchash
+    D) Hisoblash
+    Javob: B
+
+36. Standart model zarralar?
+    A) Bitta zarra
+    B) Kvarklar, leptonlar, kalibrlovchi bozonlar, Xiggs bozoni
+    C) Ikki zarra
+    D) Uch zarra
+    Javob: B
+
+37. Kuchli o'zaro ta'sir mediatori?
+    A) Foton
+    B) Gluon (8 ta rang zaryadli)
+    C) W bozon
+    D) Z bozon
+    Javob: B
+
+38. Elektrozaif birlashtirish?
+    A) Birlashmagan
+    B) Elektromagnit + zaif kuch yagona SU(2)×U(1) nazariya
+    C) Alohida kuchlar
+    D) Kuchli kuch
+    Javob: B
+
+39. Xiggs mexanizmi?
+    A) Oddiy mexanizm
+    B) Spontan simmetriya buzilish orqali massa hosil qilish
+    C) Massa yo'q
+    D) Energiya hosil qilish
+    Javob: B
+
+40. CP buzilish nima?
+    A) CP saqlanadi
+    B) Zarra-antizarra + paritet simmetriyasi buzilishi
+    C) Faqat C buzilish
+    D) Faqat P buzilish
+    Javob: B
+
+41. Kvantum xromdinamikasi (QCD)?
+    A) Elektrodinamika
+    B) Kuchli o'zaro ta'sir nazariyasi SU(3) simmetriyasi
+    C) Zaif ta'sir
+    D) Gravitatsiya
+    Javob: B
+
+42. Asimptotik erkinlik nima?
+    A) Bog'lanish
+    B) Kichik masofada kuchli ta'sir kuchsizlashadi
+    C) Katta masofada kuchsiz
+    D) Doimiy kuch
+    Javob: B
+
+43. Kvark hibs (Confinement)?
+    A) Erkin kvarklar
+    B) Kvarklar faqat hadronlar ichida mavjud
+    C) Alohida kvarklar
+    D) Barcha zarralar
+    Javob: B
+
+44. Supersimmetriya (SUSY)?
+    A) Oddiy simmetriya
+    B) Fermion-bozon juftligi
+    C) Faqat bozonlar
+    D) Faqat fermionlar
+    Javob: B
+
+45. Tor nazariyasi (String theory)?
+    A) Nuqtaviy zarralar
+    B) 1D torlar fundamental ob'ektlar sifatida
+    C) 2D zarralar
+    D) 3D zarralar
+    Javob: B
+
+46. M-nazariya?
+    A) Bitta nazariya
+    B) 11 o'lchamli, 5 ta tor nazariyani birlashtiruvchi
+    C) 4 o'lcham
+    D) 3 o'lcham
+    Javob: B
+
+47. Qora moddaning dalillari?
+    A) Ko'rinadi
+    B) Galaktikalar aylanishi, gravitatsion linzalanish
+    C) Dalil yo'q
+    D) Faqat nazariy
+    Javob: B
+
+48. Qorong'i energiya nima?
+    A) Oddiy energiya
+    B) Kosmik kengayishni tezlashtiruvchi energiya
+    C) Gravitatsiya
+    D) Yorug'lik
+    Javob: B
+
+49. Kosmologik doimiy (Λ)?
+    A) Nol
+    B) Vakuum energiya zichligi
+    C) Manfiy
+    D) O'zgaruvchan
+    Javob: B
+
+50. Katta portlash nazariyasi dalillari?
+    A) Dalil yo'q
+    B) CMB, Xabbl kengayishi, element tarkibi
+    C) Faqat nazariy
+    D) Bitta dalil
+    Javob: B
+
+51. Inflyatsion kosmologiya?
+    A) Sekin kengayish
+    B) Ilk daqiqalarda eksponentsial kengayish
+    C) Qisqarish
+    D) Doimiy hajm
+    Javob: B
+
+52. CMB (Kosmik mikroto'lqin fon) nima?
+    A) Radio to'lqin
+    B) Ilk yorug'lik (380,000 yildan keyin) 2.7K
+    C) Infraqizil
+    D) Ultrabinafsha
+    Javob: B
+
+53. Barionik akustik tebranishlar?
+    A) Ovoz to'lqini
+    B) Ilk koinotdagi zichlik to'lqinlari izlari
+    C) Yorug'lik
+    D) Gravitatsiya
+    Javob: B
+
+54. Kvant gravitatsiya muammosi?
+    A) Muammo yo'q
+    B) Umumiy nisbiylik + kvant mexanikani birlashtirish
+    C) Hal qilingan
+    D) Oddiy muammo
+    Javob: B
+
+55. Halqa kvant gravitatsiyasi?
+    A) Oddiy nazariya
+    B) Diskret fazo-vaqt, spin to'rlari
+    C) Uzluksiz fazo
+    D) Tor nazariyasi
+    Javob: B
+
+56. Planck uzunligi qiymati?
+    A) 1 metr
+    B) ~1.6 × 10⁻³⁵ metr
+    C) 1 nanometr
+    D) 1 kilometr
+    Javob: B
+
+57. Planck vaqti qiymati?
+    A) 1 soniya
+    B) ~5.4 × 10⁻⁴⁴ soniya
+    C) 1 millisoniya
+    D) 1 soat
+    Javob: B
+
+58. Xokingning nurlanishi nima?
+    A) Oddiy nurlanish
+    B) Qora tuynuklardan kvant effekt orqali nurlanish
+    C) Yulduz nurlanishi
+    D) Quyosh nuri
+    Javob: B
+
+59. Qora tuynuk entropiyasi?
+    A) Nol
+    B) S = A/4lp² (Bekenshteyn-Xoking)
+    C) Cheksiz
+    D) Doimiy
+    Javob: B
+
+60. Holografik printsip?
+    A) Oddiy printsip
+    B) n-o'lcham ma'lumoti (n-1)-o'lchamda kodlanadi
+    C) 3D printsip
+    D) 2D printsip
+    Javob: B
+
+61. AdS/CFT muvofiqligi?
+    A) Oddiy moslik
+    B) Anti-de Sitter fazosi = Konformal maydon nazariyasi
+    C) Matematik moslik
+    D) Fizik moslik
+    Javob: B
+
+62. Termodinamikaning birinchi qonuni?
+    A) Energiya yo'qoladi
+    B) ΔU = Q - W energiya saqlanishi
+    C) Entropiya kamayadi
+    D) Harakat to'xtaydi
+    Javob: B
+
+63. Termodinamikaning ikkinchi qonuni?
+    A) Entropiya kamayadi
+    B) Yopiq sistemada entropiya kamaymas (ΔS ≥ 0)
+    C) Energiya yo'qoladi
+    D) Harorat o'zgarmaydi
+    Javob: B
+
+64. Boltsmann entropiya formulasi?
+    A) S = Q/T
+    B) S = kB ln W
+    C) S = pV
+    D) S = nRT
+    Javob: B
+
+65. Gibbsning erkin energiyasi?
+    A) G = U
+    B) G = H - TS
+    C) G = pV
+    D) G = U + pV
+    Javob: B
+
+66. Faza o'tishlari turlari?
+    A) Bitta tur
+    B) 1-tartibli (latent issiqlik), 2-tartibli (uzluksiz)
+    C) Ikki tur
+    D) Tur yo'q
+    Javob: B
+
+67. Kritik nuqta xossalari?
+    A) Oddiy nuqta
+    B) Faza chegarasi yo'qoladi, kritik eksponentlar
+    C) Faza chegarasi
+    D) Oddiy holat
+    Javob: B
+
+68. Universallik klasslari?
+    A) Bir klass
+    B) Kritik eksponentlar sistemaning simmetriyasiga bog'liq
+    C) Ikki klass
+    D) Klass yo'q
+    Javob: B
+
+69. O'lcham tahlili (Renormalization group)?
+    A) Oddiy tahlil
+    B) Fizik tizimlarni turli masshtablarda o'rganish
+    C) Matematik tahlil
+    D) Kimyoviy tahlil
+    Javob: B
+
+70. Elektromagnit to'lqin tenglamasi?
+    A) F = ma
+    B) ∇²E = μ₀ε₀ ∂²E/∂t²
+    C) E = mc²
+    D) p = mv
+    Javob: B
+
+71. Maxvell tenglamalari (differensial shakl)?
+    A) Bitta tenglama
+    B) ∇·E, ∇·B, ∇×E, ∇×B to'rtta tenglama
+    C) Ikki tenglama
+    D) Uch tenglama
+    Javob: B
+
+72. Elektromagnit maydon tenzori?
+    A) Vektor
+    B) Fμν antisimmetrik tenzor (E, B komponentlari)
+    C) Skalyar
+    D) Matritsa
+    Javob: B
+
+73. Kalibrlovchi invariantlik?
+    A) Oddiy invariantlik
+    B) Potentsiallarni o'zgartirish fizikani o'zgartirmaydi
+    C) Matematik invariantlik
+    D) Fizik invariantlik
+    Javob: B
+
+74. Kalibrlovchi nazariyalar?
+    A) Oddiy nazariya
+    B) Lokal simmetriyaga asoslangan (U(1), SU(2), SU(3))
+    C) Global simmetriya
+    D) Simmetriya yo'q
+    Javob: B
+
+75. Yang-Mills nazariyasi?
+    A) Oddiy nazariya
+    B) Noabellik kalibrlovchi nazariya
+    C) Abel nazariyasi
+    D) Klassik nazariya
+    Javob: B
+
+76. O'ta o'tkazuvchanlik (Superconductivity)?
+    A) Oddiy o'tkazuvchanlik
+    B) Nol qarshilik, kritik harorat ostida
+    C) Yuqori qarshilik
+    D) O'rtacha qarshilik
+    Javob: B
+
+77. BCS nazariyasi nima?
+    A) Oddiy nazariya
+    B) Kuper juftlari orqali o'ta o'tkazuvchanlik
+    C) Klassik nazariya
+    D) Mexanik nazariya
+    Javob: B
+
+78. Meissner effekti?
+    A) Magnit kiradi
+    B) O'ta o'tkazgichdan magnit maydon chiqariladi
+    C) Magnit qoladi
+    D) Magnit kuchayadi
+    Javob: B
+
+79. Kvant Hall effekti?
+    A) Klassik Hall
+    B) Kvantlangan Hall qarshiligi h/ne²
+    C) Oddiy qarshilik
+    D) Nol qarshilik
+    Javob: B
+
+80. Topologik izolyatorlar?
+    A) Oddiy izolyator
+    B) Ichki izolyator, sirt o'tkazgich
+    C) Butun o'tkazgich
+    D) Butun izolyator
+    Javob: B
+
+81. Boze-Eynshteyn kondensati?
+    A) Gaz
+    B) Bozonlar bir kvant holatda to'planadi
+    C) Suyuqlik
+    D) Qattiq jism
+    Javob: B
+
+82. Fermi suyuqligi?
+    A) Oddiy suyuqlik
+    B) Kuchli o'zaro ta'sirli fermionlar (He-3)
+    C) Ideal gaz
+    D) Qattiq jism
+    Javob: B
+
+83. Kvant hisoblash asoslari?
+    A) Klassik hisoblash
+    B) Kubitlar, kvant darajalari, superpozitsiya
+    C) Ikkilik sistem
+    D) O'nlik sistem
+    Javob: B
+
+84. Kvant xatolikni tuzatish?
+    A) Xato tuzatilmaydi
+    B) Ortiqcha kubitlar, sindrom o'lchov
+    C) Klassik tuzatish
+    D) Xato yo'q
+    Javob: B
+
+85. Shor algoritmi?
+    A) Klassik algoritm
+    B) Kvant faktorlash algoritmi
+    C) Qidiruv algoritmi
+    D) Saralash algoritmi
+    Javob: B
+
+86. Grover algoritmi?
+    A) Klassik qidiruv
+    B) Kvant qidiruv O(√N)
+    C) O(N) qidiruv
+    D) O(N²) qidiruv
+    Javob: B
+
+87. Kvant kriptografiya (BB84)?
+    A) Klassik shifrlash
+    B) Kvant kalit almashish protokoli
+    C) RSA shifrlash
+    D) AES shifrlash
+    Javob: B
+
+88. Kvantzarralarni aniqlash usullari?
+    A) Ko'z bilan
+    B) Scintillyatorlar, Cherenkov, kalorimetrlar
+    C) Oddiy kuzatish
+    D) Qo'l bilan
+    Javob: B
+
+89. Tezlatgich fizikasi?
+    A) Sekinlatgich
+    B) Siklotronlar, sinxrotronlar, chiziqli tezlatgichlar
+    C) To'xtatgich
+    D) Saqlagich
+    Javob: B
+
+90. LHC (Katta Adron Kollayideri)?
+    A) Kichik tezlatgich
+    B) 27 km aylana, TeV energiyalar
+    C) 1 km aylana
+    D) 100 m aylana
+    Javob: B
+
+91. Higgs bozonining massasi?
+    A) Massasiz
+    B) ~125 GeV/c²
+    C) 1 GeV
+    D) 1000 GeV
+    Javob: B
+
+92. Neytrino ossilyatsiyasi?
+    A) O'zgarmaydi
+    B) Neytrino turlari o'rtasida o'tish
+    C) Yo'qolish
+    D) Paydo bo'lish
+    Javob: B
+
+93. Koinotdagi matter-antimatter asimmetriyasi?
+    A) Simmetriya
+    B) CP buzilish orqali materiya ustunligi
+    C) Teng miqdor
+    D) Antimateriya ko'p
+    Javob: B
+
+94. Gravitatsion to'lqin detektorlari?
+    A) Oddiy detektor
+    B) LIGO, Virgo interferometrlar
+    C) Teleskop
+    D) Mikroskop
+    Javob: B
+
+95. LIGO aniqlik darajasi?
+    A) 1 metr
+    B) ~10⁻¹⁸ metr (proton radiusidan kam)
+    C) 1 millimetr
+    D) 1 mikrometr
+    Javob: B
+
+96. Ko'p olam talqini?
+    A) Bitta olam
+    B) Har bir o'lchov koinotni bo'ladi
+    C) Olam yo'q
+    D) Ikki olam
+    Javob: B
+
+97. Dekogherensiya nima?
+    A) Kogerensiya
+    B) Atrof-muhit bilan ta'sir orqali kvant holatning buzilishi
+    C) Kvant holat saqlanadi
+    D) Klassik holat
+    Javob: B
+
+98. Kvant Zenon effekti?
+    A) Oddiy effekt
+    B) Tez-tez o'lchov evolyutsiyani to'xtatadi
+    C) Evolyutsiya tezlashadi
+    D) O'lchov ta'sir qilmaydi
+    Javob: B
+
+99. Kasimir effekti?
+    A) Oddiy kuch
+    B) Vakuum energiyasi orqali plastinkalar orasida kuch
+    C) Elektr kuch
+    D) Magnit kuch
+    Javob: B
+
+100. Kvant vakuum nima?
+     A) Bo'sh joy
+     B) Virtual zarralar bilan to'lgan eng past energiya holati
+     C) Hech narsa
+     D) Oddiy vakuum
+     Javob: B

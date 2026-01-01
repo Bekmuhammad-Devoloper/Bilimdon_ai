@@ -1,0 +1,702 @@
+ENGLISH GRAMMAR - OSON TESTLAR
+====================================
+
+1. "I ___ a student." gapini to'ldiring.
+a) am
+b) is
+c) are
+d) be
+Javob: a
+
+2. "She ___ happy." gapini to'ldiring.
+a) am
+b) is
+c) are
+d) be
+Javob: b
+
+3. "They ___ at home." gapini to'ldiring.
+a) am
+b) is
+c) are
+d) be
+Javob: c
+
+4. Simple Present Tense da uchinchi shaxs uchun nima qo'shiladi?
+a) -s yoki -es
+b) -ed
+c) -ing
+d) Hech narsa
+Javob: a
+
+5. "He ___ to school every day."
+a) go
+b) goes
+c) going
+d) went
+Javob: b
+
+6. Simple Present Tense da inkor shakl qanday yasaladi?
+a) do not / does not + V1
+b) did not + V1
+c) am/is/are not + V-ing
+d) will not + V1
+Javob: a
+
+7. "She ___ like coffee."
+a) don't
+b) doesn't
+c) isn't
+d) aren't
+Javob: b
+
+8. Simple Present da savol shakl qanday?
+a) Do/Does + subject + V1?
+b) Did + subject + V1?
+c) Is/Are + subject + V-ing?
+d) Will + subject + V1?
+Javob: a
+
+9. "___ you speak English?"
+a) Do
+b) Does
+c) Is
+d) Are
+Javob: a
+
+10. Present Continuous Tense qanday yasaladi?
+a) am/is/are + V-ing
+b) have/has + V3
+c) do/does + V1
+d) will + V1
+Javob: a
+
+11. "I ___ studying now."
+a) am
+b) is
+c) are
+d) be
+Javob: a
+
+12. "They ___ playing football."
+a) am
+b) is
+c) are
+d) be
+Javob: c
+
+13. Present Continuous inkor shakl qanday?
+a) am/is/are + not + V-ing
+b) do/does + not + V-ing
+c) did + not + V-ing
+d) will + not + V-ing
+Javob: a
+
+14. Simple Past Tense qanday yasaladi?
+a) V2 (Past form)
+b) V-ing
+c) will + V1
+d) have + V3
+Javob: a
+
+15. "I ___ to London last year."
+a) go
+b) goes
+c) went
+d) going
+Javob: c
+
+16. Simple Past inkor shakl qanday?
+a) did not + V1
+b) do not + V1
+c) am not + V-ing
+d) will not + V1
+Javob: a
+
+17. "She ___ come yesterday."
+a) didn't
+b) doesn't
+c) isn't
+d) don't
+Javob: a
+
+18. Simple Past savol shakl qanday?
+a) Did + subject + V1?
+b) Do + subject + V1?
+c) Is + subject + V-ing?
+d) Will + subject + V1?
+Javob: a
+
+19. Future Simple qanday yasaladi?
+a) will + V1
+b) am/is/are + V-ing
+c) have + V3
+d) V2
+Javob: a
+
+20. "I ___ visit you tomorrow."
+a) will
+b) am
+c) have
+d) did
+Javob: a
+
+21. Future Simple inkor shakl qanday?
+a) will not (won't) + V1
+b) do not + V1
+c) did not + V1
+d) am not + V-ing
+Javob: a
+
+22. Nechta asosiy fe'l zamonlari bor?
+a) 12
+b) 16
+c) 8
+d) 10
+Javob: a
+
+23. Ot (Noun) nima?
+a) Predmet, shaxs, joy nomi
+b) Harakat
+c) Sifat
+d) Son
+Javob: a
+
+24. Ko'plik shakl qanday yasaladi?
+a) -s yoki -es qo'shish
+b) -ed qo'shish
+c) -ing qo'shish
+d) Hech narsa
+Javob: a
+
+25. "book" ning ko'plik shakli nima?
+a) books
+b) bookes
+c) booking
+d) booked
+Javob: a
+
+26. Sanaladigan va sanalmaydigan otlar farqi nima?
+a) Countable ko'plik oladi, Uncountable yo'q
+b) Farq yo'q
+c) Uncountable ko'plik oladi
+d) Ikkalasi ham bir xil
+Javob: a
+
+27. "Water" qanday ot?
+a) Uncountable
+b) Countable
+c) Plural
+d) Singular
+Javob: a
+
+28. Articles nechta?
+a) 3 ta (a, an, the)
+b) 2 ta
+c) 4 ta
+d) 5 ta
+Javob: a
+
+29. "A" qachon ishlatiladi?
+a) Undosh tovush bilan boshlanuvchi so'zlar oldida
+b) Unli tovush bilan
+c) Har doim
+d) Hech qachon
+Javob: a
+
+30. "An" qachon ishlatiladi?
+a) Unli tovush bilan boshlanuvchi so'zlar oldida
+b) Undosh tovush bilan
+c) Har doim
+d) Hech qachon
+Javob: a
+
+31. "___ apple" - to'g'ri variant qaysi?
+a) An
+b) A
+c) The
+d) Hech narsa
+Javob: a
+
+32. "The" qachon ishlatiladi?
+a) Ma'lum narsalar uchun
+b) Noma'lum narsalar uchun
+c) Hech qachon
+d) Faqat ko'plikda
+Javob: a
+
+33. Sifat (Adjective) nima?
+a) Otni tavsiflovchi so'z
+b) Harakat
+c) Joy
+d) Vaqt
+Javob: a
+
+34. Sifat qayerda keladi?
+a) Ot oldida yoki be dan keyin
+b) Fe'l oldida
+c) Gap oxirida
+d) Hamma joyda
+Javob: a
+
+35. "She is ___." (chiroyli)
+a) beautiful
+b) beautifully
+c) beauty
+d) beautify
+Javob: a
+
+36. Ravish (Adverb) nima?
+a) Fe'lni tavsiflovchi so'z
+b) Otni tavsiflovchi
+c) Son
+d) Predmet
+Javob: a
+
+37. Ko'pchilik ravishlar qanday yasaladi?
+a) Sifat + -ly
+b) Fe'l + -ing
+c) Ot + -s
+d) Fe'l + -ed
+Javob: a
+
+38. "quick" dan ravish yasang.
+a) quickly
+b) quicked
+c) quicking
+d) quicken
+Javob: a
+
+39. Olmosh (Pronoun) nima?
+a) Ot o'rnida ishlatiluvchi so'z
+b) Harakat
+c) Sifat
+d) Son
+Javob: a
+
+40. Shaxs olmoshlari qaysilar?
+a) I, you, he, she, it, we, they
+b) My, your, his
+c) This, that
+d) Who, what
+Javob: a
+
+41. Egalik olmoshlari qaysilar?
+a) my, your, his, her, its, our, their
+b) I, you, he
+c) me, you, him
+d) mine, yours
+Javob: a
+
+42. "___ book" (mening kitobim)
+a) My
+b) I
+c) Me
+d) Mine
+Javob: a
+
+43. Object pronouns qaysilar?
+a) me, you, him, her, it, us, them
+b) I, you, he, she
+c) my, your, his
+d) mine, yours
+Javob: a
+
+44. "I love ___." (uni)
+a) him/her
+b) he/she
+c) his/her
+d) he's/she's
+Javob: a
+
+45. Ko'rsatish olmoshlari qaysilar?
+a) this, that, these, those
+b) I, you, he
+c) my, your
+d) who, what
+Javob: a
+
+46. "This" va "that" farqi nima?
+a) This yaqin, that uzoq
+b) This uzoq, that yaqin
+c) Farq yo'q
+d) This ko'plik
+Javob: a
+
+47. "These" va "those" farqi nima?
+a) These yaqin ko'plik, those uzoq ko'plik
+b) Farq yo'q
+c) These birlik
+d) Those yaqin
+Javob: a
+
+48. So'roq olmoshlari qaysilar?
+a) who, what, where, when, why, how
+b) this, that
+c) I, you
+d) my, your
+Javob: a
+
+49. "_____ is your name?" (Ismingiz nima?)
+a) What
+b) Who
+c) Where
+d) When
+Javob: a
+
+50. "_____ are you from?" (Qayerdansiz?)
+a) Where
+b) What
+c) Who
+d) When
+Javob: a
+
+51. Prepositions nima?
+a) Joy, vaqt ko'rsatuvchi so'zlar
+b) Fe'l
+c) Ot
+d) Sifat
+Javob: a
+
+52. Joy ko'rsatuvchi predloglar qaysilar?
+a) in, on, at, under, behind, in front of
+b) before, after
+c) since, for
+d) but, and
+Javob: a
+
+53. "The book is ___ the table." (stol ustida)
+a) on
+b) in
+c) at
+d) under
+Javob: a
+
+54. "He lives ___ London." (Londonda)
+a) in
+b) on
+c) at
+d) by
+Javob: a
+
+55. "She arrives ___ 5 o'clock." (soat 5 da)
+a) at
+b) in
+c) on
+d) by
+Javob: a
+
+56. Vaqt predloglari qaysilar?
+a) in, on, at, before, after, during
+b) under, behind
+c) between, among
+d) from, to
+Javob: a
+
+57. "___ Monday" qaysi predlog kerak?
+a) on
+b) in
+c) at
+d) by
+Javob: a
+
+58. "___ the morning" qaysi predlog?
+a) in
+b) on
+c) at
+d) by
+Javob: a
+
+59. Bog'lovchilar (Conjunctions) nima?
+a) So'zlarni bog'lovchi
+b) Fe'l
+c) Ot
+d) Sifat
+Javob: a
+
+60. Oddiy bog'lovchilar qaysilar?
+a) and, but, or, so
+b) because, if
+c) when, while
+d) in, on, at
+Javob: a
+
+61. "I like tea ___ coffee." (va)
+a) and
+b) but
+c) or
+d) so
+Javob: a
+
+62. "He is tired ___ he will rest." (shuning uchun)
+a) so
+b) and
+c) but
+d) or
+Javob: a
+
+63. Modal verbs qaysilar?
+a) can, could, may, might, must, should, will, would
+b) am, is, are
+c) have, has, had
+d) do, does, did
+Javob: a
+
+64. "Can" ning ma'nosi nima?
+a) Qobiliyat, imkoniyat
+b) Majburiyat
+c) Tavsiya
+d) Kelajak
+Javob: a
+
+65. "I ___ swim." (men suzishni bilaman)
+a) can
+b) must
+c) should
+d) may
+Javob: a
+
+66. "Must" ning ma'nosi nima?
+a) Majburiyat, kerak
+b) Imkoniyat
+c) Tavsiya
+d) Ehtimollik
+Javob: a
+
+67. "You ___ study hard." (siz qattiq o'qishingiz kerak)
+a) must
+b) can
+c) may
+d) will
+Javob: a
+
+68. "Should" ning ma'nosi nima?
+a) Tavsiya, kerak
+b) Majburiyat
+c) Imkoniyat
+d) Kelajak
+Javob: a
+
+69. Modal verb dan keyin fe'l qanday shaklda keladi?
+a) V1 (infinitive without to)
+b) V-ing
+c) V3
+d) to + V1
+Javob: a
+
+70. Have to va must farqi nima?
+a) Have to tashqi majburiyat, must ichki
+b) Farq yo'q
+c) Must tashqi majburiyat
+d) Have to tavsiya
+Javob: a
+
+71. Passiv nima?
+a) Harakat ob'ektga qaratilgan
+b) Harakat sub'ekt tomonidan
+c) Fe'l shakli
+d) Vaqt shakli
+Javob: a
+
+72. Passiv qanday yasaladi?
+a) be + V3
+b) have + V3
+c) do + V1
+d) will + V1
+Javob: a
+
+73. "The book ___ by students." (o'qiladi)
+a) is read
+b) reads
+c) reading
+d) to read
+Javob: a
+
+74. Taqqoslash daraja nechta?
+a) 3 ta (Positive, Comparative, Superlative)
+b) 2 ta
+c) 4 ta
+d) 5 ta
+Javob: a
+
+75. Comparative qanday yasaladi?
+a) -er yoki more
+b) -est yoki most
+c) -ing
+d) -ed
+Javob: a
+
+76. "tall" ning comparative shakli nima?
+a) taller
+b) tallest
+c) more tall
+d) most tall
+Javob: a
+
+77. Superlative qanday yasaladi?
+a) -est yoki most
+b) -er yoki more
+c) -ing
+d) -ed
+Javob: a
+
+78. "big" ning superlative shakli nima?
+a) biggest
+b) bigger
+c) more big
+d) most big
+Javob: a
+
+79. Uzun sifatlar uchun qanday qoida?
+a) more/most ishlatiladi
+b) -er/-est qo'shiladi
+c) -ing qo'shiladi
+d) O'zgarmaydi
+Javob: a
+
+80. "beautiful" ning comparative shakli?
+a) more beautiful
+b) beautifuler
+c) most beautiful
+d) beautifuller
+Javob: a
+
+81. "Good" ning irregular shakllari qanday?
+a) good - better - best
+b) good - gooder - goodest
+c) good - more good - most good
+d) good - well - best
+Javob: a
+
+82. "Bad" ning irregular shakllari?
+a) bad - worse - worst
+b) bad - badder - baddest
+c) bad - more bad - most bad
+d) bad - badly - worst
+Javob: a
+
+83. There is/are qachon ishlatiladi?
+a) Biror narsa borligini bildirish uchun
+b) Joy ko'rsatish uchun
+c) Vaqt ko'rsatish uchun
+d) Fe'l o'rnida
+Javob: a
+
+84. "___ a book on the table."
+a) There is
+b) There are
+c) It is
+d) They are
+Javob: a
+
+85. "___ three books on the table."
+a) There are
+b) There is
+c) It is
+d) They is
+Javob: a
+
+86. Some va any farqi nima?
+a) Some tasdiqda, any inkor va savolda
+b) Farq yo'q
+c) Any tasdiqda
+d) Some har joyda
+Javob: a
+
+87. "I have ___ friends." (tasdiq)
+a) some
+b) any
+c) no
+d) none
+Javob: a
+
+88. "Do you have ___ questions?" (savol)
+a) any
+b) some
+c) no
+d) none
+Javob: a
+
+89. Much va many farqi nima?
+a) Much uncountable uchun, many countable uchun
+b) Farq yo'q
+c) Many uncountable uchun
+d) Much countable uchun
+Javob: a
+
+90. "___ water" qaysi so'z kerak?
+a) much
+b) many
+c) few
+d) a few
+Javob: a
+
+91. "___ books" qaysi so'z kerak?
+a) many
+b) much
+c) little
+d) a little
+Javob: a
+
+92. Few va little farqi nima?
+a) Few countable uchun, little uncountable uchun
+b) Farq yo'q
+c) Little countable uchun
+d) Few uncountable uchun
+Javob: a
+
+93. A few va few farqi nima?
+a) A few ijobiy, few salbiy ma'no
+b) Farq yo'q
+c) Few ijobiy
+d) Bir xil
+Javob: a
+
+94. Question tags nima?
+a) Gap oxirida tasdiqlash savoli
+b) Oddiy savol
+c) Javob
+d) Gap boshi
+Javob: a
+
+95. Tasdiq gapdan keyin question tag qanday?
+a) Inkor
+b) Tasdiq
+c) Har qanday
+d) Yo'q
+Javob: a
+
+96. "You are happy, ___ you?"
+a) aren't
+b) are
+c) don't
+d) do
+Javob: a
+
+97. Imperative (buyruq) gap qanday yasaladi?
+a) V1 bilan boshlanadi
+b) To + V1
+c) V-ing
+d) Will + V1
+Javob: a
+
+98. "_____ the door, please." (yoping)
+a) Close
+b) Closes
+c) Closing
+d) Closed
+Javob: a
+
+99. Inkor buyruq qanday?
+a) Don't + V1
+b) Not + V1
+c) Doesn't + V1
+d) Didn't + V1
+Javob: a
+
+100. Gerund nima?
+a) V-ing shaklidagi ot
+b) Present Continuous
+c) Sifat
+d) Ravish
+Javob: a

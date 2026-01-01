@@ -1,0 +1,148 @@
+===============================================
+DATABASE - MEDIUM SAVOLLARI
+===============================================
+
+SAVOL 1: ACID properties nima?
+A) Table types
+B) Atomicity, Consistency, Isolation, Durability
+C) Indexes
+D) Constraints
+JAVOB: B
+
+SAVOL 2: Normalization nima?
+A) Data backup
+B) Database design organization (1NF, 2NF, 3NF)
+C) Encryption
+D) Compression
+JAVOB: B
+
+SAVOL 3: Subquery nima?
+A) Regular query
+B) Query inside query
+C) Nested query
+D) Query composition
+JAVOB: B
+
+SAVOL 4: CTE (Common Table Expression) nima?
+A) Expression
+B) WITH clause (temporary named query)
+C) Query helper
+D) Recursive query
+JAVOB: B
+
+SAVOL 5: Window function nima?
+A) Function
+B) Partition over data aggregate
+C) Aggregate function
+D) Group by
+JAVOB: B
+
+SAVOL 6: PARTITION BY nima?
+A) Table partition
+B) Window function data partition
+C) Data grouping
+D) Sorting
+JAVOB: B
+
+SAVOL 7: UNION nima?
+A) Join
+B) Two query results combine (duplicates remove)
+C) Combine
+D) Merge
+JAVOB: B
+
+SAVOL 8: UNION ALL nima?
+A) Union kabi
+B) UNION but duplicates keep
+C) Combine all
+D) Merge
+JAVOB: B
+
+SAVOL 9: EXISTS operator nima?
+A) Check existence
+B) Subquery result existence check
+C) Subquery
+D) Condition
+JAVOB: B
+
+SAVOL 10: IN operator nima?
+A) Check value
+B) Value multiple values list-da
+C) Condition
+D) Filter
+JAVOB: B
+
+SAVOL 11: BETWEEN operator nima?
+A) Range
+B) Value range check (inclusive)
+C) Condition
+D) Filter
+JAVOB: B
+
+SAVOL 12: LIKE operator nima?
+A) Pattern
+B) String pattern match
+C) Search
+D) Filter
+JAVOB: B
+
+SAVOL 13: IS NULL nima?
+A) Null check
+B) Null value check
+C) Condition
+D) Filter
+JAVOB: B
+
+SAVOL 14: Transactions nima?
+A) Transaction
+B) ACID queries (COMMIT/ROLLBACK)
+C) Database operation
+D) Query execution
+JAVOB: B
+
+SAVOL 15: Views nima?
+A) Virtual table
+B) Saved SELECT query (virtual table)
+C) Query
+D) Table
+JAVOB: B
+
+SAVOL 16: Stored procedures nima?
+A) Procedure
+B) Database-da saved SQL code
+C) Script
+D) Query
+JAVOB: B
+
+SAVOL 17: Triggers nima?
+A) Trigger
+B) Automatic action (INSERT/UPDATE/DELETE)
+C) Event
+D) Action
+JAVOB: B
+
+SAVOL 18: Cursor nima?
+A) Mouse pointer
+B) Query result rows iterate
+C) Iterator
+D) Row pointer
+JAVOB: B
+
+SAVOL 19: Locking nima?
+A) Lock
+B) Concurrent access prevent
+C) Concurrency
+D) Safety
+JAVOB: B
+
+SAVOL 20: Replication nima?
+A) Copy
+B) Database copy (master-slave)
+C) Backup
+D) Redundancy
+JAVOB: B
+
+===============================================
+MEDIUM SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: O'RTA
+===============================================

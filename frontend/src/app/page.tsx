@@ -1,17 +1,86 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Zap, Trophy, Bot, Target, TrendingUp, Users } from 'lucide-react';
-import { useAuth, useCategories } from '@/hooks';
+import { useAuth, useCategories, useStats } from '@/hooks';
 import { Button, Card, Avatar, Progress, Badge } from '@/components/ui';
 import { formatXP, calculateLevelProgress, cn } from '@/lib/utils';
+
+// Map category slugs to logo paths
+const getCategoryLogo = (slug: string): string | null => {
+  const logoMap: Record<string, string> = {
+    'python': '/img/Python-logo.png',
+    'javascript': '/img/JavaScript-logo.png',
+    'typescript': '/img/TypeScript-logo.png',
+    'java': '/img/Java-logo.png',
+    'cpp': '/img/c++-logo.png',
+    'c++': '/img/c++-logo.png',
+    'go': '/img/Go-Logo_Aqua.png',
+    'golang': '/img/Go-Logo_Aqua.png',
+    'react': '/img/react-logo.png',
+    'nodejs': '/img/node.js-logo.png',
+    'node.js': '/img/node.js-logo.png',
+    'node': '/img/node.js-logo.png',
+    'nextjs': '/img/next.js-logo.png',
+    'next.js': '/img/next.js-logo.png',
+    'next': '/img/next.js-logo.png',
+    'nestjs': '/img/nestjs-logo.png',
+    'postgresql': '/img/postgreSql-logo.png',
+    'mongodb': '/img/mongodb-logo.png',
+    'sql': '/img/sql-logo.png',
+    'redis': '/img/redis-logo.png',
+    'git': '/img/git-logo.png',
+    'linux': '/img/linux-logo.png',
+    'html-css': '/img/html-css-logo.png',
+    'html': '/img/html-css-logo.png',
+    'html and css': '/img/html-css-logo.png',
+    'css': '/img/html-css-logo.png',
+    'rust': '/img/rust-logo.png',
+    'vue': '/img/vue.js-logo.png',
+    'vue.js': '/img/vue.js-logo.png',
+    'vuejs': '/img/vue.js-logo.png',
+    'express': '/img/express.js-logo.png',
+    'express.js': '/img/express.js-logo.png',
+    'expressjs': '/img/express.js-logo.png',
+    'django': '/img/django-logo.png',
+    'tailwind': '/img/tailwind-css-logo.png',
+    'tailwind-css': '/img/tailwind-css-logo.png',
+    'tailwind css': '/img/tailwind-css-logo.png',
+    'ingliz-tili': '/img/english-logo.png',
+    'ingliz tili': '/img/english-logo.png',
+    'english': '/img/english-logo.png',
+    'matematika': '/img/matematika-logo.png',
+    'fizika': '/img/fizika-logo.png',
+    'tarix': '/img/history-logo.png',
+    'history': '/img/history-logo.png',
+    'docker': '/img/docker-logo.png',
+  };
+  
+  return logoMap[slug.toLowerCase()] || null;
+};
 
 export default function HomePage() {
   const { user, isAuthenticated, isLoading } = useAuth();
   const { categories, loading: categoriesLoading } = useCategories();
+  const { stats, loading: statsLoading } = useStats();
 
-  // Featured categories (first 6)
-  const featuredCategories = categories.slice(0, 6);
+  // Faqat 6 ta ommabop kategoriya - bosh sahifa uchun
+  const popularCategories = [
+    { id: '1', name: 'Python', slug: 'python', logo: '/img/Python-logo.png' },
+    { id: '2', name: 'JavaScript', slug: 'javascript', logo: '/img/JavaScript-logo.png' },
+    { id: '3', name: 'React', slug: 'react', logo: '/img/react-logo.png' },
+    { id: '4', name: 'TypeScript', slug: 'typescript', logo: '/img/TypeScript-logo.png' },
+    { id: '5', name: 'Java', slug: 'java', logo: '/img/Java-logo.png' },
+    { id: '6', name: 'Node.js', slug: 'nodejs', logo: '/img/node.js-logo.png' },
+  ];
+
+  // Faqat 6 ta ko'rsat
+  const displayCategories = popularCategories;
+  
+  // Calculate real statistics from categories
+  const totalQuestions = categories.reduce((sum, cat) => sum + (cat._count?.questions || 0), 0);
+  const totalCategories = categories.length || 30;
 
   return (
     <div className="min-h-screen">
@@ -54,14 +123,14 @@ export default function HomePage() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
             {[
-              { icon: Users, value: '10,000+', label: 'Foydalanuvchilar' },
-              { icon: Target, value: '50,000+', label: 'Savollar' },
-              { icon: Trophy, value: '30+', label: 'Kategoriyalar' },
-              { icon: TrendingUp, value: '100,000+', label: 'Testlar' },
+              { icon: Users, value: stats?.users?.toLocaleString() || '2', label: 'Foydalanuvchilar' },
+              { icon: Target, value: totalQuestions > 0 ? totalQuestions.toLocaleString() : '10,386', label: 'Savollar' },
+              { icon: Trophy, value: totalCategories > 0 ? totalCategories.toString() : '27', label: 'Kategoriyalar' },
+              { icon: TrendingUp, value: totalCategories > 0 && totalQuestions > 0 ? Math.round(totalQuestions / totalCategories).toLocaleString() : '385', label: "O'rtacha savol/kategoriya" },
             ].map((stat, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center">
+              <div key={i} className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center hover:bg-white/20 transition-all duration-300">
                 <stat.icon className="w-8 h-8 mx-auto mb-2 text-yellow-300" />
-                <p className="text-2xl font-bold">{stat.value}</p>
+                <p className="text-2xl md:text-3xl font-bold">{stat.value}</p>
                 <p className="text-sm text-white/70">{stat.label}</p>
               </div>
             ))}
@@ -74,7 +143,7 @@ export default function HomePage() {
         <section className="container mx-auto px-4 -mt-8 relative z-10">
           <Card className="bg-white dark:bg-gray-900 shadow-xl">
             <div className="flex flex-col md:flex-row items-center gap-6 p-6">
-              <Avatar src={user.avatar} name={user.fullName} size="xl" />
+              <Avatar key={user.avatar || 'no-avatar'} src={user.avatar} name={user.fullName} size="xl" />
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                   Salom, {user.fullName}! 👋
@@ -115,56 +184,58 @@ export default function HomePage() {
       )}
 
       {/* Categories */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
-              Kategoriyalar
-            </h2>
-            <p className="text-gray-500 dark:text-gray-400 mt-1">
-              O'zingizga kerakli yo'nalishni tanlang
-            </p>
-          </div>
-          <Link href="/categories">
-            <Button variant="ghost">
-              Barchasi <ArrowRight className="ml-1 w-4 h-4" />
-            </Button>
-          </Link>
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+            Ommabob Kategoriyalar
+          </h2>
+          <p className="text-gray-500 dark:text-gray-400 mt-2">
+            Eng ko'p qo'llaniladigan kategoriyalar
+          </p>
         </div>
 
-        {categoriesLoading ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="skeleton h-32 rounded-2xl" />
-            ))}
-          </div>
-        ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {featuredCategories.map((category) => (
+        {/* Categories Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {displayCategories.map((category: any) => {
+            const logo = category.logo || getCategoryLogo(category.slug);
+            return (
               <Link key={category.id} href={`/test/${category.slug}`}>
-                <Card 
-                  hover 
-                  className="h-full text-center p-4 border-2 border-transparent hover:border-indigo-500/50"
-                >
-                  <div 
-                    className="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-3xl mb-3"
-                    style={{ backgroundColor: `${category.color}20` }}
-                  >
-                    {category.icon}
+                <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-xl p-4 text-center hover:shadow-lg hover:scale-105 transition-all duration-300 border border-indigo-100 dark:border-indigo-800 cursor-pointer h-32 flex flex-col items-center justify-center">
+                  <div className="flex justify-center mb-2 h-12">
+                    {logo ? (
+                      <img 
+                        src={logo} 
+                        alt={category.name}
+                        className="h-full w-auto object-contain"
+                      />
+                    ) : (
+                      <div className="flex items-center justify-center text-3xl rounded-lg w-12 h-12 bg-indigo-100 dark:bg-indigo-800">
+                        📚
+                      </div>
+                    )}
                   </div>
                   <h3 className="font-semibold text-gray-900 dark:text-white text-sm">
                     {category.name}
                   </h3>
                   {category._count && (
-                    <p className="text-xs text-gray-500 mt-1">
+                    <p className="text-xs text-indigo-600 dark:text-indigo-400 font-medium mt-1">
                       {category._count.questions}+ savol
                     </p>
                   )}
-                </Card>
+                </div>
               </Link>
-            ))}
-          </div>
-        )}
+            );
+          })}
+        </div>
+
+        {/* View All Categories Link */}
+        <div className="text-center mt-8">
+          <Link href="/categories">
+            <Button variant="outline" className="border-indigo-500 text-indigo-600 hover:bg-indigo-50 dark:hover:bg-indigo-900/20">
+              Barcha kategoriyalar <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+          </Link>
+        </div>
       </section>
 
       {/* Features */}
@@ -202,7 +273,7 @@ export default function HomePage() {
               {
                 icon: Bot,
                 title: 'AI Yordamchi',
-                description: 'Gemini AI bilan suhbatlashing. Savollaringizga javob oling va bilimingizni oshiring.',
+                description: 'Bilimdon AI bilan suhbatlashing. Savollaringizga javob oling va bilimingizni oshiring.',
                 color: 'bg-purple-500',
               },
               {

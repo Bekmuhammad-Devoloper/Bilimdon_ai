@@ -45,6 +45,7 @@ export class AuthService {
         username: dto.username,
         password: hashedPassword,
         fullName: dto.fullName,
+        telegramPhone: dto.telegramPhone || null,
       },
       select: {
         id: true,
@@ -55,6 +56,7 @@ export class AuthService {
         totalXP: true,
         level: true,
         role: true,
+        telegramPhone: true,
         createdAt: true,
       },
     });
@@ -261,10 +263,16 @@ export class AuthService {
       },
     });
 
-    // Send email
-    await this.mailService.sendVerificationCode(email, code);
+    // Send email - handle errors gracefully
+    try {
+      await this.mailService.sendVerificationCode(email, code);
+    } catch (error) {
+      console.error('Email yuborishda xatolik:', error.message);
+      // Don't throw - just log error and continue
+      // Return success anyway since code is saved in database
+    }
 
-    return { message: 'Tasdiqlash kodi emailingizga yuborildi' };
+    return { message: 'Tasdiqlash kodi emailingizga yuborildi', code: process.env.NODE_ENV === 'development' ? code : undefined };
   }
 
   async verifyEmail(email: string, code: string) {
@@ -307,5 +315,138 @@ export class AuthService {
     
     return { message: 'Telefon raqam Telegramga yuborildi' };
   }
-}
 
+  async forgotPassword(email: string) {
+    console.log('🔍 forgotPassword called with email:', email);
+    
+    // Faqat admin emailiga parol tiklash ruxsat beriladi
+    const ADMIN_EMAIL = 'khamidovonline@gmail.com';
+    
+    // Find user by email
+    const user = await this.prisma.user.findUnique({
+      where: { email },
+    });
+
+    console.log('👤 User found:', user ? 'YES - ' + user.email : 'NO');
+
+    // 1. Agar user bazada yo'q - taklif havolasi yuborish
+    if (!user) {
+      console.log('📨 User not found. Sending INVITE email to:', email);
+      try {
+        await this.mailService.sendInviteEmail(email);
+        console.log('✅ Invite email sent successfully');
+      } catch (error) {
+        console.error('❌ Invite email yuborishda xatolik:', error);
+      }
+      const response = { 
+        message: 'Taklif havolasi yuborildi',
+        type: 'invite',
+        registered: false 
+      };
+      console.log('📤 Returning response:', response);
+      return response;
+    }
+
+    // 2. Agar user bazada bor, lekin admin email emas - ogohlantirish yuborish va xato xabar
+    if (email.toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
+      console.log('⚠️ Other registered user tried to reset password:', email);
+      
+      // Ogohlantirish emailini yuborish
+      try {
+        await this.mailService.sendLoginAttemptWarning(email, user.fullName);
+        console.log('✅ Login attempt warning sent to:', email);
+      } catch (error) {
+        console.error('❌ Login attempt warning yuborishda xatolik:', error);
+      }
+      
+      const response = { 
+        message: 'Siz noto\'g\'ri email kiritdingiz. Iltimos, o\'zingizning emailingizni kiriting.',
+        type: 'wrong-email',
+        registered: true 
+      };
+      console.log('📤 Returning response:', response);
+      return response;
+    }
+
+    // 3. Admin email - parol tiklash kodi yuborish
+    // Generate reset token (6 ta raqam)
+    const resetCode = Math.floor(100000 + Math.random() * 900000).toString();
+    const expiresAt = new Date(Date.now() + 15 * 60 * 1000); // 15 daqiqa
+
+    // Save to EmailVerification table (reusing for reset)
+    await this.prisma.emailVerification.upsert({
+      where: { email },
+      update: {
+        code: resetCode,
+        expiresAt,
+        verified: false,
+      },
+      create: {
+        email,
+        code: resetCode,
+        expiresAt,
+      },
+    });
+
+    // Send email with reset code
+    console.log('📧 Sending PASSWORD RESET email to:', email);
+    try {
+      await this.mailService.sendPasswordResetEmail(email, resetCode, user.fullName);
+      console.log('✅ Password reset email sent successfully');
+    } catch (error) {
+      console.error('❌ Email yuborishda xatolik:', error);
+    }
+
+    const response = { 
+      message: 'Parolni tiklash kodi emailga yuborildi',
+      type: 'reset',
+      registered: true 
+    };
+    console.log('📤 Returning response:', response);
+    return response;
+  }
+
+  async resetPassword(email: string, code: string, newPassword: string) {
+    // Find verification code
+    const verification = await this.prisma.emailVerification.findUnique({
+      where: { email },
+    });
+
+    if (!verification) {
+      throw new BadRequestException('Tiklash kodi topilmadi');
+    }
+
+    if (verification.code !== code) {
+      throw new BadRequestException('Noto\'g\'ri kod');
+    }
+
+    if (verification.expiresAt < new Date()) {
+      throw new BadRequestException('Kod muddati tugagan. Qayta urinib ko\'ring');
+    }
+
+    // Find user
+    const user = await this.prisma.user.findUnique({
+      where: { email },
+    });
+
+    if (!user) {
+      throw new BadRequestException('Foydalanuvchi topilmadi');
+    }
+
+    // Hash new password
+    const hashedPassword = await bcrypt.hash(newPassword, 12);
+
+    // Update password
+    await this.prisma.user.update({
+      where: { id: user.id },
+      data: { password: hashedPassword },
+    });
+
+    // Delete verification code
+    await this.prisma.emailVerification.delete({
+      where: { email },
+    });
+
+    return { message: 'Parol muvaffaqiyatli yangilandi' };
+  }
+}

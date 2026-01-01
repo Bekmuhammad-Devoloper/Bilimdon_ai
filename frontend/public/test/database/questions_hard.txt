@@ -1,0 +1,148 @@
+===============================================
+DATABASE - HARD SAVOLLARI
+===============================================
+
+SAVOL 1: Query optimization nima?
+A) Query fast
+B) Query performance improve (indexes, execution plan)
+C) Performance
+D) Optimization
+JAVOB: B
+
+SAVOL 2: Execution plan nima?
+A) Query plan
+B) Database how query execute (steps)
+C) Query strategy
+D) Performance plan
+JAVOB: B
+
+SAVOL 3: Index types nima?
+A) Index
+B) B-tree, Hash, Bitmap, Full-text
+C) Index category
+D) Index structure
+JAVOB: B
+
+SAVOL 4: Composite index nima?
+A) Index
+B) Multiple columns index
+C) Multi-column
+D) Index combination
+JAVOB: B
+
+SAVOL 5: N+1 problem nima?
+A) Query problem
+B) Parent query + child query multiple (inefficient)
+C) Performance issue
+D) Query problem
+JAVOB: B
+
+SAVOL 6: Denormalization nima?
+A) Normal reverse
+B) Performance (normalized reverse)
+C) Data redundancy
+D) Optimization
+JAVOB: B
+
+SAVOL 7: Partitioning nima?
+A) Partition
+B) Large table divide (smaller partitions)
+C) Data division
+D) Performance
+JAVOB: B
+
+SAVOL 8: Sharding nima?
+A) Shard
+B) Data distribute (multiple databases)
+C) Data scaling
+D) Horizontal scaling
+JAVOB: B
+
+SAVOL 9: Replication lag nima?
+A) Delay
+B) Master-slave data sync delay
+C) Synchronization
+D) Delay
+JAVOB: B
+
+SAVOL 10: CAP theorem nima?
+A) Consistency, Availability, Partition-tolerance (choose 2)
+B) Database property
+C) Distributed system
+D) Theorem
+JAVOB: A
+
+SAVOL 11: MVCC nima?
+A) Multi-Version
+B) Concurrent reads-writes (version control)
+C) Concurrency control
+D) Locking alternative
+JAVOB: B
+
+SAVOL 12: Phantom read nima?
+A) Read issue
+B) New rows INSERT (transaction isolation issue)
+C) Dirty read
+D) Non-repeatable read
+JAVOB: B
+
+SAVOL 13: Dirty read nima?
+A) Unclean read
+B) Uncommitted data read
+C) Isolation issue
+D) Read problem
+JAVOB: B
+
+SAVOL 14: Non-repeatable read nima?
+A) Repeated read
+B) Same data different values (update between reads)
+C) Read issue
+D) Isolation problem
+JAVOB: B
+
+SAVOL 15: Serialization isolation level nima?
+A) Isolation
+B) Highest level (most strict)
+C) Transaction isolation
+D) Concurrency level
+JAVOB: B
+
+SAVOL 16: Full-text search nima?
+A) Search
+B) Large text efficient search
+C) Text search
+D) Search method
+JAVOB: B
+
+SAVOL 17: Materialized view nima?
+A) Regular view
+B) View data physically stored (like table)
+C) View type
+D) Performance
+JAVOB: B
+
+SAVOL 18: Column-store database nima?
+A) Store
+B) Data columns (not rows) store
+C) Database type
+D) Storage format
+JAVOB: B
+
+SAVOL 19: Graph database nima?
+A) Database
+B) Relationships emphasis (nodes, edges)
+C) Database type
+D) Data structure
+JAVOB: B
+
+SAVOL 20: Time-series database nima?
+A) Database
+B) Timestamp data optimize
+C) Database type
+D) Specialized database
+JAVOB: B
+
+===============================================
+HARD SAVOLLARI - JAMI: 20
+QIYINLIK DARAJASI: MURAKKAB
+===============================================

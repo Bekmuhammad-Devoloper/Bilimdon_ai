@@ -1,0 +1,706 @@
+NESTJS - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+===================================================
+
+1. NestJS da Provider scope turlari:
+   A) Faqat Singleton
+   B) DEFAULT (Singleton), REQUEST, TRANSIENT
+   C) Faqat Request
+   D) Faqat Transient
+   Javob: B
+
+2. DEFAULT scope nima degani?
+   A) Har request uchun yangi
+   B) Singleton - butun application uchun bitta instance
+   C) Har inject uchun yangi
+   D) Manual scope
+   Javob: B
+
+3. REQUEST scope nima?
+   A) Singleton
+   B) Har bir HTTP request uchun yangi instance
+   C) Transient
+   D) Global
+   Javob: B
+
+4. TRANSIENT scope nima?
+   A) Singleton
+   B) Har bir inject qilinganda yangi instance
+   C) Request based
+   D) Module based
+   Javob: B
+
+5. @Injectable({ scope: Scope.REQUEST }) nima qiladi?
+   A) Singleton yaratadi
+   B) Request-scoped provider yaratadi
+   C) Transient yaratadi
+   D) Global yaratadi
+   Javob: B
+
+6. Custom Provider - useClass nima?
+   A) Value provide
+   B) Boshqa class ni provider sifatida ishlatish
+   C) Factory provide
+   D) Existing provide
+   Javob: B
+
+7. Custom Provider - useValue nima?
+   A) Class provide
+   B) Statik qiymat yoki object ni provide qilish
+   C) Factory provide
+   D) Existing provide
+   Javob: B
+
+8. Custom Provider - useFactory nima?
+   A) Class provide
+   B) Dynamic provider yaratish (factory function)
+   C) Value provide
+   D) Existing provide
+   Javob: B
+
+9. useFactory da inject option nima?
+   A) Export
+    B) Factory ga kerakli dependency larni inject qilish
+   C) Import
+   D) Provider
+   Javob: B
+
+10. Custom Provider - useExisting nima?
+    A) Yangi instance
+    B) Mavjud provider ga alias yaratish
+    C) Value provide
+    D) Factory provide
+    Javob: B
+
+11. @Inject() decorator qachon kerak?
+    A) Har doim
+    B) Interface yoki custom token inject qilganda
+    C) Hech qachon
+    D) Faqat service da
+    Javob: B
+
+12. Injection token yaratish:
+    A) const TOKEN = 'token'
+    B) const TOKEN = Symbol('token') yoki new InjectionToken()
+    C) const TOKEN = {}
+    D) const TOKEN = class {}
+    Javob: B
+
+13. Circular dependency nima?
+    A) Normal dependency
+    B) A -> B -> A (bir-biriga bog'liq)
+    C) No dependency
+    D) Multiple dependency
+    Javob: B
+
+14. Circular dependency ni hal qilish:
+    A) @Inject()
+    B) forwardRef(() => ServiceName)
+    C) @Optional()
+    D) @Skip()
+    Javob: B
+
+15. @Optional() decorator nima?
+    A) Required qiladi
+    B) Dependency topilmasa error bermaydi (undefined)
+    C) Skip qiladi
+    D) Force qiladi
+    Javob: B
+
+16. Dynamic Module nima?
+    A) Static module
+    B) Runtime da konfiguratsiya qilinadigan module
+    C) Lazy module
+    D) Async module
+    Javob: B
+
+17. Dynamic Module da forRoot() pattern:
+    A) Child module
+    B) Global configuration bilan module register qilish
+    C) Feature module
+    D) Lazy module
+    Javob: B
+
+18. Dynamic Module da forRootAsync():
+    A) Sync configuration
+    B) Async configuration (factory, useClass, ...)
+    C) Static configuration
+    D) No configuration
+    Javob: B
+
+19. @Global() decorator nima qiladi?
+    A) Local module
+    B) Module ni global qiladi (import shart emas)
+    C) Private module
+    D) Lazy module
+    Javob: B
+
+20. Lazy loading module:
+    A) Eager loading
+    B) Module ni kerak bo'lganda yuklash (performance)
+    C) Static loading
+    D) Sync loading
+    Javob: B
+
+21. TypeORM nima?
+    A) NoSQL ORM
+    B) TypeScript/JavaScript uchun SQL ORM
+    C) MongoDB driver
+    D) Redis client
+    Javob: B
+
+22. @nestjs/typeorm paketi nima?
+    A) Database driver
+    B) NestJS uchun TypeORM integratsiyasi
+    C) MongoDB paketi
+    D) Redis paketi
+    Javob: B
+
+23. TypeOrmModule.forRoot() nima qiladi?
+    A) Entity yaratadi
+    B) Database connection sozlash
+    C) Repository yaratadi
+    D) Migration run
+    Javob: B
+
+24. TypeOrmModule.forFeature([User]) nima?
+    A) Global registration
+    B) Modul uchun entity/repository ni register qilish
+    C) Connection yaratish
+    D) Migration yaratish
+    Javob: B
+
+25. @Entity() decorator nima?
+    A) Service belgilaydi
+    B) Database table/collection ga map qilinadigan class
+    C) Controller belgilaydi
+    D) Module belgilaydi
+    Javob: B
+
+26. @PrimaryGeneratedColumn() nima?
+    A) Foreign key
+    B) Auto-increment primary key
+    C) Unique column
+    D) Index column
+    Javob: B
+
+27. @Column() decorator nima?
+    A) Entity belgilaydi
+    B) Database column ni belgilaydi
+    C) Primary key
+    D) Foreign key
+    Javob: B
+
+28. @Column({ unique: true }) nima?
+    A) Primary key
+    B) Unique constraint qo'shadi
+    C) Foreign key
+    D) Index
+    Javob: B
+
+29. @Column({ nullable: true }) nima?
+    A) Required field
+    B) NULL qiymat qabul qiladi
+    C) Unique field
+    D) Primary field
+    Javob: B
+
+30. @Column({ default: 'active' }) nima?
+    A) No default
+    B) Default qiymat belgilaydi
+    C) Required value
+    D) Unique value
+    Javob: B
+
+31. @CreateDateColumn() nima?
+    A) Manual date
+    B) Avtomatik yaratilgan vaqtni saqlaydi
+    C) Update date
+    D) Delete date
+    Javob: B
+
+32. @UpdateDateColumn() nima?
+    A) Create date
+    B) Har yangilanishda avtomatik vaqt
+    C) Delete date
+    D) Manual date
+    Javob: B
+
+33. @OneToMany() decorator:
+    A) One-to-One
+    B) Bir entity ko'p boshqa entity ga bog'liq (1:N)
+    C) Many-to-Many
+    D) Many-to-One
+    Javob: B
+
+34. @ManyToOne() decorator:
+    A) One-to-Many
+    B) Ko'p entity bitta entity ga bog'liq (N:1)
+    C) Many-to-Many
+    D) One-to-One
+    Javob: B
+
+35. @ManyToMany() decorator:
+    A) One-to-One
+    B) Ko'p-ko'p munosabat (N:M)
+    C) One-to-Many
+    D) Many-to-One
+    Javob: B
+
+36. @JoinColumn() nima uchun?
+    A) Join table
+    B) Foreign key column ni belgilash (owning side)
+    C) Primary key
+    D) Index
+    Javob: B
+
+37. @JoinTable() nima uchun?
+    A) Join column
+    B) ManyToMany uchun junction table
+    C) Primary table
+    D) Foreign table
+    Javob: B
+
+38. Repository pattern nima?
+    A) Direct SQL
+    B) Database operatsiyalarini abstract qilish
+    C) Controller pattern
+    D) Service pattern
+    Javob: B
+
+39. @InjectRepository(User) nima?
+    A) Service inject
+    B) User entity uchun repository ni inject qilish
+    C) Controller inject
+    D) Module inject
+    Javob: B
+
+40. repository.find() nima qiladi?
+    A) Bitta topadi
+    B) Barcha entity larni topadi
+    C) Yaratadi
+    D) O'chiradi
+    Javob: B
+
+41. repository.findOne({ where: { id } }) nima?
+    A) Barcha topadi
+    B) Bitta entity ni id bo'yicha topadi
+    C) Yaratadi
+    D) O'chiradi
+    Javob: B
+
+42. repository.save(entity) nima qiladi?
+    A) Faqat create
+    B) Create yoki update (upsert)
+    C) Faqat update
+    D) Delete
+    Javob: B
+
+43. repository.create(dto) nima?
+    A) Database ga saqlaydi
+    B) Entity instance yaratadi (saqlamaydi)
+    C) O'chiradi
+    D) Yangilaydi
+    Javob: B
+
+44. repository.remove(entity) nima?
+    A) Yaratadi
+    B) Entity ni o'chiradi
+    C) Yangilaydi
+    D) Topadi
+    Javob: B
+
+45. repository.delete(id) nima?
+    A) Entity kerak
+    B) ID bo'yicha o'chiradi (entity yuklash shart emas)
+    C) Yaratadi
+    D) Yangilaydi
+    Javob: B
+
+46. relations option (find da):
+    A) Where condition
+    B) Eager load related entities
+    C) Order by
+    D) Select fields
+    Javob: B
+
+47. repository.find({ relations: ['posts'] }) nima?
+    A) Faqat posts
+    B) User va uning posts larini birga yuklaydi
+    C) Posts o'chiradi
+    D) Posts yaratadi
+    Javob: B
+
+48. QueryBuilder nima?
+    A) Simple query
+    B) Complex SQL query yaratish uchun API
+    C) Direct SQL
+    D) Raw query
+    Javob: B
+
+49. repository.createQueryBuilder('user') nima?
+    A) Entity yaratadi
+    B) QueryBuilder instance yaratadi ('user' alias)
+    C) SQL string
+    D) Raw query
+    Javob: B
+
+50. .where('user.age > :age', { age: 18 }) nima?
+    A) Select
+    B) WHERE condition with parameter
+    C) Order
+    D) Join
+    Javob: B
+
+51. .leftJoinAndSelect('user.posts', 'post') nima?
+    A) Inner join
+    B) LEFT JOIN va related entity ni select qilish
+    C) Right join
+    D) Cross join
+    Javob: B
+
+52. .orderBy('user.name', 'ASC') nima?
+    A) Where
+    B) Natijalarni saralash
+    C) Group
+    D) Having
+    Javob: B
+
+53. .skip(10).take(20) nima?
+    A) Where
+    B) Pagination (offset, limit)
+    C) Order
+    D) Group
+    Javob: B
+
+54. .getMany() vs .getOne():
+    A) Bir xil
+    B) getMany - array, getOne - single entity
+    C) getMany - single
+    D) getOne - array
+    Javob: B
+
+55. Transaction nima?
+    A) Simple query
+    B) Atomic operatsiyalar guruhi (all or nothing)
+    C) Read only
+    D) Write only
+    Javob: B
+
+56. @Transaction() decorator (deprecated) o'rniga nima?
+    A) @Atomic()
+    B) DataSource.transaction() yoki QueryRunner
+    C) @Transactional()
+    D) @Commit()
+    Javob: B
+
+57. NestJS da Prisma nima?
+    A) SQL ORM
+    B) Type-safe ORM (TypeORM alternative)
+    C) MongoDB driver
+    D) Redis client
+    Javob: B
+
+58. Prisma schema file:
+    A) schema.json
+    B) schema.prisma
+    C) prisma.config
+    D) database.prisma
+    Javob: B
+
+59. prisma generate nima qiladi?
+    A) Migration
+    B) Prisma Client generate qiladi
+    C) Database yaratadi
+    D) Seed run
+    Javob: B
+
+60. prisma migrate dev nima?
+    A) Generate
+    B) Migration yaratadi va run qiladi
+    C) Seed run
+    D) Reset database
+    Javob: B
+
+61. PrismaService extends PrismaClient nima?
+    A) Controller
+    B) NestJS uchun Prisma wrapper service
+    C) Module
+    D) Guard
+    Javob: B
+
+62. JWT nima?
+    A) JSON Web Token - authentication token
+    B) JavaScript Web Token
+    C) Java Web Token
+    D) JSON Web Transfer
+    Javob: B
+
+63. @nestjs/jwt paketi:
+    A) Database
+    B) JWT sign va verify uchun module
+    C) Passport
+    D) Session
+    Javob: B
+
+64. JwtService.sign(payload) nima?
+    A) Token verify
+    B) JWT token yaratadi
+    C) Token decode
+    D) Token delete
+    Javob: B
+
+65. JwtService.verify(token) nima?
+    A) Token sign
+    B) Token ni tekshiradi va payload qaytaradi
+    C) Token delete
+    D) Token refresh
+    Javob: B
+
+66. @nestjs/passport paketi:
+    A) JWT only
+    B) Authentication strategies (Local, JWT, OAuth, ...)
+    C) Session only
+    D) Basic auth only
+    Javob: B
+
+67. Passport Strategy nima?
+    A) Guard
+    B) Authentication usuli (Local, JWT, Google, ...)
+    C) Pipe
+    D) Interceptor
+    Javob: B
+
+68. LocalStrategy nima uchun?
+    A) JWT auth
+    B) Username/password authentication
+    C) OAuth
+    D) API key
+    Javob: B
+
+69. JwtStrategy nima uchun?
+    A) Local auth
+    B) JWT token validation va user extraction
+    C) OAuth
+    D) Session
+    Javob: B
+
+70. @UseGuards(AuthGuard('jwt')) nima?
+    A) Local auth
+    B) JWT strategy bilan route ni himoyalash
+    C) No auth
+    D) Basic auth
+    Javob: B
+
+71. ExecutionContext nima (Guard da)?
+    A) Database context
+    B) Request va handler haqida ma'lumot
+    C) Transaction context
+    D) Module context
+    Javob: B
+
+72. context.switchToHttp().getRequest() nima?
+    A) Response object
+    B) HTTP Request object
+    C) WebSocket
+    D) RPC
+    Javob: B
+
+73. Reflector nima?
+    A) Logger
+    B) Metadata o'qish uchun utility
+    C) Cache
+    D) Config
+    Javob: B
+
+74. @SetMetadata('roles', ['admin']) nima?
+    A) Logger
+    B) Custom metadata qo'shish (Roles guard uchun)
+    C) Cache
+    D) Config
+    Javob: B
+
+75. Custom @Roles() decorator yaratish:
+    A) @Injectable()
+    B) SetMetadata wrapper (applyDecorators bilan)
+    C) @Controller()
+    D) @Module()
+    Javob: B
+
+76. RolesGuard da reflector ishlatish:
+    A) Logger.get
+    B) reflector.get<string[]>('roles', context.getHandler())
+    C) request.roles
+    D) context.roles
+    Javob: B
+
+77. NestJS da Caching nima uchun?
+    A) Security
+    B) Performance (tez-tez so'raladigan ma'lumotlarni keshlash)
+    C) Logging
+    D) Validation
+    Javob: B
+
+78. @nestjs/cache-manager paketi:
+    A) Database
+    B) Caching module (Redis, memory, ...)
+    C) Auth
+    D) Logger
+    Javob: B
+
+79. @UseInterceptors(CacheInterceptor) nima?
+    A) Guard
+    B) Response ni avtomatik keshlash
+    C) Pipe
+    D) Filter
+    Javob: B
+
+80. @CacheKey('custom_key') decorator:
+    A) Cache disable
+    B) Custom cache key belgilash
+    C) Cache clear
+    D) Cache TTL
+    Javob: B
+
+81. @CacheTTL(60) decorator:
+    A) Cache key
+    B) Cache muddati (sekundlarda)
+    C) Cache clear
+    D) Cache disable
+    Javob: B
+
+82. NestJS da Queue nima uchun?
+    A) Sync processing
+    B) Background/async job processing
+    C) Caching
+    D) Logging
+    Javob: B
+
+83. @nestjs/bull paketi:
+    A) Database
+    B) Redis-based queue (Bull library)
+    C) Cache
+    D) Auth
+    Javob: B
+
+84. @Processor('queue-name') decorator:
+    A) Controller
+    B) Queue processor class belgilash
+    C) Service
+    D) Module
+    Javob: B
+
+85. @Process('job-name') decorator:
+    A) Controller method
+    B) Queue job handler method
+    C) Service method
+    D) Cron method
+    Javob: B
+
+86. queue.add('job', data) nima?
+    A) Process job
+    B) Queue ga yangi job qo'shish
+    C) Remove job
+    D) Get job
+    Javob: B
+
+87. NestJS da Scheduled Tasks:
+    A) Manual cron
+    B) @nestjs/schedule paketi (Cron, Interval, Timeout)
+    C) Queue
+    D) Event
+    Javob: B
+
+88. @Cron('0 0 * * *') decorator:
+    A) Interval
+    B) Cron expression (har kuni 00:00 da)
+    C) Timeout
+    D) Manual
+    Javob: B
+
+89. @Interval(5000) decorator:
+    A) Cron
+    B) Har 5 sekundda ishlaydigan task
+    C) Timeout
+    D) Manual
+    Javob: B
+
+90. @Timeout(3000) decorator:
+    A) Cron
+    B) 3 sekunddan keyin bir marta ishlaydi
+    C) Interval
+    D) Manual
+    Javob: B
+
+91. NestJS da WebSocket support:
+    A) Yo'q
+    B) @nestjs/websockets va @nestjs/platform-socket.io
+    C) Faqat HTTP
+    D) Faqat REST
+    Javob: B
+
+92. @WebSocketGateway() decorator:
+    A) Controller
+    B) WebSocket gateway class
+    C) Service
+    D) Module
+    Javob: B
+
+93. @SubscribeMessage('event') decorator:
+    A) HTTP handler
+    B) WebSocket message handler
+    C) Queue handler
+    D) Cron handler
+    Javob: B
+
+94. @MessageBody() decorator:
+    A) HTTP body
+    B) WebSocket message data
+    C) Query param
+    D) URL param
+    Javob: B
+
+95. @ConnectedSocket() decorator:
+    A) HTTP request
+    B) WebSocket client socket
+    C) Query param
+    D) Body
+    Javob: B
+
+96. NestJS da Microservices:
+    A) Faqat monolith
+    B) @nestjs/microservices (TCP, Redis, RabbitMQ, Kafka, ...)
+    C) Faqat REST
+    D) Faqat WebSocket
+    Javob: B
+
+97. @MessagePattern('pattern') decorator:
+    A) HTTP handler
+    B) Microservice message handler
+    C) WebSocket handler
+    D) Queue handler
+    Javob: B
+
+98. @EventPattern('event') decorator:
+    A) Sync handler
+    B) Async event handler (fire-and-forget)
+    C) HTTP handler
+    D) WebSocket handler
+    Javob: B
+
+99. ClientProxy nima?
+    A) HTTP client
+    B) Microservice ga message yuborish uchun client
+    C) WebSocket client
+    D) Database client
+    Javob: B
+
+100. client.send('pattern', data) vs client.emit('event', data):
+     A) Bir xil
+     B) send - response kutadi, emit - fire-and-forget
+     C) send - async, emit - sync
+     D) emit - response kutadi
+     Javob: B
+
+===================================================
+                     YAKUNLANDI
+===================================================

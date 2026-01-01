@@ -1,0 +1,702 @@
+LINUX - 100 TA EXPERT DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. Linux kernel boot process stages?
+   A) One stage
+   B) BIOS/UEFI → Bootloader → Kernel → init/systemd
+   C) Two stages
+   D) Three stages
+   Javob: B
+
+2. initramfs nima?
+   A) Init RAM
+   B) Initial RAM filesystem for early boot
+   C) RAM init
+   D) File system
+   Javob: B
+
+3. systemd target units?
+   A) One target
+   B) multi-user.target, graphical.target, rescue.target, etc.
+   C) Two targets
+   D) Three targets
+   Javob: B
+
+4. systemctl isolate nima?
+   A) Isolate system
+   B) Switch to different target immediately
+   C) System isolate
+   D) Target switch
+   Javob: B
+
+5. journalctl persistent logging?
+   A) No persist
+   B) /var/log/journal/ directory, Storage=persistent
+   C) Persist journal
+   D) Log persist
+   Javob: B
+
+6. journalctl --vacuum-size?
+   A) Vacuum size
+   B) Limit journal disk usage
+   C) Size vacuum
+   D) Disk limit
+   Javob: B
+
+7. cgroups v2 nima?
+   A) Control group
+   B) Unified hierarchy for resource control
+   C) Group control
+   D) Resource group
+   Javob: B
+
+8. cgroup controllers?
+   A) One controller
+   B) cpu, memory, io, pids, cpuset
+   C) Two controllers
+   D) Three controllers
+   Javob: B
+
+9. Memory cgroup settings?
+   A) Memory setting
+   B) memory.max, memory.high, memory.low
+   C) Setting memory
+   D) Max memory
+   Javob: B
+
+10. CPU cgroup settings?
+    A) CPU setting
+    B) cpu.max, cpu.weight for bandwidth control
+    C) Setting CPU
+    D) Max CPU
+    Javob: B
+
+11. Linux namespaces types?
+    A) One type
+    B) mount, pid, net, user, ipc, uts, cgroup, time
+    C) Two types
+    D) Three types
+    Javob: B
+
+12. unshare command nima?
+    A) Share un
+    B) Create new namespace
+    C) Un share
+    D) Namespace create
+    Javob: B
+
+13. nsenter command?
+    A) NS enter
+    B) Enter existing namespace
+    C) Enter NS
+    D) Namespace enter
+    Javob: B
+
+14. User namespace UID mapping?
+    A) No mapping
+    B) /proc/[pid]/uid_map for ID translation
+    C) Mapping UID
+    D) ID mapping
+    Javob: B
+
+15. seccomp nima?
+    A) Secure comp
+    B) System call filtering
+    C) Comp secure
+    D) Call filter
+    Javob: B
+
+16. seccomp-bpf?
+    A) BPF seccomp
+    B) BPF-based fine-grained syscall filtering
+    C) Seccomp BPF
+    D) Filter BPF
+    Javob: B
+
+17. Linux capabilities?
+    A) One capability
+    B) Fine-grained root privileges (CAP_NET_ADMIN, etc.)
+    C) Two capabilities
+    D) Root all
+    Javob: B
+
+18. setcap / getcap commands?
+    A) Set cap
+    B) Set/get file capabilities
+    C) Cap set
+    D) File capability
+    Javob: B
+
+19. AppArmor vs SELinux?
+    A) Same
+    B) AppArmor=path-based, SELinux=label-based MAC
+    C) SELinux=path-based
+    D) No difference
+    Javob: B
+
+20. SELinux contexts?
+    A) One context
+    B) user:role:type:level format
+    C) Two contexts
+    D) No format
+    Javob: B
+
+21. setenforce / getenforce?
+    A) Set enforce
+    B) Set/get SELinux mode (Enforcing, Permissive)
+    C) Enforce set
+    D) Mode set
+    Javob: B
+
+22. eBPF nima?
+    A) Extended BPF
+    B) Programmable kernel runtime (networking, tracing)
+    C) BPF extended
+    D) Kernel runtime
+    Javob: B
+
+23. bpftrace nima?
+    A) BPF trace
+    B) High-level tracing language for eBPF
+    C) Trace BPF
+    D) Language trace
+    Javob: B
+
+24. BPF CO-RE?
+    A) Core BPF
+    B) Compile Once Run Everywhere portability
+    C) BPF core
+    D) Portability compile
+    Javob: B
+
+25. tc (traffic control) qdisc?
+    A) TC qdisc
+    B) Queuing discipline for packet scheduling
+    C) Qdisc TC
+    D) Packet queue
+    Javob: B
+
+26. tc filter with eBPF?
+    A) Filter TC
+    B) Programmable packet filtering
+    C) TC filter
+    D) Packet filter
+    Javob: B
+
+27. XDP (eXpress Data Path)?
+    A) XDP data
+    B) Kernel bypass packet processing
+    C) Data XDP
+    D) Packet bypass
+    Javob: B
+
+28. XDP actions?
+    A) One action
+    B) XDP_PASS, XDP_DROP, XDP_REDIRECT, XDP_TX
+    C) Two actions
+    D) Three actions
+    Javob: B
+
+29. io_uring nima?
+    A) IO ring
+    B) Async I/O interface with submission/completion rings
+    C) Ring IO
+    D) Async interface
+    Javob: B
+
+30. io_uring submission queue?
+    A) Submit queue
+    B) Ring buffer for I/O requests
+    C) Queue submit
+    D) Request buffer
+    Javob: B
+
+31. RAID levels?
+    A) One level
+    B) RAID 0, 1, 5, 6, 10 with different redundancy/performance
+    C) Two levels
+    D) No levels
+    Javob: B
+
+32. mdadm create array?
+    A) Create mdadm
+    B) mdadm --create /dev/md0 --level=5 --raid-devices=3
+    C) Mdadm create
+    D) Array create
+    Javob: B
+
+33. LVM components?
+    A) One component
+    B) PV (Physical Volume), VG (Volume Group), LV (Logical Volume)
+    C) Two components
+    D) Three components
+    Javob: B
+
+34. LVM thin provisioning?
+    A) Thin LVM
+    B) Over-commit storage with thin pools
+    C) LVM thin
+    D) Storage over
+    Javob: B
+
+35. LVM snapshot?
+    A) Snapshot LVM
+    B) Point-in-time copy using COW
+    C) LVM snapshot
+    D) Time copy
+    Javob: B
+
+36. Btrfs features?
+    A) One feature
+    B) COW, snapshots, compression, RAID, checksums
+    C) Two features
+    D) Three features
+    Javob: B
+
+37. Btrfs subvolumes?
+    A) Sub volume
+    B) Independent filesystem trees within pool
+    C) Volume sub
+    D) Pool tree
+    Javob: B
+
+38. ZFS ARC (Adaptive Replacement Cache)?
+    A) ZFS arc
+    B) RAM-based read cache
+    C) Arc ZFS
+    D) Cache read
+    Javob: B
+
+39. ZFS L2ARC?
+    A) L2 ARC
+    B) SSD-based secondary read cache
+    C) ARC L2
+    D) Cache secondary
+    Javob: B
+
+40. ZFS SLOG?
+    A) ZFS SLOG
+    B) Separate intent log for sync writes
+    C) SLOG ZFS
+    D) Log intent
+    Javob: B
+
+41. dm-crypt / LUKS?
+    A) Crypt dm
+    B) Block device encryption layer
+    C) Dm crypt
+    D) Encryption block
+    Javob: B
+
+42. cryptsetup commands?
+    A) Setup crypt
+    B) luksFormat, luksOpen, luksClose
+    C) Crypt setup
+    D) Format open
+    Javob: B
+
+43. LUKS key slots?
+    A) One slot
+    B) Up to 8 passphrases/keyfiles per volume
+    C) Two slots
+    D) No slots
+    Javob: B
+
+44. nftables vs iptables?
+    A) Same
+    B) nftables=modern, simpler syntax, better performance
+    C) iptables better
+    D) No difference
+    Javob: B
+
+45. nft list ruleset?
+    A) List nft
+    B) Show all firewall rules
+    C) Nft list
+    D) Rules show
+    Javob: B
+
+46. nftables tables/chains/rules hierarchy?
+    A) Flat
+    B) table → chain → rule structure
+    C) No hierarchy
+    D) One level
+    Javob: B
+
+47. ipvs load balancing?
+    A) IPVS load
+    B) Kernel-level L4 load balancer
+    C) Load IPVS
+    D) Balancer L4
+    Javob: B
+
+48. ipvsadm commands?
+    A) IPVS adm
+    B) -A (add service), -a (add server), -L (list)
+    C) Adm IPVS
+    D) Service add
+    Javob: B
+
+49. keepalived nima?
+    A) Keep alive
+    B) VRRP failover for high availability
+    C) Alive keep
+    D) Failover VRRP
+    Javob: B
+
+50. perf tool nima?
+    A) Perf tool
+    B) Performance analysis with hardware counters
+    C) Tool perf
+    D) Analysis hardware
+    Javob: B
+
+51. perf record / perf report?
+    A) Record perf
+    B) Collect and analyze performance data
+    C) Perf record
+    D) Data collect
+    Javob: B
+
+52. perf stat?
+    A) Stat perf
+    B) CPU performance counter statistics
+    C) Perf stat
+    D) Counter statistics
+    Javob: B
+
+53. ftrace nima?
+    A) F trace
+    B) Function tracer in /sys/kernel/debug/tracing
+    C) Trace F
+    D) Debug tracer
+    Javob: B
+
+54. strace command?
+    A) S trace
+    B) Trace system calls and signals
+    C) Trace S
+    D) System trace
+    Javob: B
+
+55. ltrace command?
+    A) L trace
+    B) Trace library calls
+    C) Trace L
+    D) Library trace
+    Javob: B
+
+56. /proc filesystem?
+    A) Proc file
+    B) Virtual filesystem exposing kernel/process info
+    C) File proc
+    D) Kernel info
+    Javob: B
+
+57. /proc/[pid]/maps?
+    A) Proc maps
+    B) Process memory mappings
+    C) Maps proc
+    D) Memory process
+    Javob: B
+
+58. /sys filesystem?
+    A) Sys file
+    B) Kernel object model (devices, drivers, modules)
+    C) File sys
+    D) Device model
+    Javob: B
+
+59. udev rules?
+    A) Udev rule
+    B) Dynamic device node creation rules
+    C) Rule udev
+    D) Device rules
+    Javob: B
+
+60. udev SUBSYSTEM, ATTR matching?
+    A) Match udev
+    B) Filter devices by attributes
+    C) Udev match
+    D) Filter devices
+    Javob: B
+
+61. Kernel module parameters?
+    A) Module param
+    B) modprobe module param=value
+    C) Param module
+    D) Value param
+    Javob: B
+
+62. /etc/modprobe.d/ configuration?
+    A) Modprobe etc
+    B) Persistent module options
+    C) Etc modprobe
+    D) Options persistent
+    Javob: B
+
+63. DKMS nima?
+    A) Dynamic KMS
+    B) Dynamic Kernel Module Support (auto rebuild)
+    C) KMS dynamic
+    D) Module rebuild
+    Javob: B
+
+64. kexec nima?
+    A) K exec
+    B) Load new kernel without BIOS reboot
+    C) Exec K
+    D) Kernel load
+    Javob: B
+
+65. kdump nima?
+    A) K dump
+    B) Kernel crash dump mechanism
+    C) Dump K
+    D) Crash dump
+    Javob: B
+
+66. vmcore analysis with crash?
+    A) VM core
+    B) Post-mortem kernel debugging
+    C) Core VM
+    D) Kernel debug
+    Javob: B
+
+67. sysctl parameters?
+    A) Sys ctl
+    B) Runtime kernel tuning via /proc/sys
+    C) Ctl sys
+    D) Kernel tune
+    Javob: B
+
+68. net.core.somaxconn?
+    A) Soma xconn
+    B) TCP listen backlog limit
+    C) Xconn soma
+    D) Listen limit
+    Javob: B
+
+69. vm.swappiness?
+    A) Swap piness
+    B) Swap vs file cache preference (0-200)
+    C) Piness swap
+    D) Cache preference
+    Javob: B
+
+70. vm.dirty_ratio?
+    A) Dirty ratio
+    B) Percentage of memory for dirty pages before sync
+    C) Ratio dirty
+    D) Memory percentage
+    Javob: B
+
+71. hugepages configuration?
+    A) Huge pages
+    B) vm.nr_hugepages, hugetlbfs mount
+    C) Pages huge
+    D) Mount huge
+    Javob: B
+
+72. Transparent Huge Pages (THP)?
+    A) THP
+    B) Automatic huge page allocation
+    C) Huge THP
+    D) Auto allocation
+    Javob: B
+
+73. NUMA architecture?
+    A) NUMA arch
+    B) Non-Uniform Memory Access topology
+    C) Arch NUMA
+    D) Memory topology
+    Javob: B
+
+74. numactl command?
+    A) Numa ctl
+    B) Control NUMA policy for process
+    C) Ctl numa
+    D) Policy control
+    Javob: B
+
+75. CPU affinity (taskset)?
+    A) Task set
+    B) Bind process to specific CPUs
+    C) Set task
+    D) CPU bind
+    Javob: B
+
+76. CPU isolation (isolcpus)?
+    A) Isol CPUs
+    B) Exclude CPUs from scheduler
+    C) CPUs isol
+    D) Scheduler exclude
+    Javob: B
+
+77. Real-time scheduling policies?
+    A) One policy
+    B) SCHED_FIFO, SCHED_RR, SCHED_DEADLINE
+    C) Two policies
+    D) No realtime
+    Javob: B
+
+78. chrt command?
+    A) CH RT
+    B) Set/get real-time scheduling policy
+    C) RT CH
+    D) Policy set
+    Javob: B
+
+79. PAM (Pluggable Authentication Modules)?
+    A) PAM auth
+    B) Modular authentication framework
+    C) Auth PAM
+    D) Framework auth
+    Javob: B
+
+80. PAM stack types?
+    A) One type
+    B) auth, account, password, session
+    C) Two types
+    D) Three types
+    Javob: B
+
+81. PAM control flags?
+    A) One flag
+    B) required, requisite, sufficient, optional
+    C) Two flags
+    D) Three flags
+    Javob: B
+
+82. sudoers syntax?
+    A) Sudo ers
+    B) user host=(runas) commands
+    C) Ers sudo
+    D) Host user
+    Javob: B
+
+83. sudo NOPASSWD?
+    A) No passwd
+    B) Allow sudo without password
+    C) Passwd no
+    D) Password allow
+    Javob: B
+
+84. ACL (Access Control Lists)?
+    A) ACL access
+    B) Extended permissions beyond owner/group/other
+    C) Access ACL
+    D) Permissions extended
+    Javob: B
+
+85. setfacl / getfacl?
+    A) Set facl
+    B) Set/get ACL on files
+    C) Facl set
+    D) Files ACL
+    Javob: B
+
+86. Extended attributes (xattr)?
+    A) Xattr
+    B) User-defined metadata on files
+    C) Attr X
+    D) Metadata files
+    Javob: B
+
+87. setattr / getattr commands?
+    A) Set attr
+    B) setfattr/getfattr for extended attributes
+    C) Attr set
+    D) Extended set
+    Javob: B
+
+88. inotify nima?
+    A) I notify
+    B) Filesystem event monitoring API
+    C) Notify I
+    D) Event monitor
+    Javob: B
+
+89. inotifywait / inotifywatch?
+    A) Inotify wait
+    B) Command-line inotify tools
+    C) Wait inotify
+    D) Tools command
+    Javob: B
+
+90. fanotify nima?
+    A) FA notify
+    B) File access notification (better than inotify)
+    C) Notify FA
+    D) Access notify
+    Javob: B
+
+91. auditd framework?
+    A) Audit D
+    B) Linux audit system for security logging
+    C) D audit
+    D) Security log
+    Javob: B
+
+92. auditctl rules?
+    A) Audit ctl
+    B) -w (watch), -a (append rule), -k (key)
+    C) Ctl audit
+    D) Watch rule
+    Javob: B
+
+93. ausearch / aureport?
+    A) AU search
+    B) Search and report audit logs
+    C) Search AU
+    D) Logs report
+    Javob: B
+
+94. systemd socket activation?
+    A) Socket activation
+    B) Start service on incoming connection
+    C) Activation socket
+    D) Connection start
+    Javob: B
+
+95. systemd-nspawn?
+    A) Nspawn
+    B) Lightweight container manager
+    C) Spawn NS
+    D) Container light
+    Javob: B
+
+96. systemd timers vs cron?
+    A) Same
+    B) Timers=more features, persistent, calendar syntax
+    C) Cron better
+    D) No difference
+    Javob: B
+
+97. systemd-analyze blame?
+    A) Analyze blame
+    B) Show service startup times
+    C) Blame analyze
+    D) Startup show
+    Javob: B
+
+98. systemd-analyze critical-chain?
+    A) Critical chain
+    B) Show critical path in boot
+    C) Chain critical
+    D) Boot path
+    Javob: B
+
+99. coredumpctl nima?
+    A) Coredump ctl
+    B) Manage systemd-coredump crash dumps
+    C) Ctl coredump
+    D) Crash manage
+    Javob: B
+
+100. systemd resource limits (LimitNOFILE, etc.)?
+     A) Limit resource
+     B) Per-service ulimit settings
+     C) Resource limit
+     D) Ulimit service
+     Javob: B

@@ -1,0 +1,702 @@
+VUE.JS - 100 TA O'RTACHA DARAJADAGI TEST SAVOLLARI
+==================================================
+
+1. Reactivity system Vue3'da qanday ishlaydi?
+   A) Object.observe
+   B) Proxy-based reactivity
+   C) defineProperty
+   D) Polling
+   Javob: B
+
+2. Vue2 vs Vue3 reactivity farqi?
+   A) Bir xil
+   B) Vue3 Proxy, Vue2 defineProperty
+   C) Vue2 Proxy
+   D) Vue3 defineProperty
+   Javob: B
+
+3. ref() vs reactive() farqi?
+   A) Bir xil
+   B) ref primitives, reactive objects
+   C) reactive primitives
+   D) ref objects only
+   Javob: B
+
+4. reactive() limitation?
+   A) No limitation
+   B) Primitives emas, faqat objects
+   C) Objects emas
+   D) Arrays emas
+   Javob: B
+
+5. computed() getter va setter?
+   A) Faqat getter
+   B) computed({ get, set })
+   C) Faqat setter
+   D) No support
+   Javob: B
+
+6. watchEffect() vs watch() farqi?
+   A) Bir xil
+   B) watchEffect auto-track, watch explicit
+   C) watch auto-track
+   D) watchEffect explicit
+   Javob: B
+
+7. watchEffect() cleanup function?
+   A) No cleanup
+   B) onInvalidate callback
+   C) Manual cleanup
+   D) Automatic
+   Javob: B
+
+8. watch() deep option nima?
+   A) Shallow
+   B) Nested property watching
+   C) No nested
+   D) Top-level only
+   Javob: B
+
+9. watch() immediate option?
+   A) Lazy
+   B) Initial run immediately
+   C) No initial
+   D) Delayed
+   Javob: B
+
+10. watch() flush option?
+    A) No flush
+    B) pre, post, sync timing
+    C) Always sync
+    D) Always async
+    Javob: B
+
+11. Props validation?
+    A) No validation
+    B) type, required, default, validator
+    C) Only type
+    D) Only required
+    Javob: B
+
+12. Props default function?
+    A) default: value
+    B) default: () => ({})
+    C) default()
+    D) No default
+    Javob: B
+
+13. Props validator function?
+    A) No validator
+    B) validator: (value) => boolean
+    C) validate()
+    D) check()
+    Javob: B
+
+14. v-model modifiers (lazy, number, trim)?
+    A) No modifiers
+    B) v-model.lazy, .number, .trim
+    C) v-model:lazy
+    D) v-model@lazy
+    Javob: B
+
+15. Custom v-model modifier?
+    A) Not possible
+    B) modelModifiers prop
+    C) Built-in only
+    D) Global only
+    Javob: B
+
+16. Multiple v-model bindings?
+    A) One only
+    B) v-model:propName
+    C) Multiple v-model
+    D) Not possible
+    Javob: B
+
+17. Emit validation?
+    A) No validation
+    B) emits: { event: validator }
+    C) Always valid
+    D) Never valid
+    Javob: B
+
+18. Fallthrough attributes?
+    A) No fallthrough
+    B) Non-prop attributes to root element
+    C) All attributes
+    D) No attributes
+    Javob: B
+
+19. inheritAttrs: false nima?
+    A) Inherit all
+    B) Disable attribute fallthrough
+    C) Enable fallthrough
+    D) No effect
+    Javob: B
+
+20. useAttrs() nima qaytaradi?
+    A) Props
+    B) Fallthrough attributes
+    C) Slots
+    D) Emits
+    Javob: B
+
+21. useSlots() nima qaytaradi?
+    A) Props
+    B) Slot functions
+    C) Attrs
+    D) Emits
+    Javob: B
+
+22. Dynamic component?
+    A) Static only
+    B) <component :is="comp">
+    C) <dynamic>
+    D) v-component
+    Javob: B
+
+23. v-is directive (deprecated)?
+    A) Current
+    B) is attribute alternative
+    C) New feature
+    D) Required
+    Javob: B
+
+24. Async component loading state?
+    A) No loading state
+    B) loadingComponent option
+    C) Built-in
+    D) Always shown
+    Javob: B
+
+25. Async component error state?
+    A) No error state
+    B) errorComponent option
+    C) Built-in
+    D) Always thrown
+    Javob: B
+
+26. Async component timeout?
+    A) No timeout
+    B) timeout option in defineAsyncComponent
+    C) Always timeout
+    D) Never timeout
+    Javob: B
+
+27. Suspense fallback slot?
+    A) No fallback
+    B) #fallback slot for loading
+    C) Default slot
+    D) Named slot
+    Javob: B
+
+28. Suspense error handling?
+    A) No handling
+    B) onErrorCaptured + errorComponent
+    C) Built-in
+    D) Automatic
+    Javob: B
+
+29. onErrorCaptured hook nima?
+    A) Mount
+    B) Child error capture
+    C) Update
+    D) Unmount
+    Javob: B
+
+30. Error boundary pattern?
+    A) No pattern
+    B) onErrorCaptured + fallback UI
+    C) Try-catch
+    D) Error component
+    Javob: B
+
+31. Render function sintaksisi?
+    A) template
+    B) h('div', props, children)
+    C) render()
+    D) createElement
+    Javob: B
+
+32. h() function import?
+    A) Automatic
+    B) import { h } from 'vue'
+    C) Global
+    D) No import
+    Javob: B
+
+33. JSX in Vue?
+    A) No support
+    B) With @vitejs/plugin-vue-jsx
+    C) Built-in
+    D) Automatic
+    Javob: B
+
+34. Functional component?
+    A) Class only
+    B) Props only, no state
+    C) State required
+    D) Lifecycle required
+    Javob: B
+
+35. v-for with template?
+    A) No support
+    B) <template v-for> multiple elements
+    C) Single element
+    D) Div required
+    Javob: B
+
+36. v-for with v-if?
+    A) Allowed
+    B) Not recommended, use template
+    C) Required
+    D) Automatic
+    Javob: B
+
+37. v-for index?
+    A) No index
+    B) v-for="(item, index) in items"
+    C) item.index
+    D) items.index
+    Javob: B
+
+38. v-for object?
+    A) Array only
+    B) v-for="(value, key, index) in object"
+    C) No object
+    D) Keys only
+    Javob: B
+
+39. key with v-for best practice?
+    A) Index
+    B) Unique id
+    C) Random
+    D) No key
+    Javob: B
+
+40. Transition CSS classes?
+    A) 3 classes
+    B) 6 classes (enter/leave from/active/to)
+    C) 2 classes
+    D) 4 classes
+    Javob: B
+
+41. Transition JavaScript hooks?
+    A) No hooks
+    B) @before-enter, @enter, @after-enter...
+    C) Only CSS
+    D) Automatic
+    Javob: B
+
+42. Transition done callback?
+    A) No callback
+    B) done parameter in enter/leave hooks
+    C) Automatic
+    D) Promise
+    Javob: B
+
+43. TransitionGroup move class?
+    A) No move
+    B) v-move class for list reorder
+    C) Automatic
+    D) Static
+    Javob: B
+
+44. KeepAlive include/exclude?
+    A) All cached
+    B) :include/:exclude component filtering
+    C) None cached
+    D) Manual
+    Javob: B
+
+45. KeepAlive max cache?
+    A) Unlimited
+    B) :max prop
+    C) Limited
+    D) No max
+    Javob: B
+
+46. onActivated hook qachon?
+    A) Mount
+    B) KeepAlive component activated
+    C) Update
+    D) Unmount
+    Javob: B
+
+47. onDeactivated hook qachon?
+    A) Mount
+    B) KeepAlive component deactivated
+    C) Update
+    D) Unmount
+    Javob: B
+
+48. Teleport to attribute?
+    A) id
+    B) to="selector" CSS selector
+    C) target
+    D) dest
+    Javob: B
+
+49. Teleport disabled prop?
+    A) No disable
+    B) :disabled="true" conditional
+    C) Always enabled
+    D) Always disabled
+    Javob: B
+
+50. Multiple Teleport same target?
+    A) Error
+    B) Append in order
+    C) Replace
+    D) First only
+    Javob: B
+
+51. Vue Router lazy loading?
+    A) Eager only
+    B) () => import('./Component.vue')
+    C) require()
+    D) No lazy
+    Javob: B
+
+52. Route meta fields?
+    A) No meta
+    B) meta: { auth: true }
+    C) Extra
+    D) Info
+    Javob: B
+
+53. Route meta access?
+    A) route.data
+    B) route.meta
+    C) route.info
+    D) route.extra
+    Javob: B
+
+54. beforeRouteEnter guard?
+    A) this access
+    B) No this, next(vm => {}) callback
+    C) Direct access
+    D) Automatic
+    Javob: B
+
+55. beforeRouteUpdate guard?
+    A) No update
+    B) Same component, route params change
+    C) Different component
+    D) Always called
+    Javob: B
+
+56. beforeRouteLeave guard?
+    A) After leave
+    B) Before leaving current route
+    C) No guard
+    D) Automatic
+    Javob: B
+
+57. router.push() vs router.replace()?
+    A) Bir xil
+    B) push adds history, replace replaces
+    C) replace adds history
+    D) push replaces
+    Javob: B
+
+58. router.go(n) nima?
+    A) Push
+    B) History navigation
+    C) Replace
+    D) Reset
+    Javob: B
+
+59. Scroll behavior configuration?
+    A) No config
+    B) scrollBehavior option in createRouter
+    C) Automatic
+    D) Manual only
+    Javob: B
+
+60. Route alias?
+    A) Redirect only
+    B) alias: '/other-path'
+    C) No alias
+    D) Name only
+    Javob: B
+
+61. Route redirect?
+    A) Alias
+    B) redirect: '/other' yoki object/function
+    C) No redirect
+    D) Manual
+    Javob: B
+
+62. Named views?
+    A) Single view
+    B) components: { default, sidebar }
+    C) No named
+    D) One name
+    Javob: B
+
+63. router-view name attribute?
+    A) id
+    B) name="sidebar"
+    C) view
+    D) component
+    Javob: B
+
+64. Route props passing?
+    A) No props
+    B) props: true yoki function
+    C) Always
+    D) Never
+    Javob: B
+
+65. Pinia Option Store vs Setup Store?
+    A) Bir xil
+    B) Option: {state, actions}, Setup: function
+    C) Setup: {state}
+    D) Option: function
+    Javob: B
+
+66. Pinia $patch method?
+    A) Replace
+    B) Partial state update
+    C) Full update
+    D) Reset
+    Javob: B
+
+67. Pinia $subscribe method?
+    A) Unsubscribe
+    B) State change listener
+    C) Action listener
+    D) Getter listener
+    Javob: B
+
+68. Pinia $onAction method?
+    A) State
+    B) Action execution listener
+    C) Getter
+    D) Mutation
+    Javob: B
+
+69. Pinia plugin system?
+    A) No plugins
+    B) pinia.use(plugin)
+    C) Built-in only
+    D) External only
+    Javob: B
+
+70. Pinia persistence plugin?
+    A) Built-in
+    B) pinia-plugin-persistedstate
+    C) No persistence
+    D) Manual only
+    Javob: B
+
+71. VueUse nima?
+    A) State management
+    B) Composition utilities collection
+    C) Router
+    D) Build tool
+    Javob: B
+
+72. useMouse() composable?
+    A) Click
+    B) Mouse position tracking
+    C) Touch
+    D) Keyboard
+    Javob: B
+
+73. useLocalStorage() composable?
+    A) Session
+    B) LocalStorage reactive
+    C) Memory
+    D) Cookie
+    Javob: B
+
+74. useFetch() composable?
+    A) Post
+    B) HTTP request reactive
+    C) Static
+    D) No fetch
+    Javob: B
+
+75. Custom composable return type?
+    A) Any
+    B) Object with reactive refs
+    C) Single ref
+    D) Function
+    Javob: B
+
+76. Composable side effects cleanup?
+    A) No cleanup
+    B) onUnmounted, onScopeDispose
+    C) Manual
+    D) Automatic
+    Javob: B
+
+77. Vite dev server?
+    A) Webpack
+    B) Native ESM dev server
+    C) Rollup dev
+    D) Parcel
+    Javob: B
+
+78. Vite build tool?
+    A) Webpack
+    B) Rollup
+    C) ESBuild
+    D) Parcel
+    Javob: B
+
+79. HMR (Hot Module Replacement)?
+    A) Full reload
+    B) Module-level updates
+    C) No updates
+    D) Manual
+    Javob: B
+
+80. defineOptions() macro?
+    A) Props
+    B) Component options (name, inheritAttrs)
+    C) Emits
+    D) Slots
+    Javob: B
+
+81. defineSlots() macro?
+    A) Props
+    B) TypeScript slot typing
+    C) Emits
+    D) Options
+    Javob: B
+
+82. defineModel() macro?
+    A) Props
+    B) v-model prop/emit sugar
+    C) Emits
+    D) Options
+    Javob: B
+
+83. Compiler macros import?
+    A) Required
+    B) Not needed (auto-imported)
+    C) Partial
+    D) Manual
+    Javob: B
+
+84. v-bind() in <style>?
+    A) No support
+    B) Reactive CSS with JS values
+    C) Static only
+    D) Inline only
+    Javob: B
+
+85. CSS Modules $style?
+    A) scoped
+    B) $style object access
+    C) Global
+    D) Inline
+    Javob: B
+
+86. <script setup> top-level await?
+    A) No support
+    B) Suspense required
+    C) Always works
+    D) Sync only
+    Javob: B
+
+87. Generic component?
+    A) No generics
+    B) <script setup generic="T">
+    C) Type only
+    D) Runtime
+    Javob: B
+
+88. Template refs array?
+    A) Single only
+    B) Function ref for array
+    C) Automatic array
+    D) No array
+    Javob: B
+
+89. Component instance access?
+    A) Direct
+    B) ref + defineExpose
+    C) Props
+    D) Emit
+    Javob: B
+
+90. Directive modifiers access?
+    A) No access
+    B) binding.modifiers
+    C) directive.modifiers
+    D) modifiers
+    Javob: B
+
+91. Directive argument access?
+    A) No access
+    B) binding.arg
+    C) directive.arg
+    D) argument
+    Javob: B
+
+92. Custom directive with state?
+    A) No state
+    B) el._myState or binding.instance
+    C) Global state
+    D) Automatic
+    Javob: B
+
+93. app.config.errorHandler?
+    A) Component level
+    B) Global error handler
+    C) Local
+    D) No handler
+    Javob: B
+
+94. app.config.warnHandler?
+    A) Error handler
+    B) Vue warning handler
+    C) Console
+    D) No handler
+    Javob: B
+
+95. app.config.performance?
+    A) No performance
+    B) Performance tracing enable
+    C) Always on
+    D) Never on
+    Javob: B
+
+96. app.config.compilerOptions?
+    A) Runtime only
+    B) Custom element, whitespace config
+    C) No options
+    D) Build only
+    Javob: B
+
+97. isCustomElement option?
+    A) No option
+    B) Custom element name check
+    C) Built-in only
+    D) Automatic
+    Javob: B
+
+98. app.version property?
+    A) No version
+    B) Vue version string
+    C) App version
+    D) Node version
+    Javob: B
+
+99. devtools integration?
+    A) No devtools
+    B) Vue.js devtools browser extension
+    C) Built-in
+    D) External only
+    Javob: B
+
+100. createSSRApp() nima?
+     A) CSR app
+     B) Server-side rendering app
+     C) Static app
+     D) Hybrid app
+     Javob: B

@@ -90,6 +90,8 @@ export class UsersService {
   }
 
   async getFullProfile(userId: string) {
+    console.log('[UsersService] getFullProfile called for userId:', userId);
+    
     const user = await this.prisma.user.findUnique({
       where: { id: userId },
       include: {
@@ -131,6 +133,8 @@ export class UsersService {
     if (!user) {
       throw new NotFoundException('Foydalanuvchi topilmadi');
     }
+
+    console.log('[UsersService] User avatar from DB:', user.avatar);
 
     // Calculate additional stats
     const xpForCurrentLevel = this.LEVEL_THRESHOLDS[user.level - 1] || 0;
@@ -262,17 +266,25 @@ export class UsersService {
 
     const [tests, total] = await Promise.all([
       this.prisma.testAttempt.findMany({
-        where: { userId },
+        where: { 
+          userId,
+          completedAt: { not: null }, // Faqat tugallangan testlar
+        },
         include: {
           category: {
             select: { id: true, name: true, slug: true, icon: true, color: true },
           },
         },
-        orderBy: { createdAt: 'desc' },
+        orderBy: { completedAt: 'desc' }, // Tugallangan sanasi bo'yicha
         skip,
         take: limit,
       }),
-      this.prisma.testAttempt.count({ where: { userId } }),
+      this.prisma.testAttempt.count({ 
+        where: { 
+          userId,
+          completedAt: { not: null }, 
+        } 
+      }),
     ]);
 
     return {

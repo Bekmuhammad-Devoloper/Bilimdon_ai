@@ -1,0 +1,719 @@
+# JAVA DASTURLASH TESTI - OSON DARAJA (BEGINNER)
+## 100 SAVOL
+
+---
+
+**1.** Java dasturlash tili qaysi yilda yaratilgan?
+- A) 1991
+- B) 1995
+- C) 2000
+- D) 2005
+**Javob: B**
+
+**2.** Java dasturini kompilyatsiya qilish uchun qaysi buyruq ishlatiladi?
+- A) java
+- B) javac
+- C) compile
+- D) run
+**Javob: B**
+
+**3.** Java dasturining asosiy metodi qanday nomlanadi?
+- A) start()
+- B) run()
+- C) main()
+- D) begin()
+**Javob: C**
+
+**4.** Java-da butun sonli o'zgaruvchi yaratish uchun qaysi kalit so'z ishlatiladi?
+- A) integer
+- B) int
+- C) number
+- D) num
+**Javob: B**
+
+**5.** Java-da qator (string) yaratish uchun qaysi class ishlatiladi?
+- A) Text
+- B) Str
+- C) String
+- D) Char
+**Javob: C**
+
+**6.** System.out.println() nima qiladi?
+- A) Ma'lumotni o'qiydi
+- B) Ma'lumotni ekranga chiqaradi
+- C) Faylga yozadi
+- D) Dasturni to'xtatadi
+**Javob: B**
+
+**7.** Java-da izoh (comment) yozish uchun qaysi belgi ishlatiladi?
+- A) #
+- B) //
+- C) --
+- D) <!--
+**Javob: B**
+
+**8.** Java-da mantiqiy qiymat uchun qaysi tip ishlatiladi?
+- A) bool
+- B) boolean
+- C) bit
+- D) logic
+**Javob: B**
+
+**9.** Java-da o'zgarmas qiymat yaratish uchun qaysi kalit so'z ishlatiladi?
+- A) const
+- B) constant
+- C) final
+- D) fixed
+**Javob: C**
+
+**10.** Java dasturi qanday fayl kengaytmasiga ega?
+- A) .java
+- B) .class
+- C) .jar
+- D) .exe
+**Javob: A**
+
+**11.** Quyidagi qaysi biri to'g'ri o'zgaruvchi nomi?
+- A) 1variable
+- B) variable-1
+- C) variable1
+- D) variable 1
+**Javob: C**
+
+**12.** Java-da shart operatori qaysi?
+- A) if
+- B) when
+- C) check
+- D) condition
+**Javob: A**
+
+**13.** Java-da massiv yaratish uchun qaysi belgi ishlatiladi?
+- A) ()
+- B) []
+- C) {}
+- D) <>
+**Javob: B**
+
+**14.** Java-da qo'shish operatori qaysi?
+- A) plus
+- B) add
+- C) +
+- D) &
+**Javob: C**
+
+**15.** Java-da class yaratish uchun qaysi kalit so'z ishlatiladi?
+- A) class
+- B) Class
+- C) new
+- D) object
+**Javob: A**
+
+**16.** Java-da tenglik tekshirish uchun qaysi operator ishlatiladi?
+- A) =
+- B) ==
+- C) ===
+- D) equals
+**Javob: B**
+
+**17.** Java-da for tsikli qaysi maqsadda ishlatiladi?
+- A) Shart tekshirish
+- B) Takrorlash
+- C) O'zgaruvchi yaratish
+- D) Ma'lumot o'qish
+**Javob: B**
+
+**18.** Java-da haqiqiy sonli o'zgaruvchi uchun qaysi tip ishlatiladi?
+- A) real
+- B) float
+- C) decimal
+- D) number
+**Javob: B**
+
+**19.** Java-da while tsikli nimani anglatadi?
+- A) Shartli takrorlash
+- B) O'zgaruvchi yaratish
+- C) Metod chaqirish
+- D) Class yaratish
+**Javob: A**
+
+**20.** Java-da switch operatori nima uchun ishlatiladi?
+- A) Tsikl yaratish
+- B) Ko'p variantli tanlash
+- C) O'zgaruvchi yaratish
+- D) Array yaratish
+**Javob: B**
+
+**21.** Java-da public nima anglatadi?
+- A) Xususiy
+- B) Umumiy
+- C) Maxfiy
+- D) Yopiq
+**Javob: B**
+
+**22.** Java-da private nima anglatadi?
+- A) Umumiy
+- B) Ochiq
+- C) Xususiy
+- D) Hammaga ochiq
+**Javob: C**
+
+**23.** Java-da return operatori nima qiladi?
+- A) Dasturni to'xtatadi
+- B) Qiymat qaytaradi
+- C) Xatolik chiqaradi
+- D) Tsiklni boshlaydi
+**Javob: B**
+
+**24.** Java-da break operatori nima qiladi?
+- A) Dasturni boshlaydi
+- B) Tsikldan chiqadi
+- C) Dasturni to'xtatadi
+- D) Metod yaratadi
+**Javob: B**
+
+**25.** Java-da continue operatori nima qiladi?
+- A) Dasturni to'xtatadi
+- B) Keyingi iteratsiyaga o'tadi
+- C) Tsikldan chiqadi
+- D) Class yaratadi
+**Javob: B**
+
+**26.** Java-da double tipi nima uchun ishlatiladi?
+- A) Butun son
+- B) Haqiqiy son
+- C) Matn
+- D) Mantiqiy qiymat
+**Javob: B**
+
+**27.** Java-da char tipi nima uchun ishlatiladi?
+- A) Matn
+- B) Son
+- C) Bitta belgi
+- D) Mantiqiy qiymat
+**Javob: C**
+
+**28.** Java-da else operatori qachon ishlatiladi?
+- A) Tsikl yaratishda
+- B) Shart bajarilmaganda
+- C) Metod yaratishda
+- D) Class yaratishda
+**Javob: B**
+
+**29.** Java-da void nima anglatadi?
+- A) Qiymat qaytaradi
+- B) Hech narsa qaytarmaydi
+- C) Xatolik
+- D) O'zgaruvchi
+**Javob: B**
+
+**30.** Java-da new kalit so'zi nima uchun ishlatiladi?
+- A) O'zgaruvchi yaratish
+- B) Obyekt yaratish
+- C) Metod yaratish
+- D) Tsikl yaratish
+**Javob: B**
+
+**31.** Java-da this kalit so'zi nimani anglatadi?
+- A) Boshqa class
+- B) Joriy obyekt
+- C) Yangi obyekt
+- D) Ota class
+**Javob: B**
+
+**32.** Java-da extends kalit so'zi nima uchun ishlatiladi?
+- A) Interface yaratish
+- B) Meros olish
+- C) Metod yaratish
+- D) O'zgaruvchi yaratish
+**Javob: B**
+
+**33.** Java-da static nima anglatadi?
+- A) O'zgaruvchan
+- B) Klassga tegishli
+- C) Maxfiy
+- D) Umumiy
+**Javob: B**
+
+**34.** Java-da null nima anglatadi?
+- A) Nol
+- B) Bo'sh qiymat
+- C) Xatolik
+- D) Minus bir
+**Javob: B**
+
+**35.** Java-da true va false nima turi?
+- A) int
+- B) String
+- C) boolean
+- D) char
+**Javob: C**
+
+**36.** Java-da instanceof operatori nima qiladi?
+- A) Obyekt yaratadi
+- B) Obyekt turini tekshiradi
+- C) Qiymat beradi
+- D) Tsikl yaratadi
+**Javob: B**
+
+**37.** Java-da package nima?
+- A) Classlar guruhi
+- B) O'zgaruvchi
+- C) Metod
+- D) Tsikl
+**Javob: A**
+
+**38.** Java-da import nima uchun ishlatiladi?
+- A) Class yaratish
+- B) Package ulash
+- C) Metod yaratish
+- D) O'zgaruvchi yaratish
+**Javob: B**
+
+**39.** Java-da constructor nima?
+- A) Oddiy metod
+- B) Obyekt yaratish metodi
+- C) O'zgaruvchi
+- D) Class
+**Javob: B**
+
+**40.** Java-da super kalit so'zi nimani anglatadi?
+- A) Joriy class
+- B) Ota class
+- C) Interface
+- D) Package
+**Javob: B**
+
+**41.** Java-da int tipining standart qiymati qancha?
+- A) null
+- B) 0
+- C) -1
+- D) 1
+**Javob: B**
+
+**42.** Java-da boolean tipining standart qiymati qanday?
+- A) true
+- B) false
+- C) null
+- D) 0
+**Javob: B**
+
+**43.** Java-da String tipining standart qiymati qanday?
+- A) ""
+- B) null
+- C) " "
+- D) 0
+**Javob: B**
+
+**44.** Java-da array elementiga qanday murojaat qilinadi?
+- A) array.0
+- B) array(0)
+- C) array[0]
+- D) array{0}
+**Javob: C**
+
+**45.** Java-da length property nima uchun ishlatiladi?
+- A) Qo'shish
+- B) Uzunlikni topish
+- C) O'chirish
+- D) O'zgartirish
+**Javob: B**
+
+**46.** Java-da && operatori nima?
+- A) YOKI
+- B) VA
+- C) EMAS
+- D) TENGLIK
+**Javob: B**
+
+**47.** Java-da || operatori nima?
+- A) VA
+- B) YOKI
+- C) EMAS
+- D) TENGLIK
+**Javob: B**
+
+**48.** Java-da ! operatori nima?
+- A) VA
+- B) YOKI
+- C) EMAS (NOT)
+- D) TENGLIK
+**Javob: C**
+
+**49.** Java-da % operatori nima qiladi?
+- A) Foizni hisoblaydi
+- B) Qoldiqni topadi
+- C) Ko'paytiradi
+- D) Bo'ladi
+**Javob: B**
+
+**50.** Java-da ++ operatori nima qiladi?
+- A) Ikki marta qo'shadi
+- B) 1 ga oshiradi
+- C) Ko'paytiradi
+- D) Tenglashtiradi
+**Javob: B**
+
+**51.** Java-da -- operatori nima qiladi?
+- A) Ikki marta ayiradi
+- B) 1 ga kamaytiradi
+- C) Bo'ladi
+- D) Tenglashtiradi
+**Javob: B**
+
+**52.** Java-da do-while tsiklining xususiyati nima?
+- A) Hech qachon ishlamaydi
+- B) Kamida bir marta ishlaydi
+- C) Faqat ikki marta ishlaydi
+- D) Faqat shart to'g'ri bo'lganda ishlaydi
+**Javob: B**
+
+**53.** Java-da Scanner class nima uchun ishlatiladi?
+- A) Ekranga chiqarish
+- B) Ma'lumot kiritish
+- C) Fayl o'qish
+- D) Xatolik topish
+**Javob: B**
+
+**54.** Java-da Math.max() metodi nima qiladi?
+- A) Yig'indini topadi
+- B) Kattasini topadi
+- C) Kichigini topadi
+- D) O'rtacha qiymatni topadi
+**Javob: B**
+
+**55.** Java-da Math.min() metodi nima qiladi?
+- A) Yig'indini topadi
+- B) Kattasini topadi
+- C) Kichigini topadi
+- D) O'rtacha qiymatni topadi
+**Javob: C**
+
+**56.** Java-da Math.sqrt() metodi nima qiladi?
+- A) Kvadrat qiladi
+- B) Ildiz oladi
+- C) Ko'paytiradi
+- D) Bo'ladi
+**Javob: B**
+
+**57.** Java-da String.length() metodi nima qiladi?
+- A) Qatorni o'zgartiradi
+- B) Qator uzunligini qaytaradi
+- C) Qatorni o'chiradi
+- D) Qator yaratadi
+**Javob: B**
+
+**58.** Java-da String.toUpperCase() metodi nima qiladi?
+- A) Kichik harfga o'giradi
+- B) Katta harfga o'giradi
+- C) Raqamga o'giradi
+- D) Bo'sh joylarni o'chiradi
+**Javob: B**
+
+**59.** Java-da String.toLowerCase() metodi nima qiladi?
+- A) Katta harfga o'giradi
+- B) Kichik harfga o'giradi
+- C) Raqamga o'giradi
+- D) Bo'sh joylarni o'chiradi
+**Javob: B**
+
+**60.** Java-da String.equals() metodi nima qiladi?
+- A) Qatorni o'zgartiradi
+- B) Qatorlarni solishtiradi
+- C) Qatorni o'chiradi
+- D) Qator yaratadi
+**Javob: B**
+
+**61.** Java-da try-catch nima uchun ishlatiladi?
+- A) Tsikl yaratish
+- B) Xatolikni ushlash
+- C) Metod yaratish
+- D) Class yaratish
+**Javob: B**
+
+**62.** Java-da finally block nima qiladi?
+- A) Xatolik bo'lsa ishlaydi
+- B) Har doim ishlaydi
+- C) Hech qachon ishlamaydi
+- D) Faqat birinchi marta ishlaydi
+**Javob: B**
+
+**63.** Java-da throw kalit so'zi nima qiladi?
+- A) Xatolikni ushlaydi
+- B) Xatolik yaratadi
+- C) Xatolikni yashiradi
+- D) Dasturni davom ettiradi
+**Javob: B**
+
+**64.** Java-da byte tipining hajmi qancha bit?
+- A) 8
+- B) 16
+- C) 32
+- D) 64
+**Javob: A**
+
+**65.** Java-da short tipining hajmi qancha bit?
+- A) 8
+- B) 16
+- C) 32
+- D) 64
+**Javob: B**
+
+**66.** Java-da int tipining hajmi qancha bit?
+- A) 8
+- B) 16
+- C) 32
+- D) 64
+**Javob: C**
+
+**67.** Java-da long tipining hajmi qancha bit?
+- A) 8
+- B) 16
+- C) 32
+- D) 64
+**Javob: D**
+
+**68.** Java-da float tipining hajmi qancha bit?
+- A) 8
+- B) 16
+- C) 32
+- D) 64
+**Javob: C**
+
+**69.** Java-da double tipining hajmi qancha bit?
+- A) 8
+- B) 16
+- C) 32
+- D) 64
+**Javob: D**
+
+**70.** Java-da char tipining hajmi qancha bit?
+- A) 8
+- B) 16
+- C) 32
+- D) 64
+**Javob: B**
+
+**71.** Java-da Array.length nima?
+- A) Metod
+- B) Property (xususiyat)
+- C) Class
+- D) Interface
+**Javob: B**
+
+**72.** Java-da abstract kalit so'zi nima uchun ishlatiladi?
+- A) Aniq class yaratish
+- B) Abstrakt class yaratish
+- C) Interface yaratish
+- D) Metod yaratish
+**Javob: B**
+
+**73.** Java-da interface nima?
+- A) Oddiy class
+- B) Metod
+- C) Abstrakt metodlar to'plami
+- D) O'zgaruvchi
+**Javob: C**
+
+**74.** Java-da implements kalit so'zi nima uchun ishlatiladi?
+- A) Class meros olish
+- B) Interface amalga oshirish
+- C) Package yaratish
+- D) Metod yaratish
+**Javob: B**
+
+**75.** Java-da default konstruktor nima?
+- A) Foydalanuvchi yaratgan konstruktor
+- B) Avtomatik yaratilgan konstruktor
+- C) Parametrli konstruktor
+- D) Static konstruktor
+**Javob: B**
+
+**76.** Java-da method overloading nima?
+- A) Bir xil nomli turli metodlar
+- B) Turli nomli metodlar
+- C) Bir xil metodlar
+- D) Static metodlar
+**Javob: A**
+
+**77.** Java-da casting nima?
+- A) Tsikl yaratish
+- B) Tipni o'zgartirish
+- C) Metod yaratish
+- D) Class yaratish
+**Javob: B**
+
+**78.** Java-da NullPointerException qachon yuzaga keladi?
+- A) Array bo'sh bo'lganda
+- B) Null obyektga murojaat qilinganda
+- C) Xotira to'lganda
+- D) Fayl topilmaganda
+**Javob: B**
+
+**79.** Java-da ArrayIndexOutOfBoundsException qachon yuzaga keladi?
+- A) Array yaratilmaganda
+- B) Noto'g'ri indeksga murojaat qilinganda
+- C) Array bo'sh bo'lganda
+- D) Xotira to'lganda
+**Javob: B**
+
+**80.** Java-da toString() metodi nima qiladi?
+- A) Obyektni o'chiradi
+- B) Obyektni qatorga aylantiradi
+- C) Obyekt yaratadi
+- D) Obyektni ko'paytiradi
+**Javob: B**
+
+**81.** Java-da equals() va == operatori orasidagi farq nima?
+- A) Hech qanday farq yo'q
+- B) equals() qiymatni, == havolani solishtiradi
+- C) == qiymatni, equals() havolani solishtiradi
+- D) Ikkalasi ham bir xil
+**Javob: B**
+
+**82.** Java-da StringBuilder nima uchun ishlatiladi?
+- A) Raqamlar bilan ishlash
+- B) O'zgaruvchan qatorlar bilan ishlash
+- C) Array yaratish
+- D) Fayl o'qish
+**Javob: B**
+
+**83.** Java-da ArrayList nima?
+- A) Oddiy array
+- B) Dinamik hajmli ro'yxat
+- C) Qator
+- D) Map
+**Javob: B**
+
+**84.** Java-da HashMap nima?
+- A) Array
+- B) List
+- C) Kalit-qiymat juftligi
+- D) Set
+**Javob: C**
+
+**85.** Java-da HashSet nima?
+- A) Takrorlanuvchi elementlar to'plami
+- B) Takrorlanmaydigan elementlar to'plami
+- C) Array
+- D) Map
+**Javob: B**
+
+**86.** Java-da LinkedList nima?
+- A) Oddiy array
+- B) Bog'langan ro'yxat
+- C) HashMap
+- D) Set
+**Javob: B**
+
+**87.** Java-da Iterator nima uchun ishlatiladi?
+- A) Tsikl yaratish
+- B) Collection elementlarini aylanish
+- C) Metod yaratish
+- D) Class yaratish
+**Javob: B**
+
+**88.** Java-da Collections.sort() nima qiladi?
+- A) Qo'shadi
+- B) Tartiblaydi
+- C) O'chiradi
+- D) Qidiradi
+**Javob: B**
+
+**89.** Java-da Wrapper class nima?
+- A) Primitiv tiplarni obyektga o'rash
+- B) Oddiy class
+- C) Interface
+- D) Abstract class
+**Javob: A**
+
+**90.** Java-da Integer.parseInt() nima qiladi?
+- A) Intni qatorga aylantiradi
+- B) Qatorni intga aylantiradi
+- C) Intni doubleqa aylantiradi
+- D) Doubleni intga aylantiradi
+**Javob: B**
+
+**91.** Java-da Double.parseDouble() nima qiladi?
+- A) Doubleni qatorga aylantiradi
+- B) Qatorni doublega aylantiradi
+- C) Doubleni intga aylantiradi
+- D) Intni doublega aylantiradi
+**Javob: B**
+
+**92.** Java-da System.exit(0) nima qiladi?
+- A) Dasturni boshdan boshlaydi
+- B) Dasturni to'xtatadi
+- C) Dasturni to'xtatib qo'yadi
+- D) Xatolik chiqaradi
+**Javob: B**
+
+**93.** Java-da main metodining to'g'ri imzosi qaysi?
+- A) public void main(String args[])
+- B) public static void main(String[] args)
+- C) static void main(String[] args)
+- D) void main(String[] args)
+**Javob: B**
+
+**94.** Java-da classnig nomi qanday boshlanishi kerak?
+- A) Kichik harf bilan
+- B) Katta harf bilan
+- C) Raqam bilan
+- D) Maxsus belgi bilan
+**Javob: B**
+
+**95.** Java-da o'zgaruvchi nomi qanday boshlanishi kerak?
+- A) Raqam bilan
+- B) Harf yoki _ yoki $ bilan
+- C) Maxsus belgi bilan
+- D) Bo'sh joy bilan
+**Javob: B**
+
+**96.** Java-da bir faylda nechta public class bo'lishi mumkin?
+- A) Faqat bitta
+- B) Ikki ta
+- C) Ko'p
+- D) Nol
+**Javob: A**
+
+**97.** Java-da class nomi va fayl nomi qanday bo'lishi kerak?
+- A) Har xil
+- B) Bir xil
+- C) Fayl nomi katta
+- D) Farqi yo'q
+**Javob: B**
+
+**98.** Java-da JVM nima?
+- A) Java Virtual Machine
+- B) Java Very Much
+- C) Java Variable Method
+- D) Java Version Manager
+**Javob: A**
+
+**99.** Java-da JDK nima?
+- A) Java Developing Kit
+- B) Java Development Kit
+- C) Java Developer Kit
+- D) Java Design Kit
+**Javob: B**
+
+**100.** Java-da JRE nima?
+- A) Java Run Environment
+- B) Java Runtime Environment
+- C) Java Real Environment
+- D) Java Root Environment
+**Javob: B**
+
+---
+
+## JAVOBLAR KALITI:
+
+1-B, 2-B, 3-C, 4-B, 5-C, 6-B, 7-B, 8-B, 9-C, 10-A
+11-C, 12-A, 13-B, 14-C, 15-A, 16-B, 17-B, 18-B, 19-A, 20-B
+21-B, 22-C, 23-B, 24-B, 25-B, 26-B, 27-C, 28-B, 29-B, 30-B
+31-B, 32-B, 33-B, 34-B, 35-C, 36-B, 37-A, 38-B, 39-B, 40-B
+41-B, 42-B, 43-B, 44-C, 45-B, 46-B, 47-B, 48-C, 49-B, 50-B
+51-B, 52-B, 53-B, 54-B, 55-C, 56-B, 57-B, 58-B, 59-B, 60-B
+61-B, 62-B, 63-B, 64-A, 65-B, 66-C, 67-D, 68-C, 69-D, 70-B
+71-B, 72-B, 73-C, 74-B, 75-B, 76-A, 77-B, 78-B, 79-B, 80-B
+81-B, 82-B, 83-B, 84-C, 85-B, 86-B, 87-B, 88-B, 89-A, 90-B
+91-B, 92-B, 93-B, 94-B, 95-B, 96-A, 97-B, 98-A, 99-B, 100-B

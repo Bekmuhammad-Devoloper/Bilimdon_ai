@@ -116,6 +116,16 @@ export class SendBulkMessageDto {
   @IsString()
   message: string;
 
+  @ApiPropertyOptional({ description: 'Image URL for message' })
+  @IsOptional()
+  @IsString()
+  imageUrl?: string;
+
+  @ApiPropertyOptional({ description: 'Video URL for message' })
+  @IsOptional()
+  @IsString()
+  videoUrl?: string;
+
   @ApiProperty({ enum: ['all', 'selected', 'filter'] })
   @IsEnum(['all', 'selected', 'filter'])
   targetType: 'all' | 'selected' | 'filter';
@@ -125,6 +135,11 @@ export class SendBulkMessageDto {
   @IsArray()
   @IsString({ each: true })
   targetIds?: string[];
+
+  @ApiProperty({ type: [String], description: 'Channels: email, telegram, notification' })
+  @IsArray()
+  @IsString({ each: true })
+  channels: string[];
 
   @ApiPropertyOptional({ type: MessageFilterDto })
   @IsOptional()
@@ -158,6 +173,11 @@ export class QuestionImportItemDto {
   @ApiProperty({ enum: ['EASY', 'MEDIUM', 'HARD'] })
   @IsEnum(Difficulty)
   difficulty: 'EASY' | 'MEDIUM' | 'HARD';
+
+  @ApiPropertyOptional({ description: 'Index in category difficultyLevels array' })
+  @IsOptional()
+  @IsNumber()
+  levelIndex?: number;
 
   @ApiPropertyOptional({ type: [String] })
   @IsOptional()
@@ -247,4 +267,194 @@ export class GrowthStatsDto {
   @Max(365)
   @Type(() => Number)
   days?: number = 30;
+}
+
+// ==================== DESIGN SETTINGS ====================
+export class UpdateDesignDto {
+  @ApiPropertyOptional({ enum: ['default', 'custom'] })
+  @IsOptional()
+  @IsString()
+  theme?: string;
+
+  @ApiPropertyOptional({ description: 'Light mode video URL' })
+  @IsOptional()
+  @IsString()
+  lightVideoUrl?: string;
+
+  @ApiPropertyOptional({ description: 'Dark mode video URL' })
+  @IsOptional()
+  @IsString()
+  darkVideoUrl?: string;
+
+  @ApiPropertyOptional({ description: 'Light mode image URL (fallback)' })
+  @IsOptional()
+  @IsString()
+  lightImageUrl?: string;
+
+  @ApiPropertyOptional({ description: 'Dark mode image URL (fallback)' })
+  @IsOptional()
+  @IsString()
+  darkImageUrl?: string;
+
+  @ApiPropertyOptional({ default: true })
+  @IsOptional()
+  @IsBoolean()
+  videoLoop?: boolean;
+
+  @ApiPropertyOptional({ default: true })
+  @IsOptional()
+  @IsBoolean()
+  videoMuted?: boolean;
+}
+
+// ==================== CATEGORY MANAGEMENT ====================
+export class CreateCategoryDto {
+  @ApiProperty()
+  @IsString()
+  name: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  nameEn?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  nameRu?: string;
+
+  @ApiProperty()
+  @IsString()
+  slug: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  description?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  icon?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  color?: string;
+
+  @ApiPropertyOptional({ description: 'programming, frontend, backend, database, devops, science, other' })
+  @IsOptional()
+  @IsString()
+  group?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsNumber()
+  @Type(() => Number)
+  order?: number;
+
+  @ApiPropertyOptional({ 
+    example: ['Oson', "O'rta", 'Qiyin'], 
+    description: 'Kategoriya uchun daraja nomlari (masalan: ["2022", "2023", "2024"])' 
+  })
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  difficultyLevels?: string[];
+}
+
+export class UpdateCategoryDto {
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  name?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  nameEn?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  nameRu?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  description?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  icon?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  color?: string;
+
+  @ApiPropertyOptional({ description: 'programming, frontend, backend, database, devops, science, other' })
+  @IsOptional()
+  @IsString()
+  group?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsNumber()
+  @Type(() => Number)
+  order?: number;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsBoolean()
+  isActive?: boolean;
+
+  @ApiPropertyOptional({ 
+    example: ['Oson', "O'rta", 'Qiyin'], 
+    description: 'Kategoriya uchun daraja nomlari' 
+  })
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  difficultyLevels?: string[];
+}
+
+export class ImportQuestionsTextDto {
+  @ApiProperty()
+  @IsString()
+  categoryId: string;
+
+  @ApiProperty({ description: 'Questions in namuna.txt format' })
+  @IsString()
+  text: string;
+}
+
+export class CreateCategoryWithQuestionsDto {
+  @ApiProperty()
+  @IsString()
+  name: string;
+
+  @ApiProperty()
+  @IsString()
+  slug: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  description?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  icon?: string;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString()
+  color?: string;
+
+  @ApiProperty({ description: 'Questions in namuna.txt format (min 300 questions)' })
+  @IsString()
+  questionsText: string;
 }

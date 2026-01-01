@@ -1,0 +1,706 @@
+DOCKER TEXNOLOGIYASI - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+==============================================================
+
+1. Docker da Union File System (UnionFS) qanday ishlaydi?
+   A) Single layer
+   B) Ko'p read-only layerlar va bitta writable layer ustma-ust
+   C) Faqat writable
+   D) Faqat read-only
+   Javob: B
+
+2. OverlayFS Docker da qanday rol o'ynaydi?
+   A) Network driver
+   B) Default storage driver (layer based filesystem)
+   C) Volume driver
+   D) Security driver
+   Javob: B
+
+3. Copy-on-Write (CoW) strategiyasi nima?
+   A) Har doim nusxa
+   B) Fayl o'zgartirilganda avval nusxa olinadi
+   C) Hech qachon nusxa
+   D) Faqat o'qish
+   Javob: B
+
+4. Docker storage driver lardan qaysi biri deprecated?
+   A) overlay2
+   B) aufs (Ubuntu eski versiyalarida)
+   C) devicemapper
+   D) btrfs
+   Javob: B
+
+5. /var/lib/docker papkasida nima saqlanadi?
+   A) Faqat logs
+   B) Images, containers, volumes, networks va boshqa Docker data
+   C) Faqat config
+   D) Faqat cache
+   Javob: B
+
+6. docker info da Storage Driver qanday ko'rinadi?
+   A) docker info --storage
+   B) docker info | grep "Storage Driver"
+   C) docker storage info
+   D) docker driver info
+   Javob: B
+
+7. Namespace isolation Linux da Docker qanday ishlatadi?
+   A) Virtual machine
+   B) pid, net, mnt, uts, ipc, user namespaces
+   C) Faqat network
+   D) Faqat process
+   Javob: B
+
+8. UTS namespace nima izolyatsiya qiladi?
+   A) Network
+   B) Hostname va domain name
+   C) Process
+   D) User
+   Javob: B
+
+9. IPC namespace nima uchun?
+   A) Network isolation
+   B) Inter-process communication isolation (shared memory, semaphores)
+   C) Process isolation
+   D) User isolation
+   Javob: B
+
+10. cgroups Docker da nima uchun ishlatiladi?
+    A) Namespace isolation
+    B) Resource limiting (CPU, memory, I/O)
+    C) Network isolation
+    D) Security
+    Javob: B
+
+11. cgroups v2 cgroups v1 dan farqi?
+    A) Farqi yo'q
+    B) Unified hierarchy, yaxshilangan resource control
+    C) v1 yangi
+    D) v2 deprecated
+    Javob: B
+
+12. /sys/fs/cgroup da nima bor?
+    A) Docker images
+    B) cgroup hierarchies va resource controllers
+    C) Docker volumes
+    D) Docker networks
+    Javob: B
+
+13. Docker da OOM (Out of Memory) killer qanday ishlaydi?
+    A) Container restart
+    B) Memory limit oshganda kernel konteyner process ni o'ldiradi
+    C) Host restart
+    D) Warning beradi
+    Javob: B
+
+14. --oom-kill-disable flag nima qiladi?
+    A) OOM yoqadi
+    B) Konteyner uchun OOM killer ni o'chiradi (ehtiyot!)
+    C) OOM score o'zgartiradi
+    D) Memory limit o'chiradi
+    Javob: B
+
+15. --oom-score-adj flag nima?
+    A) OOM disable
+    B) OOM killer priority ni sozlash (-1000 dan 1000 gacha)
+    C) Memory limit
+    D) CPU limit
+    Javob: B
+
+16. Docker da memory soft limit (--memory-reservation) nima?
+    A) Hard limit
+    B) Host memory pressure da kamaytiriladigan target
+    C) Minimum memory
+    D) Swap limit
+    Javob: B
+
+17. --memory-swap flag --memory bilan qanday ishlaydi?
+    A) Alohida
+    B) Total memory + swap limit (--memory=1g --memory-swap=2g = 1g swap)
+    C) Faqat swap
+    D) Faqat memory
+    Javob: B
+
+18. --memory-swap=-1 nima anglatadi?
+    A) Swap yo'q
+    B) Unlimited swap
+    C) Default swap
+    D) 1GB swap
+    Javob: B
+
+19. CPU shares (--cpu-shares) qanday ishlaydi?
+    A) Absolute limit
+    B) Relative weight (default 1024, boshqa containerlar bilan nisbatan)
+    C) Hard limit
+    D) Soft limit
+    Javob: B
+
+20. --cpuset-cpus flag nima qiladi?
+    A) CPU count
+    B) Konteyner qaysi CPU core larda ishlashini belgilaydi
+    C) CPU shares
+    D) CPU percent
+    Javob: B
+
+21. --cpu-period va --cpu-quota qanday ishlaydi?
+    A) CPU shares
+    B) CFS scheduler orqali CPU time limiting
+    C) CPU count
+    D) CPU cores
+    Javob: B
+
+22. --cpus=1.5 nima anglatadi?
+    A) 1 CPU
+    B) 1.5 CPU vaqti (--cpu-period va --cpu-quota shortcut)
+    C) 2 CPU
+    D) 0.5 CPU
+    Javob: B
+
+23. Block I/O limiting (--device-read-bps) nima?
+    A) Network limit
+    B) Disk read bytes per second limit
+    C) Memory limit
+    D) CPU limit
+    Javob: B
+
+24. --blkio-weight flag nima?
+    A) Absolute limit
+    B) Relative I/O weight (10-1000, default 500)
+    C) Read limit
+    D) Write limit
+    Javob: B
+
+25. Docker daemon.json fayli qayerda?
+    A) /var/lib/docker/
+    B) /etc/docker/daemon.json
+    C) ~/.docker/
+    D) /opt/docker/
+    Javob: B
+
+26. daemon.json da "storage-driver" nima o'rnatadi?
+    A) Network driver
+    B) Docker storage driver (overlay2, aufs, ...)
+    C) Volume driver
+    D) Log driver
+    Javob: B
+
+27. daemon.json da "log-driver" nima?
+    A) Storage driver
+    B) Default container logging driver
+    C) Network driver
+    D) Volume driver
+    Javob: B
+
+28. Docker log driver lardan qaysi biri structured logging uchun?
+    A) json-file
+    B) fluentd, gelf, syslog
+    C) local
+    D) none
+    Javob: B
+
+29. json-file log driver da --log-opt max-size nima?
+    A) Min size
+    B) Bitta log fayl maksimal hajmi
+    C) Total size
+    D) Buffer size
+    Javob: B
+
+30. --log-opt max-file nima?
+    A) Min files
+    B) Rotation uchun maksimal fayl soni
+    C) Total files
+    D) Buffer files
+    Javob: B
+
+31. Docker da live restore nima?
+    A) Backup restore
+    B) Docker daemon restart da containerlar ishlashda davom etadi
+    C) Image restore
+    D) Volume restore
+    Javob: B
+
+32. daemon.json da "live-restore": true nima qiladi?
+    A) Live restore o'chiradi
+    B) Daemon restart da containerlar to'xtamaydi
+    C) Container restore
+    D) Image restore
+    Javob: B
+
+33. Docker rootless mode nima?
+    A) Root required
+    B) Docker daemon va containerlar non-root user sifatida ishlaydi
+    C) Root mode
+    D) Privileged mode
+    Javob: B
+
+34. Rootless mode da qanday limitation lar bor?
+    A) Limitation yo'q
+    B) Port < 1024, some storage drivers, cgroups v2 kerak
+    C) Faqat port
+    D) Faqat storage
+    Javob: B
+
+35. Docker da userns-remap nima?
+    A) Network remap
+    B) User namespace remapping (container root → host non-root)
+    C) Volume remap
+    D) Port remap
+    Javob: B
+
+36. /etc/subuid va /etc/subgid nima uchun?
+    A) Network config
+    B) User namespace uchun subordinate UID/GID ranges
+    C) Volume config
+    D) Storage config
+    Javob: B
+
+37. Docker da seccomp default profile nima qiladi?
+    A) Hech narsa
+    B) ~300 ta xavfli syscall ni bloklaydi
+    C) Barcha syscall ruxsat
+    D) Barcha syscall bloklaydi
+    Javob: B
+
+38. --security-opt seccomp=unconfined nima?
+    A) Default profile
+    B) Seccomp filteringni o'chiradi (xavfli)
+    C) Custom profile
+    D) Strict profile
+    Javob: B
+
+39. Custom seccomp profile qanday format da?
+    A) YAML
+    B) JSON
+    C) XML
+    D) INI
+    Javob: B
+
+40. AppArmor profile Docker da qanday o'rnatiladi?
+    A) --apparmor
+    B) --security-opt apparmor=profile_name
+    C) --profile
+    D) --armor
+    Javob: B
+
+41. SELinux Docker bilan qanday ishlaydi?
+    A) O'chiriladi
+    B) Container type labels (container_t, svirt_sandbox_file_t)
+    C) Faqat host
+    D) Faqat network
+    Javob: B
+
+42. --security-opt label=disable nima?
+    A) SELinux enable
+    B) SELinux/AppArmor labeling o'chiradi
+    C) Label enable
+    D) Label default
+    Javob: B
+
+43. Linux capabilities da CAP_NET_ADMIN nima beradi?
+    A) File access
+    B) Network configuration (iptables, routing, ...)
+    C) Process management
+    D) User management
+    Javob: B
+
+44. Docker default da qaysi capabilities drop qilingan?
+    A) Hech biri
+    B) CAP_SYS_ADMIN, CAP_NET_ADMIN, va boshqalar
+    C) Barchasi
+    D) Faqat root capabilities
+    Javob: B
+
+45. --cap-add SYS_PTRACE nima uchun kerak bo'lishi mumkin?
+    A) Network
+    B) Debugging (strace, gdb)
+    C) File access
+    D) User management
+    Javob: B
+
+46. Docker da no-new-privileges flag nima?
+    A) New privileges ruxsat
+    B) Setuid/setgid orqali privilege escalation taqiqlash
+    C) Root ruxsat
+    D) Admin ruxsat
+    Javob: B
+
+47. docker run --init flag nima qiladi?
+    A) Initialization script
+    B) Tini (init process) qo'shadi (zombie process muammosi uchun)
+    C) Container init
+    D) Volume init
+    Javob: B
+
+48. Zombie process muammosi Docker da nima?
+    A) Memory leak
+    B) PID 1 SIGCHLD handle qilmaganda child processlar zombie bo'ladi
+    C) CPU issue
+    D) Network issue
+    Javob: B
+
+49. Docker da dumb-init yoki tini nima?
+    A) Logging tool
+    B) Minimal init system (signal forwarding, zombie reaping)
+    C) Network tool
+    D) Storage tool
+    Javob: B
+
+50. docker run --sysctl flag nima uchun?
+    A) System info
+    B) Kernel parameters o'rnatish (namespaced sysctls)
+    C) System control
+    D) Container control
+    Javob: B
+
+51. Qaysi sysctls namespace isolated?
+    A) Barchasi
+    B) net.*, kernel.shm*, kernel.msg*, kernel.sem, fs.mqueue.*
+    C) Hech biri
+    D) Faqat net.*
+    Javob: B
+
+52. Docker in Docker (DinD) nima?
+    A) Double container
+    B) Docker daemon konteyner ichida ishlaydi
+    C) Nested namespace
+    D) Virtual Docker
+    Javob: B
+
+53. DinD da --privileged nima uchun kerak?
+    A) Optional
+    B) Docker daemon konteynerda kernel features kerak
+    C) Security uchun
+    D) Performance uchun
+    Javob: B
+
+54. Docker out of Docker (DooD) nima?
+    A) DinD alternative
+    B) Host Docker socket ni konteynerga mount qilish
+    C) Remote Docker
+    D) Virtual Docker
+    Javob: B
+
+55. /var/run/docker.sock mount qilish xavfi nima?
+    A) Xavf yo'q
+    B) Konteyner host da har qanday konteyner/volume yaratishi mumkin
+    C) Faqat read access
+    D) Faqat logs
+    Javob: B
+
+56. Docker context da SSH transport nima?
+    A) HTTP
+    B) Remote Docker daemon ga SSH orqali ulanish
+    C) Local socket
+    D) TCP
+    Javob: B
+
+57. DOCKER_HOST environment variable nima?
+    A) Host IP
+    B) Docker daemon endpoint (unix://, tcp://, ssh://)
+    C) Container host
+    D) Network host
+    Javob: B
+
+58. TLS Docker daemon bilan qanday o'rnatiladi?
+    A) --tls
+    B) --tlsverify --tlscacert --tlscert --tlskey
+    C) --ssl
+    D) --https
+    Javob: B
+
+59. Docker da image manifest nima?
+    A) Dockerfile
+    B) Image layers va config haqida metadata (JSON)
+    C) Container config
+    D) Volume config
+    Javob: B
+
+60. Fat manifest (manifest list) nima?
+    A) Single platform
+    B) Multi-platform image uchun manifest ro'yxati
+    C) Large image
+    D) Compressed manifest
+    Javob: B
+
+61. docker manifest inspect nima ko'rsatadi?
+    A) Container info
+    B) Image manifest (layers, platform, ...)
+    C) Volume info
+    D) Network info
+    Javob: B
+
+62. Image digest nima?
+    A) Tag
+    B) Content-addressable SHA256 hash
+    C) Name
+    D) Version
+    Javob: B
+
+63. docker pull image@sha256:... nima qiladi?
+    A) Tag bo'yicha
+    B) Aniq digest bo'yicha pull (immutable)
+    C) Latest pull
+    D) Random pull
+    Javob: B
+
+64. Docker registry HTTP API V2 da /v2/_catalog nima?
+    A) Single image
+    B) Registry dagi barcha repository lar ro'yxati
+    C) Tags
+    D) Manifests
+    Javob: B
+
+65. Docker registry da garbage collection nima?
+    A) Container cleanup
+    B) Unreferenced blob larni o'chirish
+    C) Image delete
+    D) Log cleanup
+    Javob: B
+
+66. registry-gc buyrug'i nima qiladi?
+    A) Container gc
+    B) Registry da unused layers ni tozalaydi
+    C) Image gc
+    D) Volume gc
+    Javob: B
+
+67. Docker registry da authentication qanday amalga oshiriladi?
+    A) Basic faqat
+    B) Token-based authentication (Bearer token)
+    C) OAuth faqat
+    D) API key
+    Javob: B
+
+68. Harbor registry nima?
+    A) Docker Hub
+    B) Enterprise container registry (vulnerability scanning, RBAC)
+    C) Public registry
+    D) Simple registry
+    Javob: B
+
+69. BuildKit da heredoc syntax (<<EOF) nima uchun?
+    A) Comments
+    B) Multi-line RUN instructions
+    C) Variables
+    D) Loops
+    Javob: B
+
+70. BuildKit da --mount=type=ssh nima?
+    A) Volume mount
+    B) SSH agent forwarding (private repo clone uchun)
+    C) Network mount
+    D) Cache mount
+    Javob: B
+
+71. BuildKit da --mount=type=bind nima?
+    A) Volume
+    B) Build context dan read-only mount (cache uchun emas)
+    C) SSH
+    D) Secret
+    Javob: B
+
+72. Dockerfile da syntax directive nima?
+    A) Comment
+    B) # syntax=docker/dockerfile:1 (parser version)
+    C) Variable
+    D) Label
+    Javob: B
+
+73. docker buildx bake nima uchun?
+    A) Single build
+    B) HCL/JSON dan multiple images build
+    C) Simple build
+    D) Remote build
+    Javob: B
+
+74. Docker Compose da profiles nima?
+    A) User profiles
+    B) Service larni guruhlab selective start
+    C) Network profiles
+    D) Volume profiles
+    Javob: B
+
+75. docker compose --profile dev up nima qiladi?
+    A) All services
+    B) Faqat dev profile ga tegishli servicelarni ishga tushiradi
+    C) Production services
+    D) Test services
+    Javob: B
+
+76. Docker Compose da service dependencies condition: service_completed_successfully?
+    A) Service healthy
+    B) Service bir marta ishlab to'liq tugadi
+    C) Service started
+    D) Service running
+    Javob: B
+
+77. Docker Compose da tmpfs mount qanday?
+    A) volumes:
+    B) tmpfs: /path yoki volumes: - type: tmpfs
+    C) mounts:
+    D) temp:
+    Javob: B
+
+78. Docker Compose da long syntax volumes nima?
+    A) Short format
+    B) type, source, target, read_only va boshqa optionlar
+    C) Simple format
+    D) Default format
+    Javob: B
+
+79. Docker Compose da external: true (networks/volumes) nima?
+    A) Compose yaratadi
+    B) Oldindan mavjud (Compose yaratmaydi)
+    C) Internal
+    D) Default
+    Javob: B
+
+80. Docker Compose da network aliases nima?
+    A) Network name
+    B) Service uchun qo'shimcha DNS nomlar
+    C) IP alias
+    D) Container alias
+    Javob: B
+
+81. Docker Compose da ipam config nima?
+    A) IP address
+    B) IP Address Management (subnet, gateway config)
+    C) Network config
+    D) DNS config
+    Javob: B
+
+82. Docker Swarm da routing mesh nima?
+    A) Service mesh
+    B) Ingress network orqali any node ga request → service ga routing
+    C) Internal mesh
+    D) External mesh
+    Javob: B
+
+83. Swarm da --publish mode=host nima qiladi?
+    A) Routing mesh
+    B) Routing mesh bypass, faqat task running node da port
+    C) All nodes
+    D) No publish
+    Javob: B
+
+84. Swarm da placement constraints nima?
+    A) Resource limits
+    B) Task qaysi node da ishlashini belgilash (node.role, node.labels)
+    C) Network constraints
+    D) Volume constraints
+    Javob: B
+
+85. Swarm da --constraint 'node.role==manager' nima?
+    A) Worker only
+    B) Faqat manager node larda task ishlaydi
+    C) All nodes
+    D) No constraint
+    Javob: B
+
+86. Swarm da rolling update qanday ishlaydi?
+    A) All at once
+    B) --update-parallelism va --update-delay bo'yicha ketma-ket
+    C) Random
+    D) Manual
+    Javob: B
+
+87. --update-failure-action rollback nima qiladi?
+    A) Continue
+    B) Update muvaffaqiyatsiz bo'lsa avvalgi versiyaga qaytadi
+    C) Stop
+    D) Pause
+    Javob: B
+
+88. Swarm da service mode: global nima?
+    A) Single replica
+    B) Har bir node da bitta task (monitoring uchun)
+    C) Replicated
+    D) Random
+    Javob: B
+
+89. Swarm da config nima?
+    A) Secret
+    B) Non-sensitive config files (nginx.conf, ...)
+    C) Environment
+    D) Volume
+    Javob: B
+
+90. docker config create nima qiladi?
+    A) Secret yaratadi
+    B) Swarm config object yaratadi
+    C) Container config
+    D) Image config
+    Javob: B
+
+91. Swarm da secret Docker Compose dan farqi?
+    A) Farqi yo'q
+    B) Swarm da encrypted, Compose da faqat file mount
+    C) Compose encrypted
+    D) Swarm unencrypted
+    Javob: B
+
+92. Swarm manager quorum nima?
+    A) Single manager
+    B) Raft consensus uchun (N+1)/2 manager kerak
+    C) All managers
+    D) No quorum
+    Javob: B
+
+93. Swarm da recommended manager count nechta?
+    A) 1
+    B) 3 yoki 5 (odd number, fault tolerance)
+    C) 2
+    D) 10
+    Javob: B
+
+94. docker node update --availability drain nima qiladi?
+    A) Node active
+    B) Node dagi tasklar boshqa nodelarga migrate, yangi task qabul qilmaydi
+    C) Node pause
+    D) Node delete
+    Javob: B
+
+95. Swarm da autolock nima?
+    A) Auto unlock
+    B) Manager restart da Raft logs decrypt uchun key talab qiladi
+    C) Container lock
+    D) Network lock
+    Javob: B
+
+96. Docker Swarm da ingress network nima?
+    A) Internal network
+    B) Published ports uchun built-in overlay network
+    C) Bridge network
+    D) Host network
+    Javob: B
+
+97. docker network create --driver overlay nima yaratadi?
+    A) Bridge network
+    B) Multi-host overlay network (Swarm)
+    C) Host network
+    D) None network
+    Javob: B
+
+98. --attachable flag overlay network da nima?
+    A) Faqat services
+    B) Standalone containerlar ham attach bo'lishi mumkin
+    C) No attach
+    D) Auto attach
+    Javob: B
+
+99. Docker da macvlan network nima uchun?
+    A) Virtual network
+    B) Container ga real MAC address va direct network access
+    C) Overlay network
+    D) Bridge network
+    Javob: B
+
+100. ipvlan network macvlan dan farqi?
+     A) Farqi yo'q
+     B) Barcha container bir MAC, turli IP (switch limitation bypass)
+     C) macvlan tezroq
+     D) ipvlan tezroq
+     Javob: B
+
+==============================================================
+                         YAKUNLANDI
+==============================================================

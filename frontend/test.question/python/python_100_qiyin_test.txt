@@ -1,0 +1,707 @@
+
+PYTHON - 100 TA QIYIN DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. GIL (Global Interpreter Lock) nima?
+   A) Thread manager
+   B) CPython mutex - bitta thread bytecode execute
+   C) Memory lock
+   D) File lock
+   Javob: B
+
+2. GIL multiprocessing vs multithreading ga ta'siri?
+   A) No effect
+   B) Threading CPU-bound slow, multiprocessing parallel
+   C) Threading fast
+   D) Same performance
+   Javob: B
+
+3. threading module nima uchun?
+   A) Multiprocessing
+   B) Thread-based parallelism (I/O-bound)
+   C) Async
+   D) Coroutines
+   Javob: B
+
+4. multiprocessing module nima uchun?
+   A) Threading
+   B) Process-based parallelism (CPU-bound, GIL bypass)
+   C) Async
+   D) Coroutines
+   Javob: B
+
+5. Thread vs Process farqi?
+   A) Bir xil
+   B) Thread - shared memory, Process - separate memory
+   C) Process shared
+   D) No difference
+   Javob: B
+
+6. threading.Lock() nima?
+   A) Unlock
+   B) Mutual exclusion (thread synchronization)
+   C) Semaphore
+   D) Event
+   Javob: B
+
+7. threading.RLock() (Reentrant Lock) nima?
+   A) Simple lock
+   B) Same thread multiple acquire (deadlock prevention)
+   C) No reentry
+   D) Global lock
+   Javob: B
+
+8. threading.Semaphore() nima?
+   A) Lock
+   B) Counter-based synchronization (limited resources)
+   C) Event
+   D) Condition
+   Javob: B
+
+9. threading.Event() nima?
+   A) Lock
+   B) Flag-based thread communication
+   C) Semaphore
+   D) Barrier
+   Javob: B
+
+10. Queue.Queue() nima (threading)?
+    A) Stack
+    B) Thread-safe FIFO queue
+    C) Priority queue
+    D) Deque
+    Javob: B
+
+11. multiprocessing.Pool() nima?
+    A) Thread pool
+    B) Process pool (parallel map)
+    C) Connection pool
+    D) Memory pool
+    Javob: B
+
+12. multiprocessing.Manager() nima?
+    A) Thread manager
+    B) Shared objects across processes
+    C) Pool manager
+    D) Memory manager
+    Javob: B
+
+13. multiprocessing.Value() va Array()?
+    A) Normal variables
+    B) Shared memory primitives
+    C) Thread variables
+    D) Local variables
+    Javob: B
+
+14. asyncio module nima?
+    A) Threading
+    B) Async I/O, coroutines, event loop
+    C) Multiprocessing
+    D) Synchronous
+    Javob: B
+
+15. async/await keywords nima?
+    A) Threading syntax
+    B) Coroutine definition va execution
+    C) Multiprocessing
+    D) Synchronous
+    Javob: B
+
+16. Coroutine nima?
+    A) Normal function
+    B) async def - suspendable function
+    C) Generator
+    D) Thread
+    Javob: B
+
+17. asyncio.run() nima?
+    A) Thread run
+    B) Async function run (entry point)
+    C) Process run
+    D) Sync run
+    Javob: B
+
+18. asyncio.gather() nima?
+    A) Sequential run
+    B) Multiple coroutines parallel run
+    C) Single coroutine
+    D) Cancel tasks
+    Javob: B
+
+19. asyncio.create_task() nima?
+    A) Run immediately
+    B) Coroutine ni task ga wrap (concurrent)
+    C) Cancel task
+    D) Synchronous
+    Javob: B
+
+20. Event Loop nima (asyncio)?
+    A) While loop
+    B) Async tasks scheduler
+    C) For loop
+    D) Thread loop
+    Javob: B
+
+21. asyncio.sleep() vs time.sleep() farqi?
+    A) Bir xil
+    B) asyncio.sleep non-blocking, time.sleep blocking
+    C) time.sleep fast
+    D) No difference
+    Javob: B
+
+22. Future nima (asyncio)?
+    A) Past result
+    B) Placeholder - eventual result
+    C) Current result
+    D) No result
+    Javob: B
+
+23. asyncio.wait() nima?
+    A) Sleep
+    B) Wait for multiple coroutines/futures
+    C) Single wait
+    D) No wait
+    Javob: B
+
+24. Type hints nima (Python 3.5+)?
+    A) Type enforcement
+    B) Optional type annotations (static analysis)
+    C) Runtime types
+    D) Type conversion
+    Javob: B
+
+25. typing module nima uchun?
+    A) Type conversion
+    B) Complex type hints (List, Dict, Optional, ...)
+    C) Runtime checking
+    D) Type casting
+    Javob: B
+
+26. Optional[Type] nima?
+    A) Required type
+    B) Type yoki None
+    C) Multiple types
+    D) Any type
+    Javob: B
+
+27. Union[Type1, Type2] nima?
+    A) Intersection
+    B) Type1 yoki Type2
+    C) Both types
+    D) No types
+    Javob: B
+
+28. List[Type] vs list farqi?
+    A) Bir xil
+    B) List[Type] - type hint, list - runtime
+    C) No difference
+    D) List[Type] enforcement
+    Javob: B
+
+29. TypeVar nima?
+    A) Constant
+    B) Generic type variable (generics)
+    C) Class
+    D) Function
+    Javob: B
+
+30. Protocol nima (typing)?
+    A) Network protocol
+    B) Structural subtyping (duck typing formal)
+    C) Abstract class
+    D) Interface
+    Javob: B
+
+31. Memory view nima?
+    A) Memory leak
+    B) Buffer protocol - zero-copy access
+    C) Memory dump
+    D) Memory allocation
+    Javob: B
+
+32. Weak references (weakref) nima?
+    A) Strong reference
+    B) GC-allowed references (circular ref break)
+    C) No reference
+    D) Permanent reference
+    Javob: B
+
+33. __del__() method nima?
+    A) Constructor
+    B) Destructor (finalizer)
+    C) Delete attribute
+    D) Comparison
+    Javob: B
+
+34. Garbage Collection (gc module) nima?
+    A) Manual memory
+    B) Automatic memory management (reference counting + cyclic)
+    C) No management
+    D) Stack management
+    Javob: B
+
+35. gc.collect() nima?
+    A) Allocate memory
+    B) Force garbage collection
+    C) Clear memory
+    D) Memory dump
+    Javob: B
+
+36. Reference counting nima?
+    A) No counting
+    B) Object reference soni track (primary GC)
+    C) Memory count
+    D) Variable count
+    Javob: B
+
+37. Cyclic garbage collection nima uchun?
+    A) Stack cleanup
+    B) Circular references cleanup
+    C) Linear cleanup
+    D) No cycles
+    Javob: B
+
+38. sys.getrefcount() nima?
+    A) Memory size
+    B) Object reference count
+    C) Type count
+    D) Variable count
+    Javob: B
+
+39. Descriptor Protocol nima?
+    A) Network protocol
+    B) __get__, __set__, __delete__ - attribute access control
+    C) File descriptor
+    D) Class protocol
+    Javob: B
+
+40. Data descriptor vs non-data descriptor?
+    A) Bir xil
+    B) Data - __set__/__delete__, non-data - __get__ only
+    C) Non-data has set
+    D) No difference
+    Javob: B
+
+41. property() built-in nima?
+    A) Class method
+    B) Descriptor - getter/setter/deleter
+    C) Static method
+    D) Abstract method
+    Javob: B
+
+42. __getattr__() vs __getattribute__() farqi?
+    A) Bir xil
+    B) __getattr__ - missing attr, __getattribute__ - all access
+    C) __getattribute__ missing
+    D) No difference
+    Javob: B
+
+43. __setattr__() method nima?
+    A) Get attribute
+    B) Attribute assignment intercept
+    C) Delete attribute
+    D) Check attribute
+    Javob: B
+
+44. __delattr__() method nima?
+    A) Get attribute
+    B) Attribute deletion intercept
+    C) Set attribute
+    D) Check attribute
+    Javob: B
+
+45. MRO - C3 linearization algorithm nima?
+    A) Random order
+    B) Multiple inheritance method resolution order
+    C) Single inheritance
+    D) No algorithm
+    Javob: B
+
+46. __mro__ attribute nima?
+    A) Methods only
+    B) Class MRO tuple
+    C) Attributes list
+    D) Instances list
+    Javob: B
+
+47. __new__() vs __init__() farqi?
+    A) Bir xil
+    B) __new__ - instance create, __init__ - initialize
+    C) __init__ creates
+    D) No difference
+    Javob: B
+
+48. __new__() qachon override qilinadi?
+    A) Always
+    B) Immutable types subclass, singleton, metaclasses
+    C) Never
+    D) Random
+    Javob: B
+
+49. Singleton pattern Python da?
+    A) Multiple instances
+    B) __new__ override - single instance
+    C) No pattern
+    D) Factory pattern
+    Javob: B
+
+50. __hash__() method nima?
+    A) Encryption
+    B) Object hash value (dict key, set member)
+    C) Checksum
+    D) Random number
+    Javob: B
+
+51. Hashable objects nima?
+    A) All objects
+    B) Immutable objects with __hash__() and __eq__()
+    C) Mutable objects
+    D) No objects
+    Javob: B
+
+52. __eq__() va __hash__() relationship?
+    A) Independent
+    B) Equal objects must have equal hash
+    C) No relationship
+    D) Random
+    Javob: B
+
+53. __bool__() method nima?
+    A) Type check
+    B) bool(obj) truthiness define
+    C) Comparison
+    D) Conversion
+    Javob: B
+
+54. __contains__() method nima?
+    A) Type check
+    B) 'in' operator behavior
+    C) Comparison
+    D) Length
+    Javob: B
+
+55. __iter__() method nima return qilishi kerak?
+    A) List
+    B) Iterator object
+    C) Tuple
+    D) Dict
+    Javob: B
+
+56. __reversed__() method nima?
+    A) Sort
+    B) reversed() function support
+    C) Forward iteration
+    D) Random
+    Javob: B
+
+57. __add__() method nima?
+    A) Subtract
+    B) + operator overload
+    C) Multiply
+    D) Divide
+    Javob: B
+
+58. __radd__() (reflected add) nima?
+    A) Normal add
+    B) Right-hand operand add (fallback)
+    C) Subtract
+    D) No operation
+    Javob: B
+
+59. __iadd__() (in-place add) nima?
+    A) Normal add
+    B) += operator overload
+    C) Subtract
+    D) Right add
+    Javob: B
+
+60. Context variables (contextvars) nima?
+    A) Global variables
+    B) Context-local state (async-safe)
+    C) Class variables
+    D) Constants
+    Javob: B
+
+61. ContextVar nima uchun?
+    A) Thread-local
+    B) Async context-local storage
+    C) Global storage
+    D) Class storage
+    Javob: B
+
+62. Thread-local storage (threading.local()) nima?
+    A) Shared storage
+    B) Per-thread data storage
+    C) Global storage
+    D) Process storage
+    Javob: B
+
+63. asyncio.Lock() vs threading.Lock() farqi?
+    A) Bir xil
+    B) asyncio.Lock - coroutines, threading.Lock - threads
+    C) No difference
+    D) Same implementation
+    Javob: B
+
+64. Async context manager nima?
+    A) Normal context manager
+    B) async with, __aenter__/__aexit__
+    C) Sync only
+    D) No async
+    Javob: B
+
+65. Async iterator nima?
+    A) Normal iterator
+    B) __aiter__()/__anext__() - async for
+    C) Sync iterator
+    D) No async
+    Javob: B
+
+66. Async generator nima?
+    A) Normal generator
+    B) async def with yield
+    C) Sync generator
+    D) No async
+    Javob: B
+
+67. Structural Pattern Matching (Python 3.10+)?
+    A) Regex
+    B) match/case - pattern matching
+    C) if/elif
+    D) try/except
+    Javob: B
+
+68. match statement syntax?
+    A) switch case
+    B) match value: case pattern:
+    C) if match
+    D) select case
+    Javob: B
+
+69. Walrus operator := (Python 3.8+)?
+    A) Comparison
+    B) Assignment expression
+    C) Identity
+    D) Membership
+    Javob: B
+
+70. Positional-only parameters (Python 3.8+)?
+    A) Keyword only
+    B) def func(a, b, /): - before /
+    C) All positional
+    D) No restriction
+    Javob: B
+
+71. Keyword-only parameters syntax?
+    A) Normal params
+    B) def func(*, a, b): - after *
+    C) Positional only
+    D) No restriction
+    Javob: B
+
+72. __slots__ memory optimization qancha?
+    A) No benefit
+    B) ~40-50% memory save (no __dict__)
+    C) Slower
+    D) Same memory
+    Javob: B
+
+73. __dict__ attribute nima?
+    A) Class dict
+    B) Instance attributes dictionary
+    C) Module dict
+    D) Function dict
+    Javob: B
+
+74. __class__ attribute nima?
+    A) Instance
+    B) Object class reference
+    C) Module
+    D) Function
+    Javob: B
+
+75. vars() function nima?
+    A) Variables list
+    B) Object __dict__ return
+    C) Type
+    D) Dir
+    Javob: B
+
+76. dir() function nima?
+    A) Current directory
+    B) Object attributes va methods list
+    C) File list
+    D) Type info
+    Javob: B
+
+77. getattr() function nima?
+    A) Set attribute
+    B) Dynamic attribute access
+    C) Delete attribute
+    D) Check attribute
+    Javob: B
+
+78. setattr() function nima?
+    A) Get attribute
+    B) Dynamic attribute set
+    C) Delete attribute
+    D) List attributes
+    Javob: B
+
+79. hasattr() function nima?
+    A) Get attribute
+    B) Attribute existence check
+    C) Set attribute
+    D) Delete attribute
+    Javob: B
+
+80. delattr() function nima?
+    A) Get attribute
+    B) Dynamic attribute delete
+    C) Set attribute
+    D) Check attribute
+    Javob: B
+
+81. exec() function nima?
+    A) Execute file
+    B) Dynamic Python code execution
+    C) Compile
+    D) Parse
+    Javob: B
+
+82. eval() function nima?
+    A) Execute statements
+    B) Expression evaluation (return value)
+    C) Compile
+    D) Parse
+    Javob: B
+
+83. compile() function nima?
+    A) Execute
+    B) String -> code object compile
+    C) Evaluate
+    D) Parse only
+    Javob: B
+
+84. AST (Abstract Syntax Tree) module nima?
+    A) File tree
+    B) Python code parse va modify
+    C) Directory tree
+    D) Import tree
+    Javob: B
+
+85. ast.parse() nima?
+    A) Compile
+    B) Code -> AST parse
+    C) Execute
+    D) Evaluate
+    Javob: B
+
+86. inspect module nima uchun?
+    A) File inspection
+    B) Live objects introspection
+    C) Code compilation
+    D) Execution
+    Javob: B
+
+87. inspect.signature() nima?
+    A) String signature
+    B) Function signature inspect
+    C) Class signature
+    D) Module signature
+    Javob: B
+
+88. inspect.getsource() nima?
+    A) Compiled code
+    B) Object source code text
+    C) Bytecode
+    D) Binary
+    Javob: B
+
+89. Bytecode nima (Python)?
+    A) Machine code
+    B) .pyc files - compiled Python (PVM instructions)
+    C) Source code
+    D) Assembly
+    Javob: B
+
+90. dis module nima uchun?
+    A) Distance calculation
+    B) Bytecode disassembly
+    C) File operations
+    D) Network
+    Javob: B
+
+91. __pycache__ directory nima?
+    A) Cache files
+    B) Compiled bytecode (.pyc) storage
+    C) Temporary files
+    D) Log files
+    Javob: B
+
+92. sys.settrace() nima uchun?
+    A) Error trace
+    B) Debugger/profiler hook
+    C) Stack trace
+    D) Import trace
+    Javob: B
+
+93. traceback module nima uchun?
+    A) Debugging only
+    B) Exception traceback formatting
+    C) Profiling
+    D) Testing
+    Javob: B
+
+94. cProfile vs profile module?
+    A) Bir xil
+    B) cProfile - C extension (fast), profile - Python
+    C) profile fast
+    D) No difference
+    Javob: B
+
+95. timeit module nima uchun?
+    A) Current time
+    B) Code execution time measurement
+    C) Timeout
+    D) Sleep
+    Javob: B
+
+96. Memory profiling tools (Python)?
+    A) No tools
+    B) memory_profiler, tracemalloc module
+    C) cProfile only
+    D) timeit
+    Javob: B
+
+97. tracemalloc module nima?
+    A) CPU profiling
+    B) Memory allocation tracking
+    C) Time profiling
+    D) Network trace
+    Javob: B
+
+98. warnings module nima uchun?
+    A) Errors
+    B) Warning messages control
+    C) Logging
+    D) Exceptions
+    Javob: B
+
+99. logging module levels?
+    A) 2ta level
+    B) DEBUG, INFO, WARNING, ERROR, CRITICAL
+    C) 3ta level
+    D) No levels
+    Javob: B
+
+100. __all__ attribute (module) nima?
+     A) All variables
+     B) from module import * uchun exports list
+     C) All functions
+     D) All classes
+     Javob: B
+
+================================================
+                   YAKUNLANDI
+================================================

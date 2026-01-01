@@ -1,0 +1,1399 @@
+1. useReducer vs useState farqi?
+
+   A) Bir xil1. React nima?
+
+   B) useReducer murakkab state uchun   A) JavaScript library
+
+   C) useState murakkab   B) JavaScript framework
+
+   D) Farq yo'q   C) Programming language
+
+   Javob: B   D) Database
+
+   **Javob: A**
+
+2. useReducer sintaksisi?
+
+   A) useReducer(state)2. React kim tomonidan yaratilgan?
+
+   B) useReducer(reducer, initialState)   A) Google
+
+   C) useReducer(action)   B) Facebook (Meta)
+
+   D) useReducer()   C) Microsoft
+
+   Javob: B   D) Apple
+
+   **Javob: B**
+
+3. reducer function nima?
+
+   A) State o'zgartiruvchi3. React qaysi yilda chiqarilgan?
+
+   B) (state, action) => newState   A) 2011
+
+   C) Action yaratuvchi   B) 2013
+
+   D) Component   C) 2015
+
+   Javob: B   D) 2017
+
+   **Javob: B**
+
+4. action object tuzilishi?
+
+   A) { state }4. JSX nima?
+
+   B) { type, payload }   A) JavaScript XML
+
+   C) { reducer }   B) Java Syntax Extension
+
+   D) { dispatch }   C) JSON Extension
+
+   Javob: B   D) JavaScript XHTML
+
+   **Javob: A**
+
+5. dispatch function nima?
+
+   A) State o'qish5. React component yaratish uchun qaysi usul ishlatiladi?
+
+   B) Action yuborish   A) class va function
+
+   C) State o'chirish   B) Faqat class
+
+   D) Component yaratish   C) Faqat function
+
+   Javob: B   D) Object
+
+   **Javob: A**
+
+6. useContext nima uchun?
+
+   A) State6. React.createElement() nima uchun ishlatiladi?
+
+   B) Global ma'lumot ulashish   A) State yaratish
+
+   C) Effect   B) Element yaratish
+
+   D) Ref   C) Component yaratish
+
+   Javob: B   D) Props uzatish
+
+   **Javob: B**
+
+7. createContext nima?
+
+   A) Consumer7. JSX da JavaScript kodni qanday yoziladi?
+
+   B) Context yaratish   A) {{ }}
+
+   C) Provider   B) { }
+
+   D) useContext   C) [[ ]]
+
+   Javob: B   D) ( )
+
+   **Javob: B**
+
+8. Context.Provider nima?
+
+   A) Consumer8. React componentida ma'lumotni saqlash uchun nima ishlatiladi?
+
+   B) Qiymat beruvchi wrapper   A) Variables
+
+   C) useContext   B) State
+
+   D) createContext   C) Constants
+
+   Javob: B   D) Objects
+
+   **Javob: B**
+
+9. useContext hook?
+
+   A) Provider9. Props nima?
+
+   B) Context qiymatini olish   A) Component properties
+
+   C) Consumer   B) State
+
+   D) createContext   C) Methods
+
+   Javob: B   D) Events
+
+   **Javob: A**
+
+10. Context default value?
+
+    A) Required10. useState hook qanday import qilinadi?
+
+    B) createContext(defaultValue)    A) import useState from 'react'
+
+    C) Provider'da    B) import { useState } from 'react'
+
+    D) Consumer'da    C) import * as useState from 'react'
+
+    Javob: B    D) require('react').useState
+
+    **Javob: B**
+
+11. useMemo nima uchun?
+
+    A) Effect11. useState() nimani qaytaradi?
+
+    B) Expensive calculation cache    A) Bitta qiymat
+
+    C) State    B) Array [state, setState]
+
+    D) Ref    C) Object
+
+    Javob: B    D) Function
+
+    **Javob: B**
+
+12. useMemo sintaksisi?
+
+    A) useMemo(value)12. React component render qanday chaqiriladi?
+
+    B) useMemo(() => value, [deps])    A) Avtomatik
+
+    C) useMemo(deps)    B) Manual
+
+    D) useMemo()    C) Timer bilan
+
+    Javob: B    D) Event bilan
+
+    **Javob: A**
+
+13. useMemo dependency array?
+
+    A) Optional13. className JSXda nima uchun ishlatiladi?
+
+    B) Qayta hisoblash trigger    A) Component nomi
+
+    C) Callback    B) CSS class berish
+
+    D) Value    C) ID berish
+
+    Javob: B    D) Style berish
+
+    **Javob: B**
+
+14. useCallback nima uchun?
+
+    A) Value cache14. JSXda inline style qanday beriladi?
+
+    B) Function reference cache    A) style="color: red"
+
+    C) State    B) style={{color: 'red'}}
+
+    D) Effect    C) style={color: red}
+
+    Javob: B    D) css={{color: red}}
+
+    **Javob: B**
+
+15. useCallback vs useMemo?
+
+    A) Bir xil15. onClick event qanday ishlatiladi?
+
+    B) Callback function, Memo value    A) onClick="handleClick()"
+
+    C) Farq yo'q    B) onClick={handleClick}
+
+    D) Memo function    C) onclick={handleClick}
+
+   Javob: B    D) onPress={handleClick}
+
+    **Javob: B**
+
+16. React.memo nima?
+
+    A) Hook16. React fragmentni qanday yoziladi?
+
+    B) Component memoization HOC    A) <Fragment></Fragment>
+
+    C) Context    B) <></> yoki <React.Fragment>
+
+    D) Reducer    C) <div></div>
+
+    Javob: B    D) <section></section>
+
+    **Javob: B**
+
+17. React.memo shallow comparison?
+
+    A) Deep17. Key prop nima uchun kerak?
+
+    B) Props shallow compare    A) Styling
+
+    C) State compare    B) List elementlarini identify qilish
+
+    D) Context compare    C) Event handling
+
+    Javob: B    D) Navigation
+
+    **Javob: B**
+
+18. Custom comparator React.memo?
+
+    A) Yo'q18. map() methodi list render qilishda qanday ishlatiladi?
+
+    B) memo(Component, areEqual)    A) array.map(item => <div>{item}</div>)
+
+    C) Built-in    B) array.forEach(item => <div>{item}</div>)
+
+    D) Automatic    C) array.filter(item => <div>{item}</div>)
+
+    Javob: B    D) array.reduce(item => <div>{item}</div>)
+
+    **Javob: A**
+
+19. useRef current property?
+
+    A) value19. Conditional rendering uchun qaysi operator ishlatiladi?
+
+    B) ref.current    A) if-else faqat
+
+    C) ref.value    B) Ternary (? :) va &&
+
+    D) ref.data    C) switch-case faqat
+
+    Javob: B    D) for loop
+
+    **Javob: B**
+
+20. useRef re-render trigger?
+
+    A) Ha20. useEffect hook nima uchun ishlatiladi?
+
+    B) Yo'q, mutate qilsa ham    A) State yaratish
+
+    C) Ba'zan    B) Side effects uchun
+
+    D) Faqat mount    C) Event handling
+
+    Javob: B    D) Styling
+
+    **Javob: B**
+
+21. forwardRef nima?
+
+    A) useRef21. useEffect() qachon ishlaydi?
+
+    B) Ref'ni child'ga uzatish    A) Faqat mount da
+
+    C) createRef    B) Har render da (default)
+
+    D) useImperativeHandle    C) Faqat unmount da
+
+    Javob: B    D) Hech qachon
+
+    **Javob: B**
+
+22. useImperativeHandle nima?
+
+    A) forwardRef22. useEffect dependency array nima?
+
+    B) Ref interface customize    A) useState values
+
+    C) useRef    B) Effect qayta ishlaganda trigger qiladigan values
+
+    D) createRef    C) Props list
+
+    Javob: B    D) Component names
+
+    **Javob: B**
+
+23. useLayoutEffect vs useEffect?
+
+    A) Bir xil23. React componentda input qiymati qanday boshqariladi?
+
+    B) Layout synchronous, Effect async    A) Directly HTML
+
+    C) Farq yo'q    B) Controlled component (state bilan)
+
+    D) Effect synchronous    C) Uncontrolled faqat
+
+    Javob: B    D) jQuery bilan
+
+    **Javob: B**
+
+24. useLayoutEffect qachon ishlatiladi?
+
+    A) Har doim24. onChange event input da nima qiladi?
+
+    B) DOM o'lchov/manipulatsiya    A) Click handle
+
+    C) Fetch    B) Input qiymati o'zgarganda trigger
+
+    D) Timer    C) Submit handle
+
+    Javob: B    D) Focus handle
+
+    **Javob: B**
+
+25. useId hook nima?
+
+    A) State id25. React component nomi qanday boshlanishi kerak?
+
+    B) Unique ID generator    A) Kichik harf
+
+    C) Component id    B) Katta harf
+
+    D) Ref id    C) Raqam
+
+    Javob: B    D) Symbol
+
+    **Javob: B**
+
+26. useId SSR support?
+
+    A) Yo'q26. React Virtual DOM nima?
+
+    B) Server-client ID match    A) Real DOM copy
+
+    C) Client only    B) JavaScript object sifatida DOM representation
+
+    D) Server only    C) HTML file
+
+    Javob: B    D) CSS framework
+
+    **Javob: B**
+
+27. useSyncExternalStore nima?
+
+    A) useState27. ReactDOM.render() nima qiladi?
+
+    B) External store subscription    A) Component yaratadi
+
+    C) useReducer    B) React componentni DOM ga render qiladi
+
+    D) useContext    C) State update qiladi
+
+    Javob: B    D) Props uzatadi
+
+    **Javob: B**
+
+28. useSyncExternalStore parameters?
+
+    A) (store)28. React.StrictMode nima uchun ishlatiladi?
+
+    B) (subscribe, getSnapshot)    A) Production mode
+
+    C) (state)    B) Development warnings va checks
+
+    D) (action)    C) Security
+
+    Javob: B    D) Performance
+
+    **Javob: B**
+
+29. useTransition nima?
+
+    A) Animation29. Functional component nima?
+
+    B) Non-blocking update marker    A) Class component
+
+    C) Loading    B) Function sifatida component
+
+    D) Error    C) Object component
+
+    Javob: B    D) Array component
+
+    **Javob: B**
+
+30. useTransition return?
+
+    A) [state]30. Class component qanday yaratiladi?
+
+    B) [isPending, startTransition]    A) function MyComponent()
+
+    C) [transition]    B) class MyComponent extends React.Component
+
+    D) [start]    C) const MyComponent = {}
+
+    Javob: B    D) new Component()
+
+    **Javob: B**
+
+31. useDeferredValue nima?
+
+    A) Immediate31. render() method qayerda ishlatiladi?
+
+    B) Deferred value update    A) Functional component
+
+    C) Cached    B) Class component
+
+    D) Memoized    C) Hooks
+
+    Javob: B    D) Props
+
+    **Javob: B**
+
+32. Concurrent rendering nima?
+
+    A) Sync32. this.state class componentda nima?
+
+    B) Interruptible rendering    A) Props
+
+    C) Blocking    B) Component state object
+
+    D) Sequential    C) Method
+
+    Javob: B    D) Event
+
+    **Javob: B**
+
+33. Suspense nima uchun?
+
+    A) Error33. this.setState() nima qiladi?
+
+    B) Loading state handling    A) Props o'zgartiradi
+
+    C) State    B) State ni update qiladi
+
+    D) Effect    C) Component delete qiladi
+
+    Javob: B    D) Render to'xtatadi
+
+    **Javob: B**
+
+34. Suspense fallback prop?
+
+    A) children34. Props read-only mi?
+
+    B) Loading UI    A) Yo'q, o'zgartiriladi
+
+    C) error    B) Ha, o'zgartirib bo'lmaydi
+
+    D) state    C) Ba'zida
+
+    Javob: B    D) Faqat class da
+
+    **Javob: B**
+
+35. lazy() function nima?
+
+    A) Eager35. Children props nima?
+
+    B) Dynamic import wrapper    A) Parent component
+
+    C) Static    B) Component ichidagi content
+
+    D) Sync    C) State values
+
+    Javob: B    D) Event handlers
+
+    **Javob: B**
+
+36. Code splitting nima?
+
+    A) Minification36. defaultProps nima uchun ishlatiladi?
+
+    B) Bundle'ni bo'lish    A) State default
+
+    C) Compression    B) Props default qiymatlari
+
+    D) Obfuscation    C) Event default
+
+    Javob: B    D) Style default
+
+    **Javob: B**
+
+37. Error Boundary nima?
+
+    A) try-catch37. PropTypes nima uchun ishlatiladi?
+
+    B) Error catching component    A) Props validation
+
+    C) Suspense    B) State validation
+
+    D) Loading    C) Event validation
+
+    Javob: B    D) Style validation
+
+    **Javob: A**
+
+38. componentDidCatch method?
+
+    A) Constructor38. JSXda comment qanday yoziladi?
+
+    B) Error handler lifecycle    A) // comment
+
+    C) Render    B) {/* comment */}
+
+    D) Mount    C) <!-- comment -->
+
+    Javob: B    D) # comment
+
+    **Javob: B**
+
+39. getDerivedStateFromError?
+
+    A) Instance method39. React componentda multiple elements qaytarish kerakmi?
+
+    B) Static error state update    A) Ha, doim multiple
+
+    C) Lifecycle    B) Yo'q, bitta root element kerak
+
+    D) Effect    C) Ba'zida
+
+    Javob: B    D) Faqat div bilan
+
+    **Javob: B**
+
+40. Hooks Error Boundary?
+
+    A) useErrorBoundary40. {condition && <Component />} nima qiladi?
+
+    B) Class components only    A) Always render
+
+    C) useEffect    B) Condition true bo'lsa render
+
+    D) useState    C) Never render
+
+    Javob: B    D) Error beradi
+
+    **Javob: B**
+
+41. Portal nima?
+
+    A) Route41. {condition ? <A /> : <B />} nima?
+
+    B) DOM node'ga render    A) Always A
+
+    C) Component    B) Ternary operator - condition ga qarab A yoki B
+
+    D) Context    C) Always B
+
+    Javob: B    D) Error
+
+    **Javob: B**
+
+42. createPortal sintaksisi?
+
+    A) createPortal(node)42. React.memo() nima qiladi?
+
+    B) createPortal(children, container)    A) State saqlaydi
+
+    C) createPortal(container)    B) Component ni memoize qiladi (optimize)
+
+    D) createPortal()    C) Props yaratadi
+
+    Javob: B    D) Event handle qiladi
+
+    **Javob: B**
+
+43. Fragments nima?
+
+    A) Wrapper div43. useCallback hook nima uchun?
+
+    B) Group without DOM node    A) State hook
+
+    C) Component    B) Function ni memoize qilish
+
+    D) Context    C) Effect hook
+
+    Javob: B    D) Context hook
+
+    **Javob: B**
+
+44. Fragment syntax?
+
+    A) <div>44. useMemo hook nima uchun?
+
+    B) <> </> yoki <Fragment>    A) State hook
+
+    C) <span>    B) Qiymatni memoize qilish
+
+    D) <section>    C) Effect hook
+
+    Javob: B    D) Ref hook
+
+    **Javob: B**
+
+45. Fragment key prop?
+
+    A) Yo'q45. useRef hook nima qaytaradi?
+
+    B) <Fragment key={id}>    A) State
+
+    C) <> key    B) Mutable ref object
+
+    D) Required    C) Props
+
+    Javob: B    D) Context
+
+    **Javob: B**
+
+46. StrictMode nima?
+
+    A) Production46. ref DOM elementga access uchun qanday ishlatiladi?
+
+    B) Development checks    A) ref="myRef"
+
+    C) Error mode    B) ref={myRef}
+
+    D) Performance    C) reference={myRef}
+
+    Javob: B    D) dom={myRef}
+
+    **Javob: B**
+
+47. StrictMode double invoke?
+
+    A) Bug47. Form submit event qanday handle qilinadi?
+
+    B) Pure function check    A) onSubmit={handleSubmit}
+
+    C) Error    B) submit={handleSubmit}
+
+    D) Feature    C) onSend={handleSubmit}
+
+    Javob: B    D) onClick={handleSubmit}
+
+    **Javob: A**
+
+48. Profiler component?
+
+    A) DevTools48. event.preventDefault() nima qiladi?
+
+    B) Performance measurement    A) Event delete
+
+    C) Debug    B) Default browser action ni to'xtatadi
+
+    D) Log    C) Event trigger
+
+    Javob: B    D) Event copy
+
+    **Javob: B**
+
+49. Profiler onRender callback?
+
+    A) Optional49. Controlled component nima?
+
+    B) Performance metrics    A) Uncontrolled input
+
+    C) Required    B) React state bilan boshqariladigan input
+
+    D) Automatic    C) CSS controlled
+
+    Javob: B    D) Browser controlled
+
+    **Javob: B**
+
+50. key prop ahamiyati?
+
+    A) Style50. Uncontrolled component nima?
+
+    B) Reconciliation optimization    A) State bilan
+
+    C) Event    B) DOM o'zi boshqaradi (ref bilan access)
+
+    D) Ref    C) Props bilan
+
+    Javob: B    D) Context bilan
+
+    **Javob: B**
+
+51. key index ishlatish?
+
+    A) Yaxshi51. React.createContext() nima yaratadi?
+
+    B) Reorder muammosi    A) Component
+
+    C) Required    B) Context object
+
+    D) Best practice    C) State
+
+    Javob: B    D) Props
+
+    **Javob: B**
+
+52. Unique key qoidasi?
+
+    A) Global52. useContext hook nima qiladi?
+
+    B) Siblings orasida unique    A) State yaratadi
+
+    C) Component    B) Context value ni consume qiladi
+
+    D) App    C) Effect yaratadi
+
+    Javob: B    D) Ref yaratadi
+
+    **Javob: B**
+
+53. Controlled component nima?
+
+    A) Uncontrolled53. Context.Provider nima uchun?
+
+    B) React state bilan boshqarish    A) Context consume
+
+    C) DOM state    B) Context value ni children ga berish
+
+    D) Ref    C) State update
+
+    Javob: B    D) Props pass
+
+    **Javob: B**
+
+54. Uncontrolled component nima?
+
+    A) Controlled54. React lifecycle nima?
+
+    B) DOM state, ref bilan olish    A) State lifecycle
+
+    C) React state    B) Component mounting, updating, unmounting
+
+    D) Context    C) Props lifecycle
+
+    Javob: B    D) Event lifecycle
+
+    **Javob: B**
+
+55. defaultValue vs value?
+
+    A) Bir xil55. useState initial value qanday beriladi?
+
+    B) Uncontrolled vs Controlled    A) useState()
+
+    C) Farq yo'q    B) useState(initialValue)
+
+    D) Style    C) useState[initialValue]
+
+    Javob: B    D) useState{initialValue}
+
+    **Javob: B**
+
+56. Form event.preventDefault()?
+
+    A) Optional56. setState asynchronous mi?
+
+    B) Page reload oldini olish    A) Yo'q, synchronous
+
+    C) Required    B) Ha, asynchronous
+
+    D) Automatic    C) Ba'zida
+
+    Javob: B    D) Faqat class da
+
+    **Javob: B**
+
+57. Synthetic event nima?
+
+    A) Native event57. setState bilan function qanday ishlatiladi?
+
+    B) Cross-browser wrapper    A) setState(newValue)
+
+    C) Custom event    B) setState(prevState => newValue)
+
+    D) DOM event    C) setState[prevState]
+
+    Javob: B    D) setState{prevState}
+
+    **Javob: B**
+
+58. Event pooling (React 16)?
+
+    A) No pooling58. useEffect cleanup function nima uchun?
+
+    B) Event reuse    A) Component mount
+
+    C) Memory    B) Cleanup (subscriptions, timers)
+
+    D) Performance    C) Component render
+
+    Javob: B    D) State update
+
+    **Javob: B**
+
+59. event.persist() (React 16)?
+
+    A) Optional59. useEffect bo'sh dependency array [] nima bildiradi?
+
+    B) Async access uchun    A) Har render da
+
+    C) Required    B) Faqat mount da ishlaydi
+
+    D) Deprecated    C) Hech qachon
+
+    Javob: B    D) Unmount da
+
+    **Javob: B**
+
+60. Event pooling React 17+?
+
+    A) Active60. useEffect dependency arrayda state bo'lsa nima bo'ladi?
+
+    B) Removed    A) Hech narsa
+
+    C) Optional    B) State o'zgarganda effect ishlaydi
+
+    D) Required    C) Error
+
+    Javob: B    D) Har doim ishlaydi
+
+    **Javob: B**
+
+61. Lifting state up nima?
+
+    A) Child state61. Multiple useState ishlatish mumkinmi?
+
+    B) Shared state parent'ga    A) Yo'q, faqat bitta
+
+    C) Context    B) Ha, kerak bo'lganicha
+
+    D) Redux    C) Faqat 3 ta
+
+    Javob: B    D) Faqat class da
+
+    **Javob: B**
+
+62. Props drilling muammosi?
+
+    A) Performance62. useState bilan object state qanday update qilinadi?
+
+    B) Ko'p qatlamdan props    A) setState(newObj)
+
+    C) State    B) setState(prev => ({...prev, key: value}))
+
+    D) Event    C) setState.key = value
+
+    Javob: B    D) setState[key] = value
+
+    **Javob: B**
+
+63. Props drilling yechimi?
+
+    A) More props63. React Events camelCase mi?
+
+    B) Context yoki state management    A) Yo'q, lowercase
+
+    C) useRef    B) Ha, onClick, onChange
+
+    D) useEffect    C) UPPERCASE
+
+    Javob: B    D) snake_case
+
+    **Javob: B**
+
+64. Composition vs Inheritance?
+
+    A) Inheritance64. Event handler function argument nima?
+
+    B) React composition afzal    A) Hech narsa
+
+    C) Both    B) Event object
+
+    D) Neither    C) State
+
+    Javob: B    D) Props
+
+    **Javob: B**
+
+65. children prop nima?
+
+    A) Parent65. onClick={() => handleClick()} va onClick={handleClick} farqi?
+
+    B) Nested content    A) Bir xil
+
+    C) Sibling    B) Birinchisi render da function yaratadi
+
+    D) Root    C) Farq yo'q
+
+    Javob: B    D) Ikkinchisi xato
+
+    **Javob: B**
+
+66. Render props pattern?
+
+    A) children66. JSXda boolean attribute qanday?
+
+    B) Function as prop for render    A) disabled="true"
+
+    C) HOC    B) disabled={true} yoki disabled
+
+    D) Hook    C) disabled:true
+
+    Javob: B    D) disabled=1
+
+    **Javob: B**
+
+67. HOC (Higher-Order Component)?
+
+    A) Hook67. JSXda null render qilsa nima bo'ladi?
+
+    B) Component qaytaruvchi function    A) Error
+
+    C) Render prop    B) Hech narsa render qilinmaydi
+
+    D) Context    C) "null" yozuvi
+
+    Javob: B    D) Crash
+
+    **Javob: B**
+
+68. HOC naming convention?
+
+    A) use68. JSXda undefined render qilsa?
+
+    B) with prefix    A) Error
+
+    C) on    B) Hech narsa render qilinmaydi
+
+    D) handle    C) "undefined"
+
+    Javob: B    D) Crash
+
+    **Javob: B**
+
+69. Custom hook naming?
+
+    A) with69. JSXda array render qilsa?
+
+    B) use prefix    A) Error
+
+    C) on    B) Array elementlari render qilinadi
+
+    D) handle    C) [object Array]
+
+    Javob: B    D) Crash
+
+    **Javob: B**
+
+70. Custom hook qoidalari?
+
+    A) Class70. Key prop qayerda ishlatiladi?
+
+    B) use prefix, hooks call    A) Har joyda
+
+    C) Any name    B) List elements da
+
+    D) No rules    C) Faqat div da
+
+    Javob: B    D) Hech qayerda
+
+    **Javob: B**
+
+71. Hooks call order?
+
+    A) Any order71. Key unique bo'lishi kerakmi?
+
+    B) Same order har render    A) Yo'q
+
+    C) Random    B) Ha, siblings orasida
+
+    D) Conditional    C) Global unique
+
+    Javob: B    D) Kerak emas
+
+    **Javob: B**
+
+72. Hooks conditional call?
+
+    A) OK72. Index ni key sifatida ishlatish yaxshimi?
+
+    B) Forbidden (order break)    A) Ha, doim
+
+    C) Recommended    B) Yo'q, list o'zgarsa muammo
+
+    D) Optional    C) Faqat production da
+
+    Javob: B    D) Majburiy
+
+    **Javob: B**
+
+73. Hooks loop ichida?
+
+    A) OK73. React componentda constructor nima uchun?
+
+    B) Forbidden    A) Render
+
+    C) Recommended    B) State initialize, bind methods
+
+    D) Optional    C) Props yaratish
+
+    Javob: B    D) DOM access
+
+    **Javob: B**
+
+74. Rules of Hooks enforcer?
+
+    A) TypeScript74. super(props) nima uchun kerak?
+
+    B) eslint-plugin-react-hooks    A) Kerak emas
+
+    C) Manual    B) Parent class constructor chaqirish
+
+    D) Webpack    C) Props yaratish
+
+    Javob: B    D) State yaratish
+
+    **Javob: B**
+
+75. exhaustive-deps rule?
+
+    A) Optional75. Arrow function class methodda nima uchun yaxshi?
+
+    B) All dependencies include    A) Tezroq
+
+    C) Some deps    B) Auto bind this
+
+    D) No deps    C) Ko'proq features
+
+    Javob: B    D) Shart emas
+
+    **Javob: B**
+
+76. Server Components nima?
+
+    A) Client only76. componentDidMount() lifecycle method qachon?
+
+    B) Server-rendered components    A) Har render da
+
+    C) API    B) Component mount bo'lgandan keyin
+
+    D) Database    C) Render dan oldin
+
+    Javob: B    D) Unmount da
+
+    **Javob: B**
+
+77. "use client" directive?
+
+    A) Server77. componentDidUpdate() qachon?
+
+    B) Client Component marker    A) Mount da
+
+    C) API    B) Update bo'lgandan keyin
+
+    D) Database    C) Unmount da
+
+    Javob: B    D) Render dan oldin
+
+    **Javob: B**
+
+78. "use server" directive?
+
+    A) Client78. componentWillUnmount() qachon?
+
+    B) Server Action marker    A) Mount da
+
+    C) Component    B) Component o'chirilishidan oldin
+
+    D) Hook    C) Update da
+
+    Javob: B    D) Render da
+
+    **Javob: B**
+
+79. Server Actions nima?
+
+    A) Client79. shouldComponentUpdate() nima qiladi?
+
+    B) Server-side mutations    A) Update majbur qiladi
+
+    C) Hook    B) Re-render kerakligini decide qiladi
+
+    D) Component    C) Component yaratadi
+
+    Javob: B    D) Props o'zgartiradi
+
+    **Javob: B**
+
+80. Client vs Server component?
+
+    A) Same80. PureComponent nima?
+
+    B) Interactivity vs static    A) Oddiy component
+
+    C) No difference    B) Shallow props/state comparison bilan optimize
+
+    D) Either    C) Class component emas
+
+    Javob: B    D) Functional component
+
+    **Javob: B**
+
+81. Streaming SSR nima?
+
+    A) Blocking81. React.Fragment vs <div> farqi?
+
+    B) Progressive HTML streaming    A) Bir xil
+
+    C) Client    B) Fragment extra DOM node yaratmaydi
+
+    D) Static    C) div yaxshiroq
+
+    Javob: B    D) Farq yo'q
+
+    **Javob: B**
+
+82. Hydration nima?
+
+    A) Dehydration82. Fragment short syntax?
+
+    B) Client-side interactivity attach    A) <Fragment>
+
+    C) SSR    B) <></>
+
+    D) SSG    C) <React.Fragment>
+
+    Javob: B    D) <frag>
+
+    **Javob: B**
+
+83. Selective hydration?
+
+    A) Full83. Fragment da key ishlatish mumkinmi?
+
+    B) Priority-based hydration    A) Yo'q
+
+    C) No hydration    B) Ha, <React.Fragment key={}>
+
+    D) Lazy    C) Faqat short syntax da
+
+    Javob: B    D) Hech qachon
+
+    **Javob: B**
+
+84. React Server Components benefit?
+
+    A) Bundle size84. Props drilling nima?
+
+    B) Zero client JS for RSC    A) Props optimize
+
+    C) Speed only    B) Props ni ko'p level orqali o'tkazish
+
+    D) No benefit    C) Props delete
+
+    Javob: B    D) Props validation
+
+    **Javob: B**
+
+85. useFormStatus hook?
+
+    A) useState85. Props drilling muammosini qanday hal qilish?
+
+    B) Form submission status    A) Ignore qilish
+
+    C) useReducer    B) Context API, Redux
+
+    D) useContext    C) Ko'proq props
+
+    Javob: B    D) Hal qilib bo'lmaydi
+
+    **Javob: B**
+
+86. useFormState hook?
+
+    A) useState86. Lifting state up nima?
+
+    B) Server action form state    A) State delete
+
+    C) useReducer    B) State ni parent componentga ko'tarish
+
+    D) useContext    C) State child ga
+
+    Javob: B    D) State optimize
+
+    **Javob: B**
+
+87. useOptimistic hook?
+
+    A) useState87. Composition vs Inheritance React da?
+
+    B) Optimistic UI updates    A) Inheritance yaxshi
+
+    C) useReducer    B) Composition tavsiya etiladi
+
+    D) useContext    C) Bir xil
+
+    Javob: B    D) Ikkalasi ham yomon
+
+    **Javob: B**
+
+88. React cache function?
+
+    A) useMemo88. HOC (Higher-Order Component) nima?
+
+    B) Request deduplication    A) Component type
+
+    C) useCallback    B) Component qabul qilib, yangi component qaytaruvchi function
+
+    D) memo    C) Class component
+
+    Javob: B    D) Hook
+
+    **Javob: B**
+
+89. use hook nima?
+
+    A) useState89. Render props nima?
+
+    B) Promise/context reading    A) Props render qilish
+
+    C) useEffect    B) Function prop orqali component logic share qilish
+
+    D) useRef    C) Style props
+
+    Javob: B    D) Event props
+
+    **Javob: B**
+
+90. use(promise) nima?
+
+    A) await90. React.Children.map() nima qiladi?
+
+    B) Suspense-aware promise read    A) Array map
+
+    C) then    B) Children props ni map qilish
+
+    D) async    C) State map
+
+    Javob: B    D) Props map
+
+    **Javob: B**
+
+91. use(context) nima?
+
+    A) useContext91. React.cloneElement() nima?
+
+    B) Conditional context read    A) Component copy
+
+    C) createContext    B) Element clone qilib, props qo'shish
+
+    D) Provider    C) State clone
+
+    Javob: B    D) DOM clone
+
+    **Javob: B**
+
+92. React compiler nima?
+
+    A) Babel92. Error Boundary nima?
+
+    B) Automatic memoization    A) Error throw
+
+    C) Webpack    B) Child component error ni catch qiluvchi component
+
+    D) TypeScript    C) Try-catch
+
+    Javob: B    D) Console.error
+
+    **Javob: B**
+
+93. React Forget (compiler)?
+
+    A) Manual memo93. componentDidCatch() nima uchun?
+
+    B) Auto optimization    A) Event catch
+
+    C) Forget hooks    B) Error boundary da error catch
+
+    D) No memo    C) API catch
+
+    Javob: B    D) State catch
+
+    **Javob: B**
+
+94. startTransition qachon?
+
+    A) Always94. getDerivedStateFromError() nima qaytaradi?
+
+    B) Non-urgent updates    A) Error
+
+    C) Never    B) State update qilish uchun object
+
+    D) Urgent    C) Props
+
+    Javob: B    D) Component
+
+    **Javob: B**
+
+95. isPending state nima?
+
+    A) Error95. React Developer Tools nima?
+
+    B) Transition in progress    A) Code editor
+
+    C) Success    B) Browser extension for debugging
+
+    D) Loading    C) Testing library
+
+    Javob: B    D) Build tool
+
+    **Javob: B**
+
+96. Suspense boundary nesting?
+
+    A) One only96. React.Profiler nima uchun?
+
+    B) Multiple levels    A) Styling
+
+    C) No nesting    B) Performance measurement
+
+    D) Error    C) Error handling
+
+    Javob: B    D) Routing
+
+    **Javob: B**
+
+97. SuspenseList component?
+
+    A) Suspense97. React production build qanday yaratiladi?
+
+    B) Coordinate multiple suspense    A) npm start
+
+    C) List    B) npm run build
+
+    D) Fragment    C) npm test
+
+    Javob: B    D) npm dev
+
+    **Javob: B**
+
+98. revealOrder prop?
+
+    A) Random98. package.json da dependencies va devDependencies farqi?
+
+    B) together/forwards/backwards    A) Bir xil
+
+    C) Auto    B) dependencies - runtime, devDependencies - development
+
+    D) None    C) Farq yo'q
+
+    Javob: B    D) devDependencies muhimroq
+
+    **Javob: B**
+
+99. tail prop SuspenseList?
+
+    A) Head99. CRA (Create React App) nima?
+
+    B) Render remaining behavior    A) React library
+
+    C) Middle    B) React app yaratish uchun CLI tool
+
+    D) All    C) Component
+
+    Javob: B    D) State manager
+
+    **Javob: B**
+
+100. React 18 automatic batching?
+
+     A) Manual100. React app default port qaysi?
+
+     B) All updates batched     A) 8080
+
+     C) No batching     B) 3000
+
+     D) Partial     C) 5000
+
+     Javob: B     D) 4200
+
+     **Javob: B**

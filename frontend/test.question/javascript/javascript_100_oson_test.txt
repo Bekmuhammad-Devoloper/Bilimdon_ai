@@ -1,0 +1,702 @@
+JAVASCRIPT - 100 TA OSON DARAJADAGI TEST SAVOLLARI
+===================================================
+
+1. JavaScript qanday til?
+   A) Compiled
+   B) Interpreted
+   C) Assembly
+   D) Machine code
+   Javob: B
+
+2. JavaScript'da o'zgaruvchi e'lon qilish?
+   A) int x
+   B) var x
+   C) variable x
+   D) declare x
+   Javob: B
+
+3. console.log() nima qiladi?
+   A) Faylga yozadi
+   B) Konsolga chiqaradi
+   C) Ma'lumotni o'chiradi
+   D) Hech narsa
+   Javob: B
+
+4. JavaScript'da comment qanday yoziladi?
+   A) # comment
+   B) // comment
+   C) -- comment
+   D) ** comment
+   Javob: B
+
+5. String yaratish?
+   A) "Hello"
+   B) Hello
+   C) (Hello)
+   D) [Hello]
+   Javob: A
+
+6. Array yaratish?
+   A) (1, 2, 3)
+   B) [1, 2, 3]
+   C) {1, 2, 3}
+   D) <1, 2, 3>
+   Javob: B
+
+7. Object yaratish?
+   A) [name: "John"]
+   B) {name: "John"}
+   C) (name: "John")
+   D) <name: "John">
+   Javob: B
+
+8. Funksiya e'lon qilish?
+   A) function myFunc()
+   B) def myFunc()
+   C) func myFunc()
+   D) fn myFunc()
+   Javob: A
+
+9. if statement sintaksisi?
+   A) if x > 5:
+   B) if (x > 5) {}
+   C) if x > 5 then
+   D) if [x > 5]
+   Javob: B
+
+10. for loop sintaksisi?
+    A) for i in range(5)
+    B) for (let i = 0; i < 5; i++)
+    C) for i = 1 to 5
+    D) for each i in 5
+    Javob: B
+
+11. while loop sintaksisi?
+    A) while x < 5:
+    B) while (x < 5) {}
+    C) do while x < 5
+    D) loop while x < 5
+    Javob: B
+
+12. === operatori nima qiladi?
+    A) Tayinlash
+    B) Qat'iy tenglik tekshirish
+    C) Ko'paytirish
+    D) Bo'lish
+    Javob: B
+
+13. != operatori nima?
+    A) Teng
+    B) Teng emas
+    C) Katta
+    D) Kichik
+    Javob: B
+
+14. && operatori nima?
+    A) OR
+    B) AND
+    C) NOT
+    D) XOR
+    Javob: B
+
+15. || operatori nima?
+    A) AND
+    B) OR
+    C) NOT
+    D) XOR
+    Javob: B
+
+16. ! operatori nima?
+    A) AND
+    B) NOT
+    C) OR
+    D) Equal
+    Javob: B
+
+17. typeof operatori?
+    A) Qiymat qaytaradi
+    B) Tur qaytaradi
+    C) O'chiradi
+    D) Yaratadi
+    Javob: B
+
+18. null nima?
+    A) Undefined
+    B) Bo'sh qiymat
+    C) Number
+    D) String
+    Javob: B
+
+19. undefined nima?
+    A) Bo'sh qiymat
+    B) Qiymat berilmagan
+    C) Xato
+    D) String
+    Javob: B
+
+20. NaN nima?
+    A) Number
+    B) Not a Number
+    C) Null
+    D) Undefined
+    Javob: B
+
+21. parseInt() nima qiladi?
+    A) Float ga aylantiradi
+    B) Integer ga aylantiradi
+    C) String ga aylantiradi
+    D) Boolean ga aylantiradi
+    Javob: B
+
+22. parseFloat() nima qiladi?
+    A) Integer ga aylantiradi
+    B) Float ga aylantiradi
+    C) String ga aylantiradi
+    D) Boolean ga aylantiradi
+    Javob: B
+
+23. String.length nima qaytaradi?
+    A) Birinchi harf
+    B) String uzunligi
+    C) Oxirgi harf
+    D) String o'zi
+    Javob: B
+
+24. Array.length nima qaytaradi?
+    A) Birinchi element
+    B) Array uzunligi
+    C) Oxirgi element
+    D) Array o'zi
+    Javob: B
+
+25. push() metodi nima qiladi?
+    A) Boshiga qo'shadi
+    B) Oxiriga qo'shadi
+    C) O'rtasiga qo'shadi
+    D) O'chiradi
+    Javob: B
+
+26. pop() metodi nima qiladi?
+    A) Boshidan oladi
+    B) Oxiridan oladi
+    C) O'rtasidan oladi
+    D) Qo'shadi
+    Javob: B
+
+27. shift() metodi nima qiladi?
+    A) Oxiridan oladi
+    B) Boshidan oladi
+    C) O'rtasidan oladi
+    D) Qo'shadi
+    Javob: B
+
+28. unshift() metodi nima qiladi?
+    A) Oxiriga qo'shadi
+    B) Boshiga qo'shadi
+    C) O'rtasiga qo'shadi
+    D) O'chiradi
+    Javob: B
+
+29. indexOf() nima qaytaradi?
+    A) Element
+    B) Index
+    C) Uzunlik
+    D) Boolean
+    Javob: B
+
+30. includes() nima qaytaradi?
+    A) Index
+    B) Boolean
+    C) Element
+    D) Uzunlik
+    Javob: B
+
+31. split() nima qiladi?
+    A) Birlashtiradi
+    B) Bo'ladi
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+32. join() nima qiladi?
+    A) Bo'ladi
+    B) Birlashtiradi
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+33. toUpperCase() nima qiladi?
+    A) Kichik harfga
+    B) Katta harfga
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+34. toLowerCase() nima qiladi?
+    A) Katta harfga
+    B) Kichik harfga
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+35. trim() nima qiladi?
+    A) Qo'shadi
+    B) Bo'sh joylarni olib tashlaydi
+    C) O'chiradi
+    D) Almashtiradi
+    Javob: B
+
+36. replace() nima qiladi?
+    A) Qo'shadi
+    B) Almashtiradi
+    C) O'chiradi
+    D) Bo'ladi
+    Javob: B
+
+37. slice() nima qiladi?
+    A) Birlashtiradi
+    B) Qismini oladi
+    C) O'chiradi
+    D) Qo'shadi
+    Javob: B
+
+38. concat() nima qiladi?
+    A) Bo'ladi
+    B) Birlashtiradi
+    C) O'chiradi
+    D) Almashtiradi
+    Javob: B
+
+39. Math.round() nima qiladi?
+    A) Yuqoriga yaxlitlaydi
+    B) Yaqin songa yaxlitlaydi
+    C) Pastga yaxlitlaydi
+    D) O'zgartirmaydi
+    Javob: B
+
+40. Math.floor() nima qiladi?
+    A) Yuqoriga yaxlitlaydi
+    B) Pastga yaxlitlaydi
+    C) Yaqin songa
+    D) O'zgartirmaydi
+    Javob: B
+
+41. Math.ceil() nima qiladi?
+    A) Pastga yaxlitlaydi
+    B) Yuqoriga yaxlitlaydi
+    C) Yaqin songa
+    D) O'zgartirmaydi
+    Javob: B
+
+42. Math.random() nima qaytaradi?
+    A) Integer
+    B) 0-1 orasida random son
+    C) Boolean
+    D) String
+    Javob: B
+
+43. Math.max() nima qaytaradi?
+    A) Eng kichik
+    B) Eng katta
+    C) O'rta
+    D) Random
+    Javob: B
+
+44. Math.min() nima qaytaradi?
+    A) Eng katta
+    B) Eng kichik
+    C) O'rta
+    D) Random
+    Javob: B
+
+45. Date() konstruktori nima yaratadi?
+    A) String
+    B) Sana obyekti
+    C) Number
+    D) Array
+    Javob: B
+
+46. getFullYear() nima qaytaradi?
+    A) Oy
+    B) Yil
+    C) Kun
+    D) Soat
+    Javob: B
+
+47. getMonth() nima qaytaradi?
+    A) Yil
+    B) Oy (0-11)
+    C) Kun
+    D) Soat
+    Javob: B
+
+48. getDate() nima qaytaradi?
+    A) Yil
+    B) Oyning kuni
+    C) Oy
+    D) Soat
+    Javob: B
+
+49. alert() nima qiladi?
+    A) Konsolga chiqaradi
+    B) Ogohlantirish oynasi chiqaradi
+    C) Faylga yozadi
+    D) O'chiradi
+    Javob: B
+
+50. prompt() nima qiladi?
+    A) Ogohlantirish
+    B) Foydalanuvchidan kiritish so'raydi
+    C) Tasdiqlash
+    D) O'chirish
+    Javob: B
+
+51. confirm() nima qaytaradi?
+    A) String
+    B) Boolean
+    C) Number
+    D) Array
+    Javob: B
+
+52. document.getElementById() nima qiladi?
+    A) Class bo'yicha topadi
+    B) ID bo'yicha element topadi
+    C) Tag bo'yicha topadi
+    D) Name bo'yicha topadi
+    Javob: B
+
+53. innerHTML nima qiladi?
+    A) Stilni o'zgartiradi
+    B) HTML kontentni o'zgartiradi
+    C) Attributni o'zgartiradi
+    D) Classni o'zgartiradi
+    Javob: B
+
+54. addEventListener() nima qiladi?
+    A) Event o'chiradi
+    B) Event qo'shadi
+    C) Element o'chiradi
+    D) Element qo'shadi
+    Javob: B
+
+55. setTimeout() nima qiladi?
+    A) Darhol bajaradi
+    B) Kechiktirib bajaradi
+    C) Takrorlaydi
+    D) To'xtatadi
+    Javob: B
+
+56. setInterval() nima qiladi?
+    A) Bir marta bajaradi
+    B) Takrorlab bajaradi
+    C) O'chiradi
+    D) To'xtatadi
+    Javob: B
+
+57. clearTimeout() nima qiladi?
+    A) Interval to'xtatadi
+    B) Timeout to'xtatadi
+    C) Event o'chiradi
+    D) Element o'chiradi
+    Javob: B
+
+58. clearInterval() nima qiladi?
+    A) Timeout to'xtatadi
+    B) Interval to'xtatadi
+    C) Event o'chiradi
+    D) Element o'chiradi
+    Javob: B
+
+59. JSON.stringify() nima qiladi?
+    A) JSON ga parse qiladi
+    B) String ga aylantiradi
+    C) Number ga aylantiradi
+    D) Array ga aylantiradi
+    Javob: B
+
+60. JSON.parse() nima qiladi?
+    A) String ga aylantiradi
+    B) JSON obyektga aylantiradi
+    C) Number ga aylantiradi
+    D) Array ga aylantiradi
+    Javob: B
+
+61. localStorage nima?
+    A) Vaqtinchalik saqlash
+    B) Doimiy brauzer saqlash
+    C) Server saqlash
+    D) Cookie
+    Javob: B
+
+62. sessionStorage nima?
+    A) Doimiy saqlash
+    B) Sessiya davomida saqlash
+    C) Server saqlash
+    D) Cookie
+    Javob: B
+
+63. let vs var farqi?
+    A) Bir xil
+    B) let block scope
+    C) var block scope
+    D) Farqi yo'q
+    Javob: B
+
+64. const nima?
+    A) O'zgaruvchan
+    B) O'zgarmas
+    C) Funksiya
+    D) Object
+    Javob: B
+
+65. Arrow function sintaksisi?
+    A) function() {}
+    B) () => {}
+    C) def() {}
+    D) fn() {}
+    Javob: B
+
+66. Template literal sintaksisi?
+    A) "string"
+    B) `string ${var}`
+    C) 'string'
+    D) (string)
+    Javob: B
+
+67. Spread operator?
+    A) ++
+    B) ...
+    C) **
+    D) &&
+    Javob: B
+
+68. Destructuring nima?
+    A) Yaratish
+    B) Qiymatlarni ajratib olish
+    C) O'chirish
+    D) Birlashtirish
+    Javob: B
+
+69. map() metodi nima qiladi?
+    A) Filtrlaydi
+    B) Har bir elementni o'zgartiradi
+    C) Qidiradi
+    D) Saralaydi
+    Javob: B
+
+70. filter() metodi nima qiladi?
+    A) O'zgartiradi
+    B) Shartga mos elementlarni qaytaradi
+    C) Qidiradi
+    D) Saralaydi
+    Javob: B
+
+71. find() metodi nima qaytaradi?
+    A) Barcha elementlar
+    B) Birinchi mos element
+    C) Index
+    D) Boolean
+    Javob: B
+
+72. reduce() metodi nima qiladi?
+    A) Filtrlaydi
+    B) Bitta qiymatga kamaytiradi
+    C) Ko'paytiradi
+    D) Saralaydi
+    Javob: B
+
+73. forEach() metodi nima qiladi?
+    A) Yangi array qaytaradi
+    B) Har bir element ustida amal bajaradi
+    C) Filtrlaydi
+    D) Saralaydi
+    Javob: B
+
+74. sort() metodi nima qiladi?
+    A) Filtrlaydi
+    B) Saralaydi
+    C) Qidiradi
+    D) O'zgartiradi
+    Javob: B
+
+75. reverse() metodi nima qiladi?
+    A) Saralaydi
+    B) Teskari tartibga qo'yadi
+    C) Filtrlaydi
+    D) Qidiradi
+    Javob: B
+
+76. every() metodi nima qaytaradi?
+    A) Element
+    B) Boolean (barchasi mos bo'lsa)
+    C) Index
+    D) Array
+    Javob: B
+
+77. some() metodi nima qaytaradi?
+    A) Element
+    B) Boolean (birortasi mos bo'lsa)
+    C) Index
+    D) Array
+    Javob: B
+
+78. Object.keys() nima qaytaradi?
+    A) Qiymatlar
+    B) Kalitlar array
+    C) Object
+    D) Boolean
+    Javob: B
+
+79. Object.values() nima qaytaradi?
+    A) Kalitlar
+    B) Qiymatlar array
+    C) Object
+    D) Boolean
+    Javob: B
+
+80. Object.entries() nima qaytaradi?
+    A) Faqat kalitlar
+    B) Kalit-qiymat juftliklari
+    C) Faqat qiymatlar
+    D) Boolean
+    Javob: B
+
+81. try...catch nima uchun?
+    A) Loop uchun
+    B) Xatolarni ushlash uchun
+    C) Funksiya uchun
+    D) Shart uchun
+    Javob: B
+
+82. throw nima qiladi?
+    A) Xatoni ushlaydi
+    B) Xato chiqaradi
+    C) Davom etadi
+    D) To'xtatadi
+    Javob: B
+
+83. finally blok qachon ishlaydi?
+    A) Faqat xatoda
+    B) Har doim
+    C) Faqat muvaffaqiyatda
+    D) Hech qachon
+    Javob: B
+
+84. class sintaksisi?
+    A) def MyClass
+    B) class MyClass {}
+    C) object MyClass
+    D) type MyClass
+    Javob: B
+
+85. constructor nima?
+    A) Method
+    B) Obyekt yaratuvchi funksiya
+    C) Property
+    D) Event
+    Javob: B
+
+86. extends nima qiladi?
+    A) Yangi class yaratadi
+    B) Klassdan meros oladi
+    C) Method qo'shadi
+    D) Property qo'shadi
+    Javob: B
+
+87. super nima?
+    A) Yangi obyekt
+    B) Ota klassga murojaat
+    C) this
+    D) window
+    Javob: B
+
+88. static method nima?
+    A) Instance method
+    B) Klass metodi
+    C) Constructor
+    D) Property
+    Javob: B
+
+89. this kalit so'zi nimaga ishora qiladi?
+    A) Global
+    B) Joriy obyektga
+    C) Funksiyaga
+    D) Window
+    Javob: B
+
+90. new kalit so'zi nima qiladi?
+    A) O'chiradi
+    B) Yangi obyekt yaratadi
+    C) O'zgartiradi
+    D) Nusxa oladi
+    Javob: B
+
+91. instanceof operatori nima tekshiradi?
+    A) Turni
+    B) Obyekt klassini
+    C) Uzunlikni
+    D) Qiymatni
+    Javob: B
+
+92. delete operatori nima qiladi?
+    A) Obyekt yaratadi
+    B) Property o'chiradi
+    C) Qiymat beradi
+    D) Nusxa oladi
+    Javob: B
+
+93. in operatori nima tekshiradi?
+    A) Qiymatni
+    B) Property mavjudligini
+    C) Turni
+    D) Uzunlikni
+    Javob: B
+
+94. isNaN() nima tekshiradi?
+    A) Null
+    B) Not a Number ekanligini
+    C) Undefined
+    D) Boolean
+    Javob: B
+
+95. isFinite() nima tekshiradi?
+    A) NaN
+    B) Chekli son ekanligini
+    C) Null
+    D) Undefined
+    Javob: B
+
+96. Number.isInteger() nima tekshiradi?
+    A) Float
+    B) Butun son ekanligini
+    C) String
+    D) Boolean
+    Javob: B
+
+97. Array.isArray() nima tekshiradi?
+    A) Object
+    B) Array ekanligini
+    C) String
+    D) Number
+    Javob: B
+
+98. Boolean() nima qiladi?
+    A) String ga aylantiradi
+    B) Boolean ga aylantiradi
+    C) Number ga aylantiradi
+    D) Array ga aylantiradi
+    Javob: B
+
+99. String() nima qiladi?
+    A) Number ga aylantiradi
+    B) String ga aylantiradi
+    C) Boolean ga aylantiradi
+    D) Array ga aylantiradi
+    Javob: B
+
+100. Number() nima qiladi?
+     A) String ga aylantiradi
+     B) Number ga aylantiradi
+     C) Boolean ga aylantiradi
+     D) Array ga aylantiradi
+     Javob: B
