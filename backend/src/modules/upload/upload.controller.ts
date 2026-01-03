@@ -120,8 +120,8 @@ export class UploadController {
       const result = await this.uploadService.uploadAttachment(file);
       console.log('[Upload Controller] Upload success:', result);
       return result; // Return the full result object with url, filename, size, mimetype
-    } catch (error) {
-      console.error('[Upload Controller] Upload error:', error.message);
+    } catch (error: any) {
+      console.error('[Upload Controller] Upload error:', error?.message || error);
       throw error;
     }
   }

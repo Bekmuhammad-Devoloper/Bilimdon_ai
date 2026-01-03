@@ -179,8 +179,8 @@ export class NotificationsService {
         } else {
           this.logger.warn(`Icon file not found in any path for: ${category.icon}`);
         }
-      } catch (error) {
-        this.logger.warn(`Failed to read icon file: ${error.message}`);
+      } catch (error: any) {
+        this.logger.warn(`Failed to read icon file: ${error?.message || error}`);
       }
     }
     
@@ -266,8 +266,8 @@ export class NotificationsService {
                 );
               }
               telegramSent++;
-            } catch (error) {
-              this.logger.warn(`Failed to send Telegram to ${user.telegramId}: ${error.message}`);
+            } catch (error: any) {
+              this.logger.warn(`Failed to send Telegram to ${user.telegramId}: ${error?.message || error}`);
               errors++;
             }
           }
@@ -285,8 +285,8 @@ export class NotificationsService {
                 categoryUrl
               );
               emailSent++;
-            } catch (error) {
-              this.logger.warn(`Failed to send email to ${user.email}: ${error.message}`);
+            } catch (error: any) {
+              this.logger.warn(`Failed to send email to ${user.email}: ${error?.message || error}`);
               errors++;
             }
           }

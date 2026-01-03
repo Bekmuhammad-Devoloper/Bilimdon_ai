@@ -266,8 +266,8 @@ export class AuthService {
     // Send email - handle errors gracefully
     try {
       await this.mailService.sendVerificationCode(email, code);
-    } catch (error) {
-      console.error('Email yuborishda xatolik:', error.message);
+    } catch (error: any) {
+      console.error('Email yuborishda xatolik:', error?.message || error);
       // Don't throw - just log error and continue
       // Return success anyway since code is saved in database
     }
