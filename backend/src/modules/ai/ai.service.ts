@@ -81,7 +81,7 @@ Savollarga qisqa va aniq javob bering, lekin kerak bo'lsa tushuntirish ham berin
       const response = result.response.text();
 
       // Get category ID if slug provided
-      let categoryId = null;
+      let categoryId: string | null = null;
       if (dto.categorySlug) {
         const category = await this.prisma.category.findUnique({
           where: { slug: dto.categorySlug },

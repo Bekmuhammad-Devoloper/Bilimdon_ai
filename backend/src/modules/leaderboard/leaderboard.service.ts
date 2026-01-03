@@ -35,7 +35,7 @@ export class LeaderboardService {
     }));
 
     // Get current user's rank if provided
-    let userRank = null;
+    let userRank: number | null = null;
     if (userId) {
       userRank = await this.getUserGlobalRank(userId);
     }
@@ -78,7 +78,7 @@ export class LeaderboardService {
     }));
 
     // Get current user's rank if provided
-    let userRank = null;
+    let userRank: number | null = null;
     if (userId) {
       userRank = await this.getUserCategoryRank(userId, categoryId);
     }
@@ -120,7 +120,7 @@ export class LeaderboardService {
     }));
 
     // Get current user's rank if provided
-    let userRank = null;
+    let userRank: number | null = null;
     if (userId) {
       userRank = await this.getUserWeeklyRank(userId);
     }
@@ -163,7 +163,7 @@ export class LeaderboardService {
     }));
 
     // Get current user's rank if provided
-    let userRank = null;
+    let userRank: number | null = null;
     if (userId) {
       userRank = await this.getUserMonthlyRank(userId);
     }
