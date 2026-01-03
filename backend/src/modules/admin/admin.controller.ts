@@ -85,20 +85,23 @@ export class AdminController {
     @Body() dto: UpdateUserRoleDto,
     @Request() req: any,
   ) {
+    if (!dto.role) {
+      throw new Error('Role is required');
+    }
     return this.adminService.updateUserRole(id, dto.role, req.user.id);
   }
 
   @Patch('users/:id/block')
   @ApiOperation({ summary: 'Block or unblock user' })
   blockUser(@Param('id') id: string, @Body() dto: BlockUserDto) {
-    return this.adminService.blockUser(id, dto.blocked);
+    return this.adminService.blockUser(id, dto.blocked ?? false);
   }
 
   @Patch('users/:id/xp')
   @Roles(Role.ADMIN)
   @ApiOperation({ summary: 'Adjust user XP (Admin only)' })
   adjustUserXP(@Param('id') id: string, @Body() dto: AdjustXPDto) {
-    return this.adminService.adjustUserXP(id, dto.amount, dto.reason);
+    return this.adminService.adjustUserXP(id, dto.amount ?? 0, dto.reason ?? '');
   }
 
   @Delete('users/:id')
@@ -114,7 +117,14 @@ export class AdminController {
   sendBulkMessage(@Body() dto: SendBulkMessageDto, @Request() req: any) {
     return this.adminService.sendMultiChannelMessage({
       adminId: req.user.id,
-      ...dto,
+      title: dto.title ?? '',
+      message: dto.message ?? '',
+      imageUrl: dto.imageUrl,
+      videoUrl: dto.videoUrl,
+      targetType: dto.targetType ?? 'all',
+      targetIds: dto.targetIds,
+      channels: dto.channels ?? [],
+      filter: dto.filter,
     });
   }
 
@@ -139,14 +149,20 @@ export class AdminController {
   @Roles(Role.ADMIN)
   @ApiOperation({ summary: 'Create new category' })
   createCategory(@Body() dto: CreateCategoryDto) {
-    return this.adminService.createCategory(dto);
+    if (!dto.name || !dto.slug) {
+      throw new Error('Name and slug are required');
+    }
+    return this.adminService.createCategory(dto as any);
   }
 
   @Post('categories/with-questions')
   @Roles(Role.ADMIN)
   @ApiOperation({ summary: 'Create category with 300+ questions' })
   createCategoryWithQuestions(@Body() dto: CreateCategoryWithQuestionsDto) {
-    return this.adminService.createCategoryWithQuestions(dto);
+    if (!dto.name || !dto.slug || !dto.questionsText) {
+      throw new Error('Name, slug and questionsText are required');
+    }
+    return this.adminService.createCategoryWithQuestions(dto as any);
   }
 
   @Patch('categories/:id')
@@ -169,6 +185,9 @@ export class AdminController {
     @Param('id') categoryId: string,
     @Body() dto: ImportQuestionsTextDto,
   ) {
+    if (!dto.text) {
+      throw new Error('Text is required');
+    }
     return this.adminService.importQuestionsFromText(categoryId, dto.text);
   }
 
@@ -197,7 +216,10 @@ export class AdminController {
   @Post('questions/import')
   @ApiOperation({ summary: 'Bulk import questions' })
   bulkImportQuestions(@Body() dto: BulkImportQuestionsDto) {
-    return this.adminService.bulkImportQuestions(dto);
+    if (!dto.categoryId || !dto.questions) {
+      throw new Error('CategoryId and questions are required');
+    }
+    return this.adminService.bulkImportQuestions(dto as any);
   }
 
   @Get('questions/export')

@@ -248,6 +248,8 @@ export default function AdminDesign() {
               onChange={handleLightVideoFileChange}
               accept="video/*"
               className="hidden"
+              title="Light mode video yuklash"
+              aria-label="Light mode video yuklash"
             />
             <button
               onClick={() => lightVideoInputRef.current?.click()}
@@ -326,6 +328,8 @@ export default function AdminDesign() {
               onChange={handleDarkVideoFileChange}
               accept="video/*"
               className="hidden"
+              title="Dark mode video yuklash"
+              aria-label="Dark mode video yuklash"
             />
             <button
               onClick={() => darkVideoInputRef.current?.click()}

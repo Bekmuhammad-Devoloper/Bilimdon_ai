@@ -411,6 +411,8 @@ export default function AdminMessages() {
                 accept={mediaType === 'image' ? 'image/*' : 'video/*'}
                 onChange={handleFileChange}
                 className="hidden"
+                title="Media faylini tanlash"
+                aria-label="Media faylini tanlash"
               />
               <button
                 onClick={() => fileInputRef.current?.click()}
@@ -438,6 +440,8 @@ export default function AdminMessages() {
                   <button
                     onClick={() => { setMediaFile(null); setMediaUrl(''); setMediaPreview(null); }}
                     className="absolute -top-2 -right-2 p-1 bg-red-500 text-white rounded-full"
+                    title="Mediani o'chirish"
+                    aria-label="Mediani o'chirish"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -521,6 +525,8 @@ export default function AdminMessages() {
             <button
               onClick={() => setSearchTerm('')}
               className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              title="Qidiruvni tozalash"
+              aria-label="Qidiruvni tozalash"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

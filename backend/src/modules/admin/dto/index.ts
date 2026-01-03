@@ -54,25 +54,29 @@ export class GetUsersDto {
 }
 
 export class UpdateUserRoleDto {
-  @ApiProperty({ enum: Role })
+  @ApiPropertyOptional({ enum: Role })
+  @IsOptional()
   @IsEnum(Role)
-  role: Role;
+  role?: Role;
 }
 
 export class BlockUserDto {
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsBoolean()
-  blocked: boolean;
+  blocked?: boolean;
 }
 
 export class AdjustXPDto {
-  @ApiProperty({ description: 'Amount to add (positive) or subtract (negative)' })
+  @ApiPropertyOptional({ description: 'Amount to add (positive) or subtract (negative)' })
+  @IsOptional()
   @IsNumber()
-  amount: number;
+  amount?: number;
 
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  reason: string;
+  reason?: string;
 }
 
 // ==================== MESSAGING ====================
@@ -108,13 +112,15 @@ export class MessageFilterDto {
 }
 
 export class SendBulkMessageDto {
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  title: string;
+  title?: string;
 
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  message: string;
+  message?: string;
 
   @ApiPropertyOptional({ description: 'Image URL for message' })
   @IsOptional()
@@ -126,9 +132,10 @@ export class SendBulkMessageDto {
   @IsString()
   videoUrl?: string;
 
-  @ApiProperty({ enum: ['all', 'selected', 'filter'] })
+  @ApiPropertyOptional({ enum: ['all', 'selected', 'filter'] })
+  @IsOptional()
   @IsEnum(['all', 'selected', 'filter'])
-  targetType: 'all' | 'selected' | 'filter';
+  targetType?: 'all' | 'selected' | 'filter';
 
   @ApiPropertyOptional({ type: [String] })
   @IsOptional()
@@ -136,10 +143,11 @@ export class SendBulkMessageDto {
   @IsString({ each: true })
   targetIds?: string[];
 
-  @ApiProperty({ type: [String], description: 'Channels: email, telegram, notification' })
+  @ApiPropertyOptional({ type: [String], description: 'Channels: email, telegram, notification' })
+  @IsOptional()
   @IsArray()
   @IsString({ each: true })
-  channels: string[];
+  channels?: string[];
 
   @ApiPropertyOptional({ type: MessageFilterDto })
   @IsOptional()
@@ -150,29 +158,33 @@ export class SendBulkMessageDto {
 
 // ==================== QUESTIONS ====================
 export class QuestionImportItemDto {
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  question: string;
+  question?: string;
 
-  @ApiProperty({ type: [String], minItems: 4, maxItems: 4 })
+  @ApiPropertyOptional({ type: [String], minItems: 4, maxItems: 4 })
+  @IsOptional()
   @IsArray()
   @IsString({ each: true })
-  options: string[];
+  options?: string[];
 
-  @ApiProperty({ minimum: 0, maximum: 3 })
+  @ApiPropertyOptional({ minimum: 0, maximum: 3 })
+  @IsOptional()
   @IsNumber()
   @Min(0)
   @Max(3)
-  correctAnswer: number;
+  correctAnswer?: number;
 
   @ApiPropertyOptional()
   @IsOptional()
   @IsString()
   explanation?: string;
 
-  @ApiProperty({ enum: ['EASY', 'MEDIUM', 'HARD'] })
+  @ApiPropertyOptional({ enum: ['EASY', 'MEDIUM', 'HARD'] })
+  @IsOptional()
   @IsEnum(Difficulty)
-  difficulty: 'EASY' | 'MEDIUM' | 'HARD';
+  difficulty?: 'EASY' | 'MEDIUM' | 'HARD';
 
   @ApiPropertyOptional({ description: 'Index in category difficultyLevels array' })
   @IsOptional()
@@ -187,15 +199,17 @@ export class QuestionImportItemDto {
 }
 
 export class BulkImportQuestionsDto {
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  categoryId: string;
+  categoryId?: string;
 
-  @ApiProperty({ type: [QuestionImportItemDto] })
+  @ApiPropertyOptional({ type: [QuestionImportItemDto] })
+  @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
   @Type(() => QuestionImportItemDto)
-  questions: QuestionImportItemDto[];
+  questions?: QuestionImportItemDto[];
 }
 
 export class ExportQuestionsDto {
@@ -309,9 +323,10 @@ export class UpdateDesignDto {
 
 // ==================== CATEGORY MANAGEMENT ====================
 export class CreateCategoryDto {
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  name: string;
+  name?: string;
 
   @ApiPropertyOptional()
   @IsOptional()
@@ -323,9 +338,10 @@ export class CreateCategoryDto {
   @IsString()
   nameRu?: string;
 
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  slug: string;
+  slug?: string;
 
   @ApiPropertyOptional()
   @IsOptional()
@@ -421,23 +437,27 @@ export class UpdateCategoryDto {
 }
 
 export class ImportQuestionsTextDto {
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  categoryId: string;
+  categoryId?: string;
 
-  @ApiProperty({ description: 'Questions in namuna.txt format' })
+  @ApiPropertyOptional({ description: 'Questions in namuna.txt format' })
+  @IsOptional()
   @IsString()
-  text: string;
+  text?: string;
 }
 
 export class CreateCategoryWithQuestionsDto {
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  name: string;
+  name?: string;
 
-  @ApiProperty()
+  @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
-  slug: string;
+  slug?: string;
 
   @ApiPropertyOptional()
   @IsOptional()
@@ -454,7 +474,8 @@ export class CreateCategoryWithQuestionsDto {
   @IsString()
   color?: string;
 
-  @ApiProperty({ description: 'Questions in namuna.txt format (min 300 questions)' })
+  @ApiPropertyOptional({ description: 'Questions in namuna.txt format (min 300 questions)' })
+  @IsOptional()
   @IsString()
-  questionsText: string;
+  questionsText?: string;
 }

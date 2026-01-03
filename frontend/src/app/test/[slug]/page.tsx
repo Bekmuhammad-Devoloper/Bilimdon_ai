@@ -202,6 +202,8 @@ export default function TestPage() {
                   }
                 }}
                 className="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
+                title="Orqaga qaytish"
+                aria-label="Orqaga qaytish"
               >
                 <ArrowLeft className="w-5 h-5" />
               </button>
