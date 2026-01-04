@@ -1,0 +1,352 @@
+GO - QO'SHIMCHA OSON DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. Go dasturlash tili qaysi kompaniya tomonidan yaratilgan?
+   A) Microsoft
+   B) Google
+   C) Apple
+   D) Amazon
+   Javob: B
+
+2. Go tilida main funksiya qaysi packageda bo'lishi kerak?
+   A) main
+   B) core
+   C) app
+   D) root
+   Javob: A
+
+3. Go tilida variable e'lon qilish uchun qaysi keyword ishlatiladi?
+   A) let
+   B) var
+   C) const
+   D) dim
+   Javob: B
+
+4. Go tilida qisqa variable e'lon qilish operatori qaysi?
+   A) =
+   B) :=
+   C) ==
+   D) ->
+   Javob: B
+
+5. Go tilida comment yozish uchun qaysi belgi ishlatiladi?
+   A) #
+   B) //
+   C) --
+   D) **
+   Javob: B
+
+6. Go tilida string uchun qaysi qo'shtirnoq ishlatiladi?
+   A) Faqat ''
+   B) Faqat ""
+   C) Ikkalasi ham
+   D) Hech qaysi
+   Javob: B
+
+7. Go tilida butun son turi qaysi?
+   A) integer
+   B) int
+   C) number
+   D) num
+   Javob: B
+
+8. Go tilida haqiqiy son turi qaysi?
+   A) float
+   B) float64
+   C) double
+   D) real
+   Javob: B
+
+9. Go tilida boolean qiymatlari qaysi?
+   A) True/False
+   B) true/false
+   C) TRUE/FALSE
+   D) yes/no
+   Javob: B
+
+10. Go tilida funksiya e'lon qilish uchun qaysi keyword?
+    A) function
+    B) func
+    C) def
+    D) fn
+    Javob: B
+
+11. Go tilida package import qilish uchun qaysi keyword?
+    A) include
+    B) import
+    C) require
+    D) use
+    Javob: B
+
+12. Go tilida massiv uzunligini olish uchun qaysi funksiya?
+    A) length()
+    B) len()
+    C) size()
+    D) count()
+    Javob: B
+
+13. Go tilida sikl uchun qaysi keyword ishlatiladi?
+    A) while
+    B) for
+    C) loop
+    D) repeat
+    Javob: B
+
+14. Go tilida shart operatori qaysi?
+    A) switch
+    B) if
+    C) when
+    D) case
+    Javob: B
+
+15. Go tilida ko'p qiymat qaytarish mumkinmi?
+    A) Yo'q
+    B) Ha
+    C) Faqat 2 ta
+    D) Faqat struct bilan
+    Javob: B
+
+16. Go tilida pointer yaratish uchun qaysi operator?
+    A) *
+    B) &
+    C) @
+    D) ^
+    Javob: B
+
+17. Go tilida pointer qiymatini olish uchun qaysi operator?
+    A) &
+    B) *
+    C) @
+    D) ^
+    Javob: B
+
+18. Go tilida struct yaratish uchun qaysi keyword?
+    A) class
+    B) struct
+    C) type
+    D) object
+    Javob: B
+
+19. Go tilida slice yaratish uchun qaysi funksiya?
+    A) slice()
+    B) make()
+    C) new()
+    D) create()
+    Javob: B
+
+20. Go tilida map yaratish uchun qaysi funksiya?
+    A) map()
+    B) make()
+    C) new()
+    D) dict()
+    Javob: B
+
+21. Go tilida error handling uchun qaysi usul ishlatiladi?
+    A) try-catch
+    B) error return value
+    C) throw
+    D) exception
+    Javob: B
+
+22. Go tilida goroutine ishga tushirish uchun qaysi keyword?
+    A) async
+    B) go
+    C) thread
+    D) spawn
+    Javob: B
+
+23. Go tilida channel yaratish uchun qaysi funksiya?
+    A) channel()
+    B) make()
+    C) new()
+    D) chan()
+    Javob: B
+
+24. Go tilida defer nima qiladi?
+    A) Funksiyani bekor qiladi
+    B) Funksiya oxirida bajaradi
+    C) Xato tashlaydi
+    D) Loop to'xtatadi
+    Javob: B
+
+25. Go tilida panic nima qiladi?
+    A) Warning beradi
+    B) Dasturni to'xtatadi
+    C) Log yozadi
+    D) Debug qiladi
+    Javob: B
+
+26. Go tilida recover nima qiladi?
+    A) File tiklaydi
+    B) Panic dan tiklanadi
+    C) Memory tozalaydi
+    D) Cache yangilaydi
+    Javob: B
+
+27. Go tilida interface qanday e'lon qilinadi?
+    A) interface keyword
+    B) type keyword
+    C) class keyword
+    D) impl keyword
+    Javob: B
+
+28. Go tilida empty interface qanday yoziladi?
+    A) void
+    B) interface{}
+    C) any
+    D) object
+    Javob: B
+
+29. Go tilida string ni byte slice ga aylantirish?
+    A) string.bytes()
+    B) []byte(string)
+    C) bytes(string)
+    D) convert(string)
+    Javob: B
+
+30. Go tilida iota nima uchun ishlatiladi?
+    A) Random son
+    B) Const enumeration
+    C) Loop counter
+    D) Error code
+    Javob: B
+
+31. Go tilida nil nima?
+    A) Bo'sh string
+    B) Zero value for pointers
+    C) False
+    D) 0
+    Javob: B
+
+32. Go tilida append funksiyasi nima qiladi?
+    A) String birlashtiradi
+    B) Slice ga element qo'shadi
+    C) Map ga qo'shadi
+    D) Array yaratadi
+    Javob: B
+
+33. Go tilida copy funksiyasi nima qiladi?
+    A) File nusxalaydi
+    B) Slice nusxalaydi
+    C) String nusxalaydi
+    D) Struct nusxalaydi
+    Javob: B
+
+34. Go tilida range keyword nima uchun?
+    A) Random son
+    B) Iteration uchun
+    C) Scope yaratish
+    D) Memory allocation
+    Javob: B
+
+35. Go tilida switch da break kerakmi?
+    A) Ha, albatta
+    B) Yo'q, avtomatik
+    C) Ba'zan
+    D) Faqat default da
+    Javob: B
+
+36. Go tilida fallthrough nima qiladi?
+    A) Loop to'xtatadi
+    B) Keyingi case ga o'tadi
+    C) Funksiyadan chiqadi
+    D) Error tashlaydi
+    Javob: B
+
+37. Go tilida type assertion qanday yoziladi?
+    A) (type)value
+    B) value.(type)
+    C) type(value)
+    D) <type>value
+    Javob: B
+
+38. Go tilida method receiver qanday yoziladi?
+    A) func method(t Type)
+    B) func (t Type) method()
+    C) Type.method = func()
+    D) method(Type t)
+    Javob: B
+
+39. Go tilida embedded struct nima?
+    A) Ichki class
+    B) Composition
+    C) Inheritance
+    D) Interface
+    Javob: B
+
+40. Go tilida fmt.Println nima qiladi?
+    A) Input oladi
+    B) Yangi qator bilan chiqaradi
+    C) Error yozadi
+    D) File yozadi
+    Javob: B
+
+41. Go tilida fmt.Printf nima qiladi?
+    A) Oddiy print
+    B) Formatted print
+    C) Error print
+    D) Debug print
+    Javob: B
+
+42. Go tilida %v nima?
+    A) Verbose
+    B) Default format
+    C) Value type
+    D) Variable
+    Javob: B
+
+43. Go tilida %T nima?
+    A) Text
+    B) Type
+    C) Time
+    D) Tab
+    Javob: B
+
+44. Go tilida %d nima?
+    A) Double
+    B) Decimal integer
+    C) Date
+    D) Debug
+    Javob: B
+
+45. Go tilida os package nima uchun?
+    A) Object storage
+    B) Operating system
+    C) Output stream
+    D) Online service
+    Javob: B
+
+46. Go tilida io package nima uchun?
+    A) Integer operations
+    B) Input/Output
+    C) Internet operations
+    D) Internal ops
+    Javob: B
+
+47. Go tilida net/http package nima uchun?
+    A) Network config
+    B) HTTP server/client
+    C) Net tools
+    D) HTML parser
+    Javob: B
+
+48. Go tilida json.Marshal nima qiladi?
+    A) JSON parse
+    B) Go to JSON
+    C) Validate JSON
+    D) Format JSON
+    Javob: B
+
+49. Go tilida json.Unmarshal nima qiladi?
+    A) JSON yaratadi
+    B) JSON to Go
+    C) JSON formatlaydi
+    D) JSON validatsiya
+    Javob: B
+
+50. Go tilida init funksiya qachon chaqiriladi?
+    A) Main dan keyin
+    B) Main dan oldin
+    C) Faqat chaqirilganda
+    D) Hech qachon
+    Javob: B

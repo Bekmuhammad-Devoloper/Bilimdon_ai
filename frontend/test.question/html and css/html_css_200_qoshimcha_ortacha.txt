@@ -1,0 +1,702 @@
+HTML & CSS - QO'SHIMCHA O'RTA DARAJADAGI TEST SAVOLLARI
+=======================================================
+
+1. CSS specificity qanday hisoblanadi?
+   A) Alphabetically
+   B) Inline > ID > Class > Element
+   C) Element > Class > ID
+   D) Random
+   Javob: B
+
+2. CSS da :nth-child(2n) nima tanlaydi?
+   A) First child
+   B) Even children
+   C) Odd children
+   D) Second child
+   Javob: B
+
+3. CSS da :first-of-type nima tanlaydi?
+   A) First child
+   B) First of specific type
+   C) Last child
+   D) Only child
+   Javob: B
+
+4. CSS da ::before nima uchun?
+   A) Previous element
+   B) Pseudo content before
+   C) Before loading
+   D) Previous sibling
+   Javob: B
+
+5. CSS da ::after nima uchun?
+   A) Next element
+   B) Pseudo content after
+   C) After loading
+   D) Next sibling
+   Javob: B
+
+6. CSS da content property qayerda ishlatiladi?
+   A) Any element
+   B) ::before, ::after
+   C) Images
+   D) Inputs
+   Javob: B
+
+7. CSS da calc() function nima uchun?
+   A) Calendar
+   B) Mathematical calculations
+   C) Callback
+   D) Calibration
+   Javob: B
+
+8. CSS da var() function nima uchun?
+   A) Variable type
+   B) CSS custom properties
+   C) Variation
+   D) Validate
+   Javob: B
+
+9. CSS custom property qanday e'lon qilinadi?
+   A) $variable
+   B) --variable
+   C) @variable
+   D) #variable
+   Javob: B
+
+10. CSS da :root selector nima?
+    A) First element
+    B) Document root (html)
+    C) Body element
+    D) Parent element
+    Javob: B
+
+11. CSS da min() function nima qiladi?
+    A) Maximum value
+    B) Minimum value
+    C) Middle value
+    D) Mean value
+    Javob: B
+
+12. CSS da max() function nima qiladi?
+    A) Minimum value
+    B) Maximum value
+    C) Middle value
+    D) Mean value
+    Javob: B
+
+13. CSS da clamp() function nima uchun?
+    A) Color clamp
+    B) Value clamping (min, preferred, max)
+    C) Size clamp
+    D) Position clamp
+    Javob: B
+
+14. CSS da aspect-ratio property nima uchun?
+    A) Aspect style
+    B) Width/height ratio
+    C) Rotation
+    D) Scale
+    Javob: B
+
+15. CSS da object-position nima uchun?
+    A) Object style
+    B) Image/video position
+    C) Object color
+    D) Object size
+    Javob: B
+
+16. CSS da backdrop-filter nima uchun?
+    A) Background filter
+    B) Behind-element filter
+    C) Border filter
+    D) Button filter
+    Javob: B
+
+17. CSS da mix-blend-mode nima uchun?
+    A) Color mixing
+    B) Layer blending
+    C) Text mixing
+    D) Border mixing
+    Javob: B
+
+18. CSS da isolation property nima uchun?
+    A) Stacking context
+    B) New stacking context
+    C) Element isolation
+    D) Style isolation
+    Javob: B
+
+19. CSS da will-change nima uchun?
+    A) Future changes
+    B) Performance hint
+    C) Will modify
+    D) Change detection
+    Javob: B
+
+20. CSS da contain property nima uchun?
+    A) Container
+    B) Performance optimization
+    C) Content type
+    D) Size contain
+    Javob: B
+
+21. CSS da scroll-behavior nima uchun?
+    A) Scroll speed
+    B) Smooth scrolling
+    C) Scroll position
+    D) Scroll direction
+    Javob: B
+
+22. CSS da scroll-snap-type nima uchun?
+    A) Scroll speed
+    B) Scroll snapping
+    C) Scroll style
+    D) Scroll color
+    Javob: B
+
+23. CSS da overscroll-behavior nima uchun?
+    A) Overflow style
+    B) Scroll chaining control
+    C) Overload behavior
+    D) Over limit
+    Javob: B
+
+24. CSS Grid da auto-fit nima qiladi?
+    A) Auto size
+    B) Fit available space
+    C) Auto fill
+    D) Auto align
+    Javob: B
+
+25. CSS Grid da auto-fill nima qiladi?
+    A) Auto fit
+    B) Fill with empty columns
+    C) Auto size
+    D) Auto align
+    Javob: B
+
+26. CSS Grid da minmax() nima uchun?
+    A) Min value
+    B) Size range
+    C) Max value
+    D) Middle value
+    Javob: B
+
+27. CSS Grid da fr unit nima?
+    A) Frame
+    B) Fraction
+    C) Free
+    D) Full
+    Javob: B
+
+28. CSS Grid da grid-area nima uchun?
+    A) Grid size
+    B) Grid placement
+    C) Grid color
+    D) Grid style
+    Javob: B
+
+29. CSS Grid da grid-template-areas nima uchun?
+    A) Area size
+    B) Named grid areas
+    C) Area color
+    D) Area style
+    Javob: B
+
+30. CSS Flexbox da order property nima uchun?
+    A) Alphabetical order
+    B) Visual order
+    C) DOM order
+    D) Z order
+    Javob: B
+
+31. CSS Flexbox da flex-grow nima uchun?
+    A) Shrink factor
+    B) Grow factor
+    C) Size
+    D) Order
+    Javob: B
+
+32. CSS Flexbox da flex-shrink nima uchun?
+    A) Grow factor
+    B) Shrink factor
+    C) Size
+    D) Order
+    Javob: B
+
+33. CSS Flexbox da flex-basis nima uchun?
+    A) Basis order
+    B) Initial size
+    C) Basis color
+    D) Basis style
+    Javob: B
+
+34. CSS Flexbox da align-self nima uchun?
+    A) Align all
+    B) Individual alignment
+    C) Self style
+    D) Self color
+    Javob: B
+
+35. CSS Flexbox da align-content nima uchun?
+    A) Single line
+    B) Multi-line alignment
+    C) Content style
+    D) Content color
+    Javob: B
+
+36. CSS da @supports nima uchun?
+    A) Browser support
+    B) Feature detection
+    C) Support style
+    D) Support color
+    Javob: B
+
+37. CSS da @import nima uchun?
+    A) Image import
+    B) CSS file import
+    C) JS import
+    D) Font import
+    Javob: B
+
+38. CSS da linear-gradient qanday yoziladi?
+    A) gradient(linear)
+    B) linear-gradient()
+    C) line-gradient()
+    D) gradient-linear()
+    Javob: B
+
+39. CSS da radial-gradient nima?
+    A) Line gradient
+    B) Circle gradient
+    C) Random gradient
+    D) Repeat gradient
+    Javob: B
+
+40. CSS da conic-gradient nima?
+    A) Cone shape
+    B) Angular gradient
+    C) Color cone
+    D) Corner gradient
+    Javob: B
+
+41. HTML da data-* attributes nima uchun?
+    A) Database
+    B) Custom data storage
+    C) Data type
+    D) Data style
+    Javob: B
+
+42. HTML da contenteditable nima uchun?
+    A) Content type
+    B) Make editable
+    C) Content style
+    D) Content color
+    Javob: B
+
+43. HTML da draggable nima uchun?
+    A) Draw element
+    B) Drag-drop enable
+    C) Drag style
+    D) Drag color
+    Javob: B
+
+44. HTML da hidden attribute nima qiladi?
+    A) Semi-transparent
+    B) Completely hides
+    C) Faded
+    D) Blurred
+    Javob: B
+
+45. HTML da tabindex nima uchun?
+    A) Tab style
+    B) Tab order
+    C) Tab color
+    D) Tab size
+    Javob: B
+
+46. HTML da accesskey nima uchun?
+    A) Access style
+    B) Keyboard shortcut
+    C) Access color
+    D) Access size
+    Javob: B
+
+47. HTML da role attribute nima uchun?
+    A) User role
+    B) ARIA accessibility
+    C) Role style
+    D) Role color
+    Javob: B
+
+48. HTML da aria-label nima uchun?
+    A) Label style
+    B) Accessibility label
+    C) Label color
+    D) Label size
+    Javob: B
+
+49. HTML da aria-hidden nima qiladi?
+    A) Visual hide
+    B) Screen reader hide
+    C) Both hide
+    D) None hide
+    Javob: B
+
+50. HTML da lang attribute nima uchun?
+    A) Language style
+    B) Page language
+    C) Language color
+    D) Language size
+    Javob: B
+
+51. CSS da text-overflow nima uchun?
+    A) Text style
+    B) Overflow text handling
+    C) Text color
+    D) Text size
+    Javob: B
+
+52. CSS da text-shadow nima uchun?
+    A) Text style
+    B) Text shadow effect
+    C) Text color
+    D) Text size
+    Javob: B
+
+53. CSS da column-count nima uchun?
+    A) Count columns
+    B) Multi-column layout
+    C) Column style
+    D) Column color
+    Javob: B
+
+54. CSS da column-gap nima uchun?
+    A) Column style
+    B) Space between columns
+    C) Column color
+    D) Column size
+    Javob: B
+
+55. CSS da break-inside nima uchun?
+    A) Break style
+    B) Page/column break
+    C) Break color
+    D) Break size
+    Javob: B
+
+56. CSS da resize property nima uchun?
+    A) Size style
+    B) User resizable
+    C) Size color
+    D) Auto size
+    Javob: B
+
+57. CSS da outline nima?
+    A) Inner border
+    B) Outer border
+    C) Shadow
+    D) Margin
+    Javob: B
+
+58. CSS da outline va border farqi?
+    A) Same
+    B) Outline doesn't affect layout
+    C) Border is outer
+    D) Outline is inner
+    Javob: B
+
+59. CSS da visibility: hidden vs display: none?
+    A) Same
+    B) Visibility keeps space
+    C) Display keeps space
+    D) Both remove space
+    Javob: B
+
+60. CSS da inset property nima?
+    A) Inside margin
+    B) Shorthand for top/right/bottom/left
+    C) Inside border
+    D) Inside padding
+    Javob: B
+
+61. HTML da picture element nima uchun?
+    A) Photo style
+    B) Responsive images
+    C) Photo color
+    D) Photo size
+    Javob: B
+
+62. HTML da source element nima uchun?
+    A) Source code
+    B) Media source
+    C) Source style
+    D) Source color
+    Javob: B
+
+63. HTML da srcset attribute nima uchun?
+    A) Source setting
+    B) Responsive image sources
+    C) Source style
+    D) Source color
+    Javob: B
+
+64. HTML da sizes attribute nima uchun?
+    A) Size style
+    B) Image size hints
+    C) Size color
+    D) Size type
+    Javob: B
+
+65. CSS da image-rendering nima uchun?
+    A) Image style
+    B) Image quality
+    C) Image color
+    D) Image size
+    Javob: B
+
+66. CSS da font-display nima uchun?
+    A) Font style
+    B) Font loading behavior
+    C) Font color
+    D) Font size
+    Javob: B
+
+67. CSS da font-variant nima uchun?
+    A) Font type
+    B) Font variations
+    C) Font color
+    D) Font size
+    Javob: B
+
+68. CSS da font-feature-settings nima uchun?
+    A) Font style
+    B) OpenType features
+    C) Font color
+    D) Font size
+    Javob: B
+
+69. CSS da writing-mode nima uchun?
+    A) Write style
+    B) Text direction
+    C) Write color
+    D) Write size
+    Javob: B
+
+70. CSS da direction property nima uchun?
+    A) Arrow direction
+    B) Text direction (ltr/rtl)
+    C) Direction color
+    D) Direction size
+    Javob: B
+
+71. HTML da template element nima uchun?
+    A) Style template
+    B) Hidden content template
+    C) Template color
+    D) Template size
+    Javob: B
+
+72. HTML da slot element nima uchun?
+    A) Slot machine
+    B) Web components slot
+    C) Slot style
+    D) Slot color
+    Javob: B
+
+73. CSS da :host selector nima?
+    A) Host machine
+    B) Shadow DOM host
+    C) Host style
+    D) Host color
+    Javob: B
+
+74. CSS da ::slotted() nima?
+    A) Slotted style
+    B) Slotted elements selector
+    C) Slot color
+    D) Slot size
+    Javob: B
+
+75. CSS da :focus-visible nima?
+    A) Focus always
+    B) Keyboard focus only
+    C) Mouse focus
+    D) Touch focus
+    Javob: B
+
+76. CSS da :focus-within nima?
+    A) Focus self
+    B) Focus inside element
+    C) Focus outside
+    D) Focus around
+    Javob: B
+
+77. CSS da :is() selector nima?
+    A) Is type
+    B) Matches any selector
+    C) Is style
+    D) Is color
+    Javob: B
+
+78. CSS da :where() selector nima?
+    A) Where location
+    B) Zero specificity :is()
+    C) Where style
+    D) Where color
+    Javob: B
+
+79. CSS da :has() selector nima?
+    A) Has value
+    B) Parent selector
+    C) Has style
+    D) Has color
+    Javob: B
+
+80. CSS da :not() selector nima?
+    A) Not value
+    B) Negation selector
+    C) Not style
+    D) Not color
+    Javob: B
+
+81. HTML da details element nima uchun?
+    A) Detail style
+    B) Collapsible content
+    C) Detail color
+    D) Detail size
+    Javob: B
+
+82. HTML da summary element nima uchun?
+    A) Summary style
+    B) Details heading
+    C) Summary color
+    D) Summary size
+    Javob: B
+
+83. HTML da dialog element nima uchun?
+    A) Dialog style
+    B) Modal/dialog box
+    C) Dialog color
+    D) Dialog size
+    Javob: B
+
+84. HTML da meter element nima uchun?
+    A) Meter style
+    B) Gauge display
+    C) Meter color
+    D) Meter size
+    Javob: B
+
+85. HTML da progress element nima uchun?
+    A) Progress style
+    B) Progress bar
+    C) Progress color
+    D) Progress size
+    Javob: B
+
+86. CSS da accent-color nima uchun?
+    A) Accent style
+    B) Form control color
+    C) Accent size
+    D) Accent type
+    Javob: B
+
+87. CSS da appearance nima uchun?
+    A) Appear style
+    B) Native appearance control
+    C) Appear color
+    D) Appear size
+    Javob: B
+
+88. CSS da caret-color nima uchun?
+    A) Caret style
+    B) Text cursor color
+    C) Caret size
+    D) Caret type
+    Javob: B
+
+89. CSS da touch-action nima uchun?
+    A) Touch style
+    B) Touch behavior control
+    C) Touch color
+    D) Touch size
+    Javob: B
+
+90. CSS da place-items nima?
+    A) Place style
+    B) Shorthand for align/justify-items
+    C) Place color
+    D) Place size
+    Javob: B
+
+91. CSS da place-content nima?
+    A) Content style
+    B) Shorthand for align/justify-content
+    C) Content color
+    D) Content size
+    Javob: B
+
+92. CSS da place-self nima?
+    A) Self style
+    B) Shorthand for align/justify-self
+    C) Self color
+    D) Self size
+    Javob: B
+
+93. CSS da gap property Grid va Flexbox da?
+    A) Only Grid
+    B) Both Grid and Flexbox
+    C) Only Flexbox
+    D) Neither
+    Javob: B
+
+94. CSS da row-gap nima uchun?
+    A) Row style
+    B) Row spacing
+    C) Row color
+    D) Row size
+    Javob: B
+
+95. CSS da column-gap (flex/grid) nima uchun?
+    A) Column style
+    B) Column spacing
+    C) Column color
+    D) Column size
+    Javob: B
+
+96. HTML da loading="lazy" nima uchun?
+    A) Loading style
+    B) Lazy loading images
+    C) Loading color
+    D) Loading size
+    Javob: B
+
+97. HTML da decoding attribute nima uchun?
+    A) Decode style
+    B) Image decoding hint
+    C) Decode color
+    D) Decode size
+    Javob: B
+
+98. HTML da fetchpriority nima uchun?
+    A) Fetch style
+    B) Resource priority
+    C) Fetch color
+    D) Fetch size
+    Javob: B
+
+99. CSS da content-visibility nima uchun?
+    A) Content style
+    B) Rendering optimization
+    C) Content color
+    D) Content size
+    Javob: B
+
+100. CSS da container queries nima uchun?
+     A) Container style
+     B) Element-based responsive
+     C) Container color
+     D) Container size
+     Javob: B

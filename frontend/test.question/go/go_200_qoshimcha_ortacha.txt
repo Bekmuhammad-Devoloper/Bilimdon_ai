@@ -1,0 +1,352 @@
+GO - QO'SHIMCHA O'RTA DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. Go tilida context package nima uchun ishlatiladi?
+   A) UI context
+   B) Cancellation va timeout
+   C) Database context
+   D) File context
+   Javob: B
+
+2. Go tilida sync.Mutex nima uchun?
+   A) File sync
+   B) Thread safety
+   C) Network sync
+   D) Time sync
+   Javob: B
+
+3. Go tilida sync.WaitGroup nima uchun?
+   A) Queue yaratish
+   B) Goroutine kutish
+   C) File wait
+   D) Network wait
+   Javob: B
+
+4. Go tilida select statement nima uchun?
+   A) Database select
+   B) Channel multiplexing
+   C) File select
+   D) Option select
+   Javob: B
+
+5. Go tilida buffered channel qanday yaratiladi?
+   A) make(chan int)
+   B) make(chan int, size)
+   C) buffer(chan int)
+   D) chan[size] int
+   Javob: B
+
+6. Go tilida unbuffered channel qanday ishlaydi?
+   A) Async
+   B) Synchronous blocking
+   C) Parallel
+   D) Queue
+   Javob: B
+
+7. Go tilida close(channel) nima qiladi?
+   A) Delete qiladi
+   B) Sending ni to'xtatadi
+   C) Reading ni to'xtatadi
+   D) Memory tozalaydi
+   Javob: B
+
+8. Go tilida channel dan ok value nima bildiradi?
+   A) Error yo'q
+   B) Channel ochiqmi
+   C) Value valid
+   D) Buffer to'la
+   Javob: B
+
+9. Go tilida time.Sleep argumenti qaysi tipda?
+   A) int
+   B) time.Duration
+   C) float64
+   D) string
+   Javob: B
+
+10. Go tilida time.Now() nima qaytaradi?
+    A) Unix timestamp
+    B) time.Time
+    C) String
+    D) Int64
+    Javob: B
+
+11. Go tilida http.HandleFunc nima qiladi?
+    A) HTTP client yaratadi
+    B) Route handler qo'shadi
+    C) Server yaratadi
+    D) Request yuboradi
+    Javob: B
+
+12. Go tilida http.ListenAndServe nima qiladi?
+    A) Port tekshiradi
+    B) HTTP server ishga tushiradi
+    C) Request kutadi
+    D) Response yuboradi
+    Javob: B
+
+13. Go tilida http.Request.Method nima?
+    A) Function name
+    B) HTTP method (GET, POST...)
+    C) Handler method
+    D) Server method
+    Javob: B
+
+14. Go tilida http.ResponseWriter nima uchun?
+    A) Log yozish
+    B) Response yozish
+    C) File yozish
+    D) Error yozish
+    Javob: B
+
+15. Go tilida ioutil.ReadAll nima qiladi?
+    A) Directory o'qiydi
+    B) Reader dan hamma data o'qiydi
+    C) File info oladi
+    D) Config o'qiydi
+    Javob: B
+
+16. Go tilida os.Open nima qaytaradi?
+    A) String content
+    B) *os.File
+    C) []byte
+    D) io.Reader
+    Javob: B
+
+17. Go tilida defer file.Close() nima uchun kerak?
+    A) Performance
+    B) Resource cleanup
+    C) Error handling
+    D) Logging
+    Javob: B
+
+18. Go tilida bufio.Scanner nima uchun?
+    A) Port scanning
+    B) Line by line reading
+    C) Network scanning
+    D) Security scanning
+    Javob: B
+
+19. Go tilida strings.Split nima qiladi?
+    A) String birlashtiradi
+    B) String bo'ladi
+    C) String qidiradi
+    D) String almashtiradi
+    Javob: B
+
+20. Go tilida strings.Join nima qiladi?
+    A) String bo'ladi
+    B) Slice ni string qiladi
+    C) String qidiradi
+    D) String compare
+    Javob: B
+
+21. Go tilida strconv.Atoi nima qiladi?
+    A) Int to string
+    B) String to int
+    C) Float to int
+    D) Byte to int
+    Javob: B
+
+22. Go tilida strconv.Itoa nima qiladi?
+    A) String to int
+    B) Int to string
+    C) Float to string
+    D) Byte to string
+    Javob: B
+
+23. Go tilida regexp.MustCompile nima qiladi?
+    A) Code compile
+    B) Regex pattern compile
+    C) Template compile
+    D) Query compile
+    Javob: B
+
+24. Go tilida errors.New nima qiladi?
+    A) Error handle
+    B) Yangi error yaratadi
+    C) Error log
+    D) Error check
+    Javob: B
+
+25. Go tilida fmt.Errorf nima qiladi?
+    A) Error print
+    B) Formatted error yaratadi
+    C) Error log
+    D) Error catch
+    Javob: B
+
+26. Go tilida error wrapping qanday qilinadi?
+    A) wrap(err)
+    B) fmt.Errorf("%w", err)
+    C) errors.Wrap(err)
+    D) err.Wrap()
+    Javob: B
+
+27. Go tilida errors.Is nima uchun?
+    A) Error yaratish
+    B) Error compare
+    C) Error log
+    D) Error format
+    Javob: B
+
+28. Go tilida errors.As nima uchun?
+    A) Error convert
+    B) Error type assertion
+    C) Error create
+    D) Error log
+    Javob: B
+
+29. Go tilida testing package qanday import qilinadi?
+    A) import "test"
+    B) import "testing"
+    C) import "unittest"
+    D) import "gotest"
+    Javob: B
+
+30. Go tilida test function nomi qanday bo'lishi kerak?
+    A) test_Name
+    B) TestName
+    C) name_test
+    D) Test_name
+    Javob: B
+
+31. Go tilida t.Error nima qiladi?
+    A) Test o'tkazadi
+    B) Test fail qiladi lekin davom etadi
+    C) Test to'xtatadi
+    D) Test skip qiladi
+    Javob: B
+
+32. Go tilida t.Fatal nima qiladi?
+    A) Warning beradi
+    B) Test fail va to'xtatadi
+    C) Test pass
+    D) Test skip
+    Javob: B
+
+33. Go tilida benchmark function nomi qanday?
+    A) Bench_Name
+    B) BenchmarkName
+    C) benchmark_Name
+    D) Benchmark_name
+    Javob: B
+
+34. Go tilida go test -v nima qiladi?
+    A) Version ko'rsatadi
+    B) Verbose output
+    C) Validate tests
+    D) Virtual run
+    Javob: B
+
+35. Go tilida go test -cover nima qiladi?
+    A) Cover page
+    B) Code coverage
+    C) Test cover
+    D) File cover
+    Javob: B
+
+36. Go tilida go mod init nima qiladi?
+    A) Git init
+    B) Module yaratadi
+    C) Project init
+    D) Package init
+    Javob: B
+
+37. Go tilida go.mod file nima uchun?
+    A) Config file
+    B) Module dependencies
+    C) Build file
+    D) Test file
+    Javob: B
+
+38. Go tilida go get nima qiladi?
+    A) HTTP get
+    B) Package download
+    C) File get
+    D) Data get
+    Javob: B
+
+39. Go tilida go build nima qiladi?
+    A) Project clean
+    B) Binary compile
+    C) Test run
+    D) Doc generate
+    Javob: B
+
+40. Go tilida go run nima qiladi?
+    A) Test run
+    B) Compile va run
+    C) Build only
+    D) Deploy
+    Javob: B
+
+41. Go tilida go fmt nima qiladi?
+    A) Print format
+    B) Code format
+    C) File format
+    D) Output format
+    Javob: B
+
+42. Go tilida go vet nima qiladi?
+    A) Version check
+    B) Code analyze
+    C) Test run
+    D) Build check
+    Javob: B
+
+43. Go tilida race condition qanday tekshiriladi?
+    A) go test -v
+    B) go run -race
+    C) go check -race
+    D) go analyze
+    Javob: B
+
+44. Go tilida //go:generate nima?
+    A) Comment
+    B) Code generation directive
+    C) Import
+    D) Build tag
+    Javob: B
+
+45. Go tilida build tags qanday yoziladi?
+    A) #build tag
+    B) //go:build tag
+    C) @build tag
+    D) !build tag
+    Javob: B
+
+46. Go tilida private function qanday yoziladi?
+    A) private func
+    B) lowercase boshlanadi
+    C) _ bilan boshlanadi
+    D) func _private
+    Javob: B
+
+47. Go tilida public function qanday yoziladi?
+    A) public func
+    B) Uppercase boshlanadi
+    C) export func
+    D) @public
+    Javob: B
+
+48. Go tilida blank identifier qaysi?
+    A) null
+    B) _
+    C) void
+    D) nil
+    Javob: B
+
+49. Go tilida type alias qanday yoziladi?
+    A) typedef
+    B) type NewType = OldType
+    C) alias NewType OldType
+    D) define NewType OldType
+    Javob: B
+
+50. Go tilida type definition qanday yoziladi?
+    A) typedef
+    B) type NewType OldType
+    C) define NewType OldType
+    D) new type NewType
+    Javob: B

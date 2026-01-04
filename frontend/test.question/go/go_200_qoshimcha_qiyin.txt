@@ -1,0 +1,352 @@
+GO - QO'SHIMCHA QIYIN DARAJADAGI TEST SAVOLLARI
+================================================
+
+1. Go tilida memory escape analysis qanday tekshiriladi?
+   A) go analyze
+   B) go build -gcflags="-m"
+   C) go check -memory
+   D) go vet -escape
+   Javob: B
+
+2. Go tilida sync.Pool nima uchun ishlatiladi?
+   A) Thread pool
+   B) Object reuse
+   C) Connection pool
+   D) Worker pool
+   Javob: B
+
+3. Go tilida atomic operations qaysi packageda?
+   A) sync
+   B) sync/atomic
+   C) runtime
+   D) unsafe
+   Javob: B
+
+4. Go tilida sync.Once nima kafolat beradi?
+   A) Once per goroutine
+   B) Once per program
+   C) Once per function
+   D) Once per package
+   Javob: B
+
+5. Go tilida sync.RWMutex qachon ishlatiladi?
+   A) Only write
+   B) Read-heavy workloads
+   C) Only read
+   D) No concurrency
+   Javob: B
+
+6. Go tilida unsafe.Pointer nima uchun?
+   A) Safe memory
+   B) Type system bypass
+   C) Pointer validation
+   D) Memory safety
+   Javob: B
+
+7. Go tilida reflect package nima uchun?
+   A) Mirror effect
+   B) Runtime type inspection
+   C) Debug mode
+   D) Compile check
+   Javob: B
+
+8. Go tilida reflect.TypeOf nima qaytaradi?
+   A) String
+   B) reflect.Type
+   C) Interface
+   D) Struct
+   Javob: B
+
+9. Go tilida reflect.ValueOf nima qaytaradi?
+   A) Any
+   B) reflect.Value
+   C) Interface
+   D) Pointer
+   Javob: B
+
+10. Go tilida cgo nima?
+    A) Go compiler
+    B) C code integration
+    C) Go optimizer
+    D) Code generator
+    Javob: B
+
+11. Go tilida //export directive nima uchun?
+    A) Package export
+    B) C ga function export
+    C) Variable export
+    D) Type export
+    Javob: B
+
+12. Go tilida runtime.GOMAXPROCS nima?
+    A) Max goroutines
+    B) Max OS threads
+    C) Max memory
+    D) Max files
+    Javob: B
+
+13. Go tilida runtime.NumGoroutine nima qaytaradi?
+    A) Max goroutines
+    B) Active goroutines soni
+    C) CPU cores
+    D) Thread count
+    Javob: B
+
+14. Go tilida runtime.GC() nima qiladi?
+    A) Get config
+    B) Force garbage collection
+    C) Generate code
+    D) Get count
+    Javob: B
+
+15. Go tilida pprof nima uchun?
+    A) Pretty print
+    B) Profiling
+    C) Preprocessing
+    D) Protocol buffer
+    Javob: B
+
+16. Go tilida CPU profiling qanday yoqiladi?
+    A) runtime.CPUProfile()
+    B) pprof.StartCPUProfile()
+    C) profile.CPU()
+    D) debug.CPU()
+    Javob: B
+
+17. Go tilida heap profiling qanday qilinadi?
+    A) runtime.HeapProfile()
+    B) pprof.WriteHeapProfile()
+    C) memory.Heap()
+    D) debug.Heap()
+    Javob: B
+
+18. Go tilida race detector runtime overhead qancha?
+    A) 1x
+    B) 5-10x
+    C) 100x
+    D) Yo'q
+    Javob: B
+
+19. Go tilida interface satisfaction compile-time yoki runtime?
+    A) Runtime only
+    B) Compile-time
+    C) Both
+    D) Never checked
+    Javob: B
+
+20. Go tilida embedding vs inheritance farqi?
+    A) Same
+    B) Composition vs inheritance
+    C) No difference
+    D) Syntax only
+    Javob: B
+
+21. Go tilida method set qaysi tiplarga tegishli?
+    A) Only structs
+    B) Any type except pointer
+    C) Only interfaces
+    D) Only primitives
+    Javob: B
+
+22. Go tilida value receiver vs pointer receiver farqi?
+    A) No difference
+    B) Copy vs reference
+    C) Speed only
+    D) Syntax only
+    Javob: B
+
+23. Go tilida nil interface value qachon nil?
+    A) Always
+    B) Type va value nil bo'lganda
+    C) Never
+    D) Value nil bo'lganda
+    Javob: B
+
+24. Go tilida stack vs heap allocation qayerda?
+    A) Always stack
+    B) Escape analysis decides
+    C) Always heap
+    D) Programmer decides
+    Javob: B
+
+25. Go tilida slice capacity grow factor qancha?
+    A) 1x
+    B) ~2x (1.25 for large)
+    C) 3x
+    D) 10x
+    Javob: B
+
+26. Go tilida map iteration order qanday?
+    A) Insertion order
+    B) Random
+    C) Sorted
+    D) Reverse
+    Javob: B
+
+27. Go tilida string immutable yoki mutable?
+    A) Mutable
+    B) Immutable
+    C) Both
+    D) Depends
+    Javob: B
+
+28. Go tilida slice backing array nima?
+    A) Copy of data
+    B) Shared underlying array
+    C) Separate memory
+    D) Stack data
+    Javob: B
+
+29. Go tilida goroutine stack size default qancha?
+    A) 1MB
+    B) 2KB
+    C) 8KB
+    D) 64KB
+    Javob: B
+
+30. Go tilida goroutine scheduling model qaysi?
+    A) 1:1
+    B) M:N
+    C) N:1
+    D) Preemptive only
+    Javob: B
+
+31. Go tilida channel zero value nima?
+    A) Empty channel
+    B) nil
+    C) Closed channel
+    D) Buffered
+    Javob: B
+
+32. Go tilida nil channel ga send nima bo'ladi?
+    A) Error
+    B) Block forever
+    C) Panic
+    D) Returns
+    Javob: B
+
+33. Go tilida closed channel dan receive nima qaytaradi?
+    A) Error
+    B) Zero value
+    C) Panic
+    D) Block
+    Javob: B
+
+34. Go tilida closed channel ga send nima bo'ladi?
+    A) Block
+    B) Panic
+    C) Error return
+    D) Ignored
+    Javob: B
+
+35. Go tilida context.WithCancel nima qaytaradi?
+    A) Only context
+    B) Context va cancel function
+    C) Error
+    D) Channel
+    Javob: B
+
+36. Go tilida context.WithTimeout nima qiladi?
+    A) Infinite wait
+    B) Auto cancel after timeout
+    C) Error after timeout
+    D) Panic after timeout
+    Javob: B
+
+37. Go tilida context.Background() qachon ishlatiladi?
+    A) Never
+    B) Top-level/main
+    C) Always
+    D) Only tests
+    Javob: B
+
+38. Go tilida context.TODO() qachon ishlatiladi?
+    A) Production
+    B) Unclear context case
+    C) Always
+    D) Never
+    Javob: B
+
+39. Go tilida binary size qanday kichiklashtriladi?
+    A) Compression
+    B) -ldflags="-s -w"
+    C) Optimization
+    D) Strip
+    Javob: B
+
+40. Go tilida cross-compilation qanday qilinadi?
+    A) Special compiler
+    B) GOOS/GOARCH env vars
+    C) Build flags
+    D) Docker
+    Javob: B
+
+41. Go tilida vendoring nima?
+    A) Selling
+    B) Dependencies local copy
+    C) Version control
+    D) Package hosting
+    Javob: B
+
+42. Go tilida go.sum file nima uchun?
+    A) Summary
+    B) Checksum verification
+    C) Size info
+    D) Stats
+    Javob: B
+
+43. Go tilida interface pollution nima?
+    A) Memory leak
+    B) Too many interfaces
+    C) Nil interface
+    D) Type error
+    Javob: B
+
+44. Go tilida accept interfaces, return structs nima?
+    A) Random advice
+    B) Design principle
+    C) Syntax rule
+    D) Compiler requirement
+    Javob: B
+
+45. Go tilida functional options pattern nima uchun?
+    A) FP style
+    B) Flexible configuration
+    C) Performance
+    D) Testing
+    Javob: B
+
+46. Go tilida table-driven tests nima?
+    A) Database tests
+    B) Parameterized tests
+    C) UI tests
+    D) Integration tests
+    Javob: B
+
+47. Go tilida t.Parallel() nima qiladi?
+    A) Parallel print
+    B) Parallel test execution
+    C) Parallel build
+    D) Parallel compile
+    Javob: B
+
+48. Go tilida testify package nima uchun?
+    A) Documentation
+    B) Test assertions
+    C) Benchmarking
+    D) Profiling
+    Javob: B
+
+49. Go tilida mock vs stub farqi?
+    A) Same
+    B) Mock verifies, stub returns
+    C) Stub verifies
+    D) No difference
+    Javob: B
+
+50. Go tilida dependency injection qanday qilinadi?
+    A) Annotations
+    B) Constructor/function params
+    C) Global variables
+    D) Reflection only
+    Javob: B
