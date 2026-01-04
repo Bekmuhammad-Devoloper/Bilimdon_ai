@@ -158,9 +158,10 @@ export class TelegramService {
     const telegramUser = validated.user;
     
     // Get profile photo from Telegram API
-    let avatarUrl = telegramUser.photo_url;
+    let avatarUrl: string | undefined = telegramUser.photo_url;
     if (!avatarUrl) {
-      avatarUrl = await this.getTelegramProfilePhoto(telegramUser.id);
+      const tgPhoto = await this.getTelegramProfilePhoto(telegramUser.id);
+      avatarUrl = tgPhoto || undefined;
     }
     
     // Find or create user
