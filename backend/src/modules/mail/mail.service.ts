@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+﻿import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import * as nodemailer from 'nodemailer';
 
@@ -58,12 +58,21 @@ export class MailService {
           <tr>
             <td style="text-align: center; padding-bottom: 30px;">
               <div style="display: inline-block; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 20px; padding: 15px 30px;">
-                <h1 style="margin: 0; font-size: 32px; font-weight: 800; color: #ffffff; letter-spacing: -1px;">
-                  &#127891; Bilimdon
-                </h1>
-                <p style="margin: 5px 0 0 0; font-size: 12px; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 2px;">
-                  BILIM PLATFORMASI
-                </p>
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                  <tr>
+                    <td style="vertical-align: middle; padding-right: 12px;">
+                      <img src="https://bilimdon-ai.uz/logo.png" alt="Bilimdon" width="45" height="45" style="display: block; border-radius: 10px;" />
+                    </td>
+                    <td style="vertical-align: middle;">
+                      <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #ffffff; letter-spacing: -1px;">
+                        Bilimdon
+                      </h1>
+                      <p style="margin: 3px 0 0 0; font-size: 10px; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 2px;">
+                        BILIM PLATFORMASI
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </div>
             </td>
           </tr>
@@ -139,7 +148,7 @@ export class MailService {
       <!-- Icon -->
       <div style="text-align: center; margin-bottom: 30px;">
         <div style="display: inline-block; width: 80px; height: 80px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 20px; line-height: 80px; box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.4);">
-          <span style="font-size: 40px;">??</span>
+          <span style="font-size: 40px;">&#9989;</span>
         </div>
       </div>
 
@@ -164,14 +173,14 @@ export class MailService {
       <!-- Timer Warning -->
       <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; margin-bottom: 25px;">
         <p style="margin: 0; font-size: 14px; color: #92400e;">
-          ?? <strong>Diqqat!</strong> Bu kod <strong>10 daqiqa</strong> ichida amal qiladi
+          &#9888; <strong>Diqqat!</strong> Bu kod <strong>10 daqiqa</strong> ichida amal qiladi
         </p>
       </div>
 
       <!-- Security Notice -->
       <div style="text-align: center; padding: 15px 20px; background: #f9fafb; border-radius: 12px; border: 1px solid #e5e7eb;">
         <p style="margin: 0; font-size: 13px; color: #6b7280; line-height: 1.5;">
-          ?? Agar siz ro'yxatdan o'tmagan bo'lsangiz, bu xabarni e'tiborsiz qoldiring
+          &#128274; Agar siz ro'yxatdan o'tmagan bo'lsangiz, bu xabarni e'tiborsiz qoldiring
         </p>
       </div>
     `;
@@ -179,7 +188,7 @@ export class MailService {
     const mailOptions = {
       from: 'Bilimdon Platform <' + smtpUser + '>',
       to: email,
-      subject: '?? Email Tasdiqlash Kodi - Bilimdon',
+      subject: '&#9989; Email Tasdiqlash Kodi - Bilimdon',
       html: this.getEmailWrapper(content, 'Bu avtomatik xabar. Iltimos, javob bermang.'),
     };
 
@@ -200,7 +209,7 @@ export class MailService {
       <!-- Icon -->
       <div style="text-align: center; margin-bottom: 30px;">
         <div style="display: inline-block; width: 100px; height: 100px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; line-height: 100px; box-shadow: 0 15px 35px -5px rgba(102, 126, 234, 0.4);">
-          <span style="font-size: 50px;">??</span>
+          <span style="font-size: 50px;">&#127881;</span>
         </div>
       </div>
 
@@ -210,7 +219,7 @@ export class MailService {
       </h2>
       
       <p style="margin: 0 0 30px 0; font-size: 20px; color: #374151; text-align: center; font-weight: 600;">
-        Salom, ${fullName}! ??
+        Salom, ${fullName}! &#128075;
       </p>
 
       <p style="margin: 0 0 35px 0; font-size: 16px; color: #6b7280; text-align: center; line-height: 1.8;">
@@ -226,7 +235,7 @@ export class MailService {
               <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                 <tr>
                   <td style="width: 45px; vertical-align: top;">
-                    <span style="font-size: 24px;">??</span>
+                    <span style="font-size: 24px;">&#9989;</span>
                   </td>
                   <td>
                     <p style="margin: 0; font-size: 15px; color: #166534; font-weight: 600;">1000+ Savollar</p>
@@ -242,7 +251,7 @@ export class MailService {
               <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                 <tr>
                   <td style="width: 45px; vertical-align: top;">
-                    <span style="font-size: 24px;">??</span>
+                    <span style="font-size: 24px;">&#9989;</span>
                   </td>
                   <td>
                     <p style="margin: 0; font-size: 15px; color: #1e40af; font-weight: 600;">Reyting tizimi</p>
@@ -258,7 +267,7 @@ export class MailService {
               <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                 <tr>
                   <td style="width: 45px; vertical-align: top;">
-                    <span style="font-size: 24px;">??</span>
+                    <span style="font-size: 24px;">&#9989;</span>
                   </td>
                   <td>
                     <p style="margin: 0; font-size: 15px; color: #86198f; font-weight: 600;">Yutuqlar va mukofotlar</p>
@@ -274,7 +283,7 @@ export class MailService {
       <!-- CTA Button -->
       <div style="text-align: center;">
         <a href="https://bilimdon-ai.uz" style="display: inline-block; padding: 16px 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; text-decoration: none; border-radius: 14px; font-size: 16px; font-weight: 700; box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.5); letter-spacing: 0.5px;">
-          ?? Platformaga kirish
+          &#128640; Platformaga kirish
         </a>
       </div>
     `;
@@ -282,7 +291,7 @@ export class MailService {
     const mailOptions = {
       from: 'Bilimdon Platform <' + smtpUser + '>',
       to: email,
-      subject: '?? Xush kelibsiz, ' + fullName + '! - Bilimdon',
+      subject: '&#127881; Xush kelibsiz, ' + fullName + '! - Bilimdon',
       html: this.getEmailWrapper(content),
     };
 
@@ -309,7 +318,7 @@ export class MailService {
       <!-- Icon -->
       <div style="text-align: center; margin-bottom: 30px;">
         <div style="display: inline-block; width: 80px; height: 80px; background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-radius: 20px; line-height: 80px; border: 2px solid #fecaca;">
-          <span style="font-size: 40px;">??</span>
+          <span style="font-size: 40px;">&#128274;</span>
         </div>
       </div>
 
@@ -319,7 +328,7 @@ export class MailService {
       </h2>
       
       <p style="margin: 0 0 10px 0; font-size: 18px; color: #374151; text-align: center;">
-        Salom, <strong>${fullName}</strong>! ??
+        Salom, <strong>${fullName}</strong>! &#128075;
       </p>
 
       <p style="margin: 0 0 35px 0; font-size: 16px; color: #6b7280; text-align: center; line-height: 1.6;">
@@ -345,7 +354,7 @@ export class MailService {
       <!-- Security Notice -->
       <div style="text-align: center; padding: 20px; background: #fffbeb; border-radius: 12px; border: 1px solid #fde68a;">
         <p style="margin: 0 0 10px 0; font-size: 14px; color: #92400e; font-weight: 600;">
-          ?? Xavfsizlik haqida
+          &#128274; Xavfsizlik haqida
         </p>
         <p style="margin: 0; font-size: 13px; color: #a16207; line-height: 1.5;">
           Agar siz parolni tiklamagan bo'lsangiz, bu xabarni e'tiborsiz qoldiring. 
@@ -357,7 +366,7 @@ export class MailService {
     const mailOptions = {
       from: 'Bilimdon Platform <' + smtpUser + '>',
       to: email,
-      subject: '?? Parolni Tiklash Kodi - Bilimdon',
+      subject: '&#128274; Parolni Tiklash Kodi - Bilimdon',
       html: this.getEmailWrapper(content, 'Bu avtomatik xabar. Iltimos, javob bermang.'),
     };
 
@@ -379,7 +388,7 @@ export class MailService {
       <!-- Icon -->
       <div style="text-align: center; margin-bottom: 30px;">
         <div style="display: inline-block; width: 80px; height: 80px; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); border-radius: 20px; line-height: 80px; box-shadow: 0 10px 30px -5px rgba(139, 92, 246, 0.4);">
-          <span style="font-size: 40px;">??</span>
+          <span style="font-size: 40px;">&#128274;</span>
         </div>
       </div>
 
@@ -390,7 +399,7 @@ export class MailService {
       
       ${fullName ? `
       <p style="margin: 0 0 25px 0; font-size: 16px; color: #6b7280; text-align: center;">
-        Salom, <strong style="color: #8b5cf6;">${fullName}</strong>! ??
+        Salom, <strong style="color: #8b5cf6;">${fullName}</strong>! &#128075;
       </p>
       ` : ''}
 
@@ -404,7 +413,7 @@ export class MailService {
       <!-- CTA Button -->
       <div style="text-align: center;">
         <a href="https://bilimdon-ai.uz" style="display: inline-block; padding: 14px 35px; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: #ffffff; text-decoration: none; border-radius: 12px; font-size: 15px; font-weight: 600; box-shadow: 0 8px 20px -5px rgba(139, 92, 246, 0.4);">
-          ?? Ilovaga o'tish
+          &#128640; Ilovaga o'tish
         </a>
       </div>
     `;
@@ -433,9 +442,9 @@ export class MailService {
     const content = `
       <!-- Confetti Effect Header -->
       <div style="text-align: center; margin-bottom: 20px;">
-        <span style="font-size: 40px;">??</span>
-        <span style="font-size: 50px;">??</span>
-        <span style="font-size: 40px;">??</span>
+        <span style="font-size: 40px;">&#128274;</span>
+        <span style="font-size: 50px;">&#127881;</span>
+        <span style="font-size: 40px;">&#128274;</span>
       </div>
 
       <!-- Title -->
@@ -633,7 +642,7 @@ export class MailService {
       <!-- Warning Box -->
       <div style="padding: 25px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 20px; margin-bottom: 25px; border: 2px solid #f59e0b;">
         <h3 style="margin: 0 0 15px 0; font-size: 18px; color: #92400e; text-align: center;">
-          ?? Xavfsizlik eslatmasi
+          &#128274; Xavfsizlik eslatmasi
         </h3>
         <p style="margin: 0; font-size: 15px; color: #78350f; text-align: center; line-height: 1.6;">
           Agar bu siz bo'lsangiz, quyidagi tugmani bosib profilingizga kiring. 
