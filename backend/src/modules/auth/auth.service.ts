@@ -319,9 +319,6 @@ export class AuthService {
   async forgotPassword(email: string) {
     console.log('🔍 forgotPassword called with email:', email);
     
-    // Faqat admin emailiga parol tiklash ruxsat beriladi
-    const ADMIN_EMAIL = 'khamidovonline@gmail.com';
-    
     // Find user by email
     const user = await this.prisma.user.findUnique({
       where: { email },
@@ -347,28 +344,7 @@ export class AuthService {
       return response;
     }
 
-    // 2. Agar user bazada bor, lekin admin email emas - ogohlantirish yuborish va xato xabar
-    if (email.toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
-      console.log('⚠️ Other registered user tried to reset password:', email);
-      
-      // Ogohlantirish emailini yuborish
-      try {
-        await this.mailService.sendLoginAttemptWarning(email, user.fullName);
-        console.log('✅ Login attempt warning sent to:', email);
-      } catch (error) {
-        console.error('❌ Login attempt warning yuborishda xatolik:', error);
-      }
-      
-      const response = { 
-        message: 'Siz noto\'g\'ri email kiritdingiz. Iltimos, o\'zingizning emailingizni kiriting.',
-        type: 'wrong-email',
-        registered: true 
-      };
-      console.log('📤 Returning response:', response);
-      return response;
-    }
-
-    // 3. Admin email - parol tiklash kodi yuborish
+    // 2. User bazada bor - parol tiklash kodi yuborish
     // Generate reset token (6 ta raqam)
     const resetCode = Math.floor(100000 + Math.random() * 900000).toString();
     const expiresAt = new Date(Date.now() + 15 * 60 * 1000); // 15 daqiqa
