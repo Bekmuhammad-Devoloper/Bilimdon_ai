@@ -80,8 +80,11 @@ export function useAuth() {
           try {
             const { data } = await authApi.telegramAuth(initData);
             login(data.user, data.token);
-          } catch (error) {
+            toast.success('✅ Telegram orqali kirdingiz!');
+          } catch (error: any) {
             console.error('Telegram auth error:', error);
+            const errorMessage = error.response?.data?.message || 'Telegram orqali kirishda xatolik';
+            toast.error(`🚫 ${errorMessage}`);
           }
         }
       } else if (token) {
