@@ -236,14 +236,14 @@ export default function RegisterPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-md w-full space-y-8 relative z-10"
+        className="max-w-md w-full space-y-6 sm:space-y-8 relative z-10 px-4 sm:px-0"
       >
         {/* Progress Steps */}
         <div className="flex justify-center space-x-2">
           {['form', 'email-verification', 'telegram-phone'].map((step, index) => (
             <div
               key={step}
-              className={`h-2 w-16 rounded-full transition-all duration-300 ${
+              className={`h-1.5 sm:h-2 w-12 sm:w-16 rounded-full transition-all duration-300 ${
                 ['form', 'email-verification', 'telegram-phone'].indexOf(currentStep) >= index
                   ? 'bg-gradient-to-r from-indigo-600 to-purple-600'
                   : 'bg-gray-300 dark:bg-gray-600'
@@ -253,7 +253,7 @@ export default function RegisterPage() {
         </div>
 
         {/* Main Card */}
-        <div className="bg-white/80 dark:bg-gray-800/80 rounded-3xl shadow-2xl p-8 backdrop-blur-xl border border-gray-200 dark:border-gray-700">
+        <div className="bg-white/80 dark:bg-gray-800/80 rounded-2xl sm:rounded-3xl shadow-2xl p-5 sm:p-8 backdrop-blur-xl border border-gray-200 dark:border-gray-700">
           {/* Step 1: Registration Form */}
           <AnimatePresence mode="wait">
             {currentStep === 'form' && (
@@ -463,16 +463,16 @@ export default function RegisterPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
-                className="text-center"
+                className="text-center px-2"
               >
                 {/* Animated Icon */}
                 <motion.div 
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 200, delay: 0.1 }}
-                  className="relative mx-auto mb-6"
+                  className="relative mx-auto mb-4 sm:mb-6"
                 >
-                  <div className="h-24 w-24 mx-auto bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600 rounded-3xl flex items-center justify-center shadow-2xl shadow-green-500/30">
+                  <div className="h-16 w-16 sm:h-24 sm:w-24 mx-auto bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-2xl shadow-green-500/30">
                     <motion.div
                       animate={{ 
                         rotateY: [0, 10, -10, 0],
@@ -483,15 +483,15 @@ export default function RegisterPage() {
                         ease: "easeInOut"
                       }}
                     >
-                      <Mail className="h-12 w-12 text-white" />
+                      <Mail className="h-8 w-8 sm:h-12 sm:w-12 text-white" />
                     </motion.div>
                   </div>
                   {/* Decorative rings */}
-                  <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full blur-xl -z-10" />
+                  <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full blur-xl -z-10" />
                   <motion.div 
                     animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.2, 0.5] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="absolute -inset-2 border-2 border-green-400/30 rounded-3xl"
+                    className="absolute -inset-1 sm:-inset-2 border-2 border-green-400/30 rounded-2xl sm:rounded-3xl"
                   />
                 </motion.div>
 
@@ -499,7 +499,7 @@ export default function RegisterPage() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-2"
+                  className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-2"
                 >
                   ✨ Email Tasdiqlash
                 </motion.h2>
@@ -508,14 +508,14 @@ export default function RegisterPage() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
-                  className="mb-8"
+                  className="mb-6 sm:mb-8"
                 >
-                  <p className="text-gray-500 dark:text-gray-400 mb-2">
+                  <p className="text-sm sm:text-base text-gray-500 dark:text-gray-400 mb-2">
                     6 raqamli tasdiqlash kodi yuborildi
                   </p>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-full border border-indigo-200 dark:border-indigo-700">
-                    <Mail className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-                    <span className="font-semibold text-indigo-700 dark:text-indigo-300">{email}</span>
+                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-full border border-indigo-200 dark:border-indigo-700 max-w-full">
+                    <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-indigo-600 dark:text-indigo-400 flex-shrink-0" />
+                    <span className="font-semibold text-xs sm:text-sm text-indigo-700 dark:text-indigo-300 truncate">{email}</span>
                   </div>
                 </motion.div>
 
@@ -524,9 +524,9 @@ export default function RegisterPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="mb-8"
+                  className="mb-6 sm:mb-8"
                 >
-                  <div className="flex justify-center gap-3">
+                  <div className="flex justify-center gap-2 sm:gap-3">
                     {verificationCode.map((digit, index) => (
                       <motion.div
                         key={index}
@@ -545,9 +545,9 @@ export default function RegisterPage() {
                           onKeyDown={(e) => handleKeyDown(index, e)}
                           aria-label={`Kod raqami ${index + 1}`}
                           className={`
-                            w-14 h-16 text-center text-2xl font-bold 
+                            w-10 h-12 sm:w-14 sm:h-16 text-center text-xl sm:text-2xl font-bold 
                             bg-white dark:bg-gray-800 
-                            border-2 rounded-2xl
+                            border-2 rounded-xl sm:rounded-2xl
                             transition-all duration-300 ease-out
                             outline-none
                             ${digit 
@@ -555,15 +555,15 @@ export default function RegisterPage() {
                               : 'border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white hover:border-indigo-400 dark:hover:border-indigo-500'
                             }
                             focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 dark:focus:ring-indigo-500/30
-                            focus:scale-110 focus:shadow-xl
+                            focus:scale-105 sm:focus:scale-110 focus:shadow-xl
                           `}
                         />
                         {/* Glow effect on focus */}
-                        <div className={`absolute inset-0 rounded-2xl transition-opacity duration-300 pointer-events-none ${digit ? 'opacity-100' : 'opacity-0'}`}>
-                          <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent rounded-2xl" />
+                        <div className={`absolute inset-0 rounded-xl sm:rounded-2xl transition-opacity duration-300 pointer-events-none ${digit ? 'opacity-100' : 'opacity-0'}`}>
+                          <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent rounded-xl sm:rounded-2xl" />
                         </div>
-                        {/* Number indicator */}
-                        <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[10px] text-gray-400 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                        {/* Number indicator - hidden on mobile */}
+                        <span className="hidden sm:block absolute -bottom-5 left-1/2 -translate-x-1/2 text-[10px] text-gray-400 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                           {index + 1}
                         </span>
                       </motion.div>
@@ -571,14 +571,14 @@ export default function RegisterPage() {
                   </div>
                   
                   {/* Progress dots */}
-                  <div className="flex justify-center gap-1.5 mt-6">
+                  <div className="flex justify-center gap-1 sm:gap-1.5 mt-4 sm:mt-6">
                     {verificationCode.map((digit, index) => (
                       <motion.div
                         key={index}
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ delay: 0.6 + index * 0.05 }}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${
                           digit 
                             ? 'bg-emerald-500 scale-125' 
                             : 'bg-gray-300 dark:bg-gray-600'
@@ -596,18 +596,18 @@ export default function RegisterPage() {
                   className="space-y-4"
                 >
                   {countdown > 0 ? (
-                    <div className="inline-flex items-center gap-3 px-5 py-3 bg-gray-100 dark:bg-gray-800 rounded-2xl">
+                    <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-3 bg-gray-100 dark:bg-gray-800 rounded-xl sm:rounded-2xl">
                       <div className="relative">
-                        <svg className="w-10 h-10 transform -rotate-90">
+                        <svg className="w-8 h-8 sm:w-10 sm:h-10 transform -rotate-90">
                           <circle
-                            cx="20" cy="20" r="16"
+                            cx="50%" cy="50%" r="35%"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="3"
                             className="text-gray-300 dark:text-gray-600"
                           />
                           <circle
-                            cx="20" cy="20" r="16"
+                            cx="50%" cy="50%" r="35%"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="3"
@@ -617,13 +617,13 @@ export default function RegisterPage() {
                             className="text-indigo-600 dark:text-indigo-400 transition-all duration-1000"
                           />
                         </svg>
-                        <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-700 dark:text-gray-300">
+                        <span className="absolute inset-0 flex items-center justify-center text-[10px] sm:text-xs font-bold text-gray-700 dark:text-gray-300">
                           {countdown}
                         </span>
                       </div>
                       <div className="text-left">
-                        <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Qayta yuborish</p>
-                        <p className="text-xs text-gray-500 dark:text-gray-400">{countdown} soniya kutib turing</p>
+                        <p className="text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300">Qayta yuborish</p>
+                        <p className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400">{countdown} soniya kutib turing</p>
                       </div>
                     </div>
                   ) : (
@@ -661,7 +661,7 @@ export default function RegisterPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.8 }}
-                  className="mt-6 text-xs text-gray-400 dark:text-gray-500"
+                  className="mt-4 sm:mt-6 text-[11px] sm:text-xs text-gray-400 dark:text-gray-500"
                 >
                   📬 Spam papkasini ham tekshirib ko'ring
                 </motion.p>
