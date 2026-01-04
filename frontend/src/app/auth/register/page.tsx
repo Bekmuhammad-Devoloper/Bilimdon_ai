@@ -597,22 +597,22 @@ export default function RegisterPage() {
                 >
                   {countdown > 0 ? (
                     <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-3 bg-gray-100 dark:bg-gray-800 rounded-xl sm:rounded-2xl">
-                      <div className="relative">
-                        <svg className="w-8 h-8 sm:w-10 sm:h-10 transform -rotate-90">
+                      <div className="relative w-8 h-8 sm:w-10 sm:h-10">
+                        <svg className="w-full h-full transform -rotate-90" viewBox="0 0 40 40">
                           <circle
-                            cx="50%" cy="50%" r="35%"
+                            cx="20" cy="20" r="16"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="3"
                             className="text-gray-300 dark:text-gray-600"
                           />
                           <circle
-                            cx="50%" cy="50%" r="35%"
+                            cx="20" cy="20" r="16"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="3"
-                            strokeDasharray={100}
-                            strokeDashoffset={100 - (countdown / 60) * 100}
+                            strokeDasharray={100.5}
+                            strokeDashoffset={100.5 - (countdown / 60) * 100.5}
                             strokeLinecap="round"
                             className="text-indigo-600 dark:text-indigo-400 transition-all duration-1000"
                           />
