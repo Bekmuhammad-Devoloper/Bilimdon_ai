@@ -97,7 +97,15 @@ declare global {
 // Check if running in Telegram Mini App
 export function isTelegramWebApp(): boolean {
   if (typeof window === 'undefined') return false;
-  return !!window.Telegram?.WebApp?.initData;
+  
+  const webApp = window.Telegram?.WebApp;
+  // initData must exist and not be empty
+  if (!webApp?.initData || webApp.initData.length === 0) return false;
+  
+  // Also check if initDataUnsafe has user data
+  if (!webApp.initDataUnsafe?.user?.id) return false;
+  
+  return true;
 }
 
 // Get Telegram WebApp instance

@@ -76,15 +76,15 @@ export function useAuth() {
         telegramExpand();
         
         const initData = getTelegramInitData();
-        if (initData && !isAuthenticated) {
+        if (initData && initData.length > 0 && !isAuthenticated) {
           try {
             const { data } = await authApi.telegramAuth(initData);
             login(data.user, data.token);
             toast.success('✅ Telegram orqali kirdingiz!');
           } catch (error: any) {
             console.error('Telegram auth error:', error);
-            const errorMessage = error.response?.data?.message || 'Telegram orqali kirishda xatolik';
-            toast.error(`🚫 ${errorMessage}`);
+            // Don't show error toast on initial load - user can manually login
+            // Only log to console for debugging
           }
         }
       } else if (token) {
