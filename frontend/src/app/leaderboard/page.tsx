@@ -256,6 +256,10 @@ export default function LeaderboardPage() {
           </button>
           {categories.slice(0, 8).map((cat) => {
             const logoPath = getCategoryLogo(cat.slug);
+            // Check if cat.icon is a URL path (uploaded image)
+            const isUploadedIcon = cat.icon?.startsWith('/uploads/');
+            const apiBaseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
+            const iconSrc = logoPath || (isUploadedIcon ? `${apiBaseUrl}${cat.icon}` : null);
             return (
               <button
                 key={cat.id}
@@ -267,10 +271,11 @@ export default function LeaderboardPage() {
                     : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
                 )}
               >
-                {logoPath ? (
-                  <Image src={logoPath} alt={cat.name} width={20} height={20} className="object-contain" style={{ width: 'auto', height: 'auto' }} />
+                {iconSrc ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={iconSrc} alt={cat.name} className="w-5 h-5 object-contain" />
                 ) : (
-                  <span>{cat.icon}</span>
+                  <span>{cat.icon || '📚'}</span>
                 )}
                 {cat.name}
               </button>

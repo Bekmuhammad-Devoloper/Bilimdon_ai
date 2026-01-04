@@ -196,7 +196,7 @@ export default function TestResultPage() {
                 <span className="font-medium">Matnni nusxalash</span>
               </button>
               
-              {typeof navigator !== 'undefined' && navigator.share && (
+              {typeof navigator !== 'undefined' && typeof navigator.share === 'function' && (
                 <button
                   onClick={handleNativeShare}
                   className="w-full flex items-center gap-4 p-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white transition-colors"

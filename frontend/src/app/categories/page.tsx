@@ -67,21 +67,21 @@ function getCategoryIcon(slug: string, apiIcon?: string | null): string | null {
     }
     // Agar /uploads/ bilan boshlansa - backend'dan
     if (apiIcon.startsWith('/uploads/')) {
-      return `http://localhost:3001${apiIcon}`;
+      return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}${apiIcon}`;
     }
     // Agar http bilan boshlansa - to'liq URL
     if (apiIcon.startsWith('http')) {
       return apiIcon;
     }
     // Boshqa holatda backend'dan
-    return `http://localhost:3001${apiIcon}`;
+    return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}${apiIcon}`;
   }
   
   return null;
 }
 
 // Statik 27 ta kategoriya
-const allCategories = [
+const allCategories: Array<{ id: string; name: string; slug: string; description: string; color: string; icon?: string | null; _count?: { questions: number } }> = [
   { id: '1', name: 'C++', slug: 'cpp', description: 'C++ dasturlash tili', color: '#00599C' },
   { id: '2', name: 'Django', slug: 'django', description: 'Django web framework', color: '#092E20' },
   { id: '3', name: 'Docker', slug: 'docker', description: 'Docker konteyner platformasi', color: '#2496ED' },

@@ -265,6 +265,10 @@ export default function AIPage() {
             </button>
             {categories.slice(0, 6).map((cat) => {
               const logoPath = getCategoryLogo(cat.slug);
+              // Check if cat.icon is a URL path (uploaded image)
+              const isUploadedIcon = cat.icon?.startsWith('/uploads/');
+              const apiBaseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
+              const iconSrc = logoPath || (isUploadedIcon ? `${apiBaseUrl}${cat.icon}` : null);
               return (
                 <button
                   key={cat.id}
@@ -276,10 +280,11 @@ export default function AIPage() {
                       : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400'
                   )}
                 >
-                  {logoPath ? (
-                    <Image src={logoPath} alt={cat.name} width={18} height={18} className="object-contain" />
+                  {iconSrc ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={iconSrc} alt={cat.name} className="w-[18px] h-[18px] object-contain" />
                   ) : (
-                    <span>{cat.icon}</span>
+                    <span>{cat.icon || '📚'}</span>
                   )}
                   {cat.name}
                 </button>

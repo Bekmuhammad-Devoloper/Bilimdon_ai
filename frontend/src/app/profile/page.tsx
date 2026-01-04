@@ -46,6 +46,7 @@ interface Achievement {
   unlockedAt?: string;
   progress?: number;
   target?: number;
+  condition?: { type: string; value: number };
 }
 
 export default function ProfilePage() {
@@ -155,7 +156,7 @@ export default function ProfilePage() {
           {/* Background image or gradient */}
           {user.avatar ? (
             <img 
-              src={user.avatar.startsWith('http') ? user.avatar : `http://localhost:3001${user.avatar}`}
+              src={user.avatar.startsWith('http') ? user.avatar : `${(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '')}${user.avatar}`}
               alt={user.fullName}
               className="w-full h-auto min-h-48 max-h-96 object-cover"
             />

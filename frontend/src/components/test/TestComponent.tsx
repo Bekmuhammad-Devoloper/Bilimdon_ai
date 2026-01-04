@@ -4,7 +4,7 @@ import styles from './TestComponent.module.css';
 interface TestQuestion {
   number: number;
   category: string;
-  difficulty: string;
+  difficulty?: string;
   question: string;
   options: { key: string; text: string }[];
   correctAnswer: string;

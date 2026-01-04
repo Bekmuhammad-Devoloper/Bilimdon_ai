@@ -24,13 +24,30 @@ async function bootstrap() {
   // CORS
   const telegramWebAppUrl =
     configService.get("TELEGRAM_WEBAPP_URL") || "https://web.telegram.org";
+  const appDomain = configService.get("APP_DOMAIN") || "https://bilimdon-ai.uz";
+  const corsOrigin = configService.get("CORS_ORIGIN");
+  
+  // CORS origins - production va development uchun
+  const allowedOrigins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://web.telegram.org",
+    telegramWebAppUrl,
+    appDomain,
+    // Vercel preview deployments
+    /\.vercel\.app$/,
+  ];
+  
+  // Agar CORS_ORIGIN berilgan bo'lsa, qo'shamiz
+  if (corsOrigin && !allowedOrigins.includes(corsOrigin)) {
+    allowedOrigins.push(corsOrigin);
+  }
+  
   app.enableCors({
-    origin: [
-      "http://localhost:3000",
-      "https://web.telegram.org",
-      telegramWebAppUrl,
-    ],
+    origin: allowedOrigins,
     credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
   });
 
   // Global prefix - uploads yo'lini exclude qilamiz

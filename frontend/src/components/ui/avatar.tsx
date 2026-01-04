@@ -30,6 +30,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
     }, [src]);
 
     // To'g'ridan-to'g'ri URL yasash
+    const apiBaseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
     let imageUrl: string | null = null;
     if (src) {
       if (src.startsWith('http://') || src.startsWith('https://')) {
@@ -37,7 +38,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
         imageUrl = src;
       } else if (src.startsWith('/uploads/')) {
         // Relative path bo'lsa, backend URL qo'shish
-        imageUrl = `http://localhost:3001${src}`;
+        imageUrl = `${apiBaseUrl}${src}`;
       } else if (src.startsWith('blob:')) {
         // Blob URL (preview) bo'lsa to'g'ridan-to'g'ri ishlatish
         imageUrl = src;
@@ -60,7 +61,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={imageUrl}
+              src={imageUrl || undefined}
               alt={alt}
               className="absolute inset-0 w-full h-full object-cover"
               onError={() => {
