@@ -1,5 +1,7 @@
 # 🎓 Bilimdon - Ta'lim Platformasi
 
+🌐 **Live:** https://bilimdon-ai.uz
+
 Bilimdon - bu turli fanlar bo'yicha test topshirish, bilim darajasini aniqlash, reytingda raqobatlashish va AI yordamchisi orqali savollar so'rash imkoniyatiga ega zamonaviy ta'lim platformasi.
 
 ## ✅ Loyiha Holati
