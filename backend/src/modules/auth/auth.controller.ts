@@ -106,4 +106,18 @@ export class AuthController {
   async resetPassword(@Body() dto: { email: string; code: string; newPassword: string }) {
     return this.authService.resetPassword(dto.email, dto.code, dto.newPassword);
   }
+
+  @Post('check-username')
+  @ApiOperation({ summary: 'Username mavjudligini tekshirish' })
+  @ApiResponse({ status: 200, description: 'Username holati' })
+  async checkUsername(@Body() dto: { username: string }) {
+    return this.authService.checkUsername(dto.username);
+  }
+
+  @Post('check-email')
+  @ApiOperation({ summary: 'Email mavjudligini tekshirish' })
+  @ApiResponse({ status: 200, description: 'Email holati' })
+  async checkEmail(@Body() dto: { email: string }) {
+    return this.authService.checkEmail(dto.email);
+  }
 }

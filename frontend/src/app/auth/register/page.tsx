@@ -82,13 +82,30 @@ export default function RegisterPage() {
 
   // Handle form submission
   const onSubmit = async (data: RegisterForm) => {
-    setEmail(data.email);
     setIsLoading(true);
     try {
+      // First check if username is available
+      const usernameCheck = await axios.post(`${API_URL}/auth/check-username`, { username: data.username });
+      if (!usernameCheck.data.available) {
+        toast.error('🚫 Bu username allaqachon band!');
+        setIsLoading(false);
+        return;
+      }
+
+      // Then check if email is available
+      const emailCheck = await axios.post(`${API_URL}/auth/check-email`, { email: data.email });
+      if (!emailCheck.data.available) {
+        toast.error('🚫 Bu email allaqachon ro\'yxatdan o\'tgan!');
+        setIsLoading(false);
+        return;
+      }
+
+      // If both are available, send verification code
+      setEmail(data.email);
       await sendVerificationCode(data.email);
       setCurrentStep('email-verification');
-    } catch (error) {
-      toast.error('Xatolik yuz berdi');
+    } catch (error: any) {
+      toast.error(error.response?.data?.message || 'Xatolik yuz berdi');
     } finally {
       setIsLoading(false);
     }

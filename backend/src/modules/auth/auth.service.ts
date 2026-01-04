@@ -20,6 +20,30 @@ export class AuthService {
     private mailService: MailService,
   ) {}
 
+  async checkUsername(username: string) {
+    const existingUser = await this.prisma.user.findFirst({
+      where: { username },
+    });
+
+    if (existingUser) {
+      return { available: false, message: 'Bu username allaqachon band' };
+    }
+
+    return { available: true, message: 'Username mavjud' };
+  }
+
+  async checkEmail(email: string) {
+    const existingUser = await this.prisma.user.findFirst({
+      where: { email },
+    });
+
+    if (existingUser) {
+      return { available: false, message: 'Bu email allaqachon ro\'yxatdan o\'tgan' };
+    }
+
+    return { available: true, message: 'Email mavjud' };
+  }
+
   async register(dto: RegisterDto) {
     // Check if email or username already exists
     const existingUser = await this.prisma.user.findFirst({
