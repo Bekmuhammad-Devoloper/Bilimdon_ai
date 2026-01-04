@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, Difficulty } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -87,30 +87,38 @@ const categoryQuestions = {
   ],
 };
 
+interface GeneratedQuestion {
+  question: string;
+  options: string[];
+  correctAnswer: number;
+  difficulty: Difficulty;
+}
+
 function generateBulkQuestions(
   baseCategorySlug: string,
   baseQuestions: string[],
   count: number
-): any[] {
-  const generated = [];
-  const options1 = [
-    "Option A",
-    "Option B",
-    "Option C",
-    "Option D",
+): GeneratedQuestion[] {
+  const generated: GeneratedQuestion[] = [];
+  const options1 = ["Option A", "Option B", "Option C", "Option D"];
+  const options2 = [
+    "First choice",
+    "Second choice",
+    "Third choice",
+    "Fourth choice",
   ];
-  const options2 = ["First choice", "Second choice", "Third choice", "Fourth choice"];
   const options3 = ["Answer 1", "Answer 2", "Answer 3", "Answer 4"];
 
   for (let i = 0; i < count; i++) {
     const questionText = `${baseQuestions[i % baseQuestions.length]} (variant ${Math.floor(i / baseQuestions.length) + 1})`;
-    const optionSet = i % 3 === 0 ? options1 : i % 3 === 1 ? options2 : options3;
+    const optionSet =
+      i % 3 === 0 ? options1 : i % 3 === 1 ? options2 : options3;
 
     generated.push({
       question: questionText,
       options: [...optionSet],
       correctAnswer: Math.floor(Math.random() * 4),
-      difficulty: ["EASY", "MEDIUM", "HARD"][Math.floor(i % 3)],
+      difficulty: [Difficulty.EASY, Difficulty.MEDIUM, Difficulty.HARD][i % 3],
     });
   }
 
@@ -118,13 +126,13 @@ function generateBulkQuestions(
 }
 
 async function main() {
-  console.log("📚 Adding comprehensive questions to reach 100+ per category...\n");
+  console.log(
+    "📚 Adding comprehensive questions to reach 100+ per category...\n"
+  );
 
   let totalAdded = 0;
 
-  for (const [categorySlug, needed] of Object.entries(
-    questionsPerCategory
-  )) {
+  for (const [categorySlug, needed] of Object.entries(questionsPerCategory)) {
     const category = await prisma.category.findUnique({
       where: { slug: categorySlug },
     });
