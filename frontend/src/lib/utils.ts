@@ -167,3 +167,61 @@ export const storage = {
     localStorage.removeItem(key);
   },
 };
+
+// Get API base URL (without /api suffix)
+export function getApiBaseUrl(): string {
+  // First check if NEXT_PUBLIC_API_URL is set
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL.replace('/api', '');
+  }
+  
+  // If running in browser, try to detect from current hostname
+  if (typeof window !== 'undefined') {
+    const hostname = window.location.hostname;
+    
+    // Production domain
+    if (hostname === 'bilimdon-ai.uz' || hostname === 'www.bilimdon-ai.uz') {
+      return 'https://api.bilimdon-ai.uz';
+    }
+    
+    // Development
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      return 'http://localhost:3001';
+    }
+    
+    // Fallback - assume api subdomain
+    const protocol = window.location.protocol;
+    return `${protocol}//api.${hostname.replace('www.', '')}`;
+  }
+  
+  // Server-side fallback
+  return 'http://localhost:3001';
+}
+
+// Build full URL for uploaded assets (avatars, attachments, category icons, etc.)
+export function getUploadUrl(path: string | null | undefined): string | null {
+  if (!path) return null;
+  
+  // Already a full URL
+  if (path.startsWith('http://') || path.startsWith('https://')) {
+    return path;
+  }
+  
+  // Blob URL (local preview)
+  if (path.startsWith('blob:')) {
+    return path;
+  }
+  
+  // Relative path to uploads
+  if (path.startsWith('/uploads/')) {
+    return `${getApiBaseUrl()}${path}`;
+  }
+  
+  // Public assets (like /img/...)
+  if (path.startsWith('/')) {
+    return path;
+  }
+  
+  // Unknown format, return as-is
+  return path;
+}

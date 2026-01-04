@@ -7,7 +7,7 @@ import { Send, Bot, User, Trash2, Copy, Check, Sparkles } from 'lucide-react';
 import { useAuth, useCategories } from '@/hooks';
 import { aiApi } from '@/lib/api';
 import { Button, Card, Avatar, Badge } from '@/components/ui';
-import { cn, formatRelativeTime } from '@/lib/utils';
+import { cn, formatRelativeTime, getUploadUrl } from '@/lib/utils';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
@@ -266,9 +266,7 @@ export default function AIPage() {
             {categories.slice(0, 6).map((cat) => {
               const logoPath = getCategoryLogo(cat.slug);
               // Check if cat.icon is a URL path (uploaded image)
-              const isUploadedIcon = cat.icon?.startsWith('/uploads/');
-              const apiBaseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
-              const iconSrc = logoPath || (isUploadedIcon ? `${apiBaseUrl}${cat.icon}` : null);
+              const iconSrc = logoPath || getUploadUrl(cat.icon);
               return (
                 <button
                   key={cat.id}

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Search, ArrowRight } from 'lucide-react';
 import { useCategories } from '@/hooks';
 import { Card, Input, Badge } from '@/components/ui';
-import { cn } from '@/lib/utils';
+import { cn, getUploadUrl } from '@/lib/utils';
 
 // Kategoriya icon olish funksiyasi
 function getCategoryIcon(slug: string, apiIcon?: string | null): string | null {
@@ -65,18 +65,8 @@ function getCategoryIcon(slug: string, apiIcon?: string | null): string | null {
     if (apiIcon.startsWith('/img/')) {
       return apiIcon;
     }
-    // Agar /uploads/ bilan boshlansa - backend'dan
-    if (apiIcon.startsWith('/uploads/')) {
-      const baseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
-      return `${baseUrl}${apiIcon}`;
-    }
-    // Agar http bilan boshlansa - to'liq URL
-    if (apiIcon.startsWith('http')) {
-      return apiIcon;
-    }
-    // Boshqa holatda backend'dan
-    const baseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
-    return `${baseUrl}${apiIcon}`;
+    // Agar /uploads/ bilan boshlansa yoki boshqa format - getUploadUrl orqali
+    return getUploadUrl(apiIcon);
   }
   
   return null;

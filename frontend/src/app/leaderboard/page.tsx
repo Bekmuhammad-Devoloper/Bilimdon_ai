@@ -6,7 +6,7 @@ import { Trophy, Medal, Crown, TrendingUp, Calendar, Clock } from 'lucide-react'
 import { useAuth, useCategories } from '@/hooks';
 import { leaderboardApi } from '@/lib/api';
 import { Card, Avatar, Badge } from '@/components/ui';
-import { cn, formatXP } from '@/lib/utils';
+import { cn, formatXP, getUploadUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 // Map category slugs to logo paths
@@ -257,9 +257,7 @@ export default function LeaderboardPage() {
           {categories.slice(0, 8).map((cat) => {
             const logoPath = getCategoryLogo(cat.slug);
             // Check if cat.icon is a URL path (uploaded image)
-            const isUploadedIcon = cat.icon?.startsWith('/uploads/');
-            const apiBaseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
-            const iconSrc = logoPath || (isUploadedIcon ? `${apiBaseUrl}${cat.icon}` : null);
+            const iconSrc = logoPath || getUploadUrl(cat.icon);
             return (
               <button
                 key={cat.id}
