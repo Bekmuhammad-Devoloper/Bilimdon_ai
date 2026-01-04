@@ -67,14 +67,16 @@ function getCategoryIcon(slug: string, apiIcon?: string | null): string | null {
     }
     // Agar /uploads/ bilan boshlansa - backend'dan
     if (apiIcon.startsWith('/uploads/')) {
-      return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}${apiIcon}`;
+      const baseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
+      return `${baseUrl}${apiIcon}`;
     }
     // Agar http bilan boshlansa - to'liq URL
     if (apiIcon.startsWith('http')) {
       return apiIcon;
     }
     // Boshqa holatda backend'dan
-    return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}${apiIcon}`;
+    const baseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api').replace('/api', '');
+    return `${baseUrl}${apiIcon}`;
   }
   
   return null;
