@@ -30,6 +30,15 @@ jobs:
             # Frontend
             cd ../frontend
             npm install
+            
+            # Create/update .env.local with production values
+            cat > .env.local << 'EOF'
+            NEXT_PUBLIC_API_URL=https://api.bilimdon-ai.uz/api
+            NEXT_PUBLIC_APP_URL=https://bilimdon-ai.uz
+            NEXT_PUBLIC_APP_NAME=Bilimdon
+            NEXT_PUBLIC_TELEGRAM_BOT_USERNAME=Bilimdon_aibot
+            EOF
+            
             npm run build
             
             # PM2 restart
