@@ -3,6 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../../prisma/prisma.service';
 import { JwtService } from '@nestjs/jwt';
 import * as crypto from 'crypto';
+import axios from 'axios';
 
 interface TelegramInitData {
   query_id?: string;
@@ -108,6 +109,43 @@ export class TelegramService {
   }
 
   /**
+   * Get user profile photo URL from Telegram
+   */
+  async getTelegramProfilePhoto(telegramId: number): Promise<string | null> {
+    if (!this.botToken) {
+      return null;
+    }
+
+    try {
+      // Get user profile photos
+      const photosResponse = await axios.get(
+        `https://api.telegram.org/bot${this.botToken}/getUserProfilePhotos`,
+        { params: { user_id: telegramId, limit: 1 } }
+      );
+
+      if (photosResponse.data?.result?.photos?.length > 0) {
+        const photo = photosResponse.data.result.photos[0];
+        // Get the largest photo (last in array)
+        const largestPhoto = photo[photo.length - 1];
+        
+        // Get file path
+        const fileResponse = await axios.get(
+          `https://api.telegram.org/bot${this.botToken}/getFile`,
+          { params: { file_id: largestPhoto.file_id } }
+        );
+
+        if (fileResponse.data?.result?.file_path) {
+          return `https://api.telegram.org/file/bot${this.botToken}/${fileResponse.data.result.file_path}`;
+        }
+      }
+    } catch (error) {
+      console.error('Error getting Telegram profile photo:', error);
+    }
+
+    return null;
+  }
+
+  /**
    * Authenticate or register user via Telegram Mini App
    */
   async authenticateWebApp(initData: string) {
@@ -118,6 +156,12 @@ export class TelegramService {
     }
 
     const telegramUser = validated.user;
+    
+    // Get profile photo from Telegram API
+    let avatarUrl = telegramUser.photo_url;
+    if (!avatarUrl) {
+      avatarUrl = await this.getTelegramProfilePhoto(telegramUser.id);
+    }
     
     // Find or create user
     let user = await this.prisma.user.findUnique({
@@ -144,22 +188,25 @@ export class TelegramService {
           telegramId: telegramUser.id.toString(),
           username,
           fullName: fullName || username,
-          avatar: telegramUser.photo_url,
+          avatar: avatarUrl,
           email: null,
           password: null,
         },
       });
     } else {
-      // Update user info from Telegram
+      // Update user info from Telegram (including fresh avatar)
       const fullName = [telegramUser.first_name, telegramUser.last_name]
         .filter(Boolean)
         .join(' ');
+
+      // Always try to get fresh profile photo
+      const freshAvatar = await this.getTelegramProfilePhoto(telegramUser.id);
 
       user = await this.prisma.user.update({
         where: { id: user.id },
         data: {
           fullName: fullName || user.fullName,
-          avatar: telegramUser.photo_url || user.avatar,
+          avatar: freshAvatar || avatarUrl || user.avatar,
         },
       });
     }
@@ -181,6 +228,7 @@ export class TelegramService {
         totalXP: user.totalXP,
         level: user.level,
         role: user.role,
+        telegramId: user.telegramId,
       },
       token,
     };
