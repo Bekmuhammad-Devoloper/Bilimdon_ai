@@ -72,8 +72,7 @@ async function bootstrap() {
   SwaggerModule.setup("api/docs", app, document);
 
   const port = configService.get("PORT") || 3001;
-  await app.listen(port);
-
+  await app.listen(port, "0.0.0.0");
   console.log(`🚀 Bilimdon API running on: http://localhost:${port}`);
   console.log(`📚 API Documentation: http://localhost:${port}/api/docs`);
 }
