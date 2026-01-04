@@ -147,3 +147,60 @@ code {
 * {
   @apply transition-colors duration-200;
 }
+
+/* Mobile responsive improvements */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    @apply px-3;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .btn-press {
+    @apply active:scale-95;
+  }
+  
+  /* Larger touch targets */
+  button, a, input, select, textarea {
+    min-height: 44px;
+  }
+  
+  /* Disable hover effects on touch */
+  .card-hover:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* Prevent text selection on interactive elements */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* iOS specific fixes */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* Prevent bounce scrolling */
+    overscroll-behavior: none;
+  }
+  
+  /* Fix for iOS bottom bar */
+  .pb-safe {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Android specific fixes */
+@supports not (-webkit-touch-callout: none) {
+  input, textarea, select {
+    font-size: 16px; /* Prevent zoom on focus */
+  }
+}
