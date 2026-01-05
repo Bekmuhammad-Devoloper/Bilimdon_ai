@@ -5,15 +5,22 @@ WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
-COPY prisma ./prisma/
 RUN npm install
 
-# Generate Prisma client
+# Copy prisma and generate client
+COPY prisma ./prisma/
 RUN npx prisma generate
 
-# Copy source and build
-COPY . .
+# Copy all source files
+COPY tsconfig*.json ./
+COPY nest-cli.json ./
+COPY src ./src/
+
+# Build
 RUN npm run build
+
+# Verify build output
+RUN ls -la dist/ && cat dist/main.js | head -5
 
 # Production stage
 FROM node:20-alpine AS production
@@ -22,13 +29,13 @@ WORKDIR /app
 
 # Install only production dependencies
 COPY package*.json ./
-COPY prisma ./prisma/
 RUN npm install --omit=dev
 
-# Generate Prisma client for production
+# Copy prisma and generate client
+COPY prisma ./prisma/
 RUN npx prisma generate
 
-# Copy built files
+# Copy built files from builder
 COPY --from=builder /app/dist ./dist
 
 # Create uploads directory
@@ -41,4 +48,4 @@ ENV NODE_ENV=production
 EXPOSE 3001
 
 # Start command
-CMD ["node", "dist/main"]
+CMD ["node", "dist/main.js"]
