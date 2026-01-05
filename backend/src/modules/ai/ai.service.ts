@@ -17,7 +17,7 @@ export class AIService {
     this.apiKey = this.configService.get<string>('OPENROUTER_API_KEY') || 
                   this.configService.get<string>('GEMINI_API_KEY') || '';
     this.apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
-    this.model = 'google/gemini-flash-1.5'; // Free model on OpenRouter
+    this.model = 'meta-llama/llama-3.2-3b-instruct:free'; // Free model on OpenRouter
   }
 
   async chat(userId: string, dto: ChatDto) {
