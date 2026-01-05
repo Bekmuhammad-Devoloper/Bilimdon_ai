@@ -1,6 +1,9 @@
 # Bilimdon Backend Dockerfile
 FROM node:20-alpine AS builder
 
+# Install OpenSSL for Prisma
+RUN apk add --no-cache openssl openssl-dev
+
 WORKDIR /app
 
 # Install dependencies
@@ -19,11 +22,11 @@ COPY src ./src/
 # Build
 RUN npm run build
 
-# Verify build output
-RUN ls -la dist/ && ls -la dist/src/ && cat dist/src/main.js | head -5
-
 # Production stage
 FROM node:20-alpine AS production
+
+# Install OpenSSL for Prisma runtime
+RUN apk add --no-cache openssl
 
 WORKDIR /app
 
@@ -47,5 +50,5 @@ ENV NODE_ENV=production
 # Expose port
 EXPOSE 3001
 
-# Start command - NestJS builds to dist/src/main.js
+# Start command
 CMD ["node", "dist/src/main.js"]
