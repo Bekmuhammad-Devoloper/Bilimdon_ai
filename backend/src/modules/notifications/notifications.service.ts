@@ -147,8 +147,11 @@ export class NotificationsService {
     const isIconFile = category.icon && category.icon.startsWith('/uploads/');
     const iconEmoji = isIconFile ? '📚' : (category.icon || '📚');
     
-    // Read icon file and convert to base64 for email
-    let iconBase64: string | null = null;
+    // For emails, use absolute URL (base64 doesn't work reliably in email clients)
+    const apiUrl = this.configService.get<string>('API_URL') || 'https://api.bilimdon-ai.uz';
+    const iconAbsoluteUrl = isIconFile && category.icon ? `${apiUrl}${category.icon}` : null;
+    
+    // Read icon file for Telegram (buffer for photo upload)
     let iconBuffer: Buffer | null = null;
     if (isIconFile && category.icon) {
       try {
@@ -172,9 +175,6 @@ export class NotificationsService {
         
         if (iconPath) {
           iconBuffer = fs.readFileSync(iconPath);
-          const ext = path.extname(category.icon).toLowerCase();
-          const mimeType = ext === '.png' ? 'image/png' : ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : 'image/png';
-          iconBase64 = `data:${mimeType};base64,${iconBuffer.toString('base64')}`;
           this.logger.log(`Icon loaded successfully: ${iconPath}, size: ${iconBuffer.length} bytes`);
         } else {
           this.logger.warn(`Icon file not found in any path for: ${category.icon}`);
@@ -279,7 +279,7 @@ export class NotificationsService {
                 user.email,
                 user.fullName || user.username,
                 category.name,
-                iconBase64,
+                iconAbsoluteUrl,
                 iconEmoji,
                 groupLabel,
                 categoryUrl

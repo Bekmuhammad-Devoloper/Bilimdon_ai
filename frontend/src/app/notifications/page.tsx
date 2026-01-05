@@ -6,7 +6,7 @@ import { Bell, Check, CheckCheck, Trash2, ArrowLeft } from 'lucide-react';
 import { useAuth, useNotifications } from '@/hooks';
 import { notificationsApi } from '@/lib/api';
 import { Card, Badge, Button } from '@/components/ui';
-import { cn, formatRelativeTime } from '@/lib/utils';
+import { cn, formatRelativeTime, getUploadUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 interface Notification {
@@ -192,10 +192,7 @@ export default function NotificationsPage() {
                 {/* Icon yoki Admin Avatar yoki Category Icon */}
                 {notification.data?.iconUrl ? (
                   <img 
-                    src={notification.data.iconUrl.startsWith('http') 
-                      ? notification.data.iconUrl 
-                      : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001'}${notification.data.iconUrl}`
-                    }
+                    src={getUploadUrl(notification.data.iconUrl) || notification.data.iconUrl}
                     alt="Kategoriya"
                     className="w-10 h-10 rounded-lg object-cover flex-shrink-0"
                     onError={(e) => {
@@ -207,10 +204,7 @@ export default function NotificationsPage() {
                   />
                 ) : notification.type === 'MESSAGE' && notification.data?.adminAvatar ? (
                   <img 
-                    src={notification.data.adminAvatar.startsWith('http') 
-                      ? notification.data.adminAvatar 
-                      : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${notification.data.adminAvatar}`
-                    }
+                    src={getUploadUrl(notification.data.adminAvatar) || notification.data.adminAvatar}
                     alt={notification.data.adminUsername || 'Admin'}
                     className="w-10 h-10 rounded-full object-cover flex-shrink-0"
                   />
@@ -247,16 +241,11 @@ export default function NotificationsPage() {
                   {notification.data?.imageUrl && (
                     <div className="mt-3">
                       <img
-                        src={notification.data.imageUrl.startsWith('http') 
-                          ? notification.data.imageUrl 
-                          : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${notification.data.imageUrl}`
-                        }
+                        src={getUploadUrl(notification.data.imageUrl) || notification.data.imageUrl}
                         alt="Xabar rasmi"
                         className="rounded-xl max-w-full max-h-64 object-cover cursor-pointer hover:opacity-90 transition"
                         onClick={() => window.open(
-                          notification.data?.imageUrl?.startsWith('http') 
-                            ? notification.data.imageUrl 
-                            : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${notification.data?.imageUrl}`,
+                          getUploadUrl(notification.data?.imageUrl) || notification.data?.imageUrl,
                           '_blank'
                         )}
                       />
@@ -266,9 +255,7 @@ export default function NotificationsPage() {
                   {notification.data?.videoUrl && (
                     <div className="mt-3">
                       {(() => {
-                        const videoUrl: string = notification.data?.videoUrl?.startsWith('http') 
-                          ? notification.data.videoUrl 
-                          : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || ''}${notification.data?.videoUrl || ''}`;
+                        const videoUrl: string = getUploadUrl(notification.data?.videoUrl) || notification.data?.videoUrl || '';
                         return (
                           <video
                             controls
