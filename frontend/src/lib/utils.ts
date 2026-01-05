@@ -170,7 +170,26 @@ export const storage = {
 
 // Backend URL helper - uploads uchun
 export function getBackendUrl(): string {
-  return process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001';
+  // NEXT_PUBLIC_UPLOADS_URL mavjud bo'lsa, uni ishlatamiz
+  if (process.env.NEXT_PUBLIC_UPLOADS_URL) {
+    return process.env.NEXT_PUBLIC_UPLOADS_URL;
+  }
+  
+  // API URL dan uploads URL yasash
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+  
+  // Agar api.domain.com/api formatida bo'lsa
+  if (apiUrl.includes('api.') && apiUrl.endsWith('/api')) {
+    return apiUrl.replace('/api', '');
+  }
+  
+  // Agar domain.com/api formatida bo'lsa, api.domain.com ga o'zgartirish
+  if (apiUrl.endsWith('/api')) {
+    const url = new URL(apiUrl);
+    return `${url.protocol}//api.${url.host.replace('www.', '')}`;
+  }
+  
+  return apiUrl.replace('/api', '') || 'http://localhost:3001';
 }
 
 // Upload qilingan fayllar uchun to'liq URL olish
