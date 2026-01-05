@@ -109,7 +109,13 @@ export default function AdminDesign() {
         try {
           const data = JSON.parse(xhr.responseText);
           const videoUrl = data.url || data;
-          const fullUrl = videoUrl.startsWith('http') ? videoUrl : `${API.replace('/api', '')}${videoUrl}`;
+          // URL ni to'g'ri yasash
+          let fullUrl = videoUrl;
+          if (!videoUrl.startsWith('http')) {
+            // API URL dan base URL olish (masalan: https://api.bilimdon-ai.uz/api -> https://api.bilimdon-ai.uz)
+            const baseUrl = API.endsWith('/api') ? API.slice(0, -4) : API.replace('/api', '');
+            fullUrl = `${baseUrl}${videoUrl.startsWith('/') ? '' : '/'}${videoUrl}`;
+          }
           setVideo(fullUrl);
           toast.success('Video muvaffaqiyatli yuklandi!');
         } catch {
