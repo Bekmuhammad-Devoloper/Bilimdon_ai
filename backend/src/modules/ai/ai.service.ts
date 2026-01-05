@@ -1,28 +1,26 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { GoogleGenerativeAI } from '@google/generative-ai';
 import { PrismaService } from '../../prisma/prisma.service';
 import { ChatDto } from './dto/chat.dto';
 
 @Injectable()
 export class AIService {
-  private genAI: GoogleGenerativeAI;
-  private model: any;
+  private apiKey: string;
+  private apiUrl: string;
+  private model: string;
 
   constructor(
     private configService: ConfigService,
     private prisma: PrismaService,
   ) {
-    const apiKey = this.configService.get('GEMINI_API_KEY');
-    if (apiKey) {
-      this.genAI = new GoogleGenerativeAI(apiKey);
-      // gemini-1.5-flash - stable model
-      this.model = this.genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-    }
+    // OpenRouter API - works in all regions
+    this.apiKey = this.configService.get('OPENROUTER_API_KEY') || this.configService.get('GEMINI_API_KEY');
+    this.apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
+    this.model = 'google/gemini-flash-1.5'; // Free tier model on OpenRouter
   }
 
   async chat(userId: string, dto: ChatDto) {
-    if (!this.model) {
+    if (!this.apiKey) {
       throw new BadRequestException('AI xizmati sozlanmagan');
     }
 
@@ -72,13 +70,38 @@ Savollarga qisqa va aniq javob bering, lekin kerak bo'lsa tushuntirish ham berin
       .map((chat) => `Foydalanuvchi: ${chat.message}\nAI: ${chat.response}`)
       .join('\n\n');
 
-    const fullPrompt = conversationContext
-      ? `${systemPrompt}\n\nOldingi suhbat:\n${conversationContext}\n\nFoydalanuvchi: ${dto.message}`
-      : `${systemPrompt}\n\nFoydalanuvchi: ${dto.message}`;
+    const userMessage = conversationContext
+      ? `Oldingi suhbat:\n${conversationContext}\n\nFoydalanuvchi: ${dto.message}`
+      : dto.message;
 
     try {
-      const result = await this.model.generateContent(fullPrompt);
-      const response = result.response.text();
+      // Call OpenRouter API
+      const response = await fetch(this.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${this.apiKey}`,
+          'HTTP-Referer': 'https://bilimdon-ai.uz',
+          'X-Title': 'Bilimdon AI',
+        },
+        body: JSON.stringify({
+          model: this.model,
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userMessage },
+          ],
+          max_tokens: 2048,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        console.error('OpenRouter API Error:', response.status, errorData);
+        throw new Error(`API error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      const aiResponse = data.choices?.[0]?.message?.content || 'Javob olishda xatolik';
 
       // Get category ID if slug provided
       let categoryId: string | null = null;
@@ -95,7 +118,7 @@ Savollarga qisqa va aniq javob bering, lekin kerak bo'lsa tushuntirish ham berin
           userId,
           categoryId,
           message: dto.message,
-          response,
+          response: aiResponse,
         },
         include: {
           category: {
@@ -107,7 +130,7 @@ Savollarga qisqa va aniq javob bering, lekin kerak bo'lsa tushuntirish ham berin
       return {
         id: aiChat.id,
         message: dto.message,
-        response,
+        response: aiResponse,
         category: aiChat.category,
         createdAt: aiChat.createdAt,
         remainingQueries: 100 - todayCount - 1,
