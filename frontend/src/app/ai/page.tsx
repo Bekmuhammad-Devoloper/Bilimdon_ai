@@ -7,16 +7,11 @@ import { Send, Bot, User, Trash2, Copy, Check, Sparkles } from 'lucide-react';
 import { useAuth, useCategories } from '@/hooks';
 import { aiApi } from '@/lib/api';
 import { Button, Card, Avatar, Badge } from '@/components/ui';
-import { cn, formatRelativeTime } from '@/lib/utils';
+import { cn, formatRelativeTime, getUploadUrl } from '@/lib/utils';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import toast from 'react-hot-toast';
-
-// Backend URL for API uploads
-const getBackendUrl = () => {
-  return process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001';
-};
 
 // Map category slugs to logo paths
 const getCategoryLogo = (slug: string, apiIcon?: string | null): string | null => {
@@ -55,12 +50,9 @@ const getCategoryLogo = (slug: string, apiIcon?: string | null): string | null =
     return logoMap[slug?.toLowerCase()];
   }
   
-  // Then check API icon
-  if (apiIcon && (apiIcon.startsWith('/uploads') || apiIcon.startsWith('/attachments'))) {
-    const backendUrl = getBackendUrl();
-    // Normalize the path
-    const iconPath = apiIcon.startsWith('/uploads') ? apiIcon : `/uploads${apiIcon}`;
-    return `${backendUrl}${iconPath}`;
+  // Then check API icon - use getUploadUrl for proper URL
+  if (apiIcon && apiIcon.startsWith('/')) {
+    return getUploadUrl(apiIcon) || apiIcon;
   }
   
   return null;

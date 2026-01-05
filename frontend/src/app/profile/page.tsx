@@ -281,7 +281,7 @@ export default function ProfilePage() {
                   >
                     {stat.category.icon?.startsWith('/') ? (
                       <Image 
-                        src={stat.category.icon} 
+                        src={getUploadUrl(stat.category.icon) || stat.category.icon} 
                         alt={stat.category.name} 
                         width={32} 
                         height={32}
@@ -338,7 +338,7 @@ export default function ProfilePage() {
                     <div className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-xl flex items-center justify-center text-2xl overflow-hidden">
                       {test.category?.icon?.startsWith('/') ? (
                         <Image 
-                          src={test.category.icon} 
+                          src={getUploadUrl(test.category.icon) || test.category.icon} 
                           alt={test.category?.name || ''} 
                           width={48} 
                           height={48}

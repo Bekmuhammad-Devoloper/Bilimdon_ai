@@ -3,9 +3,11 @@
 import { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { ArrowLeft, AlertCircle } from 'lucide-react';
+import Image from 'next/image';
 import { useAuth } from '@/hooks';
 import { testsApi } from '@/lib/api';
 import { Button, Card } from '@/components/ui';
+import { getUploadUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 export default function CategoryRetryPage() {
@@ -94,8 +96,18 @@ export default function CategoryRetryPage() {
 
         <Card className="p-8">
           <div className="text-center mb-8">
-            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center mx-auto mb-4">
-              <span className="text-4xl">{categoryRetry.category.icon || '📚'}</span>
+            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center mx-auto mb-4 overflow-hidden">
+              {categoryRetry.category.icon?.startsWith('/') ? (
+                <Image 
+                  src={getUploadUrl(categoryRetry.category.icon) || categoryRetry.category.icon}
+                  alt={categoryRetry.category.name}
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain"
+                />
+              ) : (
+                <span className="text-4xl">{categoryRetry.category.icon || '📚'}</span>
+              )}
             </div>
             <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
               {categoryRetry.category.name} - Qayta test
