@@ -51,6 +51,7 @@ const getCategoryLogo = (slug: string): string | null => {
     'ingliz tili': '/img/english-logo.png',
     'english': '/img/english-logo.png',
     'matematika': '/img/matematika-logo.png',
+    'majburiy-matematika': '/img/matematika-logo.png',
     'fizika': '/img/fizika-logo.png',
     'tarix': '/img/history-logo.png',
     'history': '/img/history-logo.png',

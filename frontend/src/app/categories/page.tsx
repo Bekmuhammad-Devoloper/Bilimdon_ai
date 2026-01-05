@@ -35,6 +35,7 @@ function getCategoryIcon(slug: string, apiIcon?: string | null): string | null {
     'javascript': '/img/JavaScript-logo.png',
     'linux': '/img/linux-logo.png',
     'matematika': '/img/matematika-logo.png',
+    'majburiy-matematika': '/img/matematika-logo.png',
     'mongodb': '/img/mongodb-logo.png',
     'nestjs': '/img/nestjs-logo.png',
     'next': '/img/next.js-logo.png',
