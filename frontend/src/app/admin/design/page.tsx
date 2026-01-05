@@ -37,6 +37,8 @@ export default function AdminDesign() {
   // File upload states
   const [lightVideoUploading, setLightVideoUploading] = useState(false);
   const [darkVideoUploading, setDarkVideoUploading] = useState(false);
+  const [lightUploadProgress, setLightUploadProgress] = useState(0);
+  const [darkUploadProgress, setDarkUploadProgress] = useState(0);
   const lightVideoInputRef = useRef<HTMLInputElement>(null);
   const darkVideoInputRef = useRef<HTMLInputElement>(null);
 
@@ -68,9 +70,10 @@ export default function AdminDesign() {
     }
   };
 
-  // Video fayl yuklash funksiyasi
-  const uploadVideo = async (file: File, mode: 'light' | 'dark') => {
+  // Video fayl yuklash funksiyasi - XMLHttpRequest bilan progress
+  const uploadVideo = (file: File, mode: 'light' | 'dark') => {
     const setUploading = mode === 'light' ? setLightVideoUploading : setDarkVideoUploading;
+    const setProgress = mode === 'light' ? setLightUploadProgress : setDarkUploadProgress;
     const setVideo = mode === 'light' ? setLightVideo : setDarkVideo;
     
     // Fayl turini tekshirish
@@ -79,52 +82,62 @@ export default function AdminDesign() {
       return;
     }
     
-    // Maksimal hajm - 50MB (backend limit)
-    if (file.size > 50 * 1024 * 1024) {
-      toast.error('Video hajmi 50MB dan oshmasligi kerak');
+    // Maksimal hajm - 100MB
+    if (file.size > 100 * 1024 * 1024) {
+      toast.error('Video hajmi 100MB dan oshmasligi kerak');
       return;
     }
     
     setUploading(true);
+    setProgress(0);
     
-    try {
-      const formData = new FormData();
-      formData.append('file', file);
-      
-      // Katta fayllar uchun timeout - 5 daqiqa
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 300000); // 5 min timeout
-      
-      const res = await fetch(`${API}/upload/attachment`, {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${token}` },
-        body: formData,
-        signal: controller.signal
-      });
-      
-      clearTimeout(timeoutId);
-      
-      if (res.ok) {
-        const data = await res.json();
-        const videoUrl = data.url || data;
-        // To'liq URL qilish
-        const fullUrl = videoUrl.startsWith('http') ? videoUrl : `${API.replace('/api', '')}${videoUrl}`;
-        setVideo(fullUrl);
-        toast.success('Video muvaffaqiyatli yuklandi');
-      } else {
-        const error = await res.json().catch(() => ({ message: 'Yuklashda xatolik' }));
-        toast.error(error.message || 'Yuklashda xatolik');
+    const formData = new FormData();
+    formData.append('file', file);
+    
+    const xhr = new XMLHttpRequest();
+    
+    // Progress tracking
+    xhr.upload.onprogress = (event) => {
+      if (event.lengthComputable) {
+        const percent = Math.round((event.loaded / event.total) * 100);
+        setProgress(percent);
       }
-    } catch (error: any) {
-      console.error('Upload error:', error);
-      if (error.name === 'AbortError') {
-        toast.error('Yuklash vaqti tugadi. Kichikroq fayl yuklang.');
+    };
+    
+    xhr.onload = () => {
+      if (xhr.status === 200 || xhr.status === 201) {
+        try {
+          const data = JSON.parse(xhr.responseText);
+          const videoUrl = data.url || data;
+          const fullUrl = videoUrl.startsWith('http') ? videoUrl : `${API.replace('/api', '')}${videoUrl}`;
+          setVideo(fullUrl);
+          toast.success('Video muvaffaqiyatli yuklandi!');
+        } catch {
+          toast.error('Javobni o\'qishda xatolik');
+        }
       } else {
-        toast.error('Video yuklashda xatolik');
+        toast.error('Yuklashda xatolik: ' + xhr.status);
       }
-    } finally {
       setUploading(false);
-    }
+      setProgress(0);
+    };
+    
+    xhr.onerror = () => {
+      toast.error('Tarmoq xatosi. Qaytadan urinib ko\'ring.');
+      setUploading(false);
+      setProgress(0);
+    };
+    
+    xhr.ontimeout = () => {
+      toast.error('Yuklash vaqti tugadi');
+      setUploading(false);
+      setProgress(0);
+    };
+    
+    xhr.open('POST', `${API}/upload/attachment`);
+    xhr.setRequestHeader('Authorization', `Bearer ${token}`);
+    xhr.timeout = 300000; // 5 daqiqa
+    xhr.send(formData);
   };
 
   const handleLightVideoFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -268,10 +281,18 @@ export default function AdminDesign() {
               className="w-full px-4 py-3 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg hover:border-blue-500 dark:hover:border-blue-500 transition flex items-center justify-center gap-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
             >
               {lightVideoUploading ? (
-                <>
-                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
-                  Yuklanmoqda...
-                </>
+                <div className="w-full">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
+                    <span>Yuklanmoqda... {lightUploadProgress}%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div 
+                      className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+                      style={{ width: `${lightUploadProgress}%` }}
+                    ></div>
+                  </div>
+                </div>
               ) : (
                 <>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -282,7 +303,7 @@ export default function AdminDesign() {
               )}
             </button>
             
-            <p className="mt-2 text-sm text-gray-500">URL kiriting yoki video fayl yuklang (max 50MB)</p>
+            <p className="mt-2 text-sm text-gray-500">URL kiriting yoki video fayl yuklang (max 100MB)</p>
             
             {/* Video preview */}
             {lightVideo && (
@@ -348,10 +369,18 @@ export default function AdminDesign() {
               className="w-full px-4 py-3 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg hover:border-blue-500 dark:hover:border-blue-500 transition flex items-center justify-center gap-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
             >
               {darkVideoUploading ? (
-                <>
-                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
-                  Yuklanmoqda...
-                </>
+                <div className="w-full">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
+                    <span>Yuklanmoqda... {darkUploadProgress}%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div 
+                      className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+                      style={{ width: `${darkUploadProgress}%` }}
+                    ></div>
+                  </div>
+                </div>
               ) : (
                 <>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -362,7 +391,7 @@ export default function AdminDesign() {
               )}
             </button>
             
-            <p className="mt-2 text-sm text-gray-500">URL kiriting yoki video fayl yuklang (max 50MB)</p>
+            <p className="mt-2 text-sm text-gray-500">URL kiriting yoki video fayl yuklang (max 100MB)</p>
             
             {/* Video preview */}
             {darkVideo && (
