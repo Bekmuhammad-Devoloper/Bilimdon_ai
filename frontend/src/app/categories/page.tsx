@@ -6,83 +6,7 @@ import Image from 'next/image';
 import { Search, ArrowRight } from 'lucide-react';
 import { useCategories } from '@/hooks';
 import { Card, Input, Badge } from '@/components/ui';
-import { cn } from '@/lib/utils';
-
-// Kategoriya icon olish funksiyasi
-function getCategoryIcon(slug: string, apiIcon?: string | null): string | null {
-  // Backend URL
-  const backendUrl = process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001';
-  
-  // Local iconlar - slug bo'yicha
-  const iconMap: Record<string, string> = {
-    'cpp': '/img/c++-logo.png',
-    'c++': '/img/c++-logo.png',
-    'django': '/img/django-logo.png',
-    'docker': '/img/docker-logo.png',
-    'ingliz-tili': '/img/english-logo.png',
-    'english': '/img/english-logo.png',
-    'express': '/img/express.js-logo.png',
-    'expressjs': '/img/express.js-logo.png',
-    'fizika': '/img/fizika-logo.png',
-    'git': '/img/git-logo.png',
-    'go': '/img/Go-Logo_Aqua.png',
-    'golang': '/img/Go-Logo_Aqua.png',
-    'tarix': '/img/history-logo.png',
-    'history': '/img/history-logo.png',
-    'html-css': '/img/html-css-logo.png',
-    'html': '/img/html-css-logo.png',
-    'java': '/img/Java-logo.png',
-    'javascript': '/img/JavaScript-logo.png',
-    'linux': '/img/linux-logo.png',
-    'matematika': '/img/matematika-logo.png',
-    'majburiy-matematika': '/img/matematika-logo.png',
-    'mongodb': '/img/mongodb-logo.png',
-    'nestjs': '/img/nestjs-logo.png',
-    'next': '/img/next.js-logo.png',
-    'nextjs': '/img/next.js-logo.png',
-    'nodejs': '/img/node.js-logo.png',
-    'node': '/img/node.js-logo.png',
-    'postgresql': '/img/postgreSql-logo.png',
-    'postgres': '/img/postgreSql-logo.png',
-    'python': '/img/Python-logo.png',
-    'react': '/img/react-logo.png',
-    'redis': '/img/redis-logo.png',
-    'rust': '/img/rust-logo.png',
-    'sql': '/img/sql-logo.png',
-    'tailwind': '/img/tailwind-css-logo.png',
-    'tailwind-css': '/img/tailwind-css-logo.png',
-    'typescript': '/img/TypeScript-logo.png',
-    'vue': '/img/vue.js-logo.png',
-    'vuejs': '/img/vue.js-logo.png',
-  };
-  
-  const slugLower = slug?.toLowerCase() || '';
-  
-  // Agar local iconMap'da bo'lsa - local icon qaytaramiz
-  if (iconMap[slugLower]) {
-    return iconMap[slugLower];
-  }
-  
-  // Agar API dan icon kelgan bo'lsa
-  if (apiIcon) {
-    // Agar /img/ bilan boshlansa - local icon (frontend)
-    if (apiIcon.startsWith('/img/')) {
-      return apiIcon;
-    }
-    // Agar /uploads/ bilan boshlansa - backend'dan
-    if (apiIcon.startsWith('/uploads/')) {
-      return `${backendUrl}${apiIcon}`;
-    }
-    // Agar http bilan boshlansa - to'liq URL
-    if (apiIcon.startsWith('http')) {
-      return apiIcon;
-    }
-    // Boshqa holatda backend'dan
-    return `${backendUrl}${apiIcon}`;
-  }
-  
-  return null;
-}
+import { cn, getCategoryIconUrl } from '@/lib/utils';
 
 // Statik 27 ta kategoriya
 const allCategories = [
@@ -264,7 +188,7 @@ export default function CategoriesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredCategories.map((category) => {
             const categoryIcon = (category as any).icon;
-            const iconUrl = getCategoryIcon(category.slug, categoryIcon);
+            const iconUrl = getCategoryIconUrl(category.slug, categoryIcon);
             // API dan yuklangan icon (/uploads/) yoki local icon
             const isUploadedIcon = categoryIcon?.startsWith('/uploads/');
             

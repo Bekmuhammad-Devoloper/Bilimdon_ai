@@ -5,61 +5,7 @@ import Image from 'next/image';
 import { ArrowRight, Zap, Trophy, Bot, Target, TrendingUp, Users } from 'lucide-react';
 import { useAuth, useCategories, useStats } from '@/hooks';
 import { Button, Card, Avatar, Progress, Badge } from '@/components/ui';
-import { formatXP, calculateLevelProgress, cn } from '@/lib/utils';
-
-// Map category slugs to logo paths
-const getCategoryLogo = (slug: string): string | null => {
-  const logoMap: Record<string, string> = {
-    'python': '/img/Python-logo.png',
-    'javascript': '/img/JavaScript-logo.png',
-    'typescript': '/img/TypeScript-logo.png',
-    'java': '/img/Java-logo.png',
-    'cpp': '/img/c++-logo.png',
-    'c++': '/img/c++-logo.png',
-    'go': '/img/Go-Logo_Aqua.png',
-    'golang': '/img/Go-Logo_Aqua.png',
-    'react': '/img/react-logo.png',
-    'nodejs': '/img/node.js-logo.png',
-    'node.js': '/img/node.js-logo.png',
-    'node': '/img/node.js-logo.png',
-    'nextjs': '/img/next.js-logo.png',
-    'next.js': '/img/next.js-logo.png',
-    'next': '/img/next.js-logo.png',
-    'nestjs': '/img/nestjs-logo.png',
-    'postgresql': '/img/postgreSql-logo.png',
-    'mongodb': '/img/mongodb-logo.png',
-    'sql': '/img/sql-logo.png',
-    'redis': '/img/redis-logo.png',
-    'git': '/img/git-logo.png',
-    'linux': '/img/linux-logo.png',
-    'html-css': '/img/html-css-logo.png',
-    'html': '/img/html-css-logo.png',
-    'html and css': '/img/html-css-logo.png',
-    'css': '/img/html-css-logo.png',
-    'rust': '/img/rust-logo.png',
-    'vue': '/img/vue.js-logo.png',
-    'vue.js': '/img/vue.js-logo.png',
-    'vuejs': '/img/vue.js-logo.png',
-    'express': '/img/express.js-logo.png',
-    'express.js': '/img/express.js-logo.png',
-    'expressjs': '/img/express.js-logo.png',
-    'django': '/img/django-logo.png',
-    'tailwind': '/img/tailwind-css-logo.png',
-    'tailwind-css': '/img/tailwind-css-logo.png',
-    'tailwind css': '/img/tailwind-css-logo.png',
-    'ingliz-tili': '/img/english-logo.png',
-    'ingliz tili': '/img/english-logo.png',
-    'english': '/img/english-logo.png',
-    'matematika': '/img/matematika-logo.png',
-    'majburiy-matematika': '/img/matematika-logo.png',
-    'fizika': '/img/fizika-logo.png',
-    'tarix': '/img/history-logo.png',
-    'history': '/img/history-logo.png',
-    'docker': '/img/docker-logo.png',
-  };
-  
-  return logoMap[slug.toLowerCase()] || null;
-};
+import { formatXP, calculateLevelProgress, cn, getCategoryIconUrl } from '@/lib/utils';
 
 export default function HomePage() {
   const { user, isAuthenticated, isLoading } = useAuth();
@@ -198,7 +144,7 @@ export default function HomePage() {
         {/* Categories Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {displayCategories.map((category: any) => {
-            const logo = category.logo || getCategoryLogo(category.slug);
+            const logo = category.logo || getCategoryIconUrl(category.slug, category.icon);
             return (
               <Link key={category.id} href={`/test/${category.slug}`}>
                 <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-xl p-4 text-center hover:shadow-lg hover:scale-105 transition-all duration-300 border border-indigo-100 dark:border-indigo-800 cursor-pointer h-32 flex flex-col items-center justify-center">

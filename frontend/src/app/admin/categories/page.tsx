@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/hooks';
 import { useAdminContext } from '@/contexts/AdminContext';
+import { getCategoryIconUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 interface Category {
@@ -676,48 +677,8 @@ export default function AdminCategories() {
 
       <div className="grid gap-4">
         {filteredCategories.map((category) => {
-          // Kategoriya nomidan icon path yaratish
-          const getCategoryIconPath = (name: string) => {
-            const iconMap: Record<string, string> = {
-              'python': '/img/Python-logo.png',
-              'javascript': '/img/JavaScript-logo.png',
-              'typescript': '/img/TypeScript-logo.png',
-              'java': '/img/Java-logo.png',
-              'c++': '/img/c++-logo.png',
-              'go': '/img/Go-Logo_Aqua.png',
-              'rust': '/img/rust-logo.png',
-              'html and css': '/img/html-css-logo.png',
-              'html css': '/img/html-css-logo.png',
-              'html/css': '/img/html-css-logo.png',
-              'react': '/img/react-logo.png',
-              'vue.js': '/img/vue.js-logo.png',
-              'next.js': '/img/next.js-logo.png',
-              'node.js': '/img/node.js-logo.png',
-              'express.js': '/img/express.js-logo.png',
-              'nestjs': '/img/nestjs-logo.png',
-              'django': '/img/django-logo.png',
-              'git': '/img/git-logo.png',
-              'linux': '/img/linux-logo.png',
-              'docker': '/img/docker-logo.png',
-              'postgresql': '/img/postgreSql-logo.png',
-              'mongodb': '/img/mongodb-logo.png',
-              'redis': '/img/redis-logo.png',
-              'sql': '/img/sql-logo.png',
-              'tailwind css': '/img/tailwind-css-logo.png',
-              'matematika': '/img/matematika-logo.png',
-              'majburiy matematika': '/img/matematika-logo.png',
-              'fizika': '/img/fizika-logo.png',
-              'ingliz tili': '/img/english-logo.png',
-              'tarix': '/img/history-logo.png',
-            };
-            
-            const lowerName = name.toLowerCase();
-            return iconMap[lowerName] || null;
-          };
-
-          // Icon path - saqlangan icon yoki avtomatik
-          const autoIconPath = getCategoryIconPath(category.name);
-          const iconPath = category.icon || autoIconPath;
+          // Icon path - markaziy funksiyadan olish
+          const iconPath = getCategoryIconUrl(category.slug, category.icon);
           
           const isImageIcon = iconPath && (
             iconPath.startsWith('/uploads/') ||
@@ -728,18 +689,12 @@ export default function AdminCategories() {
             iconPath.endsWith('.svg')
           );
 
-          const getIconUrl = (icon: string) => {
-            if (icon.startsWith('http')) return icon;
-            if (icon.startsWith('/img/')) return icon; // Frontend public folder
-            return `${API.replace('/api', '')}${icon}`;
-          };
-
           return (
             <div key={category.id} className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow flex items-center justify-between">
               <div className="flex items-center gap-4">
                 {isImageIcon && iconPath ? (
                   <img 
-                    src={getIconUrl(iconPath)} 
+                    src={iconPath} 
                     alt={category.name} 
                     className="w-12 h-12 rounded-lg object-contain bg-gray-100 dark:bg-gray-700 p-1"
                   />

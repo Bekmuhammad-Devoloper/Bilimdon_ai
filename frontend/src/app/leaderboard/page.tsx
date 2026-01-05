@@ -6,69 +6,8 @@ import { Trophy, Medal, Crown, TrendingUp, Calendar, Clock } from 'lucide-react'
 import { useAuth, useCategories } from '@/hooks';
 import { leaderboardApi } from '@/lib/api';
 import { Card, Avatar, Badge } from '@/components/ui';
-import { cn, formatXP } from '@/lib/utils';
+import { cn, formatXP, getCategoryIconUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
-
-// Map category slugs to logo paths
-const getCategoryLogo = (slug: string, apiIcon?: string | null): string | null => {
-  // Agar API'dan icon kelgan bo'lsa va u /uploads/ bilan boshlansa
-  if (apiIcon && apiIcon.startsWith('/uploads/')) {
-    // Backend URL'ni qo'shish
-    const backendUrl = process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001';
-    return `${backendUrl}${apiIcon}`;
-  }
-  
-  const logoMap: Record<string, string> = {
-    'python': '/img/Python-logo.png',
-    'javascript': '/img/JavaScript-logo.png',
-    'typescript': '/img/TypeScript-logo.png',
-    'java': '/img/Java-logo.png',
-    'cpp': '/img/c++-logo.png',
-    'c++': '/img/c++-logo.png',
-    'go': '/img/Go-Logo_Aqua.png',
-    'golang': '/img/Go-Logo_Aqua.png',
-    'react': '/img/react-logo.png',
-    'nodejs': '/img/node.js-logo.png',
-    'node.js': '/img/node.js-logo.png',
-    'node': '/img/node.js-logo.png',
-    'nextjs': '/img/next.js-logo.png',
-    'next.js': '/img/next.js-logo.png',
-    'next': '/img/next.js-logo.png',
-    'nestjs': '/img/nestjs-logo.png',
-    'postgresql': '/img/postgreSql-logo.png',
-    'mongodb': '/img/mongodb-logo.png',
-    'sql': '/img/sql-logo.png',
-    'redis': '/img/redis-logo.png',
-    'git': '/img/git-logo.png',
-    'linux': '/img/linux-logo.png',
-    'html-css': '/img/html-css-logo.png',
-    'html': '/img/html-css-logo.png',
-    'html and css': '/img/html-css-logo.png',
-    'css': '/img/html-css-logo.png',
-    'rust': '/img/rust-logo.png',
-    'vue': '/img/vue.js-logo.png',
-    'vue.js': '/img/vue.js-logo.png',
-    'vuejs': '/img/vue.js-logo.png',
-    'express': '/img/express.js-logo.png',
-    'express.js': '/img/express.js-logo.png',
-    'expressjs': '/img/express.js-logo.png',
-    'django': '/img/django-logo.png',
-    'tailwind': '/img/tailwind-css-logo.png',
-    'tailwind-css': '/img/tailwind-css-logo.png',
-    'tailwind css': '/img/tailwind-css-logo.png',
-    'ingliz-tili': '/img/english-logo.png',
-    'ingliz tili': '/img/english-logo.png',
-    'english': '/img/english-logo.png',
-    'matematika': '/img/matematika-logo.png',
-    'majburiy-matematika': '/img/matematika-logo.png',
-    'fizika': '/img/fizika-logo.png',
-    'tarix': '/img/history-logo.png',
-    'history': '/img/history-logo.png',
-    'docker': '/img/docker-logo.png',
-  };
-  
-  return logoMap[slug.toLowerCase()] || null;
-};
 
 interface LeaderboardEntry {
   rank: number;
@@ -263,7 +202,7 @@ export default function LeaderboardPage() {
             Barchasi
           </button>
           {categories.slice(0, 8).map((cat) => {
-            const logoPath = getCategoryLogo(cat.slug, cat.icon);
+            const logoPath = getCategoryIconUrl(cat.slug, cat.icon);
             return (
               <button
                 key={cat.id}
