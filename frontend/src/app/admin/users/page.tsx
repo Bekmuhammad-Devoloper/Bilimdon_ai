@@ -5,6 +5,37 @@ import { useAuth } from '@/hooks';
 import { useAdminContext } from '@/contexts/AdminContext';
 import toast from 'react-hot-toast';
 
+// Telefon raqamni formatlash funksiyasi
+const formatPhoneNumber = (phone: string | null): string => {
+  if (!phone) return '';
+  
+  // Faqat raqamlarni olish
+  const cleaned = phone.replace(/\D/g, '');
+  
+  // O'zbekiston formati: +998 (XX) XXX-XX-XX
+  if (cleaned.length === 12 && cleaned.startsWith('998')) {
+    return `+998 (${cleaned.slice(3, 5)}) ${cleaned.slice(5, 8)}-${cleaned.slice(8, 10)}-${cleaned.slice(10, 12)}`;
+  }
+  
+  // Rossiya formati: +7 (XXX) XXX-XX-XX
+  if (cleaned.length === 11 && cleaned.startsWith('7')) {
+    return `+7 (${cleaned.slice(1, 4)}) ${cleaned.slice(4, 7)}-${cleaned.slice(7, 9)}-${cleaned.slice(9, 11)}`;
+  }
+  
+  // Boshqa formatlar uchun oddiy formatlash
+  if (cleaned.length >= 10) {
+    const countryCode = cleaned.slice(0, cleaned.length - 10);
+    const areaCode = cleaned.slice(-10, -7);
+    const firstPart = cleaned.slice(-7, -4);
+    const secondPart = cleaned.slice(-4, -2);
+    const thirdPart = cleaned.slice(-2);
+    return `+${countryCode} (${areaCode}) ${firstPart}-${secondPart}-${thirdPart}`;
+  }
+  
+  // Qisqa raqamlar uchun asl formatda qaytarish
+  return phone.startsWith('+') ? phone : `+${phone}`;
+};
+
 interface User {
   id: string;
   username: string;
@@ -278,7 +309,7 @@ export default function AdminUsers() {
                       {/* Registratsiyada kiritilgan telefon */}
                       {user.phone && (
                         <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-1">
-                          <span>📱</span> {user.phone}
+                          <span>📱</span> {formatPhoneNumber(user.phone)}
                         </p>
                       )}
                       {/* Telegram ma'lumotlari */}
@@ -292,7 +323,7 @@ export default function AdminUsers() {
                           )}
                           {user.telegramPhone && (
                             <p className="text-gray-500 dark:text-gray-400 text-xs pl-5 flex items-center gap-1">
-                              <span>📞</span> {user.telegramPhone}
+                              <span>📞</span> {formatPhoneNumber(user.telegramPhone)}
                             </p>
                           )}
                         </div>
@@ -407,7 +438,7 @@ export default function AdminUsers() {
                   {/* Registratsiyada kiritilgan telefon */}
                   {user.phone && (
                     <p className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1">
-                      <span className="text-base">📱</span> {user.phone}
+                      <span className="text-base">📱</span> {formatPhoneNumber(user.phone)}
                     </p>
                   )}
                   {/* Telegram ma'lumotlari */}
@@ -421,7 +452,7 @@ export default function AdminUsers() {
                       )}
                       {user.telegramPhone && (
                         <p className="text-gray-500 dark:text-gray-400 pl-5 flex items-center gap-1">
-                          <span>📞</span> {user.telegramPhone}
+                          <span>📞</span> {formatPhoneNumber(user.telegramPhone)}
                         </p>
                       )}
                     </div>

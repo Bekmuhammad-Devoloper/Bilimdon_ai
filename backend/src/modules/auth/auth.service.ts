@@ -132,7 +132,8 @@ export class AuthService {
           email: `${dto.telegramId}@telegram.bilimdon.uz`,
           password: await bcrypt.hash(Math.random().toString(36), 12),
           fullName: `${dto.firstName || ''} ${dto.lastName || ''}`.trim() || 'Telegram User',
-          avatar: dto.photoUrl,
+          avatar: dto.photoUrl || null,
+          telegramUsername: dto.username || null,
         },
       });
     } else {
@@ -172,6 +173,8 @@ export class AuthService {
         level: true,
         role: true,
         telegramId: true,
+        telegramUsername: true,
+        telegramPhone: true,
         createdAt: true,
         updatedAt: true,
         _count: {
@@ -308,12 +311,23 @@ export class AuthService {
   async sendPhoneToTelegram(phone: string, email: string) {
     // Here you would integrate with Telegram Bot API
     // For now, just save to database or log
-    console.log(`Phone ${phone} for email ${email} would be sent to Telegram`);
-    
-    // TODO: Implement Telegram bot integration
-    // Example: send message to admin bot with phone number
-    
-    return { message: 'Telefon raqam Telegramga yuborildi' };
+    console.log(`Saving phone ${phone} for email ${email}`);
+
+    if (!email) {
+      return { message: 'Email kerak' };
+    }
+
+    try {
+      const user = await this.prisma.user.findUnique({ where: { email } });
+      if (user) {
+        await this.prisma.user.update({ where: { id: user.id }, data: { telegramPhone: phone } });
+      }
+    } catch (err) {
+      console.error('Error saving telegram phone:', err);
+    }
+
+    // TODO: optionally notify admin via bot about the phone
+    return { message: 'Telefon raqam saqlandi' };
   }
 
   async forgotPassword(email: string) {

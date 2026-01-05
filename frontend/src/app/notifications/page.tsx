@@ -266,9 +266,9 @@ export default function NotificationsPage() {
                   {notification.data?.videoUrl && (
                     <div className="mt-3">
                       {(() => {
-                        const videoUrl = notification.data?.videoUrl?.startsWith('http') 
+                        const videoUrl: string = notification.data?.videoUrl?.startsWith('http') 
                           ? notification.data.videoUrl 
-                          : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '')}${notification.data?.videoUrl}`;
+                          : `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || ''}${notification.data?.videoUrl || ''}`;
                         return (
                           <video
                             controls
@@ -279,11 +279,11 @@ export default function NotificationsPage() {
                               console.error('Video load error for URL:', videoUrl);
                             }}
                           >
-                            <source src={videoUrl} type="video/mp4" />
-                            <source src={videoUrl} type="video/webm" />
-                            <source src={videoUrl} type="video/ogg" />
+                            <source src={videoUrl || undefined} type="video/mp4" />
+                            <source src={videoUrl || undefined} type="video/webm" />
+                            <source src={videoUrl || undefined} type="video/ogg" />
                             <p className="text-white p-4">
-                              Video yuklanmadi. <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">Bu yerda ochish</a>
+                              Video yuklanmadi. <a href={videoUrl || '#'} target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">Bu yerda ochish</a>
                             </p>
                           </video>
                         );

@@ -10,6 +10,9 @@ import { cn } from '@/lib/utils';
 
 // Kategoriya icon olish funksiyasi
 function getCategoryIcon(slug: string, apiIcon?: string | null): string | null {
+  // Backend URL
+  const backendUrl = process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001';
+  
   // Local iconlar - slug bo'yicha
   const iconMap: Record<string, string> = {
     'cpp': '/img/c++-logo.png',
@@ -67,14 +70,14 @@ function getCategoryIcon(slug: string, apiIcon?: string | null): string | null {
     }
     // Agar /uploads/ bilan boshlansa - backend'dan
     if (apiIcon.startsWith('/uploads/')) {
-      return `http://localhost:3001${apiIcon}`;
+      return `${backendUrl}${apiIcon}`;
     }
     // Agar http bilan boshlansa - to'liq URL
     if (apiIcon.startsWith('http')) {
       return apiIcon;
     }
     // Boshqa holatda backend'dan
-    return `http://localhost:3001${apiIcon}`;
+    return `${backendUrl}${apiIcon}`;
   }
   
   return null;
@@ -259,9 +262,10 @@ export default function CategoriesPage() {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredCategories.map((category) => {
-            const iconUrl = getCategoryIcon(category.slug, category.icon);
+            const categoryIcon = (category as any).icon;
+            const iconUrl = getCategoryIcon(category.slug, categoryIcon);
             // API dan yuklangan icon (/uploads/) yoki local icon
-            const isUploadedIcon = category.icon?.startsWith('/uploads/');
+            const isUploadedIcon = categoryIcon?.startsWith('/uploads/');
             
             return (
               <Link key={category.id} href={`/test/${category.slug}`}>
@@ -290,8 +294,8 @@ export default function CategoriesPage() {
                   </div>
                   <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
                     <div className="flex items-center gap-2">
-                      {category._count && (
-                        <Badge variant="info">{category._count.questions}+ savol</Badge>
+                      {(category as any)._count && (
+                        <Badge variant="info">{(category as any)._count.questions}+ savol</Badge>
                       )}
                     </div>
                     <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />

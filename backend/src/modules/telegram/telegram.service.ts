@@ -124,6 +124,29 @@ export class TelegramService {
       where: { telegramId: telegramUser.id.toString() },
     });
 
+    // Try to fetch the latest profile photo via Bot API (best-effort)
+    const fetchLatestAvatar = async (): Promise<string | undefined> => {
+      if (!this.botToken) return undefined;
+      try {
+        const photosRes = await fetch(`https://api.telegram.org/bot${this.botToken}/getUserProfilePhotos?user_id=${telegramUser.id}&limit=1`);
+        const photosJson = await photosRes.json();
+        if (!photosJson.ok || !photosJson.result || photosJson.result.total_count === 0) return undefined;
+        const photoSizes = photosJson.result.photos[0];
+        // choose the biggest size (last in array)
+        const fileId = photoSizes[photoSizes.length - 1].file_id;
+        const fileRes = await fetch(`https://api.telegram.org/bot${this.botToken}/getFile?file_id=${fileId}`);
+        const fileJson = await fileRes.json();
+        if (!fileJson.ok || !fileJson.result) return undefined;
+        const filePath = fileJson.result.file_path;
+        return `https://api.telegram.org/file/bot${this.botToken}/${filePath}`;
+      } catch (err) {
+        // ignore errors and fallback to photo_url from init data
+        return undefined;
+      }
+    };
+
+    const latestAvatar = await fetchLatestAvatar();
+
     if (!user) {
       // Generate unique username
       let username = telegramUser.username || `user_${telegramUser.id}`;
@@ -143,9 +166,11 @@ export class TelegramService {
         data: {
           telegramId: telegramUser.id.toString(),
           username,
+          telegramUsername: telegramUser.username || null,
           fullName: fullName || username,
-          avatar: telegramUser.photo_url,
-          email: null,
+          avatar: latestAvatar || telegramUser.photo_url || null,
+          // store a placeholder email to keep uniqueness and allow contact later
+          email: `${telegramUser.id}@telegram.bilimdon.uz`,
           password: null,
         },
       });
@@ -159,7 +184,8 @@ export class TelegramService {
         where: { id: user.id },
         data: {
           fullName: fullName || user.fullName,
-          avatar: telegramUser.photo_url || user.avatar,
+          telegramUsername: telegramUser.username || user.telegramUsername,
+          avatar: latestAvatar || telegramUser.photo_url || user.avatar,
         },
       });
     }
@@ -176,6 +202,9 @@ export class TelegramService {
       user: {
         id: user.id,
         username: user.username,
+        telegramUsername: user.telegramUsername,
+        telegramPhone: user.telegramPhone,
+        email: user.email,
         fullName: user.fullName,
         avatar: user.avatar,
         totalXP: user.totalXP,

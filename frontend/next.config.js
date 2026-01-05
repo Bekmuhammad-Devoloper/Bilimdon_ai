@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone', // Docker uchun kerak
   images: {
     remotePatterns: [
       {
@@ -12,6 +13,11 @@ const nextConfig = {
         protocol: 'http',
         hostname: 'localhost',
         port: '3001',
+        pathname: '/uploads/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.bilimdon-ai.uz',
         pathname: '/uploads/**',
       },
       {

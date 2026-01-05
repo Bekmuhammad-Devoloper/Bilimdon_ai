@@ -167,3 +167,98 @@ export const storage = {
     localStorage.removeItem(key);
   },
 };
+
+// Backend URL helper - uploads uchun
+export function getBackendUrl(): string {
+  return process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001';
+}
+
+// Upload qilingan fayllar uchun to'liq URL olish
+export function getUploadUrl(path: string | null | undefined): string | null {
+  if (!path) return null;
+  
+  // Agar to'liq URL bo'lsa
+  if (path.startsWith('http://') || path.startsWith('https://')) {
+    return path;
+  }
+  
+  // Agar /uploads/ yoki /attachments/ bilan boshlansa
+  if (path.startsWith('/uploads/') || path.startsWith('/attachments/')) {
+    return `${getBackendUrl()}${path}`;
+  }
+  
+  // Agar /img/ bilan boshlansa - frontend local
+  if (path.startsWith('/img/')) {
+    return path;
+  }
+  
+  // Default - backend'ga yo'naltirish
+  return `${getBackendUrl()}${path.startsWith('/') ? path : '/' + path}`;
+}
+
+// Kategoriya icon olish - umumiy funksiya
+export function getCategoryIconUrl(slug: string, apiIcon?: string | null): string | null {
+  const iconMap: Record<string, string> = {
+    'cpp': '/img/c++-logo.png',
+    'c++': '/img/c++-logo.png',
+    'django': '/img/django-logo.png',
+    'docker': '/img/docker-logo.png',
+    'ingliz-tili': '/img/english-logo.png',
+    'english': '/img/english-logo.png',
+    'express': '/img/express.js-logo.png',
+    'expressjs': '/img/express.js-logo.png',
+    'fizika': '/img/fizika-logo.png',
+    'git': '/img/git-logo.png',
+    'go': '/img/Go-Logo_Aqua.png',
+    'golang': '/img/Go-Logo_Aqua.png',
+    'tarix': '/img/history-logo.png',
+    'history': '/img/history-logo.png',
+    'html-css': '/img/html-css-logo.png',
+    'html': '/img/html-css-logo.png',
+    'html and css': '/img/html-css-logo.png',
+    'java': '/img/Java-logo.png',
+    'javascript': '/img/JavaScript-logo.png',
+    'linux': '/img/linux-logo.png',
+    'matematika': '/img/matematika-logo.png',
+    'mongodb': '/img/mongodb-logo.png',
+    'nestjs': '/img/nestjs-logo.png',
+    'next': '/img/next.js-logo.png',
+    'nextjs': '/img/next.js-logo.png',
+    'nodejs': '/img/node.js-logo.png',
+    'node': '/img/node.js-logo.png',
+    'node.js': '/img/node.js-logo.png',
+    'postgresql': '/img/postgreSql-logo.png',
+    'postgres': '/img/postgreSql-logo.png',
+    'python': '/img/Python-logo.png',
+    'react': '/img/react-logo.png',
+    'redis': '/img/redis-logo.png',
+    'rust': '/img/rust-logo.png',
+    'sql': '/img/sql-logo.png',
+    'tailwind': '/img/tailwind-css-logo.png',
+    'tailwind-css': '/img/tailwind-css-logo.png',
+    'tailwind css': '/img/tailwind-css-logo.png',
+    'typescript': '/img/TypeScript-logo.png',
+    'vue': '/img/vue.js-logo.png',
+    'vue.js': '/img/vue.js-logo.png',
+    'vuejs': '/img/vue.js-logo.png',
+  };
+  
+  const slugLower = slug?.toLowerCase() || '';
+  
+  // 1. Agar API'dan icon kelgan bo'lsa va u /uploads/ bilan boshlansa - birinchi prioritet
+  if (apiIcon && apiIcon.startsWith('/uploads/')) {
+    return getUploadUrl(apiIcon);
+  }
+  
+  // 2. Local iconMap'da tekshirish
+  if (iconMap[slugLower]) {
+    return iconMap[slugLower];
+  }
+  
+  // 3. API'dan kelgan boshqa iconlar
+  if (apiIcon) {
+    return getUploadUrl(apiIcon);
+  }
+  
+  return null;
+}

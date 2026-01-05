@@ -552,7 +552,7 @@ export default function ProfilePage() {
             ) : (
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {achievements.locked.map((ach) => {
-                  const target = (ach.condition as any)?.value || 0;
+                  const target = ach.target || 0;
                   const progress = ach.progress || 0;
                   const percentage = target > 0 ? Math.min(100, (progress / target) * 100) : 0;
                   

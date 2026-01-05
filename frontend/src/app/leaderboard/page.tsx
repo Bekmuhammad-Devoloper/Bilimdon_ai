@@ -10,7 +10,14 @@ import { cn, formatXP } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 // Map category slugs to logo paths
-const getCategoryLogo = (slug: string): string | null => {
+const getCategoryLogo = (slug: string, apiIcon?: string | null): string | null => {
+  // Agar API'dan icon kelgan bo'lsa va u /uploads/ bilan boshlansa
+  if (apiIcon && apiIcon.startsWith('/uploads/')) {
+    // Backend URL'ni qo'shish
+    const backendUrl = process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001';
+    return `${backendUrl}${apiIcon}`;
+  }
+  
   const logoMap: Record<string, string> = {
     'python': '/img/Python-logo.png',
     'javascript': '/img/JavaScript-logo.png',
@@ -255,7 +262,7 @@ export default function LeaderboardPage() {
             Barchasi
           </button>
           {categories.slice(0, 8).map((cat) => {
-            const logoPath = getCategoryLogo(cat.slug);
+            const logoPath = getCategoryLogo(cat.slug, cat.icon);
             return (
               <button
                 key={cat.id}
@@ -268,9 +275,10 @@ export default function LeaderboardPage() {
                 )}
               >
                 {logoPath ? (
-                  <Image src={logoPath} alt={cat.name} width={20} height={20} className="object-contain" style={{ width: 'auto', height: 'auto' }} />
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={logoPath} alt={cat.name} width={20} height={20} className="object-contain w-5 h-5" />
                 ) : (
-                  <span>{cat.icon}</span>
+                  <span>📚</span>
                 )}
                 {cat.name}
               </button>

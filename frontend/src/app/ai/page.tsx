@@ -13,8 +13,13 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import toast from 'react-hot-toast';
 
+// Backend URL for API uploads
+const getBackendUrl = () => {
+  return process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:3001';
+};
+
 // Map category slugs to logo paths
-const getCategoryLogo = (slug: string): string | null => {
+const getCategoryLogo = (slug: string, apiIcon?: string | null): string | null => {
   const logoMap: Record<string, string> = {
     'python': '/img/Python-logo.png',
     'javascript': '/img/JavaScript-logo.png',
@@ -45,7 +50,20 @@ const getCategoryLogo = (slug: string): string | null => {
     'docker': '/img/docker-logo.png',
   };
   
-  return logoMap[slug?.toLowerCase()] || null;
+  // First check static logos
+  if (logoMap[slug?.toLowerCase()]) {
+    return logoMap[slug?.toLowerCase()];
+  }
+  
+  // Then check API icon
+  if (apiIcon && (apiIcon.startsWith('/uploads') || apiIcon.startsWith('/attachments'))) {
+    const backendUrl = getBackendUrl();
+    // Normalize the path
+    const iconPath = apiIcon.startsWith('/uploads') ? apiIcon : `/uploads${apiIcon}`;
+    return `${backendUrl}${iconPath}`;
+  }
+  
+  return null;
 };
 
 interface Message {
@@ -264,7 +282,7 @@ export default function AIPage() {
               Umumiy
             </button>
             {categories.slice(0, 6).map((cat) => {
-              const logoPath = getCategoryLogo(cat.slug);
+              const logoPath = getCategoryLogo(cat.slug, cat.icon);
               return (
                 <button
                   key={cat.id}
@@ -277,9 +295,11 @@ export default function AIPage() {
                   )}
                 >
                   {logoPath ? (
-                    <Image src={logoPath} alt={cat.name} width={18} height={18} className="object-contain" />
-                  ) : (
+                    <Image src={logoPath} alt={cat.name} width={18} height={18} className="object-contain" unoptimized={logoPath.startsWith('http')} />
+                  ) : cat.icon && !cat.icon.includes('/') ? (
                     <span>{cat.icon}</span>
+                  ) : (
+                    <span className="w-4 h-4 bg-indigo-500 rounded-full" />
                   )}
                   {cat.name}
                 </button>
