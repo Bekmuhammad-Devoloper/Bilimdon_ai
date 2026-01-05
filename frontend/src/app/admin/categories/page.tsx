@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/hooks';
 import { useAdminContext } from '@/contexts/AdminContext';
-import { getCategoryIconUrl } from '@/lib/utils';
+import { getCategoryIconUrl, getUploadUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 interface Category {
@@ -902,7 +902,7 @@ export default function AdminCategories() {
                       <div className="flex items-center gap-4">
                         <div className="w-16 h-16 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden bg-gray-100 dark:bg-gray-900">
                           <img 
-                            src={iconPreview.startsWith('http') ? iconPreview : `${API.replace('/api', '')}${iconPreview}`} 
+                            src={getUploadUrl(iconPreview) || iconPreview} 
                             alt="Icon preview" 
                             className="w-full h-full object-contain"
                           />
