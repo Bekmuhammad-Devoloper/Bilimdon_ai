@@ -233,26 +233,27 @@ export default function ProfilePage() {
         </div>
       </Card>
 
-      {/* Tabs */}
-      <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
+      {/* Tabs - Compact for mobile */}
+      <div className="flex gap-1.5 sm:gap-2 mb-6 overflow-x-auto pb-2 scrollbar-hide">
         {[
-          { id: 'stats', label: 'Statistika', icon: BarChart3 },
-          { id: 'history', label: 'Tarix', icon: Clock },
-          { id: 'developer', label: 'Dasturchi', icon: Code },
-          { id: 'achievements', label: 'Yutuqlar', icon: Award },
+          { id: 'stats', label: 'Statistika', shortLabel: 'Stat', icon: BarChart3 },
+          { id: 'history', label: 'Tarix', shortLabel: 'Tarix', icon: Clock },
+          { id: 'developer', label: 'Dasturchi', shortLabel: 'Dev', icon: Code },
+          { id: 'achievements', label: 'Yutuqlar', shortLabel: 'Yutuq', icon: Award },
         ].map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id as any)}
             className={cn(
-              'flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium whitespace-nowrap',
+              'flex items-center gap-1 sm:gap-2 px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl font-medium whitespace-nowrap text-xs sm:text-sm transition-all',
               activeTab === tab.id
                 ? 'bg-indigo-600 text-white'
-                : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+                : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
             )}
           >
-            <tab.icon className="w-4 h-4" />
-            {tab.label}
+            <tab.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <span className="hidden sm:inline">{tab.label}</span>
+            <span className="sm:hidden">{tab.shortLabel}</span>
           </button>
         ))}
       </div>
