@@ -198,6 +198,9 @@ export class TelegramService {
       telegramId: user.telegramId,
     });
 
+    // Check if phone number is required
+    const phoneRequired = !user.telegramPhone;
+
     return {
       user: {
         id: user.id,
@@ -212,7 +215,30 @@ export class TelegramService {
         role: user.role,
       },
       token,
+      phoneRequired, // Frontend should prompt user to share phone if true
     };
+  }
+
+  /**
+   * Save phone number from Telegram contact sharing
+   */
+  async savePhoneNumber(userId: string, phone: string) {
+    const user = await this.prisma.user.update({
+      where: { id: userId },
+      data: { telegramPhone: phone },
+      select: {
+        id: true,
+        username: true,
+        fullName: true,
+        telegramPhone: true,
+        avatar: true,
+        totalXP: true,
+        level: true,
+        role: true,
+      },
+    });
+
+    return { success: true, user };
   }
 
   /**

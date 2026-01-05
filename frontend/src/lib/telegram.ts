@@ -193,6 +193,16 @@ export function telegramConfirm(message: string): Promise<boolean> {
   });
 }
 
+// Request contact (phone number) from Telegram
+export function requestTelegramContact(callback: (contact: any) => void) {
+  const webApp = getTelegramWebApp();
+  if (webApp) {
+    webApp.requestContact((contact) => {
+      callback(contact);
+    });
+  }
+}
+
 // Main button helpers
 export const mainButton = {
   show: (text: string, onClick: () => void) => {

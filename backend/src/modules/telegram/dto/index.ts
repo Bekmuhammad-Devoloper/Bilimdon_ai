@@ -31,3 +31,10 @@ export class SetWebhookDto {
   @IsNotEmpty()
   webhookUrl: string;
 }
+
+export class SavePhoneDto {
+  @ApiProperty({ description: 'Phone number from Telegram contact' })
+  @IsString()
+  @IsNotEmpty()
+  phone: string;
+}

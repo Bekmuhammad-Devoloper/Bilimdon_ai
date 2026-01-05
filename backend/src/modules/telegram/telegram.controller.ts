@@ -13,7 +13,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/guards/roles.decorator';
 import { Role } from '@prisma/client';
-import { TelegramWebAppAuthDto, SendTelegramMessageDto, SetWebhookDto } from './dto';
+import { TelegramWebAppAuthDto, SendTelegramMessageDto, SetWebhookDto, SavePhoneDto } from './dto';
 
 @ApiTags('Telegram')
 @Controller('telegram')
@@ -24,6 +24,14 @@ export class TelegramController {
   @ApiOperation({ summary: 'Authenticate via Telegram Mini App' })
   authenticateWebApp(@Body() dto: TelegramWebAppAuthDto) {
     return this.telegramService.authenticateWebApp(dto.initData);
+  }
+
+  @Post('webapp/save-phone')
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
+  @ApiOperation({ summary: 'Save phone number from Telegram contact sharing' })
+  savePhone(@Request() req, @Body() dto: SavePhoneDto) {
+    return this.telegramService.savePhoneNumber(req.user.sub, dto.phone);
   }
 
   @Get('user/:telegramId')
