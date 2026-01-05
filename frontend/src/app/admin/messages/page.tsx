@@ -4,6 +4,7 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useAuth } from '@/hooks';
 import { useAdminContext } from '@/contexts/AdminContext';
+import { getUploadUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 interface User {
@@ -221,8 +222,7 @@ export default function AdminMessages() {
 
   const getAvatarUrl = (avatar: string | null) => {
     if (!avatar) return null;
-    if (avatar.startsWith('http')) return avatar;
-    return `${API.replace('/api', '')}${avatar}`;
+    return getUploadUrl(avatar);
   };
 
   if (loading) {

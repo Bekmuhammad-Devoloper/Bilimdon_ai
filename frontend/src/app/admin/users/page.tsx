@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/hooks';
 import { useAdminContext } from '@/contexts/AdminContext';
+import { getUploadUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 // Telefon raqamni formatlash funksiyasi
@@ -286,7 +287,7 @@ export default function AdminUsers() {
                   <td className="px-4 py-4">
                     <div className="flex items-center gap-3">
                       {user.avatar ? (
-                        <img src={user.avatar.startsWith('http') ? user.avatar : `${API.replace('/api', '')}${user.avatar}`} alt={user.username} className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+                        <img src={getUploadUrl(user.avatar) || user.avatar} alt={user.username} className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
                       ) : (
                         <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center flex-shrink-0">
                           <span className="text-blue-600 dark:text-blue-400 font-semibold">
@@ -397,7 +398,7 @@ export default function AdminUsers() {
               
               {user.avatar ? (
                 <img 
-                  src={user.avatar.startsWith('http') ? user.avatar : `${API.replace('/api', '')}${user.avatar}`} 
+                  src={getUploadUrl(user.avatar) || user.avatar} 
                   alt={user.username} 
                   className="w-14 h-14 rounded-full object-cover flex-shrink-0" 
                 />
@@ -407,7 +408,7 @@ export default function AdminUsers() {
                     {user.username.charAt(0).toUpperCase()}
                   </span>
                 </div>
-              )}
+              )}}
               
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between gap-2">
