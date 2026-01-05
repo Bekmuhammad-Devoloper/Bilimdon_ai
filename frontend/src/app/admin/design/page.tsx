@@ -91,11 +91,18 @@ export default function AdminDesign() {
       const formData = new FormData();
       formData.append('file', file);
       
+      // Katta fayllar uchun timeout - 5 daqiqa
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 300000); // 5 min timeout
+      
       const res = await fetch(`${API}/upload/attachment`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
-        body: formData
+        body: formData,
+        signal: controller.signal
       });
+      
+      clearTimeout(timeoutId);
       
       if (res.ok) {
         const data = await res.json();
@@ -105,12 +112,16 @@ export default function AdminDesign() {
         setVideo(fullUrl);
         toast.success('Video muvaffaqiyatli yuklandi');
       } else {
-        const error = await res.json();
+        const error = await res.json().catch(() => ({ message: 'Yuklashda xatolik' }));
         toast.error(error.message || 'Yuklashda xatolik');
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Upload error:', error);
-      toast.error('Video yuklashda xatolik');
+      if (error.name === 'AbortError') {
+        toast.error('Yuklash vaqti tugadi. Kichikroq fayl yuklang.');
+      } else {
+        toast.error('Video yuklashda xatolik');
+      }
     } finally {
       setUploading(false);
     }
