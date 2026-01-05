@@ -298,41 +298,173 @@ export class TelegramService {
    * Handle incoming webhook update from Telegram
    */
   async handleWebhookUpdate(update: any) {
-    // Handle /start command
-    if (update.message?.text?.startsWith('/start')) {
-      const chatId = update.message.chat.id;
-      const firstName = update.message.from.first_name;
-      
-      await this.sendMessage(chatId, 
-        `Assalomu alaykum, ${firstName}! 👋\n\n` +
-        `Bilimdon platformasiga xush kelibsiz! 🎓\n\n` +
-        `Testlar topshirish va bilimingizni sinash uchun quyidagi tugmani bosing:`,
-        {
-          parse_mode: 'HTML',
-          reply_markup: {
-            inline_keyboard: [[
-              {
-                text: '🚀 Platformani ochish',
-                web_app: { url: this.configService.get('WEBAPP_URL') || 'https://bilimdon.uz' },
-              },
-            ]],
-          },
-        }
-      );
-    }
+    try {
+      // Handle /start command
+      if (update.message?.text?.startsWith('/start')) {
+        const chatId = update.message.chat.id;
+        const from = update.message.from;
+        const firstName = from.first_name;
+        
+        // Save/update user info from message
+        await this.saveUserFromMessage(from);
+        
+        await this.sendMessage(chatId, 
+          `Assalomu alaykum, ${firstName}! 👋\n\n` +
+          `<b>Bilimdon</b> platformasiga xush kelibsiz! 🎓\n\n` +
+          `📚 Bu yerda siz:\n` +
+          `• Turli fanlardan testlar topshirishingiz\n` +
+          `• Bilimingizni sinashingiz\n` +
+          `• Reyting jadvalida o'z o'rningizni ko'rishingiz mumkin!\n\n` +
+          `🚀 Boshlash uchun quyidagi tugmani bosing:`,
+          {
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{
+                  text: '� Platformani ochish',
+                  web_app: { url: this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz' },
+                }],
+                [{
+                  text: '📞 Telefon raqamni ulashish',
+                  callback_data: 'share_phone',
+                }],
+              ],
+            },
+          }
+        );
+      }
 
-    // Handle callback queries (inline button presses)
-    if (update.callback_query) {
-      // Answer callback to remove loading state
-      const callbackQueryId = update.callback_query.id;
-      await fetch(`https://api.telegram.org/bot${this.botToken}/answerCallbackQuery`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ callback_query_id: callbackQueryId }),
-      });
+      // Handle contact shared (phone number)
+      if (update.message?.contact) {
+        const chatId = update.message.chat.id;
+        const contact = update.message.contact;
+        const from = update.message.from;
+        
+        // Save phone number to user
+        if (contact.user_id === from.id) {
+          await this.prisma.user.updateMany({
+            where: { telegramId: from.id.toString() },
+            data: { telegramPhone: contact.phone_number },
+          });
+          
+          await this.sendMessage(chatId,
+            `✅ Telefon raqamingiz saqlandi: <code>${contact.phone_number}</code>\n\n` +
+            `Endi platformadan to'liq foydalanishingiz mumkin!`,
+            {
+              parse_mode: 'HTML',
+              reply_markup: {
+                inline_keyboard: [[{
+                  text: '📱 Platformani ochish',
+                  web_app: { url: this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz' },
+                }]],
+              },
+            }
+          );
+        }
+      }
+
+      // Handle callback queries (inline button presses)
+      if (update.callback_query) {
+        const callbackQueryId = update.callback_query.id;
+        const chatId = update.callback_query.message.chat.id;
+        const data = update.callback_query.data;
+        
+        // Answer callback to remove loading state
+        await fetch(`https://api.telegram.org/bot${this.botToken}/answerCallbackQuery`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ callback_query_id: callbackQueryId }),
+        });
+
+        // Handle share phone request
+        if (data === 'share_phone') {
+          await this.sendMessage(chatId,
+            `📞 Telefon raqamingizni ulashish uchun quyidagi tugmani bosing:`,
+            {
+              parse_mode: 'HTML',
+              reply_markup: {
+                keyboard: [[{
+                  text: '📞 Telefon raqamni yuborish',
+                  request_contact: true,
+                }]],
+                resize_keyboard: true,
+                one_time_keyboard: true,
+              },
+            }
+          );
+        }
+      }
+    } catch (error) {
+      console.error('Webhook update error:', error);
     }
 
     return { ok: true };
+  }
+
+  /**
+   * Save or update user from Telegram message
+   */
+  private async saveUserFromMessage(from: any) {
+    const telegramId = from.id.toString();
+    
+    // Try to fetch the latest profile photo
+    let latestAvatar: string | undefined;
+    try {
+      const photosRes = await fetch(`https://api.telegram.org/bot${this.botToken}/getUserProfilePhotos?user_id=${from.id}&limit=1`);
+      const photosJson = await photosRes.json();
+      if (photosJson.ok && photosJson.result && photosJson.result.total_count > 0) {
+        const photoSizes = photosJson.result.photos[0];
+        const fileId = photoSizes[photoSizes.length - 1].file_id;
+        const fileRes = await fetch(`https://api.telegram.org/bot${this.botToken}/getFile?file_id=${fileId}`);
+        const fileJson = await fileRes.json();
+        if (fileJson.ok && fileJson.result) {
+          latestAvatar = `https://api.telegram.org/file/bot${this.botToken}/${fileJson.result.file_path}`;
+        }
+      }
+    } catch (err) {
+      // ignore errors
+    }
+
+    const fullName = [from.first_name, from.last_name].filter(Boolean).join(' ');
+    
+    // Check if user exists
+    const existingUser = await this.prisma.user.findUnique({
+      where: { telegramId },
+    });
+
+    if (existingUser) {
+      // Update existing user
+      await this.prisma.user.update({
+        where: { id: existingUser.id },
+        data: {
+          telegramUsername: from.username || existingUser.telegramUsername,
+          fullName: fullName || existingUser.fullName,
+          avatar: latestAvatar || existingUser.avatar,
+        },
+      });
+    } else {
+      // Create new user
+      let username = from.username || `user_${from.id}`;
+      const existingUsername = await this.prisma.user.findUnique({
+        where: { username },
+      });
+      
+      if (existingUsername) {
+        username = `${username}_${Date.now().toString(36)}`;
+      }
+
+      await this.prisma.user.create({
+        data: {
+          telegramId,
+          username,
+          telegramUsername: from.username || null,
+          fullName: fullName || username,
+          avatar: latestAvatar || null,
+          email: `${from.id}@telegram.bilimdon.uz`,
+          password: null,
+        },
+      });
+    }
   }
 
   /**
