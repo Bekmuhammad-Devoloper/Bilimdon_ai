@@ -13,11 +13,15 @@ RUN npm install
 # Copy source and build
 COPY . .
 
+# Build argument - API URL ni build vaqtida olish
+ARG NEXT_PUBLIC_API_URL=http://localhost:3001/api
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+
 # Set production environment
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
-# Build
+# Build (bu yerda NEXT_PUBLIC_API_URL bundle'ga kiritiladi)
 RUN npm run build
 
 # Production stage
