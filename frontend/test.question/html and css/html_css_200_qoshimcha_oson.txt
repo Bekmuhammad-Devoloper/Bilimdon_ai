@@ -1,0 +1,702 @@
+HTML & CSS - QO'SHIMCHA OSON DARAJADAGI TEST SAVOLLARI
+======================================================
+
+1. HTML qisqartmasi nima?
+   A) Hyper Text Machine Language
+   B) Hyper Text Markup Language
+   C) High Text Markup Language
+   D) Hyper Tool Markup Language
+   Javob: B
+
+2. HTML document qaysi tag bilan boshlanadi?
+   A) <html>
+   B) <!DOCTYPE html>
+   C) <head>
+   D) <body>
+   Javob: B
+
+3. HTML da sarlavha uchun qaysi tag ishlatiladi?
+   A) <p>
+   B) <h1>
+   C) <title>
+   D) <header>
+   Javob: B
+
+4. HTML da paragraf uchun qaysi tag?
+   A) <para>
+   B) <p>
+   C) <text>
+   D) <paragraph>
+   Javob: B
+
+5. HTML da link yaratish uchun qaysi tag?
+   A) <link>
+   B) <a>
+   C) <href>
+   D) <url>
+   Javob: B
+
+6. HTML da rasm qo'shish uchun qaysi tag?
+   A) <picture>
+   B) <img>
+   C) <image>
+   D) <photo>
+   Javob: B
+
+7. HTML da tartibsiz ro'yxat uchun qaysi tag?
+   A) <ol>
+   B) <ul>
+   C) <list>
+   D) <li>
+   Javob: B
+
+8. HTML da tartibli ro'yxat uchun qaysi tag?
+   A) <ul>
+   B) <ol>
+   C) <list>
+   D) <nl>
+   Javob: B
+
+9. HTML da ro'yxat elementi uchun qaysi tag?
+   A) <list>
+   B) <li>
+   C) <item>
+   D) <element>
+   Javob: B
+
+10. HTML da jadval yaratish uchun qaysi tag?
+    A) <tbl>
+    B) <table>
+    C) <grid>
+    D) <tab>
+    Javob: B
+
+11. HTML da jadval qatori uchun qaysi tag?
+    A) <row>
+    B) <tr>
+    C) <td>
+    D) <th>
+    Javob: B
+
+12. HTML da jadval katagi uchun qaysi tag?
+    A) <cell>
+    B) <td>
+    C) <tc>
+    D) <th>
+    Javob: B
+
+13. HTML da form yaratish uchun qaysi tag?
+    A) <input>
+    B) <form>
+    C) <submit>
+    D) <field>
+    Javob: B
+
+14. HTML da matn kiritish uchun qaysi tag?
+    A) <text>
+    B) <input>
+    C) <field>
+    D) <textbox>
+    Javob: B
+
+15. HTML da tugma yaratish uchun qaysi tag?
+    A) <btn>
+    B) <button>
+    C) <submit>
+    D) <click>
+    Javob: B
+
+16. HTML da yangi qator uchun qaysi tag?
+    A) <newline>
+    B) <br>
+    C) <nl>
+    D) <line>
+    Javob: B
+
+17. HTML da gorizontal chiziq uchun qaysi tag?
+    A) <line>
+    B) <hr>
+    C) <horizontal>
+    D) <divider>
+    Javob: B
+
+18. HTML da qalin matn uchun qaysi tag?
+    A) <bold>
+    B) <b>
+    C) <thick>
+    D) <fat>
+    Javob: B
+
+19. HTML da kursiv matn uchun qaysi tag?
+    A) <italic>
+    B) <i>
+    C) <slant>
+    D) <em>
+    Javob: B
+
+20. HTML da tagiga chizilgan matn uchun qaysi tag?
+    A) <underline>
+    B) <u>
+    C) <under>
+    D) <line>
+    Javob: B
+
+21. CSS qisqartmasi nima?
+    A) Computer Style Sheets
+    B) Cascading Style Sheets
+    C) Creative Style Sheets
+    D) Colorful Style Sheets
+    Javob: B
+
+22. CSS qayerda yozilishi mumkin?
+    A) Faqat external
+    B) Inline, internal, external
+    C) Faqat internal
+    D) Faqat inline
+    Javob: B
+
+23. CSS da rang berish uchun qaysi property?
+    A) text-color
+    B) color
+    C) font-color
+    D) foreground
+    Javob: B
+
+24. CSS da orqa fon uchun qaysi property?
+    A) bg-color
+    B) background-color
+    C) back-color
+    D) bgcolor
+    Javob: B
+
+25. CSS da shrift o'lchami uchun qaysi property?
+    A) text-size
+    B) font-size
+    C) size
+    D) font-height
+    Javob: B
+
+26. CSS da shrift turi uchun qaysi property?
+    A) font-type
+    B) font-family
+    C) text-font
+    D) font-name
+    Javob: B
+
+27. CSS da matn joylashuvi uchun qaysi property?
+    A) text-position
+    B) text-align
+    C) align
+    D) position
+    Javob: B
+
+28. CSS da element kengligi uchun qaysi property?
+    A) size
+    B) width
+    C) length
+    D) horizontal
+    Javob: B
+
+29. CSS da element balandligi uchun qaysi property?
+    A) size
+    B) height
+    C) length
+    D) vertical
+    Javob: B
+
+30. CSS da chegaralar uchun qaysi property?
+    A) outline
+    B) border
+    C) edge
+    D) frame
+    Javob: B
+
+31. CSS da ichki bo'shliq uchun qaysi property?
+    A) margin
+    B) padding
+    C) spacing
+    D) gap
+    Javob: B
+
+32. CSS da tashqi bo'shliq uchun qaysi property?
+    A) padding
+    B) margin
+    C) spacing
+    D) outer
+    Javob: B
+
+33. CSS da class selector qanday yoziladi?
+    A) #class
+    B) .class
+    C) @class
+    D) *class
+    Javob: B
+
+34. CSS da id selector qanday yoziladi?
+    A) .id
+    B) #id
+    C) @id
+    D) *id
+    Javob: B
+
+35. CSS da universal selector qaysi?
+    A) @
+    B) *
+    C) #
+    D) .
+    Javob: B
+
+36. CSS da hover holati qanday yoziladi?
+    A) element.hover
+    B) element:hover
+    C) element@hover
+    D) element#hover
+    Javob: B
+
+37. CSS da display: none nima qiladi?
+    A) Shaffof qiladi
+    B) Elementni yashiradi
+    C) O'chiradi
+    D) Ko'rsatadi
+    Javob: B
+
+38. CSS da display: block nima?
+    A) Inline element
+    B) Block element
+    C) Hidden element
+    D) Flex element
+    Javob: B
+
+39. CSS da display: flex nima uchun?
+    A) Block layout
+    B) Flexible layout
+    C) Grid layout
+    D) Table layout
+    Javob: B
+
+40. CSS da position: relative nima?
+    A) Absolute position
+    B) O'z joyiga nisbatan
+    C) Fixed position
+    D) Static position
+    Javob: B
+
+41. CSS da position: absolute nima?
+    A) Relative to viewport
+    B) Relative to positioned parent
+    C) Relative to self
+    D) No position
+    Javob: B
+
+42. CSS da position: fixed nima?
+    A) Relative to parent
+    B) Relative to viewport
+    C) Relative to self
+    D) No position
+    Javob: B
+
+43. CSS da z-index nima uchun?
+    A) X axis
+    B) Stacking order
+    C) Y axis
+    D) Rotation
+    Javob: B
+
+44. CSS da opacity nima uchun?
+    A) Color
+    B) Shaffoflik
+    C) Size
+    D) Position
+    Javob: B
+
+45. CSS da box-shadow nima uchun?
+    A) Text shadow
+    B) Element shadow
+    C) Border shadow
+    D) Image shadow
+    Javob: B
+
+46. CSS da border-radius nima uchun?
+    A) Border size
+    B) Burchak yumaloqligi
+    C) Border color
+    D) Border style
+    Javob: B
+
+47. CSS da transition nima uchun?
+    A) Transform
+    B) Animation effect
+    C) Translation
+    D) Transport
+    Javob: B
+
+48. CSS da transform nima uchun?
+    A) Style change
+    B) Element transformation
+    C) Transition
+    D) Transport
+    Javob: B
+
+49. CSS da @media nima uchun?
+    A) Audio/video
+    B) Responsive design
+    C) Images
+    D) Fonts
+    Javob: B
+
+50. CSS da !important nima qiladi?
+    A) Comment
+    B) Priority beradi
+    C) Ignore qiladi
+    D) Delete qiladi
+    Javob: B
+
+51. HTML da div nima uchun?
+    A) Division text
+    B) Container element
+    C) Divide page
+    D) Display
+    Javob: B
+
+52. HTML da span nima uchun?
+    A) Space
+    B) Inline container
+    C) Span columns
+    D) Spacing
+    Javob: B
+
+53. HTML da semantic tag nima?
+    A) SEO tag
+    B) Ma'noli tag
+    C) Style tag
+    D) Script tag
+    Javob: B
+
+54. HTML5 da header tag nima uchun?
+    A) Head section
+    B) Page/section header
+    C) Title only
+    D) Menu
+    Javob: B
+
+55. HTML5 da nav tag nima uchun?
+    A) Name value
+    B) Navigation links
+    C) New area
+    D) Note
+    Javob: B
+
+56. HTML5 da main tag nima uchun?
+    A) Maintenance
+    B) Main content
+    C) Menu
+    D) Map
+    Javob: B
+
+57. HTML5 da footer tag nima uchun?
+    A) Footnotes
+    B) Page/section footer
+    C) Form
+    D) Font
+    Javob: B
+
+58. HTML5 da article tag nima uchun?
+    A) Art content
+    B) Self-contained content
+    C) Article list
+    D) Area
+    Javob: B
+
+59. HTML5 da section tag nima uchun?
+    A) Select
+    B) Thematic grouping
+    C) Separate
+    D) Style
+    Javob: B
+
+60. HTML5 da aside tag nima uchun?
+    A) Aside text
+    B) Side content
+    C) Another page
+    D) Alternative
+    Javob: B
+
+61. CSS Flexbox da justify-content nima uchun?
+    A) Vertical align
+    B) Horizontal align
+    C) Both
+    D) None
+    Javob: B
+
+62. CSS Flexbox da align-items nima uchun?
+    A) Horizontal align
+    B) Vertical align (cross axis)
+    C) Both
+    D) None
+    Javob: B
+
+63. CSS Flexbox da flex-direction nima uchun?
+    A) Speed
+    B) Main axis direction
+    C) Color
+    D) Size
+    Javob: B
+
+64. CSS Flexbox da flex-wrap nima uchun?
+    A) Text wrap
+    B) Item wrapping
+    C) Border wrap
+    D) Image wrap
+    Javob: B
+
+65. CSS Grid da grid-template-columns nima uchun?
+    A) Row template
+    B) Column template
+    C) Both
+    D) None
+    Javob: B
+
+66. CSS Grid da grid-template-rows nima uchun?
+    A) Column template
+    B) Row template
+    C) Both
+    D) None
+    Javob: B
+
+67. CSS Grid da gap nima uchun?
+    A) Grid gap
+    B) Space between items
+    C) Border gap
+    D) Margin
+    Javob: B
+
+68. CSS da rem unit nima?
+    A) Relative to element
+    B) Relative to root font-size
+    C) Absolute
+    D) Percentage
+    Javob: B
+
+69. CSS da em unit nima?
+    A) Absolute
+    B) Relative to parent font-size
+    C) Relative to root
+    D) Percentage
+    Javob: B
+
+70. CSS da vh unit nima?
+    A) Vertical height
+    B) Viewport height
+    C) Variable height
+    D) Vector height
+    Javob: B
+
+71. CSS da vw unit nima?
+    A) Variable width
+    B) Viewport width
+    C) Vector width
+    D) Visual width
+    Javob: B
+
+72. HTML da video qo'shish uchun qaysi tag?
+    A) <movie>
+    B) <video>
+    C) <media>
+    D) <film>
+    Javob: B
+
+73. HTML da audio qo'shish uchun qaysi tag?
+    A) <sound>
+    B) <audio>
+    C) <music>
+    D) <mp3>
+    Javob: B
+
+74. HTML da canvas nima uchun?
+    A) Image display
+    B) Graphics drawing
+    C) Video player
+    D) Text area
+    Javob: B
+
+75. HTML da svg nima uchun?
+    A) Sound video graphics
+    B) Scalable vector graphics
+    C) Simple visual graphics
+    D) Standard video graphics
+    Javob: B
+
+76. CSS da cursor property nima uchun?
+    A) Color
+    B) Mouse pointer style
+    C) Position
+    D) Size
+    Javob: B
+
+77. CSS da overflow nima uchun?
+    A) Size
+    B) Content overflow handling
+    C) Position
+    D) Color
+    Javob: B
+
+78. CSS da text-decoration nima uchun?
+    A) Text color
+    B) Text effects (underline, etc)
+    C) Text size
+    D) Text font
+    Javob: B
+
+79. CSS da text-transform nima uchun?
+    A) Text position
+    B) Text case (uppercase, etc)
+    C) Text rotation
+    D) Text animation
+    Javob: B
+
+80. CSS da letter-spacing nima uchun?
+    A) Word space
+    B) Character space
+    C) Line space
+    D) Paragraph space
+    Javob: B
+
+81. CSS da line-height nima uchun?
+    A) Line width
+    B) Line spacing
+    C) Line color
+    D) Line style
+    Javob: B
+
+82. CSS da white-space nima uchun?
+    A) Background
+    B) Whitespace handling
+    C) Color
+    D) Spacing
+    Javob: B
+
+83. CSS da word-wrap nima uchun?
+    A) Word spacing
+    B) Long word breaking
+    C) Word style
+    D) Word color
+    Javob: B
+
+84. CSS da list-style nima uchun?
+    A) List layout
+    B) List marker style
+    C) List spacing
+    D) List color
+    Javob: B
+
+85. CSS da vertical-align nima uchun?
+    A) Horizontal align
+    B) Vertical alignment
+    C) Both
+    D) None
+    Javob: B
+
+86. HTML da meta tag nima uchun?
+    A) Media
+    B) Metadata
+    C) Method
+    D) Menu
+    Javob: B
+
+87. HTML da viewport meta nima uchun?
+    A) View port
+    B) Mobile responsive
+    C) Video port
+    D) Visual port
+    Javob: B
+
+88. HTML da charset nima uchun?
+    A) Chart set
+    B) Character encoding
+    C) Check set
+    D) Chain set
+    Javob: B
+
+89. HTML da favicon qanday qo'shiladi?
+    A) <favicon>
+    B) <link rel="icon">
+    C) <icon>
+    D) <img favicon>
+    Javob: B
+
+90. CSS da @font-face nima uchun?
+    A) Face detection
+    B) Custom fonts
+    C) Font color
+    D) Font size
+    Javob: B
+
+91. CSS da @keyframes nima uchun?
+    A) Key events
+    B) Animation definition
+    C) Frame layout
+    D) Key mapping
+    Javob: B
+
+92. CSS da animation property nima uchun?
+    A) Transition
+    B) Animation apply
+    C) Transform
+    D) Translate
+    Javob: B
+
+93. HTML da required attribute nima uchun?
+    A) Request
+    B) Form validation
+    C) Requirement
+    D) Resource
+    Javob: B
+
+94. HTML da placeholder attribute nima uchun?
+    A) Position
+    B) Input hint text
+    C) Place
+    D) Holder
+    Javob: B
+
+95. HTML da disabled attribute nima uchun?
+    A) Display
+    B) Element disable
+    C) Distance
+    D) Direction
+    Javob: B
+
+96. HTML da readonly attribute nima uchun?
+    A) Read permission
+    B) Read-only input
+    C) Ready state
+    D) Real data
+    Javob: B
+
+97. CSS da pointer-events nima uchun?
+    A) Pointer style
+    B) Click handling
+    C) Pointer color
+    D) Pointer size
+    Javob: B
+
+98. CSS da user-select nima uchun?
+    A) User profile
+    B) Text selection
+    C) User data
+    D) User style
+    Javob: B
+
+99. CSS da object-fit nima uchun?
+    A) Object style
+    B) Image/video sizing
+    C) Object color
+    D) Object position
+    Javob: B
+
+100. CSS da filter property nima uchun?
+     A) Data filter
+     B) Visual effects
+     C) Content filter
+     D) Style filter
+     Javob: B

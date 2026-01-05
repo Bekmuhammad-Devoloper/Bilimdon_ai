@@ -25,6 +25,11 @@ const nextConfig = {
         hostname: 'api.bilimdon.uz',
         pathname: '/uploads/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.bilimdon-ai.uz',
+        pathname: '/uploads/**',
+      },
     ],
   },
   async rewrites() {

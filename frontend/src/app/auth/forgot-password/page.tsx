@@ -120,9 +120,14 @@ export default function ForgotPasswordPage() {
       
       // Check response type
       if (result.type === 'invite') {
-        // User not registered - invite sent
+        // User not registered - show error and send invite
+        toast.error('❌ Bu email ro\'yxatdan o\'tmagan! O\'zingiz ro\'yxatdan o\'tgan emailni kiriting.', {
+          duration: 5000,
+        });
+        toast.success('📨 Taklif havolasi emailga yuborildi. Ro\'yxatdan o\'ting!', {
+          duration: 5000,
+        });
         setStep('invite-sent');
-        toast.success('📨 Taklif havolasi emailga yuborildi!');
       } else if (result.type === 'wrong-email') {
         // Other registered user - wrong email error
         toast.error('❌ Siz noto\'g\'ri email kiritdingiz. Iltimos, o\'zingizning emailingizni kiriting.');
@@ -131,7 +136,7 @@ export default function ForgotPasswordPage() {
           message: 'Siz noto\'g\'ri email kiritdingiz. O\'zingizning emailingizni kiriting.' 
         });
       } else {
-        // Admin user - reset code sent
+        // Registered user - reset code sent
         setStep('code');
         startCountdown();
         toast.success('🔐 Tiklash kodi emailga yuborildi!');
@@ -179,16 +184,16 @@ export default function ForgotPasswordPage() {
               transition={{ type: "spring", stiffness: 200 }}
               className="relative mx-auto mb-6"
             >
-              <div className="w-24 h-24 mx-auto bg-gradient-to-br from-cyan-500 to-teal-500 rounded-3xl flex items-center justify-center shadow-2xl shadow-cyan-500/30">
+              <div className="w-24 h-24 mx-auto bg-gradient-to-br from-red-500 to-orange-500 rounded-3xl flex items-center justify-center shadow-2xl shadow-red-500/30">
                 <motion.span 
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 2, repeat: Infinity }}
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
                   className="text-5xl"
                 >
-                  🎁
+                  ❌
                 </motion.span>
               </div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-full blur-2xl -z-10" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-full blur-2xl -z-10" />
             </motion.div>
             
             <motion.h1 
@@ -197,7 +202,7 @@ export default function ForgotPasswordPage() {
               transition={{ delay: 0.2 }}
               className="text-2xl font-bold text-white mb-3"
             >
-              Taklif yuborildi! 📨
+              ⚠️ Email topilmadi!
             </motion.h1>
             
             <motion.div
@@ -205,13 +210,16 @@ export default function ForgotPasswordPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <p className="text-gray-400 mb-4">
-                Bu email bilan ro'yxatdan o'tilmagan.
+              <p className="text-red-400 font-medium mb-4">
+                Bu email bilan ro'yxatdan o'tilmagan!
               </p>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 rounded-full border border-cyan-500/30 mb-6">
-                <Mail className="h-4 w-4 text-cyan-400" />
-                <span className="text-cyan-300 font-medium">{email}</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 rounded-full border border-red-500/30 mb-6">
+                <Mail className="h-4 w-4 text-red-400" />
+                <span className="text-red-300 font-medium">{email}</span>
               </div>
+              <p className="text-gray-400 text-sm mb-4">
+                Agar siz Bilimdon platformasida ro'yxatdan o'tgan bo'lsangiz, <strong className="text-white">o'zingizning emailingizni</strong> kiriting.
+              </p>
               <p className="text-gray-500 text-sm mb-6">
                 Emailingizga <strong className="text-cyan-400">taklif havolasi</strong> yuborildi. 
                 Ro'yxatdan o'tib, bilimingizni sinab ko'ring!

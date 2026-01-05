@@ -109,6 +109,15 @@ export const testsApi = {
   
   getHistory: (page = 1, limit = 10) =>
     api.get(`/tests/history?page=${page}&limit=${limit}`),
+  
+  getStats: () =>
+    api.get('/tests/stats'),
+  
+  getUserStats: () =>
+    api.get('/tests/user-stats'),
+  
+  createRetryTest: (categoryId?: string) =>
+    api.post('/tests/retry', { categoryId }),
 };
 
 // ==================== LEADERBOARD ====================

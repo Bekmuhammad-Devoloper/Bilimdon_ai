@@ -40,7 +40,7 @@ export default function AdminDesign() {
   const lightVideoInputRef = useRef<HTMLInputElement>(null);
   const darkVideoInputRef = useRef<HTMLInputElement>(null);
 
-  const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:2006';
+  const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
 
   useEffect(() => {
     if (token) fetchSettings();

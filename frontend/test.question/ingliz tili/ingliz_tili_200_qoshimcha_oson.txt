@@ -1,0 +1,786 @@
+INGLIZ TILI - QO'SHIMCHA OSON DARAJADAGI TEST SAVOLLARI
+=======================================================
+
+1. "Hello" so'zining tarjimasi nima?
+   A) Xayr
+   B) Salom
+   C) Rahmat
+   D) Kechirasiz
+   Javob: B
+
+2. "Goodbye" so'zining tarjimasi nima?
+   A) Salom
+   B) Xayr
+   C) Rahmat
+   D) Iltimos
+   Javob: B
+
+3. "Thank you" iborasining tarjimasi nima?
+   A) Iltimos
+   B) Rahmat
+   C) Kechirasiz
+   D) Salom
+   Javob: B
+
+4. "Please" so'zining tarjimasi nima?
+   A) Rahmat
+   B) Iltimos/Marhamat
+   C) Kechirasiz
+   D) Xayr
+   Javob: B
+
+5. "Yes" so'zining tarjimasi nima?
+   A) Yo'q
+   B) Ha
+   C) Balki
+   D) Albatta
+   Javob: B
+
+6. "No" so'zining tarjimasi nima?
+   A) Ha
+   B) Yo'q
+   C) Balki
+   D) Hech qachon
+   Javob: B
+
+7. "Water" so'zining tarjimasi nima?
+   A) Havo
+   B) Suv
+   C) Olov
+   D) Tuproq
+   Javob: B
+
+8. "Book" so'zining tarjimasi nima?
+   A) Daftar
+   B) Kitob
+   C) Ruchka
+   D) Stol
+   Javob: B
+
+9. "School" so'zining tarjimasi nima?
+   A) Uy
+   B) Maktab
+   C) Do'kon
+   D) Kasalxona
+   Javob: B
+
+10. "Teacher" so'zining tarjimasi nima?
+    A) O'quvchi
+    B) O'qituvchi
+    C) Shifokor
+    D) Haydovchi
+    Javob: B
+
+11. "Student" so'zining tarjimasi nima?
+    A) O'qituvchi
+    B) O'quvchi/Talaba
+    C) Shifokor
+    D) Muhandis
+    Javob: B
+
+12. "House" so'zining tarjimasi nima?
+    A) Maktab
+    B) Uy
+    C) Do'kon
+    D) Kasalxona
+    Javob: B
+
+13. "Family" so'zining tarjimasi nima?
+    A) Do'stlar
+    B) Oila
+    C) Qo'shnilar
+    D) Hamkasblar
+    Javob: B
+
+14. "Mother" so'zining tarjimasi nima?
+    A) Ota
+    B) Ona
+    C) Opa
+    D) Aka
+    Javob: B
+
+15. "Father" so'zining tarjimasi nima?
+    A) Ona
+    B) Ota
+    C) Aka
+    D) Uka
+    Javob: B
+
+16. "Brother" so'zining tarjimasi nima?
+    A) Opa
+    B) Aka/Uka
+    C) Ona
+    D) Ota
+    Javob: B
+
+17. "Sister" so'zining tarjimasi nima?
+    A) Aka
+    B) Opa/Singil
+    C) Ona
+    D) Ota
+    Javob: B
+
+18. "Friend" so'zining tarjimasi nima?
+    A) Dushman
+    B) Do'st
+    C) Qo'shni
+    D) Begona
+    Javob: B
+
+19. "Food" so'zining tarjimasi nima?
+    A) Ichimlik
+    B) Oziq-ovqat
+    C) Kiyim
+    D) Uy
+    Javob: B
+
+20. "Bread" so'zining tarjimasi nima?
+    A) Sut
+    B) Non
+    C) Go'sht
+    D) Sabzavot
+    Javob: B
+
+21. "Apple" so'zining tarjimasi nima?
+    A) Apelsin
+    B) Olma
+    C) Banan
+    D) Uzum
+    Javob: B
+
+22. "Car" so'zining tarjimasi nima?
+    A) Velosiped
+    B) Mashina
+    C) Avtobus
+    D) Samolyot
+    Javob: B
+
+23. "Dog" so'zining tarjimasi nima?
+    A) Mushuk
+    B) It
+    C) Qush
+    D) Baliq
+    Javob: B
+
+24. "Cat" so'zining tarjimasi nima?
+    A) It
+    B) Mushuk
+    C) Qush
+    D) Sichqon
+    Javob: B
+
+25. "Sun" so'zining tarjimasi nima?
+    A) Oy
+    B) Quyosh
+    C) Yulduz
+    D) Bulut
+    Javob: B
+
+26. "Moon" so'zining tarjimasi nima?
+    A) Quyosh
+    B) Oy
+    C) Yulduz
+    D) Osmon
+    Javob: B
+
+27. "Day" so'zining tarjimasi nima?
+    A) Tun
+    B) Kun
+    C) Hafta
+    D) Oy
+    Javob: B
+
+28. "Night" so'zining tarjimasi nima?
+    A) Kun
+    B) Tun
+    C) Ertalab
+    D) Kechqurun
+    Javob: B
+
+29. "Morning" so'zining tarjimasi nima?
+    A) Kechqurun
+    B) Ertalab
+    C) Tushlik
+    D) Tun
+    Javob: B
+
+30. "Evening" so'zining tarjimasi nima?
+    A) Ertalab
+    B) Kechqurun
+    C) Tushlik
+    D) Tun
+    Javob: B
+
+31. "Today" so'zining tarjimasi nima?
+    A) Ertaga
+    B) Bugun
+    C) Kecha
+    D) Hafta
+    Javob: B
+
+32. "Tomorrow" so'zining tarjimasi nima?
+    A) Bugun
+    B) Ertaga
+    C) Kecha
+    D) Hafta
+    Javob: B
+
+33. "Yesterday" so'zining tarjimasi nima?
+    A) Bugun
+    B) Kecha
+    C) Ertaga
+    D) Hafta
+    Javob: B
+
+34. "Week" so'zining tarjimasi nima?
+    A) Kun
+    B) Hafta
+    C) Oy
+    D) Yil
+    Javob: B
+
+35. "Month" so'zining tarjimasi nima?
+    A) Hafta
+    B) Oy
+    C) Yil
+    D) Kun
+    Javob: B
+
+36. "Year" so'zining tarjimasi nima?
+    A) Oy
+    B) Yil
+    C) Hafta
+    D) Kun
+    Javob: B
+
+37. "One" so'zining tarjimasi nima?
+    A) Ikki
+    B) Bir
+    C) Uch
+    D) To'rt
+    Javob: B
+
+38. "Two" so'zining tarjimasi nima?
+    A) Bir
+    B) Ikki
+    C) Uch
+    D) To'rt
+    Javob: B
+
+39. "Three" so'zining tarjimasi nima?
+    A) Ikki
+    B) Uch
+    C) To'rt
+    D) Besh
+    Javob: B
+
+40. "Ten" so'zining tarjimasi nima?
+    A) Besh
+    B) O'n
+    C) Yigirma
+    D) Yuz
+    Javob: B
+
+41. "Red" so'zining tarjimasi nima?
+    A) Ko'k
+    B) Qizil
+    C) Yashil
+    D) Sariq
+    Javob: B
+
+42. "Blue" so'zining tarjimasi nima?
+    A) Qizil
+    B) Ko'k
+    C) Yashil
+    D) Oq
+    Javob: B
+
+43. "Green" so'zining tarjimasi nima?
+    A) Qizil
+    B) Yashil
+    C) Ko'k
+    D) Sariq
+    Javob: B
+
+44. "White" so'zining tarjimasi nima?
+    A) Qora
+    B) Oq
+    C) Kulrang
+    D) Jigarrang
+    Javob: B
+
+45. "Black" so'zining tarjimasi nima?
+    A) Oq
+    B) Qora
+    C) Ko'k
+    D) Qizil
+    Javob: B
+
+46. "Big" so'zining tarjimasi nima?
+    A) Kichik
+    B) Katta
+    C) O'rta
+    D) Uzun
+    Javob: B
+
+47. "Small" so'zining tarjimasi nima?
+    A) Katta
+    B) Kichik
+    C) Uzun
+    D) Qisqa
+    Javob: B
+
+48. "Good" so'zining tarjimasi nima?
+    A) Yomon
+    B) Yaxshi
+    C) O'rta
+    D) Zo'r
+    Javob: B
+
+49. "Bad" so'zining tarjimasi nima?
+    A) Yaxshi
+    B) Yomon
+    C) Zo'r
+    D) O'rta
+    Javob: B
+
+50. "Happy" so'zining tarjimasi nima?
+    A) Xafa
+    B) Baxtli
+    C) G'amgin
+    D) Jiddiy
+    Javob: B
+
+51. "I am" iborasining tarjimasi nima?
+    A) Sen
+    B) Men
+    C) U
+    D) Biz
+    Javob: B
+
+52. "You are" iborasining tarjimasi nima?
+    A) Men
+    B) Sen/Siz
+    C) U
+    D) Ular
+    Javob: B
+
+53. "He is" iborasining tarjimasi nima?
+    A) Men
+    B) U (erkak)
+    C) U (ayol)
+    D) Ular
+    Javob: B
+
+54. "She is" iborasining tarjimasi nima?
+    A) U (erkak)
+    B) U (ayol)
+    C) Men
+    D) Biz
+    Javob: B
+
+55. "We are" iborasining tarjimasi nima?
+    A) Men
+    B) Biz
+    C) Siz
+    D) Ular
+    Javob: B
+
+56. "They are" iborasining tarjimasi nima?
+    A) Biz
+    B) Ular
+    C) Siz
+    D) Men
+    Javob: B
+
+57. "What is your name?" savolining tarjimasi nima?
+    A) Necha yoshdasiz?
+    B) Ismingiz nima?
+    C) Qayerdansiz?
+    D) Qanday holdasiz?
+    Javob: B
+
+58. "How are you?" savolining tarjimasi nima?
+    A) Ismingiz nima?
+    B) Qanday holdasiz?
+    C) Qayerdansiz?
+    D) Necha yoshdasiz?
+    Javob: B
+
+59. "Where are you from?" savolining tarjimasi nima?
+    A) Ismingiz nima?
+    B) Qayerdansiz?
+    C) Necha yoshdasiz?
+    D) Kim bilan?
+    Javob: B
+
+60. "How old are you?" savolining tarjimasi nima?
+    A) Qayerdansiz?
+    B) Necha yoshdasiz?
+    C) Ismingiz nima?
+    D) Qanday holdasiz?
+    Javob: B
+
+61. "Nice to meet you" iborasining tarjimasi?
+    A) Xayr
+    B) Tanishganimdan xursandman
+    C) Rahmat
+    D) Kechirasiz
+    Javob: B
+
+62. "I love you" iborasining tarjimasi nima?
+    A) Men sizni ko'rdim
+    B) Men sizni sevaman
+    C) Men sizni taniyman
+    D) Men sizga yordam beraman
+    Javob: B
+
+63. "I don't know" iborasining tarjimasi nima?
+    A) Men bilaman
+    B) Men bilmayman
+    C) Men ko'raman
+    D) Men eshitaman
+    Javob: B
+
+64. "I understand" iborasining tarjimasi nima?
+    A) Men bilmayman
+    B) Men tushunaman
+    C) Men ko'rmayman
+    D) Men eshitmayman
+    Javob: B
+
+65. "I don't understand" iborasining tarjimasi nima?
+    A) Men tushunaman
+    B) Men tushunmayman
+    C) Men bilaman
+    D) Men ko'raman
+    Javob: B
+
+66. "Excuse me" iborasining tarjimasi nima?
+    A) Rahmat
+    B) Kechirasiz
+    C) Iltimos
+    D) Xayr
+    Javob: B
+
+67. "I'm sorry" iborasining tarjimasi nima?
+    A) Men xursandman
+    B) Uzr so'rayman
+    C) Rahmat
+    D) Salom
+    Javob: B
+
+68. "Help me" iborasining tarjimasi nima?
+    A) Ko'ring
+    B) Yordam bering
+    C) Eshiting
+    D) Ayting
+    Javob: B
+
+69. "Wait" so'zining tarjimasi nima?
+    A) Boring
+    B) Kuting
+    C) Keling
+    D) Turing
+    Javob: B
+
+70. "Come" so'zining tarjimasi nima?
+    A) Boring
+    B) Keling
+    C) Kuting
+    D) Turing
+    Javob: B
+
+71. "Go" so'zining tarjimasi nima?
+    A) Keling
+    B) Boring
+    C) Kuting
+    D) O'tiring
+    Javob: B
+
+72. "Stop" so'zining tarjimasi nima?
+    A) Davom eting
+    B) To'xtang
+    C) Boshlang
+    D) Yuguring
+    Javob: B
+
+73. "Start" so'zining tarjimasi nima?
+    A) To'xtang
+    B) Boshlang
+    C) Tugating
+    D) Kuting
+    Javob: B
+
+74. "Finish" so'zining tarjimasi nima?
+    A) Boshlang
+    B) Tugating
+    C) Davom eting
+    D) Kuting
+    Javob: B
+
+75. "Open" so'zining tarjimasi nima?
+    A) Yoping
+    B) Oching
+    C) Qo'ying
+    D) Oling
+    Javob: B
+
+76. "Close" so'zining tarjimasi nima?
+    A) Oching
+    B) Yoping
+    C) Qo'ying
+    D) Oling
+    Javob: B
+
+77. "Read" so'zining tarjimasi nima?
+    A) Yozing
+    B) O'qing
+    C) Eshiting
+    D) Ayting
+    Javob: B
+
+78. "Write" so'zining tarjimasi nima?
+    A) O'qing
+    B) Yozing
+    C) Eshiting
+    D) Ko'ring
+    Javob: B
+
+79. "Listen" so'zining tarjimasi nima?
+    A) Gapiring
+    B) Eshiting
+    C) Ko'ring
+    D) Yozing
+    Javob: B
+
+80. "Speak" so'zining tarjimasi nima?
+    A) Eshiting
+    B) Gapiring
+    C) Ko'ring
+    D) O'qing
+    Javob: B
+
+81. "See" so'zining tarjimasi nima?
+    A) Eshiting
+    B) Ko'ring
+    C) Gapiring
+    D) Sezish
+    Javob: B
+
+82. "Eat" so'zining tarjimasi nima?
+    A) Iching
+    B) Yeng
+    C) Uxlang
+    D) Yuring
+    Javob: B
+
+83. "Drink" so'zining tarjimasi nima?
+    A) Yeng
+    B) Iching
+    C) Uxlang
+    D) Yuring
+    Javob: B
+
+84. "Sleep" so'zining tarjimasi nima?
+    A) Turing
+    B) Uxlang
+    C) Yuring
+    D) O'tiring
+    Javob: B
+
+85. "Work" so'zining tarjimasi nima?
+    A) Dam olish
+    B) Ishlash
+    C) O'ynash
+    D) Uxlash
+    Javob: B
+
+86. "Play" so'zining tarjimasi nima?
+    A) Ishlash
+    B) O'ynash
+    C) Uxlash
+    D) O'qish
+    Javob: B
+
+87. "Run" so'zining tarjimasi nima?
+    A) Yurish
+    B) Yugurish
+    C) O'tirish
+    D) Turish
+    Javob: B
+
+88. "Walk" so'zining tarjimasi nima?
+    A) Yugurish
+    B) Yurish
+    C) O'tirish
+    D) Turish
+    Javob: B
+
+89. "Sit" so'zining tarjimasi nima?
+    A) Turish
+    B) O'tirish
+    C) Yotish
+    D) Yurish
+    Javob: B
+
+90. "Stand" so'zining tarjimasi nima?
+    A) O'tirish
+    B) Turish
+    C) Yotish
+    D) Yugurish
+    Javob: B
+
+91. "Beautiful" so'zining tarjimasi nima?
+    A) Xunuk
+    B) Chiroyli
+    C) Oddiy
+    D) Katta
+    Javob: B
+
+92. "Clever" so'zining tarjimasi nima?
+    A) Ahmoq
+    B) Aqlli
+    C) Kuchli
+    D) Kuchsiz
+    Javob: B
+
+93. "Fast" so'zining tarjimasi nima?
+    A) Sekin
+    B) Tez
+    C) Og'ir
+    D) Yengil
+    Javob: B
+
+94. "Slow" so'zining tarjimasi nima?
+    A) Tez
+    B) Sekin
+    C) Og'ir
+    D) Yengil
+    Javob: B
+
+95. "Hot" so'zining tarjimasi nima?
+    A) Sovuq
+    B) Issiq
+    C) Iliq
+    D) Salqin
+    Javob: B
+
+96. "Cold" so'zining tarjimasi nima?
+    A) Issiq
+    B) Sovuq
+    C) Iliq
+    D) Salqin
+    Javob: B
+
+97. "New" so'zining tarjimasi nima?
+    A) Eski
+    B) Yangi
+    C) Katta
+    D) Kichik
+    Javob: B
+
+98. "Old" so'zining tarjimasi nima?
+    A) Yangi
+    B) Eski
+    C) Katta
+    D) Kichik
+    Javob: B
+
+99. "Young" so'zining tarjimasi nima?
+    A) Keksa
+    B) Yosh
+    C) Katta
+    D) Kichik
+    Javob: B
+
+100. "Easy" so'zining tarjimasi nima?
+     A) Qiyin
+     B) Oson
+     C) Murakkab
+     D) Uzun
+     Javob: B
+
+101. "Difficult" so'zining tarjimasi nima?
+     A) Oson
+     B) Qiyin
+     C) Yengil
+     D) Qisqa
+     Javob: B
+
+102. "Right" so'zining tarjimasi nima?
+     A) Chap
+     B) O'ng/To'g'ri
+     C) Yuqori
+     D) Pastda
+     Javob: B
+
+103. "Left" so'zining tarjimasi nima?
+     A) O'ng
+     B) Chap
+     C) Yuqori
+     D) Pastda
+     Javob: B
+
+104. "Up" so'zining tarjimasi nima?
+     A) Pastga
+     B) Yuqoriga
+     C) Chapga
+     D) O'ngga
+     Javob: B
+
+105. "Down" so'zining tarjimasi nima?
+     A) Yuqoriga
+     B) Pastga
+     C) Chapga
+     D) O'ngga
+     Javob: B
+
+106. "Here" so'zining tarjimasi nima?
+     A) U yerda
+     B) Bu yerda
+     C) Qayerda
+     D) Hamma joyda
+     Javob: B
+
+107. "There" so'zining tarjimasi nima?
+     A) Bu yerda
+     B) U yerda
+     C) Qayerda
+     D) Hamma joyda
+     Javob: B
+
+108. "Now" so'zining tarjimasi nima?
+     A) Keyin
+     B) Hozir
+     C) Oldin
+     D) Hech qachon
+     Javob: B
+
+109. "Later" so'zining tarjimasi nima?
+     A) Hozir
+     B) Keyinroq
+     C) Oldin
+     D) Har doim
+     Javob: B
+
+110. "Always" so'zining tarjimasi nima?
+     A) Hech qachon
+     B) Har doim
+     C) Ba'zan
+     D) Kamdan-kam
+     Javob: B
+
+111. "Never" so'zining tarjimasi nima?
+     A) Har doim
+     B) Hech qachon
+     C) Ba'zan
+     D) Ko'pincha
+     Javob: B
+
+112. "Sometimes" so'zining tarjimasi nima?
+     A) Har doim
+     B) Ba'zan
+     C) Hech qachon
+     D) Kamdan-kam
+     Javob: B

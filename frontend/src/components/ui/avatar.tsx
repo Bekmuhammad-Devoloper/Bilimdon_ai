@@ -1,7 +1,7 @@
 ﻿'use client';
 
 import { HTMLAttributes, forwardRef, useState, useEffect } from 'react';
-import { cn, getAvatarPlaceholder } from '@/lib/utils';
+import { cn, getAvatarPlaceholder, getUploadUrl } from '@/lib/utils';
 
 interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
   src?: string | null;
@@ -29,20 +29,8 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
       setImageLoaded(false);
     }, [src]);
 
-    // To'g'ridan-to'g'ri URL yasash
-    let imageUrl: string | null = null;
-    if (src) {
-      if (src.startsWith('http://') || src.startsWith('https://')) {
-        // To'liq URL bo'lsa, to'g'ridan-to'g'ri ishlatish
-        imageUrl = src;
-      } else if (src.startsWith('/uploads/')) {
-        // Relative path bo'lsa, backend URL qo'shish
-        imageUrl = `http://localhost:3001${src}`;
-      } else if (src.startsWith('blob:')) {
-        // Blob URL (preview) bo'lsa to'g'ridan-to'g'ri ishlatish
-        imageUrl = src;
-      }
-    }
+    // Utility function orqali URL yasash
+    const imageUrl = getUploadUrl(src);
 
     const showImage = imageUrl && !imageError;
 
@@ -60,7 +48,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={imageUrl}
+              src={imageUrl || undefined}
               alt={alt}
               className="absolute inset-0 w-full h-full object-cover"
               onError={() => {

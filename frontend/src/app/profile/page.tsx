@@ -12,7 +12,7 @@ import { useAuth } from '@/hooks';
 import { useAuthStore } from '@/store/auth';
 import { usersApi, achievementsApi } from '@/lib/api';
 import { Button, Card, Avatar, Badge, Progress } from '@/components/ui';
-import { formatXP, calculateLevelProgress, formatDate, cn, getScoreColor } from '@/lib/utils';
+import { formatXP, calculateLevelProgress, formatDate, cn, getScoreColor, getUploadUrl } from '@/lib/utils';
 import toast from 'react-hot-toast';
 
 interface CategoryStat {
@@ -46,6 +46,7 @@ interface Achievement {
   unlockedAt?: string;
   progress?: number;
   target?: number;
+  condition?: { type: string; value: number };
 }
 
 export default function ProfilePage() {
@@ -155,7 +156,7 @@ export default function ProfilePage() {
           {/* Background image or gradient */}
           {user.avatar ? (
             <img 
-              src={user.avatar.startsWith('http') ? user.avatar : `http://localhost:3001${user.avatar}`}
+              src={getUploadUrl(user.avatar) || undefined}
               alt={user.fullName}
               className="w-full h-auto min-h-48 max-h-96 object-cover"
             />
