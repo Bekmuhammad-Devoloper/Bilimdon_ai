@@ -34,6 +34,9 @@ async function bootstrap() {
     "https://web.telegram.org",
     telegramWebAppUrl,
     appDomain,
+    "https://bilimdon-ai.uz",
+    "https://www.bilimdon-ai.uz",
+    "https://api.bilimdon-ai.uz",
     // Vercel preview deployments
     /\.vercel\.app$/,
   ];
