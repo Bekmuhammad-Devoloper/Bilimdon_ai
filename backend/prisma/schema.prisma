@@ -20,13 +20,12 @@ model User {
   role             Role              @default(USER)
   isActive         Boolean           @default(true)
   telegramId       String?           @unique
-  telegramUsername String?
-  telegramPhone    String?
-  telegramPhotoUrl String?
   lastActiveAt     DateTime          @default(now())
   createdAt        DateTime          @default(now())
   updatedAt        DateTime          @updatedAt
   phone            String?
+  telegramPhone    String?
+  telegramUsername String?
   aiChats          AIChat[]
   sentMessages     AdminMessage[]    @relation("SentMessages")
   categoryStats    CategoryStat[]
