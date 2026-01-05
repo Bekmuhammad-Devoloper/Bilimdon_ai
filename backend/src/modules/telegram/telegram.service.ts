@@ -293,6 +293,99 @@ export class TelegramService {
   }
 
   /**
+   * Send photo via Telegram Bot API
+   */
+  async sendPhoto(chatId: string | number, photoUrl: string, caption?: string, options?: {
+    parse_mode?: 'HTML' | 'Markdown' | 'MarkdownV2';
+    reply_markup?: any;
+  }) {
+    if (!this.botToken) {
+      throw new BadRequestException('Telegram bot token not configured');
+    }
+
+    const url = `https://api.telegram.org/bot${this.botToken}/sendPhoto`;
+    
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: chatId,
+        photo: photoUrl,
+        caption,
+        ...options,
+      }),
+    });
+
+    const data = await response.json();
+    
+    if (!data.ok) {
+      console.error('Telegram sendPhoto error:', data);
+      throw new BadRequestException(`Telegram API error: ${data.description}`);
+    }
+
+    return data.result;
+  }
+
+  /**
+   * Send video via Telegram Bot API
+   */
+  async sendVideo(chatId: string | number, videoUrl: string, caption?: string, options?: {
+    parse_mode?: 'HTML' | 'Markdown' | 'MarkdownV2';
+    reply_markup?: any;
+  }) {
+    if (!this.botToken) {
+      throw new BadRequestException('Telegram bot token not configured');
+    }
+
+    const url = `https://api.telegram.org/bot${this.botToken}/sendVideo`;
+    
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: chatId,
+        video: videoUrl,
+        caption,
+        ...options,
+      }),
+    });
+
+    const data = await response.json();
+    
+    if (!data.ok) {
+      console.error('Telegram sendVideo error:', data);
+      throw new BadRequestException(`Telegram API error: ${data.description}`);
+    }
+
+    return data.result;
+  }
+
+  /**
+   * Send message with optional media (photo or video)
+   */
+  async sendMediaMessage(chatId: string | number, text: string, options?: {
+    imageUrl?: string;
+    videoUrl?: string;
+    parse_mode?: 'HTML' | 'Markdown' | 'MarkdownV2';
+    reply_markup?: any;
+  }) {
+    const { imageUrl, videoUrl, ...restOptions } = options || {};
+
+    // If video exists, send video with caption
+    if (videoUrl) {
+      return this.sendVideo(chatId, videoUrl, text, restOptions);
+    }
+
+    // If image exists, send photo with caption
+    if (imageUrl) {
+      return this.sendPhoto(chatId, imageUrl, text, restOptions);
+    }
+
+    // Otherwise just send text message
+    return this.sendMessage(chatId, text, restOptions);
+  }
+
+  /**
    * Set webhook for Telegram Bot
    */
   async setWebhook(webhookUrl: string) {
