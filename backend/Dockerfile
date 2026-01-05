@@ -20,7 +20,7 @@ COPY src ./src/
 RUN npm run build
 
 # Verify build output
-RUN ls -la dist/ && cat dist/main.js | head -5
+RUN ls -la dist/ && ls -la dist/src/ && cat dist/src/main.js | head -5
 
 # Production stage
 FROM node:20-alpine AS production
@@ -47,5 +47,5 @@ ENV NODE_ENV=production
 # Expose port
 EXPOSE 3001
 
-# Start command
-CMD ["node", "dist/main.js"]
+# Start command - NestJS builds to dist/src/main.js
+CMD ["node", "dist/src/main.js"]
