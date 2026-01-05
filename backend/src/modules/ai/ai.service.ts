@@ -13,10 +13,11 @@ export class AIService {
     private configService: ConfigService,
     private prisma: PrismaService,
   ) {
-    // OpenRouter API - works in all regions
-    this.apiKey = this.configService.get('OPENROUTER_API_KEY') || this.configService.get('GEMINI_API_KEY');
+    // OpenRouter API - works in all regions (bypasses geo-restrictions)
+    this.apiKey = this.configService.get<string>('OPENROUTER_API_KEY') || 
+                  this.configService.get<string>('GEMINI_API_KEY') || '';
     this.apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
-    this.model = 'google/gemini-flash-1.5'; // Free tier model on OpenRouter
+    this.model = 'google/gemini-2.0-flash-exp:free'; // Free model on OpenRouter
   }
 
   async chat(userId: string, dto: ChatDto) {
