@@ -94,7 +94,7 @@ export class UploadController {
   @UseInterceptors(FileInterceptor('file', {
     storage: memoryStorage(),
     limits: {
-      fileSize: 50 * 1024 * 1024, // 50MB limit for videos
+      fileSize: 100 * 1024 * 1024, // 100MB limit for videos
     },
   }))
   @ApiOperation({ summary: 'Upload attachment (images/videos)' })
