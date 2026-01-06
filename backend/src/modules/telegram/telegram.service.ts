@@ -521,14 +521,24 @@ export class TelegramService {
         const contact = update.message.contact;
         const from = update.message.from;
         
+        console.log(`[Webhook] Contact received from user ${from.id}, phone: ${contact.phone_number}`);
+        
         // Save phone number to user (without sending message - Mini App handles UI)
         if (contact.user_id === from.id) {
-          await this.prisma.user.updateMany({
+          const result = await this.prisma.user.updateMany({
             where: { telegramId: from.id.toString() },
             data: { telegramPhone: contact.phone_number },
           });
-          // Don't send message here - Mini App registration flow handles this
-          console.log(`Phone saved for user ${from.id}: ${contact.phone_number}`);
+          console.log(`[Webhook] Phone saved result: ${JSON.stringify(result)}, telegramId: ${from.id}`);
+          
+          // If no user found with telegramId, try to find and update
+          if (result.count === 0) {
+            console.log(`[Webhook] No user found with telegramId ${from.id}, checking database...`);
+            const existingUser = await this.prisma.user.findFirst({
+              where: { telegramId: from.id.toString() }
+            });
+            console.log(`[Webhook] Existing user: ${JSON.stringify(existingUser)}`);
+          }
         }
       }
 
