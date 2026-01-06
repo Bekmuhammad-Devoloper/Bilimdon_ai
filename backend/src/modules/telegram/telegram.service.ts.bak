@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
+﻿import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../../prisma/prisma.service';
 import { JwtService } from '@nestjs/jwt';
@@ -504,19 +504,23 @@ export class TelegramService {
         await this.saveUserFromMessage(from);
         
         await this.sendMessage(chatId, 
-          `Assalomu alaykum, ${firstName}! 👋\n\n` +
-          `<b>Bilimdon</b> platformasiga xush kelibsiz! 🎓\n\n` +
-          `📚 Bu yerda siz:\n` +
-          `• Turli fanlardan testlar topshirishingiz\n` +
-          `• Bilimingizni sinashingiz\n` +
-          `• Reyting jadvalida o'z o'rningizni ko'rishingiz mumkin!\n\n` +
-          `🚀 Boshlash uchun quyidagi tugmani bosing:`,
+          `Assalomu alaykum, ${firstName}! рџ‘‹\n\n` +
+          `<b>Bilimdon</b> platformasiga xush kelibsiz! рџЋ“\n\n` +
+          `рџ“љ Bu yerda siz:\n` +
+          `вЂў Turli fanlardan testlar topshirishingiz\n` +
+          `вЂў Bilimingizni sinashingiz\n` +
+          `вЂў Reyting jadvalida o'z o'rningizni ko'rishingiz mumkin!\n\n` +
+          `рџљЂ Boshlash uchun quyidagi tugmani bosing:`,
           {
             parse_mode: 'HTML',
             reply_markup: {
               inline_keyboard: [
                 [{
-                  text: '� Ro\'yxatdan o\'tish',
+                  text: 'рџ“± Platformani ochish',
+                  web_app: { url: this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz' },
+                }],
+                [{
+                  text: 'пїЅ Ro\'yxatdan o\'tish',
                   web_app: { url: (this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz') + '/auth/telegram-register' },
                 }],
               ],
@@ -568,12 +572,12 @@ export class TelegramService {
         if (data === 'share_phone') {
           const webappUrl = this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz';
           await this.sendMessage(chatId,
-            `� Ro'yxatdan o'tish uchun quyidagi tugmani bosing:`,
+            `пїЅ Ro'yxatdan o'tish uchun quyidagi tugmani bosing:`,
             {
               parse_mode: 'HTML',
               reply_markup: {
                 inline_keyboard: [[{
-                  text: '� Ro\'yxatdan o\'tish',
+                  text: 'пїЅ Ro\'yxatdan o\'tish',
                   web_app: { url: `${webappUrl}/auth/telegram-register` },
                 }]],
               },
@@ -671,3 +675,4 @@ export class TelegramService {
     return link;
   }
 }
+
