@@ -107,6 +107,16 @@ export default function TelegramRegisterPage() {
               router.push('/');
               return;
             }
+            
+            // If no phone yet, start polling immediately
+            if (!res.data.user.telegramPhone) {
+              console.log('[Init] No phone, starting auto-polling...');
+              setIsLoading(true);
+              // Store token for polling
+              setTimeout(() => {
+                startPollingWithToken(res.data.token);
+              }, 500);
+            }
           }
         } catch (e) {
           console.error('Telegram auth error:', e);
@@ -162,6 +172,37 @@ export default function TelegramRegisterPage() {
     
     // Start polling as backup
     startPollingForPhone();
+  };
+
+  // Polling with explicit token (for initial load)
+  const startPollingWithToken = (token: string) => {
+    console.log('[Polling] Starting with token...');
+    let attempts = 0;
+    const maxAttempts = 120; // 2 minutes
+    
+    pollingRef.current = setInterval(async () => {
+      attempts++;
+      
+      if (attempts >= maxAttempts) {
+        if (pollingRef.current) clearInterval(pollingRef.current);
+        setIsLoading(false);
+        return;
+      }
+      
+      try {
+        const res = await axios.get(`${API_URL}/auth/me`, {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        
+        if (res.data.telegramPhone) {
+          console.log('[Polling] Phone found:', res.data.telegramPhone);
+          if (pollingRef.current) clearInterval(pollingRef.current);
+          handlePhoneReceived(res.data.telegramPhone);
+        }
+      } catch (e) {
+        // Ignore errors
+      }
+    }, 1000);
   };
 
   const startPollingForPhone = () => {
