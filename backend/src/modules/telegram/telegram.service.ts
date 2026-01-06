@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
+﻿import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../../prisma/prisma.service';
 import { JwtService } from '@nestjs/jwt';
@@ -548,26 +548,56 @@ export class TelegramService {
         // Save/update user info from message
         await this.saveUserFromMessage(from);
         
-        await this.sendMessage(chatId, 
-          `Assalomu alaykum, ${firstName}! 👋\n\n` +
-          `<b>Bilimdon</b> platformasiga xush kelibsiz! 🎓\n\n` +
-          `📚 Bu yerda siz:\n` +
-          `• Turli fanlardan testlar topshirishingiz\n` +
-          `• Bilimingizni sinashingiz\n` +
-          `• Reyting jadvalida o'z o'rningizni ko'rishingiz mumkin!\n\n` +
-          `🚀 Boshlash uchun quyidagi tugmani bosing:`,
-          {
-            parse_mode: 'HTML',
-            reply_markup: {
-              inline_keyboard: [
-                [{
-                  text: '� Ro\'yxatdan o\'tish',
-                  web_app: { url: (this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz') + '/auth/telegram-register' },
-                }],
-              ],
-            },
-          }
-        );
+        // Check if user is already registered (has password)
+        const existingUser = await this.prisma.user.findUnique({
+          where: { telegramId: from.id.toString() },
+          select: { password: true },
+        });
+        
+        const isRegistered = !!existingUser?.password;
+        const webappUrl = this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz';
+        
+        if (isRegistered) {
+          // User already registered - show platform button only
+          await this.sendMessage(chatId, 
+            `Assalomu alaykum, ${firstName}! 👋\n\n` +
+            `<b>Bilimdon</b> platformasiga xush kelibsiz! 🎓\n\n` +
+            `Siz allaqachon ro'yxatdan o'tgansiz. Platformaga kiring!`,
+            {
+              parse_mode: 'HTML',
+              reply_markup: {
+                inline_keyboard: [
+                  [{
+                    text: '📱 Platformani ochish',
+                    web_app: { url: webappUrl },
+                  }],
+                ],
+              },
+            }
+          );
+        } else {
+          // New user - show register button
+          await this.sendMessage(chatId, 
+            `Assalomu alaykum, ${firstName}! 👋\n\n` +
+            `<b>Bilimdon</b> platformasiga xush kelibsiz! 🎓\n\n` +
+            `📚 Bu yerda siz:\n` +
+            `• Turli fanlardan testlar topshirishingiz\n` +
+            `• Bilimingizni sinashingiz\n` +
+            `• Reyting jadvalida o'z o'rningizni ko'rishingiz mumkin!\n\n` +
+            `🚀 Boshlash uchun quyidagi tugmani bosing:`,
+            {
+              parse_mode: 'HTML',
+              reply_markup: {
+                inline_keyboard: [
+                  [{
+                    text: '📝 Ro\'yxatdan o\'tish',
+                    web_app: { url: webappUrl + '/auth/telegram-register' },
+                  }],
+                ],
+              },
+            }
+          );
+        }
       }
 
       // Handle contact shared (phone number)
