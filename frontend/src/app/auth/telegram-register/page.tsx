@@ -141,11 +141,63 @@ export default function TelegramRegisterPage() {
     return () => clearTimeout(timer);
   }, [username]);
 
+  // Poll for phone number after sharing
+  const pollForPhone = async () => {
+    if (!token) return;
+    
+    let attempts = 0;
+    const maxAttempts = 15; // 15 seconds max
+    
+    const checkPhone = async () => {
+      try {
+        const res = await axios.get(`${API_URL}/auth/me`, {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        
+        if (res.data.telegramPhone) {
+          const phoneNumber = res.data.telegramPhone.startsWith('+') 
+            ? res.data.telegramPhone 
+            : '+' + res.data.telegramPhone;
+          setPhone(phoneNumber);
+          setPhoneShared(true);
+          telegramHaptic('success');
+          toast.success('✅ Telefon raqam qabul qilindi!');
+          setCurrentStep('credentials');
+          return true;
+        }
+      } catch (e) {
+        console.error('Poll phone error:', e);
+      }
+      return false;
+    };
+
+    // Check immediately first
+    if (await checkPhone()) return;
+
+    // Then poll every second
+    const interval = setInterval(async () => {
+      attempts++;
+      if (attempts >= maxAttempts) {
+        clearInterval(interval);
+        setIsLoading(false);
+        toast.error('Telefon raqam olinmadi. Qaytadan urinib ko\'ring.');
+        return;
+      }
+      
+      if (await checkPhone()) {
+        clearInterval(interval);
+        setIsLoading(false);
+      }
+    }, 1000);
+  };
+
   // Request phone from Telegram
   const handleRequestPhone = () => {
     telegramHaptic('impact');
+    setIsLoading(true);
     
     requestTelegramContact((contact: any) => {
+      // Callback may or may not work in Mini App
       if (contact && contact.phone_number) {
         const phoneNumber = contact.phone_number.startsWith('+') 
           ? contact.phone_number 
@@ -159,8 +211,19 @@ export default function TelegramRegisterPage() {
         telegramHaptic('success');
         toast.success('✅ Telefon raqam qabul qilindi!');
         setCurrentStep('credentials');
+        setIsLoading(false);
+      } else {
+        // Callback didn't return data, start polling
+        pollForPhone();
       }
     });
+    
+    // Also start polling as backup (callback may never fire)
+    setTimeout(() => {
+      if (!phoneShared) {
+        pollForPhone();
+      }
+    }, 500);
   };
 
   // Save phone to backend
