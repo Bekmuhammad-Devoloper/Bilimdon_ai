@@ -1,4 +1,4 @@
-﻿import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
+import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../../prisma/prisma.service';
 import { JwtService } from '@nestjs/jwt';
@@ -560,15 +560,15 @@ export class TelegramService {
         if (isRegistered) {
           // User already registered - show platform button only
           await this.sendMessage(chatId, 
-            `Assalomu alaykum, ${firstName}! 👋\n\n` +
-            `<b>Bilimdon</b> platformasiga xush kelibsiz! 🎓\n\n` +
+            `Assalomu alaykum, ${firstName}! ??\n\n` +
+            `<b>Bilimdon</b> platformasiga xush kelibsiz! ??\n\n` +
             `Siz allaqachon ro'yxatdan o'tgansiz. Platformaga kiring!`,
             {
               parse_mode: 'HTML',
               reply_markup: {
                 inline_keyboard: [
                   [{
-                    text: '📱 Platformani ochish',
+                    text: '?? Platformani ochish',
                     web_app: { url: webappUrl },
                   }],
                 ],
@@ -578,19 +578,19 @@ export class TelegramService {
         } else {
           // New user - show register button
           await this.sendMessage(chatId, 
-            `Assalomu alaykum, ${firstName}! 👋\n\n` +
-            `<b>Bilimdon</b> platformasiga xush kelibsiz! 🎓\n\n` +
-            `📚 Bu yerda siz:\n` +
-            `• Turli fanlardan testlar topshirishingiz\n` +
-            `• Bilimingizni sinashingiz\n` +
-            `• Reyting jadvalida o'z o'rningizni ko'rishingiz mumkin!\n\n` +
-            `🚀 Boshlash uchun quyidagi tugmani bosing:`,
+            `Assalomu alaykum, ${firstName}! ??\n\n` +
+            `<b>Bilimdon</b> platformasiga xush kelibsiz! ??\n\n` +
+            `?? Bu yerda siz:\n` +
+            `� Turli fanlardan testlar topshirishingiz\n` +
+            `� Bilimingizni sinashingiz\n` +
+            `� Reyting jadvalida o'z o'rningizni ko'rishingiz mumkin!\n\n` +
+            `?? Boshlash uchun quyidagi tugmani bosing:`,
             {
               parse_mode: 'HTML',
               reply_markup: {
                 inline_keyboard: [
                   [{
-                    text: '📝 Ro\'yxatdan o\'tish',
+                    text: '?? Ro\'yxatdan o\'tish',
                     web_app: { url: webappUrl + '/auth/telegram-register' },
                   }],
                 ],
@@ -643,12 +643,12 @@ export class TelegramService {
         if (data === 'share_phone') {
           const webappUrl = this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz';
           await this.sendMessage(chatId,
-            `� Ro'yxatdan o'tish uchun quyidagi tugmani bosing:`,
+            `? Ro'yxatdan o'tish uchun quyidagi tugmani bosing:`,
             {
               parse_mode: 'HTML',
               reply_markup: {
                 inline_keyboard: [[{
-                  text: '� Ro\'yxatdan o\'tish',
+                  text: '? Ro\'yxatdan o\'tish',
                   web_app: { url: `${webappUrl}/auth/telegram-register` },
                 }]],
               },
