@@ -143,41 +143,55 @@ export default function TelegramRegisterPage() {
 
   // Poll for phone number after sharing
   const pollForPhone = async () => {
-    if (!token) return;
+    if (!token) {
+      console.log('[Polling] No token, skipping');
+      return;
+    }
     
+    console.log('[Polling] Starting phone poll...');
     let attempts = 0;
-    const maxAttempts = 15; // 15 seconds max
+    const maxAttempts = 20; // 20 seconds max
     
     const checkPhone = async () => {
       try {
+        console.log(`[Polling] Checking phone, attempt ${attempts + 1}`);
         const res = await axios.get(`${API_URL}/auth/me`, {
           headers: { Authorization: `Bearer ${token}` }
         });
+        
+        console.log('[Polling] Response:', res.data);
         
         if (res.data.telegramPhone) {
           const phoneNumber = res.data.telegramPhone.startsWith('+') 
             ? res.data.telegramPhone 
             : '+' + res.data.telegramPhone;
+          console.log('[Polling] Phone found:', phoneNumber);
           setPhone(phoneNumber);
           setPhoneShared(true);
           telegramHaptic('success');
           toast.success('✅ Telefon raqam qabul qilindi!');
           setCurrentStep('credentials');
           return true;
+        } else {
+          console.log('[Polling] No phone yet');
         }
       } catch (e) {
-        console.error('Poll phone error:', e);
+        console.error('[Polling] Error:', e);
       }
       return false;
     };
 
     // Check immediately first
-    if (await checkPhone()) return;
+    if (await checkPhone()) {
+      setIsLoading(false);
+      return;
+    }
 
     // Then poll every second
     const interval = setInterval(async () => {
       attempts++;
       if (attempts >= maxAttempts) {
+        console.log('[Polling] Max attempts reached');
         clearInterval(interval);
         setIsLoading(false);
         toast.error('Telefon raqam olinmadi. Qaytadan urinib ko\'ring.');

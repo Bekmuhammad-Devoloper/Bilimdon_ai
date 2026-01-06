@@ -59,6 +59,15 @@ export class AuthController {
     return this.authService.getProfile(req.user.id);
   }
 
+  @Get('me')
+  @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Joriy foydalanuvchi ma\'lumotlari' })
+  @ApiResponse({ status: 200, description: 'Foydalanuvchi ma\'lumotlari' })
+  async getMe(@Req() req: any) {
+    return this.authService.getProfile(req.user.id);
+  }
+
   @Patch('change-password')
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth()
