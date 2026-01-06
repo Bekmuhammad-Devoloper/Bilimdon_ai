@@ -31,7 +31,7 @@ export class TelegramController {
   @UseGuards(JwtAuthGuard)
   @ApiOperation({ summary: 'Save phone number from Telegram contact sharing' })
   savePhone(@Request() req, @Body() dto: SavePhoneDto) {
-    return this.telegramService.savePhoneNumber(req.user.sub, dto.phone);
+    return this.telegramService.savePhoneNumber(req.user.id, dto.phone);
   }
 
   @Post('webapp/complete-registration')
@@ -39,7 +39,7 @@ export class TelegramController {
   @UseGuards(JwtAuthGuard)
   @ApiOperation({ summary: 'Complete Telegram user registration with username and password' })
   completeRegistration(@Request() req, @Body() dto: CompleteRegistrationDto) {
-    return this.telegramService.completeRegistration(req.user.sub, dto);
+    return this.telegramService.completeRegistration(req.user.id, dto);
   }
 
   @Get('user/:telegramId')
