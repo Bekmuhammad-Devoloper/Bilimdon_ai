@@ -211,17 +211,17 @@ export default function TestResultPage() {
       )}
 
       {/* Header */}
-      <div className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white py-12 px-4">
+      <div className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white py-8 sm:py-12 px-4">
         <div className="container mx-auto text-center">
           {/* Score Circle */}
-          <div className="relative w-40 h-40 mx-auto mb-6">
-            <svg className="w-full h-full transform -rotate-90">
+          <div className="relative w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-4 sm:mb-6">
+            <svg className="w-full h-full transform -rotate-90" viewBox="0 0 160 160">
               <circle
                 cx="80"
                 cy="80"
                 r="70"
                 stroke="currentColor"
-                strokeWidth="12"
+                strokeWidth="10"
                 fill="none"
                 className="text-white/20"
               />
@@ -230,7 +230,7 @@ export default function TestResultPage() {
                 cy="80"
                 r="70"
                 stroke="currentColor"
-                strokeWidth="12"
+                strokeWidth="10"
                 fill="none"
                 strokeDasharray={`${result.score * 4.4} 440`}
                 strokeLinecap="round"
@@ -238,53 +238,53 @@ export default function TestResultPage() {
               />
             </svg>
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-5xl font-bold">{result.score}%</span>
-              <span className="text-white/80 text-sm">natija</span>
+              <span className="text-4xl sm:text-5xl font-bold">{result.score}%</span>
+              <span className="text-white/80 text-xs sm:text-sm">natija</span>
             </div>
           </div>
 
-          <h1 className="text-2xl font-bold mb-2">
+          <h1 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">
             {isPerfect ? '🎉 Mukammal!' : isGood ? '👏 Yaxshi natija!' : '💪 Davom eting!'}
           </h1>
-          <p className="text-white/80">
+          <p className="text-white/80 text-sm sm:text-base">
             {result.correctAnswers} / {result.totalQuestions} to'g'ri javob
           </p>
         </div>
       </div>
 
       {/* Stats Cards */}
-      <div className="container mx-auto px-4 -mt-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <Card className="text-center p-4">
-            <Zap className="w-8 h-8 mx-auto text-yellow-500 mb-2" />
-            <p className="text-2xl font-bold text-gray-900 dark:text-white">
+      <div className="container mx-auto px-4 -mt-4 sm:-mt-6">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+          <Card className="text-center p-3 sm:p-4">
+            <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto text-yellow-500 mb-1 sm:mb-2" />
+            <p className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
               +{result.xpEarned}
             </p>
-            <p className="text-sm text-gray-500">XP olindi</p>
+            <p className="text-xs sm:text-sm text-gray-500">XP olindi</p>
           </Card>
 
-          <Card className="text-center p-4">
-            <CheckCircle className="w-8 h-8 mx-auto text-green-500 mb-2" />
-            <p className="text-2xl font-bold text-gray-900 dark:text-white">
+          <Card className="text-center p-3 sm:p-4">
+            <CheckCircle className="w-6 h-6 sm:w-8 sm:h-8 mx-auto text-green-500 mb-1 sm:mb-2" />
+            <p className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
               {result.correctAnswers}
             </p>
-            <p className="text-sm text-gray-500">To'g'ri</p>
+            <p className="text-xs sm:text-sm text-gray-500">To'g'ri</p>
           </Card>
 
-          <Card className="text-center p-4">
-            <XCircle className="w-8 h-8 mx-auto text-red-500 mb-2" />
-            <p className="text-2xl font-bold text-gray-900 dark:text-white">
+          <Card className="text-center p-3 sm:p-4">
+            <XCircle className="w-6 h-6 sm:w-8 sm:h-8 mx-auto text-red-500 mb-1 sm:mb-2" />
+            <p className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
               {result.totalQuestions - result.correctAnswers}
             </p>
-            <p className="text-sm text-gray-500">Noto'g'ri</p>
+            <p className="text-xs sm:text-sm text-gray-500">Noto'g'ri</p>
           </Card>
 
-          <Card className="text-center p-4">
-            <Trophy className="w-8 h-8 mx-auto text-purple-500 mb-2" />
-            <p className="text-2xl font-bold text-gray-900 dark:text-white">
+          <Card className="text-center p-3 sm:p-4">
+            <Trophy className="w-6 h-6 sm:w-8 sm:h-8 mx-auto text-purple-500 mb-1 sm:mb-2" />
+            <p className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
               {result.score >= 90 ? 'A' : result.score >= 70 ? 'B' : result.score >= 50 ? 'C' : 'D'}
             </p>
-            <p className="text-sm text-gray-500">Baho</p>
+            <p className="text-xs sm:text-sm text-gray-500">Baho</p>
           </Card>
         </div>
 
@@ -321,23 +321,16 @@ export default function TestResultPage() {
         )}
 
         {/* Actions */}
-        <div className="flex flex-wrap gap-3 mt-6">
-          <Link href="/categories" className="flex-1">
-            <Button variant="outline" className="w-full">
-              <ArrowLeft className="w-4 h-4 mr-2" />
+        <div className="grid grid-cols-2 gap-3 mt-6">
+          <Link href="/categories">
+            <Button variant="outline" className="w-full text-sm sm:text-base">
+              <ArrowLeft className="w-4 h-4 mr-1 sm:mr-2" />
               Kategoriyalar
             </Button>
           </Link>
-          <Button onClick={handleShare} variant="secondary" className="flex-1">
-            <Share2 className="w-4 h-4 mr-2" />
+          <Button onClick={handleShare} variant="secondary" className="w-full text-sm sm:text-base">
+            <Share2 className="w-4 h-4 mr-1 sm:mr-2" />
             Ulashish
-          </Button>
-          <Button
-            onClick={() => router.back()}
-            className="flex-1"
-          >
-            <RotateCcw className="w-4 h-4 mr-2" />
-            Qayta topshirish
           </Button>
         </div>
 
