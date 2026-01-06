@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Lock, Eye, EyeOff, Loader2, CheckCircle2, 
-  User, Phone, Check
+  User, Phone, Check, ArrowRight
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useAuthStore } from '@/store/auth';
@@ -257,6 +257,31 @@ export default function TelegramRegisterPage() {
     }
   };
 
+  // Manual check phone button
+  const handleCheckPhone = async () => {
+    if (!currentToken) {
+      toast.error('Xatolik yuz berdi, sahifani yangilang');
+      return;
+    }
+    
+    setIsLoading(true);
+    try {
+      const res = await axios.get(`${API_URL}/auth/me`, {
+        headers: { Authorization: `Bearer ${currentToken}` }
+      });
+      
+      if (res.data.telegramPhone) {
+        handlePhoneReceived(res.data.telegramPhone);
+      } else {
+        toast.error('Telefon raqam topilmadi. Avval chatda telefon ulashing!');
+        setIsLoading(false);
+      }
+    } catch (e) {
+      toast.error('Xatolik yuz berdi');
+      setIsLoading(false);
+    }
+  };
+
   // Complete registration
   const handleCompleteRegistration = async () => {
     // Validation
@@ -422,6 +447,15 @@ export default function TelegramRegisterPage() {
                       Telefon raqamni ulashish
                     </>
                   )}
+                </button>
+                
+                {/* Manual check button */}
+                <button
+                  onClick={handleCheckPhone}
+                  className="w-full py-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl font-medium flex items-center justify-center gap-2 transition-all"
+                >
+                  <ArrowRight className="w-5 h-5" />
+                  Telefon ulashdim, davom etish
                 </button>
                 
                 <p className="text-xs text-center text-gray-400">
