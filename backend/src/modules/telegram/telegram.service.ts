@@ -518,30 +518,17 @@ export class TelegramService {
 
       // Handle contact shared (phone number)
       if (update.message?.contact) {
-        const chatId = update.message.chat.id;
         const contact = update.message.contact;
         const from = update.message.from;
         
-        // Save phone number to user
+        // Save phone number to user (without sending message - Mini App handles UI)
         if (contact.user_id === from.id) {
           await this.prisma.user.updateMany({
             where: { telegramId: from.id.toString() },
             data: { telegramPhone: contact.phone_number },
           });
-          
-          await this.sendMessage(chatId,
-            `✅ Telefon raqamingiz saqlandi: <code>${contact.phone_number}</code>\n\n` +
-            `Endi platformadan to'liq foydalanishingiz mumkin!`,
-            {
-              parse_mode: 'HTML',
-              reply_markup: {
-                inline_keyboard: [[{
-                  text: '📱 Platformani ochish',
-                  web_app: { url: this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz' },
-                }]],
-              },
-            }
-          );
+          // Don't send message here - Mini App registration flow handles this
+          this.logger.log(`Phone saved for user ${from.id}: ${contact.phone_number}`);
         }
       }
 
