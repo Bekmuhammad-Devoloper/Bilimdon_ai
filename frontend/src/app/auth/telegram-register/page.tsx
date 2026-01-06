@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Lock, Eye, EyeOff, Loader2, CheckCircle2, 
-  User, Phone, ArrowRight, Shield, Check
+  User, Phone, Check
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useAuthStore } from '@/store/auth';
@@ -33,16 +33,18 @@ interface TelegramUser {
 
 export default function TelegramRegisterPage() {
   const router = useRouter();
-  const { login, user, token } = useAuthStore();
+  const { login } = useAuthStore();
   
   const [currentStep, setCurrentStep] = useState<Step>('phone');
   const [isLoading, setIsLoading] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
   const [telegramUser, setTelegramUser] = useState<TelegramUser | null>(null);
+  const [currentToken, setCurrentToken] = useState<string | null>(null);
   
   // Phone step
   const [phone, setPhone] = useState('');
   const [phoneShared, setPhoneShared] = useState(false);
+  const pollingRef = useRef<NodeJS.Timeout | null>(null);
   
   // Credentials step
   const [username, setUsername] = useState('');
@@ -53,10 +55,9 @@ export default function TelegramRegisterPage() {
   const [usernameAvailable, setUsernameAvailable] = useState<boolean | null>(null);
   const [checkingUsername, setCheckingUsername] = useState(false);
 
-  // Initialize - authenticate with Telegram if not already
+  // Initialize
   useEffect(() => {
     const initTelegram = async () => {
-      // Only works in Telegram Mini App
       if (!isTelegramWebApp()) {
         router.push('/auth/register');
         return;
@@ -65,7 +66,6 @@ export default function TelegramRegisterPage() {
       telegramReady();
       telegramExpand();
 
-      // Get telegram user info from initData
       const initData = getTelegramInitData();
       if (initData) {
         try {
@@ -74,7 +74,6 @@ export default function TelegramRegisterPage() {
           if (userStr) {
             const tgUser = JSON.parse(userStr);
             setTelegramUser(tgUser);
-            // Set default username from telegram
             if (tgUser.username) {
               setUsername(tgUser.username);
             }
@@ -83,24 +82,30 @@ export default function TelegramRegisterPage() {
           console.error('Parse telegram user error:', e);
         }
 
-        // If not authenticated yet, authenticate first
-        if (!token) {
-          try {
-            const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
-            const res = await axios.post(`${API_URL}/telegram/webapp/auth`, { initData });
-            if (res.data.user && res.data.token) {
-              login(res.data.user, res.data.token);
-              
-              // Check if user already has phone
-              if (res.data.user.telegramPhone) {
-                setPhone(res.data.user.telegramPhone);
-                setPhoneShared(true);
-                setCurrentStep('credentials');
-              }
+        // Authenticate with Telegram
+        try {
+          const res = await axios.post(`${API_URL}/telegram/webapp/auth`, { initData });
+          if (res.data.user && res.data.token) {
+            setCurrentToken(res.data.token);
+            
+            // If already has phone, go to step 2
+            if (res.data.user.telegramPhone) {
+              setPhone(res.data.user.telegramPhone);
+              setPhoneShared(true);
+              setCurrentStep('credentials');
             }
-          } catch (e) {
-            console.error('Telegram auth error:', e);
+            
+            // If already fully registered, redirect to home
+            if (res.data.user.password) {
+              login(res.data.user, res.data.token);
+              toast.success('Siz allaqachon ro\'yxatdan o\'tgansiz!');
+              router.push('/');
+              return;
+            }
           }
+        } catch (e) {
+          console.error('Telegram auth error:', e);
+          toast.error('Xatolik yuz berdi');
         }
       }
 
@@ -108,16 +113,13 @@ export default function TelegramRegisterPage() {
     };
 
     initTelegram();
+    
+    return () => {
+      if (pollingRef.current) {
+        clearInterval(pollingRef.current);
+      }
+    };
   }, []);
-
-  // Update step if user data changes
-  useEffect(() => {
-    if (user?.telegramPhone && !phoneShared) {
-      setPhone(user.telegramPhone);
-      setPhoneShared(true);
-      setCurrentStep('credentials');
-    }
-  }, [user]);
 
   // Check username availability
   useEffect(() => {
@@ -141,116 +143,64 @@ export default function TelegramRegisterPage() {
     return () => clearTimeout(timer);
   }, [username]);
 
-  // Poll for phone number after sharing
-  const pollForPhone = async () => {
-    if (!token) {
-      console.log('[Polling] No token, skipping');
-      return;
-    }
-    
-    console.log('[Polling] Starting phone poll...');
-    let attempts = 0;
-    const maxAttempts = 20; // 20 seconds max
-    
-    const checkPhone = async () => {
-      try {
-        console.log(`[Polling] Checking phone, attempt ${attempts + 1}`);
-        const res = await axios.get(`${API_URL}/auth/me`, {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-        
-        console.log('[Polling] Response:', res.data);
-        
-        if (res.data.telegramPhone) {
-          const phoneNumber = res.data.telegramPhone.startsWith('+') 
-            ? res.data.telegramPhone 
-            : '+' + res.data.telegramPhone;
-          console.log('[Polling] Phone found:', phoneNumber);
-          setPhone(phoneNumber);
-          setPhoneShared(true);
-          telegramHaptic('success');
-          toast.success('✅ Telefon raqam qabul qilindi!');
-          setCurrentStep('credentials');
-          return true;
-        } else {
-          console.log('[Polling] No phone yet');
-        }
-      } catch (e) {
-        console.error('[Polling] Error:', e);
-      }
-      return false;
-    };
-
-    // Check immediately first
-    if (await checkPhone()) {
-      setIsLoading(false);
-      return;
-    }
-
-    // Then poll every second
-    const interval = setInterval(async () => {
-      attempts++;
-      if (attempts >= maxAttempts) {
-        console.log('[Polling] Max attempts reached');
-        clearInterval(interval);
-        setIsLoading(false);
-        toast.error('Telefon raqam olinmadi. Qaytadan urinib ko\'ring.');
-        return;
-      }
-      
-      if (await checkPhone()) {
-        clearInterval(interval);
-        setIsLoading(false);
-      }
-    }, 1000);
-  };
-
   // Request phone from Telegram
   const handleRequestPhone = () => {
     telegramHaptic('impact');
     setIsLoading(true);
     
+    // Request contact via Telegram API
     requestTelegramContact((contact: any) => {
-      // Callback may or may not work in Mini App
       if (contact && contact.phone_number) {
-        const phoneNumber = contact.phone_number.startsWith('+') 
-          ? contact.phone_number 
-          : '+' + contact.phone_number;
-        setPhone(phoneNumber);
-        setPhoneShared(true);
-        
-        // Save phone to backend
-        savePhone(phoneNumber);
-        
-        telegramHaptic('success');
-        toast.success('✅ Telefon raqam qabul qilindi!');
-        setCurrentStep('credentials');
-        setIsLoading(false);
-      } else {
-        // Callback didn't return data, start polling
-        pollForPhone();
+        handlePhoneReceived(contact.phone_number);
       }
     });
     
-    // Also start polling as backup (callback may never fire)
-    setTimeout(() => {
-      if (!phoneShared) {
-        pollForPhone();
-      }
-    }, 500);
+    // Start polling as backup
+    startPollingForPhone();
   };
 
-  // Save phone to backend
-  const savePhone = async (phoneNumber: string) => {
-    if (!token) return;
+  const startPollingForPhone = () => {
+    if (!currentToken) return;
     
-    try {
-      await axios.post(`${API_URL}/telegram/webapp/save-phone`, 
-        { phone: phoneNumber },
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
-    } catch (e) {
-      console.error('Save phone error:', e);
+    let attempts = 0;
+    const maxAttempts = 30;
+    
+    pollingRef.current = setInterval(async () => {
+      attempts++;
+      
+      if (attempts >= maxAttempts) {
+        if (pollingRef.current) clearInterval(pollingRef.current);
+        setIsLoading(false);
+        toast.error('Telefon raqam olinmadi. Qaytadan urinib ko\'ring.');
+        return;
+      }
+      
+      try {
+        const res = await axios.get(`${API_URL}/auth/me`, {
+          headers: { Authorization: `Bearer ${currentToken}` }
+        });
+        
+        if (res.data.telegramPhone) {
+          if (pollingRef.current) clearInterval(pollingRef.current);
+          handlePhoneReceived(res.data.telegramPhone);
+        }
+      } catch (e) {
+        console.error('Poll error:', e);
+      }
+    }, 1000);
+  };
+
+  const handlePhoneReceived = (phoneNumber: string) => {
+    const formattedPhone = phoneNumber.startsWith('+') ? phoneNumber : '+' + phoneNumber;
+    setPhone(formattedPhone);
+    setPhoneShared(true);
+    setIsLoading(false);
+    telegramHaptic('success');
+    toast.success('✅ Telefon raqam qabul qilindi!');
+    setCurrentStep('credentials');
+    
+    if (pollingRef.current) {
+      clearInterval(pollingRef.current);
     }
   };
 
@@ -262,7 +212,7 @@ export default function TelegramRegisterPage() {
       return;
     }
 
-    if (!usernameAvailable) {
+    if (usernameAvailable === false) {
       toast.error('Bu username band, boshqasini tanlang');
       return;
     }
@@ -281,26 +231,17 @@ export default function TelegramRegisterPage() {
     telegramHaptic('impact');
 
     try {
-      // Complete telegram registration
       const res = await axios.post(`${API_URL}/telegram/webapp/complete-registration`, 
-        { 
-          username,
-          password,
-          phone,
-        },
-        { headers: { Authorization: `Bearer ${token}` } }
+        { username, password, phone },
+        { headers: { Authorization: `Bearer ${currentToken}` } }
       );
 
       if (res.data.success) {
-        // Update user in store
-        login(res.data.user, res.data.token || token);
-        
+        login(res.data.user, res.data.token || currentToken);
         telegramHaptic('success');
         toast.success('🎉 Ro\'yxatdan o\'tish muvaffaqiyatli!');
-        
         setCurrentStep('completed');
         
-        // Redirect after animation
         setTimeout(() => {
           router.push('/');
         }, 2000);
@@ -313,7 +254,7 @@ export default function TelegramRegisterPage() {
     }
   };
 
-  // Format phone number for display
+  // Format phone for display
   const formatPhone = (phone: string) => {
     const cleaned = phone.replace(/\D/g, '');
     if (cleaned.length === 12 && cleaned.startsWith('998')) {
@@ -323,7 +264,7 @@ export default function TelegramRegisterPage() {
   };
 
   const renderStepIndicator = () => (
-    <div className="flex items-center justify-center gap-2 mb-8">
+    <div className="flex items-center justify-center gap-2 mb-6">
       {['phone', 'credentials', 'completed'].map((step, index) => (
         <div key={step} className="flex items-center">
           <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-all ${
@@ -340,7 +281,7 @@ export default function TelegramRegisterPage() {
             )}
           </div>
           {index < 2 && (
-            <div className={`w-12 h-1 mx-1 rounded ${
+            <div className={`w-8 h-1 mx-1 rounded ${
               index < ['phone', 'credentials', 'completed'].indexOf(currentStep)
                 ? 'bg-green-500'
                 : 'bg-gray-200 dark:bg-gray-700'
@@ -351,7 +292,6 @@ export default function TelegramRegisterPage() {
     </div>
   );
 
-  // Show loading while initializing
   if (!isInitialized) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 flex items-center justify-center">
@@ -371,25 +311,26 @@ export default function TelegramRegisterPage() {
         className="w-full max-w-md"
       >
         {/* Logo */}
-        <div className="text-center mb-6">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl mb-4">
-            <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+        <div className="text-center mb-4">
+          <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl mb-3">
+            <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
               <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
             </svg>
           </div>
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-            Telegram orqali ro'yxatdan o'tish
+          <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+            Ro'yxatdan o'tish
           </h1>
-          <p className="text-gray-500 dark:text-gray-400 mt-2">
-            {telegramUser?.first_name && `Xush kelibsiz, ${telegramUser.first_name}!`}
-          </p>
+          {telegramUser?.first_name && (
+            <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">
+              {telegramUser.first_name}, xush kelibsiz!
+            </p>
+          )}
         </div>
 
-        {/* Step Indicator */}
         {renderStepIndicator()}
 
         {/* Card */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-5">
           <AnimatePresence mode="wait">
             {/* Step 1: Phone */}
             {currentStep === 'phone' && (
@@ -398,59 +339,41 @@ export default function TelegramRegisterPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
-                className="space-y-6"
+                className="space-y-4"
               >
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Phone className="w-8 h-8 text-blue-600" />
+                  <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Phone className="w-7 h-7 text-blue-600" />
                   </div>
-                  <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Telefon raqamingizni ulashing
+                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                    Telefon raqamingiz
                   </h2>
                   <p className="text-gray-500 dark:text-gray-400 text-sm">
-                    Saytdan ham kirish imkoniyati uchun telefon raqamingiz kerak
+                    Saytdan kirish uchun telefon raqamingiz kerak
                   </p>
                 </div>
 
-                {phoneShared ? (
-                  <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-4">
-                    <div className="flex items-center gap-3">
-                      <CheckCircle2 className="w-6 h-6 text-green-600" />
-                      <div>
-                        <p className="font-medium text-green-700 dark:text-green-400">Telefon qabul qilindi</p>
-                        <p className="text-sm text-green-600 dark:text-green-500">{formatPhone(phone)}</p>
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  <button
-                    onClick={handleRequestPhone}
-                    disabled={isLoading}
-                    className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:opacity-50 text-white rounded-xl font-medium flex items-center justify-center gap-2 transition-all"
-                  >
-                    {isLoading ? (
-                      <>
-                        <Loader2 className="w-5 h-5 animate-spin" />
-                        Tekshirilmoqda...
-                      </>
-                    ) : (
-                      <>
-                        <Phone className="w-5 h-5" />
-                        Telefon raqamni ulashish
-                      </>
-                    )}
-                  </button>
-                )}
-
-                {phoneShared && (
-                  <button
-                    onClick={() => setCurrentStep('credentials')}
-                    className="w-full py-3 bg-gray-900 dark:bg-white dark:text-gray-900 text-white rounded-xl font-medium flex items-center justify-center gap-2 hover:opacity-90 transition"
-                  >
-                    Davom etish
-                    <ArrowRight className="w-5 h-5" />
-                  </button>
-                )}
+                <button
+                  onClick={handleRequestPhone}
+                  disabled={isLoading}
+                  className="w-full py-3.5 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:opacity-50 text-white rounded-xl font-medium flex items-center justify-center gap-2 transition-all"
+                >
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      Kutilmoqda...
+                    </>
+                  ) : (
+                    <>
+                      <Phone className="w-5 h-5" />
+                      Telefon raqamni ulashish
+                    </>
+                  )}
+                </button>
+                
+                <p className="text-xs text-center text-gray-400">
+                  Telegram sizdan telefon raqamni ulashishni so'raydi
+                </p>
               </motion.div>
             )}
 
@@ -461,13 +384,13 @@ export default function TelegramRegisterPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
-                className="space-y-5"
+                className="space-y-4"
               >
-                <div className="text-center mb-4">
-                  <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <div className="text-center mb-2">
+                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
                     Hisob ma'lumotlari
                   </h2>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">
+                  <p className="text-gray-500 dark:text-gray-400 text-sm">
                     Saytdan kirish uchun username va parol yarating
                   </p>
                 </div>
@@ -475,13 +398,13 @@ export default function TelegramRegisterPage() {
                 {/* Phone display */}
                 <div className="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-3 flex items-center gap-3">
                   <Phone className="w-5 h-5 text-gray-400" />
-                  <span className="text-gray-700 dark:text-gray-300">{formatPhone(phone)}</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm">{formatPhone(phone)}</span>
                   <CheckCircle2 className="w-5 h-5 text-green-500 ml-auto" />
                 </div>
 
                 {/* Username */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
                     Username
                   </label>
                   <div className="relative">
@@ -491,7 +414,7 @@ export default function TelegramRegisterPage() {
                       value={username}
                       onChange={(e) => setUsername(e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, ''))}
                       placeholder="username"
-                      className="w-full pl-10 pr-10 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full pl-10 pr-10 py-2.5 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
                     />
                     {checkingUsername && (
                       <Loader2 className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 animate-spin" />
@@ -503,17 +426,19 @@ export default function TelegramRegisterPage() {
                       <span className="absolute right-3 top-1/2 -translate-y-1/2 text-red-500 text-lg">✕</span>
                     )}
                   </div>
-                  {usernameAvailable === false && (
-                    <p className="text-red-500 text-sm mt-1">Bu username band</p>
+                  {telegramUser?.username && (
+                    <p className="text-xs text-gray-400 mt-1">
+                      Telegram: @{telegramUser.username}
+                    </p>
                   )}
-                  <p className="text-gray-400 text-xs mt-1">
-                    Telegram username: @{telegramUser?.username || 'yo\'q'}
-                  </p>
+                  {usernameAvailable === false && (
+                    <p className="text-xs text-red-500 mt-1">Bu username band</p>
+                  )}
                 </div>
 
                 {/* Password */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
                     Parol
                   </label>
                   <div className="relative">
@@ -523,7 +448,7 @@ export default function TelegramRegisterPage() {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="Kamida 6 ta belgi"
-                      className="w-full pl-10 pr-10 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full pl-10 pr-10 py-2.5 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
                     />
                     <button
                       type="button"
@@ -537,23 +462,17 @@ export default function TelegramRegisterPage() {
 
                 {/* Confirm Password */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
                     Parolni tasdiqlang
                   </label>
                   <div className="relative">
-                    <Shield className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                     <input
                       type={showConfirmPassword ? 'text' : 'password'}
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
                       placeholder="Parolni qayta kiriting"
-                      className={`w-full pl-10 pr-10 py-3 bg-gray-50 dark:bg-gray-700 border rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                        confirmPassword && password !== confirmPassword 
-                          ? 'border-red-500' 
-                          : confirmPassword && password === confirmPassword
-                            ? 'border-green-500'
-                            : 'border-gray-200 dark:border-gray-600'
-                      }`}
+                      className="w-full pl-10 pr-10 py-2.5 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
                     />
                     <button
                       type="button"
@@ -563,26 +482,23 @@ export default function TelegramRegisterPage() {
                       {showConfirmPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                     </button>
                   </div>
-                  {confirmPassword && password !== confirmPassword && (
-                    <p className="text-red-500 text-sm mt-1">Parollar mos kelmadi</p>
-                  )}
-                  {confirmPassword && password === confirmPassword && (
-                    <p className="text-green-500 text-sm mt-1 flex items-center gap-1">
-                      <CheckCircle2 className="w-4 h-4" /> Parollar mos
+                  {password && confirmPassword && (
+                    <p className={`text-xs mt-1 ${password === confirmPassword ? 'text-green-500' : 'text-red-500'}`}>
+                      {password === confirmPassword ? '✓ Parollar mos' : '✕ Parollar mos emas'}
                     </p>
                   )}
                 </div>
 
-                {/* Submit Button */}
+                {/* Submit */}
                 <button
                   onClick={handleCompleteRegistration}
-                  disabled={isLoading || !usernameAvailable || password.length < 6 || password !== confirmPassword}
-                  className="w-full py-4 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 disabled:from-gray-400 disabled:to-gray-500 text-white rounded-xl font-medium flex items-center justify-center gap-2 transition-all disabled:cursor-not-allowed"
+                  disabled={isLoading || !username || !password || !confirmPassword || password !== confirmPassword || usernameAvailable === false}
+                  className="w-full py-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-xl font-medium flex items-center justify-center gap-2 transition-all"
                 >
                   {isLoading ? (
                     <>
                       <Loader2 className="w-5 h-5 animate-spin" />
-                      Yuklanmoqda...
+                      Saqlanmoqda...
                     </>
                   ) : (
                     <>
@@ -600,32 +516,29 @@ export default function TelegramRegisterPage() {
                 key="completed"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="text-center py-8"
+                className="text-center py-6"
               >
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', delay: 0.2 }}
-                  className="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6"
-                >
-                  <CheckCircle2 className="w-10 h-10 text-green-600" />
-                </motion.div>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                  Muvaffaqiyatli! 🎉
+                <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle2 className="w-8 h-8 text-green-600" />
+                </div>
+                <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Tabriklaymiz! 🎉
                 </h2>
                 <p className="text-gray-500 dark:text-gray-400 mb-4">
-                  Ro'yxatdan o'tdingiz. Endi saytdan ham kirishingiz mumkin!
+                  Ro'yxatdan muvaffaqiyatli o'tdingiz
                 </p>
-                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-4 text-left">
-                  <p className="text-sm text-blue-700 dark:text-blue-400">
-                    <strong>Username:</strong> {username}
-                  </p>
-                  <p className="text-sm text-blue-700 dark:text-blue-400 mt-1">
-                    <strong>Telefon:</strong> {formatPhone(phone)}
-                  </p>
+                <div className="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-3 text-left space-y-2">
+                  <div className="flex items-center gap-2 text-sm">
+                    <User className="w-4 h-4 text-gray-400" />
+                    <span className="text-gray-600 dark:text-gray-300">Username: <strong>{username}</strong></span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Phone className="w-4 h-4 text-gray-400" />
+                    <span className="text-gray-600 dark:text-gray-300">{formatPhone(phone)}</span>
+                  </div>
                 </div>
                 <p className="text-sm text-gray-400 mt-4">
-                  Bosh sahifaga yo'naltirilmoqdasiz...
+                  Platformaga yo'naltirilmoqdasiz...
                 </p>
               </motion.div>
             )}
