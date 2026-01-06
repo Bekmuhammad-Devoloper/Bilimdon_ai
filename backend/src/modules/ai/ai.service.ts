@@ -8,11 +8,12 @@ export class AIService {
   private apiKey: string;
   private apiUrl: string;
   // Fallback models list - try each one until success
+  // O'zbekcha uchun eng yaxshi modellar birinchi o'rinda
   private models: string[] = [
-    'google/gemma-2-9b-it:free',      // Primary - free, reliable
-    'meta-llama/llama-3.2-3b-instruct:free', // Fallback 1
-    'mistralai/mistral-7b-instruct:free',    // Fallback 2
-    'huggingfaceh4/zephyr-7b-beta:free',     // Fallback 3
+    'meta-llama/llama-3.3-70b-instruct:free',  // Eng yaxshi - ko'p tillarni biladi
+    'qwen/qwen-2.5-7b-instruct:free',          // Qwen - o'zbekchani yaxshi biladi
+    'google/gemma-2-9b-it:free',               // Gemma - yaxshi sifat
+    'mistralai/mistral-7b-instruct:free',      // Mistral - backup
   ];
 
   constructor(
@@ -56,19 +57,16 @@ export class AIService {
     // Build context
     let systemPrompt = `Sen "Bilimdon" ta'lim platformasining AI yordamchisisan.
 
-QOIDALAR:
-1. Faqat O'ZBEK tilida javob ber
-2. Har safar "Salom! Men Bilimdon AI..." deb boshlaMA - faqat savolga javob ber
-3. Qisqa, aniq va TO'G'RI ma'lumot ber
+MUHIM QOIDALAR:
+1. FAQAT O'ZBEK TILIDA javob ber - boshqa tilda javob berMA
+2. Har safar o'zingni tanishtirma - to'g'ridan-to'g'ri savolga javob ber
+3. Aniq, qisqa va foydali ma'lumot ber
 4. Agar bilmasang "Bu haqida aniq ma'lumotim yo'q" de
-5. TARIXIY FAKTLARNI TO'G'RI BER:
-   - Alisher Navoiy: 1441-yil tug'ilgan, Hirot shahri
-   - Zahiriddin Muhammad Bobur: 1483-yil, Andijon shahri
-   - Amir Temur: 1336-yil, Shahrisabz
+5. Grammatik to'g'ri o'zbek tilida yoz
 
-Kategoriyalar: Dasturlash, Matematika, Fizika, Kimyo, Biologiya, Tarix, Ingliz tili, va boshqalar.
+MAVZULAR: Dasturlash (Python, JavaScript, Java, C++), Matematika, Fizika, Kimyo, Biologiya, Tarix, Ingliz tili, Adabiyot.
 
-Kod so'ralganda to'liq va ishlaydigan kod ber.`;
+Kod so'ralganda to'liq va ishlaydigan kod yoz, izohlar o'zbekchada bo'lsin.`;
 
     if (dto.categorySlug) {
       systemPrompt += `\n\nHozirgi suhbat "${dto.categorySlug}" kategoriyasi bo'yicha. Shu mavzuga oid savollarga javob ber.`;
