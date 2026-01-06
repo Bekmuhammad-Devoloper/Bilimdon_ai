@@ -75,7 +75,14 @@ export class UploadService {
     const maxSize = 50 * 1024 * 1024;
     if (file.size > maxSize) { throw new BadRequestException('Fayl hajmi 50MB dan oshmasligi kerak'); }
     const ext = path.extname(file.originalname).toLowerCase();
-    const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.mp4', '.webm', '.mov', '.avi', '.mpeg', '.mpg', '.mkv', '.3gp', '.wmv', '.flv'];
+    const allowedExtensions = [
+      // Images
+      '.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.ico', '.bmp', '.tiff', '.tif',
+      // Videos
+      '.mp4', '.webm', '.mov', '.avi', '.mpeg', '.mpg', '.mkv', '.3gp', '.wmv', '.flv',
+      // Documents (optional)
+      '.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.txt'
+    ];
     if (!allowedExtensions.includes(ext)) { throw new BadRequestException('Fayl formati qollab-quvvatlanmaydi'); }
     if (!file.buffer || file.buffer.length === 0) { throw new BadRequestException('Fayl buffer bosh'); }
   }
