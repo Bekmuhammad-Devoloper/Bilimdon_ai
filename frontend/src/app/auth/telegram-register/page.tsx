@@ -84,12 +84,17 @@ export default function TelegramRegisterPage() {
 
         // Authenticate with Telegram
         try {
+          console.log('[Init] Authenticating with Telegram...');
           const res = await axios.post(`${API_URL}/telegram/webapp/auth`, { initData });
+          console.log('[Init] Auth response:', res.data);
+          
           if (res.data.user && res.data.token) {
             setCurrentToken(res.data.token);
+            console.log('[Init] Token set:', res.data.token?.substring(0, 20) + '...');
             
             // If already has phone, go to step 2
             if (res.data.user.telegramPhone) {
+              console.log('[Init] User already has phone:', res.data.user.telegramPhone);
               setPhone(res.data.user.telegramPhone);
               setPhoneShared(true);
               setCurrentStep('credentials');
@@ -160,13 +165,18 @@ export default function TelegramRegisterPage() {
   };
 
   const startPollingForPhone = () => {
-    if (!currentToken) return;
+    if (!currentToken) {
+      console.log('[Polling] No token, skipping');
+      return;
+    }
     
+    console.log('[Polling] Starting phone polling...');
     let attempts = 0;
-    const maxAttempts = 30;
+    const maxAttempts = 60; // Increased to 60 attempts (1 minute)
     
     pollingRef.current = setInterval(async () => {
       attempts++;
+      console.log(`[Polling] Attempt ${attempts}/${maxAttempts}`);
       
       if (attempts >= maxAttempts) {
         if (pollingRef.current) clearInterval(pollingRef.current);
@@ -180,12 +190,14 @@ export default function TelegramRegisterPage() {
           headers: { Authorization: `Bearer ${currentToken}` }
         });
         
+        console.log(`[Polling] Response:`, res.data?.telegramPhone);
+        
         if (res.data.telegramPhone) {
           if (pollingRef.current) clearInterval(pollingRef.current);
           handlePhoneReceived(res.data.telegramPhone);
         }
       } catch (e) {
-        console.error('Poll error:', e);
+        console.error('[Polling] Error:', e);
       }
     }, 1000);
   };
