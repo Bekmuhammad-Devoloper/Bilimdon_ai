@@ -17,7 +17,7 @@ export class AIService {
     this.apiKey = this.configService.get<string>('OPENROUTER_API_KEY') || 
                   this.configService.get<string>('GEMINI_API_KEY') || '';
     this.apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
-    this.model = 'google/gemini-2.0-flash-exp:free'; // Better free model - more accurate
+    this.model = 'mistralai/mistral-7b-instruct:free'; // Reliable free model
   }
 
   async chat(userId: string, dto: ChatDto) {
