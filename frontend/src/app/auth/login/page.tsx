@@ -11,6 +11,7 @@ import toast from 'react-hot-toast';
 import { authApi } from '@/lib/api';
 import { useAuthStore } from '@/store/auth';
 import { Mail, Lock, Eye, EyeOff, ArrowRight, Sparkles, Brain, Trophy, Zap } from 'lucide-react';
+import { isTelegramWebApp } from '@/lib/telegram';
 
 const loginSchema = z.object({
   emailOrUsername: z.string().min(1, 'Email yoki username kiritilmagan'),
@@ -25,6 +26,7 @@ export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const isTelegram = isTelegramWebApp();
 
   useEffect(() => {
     setIsMounted(true);
@@ -310,7 +312,7 @@ export default function LoginPage() {
             <p className="text-center text-gray-600 dark:text-gray-400">
               Hisobingiz yo'qmi?{' '}
               <Link
-                href="/auth/register"
+                href={isTelegram ? "/auth/telegram-register" : "/auth/register"}
                 className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
               >
                 Ro'yxatdan o'ting

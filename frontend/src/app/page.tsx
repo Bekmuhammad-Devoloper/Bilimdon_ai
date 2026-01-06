@@ -6,11 +6,13 @@ import { ArrowRight, Zap, Trophy, Bot, Target, TrendingUp, Users } from 'lucide-
 import { useAuth, useCategories, useStats } from '@/hooks';
 import { Button, Card, Avatar, Progress, Badge } from '@/components/ui';
 import { formatXP, calculateLevelProgress, cn, getCategoryIconUrl } from '@/lib/utils';
+import { isTelegramWebApp } from '@/lib/telegram';
 
 export default function HomePage() {
   const { user, isAuthenticated, isLoading } = useAuth();
   const { categories, loading: categoriesLoading } = useCategories();
   const { stats, loading: statsLoading } = useStats();
+  const isTelegram = isTelegramWebApp();
 
   // Faqat 6 ta ommabop kategoriya - bosh sahifa uchun
   const popularCategories = [
@@ -52,7 +54,7 @@ export default function HomePage() {
                 </Link>
               ) : (
                 <>
-                  <Link href="/auth/register">
+                  <Link href={isTelegram ? "/auth/telegram-register" : "/auth/register"}>
                     <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
                       Boshlash <ArrowRight className="ml-2 w-5 h-5" />
                     </Button>
@@ -264,7 +266,7 @@ export default function HomePage() {
               Bepul va oson!
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/auth/register">
+              <Link href={isTelegram ? "/auth/telegram-register" : "/auth/register"}>
                 <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
                   Ro'yxatdan o'tish
                 </Button>

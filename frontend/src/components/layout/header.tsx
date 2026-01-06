@@ -152,7 +152,7 @@ export function Header() {
                 <Link href="/auth/login">
                   <Button variant="ghost" size="sm">Kirish</Button>
                 </Link>
-                <Link href="/auth/register">
+                <Link href={isTelegram ? "/auth/telegram-register" : "/auth/register"}>
                   <Button size="sm">Ro'yxatdan o'tish</Button>
                 </Link>
               </div>
