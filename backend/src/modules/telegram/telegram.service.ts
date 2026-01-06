@@ -198,10 +198,11 @@ export class TelegramService {
       telegramId: user.telegramId,
     });
 
-    // Check if phone number is required and registration is complete
-    // Registration is complete if user has both phone and password
-    const phoneRequired = !user.telegramPhone;
-    const isRegistrationComplete = !!(user.telegramPhone && user.password);
+    // Check if registration is complete
+    // Registration is complete if user has password (either from website registration or completed TG registration)
+    // Phone is optional but recommended
+    const isRegistrationComplete = !!user.password;
+    const phoneRequired = !user.telegramPhone && !user.password; // Only require phone for new TG users
 
     return {
       user: {
@@ -249,6 +250,18 @@ export class TelegramService {
    */
   async completeRegistration(userId: string, data: { username: string; password: string; phone: string }) {
     const { username, password, phone } = data;
+
+    console.log(`[completeRegistration] userId: ${userId}, username: ${username}`);
+
+    // First check if user exists
+    const existingUserById = await this.prisma.user.findUnique({
+      where: { id: userId },
+    });
+    
+    if (!existingUserById) {
+      console.log(`[completeRegistration] User not found with id: ${userId}`);
+      throw new BadRequestException('Foydalanuvchi topilmadi. Iltimos, qaytadan kiring.');
+    }
 
     // Check if username is available
     const existingUser = await this.prisma.user.findUnique({
