@@ -516,12 +516,12 @@ export class TelegramService {
             reply_markup: {
               inline_keyboard: [
                 [{
-                  text: '� Platformani ochish',
+                  text: '📱 Platformani ochish',
                   web_app: { url: this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz' },
                 }],
                 [{
-                  text: '📞 Telefon raqamni ulashish',
-                  callback_data: 'share_phone',
+                  text: '� Ro\'yxatdan o\'tish',
+                  web_app: { url: (this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz') + '/auth/telegram-register' },
                 }],
               ],
             },
@@ -568,19 +568,18 @@ export class TelegramService {
           body: JSON.stringify({ callback_query_id: callbackQueryId }),
         });
 
-        // Handle share phone request
+        // Handle share phone request - open Mini App registration page
         if (data === 'share_phone') {
+          const webappUrl = this.configService.get('WEBAPP_URL') || 'https://bilimdon-ai.uz';
           await this.sendMessage(chatId,
-            `📞 Telefon raqamingizni ulashish uchun quyidagi tugmani bosing:`,
+            `� Ro'yxatdan o'tish uchun quyidagi tugmani bosing:`,
             {
               parse_mode: 'HTML',
               reply_markup: {
-                keyboard: [[{
-                  text: '📞 Telefon raqamni yuborish',
-                  request_contact: true,
+                inline_keyboard: [[{
+                  text: '� Ro\'yxatdan o\'tish',
+                  web_app: { url: `${webappUrl}/auth/telegram-register` },
                 }]],
-                resize_keyboard: true,
-                one_time_keyboard: true,
               },
             }
           );
