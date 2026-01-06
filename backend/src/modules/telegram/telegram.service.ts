@@ -528,7 +528,7 @@ export class TelegramService {
             data: { telegramPhone: contact.phone_number },
           });
           // Don't send message here - Mini App registration flow handles this
-          this.logger.log(`Phone saved for user ${from.id}: ${contact.phone_number}`);
+          console.log(`Phone saved for user ${from.id}: ${contact.phone_number}`);
         }
       }
 
