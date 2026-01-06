@@ -17,7 +17,7 @@ export class AIService {
     this.apiKey = this.configService.get<string>('OPENROUTER_API_KEY') || 
                   this.configService.get<string>('GEMINI_API_KEY') || '';
     this.apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
-    this.model = 'mistralai/mistral-7b-instruct:free'; // Reliable free model
+    this.model = 'qwen/qwen-2.5-72b-instruct:free'; // Best free model - no <s> tokens
   }
 
   async chat(userId: string, dto: ChatDto) {
@@ -106,7 +106,13 @@ Kod so'ralganda to'liq va ishlaydigan kod ber.`;
       }
 
       const data = await response.json();
-      const aiResponse = data.choices?.[0]?.message?.content || 'Javob olishda xatolik';
+      // Clean response from model artifacts like <s>, </s>, etc.
+      let aiResponse = data.choices?.[0]?.message?.content || 'Javob olishda xatolik';
+      aiResponse = aiResponse
+        .replace(/<s>/g, '')
+        .replace(/<\/s>/g, '')
+        .replace(/^\s+/, '')
+        .trim();
 
       // Get category ID if slug provided
       let categoryId: string | null = null;
