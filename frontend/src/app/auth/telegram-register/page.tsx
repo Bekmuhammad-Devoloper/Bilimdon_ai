@@ -37,6 +37,7 @@ export default function TelegramRegisterPage() {
   
   const [currentStep, setCurrentStep] = useState<Step>('phone');
   const [isLoading, setIsLoading] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false);
   const [telegramUser, setTelegramUser] = useState<TelegramUser | null>(null);
   
   // Phone step
@@ -52,37 +53,66 @@ export default function TelegramRegisterPage() {
   const [usernameAvailable, setUsernameAvailable] = useState<boolean | null>(null);
   const [checkingUsername, setCheckingUsername] = useState(false);
 
+  // Initialize - authenticate with Telegram if not already
   useEffect(() => {
-    // Only works in Telegram Mini App
-    if (!isTelegramWebApp()) {
-      router.push('/auth/register');
-      return;
-    }
+    const initTelegram = async () => {
+      // Only works in Telegram Mini App
+      if (!isTelegramWebApp()) {
+        router.push('/auth/register');
+        return;
+      }
 
-    telegramReady();
-    telegramExpand();
+      telegramReady();
+      telegramExpand();
 
-    // Get telegram user info
-    const initData = getTelegramInitData();
-    if (initData) {
-      try {
-        const params = new URLSearchParams(initData);
-        const userStr = params.get('user');
-        if (userStr) {
-          const tgUser = JSON.parse(userStr);
-          setTelegramUser(tgUser);
-          // Set default username from telegram
-          if (tgUser.username) {
-            setUsername(tgUser.username);
+      // Get telegram user info from initData
+      const initData = getTelegramInitData();
+      if (initData) {
+        try {
+          const params = new URLSearchParams(initData);
+          const userStr = params.get('user');
+          if (userStr) {
+            const tgUser = JSON.parse(userStr);
+            setTelegramUser(tgUser);
+            // Set default username from telegram
+            if (tgUser.username) {
+              setUsername(tgUser.username);
+            }
+          }
+        } catch (e) {
+          console.error('Parse telegram user error:', e);
+        }
+
+        // If not authenticated yet, authenticate first
+        if (!token) {
+          try {
+            const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+            const res = await axios.post(`${API_URL}/telegram/webapp/auth`, { initData });
+            if (res.data.user && res.data.token) {
+              login(res.data.user, res.data.token);
+              
+              // Check if user already has phone
+              if (res.data.user.telegramPhone) {
+                setPhone(res.data.user.telegramPhone);
+                setPhoneShared(true);
+                setCurrentStep('credentials');
+              }
+            }
+          } catch (e) {
+            console.error('Telegram auth error:', e);
           }
         }
-      } catch (e) {
-        console.error('Parse telegram user error:', e);
       }
-    }
 
-    // Check if user already has phone
-    if (user?.telegramPhone) {
+      setIsInitialized(true);
+    };
+
+    initTelegram();
+  }, []);
+
+  // Update step if user data changes
+  useEffect(() => {
+    if (user?.telegramPhone && !phoneShared) {
       setPhone(user.telegramPhone);
       setPhoneShared(true);
       setCurrentStep('credentials');
@@ -243,6 +273,18 @@ export default function TelegramRegisterPage() {
       ))}
     </div>
   );
+
+  // Show loading while initializing
+  if (!isInitialized) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 flex items-center justify-center">
+        <div className="text-center">
+          <Loader2 className="w-12 h-12 animate-spin text-blue-600 mx-auto mb-4" />
+          <p className="text-gray-500">Yuklanmoqda...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 flex items-center justify-center p-4">
