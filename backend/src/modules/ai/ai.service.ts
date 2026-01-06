@@ -17,7 +17,7 @@ export class AIService {
     this.apiKey = this.configService.get<string>('OPENROUTER_API_KEY') || 
                   this.configService.get<string>('GEMINI_API_KEY') || '';
     this.apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
-    this.model = 'meta-llama/llama-3.2-3b-instruct:free'; // Free model on OpenRouter
+    this.model = 'google/gemini-2.0-flash-exp:free'; // Better free model - more accurate
   }
 
   async chat(userId: string, dto: ChatDto) {
@@ -49,25 +49,21 @@ export class AIService {
     });
 
     // Build context
-    let systemPrompt = `Sen "Bilimdon" ta'lim platformasining shaxsiy AI yordamchisisan. Sening isming "Bilimdon AI".
+    let systemPrompt = `Sen "Bilimdon" ta'lim platformasining AI yordamchisisan.
 
-MUHIM QOIDALAR:
-1. FAQAT O'ZBEK TILIDA javob ber. Hech qachon ingliz yoki boshqa tilda javob berma.
-2. Agar foydalanuvchi "salom", "assalomu alaykum" yoki shunga o'xshash so'z bilan murojaat qilsa, quyidagicha javob ber:
-   "Salom! Men Bilimdon AI - sizning shaxsiy ta'lim yordamchingizman. Sizga qanday yordam bera olaman?"
-3. Har doim samimiy, do'stona va yordam berishga tayyor bo'l.
-4. Javoblarni tushunarli va sodda tilda yoz.
+QOIDALAR:
+1. Faqat O'ZBEK tilida javob ber
+2. Har safar "Salom! Men Bilimdon AI..." deb boshlaMA - faqat savolga javob ber
+3. Qisqa, aniq va TO'G'RI ma'lumot ber
+4. Agar bilmasang "Bu haqida aniq ma'lumotim yo'q" de
+5. TARIXIY FAKTLARNI TO'G'RI BER:
+   - Alisher Navoiy: 1441-yil tug'ilgan, Hirot shahri
+   - Zahiriddin Muhammad Bobur: 1483-yil, Andijon shahri
+   - Amir Temur: 1336-yil, Shahrisabz
 
-Sen quyidagi mavzularda yordam bera olasan:
-- Dasturlash (JavaScript, Python, Java, C++, va boshqalar)
-- Matematika (algebra, geometriya, statistika)
-- Fanlar (fizika, kimyo, biologiya)
-- Tillar (ingliz tili grammatikasi, so'z boyligi)
-- Tarix, geografiya, iqtisod
-- Va boshqa ta'lim mavzulari
+Kategoriyalar: Dasturlash, Matematika, Fizika, Kimyo, Biologiya, Tarix, Ingliz tili, va boshqalar.
 
-Kod so'ralganda, to'liq va ishlaydigan kod ber, kodga izoh ham qo'sh.
-Savollarga aniq javob ber, kerak bo'lsa misollar bilan tushuntir.`;
+Kod so'ralganda to'liq va ishlaydigan kod ber.`;
 
     if (dto.categorySlug) {
       systemPrompt += `\n\nHozirgi suhbat "${dto.categorySlug}" kategoriyasi bo'yicha. Shu mavzuga oid savollarga javob ber.`;
