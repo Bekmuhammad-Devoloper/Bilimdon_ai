@@ -1,4 +1,4 @@
-﻿import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
+﻿this.model = 'google/gemma-2-9b-it:free';import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../../prisma/prisma.service';
 import { JwtService } from '@nestjs/jwt';

@@ -7,7 +7,13 @@ import { ChatDto } from './dto/chat.dto';
 export class AIService {
   private apiKey: string;
   private apiUrl: string;
-  private model: string;
+  // Fallback models list - try each one until success
+  private models: string[] = [
+    'google/gemma-2-9b-it:free',      // Primary - free, reliable
+    'meta-llama/llama-3.2-3b-instruct:free', // Fallback 1
+    'mistralai/mistral-7b-instruct:free',    // Fallback 2
+    'huggingfaceh4/zephyr-7b-beta:free',     // Fallback 3
+  ];
 
   constructor(
     private configService: ConfigService,
@@ -17,7 +23,6 @@ export class AIService {
     this.apiKey = this.configService.get<string>('OPENROUTER_API_KEY') || 
                   this.configService.get<string>('GEMINI_API_KEY') || '';
     this.apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
-    this.model = 'qwen/qwen-2.5-72b-instruct:free'; // Best free model - no <s> tokens
   }
 
   async chat(userId: string, dto: ChatDto) {
@@ -80,34 +85,62 @@ Kod so'ralganda to'liq va ishlaydigan kod ber.`;
       : dto.message;
 
     try {
-      // Call OpenRouter API
-      const response = await fetch(this.apiUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${this.apiKey}`,
-          'HTTP-Referer': 'https://bilimdon-ai.uz',
-          'X-Title': 'Bilimdon AI',
-        },
-        body: JSON.stringify({
-          model: this.model,
-          messages: [
-            { role: 'system', content: systemPrompt },
-            { role: 'user', content: userMessage },
-          ],
-          max_tokens: 2048,
-        }),
-      });
+      console.log('AI Request - Models:', this.models, 'Message:', dto.message.substring(0, 50));
+      
+      let aiResponse: string | null = null;
+      let lastError: Error | null = null;
 
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
-        console.error('OpenRouter API Error:', response.status, errorData);
-        throw new Error(`API error: ${response.status}`);
+      // Try each model until one succeeds
+      for (const model of this.models) {
+        try {
+          console.log('Trying model:', model);
+          
+          const response = await fetch(this.apiUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${this.apiKey}`,
+              'HTTP-Referer': 'https://bilimdon-ai.uz',
+              'X-Title': 'Bilimdon AI',
+            },
+            body: JSON.stringify({
+              model: model,
+              messages: [
+                { role: 'system', content: systemPrompt },
+                { role: 'user', content: userMessage },
+              ],
+              max_tokens: 2048,
+            }),
+          });
+
+          const responseText = await response.text();
+          console.log('AI Response status for', model, ':', response.status);
+          
+          if (!response.ok) {
+            console.error('OpenRouter API Error for', model, ':', response.status, responseText);
+            lastError = new Error(`API error: ${response.status}`);
+            continue; // Try next model
+          }
+
+          const data = JSON.parse(responseText);
+          aiResponse = data.choices?.[0]?.message?.content;
+          
+          if (aiResponse) {
+            console.log('Success with model:', model);
+            break; // Success, exit loop
+          }
+        } catch (modelError) {
+          console.error('Error with model', model, ':', modelError);
+          lastError = modelError as Error;
+          continue; // Try next model
+        }
       }
 
-      const data = await response.json();
+      if (!aiResponse) {
+        throw lastError || new Error('All models failed');
+      }
+
       // Clean response from model artifacts like <s>, </s>, etc.
-      let aiResponse = data.choices?.[0]?.message?.content || 'Javob olishda xatolik';
       aiResponse = aiResponse
         .replace(/<s>/g, '')
         .replace(/<\/s>/g, '')
