@@ -81,14 +81,8 @@ export function useAuth() {
             const { data } = await authApi.telegramAuth(initData);
             login(data.user, data.token);
             
-            // Check if registration is complete (has phone and password)
-            if (data.phoneRequired || !data.user.isRegistrationComplete) {
-              // Redirect to telegram registration page
-              toast('📝 Ro\'yxatdan o\'tishni yakunlang', { icon: '👋' });
-              router.push('/auth/telegram-register');
-              return;
-            }
-            
+            // Don't auto-redirect to registration - let user use platform first
+            // They can register later if they want to login from website
             toast.success('✅ Telegram orqali kirdingiz!');
           } catch (error: any) {
             console.error('Telegram auth error:', error);
