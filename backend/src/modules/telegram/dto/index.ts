@@ -1,4 +1,4 @@
-import { IsString, IsNotEmpty, IsOptional } from 'class-validator';
+import { IsString, IsNotEmpty, IsOptional, MinLength } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 export class TelegramWebAppAuthDto {
@@ -34,6 +34,25 @@ export class SetWebhookDto {
 
 export class SavePhoneDto {
   @ApiProperty({ description: 'Phone number from Telegram contact' })
+  @IsString()
+  @IsNotEmpty()
+  phone: string;
+}
+
+export class CompleteRegistrationDto {
+  @ApiProperty({ description: 'Username for the account' })
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(3)
+  username: string;
+
+  @ApiProperty({ description: 'Password for the account' })
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(6)
+  password: string;
+
+  @ApiProperty({ description: 'Phone number' })
   @IsString()
   @IsNotEmpty()
   phone: string;

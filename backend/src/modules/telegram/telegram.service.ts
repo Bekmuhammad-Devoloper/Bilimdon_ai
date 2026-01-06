@@ -198,8 +198,9 @@ export class TelegramService {
       telegramId: user.telegramId,
     });
 
-    // Check if phone number is required
+    // Check if phone number is required and registration is complete
     const phoneRequired = !user.telegramPhone;
+    const isRegistrationComplete = user.isRegistrationComplete && user.telegramPhone && user.password;
 
     return {
       user: {
@@ -213,6 +214,7 @@ export class TelegramService {
         totalXP: user.totalXP,
         level: user.level,
         role: user.role,
+        isRegistrationComplete: !!isRegistrationComplete,
       },
       token,
       phoneRequired, // Frontend should prompt user to share phone if true
@@ -239,6 +241,64 @@ export class TelegramService {
     });
 
     return { success: true, user };
+  }
+
+  /**
+   * Complete Telegram user registration with username and password
+   */
+  async completeRegistration(userId: string, data: { username: string; password: string; phone: string }) {
+    const { username, password, phone } = data;
+
+    // Check if username is available
+    const existingUser = await this.prisma.user.findUnique({
+      where: { username },
+    });
+
+    if (existingUser && existingUser.id !== userId) {
+      throw new BadRequestException('Bu username allaqachon band');
+    }
+
+    // Hash password
+    const bcrypt = await import('bcrypt');
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Update user with new credentials
+    const user = await this.prisma.user.update({
+      where: { id: userId },
+      data: {
+        username,
+        password: hashedPassword,
+        telegramPhone: phone,
+        isRegistrationComplete: true,
+      },
+      select: {
+        id: true,
+        username: true,
+        fullName: true,
+        email: true,
+        telegramId: true,
+        telegramUsername: true,
+        telegramPhone: true,
+        avatar: true,
+        totalXP: true,
+        level: true,
+        role: true,
+      },
+    });
+
+    // Generate new JWT token
+    const token = this.jwtService.sign({
+      sub: user.id,
+      username: user.username,
+      role: user.role,
+      telegramId: user.telegramId,
+    });
+
+    return {
+      success: true,
+      user,
+      token,
+    };
   }
 
   /**

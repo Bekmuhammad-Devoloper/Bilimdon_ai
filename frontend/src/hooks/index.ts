@@ -80,36 +80,18 @@ export function useAuth() {
           try {
             const { data } = await authApi.telegramAuth(initData);
             login(data.user, data.token);
-            toast.success('✅ Telegram orqali kirdingiz!');
             
-            // Check if phone number is required
-            if (data.phoneRequired) {
-              // Request contact from Telegram
-              requestTelegramContact(async (contact) => {
-                if (contact && contact.phone_number) {
-                  try {
-                    const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
-                    await fetch(`${API}/telegram/webapp/save-phone`, {
-                      method: 'POST',
-                      headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${data.token}`,
-                      },
-                      body: JSON.stringify({ phone: contact.phone_number }),
-                    });
-                    toast.success('📞 Telefon raqam saqlandi!');
-                    // Update user state
-                    updateUser({ ...data.user, telegramPhone: contact.phone_number });
-                  } catch (err) {
-                    console.error('Phone save error:', err);
-                  }
-                }
-              });
+            // Check if registration is complete (has phone and password)
+            if (data.phoneRequired || !data.user.isRegistrationComplete) {
+              // Redirect to telegram registration page
+              toast('📝 Ro\'yxatdan o\'tishni yakunlang', { icon: '👋' });
+              router.push('/auth/telegram-register');
+              return;
             }
+            
+            toast.success('✅ Telegram orqali kirdingiz!');
           } catch (error: any) {
             console.error('Telegram auth error:', error);
-            // Don't show error toast on initial load - user can manually login
-            // Only log to console for debugging
           }
         }
       } else if (token) {
