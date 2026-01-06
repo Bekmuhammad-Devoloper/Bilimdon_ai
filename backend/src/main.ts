@@ -47,10 +47,10 @@ async function bootstrap() {
   }
   
   app.enableCors({
-    origin: allowedOrigins,
+    origin: true, // Allow all origins temporarily for debugging
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'X-Requested-With'],
   });
 
   // Global prefix - uploads yo'lini exclude qilamiz
