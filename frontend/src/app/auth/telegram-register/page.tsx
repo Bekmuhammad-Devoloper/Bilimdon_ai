@@ -259,15 +259,40 @@ export default function TelegramRegisterPage() {
 
   // Manual check phone button
   const handleCheckPhone = async () => {
-    if (!currentToken) {
-      toast.error('Xatolik yuz berdi, sahifani yangilang');
+    setIsLoading(true);
+    
+    // If no token, try to authenticate first
+    let token = currentToken;
+    if (!token) {
+      const initData = getTelegramInitData();
+      if (initData) {
+        try {
+          const authRes = await axios.post(`${API_URL}/telegram/webapp/auth`, { initData });
+          if (authRes.data.token) {
+            token = authRes.data.token;
+            setCurrentToken(token);
+            
+            // If already has phone from auth response
+            if (authRes.data.user?.telegramPhone) {
+              handlePhoneReceived(authRes.data.user.telegramPhone);
+              return;
+            }
+          }
+        } catch (e) {
+          console.error('Auth error:', e);
+        }
+      }
+    }
+    
+    if (!token) {
+      toast.error('Telegram orqali kiring');
+      setIsLoading(false);
       return;
     }
     
-    setIsLoading(true);
     try {
       const res = await axios.get(`${API_URL}/auth/me`, {
-        headers: { Authorization: `Bearer ${currentToken}` }
+        headers: { Authorization: `Bearer ${token}` }
       });
       
       if (res.data.telegramPhone) {
