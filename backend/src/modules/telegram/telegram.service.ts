@@ -122,6 +122,20 @@ export class TelegramService {
     // Find or create user
     let user = await this.prisma.user.findUnique({
       where: { telegramId: telegramUser.id.toString() },
+      select: {
+        id: true,
+        username: true,
+        email: true,
+        fullName: true,
+        avatar: true,
+        totalXP: true,
+        level: true,
+        role: true,
+        password: true,
+        telegramId: true,
+        telegramUsername: true,
+        telegramPhone: true,
+      },
     });
 
     // Try to fetch the latest profile photo via Bot API (best-effort)
@@ -173,6 +187,20 @@ export class TelegramService {
           email: `${telegramUser.id}@telegram.bilimdon.uz`,
           password: null,
         },
+        select: {
+          id: true,
+          username: true,
+          email: true,
+          fullName: true,
+          avatar: true,
+          totalXP: true,
+          level: true,
+          role: true,
+          password: true,
+          telegramId: true,
+          telegramUsername: true,
+          telegramPhone: true,
+        },
       });
     } else {
       // Update user info from Telegram
@@ -187,8 +215,25 @@ export class TelegramService {
           telegramUsername: telegramUser.username || user.telegramUsername,
           avatar: latestAvatar || telegramUser.photo_url || user.avatar,
         },
+        select: {
+          id: true,
+          username: true,
+          email: true,
+          fullName: true,
+          avatar: true,
+          totalXP: true,
+          level: true,
+          role: true,
+          password: true,
+          telegramId: true,
+          telegramUsername: true,
+          telegramPhone: true,
+        },
       });
     }
+
+    // Debug log
+    console.log(`[TG Auth] User: ${user.username}, telegramPhone: ${user.telegramPhone}, password: ${!!user.password}`);
 
     // Generate JWT
     const token = this.jwtService.sign({
