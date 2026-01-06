@@ -58,13 +58,13 @@ export default function TelegramRegisterPage() {
   // Initialize
   useEffect(() => {
     const initTelegram = async () => {
-      if (!isTelegramWebApp()) {
-        router.push('/auth/register');
-        return;
+      // Check if in Telegram - if not, still allow but show warning
+      const inTelegram = isTelegramWebApp();
+      
+      if (inTelegram) {
+        telegramReady();
+        telegramExpand();
       }
-
-      telegramReady();
-      telegramExpand();
 
       const initData = getTelegramInitData();
       if (initData) {
