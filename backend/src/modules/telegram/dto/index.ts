@@ -19,6 +19,16 @@ export class SendTelegramMessageDto {
   @IsNotEmpty()
   text: string;
 
+  @ApiPropertyOptional({ description: 'Image URL to send with message' })
+  @IsOptional()
+  @IsString()
+  imageUrl?: string;
+
+  @ApiPropertyOptional({ description: 'Video URL to send with message' })
+  @IsOptional()
+  @IsString()
+  videoUrl?: string;
+
   @ApiPropertyOptional({ enum: ['HTML', 'Markdown', 'MarkdownV2'] })
   @IsOptional()
   @IsString()

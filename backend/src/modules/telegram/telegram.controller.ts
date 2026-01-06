@@ -69,9 +69,11 @@ export class TelegramController {
   @ApiBearerAuth()
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(Role.ADMIN, Role.MODERATOR)
-  @ApiOperation({ summary: 'Send message via Telegram Bot' })
+  @ApiOperation({ summary: 'Send message via Telegram Bot (with optional photo/video)' })
   sendMessage(@Body() dto: SendTelegramMessageDto) {
-    return this.telegramService.sendMessage(dto.chatId, dto.text, {
+    return this.telegramService.sendMediaMessage(dto.chatId, dto.text, {
+      imageUrl: dto.imageUrl,
+      videoUrl: dto.videoUrl,
       parse_mode: dto.parseMode,
     });
   }
