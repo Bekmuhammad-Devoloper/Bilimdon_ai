@@ -199,8 +199,9 @@ export class TelegramService {
     });
 
     // Check if phone number is required and registration is complete
+    // Registration is complete if user has both phone and password
     const phoneRequired = !user.telegramPhone;
-    const isRegistrationComplete = user.isRegistrationComplete && user.telegramPhone && user.password;
+    const isRegistrationComplete = !!(user.telegramPhone && user.password);
 
     return {
       user: {
@@ -214,7 +215,7 @@ export class TelegramService {
         totalXP: user.totalXP,
         level: user.level,
         role: user.role,
-        isRegistrationComplete: !!isRegistrationComplete,
+        isRegistrationComplete,
       },
       token,
       phoneRequired, // Frontend should prompt user to share phone if true
@@ -269,7 +270,6 @@ export class TelegramService {
         username,
         password: hashedPassword,
         telegramPhone: phone,
-        isRegistrationComplete: true,
       },
       select: {
         id: true,
@@ -296,7 +296,10 @@ export class TelegramService {
 
     return {
       success: true,
-      user,
+      user: {
+        ...user,
+        isRegistrationComplete: true,
+      },
       token,
     };
   }

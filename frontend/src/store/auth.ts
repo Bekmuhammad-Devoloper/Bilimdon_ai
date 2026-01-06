@@ -12,6 +12,9 @@ export interface User {
   level: number;
   role: 'USER' | 'MODERATOR' | 'ADMIN';
   telegramId: string | null;
+  telegramUsername?: string | null;
+  telegramPhone?: string | null;
+  isRegistrationComplete?: boolean;
   createdAt: string;
 }
 
