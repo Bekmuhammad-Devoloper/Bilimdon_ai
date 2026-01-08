@@ -59,6 +59,42 @@ export class UploadService {
     return path.join(this.uploadDir, type, filename);
   }
 
+  /**
+   * Download avatar from URL (e.g., Telegram) and save locally
+   * Returns local URL path or null if failed
+   */
+  async downloadAndSaveAvatar(imageUrl: string, uniqueId: string): Promise<string | null> {
+    try {
+      console.log('[UploadService] Downloading avatar from:', imageUrl);
+      const response = await fetch(imageUrl);
+      if (!response.ok) {
+        console.error('[UploadService] Failed to download avatar:', response.status);
+        return null;
+      }
+      
+      const contentType = response.headers.get('content-type') || 'image/jpeg';
+      const ext = contentType.includes('png') ? '.png' : contentType.includes('gif') ? '.gif' : '.jpg';
+      const filename = `tg-${uniqueId}-${Date.now()}${ext}`;
+      const filepath = path.join(this.uploadDir, 'avatars', filename);
+      
+      const arrayBuffer = await response.arrayBuffer();
+      const buffer = Buffer.from(arrayBuffer);
+      
+      if (buffer.length < 100) {
+        console.error('[UploadService] Avatar buffer too small, skipping');
+        return null;
+      }
+      
+      await fs.promises.writeFile(filepath, buffer);
+      const localUrl = '/uploads/avatars/' + filename;
+      console.log('[UploadService] Avatar saved locally:', localUrl);
+      return localUrl;
+    } catch (error) {
+      console.error('[UploadService] Error downloading avatar:', error);
+      return null;
+    }
+  }
+
   async deleteFile(filepath: string): Promise<void> {
     const fullPath = path.join(process.cwd(), filepath);
     try { if (fs.existsSync(fullPath)) { await fs.promises.unlink(fullPath); } } catch (e) {}

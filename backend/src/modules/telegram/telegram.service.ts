@@ -1,7 +1,8 @@
-import { Injectable, UnauthorizedException, BadRequestException } from '@nestjs/common';
+import { Injectable, UnauthorizedException, BadRequestException, Inject, forwardRef } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../../prisma/prisma.service';
 import { JwtService } from '@nestjs/jwt';
+import { UploadService } from '../upload/upload.service';
 import * as crypto from 'crypto';
 
 interface TelegramInitData {
@@ -37,6 +38,8 @@ export class TelegramService {
     private prisma: PrismaService,
     private jwtService: JwtService,
     private configService: ConfigService,
+    @Inject(forwardRef(() => UploadService))
+    private uploadService: UploadService,
   ) {
     this.botToken = this.configService.get<string>('TELEGRAM_BOT_TOKEN') || '';
   }
@@ -138,28 +141,41 @@ export class TelegramService {
       },
     });
 
-    // Try to fetch the latest profile photo via Bot API (best-effort)
-    const fetchLatestAvatar = async (): Promise<string | undefined> => {
-      if (!this.botToken) return undefined;
+    // Try to fetch the latest profile photo via Bot API and save locally
+    const fetchAndSaveAvatar = async (): Promise<string | null> => {
+      if (!this.botToken) return null;
       try {
+        // Get user profile photos from Telegram
         const photosRes = await fetch(`https://api.telegram.org/bot${this.botToken}/getUserProfilePhotos?user_id=${telegramUser.id}&limit=1`);
         const photosJson = await photosRes.json();
-        if (!photosJson.ok || !photosJson.result || photosJson.result.total_count === 0) return undefined;
+        if (!photosJson.ok || !photosJson.result || photosJson.result.total_count === 0) return null;
+        
         const photoSizes = photosJson.result.photos[0];
         // choose the biggest size (last in array)
         const fileId = photoSizes[photoSizes.length - 1].file_id;
         const fileRes = await fetch(`https://api.telegram.org/bot${this.botToken}/getFile?file_id=${fileId}`);
         const fileJson = await fileRes.json();
-        if (!fileJson.ok || !fileJson.result) return undefined;
+        if (!fileJson.ok || !fileJson.result) return null;
+        
         const filePath = fileJson.result.file_path;
-        return `https://api.telegram.org/file/bot${this.botToken}/${filePath}`;
+        const telegramUrl = `https://api.telegram.org/file/bot${this.botToken}/${filePath}`;
+        
+        // Download and save avatar locally using UploadService
+        const localUrl = await this.uploadService.downloadAndSaveAvatar(telegramUrl, telegramUser.id.toString());
+        return localUrl;
       } catch (err) {
-        // ignore errors and fallback to photo_url from init data
-        return undefined;
+        console.error('[TelegramService] Error fetching/saving avatar:', err);
+        return null;
       }
     };
 
-    const latestAvatar = await fetchLatestAvatar();
+    // Only fetch new avatar if user doesn't have a local one already
+    let savedAvatar: string | null = null;
+    const hasLocalAvatar = user?.avatar?.startsWith('/uploads/avatars/');
+    
+    if (!hasLocalAvatar) {
+      savedAvatar = await fetchAndSaveAvatar();
+    }
 
     if (!user) {
       // Generate unique username
@@ -182,7 +198,7 @@ export class TelegramService {
           username,
           telegramUsername: telegramUser.username || null,
           fullName: fullName || username,
-          avatar: latestAvatar || telegramUser.photo_url || null,
+          avatar: savedAvatar || null,
           // store a placeholder email to keep uniqueness and allow contact later
           email: `${telegramUser.id}@telegram.bilimdon.uz`,
           password: null,
@@ -203,18 +219,25 @@ export class TelegramService {
         },
       });
     } else {
-      // Update user info from Telegram
+      // Update user info from Telegram (avatar only if we got a new local one)
       const fullName = [telegramUser.first_name, telegramUser.last_name]
         .filter(Boolean)
         .join(' ');
 
+      // Build update data - only update avatar if we downloaded a new one
+      const updateData: any = {
+        fullName: fullName || user.fullName,
+        telegramUsername: telegramUser.username || user.telegramUsername,
+      };
+      
+      // Only update avatar if we got a new local one (don't overwrite with null)
+      if (savedAvatar) {
+        updateData.avatar = savedAvatar;
+      }
+
       user = await this.prisma.user.update({
         where: { id: user.id },
-        data: {
-          fullName: fullName || user.fullName,
-          telegramUsername: telegramUser.username || user.telegramUsername,
-          avatar: latestAvatar || telegramUser.photo_url || user.avatar,
-        },
+        data: updateData,
         select: {
           id: true,
           username: true,
@@ -233,7 +256,7 @@ export class TelegramService {
     }
 
     // Debug log
-    console.log(`[TG Auth] User: ${user.username}, telegramPhone: ${user.telegramPhone}, password: ${!!user.password}`);
+    console.log(`[TG Auth] User: ${user.username}, avatar: ${user.avatar}, telegramPhone: ${user.telegramPhone}`);
 
     // Generate JWT
     const token = this.jwtService.sign({
